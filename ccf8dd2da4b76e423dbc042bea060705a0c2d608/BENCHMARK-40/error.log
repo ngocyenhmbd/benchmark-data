@@ -1,11 +1,11 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository tactician has been added to the selections of switch /tmp/tactician-3IFZiy1B only.
+[NOTE] Repository tactician has been added to the selections of switch /tmp/tactician-MjaxfHoJ only.
        Run `opam repository add tactician --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-3IFZiy1B only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-MjaxfHoJ only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-3IFZiy1B only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-MjaxfHoJ only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
 Cloning into 'coq-tactician'...
@@ -337,13 +337,25 @@ Tactician detected a printing/parsing problem for the following tactic. Please r
 File "./theories/ssr/ssrbool.v", line 1944, characters 0-80:
 Warning:
 Tactician detected a printing/parsing problem for the following tactic. Please report. by move  =>subD [g' fK g'K]; <ssreflect_plugin::ssrtclintros@0> exists g' =>x; move /subD ; [ apply : fK  | apply : g'K  ]
-File "./theories/ssr/ssrbool.v", line 1971, characters 0-77:
+File "./theories/ssr/ssrbool.v", line 1950, characters 0-72:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report. <ssreflect_plugin::ssrtclseq@0> <ssreflect_plugin::ssrtclintros@0> split =>allf x; have  := allf x; <ssreflect_plugin::ssrtclintros@0> rewrite inE =>Q1f ; first  by case /andP 
+File "./theories/ssr/ssrbool.v", line 1957, characters 0-72:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report. <ssreflect_plugin::ssrtclseq@0> <ssreflect_plugin::ssrtclintros@0> split =>allf x; have  := allf x; <ssreflect_plugin::ssrtclintros@0> rewrite inE =>Q1f ; first  by case /andP 
+File "./theories/ssr/ssrbool.v", line 1964, characters 0-57:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report. <ssreflect_plugin::ssrtclintros@0> rewrite !inE =>Q2f
+File "./theories/ssr/ssrbool.v", line 1964, characters 0-57:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report. <ssreflect_plugin::ssrtclintros@0> split =>allf x y
+File "./theories/ssr/ssrbool.v", line 2085, characters 0-77:
 Warning:
 Tactician detected a printing/parsing problem for the following tactic. Please report. <ssreflect_plugin::ssrtclseq@0> <ssreflect_plugin::ssrtclintros@0> split =>[eqiR|[Rxx trR] x y z *] ; last  by <ssreflect_plugin::ssrtclintros@0> split =>[|/trR -> //]; apply : Rxx 
-File "./theories/ssr/ssrbool.v", line 1972, characters 0-80:
+File "./theories/ssr/ssrbool.v", line 2086, characters 0-80:
 Warning:
 Tactician detected a printing/parsing problem for the following tactic. Please report. by <ssreflect_plugin::ssrtclintros@0> split =>[x Ax|x y Ax Ay Rxy z Az]; [ rewrite (eqiR x x) | rewrite (eqiR x y) ]
-File "./theories/ssr/ssrbool.v", line 2053, characters 0-72:
+File "./theories/ssr/ssrbool.v", line 2167, characters 0-72:
 Warning:
 Tactician detected a printing/parsing problem for the following tactic. Please report. <ssreflect_plugin::ssrtclseq@0> move  =>mf mg x y hx hy; case : (boolP (rR _ _))  =>[/mg //|] ; first  exact
 File "./theories/Logic/ClassicalFacts.v", line 454, characters 4-67:
