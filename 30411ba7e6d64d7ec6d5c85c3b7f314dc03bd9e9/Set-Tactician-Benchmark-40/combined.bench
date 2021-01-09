@@ -3,177 +3,249 @@ Coq.micromega.ZifyClasses.mkapp2	40
 Coq.micromega.ZifyClasses.mkapp	40
 Coq.micromega.ZifyClasses.mkapp0	40
 Coq.micromega.ZifyClasses.mkrel	40
-Coq.ssr.ssreflect.master_key	40	8	search with cache (only 1: reflexivity).	0.00481486320496	9
+Coq.ssr.ssreflect.master_key	40	8	search with cache (only 1: reflexivity).	0.00471901893616	9
 Coq.ssr.ssreflect.lock	40
 Coq.ssr.ssreflect.not_locked_false_eq_true	40
 Coq.ssr.ssreflect.unlock	40
 Coq.ssr.ssreflect.locked_withE	40
-Coq.ssr.ssreflect.unlock_with	40	0.24	search with cache (only 1: simpl; only 1: by case : {}k {}).	0.105475902557	694
+Coq.ssr.ssreflect.unlock_with	40	0.24	search with cache (only 1: simpl; only 1: by case : {}k {}).	0.104091882706	694
 Coq.ssr.ssreflect.nary_congruence	40
-Coq.ssr.ssreflect.ssr_congr_arrow	40	3.1.2	search with cache (only 1: intro H; only 1: destruct H; only 1: trivial).	0.00930094718933	11
-Coq.ssr.ssreflect.iffLR	40	0	search with cache (only 1: intuition).	0.00776195526123	1
-Coq.ssr.ssreflect.iffRL	40	0	search with cache (only 1: by case : {}eqPQ {}).	0.00669717788696	1
-Coq.ssr.ssreflect.iffLRn	40	4.16.14	search with cache (only 1: intros; only 1: unfold not; only 1: tauto).	0.5360019207	1187
-Coq.ssr.ssreflect.iffRLn	40	0	search with cache (only 1: by move  {}=>nP tQ; case : {}nP {}; case : {}eqPQ {}tQ {}).	0.00755310058594	1
+Coq.ssr.ssreflect.ssr_congr_arrow	40	3.1.2	search with cache (only 1: intro H; only 1: destruct H; only 1: trivial).	0.00956916809082	11
+Coq.ssr.ssreflect.iffLR	40	0	search with cache (only 1: intuition).	0.00792217254639	1
+Coq.ssr.ssreflect.iffRL	40	0	search with cache (only 1: by case : {}eqPQ {}).	0.00693821907043	1
+Coq.ssr.ssreflect.iffLRn	40	4.16.14	search with cache (only 1: intros; only 1: unfold not; only 1: tauto).	0.539585828781	1187
+Coq.ssr.ssreflect.iffRLn	40	0	search with cache (only 1: by move  {}=>nP tQ; case : {}nP {}; case : {}eqPQ {}tQ {}).	0.00779986381531	1
 Coq.ssr.ssreflect.abstract_context	40
-Coq.ssr.ssrunder.Under_rel.Under_rel_from_rel	40	8.0	search with cache (only 1: intro H; only 1: trivial).	0.0068039894104	17
-Coq.ssr.ssrunder.Under_rel.Under_relE	40	0	search with cache (only 1: now trivial).	0.0045120716095	1
-Coq.ssr.ssrunder.Under_rel.over_rel	40	1	search with cache (only 1: trivial).	0.00470590591431	2
-Coq.ssr.ssrunder.Under_rel.over_rel_done	40	0.1.3.7	search with cache (only 1: red; only 1: intro H; only 1: intro z; only 1: now trivial).	0.0192289352417	113
-Coq.ssr.ssrunder.Under_rel.under_rel_done	40	0	search with cache (only 1: now unfold Over_rel).	0.00461602210999	1
-Coq.Bool.IfProp.Iftrue_inv	40	2.0.2	search with cache (only 1: destruct 1; only 1: tauto; only 1: discriminate).	0.0284609794617	75
-Coq.Bool.IfProp.Iffalse_inv	40	2.2.1.0.0	search with cache (only 1: destruct 1; only 1: intros; only 1: case diff_true_false; only 1: auto with bool; only 1: auto with bool).	0.0103089809418	13
-Coq.Bool.IfProp.IfProp_true	40	0.34.2.51	search with cache (only 1: intros h1 h2; only 1: intro H; only 1: inversion_clear H; only 1: tauto).	27.0138151646	233503
-Coq.Bool.IfProp.IfProp_false	40	1.0.0.0.0.0.0.1	search with cache (only 1: intros; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: assumption).	0.0148119926453	20
-Coq.Bool.IfProp.IfProp_or	40	0.6.0.3.0	search with cache (only 1: destruct 1; only 1: left; only 1: exact H; only 1: right; only 1: trivial).	0.152266025543	423
+Coq.ssr.ssrbool.prop_congr	40	5	search with cache (only 1: Bool.destr_bool).	0.0105438232422	6
+Coq.ssr.ssrbool.is_true_true	40	8	search with cache (only 1: reflexivity).	0.00651693344116	9
+Coq.ssr.ssrbool.not_false_is_true	40	1	search with cache (only 1: discriminate).	0.00635099411011	2
+Coq.ssr.ssrbool.is_true_locked_true	40	0.0	search with cache (only 1: unlock; only 1: by [  ]).	0.00705409049988	2
+Coq.ssr.ssrbool.negbT	40	19	search with cache (only 1: Bool.destr_bool).	0.072566986084	308
+Coq.ssr.ssrbool.negbTE	40	0	search with cache (only 1: by case : {}b {}).	0.0081799030304	1
+Coq.ssr.ssrbool.negbF	40	0	search with cache (only 1: by case : {}b {}).	0.00823616981506	1
+Coq.ssr.ssrbool.negbFE	40	0	search with cache (only 1: by case : {}b {}).	0.00827383995056	1
+Coq.ssr.ssrbool.negbK	40	0.13	search with cache (only 1: intro H; only 1: Bool.destr_bool).	0.031142950058	75
+Coq.ssr.ssrbool.negbNE	40	0	search with cache (only 1: by case : {}b {}).	0.0070858001709	1
+Coq.ssr.ssrbool.negb_inj	40	0.10	search with cache (only 1: intro H; only 1: Bool.destr_bool).	0.0189859867096	42
+Coq.ssr.ssrbool.negbLR	40	4	search with cache (only 1: Bool.destr_bool).	0.0149869918823	5
+Coq.ssr.ssrbool.negbRL	40	5	search with cache (only 1: Bool.destr_bool).	0.0163729190826	6
+Coq.ssr.ssrbool.contra	40	3.7	search with cache (only 1: Bool.destr_bool; only 1: intuition).	0.0503787994385	38
+Coq.ssr.ssrbool.contraL	40	0	search with cache (only 1: by case : {}b {} =>//; case : {}c {}).	0.0127720832825	1
+Coq.ssr.ssrbool.contraR	40	0	search with cache (only 1: by case : {}b {} =>//; case : {}c {}).	0.0127789974213	1
+Coq.ssr.ssrbool.contraLR	40	0	search with cache (only 1: by case : {}b {} =>//; case : {}c {}).	0.0129299163818	1
+Coq.ssr.ssrbool.contraT	40	3.11	search with cache (only 1: Bool.destr_bool; only 1: intuition).	0.252510070801	97
+Coq.ssr.ssrbool.wlog_neg	40	1	search with cache (only 1: by case : {}b {} =>// {+}->).	0.0134630203247	2
+Coq.ssr.ssrbool.contraFT	40	5.20	search with cache (only 1: Bool.destr_bool; only 1: intuition).	0.836755990982	605
+Coq.ssr.ssrbool.contraFN	40	5.21	search with cache (only 1: Bool.destr_bool; only 1: intuition).	0.865513086319	633
+Coq.ssr.ssrbool.contraTF	40	6.12	search with cache (only 1: Bool.destr_bool; only 1: intuition).	0.4101998806	277
+Coq.ssr.ssrbool.contraNF	40	4.13	search with cache (only 1: Bool.destr_bool; only 1: intuition).	0.430681943893	212
+Coq.ssr.ssrbool.contraFF	40	4.13.34	search with cache (only 1: symmetry; only 1: Bool.destr_bool; only 1: intuition).	1.72543001175	4711
+Coq.ssr.ssrbool.ifP	40
+Coq.ssr.ssrbool.ifPn	40
+Coq.ssr.ssrbool.ifT	40	5	search with cache (only 1: by case : {}b {} =>// {+}->).	0.0169291496277	6
+Coq.ssr.ssrbool.ifF	40	1	search with cache (only 1: by move {+}->).	0.0097279548645	2
+Coq.ssr.ssrbool.ifN	40	2	search with cache (only 1: by case : {}b {}).	0.0128190517426	3
+Coq.ssr.ssrbool.if_same	40	1	search with cache (only 1: by case  def_b: {}b {}; constructor).	0.00923299789429	2
+Coq.ssr.ssrbool.if_neg	40	1	search with cache (only 1: by case  def_b: {}b {}; constructor; rewrite ?def_b).	0.00959992408752	2
+Coq.ssr.ssrbool.fun_if	40	0	search with cache (only 1: by case b).	0.00807189941406	1
+Coq.ssr.ssrbool.if_arg	40	1	search with cache (only 1: by case b).	0.00851106643677	2
+Coq.ssr.ssrbool.ifE	40	19	search with cache (only 1: trivial).	0.325559139252	165
+Coq.ssr.ssrbool.introNTF	40
+Coq.ssr.ssrbool.introTF	40	0	search with cache (only 1: by case c; case Hb).	0.0136108398438	1
+Coq.ssr.ssrbool.elimNTF	40	0	search with cache (only 1: by case c; case Hb).	0.0130078792572	1
+Coq.ssr.ssrbool.elimTF	40	0	search with cache (only 1: by case c; case Hb).	0.0134129524231	1
+Coq.ssr.ssrbool.equivPif	40
+Coq.ssr.ssrbool.xorPif	40	0.0.4	search with cache (only 1: destruct 1; only 1: by case Hb; auto; only 1: by case Hb; auto).	0.0218260288239	7
+Coq.ssr.ssrbool.introTFn	40
+Coq.ssr.ssrbool.elimTFn	40
+Coq.ssr.ssrsetoid.compat_Reflexive	40	0.2	search with cache (only 1: intros; only 1: tauto).	0.00944304466248	4
+Coq.ssr.ssrfun.unitE	40	9.3.4	search with cache (only 1: intro H; only 1: destruct H; only 1: reflexivity).	0.0451688766479	335
+Coq.ssr.ssrfun.frefl	40	5	search with cache (only 1: repeat split).	0.00567317008972	6
+Coq.ssr.ssrfun.fsym	40	0.8	search with cache (only 1: intros; only 1: by [  ]).	0.0107882022858	10
+Coq.ssr.ssrfun.ftrans	40
+Coq.ssr.ssrfun.rrefl	40	3	search with cache (only 1: repeat split).	0.00630211830139	4
+Coq.ssr.ssrfun.eq_comp	40
+Coq.ssr.ssrfun.all_tag	40
+Coq.ssr.ssrfun.all_tag2	40	0	search with cache (only 1: by move  {}=>fP; <ssreflect_plugin::ssrtclintros@0> exists (fun x => tag (fP x)) =>x; case : {}(fP x) {}).	0.0121760368347	1
+Coq.ssr.ssrfun.svalP	40
+Coq.ssr.ssrfun.s2valP	40	2	search with cache (only 1: by case : {}u {}).	0.00796008110046	3
+Coq.ssr.ssrfun.s2valP'	40	0	search with cache (only 1: by case : {}u {}).	0.00765609741211	1
+Coq.ssr.ssrfun.all_sig	40
+Coq.ssr.ssrfun.all_sig2	40	1	search with cache (only 1: by move  {}=>fP; <ssreflect_plugin::ssrtclintros@0> exists (fun x => tag (fP x)) =>x; case : {}(fP x) {}).	0.0180978775024	2
+Coq.ssr.ssrfun.can_pcan	40
+Coq.ssr.ssrfun.pcan_inj	40
+Coq.ssr.ssrfun.can_inj	40
+Coq.ssr.ssrfun.canLR	40	3.6.19	search with cache (only 1: intros; only 1: elim eq_sym with (1 := H0); only 1: trivial).	0.253998041153	958
+Coq.ssr.ssrfun.canRL	40
+Coq.ssr.ssrfun.Some_inj	40	0.5.18	search with cache (only 1: intros n m; only 1: inversion 1; only 1: trivial).	0.453058004379	818
+Coq.ssr.ssrfun.of_voidK	40	3.6	search with cache (only 1: intro H; only 1: tauto).	0.0155308246613	24
+Coq.ssr.ssrfun.esymK	40
+Coq.ssr.ssrfun.etrans_id	40
+Coq.ssr.ssrfun.inj_id	40	3.16	search with cache (only 1: intro x; only 1: trivial).	0.0529999732971	193
+Coq.ssr.ssrfun.inj_can_sym	40	12.18.33	search with cache (only 1: intro p; only 1: intros H ?; only 1: auto).	1.78236603737	7466
+Coq.ssr.ssrfun.inj_comp	40	31.36	search with cache (only 1: intros ? ? ? Fl Fr; only 1: auto).	1.44336700439	6950
+Coq.ssr.ssrfun.inj_compr	40
+Coq.ssr.ssrfun.can_comp	40
+Coq.ssr.ssrunder.Under_rel.Under_rel_from_rel	40	8.0	search with cache (only 1: intro H; only 1: trivial).	0.00662589073181	17
+Coq.ssr.ssrunder.Under_rel.Under_relE	40	0	search with cache (only 1: now trivial).	0.00389194488525	1
+Coq.ssr.ssrunder.Under_rel.over_rel	40	1	search with cache (only 1: trivial).	0.0100018978119	2
+Coq.ssr.ssrunder.Under_rel.over_rel_done	40	0.1.3.7	search with cache (only 1: red; only 1: intro H; only 1: intro z; only 1: now trivial).	0.0184299945831	113
+Coq.ssr.ssrunder.Under_rel.under_rel_done	40	0	search with cache (only 1: now unfold Over_rel).	0.00520205497742	1
+Coq.Setoids.Setoid.Seq_refl	40	7.4	search with cache (only 1: simpl_relation; only 1: firstorder).	0.0493848323822	73
+Coq.Setoids.Setoid.Seq_sym	40	4.0.0	search with cache (only 1: unfold Setoid_Theory in s; only 1: intros; only 1: now transitivity y).	0.0128951072693	14
+Coq.Setoids.Setoid.Seq_trans	40	9.0	search with cache (only 1: unfold Setoid_Theory in s; only 1: firstorder).	0.146040201187	202
+Coq.Setoids.Setoid.gen_st	40	8	search with cache (only 1: simpl_relation).	0.0125260353088	22
+Coq.Bool.IfProp.Iftrue_inv	40	2.0.2	search with cache (only 1: destruct 1; only 1: tauto; only 1: discriminate).	0.0278220176697	75
+Coq.Bool.IfProp.Iffalse_inv	40	2.2.1.0.0	search with cache (only 1: destruct 1; only 1: intros; only 1: case diff_true_false; only 1: auto with bool; only 1: auto with bool).	0.0103271007538	13
+Coq.Bool.IfProp.IfProp_true	40	0.34.2.51	search with cache (only 1: intros h1 h2; only 1: intro H; only 1: inversion_clear H; only 1: tauto).	28.5825121403	233503
+Coq.Bool.IfProp.IfProp_false	40	1.0.0.0.0.0.0.1	search with cache (only 1: intros; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: inversion H; only 1: assumption).	0.0155580043793	20
+Coq.Bool.IfProp.IfProp_or	40	0.6.0.3.0	search with cache (only 1: destruct 1; only 1: left; only 1: exact H; only 1: right; only 1: trivial).	0.153254985809	423
 Coq.Bool.IfProp.IfProp_sum	40
-Coq.Bool.DecBool.ifdec_left	40	0.0.5.1	search with cache (only 1: unfold not; only 1: destruct H; only 1: reflexivity; only 1: contradiction).	0.0141291618347	46
-Coq.Bool.DecBool.ifdec_right	40	0.4.1.0.0	search with cache (only 1: intros; only 1: case H; only 1: intro; only 1: contradiction; only 1: auto).	0.0135431289673	18
-Coq.Bool.Sumbool.sumbool_of_bool	40	3.3.13.0	search with cache (only 1: intro H; only 1: destruct H; only 1: auto; only 1: auto).	0.0809900760651	695
-Coq.Bool.Sumbool.bool_eq_rec	40	3.3.3	search with cache (only 1: destruct b; only 1: auto; only 1: auto).	0.0240108966827	165
-Coq.Bool.Sumbool.bool_eq_ind	40	0.0.0	search with cache (only 1: destruct b; only 1: auto; only 1: auto).	0.00473594665527	3
-Coq.Bool.Sumbool.sumbool_and	40	9.9.9.27.14	search with cache (only 1: destruct H2; only 1: elim H1; only 1: auto; only 1: auto; only 1: auto).	3.19127082825	42076
-Coq.Bool.Sumbool.sumbool_or	40	2.2.1.2.0	search with cache (only 1: case H1; only 1: auto; only 1: case H2; only 1: auto; only 1: auto).	1.85510897636	4050
-Coq.Bool.Sumbool.sumbool_not	40	2.2.0	search with cache (only 1: case H1; only 1: auto; only 1: auto).	0.195181131363	384
+Coq.Bool.DecBool.ifdec_left	40	0.0.5.1	search with cache (only 1: unfold not; only 1: destruct H; only 1: reflexivity; only 1: contradiction).	0.0138659477234	46
+Coq.Bool.DecBool.ifdec_right	40	0.4.1.0.0	search with cache (only 1: intros; only 1: case H; only 1: intro; only 1: contradiction; only 1: auto).	0.0127379894257	18
+Coq.Bool.Sumbool.sumbool_of_bool	40	3.3.13.0	search with cache (only 1: intro H; only 1: destruct H; only 1: auto; only 1: auto).	0.0808110237122	695
+Coq.Bool.Sumbool.bool_eq_rec	40	3.3.3	search with cache (only 1: destruct b; only 1: auto; only 1: auto).	0.0260770320892	165
+Coq.Bool.Sumbool.bool_eq_ind	40	0.0.0	search with cache (only 1: destruct b; only 1: auto; only 1: auto).	0.0105619430542	3
+Coq.Bool.Sumbool.sumbool_and	40	9.9.9.27.14	search with cache (only 1: destruct H2; only 1: elim H1; only 1: auto; only 1: auto; only 1: auto).	3.36897206306	42076
+Coq.Bool.Sumbool.sumbool_or	40	2.2.1.2.0	search with cache (only 1: case H1; only 1: auto; only 1: case H2; only 1: auto; only 1: auto).	2.00021004677	4050
+Coq.Bool.Sumbool.sumbool_not	40	2.2.0	search with cache (only 1: case H1; only 1: auto; only 1: auto).	0.203933000565	384
 Coq.Bool.Sumbool.bool_of_sumbool	40
 Coq.Bool.Bool.bool_dec	40
-Coq.Bool.Bool.diff_true_false	40	10.0	search with cache (only 1: intro H; only 1: discriminate).	0.0088050365448	52
-Coq.Bool.Bool.diff_false_true	40	0	search with cache (only 1: discriminate).	0.00383877754211	1
-Coq.Bool.Bool.eq_true_false_abs	40	3.3.19.0	search with cache (only 1: intro H; only 1: destruct H; only 1: discriminate; only 1: discriminate).	0.37003993988	3360
-Coq.Bool.Bool.not_true_is_false	40	1.13.4	search with cache (only 1: destr_bool; only 1: reflexivity || destruct H; only 1: repeat split).	0.114195823669	647
-Coq.Bool.Bool.not_false_is_true	40	1.0	search with cache (only 1: destr_bool; only 1: intuition).	0.00681018829346	3
-Coq.Bool.Bool.not_true_iff_false	40	1.1.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.00973796844482	5
-Coq.Bool.Bool.not_false_iff_true	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0104880332947	3
-Coq.Bool.Bool.leb_implb	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0122680664062	5
-Coq.Bool.Bool.eqb_subst	40	2.0.0	search with cache (only 1: intro H; only 1: intro z; only 1: destr_bool).	0.0127511024475	13
-Coq.Bool.Bool.eqb_reflx	40	0	search with cache (only 1: destr_bool).	0.00622510910034	1
-Coq.Bool.Bool.eqb_prop	40	0	search with cache (only 1: destr_bool).	0.00804400444031	1
-Coq.Bool.Bool.eqb_true_iff	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0136110782623	5
-Coq.Bool.Bool.eqb_false_iff	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0175750255585	5
-Coq.Bool.Bool.negb_orb	40	3	search with cache (only 1: destr_bool).	0.0229239463806	55
-Coq.Bool.Bool.negb_andb	40	0	search with cache (only 1: destr_bool).	0.00875496864319	1
-Coq.Bool.Bool.negb_involutive	40	0	search with cache (only 1: destr_bool).	0.00724601745605	1
-Coq.Bool.Bool.negb_involutive_reverse	40	0	search with cache (only 1: destr_bool).	0.00654006004333	1
-Coq.Bool.Bool.negb_sym	40	0	search with cache (only 1: destr_bool).	0.00755095481873	1
-Coq.Bool.Bool.no_fixpoint_negb	40	0	search with cache (only 1: destr_bool).	0.00720596313477	1
-Coq.Bool.Bool.eqb_negb1	40	0	search with cache (only 1: destr_bool).	0.00670099258423	1
-Coq.Bool.Bool.eqb_negb2	40	0	search with cache (only 1: destr_bool).	0.00700783729553	1
-Coq.Bool.Bool.if_negb	40	0	search with cache (only 1: destr_bool).	0.00775504112244	1
-Coq.Bool.Bool.negb_true_iff	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0110859870911	3
-Coq.Bool.Bool.negb_false_iff	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0119979381561	3
-Coq.Bool.Bool.orb_true_iff	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0197350978851	5
-Coq.Bool.Bool.orb_false_iff	40	0.0.5.3	search with cache (only 1: intuition; only 1: destr_bool; only 1: destr_bool; only 1: destr_bool).	0.181431055069	189
-Coq.Bool.Bool.orb_true_elim	40	2.2.4.0	search with cache (only 1: destr_bool; only 1: auto; only 1: auto; only 1: auto).	0.0596699714661	121
-Coq.Bool.Bool.orb_prop	40	0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition).	0.0143010616302	4
-Coq.Bool.Bool.orb_true_intro	40	0.1.0	search with cache (only 1: intros; only 1: destr_bool; only 1: intuition).	0.0122668743134	4
-Coq.Bool.Bool.orb_false_intro	40	0	search with cache (only 1: destr_bool).	0.00941514968872	1
-Coq.Bool.Bool.orb_false_elim	40	2.0	search with cache (only 1: destr_bool; only 1: repeat split).	0.011607170105	4
-Coq.Bool.Bool.orb_diag	40	4.0	search with cache (only 1: intros; only 1: destr_bool).	0.009605884552	6
-Coq.Bool.Bool.orb_true_r	40	2.1.0.1.1	search with cache (only 1: intros; only 1: apply orb_true_iff; only 1: apply orb_true_iff; only 1: apply orb_true_iff; only 1: intuition).	0.0155620574951	12
-Coq.Bool.Bool.orb_true_l	40	0	search with cache (only 1: destr_bool).	0.00876402854919	1
-Coq.Bool.Bool.orb_false_r	40	5.1	search with cache (only 1: intros; only 1: destr_bool).	0.00929188728333	8
-Coq.Bool.Bool.orb_false_l	40	0	search with cache (only 1: destr_bool).	0.00768709182739	1
-Coq.Bool.Bool.orb_negb_r	40	0	search with cache (only 1: destr_bool).	0.00824189186096	1
-Coq.Bool.Bool.orb_comm	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.0139830112457	7
-Coq.Bool.Bool.orb_assoc	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.0173580646515	7
-Coq.Bool.Bool.andb_true_iff	40	0.0.0.0.6	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.264750003815	266
-Coq.Bool.Bool.andb_false_iff	40	0.0.0.0.1	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.112310886383	25
-Coq.Bool.Bool.andb_true_eq	40	0.2	search with cache (only 1: destr_bool; only 1: repeat split).	0.117921113968	107
-Coq.Bool.Bool.andb_false_intro1	40	1	search with cache (only 1: destr_bool).	0.0859889984131	19
-Coq.Bool.Bool.andb_false_intro2	40	0.0.0	search with cache (only 1: intros; only 1: apply andb_false_iff; only 1: auto).	0.082640171051	3
-Coq.Bool.Bool.andb_false_r	40	1.2.1	search with cache (only 1: intros; only 1: apply andb_false_iff; only 1: intuition).	0.0149400234222	7
-Coq.Bool.Bool.andb_false_l	40	1	search with cache (only 1: destr_bool).	0.0092089176178	2
-Coq.Bool.Bool.andb_diag	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.0107200145721	7
-Coq.Bool.Bool.andb_true_r	40	2	search with cache (only 1: destr_bool).	0.00955700874329	3
-Coq.Bool.Bool.andb_true_l	40	1	search with cache (only 1: destr_bool).	0.00876712799072	2
-Coq.Bool.Bool.andb_false_elim	40	0.0.0.5.0	search with cache (only 1: intros; only 1: destr_bool; only 1: auto; only 1: auto; only 1: auto).	0.0179557800293	10
-Coq.Bool.Bool.andb_negb_r	40	0	search with cache (only 1: destr_bool).	0.00999689102173	1
-Coq.Bool.Bool.andb_comm	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.0155181884766	7
-Coq.Bool.Bool.andb_assoc	40	3.2.2	search with cache (only 1: destruct b2; only 1: destr_bool; only 1: destr_bool).	0.0181450843811	10
-Coq.Bool.Bool.andb_orb_distrib_r	40	0	search with cache (only 1: destr_bool).	0.0156528949738	1
-Coq.Bool.Bool.andb_orb_distrib_l	40	0	search with cache (only 1: destr_bool).	0.0154900550842	1
-Coq.Bool.Bool.orb_andb_distrib_r	40	0	search with cache (only 1: destr_bool).	0.0156049728394	1
-Coq.Bool.Bool.orb_andb_distrib_l	40	0	search with cache (only 1: destr_bool).	0.0153641700745	1
-Coq.Bool.Bool.absorption_andb	40	0	search with cache (only 1: destr_bool).	0.0115439891815	1
-Coq.Bool.Bool.absorption_orb	40	0	search with cache (only 1: destr_bool).	0.0111770629883	1
-Coq.Bool.Bool.xorb_false_r	40	0	search with cache (only 1: destr_bool).	0.00930309295654	1
-Coq.Bool.Bool.xorb_false_l	40	0	search with cache (only 1: destr_bool).	0.00902700424194	1
-Coq.Bool.Bool.xorb_true_r	40	0	search with cache (only 1: destr_bool).	0.00866413116455	1
-Coq.Bool.Bool.xorb_true_l	40	0	search with cache (only 1: reflexivity).	0.00686001777649	1
-Coq.Bool.Bool.xorb_nilpotent	40	0	search with cache (only 1: destr_bool).	0.00975179672241	1
-Coq.Bool.Bool.xorb_comm	40	1	search with cache (only 1: destr_bool).	0.0107769966125	2
-Coq.Bool.Bool.xorb_assoc_reverse	40	0	search with cache (only 1: destr_bool).	0.0155348777771	1
-Coq.Bool.Bool.xorb_eq	40	0	search with cache (only 1: destr_bool).	0.0123431682587	1
-Coq.Bool.Bool.xorb_move_l_r_1	40	0	search with cache (only 1: destr_bool).	0.0164189338684	1
-Coq.Bool.Bool.xorb_move_l_r_2	40	0	search with cache (only 1: destr_bool).	0.0164730548859	1
-Coq.Bool.Bool.xorb_move_r_l_1	40	0	search with cache (only 1: destr_bool).	0.0164868831635	1
-Coq.Bool.Bool.xorb_move_r_l_2	40	0	search with cache (only 1: destr_bool).	0.0163149833679	1
-Coq.Bool.Bool.negb_xorb_l	40	1	search with cache (only 1: destr_bool).	0.011757850647	2
-Coq.Bool.Bool.negb_xorb_r	40	0.0.0.0.0	search with cache (only 1: destruct b, b'; only 1: trivial; only 1: trivial; only 1: trivial; only 1: trivial).	0.0125319957733	5
-Coq.Bool.Bool.xorb_negb_negb	40	0.0.0.0.0	search with cache (only 1: destruct b, b'; only 1: trivial; only 1: trivial; only 1: trivial; only 1: trivial).	0.0129060745239	5
-Coq.Bool.Bool.eq_iff_eq_true	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0408501625061	5
-Coq.Bool.Bool.eq_true_iff_eq	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0199408531189	3
-Coq.Bool.Bool.eq_true_negb_classical	40	1.0	search with cache (only 1: destr_bool; only 1: intuition).	0.0118749141693	3
-Coq.Bool.Bool.eq_true_not_negb	40	1.0	search with cache (only 1: destr_bool; only 1: intuition).	0.0123400688171	3
-Coq.Bool.Bool.absurd_eq_bool	40	8.1	search with cache (only 1: intros; only 1: intuition).	0.0343580245972	56
-Coq.Bool.Bool.absurd_eq_true	40	5.0	search with cache (only 1: destr_bool; only 1: intuition).	0.00997710227966	7
-Coq.Bool.Bool.trans_eq_bool	40	4	search with cache (only 1: destr_bool).	0.0146420001984	14
-Coq.Bool.Bool.Is_true_eq_true	40	5.3	search with cache (only 1: destr_bool; only 1: intuition).	0.0122089385986	10
-Coq.Bool.Bool.Is_true_eq_left	40	0	search with cache (only 1: destr_bool).	0.00910091400146	1
-Coq.Bool.Bool.Is_true_eq_right	40	0.0.0	search with cache (only 1: intros; only 1: subst; only 1: auto with bool).	0.00953888893127	3
-Coq.Bool.Bool.eqb_refl	40	0	search with cache (only 1: destr_bool).	0.00780582427979	1
-Coq.Bool.Bool.eqb_eq	40	0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.0159001350403	3
-Coq.Bool.Bool.orb_prop_elim	40	2.6.1.1.4.2	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto; only 1: tauto; only 1: left; only 1: destruct H).	0.356117963791	1005
-Coq.Bool.Bool.orb_prop_intro	40	0.0	search with cache (only 1: destr_bool; only 1: tauto).	0.0120911598206	2
-Coq.Bool.Bool.andb_prop_intro	40	1.0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto; only 1: tauto).	0.0128569602966	5
-Coq.Bool.Bool.andb_prop_elim	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto; only 1: tauto; only 1: tauto).	0.0157859325409	5
-Coq.Bool.Bool.eq_bool_prop_intro	40	0.0.1	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0345511436462	18
-Coq.Bool.Bool.eq_bool_prop_elim	40	0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.0160400867462	3
-Coq.Bool.Bool.negb_prop_elim	40	0.0.0	search with cache (only 1: destr_bool; only 1: auto; only 1: auto).	0.0109469890594	3
-Coq.Bool.Bool.negb_prop_intro	40	0.0	search with cache (only 1: destr_bool; only 1: tauto).	0.0107231140137	2
-Coq.Bool.Bool.negb_prop_classical	40	0.0	search with cache (only 1: destr_bool; only 1: tauto).	0.0101430416107	2
-Coq.Bool.Bool.negb_prop_involutive	40	0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.0115480422974	3
-Coq.Bool.Bool.andb_if	40	0	search with cache (only 1: destr_bool).	0.0116980075836	1
-Coq.Bool.Bool.negb_if	40	0	search with cache (only 1: destr_bool).	0.00998711585999	1
-Coq.Bool.Bool.andb_lazy_alt	40	2.0	search with cache (only 1: intros; only 1: reflexivity).	0.00810289382935	4
-Coq.Bool.Bool.orb_lazy_alt	40	0.0	search with cache (only 1: intros; only 1: trivial).	0.00910615921021	2
-Coq.Bool.Bool.reflect_iff	40	1.0.0.19.3	search with cache (only 1: intros; only 1: destruct H; only 1: intuition; only 1: intuition; only 1: destr_bool).	1.19571399689	3125
-Coq.Bool.Bool.iff_reflect	40	0.0.1	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0207259654999	13
-Coq.Bool.Bool.reflect_dec	40	3.3.10.0	search with cache (only 1: intros; only 1: destruct H; only 1: auto; only 1: auto).	0.840500831604	1240
-Coq.Bool.Bool.eqb_spec	40	0.0.0.0.9	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0410659313202	70
-Coq.Bool.BoolEq.beq_eq_true	40	6.3	search with cache (only 1: destruct 1; only 1: destr_bool).	0.0292370319366	89
+Coq.Bool.Bool.diff_true_false	40	10.0	search with cache (only 1: intro H; only 1: discriminate).	0.00894618034363	52
+Coq.Bool.Bool.diff_false_true	40	0	search with cache (only 1: discriminate).	0.00394511222839	1
+Coq.Bool.Bool.eq_true_false_abs	40	3.3.19.0	search with cache (only 1: intro H; only 1: destruct H; only 1: discriminate; only 1: discriminate).	0.3734998703	3360
+Coq.Bool.Bool.not_true_is_false	40	1.13.4	search with cache (only 1: destr_bool; only 1: reflexivity || destruct H; only 1: repeat split).	0.114403009415	647
+Coq.Bool.Bool.not_false_is_true	40	1.0	search with cache (only 1: destr_bool; only 1: intuition).	0.00696301460266	3
+Coq.Bool.Bool.not_true_iff_false	40	1.1.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0096960067749	5
+Coq.Bool.Bool.not_false_iff_true	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0103650093079	3
+Coq.Bool.Bool.leb_implb	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0118229389191	5
+Coq.Bool.Bool.eqb_subst	40	2.0.0	search with cache (only 1: intro H; only 1: intro z; only 1: destr_bool).	0.0124359130859	13
+Coq.Bool.Bool.eqb_reflx	40	0	search with cache (only 1: destr_bool).	0.00608587265015	1
+Coq.Bool.Bool.eqb_prop	40	0	search with cache (only 1: destr_bool).	0.00812792778015	1
+Coq.Bool.Bool.eqb_true_iff	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.012983083725	5
+Coq.Bool.Bool.eqb_false_iff	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0170350074768	5
+Coq.Bool.Bool.negb_orb	40	3	search with cache (only 1: destr_bool).	0.0217621326447	55
+Coq.Bool.Bool.negb_andb	40	0	search with cache (only 1: destr_bool).	0.00831508636475	1
+Coq.Bool.Bool.negb_involutive	40	0	search with cache (only 1: destr_bool).	0.00692510604858	1
+Coq.Bool.Bool.negb_involutive_reverse	40	0	search with cache (only 1: destr_bool).	0.00670289993286	1
+Coq.Bool.Bool.negb_sym	40	0	search with cache (only 1: destr_bool).	0.0083270072937	1
+Coq.Bool.Bool.no_fixpoint_negb	40	0	search with cache (only 1: destr_bool).	0.00756883621216	1
+Coq.Bool.Bool.eqb_negb1	40	0	search with cache (only 1: destr_bool).	0.00731110572815	1
+Coq.Bool.Bool.eqb_negb2	40	0	search with cache (only 1: destr_bool).	0.00754499435425	1
+Coq.Bool.Bool.if_negb	40	0	search with cache (only 1: destr_bool).	0.00747179985046	1
+Coq.Bool.Bool.negb_true_iff	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0117778778076	3
+Coq.Bool.Bool.negb_false_iff	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0117959976196	3
+Coq.Bool.Bool.orb_true_iff	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0199780464172	5
+Coq.Bool.Bool.orb_false_iff	40	0.0.5.3	search with cache (only 1: intuition; only 1: destr_bool; only 1: destr_bool; only 1: destr_bool).	0.18297290802	189
+Coq.Bool.Bool.orb_true_elim	40	2.2.4.0	search with cache (only 1: destr_bool; only 1: auto; only 1: auto; only 1: auto).	0.0608351230621	121
+Coq.Bool.Bool.orb_prop	40	0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition).	0.0147979259491	4
+Coq.Bool.Bool.orb_true_intro	40	0.1.0	search with cache (only 1: intros; only 1: destr_bool; only 1: intuition).	0.0137238502502	4
+Coq.Bool.Bool.orb_false_intro	40	0	search with cache (only 1: destr_bool).	0.0100810527802	1
+Coq.Bool.Bool.orb_false_elim	40	2.0	search with cache (only 1: destr_bool; only 1: repeat split).	0.0124502182007	4
+Coq.Bool.Bool.orb_diag	40	4.0	search with cache (only 1: intros; only 1: destr_bool).	0.0100049972534	6
+Coq.Bool.Bool.orb_true_r	40	2.1.0.1.1	search with cache (only 1: intros; only 1: apply orb_true_iff; only 1: apply orb_true_iff; only 1: apply orb_true_iff; only 1: intuition).	0.0165209770203	12
+Coq.Bool.Bool.orb_true_l	40	0	search with cache (only 1: destr_bool).	0.00824284553528	1
+Coq.Bool.Bool.orb_false_r	40	5.1	search with cache (only 1: intros; only 1: destr_bool).	0.010852098465	8
+Coq.Bool.Bool.orb_false_l	40	0	search with cache (only 1: destr_bool).	0.00847315788269	1
+Coq.Bool.Bool.orb_negb_r	40	0	search with cache (only 1: destr_bool).	0.00854706764221	1
+Coq.Bool.Bool.orb_comm	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.0135390758514	7
+Coq.Bool.Bool.orb_assoc	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.0166342258453	7
+Coq.Bool.Bool.andb_true_iff	40	0.0.0.0.6	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.2613260746	266
+Coq.Bool.Bool.andb_false_iff	40	0.0.0.0.1	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.112239122391	25
+Coq.Bool.Bool.andb_true_eq	40	0.2	search with cache (only 1: destr_bool; only 1: repeat split).	0.119204998016	107
+Coq.Bool.Bool.andb_false_intro1	40	1	search with cache (only 1: destr_bool).	0.0844099521637	19
+Coq.Bool.Bool.andb_false_intro2	40	0.0.0	search with cache (only 1: intros; only 1: apply andb_false_iff; only 1: auto).	0.00999188423157	3
+Coq.Bool.Bool.andb_false_r	40	1.2.1	search with cache (only 1: intros; only 1: apply andb_false_iff; only 1: intuition).	0.0148251056671	7
+Coq.Bool.Bool.andb_false_l	40	1	search with cache (only 1: destr_bool).	0.00929403305054	2
+Coq.Bool.Bool.andb_diag	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.011265039444	7
+Coq.Bool.Bool.andb_true_r	40	2	search with cache (only 1: destr_bool).	0.00933194160461	3
+Coq.Bool.Bool.andb_true_l	40	1	search with cache (only 1: destr_bool).	0.00939202308655	2
+Coq.Bool.Bool.andb_false_elim	40	0.0.0.5.0	search with cache (only 1: intros; only 1: destr_bool; only 1: auto; only 1: auto; only 1: auto).	0.0185718536377	10
+Coq.Bool.Bool.andb_negb_r	40	0	search with cache (only 1: destr_bool).	0.00935792922974	1
+Coq.Bool.Bool.andb_comm	40	5.0	search with cache (only 1: intros; only 1: destr_bool).	0.0159060955048	7
+Coq.Bool.Bool.andb_assoc	40	3.2.2	search with cache (only 1: destruct b2; only 1: destr_bool; only 1: destr_bool).	0.018452167511	10
+Coq.Bool.Bool.andb_orb_distrib_r	40	0	search with cache (only 1: destr_bool).	0.0160088539124	1
+Coq.Bool.Bool.andb_orb_distrib_l	40	0	search with cache (only 1: destr_bool).	0.01518201828	1
+Coq.Bool.Bool.orb_andb_distrib_r	40	0	search with cache (only 1: destr_bool).	0.0152630805969	1
+Coq.Bool.Bool.orb_andb_distrib_l	40	0	search with cache (only 1: destr_bool).	0.0152568817139	1
+Coq.Bool.Bool.absorption_andb	40	0	search with cache (only 1: destr_bool).	0.011971950531	1
+Coq.Bool.Bool.absorption_orb	40	0	search with cache (only 1: destr_bool).	0.0111649036407	1
+Coq.Bool.Bool.xorb_false_r	40	0	search with cache (only 1: destr_bool).	0.00918412208557	1
+Coq.Bool.Bool.xorb_false_l	40	0	search with cache (only 1: destr_bool).	0.00933313369751	1
+Coq.Bool.Bool.xorb_true_r	40	0	search with cache (only 1: destr_bool).	0.00929117202759	1
+Coq.Bool.Bool.xorb_true_l	40	0	search with cache (only 1: reflexivity).	0.00857305526733	1
+Coq.Bool.Bool.xorb_nilpotent	40	0	search with cache (only 1: destr_bool).	0.00925707817078	1
+Coq.Bool.Bool.xorb_comm	40	1	search with cache (only 1: destr_bool).	0.0112459659576	2
+Coq.Bool.Bool.xorb_assoc_reverse	40	0	search with cache (only 1: destr_bool).	0.0148780345917	1
+Coq.Bool.Bool.xorb_eq	40	0	search with cache (only 1: destr_bool).	0.0119771957397	1
+Coq.Bool.Bool.xorb_move_l_r_1	40	0	search with cache (only 1: destr_bool).	0.0164268016815	1
+Coq.Bool.Bool.xorb_move_l_r_2	40	0	search with cache (only 1: destr_bool).	0.0173289775848	1
+Coq.Bool.Bool.xorb_move_r_l_1	40	0	search with cache (only 1: destr_bool).	0.0156090259552	1
+Coq.Bool.Bool.xorb_move_r_l_2	40	0	search with cache (only 1: destr_bool).	0.0163497924805	1
+Coq.Bool.Bool.negb_xorb_l	40	1	search with cache (only 1: destr_bool).	0.0111880302429	2
+Coq.Bool.Bool.negb_xorb_r	40	0.0.0.0.0	search with cache (only 1: destruct b, b'; only 1: trivial; only 1: trivial; only 1: trivial; only 1: trivial).	0.0126459598541	5
+Coq.Bool.Bool.xorb_negb_negb	40	0.0.0.0.0	search with cache (only 1: destruct b, b'; only 1: trivial; only 1: trivial; only 1: trivial; only 1: trivial).	0.0145518779755	5
+Coq.Bool.Bool.eq_iff_eq_true	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0397529602051	5
+Coq.Bool.Bool.eq_true_iff_eq	40	0.0.0	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0206520557404	3
+Coq.Bool.Bool.eq_true_negb_classical	40	1.0	search with cache (only 1: destr_bool; only 1: intuition).	0.0122010707855	3
+Coq.Bool.Bool.eq_true_not_negb	40	1.0	search with cache (only 1: destr_bool; only 1: intuition).	0.0122520923615	3
+Coq.Bool.Bool.absurd_eq_bool	40	8.1	search with cache (only 1: intros; only 1: intuition).	0.0354759693146	56
+Coq.Bool.Bool.absurd_eq_true	40	5.0	search with cache (only 1: destr_bool; only 1: intuition).	0.0117630958557	7
+Coq.Bool.Bool.trans_eq_bool	40	4	search with cache (only 1: destr_bool).	0.0176689624786	14
+Coq.Bool.Bool.Is_true_eq_true	40	5.3	search with cache (only 1: destr_bool; only 1: intuition).	0.0119528770447	10
+Coq.Bool.Bool.Is_true_eq_left	40	0	search with cache (only 1: destr_bool).	0.00959801673889	1
+Coq.Bool.Bool.Is_true_eq_right	40	0.0.0	search with cache (only 1: intros; only 1: subst; only 1: auto with bool).	0.00975584983826	3
+Coq.Bool.Bool.eqb_refl	40	0	search with cache (only 1: destr_bool).	0.00901198387146	1
+Coq.Bool.Bool.eqb_eq	40	0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.0147747993469	3
+Coq.Bool.Bool.orb_prop_elim	40	2.6.1.1.4.2	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto; only 1: tauto; only 1: left; only 1: destruct H).	0.357087135315	1005
+Coq.Bool.Bool.orb_prop_intro	40	0.0	search with cache (only 1: destr_bool; only 1: tauto).	0.0130341053009	2
+Coq.Bool.Bool.andb_prop_intro	40	1.0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto; only 1: tauto).	0.0151619911194	5
+Coq.Bool.Bool.andb_prop_elim	40	0.0.0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto; only 1: tauto; only 1: tauto).	0.0168888568878	5
+Coq.Bool.Bool.eq_bool_prop_intro	40	0.0.1	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0335040092468	18
+Coq.Bool.Bool.eq_bool_prop_elim	40	0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.0157480239868	3
+Coq.Bool.Bool.negb_prop_elim	40	0.0.0	search with cache (only 1: destr_bool; only 1: auto; only 1: auto).	0.0110931396484	3
+Coq.Bool.Bool.negb_prop_intro	40	0.0	search with cache (only 1: destr_bool; only 1: tauto).	0.011057138443	2
+Coq.Bool.Bool.negb_prop_classical	40	0.0	search with cache (only 1: destr_bool; only 1: tauto).	0.0113778114319	2
+Coq.Bool.Bool.negb_prop_involutive	40	0.0.0	search with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.0113899707794	3
+Coq.Bool.Bool.andb_if	40	0	search with cache (only 1: destr_bool).	0.0120368003845	1
+Coq.Bool.Bool.negb_if	40	0	search with cache (only 1: destr_bool).	0.00961899757385	1
+Coq.Bool.Bool.andb_lazy_alt	40	2.0	search with cache (only 1: intros; only 1: reflexivity).	0.00895810127258	4
+Coq.Bool.Bool.orb_lazy_alt	40	0.0	search with cache (only 1: intros; only 1: trivial).	0.00883603096008	2
+Coq.Bool.Bool.reflect_iff	40	1.0.0.19.3	search with cache (only 1: intros; only 1: destruct H; only 1: intuition; only 1: intuition; only 1: destr_bool).	1.21078515053	3125
+Coq.Bool.Bool.iff_reflect	40	0.0.1	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.0223059654236	13
+Coq.Bool.Bool.reflect_dec	40	3.3.10.0	search with cache (only 1: intros; only 1: destruct H; only 1: auto; only 1: auto).	0.842895030975	1240
+Coq.Bool.Bool.eqb_spec	40	0.0.0.0.9	search with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.0447509288788	70
+Coq.Bool.BoolEq.beq_eq_true	40	6.3	search with cache (only 1: destruct 1; only 1: destr_bool).	0.050215959549	89
 Coq.Bool.BoolEq.beq_eq_not_false	40
 Coq.Bool.BoolEq.beq_false_not_eq	40
 Coq.Bool.BoolEq.exists_beq_eq	40
-Coq.Bool.BoolEq.not_eq_false_beq	40	12.2.8.25.13.25	search with cache (only 1: intro x; only 1: intros h1 h2; only 1: apply eq_iff_eq_true; only 1: constructor; only 1: discriminate; only 1: intuition).	20.5377471447	136284
+Coq.Bool.BoolEq.not_eq_false_beq	40	12.2.8.25.13.25	search with cache (only 1: intro x; only 1: intros h1 h2; only 1: apply eq_iff_eq_true; only 1: constructor; only 1: discriminate; only 1: intuition).	21.0675830841	136284
 Coq.Bool.BoolEq.eq_dec	40
-Coq.Lists.Streams.unfold_Stream	40	2.53	search with cache (only 1: intros [Hl Hr]; only 1: trivial).	0.514573812485	5578
-Coq.Lists.Streams.tl_nth_tl	40	0.5.0.2	search with cache (only 1: induction n; only 1: trivial; only 1: simpl; only 1: trivial).	0.0258901119232	69
+Coq.Lists.Streams.unfold_Stream	40	2.53	search with cache (only 1: intros [Hl Hr]; only 1: trivial).	0.492165088654	5578
+Coq.Lists.Streams.tl_nth_tl	40	0.5.0.2	search with cache (only 1: induction n; only 1: trivial; only 1: simpl; only 1: trivial).	0.0270180702209	69
 Coq.Lists.Streams.Str_nth_tl_plus	40
 Coq.Lists.Streams.Str_nth_plus	40
 Coq.Lists.Streams.EqSt_reflex	40
-Coq.Lists.Streams.sym_EqSt	40	4.2.4.3	search with cache (only 1: intros; only 1: destruct H; only 1: coinduction ltac:(EqSt_reflex); only 1: auto with datatypes).	0.16149187088	720
+Coq.Lists.Streams.sym_EqSt	40	4.2.4.3	search with cache (only 1: intros; only 1: destruct H; only 1: coinduction ltac:(EqSt_reflex); only 1: auto with datatypes).	0.165583133698	720
 Coq.Lists.Streams.trans_EqSt	40
-Coq.Lists.Streams.eqst_ntheq	40	4.5.0.0.2.1.0.2.7.0	search with cache (only 1: unfold Str_nth; only 1: simple induction n; only 1: simpl; only 1: intros; only 1: case H; only 1: trivial with datatypes; only 1: simpl; only 1: intros; only 1: case H0; only 1: auto with datatypes).	18.2936859131	77848
+Coq.Lists.Streams.eqst_ntheq	40	4.5.0.0.2.1.0.2.7.0	search with cache (only 1: unfold Str_nth; only 1: simple induction n; only 1: simpl; only 1: intros; only 1: case H; only 1: trivial with datatypes; only 1: simpl; only 1: intros; only 1: case H0; only 1: auto with datatypes).	18.5747079849	77848
 Coq.Lists.Streams.ntheq_eqst	40
 Coq.Lists.Streams.ForAll_Str_nth_tl	40
 Coq.Lists.Streams.ForAll_coind	40
-Coq.Lists.Streams.Str_nth_tl_map	40	2.0.2.0.1	search with cache (only 1: simple induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.0171020030975	30
-Coq.Lists.Streams.Str_nth_map	40	1.1.5.1.2.6	search with cache (only 1: simple induction n; only 1: reflexivity; only 1: unfold Str_nth; only 1: intros s1 s2 H; only 1: case H; only 1: trivial).	0.71111702919	3034
+Coq.Lists.Streams.Str_nth_tl_map	40	2.0.2.0.1	search with cache (only 1: simple induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.0174050331116	30
+Coq.Lists.Streams.Str_nth_map	40	1.1.5.1.2.6	search with cache (only 1: simple induction n; only 1: reflexivity; only 1: unfold Str_nth; only 1: intros s1 s2 H; only 1: case H; only 1: trivial).	0.728871107101	3034
 Coq.Lists.Streams.ForAll_map	40
-Coq.Lists.Streams.Exists_map	40
-Coq.Lists.Streams.Str_nth_tl_zipWith	40	2.0.0.0	search with cache (only 1: induction n; only 1: reflexivity; only 1: simpl; only 1: auto).	0.0277149677277	12
-Coq.Lists.Streams.Str_nth_zipWith	40	0.0.1.0.0.2.1	search with cache (only 1: unfold Str_nth; only 1: induction n; only 1: reflexivity; only 1: simpl in *; only 1: intros [x xs] [y ys]; only 1: simpl in *; only 1: apply IHn).	0.0530669689178	109
 Coq.Lists.StreamMemo.memo_get_correct	40
 Coq.Lists.StreamMemo.imemo_get_correct	40
 Coq.Lists.StreamMemo.dmemo_get_correct	40
+Coq.Lists.StreamMemo.dimemo_get_correct	40
 Coq.Wellfounded.Inclusion.Acc_incl	40
-Coq.Wellfounded.Inclusion.wf_incl	40	0.0.0.1	search with cache (only 1: intros; only 1: intro x; only 1: apply Acc_intro; only 1: auto with sets).	0.00939416885376	21
+Coq.Wellfounded.Inclusion.wf_incl	40	0.0.0.1	search with cache (only 1: intros; only 1: intro x; only 1: apply Acc_intro; only 1: auto with sets).	0.00816798210144	21
 Coq.Wellfounded.Well_Ordering.wf_WO	40
 Coq.Wellfounded.Well_Ordering.wof	40
 Coq.Wellfounded.Inverse_Image.Acc_lemma	40
 Coq.Wellfounded.Inverse_Image.Acc_inverse_image	40
-Coq.Wellfounded.Inverse_Image.wf_inverse_image	40	0.0.1.8.2	search with cache (only 1: intros; only 1: intro x; only 1: apply (Acc_lemma (f x)); only 1: trivial; only 1: trivial).	0.0775349140167	371
+Coq.Wellfounded.Inverse_Image.wf_inverse_image	40	0.0.1.8.2	search with cache (only 1: intros; only 1: intro x; only 1: apply (Acc_lemma (f x)); only 1: trivial; only 1: trivial).	0.18822479248	371
 Coq.Wellfounded.Inverse_Image.Acc_inverse_rel	40
 Coq.Wellfounded.Inverse_Image.wf_inverse_rel	40
 Coq.Wellfounded.Disjoint_Union.acc_A_sum	40
@@ -181,245 +253,569 @@ Coq.Wellfounded.Disjoint_Union.acc_B_sum	40
 Coq.Wellfounded.Disjoint_Union.wf_disjoint_sum	40
 Coq.Wellfounded.Union.strip_commut	40
 Coq.Wellfounded.Union.Acc_union	40
+Coq.Wellfounded.Union.wf_union	40
 Coq.Wellfounded.Lexicographic_Product.acc_A_B_lexprod	40
-Coq.Wellfounded.Transitive_Closure.incl_clos_trans	40	2.5.34.11	search with cache (only 1: intro H; only 1: intros n m; only 1: constructor; only 1: trivial).	0.625388145447	8921
+Coq.Wellfounded.Lexicographic_Product.wf_lexprod	40
+Coq.Wellfounded.Lexicographic_Product.Acc_symprod	40
+Coq.Wellfounded.Lexicographic_Product.wf_symprod	40
+Coq.Wellfounded.Lexicographic_Product.swap_Acc	40
+Coq.Wellfounded.Lexicographic_Product.Acc_swapprod	40
+Coq.Wellfounded.Lexicographic_Product.wf_swapprod	40
+Coq.Wellfounded.Transitive_Closure.incl_clos_trans	40	2.5.34.11	search with cache (only 1: intro H; only 1: intros n m; only 1: constructor; only 1: trivial).	0.61393404007	8921
 Coq.Wellfounded.Transitive_Closure.Acc_clos_trans	40
-Coq.Wellfounded.Transitive_Closure.Acc_inv_trans	40	0.0.0.1.6.2.5.26	search with cache (only 1: intro; only 1: intros y H2; only 1: induction H2; only 1: intros; only 1: apply Acc_inv with y; only 1: auto with sets; only 1: auto with sets; only 1: auto with sets).	4.64830112457	32776
-Coq.Wellfounded.Transitive_Closure.wf_clos_trans	40	0.7.2	search with cache (only 1: intros; only 1: intro x; only 1: auto with sets).	0.0140650272369	53
+Coq.Wellfounded.Transitive_Closure.Acc_inv_trans	40	0.0.0.1.6.2.5.26	search with cache (only 1: intro; only 1: intros y H2; only 1: induction H2; only 1: intros; only 1: apply Acc_inv with y; only 1: auto with sets; only 1: auto with sets; only 1: auto with sets).	4.8176419735	32776
+Coq.Wellfounded.Transitive_Closure.wf_clos_trans	40	0.7.2	search with cache (only 1: intros; only 1: intro x; only 1: auto with sets).	0.0148727893829	53
 Coq.Numbers.DecimalFacts.uint_dec	40
 Coq.Numbers.DecimalFacts.rev_revapp	40
 Coq.Numbers.DecimalFacts.rev_rev	40
 Coq.Numbers.DecimalFacts.nzhead_revapp_0	40
 Coq.Numbers.DecimalFacts.nzhead_revapp	40
-Coq.Program.Equality.JMeq_eq_refl	40	2	search with cache (only 1: apply UIP).	0.0054988861084	3
-Coq.Program.Equality.UIP_refl_refl	40	6	search with cache (only 1: apply UIP).	0.0092568397522	17
+Coq.Numbers.DecimalFacts.nzhead_rev	40
+Coq.Numbers.DecimalFacts.rev_nztail_rev	40
+Coq.Numbers.DecimalFacts.revapp_nil_inv	40
+Coq.Numbers.DecimalFacts.rev_nil_inv	40
+Coq.Numbers.DecimalFacts.rev_lnorm_rev	40
+Coq.Numbers.DecimalFacts.nzhead_nonzero	40	2.0.0.0.0.0.0.0.0.0.2.13	search with cache (only 1: induction d; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd; only 1: now rewrite ?nzhead_revapp_0 || now rewrite IHd).	4.35555195808	4560
+Coq.Numbers.DecimalFacts.unorm_0	40	0.0.0.0.0.0.1.0.0.0.3.1	search with cache (only 1: induction d; only 1: easy; only 1: easy; only 1: easy; only 1: easy; only 1: easy; only 1: easy; only 1: easy; only 1: easy; only 1: easy; only 1: easy; only 1: easy).	1.81309914589	1293
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_neg_neg	40	0.1.1	search with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_lt_mono).	0.0790169239044	23
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_neg_nonpos	40	0.0.0	search with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_lt_le_mono).	0.0156979560852	3
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_nonpos_neg	40	0.0.0	search with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_le_lt_mono).	0.0155317783356	3
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_nonpos_nonpos	40	0.0.2	search with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_le_mono).	0.223163127899	37
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_0_sub	40
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_0_sub	40
+Coq.Numbers.Integer.Abstract.ZParity.ZParityProp.odd_pred	40	0.8.0.1.0	search with cache (only 1: intros; only 1: apply eq_iff_eq_true; only 1: rewrite even_spec, odd_spec; only 1: rewrite <- (succ_pred n)  at 2; only 1: now rewrite <- even_spec, even_succ, odd_spec).	0.378934860229	261
+Coq.Numbers.Integer.Abstract.ZParity.ZParityProp.even_pred	40
+Coq.Numbers.Integer.Abstract.ZParity.ZParityProp.even_opp	40
+Coq.Numbers.Integer.Abstract.ZMul.ZMulProp.mul_pred_r	40
+Coq.Numbers.Integer.Abstract.ZMul.ZMulProp.mul_pred_l	40	1.8.3.0	search with cache (only 1: intros n m; only 1: rewrite <- (succ_pred n)  at 2; only 1: nzsimpl; only 1: now rewrite <- add_sub_assoc, sub_diag, add_0_r).	5.33888983727	1614
+Coq.Numbers.Integer.Abstract.ZMul.ZMulProp.mul_opp_l	40
+Coq.Numbers.Integer.Abstract.ZMulOrder.ZMulOrderProp.mul_lt_mono_nonpos	40
+Coq.Numbers.Integer.Abstract.ZMulOrder.ZMulOrderProp.mul_le_mono_nonpos	40
+Coq.Numbers.Integer.Abstract.ZBase.ZBaseProp.pred_inj	40
+Coq.Numbers.Integer.Abstract.ZBase.ZBaseProp.pred_inj_wd	40
+Coq.Numbers.Integer.Abstract.ZBase.ZBaseProp.succ_m1	40
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_twice_r	40
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_opp_l	40
+Coq.Numbers.Integer.Abstract.ZMaxMin.ZMaxMinProp.succ_max_distr	40
+Coq.Numbers.Integer.Abstract.ZLt.ZOrderProp.neg_pos_cases	40	1.1.1.1.14.10	search with cache (only 1: split; only 1: destruct (lt_trichotomy n 0) as [H1| [H1| H1]]; only 1: intuition order; only 1: intuition order; only 1: intuition order; only 1: intuition order).	0.9020819664	1236
+Coq.Numbers.Integer.Abstract.ZLt.ZOrderProp.nonpos_pos_cases	40
+Coq.Numbers.Integer.Abstract.ZLt.ZOrderProp.neg_nonneg_cases	40
+Coq.Numbers.Integer.Abstract.ZAdd.ZAddProp.add_pred_l	40
+Coq.Numbers.Integer.Abstract.ZAdd.ZAddProp.add_pred_r	40
+Coq.Numbers.Integer.Abstract.ZAdd.ZAddProp.add_opp_r	40
+Coq.Numbers.Natural.Abstract.NOrder.NOrderProp.lt_wf_0	40
+Coq.Numbers.Natural.Abstract.NOrder.NOrderProp.nlt_0_r	40
+Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_upper_bound	40
+Coq.Numbers.Natural.Abstract.NDiv.NDivProp.mod_eq	40
+Coq.Numbers.Natural.Abstract.NBase.NBaseProp.neq_succ_0	40
+Coq.Numbers.Natural.Abstract.NBase.NBaseProp.neq_0_succ	40
+Coq.Numbers.Natural.Abstract.NBase.NBaseProp.le_0_l	40
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.square_lt_mono	40
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.square_le_mono	40
+Coq.Numbers.Natural.Abstract.NGcd.NGcdProp.divide_add_cancel_r	40
+Coq.Numbers.Natural.Abstract.NIso.Homomorphism.natural_isomorphism_wd	40
+Coq.Numbers.Natural.Abstract.NIso.Homomorphism.natural_isomorphism_0	40
+Coq.Numbers.Natural.Abstract.NIso.Homomorphism.natural_isomorphism_succ	40
+Coq.Numbers.Natural.Abstract.NSqrt.NSqrtProp.sqrt_spec'	40
+Coq.Numbers.Natural.Abstract.NSqrt.NSqrtProp.sqrt_square	40
+Coq.Numbers.Natural.Abstract.NAdd.NAddProp.eq_add_0	40
+Coq.Numbers.Natural.Abstract.NAdd.NAddProp.eq_add_succ	40
+Coq.Numbers.Natural.Abstract.NAdd.NAddProp.eq_add_1	40
+Coq.Numbers.Natural.Abstract.NParity.NParityProp.odd_pred	40	0.7.0.1.2.1.1	search with cache (only 1: cases ltac:(n); only 1: intro H; only 1: exfalso; only 1: now apply H; only 1: intros; only 1: rewrite pred_succ; only 1: now rewrite <- negb_odd, odd_succ, negb_even).	0.662796020508	1264
+Coq.Numbers.Natural.Abstract.NParity.NParityProp.even_pred	40
+Coq.Numbers.Natural.Abstract.NAddOrder.NAddOrderProp.le_add_r	40
+Coq.Numbers.Natural.Abstract.NAddOrder.NAddOrderProp.lt_lt_add_r	40
+Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_succ_r'	40	5.9.0.7	search with cache (only 1: intros n IH; only 1: nzsimpl; only 1: order; only 1: apply le_0_l).	3.91398096085	2006
+Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_0_l	40	0.1.1.0.0	search with cache (only 1: intros a Ha; only 1: destruct (lt_trichotomy a 0) as [LT| [EQ| GT]]; only 1: now rewrite pow_neg_r; only 1: order; only 1: now apply pow_0_l).	0.112082004547	7
+Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_1_l	40	4.0.13.6	search with cache (only 1: intro n; only 1: nzsimpl; only 1: solve_proper; only 1: apply le_0_l).	1.46888589859	876
+Coq.Numbers.Natural.Abstract.NPow.NPowProp.pow_add_r	40
+Coq.Numbers.Natural.Abstract.NMaxMin.NMaxMinProp.max_0_l	40
+Coq.Numbers.Natural.Abstract.NMaxMin.NMaxMinProp.max_0_r	40
+Coq.Numbers.Natural.Abstract.NStrongRec.NStrongRecProp.strong_rec_alt	40	0	search with cache (only 1: reflexivity).	0.00732803344727	1
+Coq.Numbers.Natural.Abstract.NStrongRec.NStrongRecProp.strong_rec0_wd	40
+Coq.Numbers.Natural.Abstract.NStrongRec.NStrongRecProp.strong_rec_wd	40
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.mod_divide	40
+Coq.Numbers.Natural.Abstract.NSub.NSubProp.sub_0_l	40
+Coq.Numbers.Natural.Abstract.NSub.NSubProp.sub_succ	40
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_spec_nonneg	40
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_nonneg	40
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_unique	40
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_wd	40
+Coq.Numbers.NatInt.NZDiv.NZDivProp.div_mod_unique	40
+Coq.Numbers.NatInt.NZDiv.NZDivProp.div_unique	40
+Coq.Numbers.NatInt.NZDiv.NZDivProp.mod_unique	40	0.0.0.1.0.0.1.0.4.0	search with cache (only 1: intros a b q r Ha (Hb, Hr) EQ; only 1: destruct (div_mod_unique b q (a / b) r (a mod b)); only 1: auto; only 1: apply mod_bound_pos; only 1: order; only 1: order; only 1: rewrite <- div_mod; only 1: order; only 1: order; only 1: auto).	0.8363468647	935
+Coq.Numbers.NatInt.NZDiv.NZDivProp.div_unique_exact	40
+Coq.Numbers.NatInt.NZDiv.NZDivProp.div_same	40	6.14.1.2.0.1.20.4	search with cache (only 1: intros n m; only 1: symmetry; only 1: apply div_unique with 0; only 1: apply lt_le_incl; only 1: rewrite <- (add_0_l 0); only 1: now nzsimpl; only 1: now split; only 1: now nzsimpl).	16.5556058884	25957
+Coq.Numbers.NatInt.NZDiv.NZDivProp.mod_same	40
+Coq.Numbers.NatInt.NZDiv.NZDivProp.div_small	40
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_0_r	40
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_succ_r	40
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_succ_comm	40	0.0.0.0.1.0.0	search with cache (only 1: intros n m; only 1: nzsimpl; only 1: nzinduct n; only 1: now nzsimpl; only 1: intro; only 1: nzsimpl; only 1: now rewrite succ_inj_wd).	0.144002914429	8
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_comm	40	0.0.0.0.1.0	search with cache (only 1: intros n m; only 1: nzinduct n; only 1: now nzsimpl; only 1: intro; only 1: nzsimpl; only 1: now rewrite succ_inj_wd).	0.0473968982697	7
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_1_l	40
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_1_r	40	0.0	search with cache (only 1: intro n; only 1: now nzsimpl').	0.0310590267181	2
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_assoc	40
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_cancel_l	40
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_cancel_r	40	0.0.0.0.1.0	search with cache (only 1: intros n m p; only 1: nzinduct p; only 1: now nzsimpl; only 1: intro p; only 1: nzsimpl; only 1: now rewrite succ_inj_wd).	0.0892729759216	7
+Coq.Numbers.NatInt.NZAdd.NZAddProp.add_shuffle0	40	0.0.0.0.4.0	search with cache (only 1: intros n m p; only 1: nzinduct p; only 1: now nzsimpl; only 1: intro p; only 1: nzsimpl; only 1: now rewrite succ_inj_wd).	0.177961111069	21
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.le_wd	40
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.lt_le_incl	40
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.le_refl	40
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.lt_succ_diag_r	40
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.le_succ_diag_r	40
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.neq_succ_diag_l	40
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.neq_succ_diag_r	40
+Coq.Numbers.NatInt.NZOrder.NZOrderProp.nlt_succ_diag_l	40
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_0_l	40
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_0_l'	40
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_1_r	40	0.55	search with cache (only 1: intro Hxz; only 1: now nzsimpl').	1.56722402573	6390
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_1_l	40
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_2_r	40	0.11.2.9.10	search with cache (only 1: intro H1; only 1: rewrite two_succ; only 1: nzsimpl; only 1: now nzsimpl; only 1: apply lt_le_incl, lt_0_1).	1.90981912613	2327
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_eq_0	40
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_nonzero	40
+Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_wd	40
+Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_1_l	40
+Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_0_r	40
+Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_0_l	40	0.0.26.0.22	search with cache (only 1: intro H1; only 1: intros n; only 1: induction n; only 1: rewrite mul_0_l in H || rewrite mul_0_r in H; only 1: tauto).	4.56720018387	13430
+Coq.Numbers.NatInt.NZGcd.NZGcdProp.eq_mul_1_nonneg	40
+Coq.Numbers.NatInt.NZGcd.NZGcdProp.eq_mul_1_nonneg'	40
+Coq.Numbers.NatInt.NZParity.NZParityProp.Even_wd	40
+Coq.Numbers.NatInt.NZParity.NZParityProp.Odd_wd	40
+Coq.Numbers.NatInt.NZParity.NZParityProp.even_wd	40
+Coq.Numbers.NatInt.NZParity.NZParityProp.odd_wd	40
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_mono_l	40
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_mono_r	40	0.0.0.0.2.0	search with cache (only 1: intros n m p; only 1: nzinduct p; only 1: now nzsimpl; only 1: intro p; only 1: nzsimpl; only 1: now rewrite <- succ_lt_mono).	0.107430934906	8
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_mono	40
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_mono_l	40
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_mono_r	40	0.0.0.0.2.0	search with cache (only 1: intros n m p; only 1: nzinduct p; only 1: now nzsimpl; only 1: intro p; only 1: nzsimpl; only 1: now rewrite <- succ_le_mono).	0.1254529953	8
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_mono	40
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_le_mono	40
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_lt_mono	40
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_0_r	40	0.0.8.1.0.0.1	search with cache (only 1: nzinduct n; only 1: now nzsimpl; only 1: intro; only 1: nzsimpl; only 1: constructor; only 1: now nzsimpl; only 1: now nzsimpl).	1.0040230751	668
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_succ_r	40
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_comm	40	0.0.0.0.2.0	search with cache (only 1: intros; only 1: nzinduct n; only 1: now nzsimpl; only 1: intro n; only 1: nzsimpl; only 1: now rewrite add_cancel_r).	0.066654920578	8
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_add_distr_r	40
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_add_distr_l	40
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_assoc	40
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_1_l	40	3.1.0.1.3	search with cache (only 1: nzinduct n; only 1: now nzsimpl; only 1: intro n; only 1: nzsimpl; only 1: now rewrite succ_inj_wd).	1.21299910545	317
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_1_r	40	0.0	search with cache (only 1: intro n; only 1: now nzsimpl').	0.0331449508667	2
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_shuffle0	40
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_shuffle1	40
+Coq.Numbers.NatInt.NZLog.NZLog2Prop.log2_nonneg	40
+Coq.Numbers.NatInt.NZLog.NZLog2Prop.log2_unique	40
+Coq.Numbers.NatInt.NZLog.NZLog2Prop.log2_wd	40
+Coq.Numbers.NatInt.NZLog.NZLog2Prop.log2_spec_alt	40
+Coq.Numbers.NatInt.NZBase.NZBaseProp.eq_sym_iff	40	0.5.1	search with cache (only 1: compute; only 1: intros; only 1: intuition).	0.012549161911	12
+Coq.Numbers.NatInt.NZBase.NZBaseProp.neq_sym	40	8	search with cache (only 1: simpl_relation).	0.0210590362549	40
+Coq.Numbers.NatInt.NZBase.NZBaseProp.eq_stepl	40	1.1.0.18.1	search with cache (only 1: intros; only 1: transitivity x; only 1: symmetry; only 1: auto; only 1: auto).	1.18518996239	6855
+Coq.Numbers.NatInt.NZBase.NZBaseProp.succ_inj	40
+Coq.Numbers.NatInt.NZBase.NZBaseProp.succ_inj_wd	40
+Coq.Numbers.NatInt.NZBase.NZBaseProp.succ_inj_wd_neg	40	2.3.5.3.11.0	search with cache (only 1: intros; only 1: apply imp_iff_compat_r; only 1: split; only 1: apply succ_inj; only 1: intros; only 1: now f_equiv).	1.36537790298	3686
+Coq.Numbers.NatInt.NZBase.NZBaseProp.central_induction	40
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_pred	40
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_pos_l	40
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_pos_r	40
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_neg_l	40
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_neg_r	40
+Coq.Structures.OrdersTac.OrderFacts.eq_refl	40	2	search with cache (only 1: simpl_relation).	0.00956797599792	3
+Coq.Structures.OrdersTac.OrderFacts.le_refl	40
+Coq.Structures.OrdersTac.OrderFacts.lt_irrefl	40	6.9.19	search with cache (only 1: intuition; only 1: elim (CRelationClasses.StrictOrder_Irreflexive x); only 1: simpl_relation).	1.16818904877	6904
+Coq.Structures.OrdersTac.OrderFacts.eq_sym	40	4	search with cache (only 1: simpl_relation).	0.012298822403	5
+Coq.Structures.OrdersTac.OrderFacts.le_antisym	40
+Coq.Structures.OrdersTac.OrderFacts.neq_sym	40	0	search with cache (only 1: auto with *).	0.00863599777222	1
+Coq.Structures.OrdersTac.OrderFacts.trans	40
+Coq.Structures.OrdersTac.OrderFacts.eq_neq	40
+Coq.Structures.OrdersTac.OrderFacts.neq_eq	40	0	search with cache (only 1: eauto using eq_trans, eq_sym).	0.013885974884	1
+Coq.Structures.OrdersTac.OrderFacts.not_neq_eq	40
+Coq.Structures.OrdersTac.OrderFacts.not_ge_lt	40
+Coq.Structures.OrdersTac.OrderFacts.not_gt_le	40	2.2.1.3.2.0	search with cache (only 1: intros x y H; only 1: destruct (P.lt_total x y); only 1: rewrite P.le_lteq; only 1: auto; only 1: rewrite P.le_lteq; only 1: intuition auto; subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	1.93592381477	1993
+Coq.Structures.OrdersTac.OrderFacts.le_neq_lt	40	0.1.2.2	search with cache (only 1: intros x y; only 1: rewrite P.le_lteq; only 1: generalize (P.lt_total x y); only 1: intuition).	0.0511770248413	47
+Coq.Structures.Orders.Compare2EqBool.eqb_eq	40
+Coq.Structures.Orders.OT_to_Full.le_lteq	40	1.5	search with cache (only 1: compute; only 1: intuition).	0.0245800018311	25
+Coq.Structures.Orders.OTF_LtIsTotal.lt_total	40
+Coq.Structures.Orders.OTF_to_TTLB.leb_le	40
+Coq.Structures.Orders.OTF_to_TTLB.leb_total	40
+Coq.Structures.Orders.OTF_to_TTLB.leb_trans	40
+Coq.Structures.Orders.TTLB_to_OTF.compare_spec	40
+Coq.Structures.Equalities.UpdateEq.eq_equiv	40	2.22.19.7.7.12	search with cache (only 1: split; only 1: hnf; only 1: trivial; only 1: auto; only 1: intros x' x'' Hx' Hx''; only 1: eauto).	7.5704190731	50957
+Coq.Structures.Equalities.HasEqDec2Bool.eqb_eq	40
+Coq.Structures.Equalities.HasEqBool2Dec.eq_dec	40
+Coq.Structures.Equalities.BoolEqualityFacts.eqb_compat	40
+Coq.Structures.Equalities.BoolEqualityFacts.eqb_spec	40
+Coq.Structures.Equalities.BoolEqualityFacts.eqb_neq	40
+Coq.Structures.Equalities.BoolEqualityFacts.eqb_refl	40
+Coq.Structures.Equalities.BoolEqualityFacts.eqb_sym	40	5.2.1.5.2.1.7.4	search with cache (only 1: apply eq_true_iff_eq; only 1: intuition; only 1: apply eqb_eq; only 1: symmetry; only 1: now apply eqb_eq; only 1: apply eqb_eq; only 1: symmetry; only 1: now apply eqb_eq).	15.9269120693	28398
+Coq.Structures.OrdersFacts.CompareFacts.compare_eq_iff	40
+Coq.Structures.OrdersFacts.CompareFacts.compare_eq	40	1.0.1.0.1.0.0	search with cache (only 1: case compare_spec; only 1: intro H; only 1: easy; only 1: intro H; only 1: easy; only 1: intro H; only 1: easy).	0.0178508758545	10
+Coq.Structures.OrdersFacts.CompareFacts.compare_lt_iff	40
+Coq.Structures.OrdersFacts.CompareFacts.compare_gt_iff	40
+Coq.Structures.OrdersFacts.CompareFacts.compare_nlt_iff	40
+Coq.Structures.OrdersFacts.CompareFacts.compare_ngt_iff	40
+Coq.Structures.OrdersFacts.CompareFacts.compare_compat	40
+Coq.Structures.OrdersFacts.CompareFacts.compare_refl	40	10.0	search with cache (only 1: apply compare_eq_iff; only 1: intuition).	0.125334978104	179
+Coq.Structures.GenericMinMax.GenericMinMax.ge_not_lt	40
+Coq.Structures.GenericMinMax.GenericMinMax.max_l	40
+Coq.Structures.GenericMinMax.GenericMinMax.max_r	40
+Coq.Structures.GenericMinMax.GenericMinMax.min_l	40
+Coq.Structures.GenericMinMax.GenericMinMax.min_r	40	2.4.4.1.0.2.0.0	search with cache (only 1: unfold min, gmin; only 1: case compare_spec; only 1: auto with relations; only 1: intros; only 1: elim (ge_not_lt x y); only 1: auto; only 1: auto; only 1: auto with relations).	4.83978295326	19497
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_spec	40
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_spec_le	40
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.Proper_instance_0	40
+Coq.Program.Wf.Fix_F_eq	40	0.14.7.8	search with cache (only 1: intro p; only 1: intro; only 1: destruct r using Acc_inv_dep; only 1: auto).	1.00053501129	3252
+Coq.Program.Wf.Fix_F_inv	40	0.20.2.6.0	search with cache (only 1: destruct r using Acc_inv_dep; only 1: simpl in *; only 1: intros; only 1: rewrite <- Wf.Fix_F_eq; only 1: auto).	5.55937194824	14579
+Coq.Program.Wf.Fix_eq	40
+Coq.Program.Wf.fix_sub_eq	40	0.0.0.0.0.0	search with cache (only 1: intro x; only 1: unfold Fix_sub; only 1: rewrite <- Fix_F_eq; only 1: apply F_ext; only 1: intros; only 1: apply Fix_F_inv).	0.0119738578796	6
+Coq.Program.Wf.measure_wf	40
+Coq.Program.Wf.F_unfold	40	0.1	search with cache (only 1: destruct r using Acc_inv_dep; only 1: auto).	0.0103569030762	3
+Coq.Program.Wf.Fix_F_sub_rect	40	2.11.11.0	search with cache (only 1: intros; only 1: induction (Rwf x); only 1: rewrite <- Init.Wf.Fix_F_eq; only 1: auto).	0.258389949799	928
+Coq.Program.Wf.eq_Fix_F_sub	40	2.6	search with cache (only 1: apply Fix_F_inv; only 1: auto).	0.0400359630585	40
+Coq.Program.Wf.Fix_sub_rect	40
+Coq.Program.Wf.WfExtensionality.fix_sub_eq_ext	40
+Coq.Program.Subset.subset_eq	40
+Coq.Program.Subset.match_eq_rewrite	40	1.3.12.10.21.2.42	search with cache (only 1: intro UIP_refl; only 1: intros H x0; only 1: intro eq_rect_eq; only 1: intro p; only 1: destruct p; only 1: subst; only 1: split).	8.70968008041	107791
+Coq.Program.Equality.JMeq_eq_refl	40	2	search with cache (only 1: apply UIP).	0.00556898117065	3
+Coq.Program.Equality.UIP_refl_refl	40	6	search with cache (only 1: apply UIP).	0.00958299636841	17
 Coq.Program.Equality.inj_pairT2_refl	40
-Coq.Program.Equality.solution_left	40	1.11	search with cache (only 1: destruct 2; only 1: trivial).	0.0151269435883	67
-Coq.Program.Equality.solution_right	40	2.0.0	search with cache (only 1: intros; only 1: subst; only 1: trivial).	0.00681781768799	5
-Coq.Program.Equality.deletion	40	2	search with cache (only 1: trivial).	0.00525498390198	3
-Coq.Program.Combinators.compose_id_left	40	1.4	search with cache (only 1: intros; only 1: reflexivity).	0.00598287582397	7
-Coq.Program.Combinators.compose_id_right	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00506401062012	2
-Coq.Program.Combinators.compose_assoc	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00540494918823	2
-Coq.Program.Combinators.flip_flip	40	0.0.2	search with cache (only 1: intro x; only 1: intros; only 1: reflexivity).	0.00608992576599	5
-Coq.Program.Combinators.prod_uncurry_curry	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00537180900574	2
+Coq.Program.Equality.solution_left	40	1.11	search with cache (only 1: destruct 2; only 1: trivial).	0.0146651268005	67
+Coq.Program.Equality.solution_right	40	2.0.0	search with cache (only 1: intros; only 1: subst; only 1: trivial).	0.00661897659302	5
+Coq.Program.Equality.deletion	40	2	search with cache (only 1: trivial).	0.0053870677948	3
+Coq.Program.Equality.simplification_heq	40	1.16.46.25	search with cache (only 1: intro; only 1: inversion 1; only 1: subst; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	2.32308506966	28024
+Coq.Program.Equality.simplification_existT2	40	0.0.16.13	search with cache (only 1: intros h1 h2; only 1: apply h1; only 1: apply eq_dep_eq; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	0.33273601532	1428
+Coq.Program.Equality.simplification_existT1	40
+Coq.Program.Equality.simplification_K	40	14.4.3	search with cache (only 1: intros; only 1: rewrite UIP_refl; only 1: assumption).	0.178088903427	940
+Coq.Program.Combinators.compose_id_left	40	1.4	search with cache (only 1: intros; only 1: reflexivity).	0.00560593605042	7
+Coq.Program.Combinators.compose_id_right	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00472402572632	2
+Coq.Program.Combinators.compose_assoc	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00512480735779	2
+Coq.Program.Combinators.flip_flip	40	0.0.2	search with cache (only 1: intro x; only 1: intros; only 1: reflexivity).	0.00571393966675	5
+Coq.Program.Combinators.prod_uncurry_curry	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00512409210205	2
 Coq.Program.Combinators.prod_curry_uncurry	40
-Coq.Init.Wf.Acc_inv	40	2.13	search with cache (only 1: destruct 1; only 1: trivial).	0.0714299678802	192
+Coq.Init.Wf.Acc_inv	40	2.13	search with cache (only 1: destruct 1; only 1: trivial).	0.0581891536713	192
 Coq.Init.Wf.well_founded_induction_type	40
-Coq.Init.Wf.well_founded_induction	40	0.0.0.1	search with cache (only 1: intros; only 1: apply Acc_rect; only 1: auto; only 1: auto).	0.00590896606445	5
-Coq.Init.Wf.well_founded_ind	40	0.0.0.1	search with cache (only 1: intros; only 1: apply Acc_rect; only 1: auto; only 1: auto).	0.00578999519348	5
-Coq.Init.Wf.Fix_F_eq	40	0.20.47.14	search with cache (only 1: intro; only 1: intro H; only 1: destruct H; only 1: auto).	1.37885403633	15431
+Coq.Init.Wf.well_founded_induction	40	0.0.0.1	search with cache (only 1: intros; only 1: apply Acc_rect; only 1: auto; only 1: auto).	0.00595998764038	5
+Coq.Init.Wf.well_founded_ind	40	0.0.0.1	search with cache (only 1: intros; only 1: apply Acc_rect; only 1: auto; only 1: auto).	0.00551009178162	5
+Coq.Init.Wf.Fix_F_eq	40	0.20.47.14	search with cache (only 1: intro; only 1: intro H; only 1: destruct H; only 1: auto).	1.30505418777	15431
 Coq.Init.Wf.Fix_F_inv	40
 Coq.Init.Wf.Fix_eq	40
 Coq.Init.Wf.well_founded_induction_type_2	40
-Coq.Init.Tactics.decide_left	40	3.19.0.3.4.3.3.0.27	search with cache (only 1: intro; only 1: intro H; only 1: destruct H; only 1: intros; only 1: trivial; only 1: intro H; only 1: unfold not; only 1: induction n; only 1: apply H).	8.248939991	103045
-Coq.Init.Tactics.decide_right	40	3.0.1.0.4	search with cache (only 1: intro A; only 1: intros; only 1: destruct decide; only 1: contradiction; only 1: trivial).	0.064544916153	290
-Coq.Init.Peano.pred_Sn	40	3.2	search with cache (only 1: intros; only 1: trivial).	0.0324821472168	7
-Coq.Init.Peano.not_eq_S	40	18.6	search with cache (only 1: red; only 1: auto).	0.453150987625	2607
-Coq.Init.Peano.O_S	40	3	search with cache (only 1: discriminate).	0.00781607627869	27
+Coq.Init.Tactics.decide_left	40	3.19.0.3.4.3.3.0.27	search with cache (only 1: intro; only 1: intro H; only 1: destruct H; only 1: intros; only 1: trivial; only 1: intro H; only 1: unfold not; only 1: induction n; only 1: apply H).	7.96982312202	103045
+Coq.Init.Tactics.decide_right	40	3.0.1.0.4	search with cache (only 1: intro A; only 1: intros; only 1: destruct decide; only 1: contradiction; only 1: trivial).	0.0642750263214	290
+Coq.Init.Peano.pred_Sn	40	3.2	search with cache (only 1: intros; only 1: trivial).	0.00428199768066	7
+Coq.Init.Peano.not_eq_S	40	18.6	search with cache (only 1: red; only 1: auto).	0.440478801727	2607
+Coq.Init.Peano.O_S	40	3	search with cache (only 1: discriminate).	0.00767111778259	27
 Coq.Init.Peano.n_Sn	40
-Coq.Init.Peano.plus_n_O	40	0.0.1.4.0.44.41	search with cache (only 1: intro H1; only 1: elim H1; only 1: auto; only 1: simpl; only 1: induction n; only 1: auto; only 1: auto).	13.8217089176	139170
-Coq.Init.Peano.plus_O_n	40	0.0.1.0.0	search with cache (only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.00589489936829	6
-Coq.Init.Peano.plus_n_Sm	40	1.1.0.2	search with cache (only 1: induction n; only 1: auto; only 1: simpl; only 1: auto).	0.00793194770813	8
-Coq.Init.Peano.plus_Sn_m	40	0.0.1.0.0.0.0	search with cache (only 1: intros n m; only 1: simpl; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.00744605064392	8
-Coq.Init.Peano.mult_n_O	40	0.1.3	search with cache (only 1: induction n; only 1: auto; only 1: auto).	0.00576090812683	7
+Coq.Init.Peano.plus_n_O	40	0.0.1.4.0.44.41	search with cache (only 1: intro H1; only 1: elim H1; only 1: auto; only 1: simpl; only 1: induction n; only 1: auto; only 1: auto).	14.0240881443	139170
+Coq.Init.Peano.plus_O_n	40	0.0.1.0.0	search with cache (only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.00606799125671	6
+Coq.Init.Peano.plus_n_Sm	40	1.1.0.2	search with cache (only 1: induction n; only 1: auto; only 1: simpl; only 1: auto).	0.00815391540527	8
+Coq.Init.Peano.plus_Sn_m	40	0.0.1.0.0.0.0	search with cache (only 1: intros n m; only 1: simpl; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.00782108306885	8
+Coq.Init.Peano.mult_n_O	40	0.1.3	search with cache (only 1: induction n; only 1: auto; only 1: auto).	0.0060031414032	7
 Coq.Init.Peano.mult_n_Sm	40
 Coq.Init.Peano.le_pred	40
 Coq.Init.Peano.le_S_n	40
-Coq.Init.Peano.le_0_n	40	1.0.3	search with cache (only 1: induction n; only 1: auto; only 1: auto).	0.00559496879578	7
-Coq.Init.Peano.le_n_S	40	3.0.2	search with cache (only 1: induction 1; only 1: constructor; only 1: auto).	0.0221970081329	75
-Coq.Init.Peano.nat_case	40	2.2.4.1	search with cache (only 1: induction n; only 1: intros; only 1: auto; only 1: auto).	0.0280132293701	138
-Coq.Init.Peano.nat_double_ind	40	0.0.8.5.1.0	search with cache (only 1: induction n; only 1: auto; only 1: intros; only 1: elim m; only 1: auto; only 1: auto).	0.291753053665	1245
+Coq.Init.Peano.le_0_n	40	1.0.3	search with cache (only 1: induction n; only 1: auto; only 1: auto).	0.0062780380249	7
+Coq.Init.Peano.le_n_S	40	3.0.2	search with cache (only 1: induction 1; only 1: constructor; only 1: auto).	0.0227510929108	75
+Coq.Init.Peano.nat_case	40	2.2.4.1	search with cache (only 1: induction n; only 1: intros; only 1: auto; only 1: auto).	0.0288400650024	138
+Coq.Init.Peano.nat_double_ind	40	0.0.8.5.1.0	search with cache (only 1: induction n; only 1: auto; only 1: intros; only 1: elim m; only 1: auto; only 1: auto).	0.302220821381	1245
 Coq.Init.Peano.max_l	40
 Coq.Init.Peano.max_r	40
-Coq.Init.Peano.min_l	40	0.1.3.2.2.3.0.0.0	search with cache (only 1: revert m; only 1: induction n; only 1: trivial; only 1: destruct m; only 1: inversion 1; only 1: intros; only 1: simpl; only 1: apply f_equal, IHn, le_S_n; only 1: trivial).	3.18306517601	9916
-Coq.Init.Peano.min_r	40	0.1.2.0.0.0.0.0.1.1.0.0	search with cache (only 1: revert m; only 1: induction n; only 1: simpl; only 1: inversion 1; only 1: trivial; only 1: destruct m; only 1: simpl; only 1: trivial; only 1: simpl; only 1: intros; only 1: apply f_equal, IHn, le_S_n; only 1: trivial).	1.98110818863	5422
+Coq.Init.Peano.min_l	40	0.1.3.2.2.3.0.0.0	search with cache (only 1: revert m; only 1: induction n; only 1: trivial; only 1: destruct m; only 1: inversion 1; only 1: intros; only 1: simpl; only 1: apply f_equal, IHn, le_S_n; only 1: trivial).	3.29354810715	9916
+Coq.Init.Peano.min_r	40	0.1.2.0.0.0.0.0.1.1.0.0	search with cache (only 1: revert m; only 1: induction n; only 1: simpl; only 1: inversion 1; only 1: trivial; only 1: destruct m; only 1: simpl; only 1: trivial; only 1: simpl; only 1: intros; only 1: apply f_equal, IHn, le_S_n; only 1: trivial).	2.02367186546	5422
 Coq.Init.Peano.nat_rect_succ_r	40
-Coq.Init.Peano.nat_rect_plus	40	0.1.2.2.1.0	search with cache (only 1: induction n; only 1: reflexivity; only 1: intros; only 1: simpl; only 1: rewrite <- ?IHn; only 1: trivial).	0.344722986221	536
+Coq.Init.Peano.nat_rect_plus	40	0.1.2.2.1.0	search with cache (only 1: induction n; only 1: reflexivity; only 1: intros; only 1: simpl; only 1: rewrite <- ?IHn; only 1: trivial).	0.35826086998	536
 Coq.Init.Datatypes.andb_prop	40
 Coq.Init.Datatypes.andb_true_intro	40
-Coq.Init.Datatypes.eq_true_ind_r	40	2.29.12	search with cache (only 1: intros A P H; only 1: destruct 1; only 1: exact H).	0.180915117264	2934
-Coq.Init.Datatypes.eq_true_rec_r	40	0.0.0	search with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.00365281105042	3
-Coq.Init.Datatypes.eq_true_rect_r	40	0.0.0	search with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.00349593162537	3
-Coq.Init.Datatypes.surjective_pairing	40	0.40	search with cache (only 1: destruct p; only 1: reflexivity).	0.196391105652	2561
-Coq.Init.Datatypes.injective_projections	40	0.2.1.9.9.10.18.26	search with cache (only 1: intros A B [H1 H2]; only 1: simpl in *; only 1: intros [HypL HypR]; only 1: simpl; only 1: intro; only 1: destruct H; only 1: destruct 1; only 1: trivial).	5.58886289597	71273
+Coq.Init.Datatypes.eq_true_ind_r	40	2.29.12	search with cache (only 1: intros A P H; only 1: destruct 1; only 1: exact H).	0.185559034348	2934
+Coq.Init.Datatypes.eq_true_rec_r	40	0.0.0	search with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.0038890838623	3
+Coq.Init.Datatypes.eq_true_rect_r	40	0.0.0	search with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.00394892692566	3
+Coq.Init.Datatypes.surjective_pairing	40	0.40	search with cache (only 1: destruct p; only 1: reflexivity).	0.20195889473	2561
+Coq.Init.Datatypes.injective_projections	40	0.2.1.9.9.10.18.26	search with cache (only 1: intros A B [H1 H2]; only 1: simpl in *; only 1: intros [HypL HypR]; only 1: simpl; only 1: intro; only 1: destruct H; only 1: destruct 1; only 1: trivial).	5.62024211884	71273
 Coq.Init.Datatypes.pair_equal_spec	40
-Coq.Init.Datatypes.rew_pair	40	0.2	search with cache (only 1: destruct H; only 1: trivial).	0.00621390342712	4
+Coq.Init.Datatypes.rew_pair	40	0.2	search with cache (only 1: destruct H; only 1: trivial).	0.00617098808289	4
 Coq.Init.Datatypes.comparison_eq_stable	40
 Coq.Init.Datatypes.CompOpp_involutive	40
-Coq.Init.Datatypes.CompOpp_inj	40	0.2.2.2.0.2.2.2.0.4.14	search with cache (only 1: intros; only 1: destruct c, c'; only 1: reflexivity; only 1: discriminate; only 1: discriminate; only 1: discriminate; only 1: reflexivity; only 1: discriminate; only 1: discriminate; only 1: discriminate; only 1: reflexivity).	8.96526098251	102391
+Coq.Init.Datatypes.CompOpp_inj	40	0.2.2.2.0.2.2.2.0.4.14	search with cache (only 1: intros; only 1: destruct c, c'; only 1: reflexivity; only 1: discriminate; only 1: discriminate; only 1: discriminate; only 1: reflexivity; only 1: discriminate; only 1: discriminate; only 1: discriminate; only 1: reflexivity).	8.87140107155	102391
 Coq.Init.Datatypes.CompOpp_iff	40
 Coq.Init.Datatypes.CompareSpec2Type	40
 Coq.Init.Datatypes.CompSpec2Type	40
 Coq.Init.Logic.proj1	40
-Coq.Init.Logic.proj2	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00212788581848	2
+Coq.Init.Logic.proj2	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00208592414856	2
 Coq.Init.Logic.iff_refl	40
-Coq.Init.Logic.iff_trans	40	2.2.0.2.2	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.0199699401855	95
-Coq.Init.Logic.iff_sym	40	0.0.0.3	search with cache (only 1: destruct 1; only 1: split; only 1: trivial; only 1: trivial).	0.00397086143494	12
-Coq.Init.Logic.and_iff_compat_l	40	0.0.2.0.0.0.2.0.1.3	search with cache (only 1: destruct 1; only 1: split; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.0798790454865	625
-Coq.Init.Logic.and_iff_compat_r	40	2.2.1.0.2.2.1.0.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: auto; only 1: auto; only 1: intros [? ?]; only 1: split; only 1: auto; only 1: auto).	0.324387073517	2894
+Coq.Init.Logic.iff_trans	40	2.2.0.2.2	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.0196990966797	95
+Coq.Init.Logic.iff_sym	40	0.0.0.3	search with cache (only 1: destruct 1; only 1: split; only 1: trivial; only 1: trivial).	0.00370192527771	12
+Coq.Init.Logic.and_iff_compat_l	40	0.0.2.0.0.0.2.0.1.3	search with cache (only 1: destruct 1; only 1: split; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.0790369510651	625
+Coq.Init.Logic.and_iff_compat_r	40	2.2.1.0.2.2.1.0.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: auto; only 1: auto; only 1: intros [? ?]; only 1: split; only 1: auto; only 1: auto).	0.326412200928	2894
 Coq.Init.Logic.or_iff_compat_l	40
-Coq.Init.Logic.or_iff_compat_r	40	4.1.2.0.1.4.1.2.0.1.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [?| ?]; only 1: left; only 1: auto; only 1: right; only 1: auto; only 1: intros [?| ?]; only 1: left; only 1: auto; only 1: right; only 1: auto).	0.653933048248	9457
-Coq.Init.Logic.imp_iff_compat_l	40	4.4.0.3	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.0306179523468	250
-Coq.Init.Logic.imp_iff_compat_r	40	5.5.0.3	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.048583984375	407
-Coq.Init.Logic.not_iff_compat	40	8.8.0.0	search with cache (only 1: intros A B [H1 H2]; only 1: split; only 1: auto; only 1: auto).	0.079864025116	749
-Coq.Init.Logic.neg_false	40	2.11.8.2.2.2.0	search with cache (only 1: intros; only 1: split; only 1: split; only 1: trivial; only 1: destruct 1; only 1: intros [? ?]; only 1: trivial).	1.04271697998	11935
+Coq.Init.Logic.or_iff_compat_r	40	4.1.2.0.1.4.1.2.0.1.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [?| ?]; only 1: left; only 1: auto; only 1: right; only 1: auto; only 1: intros [?| ?]; only 1: left; only 1: auto; only 1: right; only 1: auto).	0.650020122528	9457
+Coq.Init.Logic.imp_iff_compat_l	40	4.4.0.3	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.0300679206848	250
+Coq.Init.Logic.imp_iff_compat_r	40	5.5.0.3	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.0479161739349	407
+Coq.Init.Logic.not_iff_compat	40	8.8.0.0	search with cache (only 1: intros A B [H1 H2]; only 1: split; only 1: auto; only 1: auto).	0.0789649486542	749
+Coq.Init.Logic.neg_false	40	2.11.8.2.2.2.0	search with cache (only 1: intros; only 1: split; only 1: split; only 1: trivial; only 1: destruct 1; only 1: intros [? ?]; only 1: trivial).	1.02586984634	11935
 Coq.Init.Logic.and_cancel_l	40
 Coq.Init.Logic.and_cancel_r	40
-Coq.Init.Logic.and_comm	40	0.0.6.3.0.0.6.3.2	search with cache (only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial).	0.437157869339	5676
-Coq.Init.Logic.and_assoc	40	4.4.0.6.6.3.4.0.6.0.6.3.1.0	search with cache (only 1: intros; only 1: split; only 1: intros [HypL HypR]; only 1: split; only 1: apply HypL; only 1: split; only 1: apply HypL; only 1: apply HypR; only 1: intros [HypL HypR]; only 1: split; only 1: split; only 1: apply HypL; only 1: apply HypR; only 1: apply HypR).	5.3095369339	56234
+Coq.Init.Logic.and_comm	40	0.0.6.3.0.0.6.3.2	search with cache (only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial).	0.447195053101	5676
+Coq.Init.Logic.and_assoc	40	4.4.0.6.6.3.4.0.6.0.6.3.1.0	search with cache (only 1: intros; only 1: split; only 1: intros [HypL HypR]; only 1: split; only 1: apply HypL; only 1: split; only 1: apply HypL; only 1: apply HypR; only 1: intros [HypL HypR]; only 1: split; only 1: split; only 1: apply HypL; only 1: apply HypR; only 1: apply HypR).	5.27052211761	56234
 Coq.Init.Logic.or_cancel_l	40
 Coq.Init.Logic.or_cancel_r	40
-Coq.Init.Logic.or_comm	40	0.2.1.4.7.1.2.0.4.7.3.2	search with cache (only 1: intros; only 1: split; only 1: intros [?| ?]; only 1: right; only 1: exact H; only 1: left; only 1: trivial; only 1: intros [?| ?]; only 1: right; only 1: trivial; only 1: left; only 1: exact H).	1.94109797478	39839
+Coq.Init.Logic.or_comm	40	0.2.1.4.7.1.2.0.4.7.3.2	search with cache (only 1: intros; only 1: split; only 1: intros [?| ?]; only 1: right; only 1: exact H; only 1: left; only 1: trivial; only 1: intros [?| ?]; only 1: right; only 1: trivial; only 1: left; only 1: exact H).	1.97760915756	39839
 Coq.Init.Logic.or_assoc	40
-Coq.Init.Logic.iff_and	40	0.0.2.2	search with cache (only 1: intros A B [H1 H2]; only 1: repeat split; only 1: trivial; only 1: trivial).	0.00517797470093	8
-Coq.Init.Logic.iff_to_and	40	0.0.0.2.5	search with cache (only 1: intros; only 1: apply and_iff_compat_r; only 1: split; only 1: trivial; only 1: trivial).	0.0487239360809	222
-Coq.Init.Logic.inst	40	1	search with cache (only 1: trivial).	0.00454902648926	15
-Coq.Init.Logic.gen	40	1.0	search with cache (only 1: unfold all; only 1: auto).	0.00350499153137	3
-Coq.Init.Logic.absurd	40	1.16.12.1	search with cache (only 1: intro A; only 1: intros H ?; only 1: destruct 1; only 1: trivial).	0.411556005478	5129
-Coq.Init.Logic.eq_sym	40	1.6	search with cache (only 1: destruct 1; only 1: trivial).	0.00493192672729	16
-Coq.Init.Logic.eq_trans	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00413489341736	2
-Coq.Init.Logic.eq_trans_r	40	1.0	search with cache (only 1: destruct 2; only 1: trivial).	0.00410389900208	3
-Coq.Init.Logic.f_equal	40	0.1	search with cache (only 1: destruct 1; only 1: trivial).	0.00437092781067	3
-Coq.Init.Logic.not_eq_sym	40	0.11.2	search with cache (only 1: destruct 2; only 1: apply H; only 1: trivial).	0.0584590435028	418
-Coq.Init.Logic.eq_sind_r	40	1.2.4	search with cache (only 1: intro A; only 1: destruct 2; only 1: trivial).	0.00637221336365	18
-Coq.Init.Logic.eq_ind_r	40	1.0.0	search with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.00487899780273	4
-Coq.Init.Logic.eq_rec_r	40	1.0.0	search with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.00495004653931	4
-Coq.Init.Logic.eq_rect_r	40	1.0.0	search with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.00481796264648	4
+Coq.Init.Logic.iff_and	40	0.0.2.2	search with cache (only 1: intros A B [H1 H2]; only 1: repeat split; only 1: trivial; only 1: trivial).	0.00513601303101	8
+Coq.Init.Logic.iff_to_and	40	0.0.0.2.5	search with cache (only 1: intros; only 1: apply and_iff_compat_r; only 1: split; only 1: trivial; only 1: trivial).	0.0487110614777	222
+Coq.Init.Logic.inst	40	1	search with cache (only 1: trivial).	0.0047459602356	15
+Coq.Init.Logic.gen	40	1.0	search with cache (only 1: unfold all; only 1: auto).	0.00352597236633	3
+Coq.Init.Logic.absurd	40	1.16.12.1	search with cache (only 1: intro A; only 1: intros H ?; only 1: destruct 1; only 1: trivial).	0.409779071808	5129
+Coq.Init.Logic.eq_sym	40	1.6	search with cache (only 1: destruct 1; only 1: trivial).	0.0046820640564	16
+Coq.Init.Logic.eq_trans	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00378823280334	2
+Coq.Init.Logic.eq_trans_r	40	1.0	search with cache (only 1: destruct 2; only 1: trivial).	0.00387597084045	3
+Coq.Init.Logic.f_equal	40	0.1	search with cache (only 1: destruct 1; only 1: trivial).	0.00404191017151	3
+Coq.Init.Logic.not_eq_sym	40	0.11.2	search with cache (only 1: destruct 2; only 1: apply H; only 1: trivial).	0.0579578876495	418
+Coq.Init.Logic.eq_sind_r	40	1.2.4	search with cache (only 1: intro A; only 1: destruct 2; only 1: trivial).	0.00618720054626	18
+Coq.Init.Logic.eq_ind_r	40	1.0.0	search with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.00446820259094	4
+Coq.Init.Logic.eq_rec_r	40	1.0.0	search with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.00453519821167	4
+Coq.Init.Logic.eq_rect_r	40	1.0.0	search with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.00437188148499	4
 Coq.Init.Logic.f_equal_dep	40
-Coq.Init.Logic.f_equal_dep2	40	0.0.3	search with cache (only 1: destruct 1; only 1: destruct H; only 1: reflexivity).	0.0125069618225	22
-Coq.Init.Logic.rew_opp_r	40	0.0.6	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00838398933411	16
-Coq.Init.Logic.rew_opp_l	40	0.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00624799728394	3
-Coq.Init.Logic.f_equal2	40	0.7.3.3	search with cache (only 1: intros A C h1 h2; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.10733795166	571
-Coq.Init.Logic.f_equal3	40	0.1.0.0	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.00740599632263	5
-Coq.Init.Logic.f_equal4	40	0.1.0.0.0	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.00893616676331	6
-Coq.Init.Logic.f_equal5	40	0.1.0.0.0.0	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.0105350017548	7
+Coq.Init.Logic.f_equal_dep2	40	0.0.3	search with cache (only 1: destruct 1; only 1: destruct H; only 1: reflexivity).	0.0117259025574	22
+Coq.Init.Logic.rew_opp_r	40	0.0.6	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00775909423828	16
+Coq.Init.Logic.rew_opp_l	40	0.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00534105300903	3
+Coq.Init.Logic.f_equal2	40	0.7.3.3	search with cache (only 1: intros A C h1 h2; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.10514497757	571
+Coq.Init.Logic.f_equal3	40	0.1.0.0	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.00652599334717	5
+Coq.Init.Logic.f_equal4	40	0.1.0.0.0	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.00802302360535	6
+Coq.Init.Logic.f_equal5	40	0.1.0.0.0.0	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.00986313819885	7
 Coq.Init.Logic.f_equal_compose	40
-Coq.Init.Logic.eq_trans_refl_l	40	0.11.1	search with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.0165159702301	125
-Coq.Init.Logic.eq_trans_refl_r	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00495910644531	2
-Coq.Init.Logic.eq_sym_involutive	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00493097305298	2
-Coq.Init.Logic.eq_trans_sym_inv_l	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00518202781677	2
-Coq.Init.Logic.eq_trans_sym_inv_r	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00530695915222	2
-Coq.Init.Logic.eq_trans_assoc	40	0.5.8.0	search with cache (only 1: destruct e; only 1: intros h1 h2; only 1: destruct h2; only 1: reflexivity).	0.0713601112366	361
-Coq.Init.Logic.rew_map	40	0.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00606894493103	3
-Coq.Init.Logic.eq_trans_map	40	0.6.0.0.6.5.12.29	search with cache (only 1: intros H ?; only 1: intros ? ? ? Fl Fr; only 1: intro A; only 1: intros h1 h2; only 1: destruct 1; only 1: destruct 1; only 1: destruct h2; only 1: reflexivity).	3.95868778229	37793
-Coq.Init.Logic.map_subst	40	0.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00724101066589	3
-Coq.Init.Logic.map_subst_map	40	0.0	search with cache (only 1: destruct H; only 1: reflexivity).	0.00701498985291	2
-Coq.Init.Logic.rew_swap	40	0.2	search with cache (only 1: destruct H, 1; only 1: reflexivity).	0.0145709514618	30
-Coq.Init.Logic.rew_compose	40	1.0.0	search with cache (only 1: intros; only 1: destruct H2; only 1: reflexivity).	0.00734400749207	4
+Coq.Init.Logic.eq_trans_refl_l	40	0.11.1	search with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.0178189277649	125
+Coq.Init.Logic.eq_trans_refl_r	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00599193572998	2
+Coq.Init.Logic.eq_sym_involutive	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00599002838135	2
+Coq.Init.Logic.eq_trans_sym_inv_l	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00642800331116	2
+Coq.Init.Logic.eq_trans_sym_inv_r	40	0.0	search with cache (only 1: destruct e; only 1: reflexivity).	0.00655794143677	2
+Coq.Init.Logic.eq_trans_assoc	40	0.5.8.0	search with cache (only 1: destruct e; only 1: intros h1 h2; only 1: destruct h2; only 1: reflexivity).	0.0744028091431	361
+Coq.Init.Logic.rew_map	40	0.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00708198547363	3
+Coq.Init.Logic.eq_trans_map	40	0.6.0.0.6.5.12.29	search with cache (only 1: intros H ?; only 1: intros ? ? ? Fl Fr; only 1: intro A; only 1: intros h1 h2; only 1: destruct 1; only 1: destruct 1; only 1: destruct h2; only 1: reflexivity).	3.9503929615	37793
+Coq.Init.Logic.map_subst	40	0.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.00663900375366	3
+Coq.Init.Logic.map_subst_map	40	0.0	search with cache (only 1: destruct H; only 1: reflexivity).	0.00627684593201	2
+Coq.Init.Logic.rew_swap	40	0.2	search with cache (only 1: destruct H, 1; only 1: reflexivity).	0.0138900279999	30
+Coq.Init.Logic.rew_compose	40	1.0.0	search with cache (only 1: intros; only 1: destruct H2; only 1: reflexivity).	0.00656294822693	4
 Coq.Init.Logic.eq_id_comm_l	40
 Coq.Init.Logic.eq_id_comm_r	40
-Coq.Init.Logic.eq_refl_map_distr	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00612807273865	2
-Coq.Init.Logic.eq_trans_map_distr	40	0.1.1.12.0.8	search with cache (only 1: unfold f_equal; only 1: destruct e; only 1: intros; only 1: rewrite eq_trans_refl_l; only 1: rewrite eq_trans_refl_l; only 1: reflexivity).	0.351315975189	2236
-Coq.Init.Logic.eq_sym_map_distr	40	0.4	search with cache (only 1: destruct e; only 1: reflexivity).	0.00999402999878	16
-Coq.Init.Logic.eq_trans_sym_distr	40	0.1.6	search with cache (only 1: destruct e'; only 1: destruct e; only 1: reflexivity).	0.0127549171448	26
-Coq.Init.Logic.eq_trans_rew_distr	40	0.4	search with cache (only 1: destruct e'; only 1: reflexivity).	0.00932908058167	14
-Coq.Init.Logic.rew_const	40	0.24.1	search with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.178612947464	854
+Coq.Init.Logic.eq_refl_map_distr	40	0.0	search with cache (only 1: intros; only 1: reflexivity).	0.00623893737793	2
+Coq.Init.Logic.eq_trans_map_distr	40	0.1.1.12.0.8	search with cache (only 1: unfold f_equal; only 1: destruct e; only 1: intros; only 1: rewrite eq_trans_refl_l; only 1: rewrite eq_trans_refl_l; only 1: reflexivity).	0.345175027847	2236
+Coq.Init.Logic.eq_sym_map_distr	40	0.4	search with cache (only 1: destruct e; only 1: reflexivity).	0.00909900665283	16
+Coq.Init.Logic.eq_trans_sym_distr	40	0.1.6	search with cache (only 1: destruct e'; only 1: destruct e; only 1: reflexivity).	0.011568069458	26
+Coq.Init.Logic.eq_trans_rew_distr	40	0.4	search with cache (only 1: destruct e'; only 1: reflexivity).	0.00842905044556	14
+Coq.Init.Logic.rew_const	40	0.24.1	search with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.174643993378	854
 Coq.Init.Logic.unique_existence	40
 Coq.Init.Logic.forall_exists_unique_domain_coincide	40
 Coq.Init.Logic.forall_exists_coincide_unique_domain	40
-Coq.Init.Logic.exists_inhabited	40	10.5	search with cache (only 1: destruct 1; only 1: auto).	0.0650889873505	518
+Coq.Init.Logic.exists_inhabited	40	10.5	search with cache (only 1: destruct 1; only 1: auto).	0.0638890266418	518
 Coq.Init.Logic.inhabited_covariant	40
-Coq.Init.Logic.eq_stepl	40	1.8.2	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.0410330295563	170
-Coq.Init.Logic.iff_stepl	40	3.0.5.6.10	search with cache (only 1: intros A P H; only 1: red; only 1: intros [HypL HypR]; only 1: intros [Hl Hr]; only 1: auto).	1.44920706749	7615
+Coq.Init.Logic.eq_stepl	40	1.8.2	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.0414230823517	170
+Coq.Init.Logic.iff_stepl	40	3.0.5.6.10	search with cache (only 1: intros A P H; only 1: red; only 1: intros [HypL HypR]; only 1: intros [Hl Hr]; only 1: auto).	1.45505595207	7615
 Coq.Init.Logic.eq_ex_uncurried	40
 Coq.Init.Logic.rew_ex	40
-Coq.Init.Logic.eq_ex2_uncurried	40	0.4.1.0.0	search with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: destruct H; only 1: reflexivity).	0.0122060775757	12
-Coq.Init.Logic.rew_ex2	40	0.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.00994896888733	2
-Coq.Init.Logic_Type.identity_sym	40	0.10	search with cache (only 1: destruct 1; only 1: trivial).	0.00868892669678	54
-Coq.Init.Logic_Type.identity_trans	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00440406799316	2
-Coq.Init.Logic_Type.identity_congr	40	0.1	search with cache (only 1: destruct 1; only 1: trivial).	0.00472402572632	3
-Coq.Init.Logic_Type.not_identity_sym	40	21.2	search with cache (only 1: destruct 2; only 1: auto).	0.105401992798	1015
-Coq.Init.Logic_Type.identity_ind_r	40	3.5.14	search with cache (only 1: intros P b H H0; only 1: destruct 1; only 1: assumption).	0.0849950313568	724
-Coq.Init.Logic_Type.identity_rec_r	40	0.0.0	search with cache (only 1: intros A x P H y H0; only 1: case identity_sym with (1 := H0); only 1: trivial).	0.00409698486328	3
-Coq.Init.Logic_Type.identity_rect_r	40	0.0.0	search with cache (only 1: intros A x P H y H0; only 1: case identity_sym with (1 := H0); only 1: trivial).	0.00383591651917	3
+Coq.Init.Logic_Type.identity_sym	40	0.10	search with cache (only 1: destruct 1; only 1: trivial).	0.0233981609344	54
+Coq.Init.Logic_Type.identity_trans	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00384306907654	2
+Coq.Init.Logic_Type.identity_congr	40	0.1	search with cache (only 1: destruct 1; only 1: trivial).	0.00420904159546	3
+Coq.Init.Logic_Type.not_identity_sym	40	21.2	search with cache (only 1: destruct 2; only 1: auto).	0.106905937195	1015
+Coq.Init.Logic_Type.identity_ind_r	40	3.5.14	search with cache (only 1: intros P b H H0; only 1: destruct 1; only 1: assumption).	0.0850019454956	724
+Coq.Init.Logic_Type.identity_rec_r	40	0.0.0	search with cache (only 1: intros A x P H y H0; only 1: case identity_sym with (1 := H0); only 1: trivial).	0.00375199317932	3
+Coq.Init.Logic_Type.identity_rect_r	40	0.0.0	search with cache (only 1: intros A x P H y H0; only 1: case identity_sym with (1 := H0); only 1: trivial).	0.00393295288086	3
 Coq.Init.Specif.sigT_eta	40
-Coq.Init.Specif.sig_eta	40	0.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.00572991371155	2
-Coq.Init.Specif.sigT2_eta	40	0.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.00651812553406	2
-Coq.Init.Specif.sig2_eta	40	1.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.00730490684509	3
-Coq.Init.Specif.exists_to_inhabited_sig	40	0.12.15.7	search with cache (only 1: destruct 1; only 1: split; only 1: exists x; only 1: trivial).	0.193271875381	2075
+Coq.Init.Specif.sig_eta	40	0.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.00562214851379	2
+Coq.Init.Specif.sigT2_eta	40	0.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.00666403770447	2
+Coq.Init.Specif.sig2_eta	40	1.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.00723886489868	3
+Coq.Init.Specif.exists_to_inhabited_sig	40	0.12.15.7	search with cache (only 1: destruct 1; only 1: split; only 1: exists x; only 1: trivial).	0.18714594841	2075
 Coq.Init.Specif.inhabited_sig_to_exists	40
-Coq.Init.Specif.eq_existT_uncurried	40	0.1.1.0	search with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.00865316390991	6
+Coq.Init.Specif.eq_existT_uncurried	40	0.1.1.0	search with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.00832486152649	6
 Coq.Init.Specif.eq_sigT_uncurried	40
-Coq.Init.Specif.eq_existT_curried	40	0.0.0	search with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.00821495056152	3
-Coq.Init.Specif.eq_existT_curried_map	40	0.0	search with cache (only 1: destruct p, q; only 1: reflexivity).	0.0123310089111	2
+Coq.Init.Specif.eq_existT_curried	40	0.0.0	search with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.0081889629364	3
+Coq.Init.Specif.eq_existT_curried_map	40	0.0	search with cache (only 1: destruct p, q; only 1: reflexivity).	0.0128171443939	2
 Coq.Init.Specif.eq_existT_curried_trans	40
-Coq.Init.Specif.eq_existT_curried_congr	40	0.17.6.8	search with cache (only 1: destruct r, q, p; only 1: simpl in *; only 1: destruct 1; only 1: reflexivity).	2.81311798096	6433
+Coq.Init.Specif.eq_existT_curried_congr	40	0.17.6.8	search with cache (only 1: destruct r, q, p; only 1: simpl in *; only 1: destruct 1; only 1: reflexivity).	2.84673786163	6433
 Coq.Init.Specif.eq_sigT_uncurried_iff	40
 Coq.Init.Specif.eq_sigT_rect	40
-Coq.Init.Specif.rew_sigT	40	1.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.010812997818	3
-Coq.Init.Specif.eq_exist_uncurried	40	0.0.0	search with cache (only 1: destruct pq as [p q]; only 1: destruct p, q; only 1: reflexivity).	0.0108170509338	3
-Coq.Init.Specif.eq_sig_uncurried	40	0.0.0.3.0.4	search with cache (only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: destruct pq as [p q]; only 1: simpl in *; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.0824780464172	115
+Coq.Init.Specif.rew_sigT	40	1.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.0108559131622	3
+Coq.Init.Specif.eq_exist_uncurried	40	0.0.0	search with cache (only 1: destruct pq as [p q]; only 1: destruct p, q; only 1: reflexivity).	0.0109031200409	3
+Coq.Init.Specif.eq_sig_uncurried	40	0.0.0.3.0.4	search with cache (only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: destruct pq as [p q]; only 1: simpl in *; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.0787661075592	115
 Coq.Init.Specif.eq_sig_rect	40
-Coq.Init.Specif.eq_sig_uncurried_iff	40	0.0.0.4.10.4.2.4	search with cache (only 1: split; only 1: intro p; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: apply eq_exist_uncurried).	1.29251599312	5968
-Coq.Init.Specif.rew_sig	40	0.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.0119400024414	2
+Coq.Init.Specif.eq_sig_uncurried_iff	40	0.0.0.4.10.4.2.4	search with cache (only 1: split; only 1: intro p; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: apply eq_exist_uncurried).	1.26683807373	5968
+Coq.Init.Specif.rew_sig	40	0.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.0122361183167	2
 Coq.Init.Specif.eq_existT2_uncurried	40
 Coq.Init.Specif.eq_sigT2_uncurried	40
-Coq.Init.Specif.eq_sigT2_uncurried_iff	40	0.0.0.3.1.7.3.6.1	search with cache (only 1: split; only 1: intro; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: reflexivity; only 1: destruct u as [u1 u2 u3], v as [v1 v2 v3]; only 1: simpl in *; only 1: apply eq_existT2_uncurried).	2.6853260994	6948
+Coq.Init.Specif.eq_sigT2_uncurried_iff	40	0.0.0.3.1.7.3.6.1	search with cache (only 1: split; only 1: intro; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: reflexivity; only 1: destruct u as [u1 u2 u3], v as [v1 v2 v3]; only 1: simpl in *; only 1: apply eq_existT2_uncurried).	2.50854992867	6948
 Coq.Init.Specif.eq_sigT2_rect	40
-Coq.Init.Specif.rew_sigT2	40	0.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.0167739391327	2
+Coq.Init.Specif.rew_sigT2	40	0.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.0172469615936	2
 Coq.Init.Specif.eq_exist2_uncurried	40
-Coq.Init.Specif.eq_sig2_uncurried	40	0.0.0.10.6.11.22	search with cache (only 1: simpl in *; only 1: destruct pqr as [p q r]; only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: destruct r, q, p; only 1: simpl; only 1: reflexivity).	1.70017790794	6850
-Coq.Init.Specif.eq_sig2_uncurried_iff	40	0.0.0.2.1.4.3.6.2	search with cache (only 1: split; only 1: intro; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: reflexivity; only 1: destruct u as [u1 u2 u3], v as [v1 v2 v3]; only 1: simpl in *; only 1: apply eq_exist2_uncurried).	2.79208517075	6966
+Coq.Init.Specif.eq_sig2_uncurried	40	0.0.0.10.6.11.22	search with cache (only 1: simpl in *; only 1: destruct pqr as [p q r]; only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: destruct r, q, p; only 1: simpl; only 1: reflexivity).	1.68365097046	6850
+Coq.Init.Specif.eq_sig2_uncurried_iff	40	0.0.0.2.1.4.3.6.2	search with cache (only 1: split; only 1: intro; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: reflexivity; only 1: destruct u as [u1 u2 u3], v as [v1 v2 v3]; only 1: simpl in *; only 1: apply eq_exist2_uncurried).	2.70336198807	6966
 Coq.Init.Specif.eq_sig2_rect	40
-Coq.Init.Specif.rew_sig2	40	0.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.0175740718842	2
+Coq.Init.Specif.rew_sig2	40	0.0	search with cache (only 1: destruct H, u; only 1: reflexivity).	0.0177609920502	2
 Coq.Init.Specif.Choice	40
 Coq.Init.Specif.Choice2	40
 Coq.Init.Specif.bool_choice	40
 Coq.Init.Specif.dependent_choice	40
-Coq.Init.Specif.absurd_set	40	0.1.1	search with cache (only 1: unfold not; only 1: intros A C h1 h2; only 1: destruct (h2 h1)).	0.0126638412476	24
-Coq.Classes.CRelationClasses.complement_inverse	40	3	search with cache (only 1: reflexivity).	0.00476217269897	4
+Coq.Init.Specif.absurd_set	40	0.1.1	search with cache (only 1: unfold not; only 1: intros A C h1 h2; only 1: destruct (h2 h1)).	0.0125858783722	24
+Coq.Classes.CMorphisms.eq_proper_proxy	40	0.4	search with cache (only 1: red; only 1: trivial).	0.0056049823761	6
+Coq.Classes.CMorphisms.reflexive_proper_proxy	40	1	search with cache (only 1: firstorder).	0.00554800033569	2
+Coq.Classes.CMorphisms.proper_proper_proxy	40	0	search with cache (only 1: firstorder).	0.00462293624878	1
+Coq.Classes.CMorphisms.pointwise_pointwise	40	13.7.8.1.0.2	search with cache (only 1: split; only 1: destruct 2; only 1: firstorder; only 1: intros; only 1: hnf; only 1: firstorder).	3.50635504723	18992
+Coq.Classes.CMorphisms.subrelation_id_proper	40	1	search with cache (only 1: apply H).	0.00497794151306	2
+Coq.Classes.CMorphisms.subrelation_respectful	40	0	search with cache (only 1: firstorder).	0.00801491737366	1
+Coq.Classes.CMorphisms.subrelation_refl	40	5.0.0	search with cache (only 1: hnf; only 1: intros; only 1: firstorder).	0.00781202316284	8
+Coq.Classes.CMorphisms.subrelation_proper	40	0.0	search with cache (only 1: reduce_goal; only 1: simpl_crelation).	0.0112321376801	2
+Coq.Classes.CMorphisms.proper_subrelation_proper_arrow	40	1	search with cache (only 1: simpl_crelation).	0.0110599994659	2
+Coq.Classes.CMorphisms.pointwise_subrelation	40	0	search with cache (only 1: simpl_crelation).	0.0133831501007	1
+Coq.Classes.CMorphisms.forall_subrelation	40	1.0.3	search with cache (only 1: intros; only 1: intro H; only 1: firstorder).	0.0150628089905	16
+Coq.Classes.CMorphisms.iff_impl_subrelation	40	1.2	search with cache (only 1: intros A B [H1 H2]; only 1: trivial).	0.00691986083984	5
+Coq.Classes.CMorphisms.iff_flip_impl_subrelation	40	0	search with cache (only 1: firstorder).	0.00699591636658	1
+Coq.Classes.CMorphisms.iffT_arrow_subrelation	40	1	search with cache (only 1: firstorder).	0.00832390785217	11
+Coq.Classes.CMorphisms.iffT_flip_arrow_subrelation	40	0	search with cache (only 1: firstorder).	0.00714612007141	1
+Coq.Classes.CMorphisms.respectful_per_obligation_2	40
+Coq.Classes.CMorphisms.flip_proper_obligation_1	40	4	search with cache (only 1: firstorder).	0.0106809139252	5
+Coq.Classes.CMorphisms.trans_contra_co_type_morphism_obligation_1	40	3	search with cache (only 1: firstorder).	0.173176050186	4
+Coq.Classes.CMorphisms.trans_contra_inv_impl_type_morphism_obligation_1	40	5	search with cache (only 1: firstorder).	1.46518993378	364
+Coq.Classes.CMorphisms.trans_co_impl_type_morphism_obligation_1	40	6	search with cache (only 1: firstorder).	1.24027204514	707
+Coq.Classes.CMorphisms.trans_sym_co_inv_impl_type_morphism_obligation_1	40	10	search with cache (only 1: firstorder).	0.222259044647	373
+Coq.Classes.CMorphisms.trans_sym_contra_arrow_morphism_obligation_1	40	10	search with cache (only 1: firstorder).	1.24611997604	1259
+Coq.Classes.CMorphisms.per_partial_app_type_morphism_obligation_1	40	10	search with cache (only 1: firstorder).	0.116673946381	21
+Coq.Classes.CMorphisms.trans_co_eq_inv_arrow_morphism_obligation_1	40	11	search with cache (only 1: firstorder).	0.541215181351	827
+Coq.Classes.CMorphisms.PER_type_morphism_obligation_1	40	11	search with cache (only 1: firstorder).	2.13157892227	472
+Coq.Classes.CMorphisms.symmetric_equiv_flip	40	5.0	search with cache (only 1: hnf; only 1: firstorder).	0.0179500579834	17
+Coq.Classes.CMorphisms.compose_proper_obligation_1	40	3	search with cache (only 1: firstorder).	0.0304100513458	4
+Coq.Classes.CMorphisms.reflexive_eq_dom_reflexive	40	4.6	search with cache (only 1: intro z; only 1: simpl_crelation).	0.0316610336304	67
+Coq.Classes.CMorphisms.respectful_morphism	40
+Coq.Classes.CMorphisms.Reflexive_partial_app_morphism	40	2.4	search with cache (only 1: unfold respectful, relation_equivalence in *; only 1: firstorder).	0.0111489295959	8
+Coq.Classes.CMorphisms.flip_respectful	40	8.0	search with cache (only 1: unfold respectful, relation_equivalence in *; only 1: firstorder).	0.0286219120026	18
+Coq.Classes.CMorphisms.flip1	40	2.0.0	search with cache (only 1: hnf; only 1: intros; only 1: auto).	0.0104138851166	5
+Coq.Classes.CMorphisms.flip2	40	0	search with cache (only 1: firstorder).	0.00850701332092	1
+Coq.Classes.CMorphisms.eq_subrelation	40	1	search with cache (only 1: simpl_crelation).	0.0133728981018	2
+Coq.Classes.CMorphisms.reflexive_proper	40	0	search with cache (only 1: firstorder).	0.00839304924011	1
+Coq.Classes.CMorphisms.proper_eq	40	0	search with cache (only 1: firstorder).	0.00838112831116	1
+Coq.Classes.CMorphisms.proper_proper	40	0.0.0.1	search with cache (only 1: intros; only 1: reduce; only 1: subst; only 1: firstorder).	0.0159568786621	5
+Coq.Classes.CMorphisms.proper_normalizes_proper	40	2.2	search with cache (only 1: reduce; only 1: firstorder).	0.0567018985748	6
+Coq.Classes.CMorphisms.flip_atom	40	1.1	search with cache (only 1: hnf; only 1: firstorder).	0.0112659931183	4
+Coq.Classes.CMorphisms.flip_arrow	40
+Coq.Classes.CMorphisms.proper_sym_flip	40	4.0	search with cache (only 1: intros A B R R' HRR' S S' HSS' f g; only 1: simpl_crelation).	0.0533268451691	6
+Coq.Classes.CMorphisms.proper_sym_flip_2	40	0.3.0	search with cache (only 1: intros A R1 Sym B R2 f Hf; only 1: unfold flip, respectful; only 1: firstorder).	0.092118024826	34
+Coq.Classes.CMorphisms.proper_sym_impl_iff	40	8.12.7	search with cache (only 1: intros x y H'; only 1: simpl_crelation; only 1: firstorder).	13.7177581787	7362
+Coq.Classes.CMorphisms.proper_sym_arrow_iffT	40	19.17	search with cache (only 1: simpl_crelation; only 1: firstorder).	30.3989999294	19666
+Coq.Classes.CMorphisms.proper_sym_impl_iff_2	40
+Coq.Classes.CMorphisms.proper_sym_arrow_iffT_2	40	0.0.1.0.4	search with cache (only 1: intros A R Sym B R' Sym' f Hf x x' Hxx' y y' Hyy'; only 1: repeat red in Hf; only 1: split; only 1: eauto; only 1: eauto).	0.1023209095	45
+Coq.Classes.CMorphisms.PartialOrder_proper_type	40
+Coq.Classes.CMorphisms.PartialOrder_StrictOrder	40
+Coq.Classes.Morphisms_Prop.Acc_pt_morphism	40
+Coq.Classes.Morphisms_Prop.Acc_rel_morphism	40
+Coq.Classes.Morphisms_Prop.well_founded_morphism	40
+Coq.Classes.CEquivalence.equiv_transitive_obligation_1	40	0.0.6.0	search with cache (only 1: firstorder; only 1: transitivity y; only 1: firstorder; only 1: firstorder).	0.0163240432739	24
+Coq.Classes.CEquivalence.respecting_equiv_obligation_3	40
+Coq.Classes.CEquivalence.pointwise_reflexive	40	0	search with cache (only 1: firstorder).	0.00783777236938	1
+Coq.Classes.CEquivalence.pointwise_symmetric	40	1	search with cache (only 1: simpl_crelation).	0.0163450241089	2
+Coq.Classes.CEquivalence.pointwise_transitive	40	0	search with cache (only 1: firstorder).	0.0108780860901	1
+Coq.Classes.CEquivalence.pointwise_equivalence	40	0	search with cache (only 1: firstorder).	0.403958082199	1
+Coq.Classes.CRelationClasses.complement_inverse	40	3	search with cache (only 1: reflexivity).	0.00721192359924	4
 Coq.Classes.CRelationClasses.StrictOrder_Asymmetric	40
-Coq.Classes.CRelationClasses.subrelation_symmetric	40	1	search with cache (only 1: firstorder).	0.00603699684143	2
-Coq.Classes.CRelationClasses.flip_Reflexive	40	3.0	search with cache (only 1: hnf; only 1: firstorder).	0.00580286979675	5
-Coq.Classes.CRelationClasses.flip_Antisymmetric	40	31.36	search with cache (only 1: red; only 1: auto).	0.307124853134	2899
-Coq.Classes.CRelationClasses.flip_PreOrder	40	5	search with cache (only 1: firstorder).	0.0169148445129	6
-Coq.Classes.CRelationClasses.flip_StrictOrder	40	4	search with cache (only 1: firstorder).	0.0177249908447	5
-Coq.Classes.CRelationClasses.flip_PER	40	4	search with cache (only 1: firstorder).	0.0254838466644	5
-Coq.Classes.CRelationClasses.flip_Equivalence	40	5	search with cache (only 1: firstorder).	0.0323770046234	6
-Coq.Classes.CRelationClasses.complement_Irreflexive	40	4.2	search with cache (only 1: hnf; only 1: firstorder).	0.00982403755188	8
-Coq.Classes.CRelationClasses.complement_Symmetric	40	0	search with cache (only 1: firstorder).	0.00726008415222	1
-Coq.Classes.CRelationClasses.iffT_Reflexive	40	0.11.5	search with cache (only 1: intro H; only 1: red; only 1: tauto).	0.0397131443024	224
-Coq.Classes.CRelationClasses.iffT_Symmetric	40	0	search with cache (only 1: firstorder).	0.00777292251587	1
-Coq.Classes.CRelationClasses.iffT_Transitive	40	0	search with cache (only 1: firstorder).	0.00918912887573	1
+Coq.Classes.CRelationClasses.subrelation_symmetric	40	1	search with cache (only 1: firstorder).	0.00565314292908	2
+Coq.Classes.CRelationClasses.flip_Reflexive	40	3.0	search with cache (only 1: hnf; only 1: firstorder).	0.00543785095215	5
+Coq.Classes.CRelationClasses.flip_Antisymmetric	40	31.36	search with cache (only 1: red; only 1: auto).	0.309840917587	2899
+Coq.Classes.CRelationClasses.flip_PreOrder	40	5	search with cache (only 1: firstorder).	0.0164480209351	6
+Coq.Classes.CRelationClasses.flip_StrictOrder	40	4	search with cache (only 1: firstorder).	0.017410993576	5
+Coq.Classes.CRelationClasses.flip_PER	40	4	search with cache (only 1: firstorder).	0.0247888565063	5
+Coq.Classes.CRelationClasses.flip_Equivalence	40	5	search with cache (only 1: firstorder).	0.0323021411896	6
+Coq.Classes.CRelationClasses.complement_Irreflexive	40	4.2	search with cache (only 1: hnf; only 1: firstorder).	0.00944995880127	8
+Coq.Classes.CRelationClasses.complement_Symmetric	40	0	search with cache (only 1: firstorder).	0.00718593597412	1
+Coq.Classes.CRelationClasses.iffT_Reflexive	40	0.11.5	search with cache (only 1: intro H; only 1: red; only 1: tauto).	0.0400700569153	224
+Coq.Classes.CRelationClasses.iffT_Symmetric	40	0	search with cache (only 1: firstorder).	0.0076220035553	1
+Coq.Classes.CRelationClasses.iffT_Transitive	40	0	search with cache (only 1: firstorder).	0.00896596908569	1
 Coq.Classes.CRelationClasses.relation_equivalence_equivalence	40
-Coq.Classes.CRelationClasses.relation_implication_preorder	40	1	search with cache (only 1: firstorder).	0.0103468894958	2
-Coq.Classes.CRelationClasses.partial_order_antisym	40	0	search with cache (only 1: firstorder).	0.0147039890289	1
-Coq.Classes.CRelationClasses.PartialOrder_inverse	40	0	search with cache (only 1: firstorder).	0.0371549129486	1
-Coq.Classes.RelationClasses.complement_inverse	40	9	search with cache (only 1: reflexivity).	0.00512313842773	10
+Coq.Classes.CRelationClasses.relation_implication_preorder	40	1	search with cache (only 1: firstorder).	0.0104329586029	2
+Coq.Classes.CRelationClasses.partial_order_antisym	40	0	search with cache (only 1: firstorder).	0.0148890018463	1
+Coq.Classes.CRelationClasses.PartialOrder_inverse	40	0	search with cache (only 1: firstorder).	0.0376360416412	1
+Coq.Classes.Equivalence.equiv_transitive_obligation_1	40	0.11.3	search with cache (only 1: intros; only 1: rewrite <- H0; only 1: firstorder).	0.147432088852	396
+Coq.Classes.Equivalence.respecting_equiv_obligation_3	40	13.2.12.0	search with cache (only 1: simpl_relation; only 1: rewrite <- H0; only 1: simpl_relation; only 1: firstorder).	8.35923099518	11659
+Coq.Classes.Equivalence.pointwise_reflexive	40	0.1	search with cache (only 1: reduce; only 1: simpl_relation).	0.012167930603	3
+Coq.Classes.Equivalence.pointwise_symmetric	40	0	search with cache (only 1: firstorder).	0.00849604606628	1
+Coq.Classes.Equivalence.pointwise_transitive	40	0	search with cache (only 1: firstorder).	0.0100560188293	1
+Coq.Classes.Equivalence.pointwise_equivalence	40	0	search with cache (only 1: firstorder).	0.38095498085	1
+Coq.Classes.RelationClasses.complement_inverse	40	9	search with cache (only 1: reflexivity).	0.00499105453491	10
 Coq.Classes.RelationClasses.StrictOrder_Asymmetric	40
-Coq.Classes.RelationClasses.subrelation_symmetric	40	0	search with cache (only 1: firstorder).	0.0057430267334	1
-Coq.Classes.RelationClasses.flip_Reflexive	40	1.1.1.0	search with cache (only 1: hnf; only 1: intros; only 1: hnf; only 1: firstorder).	0.00705099105835	7
-Coq.Classes.RelationClasses.flip_Antisymmetric	40	4	search with cache (only 1: firstorder).	0.00832200050354	5
-Coq.Classes.RelationClasses.flip_PreOrder	40	4	search with cache (only 1: firstorder).	0.0200228691101	5
-Coq.Classes.RelationClasses.flip_StrictOrder	40	2	search with cache (only 1: firstorder).	0.0207269191742	3
-Coq.Classes.RelationClasses.flip_PER	40	2	search with cache (only 1: firstorder).	0.0306448936462	3
-Coq.Classes.RelationClasses.flip_Equivalence	40	0	search with cache (only 1: firstorder).	0.0313169956207	1
-Coq.Classes.RelationClasses.complement_Irreflexive	40	3	search with cache (only 1: firstorder).	0.00788998603821	4
-Coq.Classes.RelationClasses.complement_Symmetric	40	1	search with cache (only 1: firstorder).	0.00783801078796	2
+Coq.Classes.RelationClasses.subrelation_symmetric	40	0	search with cache (only 1: firstorder).	0.00562787055969	1
+Coq.Classes.RelationClasses.flip_Reflexive	40	1.1.1.0	search with cache (only 1: hnf; only 1: intros; only 1: hnf; only 1: firstorder).	0.00682902336121	7
+Coq.Classes.RelationClasses.flip_Antisymmetric	40	4	search with cache (only 1: firstorder).	0.00815105438232	5
+Coq.Classes.RelationClasses.flip_PreOrder	40	4	search with cache (only 1: firstorder).	0.0198340415955	5
+Coq.Classes.RelationClasses.flip_StrictOrder	40	2	search with cache (only 1: firstorder).	0.0203528404236	3
+Coq.Classes.RelationClasses.flip_PER	40	2	search with cache (only 1: firstorder).	0.0301470756531	3
+Coq.Classes.RelationClasses.flip_Equivalence	40	0	search with cache (only 1: firstorder).	0.0307769775391	1
+Coq.Classes.RelationClasses.complement_Irreflexive	40	3	search with cache (only 1: firstorder).	0.00798487663269	4
+Coq.Classes.RelationClasses.complement_Symmetric	40	1	search with cache (only 1: firstorder).	0.00777506828308	2
 Coq.Classes.RelationClasses.predicate_equivalence_equivalence_obligation_1	40
-Coq.Classes.RelationClasses.predicate_equivalence_equivalence_obligation_2	40	0.0.0	search with cache (only 1: induction l; only 1: firstorder; only 1: firstorder).	0.0175240039825	3
+Coq.Classes.RelationClasses.predicate_equivalence_equivalence_obligation_2	40	0.0.0	search with cache (only 1: induction l; only 1: firstorder; only 1: firstorder).	0.0173809528351	3
 Coq.Classes.RelationClasses.predicate_equivalence_equivalence_obligation_3	40
-Coq.Classes.RelationClasses.predicate_implication_preorder_obligation_1	40	2.0.0.0.1	search with cache (only 1: induction l; only 1: firstorder; only 1: intros; only 1: simpl in *; only 1: firstorder).	0.0149710178375	8
-Coq.Classes.RelationClasses.predicate_implication_preorder_obligation_2	40	0.1.0.0.5	search with cache (only 1: induction l; only 1: firstorder; only 1: intros; only 1: pose (IHl (x x0) (y x0) (z x0)); only 1: firstorder).	0.46270608902	34
+Coq.Classes.RelationClasses.predicate_implication_preorder_obligation_1	40	2.0.0.0.1	search with cache (only 1: induction l; only 1: firstorder; only 1: intros; only 1: simpl in *; only 1: firstorder).	0.0154089927673	8
+Coq.Classes.RelationClasses.predicate_implication_preorder_obligation_2	40	0.1.0.0.5	search with cache (only 1: induction l; only 1: firstorder; only 1: intros; only 1: pose (IHl (x x0) (y x0) (z x0)); only 1: firstorder).	0.481345891953	34
 Coq.Classes.RelationClasses.relation_equivalence_equivalence	40
+Coq.Classes.RelationClasses.relation_implication_preorder	40	1	search with cache (only 1: firstorder).	0.0118799209595	2
+Coq.Classes.RelationClasses.partial_order_antisym	40	0.0	search with cache (only 1: hnf; only 1: firstorder).	0.0173809528351	2
+Coq.Classes.RelationClasses.PartialOrder_inverse	40	2	search with cache (only 1: firstorder).	0.0479748249054	3
+Coq.Classes.RelationClasses.subrelation_partial_order_obligation_1	40	3	search with cache (only 1: firstorder).	0.0234642028809	12
+Coq.Classes.Morphisms.eq_proper_proxy	40	0.0.3	search with cache (only 1: transitivity x; only 1: trivial; only 1: trivial).	0.006511926651	6
+Coq.Classes.Morphisms.reflexive_proper_proxy	40	0	search with cache (only 1: firstorder).	0.00495600700378	1
+Coq.Classes.Morphisms.proper_proper_proxy	40	0	search with cache (only 1: firstorder).	0.0046648979187	1
+Coq.Classes.Morphisms.pointwise_pointwise	40	5.6.14.15.3	search with cache (only 1: intros Hfst Hsnd; only 1: split; only 1: destruct 2; only 1: firstorder; only 1: firstorder).	2.23044109344	7809
+Coq.Classes.Morphisms.subrelation_id_proper	40	3	search with cache (only 1: firstorder).	0.00549793243408	4
+Coq.Classes.Morphisms.subrelation_respectful	40	0	search with cache (only 1: firstorder).	0.0081148147583	1
+Coq.Classes.Morphisms.subrelation_refl	40	0.1	search with cache (only 1: unfold subrelation in *; only 1: firstorder).	0.00580596923828	3
+Coq.Classes.Morphisms.subrelation_proper	40	1	search with cache (only 1: firstorder).	0.00597310066223	2
+Coq.Classes.Morphisms.proper_subrelation_proper	40	0.0.1.2.14.0	search with cache (only 1: unfold subrelation; only 1: intro H; only 1: intro z; only 1: reduce; only 1: subst; only 1: firstorder).	3.93321800232	1838
+Coq.Classes.Morphisms.pointwise_subrelation	40	0	search with cache (only 1: firstorder).	0.00653982162476	1
+Coq.Classes.Morphisms.forall_subrelation	40	2.4	search with cache (only 1: unfold subrelation; only 1: firstorder).	0.0111751556396	20
+Coq.Classes.Morphisms.iff_impl_subrelation	40	0.0	search with cache (only 1: reduce; only 1: firstorder).	0.00680899620056	2
+Coq.Classes.Morphisms.iff_flip_impl_subrelation	40	0.2	search with cache (only 1: reduce; only 1: firstorder).	0.00698399543762	4
+Coq.Classes.Morphisms.respectful_per_obligation_2	40
+Coq.Classes.Morphisms.complement_proper_obligation_1	40
+Coq.Classes.Morphisms.flip_proper_obligation_1	40	9	search with cache (only 1: firstorder).	0.0173361301422	10
+Coq.Classes.Morphisms.trans_contra_co_morphism_obligation_1	40	4	search with cache (only 1: firstorder).	0.110713005066	5
+Coq.Classes.Morphisms.trans_contra_inv_impl_morphism_obligation_1	40	11	search with cache (only 1: firstorder).	1.79297304153	4431
+Coq.Classes.Morphisms.trans_co_impl_morphism_obligation_1	40	12	search with cache (only 1: firstorder).	5.4808909893	12384
+Coq.Classes.Morphisms.trans_sym_co_inv_impl_morphism_obligation_1	40	9	search with cache (only 1: firstorder).	0.0751531124115	139
+Coq.Classes.Morphisms.trans_sym_contra_impl_morphism_obligation_1	40	7.1	search with cache (only 1: symmetry; only 1: firstorder).	0.536270856857	505
+Coq.Classes.Morphisms.per_partial_app_morphism_obligation_1	40	9	search with cache (only 1: firstorder).	0.127583026886	88
+Coq.Classes.Morphisms.trans_co_eq_inv_impl_morphism_obligation_1	40	7	search with cache (only 1: firstorder).	0.472462892532	177
+Coq.Classes.Morphisms.PER_morphism_obligation_1	40	8	search with cache (only 1: firstorder).	2.56697893143	1001
+Coq.Classes.Morphisms.symmetric_equiv_flip	40	5.1.0.0	search with cache (only 1: hnf; only 1: intros; only 1: compute; only 1: firstorder).	0.0153660774231	12
+Coq.Classes.Morphisms.compose_proper_obligation_1	40	8	search with cache (only 1: firstorder).	0.0139739513397	9
+Coq.Classes.Morphisms.reflexive_eq_dom_reflexive	40	1.2.3	search with cache (only 1: reduce; only 1: subst; only 1: trivial).	0.0116350650787	9
+Coq.Classes.Morphisms.respectful_morphism	40	0.2.1.1.0.0.2.3.4.0.3	search with cache (only 1: split; only 1: simpl_relation; only 1: apply H0; only 1: apply H1; only 1: apply H; only 1: simpl_relation; only 1: simpl_relation; only 1: apply H0; only 1: apply H1; only 1: apply H; only 1: simpl_relation).	9.86630702019	2047
+Coq.Classes.Morphisms.Reflexive_partial_app_morphism	40	0.6	search with cache (only 1: reduce; only 1: auto).	0.0110259056091	8
+Coq.Classes.Morphisms.flip_respectful	40	0.4.0	search with cache (only 1: simpl_relation; only 1: unfold respectful, relation_equivalence, predicate_equivalence in *; only 1: simpl_relation).	0.0845699310303	13
+Coq.Classes.Morphisms.flip1	40	4.3	search with cache (only 1: hnf; only 1: apply H).	0.0153760910034	25
+Coq.Classes.Morphisms.flip2	40	0	search with cache (only 1: firstorder).	0.00854301452637	1
+Coq.Classes.Morphisms.eq_subrelation	40	2.2	search with cache (only 1: unfold subrelation; only 1: simpl_relation).	0.02410197258	12
+Coq.Classes.Morphisms.reflexive_proper	40	0	search with cache (only 1: firstorder).	0.00880599021912	1
+Coq.Classes.Morphisms.proper_eq	40	1	search with cache (only 1: firstorder).	0.00878882408142	2
+Coq.Classes.Morphisms.proper_proper	40	1.0.0	search with cache (only 1: reduce; only 1: subst; only 1: firstorder).	0.0250668525696	20
+Coq.Classes.Morphisms.proper_normalizes_proper	40	6.0.7	search with cache (only 1: simpl_relation; only 1: reduce in H; only 1: firstorder).	0.119111061096	170
+Coq.Classes.Morphisms.flip_atom	40	0	search with cache (only 1: firstorder).	0.0101928710938	1
+Coq.Classes.Morphisms.flip_arrow	40
+Coq.Classes.Morphisms.proper_sym_flip	40	0.0.0	search with cache (only 1: unfold flip, respectful; only 1: intros; only 1: firstorder).	0.0124731063843	3
+Coq.Classes.Morphisms.proper_sym_flip_2	40	0.0.2	search with cache (only 1: unfold flip, respectful; only 1: intros A R1 Sym B R2 f Hf; only 1: firstorder).	0.245637893677	46
+Coq.Classes.Morphisms.proper_sym_impl_iff	40	7.4	search with cache (only 1: simpl_relation; only 1: firstorder).	0.858069896698	344
+Coq.Classes.Morphisms.proper_sym_impl_iff_2	40
+Coq.Classes.Morphisms.PartialOrder_proper	40
+Coq.Classes.Morphisms.PartialOrder_StrictOrder	40
 Coq.Logic.PropFacts.injection_is_involution_in_Prop	40
-Coq.Logic.JMeq.JMeq_sym	40	1.0.5	search with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.0065290927887	14
-Coq.Logic.JMeq.JMeq_trans	40	1.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.00508904457092	4
+Coq.Logic.JMeq.JMeq_sym	40	1.0.5	search with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.00718402862549	14
+Coq.Logic.JMeq.JMeq_trans	40	1.0.0	search with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.00587010383606	4
 Coq.Logic.JMeq.JMeq_ind	40
-Coq.Logic.JMeq.JMeq_rec	40	0.0.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := H'); only 1: trivial).	0.00425314903259	3
-Coq.Logic.JMeq.JMeq_rect	40	0.0.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := H'); only 1: trivial).	0.00438284873962	3
+Coq.Logic.JMeq.JMeq_rec	40	0.0.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := H'); only 1: trivial).	0.00585103034973	3
+Coq.Logic.JMeq.JMeq_rect	40	0.0.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := H'); only 1: trivial).	0.00603580474854	3
 Coq.Logic.JMeq.JMeq_ind_r	40
-Coq.Logic.JMeq.JMeq_rec_r	40	0.1.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := JMeq_sym H'); only 1: trivial).	0.00510001182556	4
-Coq.Logic.JMeq.JMeq_rect_r	40	0.1.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := JMeq_sym H'); only 1: trivial).	0.00500392913818	4
-Coq.Logic.JMeq.JMeq_congr	40	0.1.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := H'); only 1: trivial).	0.00505113601685	4
-Coq.Logic.JMeq.JMeq_eq_dep_id	40	0.0.1	search with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.0060510635376	4
-Coq.Logic.JMeq.eq_dep_id_JMeq	40	1.0	search with cache (only 1: destruct 1; only 1: trivial).	0.0048201084137	3
-Coq.Logic.JMeq.eq_dep_JMeq	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00461888313293	2
+Coq.Logic.JMeq.JMeq_rec_r	40	0.1.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := JMeq_sym H'); only 1: trivial).	0.00677990913391	4
+Coq.Logic.JMeq.JMeq_rect_r	40	0.1.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := JMeq_sym H'); only 1: trivial).	0.00681090354919	4
+Coq.Logic.JMeq.JMeq_congr	40	0.1.0	search with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := H'); only 1: trivial).	0.00690889358521	4
+Coq.Logic.JMeq.JMeq_eq_dep_id	40	0.0.1	search with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.00748991966248	4
+Coq.Logic.JMeq.eq_dep_id_JMeq	40	1.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00687098503113	3
+Coq.Logic.JMeq.eq_dep_JMeq	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00664710998535	2
 Coq.Logic.JMeq.eq_dep_strictly_stronger_JMeq	40
-Coq.Logic.JMeq.JMeq_eq_dep	40	0.2.6.0	search with cache (only 1: destruct 1; only 1: intros; only 1: dependent rewrite H; only 1: trivial).	0.0390222072601	107
-Coq.Logic.ExtensionalityFacts.diagonal_projs_same_behavior	40	1.50	search with cache (only 1: intros f [x]; only 1: trivial).	0.57675409317	5743
+Coq.Logic.JMeq.JMeq_eq_dep	40	0.2.6.0	search with cache (only 1: destruct 1; only 1: intros; only 1: dependent rewrite H; only 1: trivial).	0.044182062149	107
+Coq.Logic.ExtensionalityFacts.diagonal_projs_same_behavior	40	1.50	search with cache (only 1: intros f [x]; only 1: trivial).	0.494529008865	5743
 Coq.Logic.ExtensionalityFacts.diagonal_inverse1	40
-Coq.Logic.ExtensionalityFacts.diagonal_inverse2	40	0.0.0.0	search with cache (only 1: split; only 1: trivial; only 1: destruct b as (a1, a2, []); only 1: reflexivity).	0.00787997245789	4
+Coq.Logic.ExtensionalityFacts.diagonal_inverse2	40	0.0.0.0	search with cache (only 1: split; only 1: trivial; only 1: destruct b as (a1, a2, []); only 1: reflexivity).	0.00782489776611	4
 Coq.Logic.ExtensionalityFacts.FunctExt_iff_EqDeltaProjs	40
 Coq.Logic.ExtensionalityFacts.FunctExt_UniqInverse	40
 Coq.Logic.ExtensionalityFacts.UniqInverse_EqDeltaProjs	40
@@ -432,12 +828,14 @@ Coq.Logic.Hurkens.Generic.lemma2	40
 Coq.Logic.Hurkens.Generic.paradox	40
 Coq.Logic.Hurkens.NoRetractToImpredicativeUniverse.paradox	40
 Coq.Logic.Hurkens.NoRetractToModalProposition.strength	40
-Coq.Logic.Hurkens.NoRetractToModalProposition.modal	40	2.0.12.11	search with cache (only 1: red; only 1: intro p; only 1: destruct p; only 1: eauto).	0.124480962753	907
+Coq.Logic.Hurkens.NoRetractToModalProposition.modal	40	2.0.12.11	search with cache (only 1: red; only 1: intro p; only 1: destruct p; only 1: eauto).	0.127024173737	907
 Coq.Logic.Hurkens.NoRetractToModalProposition.Forall	40
 Coq.Logic.Hurkens.NoRetractToModalProposition.paradox	40
 Coq.Logic.Hurkens.NoRetractToNegativeProp.paradox	40
 Coq.Logic.Hurkens.NoRetractFromSmallPropositionToProp.mparadox	40
-Coq.Logic.Eqdep_dec.trans_sym_eq	40	0.26.17.10.31.10	search with cache (only 1: intro x; only 1: intros n m; only 1: revert m; only 1: intro p; only 1: destruct p; only 1: reflexivity).	3.40526294708	45453
+Coq.Logic.Hurkens.NoRetractFromSmallPropositionToProp.paradox	40
+Coq.Logic.Hurkens.NoRetractFromTypeToProp.paradox	40
+Coq.Logic.Eqdep_dec.trans_sym_eq	40	0.26.17.10.31.10	search with cache (only 1: intro x; only 1: intros n m; only 1: revert m; only 1: intro p; only 1: destruct p; only 1: reflexivity).	3.93592691422	45453
 Coq.Logic.Eqdep_dec.nu_constant	40
 Coq.Logic.Eqdep_dec.nu_left_inv_on	40
 Coq.Logic.Eqdep_dec.eq_proofs_unicity_on	40
@@ -446,170 +844,227 @@ Coq.Logic.Eqdep_dec.inj_right_pair_on	40
 Coq.Logic.Eqdep_dec.K_dec_type	40
 Coq.Logic.Eqdep_dec.eq_rect_eq_dec	40
 Coq.Logic.Eqdep_dec.DecidableEqDep.inj_pairP2	40
+Coq.Logic.Eqdep_dec.inj_pair2_eq_dec	40
+Coq.Logic.Eqdep_dec.UIP_refl_unit	40
 Coq.Logic.StrictProp.Spr1_inj	40
 Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.Eq_rect_eq.eq_rect_eq	40
 Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.subset_eq_compat	40
-Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.subsetT_eq_compat	40	0.0.8.0	search with cache (only 1: intros; only 1: rewrite M.proof_irrelevance with (p1 := q) (p2 := (eq_rect x P p y H)); only 1: elim H using eq_indd; only 1: reflexivity).	0.0638120174408	94
-Coq.Logic.FunctionalExtensionality.equal_f	40	0.2	search with cache (only 1: destruct 1; only 1: reflexivity).	0.0062530040741	12
-Coq.Logic.FunctionalExtensionality.equal_f_dep	40	0.0.1	search with cache (only 1: intros; only 1: rewrite H; only 1: auto).	0.00565814971924	4
+Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.subsetT_eq_compat	40	0.0.8.0	search with cache (only 1: intros; only 1: rewrite M.proof_irrelevance with (p1 := q) (p2 := (eq_rect x P p y H)); only 1: elim H using eq_indd; only 1: reflexivity).	0.0644240379333	94
+Coq.Logic.FunctionalExtensionality.equal_f	40	0.2	search with cache (only 1: destruct 1; only 1: reflexivity).	0.00689101219177	12
+Coq.Logic.FunctionalExtensionality.equal_f_dep	40	0.0.1	search with cache (only 1: intros; only 1: rewrite H; only 1: auto).	0.00633597373962	4
 Coq.Logic.FunctionalExtensionality.functional_extensionality	40
 Coq.Logic.FunctionalExtensionality.forall_extensionality	40
-Coq.Logic.FunctionalExtensionality.forall_extensionalityP	40	2.1.0	search with cache (only 1: apply functional_extensionality in H; only 1: destruct H; only 1: reflexivity).	0.00544691085815	6
-Coq.Logic.FunctionalExtensionality.forall_extensionalityS	40	2.1.0	search with cache (only 1: apply functional_extensionality in H; only 1: destruct H; only 1: reflexivity).	0.00542807579041	6
+Coq.Logic.FunctionalExtensionality.forall_extensionalityP	40	2.1.0	search with cache (only 1: apply functional_extensionality in H; only 1: destruct H; only 1: reflexivity).	0.00707006454468	6
+Coq.Logic.FunctionalExtensionality.forall_extensionalityS	40	2.1.0	search with cache (only 1: apply functional_extensionality in H; only 1: destruct H; only 1: reflexivity).	0.00720000267029	6
 Coq.Logic.FunctionalExtensionality.functional_extensionality_dep_good_refl	40
 Coq.Logic.FunctionalExtensionality.forall_sig_eq_rect	40
 Coq.Logic.FunctionalExtensionality.forall_eq_rect_comp	40
 Coq.Logic.FunctionalExtensionality.f_equal__functional_extensionality_dep_good	40
 Coq.Logic.FunctionalExtensionality.f_equal__functional_extensionality_dep_good__fun	40
-Coq.Logic.FunctionalExtensionality.eta_expansion_dep	40	2	search with cache (only 1: reflexivity).	0.00564312934875	3
-Coq.Logic.FunctionalExtensionality.eta_expansion	40	2	search with cache (only 1: reflexivity).	0.00440788269043	3
+Coq.Logic.FunctionalExtensionality.eta_expansion_dep	40	2	search with cache (only 1: reflexivity).	0.0069260597229	3
+Coq.Logic.FunctionalExtensionality.eta_expansion	40	2	search with cache (only 1: reflexivity).	0.00624394416809	3
 Coq.Logic.HLevels.forall_hprop	40
 Coq.Logic.HLevels.and_hprop	40
-Coq.Logic.HLevels.impl_hprop	40	0.0.1.0	search with cache (only 1: intros A P H p q; only 1: apply functional_extensionality_dep; only 1: intro x; only 1: apply H).	0.00631904602051	5
-Coq.Logic.HLevels.false_hprop	40	0.0.11	search with cache (only 1: intro H; only 1: intro a; only 1: destruct H).	0.042927980423	329
+Coq.Logic.HLevels.impl_hprop	40	0.0.1.0	search with cache (only 1: intros A P H p q; only 1: apply functional_extensionality_dep; only 1: intro x; only 1: apply H).	0.00635600090027	5
+Coq.Logic.HLevels.false_hprop	40	0.0.11	search with cache (only 1: intro H; only 1: intro a; only 1: destruct H).	0.0455510616302	329
 Coq.Logic.HLevels.true_hprop	40
-Coq.Logic.HLevels.not_hprop	40	0.3.0.0	search with cache (only 1: intros p q; only 1: intro x; only 1: apply functional_extensionality_dep; only 1: contradiction).	0.00642704963684	7
+Coq.Logic.HLevels.not_hprop	40	0.3.0.0	search with cache (only 1: intros p q; only 1: intro x; only 1: apply functional_extensionality_dep; only 1: contradiction).	0.0064959526062	7
 Coq.Logic.HLevels.hset_hprop	40
-Coq.Logic.HLevels.eq_trans_cancel	40	8.9.10.12.9.1.27	search with cache (only 1: intros H x0; only 1: intros x y p q; only 1: destruct p; only 1: intro x; only 1: rewrite eq_trans_refl_l; only 1: rewrite eq_trans_refl_l; only 1: trivial).	22.1525630951	223383
+Coq.Logic.HLevels.eq_trans_cancel	40	8.9.10.12.9.1.27	search with cache (only 1: intros H x0; only 1: intros x y p q; only 1: destruct p; only 1: intro x; only 1: rewrite eq_trans_refl_l; only 1: rewrite eq_trans_refl_l; only 1: trivial).	23.5949389935	223383
 Coq.Logic.HLevels.hset_hOneType	40
-Coq.Logic.EqdepFacts.eq_dep_sym	40	0.19.2	search with cache (only 1: intro x; only 1: destruct 1; only 1: trivial).	0.138370037079	722
-Coq.Logic.EqdepFacts.eq_dep_trans	40	0.0	search with cache (only 1: destruct 1; only 1: auto).	0.00675511360168	2
+Coq.Logic.HLevels.hprop_hprop	40
+Coq.Logic.HLevels.hprop_hset	40
+Coq.Logic.EqdepFacts.eq_dep_sym	40	0.19.2	search with cache (only 1: intro x; only 1: destruct 1; only 1: trivial).	0.116260051727	722
+Coq.Logic.EqdepFacts.eq_dep_trans	40	0.0	search with cache (only 1: destruct 1; only 1: auto).	0.0148379802704	2
 Coq.Logic.EqdepFacts.eq_dep1_dep	40
-Coq.Logic.EqdepFacts.eq_dep_dep1	40	0.14.1.10	search with cache (only 1: intro x; only 1: destruct 1; only 1: exists eq_refl; only 1: reflexivity).	0.168515920639	1062
-Coq.Logic.EqdepFacts.eq_sigT_eq_dep	40	7.24.3.10	search with cache (only 1: intro p; only 1: intro H; only 1: inversion 1; only 1: reflexivity).	1.49775290489	11112
-Coq.Logic.EqdepFacts.eq_dep_eq_sigT	40	2.8	search with cache (only 1: destruct 1; only 1: trivial).	0.040374994278	104
-Coq.Logic.EqdepFacts.eq_sigT_iff_eq_dep	40	0.6.0.0.5.17.15	search with cache (only 1: intros ? ? ? Fl Fr; only 1: split; only 1: intros; only 1: dependent rewrite H; only 1: apply eq_dep_intro; only 1: destruct 1; only 1: reflexivity).	1.40405511856	9329
-Coq.Logic.EqdepFacts.eq_sig_eq_dep	40	0.1.1	search with cache (only 1: intros; only 1: dependent rewrite H; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	0.0117828845978	5
-Coq.Logic.EqdepFacts.eq_dep_eq_sig	40	2.3	search with cache (only 1: destruct 1; only 1: reflexivity).	0.011579990387	16
-Coq.Logic.EqdepFacts.eq_sig_iff_eq_dep	40	0.8.0.0.7.2	search with cache (only 1: split; only 1: intros; only 1: dependent rewrite H; only 1: apply eq_dep_intro; only 1: destruct 1; only 1: reflexivity).	0.521729946136	1277
+Coq.Logic.EqdepFacts.eq_dep_dep1	40	0.14.1.10	search with cache (only 1: intro x; only 1: destruct 1; only 1: exists eq_refl; only 1: reflexivity).	0.154062986374	1062
+Coq.Logic.EqdepFacts.eq_sigT_eq_dep	40	7.24.3.10	search with cache (only 1: intro p; only 1: intro H; only 1: inversion 1; only 1: reflexivity).	1.3261590004	11112
+Coq.Logic.EqdepFacts.eq_dep_eq_sigT	40	2.8	search with cache (only 1: destruct 1; only 1: trivial).	0.0365281105042	104
+Coq.Logic.EqdepFacts.eq_sigT_iff_eq_dep	40	0.6.0.0.5.17.15	search with cache (only 1: intros ? ? ? Fl Fr; only 1: split; only 1: intros; only 1: dependent rewrite H; only 1: apply eq_dep_intro; only 1: destruct 1; only 1: reflexivity).	1.27506995201	9329
+Coq.Logic.EqdepFacts.eq_sig_eq_dep	40	0.1.1	search with cache (only 1: intros; only 1: dependent rewrite H; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	0.0108821392059	5
+Coq.Logic.EqdepFacts.eq_dep_eq_sig	40	2.3	search with cache (only 1: destruct 1; only 1: reflexivity).	0.0103960037231	16
+Coq.Logic.EqdepFacts.eq_sig_iff_eq_dep	40	0.8.0.0.7.2	search with cache (only 1: split; only 1: intros; only 1: dependent rewrite H; only 1: apply eq_dep_intro; only 1: destruct 1; only 1: reflexivity).	0.461019992828	1277
 Coq.Logic.EqdepFacts.eq_sigT_sig_eq	40
-Coq.Logic.EqdepFacts.eq_sigT_fst	40	7.0.2.0	search with cache (only 1: intros; only 1: change_no_check x2 with (projT1 (existT P x2 H2)); only 1: destruct H; only 1: reflexivity).	0.0658900737762	233
+Coq.Logic.EqdepFacts.eq_sigT_fst	40	7.0.2.0	search with cache (only 1: intros; only 1: change_no_check x2 with (projT1 (existT P x2 H2)); only 1: destruct H; only 1: reflexivity).	0.0641779899597	233
 Coq.Logic.EqdepFacts.eq_sigT_snd	40
-Coq.Logic.EqdepFacts.eq_sig_fst	40	0.2.0.7	search with cache (only 1: intro p; only 1: intros; only 1: dependent rewrite H; only 1: reflexivity).	0.0815680027008	288
+Coq.Logic.EqdepFacts.eq_sig_fst	40	0.2.0.7	search with cache (only 1: intro p; only 1: intros; only 1: dependent rewrite H; only 1: reflexivity).	0.0770740509033	288
 Coq.Logic.EqdepFacts.eq_sig_snd	40
-Coq.Logic.EqdepFacts.eq_rect_eq_on__eq_dep1_eq_on	40	27.28.10	search with cache (only 1: destruct 2; only 1: subst; only 1: auto).	0.986825942993	6617
+Coq.Logic.EqdepFacts.eq_rect_eq_on__eq_dep1_eq_on	40	27.28.10	search with cache (only 1: destruct 2; only 1: subst; only 1: auto).	0.9412150383	6617
 Coq.Logic.EqdepFacts.eq_rect_eq_on__eq_dep_eq_on	40
 Coq.Logic.EqdepFacts.eq_dep_eq_on__UIP_on	40
-Coq.Logic.EqdepFacts.UIP_on__UIP_refl_on	40	11.0	search with cache (only 1: red; only 1: auto).	0.0526061058044	344
-Coq.Logic.EqdepFacts.UIP_refl_on__Streicher_K_on	40	11.4.1.0	search with cache (only 1: red; only 1: intros; only 1: rewrite H; only 1: trivial).	0.359685897827	2321
-Coq.Logic.EqdepFacts.Streicher_K_on__eq_rect_eq_on	40	4.0.0	search with cache (only 1: intro; only 1: intro; only 1: auto).	0.00928997993469	7
+Coq.Logic.EqdepFacts.UIP_on__UIP_refl_on	40	11.0	search with cache (only 1: red; only 1: auto).	0.0501990318298	344
+Coq.Logic.EqdepFacts.UIP_refl_on__Streicher_K_on	40	11.4.1.0	search with cache (only 1: red; only 1: intros; only 1: rewrite H; only 1: trivial).	0.345186948776	2321
+Coq.Logic.EqdepFacts.Streicher_K_on__eq_rect_eq_on	40	4.0.0	search with cache (only 1: intro; only 1: intro; only 1: auto).	0.00877213478088	7
 Coq.Logic.EqdepFacts.UIP_shift_on	40
-Coq.Logic.EqdepFacts.eq_dep_eq_on__inj_pair2_on	40	0.0	search with cache (only 1: red; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	0.00934314727783	2
-Coq.Logic.EqdepFacts.f_eq_dep	40	1.1	search with cache (only 1: destruct 1; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	0.0223460197449	16
-Coq.Logic.EqdepFacts.eq_dep_non_dep	40	0.2	search with cache (only 1: destruct 1; only 1: trivial).	0.0101850032806	4
-Coq.Logic.EqdepFacts.f_eq_dep_non_dep	40	0.1	search with cache (only 1: destruct 1; only 1: reflexivity).	0.015753030777	14
+Coq.Logic.EqdepFacts.eq_dep_eq_on__inj_pair2_on	40	0.0	search with cache (only 1: red; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	0.0092179775238	2
+Coq.Logic.EqdepFacts.f_eq_dep	40	1.1	search with cache (only 1: destruct 1; only 1: auto using eq_sigT_eq_dep, eq_dep_eq_sigT).	0.0211532115936	16
+Coq.Logic.EqdepFacts.eq_dep_non_dep	40	0.2	search with cache (only 1: destruct 1; only 1: trivial).	0.00969290733337	4
+Coq.Logic.EqdepFacts.f_eq_dep_non_dep	40	0.1	search with cache (only 1: destruct 1; only 1: reflexivity).	0.0149419307709	14
 Coq.Logic.PropExtensionalityFacts.PredExt_imp_PropExt	40
 Coq.Logic.PropExtensionalityFacts.PredExt_imp_PropFunExt	40
-Coq.Logic.PropExtensionalityFacts.PropExt_and_PropFunExt_imp_PredExt	40	18.0	search with cache (only 1: intros Ext A P Q Eq; only 1: auto).	0.370287179947	1641
+Coq.Logic.PropExtensionalityFacts.PropExt_and_PropFunExt_imp_PredExt	40	18.0	search with cache (only 1: intros Ext A P Q Eq; only 1: auto).	0.381969928741	1641
 Coq.Logic.PropExtensionalityFacts.PropExt_and_PropFunExt_iff_PredExt	40
-Coq.Logic.PropExtensionalityFacts.PropExt_imp_ProvPropExt	40	4.6	search with cache (only 1: intros; only 1: firstorder using PredExt_imp_PropExt, PredExt_imp_PropFunExt, PropExt_and_PropFunExt_imp_PredExt).	0.600550174713	64
-Coq.Logic.PropExtensionalityFacts.PropExt_imp_RefutPropExt	40	5.1.0	search with cache (only 1: intro A; only 1: intros; only 1: firstorder using PredExt_imp_PropExt, PredExt_imp_PropFunExt, PropExt_and_PropFunExt_imp_PredExt).	0.573545217514	9
+Coq.Logic.PropExtensionalityFacts.PropExt_imp_ProvPropExt	40	4.6	search with cache (only 1: intros; only 1: firstorder using PredExt_imp_PropExt, PredExt_imp_PropFunExt, PropExt_and_PropFunExt_imp_PredExt).	0.607050180435	64
+Coq.Logic.PropExtensionalityFacts.PropExt_imp_RefutPropExt	40	5.1.0	search with cache (only 1: intro A; only 1: intros; only 1: firstorder using PredExt_imp_PropExt, PredExt_imp_PropFunExt, PropExt_and_PropFunExt_imp_PredExt).	0.593776941299	9
 Coq.Logic.Berardi.AC_IF	40
-Coq.Logic.Berardi.AC	40	2.5.6.22	search with cache (only 1: intro p; only 1: destruct p; only 1: simpl; only 1: trivial).	0.541867017746	2601
+Coq.Logic.Berardi.AC	40	2.5.6.22	search with cache (only 1: intro p; only 1: destruct p; only 1: simpl; only 1: trivial).	0.548085927963	2601
 Coq.Logic.Berardi.L1	40
 Coq.Logic.Berardi.retract_pow_U_U	40
 Coq.Logic.Berardi.not_has_fixpoint	40
 Coq.Logic.Berardi.classical_proof_irrelevance	40
-Coq.Logic.Decidable.dec_not_not	40	1.5.0.13.0	search with cache (only 1: unfold not; only 1: intros; only 1: destruct H; only 1: trivial; only 1: contradiction).	0.396602153778	2899
-Coq.Logic.Decidable.dec_True	40	3.17	search with cache (only 1: constructor; only 1: trivial).	0.018835067749	214
-Coq.Logic.Decidable.dec_False	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.00567603111267	2
-Coq.Logic.Decidable.dec_or	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0178809165955	2
-Coq.Logic.Decidable.dec_and	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0201950073242	2
-Coq.Logic.Decidable.dec_not	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.00999402999878	2
-Coq.Logic.Decidable.dec_imp	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0153210163116	2
-Coq.Logic.Decidable.dec_iff	40	1.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0236451625824	3
-Coq.Logic.Decidable.not_not	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.00877690315247	2
-Coq.Logic.Decidable.not_or	40	0	search with cache (only 1: tauto).	0.0101301670074	1
-Coq.Logic.Decidable.not_and	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0138368606567	2
-Coq.Logic.Decidable.not_imp	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0170869827271	2
-Coq.Logic.Decidable.imp_simp	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0120611190796	2
-Coq.Logic.Decidable.not_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0430459976196	2
-Coq.Logic.Decidable.not_true_iff	40	1.0.2.3	search with cache (only 1: split; only 1: auto; only 1: intros H H'; only 1: apply H).	0.00870013237	10
-Coq.Logic.Decidable.not_false_iff	40	0	search with cache (only 1: tauto).	0.00810503959656	1
-Coq.Logic.Decidable.not_not_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0141170024872	2
-Coq.Logic.Decidable.contrapositive	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.017637014389	2
-Coq.Logic.Decidable.or_not_l_iff_1	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0211300849915	2
-Coq.Logic.Decidable.or_not_l_iff_2	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0831508636475	2
-Coq.Logic.Decidable.or_not_r_iff_1	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.023265838623	2
-Coq.Logic.Decidable.or_not_r_iff_2	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0240108966827	2
-Coq.Logic.Decidable.imp_not_l	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0256071090698	2
-Coq.Logic.Decidable.not_or_iff	40	0	search with cache (only 1: tauto).	0.0183520317078	1
-Coq.Logic.Decidable.not_and_iff	40	0	search with cache (only 1: tauto).	0.0146338939667	1
-Coq.Logic.Decidable.not_imp_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0304927825928	2
-Coq.Logic.Decidable.not_imp_rev_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0301132202148	2
+Coq.Logic.Decidable.dec_not_not	40	1.5.0.13.0	search with cache (only 1: unfold not; only 1: intros; only 1: destruct H; only 1: trivial; only 1: contradiction).	0.389881134033	2899
+Coq.Logic.Decidable.dec_True	40	3.17	search with cache (only 1: constructor; only 1: trivial).	0.0194158554077	214
+Coq.Logic.Decidable.dec_False	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.00545501708984	2
+Coq.Logic.Decidable.dec_or	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0180118083954	2
+Coq.Logic.Decidable.dec_and	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0209820270538	2
+Coq.Logic.Decidable.dec_not	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0103709697723	2
+Coq.Logic.Decidable.dec_imp	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0160439014435	2
+Coq.Logic.Decidable.dec_iff	40	1.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0242409706116	3
+Coq.Logic.Decidable.not_not	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.00898003578186	2
+Coq.Logic.Decidable.not_or	40	0	search with cache (only 1: tauto).	0.0107798576355	1
+Coq.Logic.Decidable.not_and	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0144870281219	2
+Coq.Logic.Decidable.not_imp	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0183310508728	2
+Coq.Logic.Decidable.imp_simp	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0129730701447	2
+Coq.Logic.Decidable.not_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0414760112762	2
+Coq.Logic.Decidable.not_true_iff	40	1.0.2.3	search with cache (only 1: split; only 1: auto; only 1: intros H H'; only 1: apply H).	0.00862812995911	10
+Coq.Logic.Decidable.not_false_iff	40	0	search with cache (only 1: tauto).	0.00803303718567	1
+Coq.Logic.Decidable.not_not_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0134739875793	2
+Coq.Logic.Decidable.contrapositive	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0169711112976	2
+Coq.Logic.Decidable.or_not_l_iff_1	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0196740627289	2
+Coq.Logic.Decidable.or_not_l_iff_2	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.078754901886	2
+Coq.Logic.Decidable.or_not_r_iff_1	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0224499702454	2
+Coq.Logic.Decidable.or_not_r_iff_2	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0233361721039	2
+Coq.Logic.Decidable.imp_not_l	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0242209434509	2
+Coq.Logic.Decidable.not_or_iff	40	0	search with cache (only 1: tauto).	0.0182888507843	1
+Coq.Logic.Decidable.not_and_iff	40	0	search with cache (only 1: tauto).	0.0143620967865	1
+Coq.Logic.Decidable.not_imp_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0295038223267	2
+Coq.Logic.Decidable.not_imp_rev_iff	40	0.0	search with cache (only 1: unfold decidable; only 1: tauto).	0.0292100906372	2
 Coq.Logic.Decidable.dec_functional_relation	40
 Coq.Relations.Operators_Properties.clos_rt_is_preorder	40
 Coq.Relations.Operators_Properties.clos_rt_idempotent	40
 Coq.Relations.Operators_Properties.clos_rt_clos_rst	40
+Coq.Relations.Operators_Properties.clos_r_clos_rt	40	1.1.0.0	search with cache (only 1: red; only 1: induction 1; only 1: auto with sets; only 1: auto with sets).	0.00787496566772	6
+Coq.Relations.Operators_Properties.clos_rt_t	40
+Coq.Relations.Operators_Properties.clos_rst_is_equiv	40	1.0.0.1.3.16.0.0.14	search with cache (only 1: split; only 1: red; only 1: auto with sets; only 1: intro; only 1: intros; only 1: apply rst_trans with y; only 1: auto with sets; only 1: auto with sets; only 1: auto with sets).	3.72719502449	6767
+Coq.Relations.Operators_Properties.clos_rst_idempotent	40	0.0.1.0.0.0.1	search with cache (only 1: induction 1; only 1: auto with sets; only 1: auto with sets; only 1: auto with sets; only 1: apply rst_trans with y; only 1: auto with sets; only 1: auto with sets).	0.0674870014191	67
+Coq.Relations.Operators_Properties.clos_t1n_trans	40
+Coq.Relations.Operators_Properties.clos_trans_t1n	40
+Coq.Relations.Operators_Properties.clos_trans_t1n_iff	40
+Coq.Relations.Operators_Properties.clos_tn1_trans	40	3.1.3.3.1.1.1	search with cache (only 1: induction 1; only 1: left; only 1: auto with sets; only 1: right with y; only 1: auto; only 1: left; only 1: auto).	1.29177188873	7273
+Coq.Relations.Operators_Properties.clos_trans_tn1	40
+Coq.Relations.Operators_Properties.clos_trans_tn1_iff	40
 Coq.Relations.Relations.inverse_image_of_equivalence	40
-Coq.Sets.Uniset.leb_refl	40	0	search with cache (only 1: destr_bool).	0.00579786300659	1
+Coq.Relations.Relations.inverse_image_of_eq	40	0.2.0.2.2.0.0.1.0.0	search with cache (only 1: intros; only 1: split; only 1: red; only 1: trivial; only 1: red; only 1: destruct 1; only 1: trivial; only 1: red; only 1: destruct 1; only 1: trivial).	0.301733970642	1072
+Coq.Sets.Uniset.leb_refl	40	0	search with cache (only 1: destr_bool).	0.00531792640686	1
 Coq.Sets.Uniset.incl_left	40
-Coq.Sets.Uniset.incl_right	40	1.0.0.0	search with cache (only 1: unfold incl; only 1: intros s1 s2 E a; only 1: elim (E a); only 1: auto).	0.00742888450623	5
-Coq.Sets.Uniset.seq_refl	40	2	search with cache (only 1: auto).	0.00531601905823	3
-Coq.Sets.Uniset.seq_trans	40	1.0.1.3.13.0.0	search with cache (only 1: destruct x; only 1: unfold seq; only 1: intro H; only 1: simpl; only 1: intros s1 s2 E a; only 1: elim (E a); only 1: auto).	1.42203402519	4864
-Coq.Sets.Uniset.seq_sym	40	0.0.0.1.1.0.0	search with cache (only 1: destruct x; only 1: unfold seq; only 1: destruct y; only 1: simpl; only 1: intros; only 1: rewrite H; only 1: auto).	0.0106098651886	9
-Coq.Sets.Uniset.union_empty_left	40	1.0.0	search with cache (only 1: destruct x; only 1: unfold seq; only 1: auto).	0.00750803947449	4
-Coq.Sets.Uniset.union_empty_right	40	3.0.0.8.0.0.0.0.2	search with cache (only 1: destruct x; only 1: unfold seq; only 1: unfold union; only 1: simpl; only 1: intros; only 1: destruct b; only 1: auto; only 1: simpl; only 1: auto).	1.69024205208	8806
-Coq.Sets.Uniset.union_comm	40	12.1.2.2.0	search with cache (only 1: unfold seq; only 1: destruct x; only 1: destruct y; only 1: simpl; only 1: intuition).	2.87441301346	12551
-Coq.Sets.Uniset.union_ass	40	0.0.0.1.0.0.0	search with cache (only 1: unfold seq; only 1: unfold charac; only 1: unfold union; only 1: simpl; only 1: destruct x; only 1: destruct y; only 1: auto with bool).	0.0196759700775	19
-Coq.Sets.Uniset.seq_left	40	0.0.1.0.1.1.0.1.0	search with cache (only 1: unfold seq; only 1: unfold union; only 1: unfold charac; only 1: destruct x; only 1: destruct y; only 1: destruct z; only 1: intros; only 1: rewrite H; only 1: auto).	1.16480398178	1787
-Coq.Sets.Uniset.seq_right	40	0.0.1.1.0.0.1.0	search with cache (only 1: unfold seq; only 1: unfold union; only 1: unfold charac; only 1: destruct z; only 1: destruct y; only 1: intros; only 1: elim H; only 1: auto).	0.453336000443	437
+Coq.Sets.Uniset.incl_right	40	1.0.0.0	search with cache (only 1: unfold incl; only 1: intros s1 s2 E a; only 1: elim (E a); only 1: auto).	0.00727391242981	5
+Coq.Sets.Uniset.seq_refl	40	2	search with cache (only 1: auto).	0.00528192520142	3
+Coq.Sets.Uniset.seq_trans	40	1.0.1.3.13.0.0	search with cache (only 1: destruct x; only 1: unfold seq; only 1: intro H; only 1: simpl; only 1: intros s1 s2 E a; only 1: elim (E a); only 1: auto).	1.44572019577	4864
+Coq.Sets.Uniset.seq_sym	40	0.0.0.1.1.0.0	search with cache (only 1: destruct x; only 1: unfold seq; only 1: destruct y; only 1: simpl; only 1: intros; only 1: rewrite H; only 1: auto).	0.0107238292694	9
+Coq.Sets.Uniset.union_empty_left	40	1.0.0	search with cache (only 1: destruct x; only 1: unfold seq; only 1: auto).	0.00761604309082	4
+Coq.Sets.Uniset.union_empty_right	40	3.0.0.8.0.0.0.0.2	search with cache (only 1: destruct x; only 1: unfold seq; only 1: unfold union; only 1: simpl; only 1: intros; only 1: destruct b; only 1: auto; only 1: simpl; only 1: auto).	1.70173597336	8806
+Coq.Sets.Uniset.union_comm	40	12.1.2.2.0	search with cache (only 1: unfold seq; only 1: destruct x; only 1: destruct y; only 1: simpl; only 1: intuition).	2.88225293159	12551
+Coq.Sets.Uniset.union_ass	40	0.0.0.1.0.0.0	search with cache (only 1: unfold seq; only 1: unfold charac; only 1: unfold union; only 1: simpl; only 1: destruct x; only 1: destruct y; only 1: auto with bool).	0.0197310447693	19
+Coq.Sets.Uniset.seq_left	40	0.0.1.0.1.1.0.1.0	search with cache (only 1: unfold seq; only 1: unfold union; only 1: unfold charac; only 1: destruct x; only 1: destruct y; only 1: destruct z; only 1: intros; only 1: rewrite H; only 1: auto).	1.19877195358	1787
+Coq.Sets.Uniset.seq_right	40	0.0.1.1.0.0.1.0	search with cache (only 1: unfold seq; only 1: unfold union; only 1: unfold charac; only 1: destruct z; only 1: destruct y; only 1: intros; only 1: elim H; only 1: auto).	0.438592910767	437
 Coq.Sets.Uniset.union_rotate	40
 Coq.Sets.Uniset.seq_congr	40
 Coq.Sets.Uniset.union_perm_left	40
-Coq.Sets.Relations_1_facts.Rsym_imp_notRsym	40	10.1.0.9.10	search with cache (only 1: red; only 1: red; only 1: unfold not; only 1: intro H; only 1: auto).	0.450281858444	3266
+Coq.Sets.Uniset.uniset_twist1	40
+Coq.Sets.Uniset.uniset_twist2	40
+Coq.Sets.Uniset.treesort_twist1	40
+Coq.Sets.Uniset.treesort_twist2	40
+Coq.Sets.Relations_1_facts.Rsym_imp_notRsym	40	10.1.0.9.10	search with cache (only 1: red; only 1: red; only 1: unfold not; only 1: intro H; only 1: auto).	0.440182924271	3266
 Coq.Sets.Relations_1_facts.Equiv_from_preorder	40
-Coq.Sets.Relations_1_facts.Equiv_from_order	40	8.1.0	search with cache (only 1: intros U R H'; only 1: elim H'; only 1: auto  10 with sets).	0.192687034607	308
-Coq.Sets.Relations_1_facts.contains_is_preorder	40	3.5	search with cache (only 1: intro H; only 1: auto  10 with sets).	0.00705599784851	10
+Coq.Sets.Relations_1_facts.Equiv_from_order	40	8.1.0	search with cache (only 1: intros U R H'; only 1: elim H'; only 1: auto  10 with sets).	0.195271015167	308
+Coq.Sets.Relations_1_facts.contains_is_preorder	40	3.5	search with cache (only 1: intro H; only 1: auto  10 with sets).	0.00709295272827	10
 Coq.Sets.Relations_1_facts.same_relation_is_equivalence	40
-Coq.Sets.Relations_1_facts.cong_reflexive_same_relation	40	2.1.9	search with cache (only 1: intros x y z h; only 1: elim h; only 1: auto  10 with sets).	0.388245105743	1380
-Coq.Sets.Relations_1_facts.cong_symmetric_same_relation	40	0.0.0	search with cache (only 1: unfold Symmetric, Complement; only 1: unfold same_relation at 1; only 1: intuition).	0.0107259750366	3
-Coq.Sets.Relations_1_facts.cong_antisymmetric_same_relation	40	0.1	search with cache (only 1: unfold same_relation at 1; only 1: intuition).	0.0159301757812	25
+Coq.Sets.Relations_1_facts.cong_reflexive_same_relation	40	2.1.9	search with cache (only 1: intros x y z h; only 1: elim h; only 1: auto  10 with sets).	0.390906095505	1380
+Coq.Sets.Relations_1_facts.cong_symmetric_same_relation	40	0.0.0	search with cache (only 1: unfold Symmetric, Complement; only 1: unfold same_relation at 1; only 1: intuition).	0.0106060504913	3
+Coq.Sets.Relations_1_facts.cong_antisymmetric_same_relation	40	0.1	search with cache (only 1: unfold same_relation at 1; only 1: intuition).	0.0158360004425	25
 Coq.Sets.Relations_1_facts.cong_transitive_same_relation	40
-Coq.Sets.Relations_2_facts.Rstar_reflexive	40	0	search with cache (only 1: intuition).	0.00550103187561	1
-Coq.Sets.Relations_2_facts.Rplus_contains_R	40	0	search with cache (only 1: auto  10 with sets).	0.00381779670715	1
+Coq.Sets.Relations_2_facts.Rstar_reflexive	40	0	search with cache (only 1: intuition).	0.0260381698608	1
+Coq.Sets.Relations_2_facts.Rplus_contains_R	40	0	search with cache (only 1: auto  10 with sets).	0.0050790309906	1
 Coq.Sets.Relations_2_facts.Rstar_contains_R	40
-Coq.Sets.Relations_2_facts.Rstar_contains_Rplus	40	0.0.0.0.1.0.18	search with cache (only 1: induction 1; only 1: apply Rstar_n with y; only 1: auto with sets; only 1: auto with sets; only 1: apply Rstar_n with y; only 1: auto with sets; only 1: auto with sets).	1.23643112183	10167
-Coq.Sets.Relations_2_facts.Rstar_transitive	40	0.0.0.5.1.14.1	search with cache (only 1: intros U R; only 1: induction 1; only 1: auto with sets; only 1: intros; only 1: apply Rstar_n with y; only 1: auto with sets; only 1: auto with sets).	2.02631688118	14341
+Coq.Sets.Relations_2_facts.Rstar_contains_Rplus	40	0.0.0.0.1.0.18	search with cache (only 1: induction 1; only 1: apply Rstar_n with y; only 1: auto with sets; only 1: auto with sets; only 1: apply Rstar_n with y; only 1: auto with sets; only 1: auto with sets).	1.30509185791	10167
+Coq.Sets.Relations_2_facts.Rstar_transitive	40	0.0.0.5.1.14.1	search with cache (only 1: intros U R; only 1: induction 1; only 1: auto with sets; only 1: intros; only 1: apply Rstar_n with y; only 1: auto with sets; only 1: auto with sets).	2.14086699486	14341
 Coq.Sets.Relations_2_facts.Rstar_cases	40
 Coq.Sets.Relations_2_facts.Rstar_equiv_Rstar1	40
 Coq.Sets.Relations_2_facts.Rsym_imp_Rstarsym	40
+Coq.Sets.Relations_2_facts.Sstar_contains_Rstar	40
+Coq.Sets.Relations_2_facts.star_monotone	40	0.0.2.5.1.0.2.2	search with cache (only 1: unfold contains; only 1: intros U R S H' x y H'0; only 1: elim H'0; only 1: auto with sets; only 1: intros x0 y0 z H'1 H'2 H'3; only 1: apply Rstar_n with y0; only 1: auto with sets; only 1: auto with sets).	3.60216093063	10250
+Coq.Sets.Relations_2_facts.RstarRplus_RRstar	40
+Coq.Sets.Relations_2_facts.Lemma1	40
 Coq.Sets.Permut.cong_congr	40
-Coq.Sets.Permut.comm_right	40	11.0	search with cache (only 1: intros; only 1: auto).	0.0643210411072	329
-Coq.Sets.Permut.comm_left	40	2.2.1	search with cache (only 1: intros; only 1: apply cong_left; only 1: apply op_comm).	0.0123739242554	26
+Coq.Sets.Permut.comm_right	40	11.0	search with cache (only 1: intros; only 1: auto).	0.0651299953461	329
+Coq.Sets.Permut.comm_left	40	2.2.1	search with cache (only 1: intros; only 1: apply cong_left; only 1: apply op_comm).	0.0121848583221	26
 Coq.Sets.Permut.perm_right	40
 Coq.Sets.Permut.perm_left	40
 Coq.Sets.Permut.op_rotate	40
 Coq.Sets.Permut.twist	40
-Coq.Sets.Powerset.Empty_set_minimal	40	2.0.0.1	search with cache (only 1: red; only 1: red; only 1: intros; only 1: elim H).	0.00678181648254	7
+Coq.Sets.Powerset.Empty_set_minimal	40	2.0.0.1	search with cache (only 1: red; only 1: red; only 1: intros; only 1: elim H).	0.00673699378967	7
 Coq.Sets.Powerset.Power_set_Inhabited	40
-Coq.Sets.Powerset.Inclusion_is_an_order	40	19	search with cache (only 1: auto  10 with sets).	0.0382649898529	214
-Coq.Sets.Powerset.Inclusion_is_transitive	40	5.0.0.1	search with cache (only 1: intro X; only 1: red; only 1: intros x H'; only 1: auto  10 with sets).	0.00811696052551	12
+Coq.Sets.Powerset.Inclusion_is_an_order	40	19	search with cache (only 1: auto  10 with sets).	0.0407111644745	214
+Coq.Sets.Powerset.Inclusion_is_transitive	40	5.0.0.1	search with cache (only 1: intro X; only 1: red; only 1: intros x H'; only 1: auto  10 with sets).	0.0082540512085	12
 Coq.Sets.Powerset.Power_set_PO	40
-Coq.Sets.Powerset.Strict_Rel_is_Strict_Included	40	0.0	search with cache (only 1: red; only 1: intuition).	0.0073549747467	2
+Coq.Sets.Powerset.Strict_Rel_is_Strict_Included	40	0.0	search with cache (only 1: red; only 1: intuition).	0.00750494003296	2
 Coq.Sets.Powerset.Strict_inclusion_is_transitive_with_inclusion	40
-Coq.Sets.Relations_3_facts.Rstar_imp_coherent	40	1.0.11.3.1	search with cache (only 1: intros U R; only 1: red; only 1: intros x1 y0 H'1; only 1: exists y0; only 1: auto with sets).	0.499409914017	2077
+Coq.Sets.Powerset.Strict_inclusion_is_transitive_with_inclusion_left	40
+Coq.Sets.Powerset.Strict_inclusion_is_transitive	40	0.0.2.0.1.0.0.1.2	search with cache (only 1: intros x y z H' H'0; only 1: elim Strict_Rel_is_Strict_Included; only 1: unfold contains; only 1: intros H'1 H'2; only 1: apply H'1; only 1: apply Strict_Rel_Transitive_with_Rel_left with (y := y); only 1: apply H'1; only 1: auto with sets; only 1: auto with sets).	30.7113599777	1727
+Coq.Sets.Powerset.Empty_set_is_Bottom	40	0.1.6.0.0.0.12.12	search with cache (only 1: intro X; only 1: repeat split; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: intuition; only 1: intros x H'; only 1: elim H').	1.03454089165	4001
+Coq.Sets.Powerset.Union_minimal	40
+Coq.Sets.Powerset.Intersection_maximal	40	0	search with cache (only 1: auto with sets).	0.00733995437622	1
+Coq.Sets.Powerset.Union_increases_l	40	2.1.1	search with cache (only 1: red; only 1: intros x H'; only 1: auto with sets).	0.007887840271	7
+Coq.Sets.Powerset.Union_increases_r	40	0	search with cache (only 1: auto with sets).	0.00618600845337	1
+Coq.Sets.Powerset.Intersection_decreases_l	40	0.1.1.8.2	search with cache (only 1: intro X; only 1: intro A; only 1: intros x H'1; only 1: elim H'1; only 1: auto with sets).	0.679373979568	1053
+Coq.Sets.Powerset.Intersection_decreases_r	40	0.1.1.0.0	search with cache (only 1: intros a b; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets).	0.0103859901428	7
+Coq.Sets.Powerset.Union_is_Lub	40
+Coq.Sets.Powerset.Intersection_is_Glb	40
+Coq.Sets.Relations_3_facts.Rstar_imp_coherent	40	1.0.11.3.1	search with cache (only 1: intros U R; only 1: red; only 1: intros x1 y0 H'1; only 1: exists y0; only 1: auto with sets).	0.66464304924	2077
 Coq.Sets.Relations_3_facts.coherent_symmetric	40
+Coq.Sets.Relations_3_facts.Strong_confluence	40
+Coq.Sets.Relations_3_facts.Strong_confluence_direct	40
+Coq.Sets.Relations_3_facts.Noetherian_contains_Noetherian	40
+Coq.Sets.Relations_3_facts.Newman	40
 Coq.Sets.Partial_Order.Strict_Rel_Transitive_with_Rel	40
 Coq.Sets.Partial_Order.Strict_Rel_Transitive_with_Rel_left	40
 Coq.Sets.Partial_Order.Strict_Rel_Transitive	40
-Coq.Sets.Constructive_sets.Extension	40	0.16.0.16.5.1.2	search with cache (only 1: intros; only 1: subst; only 1: split; only 1: intro x; only 1: trivial; only 1: intro x; only 1: trivial).	2.50566887856	26938
-Coq.Sets.Constructive_sets.Noone_in_empty	40	1.16.2	search with cache (only 1: red; only 1: intros; only 1: destruct H).	0.126160144806	1288
-Coq.Sets.Constructive_sets.Included_Empty	40	1.0.7	search with cache (only 1: intros; only 1: red; only 1: destruct 1).	0.0111510753632	25
-Coq.Sets.Constructive_sets.Add_intro1	40	2.20.3.8	search with cache (only 1: intros; only 1: red; only 1: left; only 1: auto with sets).	1.73666191101	15958
-Coq.Sets.Constructive_sets.Add_intro2	40	0.0	search with cache (only 1: unfold Add at 1; only 1: auto with sets).	0.00623083114624	2
-Coq.Sets.Constructive_sets.Inhabited_add	40	0.16.4.0	search with cache (only 1: unfold Add at 1; only 1: intros; only 1: exists x; only 1: auto with sets).	0.18119597435	1288
+Coq.Sets.Powerset_facts.Empty_set_zero	40	16	search with cache (only 1: auto  6 with sets).	0.0496950149536	108
+Coq.Sets.Powerset_facts.Empty_set_zero_right	40	0	search with cache (only 1: auto  6 with sets).	0.0101408958435	1
+Coq.Sets.Powerset_facts.Empty_set_zero'	40	0.8	search with cache (only 1: unfold Add at 1; only 1: auto  6 with sets).	0.0259411334991	27
+Coq.Sets.Powerset_facts.less_than_empty	40	0	search with cache (only 1: auto with sets).	0.00886487960815	1
+Coq.Sets.Powerset_facts.Union_commutative	40	0	search with cache (only 1: auto  6 with sets).	0.0108799934387	1
+Coq.Sets.Powerset_facts.Union_associative	40	39	search with cache (only 1: auto  10 with sets).	3.45828199387	4583
+Coq.Sets.Powerset_facts.Union_idempotent	40	0	search with cache (only 1: auto  6 with sets).	0.0105931758881	1
+Coq.Sets.Powerset_facts.Union_absorbs	40	0	search with cache (only 1: auto  7 with sets).	0.0126121044159	1
+Coq.Sets.Powerset_facts.Couple_as_union	40
+Coq.Sets.Powerset_facts.Triple_as_union	40
+Coq.Sets.Powerset_facts.Triple_as_Couple	40	0.0.0.0.0.0.0.0.0.0.0.0.0.1	search with cache (only 1: intros x y; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x1 H'0; only 1: elim H'0; only 1: auto with sets; only 1: auto with sets; only 1: red; only 1: intros x1 H'0; only 1: elim H'0; only 1: auto with sets; only 1: auto with sets; only 1: auto with sets).	0.344996929169	596
+Coq.Sets.Powerset_facts.Triple_as_Couple_Singleton	40	0.1.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0	search with cache (only 1: intros x y z; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x1 H'0; only 1: elim H'0; only 1: auto with sets; only 1: auto with sets; only 1: auto with sets; only 1: red; only 1: intros x1 H'0; only 1: elim H'0; only 1: intros x2 H'1; only 1: elim H'1; only 1: auto with sets; only 1: auto with sets; only 1: intros x2 H'1; only 1: elim H'1; only 1: auto with sets).	8.35169506073	12824
+Coq.Sets.Powerset_facts.Intersection_commutative	40	0.1.4.3.0.1.4.3.40.6.1	search with cache (only 1: intros y H'1; only 1: apply Extensionality_Ensembles; only 1: constructor; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets).	31.8017179966	125488
+Coq.Sets.Powerset_facts.Distributivity	40
+Coq.Sets.Powerset_facts.Distributivity_l	40
+Coq.Sets.Powerset_facts.Distributivity'	40
+Coq.Sets.Powerset_facts.Union_add	40	8.1.1	search with cache (only 1: unfold Add at 1; only 1: unfold Add at 1; only 1: auto  9 with sets).	0.681392192841	650
+Coq.Sets.Powerset_facts.Non_disjoint_union	40	0.0.0.1.1.0.1.1.0.0.0.2.1	search with cache (only 1: unfold Add; only 1: intros x y z; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x1 H'0; only 1: elim H'0; only 1: auto with sets; only 1: intros x2 H'1; only 1: elim H'1; only 1: auto with sets; only 1: red; only 1: auto with sets).	1.59963297844	2279
+Coq.Sets.Powerset_facts.Non_disjoint_union'	40
+Coq.Sets.Constructive_sets.Extension	40	0.16.0.16.5.1.2	search with cache (only 1: intros; only 1: subst; only 1: split; only 1: intro x; only 1: trivial; only 1: intro x; only 1: trivial).	2.73558712006	26938
+Coq.Sets.Constructive_sets.Noone_in_empty	40	1.16.2	search with cache (only 1: red; only 1: intros; only 1: destruct H).	0.137271165848	1288
+Coq.Sets.Constructive_sets.Included_Empty	40	1.0.7	search with cache (only 1: intros; only 1: red; only 1: destruct 1).	0.0134248733521	25
+Coq.Sets.Constructive_sets.Add_intro1	40	2.20.3.8	search with cache (only 1: intros; only 1: red; only 1: left; only 1: auto with sets).	1.979377985	15958
+Coq.Sets.Constructive_sets.Add_intro2	40	0.0	search with cache (only 1: unfold Add at 1; only 1: auto with sets).	0.00602912902832	2
+Coq.Sets.Constructive_sets.Inhabited_add	40	0.16.4.0	search with cache (only 1: unfold Add at 1; only 1: intros; only 1: exists x; only 1: auto with sets).	0.186645030975	1288
 Coq.Sets.Constructive_sets.Inhabited_not_empty	40
-Coq.Sets.Constructive_sets.Add_not_Empty	40	0.19.1.8.1.9.1	search with cache (only 1: unfold Add at 1; only 1: red; only 1: intro H'1; only 1: intros; only 1: elim (Noone_in_empty x); only 1: destruct H; only 1: auto with sets).	4.58257198334	55215
-Coq.Sets.Constructive_sets.not_Empty_Add	40	1.8.12.1.15.0	search with cache (only 1: intros A x; only 1: red; only 1: intro H'1; only 1: elim (Noone_in_empty x); only 1: rewrite H'1; only 1: auto using Add_intro2 with sets).	3.0311088562	31714
-Coq.Sets.Constructive_sets.Singleton_inv	40	0.10	search with cache (only 1: destruct 1; only 1: trivial).	0.0107860565186	33
-Coq.Sets.Constructive_sets.Singleton_intro	40	1.0.0	search with cache (only 1: intros x y H'; only 1: elim H'; only 1: trivial with sets).	0.00538015365601	4
-Coq.Sets.Constructive_sets.Union_inv	40	3.3.7	search with cache (only 1: destruct 1; only 1: auto using Add_intro2 with sets; only 1: auto using Add_intro2 with sets).	0.165413856506	478
-Coq.Sets.Constructive_sets.Add_inv	40	0.8.0.1.1.0	search with cache (only 1: unfold Add at 1; only 1: intros B C x H'; only 1: elim H'; only 1: auto with sets; only 1: destruct 1; only 1: auto with sets).	0.778147935867	1654
-Coq.Sets.Constructive_sets.Intersection_inv	40	3.0.3	search with cache (only 1: intros A x y H'; only 1: induction H'; only 1: auto using Add_intro2 with sets).	0.00930404663086	18
-Coq.Sets.Constructive_sets.Couple_inv	40	1.1.3.0.0.0	search with cache (only 1: intros A x y H'; only 1: induction H'; only 1: left; only 1: trivial with sets; only 1: right; only 1: trivial with sets).	0.029021024704	113
-Coq.Sets.Constructive_sets.Setminus_intro	40	0.0.0.0	search with cache (only 1: red; only 1: red; only 1: intros B C x H'; only 1: auto with sets).	0.00771307945251	4
-Coq.Sets.Constructive_sets.Strict_Included_intro	40	1.0.0	search with cache (only 1: intros x H'0; only 1: red; only 1: auto with sets).	0.00671887397766	4
-Coq.Sets.Constructive_sets.Strict_Included_strict	40	0.4.6.1	search with cache (only 1: red; only 1: intros X H'; only 1: elim H'; only 1: auto with sets).	0.0647079944611	421
+Coq.Sets.Constructive_sets.Add_not_Empty	40	0.19.1.8.1.9.1	search with cache (only 1: unfold Add at 1; only 1: red; only 1: intro H'1; only 1: intros; only 1: elim (Noone_in_empty x); only 1: destruct H; only 1: auto with sets).	4.89257097244	55215
+Coq.Sets.Constructive_sets.not_Empty_Add	40	1.8.12.1.15.0	search with cache (only 1: intros A x; only 1: red; only 1: intro H'1; only 1: elim (Noone_in_empty x); only 1: rewrite H'1; only 1: auto using Add_intro2 with sets).	3.25136113167	31714
+Coq.Sets.Constructive_sets.Singleton_inv	40	0.10	search with cache (only 1: destruct 1; only 1: trivial).	0.0125091075897	33
+Coq.Sets.Constructive_sets.Singleton_intro	40	1.0.0	search with cache (only 1: intros x y H'; only 1: elim H'; only 1: trivial with sets).	0.00700902938843	4
+Coq.Sets.Constructive_sets.Union_inv	40	3.3.7	search with cache (only 1: destruct 1; only 1: auto using Add_intro2 with sets; only 1: auto using Add_intro2 with sets).	0.175278186798	478
+Coq.Sets.Constructive_sets.Add_inv	40	0.8.0.1.1.0	search with cache (only 1: unfold Add at 1; only 1: intros B C x H'; only 1: elim H'; only 1: auto with sets; only 1: destruct 1; only 1: auto with sets).	0.840080976486	1654
+Coq.Sets.Constructive_sets.Intersection_inv	40	3.0.3	search with cache (only 1: intros A x y H'; only 1: induction H'; only 1: auto using Add_intro2 with sets).	0.0103840827942	18
+Coq.Sets.Constructive_sets.Couple_inv	40	1.1.3.0.0.0	search with cache (only 1: intros A x y H'; only 1: induction H'; only 1: left; only 1: trivial with sets; only 1: right; only 1: trivial with sets).	0.0329649448395	113
+Coq.Sets.Constructive_sets.Setminus_intro	40	0.0.0.0	search with cache (only 1: red; only 1: red; only 1: intros B C x H'; only 1: auto with sets).	0.00758194923401	4
+Coq.Sets.Constructive_sets.Strict_Included_intro	40	1.0.0	search with cache (only 1: intros x H'0; only 1: red; only 1: auto with sets).	0.00690889358521	4
+Coq.Sets.Constructive_sets.Strict_Included_strict	40	0.4.6.1	search with cache (only 1: red; only 1: intros X H'; only 1: elim H'; only 1: auto with sets).	0.0685329437256	421
 Coq.Sets.Finite_sets.cardinal_invert	40
-Coq.Sets.Finite_sets.cardinal_elim	40	5.1.0	search with cache (only 1: induction 1; only 1: auto; only 1: auto using Noone_in_empty with sets).	0.0085780620575	14
+Coq.Sets.Finite_sets.cardinal_elim	40	5.1.0	search with cache (only 1: induction 1; only 1: auto; only 1: auto using Noone_in_empty with sets).	0.00939798355103	14
