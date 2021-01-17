@@ -67,16 +67,16 @@ The following actions will be performed:
 [ocamlbuild.0.14.0] downloaded from cache at https://opam.ocaml.org/cache
 [ocamlfind.1.8.1] downloaded from cache at https://opam.ocaml.org/cache
 [ocamlgraph.2.0.0] downloaded from cache at https://opam.ocaml.org/cache
-[ocaml-base-compiler.4.11.1] downloaded from cache at https://opam.ocaml.org/cache
 [opam-client.2.1.0~beta2] downloaded from cache at https://opam.ocaml.org/cache
+[opam-core.2.1.0~beta2] found in cache
 [opam-file-format.2.1.2] downloaded from cache at https://opam.ocaml.org/cache
 [opam-format.2.1.0~beta2] found in cache
 [opam-repository.2.1.0~beta2] found in cache
 [opam-solver.2.1.0~beta2] found in cache
+[ocaml-base-compiler.4.11.1] downloaded from cache at https://opam.ocaml.org/cache
 [opam-state.2.1.0~beta2] found in cache
-[opam-core.2.1.0~beta2] downloaded from cache at https://opam.ocaml.org/cache
-[re.1.9.0] downloaded from cache at https://opam.ocaml.org/cache
 [stdlib-shims.0.1.0] downloaded from cache at https://opam.ocaml.org/cache
+[re.1.9.0] downloaded from cache at https://opam.ocaml.org/cache
 [coq.8.11.dev] synchronised from git+https://github.com/coq/coq.git#v8.11
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
@@ -109,47 +109,6 @@ The following actions will be performed:
 ∗ installed opam-format.2.1.0~beta2
 ∗ installed opam-repository.2.1.0~beta2
 ∗ installed dose3.5.0.1-1
-∗ installed opam-solver.2.1.0~beta2
 ∗ installed opam-state.2.1.0~beta2
+∗ installed opam-solver.2.1.0~beta2
 ∗ installed opam-client.2.1.0~beta2
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-┌─ The following actions failed
-│ λ build coq 8.11.dev
-└─ 
-┌─ The following changes have been performed (the rest was aborted)
-│ ∗ install base-bigarray       base
-│ ∗ install base-bytes          base
-│ ∗ install base-threads        base
-│ ∗ install base-unix           base
-│ ∗ install cmdliner            1.0.4
-│ ∗ install conf-findutils      1
-│ ∗ install conf-git            1.0
-│ ∗ install conf-m4             1
-│ ∗ install conf-which          1
-│ ∗ install cppo                1.6.7
-│ ∗ install cudf                0.9-1
-│ ∗ install dose3               5.0.1-1
-│ ∗ install dune                2.8.1
-│ ∗ install extlib              1.7.7
-│ ∗ install mccs                1.1+11
-│ ∗ install num                 1.4
-│ ∗ install ocaml               4.11.1
-│ ∗ install ocaml-base-compiler 4.11.1
-│ ∗ install ocaml-config        1
-│ ∗ install ocamlbuild          0.14.0
-│ ∗ install ocamlfind           1.8.1
-│ ∗ install ocamlgraph          2.0.0
-│ ∗ install opam-client         2.1.0~beta2
-│ ∗ install opam-core           2.1.0~beta2
-│ ∗ install opam-file-format    2.1.2
-│ ∗ install opam-format         2.1.0~beta2
-│ ∗ install opam-repository     2.1.0~beta2
-│ ∗ install opam-solver         2.1.0~beta2
-│ ∗ install opam-state          2.1.0~beta2
-│ ∗ install re                  1.9.0
-│ ∗ install seq                 base
-│ ∗ install stdlib-shims        0.1.0
-└─ 
-# Run eval $(opam env) to update the current shell environment
