@@ -1,86 +1,10 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-49jaS7 only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-IlDre1 only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-49jaS7 only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-IlDre1 only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-49jaS7 only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-IlDre1 only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of mccs failed at "/tmp/tactician-49jaS7/_opam/bin/dune build -p mccs -j 55".
-[ERROR] The compilation of dose3 failed at "/usr/bin/make libs apps".
-[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
-
-#=== ERROR while compiling mccs.1.1+11 ========================================#
-# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#df43578a
-# path                 /tmp/tactician-49jaS7/_opam/.opam-switch/build/mccs.1.1+11
-# command              /tmp/tactician-49jaS7/_opam/bin/dune build -p mccs -j 55
-# exit-code            1
-# env-file             /tmp/tactician-49jaS7/.opam/log/mccs-30773-ac75a8.env
-# output-file          /tmp/tactician-49jaS7/.opam/log/mccs-30773-ac75a8.out
-### output ###
-# [...]
-#          gcc src/glpk/wclique1.o
-# src/glpk/misc/wclique1.c: In function '_glp_wclique1':
-# src/glpk/misc/wclique1.c:121:7: warning: 'memset': specified size between 18446744071562067968 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
-# src/glpk/misc/wclique1.c:123:7: warning: 'memset': specified size between 18446744071562067968 and 18446744073709551615 exceeds maximum object size 9223372036854775807 [-Wstringop-overflow=]
-#          gcc src/lp_solver.o (exit 1)
-# (cd _build/default/src && /opt/apps/software/GCCcore/7.3.0/bin/gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -I . -DUSEGLPK -g -I /tmp/tactician-49jaS7/_opam/lib/ocaml -I /tmp/tactician-49jaS7/_opam/lib/bytes -I /tmp/tactician-49jaS7/_opam/lib/cudf -I /tmp/tactician-49jaS7/_opam/lib/extlib -I glpk -o lp_solver.o -c lp_solver.cpp)
-# lp_solver.cpp:419:1: fatal error: error writing to /tmp/buildc4c01a.dune/ccqRjVY9.s: No space left on device
-#  }
-#  ^
-# compilation terminated.
-#          gcc src/mccscudf.o (exit 1)
-# (cd _build/default/src && /opt/apps/software/GCCcore/7.3.0/bin/gcc -O2 -fno-strict-aliasing -fwrapv -fPIC -I . -DUSEGLPK -g -I /tmp/tactician-49jaS7/_opam/lib/ocaml -I /tmp/tactician-49jaS7/_opam/lib/bytes -I /tmp/tactician-49jaS7/_opam/lib/cudf -I /tmp/tactician-49jaS7/_opam/lib/extlib -I glpk -o mccscudf.o -c mccscudf.cpp)
-
-
-#=== ERROR while compiling dose3.5.0.1-1 ======================================#
-# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#df43578a
-# path                 /tmp/tactician-49jaS7/_opam/.opam-switch/build/dose3.5.0.1-1
-# command              /usr/bin/make libs apps
-# exit-code            2
-# env-file             /tmp/tactician-49jaS7/.opam/log/dose3-30773-6d40ad.env
-# output-file          /tmp/tactician-49jaS7/.opam/log/dose3-30773-6d40ad.out
-### output ###
-# [...]
-# Use Re.Pcre
-# ocamlfind ocamlopt -c -warn-error FPSXY -w -24 -ccopt -O9 -package extlib -package re.pcre -package cudf -for-pack Common -pp cppo -pp 'cppo -V OCAML:4.11.1    -D '\''OCAMLGRAPHVERSION 200'\''' -I common -I doselibs -o common/criteria_types.cmx common/criteria_types.ml
-# ocamlfind ocamlopt -c -warn-error FPSXY -w -24 -ccopt -O9 -package extlib -package re.pcre -package cudf -for-pack Common -pp cppo -pp 'cppo -V OCAML:4.11.1    -D '\''OCAMLGRAPHVERSION 200'\''' -I common -I doselibs -o common/criteria_parser.cmx common/criteria_parser.ml
-# ocamlfind ocamlopt -c -warn-error FPSXY -w -24 -ccopt -O9 -package extlib -package re.pcre -package cudf -for-pack Common -pp cppo -pp 'cppo -V OCAML:4.11.1    -D '\''OCAMLGRAPHVERSION 200'\''' -I common -I doselibs -o common/criteria_lexer.cmx common/criteria_lexer.ml
-# + ocamlfind ocamlopt -c -warn-error FPSXY -w -24 -ccopt -O9 -package extlib -package re.pcre -package cudf -for-pack Common -pp cppo -pp 'cppo -V OCAML:4.11.1    -D '\''OCAMLGRAPHVERSION 200'\''' -I common -I doselibs -o common/criteria_lexer.cmx common/criteria_lexer.ml
-# Fatal error: exception Sys_error("No space left on device")
-# File "common/criteria_lexer.ml", line 1:
-# Error: Error while running external preprocessor
-# Command line: cppo -V OCAML:4.11.1    -D 'OCAMLGRAPHVERSION 200' 'common/criteria_lexer.ml' > /tmp/ocamlpp826087
-# 
-# Command exited with code 2.
-# make: *** [_build/doselibs/common.cma] Error 10
-
-
-#=== ERROR while compiling coq.8.11.dev =======================================#
-# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-01-14 15:30
-# path                 /tmp/tactician-49jaS7/_opam/.opam-switch/build/coq.8.11.dev
-# command              /usr/bin/make -j55
-# exit-code            2
-# env-file             /tmp/tactician-49jaS7/.opam/log/coq-30773-535b50.env
-# output-file          /tmp/tactician-49jaS7/.opam/log/coq-30773-535b50.out
-### output ###
-# [...]
-# File "tactics/hints.ml", line 1:
-# Error: I/O error: No space left on device
-# make[1]: *** [tactics/hints.cmx] Error 2
-# make[1]: *** Waiting for unfinished jobs....
-# File "vernac/himsg.ml", line 1:
-# Error: I/O error: No space left on device
-# File "vernac/declaremods.ml", line 1:
-# Error: I/O error: No space left on device
-# make[1]: *** [vernac/himsg.cmx] Error 2
-# make[1]: *** [vernac/declaremods.cmx] Error 2
-# make[1]: Leaving directory `/tmp/tactician-49jaS7/_opam/.opam-switch/build/coq.8.11.dev'
-# make: *** [submake] Error 2
-
-
-The former state can be restored with:
-    opam switch import "/tmp/tactician-49jaS7/_opam/.opam-switch/backup/state-20210117062945.export"
-srun: error: node-11: task 0: Exited with exit code 31
