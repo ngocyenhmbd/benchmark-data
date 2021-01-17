@@ -1,0 +1,155 @@
+
+Coq.Lists.List.nil_cons	40	4.1	search with cache (only 1: red; only 1: discriminate).	0.0180530548096	20
+Coq.Lists.List.destruct_list	40
+Coq.Lists.List.hd_error_tl_repr	40	5.17.4.29	search with cache (only 1: intro z; only 1: intro; only 1: fix gcd_divide 1; only 1: intuition).	8.42783403397	30881
+Coq.Lists.List.hd_error_some_nil	40	0.0.0.5.0	search with cache (only 1: unfold hd_error, tl; only 1: induction l as [| a tail]; only 1: intros a r; only 1: firstorder  discriminate; only 1: firstorder  discriminate).	0.0310580730438	23
+Coq.Lists.List.length_zero_iff_nil	40
+Coq.Lists.List.hd_error_nil	40	2.0	search with cache (only 1: unfold hd_error, tl; only 1: trivial).	0.0111689567566	4
+Coq.Lists.List.hd_error_cons	40	4.2.0	search with cache (only 1: intros; only 1: unfold hd_error, tl; only 1: reflexivity).	0.0197789669037	15
+Coq.Lists.List.in_eq	40	0.3.1.0	search with cache (only 1: intros; only 1: simpl; only 1: left; only 1: split).	0.0138070583344	8
+Coq.Lists.List.in_cons	40	0.0	search with cache (only 1: simpl; only 1: auto).	0.0105721950531	2
+Coq.Lists.List.not_in_cons	40	8.18	search with cache (only 1: simpl; only 1: intuition).	0.795981168747	1421
+Coq.Lists.List.in_nil	40	2	search with cache (only 1: induction 1).	0.00953388214111	3
+Coq.Lists.List.in_split	40
+Coq.Lists.List.in_inv	40	0.0	search with cache (only 1: simpl; only 1: auto).	0.0106561183929	2
+Coq.Lists.List.in_dec	40	1.3.1.13	search with cache (only 1: intros n m; only 1: induction l; only 1: now right; only 1: firstorder).	0.70175909996	581
+Coq.Lists.List.app_cons_not_nil	40	12.0.0.1.32.20	search with cache (only 1: intros n m; only 1: induction n; only 1: simpl; only 1: intros; only 1: now discriminate; only 1: destr_bool).	12.0858559608	51813
+Coq.Lists.List.app_nil_l	40	0	search with cache (only 1: auto).	0.0104219913483	1
+Coq.Lists.List.app_nil_r	40	0.2.6.0.6	search with cache (only 1: induction l; only 1: reflexivity; only 1: simpl; only 1: apply f_equal; only 1: auto).	0.252813100815	347
+Coq.Lists.List.app_nil_end	40	1.0.0.1.0.1	search with cache (only 1: induction l; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: f_equal; only 1: auto).	0.0204789638519	9
+Coq.Lists.List.app_assoc	40	1.0.1.4.0.5	search with cache (only 1: induction l; only 1: reflexivity; only 1: simpl; only 1: intros; only 1: apply f_equal; only 1: auto).	0.370065927505	471
+Coq.Lists.List.app_assoc_reverse	40	1.0.0.0.0.2.0	search with cache (only 1: intros l m n; only 1: induction l; only 1: simpl; only 1: f_equal; only 1: simpl; only 1: f_equal; only 1: auto).	0.0377550125122	33
+Coq.Lists.List.app_comm_cons	40	4.4	search with cache (only 1: simpl; only 1: auto using app_assoc).	0.0334551334381	57
+Coq.Lists.List.app_eq_nil	40	3.3.0.3.5	search with cache (only 1: induction l; only 1: auto; only 1: simpl; only 1: intros; only 1: discriminate H).	0.356469154358	464
+Coq.Lists.List.app_eq_unit	40
+Coq.Lists.List.app_inj_tail	40
+Coq.Lists.List.app_length	40	8.4.0.9	search with cache (only 1: induction l; only 1: reflexivity; only 1: simpl; only 1: auto).	0.737359046936	1134
+Coq.Lists.List.in_app_or	40	0.5.1.0.1.1	search with cache (only 1: intros l m n; only 1: induction l; only 1: simpl; only 1: auto; only 1: simpl; only 1: intuition).	0.257665872574	294
+Coq.Lists.List.in_or_app	40	8.0.4.0.2.5	search with cache (only 1: intros l m n; only 1: induction l; only 1: simpl; only 1: tauto; only 1: simpl; only 1: intuition).	6.02299189568	14774
+Coq.Lists.List.in_app_iff	40
+Coq.Lists.List.app_inv_head	40	3.13.0.1.0.1.10	search with cache (only 1: intros l m n; only 1: induction l; only 1: simpl; only 1: auto; only 1: simpl; only 1: inversion 1; only 1: auto).	5.06824493408	16022
+Coq.Lists.List.app_inv_tail	40
+Coq.Lists.List.nth_in_or_default	40
+Coq.Lists.List.nth_S_cons	40	1.0	search with cache (only 1: simpl; only 1: auto).	0.023472070694	15
+Coq.Lists.List.nth_default_eq	40
+Coq.Lists.List.nth_In	40
+Coq.Lists.List.In_nth	40
+Coq.Lists.List.nth_overflow	40
+Coq.Lists.List.nth_indep	40	1.0.0.0.2.0.0.0.0	search with cache (only 1: induction l; only 1: easy; only 1: destruct n; only 1: simpl; only 1: auto; only 1: simpl; only 1: intros; only 1: apply IHl; only 1: auto with arith).	0.776226043701	585
+Coq.Lists.List.app_nth1	40	0.0.0.0.2.0.0	search with cache (only 1: induction l; only 1: inversion 1; only 1: destruct n; only 1: simpl; only 1: auto with arith; only 1: simpl; only 1: auto with arith).	0.0737261772156	36
+Coq.Lists.List.app_nth2	40	0.0.2.0.0.0.6.0.2.1.0.0.0	search with cache (only 1: induction l; only 1: inversion 1; only 1: auto with arith; only 1: simpl; only 1: easy; only 1: intros l' d [| n]; only 1: destruct 1; only 1: simpl; only 1: auto with arith; only 1: simpl; only 1: auto with arith; only 1: simpl; only 1: auto with arith).	38.651458025	45240
+Coq.Lists.List.nth_split	40
+Coq.Lists.List.nth_error_In	40
+Coq.Lists.List.In_nth_error	40
+Coq.Lists.List.nth_error_None	40
+Coq.Lists.List.nth_error_Some	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.pow_sub_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.pow_div_l	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.exists_div2	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_0_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_succ_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_spec'	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_spec	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_true	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_false	40	3.0.0.0.2.0.0.0	search with cache (only 1: intros a n Hn; only 1: rewrite <- testbit_spec' by trivial; only 1: destruct a.[n]; only 1: simpl; only 1: split; only 1: now try order'; only 1: now try order'; only 1: now try order').	1.60966587067	877
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_eqb	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.b2z_inj	40	0.0.3	search with cache (only 1: destr_bool; only 1: now try order'; only 1: now try order').	0.0208041667938	6
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.add_b2z_double_div2	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.add_b2z_double_bit0	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.b2z_div2	40	0.0.2.23.0.11.2.21.0.8.5	search with cache (only 1: intros; only 1: apply div_small; only 1: split; only 1: destr_bool; only 1: apply lt_le_incl, lt_0_1; only 1: rewrite <- lt_succ_r; only 1: apply lt_succ_diag_r; only 1: destr_bool; only 1: rewrite two_succ; only 1: apply lt_succ_diag_r; only 1: order').	14.4845509529	40976
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.b2z_bit0	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.testbit_unique	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.bits_0	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.bits_opp	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.bits_m1	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.bit0_odd	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.bit0_eqb	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.bit0_mod	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.pow_sub_r	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.pow_div_l	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_proper	40	5.2.1	search with cache (only 1: intros x x' EQ; only 1: subst; only 1: intuition).	0.0252568721771	37
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.exists_div2	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_0_r	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_succ_r	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_spec'	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_spec	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_true	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_false	40	0.1.0.0.0.2.0.0.0	search with cache (only 1: intros a n; only 1: rewrite <- testbit_spec'; only 1: destruct a.[n]; only 1: destr_bool; only 1: split; only 1: now try order'; only 1: now try order'; only 1: simpl; only 1: intuition).	0.742693901062	457
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_eqb	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_inj	40	0.0.5	search with cache (only 1: destr_bool; only 1: now try order'; only 1: now try order').	0.020485162735	8
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.add_b2n_double_div2	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.add_b2n_double_bit0	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_div2	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_bit0	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_unique	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bits_0	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit0_odd	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit0_eqb	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit0_mod	40	0.0.0.1.1.0.0.1.0	search with cache (only 1: intros a; only 1: destruct (exists_div2 a) as (a', (b, H)); only 1: rewrite H  at 1; only 1: rewrite testbit_0_r; only 1: apply mod_unique with a'; only 1: destruct b; only 1: order'; only 1: order'; only 1: trivial).	0.248623132706	161
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_odd	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit_log2	40
+Coq.ZArith.BinInt.Z.eq_dec	40	0.0.11	search with cache (only 1: decide equality; only 1: apply Pos.eq_dec; only 1: apply Pos.eq_dec).	0.194068908691	206
+Coq.ZArith.BinInt.Z.pos_sub_spec	40
+Coq.ZArith.BinInt.Z.pos_sub_discr	40
+Coq.ZArith.BinInt.Z.pos_sub_diag	40
+Coq.ZArith.BinInt.Z.pos_sub_lt	40
+Coq.ZArith.BinInt.Z.pos_sub_gt	40
+Coq.ZArith.BinInt.Z.pos_sub_opp	40
+Coq.ZArith.BinInt.Z.Private_BootStrap.add_0_r	40	0.2.0.0.5	search with cache (only 1: induction n; only 1: trivial; only 1: trivial; only 1: simpl; only 1: trivial).	0.0708179473877	64
+Coq.ZArith.BinInt.Z.Private_BootStrap.mul_0_r	40	2.0.0.21	search with cache (only 1: induction n; only 1: trivial; only 1: trivial; only 1: trivial).	0.235192775726	357
+Coq.ZArith.BinInt.Z.Private_BootStrap.mul_1_l	40	0	search with cache (only 1: now destruct n).	0.0147399902344	1
+Coq.ZArith.BinInt.Z.Private_BootStrap.add_comm	40	2.4.4.2.22.0.17.65	search with cache (only 1: case_eq (PeanoNat.Nat.even m); only 1: revert m; only 1: intro H; only 1: fix even_spec 1; only 1: easy; only 1: rewrite <- ?negb_true_iff, ?PeanoNat.Nat.negb_even, ?PeanoNat.Nat.odd_spec, ?PeanoNat.Nat.even_spec; only 1: fix odd_spec 1; only 1: trivial).	25.5871789455	69005
+Coq.ZArith.BinInt.Z.Private_BootStrap.opp_add_distr	40
+Coq.ZArith.BinInt.Z.Private_BootStrap.opp_inj	40
+Coq.ZArith.BinInt.Z.Private_BootStrap.pos_sub_add	40
+Coq.ZArith.BinInt.Z.Private_BootStrap.add_assoc_pos	40
+Coq.ZArith.BinInt.Z.Private_BootStrap.add_assoc	40
+Coq.ZArith.BinInt.Z.Private_BootStrap.add_opp_diag_r	40	0.0.0.0.0.0.5	search with cache (only 1: destruct n; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: now rewrite pos_sub_spec, Pos.compare_refl; only 1: simpl; only 1: now rewrite pos_sub_spec, Pos.compare_refl).	0.201915979385	63
+Coq.ZArith.BinInt.Z.Private_BootStrap.mul_opp_r	40	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	search with cache (only 1: destruct n, m; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: trivial; only 1: simpl; only 1: trivial; only 1: simpl; only 1: trivial; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: trivial; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: now f_equal).	7.98252797127	8032
+Coq.ZArith.BinInt.Z.Private_BootStrap.mul_add_distr_pos	40
+Coq.ZArith.BinInt.Z.Private_BootStrap.mul_add_distr_r	40
+Coq.ZArith.BinInt.Z.one_succ	40	1.4	search with cache (only 1: simpl; only 1: now f_equal).	0.0941159725189	7
+Coq.ZArith.BinInt.Z.two_succ	40	0	search with cache (only 1: reflexivity).	0.012640953064	1
+Coq.ZArith.BinInt.Z.add_0_l	40	0	search with cache (only 1: now destruct n).	0.0936670303345	1
+Coq.ZArith.BinInt.Z.add_succ_l	40
+Coq.ZArith.BinInt.Z.opp_0	40	0.0	search with cache (only 1: simpl; only 1: now f_equal).	0.0159800052643	2
+Coq.ZArith.BinInt.Z.opp_succ	40	0.0.1.0.0.0.0.3.0	search with cache (only 1: unfold succ; only 1: destruct n; only 1: simpl; only 1: trivial; only 1: simpl; only 1: trivial; only 1: rewrite !opp_add_distr; only 1: simpl; only 1: trivial).	0.236227035522	182
+Coq.ZArith.BinInt.Z.succ_pred	40
+Coq.ZArith.BinInt.Z.pred_succ	40	0.0	search with cache (only 1: unfold succ, pred; only 1: now rewrite <- add_assoc, add_opp_diag_r, add_0_r).	0.0167810916901	2
+Coq.ZArith.BinInt.Z.sub_0_r	40	0	search with cache (only 1: now destruct n).	0.0143830776215	1
+Coq.ZArith.BinInt.Z.sub_succ_r	40
+Coq.ZArith.BinInt.Z.mul_0_l	40	0	search with cache (only 1: now destruct n).	0.0164849758148	1
+Coq.ZArith.BinInt.Z.mul_succ_l	40
+Coq.ZArith.BinInt.Z.eqb_eq	40
+Coq.PArith.BinPos.Pos.eq_dec	40	13	search with cache (only 1: decide equality).	0.128417015076	153
+Coq.PArith.BinPos.Pos.xI_succ_xO	40	40	search with cache (only 1: auto).	0.433583974838	816
+Coq.PArith.BinPos.Pos.succ_discr	40	4.6.43.30	search with cache (only 1: destruct p; only 1: easy; only 1: easy; only 1: discriminate).	2.55553793907	10326
+Coq.PArith.BinPos.Pos.pred_double_spec	40	4	search with cache (only 1: reflexivity).	0.0778520107269	5
+Coq.PArith.BinPos.Pos.succ_pred_double	40
+Coq.PArith.BinPos.Pos.pred_double_succ	40	0.0.0.1.2.3	search with cache (only 1: induction p; only 1: simpl; only 1: now f_equal; only 1: reflexivity; only 1: simpl; only 1: reflexivity).	0.115001916885	62
+Coq.PArith.BinPos.Pos.double_succ	40	0.0	search with cache (only 1: simpl; only 1: now f_equal).	0.0100049972534	2
+Coq.PArith.BinPos.Pos.pred_double_xO_discr	40	0.0.0.0.0.0.2	search with cache (only 1: induction p; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: now f_equal).	0.0393908023834	9
+Coq.PArith.BinPos.Pos.succ_not_1	40	0	search with cache (only 1: now destruct p).	0.0260589122772	1
+Coq.PArith.BinPos.Pos.pred_succ	40	3.0.0.0.1.0.0.0.2.2	search with cache (only 1: induction p; only 1: induction p; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: now f_equal; only 1: reflexivity; only 1: solve_proper).	2.04839491844	1946
+Coq.PArith.BinPos.Pos.succ_pred_or	40
+Coq.PArith.BinPos.Pos.succ_pred	40
+Coq.PArith.BinPos.Pos.succ_inj	40
+Coq.PArith.BinPos.Pos.pred_N_succ	40	1.0.2.2.7.1.1	search with cache (only 1: destruct p; only 1: simpl; only 1: f_equal; only 1: apply pred_double_succ; only 1: simpl; only 1: now f_equal; only 1: auto).	0.927935123444	1317
+Coq.PArith.BinPos.Pos.add_1_r	40	2	search with cache (only 1: now destruct p).	0.0249810218811	22
+Coq.PArith.BinPos.Pos.add_1_l	40	0	search with cache (only 1: now destruct p).	0.01069688797	1
+Coq.PArith.BinPos.Pos.add_carry_spec	40
+Coq.PArith.BinPos.Pos.add_comm	40
+Coq.PArith.BinPos.Pos.add_succ_r	40
+Coq.PArith.BinPos.Pos.add_succ_l	40
+Coq.PArith.BinPos.Pos.add_no_neutral	40
+Coq.PArith.BinPos.Pos.add_carry_add	40
+Coq.PArith.BinPos.Pos.add_reg_r	40
+Coq.PArith.BinPos.Pos.add_reg_l	40
+Coq.PArith.BinPos.Pos.add_cancel_r	40
+Coq.PArith.BinPos.Pos.add_cancel_l	40
+Coq.PArith.BinPos.Pos.add_carry_reg_r	40
+Coq.PArith.BinPos.Pos.add_carry_reg_l	40
+Coq.PArith.BinPos.Pos.add_assoc	40
+Coq.PArith.BinPos.Pos.add_xO	40	0.2	search with cache (only 1: simpl; only 1: f_equal).	0.0118899345398	4
+Coq.PArith.BinPos.Pos.add_xI_pred_double	40
+Coq.PArith.BinPos.Pos.add_xO_pred_double	40
