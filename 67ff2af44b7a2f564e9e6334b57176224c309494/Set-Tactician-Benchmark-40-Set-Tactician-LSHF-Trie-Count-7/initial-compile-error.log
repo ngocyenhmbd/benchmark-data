@@ -1,35 +1,10 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-ioP4bA only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-pqljm6 only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-ioP4bA only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-pqljm6 only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-ioP4bA only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-pqljm6 only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
-
-#=== ERROR while compiling coq.8.11.dev =======================================#
-# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-01-14 15:30
-# path                 /tmp/tactician-ioP4bA/_opam/.opam-switch/build/coq.8.11.dev
-# command              /usr/bin/make -j55
-# exit-code            2
-# env-file             /tmp/tactician-ioP4bA/.opam/log/coq-31273-fed2e6.env
-# output-file          /tmp/tactician-ioP4bA/.opam/log/coq-31273-fed2e6.out
-### output ###
-# [...]
-# COQC      theories/Reals/Ranalysis5.v
-# COQC      theories/Reals/Ratan.v
-# COQC      theories/Reals/Machin.v
-# File "./theories/Reals/Machin.v", line 11, characters 0-19:
-# Error:
-# Anomaly
-# "Uncaught exception Library.Faulty("/tmp/tactician-ioP4bA/_opam/.opam-switch/build/coq.8.11.dev/theories/Arith/Le.vo")."
-# Please report at http://coq.inria.fr/bugs/.
-# 
-# make[1]: *** [theories/Reals/Machin.vo] Error 129
-# make[1]: Leaving directory `/tmp/tactician-ioP4bA/_opam/.opam-switch/build/coq.8.11.dev'
-# make: *** [submake] Error 2
-
-srun: error: node-03: task 0: Exited with exit code 31
