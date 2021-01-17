@@ -1,0 +1,38 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-bveT8R only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-bveT8R only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-bveT8R only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55 byte".
+
+#=== ERROR while compiling coq.8.11.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-01-14 15:30
+# path                 /tmp/tactician-bveT8R/_opam/.opam-switch/build/coq.8.11.dev
+# command              /usr/bin/make -j55 byte
+# exit-code            2
+# env-file             /tmp/tactician-bveT8R/.opam/log/coq-23624-90406d.env
+# output-file          /tmp/tactician-bveT8R/.opam/log/coq-23624-90406d.out
+### output ###
+# [...]
+# make[1]: *** [vernac/locality.cmo] Error 2
+# File "tactics/term_dnet.ml", line 1:
+# Error: I/O error: No space left on device
+# make[1]: *** [tactics/term_dnet.cmo] Error 2
+# File "vernac/declaremods.ml", line 1:
+# Error: I/O error: No space left on device
+# make[1]: *** [vernac/declaremods.cmo] Error 2
+# File "tactics/class_tactics.ml", line 1:
+# Error: I/O error: No space left on device
+# make[1]: *** [tactics/class_tactics.cmo] Error 2
+# make[1]: Leaving directory `/tmp/tactician-bveT8R/_opam/.opam-switch/build/coq.8.11.dev'
+# make: *** [submake] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-bveT8R/_opam/.opam-switch/backup/state-20210117051450.export"
+srun: error: node-05: task 0: Exited with exit code 31
