@@ -1,0 +1,38 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-pGkmjK only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-pGkmjK only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-pGkmjK only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of ocaml-base-compiler failed at "/usr/bin/make -j55 world.opt".
+
+#=== ERROR while compiling ocaml-base-compiler.4.11.1 =========================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#df43578a
+# path                 /tmp/tactician-pGkmjK/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1
+# command              /usr/bin/make -j55 world.opt
+# exit-code            2
+# env-file             /tmp/tactician-pGkmjK/.opam/log/ocaml-base-compiler-35331-2df1d4.env
+# output-file          /tmp/tactician-pGkmjK/.opam/log/ocaml-base-compiler-35331-2df1d4.out
+### output ###
+# [...]
+# ../../ocamlopt.opt -g -nostdlib -I ../../stdlib -c -for-pack Dynlink_compilerlibs -strict-sequence -principal -absname -w +a-4-9-40-41-42-44-45-48-66 -warn-error A -bin-annot -safe-string -strict-formats -I byte \
+#            -function-sections -I native -I dynlink_compilerlibs -o dynlink_compilerlibs/subst.cmx dynlink_compilerlibs/subst.ml
+# ../../ocamlopt.opt -g -nostdlib -I ../../stdlib -c -for-pack Dynlink_compilerlibs -strict-sequence -principal -absname -w +a-4-9-40-41-42-44-45-48-66 -warn-error A -bin-annot -safe-string -strict-formats -I byte \
+#            -function-sections -I native -I dynlink_compilerlibs -o dynlink_compilerlibs/env.cmx dynlink_compilerlibs/env.ml
+# ../../ocamlopt.opt -g -nostdlib -I ../../stdlib -c -for-pack Dynlink_compilerlibs -strict-sequence -principal -absname -w +a-4-9-40-41-42-44-45-48-66 -warn-error A -bin-annot -safe-string -strict-formats -I byte \
+#            -function-sections -I native -I dynlink_compilerlibs -o dynlink_compilerlibs/lambda.cmx dynlink_compilerlibs/lambda.ml
+# ../../ocamlopt.opt -g -nostdlib -I ../../stdlib -c -for-pack Dynlink_compilerlibs -strict-sequence -principal -absname -w +a-4-9-40-41-42-44-45-48-66 -warn-error A -bin-annot -safe-string -strict-formats -I byte \
+#            -function-sections -I native -I dynlink_compilerlibs -o dynlink_compilerlibs/instruct.cmx dynlink_compilerlibs/instruct.ml
+# ../../ocamlopt.opt -g -nostdlib -I ../../stdlib -c -for-pack Dynlink_compilerlibs -strict-sequence -principal -absname -w +a-4-9-40-41-42-44-45-48-66 -warn-error A -bin-annot -safe-string -strict-formats -I byte \
+#            -function-sections -I native -I dynlink_compilerlibs -o dynlink_compilerlibs/cmo_format.cmx dynlink_compilerlibs/cmo_format.ml
+# /tmp/camlasme83332.s: Assembler messages:
+# /tm
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-pGkmjK/_opam/.opam-switch/backup/state-20210117063029.export"
+srun: error: node-11: task 0: Exited with exit code 31
