@@ -1,38 +1,10 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-5KlBWH only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-KdlgLJ only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-5KlBWH only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-KdlgLJ only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-5KlBWH only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-KdlgLJ only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq failed at "/usr/bin/make -j55 byte".
-
-#=== ERROR while compiling coq.8.11.dev =======================================#
-# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-01-14 15:30
-# path                 /tmp/tactician-5KlBWH/_opam/.opam-switch/build/coq.8.11.dev
-# command              /usr/bin/make -j55 byte
-# exit-code            2
-# env-file             /tmp/tactician-5KlBWH/.opam/log/coq-30379-d9134c.env
-# output-file          /tmp/tactician-5KlBWH/.opam/log/coq-30379-d9134c.out
-### output ###
-# [...]
-# Error: I/O error: No space left on device
-# File "ide/idetop.ml", line 1:
-# Error: I/O error: No space left on device
-# make[1]: *** [bin/coqtacticworker.byte] Error 2
-# make[1]: *** Waiting for unfinished jobs....
-# make[1]: *** [bin/coqc.byte] Error 2
-# make[1]: *** [bin/coqproofworker.byte] Error 2
-# make[1]: *** [bin/coqqueryworker.byte] Error 2
-# make[1]: *** [bin/coqtop.byte] Error 2
-# make[1]: *** [bin/coqidetop.byte] Error 2
-# make[1]: Leaving directory `/tmp/tactician-5KlBWH/_opam/.opam-switch/build/coq.8.11.dev'
-# make: *** [submake] Error 2
-
-
-The former state can be restored with:
-    opam switch import "/tmp/tactician-5KlBWH/_opam/.opam-switch/backup/state-20210117051454.export"
-srun: error: node-08: task 0: Exited with exit code 31
