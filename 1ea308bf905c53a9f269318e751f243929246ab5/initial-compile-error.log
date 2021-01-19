@@ -1,38 +1,38 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-R7OZWJ only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-YwzXjl only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-R7OZWJ only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-YwzXjl only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-R7OZWJ only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-YwzXjl only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+[ERROR] The compilation of ocaml-base-compiler failed at "/usr/bin/make -j55 world".
 
-#=== ERROR while compiling coq.8.11.dev =======================================#
-# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-01-19 14:20
-# path                 /tmp/tactician-R7OZWJ/_opam/.opam-switch/build/coq.8.11.dev
-# command              /usr/bin/make -j55
+#=== ERROR while compiling ocaml-base-compiler.4.11.1 =========================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#e5db16dc
+# path                 /tmp/tactician-YwzXjl/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1
+# command              /usr/bin/make -j55 world
 # exit-code            2
-# env-file             /tmp/tactician-R7OZWJ/.opam/log/coq-1998-fed2e6.env
-# output-file          /tmp/tactician-R7OZWJ/.opam/log/coq-1998-fed2e6.out
+# env-file             /tmp/tactician-YwzXjl/.opam/log/ocaml-base-compiler-6723-1ec8cf.env
+# output-file          /tmp/tactician-YwzXjl/.opam/log/ocaml-base-compiler-6723-1ec8cf.out
 ### output ###
-# Error: Native compiler exited with status 2
 # [...]
-# make[1]: *** [theories/Strings/Byte.vo] Error 1
-# make[1]: *** [plugins/setoid_ring/Ring_polynom.vo] Error 1
-# File "./plugins/micromega/EnvRing.v", line 1032, characters 2-506:
-# Error: System error: "No space left on device"
-# 
-# make[1]: *** [plugins/micromega/EnvRing.vo] Error 1
-# File "./theories/MSets/MSetRBT.v", line 1962, characters 0-9:
-# Warning: Removed file ./theories/MSets/MSetRBT.vo
-# Error: System error: "No space left on device"
-# 
-# make[1]: *** [theories/
+# ../boot/ocamlrun ../boot/ocamlc -use-prims ../runtime/primitives -strict-sequence -absname -w +a-4-9-41-42-44-45-48 -g -warn-error A -bin-annot -nostdlib -safe-string -strict-formats   -o stdlib__oo.cmi -c oo.mli
+# ../boot/ocamlrun ../boot/ocamlc -use-prims ../runtime/primitives -strict-sequence -absname -w +a-4-9-41-42-44-45-48 -g -warn-error A -bin-annot -nostdlib -safe-string -strict-formats   -c camlinternalMod.ml
+# ../boot/ocamlrun ../boot/ocamlc -use-prims ../runtime/primitives -strict-sequence -absname -w +a-4-9-41-42-44-45-48 -g -warn-error A -bin-annot -nostdlib -safe-string -strict-formats   -o stdlib__ephemeron.cmo -c ephemeron.ml
+# ../boot/ocamlrun ../boot/ocamlc -use-prims ../runtime/primitives -strict-sequence -absname -w +a-4-9-41-42-44-45-48 -g -warn-error A -bin-annot -nostdlib -safe-string -strict-formats  -nolabels -no-alias-deps -o stdlib__stdLabels.cmo -c stdLabels.ml
+# ../boot/ocamlrun ../boot/ocamlc -use-prims ../runtime/primitives -strict-sequence -absname -w +a-4-9-41-42-44-45-48 -g -warn-error A -bin-annot -nostdlib -safe-string -strict-formats   -o stdlib__parsing.cmo -c parsing.ml
+# ../boot/ocamlrun ../boot/ocamlc -use-prims ../runtime/primitives -strict-sequence -absname -w +a-4-9-41-42-44-45-48 -g -warn-error A -bin-annot -nostdlib -safe-string -strict-formats   -o stdlib__oo.cmo -c oo.ml
+# ../boot/ocamlrun ../boot/ocamlc -use-prims ../runtime/primitives -a -o stdlib.cma camlinternalFormatBasics.cmo stdlib.cmo stdlib__pervasives.cmo stdlib__seq.cmo stdlib__option.cmo stdlib__result.cmo stdlib__bool.cmo stdlib__char.cmo stdlib__uchar.cmo stdlib__sys.cmo stdlib__list.cmo stdlib__bytes.cmo stdlib__string.cmo stdlib__unit.cmo stdlib__marshal.cmo stdlib__obj.cmo stdlib__array.cmo std[...]
+# File "_none_", line 1:
+# Error: I/O error: No space left on device
+# make[1]: *** [stdlib.cma] Error 2
+# make[1]: Leaving directory `/tmp/tactician-YwzXjl/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1/stdlib'
+# make: *** [coldstart] Error 2
 
 
 The former state can be restored with:
-    opam switch import "/tmp/tactician-R7OZWJ/_opam/.opam-switch/backup/state-20210119224923.export"
+    opam switch import "/tmp/tactician-YwzXjl/_opam/.opam-switch/backup/state-20210119225538.export"
 srun: error: node-03: task 0: Exited with exit code 31
