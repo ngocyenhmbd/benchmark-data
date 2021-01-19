@@ -1,0 +1,38 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-R7OZWJ only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-R7OZWJ only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-R7OZWJ only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+
+#=== ERROR while compiling coq.8.11.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-01-19 14:20
+# path                 /tmp/tactician-R7OZWJ/_opam/.opam-switch/build/coq.8.11.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/tactician-R7OZWJ/.opam/log/coq-1998-fed2e6.env
+# output-file          /tmp/tactician-R7OZWJ/.opam/log/coq-1998-fed2e6.out
+### output ###
+# Error: Native compiler exited with status 2
+# [...]
+# make[1]: *** [theories/Strings/Byte.vo] Error 1
+# make[1]: *** [plugins/setoid_ring/Ring_polynom.vo] Error 1
+# File "./plugins/micromega/EnvRing.v", line 1032, characters 2-506:
+# Error: System error: "No space left on device"
+# 
+# make[1]: *** [plugins/micromega/EnvRing.vo] Error 1
+# File "./theories/MSets/MSetRBT.v", line 1962, characters 0-9:
+# Warning: Removed file ./theories/MSets/MSetRBT.vo
+# Error: System error: "No space left on device"
+# 
+# make[1]: *** [theories/
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-R7OZWJ/_opam/.opam-switch/backup/state-20210119224923.export"
+srun: error: node-03: task 0: Exited with exit code 31
