@@ -1,0 +1,34 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-MTcsh1 only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-MTcsh1 only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-MTcsh1 only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-MTcsh1 only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq-hplugin failed at "/tmp/tactician-MTcsh1/_opam/bin/dune build --release -j 55".
+
+#=== ERROR while compiling coq-hplugin.dev ====================================#
+# context              2.0.3 | linux/x86_64 |  | pinned(git+ssh://git@github.com/LasseBlaauwbroek/hplugin.git#27096f95438ff39be86a2bdfa9501fe2d56c83c7#27096f95)
+# path                 /tmp/tactician-MTcsh1/_opam/.opam-switch/build/coq-hplugin.dev
+# command              /tmp/tactician-MTcsh1/_opam/bin/dune build --release -j 55
+# exit-code            1
+# env-file             /tmp/tactician-MTcsh1/.opam/log/coq-hplugin-10844-725196.env
+# output-file          /tmp/tactician-MTcsh1/.opam/log/coq-hplugin-10844-725196.out
+### output ###
+#         coqc theories/.Hplugin.aux,theories/Hplugin.{glob,vo} (exit 1)
+# (cd _build/default && /tmp/tactician-MTcsh1/_opam/bin/coqc -q -noinit -w -native-compiler-disabled -native-compiler ondemand -I /tmp/tactician-MTcsh1/_opam/lib/coq-hammer-tactics/lib -I /tmp/tactician-MTcsh1/_opam/lib/coq-hammer-tactics/tactics -I /tmp/tactician-MTcsh1/_opam/lib/coq-tactician/record-plugin -I /tmp/tactician-MTcsh1/_opam/lib/coq/clib -I /tmp/tactician-MTcsh1/_opam/lib/coq/conf[...]
+# File "./theories/Hplugin.v", line 2, characters 0-43:
+# Error:
+# Compiled library Hammer.Tactics.Tactics (in file /tmp/tactician-MTcsh1/_opam/lib/coq/user-contrib/Hammer/Tactics/Tactics.vo) makes inconsistent assumptions over library Coq.Init.Notations
+# 
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-MTcsh1/_opam/.opam-switch/backup/state-20210126094451.export"
+srun: error: node-02: task 0: Exited with exit code 31
