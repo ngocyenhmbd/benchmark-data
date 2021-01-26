@@ -1,41 +1,16 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-0xCtp6 only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-GN1vZe only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-0xCtp6 only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-GN1vZe only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-0xCtp6 only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-GN1vZe only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-0xCtp6 only.
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-GN1vZe only.
        Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq-tactician failed at "/tmp/tactician-0xCtp6/_opam/bin/dune build --release -j 55".
-
-#=== ERROR while compiling coq-tactician.dev ==================================#
-# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2021-01-23 19:20
-# path                 /tmp/tactician-0xCtp6/_opam/.opam-switch/build/coq-tactician.dev
-# command              /tmp/tactician-0xCtp6/_opam/bin/dune build --release -j 55
-# exit-code            1
-# env-file             /tmp/tactician-0xCtp6/.opam/log/coq-tactician-11981-0a96a0.env
-# output-file          /tmp/tactician-0xCtp6/.opam/log/coq-tactician-11981-0a96a0.out
-### output ###
-# 971 |        let+ p1 = constr_pattern_map p1
-# [...]
-# Error: This expression has type
-#          (Names.Name.t array * Pattern.constr_pattern) option
-#        but an expression was expected of type Pattern.constr_pattern
-#     ocamlopt src/.tactician_ltac1_record_plugin.objs/native/tactician_ltac1_record_plugin__Map_all_the_things.{cmx,o} (exit 2)
-# (cd _build/default && /tmp/tactician-0xCtp6/_opam/bin/ocamlopt.opt -w -40 -rectypes -w -27 -warn-error -A -g -I src/.tactician_ltac1_record_plugin.objs/byte -I src/.tactician_ltac1_record_plugin.objs/native -I /tmp/tactician-0xCtp6/_opam/lib/coq/clib -I /tmp/tactician-0xCtp6/_opam/lib/coq/config -I /tmp/tactician-0xCtp6/_opam/lib/coq/engine -I /tmp/tactician-0xCtp6/_opam/lib/coq/gramlib/.pack[...]
-# File "src/map_all_the_things.ml", line 971, characters 36-38:
-# 971 |        let+ p1 = constr_pattern_map p1
-#                                           ^^
-# Error: This expression has type
-#          (Names.Name.t array * Pattern.constr_pattern) option
-#        but an expression was expected of type Pattern.constr_pattern
-
-
-The former state can be restored with:
-    opam switch import "/tmp/tactician-0xCtp6/_opam/.opam-switch/backup/state-20210126090755.export"
-srun: error: node-02: task 0: Exited with exit code 31
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 971084.0 ON node-02 CANCELLED AT 2021-01-26T10:44:15 ***
+slurmstepd: error: *** JOB 971084 ON node-02 CANCELLED AT 2021-01-26T10:44:15 ***
