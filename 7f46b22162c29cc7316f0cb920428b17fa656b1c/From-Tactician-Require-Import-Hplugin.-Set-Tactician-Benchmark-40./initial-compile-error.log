@@ -1,0 +1,89 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-sBRhzS only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-sBRhzS only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-sBRhzS only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-sBRhzS only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of dose3 failed at "/usr/bin/make libs apps".
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+[ERROR] The compilation of opam-state failed at "/tmp/tactician-sBRhzS/_opam/.opam-switch/build/opam-state.2.1.0~beta4/./configure --disable-checks --prefix /tmp/tactician-sBRhzS/_opam".
+
+#=== ERROR while compiling opam-state.2.1.0~beta4 =============================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#71479db1
+# path                 /tmp/tactician-sBRhzS/_opam/.opam-switch/build/opam-state.2.1.0~beta4
+# command              /tmp/tactician-sBRhzS/_opam/.opam-switch/build/opam-state.2.1.0~beta4/./configure --disable-checks --prefix /tmp/tactician-sBRhzS/_opam
+# exit-code            1
+# env-file             /tmp/tactician-sBRhzS/.opam/log/opam-state-3079-21ab01.env
+# output-file          /tmp/tactician-sBRhzS/.opam/log/opam-state-3079-21ab01.out
+### output ###
+# [...]
+# no
+# checking for ocamlobjinfo... ocamlobjinfo
+# checking for ocamlfind... ocamlfind
+# checking for curl... curl
+# checking for dune... dune
+# checking for cppo... cppo
+# checking for patch... patch
+# checking for bunzip2... bunzip2
+# 
+# checking for OCaml findlib package unix... found
+# checking for OCaml findlib package bigarray... found
+# checking for OCaml findlib pa
+
+
+#=== ERROR while compiling dose3.5.0.1-1 ======================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#71479db1
+# path                 /tmp/tactician-sBRhzS/_opam/.opam-switch/build/dose3.5.0.1-1
+# command              /usr/bin/make libs apps
+# exit-code            2
+# env-file             /tmp/tactician-sBRhzS/.opam/log/dose3-3079-d59192.env
+# output-file          /tmp/tactician-sBRhzS/.opam/log/dose3-3079-d59192.out
+### output ###
+# [...]
+# 21 | Util.Logging(struct let label = "apt-cudf backend" end) ;;
+#                    ^^^^^^^
+# Alert deprecated: module Re_pcre
+# Use Re.Pcre
+# ocamlfind ocamldep -package extlib -package re.pcre -package unix -package cudf -package re.str -package ocamlgraph -pp cppo -pp 'cppo -V OCAML:4.11.1  -D '\''OCAMLGRAPHVERSION 200'\''' -modules applications/outdated.ml > applications/outdated.ml.depends
+# ocamlfind ocamlc -c -w -24 -ccopt -O9 -package extlib -package re.pcre -package unix -package cudf -package re.str -package ocamlgraph -pp cppo -pp 'cppo -V OCAML:4.11.1  -D '\''OCAMLGRAPHVERSION 200'\''' -I applications -I doselibs -o applications/outdated.cmo applications/outdated.ml
+# ocamlfind ocamlopt -c -w -24 -ccopt -O9 -package extlib -package re.pcre -package unix -package cudf -package re.str -package ocamlgraph -pp cppo -pp 'cppo -V OCAML:4.11.1  -D '\''OCAMLGRAPHVERSION 200'\''' -I applications -I doselibs -o applications/outdated.cmx applications/outdated.ml
+# + ocamlfind ocamlopt -c -w -24 -ccopt -O9 -package extlib -package re.pcre -package unix -package cudf -package re.str -package ocamlgraph -pp cppo -pp 'cppo -V OCAML:4.11.1  -D '\''OCAMLGRAPHVERSION 200'\''' -I applications -I doselibs -o applications/outdated.cmx applications/outdated.ml
+# File "applications/outdated.ml", line 1:
+# Error: I/O error: No space left on device
+# Command exited with code 2.
+# make: *** [apps] Error 10
+
+
+#=== ERROR while compiling coq.8.12.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-01-23 19:20
+# path                 /tmp/tactician-sBRhzS/_opam/.opam-switch/build/coq.8.12.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/tactician-sBRhzS/.opam/log/coq-3079-01feda.env
+# output-file          /tmp/tactician-sBRhzS/.opam/log/coq-3079-01feda.out
+### output ###
+# Error: Native compiler exited with status 2
+# [...]
+# make[1]: *** [theories/Classes/Morphisms_Prop.vo] Error 1
+# make[1]: *** [theories/Classes/Equivalence.vo] Error 1
+# File "./theories/ssr/ssrbool.v", line 1310, characters 0-62:
+# Error: System error: "No space left on device"
+# 
+# make[1]: *** [theories/ssr/ssrbool.vo] Error 1
+# Error: System error: "No space left on device"
+# 
+# make[1]: *** [theories/Classes/CEquivalence.vo] Error 1
+# make[1]: Leaving directory `/tmp/tactician-sBRhzS/_opam/.opam-switch/build/coq.8.12.dev'
+# make: *** [submake] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-sBRhzS/_opam/.opam-switch/backup/state-20210127065909.export"
+srun: error: node-05: task 0: Exited with exit code 31
