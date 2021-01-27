@@ -1,32 +1,32 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-pgDQJY only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-CTNRR8 only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-pgDQJY only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-CTNRR8 only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-pgDQJY only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-CTNRR8 only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-pgDQJY only.
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-CTNRR8 only.
        Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq-stdlib-fake failed at "/tmp/tactician-pgDQJY/_opam/lib/coq-tactician/with-tactician make -j55".
+[ERROR] The compilation of coq-stdlib-fake failed at "/tmp/tactician-CTNRR8/_opam/lib/coq-tactician/with-tactician make -j55".
 
 #=== ERROR while compiling coq-stdlib-fake.dev ================================#
 # context              2.0.3 | linux/x86_64 |  | git+https://github.com/LasseBlaauwbroek/custom-archive.git
-# path                 /tmp/tactician-pgDQJY/_opam/.opam-switch/build/coq-stdlib-fake.dev
-# command              /tmp/tactician-pgDQJY/_opam/lib/coq-tactician/with-tactician make -j55
+# path                 /tmp/tactician-CTNRR8/_opam/.opam-switch/build/coq-stdlib-fake.dev
+# command              /tmp/tactician-CTNRR8/_opam/lib/coq-tactician/with-tactician make -j55
 # exit-code            2
-# env-file             /tmp/tactician-pgDQJY/.opam/log/coq-stdlib-fake-22322-865888.env
-# output-file          /tmp/tactician-pgDQJY/.opam/log/coq-stdlib-fake-22322-865888.out
+# env-file             /tmp/tactician-CTNRR8/.opam/log/coq-stdlib-fake-17533-865888.env
+# output-file          /tmp/tactician-CTNRR8/.opam/log/coq-stdlib-fake-17533-865888.out
 ### output ###
 # [...]
-# File "./theories/setoid_ring/Rings_RX.v", line 15, characters 0-21:
+# File "./theories/nsatz/NsatzX.v", line 41, characters 0-21:
 # Warning: A recoverable error was raised in Tactician. Please report.
-# File "./theories/setoid_ring/Rings_RX.v", line 15, characters 0-21:
+# File "./theories/nsatz/NsatzX.v", line 41, characters 0-21:
 # Warning: A recoverable error was raised in Tactician. Please report.
-# File "./theories/setoid_ring/Rings_RX.v", line 15, characters 0-21:
+# File "./theories/nsatz/NsatzX.v", line 41, characters 0-21:
 # Warning: A recoverable error was raised in Tactician. Please report.
 # File "./theories/setoid_ring/Ncring_polynomX.v", line 496, characters 41-70:
 # Warning: Tactician has uncovered a bug. Please report. 
@@ -36,6 +36,6 @@
 # Warning: Tactician has uncovered a bug. Please report. 
 
 'opam install --verbose --jobs=8 --yes --keep-build-dir coq-stdlib-fake.dev' failed.
-slurmstepd: error: Detected 1 oom-kill event(s) in step 973522.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
-srun: error: node-04: task 0: Out Of Memory
-slurmstepd: error: Detected 1 oom-kill event(s) in step 973522.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+slurmstepd: error: Detected 29 oom-kill event(s) in step 973949.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: node-03: task 0: Out Of Memory
+slurmstepd: error: Detected 29 oom-kill event(s) in step 973949.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
