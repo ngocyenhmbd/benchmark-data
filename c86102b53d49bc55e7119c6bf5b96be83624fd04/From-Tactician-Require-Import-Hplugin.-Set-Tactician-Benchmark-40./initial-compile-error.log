@@ -1,0 +1,41 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-D4S1w5 only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-D4S1w5 only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-D4S1w5 only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-D4S1w5 only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of ocaml-base-compiler failed at "/usr/bin/make -j55 world".
+
+#=== ERROR while compiling ocaml-base-compiler.4.11.1 =========================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#c3c26e9c
+# path                 /tmp/tactician-D4S1w5/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1
+# command              /usr/bin/make -j55 world
+# exit-code            2
+# env-file             /tmp/tactician-D4S1w5/.opam/log/ocaml-base-compiler-6354-dab692.env
+# output-file          /tmp/tactician-D4S1w5/.opam/log/ocaml-base-compiler-6354-dab692.out
+### output ###
+# [...]
+# Error: I/O error: No space left on device
+# make[2]: *** [lambda/matching.cmo] Error 2
+# File "/tmp/tactician-D4S1w5/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1/typing/typecore.ml", line 1:
+# Error: I/O error: No space left on device
+# make[2]: *** [typing/typecore.cmo] Error 2
+# File "/tmp/tactician-D4S1w5/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1/parsing/parser.ml", line 1:
+# Error: I/O error: No space left on device
+# make[2]: *** [parsing/parser.cmo] Error 2
+# make[2]: Leaving directory `/tmp/tactician-D4S1w5/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1'
+# make[1]: *** [coreall] Error 2
+# make[1]: Leaving directory `/tmp/tactician-D4S1w5/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1'
+# make: *** [world] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-D4S1w5/_opam/.opam-switch/backup/state-20210127000847.export"
+srun: error: node-08: task 0: Exited with exit code 31
