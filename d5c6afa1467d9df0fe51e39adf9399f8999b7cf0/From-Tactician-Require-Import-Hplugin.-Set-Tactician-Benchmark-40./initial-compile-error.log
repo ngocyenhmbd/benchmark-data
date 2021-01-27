@@ -1,0 +1,39 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-icbaBQ only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-icbaBQ only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-icbaBQ only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-icbaBQ only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq-stdlib-fake failed at "/tmp/tactician-icbaBQ/_opam/lib/coq-tactician/with-tactician make -j55".
+
+#=== ERROR while compiling coq-stdlib-fake.dev ================================#
+# context              2.0.3 | linux/x86_64 |  | git+https://github.com/LasseBlaauwbroek/custom-archive.git
+# path                 /tmp/tactician-icbaBQ/_opam/.opam-switch/build/coq-stdlib-fake.dev
+# command              /tmp/tactician-icbaBQ/_opam/lib/coq-tactician/with-tactician make -j55
+# exit-code            2
+# env-file             /tmp/tactician-icbaBQ/.opam/log/coq-stdlib-fake-48795-865888.env
+# output-file          /tmp/tactician-icbaBQ/.opam/log/coq-stdlib-fake-48795-865888.out
+### output ###
+# [...]
+# File "/tmp/tactician-icbaBQ/Params.v", line 1, characters 0-38:
+# Error:
+# Dynlink error: execution of module initializers in the shared library failed: Failure("tactic not found: qauto")
+# 
+# hi
+# File "/tmp/tactician-icbaBQ/Params.v", line 1, characters 0-38:
+# Error:
+# Dynlink error: execution of module initializers in the shared library failed: Failure("tactic not found: qauto")
+# 
+# make: *** [theories/setoid_ring/Ring_baseX.vo] Error 1
+# make: *** [theories/setoid_ring/Ncring_initialX.vo] Error 1
+# make: *** [theories/ssr/ssrboolX.vo] Error 1
+
+'opam install --verbose --jobs=8 --yes --keep-build-dir coq-stdlib-fake.dev' failed.
+srun: error: node-05: task 0: Exited with exit code 31
