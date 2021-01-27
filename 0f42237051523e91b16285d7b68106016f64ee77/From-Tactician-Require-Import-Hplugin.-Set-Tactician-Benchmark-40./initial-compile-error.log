@@ -1,41 +1,13 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-o2C3LJ only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-8QrPze only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-o2C3LJ only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-8QrPze only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-o2C3LJ only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-8QrPze only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-o2C3LJ only.
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-8QrPze only.
        Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq-stdlib-fake failed at "/tmp/tactician-o2C3LJ/_opam/lib/coq-tactician/with-tactician make -j55".
-
-#=== ERROR while compiling coq-stdlib-fake.dev ================================#
-# context              2.0.3 | linux/x86_64 |  | git+https://github.com/LasseBlaauwbroek/custom-archive.git
-# path                 /tmp/tactician-o2C3LJ/_opam/.opam-switch/build/coq-stdlib-fake.dev
-# command              /tmp/tactician-o2C3LJ/_opam/lib/coq-tactician/with-tactician make -j55
-# exit-code            2
-# env-file             /tmp/tactician-o2C3LJ/.opam/log/coq-stdlib-fake-33551-865888.env
-# output-file          /tmp/tactician-o2C3LJ/.opam/log/coq-stdlib-fake-33551-865888.out
-### output ###
-# [...]
-# File "./theories/Reals/Rtrigo_funX.v", line 11, characters 0-21:
-# Warning: Trie depth: 9
-# File "./theories/Reals/Rtrigo_funX.v", line 11, characters 0-21:
-# Warning: Sort window: 100
-# hi
-# boe
-# File "./theories/Reals/Rpow_defX.v", line 11, characters 0-28:
-# Warning: Trie count: 11
-# File "./theories/Reals/Rpow_defX.v", line 11, characters 0-28:
-# Warning: Trie depth: 9
-# File "./theories/Reals/Rpow_defX.v", line 11, characters 0-28:
-# Warning: Sort window: 100
-
-'opam install --verbose --jobs=8 --yes --keep-build-dir coq-stdlib-fake.dev' failed.
-slurmstepd: error: Detected 1 oom-kill event(s) in step 973519.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
-srun: error: node-08: task 0: Out Of Memory
-slurmstepd: error: Detected 1 oom-kill event(s) in step 973519.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
