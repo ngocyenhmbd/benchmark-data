@@ -1,41 +1,41 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-vyCJOf only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-vs17NM only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-vyCJOf only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-vs17NM only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-vyCJOf only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-vs17NM only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-vyCJOf only.
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-vs17NM only.
        Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq-stdlib-fake failed at "/tmp/tactician-vyCJOf/_opam/lib/coq-tactician/with-tactician make -j55".
+[ERROR] The compilation of ocaml-base-compiler failed at "/usr/bin/make -j55 world.opt".
 
-#=== ERROR while compiling coq-stdlib-fake.dev ================================#
-# context              2.0.3 | linux/x86_64 |  | git+https://github.com/LasseBlaauwbroek/custom-archive.git
-# path                 /tmp/tactician-vyCJOf/_opam/.opam-switch/build/coq-stdlib-fake.dev
-# command              /tmp/tactician-vyCJOf/_opam/lib/coq-tactician/with-tactician make -j55
+#=== ERROR while compiling ocaml-base-compiler.4.11.1 =========================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#71479db1
+# path                 /tmp/tactician-vs17NM/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1
+# command              /usr/bin/make -j55 world.opt
 # exit-code            2
-# env-file             /tmp/tactician-vyCJOf/.opam/log/coq-stdlib-fake-41788-865888.env
-# output-file          /tmp/tactician-vyCJOf/.opam/log/coq-stdlib-fake-41788-865888.out
+# env-file             /tmp/tactician-vs17NM/.opam/log/ocaml-base-compiler-31500-cec83f.env
+# output-file          /tmp/tactician-vs17NM/.opam/log/ocaml-base-compiler-31500-cec83f.out
 ### output ###
 # [...]
-# File "./theories/nsatz/NsatzX.v", line 41, characters 0-21:
-# Warning: A recoverable error was raised in Tactician. Please report.
-# File "./theories/nsatz/NsatzX.v", line 41, characters 0-21:
-# Warning: A recoverable error was raised in Tactician. Please report.
-# File "./theories/nsatz/NsatzX.v", line 41, characters 0-21:
-# Warning: A recoverable error was raised in Tactician. Please report.
-# File "./theories/setoid_ring/Ncring_polynomX.v", line 496, characters 41-70:
-# Warning: Tactician has uncovered a bug. Please report. 
-# File "./theories/setoid_ring/Ncring_polynomX.v", line 546, characters 5-49:
-# Warning: Tactician has uncovered a bug. Please report. 
-# File "./theories/setoid_ring/Ncring_polynomX.v", line 547, characters 5-46:
-# Warning: Tactician has uncovered a bug. Please report. 
+# make[3]: *** [memprof_n.o] Error 1
+# bigarray.c:1237:1: fatal error: error writing to /tmp/ccEr8NkH.s: No space left on device
+#  }
+#  ^
+# compilation terminated.
+# make[3]: *** [bigarray_n.o] Error 1
+# make[3]: Leaving directory `/tmp/tactician-vs17NM/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1/runtime'
+# make[2]: *** [makeruntimeopt] Error 2
+# make[2]: Leaving directory `/tmp/tactician-vs17NM/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1'
+# make[1]: *** [opt.opt] Error 2
+# make[1]: Leaving directory `/tmp/tactician-vs17NM/_opam/.opam-switch/build/ocaml-base-compiler.4.11.1'
+# make: *** [world.opt] Error 2
 
-'opam install --verbose --jobs=8 --yes --keep-build-dir coq-stdlib-fake.dev' failed.
-slurmstepd: error: Detected 140 oom-kill event(s) in step 973525.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
-srun: error: node-08: task 0: Out Of Memory
-slurmstepd: error: Detected 140 oom-kill event(s) in step 973525.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-vs17NM/_opam/.opam-switch/backup/state-20210127070525.export"
+srun: error: node-05: task 0: Exited with exit code 31
