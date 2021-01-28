@@ -1,0 +1,41 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-4zw3wp only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-4zw3wp only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-4zw3wp only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-4zw3wp only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq-tactician failed at "/tmp/tactician-4zw3wp/_opam/bin/dune build -p coq-tactician -j 55 @install".
+
+#=== ERROR while compiling coq-tactician.dev ==================================#
+# context              2.0.3 | linux/x86_64 |  | pinned(git+http://github.com/Zhang-Liao/coq-tactician.git#9a86151326de00a748fbaf3d5617020044b94d56#9a861513)
+# path                 /tmp/tactician-4zw3wp/_opam/.opam-switch/build/coq-tactician.dev
+# command              /tmp/tactician-4zw3wp/_opam/bin/dune build -p coq-tactician -j 55 @install
+# exit-code            1
+# env-file             /tmp/tactician-4zw3wp/.opam/log/coq-tactician-43151-a59c17.env
+# output-file          /tmp/tactician-4zw3wp/.opam/log/coq-tactician-43151-a59c17.out
+### output ###
+# [...]
+#       coqdep theories/Ltac1/Record.v.d
+# *** Warning: in file Ltac1/Record.v, declared ML module ltac_plugin has not been found!
+# *** Warning: in file Ltac1/Record.v, declared ML module ground_plugin has not been found!
+# *** Warning: in file Ltac1/Record.v, declared ML module extraction_plugin has not been found!
+# *** Warning: in file Ltac1/Record.v, declared ML module recdef_plugin has not been found!
+#         coqc theories/Ltac1/.Record.aux,theories/Ltac1/Record.{glob,vo} (exit 1)
+# (cd _build/default && /tmp/tactician-4zw3wp/_opam/bin/coqc -q -noinit -w -native-compiler-disabled -native-compiler ondemand -I /tmp/tactician-4zw3wp/_opam/lib/coq/clib -I /tmp/tactician-4zw3wp/_opam/lib/coq/config -I /tmp/tactician-4zw3wp/_opam/lib/coq/engine -I /tmp/tactician-4zw3wp/_opam/lib/coq/gramlib/.pack -I /tmp/tactician-4zw3wp/_opam/lib/coq/interp -I /tmp/tactician-4zw3wp/_opam/lib/[...]
+# File "./theories/Ltac1/Record.v", line 5, characters 0-50:
+# Error: while loading
+# /tmp/tactician-4zw3wp/_opam/.opam-switch/build/coq-tactician.dev/_build/default/src/tactician_ltac1_record_plugin.cmxs:
+# execution of module initializers in the shared library failed: CErrors.UserError(0, _)
+# 
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-4zw3wp/_opam/.opam-switch/backup/state-20210128233325.export"
+srun: error: node-08: task 0: Exited with exit code 31
