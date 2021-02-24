@@ -1,0 +1,162 @@
+
+<><> Fetching repository information ><><><><><><><><><><><><><><><><><><><><><>
+[default] Initialised
+[coq-released] Initialised
+[coq-extra-dev] Initialised
+[coq-core-dev] Initialised
+[custom-archive] Initialised
+[coq-tactician: git]
+[coq-tactician: git]
+[coq-tactician: git]
+[coq-tactician: git]
+[coq-tactician: git]
+[coq-tactician: git]
+[coq-tactician: git]
+[coq-tactician: git]
+[coq-tactician] synchronised from git+http://github.com/Zhang-Liao/coq-tactician.git#19eb11b521937185361029fa4166b494e32f18f6
+[coq-tactician.dev: git]
+[coq-tactician.dev: git]
+[coq-tactician.dev: git]
+[coq-tactician.dev: git]
+[coq-tactician.dev: git]
+[coq-tactician.dev: git]
+[coq-tactician.dev: git]
+[coq-tactician.dev] synchronised from git+http://github.com/Zhang-Liao/coq-tactician.git#19eb11b521937185361029fa4166b494e32f18f6
+coq-tactician is now pinned to git+http://github.com/Zhang-Liao/coq-tactician.git#19eb11b521937185361029fa4166b494e32f18f6 (version dev)
+The following actions will be performed:
+  ∗ install conf-findutils      1           [required by coq]
+  ∗ install conf-m4             1           [required by ocamlfind]
+  ∗ install base-unix           base        [required by dune]
+  ∗ install ocaml-base-compiler 4.11.1      [required by ocaml]
+  ∗ install base-bigarray       base        [required by opam-core]
+  ∗ install base-threads        base        [required by dune]
+  ∗ install conf-which          1           [required by conf-git]
+  ∗ install ocaml-config        1           [required by ocaml]
+  ∗ install conf-git            1.0         [required by coq-tactician]
+  ∗ install ocaml               4.11.1      [required by coq-tactician]
+  ∗ install seq                 base        [required by re]
+  ∗ install ocamlfind           1.8.1       [required by coq]
+  ∗ install ocamlbuild          0.14.0      [required by cudf, dose3]
+  ∗ install dune                2.8.2       [required by coq-tactician]
+  ∗ install cmdliner            1.0.4       [required by coq-tactician]
+  ∗ install num                 1.4         [required by coq]
+  ∗ install base-bytes          base        [required by extlib]
+  ∗ install stdlib-shims        0.3.0       [required by ocamlgraph]
+  ∗ install re                  1.9.0       [required by opam-client]
+  ∗ install opam-file-format    2.1.2       [required by opam-format]
+  ∗ install cppo                1.6.7       [required by extlib]
+  ∗ install coq                 8.11.dev    [required by coq-tactician]
+  ∗ install ocamlgraph          2.0.0       [required by dose3]
+  ∗ install extlib              1.7.7-1     [required by opam-client]
+  ∗ install opam-core           2.1.0~beta4 [required by opam-format]
+  ∗ install cudf                0.9-1       [required by opam-solver]
+  ∗ install opam-format         2.1.0~beta4 [required by opam-repository, opam-solver]
+  ∗ install mccs                1.1+12      [required by opam-solver]
+  ∗ install dose3               5.0.1-1     [required by opam-solver]
+  ∗ install opam-repository     2.1.0~beta4 [required by opam-client]
+  ∗ install opam-solver         2.1.0~beta4 [required by opam-client]
+  ∗ install opam-state          2.1.0~beta4 [required by opam-client]
+  ∗ install opam-client         2.1.0~beta4 [required by coq-tactician]
+  ∗ install coq-tactician       dev*
+===== ∗ 34 =====
+
+<><> Gathering sources ><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+[cppo.1.6.7] downloaded from cache at https://opam.ocaml.org/cache
+[cmdliner.1.0.4] downloaded from cache at https://opam.ocaml.org/cache
+[cudf.0.9-1] downloaded from cache at https://opam.ocaml.org/cache
+[dose3.5.0.1-1] downloaded from cache at https://opam.ocaml.org/cache
+[extlib.1.7.7-1] downloaded from cache at https://opam.ocaml.org/cache
+[dune.2.8.2] downloaded from cache at https://opam.ocaml.org/cache
+[mccs.1.1+12] downloaded from cache at https://opam.ocaml.org/cache
+[num.1.4] downloaded from cache at https://opam.ocaml.org/cache
+[ocamlbuild.0.14.0] downloaded from cache at https://opam.ocaml.org/cache
+[ocaml-base-compiler.4.11.1] downloaded from cache at https://opam.ocaml.org/cache
+[ocamlfind.1.8.1] downloaded from cache at https://opam.ocaml.org/cache
+[ocamlgraph.2.0.0] downloaded from cache at https://opam.ocaml.org/cache
+[opam-client.2.1.0~beta4] downloaded from cache at https://opam.ocaml.org/cache
+[opam-file-format.2.1.2] downloaded from cache at https://opam.ocaml.org/cache
+[opam-format.2.1.0~beta4] found in cache
+[opam-repository.2.1.0~beta4] found in cache
+[opam-solver.2.1.0~beta4] found in cache
+[opam-state.2.1.0~beta4] found in cache
+[opam-core.2.1.0~beta4] downloaded from cache at https://opam.ocaml.org/cache
+[re.1.9.0] downloaded from cache at https://opam.ocaml.org/cache
+[stdlib-shims.0.3.0] downloaded from cache at https://opam.ocaml.org/cache
+[coq.8.11.dev] synchronised from git+https://github.com/coq/coq.git#v8.11
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+∗ installed base-bigarray.base
+∗ installed base-threads.base
+∗ installed base-unix.base
+∗ installed conf-findutils.1
+∗ installed conf-m4.1
+∗ installed conf-which.1
+∗ installed conf-git.1.0
+∗ installed ocaml-base-compiler.4.11.1
+∗ installed ocaml-config.1
+∗ installed ocaml.4.11.1
+∗ installed seq.base
+∗ installed cmdliner.1.0.4
+∗ installed ocamlfind.1.8.1
+∗ installed base-bytes.base
+∗ installed num.1.4
+∗ installed ocamlbuild.0.14.0
+∗ installed dune.2.8.2
+∗ installed stdlib-shims.0.3.0
+∗ installed opam-file-format.2.1.2
+∗ installed cppo.1.6.7
+∗ installed re.1.9.0
+∗ installed ocamlgraph.2.0.0
+∗ installed extlib.1.7.7-1
+∗ installed opam-core.2.1.0~beta4
+∗ installed cudf.0.9-1
+∗ installed mccs.1.1+12
+∗ installed opam-format.2.1.0~beta4
+∗ installed opam-repository.2.1.0~beta4
+∗ installed opam-state.2.1.0~beta4
+∗ installed dose3.5.0.1-1
+∗ installed opam-solver.2.1.0~beta4
+∗ installed opam-client.2.1.0~beta4
+∗ installed coq.8.11.dev
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+┌─ The following actions failed
+│ λ build coq-tactician dev
+└─ 
+┌─ The following changes have been performed
+│ ∗ install base-bigarray       base
+│ ∗ install base-bytes          base
+│ ∗ install base-threads        base
+│ ∗ install base-unix           base
+│ ∗ install cmdliner            1.0.4
+│ ∗ install conf-findutils      1
+│ ∗ install conf-git            1.0
+│ ∗ install conf-m4             1
+│ ∗ install conf-which          1
+│ ∗ install coq                 8.11.dev
+│ ∗ install cppo                1.6.7
+│ ∗ install cudf                0.9-1
+│ ∗ install dose3               5.0.1-1
+│ ∗ install dune                2.8.2
+│ ∗ install extlib              1.7.7-1
+│ ∗ install mccs                1.1+12
+│ ∗ install num                 1.4
+│ ∗ install ocaml               4.11.1
+│ ∗ install ocaml-base-compiler 4.11.1
+│ ∗ install ocaml-config        1
+│ ∗ install ocamlbuild          0.14.0
+│ ∗ install ocamlfind           1.8.1
+│ ∗ install ocamlgraph          2.0.0
+│ ∗ install opam-client         2.1.0~beta4
+│ ∗ install opam-core           2.1.0~beta4
+│ ∗ install opam-file-format    2.1.2
+│ ∗ install opam-format         2.1.0~beta4
+│ ∗ install opam-repository     2.1.0~beta4
+│ ∗ install opam-solver         2.1.0~beta4
+│ ∗ install opam-state          2.1.0~beta4
+│ ∗ install re                  1.9.0
+│ ∗ install seq                 base
+│ ∗ install stdlib-shims        0.3.0
+└─ 
+# Run eval $(opam env) to update the current shell environment
