@@ -1,41 +1,13 @@
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-Cm0Jnq only.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-ZNYPJw only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-Cm0Jnq only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-ZNYPJw only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-Cm0Jnq only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-ZNYPJw only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-Cm0Jnq only.
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-ZNYPJw only.
        Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
-
-#=== ERROR while compiling coq.8.11.dev =======================================#
-# context              2.0.3 | linux/x86_64 |  | git+https://github.com/LasseBlaauwbroek/custom-archive.git
-# path                 /tmp/tactician-Cm0Jnq/_opam/.opam-switch/build/coq.8.11.dev
-# command              /usr/bin/make -j55
-# exit-code            2
-# env-file             /tmp/tactician-Cm0Jnq/.opam/log/coq-28346-d918ed.env
-# output-file          /tmp/tactician-Cm0Jnq/.opam/log/coq-28346-d918ed.out
-### output ###
-# [...]
-# 393 | let tclIPAT_VIEWS ~views:vs ?(clear_if_id=false) ~conclusion =
-#                                     ^^^^^^^^^^^^^^^^^
-# Warning 16 [unerasable-optional-argument]: this optional argument cannot be erased.
-# File "plugins/funind/gen_principle.ml", line 1891, characters 8-25:
-# 1891 |         CErrors.user_errr
-#                ^^^^^^^^^^^^^^^^^
-# Error: Unbound value CErrors.user_errr
-# Hint: Did you mean user_err?
-# make[1]: *** [plugins/funind/gen_principle.cmx] Error 2
-# make[1]: *** Waiting for unfinished jobs....
-# make[1]: Leaving directory `/tmp/tactician-Cm0Jnq/_opam/.opam-switch/build/coq.8.11.dev'
-# make: *** [submake] Error 2
-
-
-The former state can be restored with:
-    opam switch import "/tmp/tactician-Cm0Jnq/_opam/.opam-switch/backup/state-20210419103304.export"
-srun: error: node-04: task 0: Exited with exit code 31
