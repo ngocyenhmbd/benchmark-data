@@ -1,7 +1,32 @@
 Cloning into 'repo'...
-Permission denied (publickey).
-fatal: Could not read from remote repository.
 
-Please make sure you have the correct access rights
-and the repository exists.
-srun: error: node-03: task 0: Exited with exit code 128
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.9.2
+  latest version: 4.10.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+srun: error: node-03: task 0: Exited with exit code 1
