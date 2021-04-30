@@ -11,22 +11,15 @@ Please update conda by running
 
 
 
-CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
-To initialize your shell, run
 
-    $ conda init <SHELL_NAME>
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.9.2
+  latest version: 4.10.1
 
-Currently supported shells are:
-  - bash
-  - fish
-  - tcsh
-  - xonsh
-  - zsh
-  - powershell
+Please update conda by running
 
-See 'conda init --help' for more information and options.
-
-IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+    $ conda update -n base -c defaults conda
 
 
-srun: error: node-03: task 0: Exited with exit code 1
+fatal: not a git repository (or any of the parent directories): .git
+srun: error: node-03: task 0: Exited with exit code 128
