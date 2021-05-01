@@ -1,0 +1,49 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to 'f662912c424a97e49f4e90f3d83ccd69271ffee5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at f662912 Update dune-project version
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-IKRZ4t only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-IKRZ4t only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-IKRZ4t only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-IKRZ4t only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq failed at "/tmp/tactician-IKRZ4t/_opam/.opam-switch/build/coq.dev/./configure -configdir /tmp/tactician-IKRZ4t/_opam/lib/coq/config -prefix /tmp/tactician-IKRZ4t/_opam -mandir /tmp/tactician-IKRZ4t/_opam/man -docdir /tmp/tactician-IKRZ4t/_opam/doc -libdir /tmp/tactician-IKRZ4t/_opam/lib/coq -datadir /tmp/tactician-IKRZ4t/_opam/share/coq -coqide no -native-compiler no".
+
+#=== ERROR while compiling coq.dev ============================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-04-26 10:30
+# path                 /tmp/tactician-IKRZ4t/_opam/.opam-switch/build/coq.dev
+# command              /tmp/tactician-IKRZ4t/_opam/.opam-switch/build/coq.dev/./configure -configdir /tmp/tactician-IKRZ4t/_opam/lib/coq/config -prefix /tmp/tactician-IKRZ4t/_opam -mandir /tmp/tactician-IKRZ4t/_opam/man -docdir /tmp/tactician-IKRZ4t/_opam/doc -libdir /tmp/tactician-IKRZ4t/_opam/lib/coq -datadir /tmp/tactician-IKRZ4t/_opam/share/coq -coqide no -native-compiler no
+# exit-code            1
+# env-file             /tmp/tactician-IKRZ4t/.opam/log/coq-34779-49156e.env
+# output-file          /tmp/tactician-IKRZ4t/.opam/log/coq-34779-49156e.out
+### output ###
+# Dune could not be found, please ensure you have a working OCaml enviroment
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-IKRZ4t/_opam/.opam-switch/backup/state-20210501214859.export"
+srun: error: node-03: task 0: Exited with exit code 31
