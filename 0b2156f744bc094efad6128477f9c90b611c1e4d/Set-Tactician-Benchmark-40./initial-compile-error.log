@@ -1,0 +1,61 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/Zhang-Liao/coq-tactician.git/
+Note: switching to '0b2156f744bc094efad6128477f9c90b611c1e4d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 0b2156f check weird negatives2
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-Xr3g8z only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-Xr3g8z only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-Xr3g8z only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-Xr3g8z only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq-tactician failed at "/lscratch/blaaulas/tactician-Xr3g8z/_opam/bin/dune build -p coq-tactician -j 55 @install".
+
+#=== ERROR while compiling coq-tactician.8.11.dev =============================#
+# context              2.0.3 | linux/x86_64 |  | pinned(git+http://github.com/Zhang-Liao/coq-tactician.git#0b2156f744bc094efad6128477f9c90b611c1e4d#0b2156f7)
+# path                 /lscratch/blaaulas/tactician-Xr3g8z/_opam/.opam-switch/build/coq-tactician.8.11.dev
+# command              /lscratch/blaaulas/tactician-Xr3g8z/_opam/bin/dune build -p coq-tactician -j 55 @install
+# exit-code            1
+# env-file             /lscratch/blaaulas/tactician-Xr3g8z/.opam/log/coq-tactician-45012-d7f37c.env
+# output-file          /lscratch/blaaulas/tactician-Xr3g8z/.opam/log/coq-tactician-45012-d7f37c.out
+### output ###
+# [...]
+# File "src/dune", line 46, characters 25-35:
+# 46 |  (preprocess (staged_pps ppx_import ppx_sexp_conv ppx_deriving_yojson))
+#                               ^^^^^^^^^^
+# Error: Library "ppx_import" not found.
+# Hint: try:
+#   dune external-lib-deps --missing --no-config --root . --ignore-promoted-rules --default-target @install --always-show-command-line --promote-install-files --release --only-packages coq-tactician -p coq-tactician --profile release -j 55 @install
+# File "src/dune", line 46, characters 36-49:
+# 46 |  (preprocess (staged_pps ppx_import ppx_sexp_conv ppx_deriving_yojson))
+#                                          ^^^^^^^^^^^^^
+# Error: Library "ppx_sexp_conv" not found.
+# Hint: try:
+#   dune external-lib-deps --missing --no-config --root . --ignore-promoted-rules --default-target @install --always-show-command-line --promote-install-files --release --only-packages coq-tactician -p coq-tactician --profile release -j 55 @install
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-Xr3g8z/_opam/.opam-switch/backup/state-20210921094845.export"
+srun: error: node-10: task 0: Exited with exit code 31
