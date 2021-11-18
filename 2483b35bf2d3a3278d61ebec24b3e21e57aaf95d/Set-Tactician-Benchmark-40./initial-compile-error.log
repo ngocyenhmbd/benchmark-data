@@ -19,18 +19,41 @@ Turn off this advice by setting config variable advice.detachedHead to false
 
 HEAD is now at 2483b35 complex features on difference2
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-NJS7pb only.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-EGd7IW only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-NJS7pb only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-EGd7IW only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-NJS7pb only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-EGd7IW only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-NJS7pb only.
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-EGd7IW only.
        Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] Sorry, resolution of the request timed out.
-        Try to specify a simpler request, use a different solver, or increase the allowed time by setting OPAMSOLVERTIMEOUT to a bigger value (currently, it is set to 60.0 seconds).
-srun: error: node-08: task 0: Exited with exit code 60
+[ERROR] The compilation of coq-tactician-stdlib failed at "/lscratch/blaaulas/tactician-EGd7IW/_opam/lib/coq-tactician/with-tactician make -j55".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2021-11-18 18:40
+# path                 /lscratch/blaaulas/tactician-EGd7IW/_opam/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /lscratch/blaaulas/tactician-EGd7IW/_opam/lib/coq-tactician/with-tactician make -j55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-EGd7IW/.opam/log/coq-tactician-stdlib-40148-865888.env
+# output-file          /lscratch/blaaulas/tactician-EGd7IW/.opam/log/coq-tactician-stdlib-40148-865888.out
+### output ###
+# [...]
+# Linking user-contrib/Ltac2/ltac2_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ssreflect_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ltac1_record_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ltac1_tactics_plugin.cmxs
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# Error:
+# File not found on loadpath : sexplib0.cmxs
+# Loadpath: /lscratch/blaaulas/tactician-EGd7IW/_opam/lib/coq/user-contrib/Tactician:/lscratch/blaaulas/tactician-EGd7IW/_opam/.opam-switch/build/coq-tactician-stdlib.8.11.dev/user-contrib:/lscratch/blaaulas/tactician-EGd7IW/_opam/.opam-switch/build/coq-tactician-stdlib.8.11.dev/user-contrib/Ltac2:/lscratch/blaaulas/tactician-EGd7IW/_opam/.opam-switch/build/coq-tactician-stdlib.8.11.dev/user-co[...]
+# 
+# make: *** [theories/Init/Notations.vo] Error 1
+
+'opam install --verbose --jobs=8 --yes --keep-build-dir coq-tactician-stdlib.8.11.dev' failed.
+srun: error: node-02: task 0: Exited with exit code 31
