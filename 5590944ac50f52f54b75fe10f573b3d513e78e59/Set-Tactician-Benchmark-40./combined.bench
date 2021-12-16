@@ -1,0 +1,27 @@
+
+Coq.Init.Peano.pred_Sn	40	1	search with cache (only 1: reflexivity).	0.00607705116272	2
+Coq.Init.Peano.not_eq_S	40	16	search with cache (only 1: auto).	0.214603185654	406
+Coq.Init.Peano.O_S	40	3	search with cache (only 1: discriminate).	0.00921893119812	16
+Coq.Init.Peano.n_Sn	40
+Coq.Init.Logic.Conjunction.proj1	40
+Coq.Init.Logic.Conjunction.proj2	40	0.0	search with cache (only 1: destruct 1; only 1: trivial).	0.00325608253479	2
+Coq.Init.Logic.Equivalence.iff_refl	40
+Coq.Init.Logic.Equivalence.iff_trans	40	2.2.0.0.0	search with cache (only 1: destruct 1; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.00689196586609	9
+Coq.Init.Logic.Equivalence.iff_sym	40	0.0.0.1	search with cache (only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.00425601005554	5
+Coq.Init.Logic.and_iff_compat_l	40	1.0.2.0.1.0.1.0.0.3	search with cache (only 1: destruct 1; only 1: split; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto).	0.0819292068481	719
+Coq.Init.Logic.and_iff_compat_r	40	0.0.0.0.0.0.0.0.0.0.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: apply Hl; only 1: assumption; only 1: assumption; only 1: intros [? ?]; only 1: split; only 1: apply Hr; only 1: assumption; only 1: assumption).	0.0670239925385	306
+Coq.Init.Logic.or_iff_compat_l	40
+Coq.Init.Logic.or_iff_compat_r	40	0.1.0.0.1.0.0.1.0.0.1.0.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [?| ?]; only 1: left; only 1: apply Hl; only 1: assumption; only 1: right; only 1: assumption; only 1: intros [?| ?]; only 1: left; only 1: apply Hr; only 1: assumption; only 1: right; only 1: assumption).	0.537715911865	2444
+Coq.Init.Logic.imp_iff_compat_l	40	9.9.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.119415044785	802
+Coq.Init.Logic.imp_iff_compat_r	40	2.0.3.0.2.1.2.0.0.0	search with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros H ?; only 1: apply H; only 1: apply Hr; only 1: assumption; only 1: intros H ?; only 1: apply H; only 1: apply Hl; only 1: assumption).	0.304047107697	1316
+Coq.Init.Logic.not_iff_compat	40	0.0.0.0	search with cache (only 1: intros A B [H1 H2]; only 1: split; only 1: auto; only 1: auto).	0.00816583633423	4
+Coq.Init.Logic.neg_false	40	1.1.11.0.0.0	search with cache (only 1: split; only 1: split; only 1: auto; only 1: destruct 1; only 1: intros [? ?]; only 1: auto).	0.212179899216	1113
+Coq.Init.Logic.and_cancel_l	40
+Coq.Init.Specif.sigT_eta	40	0.4	search with cache (only 1: destruct p; only 1: reflexivity).	0.0125670433044	6
+Coq.Init.Specif.sig_eta	40	0.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.0116920471191	2
+Coq.Init.Specif.sigT2_eta	40	0.1	search with cache (only 1: destruct p; only 1: reflexivity).	0.0132670402527	3
+Coq.Init.Specif.sig2_eta	40	0.0	search with cache (only 1: destruct p; only 1: reflexivity).	0.0133030414581	2
+Coq.Init.Specif.exists_to_inhabited_sig	40	0.0.2.9.4	search with cache (only 1: intro; only 1: destruct H; only 1: split; only 1: exists x; only 1: trivial).	0.164389133453	470
+Coq.Init.Specif.inhabited_sig_to_exists	40	0.0.0.63.49	search with cache (only 1: intro H1; only 1: elim H1; only 1: intros [x y]; only 1: exists x; only 1: assumption).	3.54558110237	42082
+Coq.Init.Specif.sigT.eq_existT_uncurried	40	0.0.0.0	search with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.0212118625641	4
+Coq.Init.Specif.sigT.eq_sigT_uncurried	40
