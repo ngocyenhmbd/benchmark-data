@@ -1,0 +1,20 @@
+File "./theories/Numbers/NatInt/NZOrder.v", line 365, characters 0-22:
+Error:
+Anomaly "Unknown tactic alias: Tactician.Lwac1.Record.unify_#_#_0EB22352."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/EqdepFacts.v", line 107, characters 4-15:
+Error:
+In environment
+U : Type
+P : U -> Type
+p : U
+x : P p
+q : U
+p0 : P q
+P0 : forall q : U, P q -> Type
+HC : P0 q p0
+H : eq_dep p x q p0
+q0 : U
+The term "P0 q0" has type "P q0 -> Type" which should be Set, Prop or Type.
+
