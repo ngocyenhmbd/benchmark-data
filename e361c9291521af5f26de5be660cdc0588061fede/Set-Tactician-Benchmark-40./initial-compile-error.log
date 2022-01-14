@@ -1,0 +1,93 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to 'e361c9291521af5f26de5be660cdc0588061fede'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e361c92 Merge branch 'coq8.14' into coq8.15
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-jZiAYp only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-jZiAYp only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-jZiAYp only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-jZiAYp only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of astring failed at "/lscratch/blaaulas/tactician-jZiAYp/_opam/bin/ocaml pkg/pkg.ml build --pinned false".
+[ERROR] The compilation of fmt failed at "/lscratch/blaaulas/tactician-jZiAYp/_opam/bin/ocaml pkg/pkg.ml build --dev-pkg false --with-base-unix true --with-cmdliner true".
+
+#=== ERROR while installing dune.2.9.1 ========================================#
+# path                 /lscratch/blaaulas/tactician-jZiAYp/_opam/.opam-switch/build/dune.2.9.1
+# command              /usr/bin/install -m 0644 /lscratch/blaaulas/tactician-jZiAYp/_opam/.opam-switch/build/dune.2.9.1/_build/install/default/doc/dune/CHANGES.md /lscratch/blaaulas/tactician-jZiAYp/_opam/doc/dune/CHANGES.md
+# exit-code            1
+# env-file             /lscratch/blaaulas/tactician-jZiAYp/.opam/log/log-52171-15aaf0.env
+# output-file          /lscratch/blaaulas/tactician-jZiAYp/.opam/log/log-52171-15aaf0.out
+
+
+#=== ERROR while compiling fmt.0.9.0 ==========================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#00c36ea4
+# path                 /lscratch/blaaulas/tactician-jZiAYp/_opam/.opam-switch/build/fmt.0.9.0
+# command              /lscratch/blaaulas/tactician-jZiAYp/_opam/bin/ocaml pkg/pkg.ml build --dev-pkg false --with-base-unix true --with-cmdliner true
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-jZiAYp/.opam/log/fmt-52171-d487ff.env
+# output-file          /lscratch/blaaulas/tactician-jZiAYp/.opam/log/fmt-52171-d487ff.out
+### output ###
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+# [...]
+#      'src/fmt.cmx' 'src/fmt.cmi' 'src/fmt.mli' 'src/fmt_tty.a'
+#      'src/fmt_tty.cmxs' 'src/fmt_tty.cmxa' 'src/fmt_tty.cma'
+#      'src/fmt_tty.cmx' 'src/fmt_tty.cmi' 'src/fmt_tty.mli' 'src/fmt_cli.a'
+#      'src/fmt_cli.cmxs' 'src/fmt_cli.cmxa' 'src/fmt_cli.cma'
+#      'src/fmt_cli.cmx' 'src/fmt_cli.cmi' 'src/fmt_cli.mli' 'src/fmt_top.a'
+#      'src/fmt_top.cmxs' 'src/fmt_top.cmxa' 'src/fmt_top.cma'
+#      'src/fmt_top.cmx' 'src/fmt_tty_top_init.ml']: exited with 2
+# Exception: Sys_error "No space left on device".
+# File "./pkg/pkg.ml", line 1:
+# Error: I/O error: No space left on device
+# Fatal error: exception Sys_error("No space left on device")
+
+
+#=== ERROR while compiling astring.0.8.5 ======================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#00c36ea4
+# path                 /lscratch/blaaulas/tactician-jZiAYp/_opam/.opam-switch/build/astring.0.8.5
+# command              /lscratch/blaaulas/tactician-jZiAYp/_opam/bin/ocaml pkg/pkg.ml build --pinned false
+# exit-code            1
+# env-file             /lscratch/blaaulas/tactician-jZiAYp/.opam/log/astring-52171-ba48a8.env
+# output-file          /lscratch/blaaulas/tactician-jZiAYp/.opam/log/astring-52171-ba48a8.out
+### output ###
+# [...]
+# ocamlfind ocamldep -modules src/astring.mli > src/astring.mli.depends
+# ocamlfind ocamlc -c -g -bin-annot -safe-string -I src -I test -o src/astring.cmi src/astring.mli
+# ocamlfind ocamlopt -c -g -bin-annot -safe-string -I src -I test -o src/astring_string.cmx src/astring_string.ml
+# pkg.ml: [ERROR] cmd ['ocamlbuild' '-use-ocamlfind' '-classic-display' '-j' '4' '-tag' 'debug'
+#      '-build-dir' '_build' 'opam' 'pkg/META' 'CHANGES.md' 'LICENSE.md'
+#      'README.md' 'src/astring.a' 'src/astring.cmxs' 'src/astring.cmxa'
+#      'src/astring.cma' 'src/astring.cmx' 'src/astring.cmi' 'src/astring.mli'
+#      'src/astring_string.cmx' 'src/astring_sub.cmx' 'src/astring_char.cmx'
+#      'src/astring_escape.cmx' 'src/astring_base.cmx' 'src/astring_unsafe.cmx'
+#      'src/astring_top.a' 'src/astring_top.cmxs' 'src/astring_top.cmxa'
+#      'src/astring_top.cma' 'src/astring_top.cmx' 'src/astring_top_init.ml'
+#      'test/examples.ml']: exited with 2
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-jZiAYp/_opam/.opam-switch/backup/state-20220114110403.export"
+srun: error: node-06: task 0: Exited with exit code 31
