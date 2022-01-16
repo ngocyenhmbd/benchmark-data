@@ -1,0 +1,93 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to '5475caa486a4200c744a32fcd1ce675b9b590f88'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5475caa Merge branch 'coq8.12' into coq8.13
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-5wUmln only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-5wUmln only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-5wUmln only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-5wUmln only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of dose3 failed at "/usr/bin/make libs apps".
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+
+#=== ERROR while installing opam-format.2.1.2 =================================#
+# path                 /lscratch/blaaulas/tactician-5wUmln/_opam/.opam-switch/build/opam-format.2.1.2
+# command              /usr/bin/install -m 0644 /lscratch/blaaulas/tactician-5wUmln/_opam/.opam-switch/build/opam-format.2.1.2/_build/install/default/lib/opam-format/opamPath.cmi /lscratch/blaaulas/tactician-5wUmln/_opam/lib/opam-format/opamPath.cmi
+# exit-code            1
+# env-file             /lscratch/blaaulas/tactician-5wUmln/.opam/log/log-23304-1339bb.env
+# output-file          /lscratch/blaaulas/tactician-5wUmln/.opam/log/log-23304-1339bb.out
+
+
+#=== ERROR while compiling dose3.5.0.1-1 ======================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#d4864833
+# path                 /lscratch/blaaulas/tactician-5wUmln/_opam/.opam-switch/build/dose3.5.0.1-1
+# command              /usr/bin/make libs apps
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-5wUmln/.opam/log/dose3-23304-20ed0c.env
+# output-file          /lscratch/blaaulas/tactician-5wUmln/.opam/log/dose3-23304-20ed0c.out
+### output ###
+# [...]
+# Use the equivalent signed form: +F+P+S+X+Y.
+# Hint: Enabling or disabling a warning by its mnemonic name requires a + or - prefix.
+# Hint: Did you make a spelling mistake when using a mnemonic name?
+# ocamlfind ocamldep -package extlib -package re.pcre -package cudf -pp cppo -pp 'cppo -V OCAML:4.13.1    -D '\''OCAMLGRAPHVERSION 200'\''' -modules common/input.ml > common/input.ml.depends
+# + ocamlfind ocamldep -package extlib -package re.pcre -package cudf -pp cppo -pp 'cppo -V OCAML:4.13.1    -D '\''OCAMLGRAPHVERSION 200'\''' -modules common/input.ml > common/input.ml.depends
+# Fatal error: exception Sys_error("No space left on device")
+# File "common/input.ml", line 1:
+# Error: Error while running external preprocessor
+# Command line: cppo -V OCAML:4.13.1    -D 'OCAMLGRAPHVERSION 200' 'common/input.ml' > /lscratch/blaaulas/ocamlpp4071d1
+# 
+# Command exited with code 2.
+# make: *** [_build/doselibs/common.cma] Error 10
+
+
+#=== ERROR while compiling coq.8.13.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-01-16 13:40
+# path                 /lscratch/blaaulas/tactician-5wUmln/_opam/.opam-switch/build/coq.8.13.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-5wUmln/.opam/log/coq-23304-f2076a.env
+# output-file          /lscratch/blaaulas/tactician-5wUmln/.opam/log/coq-23304-f2076a.out
+### output ###
+# [...]
+# File "./theories/btauto/Reflect.v", line 208, characters 38-41:
+# Error: System error: "No space left on device"
+# 
+# File "./theories/Numbers/DecimalFacts.v", line 537, characters 0-69:
+# Error: System error: "No space left on device"
+# 
+# make[1]: *** [theories/Reals/Cauchy/ConstructiveCauchyRealFile "./theories/FSets/FMapAVL.v", line 1782, characters 0-51:
+# Error: System error: "No space left on device"
+# 
+# make[1]: *** [theories/FSets/FMapAVL.vo] Error 1
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-5wUmln/_opam/.opam-switch/build/coq.8.13.dev'
+# make: *** [submake] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-5wUmln/_opam/.opam-switch/backup/state-20220116140023.export"
+srun: error: node-06: task 0: Exited with exit code 31
