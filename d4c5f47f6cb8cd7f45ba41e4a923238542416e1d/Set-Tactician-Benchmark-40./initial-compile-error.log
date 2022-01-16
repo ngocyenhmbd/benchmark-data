@@ -19,67 +19,17 @@ Turn off this advice by setting config variable advice.detachedHead to false
 
 HEAD is now at d4c5f47 Merge branch 'coq8.11' into coq8.10
 [NOTE] Will configure from built-in defaults.
-[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-T61UZM only.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-Fi8p6r only.
        Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-T61UZM only.
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-Fi8p6r only.
        Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-T61UZM only.
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-Fi8p6r only.
        Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-T61UZM only.
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-Fi8p6r only.
        Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
 
-[ERROR] The compilation of opam-client failed at "/lscratch/blaaulas/tactician-T61UZM/_opam/bin/dune build -p opam-client -j 55".
-[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
-
-#=== ERROR while compiling opam-client.2.1.2 ==================================#
-# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#d4864833
-# path                 /lscratch/blaaulas/tactician-T61UZM/_opam/.opam-switch/build/opam-client.2.1.2
-# command              /lscratch/blaaulas/tactician-T61UZM/_opam/bin/dune build -p opam-client -j 55
-# exit-code            2
-# env-file             /lscratch/blaaulas/tactician-T61UZM/.opam/log/opam-client-22091-2e11ec.env
-# output-file          /lscratch/blaaulas/tactician-T61UZM/.opam/log/opam-client-22091-2e11ec.out
-### output ###
-# { exns =
-# [...]
-#            Called from file \"src/stdune/exn.ml\", line 17, characters 4-13\n\
-#            Called from file \"src/stdune/exn_with_backtrace.ml\", line 9, characters 8-12\n\
-#            "
-#       }
-#     ]
-# })
-# Raised at file "src/stdune/code_error.ml", line 9, characters 30-62
-# Called from file "stdlib.ml", line 553, characters 62-65
-# Called from file "stdlib.ml" (inlined), line 556, characters 20-39
-# Called from file "stdlib.ml", line 559, characters 2-15
-# Called from file "bin/main.ml", line 269, characters 4-10
-
-
-#=== ERROR while compiling coq.8.10.dev =======================================#
-# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-01-16 13:40
-# path                 /lscratch/blaaulas/tactician-T61UZM/_opam/.opam-switch/build/coq.8.10.dev
-# command              /usr/bin/make -j55
-# exit-code            2
-# env-file             /lscratch/blaaulas/tactician-T61UZM/.opam/log/coq-22091-0bc17d.env
-# output-file          /lscratch/blaaulas/tactician-T61UZM/.opam/log/coq-22091-0bc17d.out
-### output ###
-# [...]
-# make[1]: *** [theories/Logic/WKL.vo] Error 1
-# Error: System error: "No space left on device"
-# 
-# make[1]: 
-# make[1]: 
-# make[1]: 
-# File "./plugins/setoid_ring/Field_theory.v", line 927, characters 6-73:
-# Error: System error: "No space left on device"
-# 
-# make[1]: *** [plugins/setoid_ring/Field_theory.vo] Error 1
-# make[1]: Leaving directory `/lscratch/blaaulas/tactician-T61UZM/_opam/.opam-switch/build/coq.8.10.dev'
-# make: *** [submake] Error 2
-
-
-The former state can be restored with:
-    opam switch import "/lscratch/blaaulas/tactician-T61UZM/_opam/.opam-switch/backup/state-20220116135950.export"
-srun: error: node-06: task 0: Exited with exit code 31
+'opam install --verbose --jobs=8 --yes --deps-only coq-tactician-stdlib.8.11.dev' failed.
+srun: error: node-06: task 0: Exited with exit code 20
