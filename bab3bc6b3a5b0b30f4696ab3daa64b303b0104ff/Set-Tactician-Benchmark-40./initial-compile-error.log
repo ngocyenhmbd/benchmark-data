@@ -1,0 +1,85 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to 'bab3bc6b3a5b0b30f4696ab3daa64b303b0104ff'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at bab3bc6 Merge branch 'coq8.11' into coq8.12
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-2k3CFa only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-2k3CFa only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-2k3CFa only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-2k3CFa only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of dose3 failed at "/usr/bin/make libs apps".
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+
+#=== ERROR while compiling dose3.5.0.1-1 ======================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#d4864833
+# path                 /lscratch/blaaulas/tactician-2k3CFa/_opam/.opam-switch/build/dose3.5.0.1-1
+# command              /usr/bin/make libs apps
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-2k3CFa/.opam/log/dose3-22526-8b169a.env
+# output-file          /lscratch/blaaulas/tactician-2k3CFa/.opam/log/dose3-22526-8b169a.out
+### output ###
+# [...]
+# File "algo/defaultgraphs.ml", line 723, characters 18-36:
+# 722 | ...........
+# 723 | ......le O = GraphOper(G.
+# Alert deprecated: module Stdlib.Pervasives
+# Use Stdlib instead.
+# 
+# If you need to stay compatible with OCaml < 4.07, you can use the 
+# stdlib-shims library: https://github.com/ocaml/stdlib-shims
+# File "algo/defaultgraphs.ml", line 1:
+# Error: I/O error: No space left on device
+# Command exited with code 2.
+# make: *** [_build/doselibs/algo.cma] Error 10
+
+
+#=== ERROR while compiling coq.8.12.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | git+https://github.com/LasseBlaauwbroek/custom-archive.git
+# path                 /lscratch/blaaulas/tactician-2k3CFa/_opam/.opam-switch/build/coq.8.12.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-2k3CFa/.opam/log/coq-22526-71d49a.env
+# output-file          /lscratch/blaaulas/tactician-2k3CFa/.opam/log/coq-22526-71d49a.out
+### output ###
+# [...]
+# COQC      theories/Numbers/Natural/Abstract/NStrongRec.v
+# COQC      theories/Numbers/Integer/Abstract/ZMaxMin.v
+# COQC      theories/Numbers/Integer/Abstract/ZSgnAbs.v
+# COQC      theories/Numbers/Integer/Abstract/ZParity.v
+# File "caml_startup", line 1:
+# Error: I/O error: No space left on device
+# Error: Native compiler exited with status 2
+# 
+# make[1]: *** [theories/Numbers/Natural/Abstract/NStrongRec.vo] Error 1
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-2k3CFa/_opam/.opam-switch/build/coq.8.12.dev'
+# make: *** [submake] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-2k3CFa/_opam/.opam-switch/backup/state-20220116140005.export"
+srun: error: node-06: task 0: Exited with exit code 31
