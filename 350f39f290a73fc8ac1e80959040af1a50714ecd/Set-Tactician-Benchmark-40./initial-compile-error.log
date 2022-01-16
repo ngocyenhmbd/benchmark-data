@@ -1,0 +1,121 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to '350f39f290a73fc8ac1e80959040af1a50714ecd'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 350f39f Merge branch 'coq8.13' into coq8.14
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-yhhjqy only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-yhhjqy only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-yhhjqy only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-yhhjqy only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of opam-format failed at "/lscratch/blaaulas/tactician-yhhjqy/_opam/bin/dune build -p opam-format -j 55".
+[ERROR] The compilation of dose3 failed at "/lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1/./configure".
+[ERROR] The compilation of mccs failed at "/lscratch/blaaulas/tactician-yhhjqy/_opam/bin/dune build -p mccs -j 55".
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+
+#=== ERROR while compiling opam-format.2.1.2 ==================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#d4864833
+# path                 /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/opam-format.2.1.2
+# command              /lscratch/blaaulas/tactician-yhhjqy/_opam/bin/dune build -p opam-format -j 55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-yhhjqy/.opam/log/opam-format-24336-f1cc34.env
+# output-file          /lscratch/blaaulas/tactician-yhhjqy/.opam/log/opam-format-24336-f1cc34.out
+### output ###
+# Error: No space left on device
+
+
+#=== ERROR while compiling mccs.1.1+13 ========================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#d4864833
+# path                 /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/mccs.1.1+13
+# command              /lscratch/blaaulas/tactician-yhhjqy/_opam/bin/dune build -p mccs -j 55
+# exit-code            1
+# env-file             /lscratch/blaaulas/tactician-yhhjqy/.opam/log/mccs-24336-f0f48b.env
+# output-file          /lscratch/blaaulas/tactician-yhhjqy/.opam/log/mccs-24336-f0f48b.out
+### output ###
+# [...]
+# (cd _build/default/src && /opt/apps/software/GCCcore/7.3.0/bin/gcc -O2 -fno-strict-aliasing -fwrapv -pthread -fPIC -I . -DUSEGLPK -g -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/ocaml -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/bytes -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/cudf -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/extlib -I glpk -o mccscudf.o -c mccscudf.cpp)
+# mccscudf.cpp:478:1: fatal error: error writing to /lscratch/blaaulas/build4c3d7b.dune/ccgfvOVN.s: No space left on device
+#  }
+#  ^
+# compilation terminated.
+#          gcc src/notuptodate_criteria.o (exit 1)
+# (cd _build/default/src && /opt/apps/software/GCCcore/7.3.0/bin/gcc -O2 -fno-strict-aliasing -fwrapv -pthread -fPIC -I . -DUSEGLPK -g -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/ocaml -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/bytes -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/cudf -I /lscratch/blaaulas/tactician-yhhjqy/_opam/lib/extlib -I glpk -o notuptodate_criteria.o -c notup[...]
+# /lscratch/blaaulas/build4c3d7b.dune/ccODypsN.s: Fatal error: can't close notuptodate_criteria.o: No space left on device
+#       ocamlc src/mccs.cma (exit 2)
+# (cd _build/default && /lscratch/blaaulas/tactician-yhhjqy/_opam/bin/ocamlc.opt -w -40 -g -a -o src/mccs.cma -dllib -lmccs_stubs -cclib -lmccs_stubs -cclib -lstdc++ src/.mccs.objs/byte/mccs.cmo)
+#     ocamlopt src/mccs.{a,cmxa} (exit 2)
+# (cd _build/default && /lscratch/blaaulas/tactician-yhhjqy/_opam/bin/ocamlopt.opt -w -40 -g -a -o src/mccs.cmxa -cclib -lmccs_stubs -cclib -lstdc++ src/.mccs.objs/native/mccs.cmx)
+
+
+#=== ERROR while compiling dose3.5.0.1-1 ======================================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#d4864833
+# path                 /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1
+# command              /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1/./configure
+# exit-code            77
+# env-file             /lscratch/blaaulas/tactician-yhhjqy/.opam/log/dose3-24336-3ea4ea.env
+# output-file          /lscratch/blaaulas/tactician-yhhjqy/.opam/log/dose3-24336-3ea4ea.out
+### output ###
+# [...]
+# found
+# found
+# checking for OCaml findlib package ocamlgraph... found
+# checking for gcc... gcc -O2 -fno-strict-aliasing -fwrapv -pthread -fPIC  -D_FILE_OFFSET_BITS=64
+# /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1/./configure: line 4353: printf: write error: No space left on device
+# /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1/./configure: line 4367: cannot create temp file for here-document: No space left on device
+# /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1/./configure: line 4383: printf: write error: No space left on device
+# checking whether the C compiler works... /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1/./configure: line 4406: printf: write error: No space left on device
+# /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/dose3.5.0.1-1/./configure: line 4409: printf: write error: No space left on device
+# no
+# sed: can't read conftest.c: No such file or directory
+# sort: : No space left on device
+
+
+#=== ERROR while compiling coq.8.14.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-01-16 13:40
+# path                 /lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/coq.8.14.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-yhhjqy/.opam/log/coq-24336-80c924.env
+# output-file          /lscratch/blaaulas/tactician-yhhjqy/.opam/log/coq-24336-80c924.out
+### output ###
+# [...]
+# Called from Fiber.Execution_context.forward_exn_with_bt in file
+#   "src/fiber/fiber.ml", line 138, characters 10-17
+# 
+# I must not crash.  Uncertainty is the mind-killer. Exceptions are the
+# little-death that brings total obliteration.  I will fully express my cases. 
+# Execution will pass over me and through me.  And when it has gone past, I
+# will unwind the stack along its path.  Where the cases are handled there will
+# be nothing.  Only I will remain.
+# make[1]: *** [_build/default/plugins/funind/funind_plugin.cmxs] Error 1
+# make[1]: *** Deleting file `_build/default/plugins/funind/funind_plugin.cmxs'
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/build/coq.8.14.dev'
+# make: *** [submake] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-yhhjqy/_opam/.opam-switch/backup/state-20220116140037.export"
+srun: error: node-06: task 0: Exited with exit code 31
