@@ -1,10 +1,10 @@
-bwrap: Failed to mount tmpfs: Permission denied
-File "./theories/Arith/Between.v", line 160, characters 6-52:
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
 Warning:
 Tactician found a bug in it's tactical decomposition. Please report.
-destruct (exists_in_int k (S l)) as (l', [], ?)
-destruct (exists_in_int k (S l)) as (l', _tmp_tactician0, ?);
- [ .. | destruct _tmp_tactician0 as []; idtac ]
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
 
 File "./plugins/rtauto/Bintree.v", line 277, characters 0-28:
 Warning:
@@ -17,31 +17,6 @@ intros _tmp_tactician0; (first
       try clear _tmp_tactician2)
  | intro_equality_clear _tmp_tactician0; idtac
  | intro_equality_hnf _tmp_tactician0; idtac ])
-
-File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
-Warning:
-Tactician found a bug in it's tactical decomposition. Please report.
-induction d; intros d' [=]; simpl; trivial
-induction d;
- (intros d';
-   (intros _tmp_tactician0; (first
-     [ discriminate _tmp_tactician0; idtac
-     | injection _tmp_tactician0 as; idtac
-     | intro_equality_clear _tmp_tactician0; idtac
-     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
- simpl; trivial
-
-File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
-Warning:
-Tactician found a bug in it's tactical decomposition. Please report.
-destruct nzhead; intros H [=]; trivial
-try intros until nzhead; destruct nzhead;
- (intros H;
-   (intros _tmp_tactician0; (first
-     [ discriminate _tmp_tactician0; idtac
-     | injection _tmp_tactician0 as; idtac
-     | intro_equality_clear _tmp_tactician0; idtac
-     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
 
 File "./theories/Logic/WKL.v", line 46, characters 49-62:
 Warning:
@@ -59,17 +34,16 @@ intros _tmp_tactician0;
  (destruct _tmp_tactician0 as [| ];
    [ .. | intros H; idtac | intros H; idtac ])
 
+File "./theories/Arith/Between.v", line 160, characters 6-52:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (exists_in_int k (S l)) as (l', [], ?)
+destruct (exists_in_int k (S l)) as (l', _tmp_tactician0, ?);
+ [ .. | destruct _tmp_tactician0 as []; idtac ]
+
 File "./theories/Init/Tactics.v", line 189, characters 0-45:
 Warning:
 now idtac((TacAlias Coq.Init.Tactics.now_#_62200C10 ((TacThen (TacArg (CAst (Reference (CAst t)))) (TacArg (CAst (TacCall Coq.Init.Tactics.easy (CAst Located)))))) (CAst (Tacexp (TacId)))))
-File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
-Warning:
-Tactician found a bug in it's tactical decomposition. Please report.
-injection H3 as
-[=-> H3]
-injection H3 as _tmp_tactician0 H3;
- (intropattern subst -> _tmp_tactician0; idtac)
-
 File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
 Warning:
 Tactician found a bug in it's tactical decomposition. Please report.
@@ -87,13 +61,6 @@ Warning:
 Tactician found a bug in it's tactical decomposition. Please report.
 intros * []
 intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
-
-File "./plugins/btauto/Algebra.v", line 475, characters 4-59:
-Warning:
-Tactician found a bug in it's tactical decomposition. Please report.
-enough (Pos.max (Pos.succ i) i0 = i0) as <-; intuition
-enough (_tmp_tactician0 : Pos.max (Pos.succ i) i0 = i0);
- [ intropattern subst <- _tmp_tactician0; idtac | .. ]; intuition
 
 File "./theories/ZArith/Zcomplements.v", line 67, characters 2-95:
 Warning:
@@ -147,6 +114,38 @@ destruct (Zabs_dec m) as [_tmp_tactician0| _tmp_tactician0];
  [ ..
  | intropattern subst -> _tmp_tactician0; idtac
  | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+induction d;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; destruct nzhead;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./plugins/btauto/Algebra.v", line 475, characters 4-59:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (Pos.max (Pos.succ i) i0 = i0) as <-; intuition
+enough (_tmp_tactician0 : Pos.max (Pos.succ i) i0 = i0);
+ [ intropattern subst <- _tmp_tactician0; idtac | .. ]; intuition
 
 File "./theories/Numbers/DecimalPos.v", line 377, characters 1-73:
 Warning:
