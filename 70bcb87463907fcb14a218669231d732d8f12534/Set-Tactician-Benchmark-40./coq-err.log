@@ -93,17 +93,6 @@ Recursive definition is:
       end in
     H14)".
 
-File "./theories/Sorting/PermutSetoid.v", line 514, characters 2-14:
-Error: Illegal application: 
-The term "H2" of type "1 <> 0"
-cannot be applied to the term
- "eq_refl" : "1 = 1"
-This term has type "1 = 1" which should be coercible to 
-"1 = 0".
-
-File "./theories/ZArith/Zpow_facts.v", line 32, characters 7-14:
-Error: Stack overflow.
-
 File "./theories/Sets/Finite_sets_facts.v", line 203, characters 4-67:
 Error: Illegal application: 
 The term "lt_le_S" of type "forall n m : nat, n < m -> S n <= m"
@@ -113,6 +102,17 @@ cannot be applied to the terms
  "PeanoNat.Nat.lt_0_succ ?Goal@{x:=0}" : "0 < S ?Goal@{x:=0}"
 The 3rd term has type "0 < S ?Goal@{x:=0}" which should be coercible to
  "S ?Goal@{x:=0} < S ?Goal@{x:=0}".
+
+File "./theories/ZArith/Zpow_facts.v", line 32, characters 7-14:
+Error: Stack overflow.
+
+File "./theories/Sorting/PermutSetoid.v", line 514, characters 2-14:
+Error: Illegal application: 
+The term "H2" of type "1 <> 0"
+cannot be applied to the term
+ "eq_refl" : "1 = 1"
+This term has type "1 = 1" which should be coercible to 
+"1 = 0".
 
 File "./theories/Arith/PeanoNat.v", line 671, characters 1-13:
 Error: Stack overflow.
