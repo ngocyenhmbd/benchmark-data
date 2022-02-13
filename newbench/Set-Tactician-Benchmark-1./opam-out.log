@@ -1,0 +1,40 @@
+Opam has already been initialized.
+Another process has locked /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/config.lock, waiting (C-c to abort)... lock acquired.
+Nothing to do.
+[coq-tactician.dev] synchronised (file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician)
+coq-tactician is now pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician#newbench (version dev)
+
+<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+[coq-tactician.dev] synchronised (git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician#newbench)
+
+The following actions will be performed:
+  ↻ recompile coq-tactician dev (pinned)
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-tactician.dev  (no changes)
+⊘ removed   coq-tactician.dev
+∗ installed coq-tactician.dev
+Done.
+
+<><> coq-tactician.dev installed successfully <><><><><><><><><><><><><><><><><>
+=> --- Tactician was successfully installed ---
+
+   In order to enable Tactician, you should run
+
+   tactician enable
+Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-build-commands in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
+Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field pre-build-commands in switch bench
+Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
+Nothing to do.
+The following actions will be performed:
+  ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
+                                           This package will overwrite Coq's standard library files.
+                                           A backup of the original files will be placed under Coq's
+                                           library directory at user-contrib/tactician-stdlib-backup/
+                                           and they will be restored when you remove this package.
+                                           After installation of this package, all other Coq packages
+                                           also need to be recompiled. Running the 'tactician recompile'
+                                           command-line utility will help with this process.
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
