@@ -1,0 +1,26 @@
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
+s2 : Stream
+H : EqSt x s2
+Invalid recursive call in the argument of "match" in
+"match EqSt_reflex s2 H with
+ | eqst _ _ _ x => x
+ end".
+Recursive definition is:
+"fun (s2 : Stream) (H : EqSt x s2) =>
+ eqst s2 x (eq_sym match H with
+                   | eqst _ _ H0 _ => H0
+                   end)
+   (let H0 : forall s3 : Stream, EqSt x s3 -> EqSt (tl s3) (tl x) :=
+      fun (s3 : Stream) (H0 : EqSt x s3) =>
+      match EqSt_reflex s3 H0 with
+      | eqst _ _ _ x => x
+      end in
+    H0 s2 H)".
+
+Abnormal exit code for coqc: 139
