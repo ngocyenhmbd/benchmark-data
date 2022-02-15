@@ -31,73 +31,23 @@ Recursive definition is:
       end in
     H1 a s)".
 
-File "./theories/Lists/Streams.v", line 102, characters 0-21:
-Error:
-Recursive definition of Eq_sym is ill-formed.
-In environment
-A : Type
-s1 : Stream
-s2 : Stream
-s3 : Stream
-H : EqSt s1 s2
-H0 : hd s1 = hd s2
-H1 : EqSt (tl s1) (tl s2)
-H2 : hd s1 = hd s2
-H3 : EqSt (tl s1) (tl s2)
-H4 : EqSt s2 s3
-H5 : hd s2 = hd s3
-H6 : EqSt (tl s2) (tl s3)
-H7 : hd s2 = hd s3
-H8 : EqSt (tl s2) (tl s3)
-H9 : hd s1 = hd s2
-H10 : EqSt (tl s1) (tl s2)
-H11 : hd s1 = hd s2
-H12 : EqSt (tl s1) (tl s2)
-a := hd s2 : A
-H13 : EqSt s1 s2
-H14 : hd s1 = hd s2
-H15 : EqSt (tl s1) (tl s2)
-H16 : hd s1 = hd s2
-H17 : EqSt (tl s1) (tl s2)
-H18 : hd s1 = hd s2
-H19 : EqSt (tl s1) (tl s2)
-Eq_sym : EqSt s1 s3
-Invalid recursive call in the argument of "match" in
-"match Eq_sym with
- | eqst _ _ _ x0 => x0
- end".
-Recursive definition is:
-"eqst s1 s3
-   match H13 with
-   | eqst _ _ H15 _ =>
-       match H13 with
-       | eqst _ _ H19 x =>
-           (let a := hd s2 in
-            eq_ind (hd s1)
-              (fun a0 : A =>
-               a0 = hd s3 ->
-               hd s1 = a0 ->
-               hd s1 = a0 ->
-               hd s1 = a0 ->
-               hd s1 = a0 ->
-               hd s1 = a0 ->
-               hd s1 = a0 -> EqSt (tl s1) (tl s2) -> hd s1 = hd s3)
-              (fun (H3 : hd s1 = hd s3) (_ _ _ _ _ _ : hd s1 = hd s1)
-                 (_ : EqSt (tl s1) (tl s2)) => H3) a H19 H7 H9 H11 H14 H16
-              H18 H15) x
-       end
-   end
-   (let H14 : EqSt (tl s1) (tl s3) :=
-      match Eq_sym with
-      | eqst _ _ _ x0 => x0
-      end in
-    H14)".
+File "./theories/Logic/ClassicalUniqueChoice.v", line 54, characters 0-16:
+Error: Anomaly "Uncaught exception Not_found."
+Please report at http://coq.inria.fr/bugs/.
 
 File "./theories/Arith/PeanoNat.v", line 671, characters 1-13:
 Error: Stack overflow.
 
 File "./theories/Arith/PeanoNat.v", line 698, characters 1-13:
 Error: Stack overflow.
+
+File "./theories/PArith/BinPos.v", line 646, characters 1-10:
+Error: Illegal application: 
+The term "Hy" of type "2%nat <> 0%nat"
+cannot be applied to the term
+ "Logic.eq_refl" : "2%nat = 2%nat"
+This term has type "2%nat = 2%nat" which should be coercible to
+ "2%nat = 0%nat".
 
 File "./theories/Sets/Finite_sets_facts.v", line 203, characters 4-67:
 Error: Illegal application: 
@@ -109,12 +59,6 @@ cannot be applied to the terms
 The 3rd term has type "0 < S ?Goal@{x:=0}" which should be coercible to
  "S ?Goal@{x:=0} < S ?Goal@{x:=0}".
 
-File "./theories/PArith/BinPos.v", line 646, characters 1-10:
-Error: Illegal application: 
-The term "Hy" of type "2%nat <> 0%nat"
-cannot be applied to the term
- "Logic.eq_refl" : "2%nat = 2%nat"
-This term has type "2%nat = 2%nat" which should be coercible to
- "2%nat = 0%nat".
-
 Abnormal exit code for coqc: 139
+ Invocation:
+(cd /lscratch/blaaulas/tactician-benchmark.tmp.G5DVWx/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tactician-benchmark.tmp.G5DVWx/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrderedTypeAlt.vo.bench /lscratch/blaaulas/tactician-benchmark.tmp.G5DVWx/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrderedTypeAlt.vo /lscratch/blaaulas/tactician-benchmark.tmp.G5DVWx/opam-root/bench/bin/coqc -q -coqlib . -I /lscratch/blaaulas/tactician-benchmark.tmp.G5DVWx/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician-benchmark.tmp.G5DVWx/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Structures/OrderedTypeAlt.v -l /lscratch/blaaulas/tactician-benchmark.tmp.G5DVWx/BenchParams.v)
