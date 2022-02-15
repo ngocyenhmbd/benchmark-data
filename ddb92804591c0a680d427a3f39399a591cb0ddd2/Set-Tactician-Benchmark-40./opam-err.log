@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq-tactician.dev failed at "dune build -p coq-tactician -j 55 @install".
+
+#=== ERROR while compiling coq-tactician.dev ==================================#
+# context              2.1.2 | linux/x86_64 |  | pinned(git+https://github.com/coq-tactician/coq-tactician.git#ddb92804591c0a680d427a3f39399a591cb0ddd2#ddb92804)
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.1lkwjW/opam-root/bench/.opam-switch/build/coq-tactician.dev
+# command              /lscratch/blaaulas/tactician-benchmark.tmp.1lkwjW/opam-root/bench/bin/dune build -p coq-tactician -j 55 @install
+# exit-code            1
+# env-file             /tmp/opam-xxx-2394/coq-tactician-2397-9be796.env
+# output-file          /tmp/opam-xxx-2394/coq-tactician-2397-9be796.out
+### output ###
+# [...]
+# File "src/dune", line 68, characters 25-35:
+# 68 |  (preprocess (staged_pps ppx_import ppx_sexp_conv ppx_deriving_yojson))
+#                               ^^^^^^^^^^
+# Error: Library "ppx_import" not found.
+# Hint: try:
+#   dune external-lib-deps --missing --no-config --root . --ignore-promoted-rules --default-target @install --always-show-command-line --promote-install-files --release --only-packages coq-tactician -p coq-tactician --profile release -j 55 @install
+# File "src/dune", line 68, characters 36-49:
+# 68 |  (preprocess (staged_pps ppx_import ppx_sexp_conv ppx_deriving_yojson))
+#                                          ^^^^^^^^^^^^^
+# Error: Library "ppx_sexp_conv" not found.
+# Hint: try:
+#   dune external-lib-deps --missing --no-config --root . --ignore-promoted-rules --default-target @install --always-show-command-line --promote-install-files --release --only-packages coq-tactician -p coq-tactician --profile release -j 55 @install
+
