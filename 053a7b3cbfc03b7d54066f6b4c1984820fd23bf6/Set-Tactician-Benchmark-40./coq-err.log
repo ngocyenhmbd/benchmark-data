@@ -23,6 +23,10 @@ Recursive definition is:
       end in
     H0 s2 H)".
 
+File "./theories/Classes/CMorphisms.v", line 609, characters 0-30:
+Error: Anomaly "Uncaught exception Invalid_argument("index out of bounds")."
+Please report at http://coq.inria.fr/bugs/.
+
 File "./theories/Arith/EqNat.v", line 36, characters 2-8:
 Error:
 Recursive definition of even_spec is ill-formed.
@@ -106,6 +110,14 @@ forall k l : nat, between k l -> forall r : nat, in_int k l r -> P r
 Not enough abstractions in the definition.
 Recursive definition is: "gcd_divide".
 
+File "./theories/Arith/PeanoNat.v", line 327, characters 1-12:
+Error:
+Recursive definition of even_spec is ill-formed.
+In environment
+even_spec : forall n : nat, odd n = true <-> Odd n
+Not enough abstractions in the definition.
+Recursive definition is: "even_spec".
+
 File "./theories/Arith/Plus.v", line 113, characters 1-22:
 Error:
 Recursive definition of le_div2 is ill-formed.
@@ -118,14 +130,6 @@ m0 : nat
 Recursive call to le_div2 has principal argument equal to 
 "m0" instead of a subterm of "m0".
 Recursive definition is: "fun m : nat => le_div2 m".
-
-File "./theories/Arith/PeanoNat.v", line 327, characters 1-12:
-Error:
-Recursive definition of even_spec is ill-formed.
-In environment
-even_spec : forall n : nat, odd n = true <-> Odd n
-Not enough abstractions in the definition.
-Recursive definition is: "even_spec".
 
 File "./theories/Arith/Div2.v", line 146, characters 2-13:
 Error:
@@ -174,15 +178,6 @@ odd_spec : forall m : nat, n > m <-> (n ?= m) = Gt
 Not enough abstractions in the definition.
 Recursive definition is: "odd_spec".
 
-File "./theories/Arith/PeanoNat.v", line 553, characters 1-22:
-Error:
-Recursive definition of le_div2 is ill-formed.
-In environment
-a, n : nat
-le_div2 : forall n : nat, a <= S n -> div2 a <= n
-Not enough abstractions in the definition.
-Recursive definition is: "le_div2".
-
 File "./theories/Arith/Compare_dec.v", line 217, characters 1-21:
 Error:
 Recursive definition of even_spec is ill-formed.
@@ -191,6 +186,15 @@ m, n : nat
 even_spec : forall m : nat, (n <=? m) = false <-> m < n
 Not enough abstractions in the definition.
 Recursive definition is: "even_spec".
+
+File "./theories/Arith/PeanoNat.v", line 553, characters 1-22:
+Error:
+Recursive definition of le_div2 is ill-formed.
+In environment
+a, n : nat
+le_div2 : forall n : nat, a <= S n -> div2 a <= n
+Not enough abstractions in the definition.
+Recursive definition is: "le_div2".
 
 File "./theories/Arith/PeanoNat.v", line 576, characters 1-21:
 Error:
@@ -210,14 +214,6 @@ EQ : nat
 even_spec : forall (p : t H) (q : t EQ), eqb p q = true -> H = EQ
 Not enough abstractions in the definition.
 Recursive definition is: "even_spec".
-
-File "./theories/Vectors/Fin.v", line 223, characters 0-27:
-Error:
-Recursive definition of odd_spec is ill-formed.
-In environment
-odd_spec : forall (n : nat) (p q : t n), eqb p q = true <-> p = q
-Not enough abstractions in the definition.
-Recursive definition is: "odd_spec".
 
 File "./theories/Sorting/Sorted.v", line 79, characters 4-99:
 Error:
@@ -247,13 +243,13 @@ Recursive definition is:
           (H2 : LocallySorted l -> Sorted l) =>
         (fun H3 : Sorted l => H3) (H2 H)) H0) (even_spec l))".
 
-File "./theories/Numbers/NatInt/NZDomain.v", line 304, characters 0-7:
+File "./theories/Vectors/Fin.v", line 223, characters 0-27:
 Error:
-Recursive definition of gcd_divide is ill-formed.
+Recursive definition of odd_spec is ill-formed.
 In environment
-gcd_divide : forall n m : nat, [n] <= [m] <-> n <= m
+odd_spec : forall (n : nat) (p q : t n), eqb p q = true <-> p = q
 Not enough abstractions in the definition.
-Recursive definition is: "gcd_divide".
+Recursive definition is: "odd_spec".
 
 File "./theories/Numbers/NatInt/NZDomain.v", line 322, characters 1-21:
 Error:
@@ -276,16 +272,6 @@ m : nat
 Recursive call to gcd_divide has principal argument equal to 
 "n" instead of a subterm of "n".
 Recursive definition is: "fun n m : nat => gcd_divide n m".
-
-File "./theories/NArith/BinNat.v", line 89, characters 1-17:
-Error:
-Recursive definition of even_spec is ill-formed.
-In environment
-n : N
-p : positive
-even_spec : forall m : N, {pos p = m} + {pos p <> m}
-Not enough abstractions in the definition.
-Recursive definition is: "even_spec".
 
 File "./theories/Numbers/NatInt/NZDomain.v", line 345, characters 1-28:
 Error:
@@ -311,6 +297,27 @@ z (negb (even Step)) (negb (even b))
 Not enough abstractions in the definition.
 Recursive definition is: "odd_spec".
 
+File "./theories/Lists/ListSet.v", line 96, characters 4-18:
+Error:
+Recursive definition of even_spec is ill-formed.
+In environment
+A : Type
+Aeq_dec : forall x y : A, {x = y} + {x <> y}
+H : A
+even_spec : forall x : set, {set_In H x} + {~ set_In H x}
+Not enough abstractions in the definition.
+Recursive definition is: "even_spec".
+
+File "./theories/NArith/BinNat.v", line 89, characters 1-17:
+Error:
+Recursive definition of even_spec is ill-formed.
+In environment
+n : N
+p : positive
+even_spec : forall m : N, {pos p = m} + {pos p <> m}
+Not enough abstractions in the definition.
+Recursive definition is: "even_spec".
+
 File "./theories/Arith/PeanoNat.v", line 683, characters 1-12:
 Error:
 Recursive definition of even_spec is ill-formed.
@@ -325,6 +332,28 @@ Recursive definition is:
  if b0 as b return (false || b = false)
  then even_spec true
  else even_spec false".
+
+File "./theories/Arith/PeanoNat.v", line 698, characters 1-13:
+Error:
+Recursive definition of odd_spec is ill-formed.
+In environment
+a, b, n : nat
+odd_spec : forall b : bool, xorb false b = false
+Not enough abstractions in the definition.
+Recursive definition is: "odd_spec".
+
+File "./plugins/rtauto/Rtauto.v", line 68, characters 0-35:
+Error:
+Recursive definition of even_spec is ill-formed.
+In environment
+EQ : form
+even_spec : forall q : form, form_eq EQ q = true -> EQ = q
+q : form
+H : form_eq EQ q = true
+Recursive call to even_spec has principal argument equal to 
+"q" instead of a subterm of "q".
+Recursive definition is:
+"fun (q : form) (H : form_eq EQ q = true) => even_spec q H".
 
 File "./theories/NArith/Nnat.v", line 23, characters 1-37:
 Error:
@@ -354,26 +383,6 @@ Recursive definition is:
      odd_spec a
  end odd_spec".
 
-File "./theories/Arith/PeanoNat.v", line 698, characters 1-13:
-Error:
-Recursive definition of odd_spec is ill-formed.
-In environment
-a, b, n : nat
-odd_spec : forall b : bool, xorb false b = false
-Not enough abstractions in the definition.
-Recursive definition is: "odd_spec".
-
-File "./theories/Lists/ListSet.v", line 96, characters 4-18:
-Error:
-Recursive definition of even_spec is ill-formed.
-In environment
-A : Type
-Aeq_dec : forall x y : A, {x = y} + {x <> y}
-H : A
-even_spec : forall x : set, {set_In H x} + {~ set_In H x}
-Not enough abstractions in the definition.
-Recursive definition is: "even_spec".
-
 File "./theories/NArith/BinNat.v", line 290, characters 2-17:
 Error:
 Recursive definition of even_spec is ill-formed.
@@ -394,18 +403,45 @@ Recursive call to even_spec has principal argument equal to
 "m0" instead of a subterm of "m0".
 Recursive definition is: "fun m : N => even_spec m".
 
-File "./plugins/rtauto/Rtauto.v", line 68, characters 0-35:
+File "./plugins/micromega/Tauto.v", line 539, characters 8-22:
 Error:
 Recursive definition of even_spec is ill-formed.
 In environment
-EQ : form
-even_spec : forall q : form, form_eq EQ q = true -> EQ = q
-q : form
-H : form_eq EQ q = true
-Recursive call to even_spec has principal argument equal to 
-"q" instead of a subterm of "q".
-Recursive definition is:
-"fun (q : form) (H : form_eq EQ q = true) => even_spec q H".
+Env : Type
+Term : Type
+Term' : Type
+Annot : Type
+unsat : Term' -> bool
+deduce : Term' -> Term' -> option Term'
+normalise, negate : Term -> Annot -> cnf
+TX : Type
+AF : Type
+to_constr : to_constrT
+needA : Annot -> bool
+even_spec : forall f1 : cnf, is_cnf_tt f1 = true -> f1 = cnf_tt
+Not enough abstractions in the definition.
+Recursive definition is: "even_spec".
+
+File "./plugins/micromega/Tauto.v", line 565, characters 8-15:
+Error:
+Recursive definition of odd_spec is ill-formed.
+In environment
+Env : Type
+Term : Type
+Term' : Type
+Annot : Type
+unsat : Term' -> bool
+deduce : Term' -> Term' -> option Term'
+normalise, negate : Term -> Annot -> cnf
+TX : Type
+AF : Type
+to_constr : to_constrT
+needA : Annot -> bool
+odd_spec : forall f : cnf, or_cnf_opt (nil :: nil) f = f
+f : cnf
+Recursive call to odd_spec has principal argument equal to 
+"f" instead of a subterm of "f".
+Recursive definition is: "fun f : cnf => odd_spec f".
 
 File "./theories/Structures/DecidableType.v", line 103, characters 2-13:
 Error:
@@ -430,7 +466,6 @@ forall (l : list (key * elt)) (x y : key), eq x y -> In x l -> In y l
 Not enough abstractions in the definition.
 Recursive definition is: "gcd_greatest".
 
-Fatal error: out of memory
 File "./theories/PArith/BinPos.v", line 740, characters 1-10:
 Error:
 Recursive definition of odd_spec is ill-formed.
@@ -449,34 +484,13 @@ even_spec : forall q : positive, (p <? q) = true <-> p < q
 Not enough abstractions in the definition.
 Recursive definition is: "even_spec".
 
-File "./theories/PArith/BinPos.v", line 772, characters 2-17:
+File "./theories/MSets/MSetInterface.v", line 485, characters 2-25:
 Error:
-Recursive definition of even_spec is ill-formed.
+Recursive definition of gcd_divide is ill-formed.
 In environment
-p, q : positive
-c : comparison
-even_spec : forall q : positive, compare_cont c p q = switch_Eq c (p ?= q)
+gcd_divide : forall s s' : t, {eq s s'} + {~ eq s s'}
 Not enough abstractions in the definition.
-Recursive definition is: "even_spec".
-
-File "./plugins/micromega/Tauto.v", line 539, characters 8-22:
-Error:
-Recursive definition of even_spec is ill-formed.
-In environment
-Env : Type
-Term : Type
-Term' : Type
-Annot : Type
-unsat : Term' -> bool
-deduce : Term' -> Term' -> option Term'
-normalise, negate : Term -> Annot -> cnf
-TX : Type
-AF : Type
-to_constr : to_constrT
-needA : Annot -> bool
-even_spec : forall f1 : cnf, is_cnf_tt f1 = true -> f1 = cnf_tt
-Not enough abstractions in the definition.
-Recursive definition is: "even_spec".
+Recursive definition is: "gcd_divide".
 
 File "./theories/Structures/OrdersLists.v", line 48, characters 7-61:
 Error:
@@ -488,4 +502,47 @@ Sort l -> Inf x l <-> (forall y : O.t, In y l -> O.lt x y)
 Not enough abstractions in the definition.
 Recursive definition is: "gcd_greatest".
 
+File "./theories/PArith/BinPos.v", line 772, characters 2-17:
+Error:
+Recursive definition of even_spec is ill-formed.
+In environment
+p, q : positive
+c : comparison
+even_spec : forall q : positive, compare_cont c p q = switch_Eq c (p ?= q)
+Not enough abstractions in the definition.
+Recursive definition is: "even_spec".
+
+File "./theories/Structures/EqualitiesFacts.v", line 207, characters 1-179:
+Error:
+Recursive definition of gcd_divide is ill-formed.
+In environment
+gcd_divide : forall x y : t, {eq x y} + {~ eq x y}
+Not enough abstractions in the definition.
+Recursive definition is: "gcd_divide".
+
+File "./theories/PArith/BinPos.v", line 815, characters 2-28:
+Error:
+Recursive definition of even_spec is ill-formed.
+In environment
+p, q : positive
+even_spec : forall q : positive, compare_cont Gt p q = Gt <-> p >= q
+Not enough abstractions in the definition.
+Recursive definition is: "even_spec".
+
+File "./theories/Lists/List.v", line 1050, characters 7-52:
+Error:
+Recursive definition of odd_spec is ill-formed.
+In environment
+n : Type
+m : Type
+p : n -> m
+Hp : n -> m
+odd_spec :
+forall l : list n,
+map p l = map Hp l <-> (forall a : n, In a l -> p a = Hp a)
+Not enough abstractions in the definition.
+Recursive definition is: "odd_spec".
+
 Abnormal exit code for coqc: 139
+ Invocation:
+(cd /lscratch/blaaulas/tactician-benchmark.tmp.8EsPHl/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tactician-benchmark.tmp.8EsPHl/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrdersAlt.vo.bench /lscratch/blaaulas/tactician-benchmark.tmp.8EsPHl/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrdersAlt.vo /lscratch/blaaulas/tactician-benchmark.tmp.8EsPHl/opam-root/bench/bin/coqc -q -coqlib . -I /lscratch/blaaulas/tactician-benchmark.tmp.8EsPHl/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician-benchmark.tmp.8EsPHl/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Structures/OrdersAlt.v -l /lscratch/blaaulas/tactician-benchmark.tmp.8EsPHl/BenchParams.v)
