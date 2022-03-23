@@ -1,0 +1,20 @@
+[ERROR] The installation of num failed at "make findlib-install".
+
+#=== ERROR while installing num.1.4 ===========================================#
+# context              2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#d5d8d2a0
+# path                 /tmp/tactician-benchmark.tmp.dTLLBT/opam-root/bench/.opam-switch/build/num.1.4
+# command              /usr/bin/make findlib-install
+# exit-code            2
+# env-file             /tmp/opam-pestun-3724617/num-3724621-9c21c8.env
+# output-file          /tmp/opam-pestun-3724617/num-3724621-9c21c8.out
+### output ###
+# /usr/bin/make -C src findlib-install
+# make[1]: Entering directory '/tmp/tactician-benchmark.tmp.dTLLBT/opam-root/bench/.opam-switch/build/num.1.4/src'
+# sed -e '/\^/d' -e 's/%%VERSION%%/1.4/g' META.in > META
+# ocamlfind install num META nums.cma libnums.a big_int.cmi nat.cmi num.cmi ratio.cmi arith_status.cmi big_int.mli nat.mli num.mli ratio.mli arith_status.mli big_int.cmti nat.cmti num.cmti ratio.cmti arith_status.cmti nums.cmxa nums.a int_misc.cmx nat.cmx big_int.cmx arith_flags.cmx ratio.cmx num.cmx arith_status.cmx nums.cmxs dllnums.so
+# ocamlfind: Package num is already installed
+#  - (file /tmp/tactician-benchmark.tmp.dTLLBT/opam-root/bench/lib/num/META already exists)
+# make[1]: *** [Makefile:101: findlib-install] Error 2
+# make[1]: Leaving directory '/tmp/tactician-benchmark.tmp.dTLLBT/opam-root/bench/.opam-switch/build/num.1.4/src'
+# make: *** [Makefile:18: findlib-install] Error 2
+
