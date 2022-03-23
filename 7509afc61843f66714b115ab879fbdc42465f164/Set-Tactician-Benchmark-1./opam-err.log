@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-03-23 09:30
+# path                 /tmp/tactician-benchmark.tmp.Bsun8g/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /tmp/tactician-benchmark.tmp.Bsun8g/opam-root/bench/bin/tactician exec -- make -j15
+# exit-code            2
+# env-file             /tmp/opam-pestun-3829694/coq-tactician-stdlib-3829697-43571f.env
+# output-file          /tmp/opam-pestun-3829694/coq-tactician-stdlib-3829697-43571f.out
+### output ###
+# [...]
+# Linking user-contrib/Tactician/tactician_ltac1_tactics_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ssreflect_plugin.cmxs
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# File "/tmp/tactician-benchmark.tmp.Bsun8g/opam-root/bench/lib/coq/user-contrib/Tactician/NNLearner.v", line 5, characters 0-47:
+# Error:
+# Anomaly
+# "Uncaught exception Unix.Unix_error(Unix.ENOENT, "create_process", "pytact-server")."
+# Please report at http://coq.inria.fr/bugs/.
+# 
+# make: *** [Makefile:61: theories/Init/Notations.vo] Error 129
+
