@@ -1,1 +1,1 @@
-Set Tactician Neural Blah.
+Set Tactician Blah.
