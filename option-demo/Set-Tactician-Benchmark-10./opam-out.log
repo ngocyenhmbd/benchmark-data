@@ -1,5 +1,11 @@
 Opam has already been initialized.
-Nothing to do.
+The following actions will be performed:
+  ⊘ remove coq-tactician-stdlib 8.11.dev
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
+⊘ removed   coq-tactician-stdlib.8.11.dev
+Done.
 [coq-tactician-reinforce.~dev] synchronised (file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce)
 coq-tactician-reinforce is now pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#option-demo (version ~dev)
 
@@ -21,9 +27,14 @@ Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:i
 Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
 Nothing to do.
 The following actions will be performed:
-  ∗ install unit-test-prop-chain-5-100 dev
+  ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
+                                           This package will overwrite Coq's standard library files.
+                                           A backup of the original files will be placed under Coq's
+                                           library directory at user-contrib/tactician-stdlib-backup/
+                                           and they will be restored when you remove this package.
+                                           After installation of this package, all other Coq packages
+                                           also need to be recompiled. Running the 'tactician recompile'
+                                           command-line utility will help with this process.
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved unit-test-prop-chain-5-100.dev  (git+ssh://git@github.com/LasseBlaauwbroek/unit-tests-graph2tac.git)
-∗ installed unit-test-prop-chain-5-100.dev
-Done.
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
