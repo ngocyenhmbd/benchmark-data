@@ -1,11 +1,6 @@
 Opam has already been initialized.
 Nothing to do.
 [coq-tactician-reinforce.~dev] synchronised (file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce)
-The following additional pinnings are required by coq-tactician-reinforce.~dev:
-  - coq-tactician.8.11.dev at git+https://github.com/coq-tactician/coq-tactician.git#81cca3e2b51bc30a53e30bc2333d571f848c5052
-Pin and install them? [Y/n] y
-[coq-tactician.8.11.dev] synchronised (no changes)
-coq-tactician is now pinned to git+https://github.com/coq-tactician/coq-tactician.git#81cca3e2b51bc30a53e30bc2333d571f848c5052 (version 8.11.dev)
 coq-tactician-reinforce is now pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#option-demo (version ~dev)
 
 <><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
@@ -13,25 +8,13 @@ coq-tactician-reinforce is now pinned to git+file:///home/lasse/Documents/Projec
 [coq-tactician.8.11.dev] synchronised (no changes)
 
 The following actions will be performed:
-  ↻ recompile coq-tactician           8.11.dev*
   ↻ recompile coq-tactician-reinforce ~dev*
-===== ↻ 2 =====
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 ⬇ retrieved coq-tactician-reinforce.~dev  (no changes)
-⬇ retrieved coq-tactician.8.11.dev  (no changes)
 ⊘ removed   coq-tactician-reinforce.~dev
-⊘ removed   coq-tactician.8.11.dev
-∗ installed coq-tactician.8.11.dev
 ∗ installed coq-tactician-reinforce.~dev
 Done.
-
-<><> coq-tactician.8.11.dev installed successfully ><><><><><><><><><><><><><><>
-=> --- Tactician was successfully installed ---
-
-   In order to enable Tactician, you should run
-
-   tactician enable
 Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-build-commands in switch bench
 Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
 Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field pre-build-commands in switch bench
