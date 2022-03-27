@@ -1,5 +1,10 @@
 Opam has already been initialized.
-Nothing to do.
+The following actions will be performed:
+  ⊘ remove unit-test-prop-chain-5-100 dev
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⊘ removed   unit-test-prop-chain-5-100.dev
+Done.
 [coq-tactician-reinforce.~dev] synchronised (file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce)
 coq-tactician-reinforce is now pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#option-demo (version ~dev)
 
@@ -19,7 +24,6 @@ Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-bu
 Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
 Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field pre-build-commands in switch bench
 Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
-Nothing to do.
 The following actions will be performed:
   ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
                                            This package will overwrite Coq's standard library files.
@@ -32,3 +36,10 @@ The following actions will be performed:
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 ⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+┌─ The following actions failed
+│ λ build coq-tactician-stdlib 8.11.dev
+└─ 
+╶─ No changes have been performed

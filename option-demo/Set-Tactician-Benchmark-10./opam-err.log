@@ -1,6 +1,31 @@
-[NOTE] coq-tactician-stdlib is not installed.
-
 [NOTE] Package coq-tactician-reinforce is already pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#option-demo (version ~dev).
 [NOTE] Ignoring uncommitted changes in /home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce (`--working-dir' not active).
 [WARNING] Git submodule update failed in /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/sources/coq-tactician-reinforce
 [NOTE] Package coq-tactician is already installed (current version is 8.11.dev).
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-03-25 11:00
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/tactician exec -- make -j15
+# exit-code            2
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-95538-9073cf.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-95538-9073cf.out
+### output ###
+# [...]
+# Linking user-contrib/Tactician/tactician_ltac1_tactics_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ssreflect_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_reinforce_plugin.cmxs
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# Error:
+# Anomaly
+# "Uncaught exception Unix.Unix_error(Unix.ECONNREFUSED, "connect", "")."
+# Please report at http://coq.inria.fr/bugs/.
+# 
+# make: *** [Makefile:61: theories/Init/Notations.vo] Error 129
+
+
+The former state can be restored with:
+    /home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default/src/benchmark/main.exe switch import "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/backup/state-20220327145219.export"
