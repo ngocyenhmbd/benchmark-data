@@ -113,6 +113,22 @@ Error: Stack overflow.
 File "./theories/Arith/PeanoNat.v", line 698, characters 1-13:
 Error: Stack overflow.
 
+File "./theories/Sets/Finite_sets_facts.v", line 203, characters 4-67:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros x H'; only 1: apply NNPP; only 1: intro H2; only 1: eapply PeanoNat.Nat.Private_OrderTac.Tac.lt_irrefl; only 1: elim H'; only 1: auto with arith; only 1: intros t H'1; only 1: red; only 1: PeanoNat.Nat.order_nz).
+Typing error:
+Illegal application: 
+The term "lt_le_S" of type "forall n m : nat, n < m -> S n <= m" cannot be applied to the terms
+ "S ?Goal@{x:=0}" : "nat"
+ "S ?Goal@{x:=0}" : "nat"
+ "PeanoNat.Nat.lt_0_succ ?Goal@{x:=0}" : "0 < S ?Goal@{x:=0}"
+The 3rd term has type "0 < S ?Goal@{x:=0}" which should be coercible to "S
+                                                 ?Goal@{x:=0} <
+                                                 S ?Goal@{x:=0}"."
+Please report at http://coq.inria.fr/bugs/.
+
 File "./theories/PArith/BinPos.v", line 646, characters 1-10:
 Error:
 Anomaly
