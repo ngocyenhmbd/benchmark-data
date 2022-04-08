@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq.8.11+beta1 failed at "make -j55".
+
+#=== ERROR while compiling coq.8.11+beta1 =====================================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-04-07 20:40
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.DzazVF/opam-root/bench/.opam-switch/build/coq.8.11+beta1
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-30781/coq-30783-70bcf5.env
+# output-file          /tmp/opam-xxx-30781/coq-30783-70bcf5.out
+### output ###
+# [...]
+# coq_interp.c:1377: error: undefined reference to 'caml_young_limit'
+# coq_interp.c:1364: error: undefined reference to 'caml_young_limit'
+# coq_interp.c:1364: error: undefined reference to 'caml_young_ptr'
+# coq_interp.c:1251: error: undefined reference to 'caml_young_ptr'
+# coq_interp.c:1251: error: undefined reference to 'caml_young_limit'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking (exit code 1)
+# make[1]: *** [bin/votour] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-benchmark.tmp.DzazVF/opam-root/bench/.opam-switch/build/coq.8.11+beta1'
+# make: *** [submake] Error 2
+
