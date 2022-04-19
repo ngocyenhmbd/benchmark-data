@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq.8.11+beta1 failed at "make -j55".
+
+#=== ERROR while compiling coq.8.11+beta1 =====================================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-04-19 09:40
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.ZGe7LG/opam-root/bench/.opam-switch/build/coq.8.11+beta1
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-48852/coq-48854-86760f.env
+# output-file          /tmp/opam-xxx-48852/coq-48854-86760f.out
+### output ###
+# [...]
+# File "plugins/micromega/certificate.ml", line 45, characters 4-37:
+# 45 |     bigint_to_number : big_int -> 'a;
+#          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+# Warning 69 [unused-field]: record field bigint_to_number is never read.
+# (However, this field is used to build or mutate values.)
+# File "vernac/g_vernac.mlg", line 560, characters 21-35:
+# Alert deprecated: module Stdlib.Stream
+# Use the camlp-streams library instead.
+# File "vernac/g_vernac.ml", line 1:
+# Warning 70 [missing-mli]: Cannot find interface file.
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-benchmark.tmp.ZGe7LG/opam-root/bench/.opam-switch/build/coq.8.11+beta1'
+# make: *** [submake] Error 2
+
