@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq.8.11+beta1 failed at "make -j55".
+
+#=== ERROR while compiling coq.8.11+beta1 =====================================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-04-25 18:20
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.TQJoFP/opam-root/bench/.opam-switch/build/coq.8.11+beta1
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-25560/coq-25562-9e51e8.env
+# output-file          /tmp/opam-xxx-25560/coq-25562-9e51e8.out
+### output ###
+# [...]
+# File "caml_startup", line 1:
+# Error: Error during linking (exit code 1)
+# make[1]: *** [bin/votour] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# File "vernac/vernacexpr.ml", line 1:
+# Warning 70 [missing-mli]: Cannot find interface file.
+# File "ide/fake_ide.ml", line 1:
+# Warning 70 [missing-mli]: Cannot find interface file.
+# File "parsing/g_constr.ml", line 1:
+# Warning 70 [missing-mli]: Cannot find interface file.
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-benchmark.tmp.TQJoFP/opam-root/bench/.opam-switch/build/coq.8.11+beta1'
+# make: *** [submake] Error 2
+
