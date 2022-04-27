@@ -1,0 +1,126 @@
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: coinduction ltac:(EqSt_reflex); only 1: symmetry; only 1: destruct H; only 1: trivial with datatypes; only 1: assumption).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
+s2 : Stream
+H : EqSt x s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x => x
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt x s2) =>
+                          eqst s2 x
+                            (eq_sym match H with
+                                    | eqst _ _ H0 _ => H0
+                                    end)
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt x s3 -> EqSt (tl s3) (tl x) :=
+                               fun (s3 : Stream) (H0 : EqSt x s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x => x
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 102, characters 0-21:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: inversion 1; only 1: inversion 1; only 1: case H; only 1: intros; only 1: case H; only 1: intros; only 1: destruct H0 in H; only 1: case H; only 1: intros; only 1: case H; only 1: intros; only 1: case H; only 1: intros; only 1: coinduction ltac:(Eq_sym); only 1: case H; only 1: intros; only 1: case H; only 1: induction 1; only 1: intros; only 1: assumption).
+Typing error:
+Recursive definition of Eq_sym is ill-formed.
+In environment
+A : Type
+s1 : Stream
+s2 : Stream
+s3 : Stream
+H : EqSt s1 s2
+H0 : hd s1 = hd s2
+H1 : EqSt (tl s1) (tl s2)
+H2 : hd s1 = hd s2
+H3 : EqSt (tl s1) (tl s2)
+H4 : EqSt s2 s3
+H5 : hd s2 = hd s3
+H6 : EqSt (tl s2) (tl s3)
+H7 : hd s2 = hd s3
+H8 : EqSt (tl s2) (tl s3)
+H9 : hd s1 = hd s2
+H10 : EqSt (tl s1) (tl s2)
+H11 : hd s1 = hd s2
+H12 : EqSt (tl s1) (tl s2)
+a := hd s2 : A
+H13 : EqSt s1 s2
+H14 : hd s1 = hd s2
+H15 : EqSt (tl s1) (tl s2)
+H16 : hd s1 = hd s2
+H17 : EqSt (tl s1) (tl s2)
+H18 : hd s1 = hd s2
+H19 : EqSt (tl s1) (tl s2)
+Eq_sym : EqSt s1 s3
+Invalid recursive call in the argument of "match" in "match Eq_sym with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+Recursive definition is: "eqst s1 s3
+                            match H13 with
+                            | eqst _ _ H15 _ =>
+                                match H13 with
+                                | eqst _ _ H19 x =>
+                                    (let a := hd s2 in
+                                     eq_ind (hd s1)
+                                       (fun a0 : A =>
+                                        a0 = hd s3 ->
+                                        hd s1 = a0 ->
+                                        hd s1 = a0 ->
+                                        hd s1 = a0 ->
+                                        hd s1 = a0 ->
+                                        hd s1 = a0 ->
+                                        hd s1 = a0 ->
+                                        EqSt (tl s1) (tl s2) -> hd s1 = hd s3)
+                                       (fun (H3 : hd s1 = hd s3)
+                                          (_ _ _ _ _ _ : hd s1 = hd s1)
+                                          (_ : EqSt (tl s1) (tl s2)) => H3) a
+                                       H19 H7 H9 H11 H14 H16 H18 H15) x
+                                end
+                            end
+                            (let H14 : EqSt (tl s1) (tl s3) :=
+                               match Eq_sym with
+                               | eqst _ _ _ x0 => x0
+                               end in
+                             H14)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/ExtensionalityFacts.v", line 131, characters 2-17:
+Error: Anomaly "grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Arith/PeanoNat.v", line 671, characters 1-13:
+Error: Stack overflow.
+
+File "./theories/omega/OmegaLemmas.v", line 28, characters 2-43:
+Error: Stack overflow.
+
+File "./theories/PArith/BinPos.v", line 1868, characters 1-8:
+Error: Stack overflow.
+
+File "./theories/FSets/FMapPositive.v", line 291, characters 4-19:
+Error: Anomaly "grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int63/Int63.v", line 1537, characters 1-32:
+Error: Stack overflow.
+
+File "./theories/Reals/Rprod.v", line 54, characters 2-38:
+Error: Stack overflow.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2250, characters 1-34:
+Error: Stack overflow.
+
