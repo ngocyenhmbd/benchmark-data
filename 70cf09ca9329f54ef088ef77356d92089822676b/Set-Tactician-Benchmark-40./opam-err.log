@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j55".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-04-28 16:10
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.HQ0OJc/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /lscratch/blaaulas/tactician-benchmark.tmp.HQ0OJc/opam-root/bench/bin/tactician exec -- make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-46429/coq-tactician-stdlib-46431-e97257.env
+# output-file          /tmp/opam-xxx-46429/coq-tactician-stdlib-46431-e97257.out
+### output ###
+# [...]
+# coqc theories/Sets/Image.v
+# coqc theories/FSets/FMapList.v
+# coqc theories/MSets/MSetWeakList.v
+# coqc theories/MSets/MSetGenTree.v
+# coqc theories/Strings/Byte.v
+# coqc theories/Structures/OrdersLists.v
+# coqc theories/ZArith/BinInt.v
+# coqc theories/Sets/Infinite_sets.v
+# coqc theories/MSets/MSetList.v
+# make: *** [theories/MSets/MSetWeakList.vo] Segmentation fault (core dumped)
+# make: *** [theories/MSets/MSetWeakList.vo] Deleting file `theories/MSets/MSetWeakList.glob'
+# make: *** Waiting for unfinished jobs....
+
