@@ -1,19 +1,24 @@
-[NOTE] unit-test-prop-chain-5-100 is not installed.
+[ERROR] The compilation of coq.8.11+beta1 failed at "make -j15".
 
-[NOTE] Package coq-tactician-reinforce is currently pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#tf-search-interface-v9 (version ~dev).
-[NOTE] Package coq-tactician is currently pinned to git+https://github.com/coq-tactician/coq-tactician.git#021b9ad1361d207115a9897330247593c73da99b (version 8.11.dev).
-[ERROR] The compilation of dose3.5.0.1-1 failed at "make printconf".
-
-#=== ERROR while compiling dose3.5.0.1-1 ======================================#
-# context              2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#5ecf1c2f
-# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/dose3.5.0.1-1
-# command              /usr/bin/make printconf
+#=== ERROR while compiling coq.8.11+beta1 =====================================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-05-05 17:20
+# path                 /tmp/tactician-benchmark.tmp.BCm7Yz/opam-root/bench/.opam-switch/build/coq.8.11+beta1
+# command              /usr/bin/make -j15
 # exit-code            2
-# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/dose3-3216-956444.env
-# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/dose3-3216-956444.out
+# env-file             /tmp/opam-lasse-78497/coq-78499-7cdc57.env
+# output-file          /tmp/opam-lasse-78497/coq-78499-7cdc57.out
 ### output ###
-# Makefile.config:49: *** missing separator.  Stop.
+# [...]
+# /usr/bin/ld: /tmp/tactician-benchmark.tmp.BCm7Yz/opam-root/bench/.opam-switch/build/coq.8.11+beta1/kernel/byterun/coq_interp.c:1147: undefined reference to `caml_young_limit'
+# OCAMLC    user-contrib/Ltac2/tac2print.mli
+# OCAMLC    pretyping/cases.mli
+# collect2: error: ld returned 1 exit status
+# [1mFile "caml_startup", line 1[0m:
+# [1;31mError[0m: Error during linking (exit code 1)
+# make[1]: *** [Makefile.build:573: bin/votour] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# OCAMLC    pretyping/unification.mli
+# OCAMLC    interp/constrintern.mli
+# make[1]: Leaving directory '/tmp/tactician-benchmark.tmp.BCm7Yz/opam-root/bench/.opam-switch/build/coq.8.11+beta1'
+# make: *** [Makefile:179: submake] Error 2
 
-
-The former state can be restored with:
-    /home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default/src/benchmark/main.exe switch import "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/backup/state-20220510150528.export"
