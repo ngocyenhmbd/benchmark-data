@@ -1,45 +1,40 @@
 Opam has already been initialized.
-The following actions will be performed:
-  ⊘ remove unit-test-prop-chain-5-100 dev
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⊘ removed   unit-test-prop-chain-5-100.dev
-Done.
-[coq-tactician-reinforce.~dev] synchronised (file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce)
-coq-tactician-reinforce is now pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#option-demo (version ~dev)
+Nothing to do.
+[coq-tactician-reinforce.~dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#option-demo)
+The following additional pinnings are required by coq-tactician-reinforce.~dev:
+  - coq-tactician.8.11.dev at git+https://github.com/coq-tactician/coq-tactician.git#81cca3e2b51bc30a53e30bc2333d571f848c5052
+Pin and install them? [Y/n] y
+[coq-tactician.8.11.dev] synchronised (no changes)
+coq-tactician is now pinned to git+https://github.com/coq-tactician/coq-tactician.git#81cca3e2b51bc30a53e30bc2333d571f848c5052 (version 8.11.dev)
+coq-tactician-reinforce is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#option-demo (version ~dev)
 
 <><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
-[coq-tactician-reinforce.~dev] synchronised (git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#option-demo)
 [coq-tactician.8.11.dev] synchronised (no changes)
+[coq-tactician-reinforce.~dev] synchronised (no changes)
 
 The following actions will be performed:
-  ↻ recompile coq-tactician-reinforce ~dev*
+  ∗ install dose3                   5.0.1-1   [required by opam-solver]
+  ∗ install coq                     8.11.dev  [required by coq-tactician, coq-tactician-reinforce]
+  ∗ install opam-solver             2.1.2     [required by opam-client]
+  ∗ install opam-client             2.1.2     [required by coq-tactician]
+  ∗ install coq-tactician           8.11.dev*
+  ∗ install coq-tactician-reinforce ~dev*
+===== ∗ 6 =====
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-tactician.8.11.dev  (no changes)
+⬇ retrieved dose3.5.0.1-1  (cached)
+⬇ retrieved opam-client.2.1.2  (cached)
+⬇ retrieved opam-solver.2.1.2  (cached)
+⬇ retrieved coq.8.11.dev  (no changes)
 ⬇ retrieved coq-tactician-reinforce.~dev  (no changes)
-⊘ removed   coq-tactician-reinforce.~dev
-∗ installed coq-tactician-reinforce.~dev
-Done.
-Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-build-commands in switch bench
-Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
-Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field pre-build-commands in switch bench
-Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
-The following actions will be performed:
-  ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
-                                           This package will overwrite Coq's standard library files.
-                                           A backup of the original files will be placed under Coq's
-                                           library directory at user-contrib/tactician-stdlib-backup/
-                                           and they will be restored when you remove this package.
-                                           After installation of this package, all other Coq packages
-                                           also need to be recompiled. Running the 'tactician recompile'
-                                           command-line utility will help with this process.
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
+∗ installed coq.8.11.dev
 
 
 <><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 ┌─ The following actions failed
-│ λ build coq-tactician-stdlib 8.11.dev
+│ λ build dose3 5.0.1-1
 └─ 
-╶─ No changes have been performed
+┌─ The following changes have been performed (the rest was aborted)
+│ ∗ install coq 8.11.dev
+└─ 
