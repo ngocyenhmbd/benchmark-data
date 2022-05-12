@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq.8.11+beta1 failed at "make -j55".
+
+#=== ERROR while compiling coq.8.11+beta1 =====================================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-05-05 17:20
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.ThcQgR/opam-root/bench/.opam-switch/build/coq.8.11+beta1
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-33076/coq-33084-796b6c.env
+# output-file          /tmp/opam-xxx-33076/coq-33084-796b6c.out
+### output ###
+# [...]
+# 33 |   val parse_token_stream : 'a t -> Tok.t Stream.t -> 'a
+#                                               ^^^^^^^^
+# Alert deprecated: module Stdlib.Stream
+# Use the camlp-streams library instead.
+# OCAMLOPT  kernel/retroknowledge.ml
+# OCAMLOPT  library/libnames.ml
+# OCAMLOPT  engine/evar_kinds.ml
+# make[1]: *** [bin/votour] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# OCAMLOPT  pretyping/locus.ml
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-benchmark.tmp.ThcQgR/opam-root/bench/.opam-switch/build/coq.8.11+beta1'
+# make: *** [submake] Error 2
+
