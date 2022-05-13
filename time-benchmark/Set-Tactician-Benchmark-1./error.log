@@ -2,8 +2,13 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description ("Client connected via TCP" (lasse-work 37765)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args (lasse-work rsync -az lasse-work:/tmp/tmp-scratch /tmp/tmp-scratch))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh: connect to host lasse-work port 22: Connection refused\r" ""))))
 Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 46319)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
