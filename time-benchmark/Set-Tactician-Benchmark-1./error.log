@@ -2,36 +2,22 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync qaz --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache node-02.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 1)) (stdout "")
+  (stderr
+   ("Unexpected remote arg: node-02.cluster:/lscratch/blaaulas/tmp-scratch/"
+    "rsync error: syntax or usage error (code 1) at main.c(1344) [sender=3.1.2]"
+    ""))))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-02.cluster 45790)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 44519)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 36545)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 33647)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 45683)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 40482)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 43202)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 36794)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+  ("Client connected via TCP" (node-05.cluster 41699)))
+ (rpc_tag rpc_parallel_piped_4) (rpc_version 0))
