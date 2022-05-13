@@ -80,23 +80,23 @@ The following actions will be performed:
 ⬇ retrieved csexp.1.5.1  (https://opam.ocaml.org/cache)
 ⬇ retrieved cudf.0.9-1  (https://opam.ocaml.org/cache)
 ⬇ retrieved dose3.5.0.1-1  (https://opam.ocaml.org/cache)
+⬇ retrieved cmdliner.1.1.1  (https://opam.ocaml.org/cache)
 ⬇ retrieved dune.3.1.1  (https://opam.ocaml.org/cache)
-⬇ retrieved dune-private-libs.3.1.1  (cached)
 ⬇ retrieved dune-site.3.1.1  (cached)
 ⬇ retrieved dyn.3.1.1  (cached)
 ⬇ retrieved extlib.1.7.7-1  (https://opam.ocaml.org/cache)
-⬇ retrieved cmdliner.1.1.1  (https://opam.ocaml.org/cache)
+⬇ retrieved fmt.0.9.0  (https://opam.ocaml.org/cache)
+⬇ retrieved dune-private-libs.3.1.1  (https://opam.ocaml.org/cache)
 ⬇ retrieved fpath.0.7.3  (https://opam.ocaml.org/cache)
 ⬇ retrieved logs.0.7.0  (https://opam.ocaml.org/cache)
-⬇ retrieved fmt.0.9.0  (https://opam.ocaml.org/cache)
 ⬇ retrieved num.1.4  (https://opam.ocaml.org/cache)
 ⬇ retrieved mccs.1.1+13  (https://opam.ocaml.org/cache)
 ∗ installed ocaml-options-vanilla.1
 ⬇ retrieved ocamlbuild.0.14.1  (https://opam.ocaml.org/cache)
 ⬇ retrieved ocamlfind.1.9.3  (https://opam.ocaml.org/cache)
 ⬇ retrieved ocamlgraph.2.0.0  (https://opam.ocaml.org/cache)
-⬇ retrieved ocaml-base-compiler.4.12.1  (https://opam.ocaml.org/cache)
 ⬇ retrieved opam-client.2.1.2  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-core.2.1.2  (cached)
 ⬇ retrieved opam-file-format.2.1.4  (https://opam.ocaml.org/cache)
 ⬇ retrieved opam-format.2.1.2  (cached)
 ⬇ retrieved opam-repository.2.1.2  (cached)
@@ -108,8 +108,8 @@ The following actions will be performed:
 ⬇ retrieved rresult.0.7.0  (https://opam.ocaml.org/cache)
 ⬇ retrieved stdlib-shims.0.3.0  (https://opam.ocaml.org/cache)
 ⬇ retrieved stdune.3.1.1  (cached)
-⬇ retrieved opam-core.2.1.2  (https://opam.ocaml.org/cache)
 ⬇ retrieved topkg.1.0.5  (https://opam.ocaml.org/cache)
+⬇ retrieved ocaml-base-compiler.4.12.1  (https://opam.ocaml.org/cache)
 ⬇ retrieved coq.8.11.dev  (git+https://github.com/LasseBlaauwbroek/coq.git#v8.11-tactician)
 ∗ installed ocaml-base-compiler.4.12.1
 ∗ installed ocaml-config.2
@@ -130,59 +130,20 @@ The following actions will be performed:
 ∗ installed csexp.1.5.1
 ∗ installed stdlib-shims.0.3.0
 ∗ installed pp.1.1.2
-∗ installed bos.0.2.1
 ∗ installed opam-file-format.2.1.4
+∗ installed bos.0.2.1
 ∗ installed ordering.3.1.1
-∗ installed re.1.10.4
 ∗ installed cppo.1.6.8
+∗ installed re.1.10.4
 ∗ installed dyn.3.1.1
 ∗ installed ocamlgraph.2.0.0
 ∗ installed extlib.1.7.7-1
 ∗ installed stdune.3.1.1
-∗ installed dune-private-libs.3.1.1
-∗ installed cudf.0.9-1
 ∗ installed opam-core.2.1.2
+∗ installed cudf.0.9-1
+∗ installed dune-private-libs.3.1.1
 ∗ installed dune-site.3.1.1
 ∗ installed mccs.1.1+13
 ∗ installed opam-format.2.1.2
 ∗ installed opam-repository.2.1.2
 ∗ installed opam-state.2.1.2
-∗ installed dose3.5.0.1-1
-∗ installed opam-solver.2.1.2
-∗ installed opam-client.2.1.2
-∗ installed coq.8.11.dev
-∗ installed coq-tactician.dev
-Done.
-
-<><> coq-tactician.dev installed successfully <><><><><><><><><><><><><><><><><>
-=> --- Tactician was successfully installed ---
-
-   In order to enable Tactician, you should run
-
-   tactician enable
-No modification in switch bench
-Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
-No modification in switch bench
-Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
-Nothing to do.
-The following actions will be performed:
-  ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
-                                           This package will overwrite Coq's standard library files.
-                                           A backup of the original files will be placed under Coq's
-                                           library directory at user-contrib/tactician-stdlib-backup/
-                                           and they will be restored when you remove this package.
-                                           After installation of this package, all other Coq packages
-                                           also need to be recompiled. Running the 'tactician recompile'
-                                           command-line utility will help with this process.
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-tactician-stdlib.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
-∗ installed coq-tactician-stdlib.8.11.dev
-Done.
-
-<><> coq-tactician-stdlib.8.11.dev installed successfully <><><><><><><><><><><>
-=> --- The standard library was successfully recompiled ---
-
-   In order to finish the process, you should run
-
-   tactician recompile
