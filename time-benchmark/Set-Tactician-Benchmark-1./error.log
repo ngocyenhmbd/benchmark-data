@@ -2,20 +2,29 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 3 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
+Fatal benchmarking error: Termination request received: sigint
 Fatal benchmarking error: Initial build did not fully complete
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 2 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 1 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 5 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 4 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 6 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 8 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hi) (args (boe 7 /proc/244914/exe RPC_PARALLEL_WORKER child-of-244914)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 37235)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 42305)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 33767)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 33945)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 37975)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 36849)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 34389)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (lasse-work 45867)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
