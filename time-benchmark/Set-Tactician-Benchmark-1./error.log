@@ -2,8 +2,35 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -noinit -R theories Coq theories/Init/Logic.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Initial build did not fully complete
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-02.cluster 40234)))
- (rpc_tag rpc_parallel_piped_4) (rpc_version 0))
+  ("Client connected via TCP" (node-08.cluster 37475)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 37379)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 37476)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 46842)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 36605)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 46319)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 44016)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
