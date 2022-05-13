@@ -1,0 +1,75 @@
+Coq.Init.Logic.Conjunction.proj1	1
+Coq.Init.Logic.Conjunction.proj2	1	0.0	synth with cache (only 1: destruct 1; only 1: trivial).	0.001100	2
+Coq.Init.Logic.Equivalence.iff_refl	1
+Coq.Init.Logic.Equivalence.iff_trans	1	2.2.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.006805	45
+Coq.Init.Logic.Equivalence.iff_sym	1	0.0.0.1	synth with cache (only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.001563	5
+Coq.Init.Logic.and_iff_compat_l	1	1.0.2.0.1.0.1.0.0.3	synth with cache (only 1: destruct 1; only 1: split; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto).	0.028138	253
+Coq.Init.Logic.and_iff_compat_r	1	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: apply Hl; only 1: assumption; only 1: assumption; only 1: intros [? ?]; only 1: split; only 1: apply Hr; only 1: assumption; only 1: assumption).	0.009396	26
+Coq.Init.Logic.or_iff_compat_l	1
+Coq.Init.Logic.or_iff_compat_r	1	0.1.0.0.1.0.0.1.0.0.1.0.0.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [?| ?]; only 1: left; only 1: apply Hl; only 1: assumption; only 1: right; only 1: assumption; only 1: intros [?| ?]; only 1: left; only 1: apply Hr; only 1: assumption; only 1: right; only 1: assumption).	0.122025	625
+Coq.Init.Logic.imp_iff_compat_l	1	9.9.2.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.104196	864
+Coq.Init.Logic.imp_iff_compat_r	1	10.10.0.9	synth with cache (only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.557289	3261
+Coq.Init.Logic.not_iff_compat	1	0.0.0.0	synth with cache (only 1: intros A B [H1 H2]; only 1: split; only 1: auto; only 1: auto).	0.004450	4
+Coq.Init.Logic.neg_false	1	1.1.11.0.1.0	synth with cache (only 1: split; only 1: split; only 1: auto; only 1: destruct 1; only 1: intros [? ?]; only 1: auto).	0.094335	582
+Coq.Init.Logic.and_cancel_l	1
+Coq.Init.Logic.and_cancel_r	1	0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros A B C Hl Hr; only 1: split; only 1: intros [HypL HypR]; only 1: split; only 1: intros; only 1: apply HypL; only 1: split; only 1: assumption; only 1: apply Hl; only 1: assumption; only 1: intros; only 1: apply HypR; only 1: split; only 1: assumption; only 1: apply Hr; only 1: assumption; only 1: intros [HypL HypR]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: apply HypL; only 1: assumption; only 1: apply Hl; only 1: assumption; only 1: intros [? ?]; only 1: split; only 1: apply HypR; only 1: assumption; only 1: apply Hr; only 1: assumption).	0.566266	172
+Coq.Init.Logic.and_comm	1	0.0.0.0.0.0.0.0.2	synth with cache (only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial).	0.088661	41
+Coq.Init.Logic.and_assoc	1
+Coq.Init.Logic.or_cancel_l	1
+Coq.Init.Logic.or_cancel_r	1
+Coq.Init.Logic.or_comm	1	0.1.0.0.0.0.1.0.0.0.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros [?| ?]; only 1: right; only 1: trivial; only 1: left; only 1: trivial; only 1: intros [?| ?]; only 1: right; only 1: trivial; only 1: left; only 1: trivial).	0.036735	62
+Coq.Init.Logic.or_assoc	1
+Coq.Init.Logic.iff_and	1	1.0	synth with cache (only 1: intros; only 1: assumption).	0.004695	3
+Coq.Init.Logic.iff_to_and	1	1.0.0.0.0.2.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intro H; only 1: assumption).	0.038714	81
+Coq.Init.Logic.universal_quantification.inst	1	5.3	synth with cache (only 1: intro H1; only 1: auto).	0.018539	66
+Coq.Init.Logic.universal_quantification.gen	1	0.0	synth with cache (only 1: unfold all; only 1: auto).	0.003343	2
+Coq.Init.Logic.Logic_lemmas.absurd	1	0.7.2.1	synth with cache (only 1: intro A; only 1: intros H ?; only 1: destruct 1; only 1: assumption).	0.098254	441
+Coq.Init.Logic.Logic_lemmas.equality.eq_sym	1	1.3	synth with cache (only 1: destruct 1; only 1: trivial).	0.008167	16
+Coq.Init.Logic.Logic_lemmas.equality.eq_trans	1	0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.005141	3
+Coq.Init.Logic.Logic_lemmas.equality.eq_trans_r	1	0.0	synth with cache (only 1: destruct 2; only 1: trivial).	0.003625	2
+Coq.Init.Logic.Logic_lemmas.equality.f_equal	1	0.0	synth with cache (only 1: destruct 1; only 1: trivial).	0.004056	2
+Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	1	28.1	synth with cache (only 1: destruct 2; only 1: auto).	0.240808	1491
+Coq.Init.Logic.Logic_lemmas.eq_sind_r	1	2.1.2	synth with cache (only 1: intros A B C Hl Hr; only 1: destruct 1; only 1: auto).	0.017862	32
+Coq.Init.Logic.Logic_lemmas.eq_ind_r	1	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.005180	3
+Coq.Init.Logic.Logic_lemmas.eq_rec_r	1	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.005076	3
+Coq.Init.Logic.Logic_lemmas.eq_rect_r	1	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.004940	3
+Coq.Init.Logic.equality_dep.f_equal_dep	1
+Coq.Init.Logic.equality_dep2.f_equal_dep2	1	0.1.1	synth with cache (only 1: destruct H; only 1: destruct 1; only 1: reflexivity).	0.023834	11
+Coq.Init.Logic.rew_opp_r	1	1.0	synth with cache (only 1: destruct H; only 1: reflexivity).	0.008519	3
+Coq.Init.Logic.rew_opp_l	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.010165	3
+Coq.Init.Logic.f_equal2	1	1.2.0.0.1	synth with cache (only 1: intros A B C Hl Hr; only 1: intros H ?; only 1: destruct 2; only 1: elim eq_sym with (1 := H0); only 1: trivial).	0.046717	36
+Coq.Init.Logic.f_equal3	1	0.0.0.1	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.012686	5
+Coq.Init.Logic.f_equal4	1	0.0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.016091	5
+Coq.Init.Logic.f_equal5	1	0.0.0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.019822	6
+Coq.Init.Logic.f_equal_compose	1	0.10.3.3	synth with cache (only 1: intros A x P H y H0; only 1: intros h1 h2; only 1: destruct h2; only 1: reflexivity).	0.319137	668
+Coq.Init.Logic.eq_trans_refl_l	1	0.3	synth with cache (only 1: destruct e; only 1: reflexivity).	0.011628	9
+Coq.Init.Logic.eq_trans_refl_r	1	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.007545	2
+Coq.Init.Logic.eq_sym_involutive	1	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.008053	2
+Coq.Init.Logic.eq_trans_sym_inv_l	1	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.007413	2
+Coq.Init.Logic.eq_trans_sym_inv_r	1	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.007692	2
+Coq.Init.Logic.eq_trans_assoc	1	0.1.3.0	synth with cache (only 1: destruct e; only 1: intros h1 h2; only 1: destruct h2; only 1: trivial).	0.044118	53
+Coq.Init.Logic.rew_map	1	0.2.5	synth with cache (only 1: intros A B C Hl Hr; only 1: destruct H; only 1: reflexivity).	0.036243	56
+Coq.Init.Logic.eq_trans_map	1
+Coq.Init.Logic.map_subst	1	0.0	synth with cache (only 1: destruct H; only 1: reflexivity).	0.007671	2
+Coq.Init.Logic.map_subst_map	1	0.1	synth with cache (only 1: destruct H; only 1: reflexivity).	0.008084	3
+Coq.Init.Logic.rew_swap	1	0.4	synth with cache (only 1: destruct H, 1; only 1: reflexivity).	0.030063	47
+Coq.Init.Logic.rew_compose	1	2.0.0	synth with cache (only 1: intros; only 1: destruct H2; only 1: reflexivity).	0.007417	5
+Coq.Init.Logic.eq_id_comm_l	1
+Coq.Init.Logic.eq_id_comm_r	1
+Coq.Init.Logic.eq_refl_map_distr	1	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.007953	2
+Coq.Init.Logic.eq_trans_map_distr	1	0.0.4.66.0	synth with cache (only 1: destruct e; only 1: intro H; only 1: rewrite eq_trans_refl_l; only 1: destruct H; only 1: reflexivity).	0.156626	217
+Coq.Init.Logic.eq_sym_map_distr	1	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.008116	2
+Coq.Init.Logic.eq_trans_sym_distr	1	0.2.1.1	synth with cache (only 1: destruct e'; only 1: simpl; only 1: rewrite eq_trans_refl_l; only 1: reflexivity).	0.123636	118
+Coq.Init.Logic.eq_trans_rew_distr	1	0.4	synth with cache (only 1: destruct e'; only 1: reflexivity).	0.087341	42
+Coq.Init.Logic.rew_const	1	1.3	synth with cache (only 1: destruct e; only 1: reflexivity).	0.086528	50
+Coq.Init.Logic.unique_existence	1
+Coq.Init.Logic.forall_exists_unique_domain_coincide	1
+Coq.Init.Logic.forall_exists_coincide_unique_domain	1
+Coq.Init.Logic.exists_inhabited	1	7.69.64	synth with cache (only 1: intro H1; only 1: destruct 1; only 1: auto).	0.259630	1588
+Coq.Init.Logic.inhabited_covariant	1	0.0.4	synth with cache (only 1: intro; only 1: destruct 1; only 1: auto).	0.025395	75
+Coq.Init.Logic.eq_stepl	1	1.0.4.64	synth with cache (only 1: intros A P H; only 1: intro; only 1: destruct 2; only 1: trivial).	0.051197	149
+Coq.Init.Logic.iff_stepl	1	0.0.0.0	synth with cache (only 1: intros A B C [H1 H2] [H3 H4]; only 1: split; only 1: auto; only 1: auto).	0.011107	4
+Coq.Init.Logic.ex.eq_ex_uncurried	1
+Coq.Init.Logic.ex.rew_ex	1
+Coq.Init.Logic.ex2.eq_ex2_uncurried	1	0.0.5.0.0	synth with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct H; only 1: destruct p; only 1: reflexivity).	0.092292	228
+Coq.Init.Logic.ex2.rew_ex2	1	0.0	synth with cache (only 1: destruct H, u; only 1: reflexivity).	0.013281	2
