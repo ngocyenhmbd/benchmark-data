@@ -2,5 +2,7 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (Unix.Unix_error "No such file or directory" Core.Unix.create_process
- "((prog hello) (args (cool /proc/13133/exe RPC_PARALLEL_WORKER child-of-13133)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
+Fatal benchmarking error: ((rpc_error (Connection_closed ("EOF or connection closed")))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 40478)))
+ (rpc_tag rpc_parallel_piped_4) (rpc_version 0))
