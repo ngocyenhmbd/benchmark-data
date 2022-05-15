@@ -2,34 +2,23 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Abnormal exit code for coqc: 137
- Invocation:
-(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Reals/RiemannInt_SF.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Reals/RiemannInt_SF.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Reals/RiemannInt_SF.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-05.cluster 43403)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-05.cluster 44317)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-05.cluster 33789)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-05.cluster 44214)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-05.cluster 36437)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-05.cluster 36849)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-05.cluster 41137)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: Alloc protocol error: Unexpected eof
+Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qaz --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo
+    node-02.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("Access denied: user blaaulas (uid=50338) has no active jobs on this node."
+    "Authentication failed.\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
