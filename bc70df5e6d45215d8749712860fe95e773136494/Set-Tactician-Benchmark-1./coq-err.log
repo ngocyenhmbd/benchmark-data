@@ -1,0 +1,153 @@
+File "./theories/Init/Tactics.v", line 189, characters 0-45:
+Warning:
+now idtac((TacAlias Coq.Init.Tactics.now_#_62200C10 ((TacThen (TacArg (CAst (Reference (CAst t)))) (TacArg (CAst (TacCall Coq.Init.Tactics.easy (CAst Located)))))) (CAst (Tacexp (TacId)))))
+File "./plugins/micromega/ZifyClasses.v", line 167, characters 2-88:
+Error:
+Anomaly
+"File "src/neural_learner.ml", line 115, characters 8-14: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/micromega/ZifyClasses.v", line 180, characters 2-64:
+Error:
+Anomaly
+"File "src/neural_learner.ml", line 115, characters 8-14: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/micromega/ZifyClasses.v", line 189, characters 2-37:
+Error:
+Anomaly
+"File "src/neural_learner.ml", line 115, characters 8-14: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/micromega/ZifyClasses.v", line 199, characters 2-78:
+Error:
+Anomaly
+"File "src/neural_learner.ml", line 115, characters 8-14: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/StrictProp.v", line 38, characters 2-26:
+Error:
+Anomaly
+"File "src/neural_learner.ml", line 115, characters 8-14: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+induction d;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; destruct nzhead;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/Arith/Between.v", line 160, characters 6-52:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (exists_in_int k (S l)) as (l', [], ?)
+destruct (exists_in_int k (S l)) as (l', _tmp_tactician0, ?);
+ [ .. | destruct _tmp_tactician0 as []; idtac ]
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./plugins/rtauto/Bintree.v", line 277, characters 0-28:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros [=H%Pos.succ_not_1]
+intros _tmp_tactician0; (first
+ [ discriminate _tmp_tactician0; idtac
+ | injection _tmp_tactician0 as _tmp_tactician2;
+    (apply Pos.succ_not_1 in _tmp_tactician2 as H; [ idtac | .. ];
+      try clear _tmp_tactician2)
+ | intro_equality_clear _tmp_tactician0; idtac
+ | intro_equality_hnf _tmp_tactician0; idtac ])
+
+Error: Anomaly "Capnp protocol error 3c"
+Please report at http://coq.inria.fr/bugs/.
+
+Abnormal exit code for coqc: 129
+ Invocation:
+(cd /tmp/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /tmp/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/rtauto/Rtauto.vo.bench /tmp/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/rtauto/Rtauto.vo /tmp/tmp-scratch/opam-root/bench/bin/coqc -q -I /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /tmp/tmp-scratch/opam-root/bench/lib/stdlib-shims -I /tmp/tmp-scratch/opam-root/bench/lib/ocamlgraph -I /tmp/tmp-scratch/opam-root/bench/lib/ocaml -I /tmp/tmp-scratch/opam-root/bench/lib/result -I /tmp/tmp-scratch/opam-root/bench/lib/lwt -I /tmp/tmp-scratch/opam-root/bench/lib/bigarray-compat -I /tmp/tmp-scratch/opam-root/bench/lib/mmap -I /tmp/tmp-scratch/opam-root/bench/lib/ocplib-endian -I /tmp/tmp-scratch/opam-root/bench/lib/ocplib-endian/bigstring -I /tmp/tmp-scratch/opam-root/bench/lib/lwt/unix -I /tmp/tmp-scratch/opam-root/bench/lib/astring -I /tmp/tmp-scratch/opam-root/bench/lib/res -I /tmp/tmp-scratch/opam-root/bench/lib/stdint -I /tmp/tmp-scratch/opam-root/bench/lib/capnp -I /tmp/tmp-scratch/opam-root/bench/lib/asetmap -I /tmp/tmp-scratch/opam-root/bench/lib/fmt -I /tmp/tmp-scratch/opam-root/bench/lib/logs -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc -I /tmp/tmp-scratch/opam-root/bench/lib/bigstringaf -I /tmp/tmp-scratch/opam-root/bench/lib/angstrom -I /tmp/tmp-scratch/opam-root/bench/lib/stringext -I /tmp/tmp-scratch/opam-root/bench/lib/uri -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc-lwt -I /tmp/tmp-scratch/opam-root/bench/lib/base64 -I /tmp/tmp-scratch/opam-root/bench/lib/cstruct -I /tmp/tmp-scratch/opam-root/bench/lib/eqaf -I /tmp/tmp-scratch/opam-root/bench/lib/eqaf/bigstring -I /tmp/tmp-scratch/opam-root/bench/lib/eqaf/cstruct -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-flow -I /tmp/tmp-scratch/opam-root/bench/lib/re -I /tmp/tmp-scratch/opam-root/bench/lib/prometheus -I /tmp/tmp-scratch/opam-root/bench/lib/ptime -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-clock -I /tmp/tmp-scratch/opam-root/bench/lib/sexplib0 -I /tmp/tmp-scratch/opam-root/bench/lib/zarith -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-pk -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-kv -I /tmp/tmp-scratch/opam-root/bench/lib/base/caml -I /tmp/tmp-scratch/opam-root/bench/lib/parsexp -I /tmp/tmp-scratch/opam-root/bench/lib/sexplib -I /tmp/tmp-scratch/opam-root/bench/lib/cstruct-sexp -I /tmp/tmp-scratch/opam-root/bench/lib/domain-name -I /tmp/tmp-scratch/opam-root/bench/lib/hkdf -I /tmp/tmp-scratch/opam-root/bench/lib/macaddr -I /tmp/tmp-scratch/opam-root/bench/lib/ipaddr -I /tmp/tmp-scratch/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /tmp/tmp-scratch/opam-root/bench/lib/ipaddr-sexp -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-ec -I /tmp/tmp-scratch/opam-root/bench/lib/asn1-combinators -I /tmp/tmp-scratch/opam-root/bench/lib/gmap -I /tmp/tmp-scratch/opam-root/bench/lib/pbkdf -I /tmp/tmp-scratch/opam-root/bench/lib/x509 -I /tmp/tmp-scratch/opam-root/bench/lib/tls -I /tmp/tmp-scratch/opam-root/bench/lib/tls-mirage -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc-net -I /tmp/tmp-scratch/opam-root/bench/lib/cmdliner -I /tmp/tmp-scratch/opam-root/bench/lib/cstruct-lwt -I /tmp/tmp-scratch/opam-root/bench/lib/extunix -I /tmp/tmp-scratch/opam-root/bench/lib/duration -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng/unix -I /tmp/tmp-scratch/opam-root/bench/lib/mtime -I /tmp/tmp-scratch/opam-root/bench/lib/mtime/clock/os -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng/lwt -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc-unix -I /tmp/tmp-scratch/opam-root/bench/lib/base/base_internalhash_types -I /tmp/tmp-scratch/opam-root/bench/lib/base/shadow_stdlib -I /tmp/tmp-scratch/opam-root/bench/lib/base -I /tmp/tmp-scratch/opam-root/bench/lib/stdio -I /tmp/tmp-scratch/opam-root/bench/lib/capnp/unix -I /tmp/tmp-scratch/opam-root/bench/lib/logs -l NNLearner -l /tmp/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record plugins/rtauto/Rtauto.v -l /tmp/tmp-scratch/BenchParams.v)
