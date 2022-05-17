@@ -2,7 +2,2173 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (monitor.ml.Error ("OpamStd.OpamSys.Exit(5)")
- ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-  "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-  "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r" ""))))
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Relations_2_facts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Relations_2_facts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Sets/Relations_2_facts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record plugins/ssr/ssrbool.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record plugins/ssr/ssrbool.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Specif.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Specif.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -noinit -R theories Coq theories/Init/Specif.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Powerset_facts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Powerset_facts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Sets/Powerset_facts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Specif.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Specif.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -noinit -R theories Coq theories/Init/Specif.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record plugins/ssr/ssrbool.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Lists/Streams.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Lists/Streams.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Lists/Streams.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/ssrbool.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record plugins/ssr/ssrbool.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Powerset_facts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Powerset_facts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Sets/Powerset_facts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/Orders.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/Orders.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Structures/Orders.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Eqdep_dec.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Eqdep_dec.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Eqdep_dec.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/EqdepFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/EqdepFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/EqdepFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Relations_2_facts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Sets/Relations_2_facts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Sets/Relations_2_facts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrdersFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrdersFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Structures/OrdersFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrdersFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Structures/OrdersFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Structures/OrdersFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Logic/Hurkens.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/Hurkens.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Relations/Operators_Properties.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Relations/Operators_Properties.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo.bench /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Numbers/DecimalFacts.vo /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Numbers/DecimalFacts.v -l /lscratch/blaaulas/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("Access denied: user blaaulas (uid=50338) has no active jobs on this node."
+    "Authentication failed.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("Access denied: user blaaulas (uid=50338) has no active jobs on this node."
+    "Authentication failed.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("Access denied: user blaaulas (uid=50338) has no active jobs on this node."
+    "Authentication failed.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-05.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-05.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-07.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("ssh_exchange_identification: Connection closed by remote host\r"
+    "rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]"
+    "rsync error: unexplained error (code 255) at io.c(226) [Receiver=3.1.2]"
+    ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-06.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob node-head.ciirc.cvut.cz:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-06.cluster closed by remote host.\r" ""))))
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-head.ciirc.cvut.cz rsync -qa
+    node-06.cluster:/lscratch/blaaulas/tmp-scratch/
+    /lscratch/blaaulas/tmp-scratch/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr
+   ("packet_write_wait: Connection to 10.35.1.8 port 22: Broken pipe\r"
+    "rsync: connection unexpectedly closed (283279138 bytes received so far) [receiver]"
+    "rsync error: error in rsync protocol data stream (code 12) at io.c(226) [receiver=3.1.2]"
+    "rsync: connection unexpectedly closed (220892 bytes received so far) [generator]"
+    "rsync error: unexplained error (code 255) at io.c(226) [generator=3.1.2]"
+    ""))))
