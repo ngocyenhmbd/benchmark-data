@@ -2,838 +2,871 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: ("Process.run failed"
- ((prog ssh)
-  (args
-   (node-07.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
-    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
-    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
-    opam-root/bench/.opam-switch/build/dune.* --exclude
-    opam-root/bench/.opam-switch/build/dose3.* --exclude
-    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
-    --exclude *.glob node-06.cluster:/lscratch/blaaulas/tmp-scratch4/
-    /lscratch/blaaulas/tmp-scratch4/))
-  (exit_status (Exit_non_zero 23)) (stdout "")
-  (stderr
-   ("ERROR: opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/plugins/ssr/.ssrbool.aux failed verification -- update discarded."
-    "rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1651) [generator=3.1.2]"
-    ""))))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 34371)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43987)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 35205)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 33056)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: Termination request received: sigint
 Fatal benchmarking error: Initial build did not fully complete
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 41967)))
+  ("Client connected via TCP" (node-06.cluster 38905)))
  (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 37589)))
+  ("Client connected via TCP" (node-06.cluster 33666)))
  (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 41481)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 42905)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 33213)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 43135)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 37073)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: (4e5ebe07-2093-3192-06ca-03289a9630cd
- (monitor.ml.Error
-  ("write to closed pipe"
-   (pipe
-    ((id 3) (buffer ()) (size_budget 0) (pushback (Full ()))
-     (num_values_read 29) (blocked_flushes ()) (blocked_reads ())
-     (closed (Full ())) (read_closed (Full ()))
-     (consumers
-      (((pipe_id 3) (values_read Have_been_sent_downstream)
-        (downstream_flushed <fun>))))
-     (upstream_flusheds ()))))
-  ("Raised at Base__Error.raise in file \"src/error.ml\" (inlined), line 8, characters 14-30"
-   "Called from Base__Error.raise_s in file \"src/error.ml\", line 9, characters 19-40"
-   "Called from Async_kernel__Pipe.write_without_pushback in file \"src/pipe.ml\", line 515, characters 2-15"
-   "Called from Async_kernel__Pipe.write in file \"src/pipe.ml\" (inlined), line 521, characters 2-32"
-   "Called from Dune__exe__Main.Cmd_worker.T.Functions.process_impl.(fun).loop.(fun) in file \"src/benchmark/main.ml\", line 162, characters 25-51"
-   "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
-   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 35878)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 46151)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 44150)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 39286)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 38843)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 40901)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36557)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 46192)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 34974)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 45353)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 39829)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 46769)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 41621)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 45542)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36049)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 44667)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36525)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 46642)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 41368)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 35196)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 34703)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 45268)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 46156)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 45778)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 33400)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 33073)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 44461)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 34446)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 39488)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36168)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 43056)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 44464)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 43370)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: (5bfb8233-56e1-3142-5614-f49a31ddf969
- (monitor.ml.Error
-  ("write to closed pipe"
-   (pipe
-    ((id 3) (buffer ()) (size_budget 0) (pushback (Full ()))
-     (num_values_read 21) (blocked_flushes ()) (blocked_reads ())
-     (closed (Full ())) (read_closed (Full ()))
-     (consumers
-      (((pipe_id 3) (values_read Have_been_sent_downstream)
-        (downstream_flushed <fun>))))
-     (upstream_flusheds ()))))
-  ("Raised at Base__Error.raise in file \"src/error.ml\" (inlined), line 8, characters 14-30"
-   "Called from Base__Error.raise_s in file \"src/error.ml\", line 9, characters 19-40"
-   "Called from Async_kernel__Pipe.write_without_pushback in file \"src/pipe.ml\", line 515, characters 2-15"
-   "Called from Async_kernel__Pipe.write in file \"src/pipe.ml\" (inlined), line 521, characters 2-32"
-   "Called from Dune__exe__Main.Cmd_worker.T.Functions.process_impl.(fun).loop.(fun) in file \"src/benchmark/main.ml\", line 162, characters 25-51"
-   "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
-   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 34519)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 42103)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 36497)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 40369)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 37579)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 35106)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 37772)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 46320)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 40791)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 39258)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 35078)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 34684)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 37499)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 41726)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 43061)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 38285)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 46415)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 41754)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 34305)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 43918)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 42096)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39456)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 41077)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 42650)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36208)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36241)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 34692)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39647)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37192)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 35676)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 35751)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37814)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 38249)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 44083)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 40608)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 35092)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 33039)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36002)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36042)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 41801)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 33753)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 45187)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 33146)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 46429)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37288)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 42266)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 41787)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37995)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 46096)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 38072)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43794)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 32932)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 41367)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 44632)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 46543)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39655)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43773)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43612)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 40478)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 42883)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39661)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 34539)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 33869)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 45673)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 42828)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39117)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 44392)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43823)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 45521)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 41722)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 46673)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 34459)))
- (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 35551)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 42161)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 33837)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 42271)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 43662)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 43348)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 45141)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 43351)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 45113)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 45198)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 33973)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 41196)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 37394)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 42861)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 43395)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36190)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 44264)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 42841)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 38399)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 41173)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 40914)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 37747)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 35040)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36782)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 34416)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36010)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 40441)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 35628)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43414)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 38383)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 34886)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 33294)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 38411)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39580)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 33139)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 42067)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 42357)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43679)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
   ("Client connected via TCP" (node-06.cluster 36289)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41149)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35421)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35159)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41613)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 44473)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 43016)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 42316)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35875)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 38729)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39024)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35725)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35524)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39080)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 40162)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 45837)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 44724)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 32867)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33030)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 34330)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 38125)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 34134)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 38559)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 34691)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 45606)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 34764)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35690)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39735)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 38622)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 37345)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41806)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 37086)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 34025)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39650)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 38630)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 46259)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 32809)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 37630)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 38153)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 44269)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 34632)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 32889)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 36258)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 33149)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 42767)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 41647)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 33100)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 41781)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 34040)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 38935)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 44274)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 34720)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 42368)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 44403)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37025)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 42220)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39050)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35293)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35185)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 43785)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39813)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45315)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39796)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 43282)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44227)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41870)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45405)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 33349)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37668)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 33927)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41078)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45048)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 36638)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 36010)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 46833)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 32893)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44968)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40121)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41485)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40244)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45017)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35824)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40097)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39925)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44778)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 43594)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41531)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 43316)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35032)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44474)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44377)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 42792)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 42226)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44472)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 46560)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37203)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35746)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 42411)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37151)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 38886)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 46793)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41431)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45224)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 38594)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44380)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37671)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 33665)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40483)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39411)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45805)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 42295)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 35933)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 35099)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 37224)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 36826)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 45214)))
+  ("Client connected via TCP" (node-06.cluster 44367)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 39895)))
+  ("Client connected via TCP" (node-06.cluster 37055)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 39604)))
+  ("Client connected via TCP" (node-06.cluster 43403)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 39258)))
+  ("Client connected via TCP" (node-06.cluster 38117)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 42385)))
+  ("Client connected via TCP" (node-06.cluster 35957)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 38885)))
+  ("Client connected via TCP" (node-06.cluster 33429)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 37241)))
+  ("Client connected via TCP" (node-06.cluster 40808)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 44446)))
+  ("Client connected via TCP" (node-06.cluster 34118)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 44777)))
+  ("Client connected via TCP" (node-06.cluster 33148)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 39737)))
+  ("Client connected via TCP" (node-06.cluster 46411)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 33260)))
+  ("Client connected via TCP" (node-06.cluster 44260)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 35683)))
+  ("Client connected via TCP" (node-06.cluster 43657)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 34177)))
+  ("Client connected via TCP" (node-06.cluster 43176)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 43740)))
+  ("Client connected via TCP" (node-06.cluster 37673)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 45240)))
+  ("Client connected via TCP" (node-06.cluster 40841)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 42736)))
+  ("Client connected via TCP" (node-06.cluster 38979)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 42961)))
+  ("Client connected via TCP" (node-07.cluster 45456)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 38687)))
+  ("Client connected via TCP" (node-07.cluster 34625)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 36075)))
+  ("Client connected via TCP" (node-07.cluster 37210)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 37315)))
+  ("Client connected via TCP" (node-06.cluster 45941)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 34978)))
+  ("Client connected via TCP" (node-06.cluster 38847)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 43974)))
+  ("Client connected via TCP" (node-07.cluster 32934)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 36932)))
+  ("Client connected via TCP" (node-07.cluster 44520)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 38623)))
+  ("Client connected via TCP" (node-07.cluster 44998)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 36241)))
+  ("Client connected via TCP" (node-06.cluster 42327)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 32965)))
+  ("Client connected via TCP" (node-07.cluster 38316)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 37845)))
+  ("Client connected via TCP" (node-06.cluster 36719)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 46828)))
+  ("Client connected via TCP" (node-06.cluster 42583)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 34225)))
+  ("Client connected via TCP" (node-06.cluster 35546)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 45403)))
+  ("Client connected via TCP" (node-07.cluster 43990)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 35965)))
+  ("Client connected via TCP" (node-07.cluster 44584)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 45662)))
+  ("Client connected via TCP" (node-07.cluster 34426)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 34166)))
+  ("Client connected via TCP" (node-06.cluster 42657)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 41449)))
+  ("Client connected via TCP" (node-07.cluster 39110)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 40245)))
+  ("Client connected via TCP" (node-06.cluster 45743)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 43660)))
+  ("Client connected via TCP" (node-07.cluster 39969)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 45303)))
+  ("Client connected via TCP" (node-06.cluster 35405)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 39928)))
+  ("Client connected via TCP" (node-06.cluster 35675)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 34237)))
+  ("Client connected via TCP" (node-07.cluster 32971)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 41482)))
+  ("Client connected via TCP" (node-06.cluster 40931)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 37336)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35135)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41637)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 43545)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35241)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35249)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35977)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45593)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 34509)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 37050)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41955)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45499)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41668)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39750)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35515)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39576)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 46593)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39675)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33718)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 46147)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37252)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41261)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 34568)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41199)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33182)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45132)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 37365)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41922)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 36497)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33119)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41955)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 32794)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 42509)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44352)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 43213)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35177)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 43941)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45989)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 40005)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41545)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45266)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37070)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33418)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 34243)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37155)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 33043)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37787)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 43081)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37137)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 38302)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39233)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33042)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39670)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 45831)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 40371)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 43684)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 42863)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39096)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 43068)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
@@ -841,129 +874,45 @@ Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 35198)))
+  ("Client connected via TCP" (node-07.cluster 46676)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 45996)))
+  ("Client connected via TCP" (node-07.cluster 33488)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 37921)))
+  ("Client connected via TCP" (node-07.cluster 38361)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 37089)))
+  ("Client connected via TCP" (node-07.cluster 39317)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 39708)))
+  ("Client connected via TCP" (node-07.cluster 36191)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 45272)))
+  ("Client connected via TCP" (node-07.cluster 37825)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 42968)))
+  ("Client connected via TCP" (node-07.cluster 46089)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 43605)))
+  ("Client connected via TCP" (node-07.cluster 34471)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 38984)))
+  ("Client connected via TCP" (node-07.cluster 33963)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-06.cluster 41655)))
+  ("Client connected via TCP" (node-07.cluster 33240)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-07.cluster 42296)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 36740)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 41119)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36155)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39186)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-06.cluster 32793)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43271)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36723)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36674)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 39923)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 33976)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 44325)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37340)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 35535)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37675)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37385)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 43857)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 37270)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 36263)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 38881)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 33345)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-07.cluster 40749)))
+  ("Client connected via TCP" (node-07.cluster 46809)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))

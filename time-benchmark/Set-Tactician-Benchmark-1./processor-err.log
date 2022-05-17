@@ -2,10 +2,11 @@ tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to 
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861677.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861677.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861565.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
@@ -39,193 +40,251 @@ tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to 
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-2022-05-17 23:37:53.037396+02:00 Error Rpc_parallel: (monitor.ml.Error
-  ("write to closed pipe"
-    (pipe
-      ((id 3) (buffer ()) (size_budget 0) (pushback (Full ()))
-        (num_values_read 21) (blocked_flushes ()) (blocked_reads ())
-        (closed (Full ())) (read_closed (Full ()))
-        (consumers
-          (((pipe_id 3) (values_read Have_been_sent_downstream)
-             (downstream_flushed <fun>))))
-        (upstream_flusheds ()))))
-  ("Raised at Base__Error.raise in file \"src/error.ml\" (inlined), line 8, characters 14-30"
-    "Called from Base__Error.raise_s in file \"src/error.ml\", line 9, characters 19-40"
-    "Called from Async_kernel__Pipe.write_without_pushback in file \"src/pipe.ml\", line 515, characters 2-15"
-    "Called from Async_kernel__Pipe.write in file \"src/pipe.ml\" (inlined), line 521, characters 2-32"
-    "Called from Dune__exe__Main.Cmd_worker.T.Functions.process_impl.(fun).loop.(fun) in file \"src/benchmark/main.ml\", line 162, characters 25-51"
-slurmstepd: error: *** STEP 1861552.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861555.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861564.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861554.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861568.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861557.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861569.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861564.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861561.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861558.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861563.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861560.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861558.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861563.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861565.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861559.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861557.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861551.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861553.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861554.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861562.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861570.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861561.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861559.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861553.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861551.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-slurmstepd: error: *** STEP 1861570.0 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
-    "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
-    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
-slurmstepd: error: *** STEP 1861562.1 ON node-06 CANCELLED AT 2022-05-17T23:37:53 ***
+slurmstepd: error: *** STEP 1861683.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861668.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861669.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861671.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861666.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861669.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861675.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861673.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861682.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861676.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861671.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861670.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861682.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861684.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861668.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861667.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861684.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861678.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861681.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861678.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861679.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861685.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861673.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861680.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861685.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861681.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861674.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861676.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861675.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861683.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861670.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861680.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861679.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861674.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861672.0 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861667.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861672.1 ON node-06 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861717.1 ON node-02 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861717.0 ON node-02 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-tactician-benchmark: error: node-07: task 0: Exited with exit code 254
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861612.0 ON node-06 CANCELLED AT 2022-05-17T23:37:58 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861616.1 ON node-06 CANCELLED AT 2022-05-17T23:37:58 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861618.1 ON node-06 CANCELLED AT 2022-05-17T23:37:58 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861619.1 ON node-06 CANCELLED AT 2022-05-17T23:37:58 ***
-slurmstepd: error: *** STEP 1861610.1 ON node-06 CANCELLED AT 2022-05-17T23:37:58 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861620.1 ON node-06 CANCELLED AT 2022-05-17T23:37:58 ***
+slurmstepd: error: *** STEP 1861690.1 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861615.1 ON node-06 CANCELLED AT 2022-05-17T23:37:58 ***
-slurmstepd: error: *** STEP 1861609.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861711.1 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861711.0 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861617.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861695.1 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861695.0 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861614.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
-slurmstepd: error: *** STEP 1861611.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861613.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
+slurmstepd: error: *** STEP 1861686.1 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861623.0 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861629.1 ON node-07 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861625.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
-slurmstepd: error: *** STEP 1861621.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861644.1 ON node-07 CANCELLED AT 2022-05-17T23:37:59 ***
-slurmstepd: error: *** STEP 1861645.1 ON node-07 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861630.1 ON node-07 CANCELLED AT 2022-05-17T23:37:59 ***
-slurmstepd: error: *** STEP 1861632.1 ON node-07 CANCELLED AT 2022-05-17T23:37:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861626.1 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
-slurmstepd: error: *** STEP 1861624.0 ON node-06 CANCELLED AT 2022-05-17T23:37:59 ***
-slurmstepd: error: *** STEP 1861622.1 ON node-06 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861628.1 ON node-06 CANCELLED AT 2022-05-17T23:38:00 ***
-slurmstepd: error: *** STEP 1861643.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
+slurmstepd: error: *** STEP 1861697.1 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861697.0 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861687.1 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861691.1 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861687.0 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
+slurmstepd: error: *** STEP 1861691.0 ON node-07 CANCELLED AT 2022-05-17T23:40:50 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861736.0 ON node-06 CANCELLED AT 2022-05-17T23:40:53 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861656.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
-slurmstepd: error: *** STEP 1861655.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861726.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861651.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
+slurmstepd: error: *** STEP 1861729.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861659.0 ON node-06 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861728.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
+slurmstepd: error: *** STEP 1861733.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861725.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
+slurmstepd: error: *** STEP 1861724.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
+slurmstepd: error: *** STEP 1861752.1 ON node-07 CANCELLED AT 2022-05-17T23:40:56 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861647.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861735.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
+slurmstepd: error: *** STEP 1861764.1 ON node-07 CANCELLED AT 2022-05-17T23:40:56 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861653.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
-slurmstepd: error: *** STEP 1861641.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
-slurmstepd: error: *** STEP 1861658.1 ON node-06 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861646.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861727.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
+slurmstepd: error: *** STEP 1861732.1 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
+slurmstepd: error: *** STEP 1861732.0 ON node-06 CANCELLED AT 2022-05-17T23:40:56 ***
+slurmstepd: error: *** STEP 1861753.1 ON node-07 CANCELLED AT 2022-05-17T23:40:56 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861660.1 ON node-06 CANCELLED AT 2022-05-17T23:38:00 ***
-slurmstepd: error: *** STEP 1861661.1 ON node-06 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861759.0 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
+slurmstepd: error: *** STEP 1861759.1 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
+slurmstepd: error: *** STEP 1861734.1 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861761.1 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861731.1 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
+slurmstepd: error: *** STEP 1861730.1 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861636.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
+slurmstepd: error: *** STEP 1861776.1 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861640.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
-slurmstepd: error: *** STEP 1861642.1 ON node-07 CANCELLED AT 2022-05-17T23:38:00 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861756.0 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861652.0 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
+slurmstepd: error: *** STEP 1861751.0 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861654.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
-slurmstepd: error: *** STEP 1861652.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861751.1 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
+slurmstepd: error: *** STEP 1861737.0 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861634.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
-slurmstepd: error: *** STEP 1861635.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861738.1 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
+slurmstepd: error: *** STEP 1861749.1 ON node-06 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861638.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
-slurmstepd: error: *** STEP 1861631.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
-slurmstepd: error: *** STEP 1861639.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861774.0 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
+slurmstepd: error: *** STEP 1861774.1 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861755.1 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861633.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
-slurmstepd: error: *** STEP 1861648.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861763.1 ON node-07 CANCELLED AT 2022-05-17T23:40:57 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
-slurmstepd: error: *** STEP 1861650.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
-slurmstepd: error: *** STEP 1861637.1 ON node-07 CANCELLED AT 2022-05-17T23:38:01 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861748.0 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861745.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861775.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861766.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861746.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861746.0 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861741.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861768.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861744.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861742.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861770.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861740.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861772.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861743.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861767.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861747.1 ON node-06 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861778.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861757.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861777.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861773.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+slurmstepd: error: *** STEP 1861760.1 ON node-07 CANCELLED AT 2022-05-17T23:40:58 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861765.1 ON node-07 CANCELLED AT 2022-05-17T23:40:59 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861769.1 ON node-07 CANCELLED AT 2022-05-17T23:40:59 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861758.1 ON node-07 CANCELLED AT 2022-05-17T23:40:59 ***
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1861779.1 ON node-07 CANCELLED AT 2022-05-17T23:40:59 ***
+slurmstepd: error: *** STEP 1861771.1 ON node-07 CANCELLED AT 2022-05-17T23:40:59 ***
 tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
