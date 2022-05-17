@@ -1,35 +1,68 @@
-Coq.Classes.Equivalence.equiv_transitive_obligation_1	1	5.129.65	synth with cache (only 1: intros n m; only 1: intros [HypL HypR]; only 1: eauto).	0.687764	991
-Coq.Classes.Morphisms_Prop.Acc_pt_morphism	1
-Coq.Classes.Equivalence.Respecting.respecting_equiv_obligation_3	1
-Coq.Classes.Equivalence.pointwise_reflexive	1	0	synth with cache (only 1: simpl_relation).	0.022436	1
-Coq.Classes.Equivalence.pointwise_symmetric	1	0	synth with cache (only 1: firstorder).	0.014660	1
-Coq.Classes.Equivalence.pointwise_transitive	1	0	synth with cache (only 1: firstorder).	0.016585	1
-Coq.Classes.Morphisms_Prop.Acc_rel_morphism	1
-Coq.Classes.Equivalence.pointwise_equivalence	1	0	synth with cache (only 1: firstorder).	0.623769	1
-Coq.Classes.Morphisms_Prop.well_founded_morphism	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_wd	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_1_l	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_0_r	1	0.0.1.2.0.320.0	synth with cache (only 1: intros n; only 1: CRelationClasses.reduce; only 1: exists 0; only 1: nzinduct n; only 1: now nzsimpl; only 1: intros; only 1: now nzsimpl).	0.674759	453
-Coq.Numbers.NatInt.NZDiv.NZDivProp.div_mod_unique	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_0_l	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.div_unique	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.eq_mul_1_nonneg	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.mod_unique	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.eq_mul_1_nonneg'	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.div_unique_exact	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_1_r_nonneg	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.div_same	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_refl	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.mod_same	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_trans	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.div_small	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.divide_antisym_nonneg	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.mod_small	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.mul_divide_mono_l	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.div_0_l	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.mul_divide_mono_r	1	0.68.0.0	synth with cache (only 1: intros n m p (q, Hq); only 1: exists q; only 1: rewrite (mul_comm n p), (mul_comm m p); only 1: now rewrite mul_shuffle3, Hq).	0.879314	965
-Coq.Numbers.NatInt.NZDiv.NZDivProp.mod_0_l	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.mul_divide_cancel_l	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.div_1_r	1
-Coq.Numbers.NatInt.NZGcd.NZGcdProp.mul_divide_cancel_r	1
-Coq.Numbers.NatInt.NZDiv.NZDivProp.mod_1_r	1
+Coq.Classes.CEquivalence.equiv_transitive_obligation_1	1	66.2.3.1.66	synth with cache (only 1: intros Hfst Hsnd; only 1: firstorder; only 1: transitivity y; only 1: auto; only 1: Notations.assumption).	0.984357	1832
+Coq.Numbers.DecimalFacts.uint_dec	1
+Coq.Numbers.DecimalFacts.rev_revapp	1
+Coq.Classes.CEquivalence.Respecting.respecting_equiv_obligation_3	1
+Coq.Classes.CEquivalence.pointwise_reflexive	1	2	synth with cache (only 1: simpl_crelation).	0.014419	3
+Coq.Classes.CEquivalence.pointwise_symmetric	1	0	synth with cache (only 1: firstorder).	0.008364	1
+Coq.Classes.CEquivalence.pointwise_transitive	1	0	synth with cache (only 1: firstorder).	0.013433	1
+Coq.Classes.CEquivalence.pointwise_equivalence	1	0	synth with cache (only 1: firstorder).	0.431960	1
+Coq.Numbers.DecimalFacts.rev_rev	1
+Coq.Numbers.DecimalFacts.nzhead_revapp_0	1
+Coq.Structures.GenericMinMax.GenericMinMax.ge_not_lt	1
+Coq.Structures.GenericMinMax.GenericMinMax.max_l	1
+Coq.Structures.GenericMinMax.GenericMinMax.max_r	1
+Coq.Numbers.DecimalFacts.nzhead_revapp	1
+Coq.Structures.GenericMinMax.GenericMinMax.min_l	1
+Coq.Structures.GenericMinMax.GenericMinMax.min_r	1	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold min, gmin; only 1: case compare_spec; only 1: auto with relations; only 1: intros; only 1: elim (ge_not_lt x y); only 1: auto; only 1: auto; only 1: auto with relations).	0.126425	127
+Coq.Numbers.DecimalFacts.nzhead_rev	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_spec	1
+Coq.Numbers.DecimalFacts.rev_nztail_rev	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_spec_le	1	0.0.0.0.0.0.0.0.0.0.1.0.1	synth with cache (only 1: destruct (lt_total n m); only 1: left; only 1: split; only 1: rewrite le_lteq; only 1: auto; only 1: apply max_r; only 1: rewrite le_lteq; only 1: auto; only 1: right; only 1: assert (m <= n) by (rewrite le_lteq; intuition); only 1: split; only 1: auto; only 1: now apply max_l).	0.423193	500
+Coq.Numbers.DecimalFacts.revapp_nil_inv	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.Proper_instance_0	1
+Coq.Numbers.DecimalFacts.rev_nil_inv	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_compat	1
+Coq.Numbers.DecimalFacts.rev_lnorm_rev	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_unicity	1
+Coq.Numbers.DecimalFacts.nzhead_nonzero	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_unicity_ext	1
+Coq.Numbers.DecimalFacts.unorm_0	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_mono	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_id	1	3.2	synth with cache (only 1: apply max_r; only 1: order).	0.057286	118
+Coq.Numbers.DecimalFacts.unorm_nonnil	1	0.0.0.0.0.0.0.0.0.0.0.0.0.0.66	synth with cache (only 1: red; only 1: unfold unorm; only 1: generalize (nzhead_nonzero d); only 1: destruct nzhead; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]; only 1: intros H [=]).	0.774835	486
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_assoc	1
+Coq.Numbers.DecimalFacts.nzhead_invol	1
+Coq.Numbers.DecimalFacts.unorm_invol	1	0	synth with cache (only 1: now induction d).	0.012781	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_comm	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.le_max_l	1	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8	synth with cache (only 1: pose proof (max_spec n m) as Hm; only 1: destruct (lt_total n m); only 1: destruct (lt_total n m); only 1: intuition; only 1: order; only 1: order; only 1: intuition; only 1: order; only 1: order; only 1: order; only 1: order; only 1: destruct (lt_total n m); only 1: intuition; only 1: order; only 1: order; only 1: order; only 1: order; only 1: intuition; only 1: order; only 1: order; only 1: order; only 1: order; only 1: order; only 1: order; only 1: order; only 1: order).	0.527936	719
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.le_max_r	1	0	synth with cache (only 1: solve_max).	0.014444	1
+Coq.Numbers.DecimalFacts.norm_invol	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_l_iff	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_r_iff	1	1	synth with cache (only 1: solve_max).	0.029534	20
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_le	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_le_iff	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.pow_sub_r	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_lt_iff	1	0.0.0.0.0.0.0.1.0	synth with cache (only 1: split; only 1: destruct (max_spec n m); only 1: right; only 1: intuition; only 1: order; only 1: left; only 1: intuition; only 1: order; only 1: solve_max).	0.292012	108
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_lub_l	1	2	synth with cache (only 1: solve_max).	0.031642	15
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_lub_r	1	0	synth with cache (only 1: solve_max).	0.018161	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_lub	1	3	synth with cache (only 1: solve_max).	0.044271	18
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_lub_iff	1	4	synth with cache (only 1: solve_max).	0.231795	170
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_lub_lt	1	0	synth with cache (only 1: solve_max).	0.018374	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_lub_lt_iff	1	2	synth with cache (only 1: solve_max).	0.112592	40
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.pow_div_l	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_proper	1	1.0	synth with cache (only 1: intros x x' EQ; only 1: now f_equiv).	0.066567	67
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_le_compat_l	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_le_compat_r	1	0.0.0	synth with cache (only 1: intros; only 1: apply max_lub_iff; only 1: solve_max).	0.030558	3
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.max_le_compat	1	0.0.1	synth with cache (only 1: intros; only 1: apply max_lub_iff; only 1: solve_max).	0.053748	4
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.exists_div2	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.min_spec	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_0_r	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.min_spec_le	1	0.0.0.0.0.0.0.0.0.0.0.0.1	synth with cache (only 1: destruct (lt_total n m); only 1: left; only 1: split; only 1: rewrite le_lteq; only 1: auto; only 1: apply min_l; only 1: rewrite le_lteq; only 1: auto; only 1: right; only 1: assert (m <= n) by (rewrite le_lteq; intuition); only 1: split; only 1: auto; only 1: now apply min_r).	0.294049	237
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_succ_r	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.min_compat	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_spec'	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.min_unicity	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_spec	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.min_unicity_ext	1
+Coq.Structures.GenericMinMax.MinMaxLogicalProperties.min_mono	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_true	1
