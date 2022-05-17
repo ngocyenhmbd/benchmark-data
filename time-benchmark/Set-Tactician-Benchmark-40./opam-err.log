@@ -1,1 +1,33 @@
-[ERROR] coq-tactician-stdlib unknown package
+[NOTE] coq-tactician-stdlib is not installed.
+
+[NOTE] Package coq-tactician is already pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#time-benchmark (version dev).
+[NOTE] Package coq-tactician is already installed (current version is dev).
+[NOTE] Package coq-tactician is already installed (current version is dev).
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j55".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-05-16 16:50
+# path                 /lscratch/blaaulas/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /lscratch/blaaulas/tmp-scratch/opam-root/bench/bin/tactician exec -- make -j55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tmp-scratch/opam-root/log/coq-tactician-stdlib-37625-415443.env
+# output-file          /lscratch/blaaulas/tmp-scratch/opam-root/log/coq-tactician-stdlib-37625-415443.out
+### output ###
+# [...]
+# Linking user-contrib/Ltac2/ltac2_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ssreflect_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ltac1_record_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ltac1_tactics_plugin.cmxs
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# Error: while loading
+# /lscratch/blaaulas/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician/tactician_ltac1_record_plugin.cmxs:
+# implementation mismatch on Univ
+# 
+# make: *** [theories/Init/Notations.vo] Error 1
+
+tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1856933.0 ON node-02 CANCELLED AT 2022-05-17T02:15:34 ***
+tactician-benchmark: error: node-02: task 0: Exited with exit code 1
+Abnormal exit code for build worker on host node-02.cluster. Code: 1
