@@ -1,75 +1,491 @@
-Coq.Classes.CMorphisms.Proper.eq_proper_proxy	1	1	synth with cache (only 1: Notations.reflexivity).	0.008226	2
-Coq.Classes.CMorphisms.Proper.reflexive_proper_proxy	1	1	synth with cache (only 1: firstorder).	0.008474	2
-Coq.Classes.CMorphisms.Proper.proper_proper_proxy	1	0	synth with cache (only 1: firstorder).	0.007121	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	1	66.0	synth with cache (only 1: intro A; only 1: auto  10 with sets).	0.041302	14
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	1	0	synth with cache (only 1: auto  6 with sets).	0.015058	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	1	0.7	synth with cache (only 1: unfold Add at 1; only 1: auto  6 with sets).	0.153111	237
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	1	0	synth with cache (only 1: auto with sets).	0.012801	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_commutative	1	0	synth with cache (only 1: auto with sets).	0.013838	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_associative	1	1.132.195	synth with cache (only 1: intros H ?; only 1: generalize Inclusion_is_transitive; only 1: auto  10 with sets).	0.731145	925
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_idempotent	1	0	synth with cache (only 1: auto  6 with sets).	0.013998	1
-Coq.Classes.CMorphisms.Relations.pointwise_pointwise	1
-Coq.Classes.CMorphisms.Relations.subrelation_id_proper	1	3	synth with cache (only 1: apply H).	0.007845	4
-Coq.Classes.CMorphisms.Relations.subrelation_respectful	1	0	synth with cache (only 1: firstorder).	0.008959	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_absorbs	1	1.128	synth with cache (only 1: intro IT; only 1: auto  6 with sets).	0.059283	23
-Coq.Classes.CMorphisms.Relations.subrelation_refl	1	1.0.0	synth with cache (only 1: hnf; only 1: intros x y H'; only 1: assumption).	0.011805	4
-Coq.Classes.CMorphisms.Relations.subrelation_proper	1	0	synth with cache (only 1: firstorder).	0.010108	1
-Coq.Classes.CMorphisms.Relations.proper_subrelation_proper_arrow	1	0	synth with cache (only 1: simpl_crelation).	0.012788	1
-Coq.Classes.CMorphisms.Relations.pointwise_subrelation	1	1	synth with cache (only 1: firstorder).	0.009296	2
-Coq.Classes.CMorphisms.Relations.forall_subrelation	1	2.4.128.1.1	synth with cache (only 1: intro; only 1: hnf; only 1: intros H; only 1: reduce; only 1: firstorder).	0.508546	989
-Coq.Classes.CMorphisms.iff_impl_subrelation	1	0	synth with cache (only 1: simpl_crelation).	0.012146	1
-Coq.Classes.CMorphisms.iff_flip_impl_subrelation	1	0	synth with cache (only 1: firstorder).	0.006792	1
-Coq.Classes.CMorphisms.iffT_arrow_subrelation	1	0.0	synth with cache (only 1: reduce; only 1: firstorder).	0.009908	2
-Coq.Classes.CMorphisms.iffT_flip_arrow_subrelation	1	0	synth with cache (only 1: firstorder).	0.008343	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	1	66.0	synth with cache (only 1: intro A; only 1: auto  10 with sets).	0.044556	14
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	1	0	synth with cache (only 1: auto  6 with sets).	0.014634	1
+Coq.ssr.ssrfun.unitE	1	65.66.145	synth with cache (only 1: intro H; only 1: Notations.reflexivity || destruct H; only 1: trivial).	0.175486	1051
+Coq.ssr.ssrfun.ExtensionalEquality.frefl	1	2	synth with cache (only 1: Notations.split).	0.010601	3
+Coq.ssr.ssrfun.ExtensionalEquality.fsym	1	0.9	synth with cache (only 1: intros; only 1: by [  ]).	0.071367	158
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	1	0.7	synth with cache (only 1: unfold Add at 1; only 1: auto  6 with sets).	0.156850	237
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	1	0	synth with cache (only 1: auto with sets).	0.014499	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_commutative	1	0	synth with cache (only 1: auto with sets).	0.014624	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_associative	1	1.132.195	synth with cache (only 1: intros H ?; only 1: generalize Inclusion_is_transitive; only 1: auto  10 with sets).	0.746087	925
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_idempotent	1	0	synth with cache (only 1: auto  6 with sets).	0.013650	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_absorbs	1	1.128	synth with cache (only 1: intro IT; only 1: auto  6 with sets).	0.055067	23
+Coq.ssr.ssrfun.ExtensionalEquality.ftrans	1
+Coq.ssr.ssrfun.ExtensionalEquality.rrefl	1	2.0	synth with cache (only 1: intros H ?; only 1: Notations.split).	0.009979	4
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Couple_as_union	1
-Coq.Classes.CMorphisms.GenericInstances.respectful_per_obligation_2	1
-Coq.Classes.CMorphisms.GenericInstances.flip_proper_obligation_1	1	11	synth with cache (only 1: firstorder).	0.082775	201
-Coq.Classes.CMorphisms.GenericInstances.trans_contra_co_type_morphism_obligation_1	1	6	synth with cache (only 1: firstorder).	0.149161	52
+Coq.ssr.ssrfun.Composition.eq_comp	1
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_union	1
-Coq.Classes.CMorphisms.GenericInstances.trans_contra_inv_impl_type_morphism_obligation_1	1	6	synth with cache (only 1: firstorder).	0.508637	647
+Coq.ssr.ssrfun.all_tag	1
+Coq.ssr.ssrfun.all_tag2	1	0	synth with cache (only 1: by move  =>fP; exists (fun x => tag (fP x)) => x; case : (fP x) ).	0.018525	1
+Coq.ssr.ssrfun.Sig.svalP	1	2	synth with cache (only 1: apply proj2_sig).	0.008030	3
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_Couple	1
-Coq.Classes.CMorphisms.GenericInstances.trans_co_impl_type_morphism_obligation_1	1
+Coq.ssr.ssrfun.Sig.s2valP	1
+Coq.ssr.ssrfun.Sig.s2valP'	1	0	synth with cache (only 1: by case : u ).	0.008990	1
+Coq.ssr.ssrfun.all_sig	1	0	synth with cache (only 1: by move  =>fP; exists (fun x => tag (fP x)) => x; case : (fP x) ).	0.013986	1
+Coq.ssr.ssrfun.all_sig2	1	0	synth with cache (only 1: by case /all_tag =>f /all_pair []; exists f).	0.019184	1
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_Couple_Singleton	1
-Coq.Classes.CMorphisms.GenericInstances.trans_sym_co_inv_impl_type_morphism_obligation_1	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_commutative	1	0.0.0.0.0.0.0.0.0.1.129.68	synth with cache (only 1: intro p; only 1: Notations.symmetry; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets).	0.563618	587
-Coq.Classes.CMorphisms.GenericInstances.trans_sym_contra_arrow_morphism_obligation_1	1
+Coq.ssr.ssrfun.Injections.can_pcan	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_commutative	1	0.0.0.0.0.0.0.0.0.1.129.68	synth with cache (only 1: intro p; only 1: Notations.symmetry; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets).	0.580112	587
+Coq.ssr.ssrfun.Injections.pcan_inj	1
+Coq.ssr.ssrfun.Injections.can_inj	1	1	synth with cache (only 1: by move  =>fK x y /(congr1 g); rewrite !fK => [[]]).	0.012369	2
+Coq.ssr.ssrfun.Injections.canLR	1	1.70.68	synth with cache (only 1: intro z; only 1: inversion 1; only 1: trivial).	0.350216	992
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity	1
-Coq.Classes.CMorphisms.GenericInstances.per_partial_app_type_morphism_obligation_1	1	9	synth with cache (only 1: firstorder).	0.325557	278
+Coq.ssr.ssrfun.Injections.canRL	1	64.2	synth with cache (only 1: destruct 2; only 1: intuition).	0.018110	5
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity_l	1
-Coq.Classes.CMorphisms.GenericInstances.trans_co_eq_inv_arrow_morphism_obligation_1	1
+Coq.ssr.ssrfun.Some_inj	1
+Coq.ssr.ssrfun.of_voidK	1	0.132	synth with cache (only 1: intros H; only 1: destruct H).	0.031265	45
+Coq.ssr.ssrfun.esymK	1	0.9.85	synth with cache (only 1: intro p; only 1: destruct p; only 1: Notations.reflexivity).	0.351490	1797
+Coq.ssr.ssrfun.etrans_id	1	0.13	synth with cache (only 1: subst; only 1: Notations.reflexivity).	0.092267	312
+Coq.ssr.ssrfun.InjectionsTheory.inj_id	1	5.0.65	synth with cache (only 1: intros Hfst Hsnd; only 1: destruct 1; only 1: reflexivity).	0.088963	222
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity'	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_add	1	1.0.1.64	synth with cache (only 1: intros x1 H'0; only 1: unfold Add at 1; only 1: unfold Add at 1; only 1: auto  9 with sets).	0.284148	123
-Coq.Classes.CMorphisms.GenericInstances.PER_type_morphism_obligation_1	1
-Coq.Classes.CMorphisms.GenericInstances.symmetric_equiv_flip	1	1	synth with cache (only 1: firstorder).	0.018041	11
-Coq.Classes.CMorphisms.GenericInstances.compose_proper_obligation_1	1	8	synth with cache (only 1: firstorder).	0.132295	99
-Coq.Classes.CMorphisms.GenericInstances.reflexive_eq_dom_reflexive	1	0.195	synth with cache (only 1: intros A P; only 1: simpl_crelation).	0.077447	57
+Coq.ssr.ssrfun.InjectionsTheory.inj_can_sym	1	67.65.82	synth with cache (only 1: intros n m; only 1: intros H; only 1: auto).	0.698772	2074
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_add	1	1.0.1.64	synth with cache (only 1: intros x1 H'0; only 1: unfold Add at 1; only 1: unfold Add at 1; only 1: auto  9 with sets).	0.285841	123
+Coq.ssr.ssrfun.InjectionsTheory.inj_comp	1	2.64.133	synth with cache (only 1: intros h1 h2; only 1: intro x; only 1: auto).	0.159403	249
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Non_disjoint_union	1
-Coq.Classes.CMorphisms.GenericInstances.respectful_morphism	1
-Coq.Classes.CMorphisms.GenericInstances.Reflexive_partial_app_morphism	1	0.5	synth with cache (only 1: reduce; only 1: auto).	0.038905	52
-Coq.Classes.CMorphisms.GenericInstances.flip_respectful	1	0	synth with cache (only 1: firstorder).	0.011908	1
-Coq.Classes.CMorphisms.GenericInstances.flip1	1	0.0	synth with cache (only 1: reduce; only 1: auto).	0.010782	2
-Coq.Classes.CMorphisms.GenericInstances.flip2	1	0	synth with cache (only 1: firstorder).	0.006758	1
-Coq.Classes.CMorphisms.GenericInstances.eq_subrelation	1	2	synth with cache (only 1: simpl_crelation).	0.022232	17
-Coq.Classes.CMorphisms.GenericInstances.reflexive_proper	1	0	synth with cache (only 1: firstorder).	0.008971	1
-Coq.Classes.CMorphisms.GenericInstances.proper_eq	1	0	synth with cache (only 1: firstorder).	0.007351	1
-Coq.Classes.CMorphisms.proper_proper	1	0.0.0.0.0.0.0.0	synth with cache (only 1: reduce; only 1: split; only 1: intros; only 1: subst; only 1: firstorder; only 1: intros; only 1: subst; only 1: firstorder).	0.032682	8
-Coq.Classes.CMorphisms.Normalize.proper_normalizes_proper	1	4	synth with cache (only 1: firstorder).	0.032648	38
-Coq.Classes.CMorphisms.Normalize.flip_atom	1	0	synth with cache (only 1: firstorder).	0.008211	1
+Coq.ssr.ssrfun.InjectionsTheory.inj_compr	1
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Non_disjoint_union'	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.singlx	1	0.0.0.0.0.0.0.2	synth with cache (only 1: unfold Add at 1; only 1: intros x y H'; only 1: elim H'; only 1: intros t H'1; only 1: elim H'1; only 1: intros t H'1; only 1: elim H'1; only 1: auto with sets).	0.601933	590
-Coq.Classes.CMorphisms.flip_arrow	1
-Coq.Classes.CMorphisms.proper_sym_flip	1	0.2	synth with cache (only 1: intros; only 1: simpl_crelation).	0.027961	4
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.incl_add	1	1.0.67	synth with cache (only 1: intro h; only 1: unfold Add; only 1: auto using Union_associative with sets).	0.437733	288
-Coq.Classes.CMorphisms.proper_sym_flip_2	1
+Coq.ssr.ssrfun.InjectionsTheory.can_comp	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.singlx	1	0.0.0.0.0.0.0.2	synth with cache (only 1: unfold Add at 1; only 1: intros x y H'; only 1: elim H'; only 1: intros t H'1; only 1: elim H'1; only 1: intros t H'1; only 1: elim H'1; only 1: auto with sets).	0.625022	590
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.incl_add	1	1.0.67	synth with cache (only 1: intro h; only 1: unfold Add; only 1: auto using Union_associative with sets).	0.407247	288
+Coq.ssr.ssrfun.InjectionsTheory.pcan_pcomp	1
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.incl_add_x	1
-Coq.Classes.CMorphisms.proper_sym_impl_iff	1
-Coq.Classes.CMorphisms.proper_sym_arrow_iffT	1	0.0.0.0.0	synth with cache (only 1: intros A R Sym f Hf x x' Hxx'; only 1: repeat red in Hf; only 1: split; only 1: eauto; only 1: eauto).	0.028359	5
+Coq.ssr.ssrfun.InjectionsTheory.eq_inj	1
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Add_commutative	1
-Coq.Classes.CMorphisms.proper_sym_impl_iff_2	1
-Coq.Classes.CMorphisms.proper_sym_arrow_iffT_2	1	0.0.0.0.0	synth with cache (only 1: intros A R Sym B R' Sym' f Hf x x' Hxx' y y' Hyy'; only 1: repeat red in Hf; only 1: split; only 1: eauto; only 1: eauto).	0.036339	5
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Add_commutative'	1	67.1.64.0.0	synth with cache (only 1: intros A x y; only 1: unfold Add; only 1: intros; only 1: rewrite (Union_associative A (Singleton U x) (Singleton U y)); only 1: auto  10 with sets).	0.774190	304
+Coq.ssr.ssrfun.InjectionsTheory.eq_can	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Add_commutative'	1	67.1.64.0.0	synth with cache (only 1: intros A x y; only 1: unfold Add; only 1: intros; only 1: rewrite (Union_associative A (Singleton U x) (Singleton U y)); only 1: auto  10 with sets).	0.801422	304
+Coq.ssr.ssrfun.InjectionsTheory.inj_can_eq	1
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Add_distributes	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.setcover_intro	1	64.0.1	synth with cache (only 1: intro; only 1: intros A a b H' H'0; only 1: auto  6 with sets).	0.017541	6
-Coq.Classes.CMorphisms.PartialOrder_proper_type	1
-Coq.Classes.CMorphisms.PartialOrder_StrictOrder	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.setcover_intro	1	64.0.1	synth with cache (only 1: intro; only 1: intros A a b H' H'0; only 1: auto  6 with sets).	0.017955	6
+Coq.ssr.ssrfun.Bijections.bij_inj	1
 Coq.Sets.Powerset_facts.Sets_as_an_algebra.Disjoint_Intersection	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_Empty_set_l	1	0	synth with cache (only 1: auto with sets).	0.012480	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_Empty_set_r	1	0.0	synth with cache (only 1: intros; only 1: auto with sets).	0.015799	2
+Coq.ssr.ssrfun.Bijections.bij_can_sym	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Seminus_Empty_set_l	1	1.0.0.1.0.0.1.64	synth with cache (only 1: intros Hfst Hsnd; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x0 H'0; only 1: elim H'0; only 1: auto with sets; only 1: auto with sets).	0.488515	518
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Seminus_Empty_set_r	1	0.0.0.0.1.0.0.0	synth with cache (only 1: intros; only 1: apply Extensionality_Ensembles; only 1: split; only 1: intros x H1; only 1: destruct H1; only 1: unfold In in *; only 1: assumption; only 1: intuition).	0.141682	115
+Coq.ssr.ssrfun.Bijections.bij_can_eq	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Union_l	1
+Coq.ssr.ssrfun.BijectionsTheory.eq_bij	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Union_r	1
+Coq.ssr.ssrfun.BijectionsTheory.bij_comp	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Disjoint_noop	1
+Coq.ssr.ssrfun.BijectionsTheory.bij_can_bij	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Included_empty	1	1.0.0.2.0.0.2.0.0.0	synth with cache (only 1: intros; only 1: apply Extensionality_Ensembles; only 1: split; only 1: intros x H1; only 1: unfold In in *; only 1: exfalso; only 1: inversion_clear H1; only 1: contradict H; only 1: intuition; only 1: intuition).	0.775896	917
+Coq.ssr.ssrfun.Involutions.inv_inj	1
+Coq.ssr.ssrfun.Involutions.inv_bij	1	69.69.25	synth with cache (only 1: exists f; only 1: by [  ]; only 1: by [  ]).	0.558813	2617
+Coq.funind.Recdef.le_lt_SS	1	389	synth with cache (only 1: auto with *).	0.103556	114
+Coq.funind.Recdef.Splus_lt	1	206	synth with cache (only 1: now intuition).	0.197642	852
+Coq.funind.Recdef.SSplus_lt	1	259	synth with cache (only 1: firstorder).	0.180702	277
+Coq.funind.Recdef.max	1
+Coq.PArith.Pnat.Pos2Nat.inj_succ	1
+Coq.PArith.Pnat.Pos2Nat.inj_add	1
+Coq.PArith.Pnat.Pos2Nat.inj_mul	1
+Coq.PArith.Pnat.Pos2Nat.inj_1	1	194.0	synth with cache (only 1: unfold to_nat; only 1: do 2 constructor).	0.040325	13
+Coq.Sets.Integers.Integers_sect.le_reflexive	1	128.0.320	synth with cache (only 1: red; only 1: intros; only 1: easy).	0.024126	29
+Coq.Sets.Integers.Integers_sect.le_antisym	1	0.195	synth with cache (only 1: intro H'0; only 1: PeanoNat.Nat.order).	0.164362	113
+Coq.PArith.Pnat.Pos2Nat.inj_xO	1
+Coq.Sets.Integers.Integers_sect.le_trans	1	0.320.1.0	synth with cache (only 1: red; only 1: intros n m p; only 1: intros H'1 H'2; only 1: PeanoNat.Nat.Private_Tac.order).	0.191475	133
+Coq.Sets.Integers.Integers_sect.le_Order	1	0.0.0.0.0.0.0.0.0.0.0.3.0.0.3	synth with cache (only 1: split; only 1: red; only 1: intros; only 1: PeanoNat.Nat.Private_Tac.order; only 1: red; only 1: intros; only 1: apply PeanoNat.Nat.le_trans with y; only 1: auto; only 1: auto; only 1: red; only 1: intros x y H H'; only 1: rewrite (PeanoNat.Nat.le_antisymm x y); only 1: auto; only 1: auto; only 1: auto).	0.535844	555
+Coq.Sets.Integers.Integers_sect.triv_nat	1	256.0	synth with cache (only 1: intro n; only 1: eexists).	0.020010	14
+Coq.PArith.Pnat.Pos2Nat.inj_xI	1
+Coq.Sets.Integers.Integers_sect.nat_po	1
+Coq.PArith.Pnat.Pos2Nat.is_succ	1
+Coq.Sets.Integers.Integers_sect.le_total_order	1
+Coq.PArith.Pnat.Pos2Nat.is_pos	1
+Coq.Sets.Integers.Integers_sect.Finite_subset_has_lub	1
+Coq.PArith.Pnat.Pos2Nat.id	1
+Coq.Sets.Integers.Integers_sect.Integers_has_no_ub	1
+Coq.PArith.Pnat.Pos2Nat.inj	1
+Coq.Sets.Integers.Integers_sect.Integers_infinite	1
+Coq.PArith.Pnat.Pos2Nat.inj_iff	1
+Coq.PArith.Pnat.Pos2Nat.inj_compare	1
+Coq.PArith.Pnat.Pos2Nat.inj_lt	1
+Coq.PArith.Pnat.Pos2Nat.inj_le	1
+Coq.PArith.Pnat.Pos2Nat.inj_gt	1
+Coq.PArith.Pnat.Pos2Nat.inj_ge	1
+Coq.PArith.Pnat.Pos2Nat.inj_sub	1
+Coq.PArith.Pnat.Pos2Nat.inj_sub_max	1
+Coq.PArith.Pnat.Pos2Nat.inj_pred	1
+Coq.PArith.Pnat.Pos2Nat.inj_pred_max	1
+Coq.PArith.Pnat.Pos2Nat.inj_min	1
+Coq.PArith.Pnat.Pos2Nat.inj_max	1
+Coq.ZArith.Zbool.Zle_cases	1
+Coq.PArith.Pnat.Pos2Nat.inj_iter	1
+Coq.ZArith.Zbool.Zlt_cases	1
+Coq.PArith.Pnat.Nat2Pos.id	1
+Coq.ZArith.Zbool.Zge_cases	1
+Coq.PArith.Pnat.Nat2Pos.id_max	1
+Coq.ZArith.Zbool.Zgt_cases	1
+Coq.PArith.Pnat.Nat2Pos.inj	1
+Coq.ZArith.Zbool.Zle_bool_imp_le	1
+Coq.PArith.Pnat.Nat2Pos.inj_iff	1
+Coq.PArith.Pnat.Nat2Pos.inj_succ	1	0.1.0	synth with cache (only 1: destruct n; only 1: now destruct 1; only 1: trivial).	0.025483	4
+Coq.ZArith.Zbool.Zle_imp_le_bool	1
+Coq.PArith.Pnat.Nat2Pos.inj_pred	1
+Coq.ZArith.Zbool.Zle_bool_antisym	1
+Coq.PArith.Pnat.Nat2Pos.inj_add	1
+Coq.ZArith.Zbool.Zle_bool_trans	1
+Coq.PArith.Pnat.Nat2Pos.inj_mul	1
+Coq.ZArith.Zbool.Zle_bool_total	1
+Coq.PArith.Pnat.Nat2Pos.inj_compare	1
+Coq.ZArith.Zbool.Zle_bool_plus_mono	1
+Coq.ZArith.Zbool.Zone_pos	1	194	synth with cache (only 1: eauto).	0.015918	15
+Coq.PArith.Pnat.Nat2Pos.inj_sub	1
+Coq.ZArith.Zbool.Zone_min_pos	1
+Coq.PArith.Pnat.Nat2Pos.inj_min	1
+Coq.ZArith.Zbool.Zle_is_le_bool	1
+Coq.PArith.Pnat.Nat2Pos.inj_max	1
+Coq.ZArith.Zbool.Zge_is_le_bool	1
+Coq.PArith.Pnat.Pos2SuccNat.id_succ	1
+Coq.ZArith.Zbool.Zlt_is_lt_bool	1
+Coq.PArith.Pnat.Pos2SuccNat.pred_id	1
+Coq.ZArith.Zbool.Zgt_is_gt_bool	1
+Coq.PArith.Pnat.SuccNat2Pos.id_succ	1
+Coq.ZArith.Zbool.Zlt_is_le_bool	1
+Coq.ZArith.Zbool.Zgt_is_le_bool	1	0.0.0	synth with cache (only 1: rewrite Z.leb_le; only 1: Z.swap_greater; only 1: apply Z.lt_le_pred).	0.030661	3
+Coq.PArith.Pnat.SuccNat2Pos.pred_id	1
+Coq.ZArith.Zbool.Zeq_is_eq_bool	1
+Coq.PArith.Pnat.SuccNat2Pos.inj	1
+Coq.ZArith.Zbool.Zeq_bool_eq	1
+Coq.PArith.Pnat.SuccNat2Pos.inj_iff	1	129.0.0.0.0.0.1	synth with cache (only 1: split; only 1: intro H; only 1: apply (f_equal Pos.to_nat) in H; only 1: rewrite !id_succ in H; only 1: now injection H; only 1: intro H; only 1: auto with relations).	0.732451	693
+Coq.ZArith.Zbool.Zeq_bool_neq	1
+Coq.PArith.Pnat.SuccNat2Pos.inv	1
+Coq.PArith.Pnat.SuccNat2Pos.inj_succ	1	0.0.0.0	synth with cache (only 1: induction n; only 1: trivial; only 1: simpl; only 1: trivial).	0.032877	4
+Coq.ZArith.Zbool.Zeq_bool_if	1
+Coq.PArith.Pnat.SuccNat2Pos.inj_compare	1
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_mult	1
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_succ_morphism	1
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_l_plus_morphism	1
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_plus_carry_morphism	1
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_r_plus_morphism	1
+Coq.PArith.Pnat.ObsoletePmultNat.ZL6	1
+Coq.PArith.Pnat.ObsoletePmultNat.le_Pmult_nat	1
+Coq.micromega.ZMicromega.eq_le_iff	1	0.0.0.3.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros; only 1: now subst; only 1: destruct 1; only 1: Z.order').	0.877897	882
+Coq.micromega.ZMicromega.lt_le_iff	1	0.0	synth with cache (only 1: intros a; only 1: apply Z.lt_le_pred).	0.014733	2
+Coq.micromega.ZMicromega.le_0_iff	1
+Coq.micromega.ZMicromega.le_neg	1
+Coq.micromega.ZMicromega.eq_cnf	1
+Coq.micromega.ZMicromega.Zsor	1
+Coq.micromega.ZMicromega.ZSORaddon	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_eq	1	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (mem_iff s x), (mem_iff s y), (In_eq_iff s H); only 1: destruct (mem x s); only 1: destruct (mem y s); only 1: intuition; only 1: intuition; only 1: destruct (mem y s); only 1: intuition; only 1: intuition).	0.698589	248
+Coq.micromega.ZMicromega.ZNpower	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_mem_1	1
+Coq.micromega.ZMicromega.Zeval_expr_compat	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_mem_2	1
+Coq.micromega.ZMicromega.Zeval_formula_compat'	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_mem_1	1
+Coq.micromega.ZMicromega.Zeval_nformula_dec	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_mem_2	1
+Coq.micromega.ZMicromega.ZWeakChecker_sound	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.empty_mem	1
+Coq.micromega.ZMicromega.eval_pol_sub	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.is_empty_equal_empty	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_1	1	577.0	synth with cache (only 1: intros; only 1: auto with set).	0.037209	30
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_2	1	0	synth with cache (only 1: auto with set).	0.025071	1
+Coq.micromega.ZMicromega.eval_pol_add	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_mem_1	1	128.0	synth with cache (only 1: generalize (mem_iff (add x s) y), (mem_iff s y), (add_iff s x y); only 1: simpl_relation).	0.632378	50
+Coq.micromega.ZMicromega.eval_pol_mul	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_mem_2	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_mem_1	1	1.0.1	synth with cache (only 1: rewrite <- not_mem_iff; only 1: rewrite remove_spec; only 1: intuition).	0.029260	5
+Coq.micromega.ZMicromega.eval_pol_norm	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_mem_2	1	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (mem_iff (remove x s) y), (mem_iff s y), (remove_neq_iff s H); only 1: destruct (mem y s); only 1: destruct (mem y (remove x s)); only 1: intuition; only 1: intuition; only 1: destruct (mem y (remove x s)); only 1: intuition; only 1: intuition).	0.514891	160
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.singleton_equal_add	1	320.0.1.0	synth with cache (only 1: generalize (mem_iff (singleton x) y), (singleton_iff x y); only 1: destruct (mem y (singleton x)); only 1: intuition; only 1: CRelationClasses.simpl_crelation).	0.261799	10
+Coq.micromega.ZMicromega.Zunsat_sound	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_mem	1
+Coq.micromega.ZMicromega.xnnormalise_correct	1
+Coq.micromega.ZMicromega.eval_pol_Pc	1	1.0	synth with cache (only 1: intros; only 1: trivial).	0.018614	3
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_mem	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.diff_mem	1
+Coq.micromega.ZMicromega.xnormalise_correct	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_3	1	0.2	synth with cache (only 1: rewrite <- not_mem_iff; only 1: intuition).	0.179768	4
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_4	1	0.2	synth with cache (only 1: rewrite <- not_mem_iff; only 1: intuition).	0.235038	33
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_refl	1	1.0	synth with cache (only 1: apply eq_true_iff_eq; only 1: intuition).	0.040338	3
+Coq.micromega.ZMicromega.cnf_of_list_correct	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_sym	1
+Coq.micromega.ZMicromega.normalise_correct	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_trans	1
+Coq.micromega.ZMicromega.xnegate_correct	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_equal	1	0.1.7	synth with cache (only 1: intros H; only 1: rewrite (equal_2 H); only 1: auto).	0.839780	1189
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_cardinal	1	1.0	synth with cache (only 1: intros; only 1: auto with set).	0.021730	3
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_refl	1	1.0	synth with cache (only 1: apply subset_1; only 1: auto with set).	0.009879	3
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_antisym	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_trans	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_equal	1	2	synth with cache (only 1: auto with set).	0.014979	3
+Coq.micromega.ZMicromega.negate_correct	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_3	1
+Coq.micromega.ZMicromega.Zdivide_ceiling	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_4	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_mem_3	1	1.0	synth with cache (only 1: intro; only 1: auto with set relations).	0.019284	3
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_equal	1	0	synth with cache (only 1: auto with set).	0.013903	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_mem_3	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_equal	1	0.3	synth with cache (only 1: rewrite <- not_mem_iff; only 1: auto with set).	0.227104	102
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_remove	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_add	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.is_empty_cardinal	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.singleton_mem_1	1	1.0.0.0	synth with cache (only 1: generalize (mem_iff (singleton x) y), (singleton_iff x y); only 1: destruct (mem y (singleton x)); only 1: intuition; only 1: intuition).	0.260459	27
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.singleton_mem_2	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.singleton_mem_3	1	0.0.1.0	synth with cache (only 1: generalize (mem_iff (singleton x) y), (singleton_iff x y); only 1: destruct (mem y (singleton x)); only 1: intuition; only 1: intuition).	0.112616	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_sym	1	0	synth with cache (only 1: auto with set).	0.012418	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_subset_equal	1	0	synth with cache (only 1: auto with set).	0.102997	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_equal_1	1	0	synth with cache (only 1: auto with set).	0.014982	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_equal_2	1	0	synth with cache (only 1: auto with set).	0.014754	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_assoc	1	0	synth with cache (only 1: auto with set).	0.013559	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_union_singleton	1	0	synth with cache (only 1: auto with set relations).	0.012550	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_add	1	0	synth with cache (only 1: auto with set).	0.012419	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_subset_1	1	1	synth with cache (only 1: auto with set).	0.014258	2
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_subset_2	1	0	synth with cache (only 1: auto with set).	0.012863	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_subset_3	1	0.0	synth with cache (only 1: do 3 rewrite <- subset_iff; only 1: Dec.fsetdec).	0.071635	2
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_sym	1	0	synth with cache (only 1: auto with set).	0.013217	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_subset_equal	1	0	synth with cache (only 1: auto with set).	0.015562	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_equal_1	1	0	synth with cache (only 1: auto with set).	0.014824	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_equal_2	1	0	synth with cache (only 1: auto with set).	0.014557	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_assoc	1	0	synth with cache (only 1: auto with set).	0.013048	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_inter_1	1	0	synth with cache (only 1: auto with set).	0.012153	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_inter_2	1	0	synth with cache (only 1: auto with set).	0.013749	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_add_1	1	0	synth with cache (only 1: auto with set).	0.014305	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_add_2	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_subset_1	1	0	synth with cache (only 1: auto with set).	0.013980	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_subset_2	1	0	synth with cache (only 1: auto with set).	0.011297	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_subset_3	1	1.0.0	synth with cache (only 1: intros; only 1: apply subset_1; only 1: auto with set).	0.037753	4
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.diff_subset	1	0	synth with cache (only 1: auto with set).	0.012125	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.diff_subset_equal	1	0	synth with cache (only 1: auto with set).	0.015482	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_inter_singleton	1	1	synth with cache (only 1: auto with set).	0.012501	2
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.diff_inter_empty	1	0	synth with cache (only 1: auto with set).	0.011809	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.diff_inter_all	1	0	synth with cache (only 1: auto with set).	0.011399	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.set_rec	1
+Coq.micromega.ZMicromega.narrow_interval_lower_bound	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.exclusive_set	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.fold_empty	1	0.0	synth with cache (only 1: apply fold_1b; only 1: auto with set).	0.028538	2
+Coq.micromega.ZMicromega.isZ0_0	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.fold_equal	1
+Coq.micromega.ZMicromega.isZ0_n0	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.fold_add	1	0.0.1.0.0.384.192.192.0.0.0.0.65	synth with cache (only 1: inversion 1; only 1: apply fold_2 with (eqA := eqA); only 1: auto with set; only 1: auto with set; only 1: auto with set; only 1: clear H1; only 1: red; only 1: intro n; only 1: destruct (fold_0 s i f) as (l, (Hl, (Hl1, Hl2))); only 1: destruct (fold_0 s' i f) as (l', (Hl', (Hl'1, Hl'2))); only 1: clear Hl2 Hl'2; only 1: eauto with *; only 1: auto with set).	0.712027	383
+Coq.micromega.ZMicromega.Zdiv_pol_correct	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.add_fold	1
+Coq.micromega.ZMicromega.Zgcd_pol_ge	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.remove_fold_1	1
+Coq.micromega.ZMicromega.Zdivide_pol_Zdivide	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.remove_fold_2	1
+Coq.micromega.ZMicromega.Zdivide_pol_one	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Fold.fold_union	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.add_cardinal_1	1	0	synth with cache (only 1: auto with set).	0.013194	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.add_cardinal_2	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: do 2 rewrite cardinal_fold; only 1: change S with ((fun _ => S) x); only 1: apply MP.fold_add with (eqA := Logic.eq); only 1: auto with *; only 1: congruence; only 1: auto with *; only 1: auto).	0.063654	8
+Coq.micromega.ZMicromega.Zgcd_minus	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.remove_cardinal_1	1
+Coq.micromega.ZMicromega.Zdivide_pol_sub	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.remove_cardinal_2	1
+Coq.micromega.ZMicromega.Zdivide_pol_sub_0	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.union_cardinal	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.subset_cardinal	1	65.0	synth with cache (only 1: intros; only 1: firstorder).	0.032499	6
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.Comp'	1
+Coq.micromega.ZMicromega.Zgcd_pol_div	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.filter_mem	1
+Coq.micromega.ZMicromega.Zgcd_pol_correct_lt	1
+Coq.micromega.ZMicromega.is_pol_Z0_eval_pol	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.for_all_filter	1
+Coq.micromega.ZMicromega.pos_le_add	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.exists_filter	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.partition_filter_1	1	384.5	synth with cache (only 1: intros; only 1: simpl_relation).	0.823218	412
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.partition_filter_2	1	0	synth with cache (only 1: auto with set).	0.016735	1
+Coq.micromega.ZMicromega.max_var_le	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.filter_add_1	1
+Coq.micromega.ZMicromega.max_var_correct	1
+Coq.micromega.ZMicromega.MaxVar.max_var_nformulae_mono_aux	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.filter_add_2	1
+Coq.micromega.ZMicromega.MaxVar.max_var_nformulae_mono_aux'	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.add_filter_1	1
+Coq.micromega.ZMicromega.MaxVar.max_var_nformulae_correct_aux	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.add_filter_2	1
+Coq.micromega.ZMicromega.max_var_nformalae_correct	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.union_filter	1
+Coq.micromega.ZMicromega.in_bdepth	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.filter_union	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.for_all_mem_1	1	513.0.0.0.0.1	synth with cache (only 1: intros; only 1: apply for_all_1; only 1: auto; only 1: red; only 1: intros; only 1: eauto with *).	0.169764	98
+Coq.micromega.ZMicromega.eval_Psatz_sound	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.for_all_mem_2	1
+Coq.micromega.ZMicromega.makeCuttingPlane_ns_sound	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.for_all_mem_3	1
+Coq.micromega.ZMicromega.cutting_plane_sound	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.for_all_mem_4	1
+Coq.micromega.ZMicromega.genCuttingPlaneNone	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool.for_all_exists	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool'.Comp'	1	0.0.0.0	synth with cache (only 1: repeat red; only 1: intros; only 1: f_equal; only 1: auto).	0.032501	4
+Coq.micromega.ZMicromega.eval_nformula_mk_eq_pos	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool'.exists_mem_1	1
+Coq.micromega.ZMicromega.eval_nformula_bound_var	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool'.exists_mem_2	1
+Coq.micromega.ZMicromega.agree_env_subset	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool'.exists_mem_3	1
+Coq.micromega.ZMicromega.agree_env_jump	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Bool'.exists_mem_4	1
+Coq.micromega.ZMicromega.agree_env_tail	1
+Coq.micromega.ZMicromega.max_var_acc	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Sum.sum_plus	1
+Coq.micromega.ZMicromega.agree_env_eval_nformula	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Sum.sum_filter	1
+Coq.micromega.ZMicromega.agree_env_eval_nformulae	1
+Coq.micromega.ZMicromega.eq_true_iff_eq	1	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.045271	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Sum.fold_compat	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.Sum.sum_compat	1
+Coq.micromega.ZMicromega.ZChecker_sound	1
+Coq.micromega.ZMicromega.ZTautoChecker_sound	1
+Coq.Reals.RiemannInt.phi_sequence_prop	1
+Coq.Reals.RiemannInt.RiemannInt_P1	1
+Coq.Reals.RiemannInt.RiemannInt_P2	1
+Coq.Reals.RiemannInt.RiemannInt_P3	1
+Coq.Reals.RiemannInt.RiemannInt_exists	1
+Coq.Reals.RiemannInt.RiemannInt_P4	1
+Coq.Reals.RiemannInt.RinvN_pos	1	3	synth with cache (only 1: auto with real).	0.019340	4
+Coq.Reals.RiemannInt.RinvN_cv	1
+Coq.Reals.RiemannInt.Riemann_integrable_ext	1
+Coq.Reals.Ranalysis5.f_incr_implies_g_incr_interv	1
+Coq.Reals.Ranalysis5.derivable_pt_id_interv	1	0.0	synth with cache (only 1: intros; only 1: apply derivable_pt_id).	0.023437	2
+Coq.Reals.RiemannInt.RiemannInt_P5	1
+Coq.Reals.Ranalysis5.pr_nu_var2_interv	1
+Coq.Reals.RiemannInt.maxN	1
+Coq.Reals.Ranalysis5.leftinv_is_rightinv	1
+Coq.Reals.RiemannInt.Heine_cor1	1
+Coq.Reals.Ranalysis5.leftinv_is_rightinv_interv	1
+Coq.Reals.RiemannInt.Heine_cor2	1
+Coq.Reals.RiemannInt.SubEqui_P1	1	576.0.0.1	synth with cache (only 1: intros; only 1: simpl; only 1: set (I := fun n : nat => a + INR n * del < b); only 1: firstorder).	0.046568	14
+Coq.Reals.Ranalysis5.IVT_interv_prelim0	1
+Coq.Reals.RiemannInt.SubEqui_P2	1
+Coq.Reals.Ranalysis5.IVT_interv_prelim1	1
+Coq.Reals.RiemannInt.SubEqui_P3	1
+Coq.Reals.RiemannInt.SubEqui_P4	1
+Coq.Reals.Ranalysis5.IVT_interv	1
+Coq.Reals.RiemannInt.SubEqui_P5	1
+Coq.Reals.Ranalysis5.f_interv_is_interv	1
+Coq.Reals.RiemannInt.SubEqui_P6	1
+Coq.Reals.RiemannInt.SubEqui_P7	1
+Coq.Reals.Ranalysis5.continuity_pt_recip_prelim	1
+Coq.Reals.RiemannInt.SubEqui_P8	1
+Coq.Reals.Ranalysis5.continuity_pt_recip_interv	1
+Coq.Reals.RiemannInt.SubEqui_P9	1
+Coq.Reals.RiemannInt.RiemannInt_P6	1
+Coq.Reals.RiemannInt.RiemannInt_P7	1
+Coq.Reals.RiemannInt.continuity_implies_RiemannInt	1
+Coq.Reals.Ranalysis5.derivable_pt_lim_recip_interv	1
+Coq.Reals.Ranalysis5.derivable_pt_recip_interv_prelim0	1
+Coq.Reals.RiemannInt.RiemannInt_P8	1
+Coq.Reals.Ranalysis5.derivable_pt_recip_interv_prelim1	1
+Coq.Reals.RiemannInt.RiemannInt_P9	1
+Coq.Reals.Ranalysis5.derivable_pt_recip_interv	1
+Coq.Reals.RiemannInt.RiemannInt_P10	1
+Coq.Reals.Ranalysis5.derive_pt_recip_interv_prelim0	1
+Coq.Reals.Ranalysis5.derive_pt_recip_interv_prelim1_0	1
+Coq.Reals.RiemannInt.RiemannInt_P11	1
+Coq.Reals.Ranalysis5.derive_pt_recip_interv_prelim1_1	1
+Coq.Reals.Ranalysis5.derive_pt_recip_interv	1
+Coq.Reals.Ranalysis5.ub_lt_2_pos	1	66.128.0	synth with cache (only 1: intros; only 1: rewrite <- Ropp_0; only 1: lra).	0.541263	687
+Coq.Reals.RiemannInt.RiemannInt_P12	1
+Coq.Reals.Ranalysis5.mkposreal_lb_ub	1
+Coq.Reals.RiemannInt.RiemannInt_P13	1
+Coq.Reals.RiemannInt.RiemannInt_P14	1
+Coq.Reals.RiemannInt.RiemannInt_P15	1
+Coq.Reals.RiemannInt.RiemannInt_P16	1
+Coq.Reals.Ranalysis5.derivable_pt_lim_CVU	1
+Coq.Reals.RiemannInt.Rle_cv_lim	1
+Coq.Reals.RiemannInt.RiemannInt_P17	1
+Coq.Reals.RiemannInt.RiemannInt_P18	1
+Coq.Reals.RiemannInt.RiemannInt_P19	1
+Coq.Reals.RiemannInt.FTC_P1	1
+Coq.Reals.RiemannInt.RiemannInt_P20	1
+Coq.Reals.RiemannInt.RiemannInt_P21	1
+Coq.Reals.RiemannInt.RiemannInt_P22	1
+Coq.Reals.RiemannInt.RiemannInt_P23	1
+Coq.Reals.RiemannInt.RiemannInt_P24	1
+Coq.Reals.RiemannInt.RiemannInt_P25	1
+Coq.Reals.RiemannInt.RiemannInt_P26	1
+Coq.Reals.RiemannInt.RiemannInt_P27	1
+Coq.Reals.RiemannInt.RiemannInt_P28	1
+Coq.Reals.RiemannInt.RiemannInt_P29	1
+Coq.Reals.RiemannInt.RiemannInt_P30	1
+Coq.Reals.RiemannInt.RiemannInt_P31	1
+Coq.Reals.RiemannInt.RiemannInt_P32	1
+Coq.Reals.RiemannInt.RiemannInt_P33	1
+Coq.Reals.RiemannInt.FTC_Riemann	1
+Coq.Reals.RiemannInt.RiemannInt_const_bound	1
+Coq.Reals.RiemannInt.Riemann_integrable_scal	1
+Coq.Reals.RiemannInt.Riemann_integrable_Ropp	1
+Coq.nsatz.Nsatz.nsatz1.psos_r1b	1
+Coq.nsatz.Nsatz.nsatz1.psos_r1	1
+Coq.nsatz.Nsatz.nsatz1.nsatzR_diff	1
+Coq.nsatz.Nsatz.nsatz1.P0Z_correct	1	1.0	synth with cache (only 1: intro; only 1: trivial).	0.029529	3
+Coq.nsatz.Nsatz.nsatz1.Rext	1
+Coq.nsatz.Nsatz.nsatz1.Rset	1	1	synth with cache (only 1: apply ring_setoid).	0.048344	6
+Coq.nsatz.Nsatz.nsatz1.Rtheory	1
+Coq.nsatz.Nsatz.nsatz1.PolZadd_correct	1
+Coq.nsatz.Nsatz.nsatz1.PolZmul_correct	1
+Coq.nsatz.Nsatz.nsatz1.R_power_theory	1
+Coq.nsatz.Nsatz.nsatz1.norm_correct	1
+Coq.nsatz.Nsatz.nsatz1.PolZeq_correct	1
+Coq.nsatz.Nsatz.nsatz1.mult_l_correct	1
+Coq.nsatz.Nsatz.nsatz1.compute_list_correct	1
+Coq.nsatz.Nsatz.nsatz1.check_correct	1
+Coq.nsatz.Nsatz.Rsth	1	195	synth with cache (only 1: easy').	0.086444	16
+Coq.nsatz.Nsatz.Rri	1
+Coq.nsatz.Nsatz.R_one_zero	1	0	synth with cache (only 1: exact R1_neq_R0).	0.019440	1
+Coq.nsatz.Nsatz.Rcri	1	581	synth with cache (only 1: simpl_relation).	0.708277	813
+Coq.nsatz.Nsatz.Rdi	1
+Coq.nsatz.Nsatz.Qri	1
+Coq.nsatz.Nsatz.Q_one_zero	1	2	synth with cache (only 1: discriminate).	0.020281	3
+Coq.nsatz.Nsatz.Qcri	1
+Coq.nsatz.Nsatz.Qdi	1
+Coq.nsatz.Nsatz.Z_one_zero	1	0.2	synth with cache (only 1: intro EQ; only 1: discriminate).	0.038994	4
+Coq.nsatz.Nsatz.Zcri	1	0.0	synth with cache (only 1: red; only 1: exact Z.mul_comm).	0.023997	2
+Coq.nsatz.Nsatz.Zdi	1
+Coq.setoid_ring.Rings_R.Rsth	1	195	synth with cache (only 1: easy').	0.041003	16
+Coq.setoid_ring.Rings_R.Rri	1
+Coq.setoid_ring.Rings_R.Rcri	1	66.512.1089	synth with cache (only 1: intros Ha; only 1: intros Hab; only 1: apply Rmult_comm).	0.657026	488
+Coq.setoid_ring.Rings_R.R_one_zero	1	0	synth with cache (only 1: exact R1_neq_R0).	0.018881	1
+Coq.setoid_ring.Rings_R.Rdi	1
+Coq.Reals.NewtonInt.FTCN_step1	1
+Coq.Reals.NewtonInt.FTC_Newton	1
+Coq.Reals.NewtonInt.NewtonInt_P1	1
+Coq.Reals.NewtonInt.NewtonInt_P2	1
+Coq.Reals.NewtonInt.NewtonInt_P3	1
+Coq.Reals.NewtonInt.NewtonInt_P4	1
+Coq.Reals.NewtonInt.NewtonInt_P5	1
+Coq.Reals.NewtonInt.antiderivative_P1	1
+Coq.Reals.NewtonInt.NewtonInt_P6	1
+Coq.Reals.NewtonInt.antiderivative_P2	1
+Coq.Reals.NewtonInt.antiderivative_P3	1
+Coq.Reals.Machin.atan_sub_correct	1
+Coq.Reals.NewtonInt.antiderivative_P4	1
+Coq.Reals.Machin.tech	1
+Coq.Reals.NewtonInt.NewtonInt_P7	1
+Coq.Reals.Machin.Machin_2_3	1
+Coq.Reals.NewtonInt.NewtonInt_P8	1
+Coq.Reals.Machin.Machin_4_5_239	1
+Coq.Reals.Machin.Machin_2_3_7	1
+Coq.Reals.NewtonInt.NewtonInt_P9	1
+Coq.Reals.Machin.PI_2_3_7_ineq	1
+Coq.Reals.RiemannInt_SF.IZN_var	1
+Coq.Reals.RiemannInt_SF.Nzorn	1
+Coq.Reals.RiemannInt_SF.StepFun_P1	1
+Coq.Reals.RiemannInt_SF.StepFun_P2	1
+Coq.Reals.RiemannInt_SF.StepFun_P3	1
+Coq.Reals.RiemannInt_SF.StepFun_P4	1
+Coq.Reals.RiemannInt_SF.StepFun_P5	1
+Coq.Reals.RiemannInt_SF.StepFun_P6	1
+Coq.Reals.RiemannInt_SF.StepFun_P7	1
+Coq.Reals.RiemannInt_SF.StepFun_P8	1
+Coq.Reals.RiemannInt_SF.StepFun_P9	1
+Coq.Reals.Ratan.Ropp_div	1	0.0.0	synth with cache (only 1: intros x y; only 1: unfold Rdiv; only 1: ring).	0.051984	3
+Coq.Reals.Ratan.pos_half_prf	1	1	synth with cache (only 1: apply Rinv_0_lt_compat, Rlt_0_2).	0.259584	152
+Coq.Reals.RiemannInt_SF.StepFun_P10	1
+Coq.Reals.Ratan.Boule_half_to_interval	1
+Coq.Reals.Ratan.Boule_lt	1
+Coq.Reals.RiemannInt_SF.StepFun_P11	1
+Coq.Reals.Ratan.Un_cv_ext	1
+Coq.Reals.RiemannInt_SF.StepFun_P12	1
+Coq.Reals.RiemannInt_SF.StepFun_P13	1
+Coq.Reals.Ratan.Alt_first_term_bound	1
+Coq.Reals.Ratan.Alt_CVU	1
+Coq.Reals.Ratan.pow2_ge_0	1
+Coq.Reals.RiemannInt_SF.StepFun_P14	1
+Coq.Reals.Ratan.pow2_abs	1
+Coq.Reals.RiemannInt_SF.StepFun_P15	1
+Coq.Reals.Ratan.derivable_pt_tan	1
+Coq.Reals.Ratan.derive_pt_tan	1
+Coq.Reals.RiemannInt_SF.StepFun_P16	1
