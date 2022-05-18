@@ -24,48 +24,11 @@ Recursive definition is: "eqst s2 s1 (eq_sym H0)
                              H1)"."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./plugins/setoid_ring/Ring_theory.v", line 367, characters 2-39:
-Error:
-Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: Notations.symmetry; only 1: f_equiv; only 1: intros a b; only 1: PeanoNat.Nat.auto'; only 1: intro n; only 1: now PeanoNat.Nat.nzsimpl'; only 1: Bool.destr_bool; only 1: constructor 2; only 1: now PeanoNat.Nat.nzsimpl).
-Typing error:
-Illegal application: 
-The term "n" of type "2 <> 0" cannot be applied to the term
- "eq_refl" : "2 = 2"
-This term has type "2 = 2" which should be coercible to "2 = 0"."
-Please report at http://coq.inria.fr/bugs/.
-
-File "./theories/ZArith/BinInt.v", line 322, characters 1-13:
-Error:
-Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: f_equiv; only 1: compute; only 1: intro H1; only 1: intro; only 1: PeanoNat.Nat.auto'; only 1: now f_equal; only 1: now right).
-Typing error:
-Illegal application: 
-The term "H" of type "2%nat <> 0%nat" cannot be applied to the term
- "eq_refl" : "2%nat = 2%nat"
-This term has type "2%nat = 2%nat" which should be coercible to "2%nat =
-                                                 0%nat"."
-Please report at http://coq.inria.fr/bugs/.
-
 File "./theories/Reals/Rtrigo1.v", line 740, characters 2-68:
 Error: Stack overflow.
 
 File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
 Error: Stack overflow.
-
-File "./theories/PArith/Pnat.v", line 342, characters 0-20:
-Error:
-Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: induction n; only 1: simpl; only 1: reflexivity; only 1: rewrite Pos.of_nat_succ; only 1: Morphisms.f_equiv; only 1: intros Hnm Hpq; only 1: compute; only 1: Nat.auto'; only 1: intro H; only 1: exfalso; only 1: now Morphisms.f_equiv; only 1: constructor).
-Typing error:
-Illegal application: 
-The term "H" of type "1 <> 0" cannot be applied to the term
- "eq_refl" : "1 = 1"
-This term has type "1 = 1" which should be coercible to "1 = 0"."
-Please report at http://coq.inria.fr/bugs/.
 
 File "./theories/Numbers/Cyclic/Int63/Int63.v", line 1541, characters 1-32:
 Error: Stack overflow.
