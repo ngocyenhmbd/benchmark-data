@@ -1,0 +1,2156 @@
+Coq.Classes.CMorphisms.Proper.eq_proper_proxy	5	1	synth with cache (only 1: Notations.reflexivity).	0.006506	2
+Coq.Classes.CMorphisms.Proper.reflexive_proper_proxy	5	1	synth with cache (only 1: firstorder).	0.006973	2
+Coq.Classes.CMorphisms.Proper.proper_proper_proxy	5	0	synth with cache (only 1: firstorder).	0.005301	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	5	66.0	synth with cache (only 1: intro A; only 1: auto  10 with sets).	0.040770	14
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	5	0	synth with cache (only 1: auto  6 with sets).	0.013697	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	5	0.7	synth with cache (only 1: unfold Add at 1; only 1: auto  6 with sets).	0.151775	237
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	5	0	synth with cache (only 1: auto with sets).	0.013706	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_commutative	5	0	synth with cache (only 1: auto with sets).	0.014261	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_associative	5	1.132.195	synth with cache (only 1: intros H ?; only 1: generalize Inclusion_is_transitive; only 1: auto  10 with sets).	0.726834	925
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_idempotent	5	0	synth with cache (only 1: auto  6 with sets).	0.013614	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_absorbs	5	1.128	synth with cache (only 1: intro IT; only 1: auto  6 with sets).	0.053883	23
+Coq.Structures.OrdersTac.OrderFacts.eq_refl	5	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.012128	2
+Coq.Classes.CMorphisms.Relations.pointwise_pointwise	5
+Coq.Classes.CMorphisms.Relations.subrelation_id_proper	5	3	synth with cache (only 1: apply H).	0.007145	4
+Coq.Classes.CMorphisms.Relations.subrelation_respectful	5	0	synth with cache (only 1: firstorder).	0.010397	1
+Coq.Classes.CMorphisms.Relations.subrelation_refl	5	1.0.0	synth with cache (only 1: hnf; only 1: intros x y H'; only 1: assumption).	0.013342	4
+Coq.Classes.CMorphisms.Relations.subrelation_proper	5	0	synth with cache (only 1: firstorder).	0.007627	1
+Coq.Classes.CMorphisms.Relations.proper_subrelation_proper_arrow	5	0	synth with cache (only 1: simpl_crelation).	0.012526	1
+Coq.Classes.CMorphisms.Relations.pointwise_subrelation	5	1	synth with cache (only 1: firstorder).	0.007696	2
+Coq.Classes.CMorphisms.Relations.forall_subrelation	5	2.4.128.1.1	synth with cache (only 1: intro; only 1: hnf; only 1: intros H; only 1: reduce; only 1: firstorder).	0.506701	989
+Coq.Classes.CMorphisms.iff_impl_subrelation	5	0	synth with cache (only 1: simpl_crelation).	0.013208	1
+Coq.Classes.CMorphisms.iff_flip_impl_subrelation	5	0	synth with cache (only 1: firstorder).	0.007374	1
+Coq.Classes.CMorphisms.iffT_arrow_subrelation	5	0.0	synth with cache (only 1: reduce; only 1: firstorder).	0.011058	2
+Coq.Classes.CMorphisms.iffT_flip_arrow_subrelation	5	0	synth with cache (only 1: firstorder).	0.008493	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Couple_as_union	5
+Coq.Structures.OrdersFacts.CompareFacts.compare_eq_iff	5
+Coq.Structures.OrdersTac.OrderFacts.le_refl	5
+Coq.Structures.OrdersFacts.CompareFacts.compare_eq	5	0.0.0.0.0.0	synth with cache (only 1: case compare_spec; only 1: easy; only 1: intro H; only 1: easy; only 1: intro H; only 1: easy).	0.042183	6
+Coq.Structures.OrdersFacts.CompareFacts.compare_lt_iff	5	0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.1.0.0.1.0	synth with cache (only 1: case compare_spec; only 1: intro EQ; only 1: split; only 1: easy; only 1: intro H; only 1: contradict ltac:(H); only 1: rewrite EQ; only 1: apply irreflexivity; only 1: intro H; only 1: split; only 1: easy; only 1: intro EQ; only 1: Notations.reflexivity || destruct H; only 1: intro H; only 1: split; only 1: easy; only 1: intro EQ; only 1: contradict ltac:(H); only 1: rewrite EQ; only 1: apply irreflexivity).	1.466904	1713
+Coq.Structures.OrdersFacts.CompareFacts.compare_gt_iff	5	0.0.0.0.0.0.0.0.0.0.0.0.0.1.2.0.0.0.0.0.0	synth with cache (only 1: case compare_spec; only 1: intro H; only 1: split; only 1: easy; only 1: intro LT; only 1: contradict ltac:(H); only 1: intro EQ; only 1: contradict ltac:(LT); only 1: rewrite EQ; only 1: apply irreflexivity; only 1: intro H; only 1: split; only 1: easy; only 1: intro LT; only 1: contradict ltac:(LT); only 1: rewrite H; only 1: apply irreflexivity; only 1: intro H; only 1: split; only 1: easy; only 1: easy).	0.714215	479
+Coq.Structures.OrdersTac.OrderFacts.lt_irrefl	5	64.76.67	synth with cache (only 1: simpl_relation; only 1: elim (CRelationClasses.StrictOrder_Irreflexive x); only 1: apply H).	2.450564	9738
+Coq.Structures.OrdersTac.OrderFacts.eq_sym	5	256.1.0	synth with cache (only 1: intros; only 1: apply (@CRelationClasses.symmetry _ _ _ _); only 1: now trivial).	0.035573	17
+Coq.Classes.CMorphisms.GenericInstances.respectful_per_obligation_2	5
+Coq.Classes.CMorphisms.GenericInstances.flip_proper_obligation_1	5	11	synth with cache (only 1: firstorder).	0.087669	201
+Coq.Classes.CMorphisms.GenericInstances.trans_contra_co_type_morphism_obligation_1	5	6	synth with cache (only 1: firstorder).	0.151369	52
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_union	5
+Coq.Classes.CMorphisms.GenericInstances.trans_contra_inv_impl_type_morphism_obligation_1	5	6	synth with cache (only 1: firstorder).	0.545106	647
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_mono_l	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_pred	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_mono_r	5	0.0.0.0.0.0	synth with cache (only 1: intros n m p; only 1: nzinduct p; only 1: now nzsimpl; only 1: intro p; only 1: nzsimpl; only 1: now rewrite <- succ_lt_mono).	0.182681	6
+Coq.Structures.OrdersFacts.CompareFacts.compare_nlt_iff	5	0.0.0.1.0.0.0.0.0.0.1.0.1.1.0.0.0	synth with cache (only 1: case compare_spec; only 1: intro H; only 1: split; only 1: intro LT; only 1: rewrite H; only 1: apply irreflexivity; only 1: easy; only 1: intro H; only 1: split; only 1: easy; only 1: easy; only 1: intro H; only 1: split; only 1: intro LT; only 1: rewrite H; only 1: apply irreflexivity; only 1: easy).	3.023400	2253
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_neg_neg	5	0.0.0	synth with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_lt_mono).	0.133107	3
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_neg_nonpos	5	0.0.0	synth with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_lt_le_mono).	0.031091	3
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_nonpos_neg	5	0.0.0	synth with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_le_lt_mono).	0.032490	3
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.add_nonpos_nonpos	5	0.0.0	synth with cache (only 1: intros n m H1 H2; only 1: rewrite <- (add_0_l 0); only 1: now apply add_le_mono).	0.029476	3
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_spec_nonneg	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_0_l	5
+Coq.Structures.OrdersTac.OrderFacts.le_antisym	5
+Coq.Structures.OrdersTac.OrderFacts.neq_sym	5	0	synth with cache (only 1: auto with *).	0.009900	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_Couple	5
+Coq.Structures.OrdersFacts.CompareFacts.compare_ngt_iff	5	64.0.0.0.1.1.0.1.0.1.1.1.0.1	synth with cache (only 1: case compare_spec; only 1: intro H; only 1: split; only 1: intro LT; only 1: rewrite H; only 1: apply irreflexivity; only 1: easy; only 1: intro H; only 1: split; only 1: intro LT; only 1: rewrite H; only 1: apply irreflexivity; only 1: easy; only 1: simpl_relation).	2.528361	1477
+Coq.Classes.CMorphisms.GenericInstances.trans_co_impl_type_morphism_obligation_1	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_pos_l	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_mono	5
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.square_lt_mono	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_0_sub	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_nonneg	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_0_l'	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_1_r	5	0.1	synth with cache (only 1: intro n; only 1: now nzsimpl').	0.049392	3
+Coq.Structures.OrdersTac.OrderFacts.trans	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_Couple_Singleton	5
+Coq.Structures.OrdersFacts.CompareFacts.compare_compat	5
+Coq.Structures.OrdersFacts.CompareFacts.compare_refl	5	4.0	synth with cache (only 1: apply compare_eq_iff; only 1: reflexivity).	0.143856	161
+Coq.Classes.CMorphisms.GenericInstances.trans_sym_co_inv_impl_type_morphism_obligation_1	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_commutative	5	0.0.0.0.0.0.0.0.0.1.129.68	synth with cache (only 1: intro p; only 1: Notations.symmetry; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets).	0.636097	587
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_pos_r	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_mono_l	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_mono_r	5	0.0.0.0.0.0	synth with cache (only 1: intros n m p; only 1: nzinduct p; only 1: now nzsimpl; only 1: intro p; only 1: nzsimpl; only 1: now rewrite <- succ_le_mono).	0.161919	6
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_opp_l	5
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_twice_r	5
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.square_le_mono	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_0_sub	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_unique	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_1_l	5
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.mul_le_mono_l	5	0.0.1.0.0.65.0.0	synth with cache (only 1: intros n m H1 H2; only 1: le_elim H2; only 1: apply mul_le_mono_nonneg_l; only 1: apply le_0_l; only 1: apply lt_eq_cases; only 1: now left; only 1: apply eq_le_incl; only 1: now rewrite H2).	1.035845	684
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.pow_sub_r	5
+Coq.Structures.OrdersTac.OrderFacts.eq_neq	5
+Coq.Structures.OrdersTac.OrderFacts.neq_eq	5	0	synth with cache (only 1: eauto using eq_trans, eq_sym).	0.013171	1
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.quot_div_nonneg	5
+Coq.Structures.OrdersFacts.CompareFacts.compare_antisym	5
+Coq.Arith.Factorial.lt_O_fact	5	448.0.2.513	synth with cache (only 1: Nat.induct n; only 1: Nat.order'; only 1: intros n H; only 1: CRelationClasses.simpl_crelation).	1.201080	168
+Coq.Numbers.Natural.Peano.NPeano.Even_equiv	5	3.3.0	synth with cache (only 1: split; only 1: parity_binop; only 1: parity_binop).	0.956736	1555
+Coq.Classes.CMorphisms.GenericInstances.trans_sym_contra_arrow_morphism_obligation_1	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_neg_l	5
+Coq.Classes.CMorphisms.GenericInstances.per_partial_app_type_morphism_obligation_1	5	9	synth with cache (only 1: firstorder).	0.387072	278
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_mono	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_opp_r	5
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.even_pow	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_sub_0	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity_l	5	0.0.0.0.0.0.0.0.0.0.0.0.1.128.2.0.0.0.0.0.0	synth with cache (only 1: intros A B C; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: elim H'; only 1: intros h1 h2; only 1: intros x0 H'0 H'1; only 1: elim H'1; only 1: auto with sets; only 1: auto with sets; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: intros x0 H'0; only 1: elim H'0; only 1: auto with sets; only 1: intros x0 H'0; only 1: elim H'0; only 1: auto with sets).	2.756683	2512
+Coq.Sorting.Sorted.defs.HdRel_inv	5	0.67	synth with cache (only 1: inversion 1 as [H1| ?]; only 1: auto).	0.644782	952
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_wd	5
+Coq.Sorting.Sorted.defs.Sorted_inv	5	513.0	synth with cache (only 1: inversion 1; only 1: eauto with *).	0.028533	47
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_2_r	5
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.mul_le_mono_r	5
+Coq.Numbers.Natural.Peano.NPeano.Odd_equiv	5	579.1.0.2.0.257	synth with cache (only 1: apply (symmetry (x:=_)); only 1: split; only 1: parity_binop; only 1: intros (m, H); only 1: rewrite H; only 1: intuition).	4.180358	6861
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.pow_div_l	5
+Coq.Structures.OrdersTac.OrderFacts.not_neq_eq	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_proper	5	1.0	synth with cache (only 1: intros x x' EQ; only 1: now f_equiv).	0.061181	67
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_sub_0	5	0.2.196	synth with cache (only 1: intro y0; only 1: intro n; only 1: now rewrite (add_le_mono_r _ _ n), add_0_l, sub_simpl_r).	1.776452	2538
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.rem_mod_nonneg	5
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_compat	5
+Coq.Arith.Factorial.fact_neq_0	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_neg_r	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_le_mono	5
+Coq.Classes.CMorphisms.GenericInstances.trans_co_eq_inv_arrow_morphism_obligation_1	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_abs_l	5
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.odd_pow	5
+Coq.Logic.ClassicalUniqueChoice.unique_choice	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity'	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_add	5	1.0.1.64	synth with cache (only 1: intros x1 H'0; only 1: unfold Add at 1; only 1: unfold Add at 1; only 1: auto  9 with sets).	0.323766	123
+Coq.Sorting.Sorted.defs.Sorted_rect	5
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.mul_lt_mono	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_eq_0	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_spec_alt	5
+Coq.Structures.OrdersLists.OrderedTypeLists.In_eq	5	0.0.0	synth with cache (only 1: intros l x y H H'; only 1: rewrite <- H; only 1: auto).	0.019887	3
+Coq.Structures.OrdersTac.OrderFacts.not_ge_lt	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_lt_mono	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.exists_div2	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.quot_div	5
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_preorder	5
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_order	5	1.64	synth with cache (only 1: compute; only 1: iorder).	0.035424	13
+Coq.Arith.Factorial.fact_le	5
+Coq.Structures.OrdersTac.OrderFacts.not_gt_le	5	0.2.0.1.0.0	synth with cache (only 1: intros x y H; only 1: destruct (P.lt_total x y); only 1: rewrite P.le_lteq; only 1: intuition; only 1: rewrite P.le_lteq; only 1: intuition).	0.446139	244
+Coq.Structures.OrdersTac.OrderFacts.le_neq_lt	5	0.2.0	synth with cache (only 1: intros x y; only 1: rewrite P.le_lteq; only 1: intuition).	0.197296	86
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_antisym	5	65.2.0.0.64.66	synth with cache (only 1: intros x y EQ WF; only 1: apply CRelationClasses.partial_order_antisym; only 1: compute; only 1: iorder; only 1: auto; only 1: auto with *).	0.328130	249
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_nonneg_l	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_lt_mono	5
+Coq.Classes.CMorphisms.GenericInstances.PER_type_morphism_obligation_1	5
+Coq.Classes.CMorphisms.GenericInstances.symmetric_equiv_flip	5	1	synth with cache (only 1: firstorder).	0.021847	11
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_not_gt_iff	5	0.69	synth with cache (only 1: compute; only 1: iorder).	0.393689	448
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.lt_not_ge_iff	5	0	synth with cache (only 1: iorder).	0.016232	1
+Coq.Classes.CMorphisms.GenericInstances.compose_proper_obligation_1	5	8	synth with cache (only 1: firstorder).	0.145237	99
+Coq.Lists.SetoidList.Type_with_equality.InA_altdef	5
+Coq.Structures.OrdersLists.OrderedTypeLists.ListIn_In	5	64.4.1.1.0.0.0	synth with cache (only 1: induction l; only 1: simpl; only 1: inversion 1; only 1: firstorder; only 1: rewrite <- H; only 1: left; only 1: apply Equivalence_Reflexive).	1.782890	3807
+Coq.Classes.CMorphisms.GenericInstances.reflexive_eq_dom_reflexive	5	0.195	synth with cache (only 1: intros A P; only 1: simpl_crelation).	0.093729	57
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_abs_r	5
+Coq.Sets.Infinite_sets.Infinite_sets.make_new_approximant	5
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_opp_even	5
+Coq.Logic.ClassicalUniqueChoice.classic_set_in_prop_context	5
+Coq.Lists.SetoidList.Type_with_equality.InA_cons	5	0.0.0.0.0.1.0.3	synth with cache (only 1: intros; only 1: split; only 1: inversion 1; only 1: auto; only 1: auto; only 1: induction 1; only 1: auto; only 1: auto).	1.391028	1584
+Coq.Lists.SetoidList.Type_with_equality.InA_nil	5	193.0	synth with cache (only 1: intros; only 1: easy).	0.037797	44
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Non_disjoint_union	5
+Coq.Sorting.Sorted.defs.Sorted_LocallySorted_iff	5
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.mul_le_mono	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_nonzero	5
+Coq.Sorting.Sorted.defs.StronglySorted_inv	5	0.0.256.1.0	synth with cache (only 1: intros a l H; only 1: inversion H; only 1: induction l; only 1: auto; only 1: eauto).	0.232088	153
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_unique'	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_le_mono	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_0_r	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.In_compat	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.rem_mod	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.if_zero_wd	5
+Coq.FSets.FMapList.Raw.Elt.empty_1	5	129.64	synth with cache (only 1: intros x; only 1: easy).	0.184834	90
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_nonpos_l	5
+Coq.FSets.FMapList.Raw.Elt.empty_sorted	5	4	synth with cache (only 1: constructor).	0.122124	45
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_pos_pos	5
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_or_gt	5
+Coq.Structures.OrdersLists.OrderedTypeLists.Inf_lt	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_1_r_abs	5
+Coq.Classes.CMorphisms.GenericInstances.respectful_morphism	5
+Coq.Classes.CMorphisms.GenericInstances.Reflexive_partial_app_morphism	5	0.5	synth with cache (only 1: reduce; only 1: auto).	0.047147	52
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.In_compat	5	0	synth with cache (only 1: solve_proper).	0.045728	1
+Coq.Classes.CMorphisms.GenericInstances.flip_respectful	5	0	synth with cache (only 1: firstorder).	0.012868	1
+Coq.Classes.CMorphisms.GenericInstances.flip1	5	0.0	synth with cache (only 1: reduce; only 1: auto).	0.013522	2
+Coq.Classes.CMorphisms.GenericInstances.flip2	5	0	synth with cache (only 1: firstorder).	0.008579	1
+Coq.Sets.Infinite_sets.Infinite_sets.approximants_grow	5
+Coq.Classes.CMorphisms.GenericInstances.eq_subrelation	5	2	synth with cache (only 1: simpl_crelation).	0.026775	17
+Coq.Classes.CMorphisms.GenericInstances.reflexive_proper	5	0	synth with cache (only 1: firstorder).	0.009543	1
+Coq.Classes.CMorphisms.GenericInstances.proper_eq	5	0	synth with cache (only 1: firstorder).	0.005805	1
+Coq.Classes.CMorphisms.proper_proper	5	0.0.0.0.0.0.0.0	synth with cache (only 1: reduce; only 1: split; only 1: intros; only 1: subst; only 1: firstorder; only 1: intros; only 1: subst; only 1: firstorder).	0.035013	8
+Coq.Classes.CMorphisms.Normalize.proper_normalizes_proper	5	4	synth with cache (only 1: firstorder).	0.038102	38
+Coq.Classes.CMorphisms.Normalize.flip_atom	5	0	synth with cache (only 1: firstorder).	0.008941	1
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_opp_odd	5
+Coq.Structures.OrdersLists.OrderedTypeLists.Inf_eq	5	448.0.3	synth with cache (only 1: intros x y z H; only 1: rewrite <- H; only 1: Bool.destr_bool).	0.546631	559
+Coq.Logic.ClassicalUniqueChoice.not_not_classic_set	5
+Coq.Lists.SetoidList.Type_with_equality.InA_alt	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Non_disjoint_union'	5
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.lt_0_mul'	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_eq_0_iff	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.eq_equiv	5	81	synth with cache (only 1: firstorder).	3.793927	8625
+Coq.Sorting.Sorted.defs.StronglySorted_rect	5
+Coq.Sorting.Sorted.defs.StronglySorted_rec	5	0.0.0	synth with cache (only 1: induction l; only 1: firstorder using StronglySorted_inv; only 1: firstorder using StronglySorted_inv).	0.028822	3
+Coq.Numbers.Integer.Binary.ZBinary.TestOrder.test	5	0	synth with cache (only 1: BinInt.Z.order).	0.013805	1
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_square	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.singlx	5	0.0.0.0.0.0.0.2	synth with cache (only 1: unfold Add at 1; only 1: intros x y H'; only 1: elim H'; only 1: intros t H'1; only 1: elim H'1; only 1: intros t H'1; only 1: elim H'1; only 1: auto with sets).	0.683260	590
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.incl_add	5	1.0.67	synth with cache (only 1: intro h; only 1: unfold Add; only 1: auto using Union_associative with sets).	0.460171	288
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_pos_neg	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_succ_r	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.mod_divide	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.if_zero_0	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_nonneg_r	5
+Coq.FSets.FMapList.Raw.Elt.is_empty_1	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_pos_nonneg	5
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.lt_or_ge	5
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.eq_is_le_ge	5	0.64.0	synth with cache (only 1: intros; only 1: compute; only 1: iorder).	0.096522	12
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.compare_le_iff	5	1.0	synth with cache (only 1: rewrite compare_gt_iff; only 1: iorder).	0.056270	3
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_1_r	5
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.compare_ge_iff	5	0.0.0	synth with cache (only 1: rewrite le_not_gt_iff; only 1: rewrite compare_lt_iff; only 1: intuition).	0.061255	3
+Coq.Sets.Infinite_sets.Infinite_sets.approximants_grow'	5
+Coq.FSets.FMapList.Raw.Elt.is_empty_2	5	0.65.128.512.193	synth with cache (only 1: intros Hab; only 1: intros a; only 1: induction 1; only 1: firstorder; only 1: eauto with *).	0.582058	847
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.mem_spec	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_nonpos_r	5	0.1.0.0.0.0.0.0.1.0.0	synth with cache (only 1: intros n m p H1 H2; only 1: rewrite (mul_comm n p), (mul_comm m p); only 1: le_elim H1; only 1: le_elim H2; only 1: apply lt_le_incl; only 1: now apply mul_lt_mono_neg_l; only 1: apply eq_le_incl; only 1: now rewrite H2; only 1: apply eq_le_incl; only 1: rewrite H1; only 1: now do 2 rewrite mul_0_l).	0.853231	533
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_even_abs	5
+Coq.Classes.CMorphisms.flip_arrow	5
+Coq.Structures.OrdersLists.OrderedTypeLists.Sort_Inf_In	5
+Coq.Classes.CMorphisms.proper_sym_flip	5	0.2	synth with cache (only 1: intros; only 1: simpl_crelation).	0.021815	4
+Coq.Structures.OrdersLists.OrderedTypeLists.ListIn_Inf	5	128.1.1.0.0.0	synth with cache (only 1: simple induction l; only 1: simpl; only 1: intros; only 1: constructor; only 1: simpl; only 1: simpl_relation).	0.339848	159
+Coq.Lists.SetoidList.Type_with_equality.NoDupA_altdef	5
+Coq.Lists.SetoidList.Type_with_equality.incl_nil	5	452	synth with cache (only 1: now rewrite <- ?PeanoNat.Nat.succ_le_mono).	0.045510	80
+Coq.Structures.OrdersLists.OrderedTypeLists.In_Inf	5	4.0.0.64.384	synth with cache (only 1: intro; only 1: induction l as [| x l IH]; only 1: intros; only 1: constructor; only 1: firstorder using Sorted_inv).	1.218879	1836
+Coq.ZArith.Zpow_alt.Piter_mul_acc	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.eq_dec	5
+Coq.Sorting.Sorted.defs.StronglySorted_Sorted	5	2.0.2.0.0.1.69	synth with cache (only 1: intro H; only 1: induction 1 as [| a l [| ]]; only 1: auto using Sorted, LocallySorted, HdRel; only 1: auto using Sorted, LocallySorted, HdRel; only 1: inversion H1; only 1: subst; only 1: auto using Sorted, LocallySorted, HdRel).	4.996067	11346
+Coq.Numbers.Natural.Abstract.NMulOrder.NMulOrderProp.eq_mul_1	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_add_r	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_pred_square	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_neg_pos	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.incl_add_x	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_spec'	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.rem_divide	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.if_zero_succ	5
+Coq.Classes.CMorphisms.proper_sym_flip_2	5	1.129.192.7	synth with cache (only 1: intros x y H'; only 1: unfold respectful, relation_equivalence in *; only 1: unfold flip, respectful; only 1: firstorder).	4.090294	1764
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_nonneg_pos	5
+Coq.ZArith.Zorder.Ztrichotomy_inf	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_antisym_abs	5
+Coq.Structures.OrdersFacts.OrderedTypeFacts.lt_dec	5
+Coq.Sets.Infinite_sets.Infinite_sets.approximant_can_be_any_size	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.isok_iff	5
+Coq.FSets.FMapList.Raw.Elt.mem_1	5
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_even_nonneg	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_cancel_l	5
+Coq.ZArith.Zmin.Zmin_spec	5
+Coq.ZArith.Zmin.Zmin_irreducible	5	68	synth with cache (only 1: Z.solve_min).	0.126942	46
+Coq.MSets.MSetList.MakeRaw.ForNotations.inf_iff	5
+Coq.Lists.SetoidList.Type_with_equality.eqlistA_altdef	5
+Coq.Structures.OrdersLists.OrderedTypeLists.Inf_alt	5
+Coq.ZArith.Zpow_alt.Piter_op_square	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.mem_spec	5
+Coq.Sorting.Sorted.defs.Sorted_extends	5
+Coq.Strings.Byte.byte_dec_lb	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_le_mono	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_mul_l	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_nonneg_nonpos	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Add_commutative	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_spec	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.rem_mod_eq_0	5
+Coq.ZArith.Wf_Z.Z_of_nat_complete	5
+Coq.ZArith.Wf_Z.Z_of_nat_complete_inf	5	0.1.0.0	synth with cache (only 1: intros H; only 1: exists (Z.to_nat x); only 1: symmetry; only 1: now apply Z2Nat.id).	0.024321	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_add_wd	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Add_commutative'	5	67.1.64.0.0	synth with cache (only 1: intros A x y; only 1: unfold Add; only 1: intros; only 1: rewrite (Union_associative A (Singleton U x) (Singleton U y)); only 1: auto  10 with sets).	0.880457	304
+Coq.Classes.CMorphisms.proper_sym_impl_iff	5
+Coq.ZArith.Zabs.Zabs_ind	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_nonneg_nonneg	5
+Coq.Classes.CMorphisms.proper_sym_arrow_iffT	5	0.0.0.0.0	synth with cache (only 1: intros A R Sym f Hf x x' Hxx'; only 1: repeat red in Hf; only 1: split; only 1: eauto; only 1: eauto).	0.039097	5
+Coq.ZArith.Zorder.Ztrichotomy	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_antisym	5
+Coq.Structures.OrdersFacts.OrderedTypeFacts.if_eq_dec	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.isok_Ok	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_cancel_r	5
+Coq.Sets.Infinite_sets.Infinite_sets.Image_set_continuous	5
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_odd_abs_sgn	5
+Coq.FSets.FMapList.Raw.Elt.mem_2	5
+Coq.ZArith.Zmin.Zmin_le_prime_inf	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.isok_iff	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.isok_Ok	5	64	synth with cache (only 1: auto using Sorted, LocallySorted, HdRel).	0.013944	5
+Coq.Lists.SetoidList.Type_with_equality.equivlist_equiv	5
+Coq.Structures.OrdersLists.OrderedTypeLists.Sort_NoDup	5
+Coq.ZArith.Zbool.Zle_cases	5
+Coq.ZArith.Zpow_alt.Zpower_equiv	5
+Coq.ZArith.Zpow_alt.Zpower_alt_0_r	5	0	synth with cache (only 1: reflexivity).	0.011749	1
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.equal_spec	5
+Coq.Sorting.Sorted.defs.Sorted_StronglySorted	5
+Coq.Strings.Byte.byte_dec_bl	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_lt_cancel	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_mul_r	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.opp_nonpos_nonneg	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_true	5
+Coq.Structures.OrdersLists.KeyOrderedType.ltk_compat	5	5	synth with cache (only 1: solve_proper).	1.908691	1450
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.quot_div_exact	5
+Coq.Strings.Ascii.ascii_dec	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_false	5	0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros a n; only 1: rewrite <- testbit_spec'; only 1: destruct a.[n]; only 1: split; only 1: simpl; only 1: now try order'; only 1: simpl; only 1: now try order'; only 1: split; only 1: simpl; only 1: now try order'; only 1: simpl; only 1: now try order').	0.356004	157
+Coq.ZArith.Wf_Z.Z_of_nat_prop	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_add_0_l	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Add_distributes	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.setcover_intro	5	64.0.1	synth with cache (only 1: intro; only 1: intros A a b H' H'0; only 1: auto  6 with sets).	0.022648	6
+Coq.ZArith.Zabs.Zabs_intro	5
+Coq.Classes.CMorphisms.proper_sym_impl_iff_2	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.lt_add_pos_l	5
+Coq.ZArith.Zorder.dec_Zne	5
+Coq.Classes.CMorphisms.proper_sym_arrow_iffT_2	5	0.0.0.0.0	synth with cache (only 1: intros A R Sym B R' Sym' f Hf x x' Hxx' y y' Hyy'; only 1: repeat red in Hf; only 1: split; only 1: eauto; only 1: eauto).	0.046444	5
+Coq.setoid_ring.Ncring.Ring.pow_pos_comm	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_sub_r	5
+Coq.MSets.MSetPositive.PositiveSet.In_compat	5	3	synth with cache (only 1: solve_proper).	0.148603	108
+Coq.Structures.OrdersFacts.OrderedTypeFacts.eqb_alt	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_id_l	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.add_spec	5
+Coq.Sets.Infinite_sets.Infinite_sets.Image_set_continuous'	5
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.pow_odd_sgn	5
+Coq.FSets.FMapList.Raw.Elt.find_2	5
+Coq.ZArith.Zmin.Zpos_min_1	5
+Coq.Lists.SetoidList.Type_with_equality.eqlistA_equiv	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.mem_spec	5
+Coq.ZArith.Zbool.Zlt_cases	5
+Coq.ZArith.Zpow_alt.Zpower_alt_succ_r	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.subset_spec	5
+Coq.setoid_ring.Ring.BoolTheory	5	0.0.0.0.0.0.0.0.0.9	synth with cache (only 1: split; only 1: destr_bool; only 1: destr_bool; only 1: destr_bool; only 1: reflexivity; only 1: destr_bool; only 1: destr_bool; only 1: destr_bool; only 1: destr_bool; only 1: destr_bool).	1.446881	1220
+Coq.setoid_ring.Ring.bool_eq_ok	5	0	synth with cache (only 1: destr_bool).	0.019240	1
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_le_square	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_nonneg	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_m1_0	5
+Coq.Structures.OrdersLists.KeyOrderedType.ltk_compat'	5
+Coq.Structures.OrdersLists.KeyOrderedType.pair_compat	5	0.1	synth with cache (only 1: reduce; only 1: intuition).	0.030329	3
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_div_mul_exact	5
+Coq.Strings.Ascii.eqb_spec	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_eqb	5
+Coq.ZArith.Wf_Z.Z_of_nat_set	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_add_succ_l	5
+Coq.MSets.MSetPositive.PositiveSet.eq_equiv	5	1.0.0.721	synth with cache (only 1: split; only 1: firstorder; only 1: firstorder; only 1: firstorder).	4.438629	2971
+Coq.ZArith.Zabs.Zabs_dec	5
+Coq.MSets.MSetPositive.PositiveSet.mem_spec	5	0.0.0.0	synth with cache (only 1: destr_bool; only 1: split; only 1: congruence; only 1: easy).	0.031815	4
+Coq.MSets.MSetPositive.PositiveSet.mem_Leaf	5	0	synth with cache (only 1: trivial).	0.015327	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Disjoint_Intersection	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_Empty_set_l	5	0	synth with cache (only 1: auto with sets).	0.014049	1
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_Empty_set_r	5	0.0	synth with cache (only 1: intros; only 1: auto with sets).	0.018546	2
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.lt_add_pos_r	5
+Coq.ZArith.Zorder.dec_Zgt	5
+Coq.MSets.MSetPositive.PositiveSet.empty_spec	5	320	synth with cache (only 1: now try split).	0.056419	21
+Coq.Classes.CMorphisms.PartialOrder_proper_type	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_add_cancel_r	5
+Coq.setoid_ring.Ncring.Ring.pow_pos_succ	5
+Coq.Structures.OrdersFacts.OrderedTypeFacts.eqb_compat	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Seminus_Empty_set_l	5	1.0.0.1.0.0.1.64	synth with cache (only 1: intros Hfst Hsnd; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x0 H'0; only 1: elim H'0; only 1: auto with sets; only 1: auto with sets).	0.608952	518
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_not_eq	5	4.0	synth with cache (only 1: intro H; only 1: order).	0.103479	90
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_eq	5	0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	0.033225	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_lt	5	0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	0.023574	1
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_id_r	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Seminus_Empty_set_r	5	0.0.0.0.1.0.0.0	synth with cache (only 1: intros; only 1: apply Extensionality_Ensembles; only 1: split; only 1: intros x H1; only 1: destruct H1; only 1: unfold In in *; only 1: assumption; only 1: intuition).	0.177274	115
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.add_ok	5
+Coq.Sets.Infinite_sets.Infinite_sets.Pigeonhole_bis	5
+Coq.ZArith.Zcomplements.floor_gt0	5	1.1	synth with cache (only 1: intros; only 1: reflexivity).	0.021094	4
+Coq.Numbers.Integer.Abstract.ZPow.ZPowProp.abs_pow	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.sub_add_opp	5	0.0.1.0	synth with cache (only 1: intros m IH; only 1: revert m; only 1: intro n; only 1: reflexivity).	0.023065	5
+Coq.FSets.FMapList.Raw.Elt.find_1	5
+Coq.MSets.MSetAVL.MakeRaw.singleton_spec	5
+Coq.setoid_ring.InitialRing.Zth	5
+Coq.setoid_ring.InitialRing.ZMORPHISM.radd_ext3_Proper	5	0	synth with cache (only 1: exact (Radd_ext Reqe)).	0.014165	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.rmul_ext3_Proper	5	0	synth with cache (only 1: exact (Rmul_ext Reqe)).	0.013962	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_eq	5	1	synth with cache (only 1: order).	1.012487	2
+Coq.setoid_ring.InitialRing.ZMORPHISM.ropp_ext3_Proper	5	0	synth with cache (only 1: exact (Ropp_ext Reqe)).	0.014092	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_le	5	0	synth with cache (only 1: order).	0.011017	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.neq_eq	5	0	synth with cache (only 1: order).	0.013835	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_neq	5	0	synth with cache (only 1: order).	0.014234	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_lt_trans	5	2.0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *; only 1: order).	0.025698	4
+Coq.Lists.SetoidList.Type_with_equality.eqlistA_equivlistA	5
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_le_trans	5	2.0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *; only 1: order).	0.028045	4
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_trans	5	0	synth with cache (only 1: order).	0.013020	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_antisym	5	0	synth with cache (only 1: order).	0.014611	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_neq	5	0	synth with cache (only 1: order).	0.021444	1
+Coq.Strings.Byte.eqb_false	5
+Coq.Structures.OrdersFacts.OrderedTypeTest.neq_sym	5	0	synth with cache (only 1: order).	0.012285	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_le	5	0.0	synth with cache (only 1: intro H; only 1: order).	0.016700	2
+Coq.Structures.OrdersFacts.OrderedTypeTest.gt_not_eq	5	0	synth with cache (only 1: order).	0.014245	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_not_lt	5	0	synth with cache (only 1: order).	0.011989	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_not_gt	5	0	synth with cache (only 1: order).	0.011431	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_not_gt	5	0	synth with cache (only 1: order).	0.012147	1
+Coq.MSets.MSetList.MakeRaw.ForNotations.add_inf	5
+Coq.ZArith.Zbool.Zge_cases	5
+Coq.ZArith.Zpow_alt.Zpower_alt_neg_r	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.empty_spec	5
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_is_nlt_ngt	5	2.2.0.1.0.0.65	synth with cache (only 1: repeat Notations.split; only 1: order; only 1: order; only 1: destruct (OrderTac.TO.compare_spec x y); only 1: auto; only 1: easy; only 1: easy).	1.219864	836
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_lt_square	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_pos_nonneg	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_lt_mono_l	5
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.ltk_not_eqk	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_quot_mul_exact	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_0	5	0.0.256.7.2	synth with cache (only 1: apply sqrt_unique; only 1: nzsimpl; only 1: constructor; only 1: order; only 1: apply lt_succ_diag_r).	1.071616	1037
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.ltk_not_eqke	5	0.0.0	synth with cache (only 1: intros LT EQ; only 1: rewrite EQ in LT; only 1: elim (StrictOrder_Irreflexive _ LT)).	0.034853	3
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Inf_eq	5	0	synth with cache (only 1: now intros <-).	0.036022	1
+Coq.Strings.Ascii.eqb_refl	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_inj	5
+Coq.ZArith.Wf_Z.natlike_ind	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_add_add	5
+Coq.ZArith.Zabs.Zabs_spec	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.le_lt_add_lt	5
+Coq.ZArith.Zorder.dec_Zge	5
+Coq.MSets.MSetPositive.PositiveSet.mem_node	5
+Coq.Classes.CMorphisms.PartialOrder_StrictOrder	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_opp_l	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_opp_r	5	1.0.0.0.0.0	synth with cache (only 1: intros; only 1: apply gcd_unique_alt; only 1: apply gcd_nonneg; only 1: intros; only 1: rewrite divide_opp_r; only 1: apply gcd_divide_iff).	0.059274	25
+Coq.setoid_ring.Ncring.Ring.pow_pos_add	5
+Coq.setoid_ring.Ncring.Ring.pow_N_pow_N	5	0	synth with cache (only 1: reflexivity).	0.016145	1
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_pos_l	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Union_l	5
+Coq.ZArith.Zcomplements.floor_ok	5
+Coq.MSets.MSetAVL.MakeRaw.singleton_ok	5	11	synth with cache (only 1: intuition_in).	4.887495	3948
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.remove_spec	5
+Coq.Sets.Infinite_sets.Infinite_sets.Pigeonhole_ter	5
+Coq.FSets.FMapList.Raw.Elt.add_1	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.eq_equiv	5
+Coq.setoid_ring.InitialRing.ZMORPHISM.get_signZ_th	5
+Coq.Strings.Byte.nat.of_to_nat	5
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.rsub_ext3_Proper	5	0.2	synth with cache (only 1: intros x1 x2 Ex y1 y2 Ey; only 1: now rewrite !(ARsub_def ARth), Ex, Ey).	0.044202	4
+Coq.Lists.SetoidList.Type_with_equality.InA_compat	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.add_ok	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.pair_wd	5	0.0.0.65.2	synth with cache (only 1: intros x x' Hx y y' Hy; only 1: compute; only 1: setoid_rewrite Hx; only 1: setoid_rewrite Hy; only 1: auto with *).	1.039615	874
+Coq.Strings.HexString.Raw.to_N_of_pos	5	65	synth with cache (only 1: now PeanoNat.Nat.nzsimpl).	0.043418	6
+Coq.ZArith.Zbool.Zgt_cases	5
+Coq.ZArith.Zpow_alt.Zpower_alt_Ppow	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_1	5	8.0.0.0.0.0.4	synth with cache (only 1: apply sqrt_unique' with 0; only 1: split; only 1: order; only 1: apply mul_nonneg_nonneg; only 1: apply lt_le_incl, lt_0_2; only 1: apply lt_le_incl, lt_0_1; only 1: now nzsimpl').	3.445651	1994
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.is_empty_spec	5
+Coq.Lists.SetoidList.Type_with_equality.InA_eqA	5	0.0.65.65	synth with cache (only 1: intros H; only 1: intros Az LS; only 1: rewrite 2!InA_alt; only 1: firstorder).	0.887205	563
+Coq.Structures.OrdersFacts.OrderedTypeRev.lt_strorder	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Union_r	5	0.0.129.1.0.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.192.1	synth with cache (only 1: intros A B C; only 1: intro h; only 1: apply Extensionality_Ensembles; only 1: split; only 1: intros x H; only 1: constructor; only 1: inversion H; only 1: intuition; only 1: inversion H; only 1: intuition; only 1: intros x H; only 1: constructor; only 1: inversion H; only 1: inversion H0; only 1: intuition; only 1: inversion H; only 1: inversion H0; only 1: inversion H0; only 1: inversion H; only 1: destruct 1; only 1: auto with sets; only 1: auto with sets).	2.745059	2665
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_lt_mono_l	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_lt_mono_r	5
+Coq.ZArith.Zdiv.Z_div_mod_POS	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.gcd_div_factor	5
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Inf_lt	5
+Coq.Strings.Ascii.eqb_sym	5
+Coq.ZArith.Wf_Z.natlike_rec	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.add_b2n_double_div2	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_mul_wd	5
+Coq.ZArith.Zabs.Zsgn_spec	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.lt_le_add_lt	5
+Coq.ZArith.Zorder.not_Zeq	5
+Coq.MSets.MSetPositive.PositiveSet.is_empty_spec	5
+Coq.MSets.MSetPositive.PositiveSet.subset_Leaf_s	5	192.704.0	synth with cache (only 1: intros n; only 1: intro H; only 1: easy).	0.038605	45
+Coq.Classes.CMorphisms.StrictOrder_PreOrder	5
+Coq.ZArith.Zorder.Zle_not_lt	5	322	synth with cache (only 1: Z.order_pos).	0.296923	94
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_abs_l	5
+Coq.Lists.SetoidList.Type_with_equality.In_InA	5	1.0.5	synth with cache (only 1: firstorder; only 1: rewrite InA_alt; only 1: firstorder).	2.451805	1838
+Coq.ZArith.Zorder.Zlt_not_le	5	0.64	synth with cache (only 1: intros Hb; only 1: Z.order).	0.280209	40
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_pos_r	5
+Coq.ZArith.Zorder.Zle_not_gt	5	0.0.450	synth with cache (only 1: repeat red; only 1: Z.swap_greater; only 1: apply Z.le_ngt).	0.196608	159
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_mul_0_r	5	0.385.5	synth with cache (only 1: intro n; only 1: compute in *; only 1: now rewrite recursion_0).	1.005060	1541
+Coq.setoid_ring.Ncring.Ring.ring_mul_0_l	5
+Coq.ZArith.Zorder.Zgt_not_le	5	64	synth with cache (only 1: now rewrite <- ?Z.succ_le_mono).	0.056736	5
+Coq.ZArith.Zcomplements.Z_lt_abs_rec	5
+Coq.MSets.MSetAVL.MakeRaw.create_spec	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.remove_ok	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.singleton_ok	5	576	synth with cache (only 1: firstorder).	0.064426	90
+Coq.FSets.FMapList.Raw.Elt.add_2	5
+Coq.NArith.NArith.TestOrder.test	5	0	synth with cache (only 1: N.order).	0.029773	1
+Coq.Logic.ClassicalDescription.excluded_middle_informative	5
+Coq.MSets.MSetAVL.MakeRaw.create_ok	5	577.2.1.1.9	synth with cache (only 1: constructor; only 1: intuition; only 1: auto_tc; only 1: auto_tc; only 1: now PeanoNat.Nat.nzsimpl).	1.074275	2158
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.same_gen	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.succ_wd	5
+Coq.NArith.Ndist.Nplength_infty	5	1.256.2	synth with cache (only 1: destruct a; only 1: repeat match goal with | _ => reflexivity | _ => progress subst | H:Some ?a = Some ?b |- _ => assert (a = b) by refine match H with | eq_refl => eq_refl end; clear H | H:None = Some _ |- _ => solve [ inversion H ] end; only 1: now try N.order').	0.304253	177
+Coq.MSets.MSetList.MakeRaw.ForNotations.add_spec	5
+Coq.ZArith.Zbool.Zle_bool_imp_le	5
+Coq.Strings.HexString.to_N_of_N	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.radd_ext_Proper	5	193.384.576	synth with cache (only 1: intros H'; only 1: intros n; only 1: firstorder).	0.302046	179
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_2	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rmul_ext_Proper	5	1	synth with cache (only 1: exact (Rmul_ext Reqe)).	0.014085	2
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.add_spec	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.ropp_ext_Proper	5	257.130	synth with cache (only 1: intros a n; only 1: firstorder).	0.080393	69
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rsub_ext_Proper	5	3	synth with cache (only 1: exact (ARsub_ext Rsth Reqe ARth)).	0.020367	4
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rinv_ext_Proper	5	65	synth with cache (only 1: now auto).	0.022466	6
+Coq.Structures.OrdersFacts.OrderedTypeRev.lt_compat	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Disjoint_noop	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_le_mono_l	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_lt_mono	5
+Coq.ZArith.Zdiv.Z_div_mod	5
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Sort_Inf_In	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.gcd_quot_factor	5
+Coq.Strings.Ascii.eqb_eq	5
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Setminus_Included_empty	5	1.0.0.2.0.0.2.0.0.0	synth with cache (only 1: intros; only 1: apply Extensionality_Ensembles; only 1: split; only 1: intros x H1; only 1: unfold In in *; only 1: exfalso; only 1: inversion_clear H1; only 1: contradict H; only 1: intuition; only 1: intuition).	0.876315	917
+Coq.Strings.Ascii.eqb_neq	5	0	synth with cache (only 1: now rewrite <- not_true_iff_false, Pos.eqb_eq).	0.020852	1
+Coq.Strings.Ascii.eqb_compat	5	0.0.0	synth with cache (only 1: intros x x' Exx' y y' Eyy'; only 1: apply eq_true_iff_eq; only 1: now rewrite 2!N.eqb_eq, Exx', Eyy').	0.031274	3
+Coq.ZArith.Wf_Z.Efficient_Rec.R_wf	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.add_b2n_double_bit0	5
+Coq.ZArith.Zabs.Zabs_nat_le	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.le_le_add_le	5
+Coq.Classes.CMorphisms.StrictOrder_PartialOrder	5
+Coq.MSets.MSetPositive.PositiveSet.subset_spec	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_abs_r	5
+Coq.Lists.SetoidList.Type_with_equality.InA_split	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_neg_l	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_mul_succ_r	5
+Coq.ZArith.Zorder.Znot_ge_lt	5
+Coq.ZArith.Zorder.Znot_lt_ge	5	1.192.0	synth with cache (only 1: Z.swap_greater; only 1: intros a; only 1: Z.order).	0.045177	13
+Coq.ZArith.Zorder.Znot_gt_le	5	1.192.1	synth with cache (only 1: Z.swap_greater; only 1: intros a; only 1: Z.order).	0.037246	11
+Coq.setoid_ring.Ncring.Ring.ring_mul_0_r	5
+Coq.ZArith.Zorder.Znot_le_gt	5	0.2	synth with cache (only 1: Z.swap_greater; only 1: apply Z.nle_gt).	0.028833	4
+Coq.Sorting.Heap.defs.leA_Tree_Leaf	5	0.0.0	synth with cache (only 1: intros; only 1: simpl; only 1: auto with arith).	0.024865	3
+Coq.Sorting.Heap.defs.leA_Tree_Node	5	0.0	synth with cache (only 1: simpl; only 1: auto with datatypes).	0.019169	2
+Coq.ZArith.Zcomplements.Z_lt_abs_induction	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.singleton_spec	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_div2	5	1.0.0.0.390.0	synth with cache (only 1: intros Hab; only 1: destr_bool; only 1: apply Private_NZDiv.div_small; only 1: order'; only 1: apply Private_NZDiv.div_small; only 1: order').	1.500109	1866
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.empty_ok	5	1.0	synth with cache (only 1: apply <- isok_iff; only 1: intuition).	0.024113	3
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.empty_spec	5	130.0	synth with cache (only 1: unfold empty; only 1: now subst).	0.032272	10
+Coq.FSets.FMapList.Raw.Elt.add_3	5
+Coq.Sorting.Heap.defs.invert_heap	5	0.66.448	synth with cache (only 1: intros Hn Hm; only 1: inversion_clear 1; only 1: auto with datatypes).	0.563214	408
+Coq.Sorting.PermutSetoid.Permut.list_contents_app	5
+Coq.Sorting.PermutSetoid.Permut.permut_refl	5	64	synth with cache (only 1: constructor).	0.021797	5
+Coq.Sorting.PermutSetoid.Permut.permut_sym	5	704.2	synth with cache (only 1: unfold permutation; only 1: now N.nzsimpl).	0.077422	15
+Coq.Logic.ClassicalDescription.classical_definite_description	5
+Coq.Sorting.PermutSetoid.Permut.permut_trans	5	65.0.64	synth with cache (only 1: destruct eqA_equiv; only 1: unfold permutation, meq; only 1: congruence).	0.383359	200
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.ARgen_phiPOS_Psucc	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.pred_wd	5
+Coq.NArith.Ndist.Nplength_zeros	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.remove_inf	5
+Coq.ZArith.Zbool.Zle_imp_le_bool	5
+Coq.Strings.HexString.to_Z_of_Z	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_pos	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.remove_spec	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.ceqb_spec	5
+Coq.MSets.MSetAVL.MakeRaw.bal_spec	5
+Coq.Structures.OrdersFacts.OrderedTypeRev.le_lteq	5
+Coq.Structures.OrderedTypeEx.Nat_as_OT.lt_trans	5	3	synth with cache (only 1: Nat.order).	0.143491	44
+Coq.Structures.OrderedTypeEx.Nat_as_OT.lt_not_eq	5	4.0	synth with cache (only 1: intros n m H; only 1: Nat.order).	0.396631	322
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_gt_1	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_le_mono_l	5
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Sort_Inf_NotIn	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.gcd_div_gcd	5
+Coq.ZArith.Zorder.not_Zne	5	0.896.130.1.386.0.6.194.65	synth with cache (only 1: intros H; only 1: intuition; only 1: destruct (Z.eq_decidable n m); only 1: auto; only 1: destruct n; only 1: now Z.nzsimpl; only 1: reflexivity || apply f_equal || exfalso; only 1: intuition BinNat.N.order; only 1: easy).	3.530588	6967
+Coq.Strings.Byte.nat.to_of_nat	5
+Coq.ZArith.Zdiv.Remainder_equiv	5
+Coq.ZArith.Wf_Z.Efficient_Rec.natlike_rec2	5
+Coq.ZArith.Zorder.Zgt_asym	5	65.1	synth with cache (only 1: Z.swap_greater; only 1: Z.order).	0.308076	52
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_lt_cases	5
+Coq.ZArith.Zabs.Zabs_nat_lt	5
+Coq.Strings.Ascii.ascii_N_embedding	5
+Coq.ZArith.Zorder.Zgt_irrefl	5	196	synth with cache (only 1: easy).	0.299368	391
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_0_l	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.remove_ok	5	0.0.0.0.0.0.0.1.0.0.0.0.0	synth with cache (only 1: repeat rewrite <- isok_iff; only 1: revert s x; only 1: simple induction s; only 1: intuition; only 1: simpl; only 1: intros; only 1: elim_compare x a; only 1: inv; only 1: auto; only 1: inv; only 1: auto; only 1: inv; only 1: auto).	3.011919	1095
+Coq.MSets.MSetPositive.PositiveSet.equal_subset	5
+Coq.Lists.SetoidList.Type_with_equality.InA_app	5
+Coq.micromega.RingMicromega.Micromega.rplus_morph_Proper	5	0	synth with cache (only 1: exact (SORplus_wd sor)).	0.012669	1
+Coq.micromega.RingMicromega.Micromega.rtimes_morph_Proper	5	1	synth with cache (only 1: exact (SORtimes_wd sor)).	0.014790	2
+Coq.micromega.RingMicromega.Micromega.ropp_morph_Proper	5	2	synth with cache (only 1: exact (SORopp_wd sor)).	0.016992	3
+Coq.micromega.RingMicromega.Micromega.rle_morph_Proper	5	2	synth with cache (only 1: exact (SORle_wd sor)).	0.016192	3
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_neg_r	5
+Coq.micromega.RingMicromega.Micromega.rlt_morph_Proper	5	3	synth with cache (only 1: exact (SORlt_wd sor)).	0.017534	4
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.def_mul_mul	5
+Coq.setoid_ring.Ncring.Ring.ring_opp_mul_l	5
+Coq.ZArith.Zcomplements.Zcase_sign	5
+Coq.ZArith.Zcomplements.sqr_pos	5	0.258	synth with cache (only 1: intro m; only 1: now destruct n).	0.079912	20
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.is_empty_spec	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.b2n_bit0	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.elements_spec1	5	0.2	synth with cache (only 1: repeat red; only 1: auto).	0.023740	4
+Coq.FSets.FMapList.Raw.Elt.add_Inf	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.elements_spec2w	5	64.1.0.0	synth with cache (only 1: intros; only 1: induction s; only 1: intuition; only 1: trivial).	0.053479	7
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.fold_spec	5	2	synth with cache (only 1: constructors).	0.014563	3
+Coq.Sorting.Heap.defs.is_heap_rect	5
+Coq.Logic.ClassicalDescription.dependent_unique_choice	5
+Coq.Sorting.PermutSetoid.Permut.permut_cons_eq	5
+Coq.Sorting.PermutSetoid.Permut.permut_cons	5	0.0.0.0	synth with cache (only 1: unfold permutation; only 1: simpl; only 1: intros; only 1: auto with datatypes).	0.038710	4
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.add_wd	5
+Coq.micromega.RingMicromega.Micromega.rminus_morph_Proper	5	0.0.0.0.4	synth with cache (only 1: intros x1 x2 H1 y1 y2 H2; only 1: rewrite (Rsub_def (SORrt sor) x1 y1); only 1: rewrite (Rsub_def (SORrt sor) x2 y2); only 1: rewrite H1; only 1: now rewrite H2).	1.635383	904
+Coq.NArith.Ndist.Nplength_one	5
+Coq.ZArith.Zbool.Zle_bool_antisym	5
+Coq.micromega.RingMicromega.Micromega.cleb_sound	5	706	synth with cache (only 1: firstorder  (subst; auto)).	0.385107	183
+Coq.Numbers.DecimalN.Unsigned.of_to	5
+Coq.Strings.HexString.to_nat_of_nat	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_lt_lin	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.singleton_spec	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.NPEequiv_eq	5
+Coq.Structures.OrdersFacts.OrderedTypeRev.compare_spec	5
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.ARgen_phiPOS_add	5
+Coq.MSets.MSetAVL.MakeRaw.bal_ok	5
+Coq.Structures.OrderedTypeEx.Nat_as_OT.compare	5
+Coq.Structures.OrderedTypeEx.Z_as_OT.lt_trans	5	1.0	synth with cache (only 1: intros x y z; only 1: intuition auto; Z.Private_Tac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	0.020842	3
+Coq.Structures.OrderedTypeEx.Z_as_OT.lt_not_eq	5	0	synth with cache (only 1: Z.order).	0.017005	1
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_lt_mono_r	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_le_mono_r	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.union_ok	5	129.1.65.1.0.2	synth with cache (only 1: repeat red; only 1: induction s; only 1: auto; only 1: intros n IH; only 1: inv; only 1: firstorder).	2.688703	2462
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Sort_NoDupA	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.gcd_quot_gcd	5
+Coq.Strings.Byte.nat.to_of_nat_iff	5
+Coq.ZArith.Zdiv.Z_div_mod_full	5
+Coq.ZArith.Wf_Z.Efficient_Rec.natlike_rec3	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_le_cases	5
+Coq.ZArith.Zorder.Zle_lt_or_eq	5
+Coq.FSets.FSetCompat.Backport_Sets.lt_not_eq	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.NPEeval_ext	5	64.1.0.64.128.129	synth with cache (only 1: intros n m p; only 1: subst; only 1: unfold Basics.flip, respectful; only 1: intros; only 1: symmetry; only 1: auto with arith).	2.007304	231
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_0_r	5
+Coq.ZArith.Zorder.Zgt_trans	5	0.1.0	synth with cache (only 1: Z.swap_greater; only 1: intros; only 1: now transitivity m).	0.212858	49
+Coq.MSets.MSetPositive.PositiveSet.equal_spec	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rsub_0_l	5	7	synth with cache (only 1: eauto).	0.359937	184
+Coq.Lists.SetoidList.Type_with_equality.InA_app_iff	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_lt_mono_nonneg	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.remove_spec	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.singleton_ok	5	65	synth with cache (only 1: eauto).	0.017154	6
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_wd	5
+Coq.ZArith.Zorder.Zle_gt_trans	5	1.0.68	synth with cache (only 1: intro LE; only 1: Z.swap_greater; only 1: Z.order).	0.639904	613
+Coq.ZArith.Zorder.Zgt_le_trans	5	0.0	synth with cache (only 1: Z.swap_greater; only 1: Z.order).	0.041004	2
+Coq.setoid_ring.Ncring.Ring.ring_opp_mul_r	5
+Coq.ZArith.Zcomplements.Zlength_properties.Zlength_correct	5
+Coq.ZArith.Zcomplements.Zlength_properties.Zlength_nil	5	0	synth with cache (only 1: trivial).	0.013309	1
+Coq.Numbers.DecimalN.Unsigned.to_of	5	193.8.1	synth with cache (only 1: unfold N.to_uint, Pos.to_uint; only 1: rewrite <- Unsigned.to_of; only 1: now split).	3.453317	1444
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_unique	5
+Coq.FSets.FMapList.Raw.Elt.add_sorted	5
+Coq.Sorting.Heap.defs.is_heap_rec	5
+Coq.FSets.FMapFacts.WFacts_fun.eq_bool_alt	5	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.047282	5
+Coq.Logic.ClassicalDescription.unique_choice	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.opp_wd	5
+Coq.Sorting.PermutSetoid.Permut.permut_app	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.In_1	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.In_eq_iff	5
+Coq.ZArith.Zbool.Zle_bool_trans	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.singleton_spec	5	514.448.451.129	synth with cache (only 1: Notations.split; only 1: firstorder using StronglySorted_inv; only 1: now inversion H; only 1: now left).	1.740321	2659
+Coq.NArith.Ndist.Nplength_first_one	5
+Coq.ZArith.Zorder.Zge_trans	5	1.3	synth with cache (only 1: Z.swap_greater; only 1: Z.order).	1.448016	822
+Coq.micromega.RingMicromega.Micromega.cneqb_sound	5
+Coq.Strings.Ascii.N_ascii_embedding	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.union_spec	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_le_lin	5
+Coq.Strings.HexString.to_pos_of_pos	5
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_spec	5
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_eq	5	0.0	synth with cache (only 1: intros H; only 1: now apply compare_eq_iff).	0.015631	2
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_refl	5	2.0.0.0	synth with cache (only 1: apply compare_eq_iff; only 1: apply compare_eq_iff; only 1: apply compare_eq_iff; only 1: reflexivity).	0.051459	46
+Coq.Sorting.Heap.defs.low_trans	5	64.1.385.0.0.0.1	synth with cache (only 1: simple induction T; only 1: intros; only 1: simpl; only 1: auto with datatypes; only 1: intros c Hc IH; only 1: simpl; only 1: eauto with *).	1.660462	633
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.ARgen_phiPOS_mult	5
+Coq.Structures.OrderedTypeEx.Z_as_OT.compare	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_le_mono_r	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_le_mono	5
+Coq.MSets.MSetAVL.MakeRaw.add_spec'	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.union_spec	5
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Sort_In_cons_1	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.gcd_mod	5
+Coq.ZArith.Zdiv.Z_mod_remainder	5
+Coq.ZArith.Wf_Z.Efficient_Rec.Zlt_0_rec	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_neg_cases	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_pos_cases	5	0.0.0	synth with cache (only 1: intros n m H; only 1: apply add_lt_cases; only 1: now nzsimpl).	0.040162	3
+Coq.Sorting.Heap.defs.Equivalence_instance_0	5	320.0.128.0.0.65.385.0.0.577	synth with cache (only 1: Notations.split; only 1: auto with datatypes; only 1: auto with datatypes; only 1: intros n m H; only 1: intros H1 H2 H3; only 1: inversion H; only 1: inversion H; only 1: rewrite H1; only 1: inversion H; only 1: eauto with arith).	1.797537	932
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_diag	5
+Coq.FSets.FSetCompat.Backport_Sets.compare	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rsub_0_r	5
+Coq.Lists.SetoidList.Type_with_equality.InA_rev	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_le_mono_nonneg	5
+Coq.Lists.SetoidList.Type_with_equality.InA_singleton	5	0.0.3	synth with cache (only 1: intuition; only 1: invlist InA; only 1: auto).	0.120584	96
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_base	5
+Coq.MSets.MSetPositive.PositiveSet.eq_dec	5
+Coq.Lists.SetoidList.Type_with_equality.InA_double_head	5	0.0	synth with cache (only 1: do 2 rewrite InA_alt; only 1: firstorder).	0.188629	2
+Coq.ZArith.Zcomplements.Zlength_properties.Zlength_cons	5
+Coq.Numbers.DecimalN.Unsigned.to_uint_inj	5
+Coq.ZArith.Wf_Z.Efficient_Rec.Zlt_0_ind	5	0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros P Hrec; only 1: induction x as [x IH] using (well_founded_induction_type R_wf); only 1: destruct x; only 1: intros Hx; only 1: apply Hrec; only 1: intros y (Hy, Hy'); only 1: assert (0 < 0) by now apply Z.le_lt_trans with y; only 1: discriminate; only 1: trivial; only 1: intros Hx; only 1: apply Hrec; only 1: intros y (Hy, Hy'); only 1: apply IH; only 1: now split; only 1: trivial; only 1: trivial; only 1: intros Hx; only 1: now destruct Hx).	1.675498	1867
+Coq.Lists.SetoidList.Type_with_equality.InA_permute_heads	5	0.0	synth with cache (only 1: do 2 rewrite InA_alt; only 1: firstorder).	0.248969	2
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bits_0	5
+Coq.setoid_ring.Ncring.Ring.ring_opp_add	5
+Coq.FSets.FMapList.Raw.Elt.remove_1	5
+Coq.FSets.FSetProperties.WProperties_fun.In_dec	5	0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (F.mem_iff s x); only 1: case (mem x s); only 1: intuition; only 1: intuition).	0.091130	5
+Coq.FSets.FMapFacts.WFacts_fun.eq_option_alt	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.sub_wd	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.mem_1	5
+Coq.Sorting.PermutSetoid.Permut.permut_add_inside_eq	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.mem_iff	5
+Coq.ZArith.Zbool.Zle_bool_total	5
+Coq.NArith.Ndist.ni_min_idemp	5
+Coq.ZArith.Zorder.Zsucc_le_compat	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.union_inf	5
+Coq.micromega.RingMicromega.Micromega.cltb_sound	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.inter_spec	5
+Coq.MSets.MSetAVL.MakeRaw.add_spec	5	0.0.0.0.0.0.1.0.0.0	synth with cache (only 1: induct ltac:(s) ltac:(x); only 1: intuition_in; only 1: intuition_in; only 1: eauto; only 1: rewrite ?bal_spec, ?IHl, ?IHr; only 1: intuition_in; only 1: intuition_in; only 1: rewrite ?bal_spec, ?IHl, ?IHr; only 1: intuition_in; only 1: eauto).	3.964509	834
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_mul_below	5
+Coq.Strings.Ascii.N_ascii_bounded	5
+Coq.MSets.MSetProperties.WPropertiesOn.In_dec	5	0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (F.mem_iff s x); only 1: case (mem x s); only 1: intuition; only 1: intuition).	0.089169	5
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_gt_iff	5
+Coq.setoid_ring.InitialRing.ZMORPHISM.rsub_ext4_Proper	5
+Coq.Structures.OrderedTypeEx.Positive_as_OT.lt_not_eq	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_le_mono	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_lt_le_mono	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.inter_ok	5
+Coq.micromega.ZMicromega.eq_le_iff	5	0.0.0.3.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros; only 1: now subst; only 1: destruct 1; only 1: Z.order').	0.992332	882
+Coq.micromega.ZMicromega.lt_le_iff	5	0.0	synth with cache (only 1: intros a; only 1: apply Z.lt_le_pred).	0.016122	2
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Sort_In_cons_2	5
+Coq.ZArith.Wf_Z.Efficient_Rec.Z_lt_rec	5	0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.1	synth with cache (only 1: intros P Hrec; only 1: induction x as [x IH] using (well_founded_induction_type R_wf); only 1: destruct x; only 1: intros Hx; only 1: apply Hrec; only 1: intros y (Hy, Hy'); only 1: assert (0 < 0) by now apply Z.le_lt_trans with y; only 1: discriminate; only 1: intros Hx; only 1: apply Hrec; only 1: intros y (Hy, Hy'); only 1: apply IH; only 1: now split; only 1: trivial; only 1: intros Hx; only 1: now destruct Hx).	3.216633	3593
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.gcd_rem	5
+Coq.ZArith.Wf_Z.Efficient_Rec.Z_lt_induction	5	0.0.0	synth with cache (only 1: intros P Hrec; only 1: apply Zlt_0_rec; only 1: auto).	0.029795	3
+Coq.ZArith.Zdiv.Z_div_mod_eq	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_nonpos_cases	5
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.add_nonneg_cases	5	0.0.0	synth with cache (only 1: intros n m H; only 1: apply add_le_cases; only 1: now nzsimpl).	0.032220	3
+Coq.Sorting.Heap.defs.Proper_instance_0	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_add_mult_diag_r	5
+Coq.FSets.FSetCompat.Update_WSets.In_compat	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.mem_spec	5	130.129.449.0	synth with cache (only 1: split; only 1: CRelationClasses.simpl_crelation; only 1: destr_bool; only 1: auto with *).	0.184434	361
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv_simpl	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_pos_pos	5
+Coq.Strings.Byte.nat.to_of_nat_option_map	5
+Coq.MSets.MSetPositive.PositiveSet.lex_Opp	5
+Coq.QArith.Qround.Qopp_lt_compat	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_step	5
+Coq.ZArith.Zcomplements.Zlength_properties.Zlength_nil_inv	5
+Coq.Numbers.DecimalN.Unsigned.to_uint_surj	5
+Coq.Numbers.DecimalN.Unsigned.of_uint_norm	5	0	synth with cache (only 1: now induction d).	0.020492	1
+Coq.Lists.SetoidList.Type_with_equality.InA_app_idem	5
+Coq.Numbers.DecimalN.Unsigned.of_inj	5	66.0.0	synth with cache (only 1: intros; only 1: rewrite <- !DecimalPos.Unsigned.to_of; only 1: now Morphisms.f_equiv).	0.065380	8
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit0_odd	5
+Coq.setoid_ring.Ncring.Ring.ring_opp_opp	5
+Coq.Numbers.DecimalN.Unsigned.of_iff	5	0.0.1.0.0.0.0	synth with cache (only 1: split; only 1: intros; only 1: rewrite <- !to_of; only 1: now f_equal; only 1: intros E; only 1: rewrite <- DecimalPos.Unsigned.of_uint_norm, E; only 1: apply DecimalPos.Unsigned.of_uint_norm).	0.228491	215
+Coq.FSets.FMapList.Raw.Elt.remove_2	5
+Coq.FSets.FSetProperties.WProperties_fun.Add_Equal	5
+Coq.QArith.Qabs.Qabs_case	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.equal_refl	5	192.192.0.0	synth with cache (only 1: red; only 1: split; only 1: now subst; only 1: now subst).	0.033647	22
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.equal_sym	5	0	synth with cache (only 1: fsetdec).	0.043100	1
+Coq.FSets.FMapFacts.WFacts_fun.MapsTo_fun	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.equal_trans	5	0	synth with cache (only 1: fsetdec).	0.108818	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_refl	5	0	synth with cache (only 1: fsetdec).	0.027355	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_trans	5	0	synth with cache (only 1: fsetdec).	0.047917	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_antisym	5	0	synth with cache (only 1: fsetdec).	0.049193	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_equal	5	0	synth with cache (only 1: fsetdec).	0.037473	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_empty	5	0	synth with cache (only 1: fsetdec).	0.026707	1
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.mem_2	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.mul_comm	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.not_mem_iff	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_remove_3	5	0	synth with cache (only 1: fsetdec).	0.051171	1
+Coq.MSets.MSetPositive.PositiveSet.compare_bool_inv	5	1.1.1.0.0.0.3	synth with cache (only 1: intros n m; only 1: destruct n, m; only 1: simpl; only 1: trivial; only 1: now rewrite <- ?Pos.compare_antisym; only 1: now rewrite <- ?Pos.compare_antisym; only 1: now rewrite <- ?Pos.compare_antisym).	1.602105	1675
+Coq.ZArith.Zbool.Zle_bool_plus_mono	5
+Coq.Sorting.PermutSetoid.Permut.permut_add_inside	5
+Coq.ZArith.Zbool.Zone_pos	5	194	synth with cache (only 1: eauto).	0.017465	15
+Coq.NArith.Ndist.ni_min_comm	5
+Coq.ZArith.Zorder.Zsucc_lt_compat	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.diff_spec	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.union_ok	5
+Coq.micromega.RingMicromega.Micromega.OpMult_sound	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_mul_above	5
+Coq.MSets.MSetAVL.MakeRaw.add_ok	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_diff	5	0	synth with cache (only 1: fsetdec).	0.622322	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_ge_iff	5
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_ngt_iff	5	0	synth with cache (only 1: now rewrite <- compare_lt_iff, compare_antisym, CompOpp_iff).	0.014185	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_nlt_iff	5	2	synth with cache (only 1: now rewrite <- compare_lt_iff, compare_antisym, CompOpp_iff).	0.018337	3
+Coq.MSets.MSetProperties.WPropertiesOn.Add_Equal	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.equal_refl	5	1.0	synth with cache (only 1: intros P; only 1: intuition).	0.014992	3
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.equal_sym	5	2	synth with cache (only 1: intuition).	0.042990	48
+Coq.QArith.Qcabs.Qred_abs	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.equal_trans	5	65.512.1	synth with cache (only 1: intros; only 1: rewrite H; only 1: firstorder).	0.112272	33
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_refl	5	1.449	synth with cache (only 1: intro; only 1: auto).	0.014552	32
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_add_3	5	0	synth with cache (only 1: fsetdec).	0.073874	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.same_genZ	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_trans	5	0	synth with cache (only 1: fsetdec).	0.038830	1
+Coq.QArith.Qround.Qfloor_Z	5	5.64.2	synth with cache (only 1: intro n; only 1: simpl; only 1: apply Z.div_1_r).	2.819472	3504
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.In_In	5	194	synth with cache (only 1: let rec mul_permut := let rec mul_permut_rec := let rec mul_push := Ring_theory.gen_mul_push rmul Rsth Reqe ARth in fun t => match t with | rmul ?x ?y => mul_permut_rec y || mul_permut_rec x | _ => mul_push t; apply (Ring_theory.Rmul_ext Reqe); [  | reflexivity ] end in repeat reflexivity || match goal with | |- req ?t _ => mul_permut_rec t end in mul_permut).	0.039022	44
+Coq.Structures.OrderedTypeEx.Positive_as_OT.compare	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.subset_add_2	5	0	synth with cache (only 1: fsetdec).	0.041303	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_antisym	5	1.65	synth with cache (only 1: intros y H0 H1; only 1: intuition).	0.078088	32
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_le_lt_mono	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.in_subset	5	0	synth with cache (only 1: fsetdec).	0.039012	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_equal	5	1.0	synth with cache (only 1: intros; only 1: fsetdec).	0.033384	3
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_lt_mono	5
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.Subset_Included	5	1.0.1	synth with cache (only 1: compute; only 1: intros; only 1: auto with relations).	0.184737	29
+Coq.Strings.Ascii.ascii_nat_embedding	5
+Coq.QArith.Qcanon.Qred_identity	5
+Coq.micromega.ZMicromega.le_0_iff	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_empty	5	0.642	synth with cache (only 1: <Coq.Strings.Ascii.t_eqb>; only 1: fsetdec).	0.582392	68
+Coq.Structures.OrdersLists.KeyOrderedType.Elt.Sort_In_cons_3	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_wd	5
+Coq.ZArith.Zdiv.Zmod_eq_full	5
+Coq.ZArith.Wf_Z.Efficient_Rec.Zlt_lower_bound_rec	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.inter_spec	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.double_inclusion	5	0.0.0.7	synth with cache (only 1: intuition; only 1: fsetdec; only 1: fsetdec; only 1: fsetdec).	0.877898	551
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_is_empty_1	5	0	synth with cache (only 1: fsetdec).	0.060838	1
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.equal_iff	5	5	synth with cache (only 1: intuition).	2.604719	1638
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_remove_3	5	0	synth with cache (only 1: fsetdec).	0.559203	1
+Coq.Numbers.NatInt.NZAddOrder.NZAddOrderProp.le_exists_sub	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.MapsTo_In	5	1.2.0.66	synth with cache (only 1: induction 1; only 1: auto; only 1: intuition; only 1: auto with ordered_type).	0.743435	790
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_is_empty_2	5	1.384.3	synth with cache (only 1: intuition; only 1: repeat red; only 1: fsetdec).	0.313637	150
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_add_diag_r	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.add_equal	5	0	synth with cache (only 1: fsetdec).	0.070240	1
+Coq.Sorting.Heap.defs.merge	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.equal_spec	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.add_add	5	0	synth with cache (only 1: fsetdec).	0.313633	1
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_neg_neg	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv_ext	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_pos_neg	5	1.0.0	synth with cache (only 1: intros n m H1 H2; only 1: rewrite <- (mul_0_l m); only 1: now apply mul_lt_mono_neg_r).	0.032265	4
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_neg_pos	5	0.0.0	synth with cache (only 1: intros n m H1 H2; only 1: rewrite <- (mul_0_l m); only 1: now apply mul_lt_mono_pos_r).	0.084523	3
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_0	5
+Coq.Strings.Byte.nat.to_nat_bounded	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.remove_equal	5	0	synth with cache (only 1: fsetdec).	0.110739	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.Equal_remove	5	0	synth with cache (only 1: fsetdec).	0.111252	1
+Coq.Lists.SetoidList.Type_with_equality.NoDupA.NoDupA_app	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.add_remove	5	0	synth with cache (only 1: fsetdec).	0.118081	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit0_eqb	5
+Coq.Numbers.DecimalN.Signed.of_to	5
+Coq.FSets.FMapList.Raw.Elt.remove_3	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.remove_add	5	0	synth with cache (only 1: fsetdec).	0.145201	1
+Coq.setoid_ring.Ncring.Ring.ring_sub_ext	5
+Coq.setoid_ring.Ncring.Ring.ring_add_0_r	5	0.0.1.0	synth with cache (only 1: intros x; only 1: rewrite (ring_add_comm x); only 1: rewrite ring_add_0_l; only 1: reflexivity).	0.064294	5
+Coq.QArith.Qabs.Qabs_wd_Proper	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.singleton_equal_add	5	0	synth with cache (only 1: fsetdec).	0.089768	1
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.In_iff	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit0_mod	5	0.0.0.1.0.0.0.0.0	synth with cache (only 1: intros a; only 1: destruct (exists_div2 a) as (a', (b, H)); only 1: rewrite H  at 1; only 1: rewrite testbit_0_r; only 1: apply mod_unique with a'; only 1: destruct b; only 1: order'; only 1: order'; only 1: trivial).	0.610635	476
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_eq	5	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (mem_iff s x), (mem_iff s y), (In_eq_iff s H); only 1: destruct (mem x s); only 1: destruct (mem y s); only 1: intuition; only 1: intuition; only 1: destruct (mem y s); only 1: intuition; only 1: intuition).	1.258608	248
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.remove_singleton_empty	5	0	synth with cache (only 1: fsetdec).	0.377592	1
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.equal_1	5
+Coq.MSets.MSetPositive.PositiveSet.compare_inv	5
+Coq.Sorting.PermutSetoid.Permut.permut_add_cons_inside_eq	5
+Coq.ZArith.Zbool.Zone_min_pos	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.mul_wd	5
+Coq.ZArith.Zorder.Zsucc_gt_compat	5
+Coq.NArith.Ndist.ni_min_assoc	5
+Coq.ZArith.Zorder.Zsucc_gt_reg	5	0.0	synth with cache (only 1: Z.swap_greater; only 1: apply Z.succ_lt_mono).	0.038239	2
+Coq.ZArith.Zorder.Zsucc_le_reg	5	0	synth with cache (only 1: apply Z.succ_le_mono).	0.016791	1
+Coq.ZArith.Zorder.Zsucc_lt_reg	5	0	synth with cache (only 1: apply Z.succ_lt_mono).	0.013966	1
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.fold_spec	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_sym	5	3	synth with cache (only 1: fsetdec).	0.257913	17
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_diff	5	4.192.257.1.64	synth with cache (only 1: intro m; only 1: red; only 1: compute; only 1: intros Ha'; only 1: fsetdec).	2.396316	3678
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_succ_le	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_add_3	5	0.1	synth with cache (only 1: intros H1; only 1: fsetdec).	0.068382	3
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.subset_add_2	5	0	synth with cache (only 1: fsetdec).	0.036766	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_subset_equal	5	0	synth with cache (only 1: fsetdec).	0.196616	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.in_subset	5	0	synth with cache (only 1: fsetdec).	0.032487	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_nle_iff	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_equal_1	5	0	synth with cache (only 1: fsetdec).	0.102170	1
+Coq.MSets.MSetAVL.MakeRaw.join_spec	5
+Coq.QArith.Qcabs.Qcabs_canon	5
+Coq.micromega.RingMicromega.Micromega.OpAdd_sound	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_equal_2	5	0	synth with cache (only 1: fsetdec).	0.098077	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_Zeqb_ok	5
+Coq.QArith.Qround.Qceiling_Z	5
+Coq.ZArith.Zdiv.Zmod_eq	5	3.1.1.259.2.0	synth with cache (only 1: intros; only 1: rewrite Z.mul_comm; only 1: destruct b; only 1: now apply Z.mod_eq; only 1: now apply Z.mod_eq; only 1: easy).	4.206266	5976
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_assoc	5	0	synth with cache (only 1: fsetdec).	0.161974	1
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_lt_sub_lt	5
+Coq.Structures.OrderedTypeEx.N_as_OT.compare	5
+Coq.Structures.OrderedTypeEx.PairOrderedType.eq_refl	5	1	synth with cache (only 1: now Z.swap_greater).	0.028882	2
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_inj_l	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.double_inclusion	5	0.0.0.8	synth with cache (only 1: intuition; only 1: fsetdec; only 1: fsetdec; only 1: fsetdec).	0.740369	769
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.Equal_Same_set	5	640.388.0	synth with cache (only 1: unfold Subset, Included, In, mkEns; only 1: intros RS' n; only 1: firstorder).	5.000751	2046
+Coq.Structures.OrderedTypeEx.PairOrderedType.eq_sym	5	1	synth with cache (only 1: firstorder).	0.093802	65
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_is_empty_1	5	0	synth with cache (only 1: fsetdec).	0.050810	1
+Coq.MSets.MSetList.MakeRaw.ForNotations.union_spec	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_is_empty_2	5	0	synth with cache (only 1: fsetdec).	0.036903	1
+Coq.Strings.Ascii.nat_ascii_embedding	5
+Coq.QArith.Qcanon.Qred_identity2	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.add_union_singleton	5	3.64	synth with cache (only 1: intro n; only 1: fsetdec).	0.426927	79
+Coq.MSets.MSetPositive.PositiveSet.lex_Eq	5	129.0.0.0.0.1.1	synth with cache (only 1: intros n m; only 1: split; only 1: destruct n; only 1: now split; only 1: discriminate; only 1: discriminate; only 1: now destruct n).	1.870961	1337
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.add_equal	5	2.0	synth with cache (only 1: intros; only 1: fsetdec).	0.249373	22
+Coq.micromega.ZMicromega.le_neg	5
+Coq.MSets.MSetPositive.PositiveSet.compare_bool_Eq	5	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: easy'; only 1: easy'; only 1: easy'; only 1: easy').	0.069886	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_equiv1	5
+Coq.ZArith.Wf_Z.Efficient_Rec.Zlt_lower_bound_ind	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.add_add	5	0	synth with cache (only 1: fsetdec).	0.149195	1
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.diff_ok	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_add	5	0	synth with cache (only 1: fsetdec).	0.392799	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.remove_equal	5	1	synth with cache (only 1: fsetdec).	0.090041	2
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.subset_iff	5
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.empty_Empty_Set	5	197.0.65.448	synth with cache (only 1: vm_compute; only 1: Notations.split; only 1: Dec.fsetdec; only 1: now BinNat.N.nzsimpl').	1.122744	557
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.Equal_remove	5	0	synth with cache (only 1: fsetdec).	0.109073	1
+Coq.ZArith.Zbool.Zle_is_le_bool	5	0.0.326.64	synth with cache (only 1: unfold Z.le, Z.min; only 1: Notations.split; only 1: apply Z.leb_le; only 1: apply Z.leb_le).	2.568658	2631
+Coq.Reals.ConstructiveCauchyReals.QSeqEquiv_sym	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_MapsTo	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_sub_diag_r	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.add_remove	5	0	synth with cache (only 1: fsetdec).	0.130308	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_remove_add_1	5	0	synth with cache (only 1: fsetdec).	0.312589	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.remove_add	5	0	synth with cache (only 1: fsetdec).	0.121936	1
+Coq.FSets.FSetCompat.Update_WSets.Spec.subset_spec	5
+Coq.Sorting.Heap.defs.insert	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.singleton_equal_add	5	0	synth with cache (only 1: fsetdec).	0.161826	1
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rmul_reg_l	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_nonneg_nonneg	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_0_succ	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_remove_add_2	5	0	synth with cache (only 1: fsetdec).	0.261719	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.remove_singleton_empty	5	0	synth with cache (only 1: fsetdec).	0.264490	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_subset_1	5	0	synth with cache (only 1: fsetdec).	0.030795	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_subset_2	5	0	synth with cache (only 1: fsetdec).	0.030130	1
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.Empty_Empty_set	5	67.448.0	synth with cache (only 1: unfold Same_set, Included, mkEns, In; only 1: intros IHP'; only 1: firstorder).	1.186732	894
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_subset_3	5	0	synth with cache (only 1: fsetdec).	0.055499	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_subset_4	5	0	synth with cache (only 1: fsetdec).	0.054719	1
+Coq.Lists.SetoidList.Type_with_equality.NoDupA.NoDupA_rev	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_subset_5	5	0	synth with cache (only 1: fsetdec).	0.054445	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_sym	5	0	synth with cache (only 1: fsetdec).	0.194255	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_union_1	5	0	synth with cache (only 1: fsetdec).	0.084132	1
+Coq.Numbers.DecimalN.Signed.to_of	5
+Coq.FSets.FMapList.Raw.Elt.remove_Inf	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_union_2	5	0	synth with cache (only 1: fsetdec).	0.063354	1
+Coq.ZArith.Zorder.Zgt_succ	5	0.1.0.133.134.513	synth with cache (only 1: apply lt_wf_rec; only 1: left; only 1: intros Hab; only 1: Z.swap_greater; only 1: intro H; only 1: apply Z.lt_succ_diag_r).	4.035017	4263
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_subset_equal	5	1	synth with cache (only 1: intuition fsetdec).	0.081157	2
+Coq.QArith.Qabs.Qabs_pos	5
+Coq.setoid_ring.Ncring.Ring.ring_add_assoc1	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.not_in_union	5	1	synth with cache (only 1: fsetdec).	0.068087	41
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_equal_1	5	0	synth with cache (only 1: fsetdec).	0.104078	1
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.MapsTo_iff	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_sym	5	0	synth with cache (only 1: fsetdec).	0.088327	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_equal_2	5	0	synth with cache (only 1: fsetdec).	0.098076	1
+Coq.QArith.Qabs.Qabs_neg	5	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros x H; only 1: apply Qabs_case; only 1: intros H0; only 1: setoid_replace x with 0; only 1: reflexivity; only 1: apply Qle_antisym; only 1: assumption; only 1: assumption; only 1: reflexivity).	0.334355	161
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_subset_equal	5	0	synth with cache (only 1: fsetdec).	0.064963	1
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_odd	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_mem_1	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_equal_1	5	0	synth with cache (only 1: fsetdec).	0.103459	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_assoc	5	0	synth with cache (only 1: fsetdec).	0.160483	1
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.equal_2	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_equal_2	5	0	synth with cache (only 1: fsetdec).	0.087812	1
+Coq.Sorting.PermutSetoid.Permut.permut_add_cons_inside	5
+Coq.NArith.Ndist.ni_min_O_l	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_assoc	5	0	synth with cache (only 1: fsetdec).	0.156911	1
+Coq.NArith.Ndist.ni_min_O_r	5	0.0.2.0.0	synth with cache (only 1: simple induction d; only 1: trivial; only 1: simple induction n; only 1: trivial; only 1: trivial).	0.089628	135
+Coq.NArith.Ndist.ni_min_inf_l	5	0.0	synth with cache (only 1: intros; only 1: trivial).	0.016085	2
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.Induction.bi_induction	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.cardinal_spec	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.add_union_singleton	5	0	synth with cache (only 1: fsetdec).	0.355676	1
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_succ_or	5
+Coq.ZArith.Zdigits.VALUE_OF_BOOLEAN_VECTORS.binary_value	5	521	synth with cache (only 1: firstorder).	1.298034	2941
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_inter_1	5	0	synth with cache (only 1: fsetdec).	0.195726	1
+Coq.ZArith.Zdigits.VALUE_OF_BOOLEAN_VECTORS.two_compl_value	5	65.64	synth with cache (only 1: intros m H; only 1: constructor).	0.036950	58
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_add	5	0	synth with cache (only 1: fsetdec).	0.180493	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_inter_2	5	0	synth with cache (only 1: fsetdec).	0.205037	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_nge_iff	5
+Coq.QArith.Qcabs.Qcabs_case	5
+Coq.NArith.Ndist.ni_min_inf_r	5	0.0.2.70	synth with cache (only 1: intros x; only 1: destruct x; only 1: trivial; only 1: trivial).	0.780287	1480
+Coq.micromega.RingMicromega.Micromega.pexpr_times_nformula_correct	5
+Coq.MSets.MSetAVL.MakeRaw.join_ok	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_add_1	5	0	synth with cache (only 1: fsetdec).	0.166689	1
+Coq.QArith.Qround.Qfloor_le	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_remove_add_1	5	0	synth with cache (only 1: fsetdec).	0.305268	1
+Coq.ZArith.Zdiv.Zdiv_eucl_exist	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_le_sub_lt	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_inj_r	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_add_2	5	0.64	synth with cache (only 1: intro; only 1: fsetdec).	0.167400	30
+Coq.Structures.OrderedTypeEx.PairOrderedType.eq_trans	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_inter_1	5	0	synth with cache (only 1: fsetdec).	0.052798	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ1_pos_sub	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_inter_2	5	0	synth with cache (only 1: fsetdec).	0.042665	1
+Coq.Strings.Ascii.nat_ascii_bounded	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.inter_inf	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_subset_1	5	0	synth with cache (only 1: fsetdec).	0.034582	1
+Coq.QArith.Qcanon.Qred_iff	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_remove_add_2	5	0	synth with cache (only 1: fsetdec).	0.277107	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_subset_2	5	0	synth with cache (only 1: fsetdec).	0.034182	1
+Coq.Strings.Byte.nat.of_nat_None_iff	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_subset_3	5	0	synth with cache (only 1: fsetdec).	0.075428	1
+Coq.micromega.ZMicromega.eq_cnf	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_diff_1	5	0	synth with cache (only 1: fsetdec).	0.061373	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_subset_1	5	0	synth with cache (only 1: fsetdec).	0.032094	1
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_equiv2	5
+Coq.MSets.MSetPositive.PositiveSet.compare_equal	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_subset_2	5	0	synth with cache (only 1: fsetdec).	0.032588	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.empty_diff_2	5	0	synth with cache (only 1: fsetdec).	0.068895	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_subset_3	5	0	synth with cache (only 1: fsetdec).	0.056357	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.diff_subset	5	0	synth with cache (only 1: fsetdec).	0.042852	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_subset_4	5	0	synth with cache (only 1: fsetdec).	0.064953	1
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.diff_spec	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_subset_5	5	0	synth with cache (only 1: fsetdec).	0.052459	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.diff_subset_equal	5	0	synth with cache (only 1: fsetdec).	0.110935	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_union_1	5	0	synth with cache (only 1: fsetdec).	0.066186	1
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.empty_iff	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.remove_diff_singleton	5	0	synth with cache (only 1: fsetdec).	0.095306	1
+Coq.ZArith.Zbool.Zge_is_le_bool	5
+Coq.Reals.ConstructiveCauchyReals.factorDenom	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_union_2	5	0	synth with cache (only 1: fsetdec).	0.090801	1
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_alt	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.is_empty_iff	5	1	synth with cache (only 1: intuition).	0.196338	93
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.diff_inter_empty	5	0	synth with cache (only 1: fsetdec).	0.166772	1
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.Bezout_wd	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.not_in_union	5	0.131	synth with cache (only 1: intros k H1 H2; only 1: fsetdec).	0.211046	60
+Coq.QArith.Qabs.Qabs_nonneg	5	2.0.0.196.321	synth with cache (only 1: intros (a, H); only 1: red; only 1: simpl in *; only 1: Z.nzsimpl; only 1: Z.order_pos').	3.316556	3292
+Coq.QArith.Qabs.Zabs_Qabs	5	385.1	synth with cache (only 1: intros p Hp; only 1: exact eq_refl).	0.025535	16
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_sym	5	0	synth with cache (only 1: fsetdec).	0.073658	1
+Coq.FSets.FSetCompat.Update_WSets.Spec.is_empty_spec	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.diff_inter_all	5	0	synth with cache (only 1: fsetdec).	0.150272	1
+Coq.Sorting.Heap.defs.list_to_heap	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_subset_equal	5	0	synth with cache (only 1: fsetdec).	0.077740	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_equal_1	5	0	synth with cache (only 1: fsetdec).	0.110406	1
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.field_is_integral_domain	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_pos_cancel_l	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.succ_ltb_mono	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_equal_2	5	0	synth with cache (only 1: fsetdec).	0.090154	1
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.singleton_iff	5	7	synth with cache (only 1: intuition).	0.778029	833
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.singleton_Singleton	5	128.320.257.4.387.64	synth with cache (only 1: intro H; only 1: constructor; only 1: intuition; only 1: red; only 1: CRelationClasses.reduce; only 1: intuition).	4.885635	3270
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_assoc	5	0	synth with cache (only 1: fsetdec).	0.160243	1
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.Add_add	5	0.0.0.0.0.1.2.449	synth with cache (only 1: constructor; only 1: intro H; only 1: fsetdec; only 1: destruct 1; only 1: apply add_1; only 1: auto; only 1: apply add_2; only 1: auto).	0.760183	856
+Coq.Lists.SetoidList.Type_with_equality.NoDupA.NoDupA_split	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_inter_1	5	0	synth with cache (only 1: fsetdec).	0.204094	1
+Coq.Numbers.DecimalN.Signed.to_int_inj	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.cO	5	321	synth with cache (only 1: now try Nat.order').	0.034154	22
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.cI	5	0	synth with cache (only 1: exact ring0).	0.016959	1
+Coq.ZArith.Zorder.Znot_le_succ	5
+Coq.FSets.FMapList.Raw.Elt.remove_sorted	5
+Coq.setoid_ring.Ncring_initial.Zsth	5	66.448.1.0.2	synth with cache (only 1: split; only 1: now repeat split; only 1: congruence; only 1: intros H H'; only 1: Z.order).	0.502079	401
+Coq.FSets.FMapList.Raw.Elt.elements_1	5	129	synth with cache (only 1: auto with arith).	0.050625	23
+Coq.FSets.FMapList.Raw.Elt.elements_2	5	0	synth with cache (only 1: auto).	0.013560	1
+Coq.setoid_ring.Ncring.Ring.ring_add_assoc2	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_inter_2	5	0	synth with cache (only 1: fsetdec).	0.209113	1
+Coq.FSets.FMapList.Raw.Elt.elements_3	5	512.1.0	synth with cache (only 1: induction m; only 1: intuition; only 1: easy || now destruct 1).	0.036055	20
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.mem_in_iff	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_mem_2	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bit_log2	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_add_1	5	0	synth with cache (only 1: fsetdec).	0.169483	1
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.subset_1	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.Add_remove	5	1.2.0.130	synth with cache (only 1: intros n m; only 1: split; only 1: fsetdec; only 1: fsetdec).	1.025405	520
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_add_2	5	0	synth with cache (only 1: fsetdec).	0.153022	1
+Coq.Sorting.PermutSetoid.Permut.permut_middle	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_inter_1	5	0	synth with cache (only 1: fsetdec).	0.046421	1
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.filter_spec	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_inter_2	5	0	synth with cache (only 1: fsetdec).	0.062993	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_subset_1	5	0	synth with cache (only 1: fsetdec).	0.031136	1
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.pred_succ	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_subset_2	5	0	synth with cache (only 1: fsetdec).	0.030139	1
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_eq_succ_iff_square	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_subset_3	5	0	synth with cache (only 1: fsetdec).	0.049021	1
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.succ_pred	5	0.0.0.0	synth with cache (only 1: unfold Z.pred, Z.succ, Z.eq; only 1: intro n; only 1: simpl; only 1: now nzsimpl).	0.176255	4
+Coq.ZArith.Zdigits.ENCODING_VALUE.Zmod2_twice	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_diff_1	5	0	synth with cache (only 1: fsetdec).	0.068308	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.empty_diff_2	5	0	synth with cache (only 1: fsetdec).	0.083753	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.lt_irrefl	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.diff_subset	5	0	synth with cache (only 1: fsetdec).	0.037530	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.diff_subset_equal	5	0	synth with cache (only 1: fsetdec).	0.109887	1
+Coq.QArith.Qcabs.Qcabs_pos	5
+Coq.NArith.Ndist.ni_le_refl	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.remove_diff_singleton	5	0	synth with cache (only 1: fsetdec).	0.117308	1
+Coq.QArith.Qround.Qle_ceiling	5
+Coq.micromega.RingMicromega.Micromega.nformula_times_nformula_correct	5
+Coq.MSets.MSetAVL.MakeRaw.remove_min_spec	5
+Coq.ZArith.Zdiv.Zdiv_mod_unique	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_le_sub_lt	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_lt_mono_l_iff	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.diff_inter_empty	5	0	synth with cache (only 1: fsetdec).	0.187796	1
+Coq.Structures.OrderedTypeEx.PairOrderedType.lt_trans	5
+Coq.Strings.Ascii.ascii_of_byte_of_ascii	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.diff_inter_all	5	0	synth with cache (only 1: fsetdec).	0.150626	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_add	5
+Coq.QArith.Qcanon.Qc_is_canon	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.inter_ok	5
+Coq.Strings.Byte.N.of_to_N	5
+Coq.micromega.ZMicromega.Zsor	5
+Coq.MSets.MSetPositive.PositiveSet.compare_gt	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.gcd_div_swap	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.subset_spec	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.Add_add	5	0.0.129.448.1	synth with cache (only 1: generalize (F.mem_iff s x); only 1: intros (b, Hb); only 1: intros H; only 1: rewrite add_spec; only 1: intuition).	0.584179	223
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.one_succ	5	321.128.0.2.72	synth with cache (only 1: generalize (PeanoNat.Nat.lt_succ_diag_r 0); only 1: unfold Z.pred, Z.succ, Z.eq; only 1: intro H; only 1: BinInt.Z.nzsimpl; only 1: now BinInt.Z.nzsimpl').	1.809805	1749
+Coq.ZArith.Zbool.Zlt_is_lt_bool	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.two_succ	5	0.128	synth with cache (only 1: compute; only 1: now nzsimpl').	0.116899	10
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.Add_remove	5	0.0.1	synth with cache (only 1: intros; only 1: expAdd; only 1: fsetdec).	0.173567	4
+Coq.Reals.ConstructiveCauchyReals.QSeqEquiv_trans	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.opp_0	5	512	synth with cache (only 1: now try BinNat.N.order').	0.021781	33
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.bezout_1_gcd	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_Add	5	1.1	synth with cache (only 1: expAdd; only 1: fsetdec).	0.235746	4
+Coq.ZArith.Zgcd_alt.Zgcdn_pos	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.add_spec	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.MapsTo_1	5
+Coq.QArith.Qabs.Qabs_opp	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.opp_succ	5	0.0.0	synth with cache (only 1: unfold Z.eq; only 1: simpl; only 1: reflexivity).	0.026419	3
+Coq.Sorting.Heap.defs.heap_to_list	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_pos_cancel_r	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.ropp_neq_0	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_lt	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.add_iff	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.ZnZ.WW.spec_WO	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_Add	5	0.1	synth with cache (only 1: expAdd; only 1: fsetdec).	0.411662	3
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.union_Union	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.add_0_l	5	0.1.0.2	synth with cache (only 1: intro H; only 1: unfold Z.eq, Z.add; only 1: simpl; only 1: now nzsimpl).	0.669112	704
+Coq.Lists.SetoidList.Type_with_equality.NoDupA.NoDupA_swap	5
+Coq.Lists.SetoidList.Type_with_equality.NoDupA.NoDupA_singleton	5	512.0.449.0	synth with cache (only 1: constructor; only 1: intros n; only 1: inv; only 1: auto with relations).	0.046047	34
+Coq.Numbers.DecimalN.Signed.to_int_pos_surj	5
+Coq.ZArith.Zorder.Zgt_le_succ	5
+Coq.FSets.FMapList.Raw.Elt.elements_3w	5
+Coq.btauto.Algebra.Decidable_sound	5	0.0.0	synth with cache (only 1: intros P H Hp; only 1: apply -> Decidable_spec; only 1: assumption).	0.030365	3
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.not_mem_in_iff	5
+Coq.btauto.Algebra.Decidable_complete	5	0.0.0	synth with cache (only 1: intros P H Hp; only 1: apply <- Decidable_spec; only 1: assumption).	0.035120	3
+Coq.btauto.Algebra.Decidable_sound_alt	5	0.0.0.0.0	synth with cache (only 1: intros P [wit spec] Hd; only 1: simpl; only 1: destruct wit; only 1: tauto; only 1: tauto).	0.053776	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.Peq_ok	5
+Coq.setoid_ring.Ncring.Ring.ring_opp_zero	5
+Coq.btauto.Algebra.Decidable_complete_alt	5	0.0.0	synth with cache (only 1: intros P [wit spec] Hd Hc; only 1: simpl in *; only 1: intuition congruence).	0.029799	3
+Coq.setoid_ring.Ncring_initial.Zr	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_more_than_1_digit	5	132	synth with cache (only 1: lia).	0.244163	255
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_mem_1	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bits_above_log2	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.subset_2	5
+Coq.btauto.Algebra.Computational.Decidable_PosEq_obligation_1	5	0.1.0.0.512.0	synth with cache (only 1: revert q; only 1: Notations.split; only 1: apply Pos.eqb_eq; only 1: revert q; only 1: intro n; only 1: apply Pos.eqb_eq).	0.332621	117
+Coq.Sorting.PermutSetoid.Permut.permut_sym_app	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.add_succ_l	5	0.0.0.0.0.130	synth with cache (only 1: intro H; only 1: unfold Z.add, Z.eq; only 1: intro n; only 1: simpl; only 1: nzsimpl; only 1: now symmetry).	1.151200	431
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.for_all_spec	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_Add	5
+Coq.ZArith.Zdigits.ENCODING_VALUE.Z_to_binary	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.sub_0_r	5	0.0.0.0	synth with cache (only 1: intro n; only 1: unfold Z.add, Z.eq; only 1: simpl; only 1: now nzsimpl).	0.185823	4
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_Add	5	0.0	synth with cache (only 1: expAdd; only 1: fsetdec).	0.373199	2
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.Pphi0	5	67.192.0	synth with cache (only 1: intros; only 1: reduce; only 1: firstorder).	1.192002	230
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.sqrt_add_le	5
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.lt_eq_cases	5
+Coq.QArith.Qcabs.Qcabs_neg	5
+Coq.NArith.Ndist.ni_le_antisym	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.add_neq_iff	5	386.1.449.385.64.2.0.128	synth with cache (only 1: intros H'; only 1: split; only 1: destruct (eq_dec x y) as [E| E]; only 1: intros H; only 1: now PeanoNat.Nat.nzsimpl; only 1: destr_bool; only 1: exact (add_3 E H); only 1: firstorder using StronglySorted_rect).	2.593770	2578
+Coq.QArith.Qround.Qle_floor_ceiling	5
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.union_Equal	5	0.0	synth with cache (only 1: expAdd; only 1: fsetdec).	0.329389	2
+Coq.ZArith.Zdiv.Zdiv_unique	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_add_lt_sub_r	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_le_mono_l_iff	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.sub_succ_r	5	0.1.0.512.0	synth with cache (only 1: unfold Z.succ, Z.pred, Z.eq; only 1: intros le_mn2; only 1: simpl; only 1: intro n; only 1: now nzsimpl).	0.671737	61
+Coq.MSets.MSetAVL.MakeRaw.remove_min_ok	5
+Coq.micromega.RingMicromega.Micromega.nformula_plus_nformula_correct	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.mul_0_l	5	0.0.0.448.0	synth with cache (only 1: unfold Z.mul, Z.eq; only 1: intros (a', H); only 1: simpl; only 1: nzsimpl; only 1: order).	0.175331	26
+Coq.Structures.OrderedTypeEx.PairOrderedType.lt_not_eq	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_1	5	0.0.0.130.1.320.513.128	synth with cache (only 1: intro l; only 1: intro; only 1: intros a b; only 1: intuition; only 1: elim H; only 1: eauto with *; only 1: eauto; only 1: eauto).	3.639443	4870
+Coq.FSets.FSetProperties.WProperties_fun.BasicProperties.inter_Add_2	5	0.0	synth with cache (only 1: expAdd; only 1: fsetdec).	0.263926	2
+Coq.Strings.Ascii.byte_of_ascii_of_byte	5
+Coq.QArith.Qcanon.Qc_decomp	5
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_mul	5
+Coq.micromega.ZMicromega.ZSORaddon	5
+Coq.MSets.MSetPositive.PositiveSet.compare_eq	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_lcm_l	5
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_ext	5	643	synth with cache (only 1: CRelationClasses.simpl_crelation).	0.240598	74
+Coq.btauto.Reflect.Translation.poly_of_formula_eval_compat	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.equal_spec	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.inter_spec	5
+Coq.ZArith.Zbool.Zgt_is_gt_bool	5
+Coq.Reals.ConstructiveCauchyRealsMult.BoundFromZero	5	262.192	synth with cache (only 1: intros q; only 1: firstorder).	0.672710	564
+Coq.Reals.ConstructiveCauchyReals.QSeqEquivEx_sym	5
+Coq.ZArith.Zgcd_alt.Zgcd_alt_pos	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.remove_spec	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.Pphi1	5	192.193.0.67	synth with cache (only 1: destruct l; only 1: simpl; only 1: firstorder; only 1: firstorder).	2.299093	1625
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_bezout	5
+Coq.QArith.Qabs.Qabs_triangle	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_nonneg_cancel_l	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.choose_spec1	5	385.67.0.0.0.0	synth with cache (only 1: induction s; only 1: intros; only 1: discriminate; only 1: simpl; only 1: intro p; only 1: CRelationClasses.simpl_crelation).	0.968796	675
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv_r_r	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.ltb_ge	5
+Coq.Sorting.Heap.defs.treesort	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.ZnZ.WW.spec_OW	5
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.inter_Intersection	5
+Coq.Strings.Byte.N.to_of_N	5
+Coq.Numbers.DecimalN.Signed.of_int_norm	5
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.union_Equal	5
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_cons_proper	5
+Coq.ZArith.Zorder.Zle_gt_succ	5
+Coq.ZArith.Zorder.Zle_lt_succ	5	0	synth with cache (only 1: apply Z.lt_succ_r).	0.015760	1
+Coq.ZArith.Zorder.Zlt_le_succ	5	0	synth with cache (only 1: apply Z.le_succ_l).	0.015559	1
+Coq.ZArith.Zorder.Zgt_succ_le	5	0.0	synth with cache (only 1: Z.swap_greater; only 1: apply Z.lt_succ_r).	0.030571	2
+Coq.micromega.ZMicromega.ZNpower	5	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: destruct n; only 1: simpl; only 1: trivial; only 1: simpl; only 1: unfold Z.pow_pos; only 1: rewrite <- (Z.mul_1_r (pow_pos _ _ _)); only 1: generalize 1; only 1: induction p; only 1: simpl; only 1: intros; only 1: rewrite ?IHp, ?Z.mul_assoc; only 1: trivial; only 1: simpl; only 1: intros; only 1: rewrite ?IHp, ?Z.mul_assoc; only 1: trivial; only 1: simpl; only 1: intros; only 1: trivial).	2.335566	1395
+Coq.ZArith.Zorder.Zlt_succ_le	5	0	synth with cache (only 1: apply Z.lt_succ_r).	0.016010	1
+Coq.MSets.MSetProperties.WPropertiesOn.BasicProperties.inter_Add_2	5	0.0	synth with cache (only 1: expAdd; only 1: fsetdec).	0.286177	2
+Coq.ZArith.Zorder.Zle_succ_gt	5	0.0	synth with cache (only 1: Z.swap_greater; only 1: apply Z.le_succ_l).	0.100778	2
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.In_dec	5
+Coq.FSets.FMapList.Raw.Elt.fold_1	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_mem_2	5	323.1.320.2	synth with cache (only 1: intro H; only 1: intros Hb; only 1: intros; only 1: eauto with *).	5.001877	2536
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.find_mapsto_iff	5	642.64	synth with cache (only 1: intros m H1 H2; only 1: firstorder).	0.121889	167
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.wB_pos	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.div2_bits	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.choose_spec2	5	1.0.129.0.0.0	synth with cache (only 1: intros; only 1: inversion H; only 1: induction s; only 1: intros Base Step; only 1: inv; only 1: inversion H).	1.352501	321
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.cardinal_spec	5	1.0	synth with cache (only 1: unfold elements; only 1: auto).	0.025213	3
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.is_empty_1	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.same_gen	5
+Coq.btauto.Algebra.Computational.Decidable_PosLt_obligation_1	5
+Coq.Sorting.PermutSetoid.Permut.permut_rev	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.exists_spec	5
+Coq.ZArith.Zdigits.ENCODING_VALUE.Z_to_two_compl	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.binary_value_Sn	5	258.0.0	synth with cache (only 1: simpl; only 1: intros; only 1: now N.nzsimpl).	0.092666	17
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_spec0	5
+Coq.QArith.Qcabs.Qcabs_nonneg	5
+Coq.NArith.Ndist.ni_le_trans	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.remove_iff	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtProp.add_sqrt_le	5
+Coq.QArith.Qround.Qlt_floor	5
+Coq.ZArith.Zdiv.Zmod_unique	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_add_le_sub_r	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_lt_mono_r_iff	5
+Coq.ZArith.Zdiv.Zmod_0_l	5	322.0	synth with cache (only 1: intros; only 1: eauto).	0.080596	19
+Coq.Numbers.Cyclic.Int63.Ring63.ring_theory_switch_eq	5	128.0.65	synth with cache (only 1: intros n m Hn; only 1: intros A B f l; only 1: firstorder).	0.062661	12
+Coq.ZArith.Zdiv.Zmod_0_r	5	0.0.0.0	synth with cache (only 1: destruct a; only 1: auto; only 1: auto; only 1: auto).	0.034320	4
+Coq.ZArith.Zdiv.Zdiv_0_l	5	64.0	synth with cache (only 1: intros; only 1: easy).	0.019257	5
+Coq.ZArith.Zdiv.Zdiv_0_r	5	0.0.0.0	synth with cache (only 1: destruct a; only 1: auto; only 1: auto; only 1: auto).	0.027271	4
+Coq.MSets.MSetAVL.MakeRaw.remove_min_gt_tree	5
+Coq.Structures.OrderedTypeEx.PairOrderedType.compare	5
+Coq.QArith.Qcanon.Qred_involutive	5
+Coq.micromega.RingMicromega.Micromega.eval_Psatz_Sound	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_node_iff	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_leaf	5	256.192.256.576	synth with cache (only 1: intro p; only 1: intros EQ; only 1: intro H1; only 1: now try N.order').	0.094442	73
+Coq.Strings.Ascii.ascii_of_byte_via_N	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.mul_succ_l	5
+Coq.FSets.FSetProperties.WProperties_fun.elements_Empty	5
+Coq.MSets.MSetPositive.PositiveSet.compare_spec	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_lcm_r	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_leaf	5	257	synth with cache (only 1: now f_equiv).	0.156370	132
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_morph	5
+Coq.setoid_ring.Cring.cring.cring_eq_ext	5
+Coq.ZArith.Zdiv.Zmod_1_r	5	258.0.129.0.1	synth with cache (only 1: destruct a; only 1: auto; only 1: N.nzsimpl; only 1: trivial; only 1: now Nat.nzsimpl).	0.976764	908
+Coq.btauto.Reflect.Translation.poly_of_formula_valid_compat	5
+Coq.ZArith.Zbool.Zlt_is_le_bool	5
+Coq.ZArith.Zbool.Zgt_is_le_bool	5	0.0.0	synth with cache (only 1: rewrite Z.leb_le; only 1: Z.swap_greater; only 1: apply Z.lt_le_pred).	0.037586	3
+Coq.MSets.MSetList.MakeRaw.ForNotations.diff_inf	5
+Coq.ZArith.Zdiv.Zdiv_1_r	5	192.0	synth with cache (only 1: intros; only 1: now Z.nzsimpl).	0.163599	11
+Coq.Reals.ConstructiveCauchyReals.QSeqEquivEx_trans	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.iszero_eq0	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.diff_ok	5	0.0.0	synth with cache (only 1: repeat rewrite <- isok_iff; only 1: revert s s'; only 1: induction2).	0.219280	3
+Coq.Reals.ConstructiveCauchyRealsMult.QCauchySeq_bounded	5
+Coq.Numbers.Cyclic.Int63.Int63.to_Z_rec_bounded	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.singleton_spec	5
+Coq.ZArith.Zgcd_alt.Zgcdn_linear_bound	5
+Coq.QArith.Qabs.Qabs_Qmult	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_mul_mono_l	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_nonneg_cancel_r	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv1	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.remove_neq_iff	5	0.0.0.0.0.451.257	synth with cache (only 1: intros LT; only 1: intuition auto; BinNat.N.Private_OrderTac.Tac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *; only 1: apply remove_3 with x; only 1: auto; only 1: apply remove_2; only 1: auto; only 1: auto).	2.341556	1960
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.even_wd	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.ZnZ.WW.spec_WW	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.union_iff	5	4	synth with cache (only 1: intuition).	0.157813	108
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.add_Add	5
+Coq.Strings.Byte.N.to_of_N_iff	5
+Coq.Numbers.DecimalN.Signed.of_inj_pos	5
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_app_proper	5
+Coq.setoid_ring.Rings_Z.Zcri	5	0.0	synth with cache (only 1: red; only 1: exact Z.mul_comm).	0.019519	2
+Coq.setoid_ring.Rings_Z.Z_one_zero	5	3	synth with cache (only 1: Z.order').	0.041283	22
+Coq.micromega.ZMicromega.Zeval_expr_compat	5
+Coq.setoid_ring.Integral_domain.integral_domain.integral_domain_minus_one_zero	5
+Coq.ZArith.Zorder.Zle_succ_le	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_to_Z_1	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.empty_mem	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.not_find_in_iff	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_to_Z_2	5	0.0.0.0	synth with cache (only 1: unfold to_Z; only 1: intros; only 1: destruct (Z_mod_lt x wB wB_pos); only 1: auto).	0.035412	4
+Coq.MSets.MSetProperties.WPropertiesOn.elements_Empty	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.is_empty_2	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.filter_spec'	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.div_pow2_bits	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.double_bits_succ	5	0.0	synth with cache (only 1: intros; only 1: apply testbit_even_succ, le_0_l).	0.018606	2
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_to_Z	5	0.0.1	synth with cache (only 1: intros; only 1: unfold wB, base; only 1: auto with zarith).	0.214880	37
+Coq.btauto.Algebra.Computational.Decidable_PosLe_obligation_1	5
+Coq.Sorting.PermutSetoid.Permut.permut_conv_inv	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.iszero_not_eq0	5	645.66	synth with cache (only 1: intros a Ha; only 1: CRelationClasses.simpl_crelation).	2.342277	2370
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.partition_spec1	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.mkPX_ok	5
+Coq.FSets.FMapList.Raw.Elt.equal_1	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.sneakl_shiftr	5	1.1.4	synth with cache (only 1: destruct x; only 1: simpl; only 1: split).	0.306187	463
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.sneakr_shiftl	5	66	synth with cache (only 1: now destruct x).	0.047869	52
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Z_to_binary_Sn	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_spec	5
+Coq.QArith.Qcabs.Qcabs_opp	5
+Coq.NArith.Ndist.ni_le_min_1	5
+Coq.Floats.FloatAxioms.Prim2SF_inj	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_eqn0	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_add_lt_sub_l	5
+Coq.QArith.Qround.Qceiling_lt	5
+Coq.setoid_ring.Ncring_tac.Zeqb_ok	5	256.2.65	synth with cache (only 1: destr_bool; only 1: pose proof (Zeq_bool_eq x y H) as H1; only 1: now Nat.nzsimpl).	0.831533	671
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_le_mono_r_iff	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.ARgen_phiPOS_Psucc	5
+Coq.Numbers.Cyclic.Int63.Ring63.Int63Ring	5
+Coq.MSets.MSetAVL.MakeRaw.merge_spec	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_eqn	5	0.0.0.0.2.64	synth with cache (only 1: intros x y; only 1: unfold sqrt_up; only 1: case compare_spec; only 1: order; only 1: order; only 1: order).	0.402918	405
+Coq.Structures.OrderedTypeEx.PairOrderedType.eq_dec	5
+Coq.QArith.Qcanon.Q2Qc_eq_iff	5
+Coq.micromega.RingMicromega.Micromega.ge_bool_cases	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.lt_eq_cases	5
+Coq.FSets.FSetProperties.WProperties_fun.elements_empty	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_cxe	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_div	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_tree_node	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_xce	5	0.0.0.0	synth with cache (only 1: destruct x; only 1: constructor; only 1: constructor; only 1: constructor).	0.116449	4
+Coq.Strings.Ascii.ascii_of_byte_via_nat	5
+Coq.setoid_ring.InitialRing.Nth	5
+Coq.btauto.Reflect.Translation.poly_of_formula_sound	5
+Coq.setoid_ring.Cring.cring.cring_almost_ring_theory	5
+Coq.ZArith.Zbool.Zeq_is_eq_bool	5
+Coq.Reals.ConstructiveRcomplete.CReal_absSmall	5
+Coq.ZArith.Zdiv.Z_mod_same_full	5
+Coq.Reals.ConstructiveCauchyReals.QSeqEquiv_cau_r	5
+Coq.NArith.Ndist.ni_le_min_2	5	0.2.1.0.0	synth with cache (only 1: unfold ni_le; only 1: intros; only 1: rewrite ni_min_assoc; only 1: rewrite ni_min_idemp; only 1: reflexivity).	1.851157	1485
+Coq.Numbers.Cyclic.Int63.Cyclic63.is_zero_spec_aux	5
+Coq.setoid_ring.InitialRing.Neqb_ok	5	0.2.0.0.0.0.0.1	synth with cache (only 1: intros [| ] [| ]; only 1: simpl; only 1: now try N.order'; only 1: now try N.order'; only 1: now try N.order'; only 1: simpl; only 1: rewrite Pos.eqb_eq; only 1: congruence).	0.604557	856
+Coq.Numbers.Cyclic.Int63.Int63.to_Z_bounded	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.elements_spec1	5
+Coq.setoid_ring.InitialRing.NMORPHISM.radd_ext4_Proper	5	0	synth with cache (only 1: exact (ARsub_ext Rsth Reqe ARth)).	0.021905	1
+Coq.QArith.Qabs.Qabs_Qinv	5
+Coq.ZArith.Zgcd_alt.fibonacci_pos	5
+Coq.setoid_ring.InitialRing.NMORPHISM.rmul_ext4_Proper	5	64.642	synth with cache (only 1: intros a n m H; only 1: firstorder).	0.069587	45
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_mul_mono_l_nonneg	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.lt_1_mul_pos	5
+Coq.Numbers.Cyclic.Int63.Ring63.eq31_correct	5	7	synth with cache (only 1: auto using eqb_correct, eqb_complete).	1.959512	2635
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.even_0	5
+Coq.Numbers.Cyclic.Int31.Ring31.Int31_canonic	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_cauchy	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv2	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.inter_iff	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.ZnZ.Of_Z.of_pos_correct	5
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.Add_Add	5
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_cons_nil	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.diff_spec	5
+Coq.setoid_ring.Rings_Z.Zdi	5
+Coq.Reals.ClassicalDedekindReals.isLowerCut_hprop	5
+Coq.ZArith.Zorder.Zgt_succ_pred	5
+Coq.micromega.ZMicromega.Zeval_formula_compat'	5
+Coq.ZArith.Zorder.Zlt_succ_pred	5	0	synth with cache (only 1: apply Z.lt_succ_lt_pred).	0.014571	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.is_empty_equal_empty	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.in_find_iff	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_1	5	577.0	synth with cache (only 1: intros; only 1: auto with set).	0.045695	30
+Coq.MSets.MSetProperties.WPropertiesOn.elements_empty	5
+Coq.setoid_ring.Integral_domain.integral_domain.pow_not_zero	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_2	5	0	synth with cache (only 1: auto with set).	0.030910	1
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.add_1	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.add_2	5	0.0.0	synth with cache (only 1: intros; only 1: apply <- add_spec; only 1: auto with relations).	0.035435	3
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.mul_pow2_bits_add	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_of_pos	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.filter_spec	5
+Coq.Sorting.PermutSetoid.Permut.permut_app_inv1	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.partition_spec2	5
+Coq.btauto.Algebra.Computational.Decidable_eq_poly_obligation_1	5
+Coq.Numbers.Cyclic.Int31.Ring31.ring_theory_switch_eq	5	0.385.0.66	synth with cache (only 1: intros n m Hn; only 1: intros H; only 1: intros x; only 1: firstorder).	1.746068	896
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.eq_equiv	5	512.449.512.193.257.0.64.66.772	synth with cache (only 1: split; only 1: now f_equal; only 1: intros s2 n; only 1: now Z.swap_greater; only 1: intros Hab; only 1: intros HH; only 1: intros H0; only 1: symmetry; only 1: intuition congruence).	2.809094	2555
+Coq.Strings.Byte.N.to_of_N_option_map	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.binary_value_pos	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.two_compl_value_Sn	5	65.0.0	synth with cache (only 1: simpl; only 1: intros m w le; only 1: auto with typeclass_instances).	0.034710	7
+Coq.FSets.FMapList.Raw.Elt.equal_2	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_spec0	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.twice_zero	5
+Coq.QArith.Qcabs.Qcabs_triangle	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_mem_1	5	128.0	synth with cache (only 1: generalize (mem_iff (add x s) y), (mem_iff s y), (add_iff s x y); only 1: simpl_relation).	1.314658	50
+Coq.Floats.FloatAxioms.SF2Prim_inj	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_add_le_sub_l	5
+Coq.QArith.Qround.Qfloor_resp_le	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_sub_lt_add_r	5	0.64.0	synth with cache (only 1: intros n m p; only 1: symmetry; only 1: now rewrite (sub_lt_mono_r _ _ p), add_simpl_r).	0.130284	30
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_gt_lin_r	5
+Coq.MSets.MSetAVL.MakeRaw.merge_ok	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_spec	5
+Coq.Structures.OrderedTypeEx.PositiveOrderedTypeBits.bits_lt_trans	5
+Coq.QArith.Qcanon.Qceq_alt	5
+Coq.micromega.RingMicromega.Micromega.extract_hyps_app	5
+Coq.QArith.Qcanon.Qclt_alt	5	0.0.0	synth with cache (only 1: split; only 1: easy; only 1: easy).	0.065230	3
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_increasing_inv	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.lt_irrefl	5
+Coq.FSets.FSetProperties.WProperties_fun.of_list_1	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.PaddCl_ok	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_lxl	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_tree_node	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_left	5	0.0	synth with cache (only 1: intros; only 1: eauto with ordered_type).	0.031815	2
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_nonneg	5	0.1.1.0.0.0.64	synth with cache (only 1: intro p; only 1: unfold sqrt_up; only 1: case compare_spec; only 1: order; only 1: intro H; only 1: apply le_le_succ_r, sqrt_nonneg; only 1: order).	0.511640	531
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_least	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_right	5	0	synth with cache (only 1: intuition_in).	0.018652	1
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_gxg	5	0.0.0.0	synth with cache (only 1: destruct x; only 1: constructor; only 1: constructor; only 1: constructor).	0.098898	4
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_left	5	0	synth with cache (only 1: intuition_in).	0.020651	1
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_right	5	0	synth with cache (only 1: intuition_in).	0.020104	1
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_xll	5	0.0.0.0	synth with cache (only 1: destruct x; only 1: constructor; only 1: constructor; only 1: constructor).	0.110432	4
+Coq.Reals.Rdefinitions.total_order_T	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_xgg	5	0.0.0.0	synth with cache (only 1: destruct x; only 1: constructor; only 1: constructor; only 1: constructor).	0.026588	4
+Coq.btauto.Reflect.Completeness.reduce_poly_of_formula_sound	5
+Coq.btauto.Reflect.Completeness.list_nth_base	5	193.1	synth with cache (only 1: intros; only 1: repeat match goal with | _ => reflexivity | _ => progress subst | H:Some ?a = Some ?b |- _ => assert (a = b) by refine match H with | eq_refl => eq_refl end; clear H | H:None = Some _ |- _ => solve [ inversion H ] end).	0.021955	10
+Coq.ZArith.Zbool.Zeq_bool_eq	5
+Coq.ZArith.Zdiv.Z_mod_mult	5
+Coq.Reals.ConstructiveCauchyReals.increasing_modulus_inc	5
+Coq.Strings.Ascii.byte_of_ascii_via_N	5
+Coq.setoid_ring.Cring.cring.cring_morph	5
+Coq.NArith.Ndist.ni_min_case	5
+Coq.Numbers.Cyclic.Int63.Int63.Z_lt_div2	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.for_all_spec	5
+Coq.ZArith.Zgcd_alt.fibonacci_incr	5
+Coq.QArith.Qabs.Qabs_Qminus	5
+Coq.setoid_ring.InitialRing.NMORPHISM.same_genN	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_mul_mono_r	5
+Coq.setoid_ring.Cring.cring.cring_power_theory	5	325	synth with cache (only 1: easy).	0.592197	108
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.eq_mul_0	5
+Coq.QArith.Qcanon.Qcgt_alt	5	0.1.64.128.897	synth with cache (only 1: intros IHP'; only 1: unfold Z.lt; only 1: intro p; only 1: symmetry; only 1: apply Z.gt_lt_iff).	1.520835	901
+Coq.QArith.Qcanon.Qcle_alt	5	128.0	synth with cache (only 1: intros; only 1: reflexivity).	0.023394	8
+Coq.QArith.Qpower.Qpower_positive_1	5
+Coq.Numbers.Cyclic.Int63.Ring63.TestRing.test	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.even_succ	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_mem_2	5	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (mem_iff (add x s) y), (mem_iff s y), (add_neq_iff s H); only 1: destruct (mem y s); only 1: destruct (mem y (add x s)); only 1: intuition; only 1: intuition; only 1: destruct (mem y (add x s)); only 1: intuition; only 1: intuition).	2.543050	344
+Coq.Numbers.Cyclic.Int63.Cyclic63.positive_to_int_spec	5
+Coq.Reals.ConstructiveCauchyRealsMult.linear_max	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.diff_iff	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_mem_1	5	1.0.1	synth with cache (only 1: rewrite <- not_mem_iff; only 1: rewrite remove_spec; only 1: intuition).	0.036695	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult	5	128	synth with cache (only 1: now N.nzsimpl').	0.099449	132
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.ZnZ.Of_Z.of_Z_correct	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv2b	5
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.remove_Subtract	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gcd_mul_mono_r_nonneg	5	0.3.0.0	synth with cache (only 1: intros; only 1: rewrite <- (abs_eq p)  at 3; only 1: now rewrite !(mul_comm _ p), gcd_mul_mono_l, mul_comm; only 1: trivial).	0.746467	540
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_nil_eq	5
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_double_head	5	0.0.1	synth with cache (only 1: intros E; only 1: rewrite !InA_cons; only 1: tauto).	0.134028	4
+Coq.micromega.ZMicromega.Zeval_nformula_dec	5
+Coq.ZArith.Zorder.Zlt_0_le_0_pred	5
+Coq.Reals.ClassicalDedekindReals.lowerCutBelow	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.equal_iff	5
+Coq.ZArith.Zorder.Zgt_0_le_0_pred	5	0.3	synth with cache (only 1: Z.swap_greater; only 1: apply Z.lt_le_pred).	0.173448	202
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_mem_2	5	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (mem_iff (remove x s) y), (mem_iff s y), (remove_neq_iff s H); only 1: destruct (mem y s); only 1: destruct (mem y (remove x s)); only 1: intuition; only 1: intuition; only 1: destruct (mem y (remove x s)); only 1: intuition; only 1: intuition).	1.055204	160
+Coq.MSets.MSetProperties.WPropertiesOn.of_list_1	5
+Coq.ZArith.Zorder.Zle_neg_pos	5	0.2	synth with cache (only 1: intros a b; only 1: easy).	0.025492	4
+Coq.ZArith.Zorder.Zgt_pos_0	5	0.0	synth with cache (only 1: intro n; only 1: reflexivity).	0.019563	2
+Coq.Reals.ConstructiveRcomplete.Un_cv_mod_eq	5
+Coq.ZArith.Zorder.Zle_0_pos	5	0	synth with cache (only 1: easy).	0.022604	1
+Coq.setoid_ring.Integral_domain.integral_domain.Rintegral_domain_pow	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.equal_spec	5
+Coq.ZArith.Zorder.Zlt_neg_0	5	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.018132	2
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.mul_pow2_bits_high	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.add_3	5
+Coq.setoid_ring.Rings_Q.Qri	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_zdigits	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_0	5	0.1.0.0.0.0	synth with cache (only 1: unfold to_Z, zdigits; only 1: apply Zmod_small; only 1: unfold wB, base; only 1: split; only 1: auto with zarith; only 1: auto with zarith).	0.051738	7
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.filter_ok	5
+Coq.Sorting.PermutSetoid.Permut.if_eqA_then	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.elements_spec1	5
+Coq.btauto.Algebra.Computational.Decidable_null_obligation_3	5
+Coq.Numbers.Cyclic.Int31.Ring31.Int31Ring	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.gt_wB_1	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.singleton_equal_add	5	320.0.1.0	synth with cache (only 1: generalize (mem_iff (singleton x) y), (singleton_iff x y); only 1: destruct (mem y (singleton x)); only 1: intuition; only 1: CRelationClasses.simpl_crelation).	0.737184	10
+Coq.Strings.Byte.N.to_N_bounded	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Z_to_two_compl_Sn	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Z_to_binary_Sn_z	5	0	synth with cache (only 1: auto).	0.015389	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_spec	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.twice_or_twice_plus_one	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_S	5	0.0	synth with cache (only 1: intros n m; only 1: now simpl).	0.022427	2
+Coq.QArith.Qcabs.Qcabs_Qcmult	5
+Coq.QArith.Qround.Qceiling_resp_le	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_sub_le_add_r	5
+Coq.FSets.FMapList.Raw.Elt.equal_cons	5
+Coq.Structures.OrderedTypeEx.PositiveOrderedTypeBits.lt_trans	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_add_lower	5
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_unique	5
+Coq.FSets.FSetProperties.WProperties_fun.of_list_2	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.lt_succ_r	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_nonneg	5
+Coq.setoid_ring.RealField.RTheory	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_tree_not_in	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_wd	5
+Coq.MSets.MSetAVL.MakeRaw.remove_spec	5
+Coq.micromega.RingMicromega.Micromega.nhyps_of_psatz_correct	5
+Coq.Reals.Rdefinitions.Req_appart_dec	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_lex	5
+Coq.btauto.Reflect.Completeness.list_nth_succ	5
+Coq.ZArith.Zbool.Zeq_bool_neq	5
+Coq.ZArith.Zdiv.Z_div_pos	5
+Coq.Reals.ConstructiveCauchyReals.increasing_modulus_max	5
+Coq.NArith.Ndist.ni_le_total	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_tree_trans	5	0.128.514	synth with cache (only 1: intros a; only 1: intros EQ; only 1: eauto with ordered_type).	0.589450	557
+Coq.Sorting.PermutSetoid.Permut.permut_app_inv2	5	256.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros l l1 l2; only 1: unfold permutation, meq; only 1: intros H a; only 1: generalize (H a); only 1: clear H; only 1: do 2 rewrite list_contents_app; only 1: simpl; only 1: intros; only 1: apply plus_reg_l with (multiplicity (list_contents l) a); only 1: rewrite Nat.add_comm; only 1: rewrite Nat.add_comm; only 1: rewrite Nat.add_comm; only 1: rewrite Nat.add_comm; only 1: rewrite Nat.add_comm; only 1: rewrite Nat.add_comm; only 1: now rewrite ?Z.mul_add_distr_r, ?Z.mul_add_distr_l, ?Z.mul_assoc).	2.839582	661
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_tree_not_in	5	0.0.0.0	synth with cache (only 1: intros; only 1: intro; only 1: generalize (H _ H0); only 1: order).	0.031836	4
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_tree_trans	5	0	synth with cache (only 1: eauto with ordered_type).	0.030210	1
+Coq.Numbers.Cyclic.Int63.Int63.Zmod_le_first	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.empty_bst	5	2	synth with cache (only 1: intuition).	0.014976	3
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.height_non_negative	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.avl_node	5	0.0	synth with cache (only 1: intros; only 1: auto).	0.024304	2
+Coq.Reals.Raxioms.Rrepr_0	5
+Coq.QArith.Qabs.Qle_Qabs	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.empty_1	5	257	synth with cache (only 1: now try split).	0.108924	27
+Coq.Strings.Ascii.byte_of_ascii_via_nat	5
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_add	5
+Coq.FSets.FSetCompat.Update_WSets.Spec.exists_spec	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.neq_mul_0	5
+Coq.QArith.Qcanon.Qcge_alt	5
+Coq.QArith.Qpower.Qpower_1	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_aux_wd	5
+Coq.setoid_ring.Cring.cring.cring_div_theory	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_compare_bool	5	0.0.0.0.0.0.0.0.0.64	synth with cache (only 1: intro n; only 1: destr_bool; only 1: constructor; only 1: constructor; only 1: ct; only 1: constructor; only 1: constructor; only 1: ct; only 1: constructor; only 1: constructor).	1.017834	377
+Coq.ZArith.Zgcd_alt.Zgcdn_worst_is_fibonacci	5
+Coq.QArith.Qpower.Qpower_positive_0	5	129.0.0.0.0.1.0	synth with cache (only 1: induction n; only 1: reflexivity; only 1: simpl; only 1: rewrite IHn; only 1: reflexivity; only 1: simpl; only 1: now f_equal).	0.171927	124
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.filter_iff	5
+Coq.Numbers.Cyclic.Int63.Cyclic63.mulc_WW_spec	5
+Coq.ZArith.Zorder.Zle_0_nat	5	69.3.0.0.128.1	synth with cache (only 1: intros; only 1: intros a; only 1: simpl in *; only 1: apply (Nat.lt_irrefl (S n)); only 1: right; only 1: now destruct n).	3.909794	5119
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.add_0_l	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_unfold	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv5	5
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.mkEns_Finite	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.compare_x_Leaf	5	0.0.0.3	synth with cache (only 1: induction s as [| l IHl o r IHr]; only 1: reflexivity; only 1: simpl; only 1: trivial).	0.348216	125
+Coq.setoid_ring.Ncring_tac.comm	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.gauss	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.PmulC_aux_ok	5
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_permute_heads	5	0.0.263	synth with cache (only 1: intro; only 1: rewrite !InA_cons; only 1: tauto).	4.998890	861
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_app_idem	5	0.0.320	synth with cache (only 1: intros EQ; only 1: rewrite InA_app_iff; only 1: tauto).	0.112636	23
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.for_all_iff	5	5.4	synth with cache (only 1: intro a'; only 1: intuition).	0.806328	1345
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Z_div2_value	5	256.256.0.0.0.0.0.0.0.0.64.0.0.0.2.0	synth with cache (only 1: destruct z; only 1: intros Hn; only 1: simpl; only 1: Z.order; only 1: simpl; only 1: intuition try easy; only 1: destruct p; only 1: simpl; only 1: easy; only 1: simpl; only 1: trivial; only 1: simpl; only 1: trivial; only 1: simpl; only 1: intuition auto using Z.lt_le_incl; only 1: now Nat.nzsimpl).	3.804231	2695
+Coq.micromega.ZMicromega.ZWeakChecker_sound	5
+Coq.Reals.ClassicalDedekindReals.lowerCutAbove	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.ARgen_phiPOS_add	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.empty_mapsto_iff	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.union_mem	5	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: generalize (mem_iff (union s s') x), (mem_iff s x), (mem_iff s' x), (union_spec s s' x); only 1: destruct (mem x s); only 1: destruct (mem x s'); only 1: destruct (mem x (union s s')); only 1: intuition; only 1: intuition; only 1: destruct (mem x (union s s')); only 1: intuition; only 1: intuition; only 1: destruct (mem x s'); only 1: destruct (mem x (union s s')); only 1: intuition; only 1: intuition; only 1: destruct (mem x (union s s')); only 1: intuition; only 1: intuition).	4.187054	852
+Coq.MSets.MSetProperties.WPropertiesOn.of_list_2	5
+Coq.Reals.ConstructiveRealsLUB.is_upper_bound_dec	5
+Coq.setoid_ring.Rings_Q.Qcri	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.remove_1	5
+Coq.setoid_ring.Rings_Q.Q_one_zero	5	0	synth with cache (only 1: discriminate).	0.014787	1
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_1	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.mul_pow2_bits_low	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.elements_spec2w	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.for_all_spec	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.gt_wB_0	5
+Coq.Numbers.Cyclic.Int31.Ring31.eqb31_eq	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.subset_spec	5
+Coq.btauto.Algebra.Computational.Decidable_valid_obligation_1	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.empty_ok	5	0	synth with cache (only 1: auto).	0.016164	1
+Coq.MSets.MSetList.MakeRaw.ForNotations.empty_spec	5	325	synth with cache (only 1: now PeanoNat.Nat.nzsimpl').	0.069590	108
+Coq.setoid_ring.Cring.Zcri	5	132.0.450	synth with cache (only 1: intros Az LS; only 1: apply Ncring_initial.Zsth; only 1: auto with zarith).	2.063005	922
+Coq.Strings.Byte.N.of_N_None_iff	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_nle	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_S_tail	5
+Coq.QArith.Qcabs.Qcabs_Qcminus	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_Bm1	5	0.2.0.0	synth with cache (only 1: unfold to_Z, one; only 1: apply Zmod_small; only 1: generalize wB_pos; only 1: lia).	0.905934	882
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_compare	5	2.0.128.0	synth with cache (only 1: unfold to_Z, minus_one; only 1: intros H; only 1: intros; only 1: auto with zarith).	0.067141	12
+Coq.Reals.ConstructiveRcomplete.Rfloor	5
+Coq.QArith.Qround.Qfloor_comp_Proper	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_sub_lt_add_l	5
+Coq.FSets.FMapList.Raw.Elt2.map_1	5
+Coq.Structures.OrderedTypeEx.PositiveOrderedTypeBits.bits_lt_antirefl	5
+Coq.QArith.Qround.Qceiling_comp_Proper	5	320.2.0.0	synth with cache (only 1: intros x y H; only 1: unfold Qceiling; only 1: induction y; only 1: now rewrite <- H).	0.620942	447
+Coq.Reals.ConstructiveRealsMorphisms.Endomorph_id	5
+Coq.FSets.FSetProperties.WProperties_fun.of_list_3	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.empty_in_iff	5	0.1.65	synth with cache (only 1: repeat red; only 1: firstorder  (subst; auto); only 1: apply (empty_1 H)).	2.392096	218
+Coq.QArith.Qreals.IZR_nz	5	2	synth with cache (only 1: auto with real).	0.018914	3
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.is_empty_iff	5	0.2	synth with cache (only 1: destr_bool; only 1: intuition).	0.037872	4
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.min_l	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_comm	5
+Coq.setoid_ring.RealField.Rfield	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_unique	5
+Coq.MSets.MSetAVL.MakeRaw.remove_ok	5
+Coq.Reals.Rdefinitions.Rrepr_appart_0	5
+Coq.micromega.RingMicromega.Micromega.check_inconsistent_sound	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.min_r	5	512.128.0.704.0.0	synth with cache (only 1: unfold Z.min, Z.le, Z.eq; only 1: simpl; only 1: intros (U, V); only 1: intros p IH; only 1: rewrite BinInt.Z.add_assoc, BinInt.Z.add_cancel_r; only 1: now apply PeanoNat.Nat.min_r).	0.343242	203
+Coq.btauto.Reflect.Completeness.list_nth_nil	5
+Coq.ZArith.Zbool.Zeq_bool_if	5
+Coq.ZArith.Zdiv.Z_div_ge0	5
+Coq.Reals.ConstructiveCauchyReals.standard_modulus	5
+Coq.NArith.Ndist.ni_le_min_induc	5
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_add_upper	5
+Coq.Sorting.PermutSetoid.Permut.permut_remove_hd_eq	5
+Coq.Reals.Raxioms.Rrepr_1	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.height_0	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.empty_avl	5	0	synth with cache (only 1: constructor).	0.015714	1
+Coq.QArith.Qabs.Qabs_triangle_reverse	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.is_empty_1	5
+Coq.Numbers.Cyclic.Int63.Int63.Zmod_distr	5
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_mult	5
+Coq.FSets.FSetCompat.Update_Sets.lt_strorder	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.is_empty_2	5	192.0.385.128.0	synth with cache (only 1: destruct m; only 1: intro; only 1: now f_equal; only 1: intuition_in; only 1: now rewrite <- ?N.add_le_mono_r).	0.079436	33
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.eq_square_0	5
+Coq.QArith.Qcanon.Qc_eq_dec	5
+Coq.QArith.Qcanon.Q_apart_0_1	5	2	synth with cache (only 1: now Z.nzsimpl).	0.042931	3
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Pdiv2	5	0.196.1.0.0.129	synth with cache (only 1: intro n; only 1: destruct n as [| p| p]; only 1: trivial; only 1: simpl; only 1: now destruct p; only 1: trivial).	3.992939	5906
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_wd	5
+Coq.QArith.Qpower.Qpower_0	5
+Coq.Numbers.Cyclic.Int63.Cyclic63.diveucl_spec_aux	5
+Coq.ZArith.Zorder.Zgt_succ_gt_or_eq	5
+Coq.ZArith.Zgcd_alt.Zgcdn_ok_before_fibonacci	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.add_comm	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_assoc_bounded_r	5
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.mkEns_cardinal	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv3b	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.compare_empty_x	5
+Coq.Numbers.Integer.Abstract.ZGcd.ZGcdProp.divide_mul_split	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.create_avl	5	0.3.0	synth with cache (only 1: intros; only 1: unfold create; only 1: auto).	1.083414	572
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.create_height	5	0	synth with cache (only 1: auto).	0.016304	1
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.exists_iff	5
+Coq.micromega.ZMicromega.eval_pol_sub	5
+Coq.FSets.FSetFacts.WFacts_fun.IffSpec.elements_iff	5	66.833.0	synth with cache (only 1: split; only 1: firstorder; only 1: firstorder).	0.090714	208
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.PmulC_ok	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.inter_mem	5
+Coq.MSets.MSetProperties.WPropertiesOn.of_list_3	5
+Coq.Reals.ConstructiveRealsLUB.is_upper_bound_epsilon	5
+Coq.Reals.ClassicalDedekindReals.DRealQlim_rec	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.remove_2	5
+Coq.Reals.Rdefinitions.up	5	613	synth with cache (only 1: firstorder).	2.507503	8900
+Coq.setoid_ring.Rings_Q.Qdi	5
+Coq.Numbers.Cyclic.Int63.Int63.pow2_pos	5	0.5.0	synth with cache (only 1: intros; only 1: apply Z.lt_gt; only 1: Z.order_pos).	1.754838	1139
+Coq.Numbers.Cyclic.Int63.Int63.pow2_nz	5	0.0	synth with cache (only 1: intros LT; only 1: Z.order_nz).	0.036119	2
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.mod_pow2_bits_high	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.choose_spec1	5
+Coq.Numbers.Cyclic.Int63.Int63.wB_diff_0	5	576.66	synth with cache (only 1: intro; only 1: now rewrite <- ?Z.pred_le_mono).	0.160166	17
+Coq.Lists.SetoidList.Type_with_equality.EquivlistA.equivlistA_NoDupA_split	5
+Coq.Numbers.Cyclic.Int63.Int63.wB_pos	5	259	synth with cache (only 1: easy || now destruct Hb).	0.027823	20
+Coq.Numbers.Cyclic.Int63.Int63.to_Z_0	5	0	synth with cache (only 1: tauto).	0.017937	1
+Coq.Numbers.Cyclic.Int63.Int63.to_Z_1	5	0	synth with cache (only 1: trivial).	0.015726	1
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.one_mod_wB	5
+Coq.Numbers.Cyclic.Int31.Ring31.eqb31_correct	5
+Coq.btauto.Algebra.Validity.valid_le_compat	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.is_empty_spec	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.elements_spec1	5	65.0.1	synth with cache (only 1: split; only 1: intuition; only 1: trivial).	0.114602	18
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_gt	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.ARgen_phiPOS_mult	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_n_0	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_size	5	1.0	synth with cache (only 1: destruct x; only 1: trivial).	0.030464	3
+Coq.QArith.Qcabs.Qcle_Qcabs	5
+Coq.Strings.Byte.N.to_N_via_nat	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.elements_spec2	5	256.4.0.64	synth with cache (only 1: intros m; only 1: intro H; only 1: inv; only 1: now apply H).	0.363640	471
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_eq0	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.elements_spec2w	5	2.0.0	synth with cache (only 1: intro s; only 1: repeat rewrite <- isok_iff; only 1: auto).	0.077019	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_sub_le_add_l	5
+Coq.Reals.R_Ifp.tech_up	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.exists_spec	5
+Coq.FSets.FMapList.Raw.Elt2.map_2	5
+Coq.Numbers.Cyclic.Int63.Int63.can_inj	5	269	synth with cache (only 1: congruence).	1.397926	1654
+Coq.Structures.OrderedTypeEx.PositiveOrderedTypeBits.lt_not_eq	5
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_proper	5
+Coq.FSets.FSetProperties.WProperties_fun.Fold.fold_spec_right	5
+Coq.QArith.Qround.Zdiv_Qdiv	5
+Coq.QArith.Qreals.eqR_Qeq	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_divide_iff	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.add_mapsto_iff	5
+Coq.setoid_ring.RealField.Rlt_n_Sn	5
+Coq.FSets.FMapList.Raw.Elt2.map_lelistA	5	3.0.0.0.0.0.0.0.0	synth with cache (only 1: induction m; only 1: simpl; only 1: intuition; only 1: intros; only 1: destruct a as (x'', e''); only 1: inversion_clear H; only 1: compute in H0; only 1: simpl; only 1: intuition).	0.812323	557
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_square	5
+Coq.MSets.MSetAVL.MakeRaw.concat_spec	5
+Coq.btauto.Reflect.Completeness.make_last_nth_1	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.max_l	5
+Coq.micromega.RingMicromega.Micromega.checker_nf_sound	5
+Coq.ZArith.Zdiv.Z_div_lt	5
+Coq.NArith.Ndist.le_ni_le	5
+Coq.Reals.ConstructiveCauchyReals.CRealLtEpsilon	5
+Coq.Sorting.PermutSetoid.Permut.permut_remove_hd	5
+Coq.Reals.Raxioms.Rrepr_plus	5
+Coq.QArith.Qabs.Qabs_Qle_condition	5
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_sub	5
+Coq.FSets.FSetCompat.Update_Sets.lt_compat	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.eq_mul_0_l	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.eq_mul_0_r	5	0.1.0.0.0	synth with cache (only 1: intros n m H1 H2; only 1: apply eq_mul_0 in H1; only 1: destruct H1 as [H1| H1]; only 1: false_hyp H1 H2; only 1: assumption).	0.047971	6
+Coq.QArith.Qcanon.Qcplus_assoc	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_aux_0	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Zdiv2_two_power_nat	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Z_to_two_compl_Sn_z	5	1.0.0.0.0	synth with cache (only 1: intros; only 1: destruct z as [| p| p]; only 1: auto; only 1: auto; only 1: auto).	0.069097	9
+Coq.QArith.Qpower.Qpower_not_0_positive	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.mem_1	5
+Coq.ZArith.Zorder.Zplus_gt_compat_l	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.add_assoc	5
+Coq.ZArith.Zgcd_alt.Zgcd_bound_fibonacci	5
+Coq.Numbers.Cyclic.Int63.Cyclic63.shift_unshift_mod_2	5
+Coq.ZArith.Zgcd_alt.Zgcd_bound_opp	5	130	synth with cache (only 1: now destruct a as [| [| | ]| ]).	0.027933	11
+Coq.MSets.MSetToFiniteSet.WS_to_Finite_set.Ens_to_MSet	5
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.compare_x_empty	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv6	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.mul_1_l	5	0.0.640.0.0	synth with cache (only 1: intro n; only 1: zify; only 1: Nat.nzsimpl; only 1: apply Zmod_small; only 1: apply ZnZ.spec_to_Z).	0.387586	35
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_assoc	5
+Coq.Reals.ConstructiveRcomplete.FQ_dense	5
+Coq.micromega.ZMicromega.eval_pol_add	5
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.mem_b	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.diff_mem	5
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_spec_right	5
+Coq.FSets.FMapList.Raw.Elt2.map_sorted	5	64.0.2.1.0.0.0.0.1	synth with cache (only 1: induction m; only 1: simpl; only 1: intuition; only 1: intros; only 1: destruct a as (x', e'); only 1: inversion_clear Hm; only 1: constructor; only 1: auto; only 1: eauto).	2.366827	1985
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.remove_3	5
+Coq.Reals.Rbasic_fun.Rmin_case	5
+Coq.Reals.ClassicalDedekindReals.DRealQlim	5
+Coq.Reals.ConstructiveRealsLUB.is_upper_bound_not_epsilon	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.Popp_ok	5
+Coq.MSets.MSetInterface.WRaw2SetsOn.Spec.choose_spec2	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.mod_pow2_bits_low	5
+Coq.Lists.SetoidList.Type_with_equality.Fold.fold_right_eqlistA	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_3	5	0.2	synth with cache (only 1: rewrite <- not_mem_iff; only 1: intuition).	0.657739	4
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.succ_mod_wB	5
+Coq.Numbers.Cyclic.Int31.Ring31.TestRing.test	5
+Coq.btauto.Algebra.Validity.linear_le_compat	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_nlt	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.same_genZ	5
+Coq.Reals.ArithProp.minus_neq_O	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.bal_avl	5
+Coq.QArith.Qcabs.Qcabs_triangle_reverse	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_above_size	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_S	5	0	synth with cache (only 1: reflexivity).	0.015494	1
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.mem_4	5	0.2	synth with cache (only 1: rewrite <- not_mem_iff; only 1: intuition).	0.649247	33
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_opp_c	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.min_elt_spec1	5
+Coq.Strings.Byte.N.to_nat_via_N	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_sub_lt_add	5
+Coq.Reals.R_Ifp.up_tech	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_refl	5	1.0	synth with cache (only 1: apply eq_true_iff_eq; only 1: intuition).	0.039979	3
+Coq.Numbers.Cyclic.Int63.Int63.to_Z_inj	5
+Coq.Structures.OrderedTypeEx.PositiveOrderedTypeBits.compare	5
+Coq.Structures.OrderedTypeEx.PositiveOrderedTypeBits.eq_dec	5	0	synth with cache (only 1: decide equality).	0.029647	1
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_compose	5
+Coq.QArith.Qreals.Qeq_eqR	5
+Coq.FSets.FSetProperties.WProperties_fun.Fold.fold_rec	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_unique	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.add_in_iff	5
+Coq.setoid_ring.RealField.Rlt_0_2	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_succ_square	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_0	5	0.0.0.0.0	synth with cache (only 1: unfold sqrt_up; only 1: case compare_spec; only 1: order; only 1: order; only 1: order).	0.023873	5
+Coq.MSets.MSetAVL.MakeRaw.concat_ok	5
+Coq.btauto.Reflect.Completeness.make_last_nth_2	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.max_r	5
+Coq.micromega.RingMicromega.Micromega.eval_pol_sub	5
+Coq.ZArith.Zdiv.Z_div_ge	5
+Coq.ZArith.Zdiv.Z_div_le	5	0.0.0.0	synth with cache (only 1: intros; only 1: apply Z.div_le_mono; only 1: auto using Z.gt_lt, Z.ge_le; only 1: auto using Z.gt_lt, Z.ge_le).	0.032004	4
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.add_neq_mapsto_iff	5	0.2.0.0.0.448.0	synth with cache (only 1: split; only 1: intro LE; only 1: apply add_3 with x e; only 1: auto; only 1: auto; only 1: apply add_2; only 1: auto).	0.514775	320
+Coq.NArith.Ndist.ni_le_le	5
+Coq.Reals.ConstructiveCauchyReals.CRealLtForget	5
+Coq.Reals.R_sqr.Rsqr_neg	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_ge	5	0.0.10	synth with cache (only 1: rewrite <- compare_le_iff; only 1: rewrite compare_gt_iff; only 1: now rewrite <- not_true_iff_false, ltb_lt).	2.364457	2226
+Coq.Sorting.PermutSetoid.Permut.if_eqA_else	5
+Coq.Reals.Raxioms.Rrepr_opp	5
+Coq.Sorting.PermutSetoid.Permut.if_eqA_refl	5	66.0.0.0.128	synth with cache (only 1: intros H1 H2 H3; only 1: destruct eqA_dec as [_| NEQ]; only 1: intros; only 1: auto; only 1: firstorder).	0.071317	28
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.partition_spec1	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_S_tail	5	129.514.0.129.0.128	synth with cache (only 1: induction n as [| n IH]; only 1: trivial; only 1: intuition; only 1: simpl; only 1: reflexivity || apply f_equal || exfalso; only 1: eauto).	2.349600	1402
+Coq.Reals.Rbasic_fun.Rmin_case_strong	5	1.0.0.0.0.129.448.0.128.0.640.1	synth with cache (only 1: intros r1 r2; only 1: intros a; only 1: unfold Rmin; only 1: generalize 1%Z; only 1: generalize (total_order_T r1 r2), (Rlt_dichotomy_converse r1 r2); only 1: intros _; only 1: intros eq_rect_eq; only 1: intro Hnotz; only 1: intuition; only 1: case (Rle_dec r1 r2); only 1: auto with zarith real; only 1: auto with real).	3.337351	4702
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_morph	5
+Coq.FSets.FSetCompat.Update_Sets.compare_spec	5
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.radd_ext5_Proper	5	0	synth with cache (only 1: exact (Radd_ext Reqe)).	0.017990	1
+Coq.QArith.Qabs.Qabs_diff_Qle_condition	5
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.rmul_ext5_Proper	5	0	synth with cache (only 1: exact (Rmul_ext Reqe)).	0.016433	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.ropp_ext5_Proper	5	0	synth with cache (only 1: exact (Ropp_ext Reqe)).	0.015570	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.rsub_ext7_Proper	5	0	synth with cache (only 1: exact (ARsub_ext Rsth Reqe ARth)).	0.017771	1
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.lt_0_mul	5
+Coq.QArith.Qcanon.Qcplus_0_l	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_aux_succ	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Zeven_bit_value	5
+Coq.QArith.Qpower.Qpower_pos_positive	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.mem_2	5
+Coq.Reals.R_sqr.Rsqr_mult	5	64.386.130	synth with cache (only 1: intro z; only 1: intuition eauto  3; only 1: ring_Rsqr).	0.682718	820
+Coq.ZArith.Zorder.Zplus_gt_compat_r	5
+Coq.Numbers.Cyclic.Int63.Cyclic63.div_le_0	5
+Coq.ZArith.Zgcd_alt.Zgcdn_opp	5
+Coq.Reals.R_sqr.Rsqr_plus	5	0.387	synth with cache (only 1: intros H EQ; only 1: ring_Rsqr).	0.231499	181
+Coq.Reals.R_sqr.Rsqr_minus	5	0.0	synth with cache (only 1: intros; only 1: ring_Rsqr).	0.034934	2
+Coq.MSets.MSetPositive.PositiveSet.lt_spec.ct_compare	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.mul_comm	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_comm	5
+Coq.micromega.ZMicromega.eval_pol_mul	5
+Coq.Reals.ConstructiveRcomplete.RQ_limit	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv4	5
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.empty_b	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.singleton_1	5
+Coq.FSets.FMapList.Raw.Elt2.mapi_1	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.singleton_2	5	0.0	synth with cache (only 1: rewrite singleton_spec; only 1: auto with relations).	0.026193	2
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_rec	5
+Coq.Reals.ConstructiveRealsLUB.DDlow_below_up	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.eqf_equiv	5	322.0.128.1.8.1.7.0.133	synth with cache (only 1: repeat Notations.split; only 1: intros a; only 1: revert a; only 1: intros; only 1: firstorder; only 1: intros a; only 1: intro m; only 1: intros H H1 H2; only 1: congruence).	4.807963	6625
+Coq.Reals.R_sqr.Rsqr_neg_minus	5	0.66.0.577	synth with cache (only 1: intros Ha; only 1: intros; only 1: unfold Rminus; only 1: ring_Rsqr).	0.946960	1088
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.PaddXPX	5
+Coq.Reals.R_sqr.Rsqr_1	5	0.0	synth with cache (only 1: unfold Rsqr; only 1: auto with real).	0.022154	2
+Coq.MSets.MSetInterface.Raw2SetsOn.lt_strorder	5
+Coq.Lists.SetoidList.Type_with_equality.Fold.Fold_With_Restriction.ForallOrdPairs_inclA	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.pred_mod_wB	5
+Coq.btauto.Algebra.Validity.linear_valid_incl	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.gen_Zeqb_ok	5
+Coq.Reals.ArithProp.le_minusni_n	5
+Coq.QArith.Qcabs.Qcabs_Qcle_condition	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_opp	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.min_elt_spec2	5
+Coq.Reals.ClassicalDedekindReals.DRealAbstr	5
+Coq.Reals.Rminmax.Rmax_l	5	0.0.0.0	synth with cache (only 1: intros; only 1: apply Rmax_case_strong; only 1: auto using Rle_antisym; only 1: auto using Rle_antisym).	0.038441	4
+Coq.MSets.MSetList.MakeRaw.ForNotations.min_elt_spec3	5	320.1.256.0.64	synth with cache (only 1: intro n; only 1: intros; only 1: destruct n; only 1: easy; only 1: inversion_clear H).	0.081059	108
+Coq.Reals.ROrderedType.Req_dec	5	0.0.2.0	synth with cache (only 1: intros; only 1: generalize (total_order_T r1 r2), Rlt_dichotomy_converse; only 1: unfold not; only 1: intuition eauto  3).	3.564136	1671
+Coq.Reals.Rminmax.Rmax_r	5	0.0.0.0	synth with cache (only 1: intros; only 1: apply Rmax_case_strong; only 1: auto using Rle_antisym; only 1: auto using Rle_antisym).	0.040937	4
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_sub_le_add	5
+Coq.Reals.Rminmax.Rmin_l	5	0.0.0.0	synth with cache (only 1: intros; only 1: apply Rmin_case_strong; only 1: auto using Rle_antisym; only 1: auto using Rle_antisym).	0.040924	4
+Coq.Reals.Rfunctions.INR_fact_neq_0	5
+Coq.Reals.Rfunctions.fact_simpl	5	0.0	synth with cache (only 1: simpl; only 1: reflexivity).	0.018792	2
+Coq.Reals.Rminmax.Rmin_r	5	0.0.0.0	synth with cache (only 1: intros; only 1: apply Rmin_case_strong; only 1: auto using Rle_antisym; only 1: auto using Rle_antisym).	0.046567	4
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_sym	5
+Coq.Reals.R_Ifp.fp_R0	5
+Coq.Strings.Byte.N.of_N_via_nat	5
+Coq.Numbers.Cyclic.Int63.Int63.eqb_complete	5
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_le	5
+Coq.Structures.OrderedTypeEx.String_as_OT.nat_of_ascii_inverse	5
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_le_inv	5	64.0.1.1.0	synth with cache (only 1: intros; only 1: intro abs; only 1: destruct H; only 1: apply CRmorph_increasing; only 1: easy').	0.097777	133
+Coq.btauto.Algebra.Evaluation.eval_null_zero	5	258.67	synth with cache (only 1: intros m; only 1: now destruct 1).	1.622257	534
+Coq.FSets.FSetProperties.WProperties_fun.Fold.fold_rec_bis	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.bal_height_1	5
+Coq.QArith.Qreals.Rle_Qle	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_unique_alt	5
+Coq.setoid_ring.RealField.Rgen_phiPOS	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_1	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.lt_nge	5
+Coq.micromega.RingMicromega.Micromega.eval_pol_add	5
+Coq.ZArith.Zdiv.Z_mult_div_ge	5
+Coq.btauto.Reflect.Completeness.list_replace_nth_1	5
+Coq.MSets.MSetAVL.MakeRaw.split_spec1	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.add_neq_in_iff	5
+Coq.NArith.Ndist.Nplength_lb	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_n_0	5	0.0.2.0.0.197.0.0.0	synth with cache (only 1: induction n; only 1: auto; only 1: simpl; only 1: destruct n; only 1: rewrite IHn; only 1: auto; only 1: simpl in *; only 1: rewrite IHn; only 1: auto).	4.668124	2798
+Coq.Reals.ConstructiveCauchyReals.CRealLt_lpo_dec	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_refl	5
+Coq.Reals.Raxioms.Rrepr_minus	5
+Coq.Sorting.PermutSetoid.Permut.if_eqA	5
+Coq.Reals.Rbasic_fun.Rmin_Rgt_l	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.square_lt_mono_nonneg	5
+Coq.QArith.Qcanon.Qcplus_0_r	5
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword0_ok	5
+Coq.Reals.Rbasic_fun.Rmin_Rgt_r	5	0.256.0.0.0.0.193.0	synth with cache (only 1: intros; only 1: inversion H; only 1: clear H; only 1: unfold Rmin; only 1: case (Rle_dec r1 r2); only 1: intro; only 1: intuition auto; Nat.Private_Tac.subst_eqns; eauto using (RelationClasses.StrictOrder_Transitive x y z) with *; only 1: auto).	0.224760	161
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_aux_spec	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Zodd_bit_value	5
+Coq.QArith.Qpower.Qpower_pos	5
+Coq.ZArith.Zorder.Zplus_le_compat_l	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.testbit_eqf	5	130.0.4	synth with cache (only 1: repeat red; only 1: intros; only 1: now rewrite <- H).	3.829898	2394
+Coq.Numbers.Cyclic.Int63.Cyclic63.div_lt	5
+Coq.Numbers.Cyclic.Int63.Cyclic63.P	5	0	synth with cache (only 1: RelationClasses.simpl_relation).	0.016022	1
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_size	5	1	synth with cache (only 1: now intros []).	1.060248	35
+Coq.ZArith.Zgcd_alt.Zgcdn_is_gcd_pos	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_1	5
+Coq.MSets.MSetPositive.PositiveSet.lt_strorder	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.mul_assoc	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.square_le_mono_nonneg	5	1.0.1.0.1.0	synth with cache (only 1: intros n m H1 H2; only 1: apply mul_le_mono_nonneg; only 1: order; only 1: assumption; only 1: order; only 1: assumption).	0.884562	490
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_proper_l	5
+Coq.micromega.ZMicromega.eval_pol_norm	5
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.add_b	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.partition_spec2	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv4b	5
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_rec_bis	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.union_1	5
+Coq.FSets.FMapList.Raw.Elt2.mapi_2	5
+Coq.Reals.R_sqr.Rsqr_gt_0_0	5
+Coq.Reals.ConstructiveRealsLUB.DDcut_limit_fix	5
+Coq.MSets.MSetInterface.Raw2SetsOn.lt_compat	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.NZ_to_Z_mod	5
+Coq.Lists.SetoidList.Type_with_equality.Fold.Fold_With_Restriction.fold_right_commutes_restr	5
+Coq.Reals.ConstructiveRcomplete.Rdiag_cauchy_sequence	5
+Coq.Reals.R_sqr.Rsqr_pos_lt	5	256.3	synth with cache (only 1: intro; only 1: CRelationClasses.simpl_crelation).	0.526807	446
+Coq.Reals.ArithProp.lt_minus_O_lt	5
+Coq.QArith.Qcabs.Qcabs_diff_Qcle_condition	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.gen_phiZ1_add_pos_neg	5
+Coq.Numbers.Cyclic.Int63.Cyclic63.shift_unshift_mod_3	5	0.0.1.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros n p a H; only 1: rewrite Zmod_eq by auto with zarith; only 1: unfold Z.sub at 1; only 1: rewrite Z_div_plus_full_l by auto with zarith; only 1: replace (2 ^ n) with (2 ^ (n - p) * 2 ^ p) by (rewrite <- Zpower_exp; [ f_equal |  |  ]; lia); only 1: rewrite <- Zdiv_Zdiv, Z_div_mult by auto with zarith; only 1: rewrite (Z.mul_comm (2 ^ (n - p))), Z.mul_assoc; only 1: rewrite Zopp_mult_distr_l; only 1: rewrite Z_div_mult by auto with zarith; only 1: symmetry; only 1: apply Zmod_eq; only 1: auto with zarith).	2.173923	711
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_opp_carry	5
+Coq.Reals.ClassicalDedekindReals.UpperAboveLower	5
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.add_neq_b	5	0.0.0.0.0.0.0.0.3	synth with cache (only 1: intuition; only 1: generalize (mem_iff (add x s) y), (mem_iff s y), (add_iff s x y); only 1: destruct (mem y s); only 1: destruct (mem y (add x s)); only 1: intuition; only 1: intuition; only 1: destruct (mem y (add x s)); only 1: intuition; only 1: intuition).	1.411789	595
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.lt_sub_pos	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.max_elt_spec1	5
+Coq.Reals.ROrderedType.Reqb_eq	5
+Coq.Reals.Rfunctions.simpl_fact	5
+Coq.Reals.Rfunctions.pow_O	5	0.0	synth with cache (only 1: intros p0; only 1: auto with real).	0.021921	2
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_trans	5
+Coq.Reals.R_Ifp.for_base_fp	5
+Coq.Reals.Rfunctions.pow_1	5	0.1.0.64	synth with cache (only 1: simpl in *; only 1: intros; only 1: rewrite Rmult_comm; only 1: apply Rmult_1_l).	0.077894	79
+Coq.Reals.Rfunctions.pow_add	5	0.0.0.0.0.0.0.0	synth with cache (only 1: intros x n; only 1: elim n; only 1: simpl; only 1: auto with real; only 1: simpl; only 1: intros n0 H' m; only 1: rewrite H'; only 1: auto with real).	0.057690	8
+Coq.Reals.Rminmax.R.plus_max_distr_l	5
+Coq.Numbers.Cyclic.Int63.Int63.eqb_spec	5
+Coq.Structures.OrderedTypeEx.String_as_OT.lts_tail_unique	5
+Coq.QArith.Qcanon.Qcplus_comm	5	1.0.0.0.640.515.0.1	synth with cache (only 1: intros; only 1: qc; only 1: unfold Qeq, Qinv; only 1: CRelationClasses.simpl_crelation; only 1: rewrite Pos.mul_comm; only 1: rewrite Pos.mul_comm; only 1: rewrite Pos.mul_comm; only 1: ring).	3.565850	3546
+Coq.FSets.FSetProperties.WProperties_fun.Fold.fold_rec_nodep	5	2.1.0.0.65.66.67	synth with cache (only 1: intros x H2; only 1: intros l; only 1: intros n m Hn; only 1: firstorder using StronglySorted_inv; only 1: apply fold_rec; only 1: auto; only 1: auto).	4.826052	7632
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_zero	5
+Coq.btauto.Algebra.Evaluation.eval_extensional_eq_compat	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_assoc	5
+Coq.QArith.Qreals.Qle_Rle	5
+Coq.setoid_ring.RealField.Rgen_phiPOS_not_0	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_up_2	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_equal	5	0.1.7	synth with cache (only 1: intros H; only 1: rewrite (equal_2 H); only 1: auto).	1.102041	1189
+Coq.micromega.RingMicromega.Micromega.eval_pol_mul	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.equal_cardinal	5	1.0	synth with cache (only 1: intros; only 1: auto with set).	0.026560	3
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_refl	5	1.0	synth with cache (only 1: apply subset_1; only 1: auto with set).	0.017056	3
+Coq.ZArith.Zdiv.Z_mult_div_ge_neg	5
+Coq.Strings.Byte.N.of_nat_via_N	5
+Coq.btauto.Reflect.Completeness.list_replace_nth_2	5
+Coq.Numbers.Integer.NatPairs.ZNatPairs.ZPairsAxiomsMod.lt_wd	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.remove_mapsto_iff	5
+Coq.NArith.Ndist.Nplength_ub	5
+Coq.Reals.ConstructiveCauchyReals.CRealLe_not_lt	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_antisym	5
+Coq.MSets.MSetAVL.MakeRaw.split_spec2	5
+Coq.Reals.Raxioms.Rrepr_mult	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.bal_height_2	5
+Coq.Sorting.PermutSetoid.Permut.if_eqA_rewrite_l	5
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword_cons	5
+Coq.Reals.Rbasic_fun.Rmin_Rgt	5
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Zge_minus_two_power_nat_S	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_aux_spec2	5
+Coq.ZArith.Zorder.Zplus_le_compat_r	5
+Coq.ZArith.Zorder.Zplus_lt_compat_l	5	0	synth with cache (only 1: apply Z.add_lt_mono_l).	0.016501	1
+Coq.QArith.Qpower.Qmult_power_positive	5
+Coq.ZArith.Zorder.Zplus_lt_compat_r	5	1	synth with cache (only 1: apply Z.add_lt_mono_r).	0.014807	2
+Coq.ZArith.Zorder.Zplus_le_reg_l	5	1	synth with cache (only 1: apply Z.add_le_mono_l).	0.017436	2
+Coq.ZArith.Zorder.Zplus_le_reg_r	5	1	synth with cache (only 1: apply Z.add_le_mono_r).	0.017906	2
+Coq.ZArith.Zorder.Zplus_lt_reg_l	5	2	synth with cache (only 1: apply Z.add_lt_mono_l).	0.018643	3
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bits_inj_0	5
+Coq.ZArith.Zorder.Zplus_lt_reg_r	5	3	synth with cache (only 1: apply Z.add_lt_mono_r).	0.020058	4
+Coq.ZArith.Zorder.Zplus_gt_reg_l	5	0.0	synth with cache (only 1: Z.swap_greater; only 1: apply Z.add_lt_mono_l).	0.035515	2
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword_Nwcons	5	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction w; only 1: destruct n; only 1: simpl; only 1: norm; only 1: simpl; only 1: norm; only 1: intros; only 1: destruct n; only 1: norm; only 1: norm).	0.430404	112
+Coq.ZArith.Zorder.Zplus_gt_reg_r	5	1.0	synth with cache (only 1: Z.swap_greater; only 1: apply Z.add_lt_mono_r).	0.035103	3
+Coq.ZArith.Zgcd_alt.Zgcdn_is_gcd	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_above_size	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_antisym	5	195	synth with cache (only 1: auto with *).	1.407919	120
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_2	5
+Coq.MSets.MSetPositive.PositiveSet.compare_compat_1	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.square_lt_simpl_nonneg	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.mul_add_distr_r	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_0	5	0.329	synth with cache (only 1: compute in *; only 1: now rewrite recursion_0).	0.723590	996
+Coq.micromega.ZMicromega.Zunsat_sound	5
+Coq.Reals.Rseries.sequence.EUn_noempty	5
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_rec_nodep	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_lt_0_compat	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.union_2	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.partition_ok1'	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.union_3	5	1.0	synth with cache (only 1: rewrite union_spec; only 1: auto).	0.027629	3
+Coq.FSets.FMapList.Raw.Elt2.mapi_lelistA	5
+Coq.FSets.FMapList.Raw.Elt2.mapi_sorted	5	704.0.0.0.0.0.0.0	synth with cache (only 1: induction m; only 1: simpl; only 1: auto; only 1: simpl; only 1: intros; only 1: destruct a as (x', e'); only 1: inversion_clear Hm; only 1: auto with relations).	0.090120	19
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv7	5
+Coq.Reals.ConstructiveRealsLUB.DDcut_limit	5
+Coq.MSets.MSetInterface.Raw2SetsOn.Spec.compare_spec	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.pred_succ	5
+Coq.Reals.ConstructiveRcomplete.doubleLeCovariant	5
+Coq.Lists.SetoidList.Type_with_equality.Fold.Fold_With_Restriction.fold_right_equivlistA_restr	5
+Coq.Reals.R_sqr.Rsqr_div	5
+Coq.Reals.ArithProp.even_odd_cor	5
+Coq.Reals.ArithProp.le_double	5	0.0	synth with cache (only 1: intros n m; only 1: apply Nat.mul_le_mono_pos_l, Nat.lt_0_succ).	0.020113	2
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.partition_ok2'	5	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction s; only 1: simpl; only 1: auto; only 1: simpl; only 1: intros; only 1: inv; only 1: generalize (IHs H1 f x); only 1: destruct (f a); only 1: destruct (partition f s); only 1: simpl in *; only 1: auto; only 1: destruct (partition f s); only 1: simpl in *; only 1: inversion_clear H; only 1: auto; only 1: auto).	0.985457	616
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.match_compOpp	5
+Coq.QArith.Qcabs.Qcabs_null	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.Zmod_equal	5
+Coq.Reals.RList.MaxRlist_P1	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.le_sub_nonneg	5
+Coq.Reals.ROrderedType.Rcompare_spec	5
+Coq.Reals.ClassicalDedekindReals.DRealRepr	5
+Coq.Reals.R_sqr.Rsqr_eq_0	5	1.1.2.0.0	synth with cache (only 1: unfold Rsqr; only 1: intros; only 1: apply Rsqr_0_uniq; only 1: unfold Rsqr; only 1: auto with real).	0.788796	938
+Coq.MSets.MSetList.MakeRaw.ForNotations.max_elt_spec2	5
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.remove_b	5
+Coq.Reals.R_Ifp.base_fp	5
+Coq.Numbers.Cyclic.Int63.Cyclic63.pos_mod_spec	5
+Coq.Reals.Rminmax.R.plus_max_distr_r	5
+Coq.Reals.Rfunctions.Rpow_mult_distr	5
+Coq.Numbers.Cyclic.Int63.Int63.eqb_false_spec	5
+Coq.Numbers.Cyclic.Int63.Int63.eqb_false_complete	5	0.0.2	synth with cache (only 1: intros x y; only 1: rewrite <- not_true_iff_false, eqb_spec; only 1: trivial).	0.247244	210
+Coq.QArith.Qcanon.Qcopp_involutive	5
+Coq.FSets.FSetProperties.WProperties_fun.Fold.fold_rec_weak	5
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_one	5
+Coq.Numbers.Cyclic.Int63.Int63.eqb_false_correct	5	0.0.0	synth with cache (only 1: intros x y; only 1: rewrite eqb_false_spec; only 1: trivial).	0.031089	3
+Coq.Structures.OrderedTypeEx.String_as_OT.lt_trans	5
+Coq.btauto.Algebra.Evaluation.eval_suffix_compat	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_0_l	5
+Coq.setoid_ring.RealField.Rdef_pow_add	5
+Coq.QArith.Qreals.Rlt_Qlt	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.le_sqrt_sqrt_up	5
+Coq.QArith.Qcanon.Qcplus_opp_r	5	0.0.2.0.0	synth with cache (only 1: intros; only 1: qc; only 1: red; only 1: simpl in *; only 1: ring).	0.528804	275
+Coq.micromega.RingMicromega.Micromega.eval_pol_opp	5
+Coq.ZArith.Zdiv.Z_div_exact_full_1	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_0_r	5	0.1.0.1.1.0.0	synth with cache (only 1: intros; only 1: apply lcm_unique; only 1: order || apply lt_0_1; only 1: exists 0; only 1: now nzsimpl; only 1: apply divide_refl; only 1: trivial).	0.577296	425
+Coq.btauto.Reflect.Completeness.boolean_witness_nonzero	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.remove_in_iff	5
+Coq.NArith.Ndist.Npdist_eq_1	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.remove_neq_mapsto_iff	5	0.0.0.0.0.0.0.0	synth with cache (only 1: split; only 1: intros; only 1: apply remove_3 with x; only 1: auto; only 1: intros; only 1: apply remove_2; only 1: auto; only 1: auto).	0.064391	8
+Coq.Reals.ConstructiveCauchyReals.CRealEq_diff	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_irrefl	5
+Coq.Sorting.PermutSetoid.Permut.if_eqA_rewrite_r	5
+Coq.MSets.MSetAVL.MakeRaw.split_spec3	5
+Coq.Reals.Raxioms.Rrepr_inv	5
+Coq.Reals.Rbasic_fun.Rmin_l	5
+Coq.Reals.Rbasic_fun.Rmin_r	5	64.0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold Rmin; only 1: case (Rle_dec x y); only 1: intro H1; only 1: auto with real; only 1: firstorder).	0.049967	8
+Coq.ZArith.Zdigits.Z_BRIC_A_BRAC.Zlt_two_power_nat_S	5
+Coq.QArith.Qpower.Qmult_power	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_1_l_nonneg	5	0.1.0.2.0.0.0	synth with cache (only 1: intros; only 1: apply lcm_unique; only 1: trivial; only 1: exists n; only 1: now nzsimpl; only 1: apply divide_refl; only 1: trivial).	0.944529	551
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.add_avl_1	5
+Coq.Reals.Rbasic_fun.Rmin_left	5	64.0.0.0.0.1	synth with cache (only 1: intros; only 1: unfold Rmin; only 1: case (Rle_dec x y); only 1: auto with real; only 1: intro H1; only 1: auto with zarith real).	0.378464	276
+Coq.ZArith.Zorder.Zmult_le_compat_r	5
+Coq.Reals.Rbasic_fun.Rmin_right	5	0.0.0.0	synth with cache (only 1: intros; only 1: apply Rmin_case_strong; only 1: auto using Rle_antisym; only 1: auto using Rle_antisym).	0.036464	4
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.firstr_firstl	5
+Coq.ZArith.Zgcd_alt.Zgcd_is_gcd	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bits_inj	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.firstl_firstr	5	0.0.0	synth with cache (only 1: destruct x; only 1: simpl; only 1: auto).	0.031613	3
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword_ok	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_1_r_nonneg	5	0.0.1.0.0.0	synth with cache (only 1: intros; only 1: apply lcm_unique; only 1: trivial; only 1: apply divide_refl; only 1: trivial using divide_1_l, le_0_1, divide_refl; only 1: trivial using divide_1_l, le_0_1, divide_refl).	0.255729	136
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_trans	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.subset_equal	5	2	synth with cache (only 1: auto with set).	0.019052	3
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_iff	5
+Coq.MSets.MSetPositive.PositiveSet.compare_compat	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_diag_nonneg	5	0.1.1.0.0.0	synth with cache (only 1: intros; only 1: apply lcm_unique; only 1: trivial; only 1: apply divide_refl; only 1: apply divide_refl; only 1: trivial using divide_refl).	0.144573	98
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.square_le_simpl_nonneg	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_1	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.add_opp_r	5
+Coq.Reals.Rseries.sequence.Un_in_EUn	5
+Coq.micromega.ZMicromega.xnnormalise_correct	5
+Coq.micromega.ZMicromega.eval_pol_Pc	5	1.0	synth with cache (only 1: intros; only 1: trivial).	0.020706	3
+Coq.Reals.Rlimit.eps2_Rgt_R0	5
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_rec_weak	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.inter_1	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.inter_2	5	0.0	synth with cache (only 1: rewrite inter_spec; only 1: intuition).	0.027071	2
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.inter_3	5	0.0	synth with cache (only 1: rewrite inter_spec; only 1: intuition).	0.037944	2
+Coq.MSets.MSetInterface.Raw2SetsOn.Spec.elements_spec2	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.one_succ	5
+Coq.Reals.R_sqr.Rsqr_minus_plus	5	0.514.4	synth with cache (only 1: intro; only 1: intros LT; only 1: ring_Rsqr).	4.006245	2214
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.two_succ	5	0	synth with cache (only 1: split).	0.011621	1
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv7b	5
+Coq.FSets.FMapList.Raw.Elt3.map2_alt_equiv	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.Induction.B0	5	64	synth with cache (only 1: intuition).	0.013585	5
+Coq.Reals.R_sqr.Rsqr_plus_minus	5	0.0	synth with cache (only 1: intros; only 1: ring_Rsqr).	0.032852	2
+Coq.Reals.Rderiv.cont_deriv	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_plus_distr_l	5
+Coq.Reals.ConstructiveRcomplete.CReal_cv_self	5
+Coq.Lists.SetoidList.Type_with_equality.Fold.Fold_With_Restriction.fold_right_add_restr	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.partition_ok1	5
+Coq.Reals.ConstructiveRealsLUB.glb_dec_Q	5
+Coq.Reals.Rlimit.eps2	5	0.0.0.0.67	synth with cache (only 1: Bool.destr_bool; only 1: rewrite <- double; only 1: rewrite <- Rmult_assoc; only 1: apply Rinv_r_simpl_m; only 1: now apply not_0_IZR).	1.382226	1160
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_succ_c	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_lt_cases	5
+Coq.Reals.ROrderedType.R_as_OT.lt_strorder	5
+Coq.Reals.RList.MinRlist_P1	5
+Coq.QArith.Qcanon.Qcmult_assoc	5	1.1.66.256	synth with cache (only 1: intros n (m, Hm); only 1: induction p; only 1: qc; only 1: ring).	3.879010	1284
+Coq.Reals.ClassicalDedekindReals.Rle_antisym	5
+Coq.Reals.ArithProp.euclidian_division	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.gen_phiZ_add	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.max_elt_spec3	5
+Coq.Reals.ROrderedType.R_as_OT.lt_compat	5	384	synth with cache (only 1: now destruct 1 || trivial).	0.255411	162
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.remove_neq_b	5
+Coq.Reals.ArithProp.tech8	5	1.64	synth with cache (only 1: intros n IH; only 1: auto with arith).	0.136842	84
+Coq.Reals.Rminmax.R.plus_min_distr_l	5
+Coq.Reals.R_Ifp.base_Int_part	5
+Coq.Reals.ROrderedType.R_as_OT.le_lteq	5	66.0	synth with cache (only 1: intros; only 1: reflexivity).	0.106869	35
+Coq.Reals.Rfunctions.pow_nonzero	5
+Coq.Reals.Rcomplete.R_complete	5
+Coq.FSets.FSetProperties.WProperties_fun.Fold.fold_rel	5
+Coq.Numbers.Cyclic.Int63.Int63.eq_dec	5
+Coq.Reals.ConstructiveRealsMorphisms.CRmorph_opp	5
+Coq.Structures.OrderedTypeEx.String_as_OT.lt_not_eq	5
+Coq.setoid_ring.RealField.R_power_theory	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.le_sqrt_up_succ_sqrt	5
+Coq.QArith.Qreals.Qlt_Rlt	5
+Coq.Reals.Rminmax.R.plus_min_distr_r	5	0.0.0.3.0	synth with cache (only 1: intros; only 1: rewrite (Rplus_comm n p), (Rplus_comm m p), (Rplus_comm _ p); only 1: apply min_monotone; only 1: intros x y; only 1: apply Rplus_le_compat_l).	0.839602	830
+Coq.Reals.Rminmax.R.opp_max_distr	5	0.0.0.0	synth with cache (only 1: intros x y; only 1: apply Rmax_case_strong; only 1: now intros w; rewrite Rmin_left; [  | apply Rge_le, Ropp_le_ge_contravar ]; only 1: now intros w; rewrite Rmin_right; [  | apply Rge_le, Ropp_le_ge_contravar ]).	0.038147	4
+Coq.Reals.Rminmax.R.opp_min_distr	5	0.0.0.0	synth with cache (only 1: intros x y; only 1: apply Rmin_case_strong; only 1: now intros w; rewrite Rmax_left; [  | apply Rge_le, Ropp_le_ge_contravar ]; only 1: now intros w; rewrite Rmax_right; [  | apply Rge_le, Ropp_le_ge_contravar ]).	0.039692	4
+Coq.micromega.RingMicromega.Micromega.eval_pol_norm	5
+Coq.QArith.Qcanon.Qcmult_0_l	5	196.67	synth with cache (only 1: intro x; only 1: auto with *).	1.216695	2309
+Coq.ZArith.Zdiv.Z_div_exact_full_2	5
+Coq.NArith.Ndist.Npdist_eq_2	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.remove_neq_in_iff	5
+Coq.btauto.Reflect.Completeness.reduce_poly_of_formula_sound_alt	5
+Coq.btauto.Algebra.Algebra.poly_add_compat	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_antisym	5
+Coq.micromega.Fourier_util.Rlt_mult_inv_pos	5
+Coq.Sorting.PermutSetoid.Permut.multiplicity_eqA	5
+Coq.Reals.Raxioms.Rrepr_le	5
+Coq.MSets.MSetAVL.MakeRaw.split_ok	5
+Coq.Reals.ConstructiveCauchyReals.CRealEq_modindep	5
+Coq.ZArith.Zdigits.COHERENT_VALUE.binary_to_Z_to_binary	5
+Coq.Floats.FloatLemmas.shift_value	5	0	synth with cache (only 1: now Z.nzsimpl).	0.035978	1
+Coq.QArith.Qpower.Qinv_power_positive	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.add_avl	5
+Coq.ZArith.Zorder.Zmult_le_compat_l	5
+Coq.Reals.Rbasic_fun.Rle_min_compat_r	5
+Coq.Reals.Rbasic_fun.Rle_min_compat_l	5	0.0.0.0.0.0	synth with cache (only 1: intros; only 1: do 2 (apply Rmin_case_strong; intro); only 1: eauto using Rle_trans, Rle_refl; only 1: eauto using Rle_trans, Rle_refl; only 1: eauto using Rle_trans, Rle_refl; only 1: eauto using Rle_trans, Rle_refl).	0.039502	6
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.bits_inj_iff	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_predsize_0_firstl	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_3	5
+Coq.MSets.MSetPositive.PositiveSet.lt_compat	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_eq_0	5
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.Nwadd_ok	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.mul_2_mono_l	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_lcm_eq_r	5	0.704.0.64.0.0.0	synth with cache (only 1: intros n m Hn; only 1: intros EQ; only 1: apply lcm_unique; only 1: auto using lt_0_1; only 1: trivial; only 1: Notations.reflexivity; only 1: trivial).	0.110159	67
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.add_opp_diag_r	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_in	5
+Coq.Reals.PartSum.tech1	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_double	5
+Coq.Reals.Rseries.sequence.Un_bound_imp	5
+Coq.micromega.ZMicromega.xnormalise_correct	5
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.fold_rel	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.diff_1	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.diff_2	5	0.0	synth with cache (only 1: rewrite diff_spec; only 1: intuition).	0.026334	2
+Coq.MSets.MSetInterface.Raw2SetsOn.Spec.min_elt_spec1	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.diff_3	5	0.1	synth with cache (only 1: rewrite diff_spec; only 1: intuition).	0.037082	3
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rinv_nz	5
+Coq.Reals.R_sqr.Rsqr_incr_0	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.Induction.BS	5
+Coq.Reals.Rderiv.Dconst	5
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.Nwopp_ok	5	1.2.0.4	synth with cache (only 1: induction x; only 1: simpl; only 1: norm; only 1: norm).	1.329606	740
+Coq.FSets.FMapList.Raw.Elt3.combine_lelistA	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_plus_distr_r	5
+Coq.Lists.SetoidList.Type_with_equality.Fold.fold_right_commutes	5
+Coq.Reals.Rlimit.eps4	5
+Coq.Reals.ConstructiveRealsLUB.is_upper_bound_glb	5
+Coq.Reals.Rlimit.Rlt_eps2_eps	5	0.0	synth with cache (only 1: intros; only 1: lra).	0.028643	2
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_le_cases	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_add_c	5
+Coq.Reals.RList.AbsList_P1	5
+Coq.Reals.ClassicalDedekindReals.lowerUpper	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.choose_spec3	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.fold_spec	5	0.320.1	synth with cache (only 1: intro s; only 1: intros x l; only 1: auto).	0.025631	14
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.gen_phiZ_opp	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.cardinal_spec	5	1.0	synth with cache (only 1: intros n H; only 1: auto).	0.017861	3
+Coq.Reals.R_Ifp.Int_part_INR	5
+Coq.Reals.Rfunctions.pow_RN_plus	5
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.partition_ok2	5
+Coq.FSets.FSetProperties.WProperties_fun.Fold.set_induction	5
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.singleton_b	5
+Coq.Numbers.Cyclic.Int63.Int63.cast_refl	5
+Coq.Reals.ConstructiveRealsMorphisms.CRplus_pos_rat_lt	5
+Coq.Structures.OrderedTypeEx.String_as_OT.compare	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_sqrt_up_spec	5
+Coq.QArith.Qreals.Q2R_plus	5
+Coq.Reals.ConstructiveRcomplete.Un_cv_extens	5
+Coq.Reals.Rminmax.R.minus_max_distr_l	5
+Coq.ZArith.Zdiv.Zmod_le	5
+Coq.QArith.Qcanon.Qcmult_0_r	5
+Coq.NArith.Ndist.Npdist_comm	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.elements_mapsto_iff	5
+Coq.micromega.RingMicromega.Micromega.normalise_sound	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.eqb_compare	5
+Coq.micromega.Fourier_util.Rlt_zero_pos_plus1	5
+Coq.btauto.Algebra.Algebra.poly_mul_cst_compat	5
+Coq.micromega.Fourier_util.Rle_zero_pos_plus1	5	576.1.0	synth with cache (only 1: intros; only 1: rewrite Rplus_comm; only 1: firstorder).	0.071104	22
+Coq.micromega.Fourier_util.Rle_mult_inv_pos	5	0.1.0.0	synth with cache (only 1: intros x y H H0; only 1: replace 0 with (x * 0); only 1: auto with real; only 1: ring).	0.069897	5
+Coq.Reals.Raxioms.Rrepr_appart	5
+Coq.MSets.MSetAVL.MakeRaw.split_ok1	5
+Coq.Sorting.PermutSetoid.Permut.multiplicity_InA	5
+Coq.MSets.MSetAVL.MakeRaw.split_ok2	5	0.0.1	synth with cache (only 1: destruct (@split_ok s x); only 1: auto; only 1: auto).	0.018096	4
+Coq.Reals.AltSeries.CV_ALT_step0	5
+Coq.Reals.Rlimit.Rlt_eps4_eps	5	0.9	synth with cache (only 1: intros a Ha; only 1: lra).	2.457714	4512
+Coq.ZArith.Zdigits.COHERENT_VALUE.two_compl_to_Z_to_two_compl	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.CyclicRing	5	0.0.0.0.1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.643	synth with cache (only 1: firstorder; only 1: zify; only 1: rewrite Z.add_0_l; only 1: apply Zmod_small; only 1: apply ZnZ.spec_to_Z; only 1: zify; only 1: now rewrite Z.add_comm; only 1: zify; only 1: now rewrite Zplus_mod_idemp_r, Zplus_mod_idemp_l, Z.add_assoc; only 1: zify; only 1: rewrite Z.mul_1_l; only 1: apply Zmod_small; only 1: apply ZnZ.spec_to_Z; only 1: zify; only 1: now rewrite Z.mul_comm; only 1: zify; only 1: now rewrite Zmult_mod_idemp_r, Zmult_mod_idemp_l, Z.mul_assoc; only 1: zify; only 1: now rewrite <- Zplus_mod, Zmult_mod_idemp_l, Z.mul_add_distr_r; only 1: zify; only 1: unfold Z.sub; only 1: now rewrite Zplus_mod_idemp_r; only 1: red; only 1: rewrite add_opp_r; only 1: zify; only 1: now rewrite Z.sub_diag, Zmod_0_l).	4.275801	2055
+Coq.Floats.FloatLemmas.frexp_spec	5
+Coq.QArith.Qpower.Qinv_power	5
+Coq.Reals.ConstructiveCauchyReals.CRealLt_aboveSig	5
+Coq.ZArith.Zorder.Zmult_lt_compat_r	5
+Coq.Reals.Rbasic_fun.Rmin_comm	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_0_propagates	5
+Coq.ZArith.Zorder.Zmult_gt_compat_r	5	0.2	synth with cache (only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_r).	0.163589	25
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.choose_mem_4	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.remove_min_avl_1	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.are_bits	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_mem_3	5	1.0	synth with cache (only 1: intro; only 1: auto with set relations).	0.017959	3
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.add_equal	5	0	synth with cache (only 1: auto with set).	0.017461	1
+Coq.ZArith.Zorder.Zmult_gt_0_lt_compat_r	5	0.1	synth with cache (only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_r).	0.027125	3
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.divide_lcm_iff	5
+Coq.MSets.MSetPositive.PositiveSet.add_spec	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.add_le_mul	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.in_find	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_upper_bound	5
+Coq.Reals.Rseries.sequence.growing_prop	5
+Coq.Reals.Rprod.prod_SO_split	5
+Coq.Reals.PartSum.tech2	5
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.set_induction	5
+Coq.micromega.ZMicromega.cnf_of_list_correct	5
+Coq.MSets.MSetInterface.Raw2SetsOn.Spec.min_elt_spec2	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.filter_1	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.filter_2	5	0.0.0.0	synth with cache (only 1: intros P; only 1: rewrite filter_spec; only 1: intuition; only 1: intuition).	0.046786	4
+Coq.Reals.R_sqr.Rsqr_incr_0_var	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.rdiv8	5
+Coq.Reals.SeqSeries.sum_maj1	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.Induction.Zbounded_induction	5
+Coq.Reals.ConstructiveCauchyReals.CRealLt_above	5
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_compare	5
+Coq.FSets.FMapList.Raw.Elt3.combine_sorted	5
+Coq.Numbers.NatInt.NZMulOrder.NZMulOrderProp.square_nonneg	5
+Coq.Reals.ClassicalDedekindReals.DRealOpen	5
+Coq.Numbers.NatInt.NZSqrt.NZSqrtUpProp.sqrt_sqrt_up_exact	5
+Coq.Numbers.Integer.Abstract.ZAddOrder.ZAddOrderProp.sub_neg_cases	5
+Coq.MSets.MSetAVL.MakeRaw.inter_spec_ok	5
+Coq.Numbers.Natural.Abstract.NBits.NBitsProp.shiftr_spec'	5
+Coq.Numbers.Integer.Abstract.ZLcm.ZLcmProp.lcm_opp_l	5
+Coq.ZArith.Zorder.Zmult_gt_0_le_compat_r	5
+Coq.NArith.Ndist.Nplength_ultra_1	5
+Coq.Lists.SetoidList.Type_with_equality.Fold.fold_right_equivlistA	5
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.half_lower_bound	5
+Coq.MSets.MSetInterface.Raw2SetsOn.Spec.min_elt_spec3	5
+Coq.Sorting.PermutSetoid.Permut.multiplicity_InA_O	5
+Coq.Reals.Raxioms.Rappart_repr	5
+Coq.MSets.MSetList.MakeRaw.ForNotations.filter_inf	5
+Coq.MSets.MSetPositive.PositiveSet.remove_spec	5
+Coq.Reals.Rderiv.Dx	5
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.Nwscal_ok	5
+Coq.Reals.ConstructiveRcomplete.R_has_all_rational_limits	5
+Coq.Reals.SeqSeries.Rseries_CV_comp	5
+Coq.ZArith.Zdiv.Zdiv_lt_upper_bound	5
+Coq.FSets.FSetProperties.WProperties_fun.Fold.set_induction_bis	5
+Coq.setoid_ring.Field_theory.MakeFieldPol.AlmostField.cross_product_eq	5
+Coq.Reals.RList.MinRlist_P2	5
+Coq.micromega.RingMicromega.Micromega.negate_correct	5
+Coq.MSets.MSetFacts.WFactsOn.ImplSpec.filter_3	5
+Coq.FSets.FSetFacts.WFacts_fun.BoolSpec.union_b	5
+Coq.QArith.Qcanon.Qcmult_1_l	5
+Coq.micromega.ZMicromega.normalise_correct	5
+Coq.FSets.FMapFacts.WFacts_fun.IffSpec.elements_in_iff	5
+Coq.ZArith.Zdigits.COHERENT_VALUE.Z_to_binary_to_Z	5
+Coq.MSets.MSetProperties.WPropertiesOn.Fold.set_induction_bis	5
+Coq.Numbers.Cyclic.Abstract.CyclicAxioms.CyclicRing.eqb_eq	5
+Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_in_iff	5
+Coq.MSets.MSetEqProperties.WEqPropertiesOn.BasicProperties.remove_mem_3	5
+Coq.Numbers.Cyclic.ZModulo.ZModulo.ZModulo.spec_add_carry_c	5
+Coq.btauto.Algebra.Algebra.poly_mul_mon_compat	5
+Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_0_firstl	5
+Coq.Numbers.Cyclic.Int63.Int63.cast_diff	5
+Coq.setoid_ring.Ncring_initial.ZMORPHISM.gen_phiZ_mul	5
+Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_1_l	5
+Coq.FSets.FMapFullAVL.AvlProofs.Elt.remove_min_avl	5
+Coq.Numbers.Cyclic.Abstract.NZCyclic.NZCyclicAxiomsMod.Induction.B_holds	5
+Coq.setoid_ring.Ncring_polynom.MakeRingPol.PaddX_ok2	5
+Coq.QArith.Qpower.Qdiv_power	5
+Coq.Reals.ConstructiveRealsMorphisms.CRplus_neg_rat_lt	5
+Coq.Reals.Rprod.prod_SO_pos	5
+Coq.Reals.ConstructiveRealsLUB.is_upper_bound_closed	5
+Coq.Reals.R_Ifp.fp_nat	5
+Coq.QArith.Qreals.Q2R_mult	5
+Coq.Reals.Rbasic_fun.Rmin_stable_in_posreal	5
+Coq.Reals.R_sqr.Rsqr_incr_1	5
+Coq.Reals.Rminmax.R.minus_max_distr_r	5
+Coq.Reals.Rseries.sequence.Un_cv_crit_lub	5
+Coq.Reals.Rfunctions.pow_lt	5
+Coq.Reals.Rlimit.prop_eps	5
+Coq.Reals.PartSum.tech3	5
+Coq.Floats.FloatLemmas.ldexp_spec	5
+Coq.Reals.AltSeries.CV_ALT_step1	5
+Coq.Reals.Ranalysis3.derivable_pt_lim_div	5
+Coq.Reals.Rtopology.interior_P1	5
