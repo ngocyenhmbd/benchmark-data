@@ -4,3 +4,17 @@
 
 Fatal benchmarking error: Termination request received: sigint
 Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: ("Process.run failed"
+ ((prog ssh)
+  (args
+   (node-02.cluster rsync -qa --exclude opam-root/bench/.opam-switch/sources
+    --exclude opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob --exclude *.aux
+    node-06.cluster:/lscratch/blaaulas/tmp-scratch4/
+    /lscratch/blaaulas/tmp-scratch4/))
+  (exit_status (Exit_non_zero 255)) (stdout "")
+  (stderr ("Connection to node-02.cluster closed by remote host.\r" ""))))
