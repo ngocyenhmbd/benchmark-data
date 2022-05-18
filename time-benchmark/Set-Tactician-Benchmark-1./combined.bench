@@ -1,44 +1,42 @@
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	1	66.0	synth with cache (only 1: intro A; only 1: auto  10 with sets).	0.040252	14
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	1	0	synth with cache (only 1: auto  6 with sets).	0.014325	1
-Coq.ssr.ssrfun.unitE	1	65.66.145	synth with cache (only 1: intro H; only 1: Notations.reflexivity || destruct H; only 1: trivial).	0.181065	1051
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	1	0.7	synth with cache (only 1: unfold Add at 1; only 1: auto  6 with sets).	0.157420	237
-Coq.ssr.ssrfun.ExtensionalEquality.frefl	1	2	synth with cache (only 1: Notations.split).	0.009040	3
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	1	0	synth with cache (only 1: auto with sets).	0.013319	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_commutative	1	0	synth with cache (only 1: auto with sets).	0.015665	1
-Coq.ssr.ssrfun.ExtensionalEquality.fsym	1	0.9	synth with cache (only 1: intros; only 1: by [  ]).	0.068851	158
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_associative	1	1.132.195	synth with cache (only 1: intros H ?; only 1: generalize Inclusion_is_transitive; only 1: auto  10 with sets).	0.759502	925
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_idempotent	1	0	synth with cache (only 1: auto  6 with sets).	0.013765	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_absorbs	1	1.128	synth with cache (only 1: intro IT; only 1: auto  6 with sets).	0.055044	23
+Coq.ssr.ssrsetoid.compat_Reflexive	1	0.0	synth with cache (only 1: intros; only 1: tauto).	0.010736	2
+Coq.ssr.ssrfun.unitE	1	65.66.145	synth with cache (only 1: intro H; only 1: Notations.reflexivity || destruct H; only 1: trivial).	0.149739	1051
+Coq.ssr.ssrfun.ExtensionalEquality.frefl	1	2	synth with cache (only 1: Notations.split).	0.009473	3
+Coq.ssr.ssrfun.ExtensionalEquality.fsym	1	0.9	synth with cache (only 1: intros; only 1: by [  ]).	0.062684	158
 Coq.ssr.ssrfun.ExtensionalEquality.ftrans	1
-Coq.ssr.ssrfun.ExtensionalEquality.rrefl	1	2.0	synth with cache (only 1: intros H ?; only 1: Notations.split).	0.011760	4
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Couple_as_union	1
+Coq.ssr.ssrfun.ExtensionalEquality.rrefl	1	2.0	synth with cache (only 1: intros H ?; only 1: Notations.split).	0.008390	4
+Coq.Classes.CEquivalence.equiv_transitive_obligation_1	1	66.2.3.1.66	synth with cache (only 1: intros Hfst Hsnd; only 1: firstorder; only 1: transitivity y; only 1: auto; only 1: Notations.assumption).	0.976005	1832
 Coq.ssr.ssrfun.Composition.eq_comp	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_union	1
+Coq.Classes.CEquivalence.Respecting.respecting_equiv_obligation_3	1
+Coq.Classes.CEquivalence.pointwise_reflexive	1	2	synth with cache (only 1: simpl_crelation).	0.012702	3
+Coq.Classes.CEquivalence.pointwise_symmetric	1	0	synth with cache (only 1: firstorder).	0.007094	1
+Coq.Classes.CEquivalence.pointwise_transitive	1	0	synth with cache (only 1: firstorder).	0.013242	1
+Coq.Classes.CEquivalence.pointwise_equivalence	1	0	synth with cache (only 1: firstorder).	0.420287	1
 Coq.ssr.ssrfun.all_tag	1
-Coq.ssr.ssrfun.all_tag2	1	0	synth with cache (only 1: by move  =>fP; exists (fun x => tag (fP x)) => x; case : (fP x) ).	0.017453	1
-Coq.ssr.ssrfun.Sig.svalP	1	2	synth with cache (only 1: apply proj2_sig).	0.007708	3
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_Couple	1
+Coq.ssr.ssrfun.all_tag2	1	0	synth with cache (only 1: by move  =>fP; exists (fun x => tag (fP x)) => x; case : (fP x) ).	0.014581	1
+Coq.ssr.ssrfun.Sig.svalP	1	2	synth with cache (only 1: apply proj2_sig).	0.007382	3
+Coq.Numbers.NatInt.NZBase.NZBaseProp.eq_sym_iff	1	1.1.257	synth with cache (only 1: intros y Ryx; only 1: compute; only 1: firstorder).	0.082647	175
+Coq.Numbers.NatInt.NZBase.NZBaseProp.neq_sym	1	66.128.0	synth with cache (only 1: intros; only 1: hnf; only 1: firstorder).	0.016297	14
 Coq.ssr.ssrfun.Sig.s2valP	1
-Coq.ssr.ssrfun.Sig.s2valP'	1	0	synth with cache (only 1: by case : u ).	0.008500	1
-Coq.ssr.ssrfun.all_sig	1	0	synth with cache (only 1: by move  =>fP; exists (fun x => tag (fP x)) => x; case : (fP x) ).	0.012985	1
-Coq.ssr.ssrfun.all_sig2	1	0	synth with cache (only 1: by case /all_tag =>f /all_pair []; exists f).	0.022778	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_Couple_Singleton	1
+Coq.ssr.ssrfun.Sig.s2valP'	1	0	synth with cache (only 1: by case : u ).	0.008568	1
+Coq.ssr.ssrfun.all_sig	1	0	synth with cache (only 1: by move  =>fP; exists (fun x => tag (fP x)) => x; case : (fP x) ).	0.013538	1
+Coq.ssr.ssrfun.all_sig2	1	0	synth with cache (only 1: by case /all_tag =>f /all_pair []; exists f).	0.019143	1
+Coq.Numbers.NatInt.NZBase.NZBaseProp.eq_stepl	1	0.0.6	synth with cache (only 1: intros x y z H1 H2; only 1: rewrite <- H2; only 1: auto).	0.530892	1195
 Coq.ssr.ssrfun.Injections.can_pcan	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Intersection_commutative	1	0.0.0.0.0.0.0.0.0.1.129.68	synth with cache (only 1: intro p; only 1: Notations.symmetry; only 1: apply Extensionality_Ensembles; only 1: split; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets; only 1: red; only 1: intros x H'; only 1: elim H'; only 1: auto with sets).	0.574573	587
+Coq.Numbers.NatInt.NZBase.NZBaseProp.succ_inj	1
 Coq.ssr.ssrfun.Injections.pcan_inj	1
-Coq.ssr.ssrfun.Injections.can_inj	1	1	synth with cache (only 1: by move  =>fK x y /(congr1 g); rewrite !fK => [[]]).	0.011815	2
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity	1
-Coq.ssr.ssrfun.Injections.canLR	1	1.70.68	synth with cache (only 1: intro z; only 1: inversion 1; only 1: trivial).	0.354095	992
-Coq.ssr.ssrfun.Injections.canRL	1	64.2	synth with cache (only 1: destruct 2; only 1: intuition).	0.018792	5
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity_l	1
+Coq.ssr.ssrfun.Injections.can_inj	1	1	synth with cache (only 1: by move  =>fK x y /(congr1 g); rewrite !fK => [[]]).	0.012020	2
+Coq.Numbers.NatInt.NZBase.NZBaseProp.succ_inj_wd	1
+Coq.ssr.ssrfun.Injections.canLR	1	1.70.68	synth with cache (only 1: intro z; only 1: inversion 1; only 1: trivial).	0.355039	992
+Coq.ssr.ssrfun.Injections.canRL	1	64.2	synth with cache (only 1: destruct 2; only 1: intuition).	0.019130	5
+Coq.Numbers.NatInt.NZBase.NZBaseProp.succ_inj_wd_neg	1	0.0.0.0.2.0.1.0	synth with cache (only 1: intros; only 1: apply imp_iff_compat_r; only 1: split; only 1: intros; only 1: apply pred_wd in H; only 1: now do 2 rewrite pred_succ in H; only 1: symmetry; only 1: now f_equiv).	0.452548	421
 Coq.ssr.ssrfun.Some_inj	1
-Coq.ssr.ssrfun.of_voidK	1	0.132	synth with cache (only 1: intros H; only 1: destruct H).	0.032692	45
-Coq.ssr.ssrfun.esymK	1	0.9.85	synth with cache (only 1: intro p; only 1: destruct p; only 1: Notations.reflexivity).	0.348552	1797
-Coq.ssr.ssrfun.etrans_id	1	0.13	synth with cache (only 1: subst; only 1: Notations.reflexivity).	0.090310	312
-Coq.ssr.ssrfun.InjectionsTheory.inj_id	1	5.0.65	synth with cache (only 1: intros Hfst Hsnd; only 1: destruct 1; only 1: reflexivity).	0.087668	222
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Distributivity'	1
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_add	1	1.0.1.64	synth with cache (only 1: intros x1 H'0; only 1: unfold Add at 1; only 1: unfold Add at 1; only 1: auto  9 with sets).	0.286722	123
-Coq.ssr.ssrfun.InjectionsTheory.inj_can_sym	1	67.65.82	synth with cache (only 1: intros n m; only 1: intros H; only 1: auto).	0.701998	2074
-Coq.ssr.ssrfun.InjectionsTheory.inj_comp	1	2.64.133	synth with cache (only 1: intros h1 h2; only 1: intro x; only 1: auto).	0.161090	249
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Non_disjoint_union	1
+Coq.ssr.ssrfun.of_voidK	1	0.132	synth with cache (only 1: intros H; only 1: destruct H).	0.029421	45
+Coq.ssr.ssrfun.esymK	1	0.9.85	synth with cache (only 1: intro p; only 1: destruct p; only 1: Notations.reflexivity).	0.332076	1797
+Coq.Numbers.NatInt.NZBase.NZBaseProp.CentralInduction.central_induction	1
+Coq.ssr.ssrfun.etrans_id	1	0.13	synth with cache (only 1: subst; only 1: Notations.reflexivity).	0.087729	312
+Coq.ssr.ssrfun.InjectionsTheory.inj_id	1	5.0.65	synth with cache (only 1: intros Hfst Hsnd; only 1: destruct 1; only 1: reflexivity).	0.067535	222
+Coq.ssr.ssrfun.InjectionsTheory.inj_can_sym	1	67.65.82	synth with cache (only 1: intros n m; only 1: intros H; only 1: auto).	0.680852	2074
+Coq.ssr.ssrfun.InjectionsTheory.inj_comp	1	2.64.133	synth with cache (only 1: intros h1 h2; only 1: intro x; only 1: auto).	0.143853	249
 Coq.ssr.ssrfun.InjectionsTheory.inj_compr	1
+Coq.ssr.ssrfun.InjectionsTheory.can_comp	1
+Coq.Numbers.NatInt.NZPow.NZPowProp.pow_0_l	1
