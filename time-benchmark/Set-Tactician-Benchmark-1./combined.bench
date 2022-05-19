@@ -1,11 +1,271 @@
-Coq.ssr.ssrsetoid.compat_Reflexive	1	0.0	synth with cache (only 1: intros; only 1: tauto).	0.010304	2
+Coq.ssr.ssrsetoid.compat_Reflexive	1	0.0	synth with cache (only 1: intros; only 1: tauto).	0.010221	2
 Coq.Program.Subset.subset_eq	1
-Coq.Classes.CEquivalence.equiv_transitive_obligation_1	1	66.2.3.1.66	synth with cache (only 1: intros Hfst Hsnd; only 1: firstorder; only 1: transitivity y; only 1: auto; only 1: Notations.assumption).	0.973054	1832
+Coq.Classes.Morphisms_Prop.Acc_pt_morphism	1
 Coq.Program.Subset.match_eq_rewrite	1
-Coq.Classes.CEquivalence.Respecting.respecting_equiv_obligation_3	1
-Coq.Classes.CEquivalence.pointwise_reflexive	1	2	synth with cache (only 1: simpl_crelation).	0.012447	3
-Coq.Classes.CEquivalence.pointwise_symmetric	1	0	synth with cache (only 1: firstorder).	0.007659	1
-Coq.Classes.CEquivalence.pointwise_transitive	1	0	synth with cache (only 1: firstorder).	0.013641	1
-Coq.Classes.CEquivalence.pointwise_equivalence	1	0	synth with cache (only 1: firstorder).	0.428144	1
+Coq.Classes.Morphisms_Prop.Acc_rel_morphism	1
+Coq.Classes.Morphisms_Prop.well_founded_morphism	1
 Coq.Structures.OrdersFacts.CompareFacts.compare_eq_iff	1
-Coq.Structures.OrdersFacts.CompareFacts.compare_eq	1	0.0.0.0.0.0	synth with cache (only 1: case compare_spec; only 1: easy; only 1: intro H; only 1: easy; only 1: intro H; only 1: easy).	0.037448	6
+Coq.Structures.OrdersFacts.CompareFacts.compare_eq	1	0.0.0.0.0.0	synth with cache (only 1: case compare_spec; only 1: easy; only 1: intro H; only 1: easy; only 1: intro H; only 1: easy).	0.025600	6
+Coq.Structures.OrdersFacts.CompareFacts.compare_lt_iff	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_0_r	1	2.0.0.9.0	synth with cache (only 1: intro; only 1: nzinduct n; only 1: now nzsimpl; only 1: intro; only 1: now nzsimpl').	0.668635	1195
+Coq.Structures.OrdersFacts.CompareFacts.compare_gt_iff	1	0.0.0.0.0.0.0.0.0.0.0.0.0.1.2.0.0.0.0.0.0	synth with cache (only 1: case compare_spec; only 1: intro H; only 1: split; only 1: easy; only 1: intro LT; only 1: contradict ltac:(H); only 1: intro EQ; only 1: contradict ltac:(LT); only 1: rewrite EQ; only 1: apply irreflexivity; only 1: intro H; only 1: split; only 1: easy; only 1: intro LT; only 1: contradict ltac:(LT); only 1: rewrite H; only 1: apply irreflexivity; only 1: intro H; only 1: split; only 1: easy; only 1: easy).	0.710451	479
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_succ_r	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_comm	1	1.0.0.0.0.0	synth with cache (only 1: intros n m; only 1: nzinduct n; only 1: now nzsimpl; only 1: intro; only 1: nzsimpl; only 1: now rewrite add_cancel_r).	0.129563	7
+Coq.Structures.OrdersFacts.CompareFacts.compare_nlt_iff	1
+Coq.Structures.OrdersFacts.CompareFacts.compare_ngt_iff	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_add_distr_r	1
+Coq.Structures.OrdersFacts.CompareFacts.compare_compat	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_add_distr_l	1
+Coq.Structures.OrdersFacts.CompareFacts.compare_refl	1	4.0	synth with cache (only 1: apply compare_eq_iff; only 1: reflexivity).	0.109580	161
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_assoc	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_1_l	1	0.1	synth with cache (only 1: intro n; only 1: now nzsimpl').	0.043847	6
+Coq.Structures.OrdersFacts.CompareFacts.compare_antisym	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_1_r	1	0.0	synth with cache (only 1: intro n; only 1: now nzsimpl').	0.028468	2
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_compat	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_shuffle0	1
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_preorder	1
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_order	1	1.64	synth with cache (only 1: compute; only 1: iorder).	0.027801	13
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_shuffle1	1
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_antisym	1	65.2.0.0.64.66	synth with cache (only 1: intros x y EQ WF; only 1: apply CRelationClasses.partial_order_antisym; only 1: compute; only 1: iorder; only 1: auto; only 1: auto with *).	0.263700	249
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_not_gt_iff	1	0.69	synth with cache (only 1: compute; only 1: iorder).	0.337666	448
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.lt_not_ge_iff	1	0	synth with cache (only 1: iorder).	0.012290	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_shuffle2	1
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.le_or_gt	1
+Coq.Numbers.NatInt.NZMul.NZMulProp.mul_shuffle3	1
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.lt_or_ge	1
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.eq_is_le_ge	1	0.64.0	synth with cache (only 1: intros; only 1: compute; only 1: iorder).	0.091755	12
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.compare_le_iff	1	1.0	synth with cache (only 1: rewrite compare_gt_iff; only 1: iorder).	0.052852	3
+Coq.Structures.OrdersFacts.OrderedTypeFullFacts.compare_ge_iff	1	0.0.0	synth with cache (only 1: rewrite le_not_gt_iff; only 1: rewrite compare_lt_iff; only 1: intuition).	0.054513	3
+Coq.Structures.OrdersFacts.OrderedTypeFacts.lt_dec	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.mod_divide	1
+Coq.Structures.OrdersFacts.OrderedTypeFacts.if_eq_dec	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.divide_div_mul_exact	1
+Coq.Structures.OrdersFacts.OrderedTypeFacts.eqb_alt	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.gcd_div_factor	1
+Coq.Structures.OrdersFacts.OrderedTypeFacts.eqb_compat	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_not_eq	1	4.0	synth with cache (only 1: intro H; only 1: order).	0.085107	90
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_eq	1	0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	0.022510	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_lt	1	0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	0.018927	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.gcd_div_gcd	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_eq	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_le	1	0	synth with cache (only 1: order).	0.013310	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.neq_eq	1	0	synth with cache (only 1: order).	0.014164	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_neq	1	0	synth with cache (only 1: order).	0.013895	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_lt_trans	1	2.0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *; only 1: order).	0.024461	4
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_le_trans	1	2.0	synth with cache (only 1: intuition auto; OrderTac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *; only 1: order).	0.025341	4
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_trans	1	0	synth with cache (only 1: order).	0.011714	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_antisym	1	0	synth with cache (only 1: order).	0.013244	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.le_neq	1	0	synth with cache (only 1: order).	0.012210	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.neq_sym	1	0	synth with cache (only 1: order).	0.011065	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_le	1	0.0	synth with cache (only 1: intro H; only 1: order).	0.013755	2
+Coq.Structures.OrdersFacts.OrderedTypeTest.gt_not_eq	1	0	synth with cache (only 1: order).	0.010271	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_not_lt	1	0	synth with cache (only 1: order).	0.010486	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_not_gt	1	0	synth with cache (only 1: order).	0.009795	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.lt_not_gt	1	0	synth with cache (only 1: order).	0.010513	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.gcd_mod	1
+Coq.Structures.OrdersFacts.OrderedTypeTest.eq_is_nlt_ngt	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_wd	1
+Coq.Structures.OrdersFacts.OrderedTypeRev.lt_strorder	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_equiv1	1
+Coq.Structures.OrdersFacts.OrderedTypeRev.lt_compat	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_equiv2	1
+Coq.Structures.OrdersFacts.OrderedTypeRev.le_lteq	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.gcd_div_swap	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.divide_lcm_l	1	0.1.0	synth with cache (only 1: intro n; only 1: intro H; only 1: apply divide_mul_l, divide_refl).	0.015448	4
+Coq.Structures.OrdersFacts.OrderedTypeRev.compare_spec	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.divide_lcm_r	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_spec	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_eq	1	0.0	synth with cache (only 1: intros H; only 1: now apply compare_eq_iff).	0.014625	2
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_refl	1	2.0.0.0	synth with cache (only 1: apply compare_eq_iff; only 1: apply compare_eq_iff; only 1: apply compare_eq_iff; only 1: reflexivity).	0.046121	46
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.divide_div	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_gt_iff	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_least	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_ge_iff	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_ngt_iff	1	0	synth with cache (only 1: now rewrite <- compare_lt_iff, compare_antisym, CompOpp_iff).	0.014932	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_nlt_iff	1	2	synth with cache (only 1: now rewrite <- compare_lt_iff, compare_antisym, CompOpp_iff).	0.017244	3
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_comm	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_nle_iff	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_divide_iff	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.compare_nge_iff	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_unique	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.lt_irrefl	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_unique_alt	1
+Coq.Structures.OrdersFacts.CompareBasedOrderFacts.lt_eq_cases	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_assoc	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_spec0	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_0_l	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_0_r	1	0.1.0.1.1.0.0	synth with cache (only 1: intros; only 1: apply lcm_unique; only 1: order; only 1: exists 0; only 1: now nzsimpl; only 1: apply divide_refl; only 1: trivial).	0.477625	575
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_spec	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_spec0	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_1_l	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_1_r	1	0.0.0.1.2.0.0	synth with cache (only 1: intros; only 1: apply lcm_unique; only 1: trivial using divide_1_l, le_0_l, divide_refl; only 1: trivial using divide_1_l, le_0_l, divide_refl; only 1: exists n; only 1: now nzsimpl'; only 1: trivial using divide_1_l, le_0_l, divide_refl).	0.784277	771
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_spec	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_diag	1	0.1.1.2.0.0	synth with cache (only 1: intros; only 1: apply lcm_unique; only 1: trivial using divide_1_l, le_0_l, divide_refl; only 1: trivial using divide_1_l, le_0_l, divide_refl; only 1: trivial using divide_1_l, le_0_l, divide_refl; only 1: trivial using divide_refl).	0.266542	393
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_nle	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_eq_0	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_gt	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.divide_lcm_eq_r	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_nlt	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.divide_lcm_iff	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_ge	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_mul_mono_l	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_refl	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.lcm_mul_mono_r	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_antisym	1
+Coq.Numbers.Natural.Abstract.NLcm.NLcmProp.gcd_1_lcm_mul	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_irrefl	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_antisym	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.eqb_compare	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.ltb_compare	1
+Coq.Structures.OrdersFacts.BoolOrderFacts.leb_compare	1
+Coq.setoid_ring.InitialRing.Zth	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.radd_ext3_Proper	1	0	synth with cache (only 1: exact (Radd_ext Reqe)).	0.013598	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.rmul_ext3_Proper	1	0	synth with cache (only 1: exact (Rmul_ext Reqe)).	0.013578	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.ropp_ext3_Proper	1	0	synth with cache (only 1: exact (Ropp_ext Reqe)).	0.013801	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.get_signZ_th	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.rsub_ext3_Proper	1	0.2	synth with cache (only 1: intros x1 x2 Ex y1 y2 Ey; only 1: now rewrite !(ARsub_def ARth), Ex, Ey).	0.038189	4
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.same_gen	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.ARgen_phiPOS_Psucc	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.ARgen_phiPOS_add	1
+Coq.Classes.SetoidDec.unit_eqdec_obligation_1	1
+Coq.Classes.SetoidDec.bool_function_eqdec_obligation_1	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.ALMOST_RING.ARgen_phiPOS_mult	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.rsub_ext4_Proper	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.same_genZ	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_Zeqb_ok	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ1_pos_sub	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_add	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_mul	1
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_ext	1	643	synth with cache (only 1: CRelationClasses.simpl_crelation).	0.082034	74
+Coq.setoid_ring.InitialRing.ZMORPHISM.gen_phiZ_morph	1
+Coq.setoid_ring.InitialRing.Nth	1
+Coq.setoid_ring.InitialRing.Neqb_ok	1	0.2.0.0.0.0.0.1	synth with cache (only 1: intros [| ] [| ]; only 1: simpl; only 1: now try N.order'; only 1: now try N.order'; only 1: now try N.order'; only 1: simpl; only 1: rewrite Pos.eqb_eq; only 1: congruence).	0.555282	856
+Coq.setoid_ring.InitialRing.NMORPHISM.radd_ext4_Proper	1	0	synth with cache (only 1: exact (ARsub_ext Rsth Reqe ARth)).	0.018477	1
+Coq.setoid_ring.InitialRing.NMORPHISM.rmul_ext4_Proper	1	64.642	synth with cache (only 1: intros a n m H; only 1: firstorder).	0.058628	45
+Coq.setoid_ring.InitialRing.NMORPHISM.same_genN	1
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_add	1
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_mult	1
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_sub	1
+Coq.setoid_ring.InitialRing.NMORPHISM.gen_phiN_morph	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.radd_ext5_Proper	1	0	synth with cache (only 1: exact (Radd_ext Reqe)).	0.014649	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.rmul_ext5_Proper	1	0	synth with cache (only 1: exact (Rmul_ext Reqe)).	0.014667	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.ropp_ext5_Proper	1	0	synth with cache (only 1: exact (Ropp_ext Reqe)).	0.013650	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.rsub_ext7_Proper	1	0	synth with cache (only 1: exact (ARsub_ext Rsth Reqe ARth)).	0.014342	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword0_ok	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword_cons	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword_Nwcons	1	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction w; only 1: destruct n; only 1: simpl; only 1: norm; only 1: simpl; only 1: norm; only 1: intros; only 1: destruct n; only 1: norm; only 1: norm).	0.373867	112
+Coq.MSets.MSetDecide.WDecideOn.MSetLogicalFacts.test_push	1	1.0.0	synth with cache (only 1: unfold decidable; only 1: intros A R1 Sym1 B R2 Sym2 C R3 f Hf; only 1: auto).	0.030250	4
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword_ok	1
+Coq.MSets.MSetDecide.WDecideOn.MSetLogicalFacts.test_pull	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideAuxiliary.eq_refl_iff	1	2	synth with cache (only 1: intuition).	0.013691	3
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.Nwadd_ok	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideAuxiliary.dec_In	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.Nwopp_ok	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideAuxiliary.dec_eq	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.Nwscal_ok	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_eq_trans_1	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.Nwmul_ok	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_eq_trans_2	1
+Coq.setoid_ring.InitialRing.NWORDMORPHISM.gen_phiNword_morph	1
+Coq.setoid_ring.InitialRing.GEN_DIV.radd_ext_Proper	1	0	synth with cache (only 1: exact (Radd_ext Reqe)).	0.017369	1
+Coq.setoid_ring.InitialRing.GEN_DIV.rmul_ext_Proper	1	1	synth with cache (only 1: exact (Rmul_ext Reqe)).	0.020315	2
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_eq_neq_trans_1	1
+Coq.setoid_ring.InitialRing.GEN_DIV.ropp_ext_Proper	1
+Coq.setoid_ring.InitialRing.GEN_DIV.rsub_ext_Proper	1	2	synth with cache (only 1: exact (ARsub_ext Rsth Reqe ARth)).	0.024217	3
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_eq_neq_trans_2	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_In_singleton	1	0	synth with cache (only 1: fsetdec).	0.018447	1
+Coq.setoid_ring.InitialRing.GEN_DIV.triv_div_th	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_add_In	1
+Coq.setoid_ring.InitialRing.GEN_DIV.Ztriv_div_th	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_Subset_add_remove	1
+Coq.setoid_ring.InitialRing.GEN_DIV.Ntriv_div_th	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_eq_disjunction	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_not_In_disj	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_not_In_conj	1	0	synth with cache (only 1: fsetdec).	0.109205	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_iff_conj	1	0	synth with cache (only 1: fsetdec).	0.052721	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_set_ops_1	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.eq_chain_test	1	0.1	synth with cache (only 1: intros f Hf s s' Hs a; only 1: fsetdec).	0.306354	3
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_too_complex	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.function_test_1	1	0	synth with cache (only 1: fsetdec).	0.069381	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.function_test_2	1	0	synth with cache (only 1: fsetdec).	0.062233	1
+Coq.MSets.MSetDecide.WDecideOn.MSetDecideTestCases.test_baydemir	1	0	synth with cache (only 1: fsetdec).	0.044626	1
+Coq.setoid_ring.Ncring_tac.Zeqb_ok	1	256.2.65	synth with cache (only 1: destr_bool; only 1: pose proof (Zeq_bool_eq x y H) as H1; only 1: now Nat.nzsimpl).	0.750879	671
+Coq.setoid_ring.Rings_Z.Zcri	1	0.0	synth with cache (only 1: red; only 1: exact Z.mul_comm).	0.019259	2
+Coq.setoid_ring.Rings_Z.Z_one_zero	1	3	synth with cache (only 1: Z.order').	0.037803	22
+Coq.setoid_ring.Rings_Z.Zdi	1
+Coq.setoid_ring.Ncring_tac.comm	1
+Coq.Reals.Ranalysis1.continuity_pt_locally_ext	1
+Coq.Floats.FloatLemmas.shift_value	1	0	synth with cache (only 1: now Z.nzsimpl).	0.033741	1
+Coq.Reals.Ranalysis1.continuity_pt_plus	1
+Coq.Floats.FloatLemmas.frexp_spec	1
+Coq.Reals.Ranalysis1.continuity_pt_opp	1
+Coq.Reals.Ranalysis1.continuity_pt_minus	1
+Coq.Reals.Ranalysis1.continuity_pt_mult	1
+Coq.Reals.Ranalysis1.continuity_pt_const	1
+Coq.Reals.Ranalysis1.continuity_pt_scal	1
+Coq.Floats.FloatLemmas.ldexp_spec	1
+Coq.Reals.Ranalysis1.continuity_pt_inv	1
+Coq.Reals.Ranalysis1.div_eq_inv	1	1.0	synth with cache (only 1: intros; only 1: trivial).	0.011942	3
+Coq.Reals.Ranalysis1.continuity_pt_div	1
+Coq.Reals.Ranalysis1.continuity_pt_comp	1
+Coq.Reals.Ranalysis1.continuity_plus	1
+Coq.Reals.Ranalysis1.continuity_opp	1
+Coq.Reals.Ranalysis1.continuity_minus	1
+Coq.Reals.Ranalysis1.continuity_mult	1
+Coq.Reals.Ranalysis1.continuity_const	1
+Coq.Reals.Ranalysis1.continuity_scal	1
+Coq.Reals.Ranalysis1.continuity_inv	1
+Coq.Reals.Ranalysis1.continuity_div	1
+Coq.Reals.Ranalysis1.continuity_comp	1
+Coq.Reals.Ranalysis1.uniqueness_step1	1
+Coq.Reals.Ranalysis1.uniqueness_step2	1
+Coq.Reals.Ranalysis1.uniqueness_step3	1
+Coq.Reals.Ranalysis1.uniqueness_limite	1
+Coq.Reals.Ranalysis1.derive_pt_eq	1
+Coq.Reals.Ranalysis1.derive_pt_eq_0	1	257.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: pose proof (proj2_sig pr) as H1; only 1: unfold derivable_pt_abs in H1; only 1: pose proof (uniqueness_limite _ _ _ _ H H1) as H2; only 1: unfold derive_pt; only 1: unfold derivable_pt_abs; only 1: auto with *).	0.073938	31
+Coq.Reals.Ranalysis1.derive_pt_eq_1	1	0.0.0.0.2	synth with cache (only 1: intros; only 1: pose proof (proj2_sig pr) as H1; only 1: unfold derive_pt in H; only 1: rewrite H in H1; only 1: assumption).	0.679555	553
+Coq.Reals.Ranalysis1.derive_pt_D_in	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_D_in	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_ext	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_locally_ext	1
+Coq.Reals.Ranalysis1.derivable_derive	1	640.577.770	synth with cache (only 1: intros H'; only 1: intros Eq1; only 1: eauto using Z.Private_Tac.eq_trans, Z.Private_Tac.eq_sym).	0.842240	1421
+Coq.Reals.Ranalysis1.derivable_continuous_pt	1
+Coq.Reals.Ranalysis1.derivable_continuous	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_plus	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_opp	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_minus	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_mult	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_const	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_scal	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_div_scal	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_scal_right	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_id	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_Rsqr	1
+Coq.Reals.Ranalysis1.derivable_pt_lim_comp	1
+Coq.Reals.Ranalysis1.derivable_pt_plus	1
+Coq.Reals.Ranalysis1.derivable_pt_opp	1
+Coq.Reals.Ranalysis1.derivable_pt_minus	1
+Coq.Reals.Ranalysis1.derivable_pt_mult	1
+Coq.Reals.Ranalysis1.derivable_pt_const	1
+Coq.Reals.Ranalysis1.derivable_pt_scal	1
+Coq.Reals.Ranalysis1.derivable_pt_id	1
+Coq.Reals.Ranalysis1.derivable_pt_Rsqr	1
+Coq.Reals.Ranalysis1.derivable_pt_comp	1
+Coq.Reals.Ranalysis1.derivable_plus	1
+Coq.Reals.Ranalysis1.derivable_opp	1
+Coq.Reals.Ranalysis1.derivable_minus	1
+Coq.Reals.Ranalysis1.derivable_mult	1
+Coq.Reals.Ranalysis1.derivable_const	1	0.0.0.66	synth with cache (only 1: intros a b; only 1: unfold derivable_pt; only 1: exists 0; only 1: apply derivable_pt_lim_const).	0.076553	174
+Coq.Reals.Ranalysis1.derivable_scal	1
+Coq.Reals.Ranalysis1.derivable_id	1
+Coq.Reals.Ranalysis1.derivable_Rsqr	1	0.0.0.0.0	synth with cache (only 1: unfold derivable; only 1: unfold derivable_pt; only 1: intro; only 1: exists (2 * x); only 1: apply derivable_pt_lim_Rsqr).	0.038491	5
+Coq.Reals.Ranalysis1.derivable_comp	1
+Coq.Reals.Ranalysis1.derive_pt_plus	1
+Coq.Reals.Ranalysis1.derive_pt_opp	1
+Coq.Reals.Ranalysis1.derive_pt_minus	1
+Coq.Reals.Ranalysis1.derive_pt_mult	1
+Coq.Reals.Ranalysis1.derive_pt_const	1
+Coq.Reals.Ranalysis1.derive_pt_scal	1
+Coq.Reals.Ranalysis1.derive_pt_id	1
+Coq.Reals.Ranalysis1.derive_pt_Rsqr	1	1.1.704	synth with cache (only 1: intro LE; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_Rsqr).	0.335495	260
+Coq.Reals.Ranalysis1.derive_pt_comp	1
