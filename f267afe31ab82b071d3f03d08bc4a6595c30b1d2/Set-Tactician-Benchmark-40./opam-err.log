@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq.8.11.dev failed at "make -j55".
+
+#=== ERROR while compiling coq.8.11.dev =======================================#
+# context              2.1.2 | linux/x86_64 |  | git+ssh://git@github.com/LasseBlaauwbroek/custom-archive.git
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.9Mthr5/opam-root/bench/.opam-switch/build/coq.8.11.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-43443/coq-43446-6afbd3.env
+# output-file          /tmp/opam-xxx-43443/coq-43446-6afbd3.out
+### output ###
+# [...]
+# COQC      theories/ZArith/auxiliary.v
+# COQC      theories/ZArith/Zmax.v
+# COQC      theories/ZArith/Zmisc.v
+# COQC      theories/ZArith/Wf_Z.v
+# COQC      theories/ZArith/Zabs.v
+# COQC      theories/ZArith/Zbool.v
+# COQC      theories/ZArith/Zhints.v
+# make[1]: *** [theories/MSets/MSetList.vo] Segmentation fault (core dumped)
+# make[1]: *** [theories/MSets/MSetList.vo] Deleting file `theories/MSets/MSetList.glob'
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-benchmark.tmp.9Mthr5/opam-root/bench/.opam-switch/build/coq.8.11.dev'
+# make: *** [submake] Error 2
+
