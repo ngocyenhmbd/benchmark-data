@@ -1,18 +1,222 @@
-2022-05-21 12:33:30.473625: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:30.913306: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:31.650662: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:31.667067: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.752699: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.798730: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.835214: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.842537: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.887444: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.887433: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.887447: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:33:32.901046: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-2022-05-21 12:34:26.173615: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
-File "./theories/Reals/RiemannInt.v", line 144, characters 2-47:
+2022-05-21 12:41:00.784959: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2022-05-21 12:41:00.796196: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2022-05-21 12:41:00.826570: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2022-05-21 12:41:00.842523: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2022-05-21 12:41:00.842522: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2022-05-21 12:41:01.106665: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Traceback (most recent call last):
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 217, in main
+    main_loop(reader, sock, predict)
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 140, in main_loop
+    process_predict(sock, msg, raw_state,  predict, c_data, theorem_state_cnt,  tacs, tac_numargs, tactic_hash_to_index)
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 95, in process_predict
+    actions, confidences = predict.ranked_predictions(state, allowed_model_tactics, available_global = visible_context, tactic_expand_bound=8, total_expand_bound=64)
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/predict.py", line 116, in ranked_predictions
+    top_tactic_ids, tactic_logits, arg_nums, arg_logits = self.predict_tactic_arg_logits(state, tactic_expand_bound, allowed_model_tactics, available_global)
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/predict.py", line 85, in predict_tactic_arg_logits
+    tactic_logits = self.predict_tactic_logits(state)
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/predict.py", line 58, in predict_tactic_logits
+    tactic_logits, _, _ = self.pred_fn(model_input)  # [bs, tactics], _, _
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/tensorflow/python/eager/execute.py", line 54, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Graph execution error:
+
+Detected at node 'tactic_arg_training/initial_node_embedding/node_and_def_embedding/embedding/embedding_lookup' defined at (most recent call last):
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/bin/g2t-server", line 33, in <module>
+      sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 217, in main
+      main_loop(reader, sock, predict)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 140, in main_loop
+      process_predict(sock, msg, raw_state,  predict, c_data, theorem_state_cnt,  tacs, tac_numargs, tactic_hash_to_index)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 95, in process_predict
+      actions, confidences = predict.ranked_predictions(state, allowed_model_tactics, available_global = visible_context, tactic_expand_bound=8, total_expand_bound=64)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/predict.py", line 116, in ranked_predictions
+      top_tactic_ids, tactic_logits, arg_nums, arg_logits = self.predict_tactic_arg_logits(state, tactic_expand_bound, allowed_model_tactics, available_global)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/predict.py", line 85, in predict_tactic_arg_logits
+      tactic_logits = self.predict_tactic_logits(state)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/predict.py", line 58, in predict_tactic_logits
+      tactic_logits, _, _ = self.pred_fn(model_input)  # [bs, tactics], _, _
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/model.py", line 757, in pred_fn
+      return self.model(batch)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1096, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 92, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/engine/functional.py", line 451, in call
+      return self._run_internal_graph(
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/engine/functional.py", line 589, in _run_internal_graph
+      outputs = node.layer(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1096, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 92, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/model.py", line 173, in call
+      node_embs = self.node_and_def_embedding_layer(node_classes.values) # [total_nodes, dim]
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1096, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 92, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/model.py", line 152, in call
+      emb = self._embedding_layer(ix)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1096, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 92, in error_handler
+      return fn(*args, **kwargs)
+    File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/lib/python3.10/site-packages/keras/layers/embeddings.py", line 197, in call
+      out = tf.nn.embedding_lookup(self.embeddings, inputs)
+Node: 'tactic_arg_training/initial_node_embedding/node_and_def_embedding/embedding/embedding_lookup'
+indices[2] = 17513 is not in [0, 17513)
+	 [[{{node tactic_arg_training/initial_node_embedding/node_and_def_embedding/embedding/embedding_lookup}}]] [Op:__inference_pred_fn_24597]
+File "./plugins/nsatz/Nsatz.v", line 42, characters 0-93:
+Error: Anomaly "Capnp protocol error 3b"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 47, characters 0-52:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
 
+File "./plugins/nsatz/Nsatz.v", line 51, characters 0-7:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+2022-05-21 12:42:00.872350: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+File "./plugins/nsatz/Nsatz.v", line 108, characters 7-15:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 112, characters 0-26:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/env/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 217, in main
+    main_loop(reader, sock, predict)
+  File "/home/lasse/Documents/Projects/Tactician/graph2tac/graph2tac/tf2/pserver.py", line 130, in main_loop
+    c_data = load_init_msg(os.fsencode(fname), tactic_index_to_hash,  node_type_to_hash,
+TypeError: capnp/layout.c++:2182: failed: expected boundsCheck(segment, ptr, ref->structRef.wordSize()); Message contained out-of-bounds struct pointer.
+stack: 7f7d541f4d12 7f7d2a6977c6 7f7d2a6a1601 7f7d2a6a63e6 7f7d5534d487 7f7d55346dda 7f7d55341be9 7f7d5534d8cb 7f7d5533cb42 7f7d5534d8cb 7f7d5533cb42 7f7d5533b751 7f7d553f2f63 7f7d55402df3 7f7d553fe7ba 7f7d5529ac12 7f7d5529a892 7f7d5529b227 7f7d5540f6aa 7f7d553e398c 7f7d5502030f 7f7d550203c0 5594235b8044
+File "./theories/Reals/NewtonInt.v", line 94, characters 2-21:
+Error: Anomaly "Capnp protocol error 1"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 116, characters 0-18:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 104, characters 2-139:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 120, characters 0-12:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 182, characters 2-80:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+2022-05-21 12:43:08.053969: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+File "./plugins/nsatz/Nsatz.v", line 135, characters 0-21:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 198, characters 2-206:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 143, characters 0-21:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 247, characters 2-53:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 150, characters 0-27:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 391, characters 2-138:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 156, characters 1-130:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 413, characters 2-138:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 164, characters 1-79:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 436, characters 2-360:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 178, characters 1-27:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 461, characters 2-9:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 190, characters 1-36:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/NewtonInt.v", line 561, characters 2-27:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/nsatz/Nsatz.v", line 201, characters 1-46:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Abnormal exit code for coqc: 129
+ Invocation:
+(cd /tmp/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /tmp/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Reals/NewtonInt.vo.bench /tmp/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Reals/NewtonInt.vo /tmp/tmp-scratch/opam-root/bench/bin/coqc -q -I /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /tmp/tmp-scratch/opam-root/bench/lib/stdlib-shims -I /tmp/tmp-scratch/opam-root/bench/lib/ocamlgraph -I /tmp/tmp-scratch/opam-root/bench/lib/ocaml -I /tmp/tmp-scratch/opam-root/bench/lib/result -I /tmp/tmp-scratch/opam-root/bench/lib/lwt -I /tmp/tmp-scratch/opam-root/bench/lib/bigarray-compat -I /tmp/tmp-scratch/opam-root/bench/lib/mmap -I /tmp/tmp-scratch/opam-root/bench/lib/ocplib-endian -I /tmp/tmp-scratch/opam-root/bench/lib/ocplib-endian/bigstring -I /tmp/tmp-scratch/opam-root/bench/lib/lwt/unix -I /tmp/tmp-scratch/opam-root/bench/lib/astring -I /tmp/tmp-scratch/opam-root/bench/lib/res -I /tmp/tmp-scratch/opam-root/bench/lib/stdint -I /tmp/tmp-scratch/opam-root/bench/lib/capnp -I /tmp/tmp-scratch/opam-root/bench/lib/asetmap -I /tmp/tmp-scratch/opam-root/bench/lib/fmt -I /tmp/tmp-scratch/opam-root/bench/lib/logs -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc -I /tmp/tmp-scratch/opam-root/bench/lib/bigstringaf -I /tmp/tmp-scratch/opam-root/bench/lib/angstrom -I /tmp/tmp-scratch/opam-root/bench/lib/stringext -I /tmp/tmp-scratch/opam-root/bench/lib/uri -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc-lwt -I /tmp/tmp-scratch/opam-root/bench/lib/base64 -I /tmp/tmp-scratch/opam-root/bench/lib/cstruct -I /tmp/tmp-scratch/opam-root/bench/lib/eqaf -I /tmp/tmp-scratch/opam-root/bench/lib/eqaf/bigstring -I /tmp/tmp-scratch/opam-root/bench/lib/eqaf/cstruct -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-flow -I /tmp/tmp-scratch/opam-root/bench/lib/re -I /tmp/tmp-scratch/opam-root/bench/lib/prometheus -I /tmp/tmp-scratch/opam-root/bench/lib/ptime -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-clock -I /tmp/tmp-scratch/opam-root/bench/lib/sexplib0 -I /tmp/tmp-scratch/opam-root/bench/lib/zarith -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-pk -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-kv -I /tmp/tmp-scratch/opam-root/bench/lib/base/caml -I /tmp/tmp-scratch/opam-root/bench/lib/parsexp -I /tmp/tmp-scratch/opam-root/bench/lib/sexplib -I /tmp/tmp-scratch/opam-root/bench/lib/cstruct-sexp -I /tmp/tmp-scratch/opam-root/bench/lib/domain-name -I /tmp/tmp-scratch/opam-root/bench/lib/hkdf -I /tmp/tmp-scratch/opam-root/bench/lib/macaddr -I /tmp/tmp-scratch/opam-root/bench/lib/ipaddr -I /tmp/tmp-scratch/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /tmp/tmp-scratch/opam-root/bench/lib/ipaddr-sexp -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-ec -I /tmp/tmp-scratch/opam-root/bench/lib/asn1-combinators -I /tmp/tmp-scratch/opam-root/bench/lib/gmap -I /tmp/tmp-scratch/opam-root/bench/lib/pbkdf -I /tmp/tmp-scratch/opam-root/bench/lib/x509 -I /tmp/tmp-scratch/opam-root/bench/lib/tls -I /tmp/tmp-scratch/opam-root/bench/lib/tls-mirage -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc-net -I /tmp/tmp-scratch/opam-root/bench/lib/cmdliner -I /tmp/tmp-scratch/opam-root/bench/lib/cstruct-lwt -I /tmp/tmp-scratch/opam-root/bench/lib/extunix -I /tmp/tmp-scratch/opam-root/bench/lib/duration -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng/unix -I /tmp/tmp-scratch/opam-root/bench/lib/mtime -I /tmp/tmp-scratch/opam-root/bench/lib/mtime/clock/os -I /tmp/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng/lwt -I /tmp/tmp-scratch/opam-root/bench/lib/capnp-rpc-unix -I /tmp/tmp-scratch/opam-root/bench/lib/base/base_internalhash_types -I /tmp/tmp-scratch/opam-root/bench/lib/base/shadow_stdlib -I /tmp/tmp-scratch/opam-root/bench/lib/base -I /tmp/tmp-scratch/opam-root/bench/lib/stdio -I /tmp/tmp-scratch/opam-root/bench/lib/capnp/unix -I /tmp/tmp-scratch/opam-root/bench/lib/logs -l NNLearner -l /tmp/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Reals/NewtonInt.v -l /tmp/tmp-scratch/BenchParams.v)
