@@ -1,323 +1,648 @@
+Coq.Init.Logic.Equivalence.iff_trans	40
+Coq.Init.Logic.Equivalence.iff_refl	40
 Coq.Init.Logic.Conjunction.proj1	40
+Coq.Init.Logic.Conjunction.proj2	40
+Coq.Init.Specif.sigT_eta	40
+Coq.Init.Specif.sig_eta	40
+Coq.Init.Specif.sigT.rew_sigT	40	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	0.988613	3
+Coq.Init.Specif.sig.eq_exist_uncurried	40	0.1.0.0	synth with cache (only 1: destruct pq; only 1: destruct x; only 1: subst; only 1: reflexivity).	0.716390	5
+Coq.Init.Specif.sig.eq_sig_uncurried	40	0.0.0.0.0.0	synth with cache (only 1: destruct u; only 1: destruct v; only 1: simpl in *; only 1: destruct pq; only 1: subst; only 1: reflexivity).	1.578655	6
+Coq.Init.Peano.pred_Sn	40
+Coq.Init.Byte.of_bits_to_bits	40
+Coq.Init.Logic.Logic_lemmas.equality.f_equal	40	0.7.0	synth with cache (only 1: intros ?; only 1: destruct H; only 1: split).	19.030287	109
+Coq.Init.Logic.Logic_lemmas.eq_sind_r	40	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: auto).	2.146929	8
+Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	40	0.0.3.0	synth with cache (only 1: intros ?; only 1: destruct 1; only 1: apply H; only 1: auto).	21.225449	50
+Coq.Init.Logic.Logic_lemmas.equality.eq_trans	40	0.0.5.2	synth with cache (only 1: intros ?; only 1: destruct H; only 1: intros; only 1: assumption).	22.916572	147
+Coq.Init.Logic.Logic_lemmas.eq_ind_r	40	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H0); only 1: assumption).	2.185119	8
+Coq.Init.Logic.Logic_lemmas.eq_rec_r	40	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H0); only 1: assumption).	2.227712	8
+Coq.Init.Logic.Logic_lemmas.eq_rect_r	40	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H); only 1: assumption).	2.344133	8
+Coq.Init.Logic.rew_opp_r	40	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	1.091489	3
+Coq.Init.Logic.rew_opp_l	40	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	1.084762	3
+Coq.Init.Logic.f_equal2	40	0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.997031	3
+Coq.Init.Logic.equality_dep.f_equal_dep	40	0.6.0	synth with cache (only 1: intros; only 1: destruct H; only 1: auto).	5.485135	74
+Coq.Init.Logic.f_equal3	40	0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	1.311785	4
+Coq.Init.Logic.equality_dep2.f_equal_dep2	40	0.2.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: destruct H0; only 1: reflexivity).	6.233170	21
+Coq.Init.Logic.f_equal_compose	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	1.214089	3
+Coq.Init.Logic.eq_trans_refl_l	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.914812	3
+Coq.Init.Logic.eq_trans_refl_r	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.903887	3
+Coq.Init.Logic.eq_sym_involutive	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.904886	3
+Coq.Init.Logic.Logic_lemmas.equality.eq_trans_r	40	0.14.0	synth with cache (only 1: intros; only 1: destruct H0; only 1: assumption).	35.063097	582
+Coq.Init.Logic.eq_trans_sym_inv_l	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.924495	3
+Coq.Init.Logic.eq_trans_sym_inv_r	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.937068	3
+Coq.Init.Logic.eq_trans_assoc	40	0.0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e''; only 1: destruct e'; only 1: reflexivity).	1.846923	5
+Coq.Init.Logic.rew_map	40	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	1.151071	3
+Coq.Init.Logic.map_subst	40	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	1.137717	3
+Coq.Init.Specif.sigT.eq_sigT_rect	40
+Coq.Bool.Sumbool.sumbool_of_bool	40
+Coq.Logic.Eqdep_dec.EqdepDec.trans_sym_eq	40
+Coq.Wellfounded.Inclusion.WfInclusion.Acc_incl	40
+Coq.Sets.Constructive_sets.Ensembles_facts.Extension	40
+Coq.Bool.Bool.bool_dec	40
+Coq.Init.Peano.plus_n_Sm	40
+Coq.Logic.Decidable.dec_not_not	40
+Coq.Logic.HLevels.forall_hprop	40
+Coq.Sets.Partial_Order.Partial_order_facts.Strict_Rel_Transitive_with_Rel	40
+Coq.Sets.Relations_1_facts.Rsym_imp_notRsym	40
+Coq.Logic.Hurkens.Generic.Paradox.Omega	40
+Coq.Wellfounded.Transitive_Closure.Wf_Transitive_Closure.incl_clos_trans	40
+Coq.ssr.ssrunder.Under_rel.Under_rel_from_rel	40
+Coq.Init.Specif.sigT.eq_sigT_uncurried	40
+Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_sym	40
+Coq.Logic.FunctionalExtensionality.equal_f	40
+Coq.Init.Logic_Type.identity_is_a_congruence.identity_congr	40
+Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.Eq_rect_eq.eq_rect_eq	40
+Coq.Logic.ExtensionalityFacts.diagonal_projs_same_behavior	40
+Coq.Init.Logic.and_cancel_l	40
+Coq.Init.Specif.sigT.eq_existT_uncurried	40
+Coq.Init.Peano.plus_O_n	40
+Coq.Init.Logic.f_equal4	40	0.0.0.1.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	14.314765	62
+Coq.Classes.CRelationClasses.Defs.complement_inverse	40
+Coq.Logic.PropFacts.injection_is_involution_in_Prop	40
+Coq.Init.Logic.rew_swap	40	0.1.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: destruct H0; only 1: reflexivity).	1.444398	5
+Coq.Init.Logic.map_subst_map	40	0.0.1.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros; only 1: destruct H; only 1: reflexivity).	6.634228	19
+Coq.Init.Logic.f_equal5	40	0.0.0.0.1.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	20.185748	85
+Coq.Init.Logic.eq_refl_map_distr	40	0	synth with cache (only 1: reflexivity).	0.474394	1
+Coq.Classes.CRelationClasses.Defs.flip.flip_Reflexive	40	0	synth with cache (only 1: firstorder).	8.316389	1
 Coq.Init.Datatypes.andb_prop	40
+Coq.Init.Tactics.decide_left	40
+Coq.Classes.CRelationClasses.Defs.flip.flip_Antisymmetric	40	0	synth with cache (only 1: firstorder).	0.233796	1
+Coq.Bool.Sumbool.bool_eq_rec	40	0.0.0.1	synth with cache (only 1: intros ?; only 1: destruct b; only 1: auto; only 1: auto).	9.702908	12
+Coq.Classes.CRelationClasses.Defs.flip.flip_PreOrder	40	0	synth with cache (only 1: firstorder).	0.234300	1
+Coq.Init.Wf.Well_founded.well_founded_induction_type	40
+Coq.Init.Specif.sig2_eta	40
+Coq.Init.Logic.eq_trans_map_distr	40	0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e'; only 1: reflexivity).	1.906712	4
+Coq.Init.Logic.and_iff_compat_r	40
+Coq.Init.Logic.or_iff_compat_r	40
+Coq.Init.Logic_Type.identity_is_a_congruence.identity_trans	40
+Coq.Init.Peano.n_Sn	40
+Coq.Init.Specif.sigT2_eta	40
+Coq.Init.Wf.Well_founded.Acc_inv	40
+Coq.Init.Wf.Well_founded.well_founded_induction	40
+Coq.Init.Specif.sig.eq_sig_rect	40
+Coq.Init.Logic.imp_iff_compat_r	40
+Coq.Classes.CRelationClasses.Defs.flip.flip_StrictOrder	40	0	synth with cache (only 1: firstorder).	0.294233	1
+Coq.Bool.Sumbool.bool_eq_ind	40	0.0.0.0	synth with cache (only 1: intros ?; only 1: destruct b; only 1: auto; only 1: auto).	0.629032	4
+Coq.Init.Logic.or_iff_compat_l	40
+Coq.Init.Peano.plus_n_O	40
+Coq.Init.Logic.Equivalence.iff_sym	40
+Coq.Init.Logic.and_iff_compat_l	40
+Coq.Init.Logic.imp_iff_compat_l	40
+Coq.Init.Logic.not_iff_compat	40
+Coq.Init.Logic_Type.identity_is_a_congruence.identity_sym	40
 Coq.Init.Peano.O_S	40
 Coq.Init.Peano.not_eq_S	40
-Coq.Init.Specif.sigT_eta	40
-Coq.Init.Peano.pred_Sn	40
-Coq.Init.Tactics.decide_left	40
-Coq.Init.Byte.of_bits_to_bits	40
-Coq.Init.Tactics.decide_right	40	0.1.0.0	synth with cache (only 1: intros; only 1: destruct decide; only 1: contradiction; only 1: apply H0).	1.307408	5
-Coq.Init.Datatypes.surjective_pairing	40	0.0.3.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct p; only 1: reflexivity).	17.533298	31
-Coq.Init.Logic.universal_quantification.gen	40	0.4.1.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply f; only 1: auto).	34.124896	195
-Coq.Init.Logic.Logic_lemmas.absurd	40	0.0.0.0.0.0.0	synth with cache (only 1: unfold not; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: assumption).	2.046006	7
-Coq.Init.Peano.mult_n_O	40
-Coq.Init.Logic.Logic_lemmas.equality.eq_sym	40	0.8.0	synth with cache (only 1: intros; only 1: destruct H; only 1: auto).	6.108010	137
-Coq.Init.Specif.inhabited_sig_to_exists	40
-Coq.Logic.PropExtensionalityFacts.PredExt_imp_PropExt	40
-Coq.Init.Logic.or_cancel_r	40
-Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.Eq_rect_eq.eq_rect_eq	40
-Coq.Init.Peano.plus_n_O	40
-Coq.micromega.ZifyClasses.mkapp2	40
-Coq.Wellfounded.Transitive_Closure.Wf_Transitive_Closure.incl_clos_trans	40
-Coq.Init.Datatypes.eq_true_rec_r	40
-Coq.Sets.Permut.Axiomatisation.cong_congr	40
-Coq.Init.Specif.sigT.eq_sigT_uncurried	40
-Coq.Sets.Relations_1_facts.Rsym_imp_notRsym	40
-Coq.Bool.DecBool.ifdec_left	40
-Coq.Init.Specif.sigT.eq_existT_uncurried	40
-Coq.Init.Logic.and_assoc	40
-Coq.Wellfounded.Inclusion.WfInclusion.Acc_incl	40
-Coq.Init.Logic.and_comm	40
-Coq.Bool.Bool.diff_true_false	40
-Coq.Init.Logic.or_comm	40
-Coq.Sets.Partial_Order.Partial_order_facts.Strict_Rel_Transitive_with_Rel	40
-Coq.Program.Combinators.compose_id_left	40
-Coq.Logic.FunctionalExtensionality.equal_f	40
-Coq.Logic.Hurkens.Generic.Paradox.Omega	40
-Coq.Bool.Bool.bool_dec	40
-Coq.Logic.StrictProp.Spr1_inj	40
-Coq.Init.Peano.mult_n_Sm	40
-Coq.Init.Logic.and_iff_compat_r	40
-Coq.Init.Logic.and_cancel_l	40
-Coq.Init.Logic.not_iff_compat	40
-Coq.Init.Logic.imp_iff_compat_r	40
-Coq.Init.Logic.Equivalence.iff_refl	40
-Coq.Init.Logic.or_iff_compat_r	40
-Coq.Init.Logic.imp_iff_compat_l	40
-Coq.Init.Logic.Equivalence.iff_sym	40
-Coq.Init.Logic_Type.identity_is_a_congruence.identity_sym	40
 Coq.Init.Logic.neg_false	40
-Coq.Init.Logic.Conjunction.proj2	40
-Coq.Init.Logic.or_iff_compat_l	40
-Coq.Init.Specif.sig_eta	40
-Coq.Init.Specif.sig2_eta	40
-Coq.Bool.Sumbool.sumbool_of_bool	40
-Coq.Init.Logic.and_iff_compat_l	40
-Coq.Init.Wf.Well_founded.Acc_inv	40
-Coq.Init.Datatypes.eq_true_ind_r	40
-Coq.Init.Logic.and_cancel_r	40
-Coq.Init.Peano.n_Sn	40
-Coq.Init.Logic.Equivalence.iff_trans	40
-Coq.Init.Specif.sigT2_eta	40
-Coq.Init.Datatypes.andb_true_intro	40
+Coq.Init.Specif.inhabited_sig_to_exists	40
 Coq.Init.Specif.exists_to_inhabited_sig	40
-Coq.Init.Logic.Logic_lemmas.equality.eq_trans	40	0.0.5.2	synth with cache (only 1: intros ?; only 1: destruct H; only 1: intros; only 1: assumption).	9.090100	147
-Coq.Init.Logic.eq_sym_involutive	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.938277	3
-Coq.Init.Logic.eq_trans_sym_inv_l	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	1.002368	3
-Coq.Bool.Bool.eqb_false_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	8.869944	5
-Coq.Bool.Bool.negb_andb	40	0	synth with cache (only 1: destr_bool).	0.298350	1
-Coq.Init.Peano.le_pred	40
-Coq.Bool.Bool.negb_involutive	40	0	synth with cache (only 1: destr_bool).	0.287926	1
-Coq.Init.Peano.le_n_S	40	0.1.0.2	synth with cache (only 1: induction 1; only 1: apply le_n; only 1: apply le_S; only 1: auto).	5.320402	85
-Coq.Bool.Bool.negb_involutive_reverse	40	0	synth with cache (only 1: destr_bool).	0.290596	1
-Coq.Init.Logic.eq_trans_sym_inv_r	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	1.051348	3
-Coq.Init.Specif.sigT.eq_existT_curried	40
-Coq.Init.Specif.sigT.eq_sigT_uncurried_iff	40
-Coq.Bool.Bool.negb_sym	40	0	synth with cache (only 1: destr_bool).	0.304043	1
-Coq.Init.Peano.plus_n_Sm	40
-Coq.Init.Peano.plus_Sn_m	40
-Coq.micromega.ZifyClasses.mkapp	40
-Coq.Init.Datatypes.eq_true_rect_r	40
-Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_trans	40
-Coq.Bool.Sumbool.bool_eq_ind	40
-Coq.Init.Wf.Well_founded.well_founded_induction_type	40
-Coq.Init.Logic.or_cancel_l	40
-Coq.Bool.Sumbool.bool_eq_rec	40
-Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep1_dep	40
-Coq.Init.Specif.sigT.eq_existT_curried_trans	40
-Coq.Init.Specif.sigT.eq_existT_curried_map	40
-Coq.Bool.Bool.no_fixpoint_negb	40	1	synth with cache (only 1: destr_bool).	0.778513	10
-Coq.Init.Logic.iff_to_and	40
-Coq.Init.Logic_Type.identity_is_a_congruence.identity_trans	40
-Coq.Init.Wf.Well_founded.well_founded_induction	40
-Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_sym	40
-Coq.Init.Logic.iff_and	40
-Coq.Init.Logic_Type.identity_is_a_congruence.identity_congr	40
-Coq.Init.Logic.universal_quantification.inst	40
-Coq.Init.Peano.plus_O_n	40
-Coq.Init.Specif.sigT.eq_existT_curried_congr	40
-Coq.Wellfounded.Inverse_Image.Inverse_Image.Acc_lemma	40
-Coq.Init.Logic.or_assoc	40
-Coq.Bool.Bool.eqb_negb1	40	0	synth with cache (only 1: destr_bool).	0.292755	1
-Coq.Bool.Bool.eqb_negb2	40	0	synth with cache (only 1: destr_bool).	0.298943	1
-Coq.Init.Logic.eq_trans_assoc	40	0.0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e''; only 1: destruct e'; only 1: reflexivity).	1.898770	5
-Coq.Bool.Bool.if_negb	40	0	synth with cache (only 1: destr_bool).	0.315323	1
-Coq.Logic.Decidable.dec_True	40
-Coq.Classes.CRelationClasses.Defs.complement_inverse	40
-Coq.Bool.Bool.negb_true_iff	40	0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.489644	3
-Coq.Init.Datatypes.injective_projections	40
-Coq.Init.Logic.rew_compose	40
-Coq.Init.Logic.Logic_lemmas.eq_rect_r	40
-Coq.Init.Logic.f_equal_compose	40
-Coq.Init.Logic.Logic_lemmas.eq_rec_r	40
-Coq.Init.Logic.rew_opp_l	40
-Coq.Init.Datatypes.rew_pair	40
-Coq.Init.Logic.equality_dep.f_equal_dep	40
-Coq.Init.Logic.rew_opp_r	40
-Coq.Init.Logic.Logic_lemmas.eq_ind_r	40
-Coq.Init.Byte.to_bits_of_bits	40
-Coq.Numbers.NatInt.NZDomain.nat_rect_wd	40
-Coq.Init.Peano.nat_double_ind	40
-Coq.Init.Specif.sigT2.eq_sigT2_uncurried	40
-Coq.Init.Wf.Well_founded.well_founded_ind	40
-Coq.Init.Logic_Type.identity_rec_r	40
-Coq.Init.Specif.sig.rew_sig	40
-Coq.Init.Peano.max_l	40
-Coq.Init.Specif.sigT2.rew_sigT2	40
-Coq.Init.Specif.sig.eq_sig_uncurried	40
-Coq.Init.Peano.min_l	40
-Coq.Init.Logic.eq_trans_refl_r	40
-Coq.Init.Specif.sig.eq_sig_uncurried_iff	40
-Coq.Init.Logic.eq_trans_map	40
-Coq.Init.Wf.Well_founded.FixPoint.Fix_F_eq	40
-Coq.Init.Logic.f_equal4	40
-Coq.Init.Peano.nat_case	40
-Coq.Init.Specif.sigT2.eq_sigT2_rect	40
-Coq.Init.Logic_Type.identity_is_a_congruence.not_identity_sym	40
-Coq.Init.Datatypes.CompOpp_involutive	40
-Coq.Init.Logic.f_equal5	40
-Coq.Init.Logic.map_subst	40
-Coq.micromega.ZifyClasses.mkapp0	40
-Coq.Init.Specif.sigT.rew_sigT	40
-Coq.Init.Peano.le_S_n	40
-Coq.Init.Logic.Logic_lemmas.equality.f_equal	40
-Coq.Init.Logic.rew_map	40
-Coq.Init.Specif.sig.eq_sig_rect	40
-Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	40
-Coq.Init.Datatypes.comparison_eq_stable	40
-Coq.Bool.Sumbool.connectives.sumbool_not	40
-Coq.Bool.Sumbool.connectives.sumbool_or	40
-Coq.Init.Logic.f_equal2	40
-Coq.Init.Peano.le_0_n	40
-Coq.Init.Specif.sigT2.eq_sigT2_uncurried_iff	40
-Coq.Init.Logic.Logic_lemmas.equality.eq_trans_r	40
-Coq.Init.Logic.equality_dep2.f_equal_dep2	40
-Coq.micromega.ZifyClasses.mkrel	40
-Coq.Init.Wf.Well_founded.FixPoint.Fix_F_inv	40
-Coq.Init.Logic.f_equal3	40
-Coq.Init.Specif.sigT.eq_sigT_rect	40
-Coq.Init.Logic.eq_trans_refl_l	40
-Coq.Init.Peano.max_r	40
-Coq.Init.Logic.Logic_lemmas.eq_sind_r	40
-Coq.Bool.Sumbool.connectives.sumbool_and	40
-Coq.Init.Specif.sig.eq_exist_uncurried	40
-Coq.Init.Logic_Type.identity_ind_r	40
-Coq.Init.Datatypes.pair_equal_spec	40
-Coq.Init.Logic.map_subst_map	40
-Coq.Init.Logic.rew_swap	40
-Coq.Init.Specif.sigT2.eq_existT2_uncurried	40
-Coq.Init.Peano.min_r	40
-Coq.Logic.EqdepFacts.eq_sigT_iff_eq_dep	40
-Coq.Logic.EqdepFacts.eq_sigT_eq_dep	40
-Coq.Wellfounded.Inverse_Image.Inverse_Image.Acc_inverse_image	40
-Coq.Logic.EqdepFacts.eq_dep_eq_sigT	40
-Coq.Wellfounded.Transitive_Closure.Wf_Transitive_Closure.Acc_clos_trans	40
-Coq.Sets.Relations_1_facts.Equiv_from_order	40
-Coq.Program.Combinators.compose_id_right	40
-Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.subset_eq_compat	40
-Coq.Logic.Hurkens.Generic.Paradox.lemma2	40
-Coq.Sets.Partial_Order.Partial_order_facts.Strict_Rel_Transitive_with_Rel_left	40
-Coq.Wellfounded.Inclusion.WfInclusion.wf_incl	40
-Coq.Logic.Eqdep_dec.EqdepDec.nu_constant	40
-Coq.Sets.Constructive_sets.Ensembles_facts.Extension	40
-Coq.Logic.HLevels.forall_hprop	40
-Coq.Bool.Bool.negb_false_iff	40
-Coq.ssr.ssrunder.Under_rel.Under_rel_from_rel	40
-Coq.ZArith.Zpow_def.Zpower_theory	40
-Coq.Logic.Berardi.Berardis_paradox.AC_IF	40
-Coq.Logic.PropFacts.injection_is_involution_in_Prop	40
-Coq.Logic.ExtensionalityFacts.diagonal_projs_same_behavior	40
-Coq.Lists.Streams.Streams.unfold_Stream	40
-Coq.Bool.DecBool.ifdec_right	40
-Coq.Logic.Decidable.dec_and	40
-Coq.Sets.Permut.Axiomatisation.comm_right	40
-Coq.Logic.PropExtensionalityFacts.PredExt_imp_PropFunExt	40
-Coq.Logic.FunctionalExtensionality.functional_extensionality	40
-Coq.Bool.Bool.negb_orb	40
-Coq.Classes.RelationClasses.Defs.complement_inverse	40
-Coq.Bool.Bool.not_false_is_true	40
-Coq.Bool.Bool.not_true_is_false	40
-Coq.Logic.Decidable.dec_not_not	40
+Coq.Classes.CRelationClasses.Defs.flip.flip_PER	40	0	synth with cache (only 1: firstorder).	0.306379	1
+Coq.Classes.CRelationClasses.Defs.flip.flip_Equivalence	40	0	synth with cache (only 1: firstorder).	0.321101	1
+Coq.Init.Logic.eq_sym_map_distr	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	1.255426	3
+Coq.Classes.CRelationClasses.Defs.complement.complement_Irreflexive	40	0	synth with cache (only 1: firstorder).	0.241042	1
+Coq.Classes.CRelationClasses.Defs.complement.complement_Symmetric	40	0	synth with cache (only 1: firstorder).	0.240819	1
+Coq.Init.Peano.mult_n_O	40
+Coq.Classes.CRelationClasses.iffT_Reflexive	40	0	synth with cache (only 1: firstorder).	0.239429	1
+Coq.Classes.CRelationClasses.iffT_Symmetric	40	0	synth with cache (only 1: firstorder).	0.239196	1
+Coq.Classes.CRelationClasses.iffT_Transitive	40	0	synth with cache (only 1: firstorder).	0.231827	1
+Coq.Logic.Decidable.dec_and	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	13.193323	2
+Coq.ssr.ssrunder.Under_rel.Under_relE	40	0	synth with cache (only 1: reflexivity).	12.993698	1
+Coq.Logic.Decidable.dec_not	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.692420	2
+Coq.Init.Logic.rew_compose	40	0.0.0	synth with cache (only 1: intros; only 1: destruct H2; only 1: reflexivity).	13.671110	3
+Coq.Sets.Relations_1_facts.Equiv_from_order	40	1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim H; only 1: auto  10 with sets).	14.625294	11
+Coq.Logic.Decidable.dec_imp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.739963	2
+Coq.Sets.Relations_1_facts.contains_is_preorder	40	0	synth with cache (only 1: auto  10 with sets).	0.220910	1
+Coq.Init.Specif.sig.rew_sig	40	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	14.266505	3
+Coq.Logic.StrictProp.Spr1_inj	40
 Coq.Bool.Bool.eq_true_false_abs	40
-Coq.Classes.RelationClasses.Defs.StrictOrder_Asymmetric	40
-Coq.Bool.Bool.diff_false_true	40
-Coq.Sets.Constructive_sets.Ensembles_facts.Noone_in_empty	40
-Coq.Bool.Bool.eqb_subst	40
-Coq.Lists.Streams.Streams.tl_nth_tl	40
-Coq.Classes.CRelationClasses.Defs.flip.flip_Reflexive	40
-Coq.Classes.CRelationClasses.Defs.subrelation_symmetric	40
-Coq.Logic.Hurkens.Generic.Paradox.lemma1	40
-Coq.Bool.Bool.eqb_true_iff	40
-Coq.Wellfounded.Disjoint_Union.Wf_Disjoint_Union.acc_A_sum	40
-Coq.Sets.Finite_sets.Ensembles_finis_facts.cardinal_invert	40
-Coq.Logic.Decidable.dec_or	40
-Coq.Bool.Bool.leb_implb	40
-Coq.Logic.Eqdep_dec.EqdepDec.trans_sym_eq	40
-Coq.Logic.FunctionalExtensionality.equal_f_dep	40
-Coq.Bool.Bool.not_false_iff_true	40
-Coq.Logic.HLevels.and_hprop	40
-Coq.Classes.RelationClasses.Defs.subrelation_symmetric	40
-Coq.Bool.Bool.eqb_prop	40
-Coq.Bool.BoolEq.Bool_eq_dec.beq_eq_true	40
-Coq.Bool.Bool.eqb_reflx	40
+Coq.Logic.PropExtensionalityFacts.PredExt_imp_PropExt	40
+Coq.micromega.ZifyClasses.mkapp2	40
+Coq.Sets.Permut.Axiomatisation.cong_congr	40
+Coq.Bool.DecBool.ifdec_left	40
 Coq.Logic.Decidable.dec_False	40
+Coq.Bool.Bool.not_false_iff_true	40
+Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_trans	40
+Coq.Wellfounded.Inverse_Image.Inverse_Image.Acc_lemma	40
+Coq.Bool.Bool.eqb_reflx	40
+Coq.Lists.Streams.Streams.tl_nth_tl	40
+Coq.Bool.Bool.eqb_prop	40
+Coq.Bool.Bool.diff_true_false	40
+Coq.Logic.Berardi.Berardis_paradox.AC_IF	40
+Coq.Bool.Bool.leb_implb	40
+Coq.Logic.Eqdep_dec.EqdepDec.nu_constant	40
+Coq.Bool.Bool.not_true_is_false	40
+Coq.Program.Combinators.compose_id_left	40
+Coq.Classes.CRelationClasses.Defs.subrelation_symmetric	40
+Coq.Sets.Finite_sets.Ensembles_finis_facts.cardinal_invert	40
+Coq.Sets.Uniset.defs.incl_left	40
+Coq.Wellfounded.Disjoint_Union.Wf_Disjoint_Union.acc_A_sum	40
+Coq.Logic.Decidable.dec_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.773455	2
+Coq.Logic.Hurkens.Generic.Paradox.lemma1	40
+Coq.Init.Logic.ex.eq_ex_uncurried	40	0.0.0.0	synth with cache (only 1: destruct pq; only 1: destruct H; only 1: destruct x; only 1: reflexivity).	1.265142	4
+Coq.Init.Datatypes.eq_true_rect_r	40
+Coq.Init.Datatypes.eq_true_rec_r	40
+Coq.Init.Logic.or_cancel_r	40
+Coq.Init.Logic.iff_and	40
+Coq.Init.Peano.plus_Sn_m	40
+Coq.Init.Datatypes.surjective_pairing	40
+Coq.Init.Datatypes.eq_true_ind_r	40
+Coq.Init.Logic.or_cancel_l	40
+Coq.Init.Datatypes.andb_true_intro	40
+Coq.Init.Specif.sigT.eq_existT_curried_congr	40
+Coq.Init.Logic.and_comm	40
+Coq.Init.Specif.sigT.eq_sigT_uncurried_iff	40
+Coq.Init.Logic.or_comm	40
+Coq.Init.Specif.sigT.eq_existT_curried_map	40
+Coq.Init.Logic.and_cancel_r	40
+Coq.Init.Logic.universal_quantification.inst	40
+Coq.Init.Logic.and_assoc	40
+Coq.Init.Logic.Logic_lemmas.equality.eq_sym	40
+Coq.Init.Logic.or_assoc	40
+Coq.Init.Logic.Logic_lemmas.absurd	40
+Coq.Init.Specif.sigT.eq_existT_curried_trans	40
+Coq.Init.Logic.iff_to_and	40
+Coq.Init.Logic.universal_quantification.gen	40
+Coq.Init.Specif.sigT.eq_existT_curried	40
+Coq.Init.Byte.to_bits_of_bits	40
+Coq.Sets.Relations_1_facts.same_relation_is_equivalence	40	1.2.1	synth with cache (only 1: intros ?; only 1: unfold same_relation; only 1: auto with sets).	2.084356	26
+Coq.Init.Logic.ex.rew_ex	40	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	1.419704	3
+Coq.Logic.Decidable.not_or	40	1	synth with cache (only 1: tauto).	2.348670	16
+Coq.Init.Logic.eq_trans_rew_distr	40	0.1.0	synth with cache (only 1: intros; only 1: destruct e'; only 1: reflexivity).	8.452100	4
+Coq.Logic.Decidable.not_and	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.726940	2
+Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep1_dep	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	40
+Coq.Numbers.DecimalFacts.uint_dec	40
+Coq.Classes.Morphisms.Relations.pointwise_pointwise	40
+Coq.Logic.FunctionalExtensionality.equal_f_dep	40
+Coq.Logic.JMeq.JMeq_sym	40
+Coq.Relations.Operators_Properties.Properties.Clos_Refl_Trans.clos_rt_idempotent	40
+Coq.Sets.Powerset.The_power_set_partial_order.Inclusion_is_an_order	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	40
+Coq.Sets.Relations_2_facts.Rstar_reflexive	40
+Coq.ssr.ssrfun.ExtensionalEquality.frefl	40
+Coq.Logic.Decidable.not_imp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.701256	2
+Coq.Classes.RelationClasses.Defs.StrictOrder_Asymmetric	40
+Coq.Program.Subset.subset_eq	40
+Coq.Sets.Uniset.defs.leb_refl	40
+Coq.Logic.Decidable.dec_True	40
+Coq.Classes.CMorphisms.Proper.eq_proper_proxy	40
+Coq.Classes.CMorphisms.Proper.reflexive_proper_proxy	40
+Coq.Bool.Bool.diff_false_true	40
+Coq.Program.Wf.Well_founded.Fix_F_eq	40
+Coq.Program.Wf.Well_founded.Fix_F_inv	40
+Coq.Lists.Streams.Streams.unfold_Stream	40
+Coq.Sets.Powerset.The_power_set_partial_order.Power_set_Inhabited	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	40
+Coq.Classes.Morphisms_Prop.Acc_pt_morphism	40
+Coq.Bool.Bool.not_false_is_true	40
+Coq.Sets.Relations_3_facts.Rstar_imp_coherent	40
+Coq.Program.Equality.UIP_refl_refl	40
+Coq.Bool.Bool.eqb_subst	40
+Coq.Classes.Morphisms.Relations.subrelation_id_proper	40
+Coq.Sets.Powerset.The_power_set_partial_order.Empty_set_minimal	40
+Coq.Logic.HLevels.and_hprop	40
+Coq.Classes.RelationClasses.Defs.complement_inverse	40
+Coq.Classes.CMorphisms.Proper.proper_proper_proxy	40
+Coq.Sets.Uniset.defs.incl_right	40
+Coq.Relations.Operators_Properties.Properties.Clos_Refl_Trans.clos_rt_is_preorder	40
+Coq.Bool.IfProp.Iftrue_inv	40
+Coq.ssr.ssreflect.lock	40
+Coq.Sets.Constructive_sets.Ensembles_facts.Noone_in_empty	40
+Coq.Classes.Morphisms.Proper.reflexive_proper_proxy	40
+Coq.Relations.Relations.inverse_image_of_equivalence	40
+Coq.ssr.ssreflect.master_key	40
+Coq.Logic.Decidable.dec_or	40
+Coq.Classes.Morphisms.Proper.eq_proper_proxy	40
+Coq.Classes.RelationClasses.Defs.subrelation_symmetric	40
+Coq.ssr.ssrfun.ExtensionalEquality.fsym	40
+Coq.Classes.Morphisms.Proper.proper_proper_proxy	40
 Coq.Classes.CRelationClasses.Defs.StrictOrder_Asymmetric	40
+Coq.Program.Equality.JMeq_eq_refl	40
+Coq.ssr.ssrfun.unitE	40
+Coq.Wellfounded.Well_Ordering.WellOrdering.wf_WO	40
+Coq.Wellfounded.Lexicographic_Product.WfLexicographic_Product.acc_A_B_lexprod	40
+Coq.Logic.Decidable.imp_simp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.688400	2
+Coq.Init.Specif.sigT2.eq_sigT2_uncurried	40	0.0.2.0.0.0	synth with cache (only 1: destruct v; only 1: destruct u; only 1: simpl in *; only 1: destruct pqr; only 1: subst; only 1: reflexivity).	10.400837	29
+Coq.Bool.Bool.not_true_iff_false	40
+Coq.Init.Specif.sig2.eq_sig2_uncurried	40	0.0.0.0.0.0	synth with cache (only 1: destruct v; only 1: destruct u; only 1: destruct pqr; only 1: simpl in *; only 1: subst; only 1: reflexivity).	5.801900	6
+Coq.Logic.Decidable.not_true_iff	40	0.1.0.0	synth with cache (only 1: split; only 1: intros ?; only 1: auto; only 1: tauto).	0.997762	5
+Coq.ssr.ssrsetoid.compat_Reflexive	40
+Coq.Wellfounded.Union.WfUnion.strip_commut	40
+Coq.Lists.StreamMemo.MemoFunction.memo_get_correct	40
+Coq.Logic.Decidable.not_not_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.654849	2
+Coq.Init.Tactics.decide_right	40	0.1.0.0	synth with cache (only 1: intros; only 1: destruct decide; only 1: contradiction; only 1: apply H0).	13.500262	5
+Coq.Init.Logic_Type.identity_rec_r	40	0.3.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: case identity_sym with (1 := H0); only 1: trivial).	12.598957	83
+Coq.Logic.Decidable.contrapositive	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.685559	2
+Coq.Init.Logic.iff_stepl	40	0.0.0.0.1.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct 2; only 1: destruct H; only 1: split; only 1: auto; only 1: auto).	12.050473	68
+Coq.Init.Logic.exists_inhabited	40	0.0	synth with cache (only 1: destruct 1; only 1: auto).	12.690186	2
+Coq.Init.Logic.eq_trans_sym_distr	40	0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e'; only 1: reflexivity).	13.375065	4
+Coq.Logic.Decidable.or_not_l_iff_1	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.703462	2
+Coq.Init.Logic_Type.identity_rect_r	40	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: case identity_sym with (1 := H); only 1: assumption).	1.030610	8
+Coq.Program.Combinators.compose_id_right	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	8.612364	2
+Coq.Bool.Bool.negb_sym	40	0	synth with cache (only 1: destr_bool).	8.555575	1
+Coq.Init.Peano.nat_case	40	0.0.0.0	synth with cache (only 1: intros; only 1: destruct n; only 1: assumption; only 1: apply H0).	13.755323	4
+Coq.Init.Logic.rew_const	40	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	13.733052	3
+Coq.Program.Combinators.compose_assoc	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.370904	2
+Coq.Bool.Bool.no_fixpoint_negb	40	1	synth with cache (only 1: destr_bool).	8.904211	10
+Coq.Bool.Bool.orb_true_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.697195	5
+Coq.Init.Logic_Type.identity_ind_r	40	0.1.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: subst; only 1: auto).	15.003903	33
+Coq.Classes.CRelationClasses.Binary.relation_implication_preorder	40	1	synth with cache (only 1: firstorder).	9.079601	7
+Coq.Program.Combinators.flip_flip	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.367301	2
+Coq.Sets.Relations_1_facts.cong_reflexive_same_relation	40	1.0.0.0.0.0.0.0.0.0.0.2	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: red; only 1: intros ?; only 1: elim H; only 1: intros ?; only 1: intros ?; only 1: elim H; only 1: auto with sets).	7.894414	74
+Coq.Classes.CRelationClasses.Binary.PartialOrder_inverse	40	0	synth with cache (only 1: firstorder).	0.265976	1
+Coq.Bool.Bool.orb_false_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.677765	5
+Coq.Program.Combinators.prod_uncurry_curry	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.379435	2
+Coq.Init.Specif.sig2.eq_exist2_uncurried	40	0.1.0.0.0	synth with cache (only 1: destruct pqr; only 1: destruct e0; only 1: destruct x; only 1: destruct e; only 1: reflexivity).	14.401565	6
+Coq.Bool.Bool.orb_prop	40	0.0.0	synth with cache (only 1: intros; only 1: apply orb_true_iff; only 1: trivial).	0.471190	3
+Coq.Init.Specif.sigT2.rew_sigT2	40	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	14.938385	3
+Coq.Logic.Decidable.or_not_l_iff_2	40	1.0	synth with cache (only 1: unfold decidable; only 1: tauto).	2.364182	11
+Coq.Init.Logic.eq_stepl	40	0.1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct 2; only 1: auto).	15.632617	12
+Coq.Init.Logic.ex2.rew_ex2	40	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	9.272108	3
+Coq.Bool.Bool.negb_orb	40	0	synth with cache (only 1: destr_bool).	11.258121	1
+Coq.Init.Specif.sig2.rew_sig2	40	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	9.362473	3
+Coq.Logic.Decidable.or_not_r_iff_1	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.700444	2
+Coq.Init.Specif.absurd_set	40	0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply False_rec; only 1: apply H0; only 1: trivial).	1.633724	7
+Coq.Bool.Bool.orb_false_intro	40	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: reflexivity).	0.594835	3
+Coq.Logic.Decidable.or_not_r_iff_2	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.702631	2
+Coq.Classes.RelationClasses.Defs.flip.flip_PreOrder	40	0	synth with cache (only 1: firstorder).	7.983157	1
+Coq.Init.Logic_Type.identity_is_a_congruence.not_identity_sym	40	0.0.6.0	synth with cache (only 1: intros ?; only 1: destruct 1; only 1: apply H; only 1: auto).	27.984153	239
+Coq.Logic.EqdepFacts.eq_dep_eq_sigT	40	0.1.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	9.503881	4
+Coq.Logic.Decidable.imp_not_l	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.692564	2
+Coq.Classes.RelationClasses.Defs.flip.flip_StrictOrder	40	0	synth with cache (only 1: firstorder).	0.264802	1
+Coq.Bool.Bool.eqb_negb1	40	0	synth with cache (only 1: destr_bool).	13.147179	1
+Coq.Bool.Bool.negb_andb	40	0	synth with cache (only 1: destr_bool).	13.432264	1
+Coq.Classes.RelationClasses.Defs.flip.flip_PER	40	0	synth with cache (only 1: firstorder).	0.279038	1
+Coq.Logic.Decidable.not_or_iff	40	0	synth with cache (only 1: tauto).	0.427331	1
+Coq.Bool.Bool.orb_false_elim	40	0.0.0.1	synth with cache (only 1: destr_bool; only 1: split; only 1: assumption; only 1: assumption).	1.818355	14
+Coq.Bool.Bool.orb_diag	40	0	synth with cache (only 1: destr_bool).	0.362376	1
+Coq.Classes.RelationClasses.Defs.flip.flip_Equivalence	40	0	synth with cache (only 1: firstorder).	0.268017	1
+Coq.Sets.Uniset.defs.seq_refl	40	0.0.0	synth with cache (only 1: intros; only 1: intros ?; only 1: easy).	13.853982	3
+Coq.Bool.Bool.orb_true_r	40	0	synth with cache (only 1: destr_bool).	0.365935	1
+Coq.Bool.Bool.orb_true_l	40	0	synth with cache (only 1: reflexivity).	0.272937	1
+Coq.Logic.Decidable.not_and_iff	40	0	synth with cache (only 1: tauto).	0.422655	1
+Coq.Classes.RelationClasses.Defs.complement.complement_Irreflexive	40	0	synth with cache (only 1: firstorder).	0.197027	1
+Coq.Bool.Bool.orb_false_r	40	0	synth with cache (only 1: destr_bool).	0.371988	1
+Coq.Bool.Bool.orb_negb_r	40	0	synth with cache (only 1: destr_bool).	0.254874	1
+Coq.Classes.RelationClasses.Defs.complement.complement_Symmetric	40	0	synth with cache (only 1: firstorder).	0.203829	1
+Coq.Bool.Bool.orb_false_l	40	0	synth with cache (only 1: reflexivity).	0.370092	1
+Coq.Bool.Bool.orb_assoc	40	0	synth with cache (only 1: destr_bool).	0.286579	1
+Coq.Bool.Bool.orb_comm	40	0	synth with cache (only 1: destr_bool).	0.389894	1
+Coq.Logic.Decidable.not_imp_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.709576	2
+Coq.Classes.RelationClasses.predicate_equivalence_equivalence_obligation_1	40	0.0.0	synth with cache (only 1: induction l; only 1: firstorder; only 1: firstorder).	0.715891	3
+Coq.Bool.Bool.orb_true_intro	40	0.0.0.1.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: destruct b1; only 1: destruct b2; only 1: split; only 1: split; only 1: destruct b2; only 1: discriminate; only 1: discriminate; only 1: subst; only 1: destruct b1; only 1: reflexivity; only 1: reflexivity).	5.012297	53
+Coq.Logic.Decidable.not_imp_rev_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.714301	2
+Coq.Bool.Bool.andb_false_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.998150	5
+Coq.Bool.Bool.andb_true_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	1.348791	5
+Coq.Init.Datatypes.rew_pair	40	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	14.476820	3
+Coq.Logic.EqdepFacts.eq_sigT_iff_eq_dep	40	0.0.0.0.0.1.0	synth with cache (only 1: split; only 1: intros ?; only 1: dependent rewrite H; only 1: apply eq_sigT_eq_dep; only 1: reflexivity; only 1: induction 1; only 1: reflexivity).	3.024369	33
+Coq.Bool.Bool.andb_false_r	40	0	synth with cache (only 1: destr_bool).	0.334784	1
+Coq.Classes.RelationClasses.predicate_equivalence_equivalence_obligation_2	40	0.0.0.0	synth with cache (only 1: induction l; only 1: firstorder; only 1: simpl in *; only 1: firstorder).	1.061259	4
+Coq.Bool.Bool.andb_false_intro1	40	1.1.0	synth with cache (only 1: intros; only 1: rewrite H; only 1: trivial).	1.104258	10
+Coq.Bool.Bool.andb_false_l	40	0	synth with cache (only 1: reflexivity).	0.338085	1
+Coq.Bool.Bool.andb_diag	40	0	synth with cache (only 1: destr_bool).	0.184010	1
+Coq.Logic.EqdepFacts.eq_sig_eq_dep	40	0.0.0.0	synth with cache (only 1: intros; only 1: dependent rewrite H; only 1: apply eq_sigT_eq_dep; only 1: reflexivity).	0.667903	4
+Coq.Bool.Bool.andb_true_r	40	0	synth with cache (only 1: destr_bool).	0.333023	1
+Coq.Bool.Bool.andb_true_l	40	0	synth with cache (only 1: reflexivity).	0.182848	1
+Coq.Bool.Bool.andb_negb_r	40	0	synth with cache (only 1: destr_bool).	0.190841	1
+Coq.Classes.Morphisms.Relations.subrelation_refl	40	0	synth with cache (only 1: firstorder).	13.233854	1
+Coq.Logic.EqdepFacts.eq_dep_eq_sig	40	0.1.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.499417	4
+Coq.Bool.Bool.andb_comm	40	3	synth with cache (only 1: destr_bool).	0.305499	5
+Coq.Classes.Morphisms.iff_impl_subrelation	40	0	synth with cache (only 1: firstorder).	0.338657	1
+Coq.Classes.CMorphisms.Relations.subrelation_refl	40	0	synth with cache (only 1: simpl_crelation).	12.979155	1
+Coq.Bool.Bool.andb_assoc	40	3	synth with cache (only 1: destr_bool).	0.450445	6
+Coq.Classes.Morphisms.iff_flip_impl_subrelation	40	0	synth with cache (only 1: firstorder).	0.371011	1
+Coq.Bool.Bool.andb_orb_distrib_r	40	0	synth with cache (only 1: destr_bool).	0.204953	1
+Coq.Bool.Bool.andb_false_intro2	40	3	synth with cache (only 1: destr_bool).	2.572148	17
+Coq.Program.Equality.inj_pairT2_refl	40	0	synth with cache (only 1: apply UIP_refl).	13.506354	1
+Coq.Bool.Bool.andb_orb_distrib_l	40	0	synth with cache (only 1: destr_bool).	0.208860	1
+Coq.Classes.CRelationClasses.Binary.partial_order_antisym	40	1	synth with cache (only 1: firstorder).	13.105665	2
+Coq.Classes.CMorphisms.Relations.pointwise_subrelation	40	0.0	synth with cache (only 1: reduce; only 1: firstorder).	0.761156	2
+Coq.Bool.Bool.orb_andb_distrib_r	40	0	synth with cache (only 1: destr_bool).	0.207967	1
+Coq.Bool.Bool.negb_false_iff	40	0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	13.434300	3
+Coq.Bool.Bool.absorption_andb	40	0	synth with cache (only 1: destr_bool).	0.195413	1
+Coq.Bool.Bool.orb_andb_distrib_l	40	0	synth with cache (only 1: destr_bool).	0.377862	1
+Coq.Bool.Bool.absorption_orb	40	0	synth with cache (only 1: destr_bool).	0.199281	1
+Coq.Logic.Decidable.not_false_iff	40	0	synth with cache (only 1: tauto).	13.645644	1
+Coq.Bool.Bool.xorb_false_r	40	0	synth with cache (only 1: destr_bool).	0.330631	1
+Coq.Bool.Bool.xorb_false_l	40	1	synth with cache (only 1: destr_bool).	0.187297	2
+Coq.Classes.Morphisms.Relations.forall_subrelation	40	1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: firstorder).	14.178309	8
+Coq.Init.Logic.eq_trans_map	40
+Coq.Bool.Bool.xorb_nilpotent	40	0	synth with cache (only 1: destr_bool).	0.187875	1
+Coq.Bool.Bool.andb_true_eq	40	0.0.0.2	synth with cache (only 1: destr_bool; only 1: split; only 1: assumption; only 1: assumption).	4.643531	32
+Coq.Bool.Bool.xorb_true_l	40	0	synth with cache (only 1: reflexivity).	0.334840	1
+Coq.Sets.Relations_1_facts.cong_symmetric_same_relation	40	0.1.1.0.0.0.0.0.2	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: red; only 1: elim H; only 1: intros; only 1: auto with sets).	9.901616	90
+Coq.Bool.Bool.xorb_comm	40	2	synth with cache (only 1: destr_bool).	0.200884	3
+Coq.Sets.Uniset.defs.union_empty_left	40	0.0.0.1.0.0	synth with cache (only 1: intros; only 1: destruct x; only 1: red; only 1: intros ?; only 1: simpl; only 1: auto).	5.574547	28
+Coq.Bool.Bool.orb_true_elim	40	0.0.0.1.0.0.5	synth with cache (only 1: destr_bool; only 1: left; only 1: assumption; only 1: right; only 1: assumption; only 1: left; only 1: assumption).	10.211695	231
+Coq.Bool.Bool.xorb_assoc_reverse	40	2	synth with cache (only 1: destr_bool).	0.376165	3
+Coq.Bool.Bool.xorb_true_r	40	0.0.0.0	synth with cache (only 1: intros; only 1: destruct b; only 1: reflexivity; only 1: reflexivity).	0.949591	4
+Coq.Bool.Bool.xorb_move_l_r_2	40	0	synth with cache (only 1: destr_bool).	0.212103	1
+Coq.Bool.Bool.negb_xorb_l	40	1	synth with cache (only 1: destr_bool).	0.248628	2
+Coq.ssr.ssrbool.BoolIf.ifN	40
+Coq.Bool.Bool.xorb_eq	40	1	synth with cache (only 1: destr_bool).	0.896912	9
+Coq.Bool.Bool.xorb_move_r_l_2	40	0	synth with cache (only 1: destr_bool).	0.420093	1
+Coq.ssr.ssrbool.negbF	40
+Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rt_t	40
+Coq.Bool.Bool.negb_xorb_r	40	1	synth with cache (only 1: destr_bool).	0.249228	2
+Coq.ssr.ssrbool.contraNF	40
+Coq.Bool.Bool.xorb_negb_negb	40	2	synth with cache (only 1: destr_bool).	0.276660	3
+Coq.ssr.ssrbool.negbLR	40
+Coq.ssr.ssrbool.BoolIf.ifP	40
+Coq.ssr.ssrbool.negbNE	40
+Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_r_clos_rt	40
+Coq.ssr.ssrbool.contra	40
+Coq.Program.Equality.solution_right	40	0.2.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: subst; only 1: assumption).	2.686134	22
+Coq.ssr.ssrbool.contraFF	40
+Coq.Bool.Bool.eq_true_negb_classical	40	0.0	synth with cache (only 1: destr_bool; only 1: intuition).	0.324177	2
+Coq.Classes.CMorphisms.Relations.subrelation_id_proper	40
+Coq.ssr.ssrfun.ExtensionalEquality.rrefl	40
+Coq.Bool.Bool.eq_iff_eq_true	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.720001	5
+Coq.Sets.Relations_2_facts.Rplus_contains_R	40
+Coq.ssr.ssrbool.is_true_locked_true	40
+Coq.Structures.OrdersTac.OrderFacts.le_refl	40
+Coq.Structures.Equalities.UpdateEq.eq_equiv	40
+Coq.Structures.Orders.Compare2EqBool.eqb_eq	40
+Coq.Structures.OrdersTac.OrderFacts.eq_refl	40
+Coq.ssr.ssrbool.BoolIf.if_same	40
+Coq.Bool.BoolEq.Bool_eq_dec.beq_eq_true	40
+Coq.Structures.Orders.OT_to_Full.le_lteq	40
+Coq.Setoids.Setoid.Seq_refl	40
+Coq.Numbers.DecimalFacts.rev_revapp	40
+Coq.ssr.ssrbool.BoolIf.ifT	40
+Coq.Classes.CMorphisms.Relations.subrelation_respectful	40
+Coq.ssr.ssrfun.ExtensionalEquality.ftrans	40
+Coq.Bool.Bool.eq_true_iff_eq	40	1	synth with cache (only 1: apply eq_iff_eq_true).	0.833205	10
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_commutative	40
+Coq.Bool.Bool.eqb_true_iff	40
+Coq.Logic.ExtensionalityFacts.diagonal_inverse1	40
+Coq.ssr.ssrbool.contraFN	40
 Coq.Sets.Relations_1_facts.Equiv_from_preorder	40
 Coq.Sets.Constructive_sets.Ensembles_facts.Included_Empty	40
-Coq.Wellfounded.Well_Ordering.WellOrdering.wf_WO	40
-Coq.Logic.ExtensionalityFacts.diagonal_inverse1	40
-Coq.Lists.StreamMemo.MemoFunction.memo_get_correct	40
-Coq.Classes.CMorphisms.Proper.eq_proper_proxy	40
-Coq.Classes.Morphisms.Proper.reflexive_proper_proxy	40
-Coq.Numbers.DecimalFacts.uint_dec	40
-Coq.ssr.ssrfun.unitE	40
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	40
-Coq.Sets.Relations_3_facts.Rstar_imp_coherent	40
-Coq.Program.Subset.subset_eq	40
-Coq.Relations.Relations.inverse_image_of_equivalence	40
-Coq.Wellfounded.Lexicographic_Product.WfLexicographic_Product.acc_A_B_lexprod	40
-Coq.Program.Equality.JMeq_eq_refl	40
-Coq.Sets.Relations_2_facts.Rstar_reflexive	40
-Coq.ssr.ssreflect.lock	40
-Coq.Relations.Operators_Properties.Properties.Clos_Refl_Trans.clos_rt_idempotent	40
-Coq.Program.Wf.Well_founded.Fix_F_eq	40
-Coq.Sets.Powerset.The_power_set_partial_order.Power_set_Inhabited	40
-Coq.Sets.Uniset.defs.leb_refl	40
-Coq.Logic.JMeq.JMeq_sym	40
-Coq.ssr.ssrsetoid.compat_Reflexive	40
-Coq.Classes.Morphisms_Prop.Acc_pt_morphism	40
-Coq.Classes.CEquivalence.equiv_transitive_obligation_1	40
-Coq.Bool.IfProp.Iftrue_inv	40
-Coq.Wellfounded.Union.WfUnion.strip_commut	40
-Coq.Classes.CMorphisms.Proper.reflexive_proper_proxy	40
-Coq.Classes.Morphisms.Relations.pointwise_pointwise	40
-Coq.ssr.ssrfun.ExtensionalEquality.fsym	40
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_commutative	40
-Coq.Relations.Operators_Properties.Properties.Clos_Refl_Trans.clos_rt_is_preorder	40
-Coq.Classes.CMorphisms.Relations.subrelation_id_proper	40
-Coq.Classes.Morphisms.Relations.subrelation_id_proper	40
-Coq.Classes.Equivalence.equiv_transitive_obligation_1	40
-Coq.ssr.ssrfun.ExtensionalEquality.rrefl	40
-Coq.Sets.Uniset.defs.incl_right	40
-Coq.Sets.Powerset.The_power_set_partial_order.Inclusion_is_an_order	40
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	40
-Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_r_clos_rt	40
-Coq.Classes.CMorphisms.Relations.pointwise_pointwise	40
-Coq.Numbers.DecimalFacts.rev_revapp	40
-Coq.Classes.Morphisms.Proper.proper_proper_proxy	40
-Coq.Logic.JMeq.JMeq_trans	40
-Coq.ssr.ssrfun.ExtensionalEquality.ftrans	40
-Coq.ssr.ssreflect.master_key	40
-Coq.Classes.CMorphisms.Relations.subrelation_respectful	40
-Coq.Sets.Relations_2_facts.Rplus_contains_R	40
-Coq.Classes.Morphisms.Relations.subrelation_respectful	40
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	40
-Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rt_t	40
-Coq.Classes.CMorphisms.Proper.proper_proper_proxy	40
-Coq.Program.Equality.UIP_refl_refl	40
-Coq.Program.Wf.Well_founded.Fix_F_inv	40
-Coq.ssr.ssrfun.ExtensionalEquality.frefl	40
-Coq.Sets.Uniset.defs.incl_left	40
-Coq.Classes.Morphisms.Proper.eq_proper_proxy	40
-Coq.Sets.Powerset.The_power_set_partial_order.Empty_set_minimal	40
-Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	40
-Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rt_clos_rst	40
-Coq.Bool.Bool.not_true_iff_false	40
-Coq.Structures.Orders.Compare2EqBool.eqb_eq	40
-Coq.ssr.ssrbool.contra	40
-Coq.Structures.Equalities.UpdateEq.eq_equiv	40
-Coq.Setoids.Setoid.Seq_refl	40
-Coq.ssr.ssrbool.prop_congr	40
-Coq.ssr.ssrbool.contraNF	40
-Coq.ssr.ssrbool.negbF	40
-Coq.ssr.ssrbool.contraFF	40
-Coq.ssr.ssrbool.negb_inj	40
-Coq.ssr.ssrbool.BoolIf.if_same	40
-Coq.ssr.ssrbool.negbNE	40
-Coq.ssr.ssrbool.BoolIf.ifF	40
-Coq.ssr.ssrbool.negbFE	40
-Coq.ssr.ssrbool.negbRL	40
-Coq.Structures.OrdersTac.OrderFacts.le_refl	40
-Coq.ssr.ssrbool.not_false_is_true	40
-Coq.ssr.ssrbool.contraFT	40
-Coq.ssr.ssrbool.BoolIf.ifT	40
-Coq.ssr.ssrbool.BoolIf.ifN	40
-Coq.ssr.ssrbool.negbK	40
-Coq.ssr.ssrbool.contraR	40
-Coq.ssr.ssrbool.contraTF	40
-Coq.ssr.ssrbool.negbLR	40
-Coq.ssr.ssrbool.contraT	40
-Coq.Structures.OrdersTac.OrderFacts.eq_refl	40
-Coq.ssr.ssrbool.wlog_neg	40
-Coq.ssr.ssrbool.is_true_true	40
-Coq.Structures.Orders.OT_to_Full.le_lteq	40
-Coq.ssr.ssrbool.contraFN	40
 Coq.ssr.ssrbool.contraLR	40
-Coq.ssr.ssrbool.contraL	40
-Coq.ssr.ssrbool.BoolIf.ifP	40
-Coq.ssr.ssrbool.is_true_locked_true	40
-Coq.ssr.ssrbool.BoolIf.ifPn	40
+Coq.ssr.ssrbool.wlog_neg	40
+Coq.ssr.ssrbool.contraFT	40
+Coq.Bool.Bool.absurd_eq_bool	40	0	synth with cache (only 1: contradiction).	0.193354	1
+Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rt_clos_rst	40
+Coq.ssr.ssrbool.prop_congr	40
+Coq.ssr.ssrbool.contraR	40
+Coq.ssr.ssrbool.not_false_is_true	40
+Coq.ssr.ssrbool.negb_inj	40
 Coq.ssr.ssrbool.negbT	40
+Coq.ssr.ssrbool.negbK	40
 Coq.ssr.ssrbool.negbTE	40
-Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_dep1	40
+Coq.ssr.ssrbool.negbRL	40
+Coq.ssr.ssrbool.contraT	40
+Coq.ssr.ssrbool.negbFE	40
+Coq.Classes.Morphisms.Relations.subrelation_respectful	40
+Coq.Classes.CMorphisms.Relations.pointwise_pointwise	40
+Coq.ssr.ssrbool.is_true_true	40
+Coq.ssr.ssrbool.contraL	40
+Coq.ssr.ssrbool.contraTF	40
+Coq.Logic.JMeq.JMeq_trans	40
+Coq.Bool.Bool.absurd_eq_true	40	0	synth with cache (only 1: contradiction).	0.188047	1
+Coq.Bool.Bool.eq_true_not_negb	40	0.0	synth with cache (only 1: destr_bool; only 1: intuition).	0.479745	2
+Coq.Bool.Bool.trans_eq_bool	40	2	synth with cache (only 1: apply eq_trans).	0.199659	3
+Coq.Classes.CEquivalence.equiv_transitive_obligation_1	40
+Coq.Classes.Equivalence.equiv_transitive_obligation_1	40
+Coq.Program.Equality.deletion	40	0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: assumption).	0.683507	3
+Coq.Logic.EqdepFacts.eq_sig_iff_eq_dep	40	0.1.1.0.0.0.1.0	synth with cache (only 1: split; only 1: intros; only 1: dependent rewrite H; only 1: apply eq_sigT_eq_dep; only 1: reflexivity; only 1: intros ?; only 1: destruct H; only 1: reflexivity).	4.632420	46
+Coq.Bool.Bool.Is_true_eq_true	40	2.0	synth with cache (only 1: destr_bool; only 1: auto).	0.305462	4
+Coq.Bool.Bool.xorb_move_r_l_1	40	1	synth with cache (only 1: destr_bool).	2.045969	12
+Coq.Bool.Bool.Is_true_eq_right	40	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: auto with bool).	0.410767	3
+Coq.Sets.Relations_1_facts.cong_antisymmetric_same_relation	40	0.1.0.0.0.0	synth with cache (only 1: compute; only 1: intros; only 1: elim H; only 1: intros; only 1: clear H; only 1: auto).	2.569323	12
+Coq.Bool.Bool.eqb_refl	40	0	synth with cache (only 1: destr_bool).	0.192031	1
+Coq.Logic.Hurkens.Generic.Paradox.paradox	40
+Coq.Bool.Bool.xorb_move_l_r_1	40	1	synth with cache (only 1: destr_bool).	2.803726	16
+Coq.Logic.JMeq.JMeq_ind	40	0.2.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: case JMeq_eq with (1 := H0); only 1: assumption).	18.346917	33
+Coq.Bool.Bool.orb_prop_intro	40	0.0	synth with cache (only 1: destr_bool; only 1: tauto).	0.312592	2
+Coq.Bool.Bool.Is_true_eq_left	40	1.0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: simpl; only 1: exact I).	0.923950	5
+Coq.Bool.Bool.eqb_eq	40	1.1.0	synth with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.684620	5
+Coq.ssr.ssrbool.BoolIf.ifPn	40
+Coq.ssr.ssrbool.BoolIf.ifF	40
+Coq.Program.Equality.simplification_heq	40	1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: apply X; only 1: apply JMeq_eq; only 1: trivial).	1.305036	6
+Coq.Bool.Bool.orb_prop_elim	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: tauto; only 1: tauto; only 1: tauto; only 1: tauto).	1.104582	5
+Coq.Bool.Bool.negb_prop_elim	40	0.0.0	synth with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.439044	3
+Coq.Bool.Bool.andb_prop_elim	40	0.0.0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: auto; only 1: split; only 1: auto; only 1: trivial; only 1: auto; only 1: auto).	0.855894	7
+Coq.Bool.Bool.eq_bool_prop_intro	40	0.0.0	synth with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.867439	3
+Coq.Bool.Bool.negb_prop_intro	40	0.0	synth with cache (only 1: destr_bool; only 1: tauto).	0.337913	2
+Coq.Bool.Bool.eq_bool_prop_elim	40	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: intuition).	1.031639	3
+Coq.Bool.Bool.negb_if	40	0	synth with cache (only 1: destr_bool).	0.241945	1
+Coq.Bool.Bool.negb_prop_classical	40	0.0	synth with cache (only 1: destr_bool; only 1: tauto).	0.575752	2
+Coq.Bool.Bool.negb_prop_involutive	40	0.0.0	synth with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	0.600380	3
+Coq.Bool.Bool.andb_if	40	0	synth with cache (only 1: destr_bool).	0.465562	1
+Coq.Init.Specif.sig.eq_sig_uncurried_iff	40
+Coq.Bool.Bool.orb_lazy_alt	40	0	synth with cache (only 1: reflexivity).	0.239171	1
+Coq.Bool.Bool.andb_lazy_alt	40	0	synth with cache (only 1: reflexivity).	0.547887	1
+Coq.Logic.Eqdep_dec.EqdepDec.nu_left_inv_on	40
+Coq.Bool.Sumbool.connectives.sumbool_and	40
+Coq.Bool.Bool.iff_reflect	40	0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.433309	3
+Coq.Sets.Constructive_sets.Ensembles_facts.Add_intro1	40
+Coq.Logic.HLevels.impl_hprop	40
+Coq.Bool.Bool.eqb_false_iff	40
+Coq.Sets.Partial_Order.Partial_order_facts.Strict_Rel_Transitive_with_Rel_left	40
+Coq.Init.Peano.mult_n_Sm	40
+Coq.Init.Logic.eq_id_comm_l	40
+Coq.Init.Logic.eq_id_comm_r	40
+Coq.ZArith.Zeuclid.ZEuclid.mod_wd	40
+Coq.Init.Datatypes.injective_projections	40
+Coq.ZArith.Zmax.Zmax_spec	40
+Coq.Init.Peano.nat_double_ind	40
+Coq.Strings.Ascii.ascii_dec	40
+Coq.Init.Specif.sigT2.eq_sigT2_uncurried_iff	40
+Coq.Init.Wf.Well_founded.well_founded_ind	40
+Coq.micromega.EnvRing.MakeRingPol.radd_ext_Proper	40
+Coq.Init.Peano.le_n_S	40
+Coq.Init.Specif.Choice_lemmas.bool_choice	40
+Coq.Init.Datatypes.CompOpp_iff	40
+Coq.ZArith.Zmin.Zmin_spec	40
+Coq.ZArith.ZArith_dec.Dcompare_inf	40
+Coq.Init.Specif.sig2.eq_sig2_rect	40
+Coq.Init.Peano.le_0_n	40
+Coq.MSets.MSetAVL.MakeRaw.singleton_spec	40
+Coq.Init.Logic.inhabited_covariant	40
+Coq.Init.Specif.Choice_lemmas.Choice	40
+Coq.Init.Wf.Well_founded.FixPoint.Fix_F_inv	40
+Coq.ZArith.Wf_Z.Z_of_nat_complete	40
+Coq.Init.Datatypes.CompOpp_involutive	40
+Coq.Init.Logic.forall_exists_unique_domain_coincide	40
+Coq.Init.Specif.sigT2.eq_existT2_uncurried	40
+Coq.ZArith.BinInt.Z.eq_dec	40
+Coq.ZArith.Zorder.Ztrichotomy_inf	40
+Coq.Init.Logic.unique_existence	40
+Coq.Init.Specif.Choice_lemmas.Choice2	40
+Coq.Init.Peano.le_pred	40
+Coq.Init.Logic.forall_exists_coincide_unique_domain	40
+Coq.Init.Specif.Dependent_choice_lemmas.dependent_choice	40
+Coq.Init.Datatypes.pair_equal_spec	40
+Coq.MSets.MSetWeakList.MakeRaw.ForNotations.In_compat	40
+Coq.ZArith.Zbool.Zle_cases	40
+Coq.Init.Peano.le_S_n	40
+Coq.Init.Specif.sig2.eq_sig2_uncurried_iff	40
+Coq.ZArith.Zcompare.Zcompare_Gt_trans	40
+Coq.Init.Wf.Well_founded.FixPoint.Fix_F_eq	40
+Coq.omega.OmegaLemmas.Zred_factor0	40
+Coq.micromega.Env.S.jump_add	40
+Coq.Init.Datatypes.comparison_eq_stable	40
+Coq.Numbers.Integer.Binary.ZBinary.TestOrder.test	40
+Coq.Init.Peano.max_r	40
+Coq.ZArith.auxiliary.Zne_left	40
+Coq.Init.Specif.sigT2.eq_sigT2_rect	40
+Coq.FSets.FMapList.Raw.Elt.empty_1	40
+Coq.ZArith.Znat.nat_N_Z	40
+Coq.ZArith.Zabs.Zabs_ind	40
+Coq.ZArith.Zpow_def.Zpower_theory	40
+Coq.Init.Peano.max_l	40
+Coq.MSets.MSetList.MakeRaw.ForNotations.inf_iff	40
+Coq.Init.Datatypes.CompOpp_inj	40
+Coq.Init.Logic.ex2.eq_ex2_uncurried	40
+Coq.ZArith.Zeven.Zeven_equiv	40
+Coq.ZArith.Zpow_alt.Piter_mul_acc	40
+Coq.ZArith.Zmisc.iter_nat_of_Z	40
+Coq.Logic.Hurkens.Generic.Paradox.lemma2	40
+Coq.Sets.Partial_Order.Partial_order_facts.Strict_Rel_Transitive	40
+Coq.Logic.Decidable.dec_functional_relation	40
+Coq.Sets.Constructive_sets.Ensembles_facts.Inhabited_not_empty	40
+Coq.ssr.ssrunder.Under_rel.over_rel	40
+Coq.Wellfounded.Inclusion.WfInclusion.wf_incl	40
+Coq.Logic.HLevels.true_hprop	40
+Coq.Logic.Berardi.Berardis_paradox.Retracts.AC	40
+Coq.Program.Combinators.prod_curry_uncurry	40
+Coq.Bool.Bool.negb_involutive	40
+Coq.MSets.MSetGenTree.Props.ltb_tree_iff	40
+Coq.Logic.PropExtensionalityFacts.PredExt_imp_PropFunExt	40
 Coq.Lists.Streams.Streams.Str_nth_tl_plus	40
+Coq.Wellfounded.Transitive_Closure.Wf_Transitive_Closure.Acc_clos_trans	40
+Coq.Logic.ProofIrrelevanceFacts.ProofIrrelevanceTheory.subset_eq_compat	40
+Coq.Bool.DecBool.ifdec_right	40
+Coq.Sets.Finite_sets.Ensembles_finis_facts.cardinal_elim	40
+Coq.Sets.Permut.Axiomatisation.comm_right	40
+Coq.Logic.ExtensionalityFacts.diagonal_inverse2	40
+Coq.Strings.Byte.byte_dec_lb	40
+Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_dep1	40
+Coq.Logic.FunctionalExtensionality.functional_extensionality	40
+Coq.micromega.ZifyClasses.mkapp	40
+Coq.Logic.Eqdep_dec.EqdepDec.K_dec_on	40
+Coq.Wellfounded.Disjoint_Union.Wf_Disjoint_Union.acc_B_sum	40
+Coq.Classes.CRelationClasses.Binary.relation_equivalence_equivalence	40
+Coq.Wellfounded.Inverse_Image.Inverse_Image.Acc_inverse_image	40
+Coq.Bool.Sumbool.connectives.sumbool_or	40
+Coq.Bool.Bool.reflect_iff	40
+Coq.Logic.Decidable.not_not	40
+Coq.Bool.Bool.andb_false_elim	40
+Coq.Logic.EqdepFacts.eq_sigT_sig_eq	40
+Coq.Bool.Bool.if_negb	40
+Coq.ZArith.Int.MoreInt.eqb_eq	40
+Coq.Sets.Constructive_sets.Ensembles_facts.Add_intro2	40
+Coq.Bool.Bool.negb_involutive_reverse	40
+Coq.Lists.Streams.Streams.Str_nth_plus	40
+Coq.Logic.Hurkens.NoRetractToImpredicativeUniverse.Paradox.paradox	40
+Coq.MSets.MSetRBT.MakeRaw.singleton_spec	40
+Coq.Bool.Bool.eqb_spec	40
+Coq.Logic.Eqdep_dec.EqdepDec.eq_proofs_unicity_on	40
+Coq.Logic.EqdepFacts.eq_sigT_eq_dep	40
+Coq.Logic.FunctionalExtensionality.forall_extensionality	40
+Coq.Bool.Bool.reflect_dec	40
+Coq.Sets.Uniset.defs.seq_trans	40
+Coq.Sets.Uniset.defs.union_empty_right	40
+Coq.Logic.HLevels.false_hprop	40
+Coq.Bool.Bool.eqb_negb2	40
+Coq.Bool.IfProp.Iffalse_inv	40
+Coq.Wellfounded.Well_Ordering.Characterisation_wf_relations.wof	40
+Coq.Bool.Bool.negb_true_iff	40
+Coq.Sets.Uniset.defs.seq_sym	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Couple_as_union	40
+Coq.Classes.CMorphisms.Relations.subrelation_proper	40
+Coq.Program.Subset.match_eq_rewrite	40
+Coq.Classes.Morphisms.Relations.subrelation_proper	40
+Coq.Sets.Relations_3_facts.coherent_symmetric	40
+Coq.ssr.ssrfun.all_tag2	40
+Coq.Program.Wf.Well_founded.Fix_eq	40
+Coq.Relations.Relations.inverse_image_of_eq	40
+Coq.Program.Equality.solution_left	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.radd_ext_Proper	40
+Coq.Sets.Powerset.The_power_set_partial_order.Inclusion_is_transitive	40
+Coq.Numbers.DecimalFacts.rev_rev	40
+Coq.Wellfounded.Lexicographic_Product.WfLexicographic_Product.wf_lexprod	40
+Coq.Lists.StreamMemo.MemoFunction.imemo_get_correct	40
+Coq.Wellfounded.Union.WfUnion.Acc_union	40
+Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rst_idempotent	40
+Coq.Logic.JMeq.JMeq_rec	40
+Coq.Sets.Relations_2_facts.Rstar_contains_R	40
+Coq.Classes.RelationClasses.predicate_equivalence_equivalence_obligation_3	40
+Coq.Bool.BoolEq.Bool_eq_dec.beq_eq_not_false	40
+Coq.ssr.ssreflect.unlock	40
+Coq.Classes.CEquivalence.Respecting.respecting_equiv_obligation_3	40
+Coq.Classes.CMorphisms.Relations.proper_subrelation_proper_arrow	40
+Coq.Classes.Morphisms.GenericInstances.flip_proper_obligation_1	40
+Coq.ssr.ssrfun.Composition.eq_comp	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_absorbs	40
+Coq.Relations.Operators_Properties.Properties.Equivalences.clos_trans_t1n	40
+Coq.Classes.CMorphisms.iff_flip_impl_subrelation	40
+Coq.Classes.Morphisms.Relations.proper_subrelation_proper	40
+Coq.Classes.RelationClasses.Defs.flip.flip_Reflexive	40
+Coq.Classes.Morphisms_Prop.Acc_rel_morphism	40
+Coq.Classes.Equivalence.Respecting.respecting_equiv_obligation_3	40
+Coq.ssr.ssrfun.Sig.s2valP	40
+Coq.Sets.Powerset.The_power_set_partial_order.Power_set_PO	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_associative	40
+Coq.Relations.Operators_Properties.Properties.Equivalences.clos_t1n_trans	40
+Coq.Classes.CMorphisms.iffT_arrow_subrelation	40
+Coq.Numbers.DecimalFacts.nzhead_revapp_0	40
+Coq.Classes.Morphisms.GenericInstances.complement_proper_obligation_1	40
+Coq.Logic.JMeq.JMeq_rect	40
+Coq.ssr.ssrfun.Sig.svalP	40
+Coq.ssr.ssreflect.not_locked_false_eq_true	40
+Coq.Classes.CMorphisms.iff_impl_subrelation	40
+Coq.Sets.Relations_2_facts.Rstar_contains_Rplus	40
+Coq.Classes.Morphisms.GenericInstances.respectful_per_obligation_2	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_idempotent	40
+Coq.Relations.Operators_Properties.Properties.Clos_Refl_Sym_Trans.clos_rst_is_equiv	40
+Coq.Classes.RelationClasses.Defs.flip.flip_Antisymmetric	40
+Coq.Classes.CMorphisms.Relations.forall_subrelation	40
+Coq.Program.Wf.Well_founded.fix_sub_eq	40
+Coq.Program.Equality.simplification_existT2	40
+Coq.ssr.ssrfun.all_tag	40
+Coq.Classes.Morphisms.Relations.pointwise_subrelation	40
+Coq.Logic.Decidable.not_iff	40
+Coq.Sets.Powerset.The_power_set_partial_order.Strict_Rel_is_Strict_Included	40
+Coq.Structures.Orders.OTF_to_TTLB.leb_le	40
+Coq.Structures.Equalities.HasEqDec2Bool.eqb_eq	40
+Coq.ssr.ssrbool.BoolIf.if_neg	40
+Coq.Setoids.Setoid.Seq_sym	40
+Coq.ssr.ssrbool.ReflectCore.introNTF	40
+Coq.ssr.ssrbool.ReflectCore.equivPif	40
+Coq.ssr.ssrbool.Reflect.elimTn	40
+Coq.ssr.ssrbool.Reflect.iffP	40
+Coq.ssr.ssrbool.Reflect.introP	40
+Coq.ssr.ssrbool.Reflect.elimF	40
+Coq.ssr.ssrbool.Reflect.introNf	40
+Coq.ssr.ssrbool.Reflect.introFn	40
+Coq.ssr.ssrbool.Reflect.introN	40
+Coq.ssr.ssrbool.Reflect.introF	40
+Coq.ssr.ssrbool.ReflectCore.xorPif	40
+Coq.ssr.ssrbool.Reflect.equivP	40
+Coq.ssr.ssrbool.ReflectCore.elimTF	40
+Coq.ssr.ssrbool.Reflect.sumboolP	40
+Coq.ssr.ssrbool.ReflectNegCore.equivPifn	40
+Coq.ssr.ssrbool.ReflectNegCore.elimTFn	40
+Coq.ssr.ssrbool.Reflect.introT	40
+Coq.ssr.ssrbool.Reflect.elimNf	40
+Coq.Structures.OrdersTac.OrderFacts.eq_sym	40
+Coq.ssr.ssrbool.ReflectCore.elimNTF	40
+Coq.Structures.OrdersTac.OrderFacts.lt_irrefl	40
+Coq.ssr.ssrbool.Reflect.elimN	40
+Coq.ssr.ssrbool.ReflectNegCore.xorPifn	40
+Coq.Structures.Orders.OTF_LtIsTotal.lt_total	40
+Coq.ssr.ssrbool.Reflect.elimT	40
+Coq.ssr.ssrbool.BoolIf.fun_if	40
+Coq.ssr.ssrbool.BoolIf.if_arg	40
+Coq.ssr.ssrbool.Reflect.introTn	40
+Coq.ssr.ssrbool.ReflectCore.introTF	40
+Coq.ssr.ssrbool.BoolIf.ifE	40
+Coq.ssr.ssrbool.ReflectNegCore.introTFn	40
+Coq.Sets.Constructive_sets.Ensembles_facts.Inhabited_add	40
+Coq.Sets.Relations_1_facts.cong_transitive_same_relation	40
+Coq.Logic.ExtensionalityFacts.FunctExt_iff_EqDeltaProjs	40
+Coq.Sets.Powerset_facts.Sets_as_an_algebra.Triple_as_union	40
+Coq.Relations.Operators_Properties.Properties.Equivalences.clos_trans_t1n_iff	40
+Coq.Bool.Bool.andb_prop_intro	40
+Coq.ssr.ssrbool.Reflect.elimFn	40
