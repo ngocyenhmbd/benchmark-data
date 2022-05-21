@@ -1,4 +1,160 @@
 Opam has already been initialized.
 Nothing to do.
 Package coq-tactician-reinforce does not exist, create as a [01mNEW[0m package? [Y/n] y
-[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[[31mcoq-tactician-reinforce.~dev[0m] fetching sources failed: git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#194a551dc07df5f50b44e3b11cfb6a6ca1946e47
+[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: rsync][K[[32mcoq-tactician-reinforce.~dev[0m] synchronised (file:///home/blaaulas/tactician/tmp-neural/coq-tactician-reinforce)
+The following additional pinnings are required by coq-tactician-reinforce.~dev:
+  - [01mcoq-tactician.8.11.dev[0m at
+    [04mgit+https://github.com/coq-tactician/coq-tactician.git#ff693fa7b29e80180ed4edeab9b875181566762e[0m
+Pin and install them? [Y/n] y
+[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[[32mcoq-tactician.8.11.dev[0m] synchronised (no changes)
+coq-tactician is now pinned to [01mgit+https://github.com/coq-tactician/coq-tactician.git#ff693fa7b29e80180ed4edeab9b875181566762e[0m (version [01m8.11.dev[0m)
+coq-tactician-reinforce is now pinned to [01mgit+file:///home/blaaulas/tactician/tmp-neural/coq-tactician-reinforce#194a551dc07df5f50b44e3b11cfb6a6ca1946e47[0m (version [01m~dev[0m)
+
+[36m<><>[0m [01mSynchronising pinned packages[0m [36m><><><><><><><><><><><><><><><><><><><><><><>[0m
+[KProcessing  1/2: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[[32mcoq-tactician.8.11.dev[0m] synchronised (no changes)
+[KProcessing  2/2: [[32mcoq-tactician-reinforce.~dev[0m: git][K[[32mcoq-tactician-reinforce.~dev[0m] synchronised (git+file:///home/blaaulas/tactician/tmp-neural/coq-tactician-reinforce#194a551dc07df5f50b44e3b11cfb6a6ca1946e47)
+
+The following actions will be performed:
+  [32m∗[0m install [01mocaml-options-vanilla[0m   1
+  [32m∗[0m install [01mconf-capnproto[0m          2         [required by capnp-rpc-lwt]
+  [32m∗[0m install [01mconf-findutils[0m          1         [required by coq]
+  [32m∗[0m install [01mconf-pkg-config[0m         2         [required by mirage-crypto]
+  [32m∗[0m install [01mconf-git[0m                1.1       [required by coq-tactician]
+  [32m∗[0m install [01mconf-gmp[0m                4         [required by zarith]
+  [32m∗[0m install [01mbase-bigarray[0m           base      [required by extunix]
+  [32m∗[0m install [01mbase-unix[0m               base      [required by bos]
+  [32m∗[0m install [01mocaml-base-compiler[0m     4.12.1    [required by ocaml]
+  [32m∗[0m install [01mbase-threads[0m            base      [required by logs]
+  [32m∗[0m install [01mconf-gmp-powm-sec[0m       3         [required by mirage-crypto-pk]
+  [32m∗[0m install [01mocaml-config[0m            2         [required by ocaml]
+  [32m∗[0m install [01mocaml[0m                   4.12.1    [required by coq-tactician,
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mseq[0m                     base      [required by lwt]
+  [32m∗[0m install [01mocamlfind[0m               1.9.3     [required by
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mocamlbuild[0m              0.14.1    [required by bos]
+  [32m∗[0m install [01mmirage-no-xen[0m           1         [required by mirage-crypto-pk]
+  [32m∗[0m install [01mmirage-no-solo5[0m         1         [required by mirage-crypto-pk]
+  [32m∗[0m install [01mdune[0m                    3.2.0     [required by coq-tactician,
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mcmdliner[0m                1.1.1     [required by coq-tactician]
+  [32m∗[0m install [01mzarith[0m                  1.12      [required by asn1-combinators]
+  [32m∗[0m install [01mnum[0m                     1.4       [required by coq]
+  [32m∗[0m install [01mbase-bytes[0m              base      [required by extlib, extunix]
+  [32m∗[0m install [01mtopkg[0m                   1.0.5     [required by bos]
+  [32m∗[0m install [01mstdlib-shims[0m            0.3.0     [required by ipaddr, ppx_cstruct]
+  [32m∗[0m install [01mstdint[0m                  0.7.0     [required by capnp, capnp-rpc]
+  [32m∗[0m install [01msexplib0[0m                v0.15.0   [required by base]
+  [32m∗[0m install [01mresult[0m                  1.5       [required by ppx_deriving]
+  [32m∗[0m install [01mre[0m                      1.10.4    [required by opam-client]
+  [32m∗[0m install [01mppx_derivers[0m            1.2.1     [required by ppx_deriving]
+  [32m∗[0m install [01mpp[0m                      1.1.2     [required by dune-private-libs]
+  [32m∗[0m install [01mordering[0m                3.2.0     [required by dyn, stdune]
+  [32m∗[0m install [01mopam-file-format[0m        2.1.4     [required by opam-format]
+  [32m∗[0m install [01mocaml-syntax-shims[0m      1.0.0     [required by lwt, angstrom]
+  [32m∗[0m install [01mocaml-compiler-libs[0m     v0.12.4   [required by ppxlib]
+  [32m∗[0m install [01mmirage-clock[0m            4.2.0     [required by tls-mirage]
+  [32m∗[0m install [01mmacaddr[0m                 5.3.0     [required by ipaddr]
+  [32m∗[0m install [01mgmap[0m                    0.3.0     [required by x509]
+  [32m∗[0m install [01mduration[0m                0.2.0     [required by mirage-crypto-rng]
+  [32m∗[0m install [01mdomain-name[0m             0.4.0     [required by tls]
+  [32m∗[0m install [01mcsexp[0m                   1.5.1     [required by dune-private-libs]
+  [32m∗[0m install [01mcppo[0m                    1.6.9     [required by ppx_deriving]
+  [32m∗[0m install [01mbigstringaf[0m             0.9.0     [required by angstrom]
+  [32m∗[0m install [01mbigarray-compat[0m         1.1.0     [required by mmap]
+  [32m∗[0m install [01mbase64[0m                  3.5.0     [required by capnp-rpc-unix]
+  [32m∗[0m install [01mcoq[0m                     8.11.dev  [required by coq-tactician,
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mstringext[0m               1.6.0     [required by uri]
+  [32m∗[0m install [01mres[0m                     5.0.1     [required by capnp]
+  [32m∗[0m install [01mrresult[0m                 0.7.0     [required by bos]
+  [32m∗[0m install [01mptime[0m                   1.0.0     [required by capnp-rpc-net]
+  [32m∗[0m install [01mmtime[0m                   1.4.0     [required by mirage-crypto-rng]
+  [32m∗[0m install [01mfmt[0m                     0.9.0     [required by
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mastring[0m                 0.8.5     [required by capnp-rpc-lwt, bos,
+                                              capnp-rpc-unix]
+  [32m∗[0m install [01masetmap[0m                 0.8.1     [required by capnp-rpc-lwt]
+  [32m∗[0m install [01mocamlgraph[0m              2.0.0     [required by
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mdyn[0m                     3.2.0     [required by dune-private-libs]
+  [32m∗[0m install [01mppxlib[0m                  0.26.0    [required by ppx_deriving]
+  [32m∗[0m install [01mipaddr[0m                  5.3.0     [required by tls]
+  [32m∗[0m install [01mdune-configurator[0m       3.2.0     [required by extunix]
+  [32m∗[0m install [01mocplib-endian[0m           1.2       [required by capnp]
+  [32m∗[0m install [01mextlib[0m                  1.7.7-1   [required by opam-client]
+  [32m∗[0m install [01mangstrom[0m                0.15.0    [required by uri]
+  [32m∗[0m install [01mmmap[0m                    1.2.0     [required by lwt]
+  [32m∗[0m install [01mcstruct[0m                 6.1.0     [required by capnp-rpc-net,
+                                              cstruct-lwt]
+  [32m∗[0m install [01mfpath[0m                   0.7.3     [required by bos]
+  [32m∗[0m install [01mopam-core[0m               2.1.2     [required by opam-format]
+  [32m∗[0m install [01mstdune[0m                  3.2.0     [required by dune-private-libs]
+  [32m∗[0m install [01mppx_deriving[0m            5.2.1     [required by
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mextunix[0m                 0.4.0     [required by capnp-rpc-unix]
+  [32m∗[0m install [01mbase[0m                    v0.15.0   [required by capnp]
+  [32m∗[0m install [01mcudf[0m                    0.9-1     [required by opam-solver]
+  [32m∗[0m install [01muri[0m                     4.2.0     [required by capnp-rpc-lwt]
+  [32m∗[0m install [01mlwt[0m                     5.5.0     [required by capnp-rpc-lwt,
+                                              capnp-rpc-unix]
+  [32m∗[0m install [01meqaf[0m                    0.8       [required by mirage-crypto]
+  [32m∗[0m install [01masn1-combinators[0m        0.2.6     [required by capnp-rpc-net]
+  [32m∗[0m install [01mopam-format[0m             2.1.2     [required by opam-repository,
+                                              opam-solver]
+  [32m∗[0m install [01mdune-private-libs[0m       3.2.0     [required by dune-site]
+  [32m∗[0m install [01mstdio[0m                   v0.15.0   [required by capnp]
+  [32m∗[0m install [01mppx_sexp_conv[0m           v0.15.1   [required by tls]
+  [32m∗[0m install [01mparsexp[0m                 v0.15.0   [required by sexplib]
+  [32m∗[0m install [01mmccs[0m                    1.1+14    [required by opam-solver]
+  [32m∗[0m install [01mdose3[0m                   5.0.1-1   [required by opam-solver]
+  [32m∗[0m install [01mprometheus[0m              1.1       [required by capnp-rpc-net]
+  [32m∗[0m install [01mmirage-kv[0m               4.0.1     [required by tls-mirage]
+  [32m∗[0m install [01mmirage-flow[0m             3.0.0     [required by capnp-rpc-net]
+  [32m∗[0m install [01mlogs[0m                    0.7.0     [required by
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mcstruct-lwt[0m             6.1.0     [required by capnp-rpc-unix]
+  [32m∗[0m install [01mmirage-crypto[0m           0.10.6    [required by capnp-rpc-net]
+  [32m∗[0m install [01mopam-repository[0m         2.1.2     [required by opam-client]
+  [32m∗[0m install [01mdune-site[0m               3.2.0     [required by coq-tactician]
+  [32m∗[0m install [01mcapnp[0m                   3.5.0     [required by capnp-rpc-lwt]
+  [32m∗[0m install [01mipaddr-sexp[0m             5.3.0     [required by tls]
+  [32m∗[0m install [01msexplib[0m                 v0.15.0   [required by tls]
+  [32m∗[0m install [01mopam-solver[0m             2.1.2     [required by opam-client]
+  [32m∗[0m install [01mcapnp-rpc[0m               1.2.2     [required by capnp-rpc-lwt]
+  [32m∗[0m install [01mbos[0m                     0.2.1     [required by coq-tactician]
+  [32m∗[0m install [01mpbkdf[0m                   1.2.0     [required by x509]
+  [32m∗[0m install [01mmirage-crypto-rng[0m       0.10.6    [required by capnp-rpc-unix]
+  [32m∗[0m install [01mhkdf[0m                    1.0.4     [required by tls]
+  [32m∗[0m install [01mopam-state[0m              2.1.2     [required by opam-client]
+  [32m∗[0m install [01mppx_cstruct[0m             6.1.0     [required by tls]
+  [32m∗[0m install [01mcstruct-sexp[0m            6.1.0     [required by tls]
+  [32m∗[0m install [01mcapnp-rpc-lwt[0m           1.2.2     [required by
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mmirage-crypto-pk[0m        0.10.6    [required by tls, tls-mirage]
+  [32m∗[0m install [01mmirage-crypto-ec[0m        0.10.6    [required by tls]
+  [32m∗[0m install [01mopam-client[0m             2.1.2     [required by coq-tactician]
+  [32m∗[0m install [01mx509[0m                    0.16.0    [required by capnp-rpc-net]
+  [32m∗[0m install [01mcoq-tactician[0m           8.11.dev*
+  [32m∗[0m install [01mtls[0m                     0.15.3    [required by capnp-rpc-net]
+  [32m∗[0m install [01mtls-mirage[0m              0.15.3    [required by capnp-rpc-net]
+  [32m∗[0m install [01mcapnp-rpc-net[0m           1.2.2     [required by capnp-rpc-unix]
+  [32m∗[0m install [01mcapnp-rpc-unix[0m          1.2.2     [required by
+                                              coq-tactician-reinforce]
+  [32m∗[0m install [01mcoq-tactician-reinforce[0m ~dev*
+===== [32m∗[0m 113 =====
+
+The following system packages will first need to be installed:
+    [01mcapnproto[0m [01mcapnproto-devel[0m [01mepel-release[0m
+
+[36m<><>[0m [01mHandling external dependencies[0m [36m<><><><><><><><><><><><><><><><><><><><><><>[0m
+Let opam run your package manager to install the required system packages?
+(answer 'n' for other options) [Y/n] n
+These commands should get the requirements installed:
+
+    yum install epel-release
+    yum install capnproto capnproto-devel
+    rpm -q --whatprovides capnproto capnproto-devel epel-release
+
+You can retry with '--assume-depexts' to skip this check, or run 'opam option
+depext=false' to permanently disable handling of system packages altogether.
