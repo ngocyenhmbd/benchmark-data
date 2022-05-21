@@ -9,7 +9,7 @@ Coq.Init.Logic.or_iff_compat_l	1
 Coq.Init.Logic.or_iff_compat_r	1
 Coq.Init.Logic.imp_iff_compat_l	1
 Coq.Init.Logic.imp_iff_compat_r	1
-Coq.Init.Logic.not_iff_compat	1	2.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: apply imp_iff_compat_r).	0.357623	9
+Coq.Init.Logic.not_iff_compat	1
 Coq.Init.Logic.neg_false	1
 Coq.Init.Logic.and_cancel_l	1
 Coq.Init.Logic.and_cancel_r	1
@@ -19,202 +19,57 @@ Coq.Init.Logic.or_cancel_l	1
 Coq.Init.Logic.or_cancel_r	1
 Coq.Init.Logic.or_comm	1
 Coq.Init.Logic.or_assoc	1
-Coq.Init.Logic.iff_and	1	2.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply H).	0.712015	13
+Coq.Init.Logic.iff_and	1
 Coq.Init.Logic.iff_to_and	1
-Coq.Init.Logic.universal_quantification.inst	1	1.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: apply H).	0.198474	4
+Coq.Init.Logic.universal_quantification.inst	1	1.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: apply H).	0.148799	4
 Coq.Init.Logic.universal_quantification.gen	1
-Coq.Init.Logic.Logic_lemmas.absurd	1	0.0.0.0.0.0.0	synth with cache (only 1: unfold not; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: assumption).	0.342234	7
+Coq.Init.Logic.Logic_lemmas.absurd	1	0.0.0.0.0.0.0	synth with cache (only 1: unfold not; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: assumption).	0.501852	7
 Coq.Init.Logic.Logic_lemmas.equality.eq_sym	1
 Coq.Init.Logic.Logic_lemmas.equality.eq_trans	1
 Coq.Init.Logic.Logic_lemmas.equality.eq_trans_r	1
 Coq.Init.Logic.Logic_lemmas.equality.f_equal	1
 Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	1
-Coq.Init.Logic.Logic_lemmas.eq_sind_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: auto).	0.386905	8
-Coq.Init.Logic.Logic_lemmas.eq_ind_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.426897	8
-Coq.Init.Logic.Logic_lemmas.eq_rec_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.487532	8
-Coq.Init.Logic.Logic_lemmas.eq_rect_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H); only 1: assumption).	0.515877	8
+Coq.Init.Logic.Logic_lemmas.eq_sind_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: auto).	0.477311	8
+Coq.Init.Logic.Logic_lemmas.eq_ind_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.810607	8
+Coq.Init.Logic.Logic_lemmas.eq_rec_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.516003	8
+Coq.Init.Logic.Logic_lemmas.eq_rect_r	1	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: elim eq_sym with (1 := H); only 1: assumption).	0.457742	8
 Coq.Init.Logic.equality_dep.f_equal_dep	1
 Coq.Init.Logic.equality_dep2.f_equal_dep2	1
-Coq.Init.Logic.rew_opp_r	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.239368	3
-Coq.Init.Logic.rew_opp_l	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.257546	3
-Coq.Init.Logic.f_equal2	1	0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.320450	3
-Coq.Init.Logic.f_equal3	1	0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.322980	4
+Coq.Init.Logic.rew_opp_r	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.308844	3
+Coq.Init.Logic.rew_opp_l	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.277832	3
+Coq.Init.Logic.f_equal2	1	0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.242786	3
+Coq.Init.Logic.f_equal3	1	0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.304031	4
 Coq.Init.Logic.f_equal4	1
 Coq.Init.Logic.f_equal5	1
-Coq.Init.Logic.f_equal_compose	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.278980	3
-Coq.Init.Logic.eq_trans_refl_l	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.294501	3
-Coq.Init.Logic.eq_trans_refl_r	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.238638	3
-Coq.Init.Logic.eq_sym_involutive	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.261422	3
-Coq.Init.Logic.eq_trans_sym_inv_l	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.197090	3
-Coq.Init.Logic.eq_trans_sym_inv_r	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.236726	3
-Coq.Init.Logic.eq_trans_assoc	1	0.0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e''; only 1: destruct e'; only 1: reflexivity).	0.412744	5
-Coq.Init.Logic.rew_map	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.275514	3
+Coq.Init.Logic.f_equal_compose	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.311993	3
+Coq.Init.Logic.eq_trans_refl_l	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.246008	3
+Coq.Init.Logic.eq_trans_refl_r	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.280629	3
+Coq.Init.Logic.eq_sym_involutive	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.200746	3
+Coq.Init.Logic.eq_trans_sym_inv_l	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.205620	3
+Coq.Init.Logic.eq_trans_sym_inv_r	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.205233	3
+Coq.Init.Logic.eq_trans_assoc	1	0.0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e''; only 1: destruct e'; only 1: reflexivity).	0.446491	5
+Coq.Init.Logic.rew_map	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.243392	3
 Coq.Init.Logic.eq_trans_map	1
-Coq.Init.Logic.map_subst	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.304718	3
+Coq.Init.Logic.map_subst	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).	0.216985	3
 Coq.Init.Logic.map_subst_map	1
-Coq.Init.Logic.rew_swap	1	0.1.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: destruct H0; only 1: reflexivity).	0.291311	5
-Coq.Init.Logic.rew_compose	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H2; only 1: reflexivity).	0.199609	3
+Coq.Init.Logic.rew_swap	1	0.1.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: destruct H0; only 1: reflexivity).	0.278842	5
+Coq.Init.Logic.rew_compose	1	0.0.0	synth with cache (only 1: intros; only 1: destruct H2; only 1: reflexivity).	0.210211	3
 Coq.Init.Logic.eq_id_comm_l	1
 Coq.Init.Logic.eq_id_comm_r	1
-Coq.Init.Logic.eq_refl_map_distr	1	0	synth with cache (only 1: reflexivity).	0.115901	1
-Coq.Init.Logic.eq_trans_map_distr	1	0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e'; only 1: reflexivity).	0.335106	4
-Coq.Init.Logic.eq_sym_map_distr	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.291750	3
-Coq.Init.Logic.eq_trans_sym_distr	1	0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e'; only 1: reflexivity).	0.380865	4
-Coq.Init.Logic.eq_trans_rew_distr	1	0.1.0	synth with cache (only 1: intros; only 1: destruct e'; only 1: reflexivity).	0.326000	4
-Coq.Init.Logic.rew_const	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.294330	3
+Coq.Init.Logic.eq_refl_map_distr	1	0	synth with cache (only 1: reflexivity).	0.155178	1
+Coq.Init.Logic.eq_trans_map_distr	1	0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e'; only 1: reflexivity).	0.353417	4
+Coq.Init.Logic.eq_sym_map_distr	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.227662	3
+Coq.Init.Logic.eq_trans_sym_distr	1	0.0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: destruct e'; only 1: reflexivity).	0.291829	4
+Coq.Init.Logic.eq_trans_rew_distr	1	0.1.0	synth with cache (only 1: intros; only 1: destruct e'; only 1: reflexivity).	0.255764	4
+Coq.Init.Logic.rew_const	1	0.0.0	synth with cache (only 1: intros; only 1: destruct e; only 1: reflexivity).	0.296662	3
 Coq.Init.Logic.unique_existence	1
 Coq.Init.Logic.forall_exists_unique_domain_coincide	1
 Coq.Init.Logic.forall_exists_coincide_unique_domain	1
-Coq.Init.Logic.exists_inhabited	1	0.0	synth with cache (only 1: destruct 1; only 1: auto).	0.375385	2
+Coq.Init.Logic.exists_inhabited	1	0.0	synth with cache (only 1: destruct 1; only 1: auto).	0.175084	2
 Coq.Init.Logic.inhabited_covariant	1
-Coq.Init.Logic.eq_stepl	1	0.1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct 2; only 1: auto).	0.771952	12
+Coq.Init.Logic.eq_stepl	1	0.1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct 2; only 1: auto).	0.785422	12
 Coq.Init.Logic.iff_stepl	1
-Coq.Init.Logic.ex.eq_ex_uncurried	1	0.0.0.0	synth with cache (only 1: destruct pq; only 1: destruct H; only 1: destruct x; only 1: reflexivity).	0.400646	4
-Coq.Init.Logic.ex.rew_ex	1	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	0.522993	3
-Coq.Init.Logic.ex2.eq_ex2_uncurried	1	0.1.0.0.0	synth with cache (only 1: destruct pq; only 1: destruct H; only 1: destruct x; only 1: destruct H0; only 1: reflexivity).	0.646507	6
-Coq.Init.Logic.ex2.rew_ex2	1	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	0.512206	3
-Coq.Logic.ClassicalFacts.prop_degen_ext	1
-Coq.Logic.ClassicalFacts.prop_degen_em	1
-Coq.Logic.ClassicalFacts.prop_ext_em_degen	1
-Coq.Logic.ClassicalFacts.provable_prop_ext	1
-Coq.Logic.ClassicalFacts.prop_ext_A_eq_A_imp_A	1
-Coq.Logic.ClassicalFacts.prop_ext_retract_A_A_imp_A	1
-Coq.Logic.ClassicalFacts.ext_prop_fixpoint	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_gen.aux	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_gen.ext_prop_dep_proof_irrel_gen	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_Prop_Ext_CC.ext_prop_dep_proof_irrel_cc	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_CIC.ext_prop_dep_proof_irrel_cic	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_EM_CC.p2p1	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_EM_CC.p2p2	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_EM_CC.proof_irrelevance_cc	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_WEM_CC.wp2p1	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_WEM_CC.wp2p2	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_WEM_CC.wproof_irrelevance_cc	1
-Coq.Logic.ClassicalFacts.Proof_irrelevance_CCI.proof_irrelevance_cci	1
-Coq.Logic.ClassicalFacts.Weak_proof_irrelevance_CCI.wem_proof_irrelevance_cci	1
-Coq.Logic.ClassicalFacts.excluded_middle_Godel_Dummett	1
-Coq.Logic.ClassicalFacts.Godel_Dummett_iff_right_distr_implication_over_disjunction	1
-Coq.Logic.ClassicalFacts.Godel_Dummett_weak_excluded_middle	1
-Coq.Logic.ClassicalFacts.weak_excluded_middle_iff_classical_de_morgan_law	1
-Coq.Logic.ClassicalFacts.independence_general_premises_right_distr_implication_over_disjunction	1
-Coq.Logic.ClassicalFacts.independence_general_premises_Godel_Dummett	1
-Coq.Logic.ClassicalFacts.independence_general_premises_drinker	1
-Coq.Logic.ClassicalFacts.excluded_middle_independence_general_premises	1
-Coq.Logic.ClassicalFacts.Unrestricted_minimization_entails_excluded_middle.unrestricted_minimization_entails_excluded_middle	1
-Coq.Logic.ClassicalFacts.Excluded_middle_entails_unrestricted_minimization.excluded_middle_entails_unrestricted_minimization	1
-Coq.Logic.ClassicalFacts.Example_of_undecidable_predicate_with_the_minimization_property.undecidable_predicate_with_the_minimization_property	1
-Coq.Logic.ClassicalFacts.representative_boolean_partition_imp_excluded_middle	1
-Coq.Logic.ClassicalFacts.excluded_middle_imp_representative_boolean_partition	1
-Coq.Logic.ClassicalFacts.excluded_middle_iff_representative_boolean_partition	1
-Coq.omega.OmegaLemmas.Zred_factor0	1
-Coq.omega.OmegaLemmas.Zred_factor1	1
-Coq.omega.OmegaLemmas.Zred_factor2	1
-Coq.omega.OmegaLemmas.Zred_factor3	1
-Coq.omega.OmegaLemmas.Zred_factor4	1
-Coq.omega.OmegaLemmas.Zred_factor5	1
-Coq.omega.OmegaLemmas.Zred_factor6	1
-Coq.omega.OmegaLemmas.new_var	1
-Coq.omega.OmegaLemmas.OMEGA1	1
-Coq.omega.OmegaLemmas.OMEGA2	1
-Coq.omega.OmegaLemmas.OMEGA3	1
-Coq.omega.OmegaLemmas.OMEGA4	1
-Coq.omega.OmegaLemmas.OMEGA5	1
-Coq.omega.OmegaLemmas.OMEGA6	1
-Coq.omega.OmegaLemmas.OMEGA7	1
-Coq.omega.OmegaLemmas.OMEGA8	1
-Coq.omega.OmegaLemmas.OMEGA9	1
-Coq.omega.OmegaLemmas.OMEGA10	1
-Coq.omega.OmegaLemmas.OMEGA11	1
-Coq.omega.OmegaLemmas.OMEGA12	1
-Coq.omega.OmegaLemmas.OMEGA13	1
-Coq.omega.OmegaLemmas.OMEGA14	1
-Coq.omega.OmegaLemmas.OMEGA15	1
-Coq.omega.OmegaLemmas.OMEGA16	1
-Coq.omega.OmegaLemmas.OMEGA17	1
-Coq.omega.OmegaLemmas.OMEGA18	1
-Coq.omega.OmegaLemmas.OMEGA19	1
-Coq.omega.OmegaLemmas.OMEGA20	1
-Coq.omega.OmegaLemmas.intro_Z	1
-Coq.Classes.SetoidDec.unit_eqdec_obligation_1	1
-Coq.Classes.SetoidDec.bool_function_eqdec_obligation_1	1
-Coq.Strings.HexString.Raw.to_N_of_pos	1
-Coq.Strings.HexString.to_N_of_N	1
-Coq.Strings.HexString.to_Z_of_Z	1
-Coq.Strings.HexString.to_nat_of_nat	1
-Coq.Strings.HexString.to_pos_of_pos	1
-Coq.NArith.NArith.TestOrder.test	1
-Coq.NArith.Ndist.Nplength_infty	1
-Coq.NArith.Ndist.Nplength_zeros	1
-Coq.NArith.Ndist.Nplength_one	1
-Coq.NArith.Ndist.Nplength_first_one	1
-Coq.NArith.Ndist.ni_min_idemp	1
-Coq.NArith.Ndist.ni_min_comm	1
-Coq.NArith.Ndist.ni_min_assoc	1
-Coq.NArith.Ndist.ni_min_O_l	1
-Coq.NArith.Ndist.ni_min_O_r	1
-Coq.NArith.Ndist.ni_min_inf_l	1
-Coq.NArith.Ndist.ni_min_inf_r	1
-Coq.NArith.Ndist.ni_le_refl	1
-Coq.NArith.Ndist.ni_le_antisym	1
-Coq.NArith.Ndist.ni_le_trans	1
-Coq.NArith.Ndist.ni_le_min_1	1
-Coq.NArith.Ndist.ni_le_min_2	1
-Coq.NArith.Ndist.ni_min_case	1
-Coq.NArith.Ndist.ni_le_total	1
-Coq.NArith.Ndist.ni_le_min_induc	1
-Coq.NArith.Ndist.le_ni_le	1
-Coq.NArith.Ndist.ni_le_le	1
-Coq.NArith.Ndist.Nplength_lb	1
-Coq.NArith.Ndist.Nplength_ub	1
-Coq.NArith.Ndist.Npdist_eq_1	1
-Coq.NArith.Ndist.Npdist_eq_2	1
-Coq.NArith.Ndist.Npdist_comm	1
-Coq.NArith.Ndist.Nplength_ultra_1	1
-Coq.NArith.Ndist.Nplength_ultra	1
-Coq.NArith.Ndist.Npdist_ultra	1
-Coq.QArith.Qround.Qopp_lt_compat	1
-Coq.QArith.Qround.Qfloor_Z	1
-Coq.QArith.Qround.Qceiling_Z	1
-Coq.QArith.Qround.Qfloor_le	1
-Coq.QArith.Qround.Qle_ceiling	1
-Coq.QArith.Qround.Qle_floor_ceiling	1
-Coq.QArith.Qround.Qlt_floor	1
-Coq.QArith.Qround.Qceiling_lt	1
-Coq.QArith.Qround.Qfloor_resp_le	1
-Coq.QArith.Qround.Qceiling_resp_le	1
-Coq.QArith.Qround.Qfloor_comp_Proper	1
-Coq.QArith.Qround.Qceiling_comp_Proper	1
-Coq.QArith.Qround.Zdiv_Qdiv	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.MapsTo_In	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_MapsTo	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_alt	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.MapsTo_1	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_1	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.In_node_iff	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_leaf	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_leaf	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_tree_node	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_tree_node	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_left	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_right	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_left	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_right	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_tree_not_in	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.lt_tree_trans	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_tree_not_in	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.gt_tree_trans	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.empty_bst	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.empty_1	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.is_empty_1	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.is_empty_2	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.mem_1	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.mem_2	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_1	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_2	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_iff	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_in	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.in_find	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_in_iff	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.not_find_iff	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_find	1
-Coq.FSets.FMapAVL.Raw.Proofs.Elt.find_mapsto_equiv	1
+Coq.Init.Logic.ex.eq_ex_uncurried	1	0.0.0.0	synth with cache (only 1: destruct pq; only 1: destruct H; only 1: destruct x; only 1: reflexivity).	0.554118	4
+Coq.Init.Logic.ex.rew_ex	1	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	0.593342	3
+Coq.Init.Logic.ex2.eq_ex2_uncurried	1	0.1.0.0.0	synth with cache (only 1: destruct pq; only 1: destruct H; only 1: destruct x; only 1: destruct H0; only 1: reflexivity).	0.569617	6
+Coq.Init.Logic.ex2.rew_ex2	1	0.0.0	synth with cache (only 1: destruct H; only 1: destruct u; only 1: reflexivity).	0.459657	3
