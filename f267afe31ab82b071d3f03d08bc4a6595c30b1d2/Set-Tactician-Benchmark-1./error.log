@@ -2,33 +2,6 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (3913e72a-a915-36d7-884c-44263b3cd3d6
- (monitor.ml.Error
-  (Sys_error
-   "/lscratch/blaaulas/tmp-scratch6/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev: No such file or directory")
-  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
-Fatal benchmarking error: Initial build did not fully complete
-Fatal benchmarking error: (2e0c43ce-8c58-38e2-ad5b-2863be9cd005
- (monitor.ml.Error
-  (Sys_error
-   "/lscratch/blaaulas/tmp-scratch6/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev: No such file or directory")
-  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
-Fatal benchmarking error: (076eecd4-d527-39c6-7752-1d6a783ee2b4
- (monitor.ml.Error
-  (Sys_error
-   "/lscratch/blaaulas/tmp-scratch6/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev: No such file or directory")
-  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
-Fatal benchmarking error: (6e2d7f53-db2b-39a6-5059-51ca2aad3bfb
- (monitor.ml.Error
-  (Sys_error
-   "/lscratch/blaaulas/tmp-scratch6/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev: No such file or directory")
-  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
-Fatal benchmarking error: Abnormal exit code for command worker: job0 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1866916. Code: 254
+Fatal benchmarking error: Abnormal exit code for coqc: 1
+ Invocation:
+(cd /lscratch/blaaulas/tmp-scratch6/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / /lscratch/blaaulas/tmp-scratch6/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tmp-scratch6/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch6/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tmp-scratch6/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tmp-scratch6/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tmp-scratch6/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record plugins/nsatz/Nsatz.v -l /lscratch/blaaulas/tmp-scratch6/BenchParams.v)
