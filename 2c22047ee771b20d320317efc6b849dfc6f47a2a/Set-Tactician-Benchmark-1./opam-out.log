@@ -8,29 +8,16 @@ coq-tactician-reinforce is now pinned to git+file:///home/lasse/Documents/Projec
 [coq-tactician.8.11.dev] synchronised (no changes)
 
 The following actions will be performed:
-  ∗ install coq                     8.11.dev  [required by coq-tactician, coq-tactician-reinforce]
-  ∗ install coq-tactician           8.11.dev*
-  ∗ install coq-tactician-reinforce ~dev*
-===== ∗ 3 =====
+  ↻ recompile coq-tactician-reinforce ~dev*
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 ⬇ retrieved coq-tactician-reinforce.~dev  (no changes)
-⬇ retrieved coq-tactician.8.11.dev  (no changes)
-⬇ retrieved coq.8.11.dev  (no changes)
-∗ installed coq.8.11.dev
-∗ installed coq-tactician.8.11.dev
+⊘ removed   coq-tactician-reinforce.~dev
 ∗ installed coq-tactician-reinforce.~dev
 Done.
-
-<><> coq-tactician.8.11.dev installed successfully ><><><><><><><><><><><><><><>
-=> --- Tactician was successfully installed ---
-
-   In order to enable Tactician, you should run
-
-   tactician enable
-No modification in switch bench
+Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-build-commands in switch bench
 Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
-No modification in switch bench
+Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field pre-build-commands in switch bench
 Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
 Nothing to do.
 The following actions will be performed:
@@ -44,4 +31,4 @@ The following actions will be performed:
                                            command-line utility will help with this process.
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-tactician-stdlib.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
