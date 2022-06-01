@@ -1,41 +1,176 @@
-Opam has already been initialized.
+Checking for available remotes: rsync and local, git, mercurial.
+  - you won't be able to use darcs repositories unless you install the darcs command on your system.
+
+
+<><> Fetching repository information ><><><><><><><><><><><><><><><><><><><><><>
+[custom-archive] Initialised
+[coq-core-dev] Initialised
+[coq-extra-dev] Initialised
+[coq-released] Initialised
+[default] Initialised
+[coq-tactician.dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician#f267afe31ab82b071d3f03d08bc4a6595c30b1d2)
+coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#f267afe31ab82b071d3f03d08bc4a6595c30b1d2 (version dev)
+
+<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+[coq-tactician.dev] synchronised (no changes)
+
 The following actions will be performed:
-  [31m⊘[0m remove [01mcoq-tactician-stdlib[0m 8.11.dev
+  ∗ install ocaml-options-vanilla 1
+  ∗ install conf-findutils        1        [required by coq]
+  ∗ install base-unix             base     [required by bos, dune]
+  ∗ install ocaml-base-compiler   4.12.1   [required by ocaml]
+  ∗ install conf-git              1.1      [required by coq-tactician]
+  ∗ install base-bigarray         base     [required by opam-core]
+  ∗ install base-threads          base     [required by dune]
+  ∗ install ocaml-config          2        [required by ocaml]
+  ∗ install ocaml                 4.12.1   [required by coq-tactician]
+  ∗ install seq                   base     [required by re]
+  ∗ install ocamlfind             1.9.3    [required by bos, coq]
+  ∗ install ocamlbuild            0.14.1   [required by bos]
+  ∗ install dune                  3.2.0    [required by coq-tactician]
+  ∗ install cmdliner              1.1.1    [required by coq-tactician]
+  ∗ install num                   1.4      [required by coq]
+  ∗ install base-bytes            base     [required by extlib]
+  ∗ install topkg                 1.0.5    [required by bos]
+  ∗ install stdlib-shims          0.3.0    [required by ocamlgraph]
+  ∗ install re                    1.10.4   [required by opam-client]
+  ∗ install pp                    1.1.2    [required by dune-private-libs]
+  ∗ install ordering              3.2.0    [required by dyn, stdune]
+  ∗ install opam-file-format      2.1.4    [required by opam-format]
+  ∗ install csexp                 1.5.1    [required by dune-private-libs]
+  ∗ install cppo                  1.6.9    [required by extlib]
+  ∗ install coq                   8.11.dev [required by coq-tactician]
+  ∗ install rresult               0.7.0    [required by bos]
+  ∗ install fmt                   0.9.0    [required by bos]
+  ∗ install astring               0.8.5    [required by bos]
+  ∗ install ocamlgraph            2.0.0    [required by dose3]
+  ∗ install dyn                   3.2.0    [required by dune-private-libs]
+  ∗ install extlib                1.7.7-1  [required by opam-client]
+  ∗ install logs                  0.7.0    [required by bos]
+  ∗ install fpath                 0.7.3    [required by bos]
+  ∗ install opam-core             2.1.2    [required by opam-format]
+  ∗ install stdune                3.2.0    [required by dune-private-libs]
+  ∗ install cudf                  0.9-1    [required by opam-solver]
+  ∗ install bos                   0.2.1    [required by coq-tactician]
+  ∗ install opam-format           2.1.2    [required by opam-repository, opam-solver]
+  ∗ install dune-private-libs     3.2.0    [required by dune-site]
+  ∗ install mccs                  1.1+14   [required by opam-solver]
+  ∗ install dose3                 5.0.1-1  [required by opam-solver]
+  ∗ install opam-repository       2.1.2    [required by opam-client]
+  ∗ install dune-site             3.2.0    [required by coq-tactician]
+  ∗ install opam-solver           2.1.2    [required by opam-client]
+  ∗ install opam-state            2.1.2    [required by opam-client]
+  ∗ install opam-client           2.1.2    [required by coq-tactician]
+  ∗ install coq-tactician         dev*
+===== ∗ 47 =====
 
-[36m<><>[0m [01mProcessing actions[0m [36m<><><><><><><><><><><><><><><><><><><><><><><><><><><><>[0m
-[KProcessing  1/2: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/2: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/2: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/2: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcoq-tactician-stdlib[0m.8.11.dev  (no changes)
-[KProcessing  2/2: [[32mcoq-tactician-stdlib[0m: make restore][K[31m⊘[0m removed   [01mcoq-tactician-stdlib[0m.8.11.dev
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+∗ installed base-bigarray.base
+∗ installed base-threads.base
+∗ installed base-unix.base
+⬇ retrieved astring.0.8.5  (https://opam.ocaml.org/cache)
+⬇ retrieved cmdliner.1.1.1  (https://opam.ocaml.org/cache)
+⬇ retrieved bos.0.2.1  (https://opam.ocaml.org/cache)
+∗ installed conf-findutils.1
+∗ installed conf-git.1.1
+⬇ retrieved cppo.1.6.9  (https://opam.ocaml.org/cache)
+⬇ retrieved csexp.1.5.1  (https://opam.ocaml.org/cache)
+⬇ retrieved cudf.0.9-1  (https://opam.ocaml.org/cache)
+⬇ retrieved coq-tactician.dev  (no changes)
+⬇ retrieved dose3.5.0.1-1  (https://opam.ocaml.org/cache)
+⬇ retrieved dune.3.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved dune-site.3.2.0  (cached)
+⬇ retrieved dyn.3.2.0  (cached)
+⬇ retrieved dune-private-libs.3.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved extlib.1.7.7-1  (https://opam.ocaml.org/cache)
+⬇ retrieved fmt.0.9.0  (https://opam.ocaml.org/cache)
+⬇ retrieved fpath.0.7.3  (https://opam.ocaml.org/cache)
+⬇ retrieved logs.0.7.0  (https://opam.ocaml.org/cache)
+⬇ retrieved num.1.4  (https://opam.ocaml.org/cache)
+⬇ retrieved mccs.1.1+14  (https://opam.ocaml.org/cache)
+∗ installed ocaml-options-vanilla.1
+⬇ retrieved ocamlbuild.0.14.1  (https://opam.ocaml.org/cache)
+⬇ retrieved ocamlfind.1.9.3  (https://opam.ocaml.org/cache)
+⬇ retrieved ocamlgraph.2.0.0  (https://opam.ocaml.org/cache)
+⬇ retrieved ocaml-base-compiler.4.12.1  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-client.2.1.2  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-file-format.2.1.4  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-format.2.1.2  (cached)
+⬇ retrieved opam-repository.2.1.2  (cached)
+⬇ retrieved opam-solver.2.1.2  (cached)
+⬇ retrieved opam-state.2.1.2  (cached)
+⬇ retrieved ordering.3.2.0  (cached)
+⬇ retrieved pp.1.1.2  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-core.2.1.2  (https://opam.ocaml.org/cache)
+⬇ retrieved re.1.10.4  (https://opam.ocaml.org/cache)
+⬇ retrieved rresult.0.7.0  (https://opam.ocaml.org/cache)
+⬇ retrieved stdlib-shims.0.3.0  (https://opam.ocaml.org/cache)
+⬇ retrieved stdune.3.2.0  (cached)
+⬇ retrieved topkg.1.0.5  (https://opam.ocaml.org/cache)
+⬇ retrieved coq.8.11.dev  (git+https://github.com/LasseBlaauwbroek/coq.git#v8.11-tactician)
+∗ installed ocaml-base-compiler.4.12.1
+∗ installed ocaml-config.2
+∗ installed ocaml.4.12.1
+∗ installed seq.base
+∗ installed cmdliner.1.1.1
+∗ installed ocamlfind.1.9.3
+∗ installed base-bytes.base
+∗ installed num.1.4
+∗ installed ocamlbuild.0.14.1
+∗ installed topkg.1.0.5
+∗ installed rresult.0.7.0
+∗ installed dune.3.2.0
+∗ installed astring.0.8.5
+∗ installed fmt.0.9.0
+∗ installed csexp.1.5.1
+∗ installed stdlib-shims.0.3.0
+∗ installed pp.1.1.2
+∗ installed opam-file-format.2.1.4
+∗ installed ordering.3.2.0
+∗ installed cppo.1.6.9
+∗ installed re.1.10.4
+∗ installed fpath.0.7.3
+∗ installed dyn.3.2.0
+∗ installed logs.0.7.0
+∗ installed ocamlgraph.2.0.0
+∗ installed stdune.3.2.0
+∗ installed extlib.1.7.7-1
+∗ installed bos.0.2.1
+∗ installed dune-private-libs.3.2.0
+∗ installed dune-site.3.2.0
+∗ installed opam-core.2.1.2
+∗ installed cudf.0.9-1
+∗ installed mccs.1.1+14
+∗ installed opam-format.2.1.2
+∗ installed opam-repository.2.1.2
+∗ installed opam-state.2.1.2
+∗ installed dose3.5.0.1-1
+∗ installed opam-solver.2.1.2
+∗ installed opam-client.2.1.2
+∗ installed coq.8.11.dev
+∗ installed coq-tactician.dev
 Done.
-[KProcessing: [[32mcoq-tactician.dev[0m: git][K[KProcessing: [[32mcoq-tactician.dev[0m: git][K[KProcessing: [[32mcoq-tactician.dev[0m: git][K[KProcessing: [[32mcoq-tactician.dev[0m: git][K[[32mcoq-tactician.dev[0m] synchronised (no changes)
-coq-tactician is now pinned to [01mgit+ssh://git@github.com/coq-tactician/coq-tactician#f267afe31ab82b071d3f03d08bc4a6595c30b1d2[0m (version [01mdev[0m)
 
-[36m<><>[0m [01mSynchronising pinned packages[0m [36m><><><><><><><><><><><><><><><><><><><><><><>[0m
-[KProcessing  1/1: [[32mcoq-tactician.dev[0m: git][K[KProcessing  1/1: [[32mcoq-tactician.dev[0m: git][K[KProcessing  1/1: [[32mcoq-tactician.dev[0m: git][K[KProcessing  1/1: [[32mcoq-tactician.dev[0m: git][K[[32mcoq-tactician.dev[0m] synchronised (no changes)
+<><> coq-tactician.dev installed successfully <><><><><><><><><><><><><><><><><>
+=> --- Tactician was successfully installed ---
 
-Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field [04mwrap-build-commands[0m in switch [01mbench[0m
-Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field [04mwrap-build-commands[0m in switch [01mbench[0m
-Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field [04mpre-build-commands[0m in switch [01mbench[0m
-Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field [04mpre-build-commands[0m in switch [01mbench[0m
+   In order to enable Tactician, you should run
+
+   tactician enable
+No modification in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
+No modification in switch bench
+Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
 Nothing to do.
 The following actions will be performed:
-  [32m∗[0m install [01mcoq-tactician-stdlib[0m 8.11.dev 
-          *** WARNING ***
-          This package will overwrite Coq's standard library files.
-          A backup of the original files will be placed under Coq's
-          library directory at user-contrib/tactician-stdlib-backup/
-          and they will be restored when you remove this package.
-          After installation of this package, all other Coq packages
-          also need to be recompiled. Running the 'tactician recompile'
-          command-line utility will help with this process.
+  ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
+                                           This package will overwrite Coq's standard library files.
+                                           A backup of the original files will be placed under Coq's
+                                           library directory at user-contrib/tactician-stdlib-backup/
+                                           and they will be restored when you remove this package.
+                                           After installation of this package, all other Coq packages
+                                           also need to be recompiled. Running the 'tactician recompile'
+                                           command-line utility will help with this process.
 
-[36m<><>[0m [01mProcessing actions[0m [36m<><><><><><><><><><><><><><><><><><><><><><><><><><><><>[0m
-[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcoq-tactician-stdlib[0m.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
-[KProcessing  2/3:                                                            + 1[K[KProcessing  2/3: [[32mcoq-tactician-stdlib[0m: make][K[KProcessing  3/3: [[32mcoq-tactician-stdlib[0m: make install][K[32m∗[0m installed [01mcoq-tactician-stdlib[0m.8.11.dev
-Done.
-
-[36m<><>[0m [01mcoq-tactician-stdlib.8.11.dev installed successfully[0m [36m<><><><><><><><><><><>[0m
-[32m=> [0m--- The standard library was successfully recompiled ---
-
-   In order to finish the process, you should run
-
-   tactician recompile
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
