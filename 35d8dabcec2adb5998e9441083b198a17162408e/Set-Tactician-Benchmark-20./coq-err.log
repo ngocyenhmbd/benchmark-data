@@ -1,0 +1,60 @@
+Traceback (most recent call last):
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/loader/predict_server.py", line 365, in main
+    predict = Predict(Path(args.model).expanduser().absolute())
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/tf2/predict.py", line 47, in __init__
+    self.params = ModelWrapper.get_params_from_checkpoint(checkpoint_dir)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/tf2/model.py", line 773, in get_params_from_checkpoint
+    return ModelParams.from_yaml_file(model_params_file)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/tf2/model_params.py", line 78, in from_yaml_file
+    return ModelParams.from_dict(param_dict)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/api.py", line 72, in from_dict
+    return _decode_dataclass(cls, kvs, infer_missing)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/core.py", line 201, in _decode_dataclass
+    init_kwargs[field.name] = _decode_generic(field_type,
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/core.py", line 273, in _decode_generic
+    res = _decode_dataclass(type_arg, value, infer_missing)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/core.py", line 159, in _decode_dataclass
+    field_value = kvs[field.name]
+KeyError: 'node_type_in_spine'
+Traceback (most recent call last):
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/loader/predict_server.py", line 365, in main
+    predict = Predict(Path(args.model).expanduser().absolute())
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/tf2/predict.py", line 47, in __init__
+    self.params = ModelWrapper.get_params_from_checkpoint(checkpoint_dir)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/tf2/model.py", line 773, in get_params_from_checkpoint
+    return ModelParams.from_yaml_file(model_params_file)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/graph2tac/tf2/model_params.py", line 78, in from_yaml_file
+    return ModelParams.from_dict(param_dict)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/api.py", line 72, in from_dict
+    return _decode_dataclass(cls, kvs, infer_missing)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/core.py", line 201, in _decode_dataclass
+    init_kwargs[field.name] = _decode_generic(field_type,
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/core.py", line 273, in _decode_generic
+    res = _decode_dataclass(type_arg, value, infer_missing)
+  File "/tmp/tmp-scratch/opam-root/target-source/venv/lib/python3.10/site-packages/dataclasses_json/core.py", line 159, in _decode_dataclass
+    field_value = kvs[field.name]
+KeyError: 'node_type_in_spine'
+File "./theories/Init/Logic.v", line 74, characters 4-24:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 69, characters 4-24:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 106, characters 4-16:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 111, characters 4-46:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
