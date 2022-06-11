@@ -6,11 +6,14 @@ Fatal benchmarking error: (monitor.ml.Error
  ("Process.run failed"
   ((prog git)
    (args
-    (clone --depth 0
+    (clone --depth 1
      git+ssh://git@github.com/pestun/graph2tac#35d8dabcec2adb5998e9441083b198a17162408e
      /tmp/tmp-scratch/opam-root/target-source))
    (exit_status (Exit_non_zero 128)) (stdout "")
-   (stderr ("fatal: depth 0 is not a positive number" ""))))
+   (stderr
+    ("Cloning into '/tmp/tmp-scratch/opam-root/target-source'..."
+     "fatal: remote error: " "   is not a valid repository name"
+     "  Visit https://support.github.com/ for help" ""))))
  ("Raised at Opam_build__Opam_benchmark.setup_prerequisites.(fun) in file \"src/opam_build/opam_benchmark.ml\", line 174, characters 15-37"
   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
