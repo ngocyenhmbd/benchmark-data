@@ -2,24 +2,7 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: ((rpc_error
-  (Uncaught_exn
-   ((location "server-side rpc computation")
-    (exn
-     (monitor.ml.Error
-      ("Process.run failed"
-       ((prog git)
-        (args
-         (fetch --depth 1 origin 771682e7083ce44ab4f65d701e41a19721bc2f43))
-        (working_dir /tmp/tmp-scratch/target-source)
-        (exit_status (Exit_non_zero 128)) (stdout "")
-        (stderr
-         ("ssh: Could not resolve hostname github.com: Temporary failure in name resolution\r"
-          "fatal: Could not read from remote repository." ""
-          "Please make sure you have the correct access rights"
-          "and the repository exists." ""))))
-      ("Raised at Dune__exe__Main.Build_worker.T.Functions.prereq_impl.(fun) in file \"src/benchmark/main.ml\", line 393, characters 21-43"
-       "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
-       "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))))))
- (connection_description ("Client connected via TCP" (lasse-work 35315)))
- (rpc_tag rpc_parallel_plain_4) (rpc_version 0))
+Fatal benchmarking error: (monitor.ml.Error ("OpamStd.OpamSys.Exit(40)")
+ ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+  "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+  "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
