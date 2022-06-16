@@ -1,94 +1,29 @@
-  Running command git clone -q 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' /tmp/pip-req-build-j755du7p
+  Running command git clone -q 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' /tmp/pip-req-build-29ug8f1j
   Running command git rev-parse -q --verify 'sha^03b8c1f0e228d10e0f7eea9c70efb892ae849095'
   Running command git fetch -q 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' 03b8c1f0e228d10e0f7eea9c70efb892ae849095
   Running command git checkout -q 03b8c1f0e228d10e0f7eea9c70efb892ae849095
-    ERROR: Command errored out with exit status 1:
-     command: /lscratch/blaaulas/neural-scratch/target-source/venv/bin/python3 -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-req-build-j755du7p/setup.py'"'"'; __file__='"'"'/tmp/pip-req-build-j755du7p/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-nrjqmeaf/install-record.txt --single-version-externally-managed --compile --install-headers /lscratch/blaaulas/neural-scratch/target-source/venv/include/site/python3.9/graph2tac
-         cwd: /tmp/pip-req-build-j755du7p/
-    Complete output (82 lines):
-    running install
-    running build
-    running build_py
-    creating build
-    creating build/lib.linux-x86_64-3.9
-    creating build/lib.linux-x86_64-3.9/nprop
-    copying nprop/utils.py -> build/lib.linux-x86_64-3.9/nprop
-    copying nprop/prover.py -> build/lib.linux-x86_64-3.9/nprop
-    copying nprop/__init__.py -> build/lib.linux-x86_64-3.9/nprop
-    creating build/lib.linux-x86_64-3.9/graph2tac
-    copying graph2tac/printlog.py -> build/lib.linux-x86_64-3.9/graph2tac
-    copying graph2tac/hash.py -> build/lib.linux-x86_64-3.9/graph2tac
-    copying graph2tac/common.py -> build/lib.linux-x86_64-3.9/graph2tac
-    copying graph2tac/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac
-    creating build/lib.linux-x86_64-3.9/nprop/visualization
-    copying nprop/visualization/__init__.py -> build/lib.linux-x86_64-3.9/nprop/visualization
-    creating build/lib.linux-x86_64-3.9/graph2tac/torch
-    copying graph2tac/torch/vizualize_graph.py -> build/lib.linux-x86_64-3.9/graph2tac/torch
-    copying graph2tac/torch/segments.py -> build/lib.linux-x86_64-3.9/graph2tac/torch
-    copying graph2tac/torch/read_graph.py -> build/lib.linux-x86_64-3.9/graph2tac/torch
-    copying graph2tac/torch/main_pt.py -> build/lib.linux-x86_64-3.9/graph2tac/torch
-    copying graph2tac/torch/main.py -> build/lib.linux-x86_64-3.9/graph2tac/torch
-    copying graph2tac/torch/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/torch
-    creating build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/train.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/tasks.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/predict.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/models.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/metrics.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/graph_schema.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/dataset.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    copying graph2tac/tfgnn/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
-    creating build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/train.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/stop_watch.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/segments.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/predict.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/model_params.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/model.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/graph_nn_def_batch.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/graph_nn_batch.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/graph_nn.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/generate.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/datatypes.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/batches.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    copying graph2tac/tf2/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
-    creating build/lib.linux-x86_64-3.9/graph2tac/loader
-    copying graph2tac/loader/predict_server.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
-    copying graph2tac/loader/data_server.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
-    copying graph2tac/loader/unpack.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
-    copying graph2tac/loader/helpers.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
-    copying graph2tac/loader/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
-    running egg_info
-    creating graph2tac.egg-info
-    writing graph2tac.egg-info/PKG-INFO
-    writing dependency_links to graph2tac.egg-info/dependency_links.txt
-    writing entry points to graph2tac.egg-info/entry_points.txt
-    writing requirements to graph2tac.egg-info/requires.txt
-    writing top-level names to graph2tac.egg-info/top_level.txt
-    writing manifest file 'graph2tac.egg-info/SOURCES.txt'
-    reading manifest file 'graph2tac.egg-info/SOURCES.txt'
-    adding license file 'LICENSE'
-    writing manifest file 'graph2tac.egg-info/SOURCES.txt'
-    creating build/lib.linux-x86_64-3.9/graph2tac/loader/clib
-    copying graph2tac/loader/clib/loader.cpp -> build/lib.linux-x86_64-3.9/graph2tac/loader/clib
-    copying graph2tac/loader/clib/graph_api_v11.capnp -> build/lib.linux-x86_64-3.9/graph2tac/loader/clib
-    running build_ext
-    Compiling .capnp files
-    kj/filesystem-disk-unix.c++:1681: warning: PWD environment variable doesn't match current directory; pwd = /lscratch/blaaulas/neural-scratch/target-source
-    kj/filesystem-disk-unix.c++:1681: warning: PWD environment variable doesn't match current directory; pwd = /lscratch/blaaulas/neural-scratch/target-source
-    building 'graph2tac.loader.clib.loader' extension
-    creating build/temp.linux-x86_64-3.9
-    creating build/temp.linux-x86_64-3.9/graph2tac
-    creating build/temp.linux-x86_64-3.9/graph2tac/loader
-    creating build/temp.linux-x86_64-3.9/graph2tac/loader/clib
-    gcc -pthread -B /opt/apps/software/Anaconda3/2021.11/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /opt/apps/software/Anaconda3/2021.11/include -I/opt/apps/software/Anaconda3/2021.11/include -fPIC -O2 -isystem /opt/apps/software/Anaconda3/2021.11/include -fPIC -I/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/numpy/core/include -I/lscratch/blaaulas/neural-scratch/target-source/venv/include -I/opt/apps/software/Anaconda3/2021.11/include/python3.9 -c graph2tac/loader/clib/graph_api_v11.capnp.cpp -o build/temp.linux-x86_64-3.9/graph2tac/loader/clib/graph_api_v11.capnp.o -std=c++17 -O3 -I/opt/local/include -DCAPNP_V=11
-    gcc -pthread -B /opt/apps/software/Anaconda3/2021.11/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -O2 -Wall -fPIC -O2 -isystem /opt/apps/software/Anaconda3/2021.11/include -I/opt/apps/software/Anaconda3/2021.11/include -fPIC -O2 -isystem /opt/apps/software/Anaconda3/2021.11/include -fPIC -I/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/numpy/core/include -I/lscratch/blaaulas/neural-scratch/target-source/venv/include -I/opt/apps/software/Anaconda3/2021.11/include/python3.9 -c graph2tac/loader/clib/loader.cpp -o build/temp.linux-x86_64-3.9/graph2tac/loader/clib/loader.o -std=c++17 -O3 -I/opt/local/include -DCAPNP_V=11
-    graph2tac/loader/clib/loader.cpp:42:10: fatal error: filesystem: No such file or directory
-     #include <filesystem>
-              ^~~~~~~~~~~~
-    compilation terminated.
-    error: command '/opt/apps/software/GCCcore/7.3.0/bin/gcc' failed with exit code 1
-    ----------------------------------------
-ERROR: Command errored out with exit status 1: /lscratch/blaaulas/neural-scratch/target-source/venv/bin/python3 -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-req-build-j755du7p/setup.py'"'"'; __file__='"'"'/tmp/pip-req-build-j755du7p/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-nrjqmeaf/install-record.txt --single-version-externally-managed --compile --install-headers /lscratch/blaaulas/neural-scratch/target-source/venv/include/site/python3.9/graph2tac Check the logs for full command output.
 WARNING: You are using pip version 21.2.3; however, version 22.1.2 is available.
 You should consider upgrading via the '/lscratch/blaaulas/neural-scratch/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+[1;34m[NOTE][0m coq-tactician-stdlib is not installed.
+
+[1;34m[NOTE][0m Package coq-graph2tac is currently pinned to
+       [01mgit+file:///home/blaaulas/tactician/tmp-neural/coq-graph2tac-trained#469e5fe76d3d5d56f7ccf3171e82c7ad5ed43e37[0m
+       (version [01m~dev[0m).
+[31m[ERROR][0m The compilation of coq-graph2tac.~dev failed at "tar xzf model.tar.gz
+        --one-top-level --strip-components 1".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-graph2tac.~dev[0m [31m=================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | pinned(git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#e54edd6598c0ed88e938876edb150410c76f35ba#e54edd65)
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/neural-scratch/opam-root/bench/.opam-switch/build/coq-graph2tac.~dev
+[33m#[0m [33mcommand[0m     /usr/bin/tar xzf model.tar.gz --one-top-level --strip-components 1
+[33m#[0m [33mexit-code[0m   64
+[33m#[0m [33menv-file[0m    /lscratch/blaaulas/neural-scratch/opam-root/log/coq-graph2tac-37922-dfe63e.env
+[33m#[0m [33moutput-file[0m /lscratch/blaaulas/neural-scratch/opam-root/log/coq-graph2tac-37922-dfe63e.out
+[33m### output ###
+[0m[33m# [0m/usr/bin/tar: unrecognized option '--one-top-level'
+[33m# [0mTry `tar --help' or `tar --usage' for more information.
+
+
+The former state can be restored with:
+    /home/blaaulas/.opam/default/bin/tactician-benchmark switch import
+"/lscratch/blaaulas/neural-scratch/opam-root/bench/.opam-switch/backup/state-20220616105509.export"
