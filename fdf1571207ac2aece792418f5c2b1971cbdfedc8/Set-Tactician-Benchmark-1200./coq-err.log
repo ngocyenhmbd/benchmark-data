@@ -1,0 +1,68 @@
+File "./theories/Init/Tactics.v", line 189, characters 0-45:
+Warning:
+now idtac((TacAlias Coq.Init.Tactics.now_#_62200C10 ((TacThen (TacArg (CAst (Reference (CAst t)))) (TacArg (CAst (TacCall Coq.Init.Tactics.easy (CAst Located)))))) (CAst (Tacexp (TacId)))))
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+induction d;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
+
+File "./plugins/ssr/ssrbool.v", line 623, characters 7-26:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./plugins/ssr/ssrbool.v", line 658, characters 7-41:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Structures/OrdersFacts.v", line 182, characters 2-57:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Structures/OrdersFacts.v", line 172, characters 3-96:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Sets/Uniset.v", line 78, characters 0-11:
+Error: Anomaly "Capnp protocol error 1"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Sets/Powerset_facts.v", line 52, characters 4-57:
+Error: Anomaly "Capnp protocol error 1"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 89, characters 0-24:
+Error: Anomaly "Capnp protocol error 1"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Wellfounded/Lexicographic_Product.v", line 62, characters 4-40:
+Error: Anomaly "Capnp protocol error 1"
+Please report at http://coq.inria.fr/bugs/.
+
