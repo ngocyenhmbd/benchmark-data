@@ -1,4 +1,4 @@
-  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' /tmp/pip-req-build-kjnzyrz8
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' /tmp/pip-req-build-e4on22wu
   Running command git rev-parse -q --verify 'sha^03b8c1f0e228d10e0f7eea9c70efb892ae849095'
   Running command git fetch -q 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' 03b8c1f0e228d10e0f7eea9c70efb892ae849095
   Running command git checkout -q 03b8c1f0e228d10e0f7eea9c70efb892ae849095
@@ -75,14 +75,14 @@
       copying graph2tac/loader/clib/graph_api_v11.capnp -> build/lib.linux-x86_64-3.10/graph2tac/loader/clib
       running build_ext
       Compiling .capnp files
-      kj/filesystem-disk-unix.c++:1703: warning: PWD environment variable doesn't match current directory; pwd = /tmp/tactician.tmp.Z4pYgC/target-source
-      kj/filesystem-disk-unix.c++:1703: warning: PWD environment variable doesn't match current directory; pwd = /tmp/tactician.tmp.Z4pYgC/target-source
+      kj/filesystem-disk-unix.c++:1703: warning: PWD environment variable doesn't match current directory; pwd = /tmp/tactician.tmp.raIrbG/target-source
+      kj/filesystem-disk-unix.c++:1703: warning: PWD environment variable doesn't match current directory; pwd = /tmp/tactician.tmp.raIrbG/target-source
       building 'graph2tac.loader.clib.loader' extension
       creating build/temp.linux-x86_64-3.10
       creating build/temp.linux-x86_64-3.10/graph2tac
       creating build/temp.linux-x86_64-3.10/graph2tac/loader
       creating build/temp.linux-x86_64-3.10/graph2tac/loader/clib
-      gcc -pthread -B /home/blaaulas/.conda/envs/graph2tac/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/blaaulas/.conda/envs/graph2tac/include -fPIC -O2 -isystem /home/blaaulas/.conda/envs/graph2tac/include -fPIC -I/tmp/tactician.tmp.Z4pYgC/target-source/venv/lib/python3.10/site-packages/numpy/core/include -I/tmp/tactician.tmp.Z4pYgC/target-source/venv/include -I/home/blaaulas/.conda/envs/graph2tac/include/python3.10 -c graph2tac/loader/clib/graph_api_v11.capnp.cpp -o build/temp.linux-x86_64-3.10/graph2tac/loader/clib/graph_api_v11.capnp.o -std=c++17 -O3 -I/opt/local/include -DCAPNP_V=11
+      gcc -pthread -B /home/blaaulas/.conda/envs/graph2tac/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/blaaulas/.conda/envs/graph2tac/include -fPIC -O2 -isystem /home/blaaulas/.conda/envs/graph2tac/include -fPIC -I/tmp/tactician.tmp.raIrbG/target-source/venv/lib/python3.10/site-packages/numpy/core/include -I/tmp/tactician.tmp.raIrbG/target-source/venv/include -I/home/blaaulas/.conda/envs/graph2tac/include/python3.10 -c graph2tac/loader/clib/graph_api_v11.capnp.cpp -o build/temp.linux-x86_64-3.10/graph2tac/loader/clib/graph_api_v11.capnp.o -std=c++17 -O3 -I/opt/local/include -DCAPNP_V=11
       In file included from graph2tac/loader/clib/graph_api_v11.capnp.cpp:4:
       graph2tac/loader/clib/graph_api_v11.capnp.h:13:2: error: #error "Version mismatch between generated code and library headers.  You must use the same version of the Cap'n Proto compiler and library."
          13 | #error "Version mismatch between generated code and library headers.  You must use the same version of the Cap'n Proto compiler and library."
@@ -854,4 +854,4 @@ error: legacy-install-failure
 note: This is an issue with the package mentioned above, not pip.
 hint: See above for output from the failure.
 WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
-You should consider upgrading via the '/tmp/tactician.tmp.Z4pYgC/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+You should consider upgrading via the '/tmp/tactician.tmp.raIrbG/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
