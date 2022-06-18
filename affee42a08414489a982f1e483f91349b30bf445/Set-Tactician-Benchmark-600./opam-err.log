@@ -1,5 +1,29 @@
-[NOTE] coq-tactician-stdlib is not installed.
+[NOTE] unit-test-prop-chain-5-100 is not installed.
 
 [NOTE] Package coq-tactician-reinforce is already pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#affee42a08414489a982f1e483f91349b30bf445 (version ~dev).
 [NOTE] Package coq-tactician-reinforce is already installed (current version is ~dev).
 [NOTE] Package coq-tactician is already installed (current version is 8.11.dev).
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-06-06 08:30
+# path                 ~/temp-bench/cachedir/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              ~/temp-bench/cachedir/opam-root/bench/bin/tactician exec -- make -j15
+# exit-code            2
+# env-file             ~/temp-bench/cachedir/opam-root/log/coq-tactician-stdlib-1611792-65e5bb.env
+# output-file          ~/temp-bench/cachedir/opam-root/log/coq-tactician-stdlib-1611792-65e5bb.out
+### output ###
+# [...]
+# Linking user-contrib/Tactician/tactician_ssreflect_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ltac1_tactics_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_ltac1_record_plugin.cmxs
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# Error:
+# Anomaly
+# "Uncaught exception Unix.Unix_error(Unix.ECONNREFUSED, "connect", "")."
+# Please report at http://coq.inria.fr/bugs/.
+# 
+# make: *** [Makefile:61: theories/Init/Notations.vo] Error 129
+
