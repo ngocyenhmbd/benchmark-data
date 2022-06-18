@@ -1,0 +1,203 @@
+File "./theories/Init/Tactics.v", line 189, characters 0-45:
+Warning:
+now idtac((TacAlias Coq.Init.Tactics.now_#_62200C10 ((TacThen (TacArg (CAst (Reference (CAst t)))) (TacArg (CAst (TacCall Coq.Init.Tactics.easy (CAst Located)))))) (CAst (Tacexp (TacId)))))
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+    return next(matches).load()
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    return next(matches).load()
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+    module = import_module(match.group('module'))
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    module = import_module(match.group('module'))
+    module = import_module(match.group('module'))
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+File "./theories/Init/Tactics.v", line 206, characters 2-26:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Peano.v", line 49, characters 2-21:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Wf.v", line 36, characters 2-22:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+    module = import_module(match.group('module'))
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+File "./theories/Init/Specif.v", line 230, characters 7-31:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+    module = import_module(match.group('module'))
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+    module = import_module(match.group('module'))
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+    module = import_module(match.group('module'))
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+File "./theories/Init/Logic.v", line 69, characters 4-24:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/bin/g2t-server", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/metadata.py", line 77, in load
+    module = import_module(match.group('module'))
+  File "/opt/apps/software/Anaconda3/2021.11/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 15, in <module>
+    from graph2tac.loader.data_server import DataServer, build_def_index, get_global_def_table, FILE_MULTIPLIER
+  File "/lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/data_server.py", line 26, in <module>
+    from graph2tac.loader.clib.loader import (
+ImportError: /lscratch/blaaulas/neural-scratch/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/clib/loader.cpython-39-x86_64-linux-gnu.so: undefined symbol: _ZSt28__throw_bad_array_new_lengthv
+File "./theories/Init/Specif.v", line 234, characters 7-31:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Datatypes.v", line 78, characters 2-42:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Byte.v", line 815, characters 7-33:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
