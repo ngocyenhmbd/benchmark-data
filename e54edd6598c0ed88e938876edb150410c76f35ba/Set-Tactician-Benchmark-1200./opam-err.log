@@ -1,13 +1,70 @@
-  Running command git clone -q 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' /tmp/pip-req-build-y7xpew99
+  Running command git clone -q 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' /tmp/pip-req-build-dy18gel7
   Running command git rev-parse -q --verify 'sha^03b8c1f0e228d10e0f7eea9c70efb892ae849095'
   Running command git fetch -q 'ssh://****@github.com/LasseBlaauwbroek/graph2tac.git' 03b8c1f0e228d10e0f7eea9c70efb892ae849095
   Running command git checkout -q 03b8c1f0e228d10e0f7eea9c70efb892ae849095
 WARNING: You are using pip version 21.2.3; however, version 22.1.2 is available.
 You should consider upgrading via the '/lscratch/blaaulas/neural-scratch/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
-[1;34m[NOTE][0m coq-tactician-stdlib is not installed.
+[1;34m[NOTE][0m Requirement for system packages capnproto, capnproto-devel and
+       epel-release overridden in this switch. Use `opam option
+       depext-bypass-=capnproto,capnproto-devel,epel-release' to revert.
+[31m[ERROR][0m The compilation of zarith.1.12 failed at "./configure".
+[31m[ERROR][0m The compilation of mirage-crypto-rng.0.10.6 failed at "dune build -p
+        mirage-crypto-rng -j 55".
+[31m[ERROR][0m The compilation of dose3.5.0.1-1 failed at "make printconf".
 
-[1;34m[NOTE][0m Package coq-graph2tac is already pinned to
-       [01mgit+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#e54edd6598c0ed88e938876edb150410c76f35ba[0m
-       (version [01m~dev[0m).
-[1;34m[NOTE][0m Package coq-tactician is already installed (current version is
-       8.11.dev).
+[31m#===[0m [01mERROR[0m [01mwhile compiling zarith.1.12[0m [31m========================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#12fbd9f1
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/neural-scratch/opam-root/bench/.opam-switch/build/zarith.1.12
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/neural-scratch/opam-root/bench/.opam-switch/build/zarith.1.12/./configure
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-21213/zarith-21215-bb7c4a.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-21213/zarith-21215-bb7c4a.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mbinary ocamldoc: found in /lscratch/blaaulas/neural-scratch/opam-root/bench/bin
+[33m# [0mbinary /home/blaaulas/.conda/envs/graph2tac/bin/x86_64-conda-linux-gnu-cc: found
+[33m# [0mbinary ocamlopt: found in /lscratch/blaaulas/neural-scratch/opam-root/bench/bin
+[33m# [0mchecking compilation with /home/blaaulas/.conda/envs/graph2tac/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/blaaulas/.conda/envs/graph2tac/include: working
+[33m# [0minclude caml/mlvalues.h: found
+[33m# [0mlibrary dynlink.cmxa: found
+[33m# [0mbinary ocamlfind: found in /lscratch/blaaulas/neural-scratch/opam-root/bench/bin
+[33m# [0mOCaml's word size is 64
+[33m# [0mbinary uname: found in /usr/bin
+[33m# [0minclude gmp.h: not found
+[33m# [0minclude mpir.h: not found
+[33m# [0mcannot find GMP nor MPIR
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling mirage-crypto-rng.0.10.6[0m [31m===========================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#12fbd9f1
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/neural-scratch/opam-root/bench/.opam-switch/build/mirage-crypto-rng.0.10.6
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/neural-scratch/opam-root/bench/bin/dune build -p mirage-crypto-rng -j 55
+[33m#[0m [33mexit-code[0m   1
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-21213/mirage-crypto-rng-21215-a9a0d1.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-21213/mirage-crypto-rng-21215-a9a0d1.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mmc_getrandom_stubs.c:14:45: error: 'SYS_getrandom' undeclared (first use in this function); did you mean 'raw_getrandom'?
+[33m# [0m   14 | # define getrandom(buf, len, flags) syscall(SYS_getrandom, (buf), (len), (flags))
+[33m# [0m      |                                             ^~~~~~~~~~~~~
+[33m# [0mmc_getrandom_stubs.c:23:9: note: in expansion of macro 'getrandom'
+[33m# [0m   23 |     r = getrandom(data + off, len - off, 0);
+[33m# [0m      |         ^~~~~~~~~
+[33m# [0mmc_getrandom_stubs.c:14:45: note: each undeclared identifier is reported only once for each function it appears in
+[33m# [0m   14 | # define getrandom(buf, len, flags) syscall(SYS_getrandom, (buf), (len), (flags))
+[33m# [0m      |                                             ^~~~~~~~~~~~~
+[33m# [0mmc_getrandom_stubs.c:23:9: note: in expansion of macro 'getrandom'
+[33m# [0m   23 |     r = getrandom(data + off, len - off, 0);
+[33m# [0m      |         ^~~~~~~~~
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling dose3.5.0.1-1[0m [31m======================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#12fbd9f1
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/neural-scratch/opam-root/bench/.opam-switch/build/dose3.5.0.1-1
+[33m#[0m [33mcommand[0m     /usr/bin/make printconf
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-21213/dose3-21215-41d37a.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-21213/dose3-21215-41d37a.out
+[33m### output ###
+[0m[33m# [0mMakefile.config:53: *** missing separator.  Stop.
+
