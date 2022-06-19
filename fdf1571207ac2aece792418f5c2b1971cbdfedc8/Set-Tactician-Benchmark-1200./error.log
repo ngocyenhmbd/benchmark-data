@@ -2,7 +2,7 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
- ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-  "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-  "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
+Fatal benchmarking error: (Unix.Unix_error "Too many open files" pipe
+ "((prog srun) (args (--unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1881606 tactician-benchmark RPC_PARALLEL_WORKER child-of-51781)) (env (Extend ((ASYNC_PARALLEL_IS_CHILD_MACHINE \"\")))))")
+Fatal benchmarking error: Abnormal exit code for command worker: job615 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1881492. Code: 1
+Fatal benchmarking error: Abnormal exit code for command worker: job592 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1881469. Code: 1
