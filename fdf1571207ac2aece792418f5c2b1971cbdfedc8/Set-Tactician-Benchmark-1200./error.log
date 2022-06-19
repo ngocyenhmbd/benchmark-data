@@ -2,63 +2,23 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
+Fatal benchmarking error: ("Process.run failed"
+ ((prog srun)
+  (args
+   (--unbuffered --ntasks=1 --jobid 1882100 rsync -e
+    "rsync-preprocess srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1882139 rsync-preprocess-marker"
+    -qa --exclude opam-root/bench/.opam-switch/sources --exclude
+    opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob --exclude *.aux /lscratch/blaaulas/neural-bib/
+    node-11.cluster:/lscratch/blaaulas/neural-bib/))
+  (exit_status (Exit_non_zero 1)) (stdout "")
+  (stderr
+   ("srun: error: node-02: task 0: Out Of Memory"
+    "slurmstepd: error: Detected 1 oom-kill event(s) in step 1882100.62 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler."
+    ""))))
 Fatal benchmarking error: Initial build did not fully complete
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
-Fatal benchmarking error: Alloc protocol error: Abnormal exit code: 2
+Fatal benchmarking error: Abnormal exit code for build worker on host node-02.cluster. Code: 1
