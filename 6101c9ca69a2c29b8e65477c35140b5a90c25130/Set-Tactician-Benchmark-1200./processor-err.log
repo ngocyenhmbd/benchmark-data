@@ -10,4 +10,6 @@ tactician-benchmark: Job step aborted: Waiting up to 32 seconds for job step to 
 slurmstepd: error: *** STEP 1888258.0 ON node-02 CANCELLED AT 2022-06-20T20:28:48 ***
 tactician-benchmark: error: node-02: task 0: Terminated
 Abnormal exit code for command worker: job1039 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1888258. Code: 143tactician-benchmark: error: node-08: task 0: Terminated
-Abnormal exit code for command worker: job1036 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1888255. Code: 143
+Abnormal exit code for command worker: job1036 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1888255. Code: 143tactician-benchmark: error: node-08: task 0: Out Of Memory
+slurmstepd: error: Detected 1 oom-kill event(s) in step 1888971.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+Abnormal exit code for command worker: job407 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1888971. Code: 1
