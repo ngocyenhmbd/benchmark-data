@@ -2908,3 +2908,578 @@ intros Hf;
        | intropattern subst -> _tmp_tactician4; idtac;
           try clear _tmp_tactician2 ])))
 
+File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros s x y ->
+intros s;
+ (intros x;
+   (intros y;
+     (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+
+File "./theories/MSets/MSetRBT.v", line 1146, characters 1-23:
+Error: Variable l1 should be bound to a tactic.
+
+File "./theories/Reals/RiemannInt.v", line 742, characters 2-159:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./theories/MSets/MSetList.v", line 564, characters 2-56:
+Error: Variable s should be bound to a tactic.
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/MSets/MSetRBT.v", line 1152, characters 1-31:
+Error: Variable x1 should be bound to a tactic.
+
+WARNING:tensorflow:5 out of the last 3201 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7f63bcb2f7f0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/FSets/FMapAVL.v", line 948, characters 1-79:
+Error: Variable e should be bound to a tactic.
+
+WARNING:tensorflow:5 out of the last 13 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7f63bcb2cd30> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f0200d8fd00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/MSets/MSetRBT.v", line 1178, characters 1-23:
+Error: Variable x1 should be bound to a tactic.
+
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f5ee517ea70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f48c85755a0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f01fd88ca60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f21d8115e10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f5ecccc0c10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f48b4b0f7f0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/FSets/FMapAVL.v", line 1005, characters 1-100:
+Error: Variable m1_1 should be bound to a tactic.
+
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f21d957aa70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fbece4b0280> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Reals/RiemannInt.v", line 742, characters 2-159:
+Warning: Tactician's tactical decomposition crashed. Please report.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fbecdee17e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/MSets/MSetInterface.v", line 918, characters 1-42:
+Error: Variable y0 should be bound to a tactic.
+
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f1a36b9dbd0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f1a3503ec20> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros s x y ->
+intros s;
+ (intros x;
+   (intros y;
+     (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+
+File "./theories/Logic/ChoiceFacts.v", line 1102, characters 2-48:
+Error: Variable H should be bound to a tactic.
+
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f1394e56a70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f892d74b5b0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f7e64327d90> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f9d3b104670> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f893eb88f70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f1385c67010> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 305 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7fb00db7ee60> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f7e6bc185e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+WARNING:tensorflow:5 out of the last 13 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7fb00db7d870> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 25 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7fb9fecbf400> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Reals/RiemannInt.v", line 742, characters 2-159:
+Warning: Tactician's tactical decomposition crashed. Please report.
+WARNING:tensorflow:5 out of the last 13 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7fba02bcfd00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f08cef5c160> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/MSets/MSetList.v", line 636, characters 2-28:
+Error: Variable f should be bound to a tactic.
+
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f08e36b8700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+WARNING:tensorflow:5 out of the last 9 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fbb5da769e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Reals/RiemannInt.v", line 742, characters 2-159:
+Warning: Tactician's tactical decomposition crashed. Please report.
+WARNING:tensorflow:6 out of the last 10 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fbb52e35990> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Structures/OrderedType.v", line 404, characters 9-47:
+Error: Variable x should be bound to a tactic.
+
+WARNING:tensorflow:5 out of the last 17 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7fa06a99bf40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fa06cec76d0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7feb78df1000> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fe970a8a320> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fb505334f70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 23 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7f1393453520> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fd6a686b0a0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 69 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7feb601bbf40> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fb504320af0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7feb751d9cf0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f95456e4700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fd6a7c7de10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f2cc7a9d510> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f954ad05bd0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f55bfe545e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f8b994731c0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f2cd0a117e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f9d3c454c10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f55c78d7d00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f9f643e55a0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 7819 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7f0ecaacfbe0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fc2b1d0e3b0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f91eb3be170> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fd32f77d120> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/MSets/MSetList.v", line 646, characters 2-41:
+Error: Variable f should be bound to a tactic.
+
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f91e4c97be0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fc2a1c7c700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fa4d9917b50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f1a9af3bd00> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 8 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fd32b405120> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Structures/OrderedType.v", line 415, characters 2-59:
+Error: Variable t1 should be bound to a tactic.
+
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fa4e36cd870> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f1a9890b5b0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7f931e2525f0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fa050c84700> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_set_def_fn.<locals>.set_def_fn at 0x7fe9524abbe0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 57 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x7fe3329a51b0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
