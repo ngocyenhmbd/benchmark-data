@@ -1,0 +1,23 @@
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: ((rpc_error
+  (Uncaught_exn
+   ((location "server-side rpc computation")
+    (exn
+     (monitor.ml.Error
+      ("Process.run failed"
+       ((prog git)
+        (args
+         (fetch --depth 1 origin 2682d3930e5e19bef9ebad456df03d539e6acabb))
+        (working_dir /tmp/tactician.tmp.wl4K9b/target-source)
+        (exit_status (Exit_non_zero 128)) (stdout "")
+        (stderr
+         ("fatal: remote error: upload-pack: not our ref 2682d3930e5e19bef9ebad456df03d539e6acabb"
+          ""))))
+      ("Raised at Dune__exe__Main.Build_worker.T.Functions.prereq_impl.(fun) in file \"src/benchmark/main.ml\", line 393, characters 21-43"
+       "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
+       "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))))))
+ (connection_description ("Client connected via TCP" (cccxc529 46459)))
+ (rpc_tag rpc_parallel_plain_4) (rpc_version 0))
