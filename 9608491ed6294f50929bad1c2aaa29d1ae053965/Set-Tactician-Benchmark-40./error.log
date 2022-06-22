@@ -2,23 +2,7 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: ((rpc_error
-  (Uncaught_exn
-   ((location "server-side rpc computation")
-    (exn
-     (monitor.ml.Error
-      ("Process.run failed"
-       ((prog git)
-        (args
-         (fetch --depth 1 origin 9608491ed6294f50929bad1c2aaa29d1ae053965))
-        (working_dir /lscratch/blaaulas/tactician.tmp.nXGbZV/target-source)
-        (exit_status (Exit_non_zero 128)) (stdout "")
-        (stderr
-         ("git: 'remote-git+https' is not a git command. See 'git --help'."
-          ""))))
-      ("Raised at Dune__exe__Main.Build_worker.T.Functions.prereq_impl.(fun) in file \"src/benchmark/main.ml\", line 406, characters 21-43"
-       "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
-       "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))))))
- (connection_description
-  ("Client connected via TCP" (node-03.cluster 36226)))
- (rpc_tag rpc_parallel_plain_4) (rpc_version 0))
+Fatal benchmarking error: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+ ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+  "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+  "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
