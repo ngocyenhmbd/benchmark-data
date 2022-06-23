@@ -1,0 +1,22 @@
+File "./theories/Numbers/HexadecimalNat.v", line 111, characters 2-40:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: apply False_rec; only 1: eapply Nat.Private_Tac.lt_irrefl; only 1: clear d; only 1: Nat.induct n; only 1: red; only 1: auto with arith; only 1: Nat.order).
+Typing error:
+Illegal application: 
+The term "lt_le_S" of type "forall n m : nat, n < m -> S n <= m" cannot be applied to the terms
+ "S ?n@{n:=0}" : "nat"
+ "S ?n@{n:=0}" : "nat"
+ "Nat.lt_0_succ ?n@{n:=0}" : "0 < S ?n@{n:=0}"
+The 3rd term has type "0 < S ?n@{n:=0}" which should be coercible to "S
+                                                 ?n@{n:=0} < S ?n@{n:=0}"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Sorting/PermutSetoid.v", line 165, characters 2-75:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtrigo1.v", line 740, characters 2-68:
+Error: Stack overflow.
+
