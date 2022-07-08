@@ -1,4 +1,309 @@
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 716, in main
+    main_loop(reader, sock, predict, args.debug_dir,
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 477, in main_loop
+    online_actions, online_confidences = predict.ranked_predictions(
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 552, in ranked_predictions
+    return self.batch_ranked_predictions(states=[state],
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 527, in batch_ranked_predictions
+    batch_predict_output = self._batch_ranked_predictions(scalar_proofstate_graph=scalar_proofstate_graph,
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 470, in _global_argument_prediction
+    top_k, hidden_graph = self._top_k_tactics(scalar_proofstate_graph=scalar_proofstate_graph,
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 351, in _top_k_tactics
+    hidden_graph = self.prediction_task.gnn(embedded_graph, training=False)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/models.py", line 551, in call
+    embedded_graph = convolution(embedded_graph, training=training)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/graph_update.py", line 235, in call
+    update_fn(graph, node_set_name=node_set_name)))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/graph_update.py", line 417, in call
+    input_from_edge_sets[edge_set_name] = input_fn(
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/convolution_base.py", line 311, in call
+    return self.convolve(
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/convolutions.py", line 126, in convolve
+    messages = self._message_fn(combined_input)
+tensorflow.python.framework.errors_impl.InternalError: Exception encountered when calling layer "dense" (type Dense).
+
+Attempting to perform BLAS operation using StreamExecutor without BLAS support [Op:MatMul]
+
+Call arguments received by layer "dense" (type Dense):
+  • inputs=tf.Tensor(shape=(126, 384), dtype=float32)
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 716, in main
+    main_loop(reader, sock, predict, args.debug_dir,
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 477, in main_loop
+    online_actions, online_confidences = predict.ranked_predictions(
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 552, in ranked_predictions
+    return self.batch_ranked_predictions(states=[state],
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 527, in batch_ranked_predictions
+    batch_predict_output = self._batch_ranked_predictions(scalar_proofstate_graph=scalar_proofstate_graph,
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 470, in _global_argument_prediction
+    top_k, hidden_graph = self._top_k_tactics(scalar_proofstate_graph=scalar_proofstate_graph,
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 351, in _top_k_tactics
+    hidden_graph = self.prediction_task.gnn(embedded_graph, training=False)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/models.py", line 551, in call
+    embedded_graph = convolution(embedded_graph, training=training)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/graph_update.py", line 235, in call
+    update_fn(graph, node_set_name=node_set_name)))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/graph_update.py", line 417, in call
+    input_from_edge_sets[edge_set_name] = input_fn(
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/convolution_base.py", line 311, in call
+    return self.convolve(
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/convolutions.py", line 126, in convolve
+    messages = self._message_fn(combined_input)
+tensorflow.python.framework.errors_impl.InternalError: Exception encountered when calling layer "dense" (type Dense).
+
+Attempting to perform BLAS operation using StreamExecutor without BLAS support [Op:MatMul]
+
+Call arguments received by layer "dense" (type Dense):
+  • inputs=tf.Tensor(shape=(36, 384), dtype=float32)
+File "./theories/Init/Logic.v", line 128, characters 2-108:
+Error: Anomaly "Capnp protocol error 3b"
+Please report at http://coq.inria.fr/bugs/.
+
 File "./theories/Init/Logic.v", line 106, characters 4-16:
+Error: Anomaly "Capnp protocol error 3b"
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+File "./theories/Init/Logic.v", line 74, characters 4-24:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 716, in main
+    main_loop(reader, sock, predict, args.debug_dir,
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 379, in main_loop
+    predict.initialize(global_context)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 232, in initialize
+    self.prediction_task.graph_embedding = self._extend_graph_embedding(self.prediction_task.graph_embedding, new_node_label_num)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 218, in _extend_graph_embedding
+    new_labels = graph_embedding._node_label_num + tf.range(new_node_label_num - graph_embedding._node_label_num)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 7164, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Requires start <= limit when delta > 0: 0/-2 [Op:Range]
+File "./theories/Init/Logic.v", line 162, characters 2-83:
 Error: Anomaly "Capnp protocol error 1"
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+File "./theories/Init/Logic.v", line 111, characters 4-46:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+File "./theories/Init/Logic.v", line 116, characters 4-36:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 135, characters 2-108:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 149, characters 2-110:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 156, characters 2-86:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 142, characters 2-110:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 168, characters 2-45:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 176, characters 2-29:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 184, characters 2-21:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 193, characters 2-21:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 201, characters 2-49:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 206, characters 2-81:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 212, characters 2-87:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 220, characters 2-87:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 227, characters 2-64:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
 
