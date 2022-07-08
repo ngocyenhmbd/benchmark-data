@@ -4,9 +4,6 @@ WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using Mu
 WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
 WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
 WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
-WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
-WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
-WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
 Traceback (most recent call last):
   File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
     sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
@@ -39,45 +36,8 @@ tensorflow.python.framework.errors_impl.InternalError: Exception encountered whe
 Attempting to perform BLAS operation using StreamExecutor without BLAS support [Op:MatMul]
 
 Call arguments received by layer "dense" (type Dense):
-  • inputs=tf.Tensor(shape=(126, 384), dtype=float32)
-Traceback (most recent call last):
-  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
-    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 716, in main
-    main_loop(reader, sock, predict, args.debug_dir,
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 477, in main_loop
-    online_actions, online_confidences = predict.ranked_predictions(
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 552, in ranked_predictions
-    return self.batch_ranked_predictions(states=[state],
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 527, in batch_ranked_predictions
-    batch_predict_output = self._batch_ranked_predictions(scalar_proofstate_graph=scalar_proofstate_graph,
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 470, in _global_argument_prediction
-    top_k, hidden_graph = self._top_k_tactics(scalar_proofstate_graph=scalar_proofstate_graph,
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 351, in _top_k_tactics
-    hidden_graph = self.prediction_task.gnn(embedded_graph, training=False)
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
-    raise e.with_traceback(filtered_tb) from None
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/models.py", line 551, in call
-    embedded_graph = convolution(embedded_graph, training=training)
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/graph_update.py", line 235, in call
-    update_fn(graph, node_set_name=node_set_name)))
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/graph_update.py", line 417, in call
-    input_from_edge_sets[edge_set_name] = input_fn(
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/convolution_base.py", line 311, in call
-    return self.convolve(
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow_gnn/keras/layers/convolutions.py", line 126, in convolve
-    messages = self._message_fn(combined_input)
-tensorflow.python.framework.errors_impl.InternalError: Exception encountered when calling layer "dense" (type Dense).
-
-Attempting to perform BLAS operation using StreamExecutor without BLAS support [Op:MatMul]
-
-Call arguments received by layer "dense" (type Dense):
-  • inputs=tf.Tensor(shape=(36, 384), dtype=float32)
-File "./theories/Init/Logic.v", line 128, characters 2-108:
-Error: Anomaly "Capnp protocol error 3b"
-Please report at http://coq.inria.fr/bugs/.
-
-File "./theories/Init/Logic.v", line 106, characters 4-16:
+  • inputs=tf.Tensor(shape=(31, 384), dtype=float32)
+File "./theories/Init/Logic.v", line 69, characters 4-24:
 Error: Anomaly "Capnp protocol error 3b"
 Please report at http://coq.inria.fr/bugs/.
 
@@ -107,77 +67,158 @@ Please report at http://coq.inria.fr/bugs/.
 Traceback (most recent call last):
   File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
     sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 716, in main
-    main_loop(reader, sock, predict, args.debug_dir,
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 379, in main_loop
-    predict.initialize(global_context)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 232, in initialize
-    self.prediction_task.graph_embedding = self._extend_graph_embedding(self.prediction_task.graph_embedding, new_node_label_num)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 218, in _extend_graph_embedding
-    new_labels = graph_embedding._node_label_num + tf.range(new_node_label_num - graph_embedding._node_label_num)
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
-    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 194, in __init__
+    raise error
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 191, in __init__
+    load_status = checkpoint.restore(save_path=str(available_checkpoints[checkpoint_number]))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/tracking/util.py", line 2537, in restore
+    status = self.read(save_path, options=options)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/tracking/util.py", line 2417, in read
+    result = self._saver.restore(save_path=save_path, options=options)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/tracking/util.py", line 1469, in restore
+    checkpoint=checkpoint, proto_id=0).restore(self._graph_view.root)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/tracking/base.py", line 295, in restore
+    restore_ops = trackable._restore_from_checkpoint_position(self)  # pylint: disable=protected-access
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/tracking/base.py", line 1060, in _restore_from_checkpoint_position
+    current_position.checkpoint.restore_saveables(tensor_saveables,
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/tracking/util.py", line 351, in restore_saveables
+    registered_savers).restore(self.save_path_tensor, self.options)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/saving/functional_saver.py", line 415, in restore
+    restore_ops = restore_fn()
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/saving/functional_saver.py", line 398, in restore_fn
+    restore_ops.update(saver.restore(file_prefix, options))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/saving/functional_saver.py", line 112, in restore
+    restore_ops[saveable.name] = saveable.restore(
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/training/saving/saveable_object_util.py", line 130, in restore
+    assigned_variable = resource_variable_ops.shape_safe_assign_variable_handle(
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 309, in shape_safe_assign_variable_handle
+    return gen_resource_variable_ops.assign_variable_op(
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/ops/gen_resource_variable_ops.py", line 147, in assign_variable_op
+    _ops.raise_from_not_ok_status(e, name)
   File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 7164, in raise_from_not_ok_status
     raise core._status_to_exception(e) from None  # pylint: disable=protected-access
-tensorflow.python.framework.errors_impl.InvalidArgumentError: Requires start <= limit when delta > 0: 0/-2 [Op:Range]
-File "./theories/Init/Logic.v", line 162, characters 2-83:
-Error: Anomaly "Capnp protocol error 1"
-Please report at http://coq.inria.fr/bugs/.
-
-Traceback (most recent call last):
-  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
-    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
-    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
-    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
-    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
-    super().__init__(**kwargs)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
-    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
-    raise e.with_traceback(filtered_tb) from None
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
-    return tf.random.uniform(
-tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
-Traceback (most recent call last):
-  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
-    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
-    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
-    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
-    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
-    super().__init__(**kwargs)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
-    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
-    raise e.with_traceback(filtered_tb) from None
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
-    return tf.random.uniform(
-tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
-Traceback (most recent call last):
-  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
-    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
-    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
-    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
-    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
-    super().__init__(**kwargs)
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
-    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
-    raise e.with_traceback(filtered_tb) from None
-  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
-    return tf.random.uniform(
-tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:AssignVariableOp]
+WARNING:tensorflow:Detecting that an object or model or tf.train.Checkpoint is being deleted with unrestored values. See the following logs for the specific values in question. To silence these warnings, use `status.expect_partial()`. See https://www.tensorflow.org/api_docs/python/tf/train/Checkpoint#restorefor details about the status object returned by the restore function.
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).num_runs
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).trained_epochs
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).save_counter
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.iter
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.beta_1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.beta_2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.decay
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.learning_rate
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).definition_task._definition_head._final_layer.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).definition_task._definition_head._final_layer.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).definition_task._definition_head._hidden_layers.0.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).definition_task._definition_head._hidden_layers.0.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-2.embeddings
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-4._embedding_matrix
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._graph_embedding._edge_embedding.embeddings
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._definition_head._final_layer.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._definition_head._final_layer.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._final_dense.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._final_dense.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-5._final_layer.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-5._final_layer.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._layer_normalization._layer_normalization.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._layer_normalization._layer_normalization.beta
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._definition_head._hidden_layers.0.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._definition_head._hidden_layers.0.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-5._hidden_layers.0.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-5._hidden_layers.0.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.0.cell.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.0.cell.recurrent_kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.0.cell.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.1.cell.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.1.cell.recurrent_kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.1.cell.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-2.embeddings
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-4._embedding_matrix
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._graph_embedding._edge_embedding.embeddings
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._definition_head._final_layer.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._definition_head._final_layer.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._final_dense.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._final_dense.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-5._final_layer.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-5._final_layer.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._layer_normalization._layer_normalization.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._layer_normalization._layer_normalization.beta
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._definition_head._hidden_layers.0.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._definition_head._hidden_layers.0.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-5._hidden_layers.0.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-5._hidden_layers.0.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.0.cell.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.0.cell.recurrent_kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.0.cell.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.1.cell.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.1.cell.recurrent_kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).prediction_task.prediction_model.layer_with_weights-3._rnn_layers.1.cell.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._next_state._residual_block.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._next_state._residual_block.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.0._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.1._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.2._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.3._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.4._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.5._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.6._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._edge_set_inputs.edge._message_fn.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).definition_task._gnn._convolutions.7._node_set_updates.node._edge_set_inputs.edge._message_fn.bias
 File "./theories/Init/Logic.v", line 111, characters 4-46:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
@@ -237,17 +278,99 @@ Traceback (most recent call last):
   File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
     return tf.random.uniform(
 tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+File "./theories/Init/Logic.v", line 106, characters 4-16:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 702, in main
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute())
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 163, in __init__
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    self.prediction_task = PredictionTask.from_yaml_config(graph_constants=dataset.graph_constants(),
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 320, in from_yaml_config
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    return prediction_task_constructor(graph_constants=graph_constants, **task_config)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 527, in __init__
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    super().__init__(**kwargs)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/tasks.py", line 273, in __init__
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+    self.graph_embedding._node_embedding(tf.range(graph_constants.node_label_num))
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/backend.py", line 1920, in random_uniform
+    return tf.random.uniform(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: OOM when allocating tensor with shape[73624,128] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:RandomUniform]
+File "./theories/Init/Logic.v", line 149, characters 2-110:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
 File "./theories/Init/Logic.v", line 116, characters 4-36:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Init/Logic.v", line 135, characters 2-108:
+File "./theories/Init/Logic.v", line 128, characters 2-108:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Init/Logic.v", line 149, characters 2-110:
+File "./theories/Init/Logic.v", line 135, characters 2-108:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
@@ -260,6 +383,11 @@ Please report at http://coq.inria.fr/bugs/.
 File "./theories/Init/Logic.v", line 142, characters 2-110:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 162, characters 2-83:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
 
 File "./theories/Init/Logic.v", line 168, characters 2-45:
@@ -303,6 +431,56 @@ Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
 
 File "./theories/Init/Logic.v", line 227, characters 2-64:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 232, characters 2-55:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 242, characters 2-32:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 247, characters 2-85:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 329, characters 4-21:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 334, characters 4-14:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 379, characters 4-33:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 390, characters 6-26:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 397, characters 6-26:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 404, characters 6-26:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 409, characters 6-26:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
