@@ -2,25 +2,7 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (monitor.ml.Error
- (Unix.Unix_error "No such file or directory" stat
-  /home/fidels/benchmarks/cache/opam-root/repo/state-11ABC690.cache)
+Fatal benchmarking error: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
-Fatal benchmarking error: ("Process.run failed"
- ((prog git)
-  (args
-   (commit -m
-    "benchmark data for git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#b28c6ac7f9a255a2be6a2627c04c83036d040d15"))
-  (working_dir
-   /home/fidels/benchmarks/benchmark-data/b28c6ac7f9a255a2be6a2627c04c83036d040d15/Set-Tactician-Benchmark-1.)
-  (exit_status (Exit_non_zero 128)) (stdout "")
-  (stderr
-   ("" "*** Please tell me who you are." "" Run ""
-    "  git config --global user.email \"you@example.com\""
-    "  git config --global user.name \"Your Name\"" ""
-    "to set your account's default identity."
-    "Omit --global to set the identity only in this repository." ""
-    "fatal: unable to auto-detect email address (got 'fidels@ps3ran1r8.(none)')"
-    ""))))
