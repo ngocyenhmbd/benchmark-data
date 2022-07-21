@@ -1,0 +1,481 @@
+File "./theories/Reals/RiemannInt.v", line 742, characters 2-159:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./plugins/btauto/Algebra.v", line 475, characters 4-59:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (Pos.max (Pos.succ i) i0 = i0) as <-; intuition
+enough (_tmp_tactician0 : Pos.max (Pos.succ i) i0 = i0);
+ [ intropattern subst <- _tmp_tactician0; idtac | .. ]; intuition
+
+File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros s x y ->
+intros s;
+ (intros x;
+   (intros y;
+     (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+
+WARNING:tensorflow:5 out of the last 5 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x15366ab64f70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Logic/WKL.v", line 46, characters 49-62:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros [| ] H
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as [| ];
+   [ .. | intros H; idtac | intros H; idtac ])
+
+File "./theories/Logic/WKL.v", line 49, characters 50-63:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros [| ] H
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as [| ];
+   [ .. | intros H; idtac | intros H; idtac ])
+
+WARNING:tensorflow:5 out of the last 13 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x14dfccd46f70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 15 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x14b15ab4df70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 6 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x15366e776e50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/ZArith/Zcomplements.v", line 67, characters 2-95:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (H : Q (Z.abs p)) by
+ (destruct (Zabs_dec p) as [->| ->]; elim H; auto with zarith)
+enough (H : Q (Z.abs p));
+ [ destruct (Zabs_dec p) as [_tmp_tactician0| _tmp_tactician0];
+    [ ..
+    | intropattern subst -> _tmp_tactician0; idtac
+    | intropattern subst -> _tmp_tactician0; idtac ]; 
+    elim H; auto with zarith
+ | .. ]
+
+File "./theories/ZArith/Zcomplements.v", line 74, characters 4-48:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+destruct (Zabs_dec m) as [_tmp_tactician0| _tmp_tactician0];
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/ZArith/Zcomplements.v", line 77, characters 6-50:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+destruct (Zabs_dec m) as [_tmp_tactician0| _tmp_tactician0];
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+WARNING:tensorflow:5 out of the last 13 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x14dfcd413790> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/ZArith/Zcomplements.v", line 88, characters 2-93:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (Q (Z.abs p)) by
+ (destruct (Zabs_dec p) as [->| ->]; elim H; auto with zarith)
+enough (Q (Z.abs p));
+ [ destruct (Zabs_dec p) as [_tmp_tactician0| _tmp_tactician0];
+    [ ..
+    | intropattern subst -> _tmp_tactician0; idtac
+    | intropattern subst -> _tmp_tactician0; idtac ]; 
+    elim H; auto with zarith
+ | .. ]
+
+File "./theories/ZArith/Zcomplements.v", line 98, characters 6-50:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+destruct (Zabs_dec m) as [_tmp_tactician0| _tmp_tactician0];
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/MSets/MSetList.v", line 420, characters 2-13:
+Error: Variable e should be bound to a tactic.
+
+File "./theories/MSets/MSetRBT.v", line 1152, characters 1-31:
+Error: Variable x1 should be bound to a tactic.
+
+File "./theories/Numbers/DecimalPos.v", line 377, characters 1-73:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Pos.of_uint d) eqn:Hd, (Pos.of_uint d') eqn:Hd'; intros [=]
+destruct (Pos.of_uint d) eqn:Hd; destruct (Pos.of_uint d') eqn:Hd';
+ (intros _tmp_tactician0; (first
+   [ discriminate _tmp_tactician0; idtac
+   | injection _tmp_tactician0 as; idtac
+   | intro_equality_clear _tmp_tactician0; idtac
+   | intro_equality_hnf _tmp_tactician0; idtac ]))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+WARNING:tensorflow:5 out of the last 779 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x14bbfde3d5e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./plugins/rtauto/Bintree.v", line 277, characters 0-28:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros [=H%Pos.succ_not_1]
+intros _tmp_tactician0; (first
+ [ discriminate _tmp_tactician0; idtac
+ | injection _tmp_tactician0 as _tmp_tactician2;
+    (apply Pos.succ_not_1 in _tmp_tactician2 as H; [ idtac | .. ];
+      try clear _tmp_tactician2)
+ | intro_equality_clear _tmp_tactician0; idtac
+ | intro_equality_hnf _tmp_tactician0; idtac ])
+
+File "./theories/Structures/OrderedType.v", line 395, characters 2-69:
+Error: Variable x should be bound to a tactic.
+
+File "./theories/Arith/Between.v", line 160, characters 6-52:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (exists_in_int k (S l)) as (l', [], ?)
+destruct (exists_in_int k (S l)) as (l', _tmp_tactician0, ?);
+ [ .. | destruct _tmp_tactician0 as []; idtac ]
+
+File "./theories/Lists/SetoidList.v", line 1032, characters 0-52:
+Error: Variable a should be bound to a tactic.
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+induction d;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; destruct nzhead;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
+
+WARNING:tensorflow:5 out of the last 5285 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x151b0cdfb9d0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:5 out of the last 13 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x151b0a36eee0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+WARNING:tensorflow:5 out of the last 31 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x14ee1c930c10> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+WARNING:tensorflow:5 out of the last 13 calls to <function ModelWrapper.get_predict_fn.<locals>.pred_fn at 0x14eb62297dc0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+Traceback (most recent call last):
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 660, in main
+    main_loop(reader, sock, predict, args.debug_dir,
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 478, in main_loop
+    log_normal(f'theorem {context_cnt} had {msg_idx} '
+TypeError: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 660, in main
+    main_loop(reader, sock, predict, args.debug_dir,
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 478, in main_loop
+    log_normal(f'theorem {context_cnt} had {msg_idx} '
+TypeError: unsupported format string passed to NoneType.__format__
+Traceback (most recent call last):
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server')())
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 660, in main
+    main_loop(reader, sock, predict, args.debug_dir,
+  File "/tmp/tactician.tmp.jwZDVl/target-source/venv/lib/python3.9/site-packages/graph2tac/loader/predict_server.py", line 478, in main_loop
+    log_normal(f'theorem {context_cnt} had {msg_idx} '
+TypeError: unsupported format string passed to NoneType.__format__
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
