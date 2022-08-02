@@ -8,7 +8,7 @@ Traceback (most recent call last):
     main_loop(reader, sock, predict, args.debug_dir,
   File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 374, in main_loop
     predict.compute_new_definitions([cluster_state])
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 250, in compute_new_definitions
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 251, in compute_new_definitions
     definition_embeddings = self.definition_task(scalar_definition_graph).flat_values
   File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
     raise e.with_traceback(filtered_tb) from None
@@ -26,20 +26,5 @@ Call arguments received by layer "graph_embedding_node_embedding" (type Embeddin
   • inputs=tf.Tensor(shape=(3,), dtype=int64)
 File "./theories/Init/Logic.v", line 69, characters 4-24:
 Error: Anomaly "Capnp protocol error 1"
-Please report at http://coq.inria.fr/bugs/.
-
-File "./theories/Init/Logic.v", line 74, characters 4-24:
-Error:
-Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
-Please report at http://coq.inria.fr/bugs/.
-
-File "./theories/Init/Logic.v", line 106, characters 4-16:
-Error:
-Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
-Please report at http://coq.inria.fr/bugs/.
-
-File "./theories/Init/Logic.v", line 111, characters 4-46:
-Error:
-Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
 
