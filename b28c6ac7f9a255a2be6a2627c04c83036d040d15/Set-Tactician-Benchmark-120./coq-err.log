@@ -4,11 +4,11 @@ WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using Mu
 Traceback (most recent call last):
   File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
     sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
-  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 693, in main
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 699, in main
     main_loop(reader, sock, predict, args.debug_dir,
   File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 374, in main_loop
     predict.compute_new_definitions([cluster_state])
-  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 251, in compute_new_definitions
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 284, in compute_new_definitions
     definition_embeddings = self.definition_task(scalar_definition_graph).flat_values
   File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
     raise e.with_traceback(filtered_tb) from None
