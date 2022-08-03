@@ -1,37 +1,57 @@
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-g2t-server: error: argument --debug-predict: invalid Optional value: '~/debug_test'
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-g2t-server: error: argument --debug-predict: invalid Optional value: '~/debug_test'
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-g2t-server: error: argument --debug-predict: invalid Optional value: '~/debug_test'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 674, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(), debug_dir=args.debug_predict)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 156, in __init__
+    super().__init__(graph_constants=graph_constants, debug_dir=debug_dir)
+  File "/home/fidels/graph2tac/graph2tac/predict.py", line 56, in __init__
+    self._debug_dir.mkdir(exist_ok=True)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1173, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '~/debug_test'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 674, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(), debug_dir=args.debug_predict)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 156, in __init__
+    super().__init__(graph_constants=graph_constants, debug_dir=debug_dir)
+  File "/home/fidels/graph2tac/graph2tac/predict.py", line 56, in __init__
+    self._debug_dir.mkdir(exist_ok=True)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1173, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '~/debug_test'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 674, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(), debug_dir=args.debug_predict)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 156, in __init__
+    super().__init__(graph_constants=graph_constants, debug_dir=debug_dir)
+  File "/home/fidels/graph2tac/graph2tac/predict.py", line 56, in __init__
+    self._debug_dir.mkdir(exist_ok=True)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1173, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '~/debug_test'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 674, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(), debug_dir=args.debug_predict)
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 156, in __init__
+    super().__init__(graph_constants=graph_constants, debug_dir=debug_dir)
+  File "/home/fidels/graph2tac/graph2tac/predict.py", line 56, in __init__
+    self._debug_dir.mkdir(exist_ok=True)
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1173, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '~/debug_test'
 File "./theories/Init/Logic.v", line 106, characters 4-16:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 74, characters 4-24:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
@@ -42,22 +62,6 @@ Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
 
 File "./theories/Init/Logic.v", line 69, characters 4-24:
-Error:
-Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
-Please report at http://coq.inria.fr/bugs/.
-
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-g2t-server: error: argument --debug-predict: invalid Optional value: '~/debug_test'
-File "./theories/Init/Logic.v", line 74, characters 4-24:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
