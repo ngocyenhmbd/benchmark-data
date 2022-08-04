@@ -10,3 +10,55 @@ WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using Mu
 WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
 WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
 WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 679, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 194, in __init__
+    raise ValueError(f'checkpoint number {checkpoint_number} not found')
+ValueError: checkpoint number 698 not found
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 679, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 194, in __init__
+    raise ValueError(f'checkpoint number {checkpoint_number} not found')
+ValueError: checkpoint number 698 not found
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 679, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 194, in __init__
+    raise ValueError(f'checkpoint number {checkpoint_number} not found')
+ValueError: checkpoint number 698 not found
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 679, in main
+    predict = TFGNNPredict(log_dir=Path(args.model).expanduser().absolute(),
+  File "/home/fidels/graph2tac/graph2tac/tfgnn/predict.py", line 194, in __init__
+    raise ValueError(f'checkpoint number {checkpoint_number} not found')
+ValueError: checkpoint number 698 not found
+File "./theories/Init/Logic.v", line 111, characters 4-46:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 69, characters 4-24:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 74, characters 4-24:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 106, characters 4-16:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
+Please report at http://coq.inria.fr/bugs/.
+
