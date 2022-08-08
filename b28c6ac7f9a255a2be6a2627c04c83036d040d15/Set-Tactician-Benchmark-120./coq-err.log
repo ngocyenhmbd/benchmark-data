@@ -1,57 +1,41 @@
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-                  [--checkpoint-number CHECKPOINT_NUMBER]
-g2t-server: error: argument --checkpoint-number: invalid int value: '{0..700..20}'
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-                  [--checkpoint-number CHECKPOINT_NUMBER]
-g2t-server: error: argument --checkpoint-number: invalid int value: '{0..700..20}'
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-                  [--checkpoint-number CHECKPOINT_NUMBER]
-g2t-server: error: argument --checkpoint-number: invalid int value: '{0..700..20}'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 684, in main
+    with Path(args.exclude_tactics).open('r') as yaml_file:
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '~/data/mini_stdlib_always_none.yml'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 684, in main
+    with Path(args.exclude_tactics).open('r') as yaml_file:
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '~/data/mini_stdlib_always_none.yml'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 684, in main
+    with Path(args.exclude_tactics).open('r') as yaml_file:
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '~/data/mini_stdlib_always_none.yml'
+Traceback (most recent call last):
+  File "/home/fidels/miniconda3/envs/graph2tac/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/home/fidels/graph2tac/graph2tac/loader/predict_server.py", line 684, in main
+    with Path(args.exclude_tactics).open('r') as yaml_file:
+  File "/home/fidels/miniconda3/envs/graph2tac/lib/python3.10/pathlib.py", line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '~/data/mini_stdlib_always_none.yml'
 File "./theories/Init/Logic.v", line 111, characters 4-46:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
 
-usage: g2t-server [-h] [--tcp] [--port PORT] [--host HOST] [--model MODEL]
-                  [--arch ARCH] [--test TEST] [--record RECORD]
-                  [--log_level LOG_LEVEL] [--tf_log_level TF_LOG_LEVEL]
-                  [--debug_dir DEBUG_DIR] [--with_meter]
-                  [--total_expand_bound TOTAL_EXPAND_BOUND]
-                  [--tactic_expand_bound TACTIC_EXPAND_BOUND]
-                  [--search_expand_bound SEARCH_EXPAND_BOUND]
-                  [--update_new_definitions] [--update_all_definitions]
-                  [--progress_bar] [--tf_eager] [--temperature TEMPERATURE]
-                  [--debug-predict DEBUG_PREDICT]
-                  [--checkpoint-number CHECKPOINT_NUMBER]
-g2t-server: error: argument --checkpoint-number: invalid int value: '{0..700..20}'
-File "./theories/Init/Logic.v", line 69, characters 4-24:
+File "./theories/Init/Logic.v", line 74, characters 4-24:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
@@ -61,7 +45,7 @@ Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Init/Logic.v", line 74, characters 4-24:
+File "./theories/Init/Logic.v", line 69, characters 4-24:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.ECONNRESET, "read", "")."
 Please report at http://coq.inria.fr/bugs/.
