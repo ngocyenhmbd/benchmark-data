@@ -2,10 +2,29 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (7eee60bd-80ad-36b0-9ede-ce471a7a9440
- (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
-  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+Fatal benchmarking error: (10f1f686-89b5-3317-cf78-256dcca1c9a5
+ (monitor.ml.Error
+  (Invalid_argument
+   "String.chop_suffix_exn \"/tmp/tactician.tmp.oJ8npo/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+  ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
+   "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 136, characters 10-81"
+   "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
 Fatal benchmarking error: Initial build did not fully complete
-Fatal benchmarking error: Abnormal exit code for build worker on host dgx-2.cluster. Code: 254
+Fatal benchmarking error: (a2f3cda5-42c2-3b40-ed09-dfe4966004d6
+ (monitor.ml.Error
+  (Invalid_argument
+   "String.chop_suffix_exn \"/tmp/tactician.tmp.oJ8npo/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+  ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
+   "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 136, characters 10-81"
+   "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
+   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
+Fatal benchmarking error: (314ddd08-1039-35eb-8547-0851e933fd2c
+ (monitor.ml.Error
+  (Invalid_argument
+   "String.chop_suffix_exn \"/tmp/tactician.tmp.oJ8npo/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+  ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
+   "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 136, characters 10-81"
+   "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
+   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
+Fatal benchmarking error: Abnormal exit code for command worker: job24 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1917699. Code: 254
