@@ -2,23 +2,8 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: ("Process.run failed"
- ((prog srun)
-  (args
-   (--unbuffered --ntasks=1 --jobid 1917080 rsync -e
-    "rsync-preprocess srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1917159 rsync-preprocess-marker"
-    -qa --exclude opam-root/bench/.opam-switch/sources --exclude
-    opam-root/bench/.opam-switch/build/coq.* --exclude
-    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
-    opam-root/bench/.opam-switch/build/dune.* --exclude
-    opam-root/bench/.opam-switch/build/dose3.* --exclude
-    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
-    --exclude *.glob --exclude *.aux /tmp/tactician.tmp.VWZWgd/
-    node-05.cluster:/tmp/tactician.tmp.VWZWgd/))
-  (exit_status (Exit_non_zero 24)) (stdout "")
-  (stderr
-   ("file has vanished: \"/tmp/tactician.tmp.VWZWgd/opam-root/bench/.opam-switch/build/coq-reduction-effects.0.1.4/stnMe2zm\""
-    "srun: error: node-05: task 0: Exited with exit code 24"
-    "rsync warning: some files vanished before they could be transferred (code 24) at main.c(1179) [sender=3.1.2]"
-    "srun: error: node-06: task 0: Exited with exit code 24" ""))))
-Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: Termination request received: sigint
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-11.cluster 41160)))
+ (rpc_tag rpc_parallel_plain_4) (rpc_version 0))
