@@ -1,565 +1,162 @@
-Checking for available remotes: rsync and local, git.
-  - you won't be able to use mercurial repositories unless you install the hg command on your system.
-  - you won't be able to use darcs repositories unless you install the darcs command on your system.
+Opam has already been initialized.
+The following actions will be faked:
+  ⊘ remove coq-record-update                0.3.0
+  ⊘ remove coq-vst                          2.11
+  ⊘ remove coq-buchberger                   8.14.0
+  ⊘ remove coq-qcert                        2.2.0
+  ⊘ remove coq-reduction-effects            0.1.4
+  ⊘ remove coq-trakt                        1.1
+  ⊘ remove coq-graph-theory                 0.9.1
+  ⊘ remove coq-goedel                       8.13.0
+  ⊘ remove coq-type-infer                   0.1.0
+  ⊘ remove coq-topology                     10.0.1
+  ⊘ remove coq-coinduction-examples         1.5
+  ⊘ remove coq-inconsequential_modus_ponens 1.0.5
+  ⊘ remove coq-ground                       0.01.0
+  ⊘ remove coq-mathcomp-abel                1.2.0
+  ⊘ remove coq-regexp-brzozowski            1.0
+  ⊘ remove coq-addition-chains              0.9
+  ⊘ remove coq-iterable                     1.0.0
+  ⊘ remove coq-coqtail                      8.14
+  ⊘ remove coq-tree-calculus                1.0.0
+  ⊘ remove coq-http                         0.2.0
+  ⊘ remove coq-coqoban                      8.13.0
+  ⊘ remove coq-quantumlib                   1.1.0
+  ⊘ remove coq-unimath                      20220204
+  ⊘ remove coq-autosubst                    1.7
+  ⊘ remove coq-yalla                        2.0.3
+  ⊘ remove coq-compcert-32                  3.11
+  ⊘ remove coq-formalv-time                 1.0.0
+  ⊘ remove coq-ollibs                       2.0.2
+  ⊘ remove coq-gaia-numbers                 1.14
+  ⊘ remove coq-ordinal                      0.5.2
+  ⊘ remove coq-fiat-crypto                  0.0.13
+  ⊘ remove coq-gappa                        1.5.2
+  ⊘ remove coq-pi-agm                       1.2.6
+  ⊘ remove coq-gaia-hydras                  0.9
+  ⊘ remove coq-itree-extra                  5.0.0
+  ⊘ remove coq-dijkstra                     0.1.0
+  ⊘ remove coq-itauto                       8.15.0
+  ⊘ remove coq-gaia-stern                   1.14
+  ⊘ remove coq-moment                       1.2.1
+  ⊘ remove coq-coq2html                     1.3
+  ⊘ remove bonak                            dev
+  ⊘ remove coq-smpl                         8.15
+  ⊘ remove coq-mathcomp-word                1.1
+  ⊘ remove coq-mtac2                        1.4+8.15
+  ⊘ remove coq-mathcomp-odd-order           1.14.0
+  ⊘ remove coq-monae                        0.4.2
+  ⊘ remove coq-bonsai                       1.0.0
+  ⊘ remove coq-mathcomp-apery               1.0.2
+  ⊘ remove coq-chapar                       8.14.0
+  ⊘ remove coq-coqprime-generator           1.1.1
+  ⊘ remove coq-bbv                          1.3
+  ⊘ remove coq-metalib                      dev
+  ⊘ remove coq-ott                          0.32
+  ⊘ remove coq-hanoi                        1.0.0
+  ⊘ remove coq-metacoq                      1.0+8.15
+  ⊘ remove coq-category-theory              1.0.0
+  ⊘ remove coq-semantics                    8.14.0
+  ⊘ remove coq-commutative-diagrams         0.1
+  ⊘ remove coq-tactician-stdlib             8.15.dev
+  ⊘ remove coq-color                        1.8.2
+  ⊘ remove coq-hammer                       1.3.2+8.15
+  ⊘ remove coq-cds4ltl                      1.0.0
+  ⊘ remove coq-actuary                      2.4
+  ⊘ remove coq-geometric-algebra            0.8.12
+  ⊘ remove coq-poltac                       0.8.12
+  ⊘ remove coq-cfml                         20220112
+  ⊘ remove coq-comp-dec-modal               1.1
+  ⊘ remove coq-htt                          1.0.0
+  ⊘ remove coq-approx-models                1.0
+  ⊘ remove coq-waterproof                   1.1.2
+  ⊘ remove coq-corn                         8.16.0
+  ⊘ remove coq-iris-heap-lang               4.0.0
+  ⊘ remove coq-min-imports                  1.0.2
+  ⊘ remove coq-linearscan                   1.1.0
+  ⊘ remove coq-io-hello-world               1.2.0
+  ⊘ remove coq-dpdgraph                     1.0+8.15
+  ⊘ remove coq-extructures-instances        dev
+  ⊘ remove coq-almost-full                  8.14.0
+  ⊘ remove coq-vst-zlist                    2.11
+  ⊘ remove coq-compcert                     3.11
+  ⊘ remove coq-jsast                        3.0.0
+  ⊘ remove coq-fourcolor                    1.2.4
+  ⊘ remove coq-pocklington                  8.12.0
+  ⊘ remove coq-zorns-lemma                  10.0.1
+  ⊘ remove coq-relation-algebra             1.7.7
+  ⊘ remove coq-coinduction                  1.5
+  ⊘ remove coq-reglang                      1.1.3
+  ⊘ remove coq-async-test                   0.1.0
+  ⊘ remove coq-formalv-check_range          1.0.0
+  ⊘ remove coq-gaia-ordinals                1.14
+  ⊘ remove coq-rupicola                     0.0.4
+  ⊘ remove coq-rewriter                     0.0.2
+  ⊘ remove coq-coqprime                     1.2.0
+  ⊘ remove coq-hydra-battles                0.9
+  ⊘ remove coq-unicoq                       1.6+8.15
+  ⊘ remove coq-infotheo                     0.3.8
+  ⊘ remove coq-mathcomp-algebra-tactics     1.0.0
+  ⊘ remove coq-coqeal                       1.1.1
+  ⊘ remove coq-metacoq-translations         1.0+8.15
+  ⊘ remove coq-metacoq-erasure              1.0+8.15
+  ⊘ remove coq-hammer-tactics               1.3.2+8.15
+  ⊘ remove coq-cfml-stdlib                  20220112
+  ⊘ remove coq-fcsl-pcm                     1.5.1
+  ⊘ remove coq-interval                     4.5.2
+  ⊘ remove coq-math-classes                 8.15.0
+  ⊘ remove coq-iris                         4.0.0
+  ⊘ remove coq-haskell                      1.1.0
+  ⊘ remove coq-io-system                    2.4.1
+  ⊘ remove coq-extructures                  0.3.1
+  ⊘ remove coq-aac-tactics                  8.15.1
+  ⊘ remove coq-quickchick                   1.6.4
+  ⊘ remove coq-json                         0.1.2
+  ⊘ remove coq-itree-io                     0.1.0
+  ⊘ remove coq-formalv-prim63_mathcomp      1.0.0
+  ⊘ remove coq-gaia-theory-of-sets          1.14
+  ⊘ remove coq-gaia-schutte                 1.14
+  ⊘ remove coq-bedrock2                     0.0.1
+  ⊘ remove coq-libhyps                      2.0.5
+  ⊘ remove coq-mathcomp-analysis            0.5.3
+  ⊘ remove coq-mathcomp-zify                1.2.0+1.12+8.13
+  ⊘ remove coq-paramcoq                     1.1.3+coq8.15
+  ⊘ remove coq-mathcomp-real-closed         1.1.3
+  ⊘ remove coq-mathcomp-multinomials        1.5.5
+  ⊘ remove coq-metacoq-safechecker          1.0+8.15
+  ⊘ remove coq-cfml-basis                   20220112
+  ⊘ remove coq-flocq                        4.1.0
+  ⊘ remove coq-coquelicot                   3.2.0
+  ⊘ remove coq-bignums                      8.15.0
+  ⊘ remove coq-stdpp                        1.8.0
+  ⊘ remove coq-list-string                  2.1.2
+  ⊘ remove coq-io-system-ocaml              2.3.1
+  ⊘ remove coq-io                           4.0.0
+  ⊘ remove coq-function-ninjas              1.0.0
+  ⊘ remove coq-deriving                     0.1.0
+  ⊘ remove coq-parsec                       0.1.2
+  ⊘ remove coq-menhirlib                    20220210
+  ⊘ remove coq-simple-io                    1.7.0
+  ⊘ remove coq-itree                        5.0.0
+  ⊘ remove coq-coqutil                      0.0.1
+  ⊘ remove coq-hierarchy-builder            1.3.0
+  ⊘ remove coq-mathcomp-finmap              1.5.2
+  ⊘ remove coq-mathcomp-bigenough           1.0.1
+  ⊘ remove coq-metacoq-pcuic                1.0+8.15
+  ⊘ remove coq-tlc                          20211215
+  ⊘ remove coq-list-plus                    1.1.0
+  ⊘ remove coq-error-handlers               1.2.0
+  ⊘ remove coq-cunit                        1.0.0
+  ⊘ remove coq-ceres                        0.4.0
+  ⊘ remove coq-paco                         4.1.2
+  ⊘ remove coq-ext-lib                      0.11.7
+  ⊘ remove coq-elpi                         1.14.0
+  ⊘ remove coq-metacoq-template             1.0+8.15
+  ⊘ remove coq-equations                    1.3+8.15
+  ⊘ remove coq-hott                         8.15
+===== ⊘ 154 =====
 
-
-<><> Fetching repository information ><><><><><><><><><><><><><><><><><><><><><>
-[coq-core-dev] Initialised
-[coq-extra-dev] Initialised
-[coq-released] Initialised
-[custom-archive] Initialised
-[default] Initialised
-[coq-tactician.dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician#d4767d98caf4d96d71deeeb8b81febe368cd6fbc)
-coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#d4767d98caf4d96d71deeeb8b81febe368cd6fbc (version dev)
-
-<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+Done.
 [coq-tactician.dev] synchronised (no changes)
-
-The following actions will be faked:
-  ∗ install conf-g++               1.0
-  ∗ install conf-findutils         1
-  ∗ install conf-libtool           1
-  ∗ install ocaml-base-compiler    4.11.2
-  ∗ install conf-pkg-config        2
-  ∗ install conf-git               1.1
-  ∗ install conf-gmp               4
-  ∗ install conf-jq                1
-  ∗ install base-bigarray          base
-  ∗ install conf-ruby              1.0.0
-  ∗ install base-unix              base
-  ∗ install base-threads           base
-  ∗ install conf-which             1
-  ∗ install ocaml-config           1
-  ∗ install conf-autoconf          0.1
-  ∗ install ocaml                  4.11.2
-  ∗ install conf-automake          1
-  ∗ install seq                    base
-  ∗ install ocamlfind              1.9.5
-  ∗ install ocamlbuild             0.14.1
-  ∗ install jbuilder               1.0+beta20.2
-  ∗ install dune                   3.4.1
-  ∗ install cmdliner               1.1.1
-  ∗ install gmp-ecm                7.0.3
-  ∗ install zarith                 1.12
-  ∗ install num                    1.4
-  ∗ install calendar               2.04
-  ∗ install base-bytes             base
-  ∗ install wasm                   1.0.1
-  ∗ install uchar                  0.0.2
-  ∗ install topkg                  1.0.5
-  ∗ install stringext              1.6.0
-  ∗ install stdlib-shims           0.3.0
-  ∗ install sexplib0               v0.15.1
-  ∗ install result                 1.5
-  ∗ install re                     1.10.4
-  ∗ install ppx_derivers           1.2.1
-  ∗ install pprint                 20220103
-  ∗ install pp                     1.1.2
-  ∗ install ordering               3.4.1
-  ∗ install opam-file-format       2.1.4
-  ∗ install ocaml-syntax-shims     1.0.0
-  ∗ install ocaml-compiler-libs    v0.12.4
-  ∗ install menhirSdk              20220210
-  ∗ install menhirLib              20220210
-  ∗ install csexp                  1.5.1
-  ∗ install cppo                   1.6.9
-  ∗ install bigstringaf            0.9.0
-  ∗ install bigarray-compat        1.1.0
-  ∗ install coq                    8.15.dev     [required by coq-tactician]
-  ∗ install coq-coqprime-generator 1.1.1
-  ∗ install batteries              3.5.1
-  ∗ install base64                 3.5.0
-  ∗ install rresult                0.7.0
-  ∗ install fmt                    0.9.0
-  ∗ install astring                0.8.5
-  ∗ install ocamlgraph             2.0.0
-  ∗ install dyn                    3.4.1
-  ∗ install ppxlib                 0.27.0
-  ∗ install menhir                 20220210
-  ∗ install dune-configurator      3.4.1
-  ∗ install yojson                 2.0.2
-  ∗ install ocplib-endian          1.2
-  ∗ install extlib                 1.7.7-1
-  ∗ install angstrom               0.15.0
-  ∗ install mmap                   1.2.0
-  ∗ install fpath                  0.7.3
-  ∗ install opam-core              2.1.3
-  ∗ install stdune                 3.4.1
-  ∗ install ppx_deriving           5.2.1
-  ∗ install cfml                   20220112
-  ∗ install js_of_ocaml-compiler   4.0.0
-  ∗ install cudf                   0.10
-  ∗ install uri                    4.2.0
-  ∗ install lwt                    4.5.0
-  ∗ install opam-format            2.1.3
-  ∗ install dune-private-libs      3.4.1
-  ∗ install elpi                   1.15.2
-  ∗ install js_of_ocaml            4.0.0
-  ∗ install mccs                   1.1+14
-  ∗ install dose3                  5.0.1-1
-  ∗ install coq-io-system-ocaml    2.3.1
-  ∗ install opam-repository        2.1.3
-  ∗ install dune-site              3.4.1
-  ∗ install logs                   0.7.0
-  ∗ install js_of_ocaml-ppx        4.0.0
-  ∗ install opam-solver            2.1.3
-  ∗ install opam-state             2.1.3
-  ∗ install bos                    0.2.1
-  ∗ install opam-client            2.1.3
-  ∗ install coq-tactician          dev*
-===== ∗ 91 =====
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-Faking installation of base-bigarray.base
-Faking installation of base-threads.base
-Faking installation of base-unix.base
-Faking installation of conf-findutils.1
-Faking installation of conf-g++.1.0
-Faking installation of conf-git.1.1
-Faking installation of conf-gmp.4
-Faking installation of conf-jq.1
-Faking installation of conf-libtool.1
-Faking installation of conf-pkg-config.2
-Faking installation of conf-ruby.1.0.0
-Faking installation of conf-which.1
-Faking installation of conf-autoconf.0.1
-Faking installation of conf-automake.1
-Faking installation of gmp-ecm.7.0.3
-Faking installation of ocaml-base-compiler.4.11.2
-Faking installation of ocaml-config.1
-Faking installation of ocaml.4.11.2
-Faking installation of cmdliner.1.1.1
-Faking installation of dune.3.4.1
-Faking installation of bigarray-compat.1.1.0
-Faking installation of bigstringaf.0.9.0
-Faking installation of cppo.1.6.9
-Faking installation of csexp.1.5.1
-Faking installation of dune-configurator.3.4.1
-Faking installation of jbuilder.1.0+beta20.2
-Faking installation of menhirLib.20220210
-Faking installation of menhirSdk.20220210
-Faking installation of menhir.20220210
-Faking installation of mmap.1.2.0
-Faking installation of ocaml-compiler-libs.v0.12.4
-Faking installation of ocaml-syntax-shims.1.0.0
-Faking installation of ocamlbuild.0.14.1
-Faking installation of ocamlfind.1.9.5
-Faking installation of base-bytes.base
-Faking installation of base64.3.5.0
-Faking installation of calendar.2.04
-Faking installation of extlib.1.7.7-1
-Faking installation of cudf.0.10
-Faking installation of mccs.1.1+14
-Faking installation of num.1.4
-Faking installation of batteries.3.5.1
-Faking installation of coq-coqprime-generator.1.1.1
-Faking installation of ocplib-endian.1.2
-Faking installation of opam-file-format.2.1.4
-Faking installation of ordering.3.4.1
-Faking installation of pp.1.1.2
-Faking installation of dyn.3.4.1
-Faking installation of pprint.20220103
-Faking installation of cfml.20220112
-Faking installation of ppx_derivers.1.2.1
-Faking installation of result.1.5
-Faking installation of angstrom.0.15.0
-Faking installation of seq.base
-Faking installation of lwt.4.5.0
-Faking installation of coq-io-system-ocaml.2.3.1
-Faking installation of re.1.10.4
-Faking installation of sexplib0.v0.15.1
-Faking installation of stdlib-shims.0.3.0
-Faking installation of ocamlgraph.2.0.0
-Faking installation of dose3.5.0.1-1
-Faking installation of opam-core.2.1.3
-Faking installation of opam-format.2.1.3
-Faking installation of opam-repository.2.1.3
-Faking installation of opam-solver.2.1.3
-Faking installation of opam-state.2.1.3
-Faking installation of opam-client.2.1.3
-Faking installation of ppxlib.0.27.0
-Faking installation of ppx_deriving.5.2.1
-Faking installation of elpi.1.15.2
-Faking installation of stdune.3.4.1
-Faking installation of dune-private-libs.3.4.1
-Faking installation of dune-site.3.4.1
-Faking installation of stringext.1.6.0
-Faking installation of topkg.1.0.5
-Faking installation of astring.0.8.5
-Faking installation of fmt.0.9.0
-Faking installation of fpath.0.7.3
-Faking installation of rresult.0.7.0
-Faking installation of uchar.0.0.2
-Faking installation of uri.4.2.0
-Faking installation of wasm.1.0.1
-Faking installation of yojson.2.0.2
-Faking installation of js_of_ocaml-compiler.4.0.0
-Faking installation of js_of_ocaml.4.0.0
-Faking installation of js_of_ocaml-ppx.4.0.0
-Faking installation of logs.0.7.0
-Faking installation of bos.0.2.1
-Faking installation of zarith.1.12
-Faking installation of coq.8.15.dev
-Faking installation of coq-tactician.dev
-Done.
-
-<><> lwt.4.5.0 installed successfully <><><><><><><><><><><><><><><><><><><><><>
-=> Lwt 5.0.0 will make some breaking changes in December 2019. See
-     https://github.com/ocsigen/lwt/issues/584
-
-<><> coq-tactician.dev installed successfully <><><><><><><><><><><><><><><><><>
-=> --- Tactician was successfully installed ---
-
-   In order to enable Tactician, you should run
-
-   tactician enable
-No modification in switch bench
-Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
-No modification in switch bench
-Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
-The following actions will be faked:
-  ∗ install coq-tactician-stdlib 8.15.dev  *** WARNING ***
-                                           This package will overwrite Coq's standard library files.
-                                           A backup of the original files will be placed under Coq's
-                                           library directory at user-contrib/tactician-stdlib-backup/
-                                           and they will be restored when you remove this package.
-                                           After installation of this package, all other Coq packages
-                                           also need to be recompiled. Running the 'tactician recompile'
-                                           command-line utility will help with this process.
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-Faking installation of coq-tactician-stdlib.8.15.dev
-Done.
-
-<><> coq-tactician-stdlib.8.15.dev installed successfully <><><><><><><><><><><>
-=> --- The standard library was successfully recompiled ---
-
-   In order to finish the process, you should run
-
-   tactician recompile
-The following actions will be faked:
-  ∗ install coq-mathcomp-ssreflect 1.14.0
-  ∗ install coq-mathcomp-fingroup  1.14.0
-  ∗ install coq-mathcomp-algebra   1.14.0
-  ∗ install coq-mathcomp-solvable  1.14.0
-  ∗ install coq-mathcomp-field     1.14.0
-  ∗ install coq-mathcomp-character 1.14.0
-===== ∗ 6 =====
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-Faking installation of coq-mathcomp-ssreflect.1.14.0
-Faking installation of coq-mathcomp-fingroup.1.14.0
-Faking installation of coq-mathcomp-algebra.1.14.0
-Faking installation of coq-mathcomp-solvable.1.14.0
-Faking installation of coq-mathcomp-field.1.14.0
-Faking installation of coq-mathcomp-character.1.14.0
-Done.
-The following actions will be faked:
-  ∗ install coq-jsast                        3.0.0
-  ∗ install coq-error-handlers               1.2.0
-  ∗ install coq-type-infer                   0.1.0
-  ∗ install coq-tree-calculus                1.0.0
-  ∗ install coq-ceres                        0.4.0
-  ∗ install coq-mathcomp-odd-order           1.14.0
-  ∗ install coq-zorns-lemma                  10.0.1
-  ∗ install coq-fcsl-pcm                     1.5.1
-  ∗ install coq-function-ninjas              1.0.0
-  ∗ install coq-ext-lib                      0.11.7
-  ∗ install coq-cds4ltl                      1.0.0
-  ∗ install coq-deriving                     0.1.0
-  ∗ install coq-coqoban                      8.13.0
-  ∗ install coq-ott                          0.32
-  ∗ install coq-list-plus                    1.1.0
-  ∗ install coq-mathcomp-finmap              1.5.2
-  ∗ install coq-buchberger                   8.14.0
-  ∗ install coq-gaia-schutte                 1.14
-  ∗ install coq-paco                         4.1.2
-  ∗ install coq-ground                       0.01.0
-  ∗ install coq-huffman                      8.15.0
-  ∗ install bonak                            dev
-  ∗ install coq-flocq                        4.1.0
-  ∗ install coq-cunit                        1.0.0
-  ∗ install coq-coinduction                  1.5
-  ∗ install coq-haskell                      1.1.0
-  ∗ install coq-hott                         8.15
-  ∗ install coq-tlc                          20211215
-  ∗ install coq-stdpp                        1.8.0
-  ∗ install coq-poltac                       0.8.12
-  ∗ install coq-comp-dec-modal               1.1
-  ∗ install coq-ordinal                      0.5.2
-  ∗ install coq-dpdgraph                     1.0+8.15
-  ∗ install coq-coquelicot                   3.2.0
-  ∗ install coq-unicoq                       1.6+8.15
-  ∗ install coq-dijkstra                     0.1.0
-  ∗ install coq-elpi                         1.14.0
-  ∗ install coq-metalib                      dev
-  ∗ install coq-autosubst                    1.7
-  ∗ install coq-yalla                        2.0.3
-  ∗ install coq-min-imports                  1.0.2
-  ∗ install coq-ollibs                       2.0.2
-  ∗ install coq-reduction-effects            0.1.4
-  ∗ install coq-coqtail                      8.14
-  ∗ install coq-semantics                    8.14.0
-  ∗ install coq-chapar                       8.14.0
-  ∗ install coq-itauto                       8.15.0
-  ∗ install coq-paramcoq                     1.1.3+coq8.15
-  ∗ install coq-rewriter                     0.0.2
-  ∗ install coq-pocklington                  8.12.0
-  ∗ install coq-inconsequential_modus_ponens 1.0.5
-  ∗ install coq-quantumlib                   1.1.0
-  ∗ install coq-aac-tactics                  8.15.1
-  ∗ install coq-almost-full                  8.14.0
-  ∗ install coq-mathcomp-word                1.1
-  ∗ install coq-gaia-stern                   1.14
-  ∗ install coq-smpl                         8.15
-  ∗ install coq-reglang                      1.1.3
-  ∗ install coq-coq2html                     1.3
-  ∗ install coq-hammer-tactics               1.3.2+8.15
-  ∗ install coq-record-update                0.3.0
-  ∗ install coq-menhirlib                    20220210
-  ∗ install coq-gaia-theory-of-sets          1.14
-  ∗ install coq-fourcolor                    1.2.4
-  ∗ install coq-formalv-prim63_mathcomp      1.0.0
-  ∗ install coq-mathcomp-zify                1.2.0+1.12+8.13
-  ∗ install coq-coqutil                      0.0.1
-  ∗ install coq-bignums                      8.15.0
-  ∗ install coq-io                           4.0.0
-  ∗ install coq-vst-zlist                    2.11
-  ∗ install coq-waterproof                   1.1.2
-  ∗ install coq-bbv                          1.3
-  ∗ install coq-mathcomp-bigenough           1.0.1
-  ∗ install coq-geometric-algebra            0.8.12
-  ∗ install coq-unimath                      20220204
-  ∗ install coq-libhyps                      2.0.5
-  ∗ install coq-qcert                        2.2.0
-  ∗ install coq-topology                     10.0.1
-  ∗ install coq-htt                          1.0.0
-  ∗ install coq-iterable                     1.0.0
-  ∗ install coq-simple-io                    1.7.0
-  ∗ install coq-parsec                       0.1.2
-  ∗ install coq-extructures                  0.3.1
-  ∗ install coq-itree                        5.0.0
-  ∗ install coq-gappa                        1.5.2
-  ∗ install coq-list-string                  2.1.2
-  ∗ install coq-linearscan                   1.1.0
-  ∗ install coq-equations                    1.3+8.15
-  ∗ install coq-commutative-diagrams         0.1
-  ∗ install coq-cfml-basis                   20220112
-  ∗ install coq-iris                         4.0.0
-  ∗ install coq-actuary                      2.4
-  ∗ install coq-mtac2                        1.4+8.15
-  ∗ install coq-trakt                        1.1
-  ∗ install coq-hierarchy-builder            1.3.0
-  ∗ install coq-addition-chains              0.9
-  ∗ install coq-relation-algebra             1.7.7
-  ∗ install coq-regexp-brzozowski            1.0
-  ∗ install coq-hammer                       1.3.2+8.15
-  ∗ install coq-compcert-32                  3.11
-  ∗ install coq-compcert                     3.11
-  ∗ install coq-gaia-ordinals                1.14
-  ∗ install coq-formalv-check_range          1.0.0
-  ∗ install coq-mathcomp-algebra-tactics     1.0.0
-  ∗ install coq-bedrock2                     0.0.1
-  ∗ install coq-math-classes                 8.15.0
-  ∗ install coq-interval                     4.5.2
-  ∗ install coq-coqprime                     1.2.0
-  ∗ install coq-color                        1.8.2
-  ∗ install coq-mathcomp-real-closed         1.1.3
-  ∗ install coq-mathcomp-multinomials        1.5.5
-  ∗ install coq-hanoi                        1.0.0
-  ∗ install coq-quickchick                   1.6.4
-  ∗ install coq-json                         0.1.2
-  ∗ install coq-extructures-instances        dev
-  ∗ install coq-itree-io                     0.1.0
-  ∗ install coq-itree-extra                  5.0.0
-  ∗ install coq-moment                       1.2.1
-  ∗ install coq-io-system                    2.4.1
-  ∗ install coq-bonsai                       1.0.0
-  ∗ install coq-metacoq-template             1.0+8.15
-  ∗ install coq-hydra-battles                0.9
-  ∗ install coq-category-theory              1.0.0
-  ∗ install coq-cfml-stdlib                  20220112
-  ∗ install coq-iris-heap-lang               4.0.0
-  ∗ install coq-mathcomp-analysis            0.5.3
-  ∗ install coq-graph-theory                 0.9.1
-  ∗ install coq-coinduction-examples         1.5
-  ∗ install coq-vst                          2.11
-  ∗ install coq-gaia-numbers                 1.14
-  ∗ install coq-formalv-time                 1.0.0
-  ∗ install coq-rupicola                     0.0.4
-  ∗ install coq-corn                         8.16.0
-  ∗ install coq-pi-agm                       1.2.6
-  ∗ install coq-approx-models                1.0
-  ∗ install coq-mathcomp-abel                1.2.0
-  ∗ install coq-coqeal                       1.1.1
-  ∗ install coq-async-test                   0.1.0
-  ∗ install coq-io-hello-world               1.2.0
-  ∗ install coq-metacoq-translations         1.0+8.15
-  ∗ install coq-metacoq-pcuic                1.0+8.15
-  ∗ install coq-goedel                       8.13.0
-  ∗ install coq-gaia-hydras                  0.9
-  ∗ install coq-cfml                         20220112
-  ∗ install coq-infotheo                     0.3.8
-  ∗ install coq-fiat-crypto                  0.0.13
-  ∗ install coq-mathcomp-apery               1.0.2
-  ∗ install coq-http                         0.2.0
-  ∗ install coq-metacoq-safechecker          1.0+8.15
-  ∗ install coq-monae                        0.4.2
-  ∗ install coq-metacoq-erasure              1.0+8.15
-  ∗ install coq-metacoq                      1.0+8.15
-===== ∗ 152 =====
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-Faking installation of bonak.dev
-Faking installation of coq-aac-tactics.8.15.1
-Faking installation of coq-almost-full.8.14.0
-Faking installation of coq-autosubst.1.7
-Faking installation of coq-bbv.1.3
-Faking installation of coq-bignums.8.15.0
-Faking installation of coq-buchberger.8.14.0
-Faking installation of coq-cds4ltl.1.0.0
-Faking installation of coq-ceres.0.4.0
-Faking installation of coq-chapar.8.14.0
-Faking installation of coq-coinduction.1.5
-Faking installation of coq-color.1.8.2
-Faking installation of coq-comp-dec-modal.1.1
-Faking installation of coq-coq2html.1.3
-Faking installation of coq-coqoban.8.13.0
-Faking installation of coq-coqprime.1.2.0
-Faking installation of coq-coqtail.8.14
-Faking installation of coq-coquelicot.3.2.0
-Faking installation of coq-actuary.2.4
-Faking installation of coq-coqutil.0.0.1
-Faking installation of coq-bedrock2.0.0.1
-Faking installation of coq-cunit.1.0.0
-Faking installation of coq-deriving.0.1.0
-Faking installation of coq-dijkstra.0.1.0
-Faking installation of coq-dpdgraph.1.0+8.15
-Faking installation of coq-elpi.1.14.0
-Faking installation of coq-error-handlers.1.2.0
-Faking installation of coq-ext-lib.0.11.7
-Faking installation of coq-extructures.0.3.1
-Faking installation of coq-extructures-instances.dev
-Faking installation of coq-fcsl-pcm.1.5.1
-Faking installation of coq-flocq.4.1.0
-Faking installation of coq-formalv-prim63_mathcomp.1.0.0
-Faking installation of coq-formalv-check_range.1.0.0
-Faking installation of coq-formalv-time.1.0.0
-Faking installation of coq-fourcolor.1.2.4
-Faking installation of coq-function-ninjas.1.0.0
-Faking installation of coq-gaia-schutte.1.14
-Faking installation of coq-gaia-stern.1.14
-Faking installation of coq-gaia-theory-of-sets.1.14
-Faking installation of coq-gaia-ordinals.1.14
-Faking installation of coq-gaia-numbers.1.14
-Faking installation of coq-gappa.1.5.2
-Faking installation of coq-geometric-algebra.0.8.12
-Faking installation of coq-ground.0.01.0
-Faking installation of coq-hammer-tactics.1.3.2+8.15
-Faking installation of coq-hammer.1.3.2+8.15
-Faking installation of coq-haskell.1.1.0
-Faking installation of coq-hierarchy-builder.1.3.0
-Faking installation of coq-hott.8.15
-Faking installation of coq-commutative-diagrams.0.1
-Faking installation of coq-equations.1.3+8.15
-Faking installation of coq-category-theory.1.0.0
-Faking installation of coq-htt.1.0.0
-Faking installation of coq-huffman.8.15.0
-Faking installation of coq-inconsequential_modus_ponens.1.0.5
-Faking installation of coq-interval.4.5.2
-Faking installation of coq-approx-models.1.0
-Faking installation of coq-io.4.0.0
-Faking installation of coq-itauto.8.15.0
-Faking installation of coq-iterable.1.0.0
-Faking installation of coq-jsast.3.0.0
-Faking installation of coq-libhyps.2.0.5
-Faking installation of coq-hydra-battles.0.9
-Faking installation of coq-linearscan.1.1.0
-Faking installation of coq-list-plus.1.1.0
-Faking installation of coq-list-string.2.1.2
-Faking installation of coq-io-system.2.4.1
-Faking installation of coq-io-hello-world.1.2.0
-Faking installation of coq-math-classes.8.15.0
-Faking installation of coq-corn.8.16.0
-Faking installation of coq-mathcomp-bigenough.1.0.1
-Faking installation of coq-mathcomp-finmap.1.5.2
-Faking installation of coq-graph-theory.0.9.1
-Faking installation of coq-hanoi.1.0.0
-Faking installation of coq-mathcomp-analysis.0.5.3
-Faking installation of coq-infotheo.0.3.8
-Faking installation of coq-mathcomp-multinomials.1.5.5
-Faking installation of coq-mathcomp-odd-order.1.14.0
-Faking installation of coq-mathcomp-real-closed.1.1.3
-Faking installation of coq-mathcomp-abel.1.2.0
-Faking installation of coq-mathcomp-word.1.1
-Faking installation of coq-mathcomp-zify.1.2.0+1.12+8.13
-Faking installation of coq-gaia-hydras.0.9
-Faking installation of coq-mathcomp-algebra-tactics.1.0.0
-Faking installation of coq-menhirlib.20220210
-Faking installation of coq-compcert.3.11
-Faking installation of coq-compcert-32.3.11
-Faking installation of coq-metacoq-template.1.0+8.15
-Faking installation of coq-metacoq-pcuic.1.0+8.15
-Faking installation of coq-metacoq-safechecker.1.0+8.15
-Faking installation of coq-metacoq-erasure.1.0+8.15
-Faking installation of coq-metacoq-translations.1.0+8.15
-Faking installation of coq-metacoq.1.0+8.15
-Faking installation of coq-metalib.dev
-Faking installation of coq-min-imports.1.0.2
-Faking installation of coq-moment.1.2.1
-Faking installation of coq-ollibs.2.0.2
-Faking installation of coq-ordinal.0.5.2
-Faking installation of coq-ott.0.32
-Faking installation of coq-paco.4.1.2
-Faking installation of coq-itree.5.0.0
-Faking installation of coq-itree-extra.5.0.0
-Faking installation of coq-paramcoq.1.1.3+coq8.15
-Faking installation of coq-addition-chains.0.9
-Faking installation of coq-coqeal.1.1.1
-Faking installation of coq-mathcomp-apery.1.0.2
-Faking installation of coq-monae.0.4.2
-Faking installation of coq-parsec.0.1.2
-Faking installation of coq-json.0.1.2
-Faking installation of coq-pi-agm.1.2.6
-Faking installation of coq-pocklington.8.12.0
-Faking installation of coq-goedel.8.13.0
-Faking installation of coq-poltac.0.8.12
-Faking installation of coq-qcert.2.2.0
-Faking installation of coq-quantumlib.1.1.0
-Faking installation of coq-record-update.0.3.0
-Faking installation of coq-reduction-effects.0.1.4
-Faking installation of coq-reglang.1.1.3
-Faking installation of coq-regexp-brzozowski.1.0
-Faking installation of coq-relation-algebra.1.7.7
-Faking installation of coq-coinduction-examples.1.5
-Faking installation of coq-rewriter.0.0.2
-Faking installation of coq-rupicola.0.0.4
-Faking installation of coq-fiat-crypto.0.0.13
-Faking installation of coq-semantics.8.14.0
-Faking installation of coq-simple-io.1.7.0
-Faking installation of coq-bonsai.1.0.0
-Faking installation of coq-itree-io.0.1.0
-Faking installation of coq-quickchick.1.6.4
-Faking installation of coq-async-test.0.1.0
-Faking installation of coq-http.0.2.0
-Faking installation of coq-smpl.8.15
-Faking installation of coq-stdpp.1.8.0
-Faking installation of coq-iris.4.0.0
-Faking installation of coq-iris-heap-lang.4.0.0
-Faking installation of coq-tlc.20211215
-Faking installation of coq-cfml-basis.20220112
-Faking installation of coq-cfml-stdlib.20220112
-Faking installation of coq-cfml.20220112
-Faking installation of coq-trakt.1.1
-Faking installation of coq-tree-calculus.1.0.0
-Faking installation of coq-type-infer.0.1.0
-Faking installation of coq-unicoq.1.6+8.15
-Faking installation of coq-mtac2.1.4+8.15
-Faking installation of coq-unimath.20220204
-Faking installation of coq-vst-zlist.2.11
-Faking installation of coq-vst.2.11
-Faking installation of coq-waterproof.1.1.2
-Faking installation of coq-yalla.2.0.3
-Faking installation of coq-zorns-lemma.10.0.1
-Faking installation of coq-topology.10.0.1
-Done.
+coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#d4767d98caf4d96d71deeeb8b81febe368cd6fbc (version dev)
