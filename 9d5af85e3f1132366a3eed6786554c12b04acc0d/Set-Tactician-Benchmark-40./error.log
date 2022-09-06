@@ -1122,3 +1122,9 @@ BASH_FUNC_ml()=() {  eval $($LMOD_DIR/ml_cmd "$@")
 }; export BASH_FUNC_ml();
 (cd /tmp/tactician.tmp.K66Aem/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.15.dev && bwrap --dev-bind / / --dev-bind /dev/null /tmp/tactician.tmp.K66Aem/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.15.dev/theories/Logic/ClassicalFacts.vo /tmp/tactician.tmp.K66Aem/opam-root/bench/bin/coqc -q -I /tmp/tactician.tmp.K66Aem/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/tactician.tmp.K66Aem/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /tmp/tactician.tmp.K66Aem/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /tmp/tactician.tmp.K66Aem/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/tactician.tmp.K66Aem/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Logic/ClassicalFacts.v -l /tmp/tactician.tmp.K66Aem/BenchParams.v)
 Fatal benchmarking error: Initial build did not fully complete
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: Abnormal exit code for command worker: job89 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1919334. Code: 1
+Fatal benchmarking error: Initial build did not fully complete
