@@ -1,0 +1,2901 @@
+File "./theories/Program/Wf.v", line 245, characters 4-50:
+Error: Anomaly "in retyping: unbound local variable."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros H x0; only 1: destruct 1; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+H : Stream
+x0 : Stream
+H0 : EqSt H x0
+e : hd H = hd x0
+e0 : EqSt (tl H) (tl x0)
+H1 : hd H = hd x0
+H2 : EqSt (tl H) (tl x0)
+EqSt_reflex : EqSt x0 H
+Invalid recursive call in the argument of "match" in "match EqSt_reflex with
+                                                 | eqst _ _ x x1 =>
+                                                 (fun 
+                                                 (_ : hd x0 = hd H)
+                                                 (H : EqSt (tl x0) (tl H)) =>
+                                                 H) x x1
+                                                 end".
+Recursive definition is: "eqst x0 H
+                            (match
+                               H as s
+                               return
+                                 (hd s = hd x0 ->
+                                  EqSt (tl s) (tl x0) -> hd x0 = hd s)
+                             with
+                             | Cons a s =>
+                                 (fun (a0 : A) (H : Stream)
+                                    (H0 : hd (Cons a0 H) = hd x0)
+                                    (_ : EqSt (tl (Cons a0 H)) (tl x0)) =>
+                                  eq_sym H0) a s
+                             end H1 H2)
+                            (let H2 : EqSt (tl x0) (tl H) :=
+                               match EqSt_reflex with
+                               | eqst _ _ x x1 =>
+                                   (fun (_ : hd x0 = hd H)
+                                      (H : EqSt (tl x0) (tl H)) => H) x x1
+                               end in
+                             H2)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/ExtensionalityFacts.v", line 131, characters 2-17:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/HexadecimalNat.v", line 111, characters 2-40:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: apply False_rec; only 1: eapply Nat.Private_Tac.lt_irrefl; only 1: clear d; only 1: Nat.induct n; only 1: red; only 1: auto with arith; only 1: Nat.order).
+Typing error:
+Illegal application: 
+The term "lt_le_S" of type "forall n m : nat, n < m -> S n <= m" cannot be applied to the terms
+ "S ?n@{n:=0}" : "nat"
+ "S ?n@{n:=0}" : "nat"
+ "Nat.lt_0_succ ?n@{n:=0}" : "0 < S ?n@{n:=0}"
+The 3rd term has type "0 < S ?n@{n:=0}" which should be coercible to "S
+                                                 ?n@{n:=0} < S ?n@{n:=0}"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Abstract/ConstructiveAbs.v", line 103, characters 2-9:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 167, characters 0-31:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros r s; only 1: coinduction ltac:(EqSt_reflex); only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+P, Inv : Stream -> Prop
+InvThenP : forall x : Stream, Inv x -> P x
+InvIsStable : forall x : Stream, Inv x -> Inv (tl x)
+r : Stream
+s : Inv r
+EqSt_reflex : ForAll r
+Invalid recursive call in the argument of "match" in "match EqSt_reflex with
+                                                 | HereAndFurther x x0 =>
+                                                 (fun 
+                                                 (_ : P r)
+                                                 (H : ForAll (tl r)) => H) x
+                                                 x0
+                                                 end".
+Recursive definition is: "HereAndFurther (InvThenP s)
+                            (let H : ForAll (tl r) :=
+                               match EqSt_reflex with
+                               | HereAndFurther x x0 =>
+                                   (fun (_ : P r) (H : ForAll (tl r)) => H) x
+                                     x0
+                               end in
+                             H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Sorting/PermutSetoid.v", line 165, characters 2-75:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./src/bbv/Nomega.v", line 8, characters 0-157:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./src/bbv/Nomega.v", line 33, characters 2-27:
+Error:
+Anomaly
+"Constant bbv.Nomega.legacy_pe_subproof does not appear in the environment."
+Please report at http://coq.inria.fr/bugs/.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 11, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 11, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 15, characters 9-29:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 21, characters 47-67:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 25, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 25, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 29, characters 9-29:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 35, characters 47-67:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 39, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 39, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 43, characters 9-29:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 49, characters 47-67:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 53, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 53, characters 41-61:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 57, characters 9-29:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 63, characters 47-67:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 82, characters 4-24:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 82, characters 43-63:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 83, characters 4-24:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 83, characters 43-63:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 84, characters 4-24:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 84, characters 43-63:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 85, characters 4-24:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-coqutil.0.0.1/src/coqutil/Word/ZifyLittleEndian.v", line 85, characters 43-63:
+Warning: Notation combine is deprecated.
+Use coqutil.Word.LittleEndianList.le_combine.
+[deprecated-syntactic-definition,deprecated]
+File "./theories/kempe.v", line 6, characters 0-89:
+Warning:
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_is_scycle;
+                   scycle_ucycle] : scycle_planar_bridgeless_plain_quasicubic_connected >-> ucycle is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_base;
+ ucycle_plain_quasicubic_connected_base; ucycle_plain_quasicubic_is_ucycle] : scycle_planar_bridgeless_plain_quasicubic_connected >-> ucycle.
+[ambiguous-paths,typechecker]
+File "./theories/kempe.v", line 6, characters 0-89:
+Warning:
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_base;
+                   planar_bridgeless_plain_base; planar_bridgeless_is_planar] : scycle_planar_bridgeless_plain_quasicubic_connected >-> planar is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_is_planar] : scycle_planar_bridgeless_plain_quasicubic_connected >-> planar.
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_base;
+                   planar_bridgeless_plain_is_plain] : scycle_planar_bridgeless_plain_quasicubic_connected >-> plain is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_base;
+ ucycle_plain_quasicubic_connected_base; ucycle_plain_quasicubic_base;
+ plain_quasicubic_is_plain] : scycle_planar_bridgeless_plain_quasicubic_connected >-> plain.
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_is_connected] : scycle_planar_bridgeless_plain_quasicubic_connected >-> connected is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_base;
+ ucycle_plain_quasicubic_connected_is_connected] : scycle_planar_bridgeless_plain_quasicubic_connected >-> connected.
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_base;
+                   planar_bridgeless_plain_base;
+                   planar_bridgeless_is_bridgeless] : scycle_planar_bridgeless_plain_quasicubic_connected >-> bridgeless is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_is_bridgeless] : scycle_planar_bridgeless_plain_quasicubic_connected >-> bridgeless.
+[ambiguous-paths,typechecker]
+File "./theory/setoids.v", line 1, characters 0-85:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theory/setoids.v", line 1, characters 0-85:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/Series.v", line 24, characters 0-51:
+Warning:
+New coercion path [real; Finite] : Rbar >-> Rbar is not definitionally an identity function.
+[ambiguous-paths,typechecker]
+File "./theories/Classes/orders/sum.v", line 20, characters 0-18:
+Error: not found in table: core.eq.type
+
+File "./theories/kempe.v", line 56, characters 0-73:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theory/setoids.v", line 7, characters 0-131:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./categories/algebras.v", line 2, characters 0-164:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./categories/algebras.v", line 2, characters 0-164:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./categories/algebras.v", line 2, characters 0-164:
+Warning:
+New coercion path [et_laws] : EquationalTheory >-> Funclass is ambiguous with existing 
+[et_sig; operation_type] : EquationalTheory >-> Funclass.
+[ambiguous-paths,typechecker]
+File "./theory/setoids.v", line 10, characters 0-119:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./categories/algebras.v", line 16, characters 0-94:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./categories/algebras.v", line 17, characters 0-30:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./categories/algebras.v", line 18, characters 0-32:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./pcm/unionmap.v", line 137, characters 0-52:
+Error: The reference DSik was not found in the current environment.
+
+File "./theory/lattices.v", line 1, characters 0-83:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theory/lattices.v", line 1, characters 0-83:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/kempe.v", line 80, characters 0-74:
+Error: The reference DSik was not found in the current environment.
+
+File "./theory/lattices.v", line 6, characters 0-66:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/lattices.v", line 9, characters 0-84:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/kempe.v", line 80, characters 0-74:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/kempe.v", line 80, characters 0-74:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/kempe.v", line 80, characters 0-74:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/kempe.v", line 102, characters 0-65:
+Error: Anomaly "Evar ?X21488 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./Util/Relation/SN.v", line 33, characters 0-59:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/setoids.v", line 30, characters 0-28:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/setoids.v", line 31, characters 0-28:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./paco14.v", line 75, characters 2-20:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro H; only 1: intros A B C Hl Hr; only 1: intros; only 1: constructor; only 1: eapply paco_mult_strong; only 1: paco_cofix_auto).
+Typing error:
+Recursive definition of CIH is ill-formed.
+In environment
+T0 : Type
+T1 : T0 -> Type
+T2 : forall x0 : T0, T1 x0 -> Type
+T3 : forall (x0 : T0) (x1 : T1 x0), T2 x1 -> Type
+T4 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1), T3 x2 -> Type
+T5 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2), T4 x3 -> Type
+T6 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) (x4 : T4 x3),
+     T5 x4 -> Type
+T7 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4), T6 x5 -> Type
+T8 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5), T7 x6 -> Type
+T9 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6), 
+     T8 x7 -> Type
+T10 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7), T9 x8 -> Type
+T11 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8), T10 x9 -> Type
+T12 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9), 
+      T11 x10 -> Type
+T13 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10),
+      T12 x11 -> Type
+gf,
+gf' : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 ->
+      rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+r,
+r' : forall (x : T0) (x0 : T1 x) (x1 : T2 x0) (x2 : T3 x1) 
+       (x3 : T4 x2) (x4 : T5 x3) (x5 : T6 x4) (x6 : T7 x5) 
+       (x7 : T8 x6) (x8 : T9 x7) (x9 : T10 x8) (x10 : T11 x9) 
+       (x11 : T12 x10), T13 x11 -> Prop
+LEgf : forall (x0 : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13)
+         (x1 : T0) (x2 : T1 x1) (x3 : T2 x2) (x4 : T3 x3) 
+         (x5 : T4 x4) (x6 : T5 x5) (x7 : T6 x6) (x8 : T7 x7) 
+         (x9 : T8 x8) (x10 : T9 x9) (x11 : T10 x10) 
+         (x12 : T11 x11) (x13 : T12 x12) (x14 : T13 x13),
+       (gf x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 : Prop) ->
+       gf' x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 : Prop
+LEr : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10)
+        (x12 : T12 x11) (x13 : T13 x12),
+      (r x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop) ->
+      r' x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop
+H : T0
+A : T1 H
+B : T2 A
+C : T3 B
+Hl : T4 C
+Hr : T5 Hl
+x6 : T6 Hr
+x7 : T7 x6
+x8 : T8 x7
+x9 : T9 x8
+x10 : T10 x9
+x11 : T11 x10
+x12 : T12 x11
+x13 : T13 x12
+PR : paco14 gf r H A B C Hl Hr x6 x7 x8 x9 x10 x11 x12 x13
+H0 :=
+fun (T0 : Type) (gf : rel1 T0 -> rel1 T0) (r : rel1 T0) 
+  (x0 : T0) (PR : paco gf (upaco gf r) x0) =>
+paco_observe (paco_mult_strong gf r x0 PR) :
+forall (T0 : Type) (gf : rel1 T0 -> rel1 T0) (r : rel1 T0) (x0 : T0),
+paco gf (upaco gf r) x0 -> _paco gf (paco gf) r x0
+CIH :
+paco
+  (fun R0 : rel1 (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13) =>
+   uncurry14 (gf' (curry14 R0)))
+  (upaco
+     (fun R0 : rel1 (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13) =>
+      uncurry14 (gf' (curry14 R0))) (uncurry14 r'))
+  {|
+    proj14T0 := H;
+    proj14T1 := A;
+    proj14T2 := B;
+    proj14T3 := C;
+    proj14T4 := Hl;
+    proj14T5 := Hr;
+    proj14T6 := x6;
+    proj14T7 := x7;
+    proj14T8 := x8;
+    proj14T9 := x9;
+    proj14T10 := x10;
+    proj14T11 := x11;
+    proj14T12 := x12;
+    proj14T13 := x13
+  |}
+Invalid recursive call in the argument of "match" in "match
+                                                 paco_observe CIH
+                                                 with
+                                                 | paco_pfold _ _ _ _ pco LE
+                                                 SIM =>
+                                                 (fun
+                                                 (pco0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13 ->
+                                                 Prop)
+                                                 (LE0 : 
+                                                 forall
+                                                 x0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13,
+                                                 pco0 x0 ->
+                                                 paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0)))
+                                                 (upaco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0)))
+                                                 (uncurry14 r')) x0 \/
+                                                 upaco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0)))
+                                                 (uncurry14 r') x0)
+                                                 (SIM0 : 
+                                                 uncurry14
+                                                 (gf' (curry14 pco0))
+                                                 {|
+                                                 proj14T0 := H;
+                                                 proj14T1 := A;
+                                                 proj14T2 := B;
+                                                 proj14T3 := C;
+                                                 proj14T4 := Hl;
+                                                 proj14T5 := Hr;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |}) =>
+                                                 {|
+                                                 paco_observe :=
+                                                 paco_pfold
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0)))
+                                                 (paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0))))
+                                                 (upaco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0)))
+                                                 (uncurry14 r'))
+                                                 {|
+                                                 proj14T0 := H;
+                                                 proj14T1 := A;
+                                                 proj14T2 := B;
+                                                 proj14T3 := C;
+                                                 proj14T4 := Hl;
+                                                 proj14T5 := Hr;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |} pco0 LE0 SIM0
+                                                 |}) pco LE SIM
+                                                 end".
+Recursive definition is: "let CIH :
+                            _paco
+                              (fun
+                                 R0 : rel1
+                                        (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13) =>
+                               uncurry14 (gf' (curry14 R0)))
+                              (paco
+                                 (fun
+                                    R0 : rel1
+                                           (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                              T10 T11 T12 T13) =>
+                                  uncurry14 (gf' (curry14 R0))))
+                              (upaco
+                                 (fun
+                                    R0 : rel1
+                                           (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                              T10 T11 T12 T13) =>
+                                  uncurry14 (gf' (curry14 R0)))
+                                 (uncurry14 r'))
+                              {|
+                                proj14T0 := H;
+                                proj14T1 := A;
+                                proj14T2 := B;
+                                proj14T3 := C;
+                                proj14T4 := Hl;
+                                proj14T5 := Hr;
+                                proj14T6 := x6;
+                                proj14T7 := x7;
+                                proj14T8 := x8;
+                                proj14T9 := x9;
+                                proj14T10 := x10;
+                                proj14T11 := x11;
+                                proj14T12 := x12;
+                                proj14T13 := x13
+                              |} := paco_observe CIH in
+                          match CIH with
+                          | paco_pfold _ _ _ _ pco LE SIM =>
+                              (fun
+                                 (pco0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13 -> Prop)
+                                 (LE0 : forall
+                                          x0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8
+                                                 T9 T10 T11 T12 T13,
+                                        pco0 x0 ->
+                                        paco
+                                          (fun
+                                             R0 : 
+                                              rel1
+                                                (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                           uncurry14 (gf' (curry14 R0)))
+                                          (upaco
+                                             (fun
+                                                R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                              uncurry14 (gf' (curry14 R0)))
+                                             (uncurry14 r')) x0 \/
+                                        upaco
+                                          (fun
+                                             R0 : 
+                                              rel1
+                                                (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                           uncurry14 (gf' (curry14 R0)))
+                                          (uncurry14 r') x0)
+                                 (SIM0 : uncurry14 
+                                           (gf' (curry14 pco0))
+                                           {|
+                                             proj14T0 := H;
+                                             proj14T1 := A;
+                                             proj14T2 := B;
+                                             proj14T3 := C;
+                                             proj14T4 := Hl;
+                                             proj14T5 := Hr;
+                                             proj14T6 := x6;
+                                             proj14T7 := x7;
+                                             proj14T8 := x8;
+                                             proj14T9 := x9;
+                                             proj14T10 := x10;
+                                             proj14T11 := x11;
+                                             proj14T12 := x12;
+                                             proj14T13 := x13
+                                           |}) =>
+                               {|
+                                 paco_observe :=
+                                   paco_pfold
+                                     (fun
+                                        R0 : rel1
+                                               (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                      uncurry14 (gf' (curry14 R0)))
+                                     (paco
+                                        (fun
+                                           R0 : rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                         uncurry14 (gf' (curry14 R0))))
+                                     (upaco
+                                        (fun
+                                           R0 : rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                         uncurry14 (gf' (curry14 R0)))
+                                        (uncurry14 r'))
+                                     {|
+                                       proj14T0 := H;
+                                       proj14T1 := A;
+                                       proj14T2 := B;
+                                       proj14T3 := C;
+                                       proj14T4 := Hl;
+                                       proj14T5 := Hr;
+                                       proj14T6 := x6;
+                                       proj14T7 := x7;
+                                       proj14T8 := x8;
+                                       proj14T9 := x9;
+                                       proj14T10 := x10;
+                                       proj14T11 := x11;
+                                       proj14T12 := x12;
+                                       proj14T13 := x13
+                                     |} pco0 LE0 SIM0
+                               |}) pco LE SIM
+                          end"." Please report at http://coq.inria.fr/bugs/.
+
+File "./pcm/unionmap.v", line 143, characters 0-48:
+Error: The reference big_load was not found in the current environment.
+
+File "./theory/lattices.v", line 12, characters 0-110:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./src/Interval.v", line 98, characters 7-16:
+Error: The reference DSik was not found in the current environment.
+
+File "./Util/Relation/SN.v", line 39, characters 0-117:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/setoids.v", line 42, characters 0-66:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/setoids.v", line 45, characters 0-68:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/sets/ssete1.v", line 72, characters 7-43:
+Error: The reference DSik was not found in the current environment.
+
+File "./theories/kempe.v", line 198, characters 0-70:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/kempe.v", line 198, characters 0-70:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/kempe.v", line 202, characters 0-72:
+Warning: Duplicate clear of IHn [duplicate-clear,ssr]
+File "./theories/kempe.v", line 202, characters 0-72:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/kempe.v", line 248, characters 2-80:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/kempe.v", line 329, characters 0-68:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./paco14.v", line 94, characters 2-77:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: apply uncurry_bij2_0; only 1: paco_cofix_auto).
+Typing error:
+Recursive definition of CIH is ill-formed.
+In environment
+T0 : Type
+T1 : T0 -> Type
+T2 : forall x0 : T0, T1 x0 -> Type
+T3 : forall (x0 : T0) (x1 : T1 x0), T2 x1 -> Type
+T4 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1), T3 x2 -> Type
+T5 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2), T4 x3 -> Type
+T6 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) (x4 : T4 x3),
+     T5 x4 -> Type
+T7 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4), T6 x5 -> Type
+T8 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5), T7 x6 -> Type
+T9 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6), 
+     T8 x7 -> Type
+T10 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7), T9 x8 -> Type
+T11 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8), T10 x9 -> Type
+T12 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9), 
+      T11 x10 -> Type
+T13 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10),
+      T12 x11 -> Type
+gf,
+gf' : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 ->
+      rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+r' : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+x0 : T0
+x1 : T1 x0
+x2 : T2 x1
+x3 : T3 x2
+x4 : T4 x3
+x5 : T5 x4
+x6 : T6 x5
+x7 : T7 x6
+x8 : T8 x7
+x9 : T9 x8
+x10 : T10 x9
+x11 : T11 x10
+x12 : T12 x11
+x13 : T13 x12
+REL : paco14 gf bot14 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13
+LEgf : forall (x0 : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13)
+         (x1 : T0) (x2 : T1 x1) (x3 : T2 x2) (x4 : T3 x3) 
+         (x5 : T4 x4) (x6 : T5 x5) (x7 : T6 x6) (x8 : T7 x7) 
+         (x9 : T8 x8) (x10 : T9 x9) (x11 : T10 x10) 
+         (x12 : T11 x11) (x13 : T12 x12) (x14 : T13 x13),
+       (gf x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 : Prop) ->
+       gf' x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 : Prop
+CIH :
+paco
+  (fun R0 : rel1 (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13) =>
+   uncurry14 (gf' (curry14 R0))) (uncurry14 r')
+  {|
+    proj14T0 := x0;
+    proj14T1 := x1;
+    proj14T2 := x2;
+    proj14T3 := x3;
+    proj14T4 := x4;
+    proj14T5 := x5;
+    proj14T6 := x6;
+    proj14T7 := x7;
+    proj14T8 := x8;
+    proj14T9 := x9;
+    proj14T10 := x10;
+    proj14T11 := x11;
+    proj14T12 := x12;
+    proj14T13 := x13
+  |}
+Invalid recursive call in the argument of "match" in "match
+                                                 paco_observe CIH
+                                                 with
+                                                 | paco_pfold _ _ _ _ pco LE
+                                                 SIM =>
+                                                 (fun
+                                                 (pco0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13 ->
+                                                 Prop)
+                                                 (LE0 : 
+                                                 forall
+                                                 x0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13,
+                                                 pco0 x0 ->
+                                                 paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0)))
+                                                 (uncurry14 r') x0 \/
+                                                 uncurry14 r' x0)
+                                                 (SIM0 : 
+                                                 uncurry14
+                                                 (gf' (curry14 pco0))
+                                                 {|
+                                                 proj14T0 := x0;
+                                                 proj14T1 := x1;
+                                                 proj14T2 := x2;
+                                                 proj14T3 := x3;
+                                                 proj14T4 := x4;
+                                                 proj14T5 := x5;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |}) =>
+                                                 {|
+                                                 paco_observe :=
+                                                 paco_pfold
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0)))
+                                                 (paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf' (curry14 R0))))
+                                                 (uncurry14 r')
+                                                 {|
+                                                 proj14T0 := x0;
+                                                 proj14T1 := x1;
+                                                 proj14T2 := x2;
+                                                 proj14T3 := x3;
+                                                 proj14T4 := x4;
+                                                 proj14T5 := x5;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |} pco0 LE0 SIM0
+                                                 |}) pco LE SIM
+                                                 end".
+Recursive definition is: "let CIH :
+                            _paco
+                              (fun
+                                 R0 : rel1
+                                        (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13) =>
+                               uncurry14 (gf' (curry14 R0)))
+                              (paco
+                                 (fun
+                                    R0 : rel1
+                                           (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                              T10 T11 T12 T13) =>
+                                  uncurry14 (gf' (curry14 R0))))
+                              (uncurry14 r')
+                              {|
+                                proj14T0 := x0;
+                                proj14T1 := x1;
+                                proj14T2 := x2;
+                                proj14T3 := x3;
+                                proj14T4 := x4;
+                                proj14T5 := x5;
+                                proj14T6 := x6;
+                                proj14T7 := x7;
+                                proj14T8 := x8;
+                                proj14T9 := x9;
+                                proj14T10 := x10;
+                                proj14T11 := x11;
+                                proj14T12 := x12;
+                                proj14T13 := x13
+                              |} := paco_observe CIH in
+                          match CIH with
+                          | paco_pfold _ _ _ _ pco LE SIM =>
+                              (fun
+                                 (pco0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13 -> Prop)
+                                 (LE0 : forall
+                                          x0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8
+                                                 T9 T10 T11 T12 T13,
+                                        pco0 x0 ->
+                                        paco
+                                          (fun
+                                             R0 : 
+                                              rel1
+                                                (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                           uncurry14 (gf' (curry14 R0)))
+                                          (uncurry14 r') x0 \/
+                                        uncurry14 r' x0)
+                                 (SIM0 : uncurry14 
+                                           (gf' (curry14 pco0))
+                                           {|
+                                             proj14T0 := x0;
+                                             proj14T1 := x1;
+                                             proj14T2 := x2;
+                                             proj14T3 := x3;
+                                             proj14T4 := x4;
+                                             proj14T5 := x5;
+                                             proj14T6 := x6;
+                                             proj14T7 := x7;
+                                             proj14T8 := x8;
+                                             proj14T9 := x9;
+                                             proj14T10 := x10;
+                                             proj14T11 := x11;
+                                             proj14T12 := x12;
+                                             proj14T13 := x13
+                                           |}) =>
+                               {|
+                                 paco_observe :=
+                                   paco_pfold
+                                     (fun
+                                        R0 : rel1
+                                               (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                      uncurry14 (gf' (curry14 R0)))
+                                     (paco
+                                        (fun
+                                           R0 : rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                         uncurry14 (gf' (curry14 R0))))
+                                     (uncurry14 r')
+                                     {|
+                                       proj14T0 := x0;
+                                       proj14T1 := x1;
+                                       proj14T2 := x2;
+                                       proj14T3 := x3;
+                                       proj14T4 := x4;
+                                       proj14T5 := x5;
+                                       proj14T6 := x6;
+                                       proj14T7 := x7;
+                                       proj14T8 := x8;
+                                       proj14T9 := x9;
+                                       proj14T10 := x10;
+                                       proj14T11 := x11;
+                                       proj14T12 := x12;
+                                       proj14T13 := x13
+                                     |} pco0 LE0 SIM0
+                               |}) pco LE SIM
+                          end"." Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Spaces/Circle.v", line 174, characters 3-71:
+Error: not found in table: core.eq.type
+
+File "./theory/setoids.v", line 54, characters 0-104:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/setoids.v", line 56, characters 0-96:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/Series.v", line 93, characters 2-43:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/Reals/Rtrigo1.v", line 740, characters 2-68:
+Error: Stack overflow.
+
+File "./pcm/unionmap.v", line 157, characters 0-54:
+Error: The reference big_rec3 was not found in the current environment.
+
+File "./src/Interval.v", line 118, characters 2-10:
+Error: The reference DSik was not found in the current environment.
+
+File "./theories/sets/ssete1.v", line 79, characters 0-11:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Series.v", line 112, characters 2-43:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/Classes/theory/ua_first_isomorphism.v", line 124, characters 4-75:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./pcm/unionmap.v", line 164, characters 0-60:
+Error: The reference big_ind was not found in the current environment.
+
+File "./theories/HoTT/Classes.v", line 45, characters 2-16:
+Error: Illegal application: 
+The term "internal_paths_sym_internal0" of type
+ "forall (A : Type) (a y : A), a = y -> y = a"
+cannot be applied to the terms
+ "A" : "Type"
+ "a" : "A"
+ "y0" : "A"
+ "X0" : "a = y0"
+The 1st term has type "Type@{Equations.HoTT.Classes.30568}"
+which should be coercible to "Type@{Equations.HoTT.Classes.30569}".
+
+File "./theories/altreals/discrete.v", line 92, characters 7-18:
+Error: The reference DSik was not found in the current environment.
+
+File "./theories/sets/ssete1.v", line 92, characters 0-11:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./pcm/unionmap.v", line 178, characters 0-34:
+Error: The reference big_ind was not found in the current environment.
+
+File "./ott_list_base.v", line 184, characters 0-58:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./ott_list_base.v", line 185, characters 0-54:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./ott_list_base.v", line 186, characters 0-46:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./ott_list_base.v", line 187, characters 0-29:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./ott_list_base.v", line 188, characters 0-50:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./ott_list_base.v", line 189, characters 0-58:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./ott_list_base.v", line 190, characters 0-195:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./paco14.v", line 123, characters 2-14:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: unfold monotone14, _monotone14, le14; only 1: red; only 1: intros; only 1: paco_cofix_auto).
+Typing error:
+Recursive definition of CIH is ill-formed.
+In environment
+T0 : Type
+T1 : T0 -> Type
+T2 : forall x0 : T0, T1 x0 -> Type
+T3 : forall (x0 : T0) (x1 : T1 x0), T2 x1 -> Type
+T4 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1), T3 x2 -> Type
+T5 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2), T4 x3 -> Type
+T6 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) (x4 : T4 x3),
+     T5 x4 -> Type
+T7 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4), T6 x5 -> Type
+T8 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5), T7 x6 -> Type
+T9 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6), 
+     T8 x7 -> Type
+T10 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7), T9 x8 -> Type
+T11 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8), T10 x9 -> Type
+T12 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9), 
+      T11 x10 -> Type
+T13 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10),
+      T12 x11 -> Type
+gf : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 ->
+     rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+r :
+forall (x : T0) (x0 : T1 x) (x1 : T2 x0) (x2 : T3 x1) 
+  (x3 : T4 x2) (x4 : T5 x3) (x5 : T6 x4) (x6 : T7 x5) 
+  (x7 : T8 x6) (x8 : T9 x7) (x9 : T10 x8) (x10 : T11 x9) 
+  (x11 : T12 x10), T13 x11 -> Prop
+r' :
+forall (x : T0) (x0 : T1 x) (x1 : T2 x0) (x2 : T3 x1) 
+  (x3 : T4 x2) (x4 : T5 x3) (x5 : T6 x4) (x6 : T7 x5) 
+  (x7 : T8 x6) (x8 : T9 x7) (x9 : T10 x8) (x10 : T11 x9) 
+  (x11 : T12 x10), T13 x11 -> Prop
+LE :
+forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+  (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+  (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10) 
+  (x12 : T12 x11) (x13 : T13 x12),
+r x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 ->
+r' x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13
+x0 : T0
+x1 : T1 x0
+x2 : T2 x1
+x3 : T3 x2
+x4 : T4 x3
+x5 : T5 x4
+x6 : T6 x5
+x7 : T7 x6
+x8 : T8 x7
+x9 : T9 x8
+x10 : T10 x9
+x11 : T11 x10
+x12 : T12 x11
+x13 : T13 x12
+PR : paco14 gf r x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13
+CIH :
+curry14
+  (paco
+     (fun R0 : rel1 (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13) =>
+      uncurry14 (gf (curry14 R0))) (uncurry14 r')) x0 x1 x2 x3 x4 x5 x6 x7 x8
+  x9 x10 x11 x12 x13
+Invalid recursive call in the argument of "match" in "match
+                                                 paco_observe CIH
+                                                 with
+                                                 | paco_pfold _ _ _ _ pco LE
+                                                 SIM =>
+                                                 (fun
+                                                 (pco0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13 ->
+                                                 Prop)
+                                                 (LE0 : 
+                                                 forall
+                                                 x0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13,
+                                                 pco0 x0 ->
+                                                 paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0)))
+                                                 (uncurry14 r') x0 \/
+                                                 uncurry14 r' x0)
+                                                 (SIM0 : 
+                                                 uncurry14
+                                                 (gf (curry14 pco0))
+                                                 {|
+                                                 proj14T0 := x0;
+                                                 proj14T1 := x1;
+                                                 proj14T2 := x2;
+                                                 proj14T3 := x3;
+                                                 proj14T4 := x4;
+                                                 proj14T5 := x5;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |}) =>
+                                                 {|
+                                                 paco_observe :=
+                                                 paco_pfold
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0)))
+                                                 (paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0))))
+                                                 (uncurry14 r')
+                                                 {|
+                                                 proj14T0 := x0;
+                                                 proj14T1 := x1;
+                                                 proj14T2 := x2;
+                                                 proj14T3 := x3;
+                                                 proj14T4 := x4;
+                                                 proj14T5 := x5;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |} pco0 LE0 SIM0
+                                                 |}) pco LE SIM
+                                                 end".
+Recursive definition is: "let CIH :
+                            _paco
+                              (fun
+                                 R0 : rel1
+                                        (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13) =>
+                               uncurry14 (gf (curry14 R0)))
+                              (paco
+                                 (fun
+                                    R0 : rel1
+                                           (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                              T10 T11 T12 T13) =>
+                                  uncurry14 (gf (curry14 R0))))
+                              (uncurry14 r')
+                              {|
+                                proj14T0 := x0;
+                                proj14T1 := x1;
+                                proj14T2 := x2;
+                                proj14T3 := x3;
+                                proj14T4 := x4;
+                                proj14T5 := x5;
+                                proj14T6 := x6;
+                                proj14T7 := x7;
+                                proj14T8 := x8;
+                                proj14T9 := x9;
+                                proj14T10 := x10;
+                                proj14T11 := x11;
+                                proj14T12 := x12;
+                                proj14T13 := x13
+                              |} := paco_observe CIH in
+                          match CIH with
+                          | paco_pfold _ _ _ _ pco LE SIM =>
+                              (fun
+                                 (pco0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13 -> Prop)
+                                 (LE0 : forall
+                                          x0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8
+                                                 T9 T10 T11 T12 T13,
+                                        pco0 x0 ->
+                                        paco
+                                          (fun
+                                             R0 : 
+                                              rel1
+                                                (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                           uncurry14 (gf (curry14 R0)))
+                                          (uncurry14 r') x0 \/
+                                        uncurry14 r' x0)
+                                 (SIM0 : uncurry14 
+                                           (gf (curry14 pco0))
+                                           {|
+                                             proj14T0 := x0;
+                                             proj14T1 := x1;
+                                             proj14T2 := x2;
+                                             proj14T3 := x3;
+                                             proj14T4 := x4;
+                                             proj14T5 := x5;
+                                             proj14T6 := x6;
+                                             proj14T7 := x7;
+                                             proj14T8 := x8;
+                                             proj14T9 := x9;
+                                             proj14T10 := x10;
+                                             proj14T11 := x11;
+                                             proj14T12 := x12;
+                                             proj14T13 := x13
+                                           |}) =>
+                               {|
+                                 paco_observe :=
+                                   paco_pfold
+                                     (fun
+                                        R0 : rel1
+                                               (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                      uncurry14 (gf (curry14 R0)))
+                                     (paco
+                                        (fun
+                                           R0 : rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                         uncurry14 (gf (curry14 R0))))
+                                     (uncurry14 r')
+                                     {|
+                                       proj14T0 := x0;
+                                       proj14T1 := x1;
+                                       proj14T2 := x2;
+                                       proj14T3 := x3;
+                                       proj14T4 := x4;
+                                       proj14T5 := x5;
+                                       proj14T6 := x6;
+                                       proj14T7 := x7;
+                                       proj14T8 := x8;
+                                       proj14T9 := x9;
+                                       proj14T10 := x10;
+                                       proj14T11 := x11;
+                                       proj14T12 := x12;
+                                       proj14T13 := x13
+                                     |} pco0 LE0 SIM0
+                               |}) pco LE SIM
+                          end"." Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/HoTT/Classes.v", line 52, characters 2-16:
+Error: Illegal application: 
+The term "internal_paths_sym_internal0" of type
+ "forall (A : Type) (a y : A), a = y -> y = a"
+cannot be applied to the terms
+ "A" : "Type"
+ "a" : "A"
+ "y0" : "A"
+ "X0" : "a = y0"
+The 1st term has type "Type@{Equations.HoTT.Classes.10578}"
+which should be coercible to "Type@{Equations.HoTT.Classes.10579}".
+
+File "./theories/sets/ssete1.v", line 104, characters 0-11:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./model/structures/Qsec.v", line 43, characters 0-33:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/Series.v", line 154, characters 0-41:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./pcm/unionmap.v", line 233, characters 0-48:
+Error: Anomaly "Evar ?X50279 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/schutte/ssete9.v", line 66, characters 0-39:
+Error: The reference K was not found in the current environment.
+
+File "./Term/Lambda/LAlpha.v", line 164, characters 2-39:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./refinements/binint.v", line 173, characters 7-49:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./model/semigroups/Zsemigroup.v", line 37, characters 0-42:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./examples/kvmaps.v", line 82, characters 0-27:
+Error: The reference big_ind was not found in the current environment.
+
+File "./theories/HoTT/Classes.v", line 92, characters 2-9:
+Error: Illegal application: 
+The term "internal_paths_sym_internal0" of type
+ "forall (A : Type) (a y : A), a = y -> y = a"
+cannot be applied to the terms
+ "A" : "Type"
+ "a" : "A"
+ "y0" : "A"
+ "X0" : "a = y0"
+The 1st term has type "Type@{Equations.HoTT.Classes.102}"
+which should be coercible to "Type@{Equations.HoTT.Classes.103}".
+
+File "./theories/sets/ssete1.v", line 118, characters 0-11:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/seqpoly.v", line 125, characters 2-54:
+Error: The reference DSik was not found in the current environment.
+
+File "./pcm/unionmap.v", line 235, characters 2-63:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./refinements/binord.v", line 60, characters 7-27:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./theory/bareiss_dvdring.v", line 24, characters 0-29:
+Error: The reference DSik was not found in the current environment.
+
+File "./Term/Lambda/LAlpha.v", line 169, characters 2-39:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./Term/Lambda/LAlpha.v", line 175, characters 2-34:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/polydvd.v", line 72, characters 0-16:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theory/polydvd.v", line 73, characters 0-28:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theory/polydvd.v", line 74, characters 0-37:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theory/polydvd.v", line 112, characters 0-27:
+Error: Anomaly "Evar ?X7913 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/hpoly.v", line 235, characters 2-516:
+Error: The reference K was not found in the current environment.
+
+File "./refinements/binord.v", line 65, characters 2-62:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./theories/present5.v", line 21, characters 0-17:
+Error: The reference big_ind was not found in the current environment.
+
+File "./pcm/unionmap.v", line 264, characters 2-63:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theory/bareiss_dvdring.v", line 24, characters 0-29:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./refinements/seqpoly.v", line 149, characters 0-31:
+Error: The reference D was not found in the current environment.
+
+File "./Term/Lambda/LAlpha.v", line 181, characters 2-54:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/altreals/discrete.v", line 144, characters 0-64:
+Error: The reference D was not found in the current environment.
+
+File "./theory/bareiss_dvdring.v", line 65, characters 0-16:
+Error: The reference D was not found in the current environment.
+
+File "./src/Coqprime/num/Pock.v", line 91, characters 0-71:
+Error: No such Hint database: ZnZ.
+
+File "./metric2/MetricMorphisms.v", line 4, characters 0-218:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./metric2/MetricMorphisms.v", line 4, characters 0-218:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./src/Interval.v", line 339, characters 2-31:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./refinements/binord.v", line 77, characters 2-14:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./algebra/CAbGroups.v", line 36, characters 0-36:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./Term/Lambda/LAlpha.v", line 188, characters 2-59:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/lattices.v", line 114, characters 0-85:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/lattices.v", line 116, characters 0-85:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/lattices.v", line 118, characters 0-107:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/lattices.v", line 120, characters 0-69:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./refinements/binint.v", line 209, characters 7-63:
+Error: Anomaly "Evar ?X75904 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./examples/kvmaps.v", line 131, characters 0-30:
+Error: The reference ltn_ind was not found in the current environment.
+
+File "./theory/polydvd.v", line 156, characters 0-64:
+Error: The reference K was not found in the current environment.
+
+File "./algebra/CRings.v", line 57, characters 0-34:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/Classes/theory/ua_first_isomorphism.v", line 190, characters 4-12:
+Error: not found in table: core.eq.type
+
+File "./algebra/CRing_as_Ring.v", line 2, characters 0-56:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/faster/AQmetric.v", line 7, characters 0-56:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/faster/AQmetric.v", line 7, characters 0-56:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./model/rings/Qring.v", line 37, characters 0-44:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./model/fields/Qfield.v", line 37, characters 0-38:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/schutte/ssete9.v", line 131, characters 0-71:
+Error: The reference DSik was not found in the current environment.
+
+File "./pcm/unionmap.v", line 378, characters 7-56:
+Error: The reference big_rec3 was not found in the current environment.
+
+File "./refinements/binord.v", line 90, characters 2-32:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./refinements/binint.v", line 213, characters 2-55:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./theory/bareiss_dvdring.v", line 81, characters 0-30:
+Error: The reference D was not found in the current environment.
+
+File "./paco14.v", line 165, characters 2-20:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: red; only 1: red; only 1: intros A x y z H1 H2; only 1: intros; only 1: paco_cofix_auto).
+Typing error:
+Recursive definition of CIH is ill-formed.
+In environment
+T0 : Type
+T1 : T0 -> Type
+T2 : forall x0 : T0, T1 x0 -> Type
+T3 : forall (x0 : T0) (x1 : T1 x0), T2 x1 -> Type
+T4 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1), T3 x2 -> Type
+T5 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2), T4 x3 -> Type
+T6 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) (x4 : T4 x3),
+     T5 x4 -> Type
+T7 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4), T6 x5 -> Type
+T8 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5), T7 x6 -> Type
+T9 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6), 
+     T8 x7 -> Type
+T10 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7), T9 x8 -> Type
+T11 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8), T10 x9 -> Type
+T12 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9), 
+      T11 x10 -> Type
+T13 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10),
+      T12 x11 -> Type
+gf : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 ->
+     rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+A :
+forall (x : T0) (x0 : T1 x) (x1 : T2 x0) (x2 : T3 x1) 
+  (x3 : T4 x2) (x4 : T5 x3) (x5 : T6 x4) (x6 : T7 x5) 
+  (x7 : T8 x6) (x8 : T9 x7) (x9 : T10 x8) (x10 : T11 x9) 
+  (x11 : T12 x10), T13 x11 -> Prop
+x :
+forall (x : T0) (x0 : T1 x) (x1 : T2 x0) (x2 : T3 x1) 
+  (x3 : T4 x2) (x4 : T5 x3) (x5 : T6 x4) (x6 : T7 x5) 
+  (x7 : T8 x6) (x8 : T9 x7) (x9 : T10 x8) (x10 : T11 x9) 
+  (x11 : T12 x10), T13 x11 -> Prop
+y :
+forall
+  rr : forall (x : T0) (x0 : T1 x) (x1 : T2 x0) (x2 : T3 x1) 
+         (x3 : T4 x2) (x4 : T5 x3) (x5 : T6 x4) (x6 : T7 x5) 
+         (x7 : T8 x6) (x8 : T9 x7) (x9 : T10 x8) (x10 : T11 x9)
+         (x11 : T12 x10), T13 x11 -> Prop,
+(forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+   (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+   (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10) 
+   (x12 : T12 x11) (x13 : T13 x12),
+ (x x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop) ->
+ rr x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop) ->
+(forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+   (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+   (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10) 
+   (x12 : T12 x11) (x13 : T13 x12),
+ (A x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop) ->
+ rr x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop) ->
+forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+  (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+  (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10) 
+  (x12 : T12 x11) (x13 : T13 x12),
+(A x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop) ->
+paco14 gf rr x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop
+z : T0
+H1 : T1 z
+H2 : T2 H1
+x3 : T3 H2
+x4 : T4 x3
+x5 : T5 x4
+x6 : T6 x5
+x7 : T7 x6
+x8 : T8 x7
+x9 : T9 x8
+x10 : T10 x9
+x11 : T11 x10
+x12 : T12 x11
+x13 : T13 x12
+PR : A z H1 H2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 : Prop
+CIH :
+paco
+  (fun R0 : rel1 (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13) =>
+   uncurry14 (gf (curry14 R0))) (uncurry14 x)
+  {|
+    proj14T0 := z;
+    proj14T1 := H1;
+    proj14T2 := H2;
+    proj14T3 := x3;
+    proj14T4 := x4;
+    proj14T5 := x5;
+    proj14T6 := x6;
+    proj14T7 := x7;
+    proj14T8 := x8;
+    proj14T9 := x9;
+    proj14T10 := x10;
+    proj14T11 := x11;
+    proj14T12 := x12;
+    proj14T13 := x13
+  |}
+Invalid recursive call in the argument of "match" in "match
+                                                 paco_observe CIH
+                                                 with
+                                                 | paco_pfold _ _ _ _ pco LE
+                                                 SIM =>
+                                                 (fun
+                                                 (pco0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13 ->
+                                                 Prop)
+                                                 (LE0 : 
+                                                 forall
+                                                 x0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13,
+                                                 pco0 x0 ->
+                                                 paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0)))
+                                                 (uncurry14 x) x0 \/
+                                                 uncurry14 x x0)
+                                                 (SIM0 : 
+                                                 uncurry14
+                                                 (gf (curry14 pco0))
+                                                 {|
+                                                 proj14T0 := z;
+                                                 proj14T1 := H1;
+                                                 proj14T2 := H2;
+                                                 proj14T3 := x3;
+                                                 proj14T4 := x4;
+                                                 proj14T5 := x5;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |}) =>
+                                                 {|
+                                                 paco_observe :=
+                                                 paco_pfold
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0)))
+                                                 (paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0))))
+                                                 (uncurry14 x)
+                                                 {|
+                                                 proj14T0 := z;
+                                                 proj14T1 := H1;
+                                                 proj14T2 := H2;
+                                                 proj14T3 := x3;
+                                                 proj14T4 := x4;
+                                                 proj14T5 := x5;
+                                                 proj14T6 := x6;
+                                                 proj14T7 := x7;
+                                                 proj14T8 := x8;
+                                                 proj14T9 := x9;
+                                                 proj14T10 := x10;
+                                                 proj14T11 := x11;
+                                                 proj14T12 := x12;
+                                                 proj14T13 := x13
+                                                 |} pco0 LE0 SIM0
+                                                 |}) pco LE SIM
+                                                 end".
+Recursive definition is: "let CIH :
+                            _paco
+                              (fun
+                                 R0 : rel1
+                                        (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13) =>
+                               uncurry14 (gf (curry14 R0)))
+                              (paco
+                                 (fun
+                                    R0 : rel1
+                                           (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                              T10 T11 T12 T13) =>
+                                  uncurry14 (gf (curry14 R0)))) 
+                              (uncurry14 x)
+                              {|
+                                proj14T0 := z;
+                                proj14T1 := H1;
+                                proj14T2 := H2;
+                                proj14T3 := x3;
+                                proj14T4 := x4;
+                                proj14T5 := x5;
+                                proj14T6 := x6;
+                                proj14T7 := x7;
+                                proj14T8 := x8;
+                                proj14T9 := x9;
+                                proj14T10 := x10;
+                                proj14T11 := x11;
+                                proj14T12 := x12;
+                                proj14T13 := x13
+                              |} := paco_observe CIH in
+                          match CIH with
+                          | paco_pfold _ _ _ _ pco LE SIM =>
+                              (fun
+                                 (pco0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13 -> Prop)
+                                 (LE0 : forall
+                                          x0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8
+                                                 T9 T10 T11 T12 T13,
+                                        pco0 x0 ->
+                                        paco
+                                          (fun
+                                             R0 : 
+                                              rel1
+                                                (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                           uncurry14 (gf (curry14 R0)))
+                                          (uncurry14 x) x0 \/ 
+                                        uncurry14 x x0)
+                                 (SIM0 : uncurry14 
+                                           (gf (curry14 pco0))
+                                           {|
+                                             proj14T0 := z;
+                                             proj14T1 := H1;
+                                             proj14T2 := H2;
+                                             proj14T3 := x3;
+                                             proj14T4 := x4;
+                                             proj14T5 := x5;
+                                             proj14T6 := x6;
+                                             proj14T7 := x7;
+                                             proj14T8 := x8;
+                                             proj14T9 := x9;
+                                             proj14T10 := x10;
+                                             proj14T11 := x11;
+                                             proj14T12 := x12;
+                                             proj14T13 := x13
+                                           |}) =>
+                               {|
+                                 paco_observe :=
+                                   paco_pfold
+                                     (fun
+                                        R0 : rel1
+                                               (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                      uncurry14 (gf (curry14 R0)))
+                                     (paco
+                                        (fun
+                                           R0 : rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                         uncurry14 (gf (curry14 R0))))
+                                     (uncurry14 x)
+                                     {|
+                                       proj14T0 := z;
+                                       proj14T1 := H1;
+                                       proj14T2 := H2;
+                                       proj14T3 := x3;
+                                       proj14T4 := x4;
+                                       proj14T5 := x5;
+                                       proj14T6 := x6;
+                                       proj14T7 := x7;
+                                       proj14T8 := x8;
+                                       proj14T9 := x9;
+                                       proj14T10 := x10;
+                                       proj14T11 := x11;
+                                       proj14T12 := x12;
+                                       proj14T13 := x13
+                                     |} pco0 LE0 SIM0
+                               |}) pco LE SIM
+                          end"." Please report at http://coq.inria.fr/bugs/.
+
+File "./Term/Lambda/LAlpha.v", line 207, characters 2-46:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./refinements/hpoly.v", line 317, characters 7-44:
+Error: The reference D was not found in the current environment.
+
+File "./UniMath/CategoryTheory/Inductives/Lists.v", line 192, characters 0-18:
+Error:
+Anomaly
+"Constant UniMath.CategoryTheory.Inductives.Lists.listIndProp_subproof does not appear in the environment."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./src/Coqprime/num/Pock.v", line 133, characters 0-93:
+Error: No such Hint database: ZnZ.
+
+File "./Util/Relation/SN.v", line 138, characters 0-69:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/lattices.v", line 156, characters 0-114:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/lattices.v", line 157, characters 0-114:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/lattices.v", line 158, characters 0-129:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/lattices.v", line 159, characters 0-106:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/lattices.v", line 160, characters 0-112:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/lattices.v", line 161, characters 0-112:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/lattices.v", line 162, characters 0-127:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theory/lattices.v", line 163, characters 0-104:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./theories/schutte/ssete9.v", line 137, characters 7-41:
+Error: The reference K was not found in the current environment.
+
+File "./refinements/binord.v", line 101, characters 2-40:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./Term/Lambda/LAlpha.v", line 226, characters 2-77:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./src/Interval.v", line 555, characters 2-110:
+Error: The reference DSik was not found in the current environment.
+
+File "./refinements/seqpoly.v", line 233, characters 2-65:
+Error: The reference DSik was not found in the current environment.
+
+File "./paco14.v", line 185, characters 2-28:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: do 1 intro; only 1: apply curry_map14; only 1: intros H x0; only 1: paco_cofix_auto).
+Typing error:
+Recursive definition of CIH is ill-formed.
+In environment
+T0 : Type
+T1 : T0 -> Type
+T2 : forall x0 : T0, T1 x0 -> Type
+T3 : forall (x0 : T0) (x1 : T1 x0), T2 x1 -> Type
+T4 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1), T3 x2 -> Type
+T5 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2), T4 x3 -> Type
+T6 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) (x4 : T4 x3),
+     T5 x4 -> Type
+T7 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4), T6 x5 -> Type
+T8 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5), T7 x6 -> Type
+T9 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+       (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6), 
+     T8 x7 -> Type
+T10 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7), T9 x8 -> Type
+T11 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8), T10 x9 -> Type
+T12 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9), 
+      T11 x10 -> Type
+T13 : forall (x0 : T0) (x1 : T1 x0) (x2 : T2 x1) (x3 : T3 x2) 
+        (x4 : T4 x3) (x5 : T5 x4) (x6 : T6 x5) (x7 : T7 x6) 
+        (x8 : T8 x7) (x9 : T9 x8) (x10 : T10 x9) (x11 : T11 x10),
+      T12 x11 -> Type
+gf : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13 ->
+     rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+r : rel14 T0 T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+H : sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13
+x0 :
+paco
+  (fun R0 : rel1 (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13) =>
+   uncurry14 (gf (curry14 R0))) (uncurry14 (upaco14 gf r)) H
+CIH :
+paco
+  (fun R0 : rel1 (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9 T10 T11 T12 T13) =>
+   uncurry14 (gf (curry14 R0))) (uncurry14 r) H
+Invalid recursive call in the argument of "match" in "match
+                                                 paco_observe CIH
+                                                 with
+                                                 | paco_pfold _ _ _ _ pco LE
+                                                 SIM =>
+                                                 (fun
+                                                 (pco0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13 ->
+                                                 Prop)
+                                                 (LE0 : 
+                                                 forall
+                                                 x0 : 
+                                                 sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13,
+                                                 pco0 x0 ->
+                                                 paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0)))
+                                                 (uncurry14 r) x0 \/
+                                                 uncurry14 r x0)
+                                                 (SIM0 : 
+                                                 uncurry14
+                                                 (gf (curry14 pco0)) H) =>
+                                                 {|
+                                                 paco_observe :=
+                                                 paco_pfold
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0)))
+                                                 (paco
+                                                 (fun
+                                                 R0 : 
+                                                 rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                                 uncurry14 (gf (curry14 R0))))
+                                                 (uncurry14 r) H pco0 LE0
+                                                 SIM0
+                                                 |}) pco LE SIM
+                                                 end".
+Recursive definition is: "let CIH :
+                            _paco
+                              (fun
+                                 R0 : rel1
+                                        (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13) =>
+                               uncurry14 (gf (curry14 R0)))
+                              (paco
+                                 (fun
+                                    R0 : rel1
+                                           (sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                              T10 T11 T12 T13) =>
+                                  uncurry14 (gf (curry14 R0)))) 
+                              (uncurry14 r) H := paco_observe CIH in
+                          match CIH with
+                          | paco_pfold _ _ _ _ pco LE SIM =>
+                              (fun
+                                 (pco0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8 T9
+                                           T10 T11 T12 T13 -> Prop)
+                                 (LE0 : forall
+                                          x0 : sig14T T1 T2 T3 T4 T5 T6 T7 T8
+                                                 T9 T10 T11 T12 T13,
+                                        pco0 x0 ->
+                                        paco
+                                          (fun
+                                             R0 : 
+                                              rel1
+                                                (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                           uncurry14 (gf (curry14 R0)))
+                                          (uncurry14 r) x0 \/ 
+                                        uncurry14 r x0)
+                                 (SIM0 : uncurry14 (gf (curry14 pco0)) H) =>
+                               {|
+                                 paco_observe :=
+                                   paco_pfold
+                                     (fun
+                                        R0 : rel1
+                                               (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                      uncurry14 (gf (curry14 R0)))
+                                     (paco
+                                        (fun
+                                           R0 : rel1
+                                                 (sig14T T1 T2 T3 T4 T5 T6 T7
+                                                 T8 T9 T10 T11 T12 T13) =>
+                                         uncurry14 (gf (curry14 R0))))
+                                     (uncurry14 r) H pco0 LE0 SIM0
+                               |}) pco LE SIM
+                          end"." Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/altreals/discrete.v", line 198, characters 0-67:
+Error: The reference K was not found in the current environment.
+
+File "./theory/bareiss_dvdring.v", line 139, characters 0-109:
+Error: Anomaly "Evar ?X23437 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/CTL/hilbert_LS.v", line 116, characters 7-29:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/preliminaries.v", line 56, characters 7-52:
+Error: The reference K was not found in the current environment.
+
+File "./theories/Series.v", line 320, characters 2-26:
+Error: Anomaly "Evar ?X19095 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./Term/Lambda/LAlpha.v", line 237, characters 2-35:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./examples/kvmaps.v", line 186, characters 0-49:
+Error: The reference big_ind was not found in the current environment.
+
+File "./refinements/binord.v", line 146, characters 2-40:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./theories/schutte/ssete9.v", line 152, characters 0-62:
+Error: The reference K was not found in the current environment.
+
+File "./theories/altreals/discrete.v", line 198, characters 0-67:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./refinements/hpoly.v", line 330, characters 7-27:
+Error: Anomaly "Evar ?X120241 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/seqpoly.v", line 240, characters 2-66:
+Error: The reference K was not found in the current environment.
+
+File "./liouville/QX_root_loc.v", line 21, characters 0-28:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./Util/Relation/SN.v", line 151, characters 0-58:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/hanson_elem_arith.v", line 39, characters 7-73:
+Error: Anomaly "Evar ?X102363 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./common/Globalenvs.v", line 236, characters 2-26:
+Error: Anomaly "in retyping: Not a sort."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/polydvd.v", line 179, characters 7-46:
+Error: The reference D was not found in the current environment.
+
+File "./paco14.v", line 195, characters 2-21:
+Error: Anomaly "in Evd.define: cannot define an evar twice."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./Util/Relation/SN.v", line 161, characters 0-52:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/schutte/ssete9.v", line 160, characters 0-59:
+Error: The reference K was not found in the current environment.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Lib/Conditionals.v", line 62, characters 4-25:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./theories/CTL/hilbert_LS.v", line 120, characters 17-49:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./Term/Lambda/LAlpha.v", line 247, characters 2-35:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Lib/ControlFlow/DownTo.v", line 26, characters 9-50:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./examples/congmath.v", line 174, characters 0-58:
+Error: The reference DSik was not found in the current environment.
+
+File "./refinements/binord.v", line 158, characters 2-40:
+Error: The reference D was not found in the current environment.
+
+File "./theory/bareiss_dvdring.v", line 159, characters 0-30:
+Error: The reference DSik was not found in the current environment.
+
+File "./examples/kvmaps.v", line 219, characters 0-54:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./src/Coqprime/num/Pock.v", line 323, characters 0-39:
+Error: No such Hint database: ZnZ.
+
+File "./reals/Q_dense.v", line 37, characters 0-38:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./Util/Relation/SN.v", line 170, characters 0-51:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 75, characters 4-11:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./theory/polydvd.v", line 183, characters 0-77:
+Error: The reference K was not found in the current environment.
+
+File "./refinements/binord.v", line 170, characters 2-32:
+Error: The reference DSik was not found in the current environment.
+
+File "./theories/hanson_elem_arith.v", line 43, characters 7-31:
+Error: The reference DSik was not found in the current environment.
+
+File "./theories/CTL/hilbert_LS.v", line 130, characters 22-48:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/hmap_ops.v", line 21, characters 0-15:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./src/Coqprime/num/Pock.v", line 625, characters 0-35:
+Error: No such Hint database: ZnZ.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Lib/ControlFlow/DownTo.v", line 31, characters 4-19:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./src/CoArbitrary.v", line 3, characters 0-44:
+Warning: Notation "[ rel _ _ | _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/CoArbitrary.v", line 3, characters 0-44:
+Warning: Notation "[ rel _ _ : _ | _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/CoArbitrary.v", line 3, characters 0-44:
+Warning: Notation "[ rel _ _ in _ & _ | _ ]" was already used in scope
+fun_scope. [notation-overridden,parsing]
+File "./src/CoArbitrary.v", line 3, characters 0-44:
+Warning: Notation "[ rel _ _ in _ & _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/CoArbitrary.v", line 3, characters 0-44:
+Warning: Notation "[ rel _ _ in _ | _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/CoArbitrary.v", line 3, characters 0-44:
+Warning: Notation "[ rel _ _ in _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./theories/Classes/orders/lattices.v", line 178, characters 2-24:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: refine (join_ub_l _ _); only 1: pose conn_map_functor_sigma; only 1: refine (join_ub_l _ _); only 1: trivial; only 1: trivial; only 1: pose conn_map_functor_sigma; only 1: trivial).
+Typing error:
+The term "let i := conn_map_functor_sigma in join_ub_l x x" has type "x
+                                                 ≤ x ⊔ x" which is not a (co-)inductive type."
+Please report at http://coq.inria.fr/bugs/.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Arithmetic.v", line 20, characters 2-93:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Arithmetic.v", line 30, characters 2-215:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/BGsection14.v", line 12, characters 0-54:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGsection14.v", line 12, characters 0-54:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGsection14.v", line 12, characters 0-54:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGsection14.v", line 12, characters 0-54:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGsection14.v", line 12, characters 0-54:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGsection14.v", line 12, characters 0-54:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGsection14.v", line 12, characters 0-54:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/hanson_elem_arith.v", line 47, characters 7-36:
+Error: Anomaly "Evar ?X81922 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./reals/CSumsReals.v", line 37, characters 0-34:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/CMetricFields.v", line 37, characters 0-34:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./LibSepSimpl.v", line 319, characters 2-9:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/coloring.v", line 29, characters 0-65:
+Error: Anomaly "Evar ?X185715 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/CTL/hilbert_LS.v", line 136, characters 31-72:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/CTL/hilbert_LS.v", line 137, characters 2-24:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/CTL/hilbert_LS.v", line 139, characters 2-26:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./refinements/binint.v", line 256, characters 2-60:
+Error: The reference DSik was not found in the current environment.
+
+File "./refinements/hpoly.v", line 341, characters 7-39:
+Error: Anomaly "Evar ?X67061 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Arithmetic.v", line 40, characters 4-12:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Arithmetic.v", line 55, characters 2-433:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning: lglob
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. instantiate
+( 1 := (expr.var _) )
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. pr_arg
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning: lglob
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. instantiate
+( 1 := (expr.var _) )
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. pr_arg
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning: lglob
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. instantiate
+( 1 := (expr.var _) )
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. pr_arg
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning: lglob
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. instantiate
+( 1 := (expr.var _) )
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. pr_arg
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning: lglob
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. instantiate
+( 1 := [] )
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/LinkedList/Find.v", line 283, characters 0-12:
+Warning:
+Tactician is having problems with the following tactic. Please report. pr_arg
+File "./theories/sets/ssete1.v", line 237, characters 0-36:
+Error: The reference DSik was not found in the current environment.
+
+File "./theory/bareiss_dvdring.v", line 185, characters 0-13:
+Error: The reference DSik was not found in the current environment.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Arithmetic.v", line 74, characters 9-17:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./metrics/CPseudoMSpaces.v", line 37, characters 0-36:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/schutte/ssete9.v", line 199, characters 0-16:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./reals/CSumsReals.v", line 66, characters 0-24:
+Warning: Adding and removing hints in the core database implicitly is
+deprecated. Please specify a hint database.
+[implicit-core-hint-db,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Lib/Compiler.v", line 238, characters 11-49:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./cfrontend/SimplExprspec.v", line 592, characters 2-9:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2252, characters 1-34:
+Error: Stack overflow.
+
+File "./theories/tactics/TacticsBase.v", line 298, characters 7-9:
+Warning: Unused variable l' catches more than one case.
+[unused-pattern-matching-variable,pattern-matching]
+File "./theories/tactics/TacticsBase.v", line 298, characters 4-5:
+Warning: Unused variable l catches more than one case.
+[unused-pattern-matching-variable,pattern-matching]
+File "./theories/tactics/TacticsBase.v", line 305, characters 0-83:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/tactics/TacticsBase.v", line 307, characters 0-185:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/tactics/TacticsBase.v", line 387, characters 0-95:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/tactics/TacticsBase.v", line 445, characters 2-195:
+Warning: grammar entry "ident" permitted "_" in addition to proper
+identifiers; this use is deprecated and its meaning will change in the
+future; use "name" instead. [deprecated-ident-entry,deprecated]
+File "./theories/tactics/TacticsBase.v", line 450, characters 2-279:
+Warning: grammar entry "ident" permitted "_" in addition to proper
+identifiers; this use is deprecated and its meaning will change in the
+future; use "name" instead. [deprecated-ident-entry,deprecated]
+File "./theories/tactics/TacticsBase.v", line 455, characters 2-279:
+Warning: grammar entry "ident" permitted "_" in addition to proper
+identifiers; this use is deprecated and its meaning will change in the
+future; use "name" instead. [deprecated-ident-entry,deprecated]
+File "./theories/tactics/TacticsBase.v", line 460, characters 2-279:
+Warning: grammar entry "ident" permitted "_" in addition to proper
+identifiers; this use is deprecated and its meaning will change in the
+future; use "name" instead. [deprecated-ident-entry,deprecated]
+File "./theories/tactics/TacticsBase.v", line 465, characters 2-279:
+Warning: grammar entry "ident" permitted "_" in addition to proper
+identifiers; this use is deprecated and its meaning will change in the
+future; use "name" instead. [deprecated-ident-entry,deprecated]
+File "./LibSepSimpl.v", line 387, characters 0-150:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./LibSepSimpl.v", line 412, characters 0-42:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./refinements/seqpoly.v", line 268, characters 2-74:
+Error: The reference K was not found in the current environment.
+
+File "./model/metric2/LinfDistMonad.v", line 33, characters 0-34:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./model/rings/CRring.v", line 26, characters 0-45:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/Series.v", line 434, characters 2-12:
+Error: The reference DSik was not found in the current environment.
+
+File "./theories/schutte/ssete9.v", line 209, characters 7-75:
+Error: The reference DSik was not found in the current environment.
+
+File "./Term/Lambda/LAlpha.v", line 329, characters 2-53:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/sets/ssete1.v", line 270, characters 0-12:
+Error: Anomaly "Evar ?X76662 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Arithmetic.v", line 111, characters 2-193:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/BGsection14.v", line 173, characters 7-64:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./reals/CSumsReals.v", line 77, characters 0-23:
+Warning: Adding and removing hints in the core database implicitly is
+deprecated. Please specify a hint database.
+[implicit-core-hint-db,deprecated]
+File "./model/fields/CRfield.v", line 26, characters 0-39:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/checkpoint.v", line 21, characters 4-26:
+Error: The reference K was not found in the current environment.
+
+File "./theories/mgraph.v", line 153, characters 7-55:
+Error: The reference K was not found in the current environment.
+
+File "./metrics/IR_CPMSpace.v", line 37, characters 0-42:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Lib/Compiler.v", line 269, characters 6-39:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./theory/polydvd.v", line 208, characters 0-40:
+Error: The reference K was not found in the current environment.
+
+File "./backend/Tunnelingproof.v", line 28, characters 2-9:
+Error: Stack overflow.
+
+File "./theories/sets/sset8.v", line 92, characters 0-56:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Utf8/Utf8.v", line 56, characters 0-415:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Utf8/Utf8.v", line 68, characters 0-61:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./refinements/binint.v", line 278, characters 2-69:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./theories/normedtype.v", line 146, characters 0-41:
+Error: Anomaly "in retyping: unbound local variable."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./examples/congmath.v", line 201, characters 0-29:
+Error: The reference DSik was not found in the current environment.
+
+File "./generalities.v", line 1, characters 0-49:
+Warning:
+New coercion path [real; Finite] : Rbar >-> Rbar is not definitionally an identity function.
+[ambiguous-paths,typechecker]
+File "./ftc/Continuity.v", line 39, characters 0-34:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./metrics/Equiv.v", line 37, characters 0-40:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/preliminaries.v", line 90, characters 0-71:
+Warning:
+Tactician is having problems with the following tactic. Please report. ssrrwarg
+File "./theories/preliminaries.v", line 90, characters 0-71:
+Warning:
+Tactician is having problems with the following tactic. Please report. ssrintros_ne
+File "./theories/preliminaries.v", line 90, characters 0-71:
+Warning:
+Tactician is having problems with the following tactic. Please report. ssrhint3arg
+File "./reals/Series.v", line 41, characters 0-37:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/hanson_elem_arith.v", line 62, characters 7-65:
+Error: The reference K was not found in the current environment.
+
+File "./reals/CSumsReals.v", line 94, characters 0-24:
+Warning: Adding and removing hints in the core database implicitly is
+deprecated. Please specify a hint database.
+[implicit-core-hint-db,deprecated]
+File "./theories/gaia/GLarge_Sets.v", line 34, characters 2-89:
+Error: The reference poly_ind was not found in the current environment.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Nondeterminism/StackAlloc.v", line 116, characters 4-12:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./banach.v", line 96, characters 2-26:
+Error: The reference DSik was not found in the current environment.
+
+File "./cfrontend/Cshmgenproof.v", line 55, characters 2-26:
+Error: Stack overflow.
+
+File "./theories/Topology/FilterLimits.v", line 24, characters 0-12:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./metrics/CPMSTheory.v", line 37, characters 0-37:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./metrics/CPMSTheory.v", line 38, characters 0-27:
+Warning: There is no flag or option with this name: "Automatic Introduction".
+[unknown-option,option]
+File "./theories/Series.v", line 446, characters 2-14:
+Error: The reference DSik was not found in the current environment.
+
+File "./model/reals/CRreal.v", line 27, characters 0-47:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./pcm/unionmap.v", line 492, characters 7-45:
+Error: The reference big_load was not found in the current environment.
+
+File "./examples/kvmaps.v", line 524, characters 0-53:
+Error: The reference big_ind was not found in the current environment.
+
+File "./theories/Formula.v", line 282, characters 6-14:
+Error: Stack overflow.
+
+File "./theories/BGsection14.v", line 178, characters 0-48:
+Error: The reference D was not found in the current environment.
+
+File "./theories/fixPoint.v", line 25, characters 0-23:
+Error: Anomaly "in build_signature: not enough products."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/binint.v", line 290, characters 0-57:
+Error:
+In environment
+nat_nleqneg : forall n p, bool_R (n <= - val_of_pos p)%R false
+y : Znp
+x : ?R
+The term "0" has type "GRing.Zmodule.sort ?V"
+while it is expected to have type "?A -> ?B -> Type".
+
+File "./theories/constructive_ereal.v", line 208, characters 7-64:
+Error:
+In environment
+R : numDomainType
+x : \bar R
+The term "0" has type "\bar ?V" while it is expected to have type
+ "Order.POrder.sort ?T".
+
+File "./refinements/hpoly.v", line 358, characters 7-27:
+Error: The reference DSik was not found in the current environment.
+
+File "./theories/hmap_ops.v", line 42, characters 7-64:
+Error: The reference poly_ind was not found in the current environment.
+
+File "./theories/sets/ssete1.v", line 302, characters 2-36:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/hanson.v", line 39, characters 7-44:
+Error: The reference K was not found in the current environment.
+
+File "./theories/altreals/distr.v", line 63, characters 7-19:
+Error: The reference T2 was not found in the current environment.
+
+File "./theories/CTL/hilbert_LS.v", line 170, characters 15-59:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/coloring.v", line 51, characters 7-69:
+Error: Anomaly "Evar ?X7713 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/Uppercase.v", line 89, characters 4-17:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./intervals.v", line 127, characters 7-43:
+Error: No such Hint database: mulauto.
+
+File "./theories/CTL/hilbert_LS.v", line 174, characters 4-22:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Please report.
+File "./theories/checkpoint.v", line 36, characters 4-18:
+Error: The reference DSik was not found in the current environment.
+
+File "./examples/congmath.v", line 208, characters 7-30:
+Error: The reference DSik was not found in the current environment.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Examples/CMove/CMove.v", line 150, characters 4-43:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./Term/Lambda/LAlpha.v", line 386, characters 2-69:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/hanson_elem_arith.v", line 71, characters 0-49:
+Error: The reference DSik was not found in the current environment.
+
+File "./ftc/FunctSequence.v", line 37, characters 0-35:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/ordinals/sset14.v", line 24, characters 7-38:
+Error: The reference big_ind2 was not found in the current environment.
+
+File "./fta/MainLemma.v", line 41, characters 0-37:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./ftc/RefSeparated.v", line 39, characters 0-35:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./Term/Lambda/LAlpha.v", line 393, characters 2-85:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/normedtype.v", line 160, characters 0-47:
+Error: Anomaly "in retyping: unbound local variable."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/gaia/GLarge_Sets.v", line 40, characters 2-58:
+Error: The reference DSik was not found in the current environment.
+
+File "/tmp/tactician.tmp.VH3JKj/opam-root/bench/.opam-switch/build/coq-rupicola.0.0.4/src/Rupicola/Lib/ControlFlow/DownTo.v", line 94, characters 4-11:
+Error: No such Hint database: map_spec_hints_separate.
+
+File "./model/rings/CRring.v", line 71, characters 1-39:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/BGsection14.v", line 183, characters 7-60:
+Error: The reference D was not found in the current environment.
+
+File "./theories/schutte/ssete9.v", line 230, characters 7-46:
+Error: The reference K was not found in the current environment.
+
+File "./theories/Formula.v", line 351, characters 4-39:
+Error: Stack overflow.
+
+File "./UniMath/Bicategories/PseudoFunctors/Examples/PseudofunctorFromMonoidal.v", line 52, characters 2-25:
+Error: Anomaly "in retyping: Bad recursive type."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reflect.v", line 24, characters 2-9:
+Error: No such Hint database: map.
+

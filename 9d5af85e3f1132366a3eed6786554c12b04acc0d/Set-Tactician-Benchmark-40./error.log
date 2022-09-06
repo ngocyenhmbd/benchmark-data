@@ -2,8 +2,12 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-02.cluster 34847)))
- (rpc_tag rpc_parallel_piped_5) (rpc_version 0))
+Fatal benchmarking error: (078f70e9-4aa2-365d-1f2e-20bf20a4bee3
+ (monitor.ml.Error
+  (Unix.Unix_error "File name too long" stat
+   +implicit-core-hint-db,+implicits-in-term,+non-reversible-notation,+deprecated-intros-until-0,+deprecated-focus,+unused-intro-pattern,+deprecated-hint-constr,+fragile-hint-constr,+variable-collision,+unexpected-implicit-declaration,+omega-is-deprecated,+non-recursiveo)
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
+Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: Abnormal exit code for command worker: job91 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1917821. Code: 254
