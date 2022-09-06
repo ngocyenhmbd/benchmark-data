@@ -4921,3 +4921,14 @@ rsync: mkstemp "/tmp/tactician.tmp.rCkOvw/target-source/.coq-tactician.opam.temp
 rsync: mkstemp "/tmp/tactician.tmp.rCkOvw/target-source/.dune-project.SS527U" failed: No space left on device (28)
 rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1650) [generator=3.1.2]
 
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: Rsync failed: rsync: mkdir "/lscratch/blaaulas/tactician.tmp.Vmhbks" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(657) [Receiver=3.1.2]
+srun: error: dgx-2: task 0: Exited with exit code 11
+
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (dgx-2.cluster 42894)))
+ (rpc_tag rpc_parallel_plain_4) (rpc_version 0))
