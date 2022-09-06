@@ -12044,3 +12044,329 @@ UniMath.Bicategories.DisplayedBicats.Examples.KleisliTriple.inv_from_iso_iso_com
 Coq.MSets.MSetProperties.WPropertiesOn.remove_cardinal_1	40
 Coq.Lists.ListSet.first_definitions.set_inter_nodup	40
 OLlibs.fmsetlist.Fmmap.list2fm_map	40
+Coq.PArith.BinPos.Pos.sub_mask_neg	40	0.0.1	synth with cache (only 1: rewrite lt_iff_add; only 1: intros (r, <-); only 1: apply sub_mask_add_diag_r).	0.071458	4
+Coq.Lists.List.Exists_Forall.One_predicate.Exists_fold_right	40	1.0.0.0.0.0.0.0.0.64.193.0.1	synth with cache (only 1: induction l; only 1: firstorder  (subst; auto); only 1: simpl in *; only 1: now simpl; only 1: simpl; only 1: rewrite <- IHl; only 1: split; only 1: inversion 1; only 1: auto; only 1: auto; only 1: inversion 1; only 1: now apply Exists_cons_hd; only 1: now apply Exists_cons_tl).	0.423717	734
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_inv	40	0.1.0.128.66	synth with cache (only 1: intro l; only 1: intros x; only 1: intros HE; only 1: inversion_clear HE; only 1: firstorder).	0.471607	858
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_inv_tail	40	0.0.0	synth with cache (only 1: intros a l H; only 1: inversion H; only 1: trivial).	0.023392	3
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_nil_iff	40	0.0.1.0.0	synth with cache (only 1: split; only 1: inversion 1; only 1: auto; only 1: inversion 1; only 1: constructor).	0.028288	6
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_cons_iff	40	0.0.0.0.0.1	synth with cache (only 1: intros x l; only 1: split; only 1: inversion 1; only 1: auto; only 1: inversion 1; only 1: auto).	0.115517	125
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_wd	40	2.0.577.2	synth with cache (only 1: intros a a' Ha; only 1: compute; only 1: f_equiv; only 1: now rewrite Ha).	1.135726	2739
+Coq.NArith.BinNat.N.gt_lt	40	129.0.1	synth with cache (only 1: intro H; only 1: apply lt_nge; only 1: intuition).	0.022399	9
+Coq.NArith.BinNat.N.lt_gt	40	0	synth with cache (only 1: apply gt_lt_iff).	0.012392	1
+Coq.FSets.FSetBridge.NodepOfDep.diff_2	40	0.0.0.0	synth with cache (only 1: intros s s' x; only 1: unfold diff; only 1: case (M.diff s s'); only 1: firstorder).	0.027933	4
+Coq.FSets.FSetBridge.NodepOfDep.diff_3	40	0.0.320.0.64.0.1.0	synth with cache (only 1: intros s s' x; only 1: unfold diff; only 1: case (M.inter s s'); only 1: intros Hx Hy; only 1: case (M.inter s s'); only 1: intro LE; only 1: case (M.diff s s'); only 1: firstorder).	0.229330	295
+Coq.FSets.FSetBridge.NodepOfDep.f_dec	40	0	synth with cache (only 1: decide equality).	0.017397	1
+Coq.MSets.MSetInterface.MakeSetOrdering.lt_empty_r	40	194.64.3	synth with cache (only 1: intro n; only 1: intros l2; only 1: firstorder).	0.938613	1212
+Coq.PArith.BinPos.Pos.max_r	40	0.0.0.2.0.0.0.0.0.0	synth with cache (only 1: intros x y H; only 1: unfold max; only 1: case compare_spec; only 1: auto; only 1: intros H'; only 1: apply le_nlt in H; only 1: now apply le_antisym; only 1: intros H'; only 1: apply le_nlt in H; only 1: now elim H).	0.957130	1037
+Coq.FSets.FSetBridge.NodepOfDep.compat_P_aux	40	2.641.193.64	synth with cache (only 1: intros l2 l' H; only 1: intros x a **; only 1: induction 1; only 1: intuition).	1.014829	2272
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_app	40	0.5.1.0.0.0.0.0.0.1.0.0	synth with cache (only 1: induction l1; only 1: simpl; only 1: easy; only 1: simpl; only 1: split; only 1: intros HE; only 1: inversion_clear HE; only 1: intuition; only 1: intros HE; only 1: intuition; only 1: inversion H; only 1: intuition).	3.952052	6469
+Coq.PArith.BinPos.Pos.max_1_r	40	0.0.0.0.0.0.0.0	synth with cache (only 1: unfold max; only 1: case compare_spec; only 1: auto; only 1: intros H; only 1: apply lt_nle in H; only 1: elim H; only 1: apply le_1_l; only 1: auto).	0.040010	8
+Coq.PArith.BinPos.Pos.min_1_l	40	0.1	synth with cache (only 1: apply min_l; only 1: apply le_1_l).	0.019062	3
+Coq.PArith.BinPos.Pos.min_1_r	40	0.0.0.0.0.0.0.0	synth with cache (only 1: unfold min; only 1: case compare_spec; only 1: auto; only 1: intros H; only 1: apply lt_nle in H; only 1: elim H; only 1: apply le_1_l; only 1: auto).	0.039736	8
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_fold_right	40	0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction l; only 1: simpl; only 1: easy; only 1: simpl; only 1: split; only 1: intros HE; only 1: now inversion HE; intuition; only 1: intros HE; only 1: now inversion HE; intuition).	0.239039	140
+Coq.NArith.BinNat.N.le_ge	40	0	synth with cache (only 1: apply ge_le_iff).	0.011496	1
+Coq.PArith.BinPos.Pos.max_1_l	40	0.580.3.2	synth with cache (only 1: apply max_r; only 1: unfold le; only 1: apply PeanoNat.Nat.lt_succ_r; only 1: apply lt_succ_r, le_1_l).	0.874266	2721
+Coq.Lists.SetoidList.Type_with_equality.EqlistA.eqlistA_app	40	0.0.1.0.0	synth with cache (only 1: induction 1; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.044950	6
+Coq.NArith.BinNat.N.ge_le	40	0.0.0.0.2.65.256	synth with cache (only 1: intros Hn; only 1: destruct (PeanoNat.Nat.lt_trichotomy n m) as [LT| [EQ| GT]]; only 1: apply lt_eq_cases; only 1: now left; only 1: assert (m <= n) by (rewrite le_lteq; intuition); only 1: auto; only 1: Private_Tac.order).	3.127036	2855
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_elt	40	64.0.522.3.0.0.4	synth with cache (only 1: induction l1; only 1: intros; only 1: inversion H; only 1: auto; only 1: inversion 1; only 1: simpl in H; only 1: Nat.auto').	2.694491	13996
+Coq.FSets.FMapWeakList.Make.Elt.elements_1	40	193.0	synth with cache (only 1: intros m; only 1: auto with sets).	0.036227	48
+Coq.FSets.FMapWeakList.Make.Elt.elements_2	40	0.0	synth with cache (only 1: intros m; only 1: exact (Raw.elements_1 (m:=m))).	0.018159	2
+Coq.FSets.FMapWeakList.Make.Elt.elements_3w	40	64.74	synth with cache (only 1: intros (b, Hb); only 1: auto using Sorted, LocallySorted, HdRel).	0.658804	2744
+Coq.FSets.FMapWeakList.Make.Elt.cardinal_1	40	66.0	synth with cache (only 1: intros m; only 1: tauto).	0.019509	7
+Coq.FSets.FSetBridge.NodepOfDep.filter_3	40	0.0.0.0.0.0	synth with cache (only 1: intros s x f; only 1: unfold filter; only 1: destruct M.filter as (x0, Hiff); only 1: intuition; only 1: generalize (Hiff (compat_P_aux H)); only 1: firstorder).	0.133467	6
+Coq.Lists.List.Exists_Forall.map_ext_Forall	40	193.2.0.0.64.192.1	synth with cache (only 1: intros H; only 1: intro H'; only 1: induction 1; only 1: apply map_ext_in; only 1: firstorder  (subst; auto); only 1: simpl; only 1: congruence).	2.957480	5019
+Coq.PArith.BinPos.Pos.add_max_distr_l	40	0.130.129.0.0	synth with cache (only 1: apply max_mono; only 1: eauto with *; only 1: intros r H; only 1: intro RS'; only 1: now apply add_le_mono_l).	3.202339	4948
+Coq.PArith.BinPos.Pos.mul_max_distr_l	40	0.577.320.1.0	synth with cache (only 1: apply max_monotone; only 1: repeat red; only 1: intros H H1 H2; only 1: apply PeanoNat.Nat.mul_le_mono_l; only 1: intuition).	1.000658	1032
+Coq.PArith.BinPos.Pos.mul_min_distr_l	40	0.0.5	synth with cache (only 1: apply min_monotone; only 1: intros x x'; only 1: apply mul_le_mono_l).	0.591572	566
+Coq.PArith.BinPos.Pos.mul_min_distr_r	40	0.0.0.2	synth with cache (only 1: rewrite 3!(mul_comm _ p); only 1: apply min_monotone; only 1: intros x x'; only 1: apply mul_le_mono_l).	0.181415	55
+Coq.Lists.List.Exists_Forall.Forall_impl	40	0.0.0.8.0	synth with cache (only 1: intros P Q H l H0; only 1: apply Forall_forall; only 1: induction H0 as [x l H0| x l H0 IHExists]; only 1: firstorder  (subst; auto); only 1: firstorder  (subst; auto)).	2.840510	11256
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lxor_m1_r	40	1.0.0	synth with cache (only 1: intros; only 1: bitwise; only 1: now rewrite lnot_spec, bits_m1).	0.053257	37
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lxor_m1_l	40	1.1.0	synth with cache (only 1: intros a; only 1: bitwise; only 1: now rewrite lnot_spec, bits_m1).	0.049750	17
+Coq.Lists.List.Exists_Forall.neg_Forall_Exists_neg	40	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intro Dec; only 1: intros NF; only 1: induction l as [| a l IH]; only 1: destruct NF; only 1: apply Forall_nil; only 1: destruct (Dec a) as [Ha| Ha]; only 1: apply Exists_cons_tl, IH; only 1: contradict NF; only 1: now constructor; only 1: now apply Exists_cons_hd).	0.313950	337
+Coq.PArith.BinPos.Pos.succ_of_nat	40	2.64.0.1.2.0	synth with cache (only 1: intros; only 1: induction n as [| n IHn]; only 1: exfalso; only 1: now apply H; only 1: symmetry; only 1: apply of_nat_succ).	0.719533	685
+Coq.PArith.BinPos.Pos.of_nat_succ	40	0.65.579.0.2	synth with cache (only 1: induction n; only 1: split; only 1: compute; only 1: f_equal; only 1: trivial).	0.908855	1661
+Coq.Lists.SetoidList.Type_with_equality.EqlistA.eqlistA_rev	40	0.0.0.0.0	synth with cache (only 1: intros x y ?; only 1: rewrite <- (app_nil_r (rev x)), <- (app_nil_r (rev y)); only 1: apply eqlistA_rev_app; only 1: auto; only 1: auto).	0.048679	5
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_equiv	40	0.323.1	synth with cache (only 1: intros a; only 1: compute; only 1: now rewrite shiftl_1_l).	1.139364	2284
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_wd	40	0.65.194.513	synth with cache (only 1: intros c Hc IH; only 1: compute; only 1: rewrite IH; only 1: f_equiv).	2.055004	4080
+Coq.Sorting.CPermutation.CPermutation_rewrite_rev	40	2	synth with cache (only 1: now intros ->).	0.031707	3
+Coq.micromega.Tauto.S.hold_eIFF	40	0.0.0.0.0.0.0.0.0.0.2.0.0.0.0.0.0	synth with cache (only 1: intros k; only 1: destruct k; only 1: simpl; only 1: intros; only 1: apply iff_refl; only 1: simpl; only 1: intros e1 e2; only 1: unfold is_true; only 1: destruct e1, e2; only 1: simpl; only 1: intuition congruence; only 1: simpl; only 1: intuition congruence; only 1: simpl; only 1: intuition congruence; only 1: simpl; only 1: intuition congruence).	12.650670	7333
+Coq.micromega.Tauto.S.hold_eEQ	40	128.0.1.0.0	synth with cache (only 1: simpl; only 1: intros e1 e2; only 1: unfold is_true; only 1: rewrite eqb_true_iff; only 1: Morphisms.f_equiv).	0.150870	8
+Coq.NArith.BinNat.N.iter_swap	40	1.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: now apply Pos.iter_swap_gen).	0.037287	17
+Coq.NArith.BinNat.N.iter_swap_gen	40	0.0.0.0.0.0.0.0.0.0.1.0.0.1.323	synth with cache (only 1: destruct n as [| p]; only 1: simpl; only 1: intros; only 1: now rewrite ?H, ?IHp; only 1: simpl; only 1: induction p as [p IHp| p IHp| ]; only 1: simpl; only 1: intros; only 1: now rewrite ?H, ?IHp; only 1: simpl; only 1: intros; only 1: now rewrite ?H, ?IHp; only 1: simpl; only 1: intros; only 1: now rewrite ?H, ?IHp).	2.864799	5524
+Coq.NArith.BinNat.N.iter_succ_r	40	1.0.0.0.0.0	synth with cache (only 1: intro n; only 1: destruct n; only 1: intros; only 1: now rewrite Pos.iter_succ, Pos.iter_swap; only 1: intros; only 1: now rewrite Pos.iter_succ, Pos.iter_swap).	0.058848	29
+Coq.Lists.List.Forall2.Forall2_refl	40	3	synth with cache (only 1: constructor).	0.015254	4
+Coq.FSets.FSetBridge.NodepOfDep.exists_2	40	0.0.0.1.1.0	synth with cache (only 1: intros s f; only 1: unfold exists_; only 1: case M.exists_; only 1: intuition; only 1: intuition; only 1: inversion H0).	0.486914	898
+Coq.NArith.BinNat.N.iter_invariant	40	0.1.0.0	synth with cache (only 1: intros; only 1: apply Pos.iter_ind; only 1: auto; only 1: auto).	0.017785	5
+Coq.NArith.BinNat.N.gt_lt_iff	40	0.576.3.257.0.4.0.1.0	synth with cache (only 1: split; only 1: intro H; only 1: apply lt_nge; only 1: intro H1; only 1: false_hyp H ltac:(H1); only 1: destruct (PeanoNat.Nat.le_gt_cases n m); only 1: intuition order; only 1: red; only 1: now rewrite compare_antisym, H).	22.026068	27219
+Coq.Lists.SetoidList.Type_with_equality.EqlistA.app_eqlistA_compat	40	512.65.0.1.64.1.0.320.449	synth with cache (only 1: intro LE; only 1: intro H; only 1: induction 1; only 1: simpl; only 1: intros s2 x H; only 1: intuition; only 1: simpl; only 1: repeat red; only 1: PeanoNat.Nat.auto').	23.698795	13507
+Coq.Lists.List.exists_Forall	40	323.0.128.4.0.1.1	synth with cache (only 1: induction l as [| a l IHl]; only 1: intros; only 1: firstorder; only 1: intros [? ?]; only 1: inversion H; only 1: subst; only 1: eauto).	9.772021	30222
+Coq.micromega.Tauto.S.hold_eIFF_IMPL	40	384.0.0.0.0.2.0.0.1.0.0.320	synth with cache (only 1: destr_bool; only 1: destruct k; only 1: simpl; only 1: intuition congruence; only 1: simpl; only 1: unfold is_true; only 1: destruct e1, e2; only 1: rewrite eqb_true_iff; only 1: intuition congruence; only 1: intuition congruence; only 1: intuition congruence; only 1: now simpl).	18.311702	10180
+Coq.FSets.FSetBridge.NodepOfDep.filter_2	40	0.0.0.0.0.128.3	synth with cache (only 1: intros x y; only 1: intro p; only 1: unfold filter; only 1: destruct M.filter as (x0, Hiff); only 1: intuition; only 1: generalize (Hiff (compat_P_aux H)); only 1: firstorder).	21.131696	19486
+Coq.micromega.Tauto.S.hold_eIMPL	40	448.128.65.1.2.0.1.0.0.0	synth with cache (only 1: intros k; only 1: destruct k; only 1: simpl; only 1: intros; only 1: apply iff_refl; only 1: intros k; only 1: destruct k; only 1: intuition; only 1: now rewrite H; only 1: now rewrite ?Ha).	26.093742	14695
+Coq.Logic.ClassicalFacts.independence_general_premises_Godel_Dummett	40
+Coq.Logic.ClassicalFacts.independence_general_premises_drinker	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.setbit_eq	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.setbit_neq	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.clearbit_eqb	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.clearbit_eq	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.clearbit_iff	40
+Coq.PArith.Pnat.SuccNat2Pos.inv	40
+Coq.PArith.Pnat.SuccNat2Pos.inj_compare	40
+Coq.Lists.ListSet.first_definitions.set_diff_intro	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_neg	40	1.0.0	synth with cache (only 1: intros a n; only 1: rewrite <- shiftl_opp_r; only 1: now rewrite 2!lt_nge, shiftl_nonneg).	0.032126	4
+Coq.PArith.BinPos.Pos.add_sub_assoc	40
+Coq.PArith.BinPos.Pos.sub_add_distr	40
+Coq.PArith.BinPos.Pos.sub_sub_distr	40
+Coq.PArith.BinPos.Pos.sub_xO_xO	40
+Coq.PArith.BinPos.Pos.sub_xO_xI	40
+Coq.PArith.BinPos.Pos.sub_mask_neg_iff'	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.div2_neg	40	0.0.2	synth with cache (only 1: intros a; only 1: rewrite div2_spec; only 1: now rewrite 2!lt_nge, shiftr_nonneg).	0.533234	500
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.clearbit_neq	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftl_lxor	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_lxor	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftl_land	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_land	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftl_lor	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_lor	40
+Coq.PArith.BinPos.Pos.sub_le	40
+Coq.PArith.BinPos.Pos.sub_lt	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftl_ldiff	40
+Coq.Lists.List.NoDup_map_inv	40
+Coq.Lists.List.NatSeq.seq_nth	40
+Coq.Lists.List.NatSeq.in_seq	40
+Coq.Lists.List.NatSeq.seq_NoDup	40
+Coq.Lists.List.NatSeq.seq_app	40
+Coq.Lists.List.Exists_Forall.One_predicate.Exists_exists	40
+Coq.Lists.List.Exists_Forall.One_predicate.Exists_nth	40
+Coq.Lists.List.Exists_Forall.One_predicate.Exists_app	40
+Coq.Lists.List.Exists_Forall.One_predicate.Exists_rev	40
+Coq.Lists.ListSet.first_definitions.set_diff_elim1	40
+Coq.Lists.List.Repeat.repeat_length	40	0.0.257.1.128	synth with cache (only 1: Nat.induct ltac:(n); only 1: easy; only 1: intro z; only 1: simpl; only 1: auto).	0.209881	120
+Coq.Lists.List.Exists_Forall.One_predicate.Exists_dec	40
+Coq.Lists.List.Repeat.repeat_spec	40	130.192.2.1.64	synth with cache (only 1: induction n as [| k iHk]; only 1: CRelationClasses.simpl_crelation; only 1: simpl; only 1: intros HE; only 1: firstorder).	0.327668	554
+Coq.MSets.MSetInterface.MakeSetOrdering.lt_compat	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_ldiff	40
+Coq.Lists.List.Exists_Forall.One_predicate.incl_Exists	40
+Coq.PArith.BinPos.Pos.sub_diag	40
+Coq.MSets.MSetInterface.MakeSetOrdering.lt_strorder	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_spec	40
+Coq.PArith.BinPos.Pos.size_nat_monotone	40
+Coq.Sorting.CPermutation.CPermutation_Forall2	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_involutive	40
+Coq.PArith.BinPos.Pos.size_gt	40
+Coq.NArith.BinNat.N.pos_ldiff_spec	40
+Coq.Lists.List.Repeat.repeat_cons	40	0.1.0.0.0.69.5	synth with cache (only 1: rewrite <- app_nil_r  at 1; only 1: induction n as [| n hn]; only 1: simpl; only 1: f_equal; only 1: simpl; only 1: apply f_equal; only 1: auto).	1.109069	3123
+Coq.PArith.BinPos.Pos.size_le	40
+Coq.Sorting.Permutation.Permutation_alt.Permutation_nth_error	40
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_forall	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_0	40
+Coq.Sorting.Permutation.Permutation_alt.Permutation_nth_error_bis	40
+Coq.NArith.BinNat.N.ldiff_spec	40
+Coq.Lists.SetoidList.Type_with_equality.SortA_NoDupA	40
+Coq.NArith.BinNat.N.ge_le_iff	40
+Coq.Lists.SetoidList.Type_with_equality.EqlistA.eqlistA_length	40
+Coq.PArith.BinPos.Pcompare_eq_Gt	40	1.0	synth with cache (only 1: unfold Pos.gt; only 1: apply iff_refl).	0.018555	3
+Coq.MSets.MSetInterface.MakeListOrdering.eq_cons	40	66.65.0.0.320.128	synth with cache (only 1: intro m; only 1: intros Ha; only 1: intros x y; only 1: intros; only 1: rewrite H by intuition; only 1: now f_equiv).	1.341980	1708
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_nth	40
+Coq.FSets.FSetBridge.NodepOfDep.inter_1	40
+Coq.Logic.ClassicalFacts.excluded_middle_independence_general_premises	40
+Coq.FSets.FSetBridge.NodepOfDep.diff_1	40
+Coq.FSets.FSetBridge.NodepOfDep.cardinal_1	40
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.log_prewd	40
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.log_wd	40
+Coq.FSets.FSetBridge.NodepOfDep.fold_1	40
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_mult	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_m1	40
+Coq.PArith.BinPos.Pos.max_l	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lor_m1_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lor_m1_l	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_m1_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_m1_l	40
+Coq.Lists.List.repeat_to_concat	40	449.2.134	synth with cache (only 1: Nat.induct n; only 1: reflexivity; only 1: RelationClasses.simpl_relation).	0.772437	1243
+Coq.PArith.BinPos.Pos.min_l	40
+Coq.PArith.BinPos.Dcompare	40	0.0.2.131.143	synth with cache (only 1: intro p; only 1: induction p as [p IHp| p IHp| ]; only 1: now intuition; only 1: now intuition; only 1: now intuition).	2.640001	9088
+Coq.MSets.MSetInterface.MakeSetOrdering.lt_empty_l	40
+Coq.Sorting.Permutation.Permutation_alt.Permutation_nth	40
+Coq.PArith.BinPos.Pos.min_r	40
+Coq.FSets.FMapWeakList.Make.Elt.remove_1	40
+Coq.FSets.FMapWeakList.Make.Elt.remove_2	40
+Coq.FSets.FMapWeakList.Make.Elt.remove_3	40
+Coq.FSets.FMapWeakList.Make.Elt.find_1	40
+Coq.FSets.FSetBridge.NodepOfDep.filter_1	40
+Coq.MSets.MSetInterface.MakeSetOrdering.lt_add_lt	40
+Coq.PArith.Pnat.ObsoletePmultNat.ZL6	40	0.1.193	synth with cache (only 1: intros b; only 1: rewrite !Pmult_nat_mult; only 1: now Nat.nzsimpl).	3.208909	551
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ldiff_m1_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ldiff_m1_l	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lor_lnot_diag	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.add_lnot_diag	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ldiff_land	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_lnot_diag	40
+Coq.PArith.BinPos.Pos.succ_max_distr	40
+Coq.PArith.BinPos.Pos.succ_min_distr	40
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_rev	40
+Coq.FSets.FMapWeakList.Make.Elt.find_2	40
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_rect	40
+Coq.Lists.List.Exists_Forall.One_predicate.Forall_dec	40
+Coq.Lists.List.Exists_Forall.One_predicate.incl_Forall	40
+Coq.micromega.Tauto.S.xcnf_impl	40
+Coq.Sorting.Permutation.Permutation_list_sum	40
+Coq.NArith.BinNat.N.pos_pred_shiftl_low	40
+Coq.Lists.List.Repeat.repeat_app	40	1.5.5.2.0	synth with cache (only 1: induction n as [| n IHn]; only 1: simpl; only 1: trivial; only 1: simpl; only 1: now f_equal).	8.823715	19287
+Coq.Lists.SetoidList.Type_with_equality.EqlistA.eqlistA_rev_app	40
+Coq.Logic.ClassicalFacts.Unrestricted_minimization_entails_excluded_middle.unrestricted_minimization_entails_excluded_middle	40
+Coq.NArith.BinNat.N.pos_pred_shiftl_high	40
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_succ_morphism	40
+Coq.Lists.ListSet.first_definitions.set_diff_elim2	40
+Coq.ZArith.Znat.inj_neq	40
+Coq.Lists.List.Exists_Forall.Exists_impl	40
+Coq.Lists.List.Exists_Forall.Exists_or	40
+Coq.Lists.List.Exists_Forall.Exists_or_inv	40
+Coq.Lists.List.Exists_Forall.Forall_and	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_lor	40
+Coq.Lists.List.Exists_Forall.Forall_and_inv	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_land	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_ldiff	40
+Coq.PArith.BinPos.Pos.add_max_distr_r	40
+Coq.PArith.BinPos.Pos.add_min_distr_l	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lxor_lnot_lnot	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_lxor_l	40
+Coq.PArith.BinPos.Pos.add_min_distr_r	40
+Coq.FSets.FMapWeakList.Make.Elt.fold_1	40
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.log_good_step	40
+Coq.FSets.FMapList.Make_ord.eq_1	40
+Coq.FSets.FSetBridge.NodepOfDep.for_all_1	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.EVALUATION.add_pow_list_ok	40	2.128.1.0.0.2.449	synth with cache (only 1: intro H; only 1: intros l; only 1: induction l as [| a l IHl]; only 1: intros lm; only 1: Esimpl; only 1: intro l1; only 1: Esimpl).	32.635042	8168
+Coq.FSets.FMapList.Make_ord.eq_2	40
+Coq.Lists.List.Exists_Forall.Forall_Exists_neg	40
+Coq.FSets.FMapList.Make_ord.eq_refl	40
+Coq.NArith.BinNat.N.pred_div2_up	40
+Coq.PArith.BinPos.Pos.mul_max_distr_r	40
+Coq.Lists.SetoidList.Type_with_equality.EqlistA.rev_eqlistA_compat	40
+Coq.Lists.List.Repeat.repeat_eq_cons	40	195.3.0.196	synth with cache (only 1: Nat.induct n; only 1: intros H; only 1: now simpl; only 1: CRelationClasses.simpl_crelation).	12.057446	25958
+Coq.PArith.BinPos.Pos.iter_op_succ	40
+Coq.Lists.List.Exists_Forall.Exists_Forall_neg	40
+Coq.FSets.FMapWeakList.Make.Elt.equal_1	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_lxor_r	40
+Coq.MSets.MSetInterface.MakeSetOrdering.lt_add_eq	40
+Coq.Lists.List.Exists_Forall.Forall_Exists_dec	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lxor_lor	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lnot_shiftr	40
+Coq.Lists.List.Exists_Forall.incl_Forall_in_iff	40
+Coq.PArith.BinPos.Pos.pred_of_succ_nat	40
+Coq.Lists.List.Exists_map	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_add	40
+Coq.FSets.FSetBridge.NodepOfDep.for_all_2	40
+Coq.Lists.List.Exists_concat	40
+Coq.PArith.BinPos.Pos.sqrtrem_step_spec	40
+Coq.Lists.List.Exists_flat_map	40
+Coq.Logic.ClassicalFacts.Excluded_middle_entails_unrestricted_minimization.excluded_middle_entails_unrestricted_minimization	40
+Coq.PArith.BinPos.Pos.sqrtrem_spec	40
+Coq.Sorting.Permutation.Permutation_list_max	40
+Coq.PArith.BinPos.Pos.sqrt_spec	40
+Coq.Lists.SetoidList.Type_with_equality.EqlistA.SortA_equivlistA_eqlistA	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_div_pow2	40
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_l_plus_morphism	40
+Coq.MSets.MSetInterface.MakeListOrdering.lt_strorder	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_mod_pow2	40
+Coq.Numbers.Natural.Abstract.NDefOps.NdefOpsProp.log_init	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_spec_low	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_spec_high	40
+Coq.PArith.BinPos.Pos.divide_add_cancel_l	40
+Coq.FSets.FSetBridge.NodepOfDep.exists_1	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ones_spec_iff	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lor_ones_low	40
+Coq.FSets.FMapWeakList.Make.Elt.equal_2	40
+Coq.PArith.BinPos.Pos.divide_xO_xI	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_ones	40
+Coq.Lists.List.Forall_map	40
+Coq.PArith.BinPos.Pos.divide_xO_xO	40
+Coq.Lists.List.Forall_concat	40
+Coq.Lists.List.Forall_flat_map	40
+Coq.Logic.ClassicalFacts.excluded_middle_iff_representative_boolean_partition	40	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.17	synth with cache (only 1: split; only 1: intros EM R H; only 1: destruct (EM (R true false)); only 1: exists (fun _ => true); only 1: intros []; only 1: firstorder; only 1: firstorder; only 1: exists (fun b => b); only 1: intro b; only 1: split; only 1: reflexivity; only 1: destruct b, y; only 1: intros HR; only 1: easy || now symmetry in HR; only 1: intros HR; only 1: easy || now symmetry in HR; only 1: intros HR; only 1: easy || now symmetry in HR; only 1: intros HR; only 1: easy || now symmetry in HR; only 1: intros ReprFunChoice P; only 1: pose (R := fun b1 b2 : bool => b1 = b2 \/ P); only 1: assert (Equivalence R); only 1: split; only 1: now left; only 1: destruct 1; only 1: now left; only 1: now right; only 1: destruct 1, 1; only 1: left; only 1: now transitivity y; only 1: now right; only 1: now right; only 1: now right; only 1: destruct (ReprFunChoice R H) as (f, Hf); only 1: clear H; only 1: destruct (Bool.bool_dec (f true) (f false)) as [Heq| Hneq]; only 1: left; only 1: destruct (Hf false) as ([Hfalse| HP], _); only 1: destruct (Hf true) as ([Htrue| HP], _); only 1: congruence; only 1: easy; only 1: easy; only 1: right; only 1: intro HP; only 1: destruct (Hf true) as (_, H); only 1: apply Hneq, H; only 1: now right).	7.703453	6906
+Coq.Lists.List.Forall_image	40
+Coq.micromega.Tauto.S.xcnf_iff	40
+Coq.NArith.BinNat.N.iter_succ	40
+Coq.NArith.BinNat.N.iter_add	40
+Coq.micromega.Tauto.S.xcnf_correct	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.EVALUATION.mkadd_mult_ok	40
+Coq.FSets.FMapWeakList.Make.map_1	40
+Coq.Lists.ListSet.first_definitions.set_diff_iff	40
+Coq.FSets.FMapWeakList.Make.map_2	40
+Coq.Lists.List.concat_nil_Forall	40
+Coq.Lists.List.in_flat_map_Exists	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.EVALUATION.add_mult_dev_ok	40
+Coq.ZArith.Znat.inj_minus2	40
+Coq.Lists.List.notin_flat_map_Forall	40
+Coq.Lists.List.Forall2.Forall2_app_inv_l	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.land_ones_low	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ldiff_ones_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ldiff_ones_r_low	40
+Coq.micromega.Tauto.S.cnf_checker_sound	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.ldiff_ones_l_low	40
+Coq.PArith.BinPos.Pos.divide_mul_l	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.EVALUATION.mult_dev_ok	40
+Coq.PArith.BinPos.Pos.divide_mul_r	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftl_nonneg	40
+Coq.PArith.BinPos.Pos.ggcdn_gcdn	40
+Coq.FSets.FMapList.Make_ord.eq_sym	40
+Coq.FSets.FSetBridge.NodepOfDep.partition_1	40
+Coq.Sorting.Permutation.Permutation_transp.Permutation_transp_sym	40
+Coq.NArith.BinNat.N.iter_ind	40
+Coq.Lists.SetoidList.Type_with_equality.Filter.filter_sort	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rplus_nonneg_nonneg	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rle_le_minus	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rlt_lt_minus	40
+Coq.FSets.FMapList.Make_ord.eq_trans	40
+Coq.FSets.FMapWeakList.Make.mapi_1	40
+Coq.Lists.List.Forall2.Forall2_app_inv_r	40
+Coq.Lists.List.Forall2.Forall2_app	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.mkopp_pow_ok	40	0.0.0.1.0.1.0.0.0.0.0.2	synth with cache (only 1: destruct p; only 1: simpl; only 1: Esimpl; only 1: rewrite !mkmult_pow_ok; only 1: Esimpl; only 1: simpl; only 1: rewrite mkmult_pow_ok; only 1: Esimpl; only 1: change x with (x ^ 1)  at 1; only 1: now rewrite <- pow_pos_add, Pos.add_1_r, Pos.succ_pred_double; only 1: simpl; only 1: now rewrite ?local_mkpow_ok).	2.402770	734
+Coq.Lists.List.ForallPairs.ForallOrdPairs_In	40
+Coq.Lists.List.ForallPairs.ForallPairs_ForallOrdPairs	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.EVALUATION.Pphi_avoid_ok	40
+Coq.micromega.EnvRing.MakeRingPol.POWER.Ppow_pos_ok	40
+Coq.micromega.EnvRing.MakeRingPol.POWER.Ppow_N_ok	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Ropp_lt_mono	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Ropp_pos_neg	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rtimes_nonneg_nonneg	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rtimes_pos_neg	40
+Coq.micromega.OrderedRing.STRICT_ORDERED_RING.Rtimes_neg_neg	40
+Coq.micromega.EnvRing.MakeRingPol.NORM_SUBST_REC.norm_aux_PEadd	40
+Coq.setoid_ring.Ring_polynom.MakeRingPol.local_mkpow_ok	40
+Coq.Lists.SetoidList.Type_with_equality.Filter.filter_InA	40
+Coq.Logic.ChoiceFacts.setoid_fun_choice_imp_repr_fun_choice	40
+Coq.ZArith.Zdiv.Zplus_mod_idemp_r	40	0.1.0.0.0	synth with cache (only 1: intros; only 1: symmetry; only 1: symmetry; only 1: rewrite Zplus_mod, Zmod_mod, <- Zplus_mod; only 1: trivial).	0.178690	118
+Coq.Lists.List.ForallPairs.ForallOrdPairs_ForallPairs	40
+Coq.ZArith.Zdiv.Zminus_mod_idemp_r	40	0.0.0	synth with cache (only 1: intros; only 1: rewrite Zminus_mod, Zmod_mod, <- Zminus_mod; only 1: auto).	0.025154	3
+Coq.setoid_ring.Ring_polynom.MakeRingPol.Pphi_pow_ok	40
+Coq.MSets.MSetGenTree.Props.compare_more_Cmp	40
+Coq.NArith.Ndigits.N2Bv_Bv2N	40
+Coq.ZArith.Zdiv.Zminus_mod_idemp_l	40	0.0.1.833.385.64	synth with cache (only 1: intros a; only 1: intros l; only 1: unfold Z.sub; only 1: intros; only 1: rewrite Zplus_mod, Zmod_mod, <- Zplus_mod; only 1: trivial).	1.187254	2330
+Coq.ZArith.Zdiv.Zmult_mod_idemp_r	40	0.2.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: rewrite Zmult_mod, Zmod_mod, <- Zmult_mod; only 1: trivial).	0.443810	781
+Coq.ZArith.Zdiv.EqualityModulo.eqm_refl	40	130	synth with cache (only 1: now f_equal).	0.024909	47
+Coq.ZArith.Zdiv.EqualityModulo.eqm_sym	40	64	synth with cache (only 1: now Z.nzsimpl).	0.018805	5
+Coq.FSets.FSetBridge.NodepOfDep.partition_2	40
+Coq.ZArith.Zdiv.EqualityModulo.eqm_trans	40	69.0	synth with cache (only 1: intros n m p; only 1: congruence).	1.409072	1577
+Coq.micromega.Tauto.S.tauto_checker_sound	40
+Coq.ZArith.Zdiv.EqualityModulo.eqm_setoid	40	321.832.256.386.5.129	synth with cache (only 1: constructor; only 1: intros Hn; only 1: congruence; only 1: intros P l; only 1: now intros; only 1: congruence).	0.577243	1008
+Coq.setoid_ring.Ring_polynom.MakeRingPol.ring_rw_pow_correct	40
+Coq.micromega.Tauto.S.eval_bf_map	40
+Coq.Logic.ClassicalFacts.Example_of_undecidable_predicate_with_the_minimization_property.undecidable_predicate_with_the_minimization_property	40
+Coq.FSets.FMapFacts.WProperties_fun.Elt.cardinal_inv_2b	40	0.0.0.0.0.0.0.256.0.0.0.0	synth with cache (only 1: intros; only 1: rewrite M.cardinal_1 in *; only 1: generalize (elements_mapsto_iff m); only 1: destruct (elements m); only 1: contradiction; only 1: exists p; only 1: rewrite H0; only 1: destruct p; only 1: simpl; only 1: constructor; only 1: red; only 1: auto).	1.108850	1146
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_r_plus_morphism	40
+Coq.PArith.Pnat.ObsoletePmultNat.Pmult_nat_plus_carry_morphism	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftl_neg	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.shiftr_nonneg	40
+Coq.Lists.ListSet.first_definitions.set_diff_nodup	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.div2_nonneg	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lor_nonneg	40
+Coq.Logic.ClassicalFacts.representative_boolean_partition_imp_excluded_middle	40
+Coq.Numbers.Integer.Abstract.ZBits.ZBitsProp.lor_neg	40
+Coq.PArith.BinPos.Pos.ggcd_gcd	40
+Coq.Numbers.DecimalFacts.nzhead_D0	40	450.0.128	synth with cache (only 1: cbn; only 1: apply to_list_inj; only 1: eauto).	0.037804	34
+Coq.PArith.BinPos.Pos.ggcdn_correct_divisors	40
+Coq.Numbers.DecimalFacts.nzhead_iter_D0	40	0	synth with cache (only 1: now induction n; simpl; [  | rewrite IHn ]).	0.020375	1
+Coq.PArith.BinPos.Pos.ggcd_correct_divisors	40
+Coq.PArith.BinPos.Pos.gcd_divide_l	40
+Coq.PArith.BinPos.Pos.gcd_divide_r	40
+Coq.PArith.BinPos.Pos.gcdn_greatest	40
