@@ -32788,3 +32788,197 @@ monaeImpredicativeSet.imonad_model.tmp.algebraic_empty	40	451	synth with cache (
 UniMath.SubstitutionSystems.FromBindingSigsToMonads_Summary.preserves_colimit_identity	40	320.256.1	synth with cache (only 1: intros; only 1: intro e; only 1: assumption).	0.278631	115
 UniMath.SubstitutionSystems.FromBindingSigsToMonads_Summary.is_omega_cocont_constant_functor	40	0.0.0.0.0.384.192	synth with cache (only 1: intro u; only 1: intros ax ay; only 1: intros c L ccL HccL y ccy; only 1: use tpair; only 1: apply (tpair _ (coconeIn ccy 0)); only 1: abstract (intro n; rewrite id_left; destruct ccy as [f Hf]; simpl; now induction n as [| n IHn]; [ apply idpath |  ]; rewrite IHn, <- (Hf n (S n) (idpath _)), id_left); only 1: abstract (intro p; apply subtypePath; [ intros f; apply impred; intro; apply homset_property | now simpl; destruct p as [p H]; rewrite <- (H 0), id_left ])).	0.324106	130
 UniMath.SubstitutionSystems.FromBindingSigsToMonads_Summary.is_cocont_delta_functor	40	0.2	synth with cache (only 1: intros x i; only 1: now intros c L ccL; apply @is_cocont_delta_functor).	0.161137	60
+bbv.DepEqNat.nat_cast	40	0.65.0.0.0	synth with cache (only 1: revert m; only 1: intro m; only 1: revert m; only 1: destruct 1; only 1: auto).	0.061453	52
+Autosubst.Autosubst_Basics.id_comp	40	2	synth with cache (only 1: reflexivity).	0.009699	3
+Autosubst.Autosubst_Basics.comp_id	40	1	synth with cache (only 1: apply (eta_expansion_dep f)).	0.010223	2
+Autosubst.Autosubst_Basics.compA	40	2	synth with cache (only 1: firstorder).	0.008019	3
+Autosubst.Autosubst_Basics.LemmasForFun.plusSn	40	0	synth with cache (only 1: reflexivity).	0.013148	1
+Autosubst.Autosubst_MMap.LemmasForMMap.mmap_idX	40	1.130.1	synth with cache (only 1: f_ext; only 1: intros x; only 1: firstorder).	0.065365	141
+Autosubst.Autosubst_Basics.LemmasForFun.plusnS	40	0.0.0.0	synth with cache (only 1: induction n; only 1: now PeanoNat.Nat.nzsimpl; only 1: simpl; only 1: auto).	0.118399	4
+Autosubst.Autosubst_Basics.LemmasForFun.plusOn	40	0.0.0.0	synth with cache (only 1: induction n; only 1: now PeanoNat.Nat.nzsimpl; only 1: simpl; only 1: auto).	0.106927	4
+Autosubst.Autosubst_Basics.LemmasForFun.lift0	40	320.0.1.0	synth with cache (only 1: f_ext; only 1: intro n; only 1: symmetry; only 1: reflexivity || destruct H).	0.026041	10
+Autosubst.Autosubst_Basics.LemmasForFun.plusnO	40	0.0.0.1	synth with cache (only 1: induction n; only 1: now PeanoNat.Nat.nzsimpl; only 1: simpl; only 1: auto).	0.106017	5
+Autosubst.Autosubst_Basics.LemmasForFun.lift_scons	40	256.1.0	synth with cache (only 1: f_ext; only 1: simpl; only 1: intuition).	0.098533	13
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMap_option	40	0.192	synth with cache (only 1: intro n; only 1: firstorder).	0.016704	14
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapLemmas_option	40	0	synth with cache (only 1: derive).	0.039741	1
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapExt_option	40	0	synth with cache (only 1: derive).	0.054050	1
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMap_list	40	0	synth with cache (only 1: derive).	0.016914	1
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapLemmas_list	40	0	synth with cache (only 1: derive).	0.053993	1
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapExt_list	40	0	synth with cache (only 1: derive).	0.035754	1
+Autosubst.Autosubst_MMap.LemmasForMMap.mmap_compR	40	0.0.322	synth with cache (only 1: f_equal; only 1: f_ext; only 1: apply mmap_comp).	0.196376	158
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMap_pair	40	0	synth with cache (only 1: derive).	0.016723	1
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapLemmas_pair	40	0	synth with cache (only 1: derive).	0.064387	1
+bbv.DepEq.eq_rect_word_offset_helper	40	0.385.0	synth with cache (only 1: intros n m p H; only 1: rewrite <- H  at 1; only 1: now rewrite <- ?PeanoNat.Nat.add_le_mono_l).	0.123086	22
+Autosubst.Autosubst_MMap.MMapId.MMapLemmas_refl	40	582	synth with cache (only 1: now try PeanoNat.Nat.order').	0.075986	220
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapExt_pair	40	0	synth with cache (only 1: derive).	0.039095	1
+bbv.DepEq.eq_rect_word_mult_helper	40	0.0	synth with cache (only 1: intros; only 1: congruence).	0.017900	2
+Autosubst.Autosubst_MMap.MMapId.MMapExt_refl	40	2.0.0.64	synth with cache (only 1: intro l1; only 1: intro l; only 1: intros; only 1: auto).	0.025924	10
+Autosubst.Autosubst_MMap.mmap_id_instE	40	0	synth with cache (only 1: reflexivity).	0.011054	1
+Autosubst.Autosubst_MMap.MMapConst.MMapLemmas_const	40	0.0.0.0	synth with cache (only 1: split; only 1: intro n; only 1: reflexivity; only 1: Bool.destr_bool).	0.024196	4
+Autosubst.Autosubst_MMap.MMapConst.MMapExt_const	40	0.66	synth with cache (only 1: intro H1; only 1: tauto).	0.018080	8
+Autosubst.Autosubst_MMap.mmap_const_instE	40	259	synth with cache (only 1: exact eq_refl).	0.014180	20
+bbv.DepEq.existT_eq_rect	40	130.128.321.198	synth with cache (only 1: intro LE; only 1: intros H1 H2 H3 n; only 1: Bool.destr_bool; only 1: now rewrite <- Hx).	0.600940	1260
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapExt_fun	40	64.320.0.0.390	synth with cache (only 1: intros a ?; only 1: intros; only 1: f_ext; only 1: compute; only 1: solve [ auto ]).	0.669372	608
+bbv.DepEq.existT_eq_rect_eq	40	192.0.194.64	synth with cache (only 1: intros Hfst Hsnd; only 1: intros x y EQ WF; only 1: intro H; only 1: CRelationClasses.simpl_crelation).	0.432801	402
+bbv.DepEq.eq_rect_existT_eq	40	323.0.0	synth with cache (only 1: intros; only 1: change x2 with (projT1 (existT P x2 H2)); only 1: RelationClasses.simpl_relation).	0.573297	670
+Autosubst.Autosubst_Basics.iterate_S	40	0.320.0	synth with cache (only 1: induction n; only 1: now split; intros HP; destruct p1, p2; inversion HP; constructor; only 1: trivial).	0.030715	18
+Autosubst.Autosubst_Basics.iterate_0	40	0	synth with cache (only 1: reflexivity).	0.012348	1
+Autosubst.Autosubst_Basics.equal_f	40	0.0.65	synth with cache (only 1: intros H; only 1: rewrite H; only 1: auto).	0.029291	38
+Autosubst.Autosubst_Basics.LemmasForFun.lift_compR	40	452.0.0.65.0.1.1.0.0.1.0.0.0.0.2	synth with cache (only 1: PeanoNat.Nat.induct m; only 1: simpl; only 1: f_ext; only 1: intros [| m]; only 1: simpl; only 1: now rewrite plusnO; only 1: simpl; only 1: now rewrite plusnS; only 1: intros [| m]; only 1: intro l; only 1: reflexivity; only 1: intros H; only 1: f_ext; only 1: simpl; only 1: now intuition).	6.020587	5612
+HoTT.Basics.Tactics.issig_contr	40
+HoTT.Basics.Tactics.issig_equiv	40	0	synth with cache (only 1: issig).	0.017647	1
+HoTT.Basics.Tactics.issig_isequiv	40	0	synth with cache (only 1: issig).	0.101423	1
+bbv.DepEqNat.nat_cast_cast	40	1.0	synth with cache (only 1: rewrite nat_cast_eq_rect; only 1: reflexivity).	0.018040	3
+Io.UseCase.general	40	10	synth with cache (only 1: auto).	0.185990	247
+Io.Evaluate.Run.command	40	16	synth with cache (only 1: auto).	0.521351	1421
+Io.Evaluate.Run.exception	40	16	synth with cache (only 1: auto).	0.908605	2108
+Io.Evaluate.Run.I.command	40	2	synth with cache (only 1: apply (command _ _ _ _ run _ _ r)).	0.023854	12
+bbv.HexNotation.Unnamed_thm	40	66.0	synth with cache (only 1: vm_compute; only 1: exact eq_refl).	0.022016	7
+bbv.HexNotation.Unnamed_thm0	40	5	synth with cache (only 1: reflexivity).	0.026340	69
+bbv.HexNotation.Unnamed_thm1	40	0	synth with cache (only 1: reflexivity).	0.016292	1
+bbv.HexNotation.Unnamed_thm2	40	256.0	synth with cache (only 1: vm_compute; only 1: now N.nzsimpl').	0.037824	14
+bbv.HexNotation.Unnamed_thm3	40	0	synth with cache (only 1: reflexivity).	0.018355	1
+bbv.HexNotation.Unnamed_thm4	40	1	synth with cache (only 1: reflexivity).	0.014815	2
+bbv.BinNotation.Unnamed_thm	40	320	synth with cache (only 1: tauto).	0.024605	21
+bbv.DepEq.eq_rect_nat_double	40	321.0.4	synth with cache (only 1: intros op Hop; only 1: intros m a b Ha Hb; only 1: CRelationClasses.simpl_crelation).	9.582560	3446
+bbv.BinNotation.Unnamed_thm0	40	0	synth with cache (only 1: reflexivity).	0.014689	1
+bbv.BinNotation.Unnamed_thm1	40	0	synth with cache (only 1: reflexivity).	0.017908	1
+bbv.BinNotation.Unnamed_thm2	40	0	synth with cache (only 1: reflexivity).	0.013073	1
+Coinduction.coinduction.chain.s.St'	40	64.448.577.260	synth with cache (only 1: right; only 1: intros a0; only 1: inversion 1; only 1: intuition).	0.291114	531
+HoTT.Types.Paths.transport_paths_l	40	0.0	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.019260	2
+HoTT.Types.Paths.transport_paths_r	40	0.0	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.017879	2
+HoTT.Spaces.Pos.Spec.pos_add_1_r	40	129.129.64.5	synth with cache (only 1: induction p; only 1: trivial; only 1: auto with typeclass_instances; only 1: auto with typeclass_instances).	0.130526	260
+HoTT.Spaces.Pos.Spec.pos_add_1_l	40	0	synth with cache (only 1: by destruct p).	0.011122	1
+HoTT.WildCat.Forall.isgraph_forall	40	259	synth with cache (only 1: by path_induction).	0.022406	50
+elpi.apps.derive.param1_inhab.is_uint63_witness	40	128	synth with cache (only 1: now constructor).	0.014041	9
+elpi.apps.derive.param1_inhab.is_float64_witness	40	1	synth with cache (only 1: constructor).	0.013759	2
+HoTT.Categories.Category.Prod.prod.prod	40	85	synth with cache (only 1: auto with path_hints).	0.282457	1499
+HoTT.Categories.Category.Prod.isstrict_category_product	40	1	synth with cache (only 1: exact _).	0.090024	17
+HoTT.Types.Arrow.AssumeFunext.transport_arrow	40	1.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.019927	3
+Autosubst.Autosubst_Basics.LemmasForFun.plusA	40	385.0.0.0.2.0.1.0.0.515	synth with cache (only 1: PeanoNat.Nat.cases n; only 1: now PeanoNat.Nat.nzsimpl; only 1: intro n; only 1: simpl; only 1: apply eq_S; only 1: nzinduct n; only 1: now PeanoNat.Nat.nzsimpl; only 1: intro; only 1: PeanoNat.Nat.nzsimpl; only 1: intuition auto; PeanoNat.Nat.Private_Tac.subst_eqns; eauto using (RelationClasses.StrictOrder_Transitive x y z) with *).	13.198665	46472
+HoTT.Types.Arrow.AssumeFunext.transport_arrow_toconst	40	0.0.0	synth with cache (only 1: destruct p; only 1: simpl; only 1: auto).	0.026942	3
+HoTT.Types.Arrow.AssumeFunext.transport_arrow_fromconst	40	0.0.0	synth with cache (only 1: destruct p; only 1: simpl; only 1: auto).	0.024628	3
+HoTT.Types.Arrow.AssumeFunext.ap_transport_arrow_toconst	40	1.0.0	synth with cache (only 1: destruct p, q; only 1: simpl; only 1: auto).	0.033535	4
+HoTT.Types.Arrow.AssumeFunext.dpath_arrow	40	0.0	synth with cache (only 1: destruct p; only 1: apply (@equiv_path_forall _ _)).	0.022555	2
+HoTT.Types.Sigma.dpath_forall'	40	1.67	synth with cache (only 1: path_induction; only 1: reflexivity).	0.120447	89
+HoTT.WildCat.Paths.isgraph_paths	40	128.134	synth with cache (only 1: revert A; only 1: by path_induction).	0.064533	153
+AlmostFull.Default.AlmostFull.sup_rewrite	40	577.0.1	synth with cache (only 1: intros p; only 1: intros a Ha; only 1: now intros).	0.037221	23
+AlmostFull.Default.AlmostFull.sup_eq	40	0.0.1	synth with cache (only 1: intros n x y; only 1: intros ->; only 1: reflexivity).	0.038100	46
+HoTT.Spaces.Int.Core.int_negation_negation	40	2.10.1.0.0.1.0.0.0.0.1.0	synth with cache (only 1: destruct n; only 1: induction p; only 1: cbn; only 1: apply ap; only 1: auto using pos_add_1_r; only 1: cbn; only 1: apply ap; only 1: trivial; only 1: cbn; only 1: by apply ap; only 1: auto using pos_add_1_r; only 1: reflexivity).	3.057161	3261
+HoTT.EquivGroupoids.AssumeFunext.ecompose_e1	40	1.0.1	synth with cache (only 1: apply (@path_equiv _ _ _ _), path_forall; only 1: intros ?; only 1: reflexivity).	0.147922	26
+HoTT.EquivGroupoids.AssumeFunext.ecompose_1e	40	0.0	synth with cache (only 1: apply path_equiv; only 1: reflexivity).	0.015520	2
+HoTT.EquivGroupoids.AssumeFunext.ecompose_e_ee	40	1.1	synth with cache (only 1: apply path_equiv; only 1: reflexivity).	0.017448	4
+HoTT.EquivGroupoids.AssumeFunext.ecompose_ee_e	40	0.0	synth with cache (only 1: apply path_equiv; only 1: reflexivity).	0.017317	2
+HoTT.EquivGroupoids.AssumeFunext.ecompose_eV	40	0.2.192.69.0	synth with cache (only 1: apply path_equiv; only 1: apply path_forall; only 1: intro K; only 1: simpl; only 1: apply isequiv_inverse).	0.990653	2046
+HoTT.Types.Paths.transport_paths_lr	40	1.5.3	synth with cache (only 1: destruct p; only 1: repeat rewrite concat_p1, concat_1p; only 1: exact 1).	5.472957	6609
+HoTT.Types.Paths.transport_paths_Fl	40	0.0	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.023566	2
+HoTT.EquivGroupoids.AssumeFunext.ecompose_Ve	40	0.5.0.0.0	synth with cache (only 1: apply path_equiv; only 1: apply path_forall; only 1: intro; only 1: simpl; only 1: apply isequiv_inverse).	0.545157	841
+HoTT.Types.Paths.transport_paths_Fr	40	0.3.3	synth with cache (only 1: destruct p; only 1: simpl; only 1: by path_induction).	0.308764	264
+HoTT.EquivGroupoids.AssumeFunext.ecompose_V_ee	40	4.3.0.2.0	synth with cache (only 1: apply path_equiv; only 1: apply path_forall; only 1: intros x; only 1: simpl; only 1: apply (eissect f)).	1.024431	1919
+HoTT.Types.Paths.transport_paths_FlFr	40	3.3.1	synth with cache (only 1: destruct p; only 1: simpl; only 1: exact ((concat_1p q)^ @ (concat_p1 (1 @ q))^)).	1.019666	1014
+bbv.N_Z_nat_conversions.N_to_Z_to_nat	40	0.0.1.0	synth with cache (only 1: intros; only 1: destruct a; only 1: trivial; only 1: trivial).	0.053373	5
+HoTT.EquivGroupoids.AssumeFunext.ecompose_e_Ve	40	3.0.0.0	synth with cache (only 1: apply path_equiv; only 1: apply path_forall; only 1: intro; only 1: apply eisretr).	0.155143	203
+bbv.N_Z_nat_conversions.Nat2Z.inj_pow	40	0.0	synth with cache (only 1: intros; only 1: now rewrite <- !nat_N_Z, Nat2N.inj_pow, N2Z.inj_pow).	0.030356	2
+Huffman.Code.Code.in_alphabet_incl	40	2.0	synth with cache (only 1: intros l1 l2 x Hincl y Hin; only 1: auto).	0.030101	4
+bbv.N_Z_nat_conversions.Z2Nat.inj_pow	40	0.1	synth with cache (only 1: intros a b Ha Hb; only 1: now rewrite <- !Z_N_nat, Z2N.inj_pow, N2Nat.inj_pow).	0.030452	3
+Huffman.Code.Code.in_alphabet_nil	40	194	synth with cache (only 1: firstorder).	0.043646	15
+AlmostFull.PropBounded.AFConstructions.af_union	40	576.128.2.0.64.900	synth with cache (only 1: intros Hz; only 1: intros a b Ha; only 1: eapply af_strengthen; only 1: eauto; only 1: intro H; only 1: firstorder  (subst; auto)).	3.513548	9590
+HoTT.EquivGroupoids.AssumeFunext.ecompose_ee_V	40	0.66.0.0.64.0.0.67.0.0	synth with cache (only 1: apply path_equiv; only 1: apply path_forall; only 1: generalize dependent B; only 1: intro; only 1: intro; only 1: intros b; only 1: intro; only 1: simpl; only 1: apply ap; only 1: apply eisretr).	1.254736	2001
+HoTT.EquivGroupoids.AssumeFunext.ecompose_eV_e	40	2.0.0.0.0.0	synth with cache (only 1: apply path_equiv; only 1: apply path_forall; only 1: intro; only 1: simpl; only 1: apply ap; only 1: apply eissect).	0.199776	236
+HoTT.EquivGroupoids.AssumeFunext.einv_ee	40	2.0.0.0.0	synth with cache (only 1: apply path_equiv; only 1: apply path_forall; only 1: intro; only 1: simpl; only 1: reflexivity).	0.032785	7
+HoTT.EquivGroupoids.AssumeFunext.einv_Ve	40	0.0	synth with cache (only 1: apply path_equiv; only 1: reflexivity).	0.018129	2
+HoTT.EquivGroupoids.AssumeFunext.einv_eV	40	0.0	synth with cache (only 1: apply path_equiv; only 1: reflexivity).	0.018512	2
+HoTT.EquivGroupoids.AssumeFunext.einv_VV	40	0.0	synth with cache (only 1: apply path_equiv; only 1: reflexivity).	0.018804	2
+HoTT.EquivGroupoids.AssumeFunext.einv_V	40	0.0	synth with cache (only 1: apply (@path_equiv _ _ _ _); only 1: reflexivity).	0.017190	2
+AlmostFull.Default.AlmostFull.af_tree	40	259	synth with cache (only 1: BinInt.Z.Private_Tac.order || (right; BinInt.Z.Private_Tac.order) || (left; BinInt.Z.Private_Tac.order)).	0.022842	20
+HoTT.Types.Paths.transport_paths_FlFr_D	40	1.4.64.5.0.0	synth with cache (only 1: destruct p; only 1: simpl; only 1: repeat rewrite concat_p1, concat_1p; only 1: set (r := q^); only 1: destruct q; only 1: reflexivity).	3.839827	4162
+HoTT.Types.Paths.transport_paths_FFlr	40	0.0.0	synth with cache (only 1: destruct p; only 1: simpl; only 1: exact ((concat_1p q)^ @ (concat_p1 (1 @ q))^)).	0.034630	3
+HoTT.Types.Paths.transport_paths_lFFr	40	0.0.0	synth with cache (only 1: destruct p; only 1: simpl; only 1: exact ((concat_1p q)^ @ (concat_p1 (1 @ q))^)).	0.029406	3
+coqutil.Map.Z_keyed_SortedListMap.Zltb_strictorder	40	129.960.192.256.641.1.0.448.0.128	synth with cache (only 1: constructor; only 1: intro a; only 1: Lia.lia; only 1: intros a; only 1: intros ? ? H; only 1: blia; only 1: intro Heq; only 1: intros a b; only 1: firstorder  idtac; only 1: intuition).	1.029978	769
+bbv.DepEqNat.nat_cast_fuse	40	0.3.4.68.68.65.65	synth with cache (only 1: intros H ?; only 1: intros A B []; only 1: intro; only 1: subst; only 1: intro n; only 1: rewrite nat_cast_eq_rect; only 1: reflexivity).	22.930758	92037
+LibHyps.LibHypsNaming.DUMMY	40	3	synth with cache (only 1: auto with zarith).	0.017388	30
+HoTT.Colimits.Colimit_Sigma.ColimitSigma.sigma_diagram	40	0.0.394.1.0	synth with cache (only 1: srapply Build_Diagram; only 1: intro i; only 1: auto with typeclass_instances; only 1: intros i j k; only 1: exact idmap).	1.050099	3615
+HoTT.Colimits.Colimit_Sigma.ColimitSigma.sigma_diagram_map	40	2.1.2.0	synth with cache (only 1: econstructor; only 1: intro i; only 1: intros j g x; only 1: apply @DiagramMap_comm).	0.569307	683
+Hask.Data.List.olast_ex1	40	2	synth with cache (only 1: auto).	0.018215	3
+Hask.Data.List.olast_ex2	40	0	synth with cache (only 1: reflexivity).	0.020912	1
+Hask.Data.List.olast_ex3	40	0	synth with cache (only 1: reflexivity).	0.019461	1
+Hask.Control.Compose.ComposeMonadLaws.fmap_compose	40	0	synth with cache (only 1: reflexivity).	0.016988	1
+Hask.Data.Maybe.Maybe_choose_spec	40	0.0.0.0.259.898	synth with cache (only 1: intros q; only 1: intro l1; only 1: induction l1 as [| a l1 IHl1]; only 1: simpl; only 1: trivial; only 1: eauto with bool).	2.512952	5932
+bbv.DepEqNat.nat_cast_eq_rect	40
+bbv.DepEqNat.nat_cast_proof_irrel	40
+AlmostFull.PropBounded.AFConstructions.af_product_left	40	2.0.388.0.448.65.518	synth with cache (only 1: compute; only 1: induction 1 as [x y H| x y z H H0 IH0]; only 1: constructor 1; only 1: intros; only 1: now rewrite ?Ha; only 1: apply AF_SUP; only 1: firstorder).	13.910421	7226
+Autosubst.Autosubst_Basics.LemmasForFun.scons_comp	40
+Hask.Data.List.olast_last	40	0.0.2.576.64.192.0.1.64.192.64.3	synth with cache (only 1: intros t0; only 1: intros h; only 1: intro H; only 1: elim H; only 1: reflexivity; only 1: simpl; only 1: intros EQ; only 1: intuition; only 1: induction l; only 1: easy; only 1: simpl; only 1: auto).	3.853666	4032
+Hask.Control.Impl.Impl_Monad_Distributes_obligation_1	40	67.451	synth with cache (only 1: inversion H; only 1: firstorder  (subst; auto)).	0.584041	708
+Autosubst.Autosubst_MMap.LemmasForMMap.mmap_compX	40
+Autosubst.Autosubst_Basics.LemmasForFun.scons_eta	40
+Autosubst.Autosubst_Basics.LemmasForFun.lift_comp	40
+Autosubst.Autosubst_Basics.lift_eta	40
+Autosubst.Autosubst_MMapInstances.MMapInstances.MMapLemmas_fun	40
+bbv.DepEqNat.nat_cast_same	40
+Autosubst.Autosubst_Basics.iterate_Sr	40
+AlmostFull.PropBounded.AlmostFull.af_strengthen	40
+Io.Run.I.unfold_eq	40
+Io.Run.I.lift	40	3	synth with cache (only 1: auto).	0.095894	10
+AlmostFull.PropBounded.AlmostFull.sec_binary_infinite_chain	40
+AlmostFull.PropBounded.AlmostFullGeneralized.af_strengthen_lrel	40
+HoTT.Basics.Contractible.path2_contr	40
+AlmostFull.PropBounded.AlmostFullGeneralized.af_intersection_lrel	40
+AlmostFull.PropBounded.AlmostFull.af_inf_chain	40
+AlmostFull.PropBounded.AlmostFull.af_iter	40
+formalv.prim63_mathcomp.ssrint_Sint63.int_of_sint0	40	3	synth with cache (only 1: by [  ]).	0.022690	4
+Coinduction.coinduction.chain.s.t'_mon	40
+Coinduction.coinduction.chain.s.id_t'	40
+bbv.NLib.Nlt_dec	40
+AlmostFull.PropBounded.AlmostFull.af_from_wf	40
+HoTT.Basics.Decidable.stable_decidable	40
+Coinduction.coinduction.chain.s.compat_t'	40
+AlmostFull.PropBounded.AlmostFullGeneralized.af_intersection_lrel_cor	40
+Coinduction.coinduction.chain.s.tt'	40
+Buchberger.BuchAux.BuchAux.addEnd	40	1.1	synth with cache (only 1: intros sp1 sp2; only 1: auto).	0.419884	4
+AlmostFull.PropBounded.AlmostFullGeneralized.af_to_af_lrel	40
+Coinduction.coinduction.chain.s.leq_t'	40
+Coinduction.coinduction.chain.s.St	40
+Coinduction.coinduction.chain.s.Sflat	40
+Coinduction.coinduction.chain.s.choose	40
+HoTT.Spaces.Pos.Spec.pos_add_carry_spec	40
+Coinduction.coinduction.chain.s.S_linear	40
+HoTT.WildCat.Forall.is01cat_forall	40
+HoTT.Types.Unit.eta_path_unit	40
+HoTT.Categories.Category.Pi.pi.pi	40
+HoTT.Spaces.Pos.Core.pos_peano_ind_beta_pos_succ	40
+HoTT.Categories.Category.Pi.isstrict_category_pi	40	1	synth with cache (only 1: exact _).	0.015925	2
+HoTT.Colimits.GraphQuotient.GraphQuotient_rec	40
+HoTT.WildCat.Sum.isgraph_sum	40
+AlmostFull.PropBounded.AlmostFull.trans_clos_left	40
+AlmostFull.PropBounded.AlmostFull.trans_clos_left_aux	40
+AlmostFull.PropBounded.AlmostFullGeneralized.af_lrel_to_af	40
+HoTT.Types.Arrow.AssumeFunext.ap10_dpath_arrow	40
+Coinduction.coinduction.chain.s.tcup	40
+HoTT.Types.Arrow.AssumeFunext.ap_lambda	40	0.0.1.0	synth with cache (only 1: destruct p; only 1: symmetry; only 1: simpl; only 1: apply (@path_forall_1 _ _)).	0.057467	23
+HoTT.Spaces.Int.Spec.int_add_comm	40
+HoTT.Spaces.Int.Spec.int_add_0_l	40	0	synth with cache (only 1: by destruct n).	0.009921	1
+HoTT.Spaces.Int.Spec.int_add_0_r	40	1	synth with cache (only 1: by destruct n).	0.011450	2
+HoTT.Spaces.Int.Spec.int_mul_0_l	40	0	synth with cache (only 1: by destruct n).	0.008390	1
+HoTT.Spaces.Int.Spec.int_mul_0_r	40	1	synth with cache (only 1: by destruct n).	0.009448	2
+HoTT.Spaces.Int.Spec.int_mul_1_l	40	0	synth with cache (only 1: by destruct n).	0.010078	1
+HoTT.Types.Sigma.pr1_path_sigma_uncurried	40
+HoTT.WildCat.Universe.is01cat_type	40
+HoTT.WildCat.Equiv.cate_inv	40
+HoTT.WildCat.EmptyCat.isgraph_empty	40
+HoTT.WildCat.UnitCat.isgraph_unit	40
+HoTT.Tactics.path_forall_1_beta	40
+HoTT.WildCat.Paths.is01cat_paths	40
+HoTT.Tactics.path_forall_recr_beta'	40	0	synth with cache (only 1: path_forall_beta_t).	0.021837	1
+HoTT.WildCat.EmptyCat.is01cat_empty	40	133	synth with cache (only 1: by path_induction).	0.061509	63
+HoTT.Tactics.path_forall_recr_beta	40	0	synth with cache (only 1: path_forall_beta_t).	0.019747	1
+HoTT.Tactics.path_forall_2_beta'	40	0	synth with cache (only 1: path_forall_beta_t).	0.021456	1
+AlmostFull.Default.AlmostFull.sec_strengthen	40
+HoTT.Tactics.path_forall_2_beta	40	0.0.0.0	synth with cache (only 1: transport_path_forall_hammer; only 1: repeat match goal with | |- context [ e ?x ] => induction (e x) end; only 1: cbn; only 1: reflexivity).	0.047800	4
+HoTT.Spaces.Int.Equiv.int_iter_succ_l	40
+AlmostFull.PropBounded.AlmostFull.acc_from_af	40
+AlmostFull.PropBounded.AlmostFullGeneralized.af_lrel_to_af_cor	40
+HoTT.Types.Sigma.pr2_path_sigma_uncurried	40	3.0.0.0.0.0.0.0	synth with cache (only 1: destruct u as [u1 u2]; only 1: destruct v as [v1 v2]; only 1: simpl in *; only 1: destruct pq as [p q]; only 1: destruct p; only 1: simpl in q; only 1: destruct q; only 1: by path_induction).	1.103296	398
+HoTT.Types.Sigma.eta_path_sigma_uncurried	40	0.0.1.0.0	synth with cache (only 1: destruct u as [u1 u2]; only 1: destruct v as [v1 v2]; only 1: destruct p; only 1: simpl in *; only 1: reflexivity).	0.071584	27
+HoTT.WildCat.Paths.is0gpd_paths	40	0.0.4.0	synth with cache (only 1: unshelve econstructor; only 1: generalize dependent A; only 1: intros H ? ? []; only 1: reflexivity).	1.220400	1754
+HoTT.Types.Sigma.transport_pr1_path_sigma_uncurried	40	0.0.0.0.0.0.0.0	synth with cache (only 1: destruct u as [u1 u2]; only 1: destruct v as [v1 v2]; only 1: simpl in *; only 1: destruct pq as [p q]; only 1: destruct p; only 1: simpl in q; only 1: destruct q; only 1: reflexivity).	0.084515	8
