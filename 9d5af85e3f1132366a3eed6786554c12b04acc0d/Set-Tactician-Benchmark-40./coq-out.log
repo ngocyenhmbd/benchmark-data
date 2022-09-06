@@ -72823,3 +72823,61 @@ Cr_pos_iff alpha_pos
 simple apply @eq_refl (in core).
      = 48
      : nat
+T1mul_a0E: forall c : T1, c * zero = zero
+T1mul1n: forall x : T1, one * x = x
+T1muln0: forall x : T1, x * zero = zero
+mul_fin_omega: forall n : nat, \F n.+1 * T1omega = T1omega
+mul_int_limit: forall (n : nat) [y : T1], T1limit y -> \F n.+1 * y = y
+exp_FO:
+  forall (z : T1) (n : nat) [v : T1_eqType],
+  v != zero -> exp_F z n * exp_O z v = exp_O z v
+mult_a_0: forall a : hT1, (a * T1.zero)%t1 = T1.zero
+mult_1_a: forall [a : hT1], nf a -> (\F 1 * a)%t1 = a
+mult_fin_omega: forall n : nat, (FS n * T1.T1omega)%t1 = T1.T1omega
+L7:
+  forall (n : nat) [c : hT1] (p : nat),
+  c <> T1.zero -> (FS n * T1.cons c p T1.zero)%t1 = T1.cons c p T1.zero
+Ex3: (\F 5 * T1.T1omega)%t1 = T1.T1omega
+     = Eq
+     : comparison
+     = Eq
+     : comparison
+Constant gaia.schutte.ssete9.CantorOrdinal.T1omega
+Notation hydras.Epsilon0.T1.T1omega
+  (shorter name to refer to it in current context is T1.T1omega)
+clear  H0  :  (False -> 0 = S n)
+clear  H0  :  (False -> 0 = S n)
+clear  H0  :  (False -> list_count p l = S n)
+clear  IHl  :  (False -> List.forallb p l = true)
+specialized IHl using (eq_refl (n, a0) )
+Cr_pos_iff alpha_pos
+     : forall x : Ord,
+       Cr alpha x <->
+       (forall beta : Ord, beta < alpha -> In (A_ beta) x /\ phi beta x = x)
+     = Lt
+     : comparison
+     = true
+     : bool
+     = false
+     : bool
+Canon_lt:
+  forall (i : nat) [alpha : E0], alpha <> E0zero -> Canon alpha i o< alpha
+Hprime.H'__obligations_obligation_1:
+  forall alpha : E0,
+  alpha <> E0zero -> forall i : nat, CanonS alpha i o< alpha
+CanonS_lt:
+  forall (i : nat) [alpha : E0], alpha <> E0zero -> CanonS alpha i o< alpha
+(* info auto: *)
+idtac.
+     = one = one
+     : Prop
+     = 1535
+     : nat
+(* info auto: *)
+idtac.
+If ffalse or nil then ;; else If ttrue then ;; else ;; end end
+     : st
+     = 2559
+     : nat
+(* info auto: *)
+idtac.
