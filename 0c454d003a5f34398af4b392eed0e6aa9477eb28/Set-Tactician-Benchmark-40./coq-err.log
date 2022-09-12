@@ -1,0 +1,50 @@
+File "./theories/Lists/Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros H; only 1: inversion 1; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+H : Stream
+s2 : Stream
+H0 : EqSt H s2
+e : hd H = hd s2
+e0 : EqSt (tl H) (tl s2)
+H1 : hd H = hd s2
+H2 : EqSt (tl H) (tl s2)
+H3 : hd H = hd s2
+H4 : EqSt (tl H) (tl s2)
+EqSt_reflex : EqSt s2 H
+Invalid recursive call in the argument of "match" in "match EqSt_reflex with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun 
+                                                 (_ : hd s2 = hd H)
+                                                 (H : EqSt (tl s2) (tl H)) =>
+                                                 H) x x0
+                                                 end".
+Recursive definition is: "eqst s2 H
+                            (match
+                               H as s
+                               return
+                                 (EqSt s s2 ->
+                                  hd s = hd s2 ->
+                                  EqSt (tl s) (tl s2) -> hd s2 = hd s)
+                             with
+                             | Cons a s =>
+                                 (fun (a0 : A) (H : Stream)
+                                    (_ : EqSt (Cons a0 H) s2)
+                                    (H1 : hd (Cons a0 H) = hd s2)
+                                    (_ : EqSt (tl (Cons a0 H)) (tl s2)) =>
+                                  eq_sym H1) a s
+                             end H0 H3 H4)
+                            (let H3 : EqSt (tl s2) (tl H) :=
+                               match EqSt_reflex with
+                               | eqst _ _ x x0 =>
+                                   (fun (_ : hd s2 = hd H)
+                                      (H : EqSt (tl s2) (tl H)) => H) x x0
+                               end in
+                             H3)"."
+Please report at http://coq.inria.fr/bugs/.
+
