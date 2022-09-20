@@ -1,0 +1,122 @@
+File "./theories/Lists/Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: auto; only 1: assumption).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
+s2 : Stream
+H : EqSt x s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x => x
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt x s2) =>
+                          eqst s2 x
+                            match H with
+                            | eqst _ _ H0 _ => eq_sym H0
+                            end
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt x s3 -> EqSt (tl s3) (tl x) :=
+                               fun (s3 : Stream) (H0 : EqSt x s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x => x
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RIneq.v", line 74, characters 2-12:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros x y [H| H] abs; only 1: <Coq.Strings.Ascii.t_eqb>; only 1: eapply Rlt_asym; only 1: contradict H; only 1: auto with *; only 1: contradict H; only 1: auto with *; only 1: destruct abs; only 1: eapply Rlt_asym; only 1: eauto; only 1: eauto).
+Unsolved evars:
+?X835?X836" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/Hurkens.v", line 659, characters 2-20:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/PartSum.v", line 208, characters 2-38:
+Error: Anomaly "grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtopology.v", line 240, characters 2-48:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: unfold open_set; only 1: red; only 1: compute; only 1: intros p; only 1: eauto using Rlt_trans with rorders).
+Unsolved evars:
+?X28810" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/ChoiceFacts.v", line 734, characters 2-24:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros b; only 1: red; only 1: intro H1; only 1: intros m; only 1: intros a0; only 1: intros (x, HPx); only 1: eexists; only 1: intuition; only 1: apply proj2_sig).
+Unsolved evars:
+?X118751?X118792" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/ClassicalUniqueChoice.v", line 43, characters 0-11:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intro b1; only 1: intros P H n; only 1: eexists; only 1: intuition; only 1: apply proj2_sig).
+Unsolved evars:
+?X80173" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/ChoiceFacts.v", line 793, characters 2-24:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros H; only 1: compute; only 1: intros A Descr; only 1: eexists; only 1: intros H'; only 1: apply proj2_sig).
+Unsolved evars:
+?X63711" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Structures/OrdersAlt.v", line 81, characters 2-51:
+Error: Anomaly "unknown meta 123047."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Cauchy/ConstructiveRcomplete.v", line 710, characters 2-20:
+Error:
+Anomaly "File "clib/int.ml", line 46, characters 14-20: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ZArith/Zcompare.v", line 148, characters 2-9:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intro n; only 1: intros a m; only 1: case Z.compare_spec; only 1: intros EQ; only 1: BinNat.N.auto'; only 1: trivial; only 1: intro EQ; only 1: eapply PeanoNat.Nat.Private_OrderTac.Tac.lt_irrefl; only 1: Z.order).
+Unsolved evars:
+?X51549" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RIneq.v", line 1322, characters 7-50:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: edestruct Rle_or_lt; only 1: vm_compute in H; only 1: intuition; only 1: intros q Hq Rec; only 1: intuition).
+Unsolved evars:
+?X569?X570" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtrigo1.v", line 740, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/MSets/MSetList.v", line 890, characters 4-33:
+Error: Anomaly "variable b unbound."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int63/Int63.v", line 1547, characters 1-32:
+Error: Stack overflow.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2251, characters 1-34:
+Error: Stack overflow.
+
