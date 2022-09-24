@@ -1,0 +1,236 @@
+File "./theories/Wellfounded/Disjoint_Union.v", line 35, characters 4-16:
+Error: Anomaly "in retyping: unbound local variable."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Program/Wf.v", line 245, characters 4-50:
+Error: Anomaly "in retyping: unbound local variable."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/ExtensionalityFacts.v", line 131, characters 2-17:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/HexadecimalNat.v", line 111, characters 2-40:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: apply False_rec; only 1: eapply Nat.Private_Tac.lt_irrefl; only 1: RelationClasses.reduce; only 1: nzinduct n; only 1: auto with *; only 1: intros E0; only 1: now Nat.nzsimpl').
+Unsolved evars:
+?X83156?X83157?X83158" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rseries.v", line 59, characters 4-61:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: compute; only 1: elim (Rplus_ne 1); only 1: intros Hn Hm; only 1: eauto using Z.Private_Tac.eq_trans, Z.Private_Tac.eq_sym).
+Unsolved evars:
+?X7357" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 200, characters 0-11:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: assumption; only 1: assumption; only 1: inversion 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption).
+Typing error:
+Recursive definition of ForAll_coind is ill-formed.
+In environment
+A, B : Type
+f : A -> B
+P : Stream B -> Prop
+S : Stream A
+ForAll_coind : ForAll (fun s : Stream A => P (map s)) S -> ForAll P (map S)
+H : ForAll (fun s : Stream A => P (map s)) S
+Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind H
+                                                 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H : ForAll P (tl (map S)))
+                                                 => H) x x0
+                                                 end".
+Recursive definition is: "fun H : ForAll (fun s : Stream A => P (map s)) S =>
+                          HereAndFurther (map S)
+                            match H with
+                            | HereAndFurther _ x x0 =>
+                                (fun (H0 : P (map S))
+                                   (_ : ForAll
+                                          (fun s : Stream A => P (map s))
+                                          (tl S)) => H0) x x0
+                            end
+                            (let H0 :
+                               ForAll (fun s : Stream A => P (map s)) S ->
+                               ForAll P (tl (map S)) :=
+                               fun
+                                 H0 : ForAll (fun s : Stream A => P (map s))
+                                        S =>
+                               match ForAll_coind H0 with
+                               | HereAndFurther _ x x0 =>
+                                   (fun (_ : P (map S))
+                                      (H1 : ForAll P (tl (map S))) => H1) x
+                                     x0
+                               end in
+                             H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PArith/Pnat.v", line 35, characters 1-10:
+Error: Stack overflow.
+
+File "./theories/FSets/FSetEqProperties.v", line 192, characters 0-35:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros; only 1: apply set_induction; only 1: intros a Ha; only 1: eauto with *; only 1: intros; only 1: now repeat constructor; only 1: intuition).
+Unsolved evars:
+?X141486" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RIneq.v", line 691, characters 2-36:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros; only 1: edestruct Rle_lt_dec; only 1: rewrite H; only 1: auto with real; only 1: rewrite H; only 1: auto with real).
+Unsolved evars:
+?X459?X460" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/MSets/MSetRBT.v", line 1080, characters 1-15:
+Error: Anomaly "in retyping: Not a sort."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtrigo1.v", line 740, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/cube.v", line 6, characters 0-64:
+Warning:
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_is_scycle;
+                   scycle_ucycle] : scycle_planar_bridgeless_plain_quasicubic_connected >-> ucycle is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_base;
+ ucycle_plain_quasicubic_connected_base; ucycle_plain_quasicubic_is_ucycle] : scycle_planar_bridgeless_plain_quasicubic_connected >-> ucycle.
+[ambiguous-paths,typechecker]
+File "./theories/cube.v", line 6, characters 0-64:
+Warning:
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_base;
+                   planar_bridgeless_plain_base; planar_bridgeless_is_planar] : scycle_planar_bridgeless_plain_quasicubic_connected >-> planar is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_is_planar] : scycle_planar_bridgeless_plain_quasicubic_connected >-> planar.
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_base;
+                   planar_bridgeless_plain_is_plain] : scycle_planar_bridgeless_plain_quasicubic_connected >-> plain is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_base;
+ ucycle_plain_quasicubic_connected_base; ucycle_plain_quasicubic_base;
+ plain_quasicubic_is_plain] : scycle_planar_bridgeless_plain_quasicubic_connected >-> plain.
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_is_connected] : scycle_planar_bridgeless_plain_quasicubic_connected >-> connected is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_base;
+ ucycle_plain_quasicubic_connected_is_connected] : scycle_planar_bridgeless_plain_quasicubic_connected >-> connected.
+New coercion path [scycle_planar_bridgeless_plain_quasicubic_connected_pbpc_base;
+                   planar_bridgeless_plain_connected_base;
+                   planar_bridgeless_plain_base;
+                   planar_bridgeless_is_bridgeless] : scycle_planar_bridgeless_plain_quasicubic_connected >-> bridgeless is ambiguous with existing 
+[scycle_planar_bridgeless_plain_quasicubic_connected_is_bridgeless] : scycle_planar_bridgeless_plain_quasicubic_connected >-> bridgeless.
+[ambiguous-paths,typechecker]
+File "./src/Control/Compose.v", line 68, characters 2-30:
+Error: Conversion test raised an anomaly:
+Anomaly "in Univ.repr: Universe Hask.Control.Compose.667 undefined."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtrigo1.v", line 807, characters 2-227:
+Error: Stack overflow.
+
+File "./theory/groups.v", line 3, characters 0-79:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theory/groups.v", line 3, characters 0-79:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theory/groups.v", line 27, characters 0-58:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./theory/groups.v", line 28, characters 0-107:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar."
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "/lscratch/blaaulas/tactician.tmp.tpjKyc/opam-root/bench/.opam-switch/build/coq-bedrock2.0.0.1/bedrock2/src/bedrock2/NotationsCustomEntry.v", line 83, characters 0-206:
+Warning: This notation contains Ltac expressions: it will not be used for
+printing. [non-reversible-notation,parsing]
+File "/lscratch/blaaulas/tactician.tmp.tpjKyc/opam-root/bench/.opam-switch/build/coq-bedrock2.0.0.1/bedrock2/src/bedrock2/NotationsCustomEntry.v", line 131, characters 0-148:
+Warning: This notation contains Ltac expressions: it will not be used for
+printing. [non-reversible-notation,parsing]
+File "/lscratch/blaaulas/tactician.tmp.tpjKyc/opam-root/bench/.opam-switch/build/coq-bedrock2.0.0.1/bedrock2/src/bedrock2/NotationsCustomEntry.v", line 148, characters 16-83:
+Warning: The format modifier is irrelevant for only-parsing rules.
+[irrelevant-format-only-parsing,parsing]
+File "/lscratch/blaaulas/tactician.tmp.tpjKyc/opam-root/bench/.opam-switch/build/coq-bedrock2.0.0.1/bedrock2/src/bedrock2/NotationsCustomEntry.v", line 151, characters 16-87:
+Warning: The format modifier is irrelevant for only-parsing rules.
+[irrelevant-format-only-parsing,parsing]
+File "/lscratch/blaaulas/tactician.tmp.tpjKyc/opam-root/bench/.opam-switch/build/coq-bedrock2.0.0.1/bedrock2/src/bedrock2/NotationsCustomEntry.v", line 154, characters 16-83:
+Warning: The format modifier is irrelevant for only-parsing rules.
+[irrelevant-format-only-parsing,parsing]
+File "/lscratch/blaaulas/tactician.tmp.tpjKyc/opam-root/bench/.opam-switch/build/coq-bedrock2.0.0.1/bedrock2/src/bedrock2/NotationsCustomEntry.v", line 157, characters 16-87:
+Warning: The format modifier is irrelevant for only-parsing rules.
+[irrelevant-format-only-parsing,parsing]
+File "./theories/Basics/HeterogeneousRelations.v", line 212, characters 4-18:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 223, characters 4-18:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 228, characters 4-12:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 288, characters 4-19:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 297, characters 4-19:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 308, characters 4-29:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 369, characters 4-50:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 375, characters 4-47:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 386, characters 4-52:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 395, characters 4-68:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 434, characters 4-47:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 444, characters 4-30:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
+File "./theory/forget_algebra.v", line 4, characters 0-294:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theory/forget_algebra.v", line 4, characters 0-294:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theory/forget_algebra.v", line 4, characters 0-294:
+Warning:
+New coercion path [et_laws] : EquationalTheory >-> Funclass is ambiguous with existing 
+[et_sig; operation_type] : EquationalTheory >-> Funclass.
+[ambiguous-paths,typechecker]
+File "./theories/cube.v", line 100, characters 0-33:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. unlock {}cube Please report.
+File "./theories/Basics/HeterogeneousRelations.v", line 478, characters 6-14:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros ! Please report.
