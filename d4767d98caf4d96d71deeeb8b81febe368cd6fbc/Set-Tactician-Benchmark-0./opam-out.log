@@ -1,9 +1,10 @@
 Opam has already been initialized.
 The following actions will be performed:
-  ⊘ remove coq-equations 1.3+8.15
+  ⊘ remove coq-tactician-stdlib 8.15.dev
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⊘ removed   coq-equations.1.3+8.15
+⬇ retrieved coq-tactician-stdlib.8.15.dev  (no changes)
+⊘ removed   coq-tactician-stdlib.8.15.dev
 Done.
 [coq-tactician.dev] synchronised (no changes)
 coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#d4767d98caf4d96d71deeeb8b81febe368cd6fbc (version dev)
@@ -11,11 +12,24 @@ Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-bu
 Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
 Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field pre-build-commands in switch bench
 Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
-Nothing to do.
 The following actions will be performed:
-  ∗ install coq-equations 1.3+8.15
+  ∗ install coq-tactician-stdlib 8.15.dev  *** WARNING ***
+                                           This package will overwrite Coq's standard library files.
+                                           A backup of the original files will be placed under Coq's
+                                           library directory at user-contrib/tactician-stdlib-backup/
+                                           and they will be restored when you remove this package.
+                                           After installation of this package, all other Coq packages
+                                           also need to be recompiled. Running the 'tactician recompile'
+                                           command-line utility will help with this process.
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-equations.1.3+8.15  (cached)
-∗ installed coq-equations.1.3+8.15
+⬇ retrieved coq-tactician-stdlib.8.15.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.15)
+∗ installed coq-tactician-stdlib.8.15.dev
 Done.
+
+<><> coq-tactician-stdlib.8.15.dev installed successfully <><><><><><><><><><><>
+=> --- The standard library was successfully recompiled ---
+
+   In order to finish the process, you should run
+
+   tactician recompile
