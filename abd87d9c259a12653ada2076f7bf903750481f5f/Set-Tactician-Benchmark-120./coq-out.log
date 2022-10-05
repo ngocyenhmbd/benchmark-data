@@ -1,0 +1,81 @@
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+s : t, s' : t, s'' : t, x : elt, y : elt, z : elt |- (equal s' s'' = true -> equal (union s s') (union s s'') = true) OUTPUT
+Prediction takes 3.7220640182495117 seconds
+( textPrediction = [
+    (tacticText = "intros?", confidence = 0.5),
+    (tacticText = "intuition", confidence = 0.5),
+    (tacticText = "auto", confidence = 0.5),
+    ( tacticText = "auto with relations",
+      confidence = 0.5 ),
+    ( tacticText = "auto with set",
+      confidence = 0.5 ) ] )
+----ä
+s : t, s' : t, s'' : t, x : elt, y : elt, z : elt, H : (equal s' s'' = true) |- (equal (union s s') (union s s'') = true) OUTPUT
+Prediction takes 0.15914463996887207 seconds
+( textPrediction = [
+    (tacticText = "auto", confidence = 0.5),
+    (tacticText = "intuition", confidence = 0.5),
+    ( tacticText = "auto with relations",
+      confidence = 0.5 ),
+    ( tacticText = "auto with set",
+      confidence = 0.5 ),
+    ( tacticText = "auto with ordered_type",
+      confidence = 0.5 ) ] )
+----ä
+f : (elt -> bool), Comp : (Proper (E.eq ==> Logic.eq) f), Comp' : (Proper (E.eq ==> Logic.eq) (fun x : E.t => negb (f x))) |- (forall s : t, equal (fst (partition f s)) (filter f s) = true) OUTPUT
+Prediction takes 0.23025107383728027 seconds
+( textPrediction = [
+    (tacticText = "intros?", confidence = 0.5),
+    (tacticText = "auto", confidence = 0.5),
+    (tacticText = "simpl", confidence = 0.5),
+    (tacticText = "intros", confidence = 0.5),
+    ( tacticText = "auto with relations",
+      confidence = 0.5 ) ] )
+----ä
+f : (elt -> bool), Comp : (Proper (E.eq ==> Logic.eq) f), Comp' : (Proper (E.eq ==> Logic.eq) (fun x : E.t => negb (f x))), s : t |- (equal (fst (partition f s)) (filter f s) = true) OUTPUT
+Prediction takes 0.12530207633972168 seconds
+( textPrediction = [
+    (tacticText = "auto", confidence = 0.5),
+    (tacticText = "simpl", confidence = 0.5),
+    ( tacticText = "auto with *",
+      confidence = 0.5 ),
+    ( tacticText = "auto with set",
+      confidence = 0.5 ),
+    ( tacticText = "auto with relations",
+      confidence = 0.5 ) ] )
+starting proving server with connection through their stdin
+using textmode optiontext
