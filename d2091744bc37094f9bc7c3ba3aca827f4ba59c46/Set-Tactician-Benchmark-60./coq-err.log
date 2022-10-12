@@ -1,39 +1,21 @@
 Traceback (most recent call last):
   File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
-Traceback (most recent call last):
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
-    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 25, in importlib_load_entry_point
     sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
   File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 25, in importlib_load_entry_point
     return next(matches).load()
   File "/home/piepejel/anaconda3/envs/python3.9/lib/python3.9/importlib/metadata.py", line 86, in load
-    return next(matches).load()
-  File "/home/piepejel/anaconda3/envs/python3.9/lib/python3.9/importlib/metadata.py", line 86, in load
-    module = import_module(match.group('module'))
-  File "/home/piepejel/anaconda3/envs/python3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
     module = import_module(match.group('module'))
   File "/home/piepejel/anaconda3/envs/python3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
     return _bootstrap._gcd_import(name[level:], package, level)
   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
-  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 35, in <module>
-  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 35, in <module>
-    with open('/home/piepejel/projects/coq-gpt-train/answers.pickle', 'rb') as handle:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/piepejel/projects/coq-gpt-train/answers.pickle'
-    with open('/home/piepejel/projects/coq-gpt-train/answers.pickle', 'rb') as handle:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/piepejel/projects/coq-gpt-train/answers.pickle'
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 36, in <module>
+    answer_dict = pickle.load(handle)
+NameError: name 'pickle' is not defined
 Traceback (most recent call last):
   File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
     sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
@@ -49,9 +31,9 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 35, in <module>
-    with open('/home/piepejel/projects/coq-gpt-train/answers.pickle', 'rb') as handle:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/piepejel/projects/coq-gpt-train/answers.pickle'
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 36, in <module>
+    answer_dict = pickle.load(handle)
+NameError: name 'pickle' is not defined
 Traceback (most recent call last):
   File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
     sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
@@ -67,9 +49,9 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 35, in <module>
-    with open('/home/piepejel/projects/coq-gpt-train/answers.pickle', 'rb') as handle:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/piepejel/projects/coq-gpt-train/answers.pickle'
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 36, in <module>
+    answer_dict = pickle.load(handle)
+NameError: name 'pickle' is not defined
 Traceback (most recent call last):
   File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
     sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
@@ -85,9 +67,9 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 35, in <module>
-    with open('/home/piepejel/projects/coq-gpt-train/answers.pickle', 'rb') as handle:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/piepejel/projects/coq-gpt-train/answers.pickle'
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 36, in <module>
+    answer_dict = pickle.load(handle)
+NameError: name 'pickle' is not defined
 Traceback (most recent call last):
   File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
     sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
@@ -103,15 +85,33 @@ Traceback (most recent call last):
   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 35, in <module>
-    with open('/home/piepejel/projects/coq-gpt-train/answers.pickle', 'rb') as handle:
-FileNotFoundError: [Errno 2] No such file or directory: '/home/piepejel/projects/coq-gpt-train/answers.pickle'
-File "./theories/Reals/Ranalysis4.v", line 300, characters 2-8:
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 36, in <module>
+    answer_dict = pickle.load(handle)
+NameError: name 'pickle' is not defined
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 25, in importlib_load_entry_point
+    return next(matches).load()
+  File "/home/piepejel/anaconda3/envs/python3.9/lib/python3.9/importlib/metadata.py", line 86, in load
+    module = import_module(match.group('module'))
+  File "/home/piepejel/anaconda3/envs/python3.9/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 36, in <module>
+    answer_dict = pickle.load(handle)
+NameError: name 'pickle' is not defined
+File "./theories/Reals/RList.v", line 413, characters 2-21:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Reals/RList.v", line 413, characters 2-21:
+File "./theories/Reals/Ranalysis4.v", line 300, characters 2-8:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
@@ -134,6 +134,11 @@ Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
 
 File "./plugins/nsatz/Nsatz.v", line 482, characters 0-12:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RList.v", line 468, characters 2-209:
 Error:
 Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
 Please report at http://coq.inria.fr/bugs/.
