@@ -1,0 +1,153 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 208, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 72, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 602, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 925, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 208, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 72, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 602, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 925, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 208, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 72, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 602, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 925, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 208, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 72, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 602, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 925, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 208, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 72, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 602, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 925, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 208, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/graph2tac/transformer/pserver.py", line 72, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 602, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-graph2tac-trained/target-source/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 925, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+File "./theories/Reals/RList.v", line 413, characters 2-21:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Ranalysis4.v", line 300, characters 2-8:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RiemannInt.v", line 742, characters 2-159:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./theories/Reals/Rtrigo1.v", line 134, characters 2-79:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RiemannInt_SF.v", line 1470, characters 2-262:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RiemannInt.v", line 1495, characters 2-379:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
