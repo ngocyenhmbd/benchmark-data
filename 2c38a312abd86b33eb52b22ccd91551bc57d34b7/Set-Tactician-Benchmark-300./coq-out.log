@@ -1,0 +1,78 @@
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+STATE
+ |- (forall (l : Rlist) (a x : R), In x (insert l a) <-> x = a \/ In x l)
+----ä
+ |- (forall (l : Rlist) (a x : R), In x (insert l a) <-> x = a \/ In x l) OUTPUT
+intros
+intros ?
+induction l
+unfold In
+simpl
+Model Loaded
+0
+STATE
+ |- (continuity cos)
+----ä
+ |- (continuity cos) OUTPUT
+unfold cos
+apply continuity_pt
+unfold continuity_pt
+unfold continuity
+unfold cos_pt
+Model Loaded
+0
+STATE
+ |- (forall x : R, derivable_pt_lim cosh x (sinh x))
+----ä
+ |- (forall x : R, derivable_pt_lim cosh x (sinh x)) OUTPUT
+intros ?
+intros
+unfold derivable_pt_lim
+unfold continuity_pt_lim
+unfold sinh
+Model Loaded
+0
+STATE
+ |- (forall (a b : R) (f g : R -> R) (lf lg : Rlist), is_subdivision f a b lf -> is_subdivision g a b lg -> is_subdivision g a b (cons_ORlist lf lg))
+----ä
+ |- (forall (a b : R) (f g : R -> R) (lf lg : Rlist), is_subdivision f a b lf -> is_subdivision g a b lg -> is_subdivision g a b (cons_ORlist lf lg)) OUTPUT
+intros ?
+intros
+unfold is_subdivision
+simple induction lf
+simple induction lg
+Model Loaded
+0
+STATE
+ |- (forall a b c : R, Riemann_integrable (fct_cte c) a b)
+----ä
+ |- (forall a b c : R, Riemann_integrable (fct_cte c) a b) OUTPUT
+intros
+intros ?
+unfold Riemann_integrable
+red
+unfold RiemannInt_SF
+Model Loaded
+0
+STATE
+ |- Integral_domain
+----ä
+ |- Integral_domain OUTPUT
+constructor
+red
+intros ?
+trivial
+intros
