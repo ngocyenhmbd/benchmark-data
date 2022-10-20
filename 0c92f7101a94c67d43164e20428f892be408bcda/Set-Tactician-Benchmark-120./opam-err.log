@@ -1,0 +1,20 @@
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/pestun/ibm-graph2tac.git' /tmp/pip-req-build-bjeu19wd
+  Running command git rev-parse -q --verify 'sha^4a48b7961c4e2bdf1d71afb2ed1d4f0d85f103e5'
+  Running command git fetch -q 'ssh://****@github.com/pestun/ibm-graph2tac.git' 4a48b7961c4e2bdf1d71afb2ed1d4f0d85f103e5
+  Running command git checkout -q 4a48b7961c4e2bdf1d71afb2ed1d4f0d85f103e5
+WARNING: You are using pip version 22.0.4; however, version 22.3 is available.
+You should consider upgrading via the '/tmp/tactician.tmp.DYAn16/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+[ERROR] The compilation of conf-xxhash.1 failed at "pkg-config libxxhash".
+[ERROR] Failed to get extra source "model.tar.gz" of coq-graph2tac.~dev: curl error code 404
+
+#=== ERROR while compiling conf-xxhash.1 ======================================#
+# context              2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#1dfd60c7
+# path                 /tmp/tactician.tmp.DYAn16/opam-root/bench/.opam-switch/build/conf-xxhash.1
+# command              /usr/bin/pkg-config libxxhash
+# exit-code            1
+# env-file             /tmp/opam-root-4165848/conf-xxhash-4165848-277ce9.env
+# output-file          /tmp/opam-root-4165848/conf-xxhash-4165848-277ce9.out
+
+
+#=== ERROR while fetching sources for coq-graph2tac.~dev ======================#
+OpamSolution.Fetch_fail("http://64.71.146.254:8000/SFyud_C5TmEq7AwnK9jaLsfTFMzgBl54cQ0pl2FJB-x9o2Hk24F4jO_W75RqGdOJ/weights/2022-10-17_F_tfgnn_v12-shared_ministdlib_epoch1000.d61e62eafe90557c7a03eed9d34d58d2.tar (curl: code 404 while downloading http://64.71.146.254:8000/SFyud_C5TmEq7AwnK9jaLsfTFMzgBl54cQ0pl2FJB-x9o2Hk24F4jO_W75RqGdOJ/weights/2022-10-17_F_tfgnn_v12-shared_ministdlib_epoch1000.d61e62eafe90557c7a03eed9d34d58d2.tar)")
