@@ -1,0 +1,30 @@
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/pestun/ibm-graph2tac.git' /tmp/pip-req-build-zhgncc5q
+  Running command git rev-parse -q --verify 'sha^4a48b7961c4e2bdf1d71afb2ed1d4f0d85f103e5'
+  Running command git fetch -q 'ssh://****@github.com/pestun/ibm-graph2tac.git' 4a48b7961c4e2bdf1d71afb2ed1d4f0d85f103e5
+  Running command git checkout -q 4a48b7961c4e2bdf1d71afb2ed1d4f0d85f103e5
+WARNING: You are using pip version 22.0.4; however, version 22.3 is available.
+You should consider upgrading via the '/tmp/tactician.tmp.Urfcjz/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+[ERROR] The compilation of xxhash.0.1 failed at "ocaml setup.ml -build".
+
+#=== ERROR while compiling xxhash.0.1 =========================================#
+# context              2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#a5e83808
+# path                 /tmp/tactician.tmp.Urfcjz/opam-root/bench/.opam-switch/build/xxhash.0.1
+# command              /tmp/tactician.tmp.Urfcjz/opam-root/bench/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /tmp/opam-root-3975988/xxhash-3975988-da0333.env
+# output-file          /tmp/opam-root-3975988/xxhash-3975988-da0333.out
+### output ###
+# [...]
+# /tmp/tactician.tmp.Urfcjz/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_bindings.cmx stubs/xxhash_bindings.ml
+# /tmp/tactician.tmp.Urfcjz/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_stubgen.cmx stubs/xxhash_stubgen.ml
+# /tmp/tactician.tmp.Urfcjz/opam-root/bench/bin/ocamlfind ocamlopt -g -linkpkg -package ctypes.stubs -I stubs stubs/xxhash_bindings.cmx stubs/xxhash_stubgen.cmx -o stubs/xxhash_stubgen.native
+# stubs/xxhash_stubgen.native
+# /tmp/tactician.tmp.Urfcjz/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
+# + /tmp/tactician.tmp.Urfcjz/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
+# lib/xxhash_stubs.c:1:10: fatal error: xxhash.h: No such file or directory
+#     1 | #include <xxhash.h>
+#       |          ^~~~~~~~~~
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/tmp/tactician.tmp.Urfcjz/opam-root/bench/bin/ocamlbuild' stubs/xxhash_stubgen.native lib/libxxhash_stubs.a lib/dllxxhash_stubs.so lib/xxhash.cma lib/xxhash.cmxa lib/xxhash.a lib/xxhash.cmxs -tag debug' terminated with error code 10")
+
