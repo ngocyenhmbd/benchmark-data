@@ -1,4 +1,28 @@
-[31m  * [0mMissing dependency:
-    - [31;01mdune >= 3.5[0m
-    no matching version
+[31m[ERROR][0m Could not synchronize
+        /lscratch/blaaulas/tactician.tmp.OIqqfs/opam-root/bench/.opam-switch/sources/coq-tactician-stdlib.dev
+        from
+        "git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coqdev":
+        Git repository seems just initialized, try again after your first
+        commit
+[31m[ERROR][0m Failed to get sources of coq-tactician-stdlib.dev:
+        git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coqdev
+[31m[ERROR][0m The compilation of coq-tactician.dev failed at "dune build -p
+        coq-tactician -j 55 --promote-install-files=false @install".
 
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-tactician.dev[0m [31m==================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | pinned(git+https://github.com/coq-tactician/coq-tactician.git#a361221025cca4bab1656177f817722a9507b9c9#a3612210)
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.OIqqfs/opam-root/bench/.opam-switch/build/coq-tactician.dev
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.OIqqfs/opam-root/bench/bin/dune build -p coq-tactician -j 55 --promote-install-files=false @install
+[33m#[0m [33mexit-code[0m   1
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-24373/coq-tactician-24373-022570.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-24373/coq-tactician-24373-022570.out
+[33m### output ###
+[0m[33m# [0mFile "theories/dune", line 4, characters 1-12:
+[33m# [0m4 |  (stdlib no)
+[33m# [0m     ^^^^^^^^^^^
+[33m# [0mError: 'stdlib' is only available since version 0.6 of the Coq language.
+[33m# [0mPlease update your dune-project file to have (using coq 0.6).
+
+
+[31m#===[0m [01mERROR[0m [01mwhile fetching sources for coq-tactician-stdlib.dev[0m [31m================#[0m
+OpamSolution.Fetch_fail("git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coqdev")
