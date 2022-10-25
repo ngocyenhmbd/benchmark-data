@@ -1,0 +1,28 @@
+[NOTE] Package coq-tactician is already pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#6f25283309a7dc3f38a71e7f2b34c06327cdd93f (version dev).
+[ERROR] The compilation of coq-stdlib.dev failed at "dune build -p coq-stdlib -j 15 @install".
+
+#=== ERROR while compiling coq-stdlib.dev =====================================#
+# context              2.1.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-10-25 18:30
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-stdlib.dev
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/tactician exec -- dune build -p coq-stdlib -j 15 @install
+# exit-code            1
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-stdlib-503063-7acd07.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-stdlib-503063-7acd07.out
+### output ###
+# Please report at http://coq.inria.fr/bugs/.
+# [...]
+# File "theories/dune", line 467, characters 1-2223:
+# 467 |  (rule
+# 468 |   (targets Notations.glob Notations.vos Notations.vo)
+# 469 |   (deps )
+# 470 |   (action (run coqc -noinit -boot -R ../. Coq -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq-core/plugins/number_string_notation -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq-core/plugins/zify -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/co[...]
+# (cd _build/default/theories/Init && /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/coqc -noinit -boot -R ../. Coq -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq-core/plugins/number_string_notation -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq-core/plu[...]
+# Error:
+# Anomaly
+# "Uncaught exception Unix.Unix_error(Unix.ECONNREFUSED, "connect", "")."
+# Please report at http://coq.inria.fr/bugs/.
+# 
+
+
+The former state can be restored with:
+    /home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default/src/benchmark/main.exe switch import "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/backup/state-20221025232824.export"
