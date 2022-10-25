@@ -7,10 +7,9 @@ The following actions will be performed:
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 ⬇ retrieved coq-stdlib.dev  (no changes)
-
-
-<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-┌─ The following actions failed
-│ λ build coq-stdlib dev
-└─ 
-╶─ No changes have been performed
+∗ installed coq-stdlib.dev
+Done.
+Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-build-commands in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
+Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' from field pre-build-commands in switch bench
+Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
