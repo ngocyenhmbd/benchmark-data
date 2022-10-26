@@ -1,4 +1,4 @@
-  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/pestun/ibm-graph2tac.git' /tmp/pip-req-build-uuv_l0ek
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/pestun/ibm-graph2tac.git' /tmp/pip-req-build-xs7qtgpg
   Running command git rev-parse -q --verify 'sha^2878d7cb323fba27951b261388c1df1adc0fdca7'
   Running command git fetch -q 'ssh://****@github.com/pestun/ibm-graph2tac.git' 2878d7cb323fba27951b261388c1df1adc0fdca7
   Running command git checkout -q 2878d7cb323fba27951b261388c1df1adc0fdca7
@@ -7,38 +7,14 @@
 [notice] To update, run: pip install --upgrade pip
 [ERROR] The compilation of conf-gmp.4 failed at "sh -exc cc -c $CFLAGS -I/usr/local/include test.c".
 [ERROR] The compilation of mirage-crypto-rng.0.10.7 failed at "dune build -p mirage-crypto-rng -j 127".
-[ERROR] The compilation of xxhash.0.1 failed at "ocaml setup.ml -build".
-
-#=== ERROR while compiling xxhash.0.1 =========================================#
-# context              2.1.3 | linux/x86_64 |  | https://opam.ocaml.org#1e266435
-# path                 /tmp/tactician.tmp.cUjv2E/opam-root/bench/.opam-switch/build/xxhash.0.1
-# command              /tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/ocaml setup.ml -build
-# exit-code            1
-# env-file             /tmp/opam-root-1627587/xxhash-1627587-f3eebc.env
-# output-file          /tmp/opam-root-1627587/xxhash-1627587-f3eebc.out
-### output ###
-# [...]
-# /tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_bindings.cmx stubs/xxhash_bindings.ml
-# /tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_stubgen.cmx stubs/xxhash_stubgen.ml
-# /tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/ocamlfind ocamlopt -g -linkpkg -package ctypes.stubs -I stubs stubs/xxhash_bindings.cmx stubs/xxhash_stubgen.cmx -o stubs/xxhash_stubgen.native
-# stubs/xxhash_stubgen.native
-# /tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
-# + /tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
-# lib/xxhash_stubs.c:1:10: fatal error: xxhash.h: No such file or directory
-#     1 | #include <xxhash.h>
-#       |          ^~~~~~~~~~
-# compilation terminated.
-# Command exited with code 2.
-# E: Failure("Command ''/tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/ocamlbuild' stubs/xxhash_stubgen.native lib/libxxhash_stubs.a lib/dllxxhash_stubs.so lib/xxhash.cma lib/xxhash.cmxa lib/xxhash.a lib/xxhash.cmxs -tag debug' terminated with error code 10")
-
 
 #=== ERROR while compiling mirage-crypto-rng.0.10.7 ===========================#
 # context              2.1.3 | linux/x86_64 |  | https://opam.ocaml.org#1e266435
-# path                 /tmp/tactician.tmp.cUjv2E/opam-root/bench/.opam-switch/build/mirage-crypto-rng.0.10.7
-# command              /tmp/tactician.tmp.cUjv2E/opam-root/bench/bin/dune build -p mirage-crypto-rng -j 127
+# path                 /tmp/tactician.tmp.oVzUxY/opam-root/bench/.opam-switch/build/mirage-crypto-rng.0.10.7
+# command              /tmp/tactician.tmp.oVzUxY/opam-root/bench/bin/dune build -p mirage-crypto-rng -j 127
 # exit-code            1
-# env-file             /tmp/opam-root-1627587/mirage-crypto-rng-1627587-b80536.env
-# output-file          /tmp/opam-root-1627587/mirage-crypto-rng-1627587-b80536.out
+# env-file             /tmp/opam-root-3719173/mirage-crypto-rng-3719173-a88cee.env
+# output-file          /tmp/opam-root-3719173/mirage-crypto-rng-3719173-a88cee.out
 ### output ###
 # [...]
 # mc_getrandom_stubs.c:14:45: error: 'SYS_getrandom' undeclared (first use in this function); did you mean 'raw_getrandom'?
@@ -57,11 +33,11 @@
 
 #=== ERROR while compiling conf-gmp.4 =========================================#
 # context              2.1.3 | linux/x86_64 |  | https://opam.ocaml.org#1e266435
-# path                 /tmp/tactician.tmp.cUjv2E/opam-root/bench/.opam-switch/build/conf-gmp.4
+# path                 /tmp/tactician.tmp.oVzUxY/opam-root/bench/.opam-switch/build/conf-gmp.4
 # command              /usr/bin/sh -exc cc -c $CFLAGS -I/usr/local/include test.c
 # exit-code            1
-# env-file             /tmp/opam-root-1627587/conf-gmp-1627587-905a82.env
-# output-file          /tmp/opam-root-1627587/conf-gmp-1627587-905a82.out
+# env-file             /tmp/opam-root-3719173/conf-gmp-3719173-222740.env
+# output-file          /tmp/opam-root-3719173/conf-gmp-3719173-222740.out
 ### output ###
 # + cc -c -I/usr/local/include test.c
 # test.c:1:10: fatal error: gmp.h: No such file or directory
