@@ -1,156 +1,349 @@
 coq-stdlib.dev	Coq.Init.Logic.Conjunction.proj1	40
-coq-stdlib.dev	Coq.Init.Logic.Conjunction.proj2	40	0.0	synth with cache (only 1: destruct 1; only 1: trivial).	0.002718	2
+coq-stdlib.dev	Coq.Init.Logic.Conjunction.proj2	40	0.0	synth with cache (only 1: destruct 1; only 1: trivial).	0.002300	2
 coq-stdlib.dev	Coq.Init.Logic.Equivalence.iff_refl	40
-coq-stdlib.dev	Coq.Init.Logic.Equivalence.iff_trans	40	2.2.0.0.2	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.027594	79
-coq-stdlib.dev	Coq.Init.Logic.Equivalence.iff_sym	40	0.0.0.3	synth with cache (only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.014752	29
-coq-stdlib.dev	Coq.Init.Logic.and_iff_compat_l	40	2.0.0.0.2.0.1.0.0.4	synth with cache (only 1: destruct 1; only 1: split; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto).	0.094769	309
-coq-stdlib.dev	Coq.Init.Logic.and_iff_compat_r	40	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: apply Hl; only 1: assumption; only 1: assumption; only 1: intros [? ?]; only 1: split; only 1: apply Hr; only 1: assumption; only 1: assumption).	0.031920	26
-coq-stdlib.dev	Coq.Init.Specif.sigT_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.029205	2
-coq-stdlib.dev	Coq.Init.Specif.sig_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.022861	2
-coq-stdlib.dev	Coq.Init.Specif.sigT2_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.032364	2
-coq-stdlib.dev	Coq.Init.Logic.or_iff_compat_r	40	0.1.0.0.1.0.0.1.0.0.1.0.0.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [?| ?]; only 1: left; only 1: apply Hl; only 1: assumption; only 1: right; only 1: assumption; only 1: intros [?| ?]; only 1: left; only 1: apply Hr; only 1: assumption; only 1: right; only 1: assumption).	0.215222	243
-coq-stdlib.dev	Coq.Init.Specif.sig2_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.031892	2
-coq-stdlib.dev	Coq.Init.Specif.exists_to_inhabited_sig	40	0.0.2.66	synth with cache (only 1: intros [? ?]; only 1: split; only 1: exists x; only 1: trivial).	0.121578	93
+coq-stdlib.dev	Coq.Init.Logic.Equivalence.iff_trans	40	2.2.0.0.2	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.020073	79
+coq-stdlib.dev	Coq.Init.Logic.Equivalence.iff_sym	40	0.0.0.3	synth with cache (only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.008013	29
+coq-stdlib.dev	Coq.Init.Logic.and_iff_compat_l	40	2.0.0.0.2.0.1.0.0.4	synth with cache (only 1: destruct 1; only 1: split; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto; only 1: destruct 1; only 1: split; only 1: trivial; only 1: auto).	0.059014	309
+coq-stdlib.dev	Coq.Init.Logic.and_iff_compat_r	40	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: apply Hl; only 1: assumption; only 1: assumption; only 1: intros [? ?]; only 1: split; only 1: apply Hr; only 1: assumption; only 1: assumption).	0.018035	26
+coq-stdlib.dev	Coq.Init.Peano.pred_Sn	40	2.0	synth with cache (only 1: intro n; only 1: split).	0.042113	22
+coq-stdlib.dev	Coq.Init.Specif.sigT_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.013149	2
+coq-stdlib.dev	Coq.Init.Peano.not_eq_S	40	0.4	synth with cache (only 1: intro H; only 1: auto).	0.151353	234
+coq-stdlib.dev	Coq.Init.Specif.sig_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.013563	2
+coq-stdlib.dev	Coq.Init.Specif.sigT2_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.016512	2
+coq-stdlib.dev	Coq.Init.Specif.sig2_eta	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.015452	2
 coq-stdlib.dev	Coq.Init.Logic.or_iff_compat_l	40
-coq-stdlib.dev	Coq.Init.Specif.ProdSigT.sigT_prod_sigT	40	1.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.028341	3
-coq-stdlib.dev	Coq.Init.Logic.imp_iff_compat_l	40	9.9.2.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.274286	818
-coq-stdlib.dev	Coq.Init.Logic.not_iff_compat	40	1.1.0.0	synth with cache (only 1: intros A B [H1 H2]; only 1: split; only 1: auto; only 1: auto).	0.018146	6
-coq-stdlib.dev	Coq.Init.Logic.neg_false	40	1.1.11.0.1.0	synth with cache (only 1: split; only 1: split; only 1: auto; only 1: destruct 1; only 1: intros [? ?]; only 1: auto).	0.293814	542
-coq-stdlib.dev	Coq.Init.Logic.imp_iff_compat_r	40	9.9.0.1.4	synth with cache (only 1: intros H ?; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	1.000479	2234
-coq-stdlib.dev	Coq.Init.Logic.and_cancel_r	40	0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros A B C Hl Hr; only 1: split; only 1: intros [HypL HypR]; only 1: split; only 1: intros; only 1: apply HypL; only 1: split; only 1: assumption; only 1: apply Hl; only 1: assumption; only 1: intros; only 1: apply HypR; only 1: split; only 1: assumption; only 1: apply Hr; only 1: assumption; only 1: intros [HypL HypR]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: apply HypL; only 1: assumption; only 1: apply Hl; only 1: assumption; only 1: intros [? ?]; only 1: split; only 1: apply HypR; only 1: assumption; only 1: apply Hr; only 1: assumption).	0.430672	169
-coq-stdlib.dev	Coq.Init.Logic.and_comm	40	0.0.0.0.0.0.0.0.2	synth with cache (only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial).	0.089640	41
-coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_uncurried	40	0.1.0.0	synth with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.025379	5
-coq-stdlib.dev	Coq.Init.Logic.iff_and	40	1.0	synth with cache (only 1: intros; only 1: assumption).	0.008415	3
-coq-stdlib.dev	Coq.Init.Specif.sigT.eq_sigT_uncurried	40	0.1.0.0.0.0	synth with cache (only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.041268	7
-coq-stdlib.dev	Coq.Init.Peano.pred_Sn	40	2.0	synth with cache (only 1: intro n; only 1: split).	0.027308	22
-coq-stdlib.dev	Coq.Init.Logic.or_comm	40	0.0.0.1.0.0.0.0.1.0.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros [?| ?]; only 1: right; only 1: assumption; only 1: left; only 1: assumption; only 1: intros [?| ?]; only 1: right; only 1: assumption; only 1: left; only 1: assumption).	0.085542	62
-coq-stdlib.dev	Coq.Init.Logic.universal_quantification.inst	40	9	synth with cache (only 1: auto).	0.034367	67
-coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_curried	40	0.1.0	synth with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.022298	4
-coq-stdlib.dev	Coq.Init.Logic.universal_quantification.gen	40	0.0	synth with cache (only 1: unfold all; only 1: auto).	0.008364	2
-coq-stdlib.dev	Coq.Init.Logic.iff_to_and	40	1.0.0.0.0.2.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intro H; only 1: assumption).	0.079008	81
-coq-stdlib.dev	Coq.Init.Wf.Well_founded.Acc_inv	40	1.4.1	synth with cache (only 1: intro; only 1: destruct 1; only 1: assumption).	0.130980	147
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.eq_trans	40	0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.012259	3
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.eq_trans_r	40	0.0	synth with cache (only 1: destruct 2; only 1: trivial).	0.015758	2
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.eq_sym	40	1.3	synth with cache (only 1: destruct 1; only 1: split).	0.030800	16
-coq-stdlib.dev	Coq.Init.Wf.Well_founded.well_founded_induction	40	0.0.0.0	synth with cache (only 1: intros; only 1: apply Acc_rect; only 1: auto; only 1: auto).	0.029260	4
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.f_equal	40	0.0	synth with cache (only 1: destruct 1; only 1: trivial).	0.022133	2
-coq-stdlib.dev	Coq.Init.Wf.Well_founded.well_founded_ind	40	0.0.0.0	synth with cache (only 1: intros; only 1: apply Acc_rect; only 1: auto; only 1: auto).	0.027863	4
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_ind_r	40	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.018006	3
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_sind_r	40	0.0.2	synth with cache (only 1: intros A B C Hl Hr; only 1: destruct 1; only 1: trivial).	0.032208	10
-coq-stdlib.dev	Coq.Init.Peano.O_S	40	6.2	synth with cache (only 1: intro n; only 1: discriminate).	0.162009	460
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_rec_r	40	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.018516	3
-coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_curried_map	40	0.5.2	synth with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.168721	205
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_rect_r	40	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.024611	3
-coq-stdlib.dev	Coq.Init.Peano.not_eq_S	40	0.4	synth with cache (only 1: intro H; only 1: auto).	0.207503	234
-coq-stdlib.dev	Coq.Init.Peano.plus_n_O	40	0.2.0.0.1	synth with cache (only 1: intro n; only 1: induction n; only 1: auto; only 1: simpl; only 1: auto).	0.119104	72
-coq-stdlib.dev	Coq.Init.Peano.plus_O_n	40	0.0.0.0.0.0	synth with cache (only 1: intro n; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.021607	6
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.absurd	40	0.7.2.1	synth with cache (only 1: intro A; only 1: intros H ?; only 1: destruct 1; only 1: assumption).	0.191118	411
-coq-stdlib.dev	Coq.Init.Logic.f_equal_dep2	40	0.1.0	synth with cache (only 1: destruct H; only 1: destruct 1; only 1: reflexivity).	0.026234	4
-coq-stdlib.dev	Coq.Init.Peano.n_Sn	40	5.1.0.1	synth with cache (only 1: intro n; only 1: induction n; only 1: discriminate; only 1: auto).	0.191716	244
-coq-stdlib.dev	Coq.Init.Logic.rew_opp_r	40	0.0	synth with cache (only 1: destruct H; only 1: reflexivity).	0.025594	2
-coq-stdlib.dev	Coq.Init.Logic.rew_opp_l	40	0.0	synth with cache (only 1: destruct H; only 1: reflexivity).	0.025259	2
-coq-stdlib.dev	Coq.Init.Peano.plus_Sn_m	40	0.0.0.0.0.0	synth with cache (only 1: intros n m; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.036914	6
-coq-stdlib.dev	Coq.Init.Peano.mult_n_O	40	1.0.0.0.0.0	synth with cache (only 1: intro n; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.030470	7
-coq-stdlib.dev	Coq.Init.Logic.f_equal3	40	0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.032027	4
-coq-stdlib.dev	Coq.Init.Logic.f_equal4	40	0.0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.038239	5
-coq-stdlib.dev	Coq.Init.Logic.f_equal2	40	1.1.1.0.0	synth with cache (only 1: intros A B C Hl Hr; only 1: intros H ?; only 1: destruct 1; only 1: destruct 1; only 1: repeat split).	0.083599	32
-coq-stdlib.dev	Coq.Init.Peano.plus_n_Sm	40	1.0.0.0.0.4.2	synth with cache (only 1: intro n; only 1: induction n; only 1: intro n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.126598	219
-coq-stdlib.dev	Coq.Init.Logic.f_equal5	40	0.0.0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.028337	6
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_refl_l	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.012976	2
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_refl_r	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.027678	2
-coq-stdlib.dev	Coq.Init.Peano.le_0_n	40	0.2.128.1	synth with cache (only 1: intro n; only 1: induction n as [| p H]; only 1: auto; only 1: auto).	0.032810	72
-coq-stdlib.dev	Coq.Init.Logic.eq_sym_involutive	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.013848	2
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_sym_inv_l	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.027756	2
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_sym_inv_r	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.014679	2
-coq-stdlib.dev	Coq.Init.Peano.le_n_S	40	1.0.1	synth with cache (only 1: induction 1 as [| m _]; only 1: auto; only 1: auto).	0.022428	23
-coq-stdlib.dev	Coq.Init.Logic.rew_map	40	0.1	synth with cache (only 1: destruct H; only 1: reflexivity).	0.017144	3
-coq-stdlib.dev	Coq.Init.Datatypes.eq_true_ind_r	40	0.75.72	synth with cache (only 1: intros h1 h2; only 1: destruct 2; only 1: assumption).	0.519547	1823
-coq-stdlib.dev	Coq.Init.Logic.map_subst	40	0.0	synth with cache (only 1: destruct H; only 1: reflexivity).	0.015349	2
-coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	40	29.1	synth with cache (only 1: destruct 2; only 1: auto).	0.464997	1621
-coq-stdlib.dev	Coq.Init.Logic.map_subst_map	40	0.1	synth with cache (only 1: destruct H; only 1: reflexivity).	0.014194	3
-coq-stdlib.dev	Coq.Init.Datatypes.eq_true_rec_r	40	0.0.0	synth with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.014891	3
-coq-stdlib.dev	Coq.Init.Logic.rew_swap	40	0.0	synth with cache (only 1: destruct H, 1; only 1: reflexivity).	0.016741	2
-coq-stdlib.dev	Coq.Init.Datatypes.eq_true_rect_r	40	0.0.0	synth with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.019097	3
-coq-stdlib.dev	Coq.Init.Logic.rew_compose	40	2.0	synth with cache (only 1: destruct H2; only 1: reflexivity).	0.016817	4
-coq-stdlib.dev	Coq.Init.Peano.nat_case	40	1.2.5.3	synth with cache (only 1: intros n m; only 1: induction n; only 1: auto; only 1: auto).	0.199924	792
-coq-stdlib.dev	Coq.Init.Datatypes.surjective_pairing	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.019682	2
+coq-stdlib.dev	Coq.Init.Specif.exists_to_inhabited_sig	40	0.0.2.66	synth with cache (only 1: intros [? ?]; only 1: split; only 1: exists x; only 1: trivial).	0.071455	93
+coq-stdlib.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_sym	40	2.65.0.128	synth with cache (only 1: intro m; only 1: intro x; only 1: destruct 1; only 1: reflexivity).	0.125197	132
+coq-stdlib.dev	Coq.Init.Peano.n_Sn	40	5.1.0.1	synth with cache (only 1: intro n; only 1: induction n; only 1: discriminate; only 1: auto).	0.131874	244
+coq-stdlib.dev	Coq.Init.Peano.O_S	40	6.2	synth with cache (only 1: intro n; only 1: discriminate).	0.206381	460
+coq-stdlib.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_trans	40	0.0	synth with cache (only 1: destruct 1; only 1: auto).	0.029321	2
+coq-stdlib.dev	Coq.Init.Logic.or_iff_compat_r	40	0.1.0.0.1.0.0.1.0.0.1.0.0.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: intros [?| ?]; only 1: left; only 1: apply Hl; only 1: assumption; only 1: right; only 1: assumption; only 1: intros [?| ?]; only 1: left; only 1: apply Hr; only 1: assumption; only 1: right; only 1: assumption).	0.174631	243
+coq-stdlib.dev	Coq.Init.Peano.plus_O_n	40	0.0.0.0.0.0	synth with cache (only 1: intro n; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.024543	6
+coq-stdlib.dev	Coq.Init.Peano.plus_n_O	40	0.2.0.0.1	synth with cache (only 1: intro n; only 1: induction n; only 1: auto; only 1: simpl; only 1: auto).	0.105594	72
+coq-stdlib.dev	Coq.Init.Peano.plus_Sn_m	40	0.0.0.0.0.0	synth with cache (only 1: intros n m; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.035906	6
+coq-stdlib.dev	Coq.Init.Peano.mult_n_O	40	1.0.0.0.0.0	synth with cache (only 1: intro n; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.031324	7
+coq-stdlib.dev	Coq.Program.Combinators.compose_id_left	40	0.0	synth with cache (only 1: intros; only 1: apply (eta_expansion_dep f)).	0.030489	2
+coq-stdlib.dev	Coq.Lists.Streams.Streams.unfold_Stream	40	0.128	synth with cache (only 1: intros [HypL HypR]; only 1: reflexivity).	0.016617	10
+coq-stdlib.dev	Coq.Init.Peano.plus_n_Sm	40	1.0.0.0.0.4.2	synth with cache (only 1: intro n; only 1: induction n; only 1: intro n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.161369	219
+coq-stdlib.dev	Coq.Program.Combinators.compose_id_right	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.033727	2
+coq-stdlib.dev	Coq.Program.Combinators.compose_assoc	40	1.0.1	synth with cache (only 1: intros A B f g H x; only 1: intro a; only 1: reflexivity).	0.035244	5
+coq-stdlib.dev	Coq.Init.Logic.imp_iff_compat_l	40	9.9.2.0	synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: split; only 1: auto; only 1: auto).	0.229415	818
+coq-stdlib.dev	Coq.Program.Combinators.flip_flip	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.028379	2
+coq-stdlib.dev	Coq.Program.Combinators.curry_uncurry	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.020373	2
+coq-stdlib.dev	Coq.Sets.Relations_2_facts.Rstar_reflexive	40	129	synth with cache (only 1: constructor).	0.027974	13
+coq-stdlib.dev	Coq.Logic.JMeq.JMeq_sym	40	0.3	synth with cache (only 1: destruct 1; only 1: trivial).	0.050788	29
+coq-stdlib.dev	Coq.Sets.Relations_2_facts.Rplus_contains_R	40	0	synth with cache (only 1: auto with sets).	0.023749	1
+coq-stdlib.dev	Coq.Sets.Uniset.defs.le_refl	40	0	synth with cache (only 1: destr_bool).	0.027701	1
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Extension	40	0.129.0.129.0.0.65.192	synth with cache (only 1: intro A; only 1: intro x; only 1: destruct 1; only 1: split; only 1: intros r s; only 1: trivial; only 1: intros r s; only 1: trivial).	0.325078	286
+coq-stdlib.dev	Coq.ssr.ssrsetoid.compat_Reflexive	40	2.0.0	synth with cache (only 1: intros x y H0; only 1: red in H0; only 1: assumption).	0.022753	5
+coq-stdlib.dev	Coq.Logic.JMeq.JMeq_trans	40	1.66.0	synth with cache (only 1: destruct 1; only 1: intro H1; only 1: assumption).	0.086323	51
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Noone_in_empty	40	192.1	synth with cache (only 1: red; only 1: induction 1).	0.045894	32
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Included_Empty	40	0	synth with cache (only 1: destruct 1).	0.025905	1
+coq-stdlib.dev	Coq.Wellfounded.Transitive_Closure.Wf_Transitive_Closure.incl_clos_trans	40	0.18	synth with cache (only 1: left; only 1: assumption).	0.727150	1574
+coq-stdlib.dev	Coq.Sets.Powerset.The_power_set_partial_order.Empty_set_minimal	40	1.131	synth with cache (only 1: intros H ?; only 1: destruct 1).	0.290161	309
+coq-stdlib.dev	Coq.Init.Logic.imp_iff_compat_r	40	9.9.0.1.4	synth with cache (only 1: intros H ?; only 1: destruct 1; only 1: split; only 1: auto; only 1: auto).	0.925760	2234
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Add_intro1	40	0.194.1.0	synth with cache (only 1: intro; only 1: red; only 1: left; only 1: trivial).	0.481966	470
+coq-stdlib.dev	Coq.Init.Logic.not_iff_compat	40	1.1.0.0	synth with cache (only 1: intros A B [H1 H2]; only 1: split; only 1: auto; only 1: auto).	0.015613	6
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Add_intro2	40	0.0	synth with cache (only 1: unfold Add at 1; only 1: auto with sets).	0.029151	2
+coq-stdlib.dev	Coq.Init.Logic.neg_false	40	1.1.11.0.1.0	synth with cache (only 1: split; only 1: split; only 1: auto; only 1: destruct 1; only 1: intros [? ?]; only 1: auto).	0.241698	542
+coq-stdlib.dev	Coq.ssr.ssrfun.unitE	40	1.2.0.141	synth with cache (only 1: red; only 1: intro n; only 1: induction n; only 1: reflexivity || destruct H).	0.465816	1118
+coq-stdlib.dev	Coq.ssr.ssrfun.ExtensionalEquality.frefl	40	1	synth with cache (only 1: split).	0.025191	2
+coq-stdlib.dev	Coq.ssr.ssrfun.ExtensionalEquality.fsym	40	0.129	synth with cache (only 1: intro m; only 1: by [  ]).	0.033538	11
+coq-stdlib.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep1_dep	40	0.81.0	synth with cache (only 1: destruct 1; only 1: subst; only 1: auto).	2.579399	6841
+coq-stdlib.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_dep1	40	1.66.65.2.129	synth with cache (only 1: intro m; only 1: intro x; only 1: intros A B []; only 1: exists eq_refl; only 1: reflexivity).	0.297085	356
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Inhabited_add	40	0.9.65.2.0	synth with cache (only 1: unfold Add at 1; only 1: intro; only 1: intro x; only 1: exists x; only 1: auto with sets).	1.976362	5031
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_sigT_eq_dep	40	4.132.128.9	synth with cache (only 1: intros ? ? ? Fl Fr; only 1: intros H; only 1: inversion 1; only 1: apply eq_dep_intro).	1.787236	4264
+coq-stdlib.dev	Coq.Sets.Relations_3_facts.Rstar_imp_coherent	40	0.0.0.1.0.0.0.0.3.1	synth with cache (only 1: generalize Rstar_transitive; only 1: generalize Rstar_contains_Rplus; only 1: intro T; only 1: intro T1; only 1: red in T1; only 1: red in T; only 1: intros x0 H'0; only 1: intros x1 y0 H'1; only 1: exists y0; only 1: auto with sets).	4.480338	6785
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_dep_eq_sigT	40	2.0.0.69	synth with cache (only 1: intros n m; only 1: intros p; only 1: destruct 1; only 1: reflexivity).	0.506996	499
+coq-stdlib.dev	Coq.ssr.ssrfun.ExtensionalEquality.ftrans	40	3.71.138.74.67	synth with cache (only 1: intro z; only 1: intro n; only 1: intro m; only 1: case n; only 1: auto).	3.848115	14447
+coq-stdlib.dev	Coq.ssr.ssrfun.ExtensionalEquality.rrefl	40	1	synth with cache (only 1: repeat split).	0.031946	11
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_sigT_iff_eq_dep	40	0.200.0.0.131.129.194	synth with cache (only 1: intro A; only 1: repeat split; only 1: intros H; only 1: dependent rewrite H; only 1: apply eq_dep_intro; only 1: induction 1; only 1: reflexivity).	1.823729	3699
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_sig_eq_dep	40	0.0.0	synth with cache (only 1: intros * H; only 1: dependent rewrite H; only 1: apply eq_dep_intro).	0.037868	3
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_dep_eq_sig	40	0.1	synth with cache (only 1: destruct 1; only 1: reflexivity).	0.035789	12
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Inhabited_not_empty	40	64.73.3.3.3	synth with cache (only 1: red; only 1: destruct 1; only 1: intro; only 1: subst; only 1: inversion_clear H).	6.506228	24165
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_sig_iff_eq_dep	40	0.12.0.0.11.0	synth with cache (only 1: split; only 1: intros * H; only 1: dependent rewrite H; only 1: apply eq_dep_intro; only 1: destruct 1; only 1: reflexivity).	15.164326	41269
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_sigT_sig_eq	40	0.1.1.1.132.67.1.3.3.5.2.0.0	synth with cache (only 1: split; only 1: intro; only 1: dependent rewrite H; only 1: exists eq_refl; only 1: simpl; only 1: destruct H; only 1: reflexivity; only 1: intros; only 1: reflexivity || destruct H; only 1: apply eq_sigT_uncurried; only 1: subst; only 1: exists eq_refl; only 1: reflexivity).	2.057098	3624
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_sigT_fst	40	2.129	synth with cache (only 1: inversion_clear H; only 1: reflexivity).	0.233051	79
+coq-stdlib.dev	Coq.Init.Logic.and_comm	40	0.0.0.0.0.0.0.0.2	synth with cache (only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial).	0.054522	41
+coq-stdlib.dev	Coq.Init.Specif.ProdSigT.sigT_prod_sigT	40	1.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.013113	3
+coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_uncurried	40	0.1.0.0	synth with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.023906	5
+coq-stdlib.dev	Coq.Init.Specif.sigT.eq_sigT_uncurried	40	0.1.0.0.0.0	synth with cache (only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.040917	7
+coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_curried	40	0.1.0	synth with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.021339	4
+coq-stdlib.dev	Coq.Init.Logic.and_cancel_r	40	0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros A B C Hl Hr; only 1: split; only 1: intros [HypL HypR]; only 1: split; only 1: intros; only 1: apply HypL; only 1: split; only 1: assumption; only 1: apply Hl; only 1: assumption; only 1: intros; only 1: apply HypR; only 1: split; only 1: assumption; only 1: apply Hr; only 1: assumption; only 1: intros [HypL HypR]; only 1: split; only 1: intros [? ?]; only 1: split; only 1: apply HypL; only 1: assumption; only 1: apply Hl; only 1: assumption; only 1: intros [? ?]; only 1: split; only 1: apply HypR; only 1: assumption; only 1: apply Hr; only 1: assumption).	0.252378	169
+coq-stdlib.dev	Coq.Init.Logic.or_comm	40	0.0.0.1.0.0.0.0.1.0.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros [?| ?]; only 1: right; only 1: assumption; only 1: left; only 1: assumption; only 1: intros [?| ?]; only 1: right; only 1: assumption; only 1: left; only 1: assumption).	0.090398	62
+coq-stdlib.dev	Coq.Init.Wf.Well_founded.Acc_inv	40	1.4.1	synth with cache (only 1: intro; only 1: destruct 1; only 1: assumption).	0.133590	147
+coq-stdlib.dev	Coq.Init.Logic.iff_and	40	1.0	synth with cache (only 1: intros; only 1: assumption).	0.018607	3
+coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_curried_map	40	0.5.2	synth with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.167745	205
+coq-stdlib.dev	Coq.Init.Logic.iff_to_and	40	1.0.0.0.0.2.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros [? ?]; only 1: split; only 1: trivial; only 1: trivial; only 1: intro H; only 1: assumption).	0.121601	81
+coq-stdlib.dev	Coq.Init.Logic.universal_quantification.inst	40	9	synth with cache (only 1: auto).	0.057589	67
+coq-stdlib.dev	Coq.Init.Logic.universal_quantification.gen	40	0.0	synth with cache (only 1: unfold all; only 1: auto).	0.018766	2
+coq-stdlib.dev	Coq.Logic.FunctionalExtensionality.equal_f	40	0.0.4	synth with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.136507	169
+coq-stdlib.dev	Coq.Logic.FunctionalExtensionality.equal_f_dep	40	0.0.0	synth with cache (only 1: intros A B f g H x; only 1: rewrite H; only 1: auto).	0.029165	3
+coq-stdlib.dev	Coq.Bool.Sumbool.sumbool_of_bool	40	0.0.11.0	synth with cache (only 1: intro H; only 1: destruct H; only 1: auto; only 1: auto).	0.316840	593
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.absurd	40	0.7.2.1	synth with cache (only 1: intro A; only 1: intros H ?; only 1: destruct 1; only 1: assumption).	0.277026	411
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.eq_sym	40	1.3	synth with cache (only 1: destruct 1; only 1: split).	0.031860	16
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.eq_trans	40	0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.024392	3
+coq-stdlib.dev	Coq.Bool.DecBool.ifdec_left	40	66.1.0.66	synth with cache (only 1: intros A x P H y H0; only 1: destruct H; only 1: reflexivity; only 1: contradiction).	0.559230	538
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.eq_trans_r	40	0.0	synth with cache (only 1: destruct 2; only 1: trivial).	0.021961	2
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.f_equal	40	0.0	synth with cache (only 1: destruct 1; only 1: trivial).	0.021943	2
+coq-stdlib.dev	Coq.Bool.Sumbool.bool_eq_rec	40	1.3.0.4	synth with cache (only 1: intros b; only 1: destruct b; only 1: auto; only 1: auto).	0.404333	530
+coq-stdlib.dev	Coq.Bool.Sumbool.bool_eq_ind	40	0.0.0.0	synth with cache (only 1: intros b; only 1: destruct b; only 1: auto; only 1: auto).	0.039859	4
+coq-stdlib.dev	Coq.Logic.StrictProp.Spr1_inj	40	0.67.21.65	synth with cache (only 1: destruct b; only 1: simpl in *; only 1: subst; only 1: auto).	1.021272	2825
+coq-stdlib.dev	Coq.Logic.Decidable.dec_True	40	0.0.0	synth with cache (only 1: unfold decidable; only 1: unfold not; only 1: tauto).	0.029742	3
+coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.Under_rel_from_rel	40	0.0	synth with cache (only 1: intros; only 1: trivial).	0.025080	2
+coq-stdlib.dev	Coq.Program.Equality.JMeq_eq_refl	40	2	synth with cache (only 1: apply UIP_refl).	0.026118	3
+coq-stdlib.dev	Coq.Logic.Decidable.dec_False	40	0.0	synth with cache (only 1: unfold decidable; only 1: auto).	0.029238	2
+coq-stdlib.dev	Coq.Classes.CMorphisms.Proper.eq_proper_proxy	40	1	synth with cache (only 1: reflexivity).	0.018838	2
+coq-stdlib.dev	Coq.Classes.CRelationClasses.Defs.complement_inverse	40	0	synth with cache (only 1: reflexivity).	0.016450	1
+coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.Under_relE	40	0	synth with cache (only 1: trivial).	0.023166	1
+coq-stdlib.dev	Coq.ssr.ssrbool.prop_congr	40	0	synth with cache (only 1: Bool.destr_bool).	0.031483	1
+coq-stdlib.dev	Coq.Classes.CMorphisms.Proper.reflexive_proper_proxy	40	0	synth with cache (only 1: firstorder).	0.013782	1
+coq-stdlib.dev	Coq.Bool.Bool.diff_true_false	40	2	synth with cache (only 1: discriminate).	0.024291	3
+coq-stdlib.dev	Coq.Bool.Bool.diff_false_true	40	0	synth with cache (only 1: discriminate).	0.024128	1
+coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.over_rel	40	1	synth with cache (only 1: now trivial).	0.023856	2
+coq-stdlib.dev	Coq.Classes.CMorphisms.Proper.proper_proper_proxy	40	0	synth with cache (only 1: firstorder).	0.023133	1
+coq-stdlib.dev	Coq.Program.Equality.UIP_refl_refl	40	4	synth with cache (only 1: apply UIP).	0.075300	48
+coq-stdlib.dev	Coq.Logic.Decidable.dec_and	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.056325	2
+coq-stdlib.dev	Coq.ssr.ssrbool.is_true_true	40	1.130	synth with cache (only 1: red; only 1: intuition).	0.039792	31
+coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.over_rel_done	40	0	synth with cache (only 1: now trivial).	0.024881	1
+coq-stdlib.dev	Coq.ssr.ssreflect.master_key	40	74	synth with cache (only 1: constructor).	0.056955	169
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.equality.not_eq_sym	40	29.1	synth with cache (only 1: destruct 2; only 1: auto).	0.674177	1621
+coq-stdlib.dev	Coq.ssr.ssrbool.not_false_is_true	40	0	synth with cache (only 1: intuition).	0.027806	1
+coq-stdlib.dev	Coq.ssr.ssrbool.is_true_locked_true	40	0.0	synth with cache (only 1: unlock; only 1: by [  ]).	0.031712	2
+coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.under_rel_done	40	0	synth with cache (only 1: now unfold Over_rel).	0.023919	1
+coq-stdlib.dev	Coq.ssr.ssrfun.compA	40	3	synth with cache (only 1: reflexivity).	0.017421	4
+coq-stdlib.dev	Coq.ssr.ssrbool.negbT	40	3	synth with cache (only 1: Bool.destr_bool).	0.039010	8
+coq-stdlib.dev	Coq.Logic.Decidable.dec_not	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.036625	2
+coq-stdlib.dev	Coq.ssr.ssrbool.negbTE	40	0	synth with cache (only 1: by case : b ).	0.031585	1
+coq-stdlib.dev	Coq.ssr.ssrfun.OptionTheory.obindEapp	40	1	synth with cache (only 1: reflexivity).	0.023035	2
+coq-stdlib.dev	Coq.ssr.ssrbool.negbF	40	0	synth with cache (only 1: by case : b ).	0.032919	1
+coq-stdlib.dev	Coq.Bool.BoolOrder.le_refl	40	4	synth with cache (only 1: destr_bool).	0.041283	21
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_sind_r	40	0.0.2	synth with cache (only 1: intros A B C Hl Hr; only 1: destruct 1; only 1: trivial).	0.034881	10
+coq-stdlib.dev	Coq.ssr.ssrbool.negbFE	40	0	synth with cache (only 1: by case : b ).	0.031605	1
+coq-stdlib.dev	Coq.Logic.Decidable.dec_imp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.049304	2
+coq-stdlib.dev	Coq.micromega.ZifyClasses.mkapp2	40	4.13	synth with cache (only 1: subst; only 1: trivial).	0.296748	543
+coq-stdlib.dev	Coq.ssr.ssrfun.OptionTheory.omapEbind	40	0	synth with cache (only 1: by [  ]).	0.033902	1
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_ind_r	40	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.023421	3
+coq-stdlib.dev	Coq.ssr.ssrbool.negbNE	40	0	synth with cache (only 1: by case : b ).	0.031167	1
+coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_sig_fst	40	0.131	synth with cache (only 1: inversion_clear H; only 1: split).	0.231972	109
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_rec_r	40	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.023912	3
+coq-stdlib.dev	Coq.ssr.ssrfun.OptionTheory.omapEapp	40	0	synth with cache (only 1: by [  ]).	0.031637	1
+coq-stdlib.dev	Coq.Structures.OrdersTac.OrderFacts.eq_refl	40	1.0	synth with cache (only 1: intros; only 1: reflexivity).	0.036034	3
+coq-stdlib.dev	Coq.Init.Logic.Logic_lemmas.eq_rect_r	40	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: elim eq_sym with (1 := H0); only 1: assumption).	0.024347	3
+coq-stdlib.dev	Coq.Sets.Relations_1_facts.Rsym_imp_notRsym	40	1.128.128.2.131	synth with cache (only 1: intros ? ? ? Fl Fr; only 1: intros; only 1: intro z; only 1: destruct H0 in H; only 1: auto).	0.492897	648
+coq-stdlib.dev	Coq.Program.Equality.inj_pairT2_refl	40	19	synth with cache (only 1: apply UIP_refl).	0.341647	690
+coq-stdlib.dev	Coq.Bool.BoolOrder.le_trans	40	1.67	synth with cache (only 1: intro Hxz; only 1: destr_bool).	0.198557	208
+coq-stdlib.dev	Coq.ssr.ssrbool.negb_inj	40	0.132	synth with cache (only 1: red; only 1: Bool.destr_bool).	0.187464	45
+coq-stdlib.dev	Coq.ssr.ssrbool.negbK	40	3.134	synth with cache (only 1: intro H; only 1: Bool.destr_bool).	0.231191	198
+coq-stdlib.dev	Coq.Logic.Decidable.dec_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.184155	35
+coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_curried_trans	40	0.28.0	synth with cache (only 1: destruct p, q; only 1: subst; only 1: reflexivity).	1.936643	5365
+coq-stdlib.dev	Coq.ssr.ssrbool.negbLR	40	4	synth with cache (only 1: Bool.destr_bool).	0.192691	21
+coq-stdlib.dev	Coq.Bool.BoolOrder.le_true	40	0	synth with cache (only 1: destr_bool).	0.031951	1
+coq-stdlib.dev	Coq.Logic.Decidable.dec_or	40	0.0.69	synth with cache (only 1: intro H1; only 1: unfold decidable; only 1: tauto).	0.576825	719
+coq-stdlib.dev	Coq.Wellfounded.Inclusion.WfInclusion.Acc_incl	40	0.4.192.0	synth with cache (only 1: intro x; only 1: induction 1; only 1: split; only 1: auto).	0.661223	275
+coq-stdlib.dev	Coq.Bool.BoolOrder.false_le	40	0	synth with cache (only 1: destr_bool).	0.030324	1
+coq-stdlib.dev	Coq.Logic.Decidable.not_not	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.037042	2
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	40	72.2	synth with cache (only 1: intro X; only 1: auto  10 with sets).	0.584320	901
+coq-stdlib.dev	Coq.Bool.BoolOrder.le_compat	40	129.0.0.0.0.0	synth with cache (only 1: apply proper_sym_impl_iff_2; only 1: congruence; only 1: congruence; only 1: intros R R' EQ a a' Ha WF; only 1: subst a'; only 1: congruence).	0.055713	11
+coq-stdlib.dev	Coq.ssr.ssrbool.contraL	40	0	synth with cache (only 1: by case : b  => //; case : c ).	0.041863	1
+coq-stdlib.dev	Coq.Logic.Decidable.not_or	40	1	synth with cache (only 1: tauto).	0.047545	11
+coq-stdlib.dev	Coq.ssr.ssrbool.negbRL	40	5	synth with cache (only 1: Bool.destr_bool).	0.221357	70
+coq-stdlib.dev	Coq.Bool.BoolOrder.lt_irrefl	40	0.0	synth with cache (only 1: destr_bool; only 1: tauto).	0.037572	2
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	40	0	synth with cache (only 1: auto  6 with sets).	0.034903	1
+coq-stdlib.dev	Coq.ssr.ssrbool.contraR	40	0	synth with cache (only 1: by case : b  => //; case : c ).	0.038802	1
+coq-stdlib.dev	Coq.Logic.Decidable.dec_not_not	40	1.2.132	synth with cache (only 1: destruct 1; only 1: auto; only 1: contradiction).	0.876700	1661
+coq-stdlib.dev	Coq.Logic.Decidable.not_and	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.044848	2
+coq-stdlib.dev	Coq.Bool.BoolOrder.lt_trans	40	0.0	synth with cache (only 1: destr_bool; only 1: intuition).	0.043903	2
+coq-stdlib.dev	Coq.Logic.Decidable.not_imp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.051186	2
+coq-stdlib.dev	Coq.ssr.ssrbool.contraLR	40	0	synth with cache (only 1: by case : b  => //; case : c ).	0.038692	1
+coq-stdlib.dev	Coq.Wellfounded.Inclusion.WfInclusion.wf_incl	40	0.65.128	synth with cache (only 1: intros H; only 1: red; only 1: auto with sets).	0.240906	27
+coq-stdlib.dev	Coq.Logic.Decidable.imp_simp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.039771	2
+coq-stdlib.dev	Coq.Program.Equality.solution_left	40	1.0.194.67	synth with cache (only 1: intro eq_dep_eq; only 1: intro z; only 1: destruct 1; only 1: auto).	0.378837	298
+coq-stdlib.dev	Coq.Bool.BoolOrder.lt_compat	40	0	synth with cache (only 1: intuition).	0.037214	1
+coq-stdlib.dev	Coq.micromega.ZifyClasses.mkapp	40	8.35	synth with cache (only 1: subst; only 1: trivial).	0.597962	2915
+coq-stdlib.dev	Coq.ssr.ssrbool.wlog_neg	40	0	synth with cache (only 1: by case : b  => // ->).	0.017720	1
+coq-stdlib.dev	Coq.Program.Equality.solution_right	40	1.0.0	synth with cache (only 1: intros; only 1: subst; only 1: assumption).	0.027164	4
+coq-stdlib.dev	Coq.Logic.Decidable.not_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.099391	2
 coq-stdlib.dev	Coq.Init.Logic.equality_dep.f_equal_dep	40
-coq-stdlib.dev	Coq.Init.Specif.sigT.eq_sigT_uncurried_iff	40	66.2.0.1.0.1.0.0.0	synth with cache (only 1: split; only 1: intro; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: intro; only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: apply eq_existT_uncurried; only 1: assumption).	0.613512	287
-coq-stdlib.dev	Coq.Init.Logic.eq_refl_map_distr	40	0	synth with cache (only 1: reflexivity).	0.021970	1
-coq-stdlib.dev	Coq.Init.Specif.sigT.rew_sigT	40	0.0	synth with cache (only 1: destruct H, u; only 1: reflexivity).	0.040729	2
+coq-stdlib.dev	Coq.Program.Equality.deletion	40	1.0	synth with cache (only 1: intros; only 1: assumption).	0.030728	3
+coq-stdlib.dev	Coq.Init.Logic.f_equal_dep2	40	0.1.0	synth with cache (only 1: destruct H; only 1: destruct 1; only 1: reflexivity).	0.034962	4
+coq-stdlib.dev	Coq.micromega.ZifyClasses.mkrel	40	4.0	synth with cache (only 1: subst; only 1: auto).	0.090780	89
+coq-stdlib.dev	Coq.Bool.Bool.not_true_is_false	40	128.7.1.5	synth with cache (only 1: intro m; only 1: destr_bool; only 1: reflexivity || destruct H; only 1: constructor).	1.031146	2054
+coq-stdlib.dev	Coq.Bool.BoolOrder.lt_trichotomy	40	0.0.0.0.1	synth with cache (only 1: destr_bool; only 1: auto; only 1: auto; only 1: intuition; only 1: intuition).	0.153364	40
+coq-stdlib.dev	Coq.Init.Logic.rew_opp_r	40	0.0	synth with cache (only 1: destruct H; only 1: reflexivity).	0.023747	2
+coq-stdlib.dev	Coq.Logic.Decidable.not_false_iff	40	0	synth with cache (only 1: tauto).	0.018049	1
+coq-stdlib.dev	Coq.Init.Logic.rew_opp_l	40	0.0	synth with cache (only 1: destruct H; only 1: reflexivity).	0.020186	2
+coq-stdlib.dev	Coq.Logic.Decidable.not_not_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.034569	2
+coq-stdlib.dev	Coq.ssr.ssrbool.contraT	40	2.7	synth with cache (only 1: Bool.destr_bool; only 1: intuition).	0.274098	217
+coq-stdlib.dev	Coq.Bool.Bool.not_false_is_true	40	0.0	synth with cache (only 1: destr_bool; only 1: intuition).	0.032838	2
+coq-stdlib.dev	Coq.Logic.Decidable.contrapositive	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.040990	2
+coq-stdlib.dev	Coq.Init.Specif.sigT.eq_sigT_uncurried_iff	40	66.2.0.1.0.1.0.0.0	synth with cache (only 1: split; only 1: intro; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: intro; only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: apply eq_existT_uncurried; only 1: assumption).	0.594230	263
+coq-stdlib.dev	Coq.Bool.BoolOrder.lt_total	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: auto; only 1: auto; only 1: auto; only 1: intuition).	0.059898	5
+coq-stdlib.dev	Coq.Logic.Decidable.or_not_l_iff_1	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.040429	2
+coq-stdlib.dev	Coq.Init.Logic.f_equal2	40	1.1.1.0.0	synth with cache (only 1: intros A B C Hl Hr; only 1: intros H ?; only 1: destruct 1; only 1: destruct 1; only 1: repeat split).	0.087337	32
+coq-stdlib.dev	Coq.Bool.BoolOrder.lt_le_incl	40	0.0	synth with cache (only 1: destr_bool; only 1: tauto).	0.041892	2
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.not_Empty_Add	40	0.2.4.1.1.0	synth with cache (only 1: intros A x; only 1: red; only 1: intro H'1; only 1: elim (Noone_in_empty x); only 1: rewrite H'1; only 1: auto using Add_intro2 with sets).	1.441974	2280
+coq-stdlib.dev	Coq.Classes.CEquivalence.equiv_transitive_obligation_1	40	0.1.129	synth with cache (only 1: intros x x' Hxx' y y' Hyy'; only 1: compute; only 1: firstorder).	1.211050	744
+coq-stdlib.dev	Coq.Init.Logic.f_equal3	40	0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.039391	4
+coq-stdlib.dev	Coq.Logic.Decidable.or_not_l_iff_2	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.065283	2
+coq-stdlib.dev	Coq.Logic.Decidable.or_not_r_iff_1	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.050012	2
+coq-stdlib.dev	Coq.Bool.BoolOrder.le_lteq_dec	40	0.0.0.0	synth with cache (only 1: destr_bool; only 1: auto; only 1: auto; only 1: intuition).	0.054769	4
+coq-stdlib.dev	Coq.Init.Logic.f_equal4	40	0.0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.039796	5
+coq-stdlib.dev	Coq.ssr.ssrbool.contraFT	40	1.9	synth with cache (only 1: Bool.destr_bool; only 1: intuition).	0.406082	196
+coq-stdlib.dev	Coq.Logic.Decidable.not_true_iff	40	17	synth with cache (only 1: tauto).	0.428956	1327
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Singleton_inv	40	1.1.1	synth with cache (only 1: intros B C H'; only 1: rewrite H'; only 1: auto with sets).	0.061440	28
+coq-stdlib.dev	Coq.Logic.Decidable.or_not_r_iff_2	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.041680	2
+coq-stdlib.dev	Coq.Init.Logic.f_equal5	40	0.0.0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).	0.047949	6
+coq-stdlib.dev	Coq.Init.Datatypes.andb_true_intro	40	1.110.3	synth with cache (only 1: destruct 1; only 1: subst; only 1: repeat split).	3.101655	18461
+coq-stdlib.dev	Coq.Logic.Decidable.imp_not_l	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.042211	2
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Singleton_intro	40	1.1.2	synth with cache (only 1: intros B C H'; only 1: rewrite H'; only 1: auto with sets).	0.091507	94
+coq-stdlib.dev	Coq.Logic.Decidable.not_or_iff	40	1	synth with cache (only 1: tauto).	0.058902	20
+coq-stdlib.dev	Coq.Logic.Decidable.not_and_iff	40	0	synth with cache (only 1: tauto).	0.045401	1
+coq-stdlib.dev	Coq.ssr.ssrbool.contraFN	40	1.11	synth with cache (only 1: Bool.destr_bool; only 1: intuition).	0.417527	273
+coq-stdlib.dev	Coq.Logic.Decidable.not_imp_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.069350	2
+coq-stdlib.dev	Coq.Logic.Decidable.not_imp_rev_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.052388	2
+coq-stdlib.dev	Coq.Bool.BoolOrder.le_lteq	40	1.1.1.1.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.311058	108
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero'	40	0.12	synth with cache (only 1: unfold Add at 1; only 1: auto  6 with sets).	0.977584	1204
+coq-stdlib.dev	Coq.ssr.ssrbool.contraTF	40	2.7	synth with cache (only 1: Bool.destr_bool; only 1: intuition).	0.365757	218
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.less_than_empty	40	0	synth with cache (only 1: auto with sets).	0.032876	1
+coq-stdlib.dev	Coq.Bool.Bool.not_true_iff_false	40	0.0.0.3.65.3	synth with cache (only 1: intro n; only 1: red; only 1: repeat split; only 1: destr_bool; only 1: intuition; only 1: destr_bool).	0.677524	1115
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_commutative	40	0	synth with cache (only 1: auto with sets).	0.035469	1
+coq-stdlib.dev	Coq.Bool.Bool.not_false_iff_true	40	0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.042932	3
+coq-stdlib.dev	Coq.ssr.ssrbool.contraNF	40	2.8	synth with cache (only 1: Bool.destr_bool; only 1: intuition).	0.391976	267
+coq-stdlib.dev	Coq.Init.Datatypes.eq_true_ind_r	40	0.75.72	synth with cache (only 1: intros h1 h2; only 1: destruct 2; only 1: assumption).	0.595261	1823
+coq-stdlib.dev	Coq.ssr.ssrbool.contra_not	40	0.64	synth with cache (only 1: intros H ?; only 1: auto).	0.035520	6
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Union_inv	40	2.0.67.2	synth with cache (only 1: intros X H'; only 1: inversion 1; only 1: auto with sets; only 1: auto with sets).	0.632258	596
 coq-stdlib.dev	Coq.Init.Logic.f_equal_compose	40
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_map	40
-coq-stdlib.dev	Coq.Init.Specif.sig.eq_exist_uncurried	40	0.1.0.0	synth with cache (only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.056714	5
-coq-stdlib.dev	Coq.Init.Logic.eq_sym_map_distr	40	0.3	synth with cache (only 1: destruct e; only 1: reflexivity).	0.045484	13
-coq-stdlib.dev	Coq.Init.Specif.sig.eq_sig_uncurried	40	0.1.0.0.0.0	synth with cache (only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: destruct pq as [p q]; only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.080340	7
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_sym_distr	40	0.1.0	synth with cache (only 1: destruct e'; only 1: destruct e; only 1: reflexivity).	0.035817	4
+coq-stdlib.dev	Coq.Init.Datatypes.eq_true_rec_r	40	0.0.0	synth with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.020477	3
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_associative	40	70	synth with cache (only 1: auto  10 with sets).	0.262350	86
+coq-stdlib.dev	Coq.Init.Logic.eq_trans_refl_l	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.027597	2
+coq-stdlib.dev	Coq.ssr.ssrbool.contraPnot	40	0	synth with cache (only 1: by auto).	0.031271	1
+coq-stdlib.dev	Coq.Init.Datatypes.eq_true_rect_r	40	0.0.0	synth with cache (only 1: intros P b H H0; only 1: destruct H0 in H; only 1: assumption).	0.016080	3
+coq-stdlib.dev	Coq.Init.Logic.eq_trans_refl_r	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.028374	2
+coq-stdlib.dev	Coq.Init.Datatypes.surjective_pairing	40	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.021562	2
+coq-stdlib.dev	Coq.Init.Logic.eq_sym_involutive	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.028681	2
+coq-stdlib.dev	Coq.Init.Logic.eq_trans_sym_inv_l	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.029134	2
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_idempotent	40	0	synth with cache (only 1: auto  6 with sets).	0.037045	1
+coq-stdlib.dev	Coq.Program.Equality.simplification_heq	40	6.10.0	synth with cache (only 1: intros h1 h2; only 1: subst; only 1: auto).	1.365050	4239
+coq-stdlib.dev	Coq.Init.Logic.eq_trans_sym_inv_r	40	0.0	synth with cache (only 1: destruct e; only 1: reflexivity).	0.029759	2
+coq-stdlib.dev	Coq.Bool.Bool.le_implb	40	0.0.0.1.1.0.0.64	synth with cache (only 1: intro x; only 1: destr_bool; only 1: split; only 1: repeat split; only 1: repeat split; only 1: intuition; only 1: intuition; only 1: intuition).	0.438693	244
+coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Union_absorbs	40	3	synth with cache (only 1: auto  9 with sets).	0.050153	4
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Add_not_Empty	40	0.72.4.2.1.130	synth with cache (only 1: intro z; only 1: red; only 1: intros x H; only 1: elim (Noone_in_empty x); only 1: reflexivity || destruct H; only 1: auto using Add_intro2 with sets).	20.537918	74360
+coq-stdlib.dev	Coq.Bool.Bool.compare_spec	40	2.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.053780	7
+coq-stdlib.dev	Coq.ssr.ssrbool.contraTnot	40	1.5	synth with cache (only 1: Bool.destr_bool; only 1: intuition).	0.314454	206
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Intersection_inv	40	0.0.0	synth with cache (only 1: intros B C x H'; only 1: elim H'; only 1: auto with sets).	0.042436	3
+coq-stdlib.dev	Coq.Bool.Bool.eqb_subst	40	1	synth with cache (only 1: destr_bool).	0.034339	2
+coq-stdlib.dev	Coq.ssr.ssrbool.contraNnot	40	0	synth with cache (only 1: by case : b ; auto).	0.032002	1
+coq-stdlib.dev	Coq.ssr.ssrbool.contra	40	0.0.16	synth with cache (only 1: destruct c; only 1: by case : b ; only 1: by case : b ).	2.181671	4047
+coq-stdlib.dev	Coq.Bool.Bool.eqb_reflx	40	0	synth with cache (only 1: destr_bool).	0.023723	1
+coq-stdlib.dev	Coq.Bool.Bool.eqb_prop	40	0	synth with cache (only 1: destr_bool).	0.025575	1
+coq-stdlib.dev	Coq.Bool.Bool.eqb_true_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.053248	5
+coq-stdlib.dev	Coq.Bool.Bool.negb_orb	40	0	synth with cache (only 1: destr_bool).	0.017694	1
+coq-stdlib.dev	Coq.Program.Equality.simplification_existT2	40	0.0.0.6.1	synth with cache (only 1: intros H J; only 1: apply H; only 1: apply eq_dep_eq; only 1: apply eq_sigT_eq_dep; only 1: assumption).	0.467764	691
+coq-stdlib.dev	Coq.Bool.Bool.negb_andb	40	0	synth with cache (only 1: destr_bool).	0.015154	1
+coq-stdlib.dev	Coq.Classes.Morphisms.Proper.eq_proper_proxy	40	0	synth with cache (only 1: repeat split).	0.027109	1
+coq-stdlib.dev	Coq.Bool.Bool.negb_involutive	40	1.1.0.1	synth with cache (only 1: intro n; only 1: induction n; only 1: intuition; only 1: intuition).	0.030901	27
+coq-stdlib.dev	Coq.Classes.CMorphisms.Relations.subrelation_id_proper	40	0	synth with cache (only 1: firstorder).	0.028014	1
+coq-stdlib.dev	Coq.Classes.Morphisms.Proper.reflexive_proper	40	0	synth with cache (only 1: firstorder).	0.014502	1
+coq-stdlib.dev	Coq.Bool.Bool.eqb_false_iff	40	0.0.0.0.1	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.154122	31
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Couple_inv	40	1.1.0.1	synth with cache (only 1: intros B C x H'; only 1: elim H'; only 1: auto with sets; only 1: auto with sets).	0.355910	157
+coq-stdlib.dev	Coq.Bool.Bool.negb_involutive_reverse	40	0	synth with cache (only 1: destr_bool).	0.030666	1
+coq-stdlib.dev	Coq.Bool.Bool.negb_sym	40	0	synth with cache (only 1: destr_bool).	0.015171	1
+coq-stdlib.dev	Coq.Classes.RelationClasses.Defs.complement_inverse	40	0	synth with cache (only 1: trivial).	0.025272	1
+coq-stdlib.dev	Coq.Classes.Morphisms.Proper.reflexive_proper_proxy	40	0	synth with cache (only 1: firstorder).	0.024642	1
+coq-stdlib.dev	Coq.ssr.ssrbool.contra_notN	40	1	synth with cache (only 1: by case : b  => //= /(_ isT) HP /(_ HP)).	0.044529	2
+coq-stdlib.dev	Coq.Classes.Morphisms.Proper.proper_proper_proxy	40	0	synth with cache (only 1: firstorder).	0.024491	1
+coq-stdlib.dev	Coq.Classes.CMorphisms.Relations.subrelation_respectful	40	0	synth with cache (only 1: firstorder).	0.030067	1
+coq-stdlib.dev	Coq.Bool.Bool.no_fixpoint_negb	40	0	synth with cache (only 1: destr_bool).	0.015973	1
+coq-stdlib.dev	Coq.Bool.BoolEq.Bool_eq_dec.beq_eq_true	40	2.0.68	synth with cache (only 1: intros H ?; only 1: destruct 1; only 1: auto).	0.242501	260
+coq-stdlib.dev	Coq.Program.Wf.Well_founded.Fix_F_eq	40	0.66	synth with cache (only 1: intros f [x]; only 1: auto).	0.057845	12
+coq-stdlib.dev	Coq.Classes.Morphisms.Proper.reflexive_reflexive_proxy	40	0	synth with cache (only 1: firstorder).	0.014369	1
+coq-stdlib.dev	Coq.Classes.CMorphisms.Relations.subrelation_refl	40	0	synth with cache (only 1: firstorder).	0.026755	1
+coq-stdlib.dev	Coq.Bool.Bool.eqb_negb1	40	0	synth with cache (only 1: destr_bool).	0.030816	1
+coq-stdlib.dev	Coq.Bool.Bool.eqb_negb2	40	0	synth with cache (only 1: destr_bool).	0.030746	1
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Setminus_intro	40	1.0	synth with cache (only 1: intros B C x H'; only 1: auto with sets).	0.032010	3
+coq-stdlib.dev	Coq.Bool.Bool.if_negb	40	0	synth with cache (only 1: destr_bool).	0.013283	1
+coq-stdlib.dev	Coq.Classes.CMorphisms.Relations.subrelation_proper	40	0	synth with cache (only 1: firstorder).	0.031668	1
+coq-stdlib.dev	Coq.Classes.Morphisms.rewrite_relation_pointwise	40	0	synth with cache (only 1: firstorder).	0.029072	1
+coq-stdlib.dev	Coq.Classes.Morphisms.rewrite_relation_eq_dom	40	0	synth with cache (only 1: split).	0.026219	1
+coq-stdlib.dev	Coq.Bool.Bool.negb_true_iff	40	0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.021583	3
+coq-stdlib.dev	Coq.Sets.Uniset.defs.incl_right	40	0.0.0.0	synth with cache (only 1: unfold incl; only 1: intros s1 s2 E a; only 1: elim (E a); only 1: auto).	0.041709	4
+coq-stdlib.dev	Coq.ssr.ssrbool.contraPN	40	2.0	synth with cache (only 1: rewrite -{+1}[b]negbK; only 1: by case : b  => //= /(_ isT) nP /nP).	0.066850	16
+coq-stdlib.dev	Coq.Bool.Bool.negb_false_iff	40	0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.023134	3
+coq-stdlib.dev	Coq.Classes.RelationClasses.Defs.subrelation_symmetric	40	0	synth with cache (only 1: firstorder).	0.029807	1
+coq-stdlib.dev	Coq.Classes.Morphisms.eq_rewrite_relation	40	0	synth with cache (only 1: split).	0.028632	1
+coq-stdlib.dev	Coq.Classes.CMorphisms.Relations.proper_subrelation_proper_arrow	40	2	synth with cache (only 1: simpl_crelation).	0.036831	3
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Strict_Included_intro	40	1.0	synth with cache (only 1: intros B C H'; only 1: auto with sets).	0.032924	3
+coq-stdlib.dev	Coq.Bool.BoolOrder.le_preorder	40	0.259.8.3.2	synth with cache (only 1: constructor; only 1: simpl_relation; only 1: destr_bool; only 1: intro H; only 1: destr_bool).	1.410174	3354
+coq-stdlib.dev	Coq.Bool.Bool.orb_false_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.037206	5
+coq-stdlib.dev	Coq.Classes.RelationClasses.Defs.flip.flip_Reflexive	40	2.0	synth with cache (only 1: hnf; only 1: firstorder).	0.023635	4
+coq-stdlib.dev	Coq.Classes.Morphisms.Relations.subrelation_id_proper	40	3	synth with cache (only 1: firstorder).	0.031734	7
+coq-stdlib.dev	Coq.Bool.Bool.orb_true_elim	40	0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: auto; only 1: auto).	0.025085	4
+coq-stdlib.dev	Coq.Sets.Uniset.defs.seq_refl	40	1.129	synth with cache (only 1: intros Hfst Hsnd; only 1: auto).	0.037319	12
+coq-stdlib.dev	Coq.Classes.Morphisms.Relations.subrelation_respectful	40	0	synth with cache (only 1: firstorder).	0.024510	1
+coq-stdlib.dev	Coq.ssr.ssrbool.contraFnot	40	3	synth with cache (only 1: by case : b ; auto).	0.053968	7
+coq-stdlib.dev	Coq.ssr.ssrbool.contraFF	40	1.2.18	synth with cache (only 1: destruct c; only 1: by case : b  => // ->; only 1: by move /contra =>notb_notc /negbT).	1.428507	2313
+coq-stdlib.dev	Coq.Bool.Bool.orb_prop	40	0.0.0.0.0.0	synth with cache (only 1: intro b1; only 1: destruct b1; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.056301	6
+coq-stdlib.dev	Coq.ssr.ssrbool.contraPF	40	1	synth with cache (only 1: by case : b  => //=; move /(_ isT) =>HP /HP).	0.036136	2
+coq-stdlib.dev	Coq.Bool.Bool.orb_false_intro	40	0.0.0.0.0.0	synth with cache (only 1: intro b1; only 1: destruct b1; only 1: simpl; only 1: destr_bool; only 1: simpl; only 1: destr_bool).	0.032223	6
+coq-stdlib.dev	Coq.Classes.Morphisms.Relations.subrelation_proper	40	0	synth with cache (only 1: firstorder).	0.013539	1
+coq-stdlib.dev	Coq.ssr.ssrbool.contra_notF	40	0	synth with cache (only 1: by case : b  => // /(_ isT)).	0.027497	1
+coq-stdlib.dev	Coq.Classes.Morphisms.Relations.subrelation_refl	40	1.0.0	synth with cache (only 1: hnf; only 1: intros x y H0; only 1: assumption).	0.037086	4
+coq-stdlib.dev	Coq.Bool.Bool.orb_true_iff	40	0.1.1.1.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.151607	66
+coq-stdlib.dev	Coq.Bool.Bool.orb_true_intro	40	1.0.0.0.0.0.1	synth with cache (only 1: intro b1; only 1: destruct b1; only 1: simpl; only 1: auto; only 1: simpl; only 1: destr_bool; only 1: intuition).	0.075234	64
+coq-stdlib.dev	Coq.Classes.CMorphisms.Relations.pointwise_subrelation	40	0	synth with cache (only 1: simpl_crelation).	0.177595	19
+coq-stdlib.dev	Coq.Classes.CMorphisms.iff_impl_subrelation	40	2.0.0	synth with cache (only 1: hnf; only 1: intros A B [H1 H2]; only 1: trivial).	0.034618	5
+coq-stdlib.dev	Coq.Bool.Bool.orb_diag	40	0	synth with cache (only 1: destr_bool).	0.015432	1
 coq-stdlib.dev	Coq.Init.Logic.eq_trans_assoc	40
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_rew_distr	40	0.2	synth with cache (only 1: destruct e'; only 1: reflexivity).	0.036883	4
-coq-stdlib.dev	Coq.Init.Logic.rew_const	40	0.2	synth with cache (only 1: destruct e; only 1: reflexivity).	0.031078	4
-coq-stdlib.dev	Coq.Init.Specif.sig.eq_exist_curried	40	0.1.0	synth with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.048724	4
-coq-stdlib.dev	Coq.Init.Logic.eq_trans_map_distr	40	1.4.4.1	synth with cache (only 1: destruct e; only 1: rewrite eq_trans_refl_l; only 1: rewrite eq_trans_refl_l; only 1: reflexivity).	0.463203	418
-coq-stdlib.dev	Coq.Init.Specif.sigT.eq_existT_curried_trans	40	0.28.0	synth with cache (only 1: destruct p, q; only 1: subst; only 1: reflexivity).	1.573451	5365
-coq-stdlib.dev	Coq.Lists.Streams.Streams.unfold_Stream	40	0.128	synth with cache (only 1: intros [HypL HypR]; only 1: reflexivity).	0.030253	10
-coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.Under_rel_from_rel	40	0.0	synth with cache (only 1: intros; only 1: trivial).	0.024062	2
-coq-stdlib.dev	Coq.Program.Combinators.compose_id_left	40	0.0	synth with cache (only 1: intros; only 1: apply (eta_expansion_dep f)).	0.030280	2
-coq-stdlib.dev	Coq.Logic.Decidable.dec_True	40	0.0.0	synth with cache (only 1: unfold decidable; only 1: unfold not; only 1: tauto).	0.028812	3
-coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.Under_relE	40	0	synth with cache (only 1: trivial).	0.021590	1
-coq-stdlib.dev	Coq.Logic.Decidable.dec_False	40	0.0	synth with cache (only 1: unfold decidable; only 1: auto).	0.025761	2
-coq-stdlib.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_trans	40	0.0	synth with cache (only 1: destruct 1; only 1: auto).	0.028644	2
-coq-stdlib.dev	Coq.Logic.FunctionalExtensionality.equal_f_dep	40	0.0.0	synth with cache (only 1: intros A B f g H x; only 1: rewrite H; only 1: auto).	0.031841	3
-coq-stdlib.dev	Coq.Program.Combinators.compose_id_right	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.033250	2
-coq-stdlib.dev	Coq.Logic.FunctionalExtensionality.equal_f	40	0.0.4	synth with cache (only 1: intros; only 1: destruct H; only 1: trivial).	0.133502	169
-coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.over_rel	40	1	synth with cache (only 1: now trivial).	0.022525	2
-coq-stdlib.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_sym	40	2.65.0.128	synth with cache (only 1: intro m; only 1: intro x; only 1: destruct 1; only 1: reflexivity).	0.106771	132
-coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.over_rel_done	40	0	synth with cache (only 1: now trivial).	0.014519	1
-coq-stdlib.dev	Coq.Program.Combinators.compose_assoc	40	1.0.1	synth with cache (only 1: intros A B f g H x; only 1: intro a; only 1: reflexivity).	0.036775	5
-coq-stdlib.dev	Coq.ssr.ssrunder.Under_rel.under_rel_done	40	0	synth with cache (only 1: now unfold Over_rel).	0.016770	1
-coq-stdlib.dev	Coq.Setoids.Setoid.Seq_refl	40	0	synth with cache (only 1: firstorder).	0.031250	1
-coq-stdlib.dev	Coq.Logic.Decidable.dec_and	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.054876	2
-coq-stdlib.dev	Coq.Program.Combinators.flip_flip	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.019008	2
-coq-stdlib.dev	Coq.Init.Logic.exists_inhabited	40	4.69	synth with cache (only 1: intros A B [H1 H2]; only 1: auto).	0.272502	508
-coq-stdlib.dev	Coq.micromega.ZifyClasses.mkapp2	40	4.13	synth with cache (only 1: subst; only 1: trivial).	0.269833	543
-coq-stdlib.dev	Coq.Setoids.Setoid.Seq_sym	40	0.0	synth with cache (only 1: unfold Setoid_Theory in s; only 1: firstorder).	0.034413	2
-coq-stdlib.dev	Coq.Program.Combinators.curry_uncurry	40	0.0	synth with cache (only 1: intros; only 1: reflexivity).	0.031435	2
-coq-stdlib.dev	Coq.Bool.Sumbool.sumbool_of_bool	40	0.0.11.0	synth with cache (only 1: intro H; only 1: destruct H; only 1: auto; only 1: auto).	0.323276	593
-coq-stdlib.dev	Coq.Logic.Decidable.dec_not	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.036408	2
-coq-stdlib.dev	Coq.Init.Logic.inhabited_covariant	40	0.0.66	synth with cache (only 1: intro H1; only 1: destruct 1; only 1: auto).	0.051710	34
-coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Extension	40	0.129.0.129.0.0.65.192	synth with cache (only 1: intro A; only 1: intro x; only 1: destruct 1; only 1: split; only 1: intros r s; only 1: trivial; only 1: intros r s; only 1: trivial).	0.327083	286
-coq-stdlib.dev	Coq.Logic.Decidable.dec_imp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.042936	2
-coq-stdlib.dev	Coq.Bool.Sumbool.bool_eq_ind	40	0.0.0.0	synth with cache (only 1: intros b; only 1: destruct b; only 1: auto; only 1: auto).	0.035603	4
-coq-stdlib.dev	Coq.micromega.ZifyClasses.mkrel	40	4.0	synth with cache (only 1: subst; only 1: auto).	0.097567	89
-coq-stdlib.dev	Coq.Init.Logic.eq_stepl	40	0.0.1	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.039312	10
-coq-stdlib.dev	Coq.Bool.Sumbool.bool_eq_rec	40	1.3.0.4	synth with cache (only 1: intros b; only 1: destruct b; only 1: auto; only 1: auto).	0.415956	530
-coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Noone_in_empty	40	192.1	synth with cache (only 1: red; only 1: induction 1).	0.046569	32
-coq-stdlib.dev	Coq.Setoids.Setoid.Seq_trans	40	1.64.0.0.0.0	synth with cache (only 1: unfold Setoid_Theory in s; only 1: intros; only 1: symmetry; only 1: symmetry; only 1: rewrite H; only 1: assumption).	0.147229	70
-coq-stdlib.dev	Coq.Logic.EqdepFacts.Dependent_Equality.eq_dep_dep1	40	1.66.65.2.129	synth with cache (only 1: intro m; only 1: intro x; only 1: intros A B []; only 1: exists eq_refl; only 1: reflexivity).	0.308146	356
-coq-stdlib.dev	Coq.Init.Logic.iff_stepl	40	0.0.0.0	synth with cache (only 1: intros A B C [H1 H2] [H3 H4]; only 1: split; only 1: auto; only 1: auto).	0.039321	4
-coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Included_Empty	40	0	synth with cache (only 1: destruct 1).	0.024789	1
-coq-stdlib.dev	Coq.Bool.Sumbool.connectives.sumbool_or	40	0.0.0.0.0.0.0	synth with cache (only 1: case H1; only 1: case H2; only 1: auto; only 1: auto; only 1: case H2; only 1: auto; only 1: auto).	0.054520	7
-coq-stdlib.dev	Coq.Bool.DecBool.ifdec_left	40	66.1.0.66	synth with cache (only 1: intros A x P H y H0; only 1: destruct H; only 1: reflexivity; only 1: contradiction).	0.586479	538
-coq-stdlib.dev	Coq.Logic.Decidable.dec_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.169525	35
-coq-stdlib.dev	Coq.Wellfounded.Inclusion.WfInclusion.Acc_incl	40	0.4.192.0	synth with cache (only 1: intro x; only 1: induction 1; only 1: split; only 1: auto).	0.640994	275
-coq-stdlib.dev	Coq.Bool.Sumbool.connectives.sumbool_not	40	0.0.0.0.0.0.0	synth with cache (only 1: case H1; only 1: case H2; only 1: auto; only 1: auto; only 1: case H2; only 1: auto; only 1: auto).	0.043093	7
-coq-stdlib.dev	Coq.Logic.Decidable.dec_or	40	0.0.69	synth with cache (only 1: intro H1; only 1: unfold decidable; only 1: tauto).	0.583570	719
-coq-stdlib.dev	Coq.micromega.ZifyClasses.mkapp	40	8.35	synth with cache (only 1: subst; only 1: trivial).	0.608647	2915
-coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero	40	72.2	synth with cache (only 1: intro X; only 1: auto  10 with sets).	0.576861	901
-coq-stdlib.dev	Coq.Logic.Decidable.not_not	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.033578	2
-coq-stdlib.dev	Coq.Setoids.Setoid.gen_st	40	0.0.129.0.0.1.1.0	synth with cache (only 1: intro n; only 1: split; only 1: split; only 1: red; only 1: now symmetry; only 1: intros z Hz; only 1: destruct 2; only 1: trivial).	0.257637	225
-coq-stdlib.dev	Coq.Init.Specif.sig.eq_sig_uncurried_iff	40	66.0.0.0.2.0.1.0.0.0	synth with cache (only 1: split; only 1: intro; only 1: subst; only 1: exists eq_refl; only 1: reflexivity; only 1: intro; only 1: destruct u as [u1 u2], v as [v1 v2]; only 1: simpl in *; only 1: apply eq_exist_uncurried; only 1: assumption).	0.427484	186
-coq-stdlib.dev	Coq.Sets.Powerset_facts.Sets_as_an_algebra.Empty_set_zero_right	40	0	synth with cache (only 1: auto  6 with sets).	0.030813	1
-coq-stdlib.dev	Coq.Logic.Decidable.not_or	40	1	synth with cache (only 1: tauto).	0.043193	11
-coq-stdlib.dev	Coq.Init.Specif.sig.rew_sig	40	0.0	synth with cache (only 1: destruct H, u; only 1: reflexivity).	0.038545	2
-coq-stdlib.dev	Coq.Logic.Decidable.dec_not_not	40	1.2.132	synth with cache (only 1: destruct 1; only 1: auto; only 1: contradiction).	0.890116	1661
-coq-stdlib.dev	Coq.Logic.Decidable.not_and	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.042952	2
-coq-stdlib.dev	Coq.micromega.ZifyClasses.or_morph	40	0.1	synth with cache (only 1: intros ? ? ? Fl Fr; only 1: tauto).	0.180585	12
-coq-stdlib.dev	Coq.Logic.Decidable.not_imp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.048435	2
-coq-stdlib.dev	Coq.Wellfounded.Inclusion.WfInclusion.wf_incl	40	0.65.128	synth with cache (only 1: intros H; only 1: red; only 1: auto with sets).	0.238534	27
-coq-stdlib.dev	Coq.Init.Specif.sigT2.eq_existT2_uncurried	40	0.0.0.0	synth with cache (only 1: destruct pqr as [p q r]; only 1: destruct r, q, p; only 1: simpl; only 1: reflexivity).	0.046249	4
-coq-stdlib.dev	Coq.Logic.Decidable.imp_simp	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.039102	2
-coq-stdlib.dev	Coq.Logic.StrictProp.Spr1_inj	40	0.67.21.65	synth with cache (only 1: destruct b; only 1: simpl in *; only 1: subst; only 1: auto).	1.064324	2825
-coq-stdlib.dev	Coq.Logic.Decidable.not_iff	40	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	0.092726	2
-coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Add_intro1	40	0.194.1.0	synth with cache (only 1: intro; only 1: red; only 1: left; only 1: trivial).	0.539368	470
-coq-stdlib.dev	Coq.micromega.ZifyClasses.impl_morph	40	0.0	synth with cache (only 1: intros; only 1: tauto).	0.041594	2
-coq-stdlib.dev	Coq.Logic.EqdepFacts.eq_dep_eq_sigT	40	2.0.0.69	synth with cache (only 1: intros n m; only 1: intros p; only 1: destruct 1; only 1: reflexivity).	0.516953	499
-coq-stdlib.dev	Coq.Init.Specif.sigT2.eq_sigT2_uncurried	40	0.0.0.0.0.0	synth with cache (only 1: destruct u as [u1 u2 u3], v as [v1 v2 v3]; only 1: simpl in *; only 1: destruct pqr as [p q r]; only 1: destruct r, q, p; only 1: simpl; only 1: reflexivity).	0.087755	6
-coq-stdlib.dev	Coq.Classes.CEquivalence.equiv_transitive_obligation_1	40	0.1.129	synth with cache (only 1: intros x x' Hxx' y y' Hyy'; only 1: compute; only 1: firstorder).	1.051306	744
+coq-stdlib.dev	Coq.Bool.IfProp.Iftrue_inv	40	0.2.1.2	synth with cache (only 1: destruct 1; only 1: auto; only 1: intuition; only 1: discriminate).	0.280323	176
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.ifPn	40	0	synth with cache (only 1: by case  def_b: b ; constructor).	0.033339	1
+coq-stdlib.dev	Coq.Bool.Bool.orb_true_l	40	0	synth with cache (only 1: destr_bool).	0.013211	1
+coq-stdlib.dev	Coq.Bool.Bool.orb_true_r	40	0	synth with cache (only 1: destr_bool).	0.030563	1
+coq-stdlib.dev	Coq.Bool.Bool.orb_false_r	40	0	synth with cache (only 1: destr_bool).	0.013471	1
+coq-stdlib.dev	Coq.Init.Logic.rew_map	40	0.1	synth with cache (only 1: destruct H; only 1: reflexivity).	0.033641	3
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.ifT	40	2	synth with cache (only 1: by case : b ).	0.038717	3
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.ifF	40	1	synth with cache (only 1: by case : b ).	0.036003	2
+coq-stdlib.dev	Coq.Classes.Morphisms.Relations.pointwise_subrelation	40	2	synth with cache (only 1: firstorder).	0.029471	3
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.if_same	40	1	synth with cache (only 1: by case  def_b: b ; constructor).	0.019476	2
+coq-stdlib.dev	Coq.Classes.CMorphisms.iff_flip_impl_subrelation	40	0	synth with cache (only 1: firstorder).	0.030170	1
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.ifN	40	2	synth with cache (only 1: by case : b ).	0.037153	3
+coq-stdlib.dev	Coq.Setoids.Setoid.Seq_refl	40	0	synth with cache (only 1: firstorder).	0.157535	1
+coq-stdlib.dev	Coq.Bool.Bool.orb_false_l	40	0	synth with cache (only 1: destr_bool).	0.015082	1
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.if_neg	40	0	synth with cache (only 1: by case b).	0.030630	1
+coq-stdlib.dev	Coq.Bool.Bool.orb_negb_r	40	0	synth with cache (only 1: destr_bool).	0.012296	1
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.fun_if	40	0	synth with cache (only 1: by case b).	0.027028	1
+coq-stdlib.dev	Coq.Bool.Bool.orb_negb_l	40	0	synth with cache (only 1: destr_bool).	0.031036	1
+coq-stdlib.dev	Coq.Classes.Morphisms.Relations.forall_subrelation	40	0	synth with cache (only 1: firstorder).	0.032256	1
+coq-stdlib.dev	Coq.Sets.Constructive_sets.Ensembles_facts.Strict_Included_strict	40	3.130	synth with cache (only 1: intros f [x]; only 1: auto with sets).	0.245742	255
+coq-stdlib.dev	Coq.Bool.Bool.orb_comm	40	0	synth with cache (only 1: destr_bool).	0.031183	1
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.if_arg	40	0	synth with cache (only 1: by case b).	0.030743	1
+coq-stdlib.dev	Coq.Bool.Bool.orb_assoc	40	0	synth with cache (only 1: destr_bool).	0.020924	1
+coq-stdlib.dev	Coq.Classes.CMorphisms.iffT_arrow_subrelation	40	0.0	synth with cache (only 1: reduce; only 1: firstorder).	0.035359	2
+coq-stdlib.dev	Coq.ssr.ssrbool.BoolIf.ifE	40	66	synth with cache (only 1: intuition).	0.041393	7
+coq-stdlib.dev	Coq.Bool.Bool.andb_true_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.036416	5
+coq-stdlib.dev	Coq.Bool.Bool.orb_false_elim	40	0.0.3.0.0.0	synth with cache (only 1: intro b1; only 1: destruct b1; only 1: simpl; only 1: destr_bool; only 1: simpl; only 1: auto).	0.181625	135
+coq-stdlib.dev	Coq.ssr.ssrbool.ReflectCore.introTF	40	0	synth with cache (only 1: by case c; case Hb).	0.046307	1
+coq-stdlib.dev	Coq.ssr.ssrbool.ReflectCore.elimTF	40	0	synth with cache (only 1: by move <-; case Hb).	0.030128	1
+coq-stdlib.dev	Coq.ssr.ssrbool.ReflectCore.elimNTF	40	0	synth with cache (only 1: by case c; case Hb).	0.037136	1
+coq-stdlib.dev	Coq.Bool.IfProp.Iffalse_inv	40	0.0.0.1.0.0	synth with cache (only 1: destruct 1; only 1: intros; only 1: case diff_true_false; only 1: auto with bool; only 1: intros; only 1: auto with bool).	0.095148	38
+coq-stdlib.dev	Coq.Classes.CMorphisms.iffT_flip_arrow_subrelation	40	0	synth with cache (only 1: firstorder).	0.028745	1
+coq-stdlib.dev	Coq.Classes.Morphisms.iff_impl_subrelation	40	0.0	synth with cache (only 1: reduce; only 1: firstorder).	0.035369	2
+coq-stdlib.dev	Coq.Bool.BoolOrder.lt_strorder	40	0.0.64.1.1.2	synth with cache (only 1: split; only 1: compute; only 1: destr_bool; only 1: intro n; only 1: destr_bool; only 1: auto).	0.264773	205
+coq-stdlib.dev	Coq.Bool.Bool.andb_false_iff	40	0.0.0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.060401	5
+coq-stdlib.dev	Coq.Bool.Bool.andb_false_intro1	40	0	synth with cache (only 1: destr_bool).	0.013646	1
+coq-stdlib.dev	Coq.Classes.RelationClasses.Defs.flip.flip_Antisymmetric	40	2.130	synth with cache (only 1: intros x' x'' Hx' Hx''; only 1: auto).	0.288695	224
+coq-stdlib.dev	Coq.Setoids.Setoid.Seq_sym	40	0.0	synth with cache (only 1: unfold Setoid_Theory in s; only 1: firstorder).	0.036892	2
+coq-stdlib.dev	Coq.Bool.Bool.andb_false_intro2	40	0.0.0	synth with cache (only 1: intros; only 1: apply andb_false_iff; only 1: auto).	0.031000	3
+coq-stdlib.dev	Coq.Bool.Bool.andb_false_l	40	0	synth with cache (only 1: destr_bool).	0.012105	1
+coq-stdlib.dev	Coq.Logic.Eqdep_dec.EqdepDec.trans_sym_eq	40	0.41	synth with cache (only 1: subst; only 1: reflexivity).	0.600233	2917
+coq-stdlib.dev	Coq.Bool.Bool.andb_false_r	40	1	synth with cache (only 1: destr_bool).	0.028630	2
+coq-stdlib.dev	Coq.Classes.Morphisms.iff_flip_impl_subrelation	40	0.0.0.0	synth with cache (only 1: hnf; only 1: intros x y H0; only 1: red in H0; only 1: firstorder).	0.042644	4
+coq-stdlib.dev	Coq.Bool.Bool.andb_diag	40	0	synth with cache (only 1: destr_bool).	0.012283	1
+coq-stdlib.dev	Coq.Bool.Bool.andb_true_eq	40	0.2	synth with cache (only 1: destr_bool; only 1: intuition).	0.119853	66
+coq-stdlib.dev	Coq.Sets.Powerset.The_power_set_partial_order.Inclusion_is_an_order	40	0.0.0.9	synth with cache (only 1: constructor; only 1: auto with sets; only 1: auto with sets; only 1: auto with sets).	0.652654	317
+coq-stdlib.dev	Coq.Bool.Bool.andb_true_r	40	0	synth with cache (only 1: destr_bool).	0.030096	1
+coq-stdlib.dev	Coq.Classes.RelationClasses.Defs.flip.flip_PreOrder	40	2	synth with cache (only 1: firstorder).	0.040044	3
+coq-stdlib.dev	Coq.Bool.Bool.andb_true_l	40	0	synth with cache (only 1: destr_bool).	0.030961	1
+coq-stdlib.dev	Coq.Bool.Bool.andb_negb_r	40	0	synth with cache (only 1: destr_bool).	0.012078	1
+coq-stdlib.dev	Coq.Bool.Bool.andb_negb_l	40	0	synth with cache (only 1: destr_bool).	0.030691	1
+coq-stdlib.dev	Coq.Bool.Bool.andb_comm	40	0	synth with cache (only 1: destr_bool).	0.013608	1
