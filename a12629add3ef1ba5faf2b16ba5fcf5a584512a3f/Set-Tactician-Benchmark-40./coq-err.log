@@ -1,0 +1,65 @@
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/MSets/MSetRBT.v", line 1080, characters 1-15:
+Error: Anomaly "in retyping: Not a sort."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Sorting/Permutation.v", line 395, characters 2-27:
+Error: Anomaly "in Evd.define: cannot define an evar twice."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 200, characters 0-11:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: assumption; only 1: assumption; only 1: inversion 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption).
+Typing error:
+Recursive definition of ForAll_coind is ill-formed.
+In environment
+A, B : Type
+f : A -> B
+P : Stream B -> Prop
+S : Stream A
+ForAll_coind : ForAll (fun s : Stream A => P (map s)) S -> ForAll P (map S)
+H : ForAll (fun s : Stream A => P (map s)) S
+Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind H
+                                                 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H : ForAll P (tl (map S)))
+                                                 => H) x x0
+                                                 end".
+Recursive definition is: "fun H : ForAll (fun s : Stream A => P (map s)) S =>
+                          HereAndFurther (map S)
+                            match H with
+                            | HereAndFurther _ x x0 =>
+                                (fun (H0 : P (map S))
+                                   (_ : ForAll
+                                          (fun s : Stream A => P (map s))
+                                          (tl S)) => H0) x x0
+                            end
+                            (let H0 :
+                               ForAll (fun s : Stream A => P (map s)) S ->
+                               ForAll P (tl (map S)) :=
+                               fun
+                                 H0 : ForAll (fun s : Stream A => P (map s))
+                                        S =>
+                               match ForAll_coind H0 with
+                               | HereAndFurther _ x x0 =>
+                                   (fun (_ : P (map S))
+                                      (H1 : ForAll P (tl (map S))) => H1) x
+                                     x0
+                               end in
+                             H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Sorting/Permutation.v", line 404, characters 1-38:
+Error: Anomaly "in Evd.define: cannot define an evar twice."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2252, characters 1-34:
+Error: Stack overflow.
+
