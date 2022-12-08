@@ -1,7 +1,27 @@
 [NOTE] coq-tactician-stdlib is not installed.
 
 [NOTE] Package coq-tactician-reinforce is already pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#5e7434a0b355754c084cf68c1933385b73a48090 (version ~dev).
-  * Missing dependency:
-    - conf-xxhash
-    depends on the unavailable system package 'libxxhash-dev'. Use `--no-depexts' to attempt installation anyway, or it is possible that a depext package name in the opam file is incorrect.
+[NOTE] Package bos is already installed (current version is 0.2.1).
+[NOTE] Package logs is already installed (current version is 0.7.0).
+[ERROR] The compilation of conf-gmp.4 failed at "sh -exc cc -c $CFLAGS -I/usr/local/include test.c".
+[NOTE] While removing coq-tactician.dev: not removing non-empty directories:
+         - share/coq-tactician
 
+
+#=== ERROR while compiling conf-gmp.4 =========================================#
+# context              2.1.3 | linux/x86_64 |  | https://opam.ocaml.org#a9b4fe27
+# path                 /local_home_olsak/benchmark-cache/opam-root/bench/.opam-switch/build/conf-gmp.4
+# command              /bin/sh -exc cc -c $CFLAGS -I/usr/local/include test.c
+# exit-code            1
+# env-file             /local_home_olsak/benchmark-cache/opam-root/log/conf-gmp-22183-9bbdc0.env
+# output-file          /local_home_olsak/benchmark-cache/opam-root/log/conf-gmp-22183-9bbdc0.out
+### output ###
+# + cc -c -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/olsak/anaconda3/envs/pycoq/include -I/usr/local/include test.c
+# test.c:1:10: fatal error: gmp.h: No such file or directory
+#     1 | #include <gmp.h>
+#       |          ^~~~~~~
+# compilation terminated.
+
+
+The former state can be restored with:
+    /local_home_olsak/.opam/benchmark/bin/tactician-benchmark switch import "/local_home_olsak/benchmark-cache/opam-root/bench/.opam-switch/backup/state-20221208152038.export"
