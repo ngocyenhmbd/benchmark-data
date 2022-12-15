@@ -108,6 +108,18 @@ try intros until n;
    | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
  simpl; try easy
 
+File "./plugins/rtauto/Bintree.v", line 277, characters 0-28:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros [=H%Pos.succ_not_1]
+intros _tmp_tactician0; (first
+ [ discriminate _tmp_tactician0; idtac
+ | injection _tmp_tactician0 as _tmp_tactician2;
+    (apply Pos.succ_not_1 in _tmp_tactician2 as H; [ idtac | .. ];
+      try clear _tmp_tactician2)
+ | intro_equality_clear _tmp_tactician0; idtac
+ | intro_equality_hnf _tmp_tactician0; idtac ])
+
 File "./theories/Lists/List.v", line 264, characters 6-22:
 Warning:
 Tactician found a bug in it's tactical decomposition. Please report.
@@ -119,6 +131,13 @@ intros a;
      | injection _tmp_tactician0 as; idtac
      | intro_equality_clear _tmp_tactician0; idtac
      | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Arith/Between.v", line 160, characters 6-52:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (exists_in_int k (S l)) as (l', [], ?)
+destruct (exists_in_int k (S l)) as (l', _tmp_tactician0, ?);
+ [ .. | destruct _tmp_tactician0 as []; idtac ]
 
 File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
 Warning:
@@ -143,13 +162,6 @@ intros Hf;
        | intropattern subst -> _tmp_tactician4; idtac;
           try clear _tmp_tactician2 ])))
 
-File "./theories/Arith/Between.v", line 160, characters 6-52:
-Warning:
-Tactician found a bug in it's tactical decomposition. Please report.
-destruct (exists_in_int k (S l)) as (l', [], ?)
-destruct (exists_in_int k (S l)) as (l', _tmp_tactician0, ?);
- [ .. | destruct _tmp_tactician0 as []; idtac ]
-
 File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
 Warning:
 Tactician found a bug in it's tactical decomposition. Please report.
@@ -158,18 +170,6 @@ intros _tmp_tactician0;
  (destruct _tmp_tactician0 as (_tmp_tactician2, H);
    [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
  try discriminate
-
-File "./plugins/rtauto/Bintree.v", line 277, characters 0-28:
-Warning:
-Tactician found a bug in it's tactical decomposition. Please report.
-intros [=H%Pos.succ_not_1]
-intros _tmp_tactician0; (first
- [ discriminate _tmp_tactician0; idtac
- | injection _tmp_tactician0 as _tmp_tactician2;
-    (apply Pos.succ_not_1 in _tmp_tactician2 as H; [ idtac | .. ];
-      try clear _tmp_tactician2)
- | intro_equality_clear _tmp_tactician0; idtac
- | intro_equality_hnf _tmp_tactician0; idtac ])
 
 File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
 Warning:
