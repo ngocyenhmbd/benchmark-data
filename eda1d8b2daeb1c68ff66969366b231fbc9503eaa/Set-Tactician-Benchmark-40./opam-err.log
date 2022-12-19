@@ -1,0 +1,24 @@
+[31m[ERROR][0m The compilation of coq.8.15.dev failed at "make -j55".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq.8.15.dev[0m [31m=======================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | git+ssh://git@github.com/LasseBlaauwbroek/custom-archive.git
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.jnVhyB/opam-root/bench/.opam-switch/build/coq.8.15.dev
+[33m#[0m [33mcommand[0m     /usr/bin/make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-11888/coq-11888-4d937c.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-11888/coq-11888-4d937c.out
+[33m### output ###
+[0m[33m# [0mcoq_interp.c:1819:56: error: macro "Alloc_small" requires 4 arguments, but only 3 given
+[33m# [0m[...]
+[33m# [0mmake[1]: *** [_build/install/default/bin/csdpcert] Error 1
+[33m# [0m(cd _build/default && /lscratch/blaaulas/tactician.tmp.jnVhyB/opam-root/bench/bin/ocamlc.opt -w -40 -rectypes -g -bin-annot -I tools/.ocamllibdep.eobjs/byte -I /lscratch/blaaulas/tactician.tmp.jnVhyB/opam-root/bench/lib/ocaml/unix -no-alias-deps -o tools/.ocamllibdep.eobjs/byte/dune__exe__Ocamllibdep.cmo -c -impl tools/ocamllibdep.ml)
+[33m# [0mFile "tools/ocamllibdep.mll", line 256, characters 8-22:
+[33m# [0mAlert deprecated: Stdlib.Printexc.catch
+[33m# [0mThis function is no longer needed.
+[33m# [0m(cd _build/default && /lscratch/blaaulas/tactician.tmp.jnVhyB/opam-root/bench/bin/ocamlopt.opt -w -40 -rectypes -g -O3 -unbox-closures -I tools/.ocamllibdep.eobjs/byte -I tools/.ocamllibdep.eobjs/native -I /lscratch/blaaulas/tactician.tmp.jnVhyB/opam-root/bench/lib/ocaml/unix -intf-suffix .ml -no-alias-deps -o tools/.ocamllibdep.eobjs/native/dune__exe__Ocamllibdep.cmx -c -impl tools/ocamllibd[...]
+[33m# [0mFile "tools/ocamllibdep.mll", line 256, characters 8-22:
+[33m# [0mAlert deprecated: Stdlib.Printexc.catch
+[33m# [0mThis function is no longer needed.
+[33m# [0mmake[1]: Leaving directory `/lscratch/blaaulas/tactician.tmp.jnVhyB/opam-root/bench/.opam-switch/build/coq.8.15.dev'
+[33m# [0mmake: *** [submake] Error 2
+
