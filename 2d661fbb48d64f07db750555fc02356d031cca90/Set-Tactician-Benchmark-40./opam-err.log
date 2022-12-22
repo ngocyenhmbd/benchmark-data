@@ -1,0 +1,74 @@
+  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /home/piepejel/projects/coq-benchmarks/temp/pip-req-build-jc3mm8ah
+  Running command git rev-parse -q --verify 'sha^89e3d7318179fc50644c35dcdf92989f5ae6a77a'
+  Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' 89e3d7318179fc50644c35dcdf92989f5ae6a77a
+  Running command git checkout -q 89e3d7318179fc50644c35dcdf92989f5ae6a77a
+    ERROR: Command errored out with exit status 1:
+     command: /home/piepejel/projects/coq-benchmarks/temp/tactician.tmp.1w5HQm/target-source/venv/bin/python3 -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/home/piepejel/projects/coq-benchmarks/temp/pip-req-build-jc3mm8ah/setup.py'"'"'; __file__='"'"'/home/piepejel/projects/coq-benchmarks/temp/pip-req-build-jc3mm8ah/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /home/piepejel/projects/coq-benchmarks/temp/pip-record-4m1f9pcu/install-record.txt --single-version-externally-managed --compile --install-headers /home/piepejel/projects/coq-benchmarks/temp/tactician.tmp.1w5HQm/target-source/venv/include/site/python3.9/graph2tac
+         cwd: /home/piepejel/projects/coq-benchmarks/temp/pip-req-build-jc3mm8ah/
+    Complete output (62 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.9
+    creating build/lib.linux-x86_64-3.9/graph2tac
+    copying graph2tac/predict.py -> build/lib.linux-x86_64-3.9/graph2tac
+    copying graph2tac/hash.py -> build/lib.linux-x86_64-3.9/graph2tac
+    copying graph2tac/common.py -> build/lib.linux-x86_64-3.9/graph2tac
+    copying graph2tac/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac
+    creating build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/predict.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/dataset.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/metrics.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/train.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/train_utils.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/tasks.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/models.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    copying graph2tac/tfgnn/graph_schema.py -> build/lib.linux-x86_64-3.9/graph2tac/tfgnn
+    creating build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/model.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/predict.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/segments.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/stop_watch.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/graph_nn_def_batch.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/train.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/graph_nn.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/datatypes.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/batches.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/graph_nn_batch.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    copying graph2tac/tf2/model_params.py -> build/lib.linux-x86_64-3.9/graph2tac/tf2
+    creating build/lib.linux-x86_64-3.9/graph2tac/transformer
+    copying graph2tac/transformer/pserver_cheat.py -> build/lib.linux-x86_64-3.9/graph2tac/transformer
+    copying graph2tac/transformer/extract_transformer_datasets.py -> build/lib.linux-x86_64-3.9/graph2tac/transformer
+    copying graph2tac/transformer/pserver.py -> build/lib.linux-x86_64-3.9/graph2tac/transformer
+    copying graph2tac/transformer/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/transformer
+    creating build/lib.linux-x86_64-3.9/graph2tac/loader
+    copying graph2tac/loader/predict_server.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
+    copying graph2tac/loader/hmodel.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
+    copying graph2tac/loader/helpers.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
+    copying graph2tac/loader/unpack.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
+    copying graph2tac/loader/data_server.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
+    copying graph2tac/loader/__init__.py -> build/lib.linux-x86_64-3.9/graph2tac/loader
+    running egg_info
+    creating graph2tac.egg-info
+    writing graph2tac.egg-info/PKG-INFO
+    writing dependency_links to graph2tac.egg-info/dependency_links.txt
+    writing entry points to graph2tac.egg-info/entry_points.txt
+    writing requirements to graph2tac.egg-info/requires.txt
+    writing top-level names to graph2tac.egg-info/top_level.txt
+    writing manifest file 'graph2tac.egg-info/SOURCES.txt'
+    reading manifest file 'graph2tac.egg-info/SOURCES.txt'
+    adding license file 'LICENSE'
+    writing manifest file 'graph2tac.egg-info/SOURCES.txt'
+    creating build/lib.linux-x86_64-3.9/graph2tac/loader/clib
+    copying graph2tac/loader/clib/loader.cpp -> build/lib.linux-x86_64-3.9/graph2tac/loader/clib
+    copying graph2tac/loader/clib/graph_api_v11.capnp -> build/lib.linux-x86_64-3.9/graph2tac/loader/clib
+    running build_ext
+    Compiling .capnp files
+    error: [Errno 2] No such file or directory: 'capnpc'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /home/piepejel/projects/coq-benchmarks/temp/tactician.tmp.1w5HQm/target-source/venv/bin/python3 -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/home/piepejel/projects/coq-benchmarks/temp/pip-req-build-jc3mm8ah/setup.py'"'"'; __file__='"'"'/home/piepejel/projects/coq-benchmarks/temp/pip-req-build-jc3mm8ah/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /home/piepejel/projects/coq-benchmarks/temp/pip-record-4m1f9pcu/install-record.txt --single-version-externally-managed --compile --install-headers /home/piepejel/projects/coq-benchmarks/temp/tactician.tmp.1w5HQm/target-source/venv/include/site/python3.9/graph2tac Check the logs for full command output.
+WARNING: You are using pip version 21.2.3; however, version 22.3.1 is available.
+You should consider upgrading via the '/home/piepejel/projects/coq-benchmarks/temp/tactician.tmp.1w5HQm/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
