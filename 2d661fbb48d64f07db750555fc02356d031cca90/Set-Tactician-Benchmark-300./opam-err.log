@@ -1,0 +1,20 @@
+  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /home/piepejel/projects/coq-benchmarks/temp/pip-req-build-g6llw6yk
+  Running command git rev-parse -q --verify 'sha^89e3d7318179fc50644c35dcdf92989f5ae6a77a'
+  Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' 89e3d7318179fc50644c35dcdf92989f5ae6a77a
+  Running command git checkout -q 89e3d7318179fc50644c35dcdf92989f5ae6a77a
+WARNING: You are using pip version 21.2.3; however, version 22.3.1 is available.
+You should consider upgrading via the '/home/piepejel/projects/coq-benchmarks/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+[NOTE] Requirement for system packages capnproto, capnproto-devel and epel-release overridden in this switch. Use `opam option depext-bypass-=capnproto,capnproto-devel,epel-release' to revert.
+[ERROR] The compilation of coq-graph2tac.~dev failed at "tar xzf model.tar.gz --one-top-level --strip-components 1".
+
+#=== ERROR while compiling coq-graph2tac.~dev =================================#
+# context              2.1.2 | linux/x86_64 |  | pinned(git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#2d661fbb48d64f07db750555fc02356d031cca90#2d661fbb)
+# path                 ~/projects/coq-benchmarks/opam-root/bench/.opam-switch/build/coq-graph2tac.~dev
+# command              /usr/bin/tar xzf model.tar.gz --one-top-level --strip-components 1
+# exit-code            64
+# env-file             ~/projects/coq-benchmarks/temp/opam-xxx-7135/coq-graph2tac-7135-684492.env
+# output-file          ~/projects/coq-benchmarks/temp/opam-xxx-7135/coq-graph2tac-7135-684492.out
+### output ###
+# /usr/bin/tar: unrecognized option '--one-top-level'
+# Try `tar --help' or `tar --usage' for more information.
+
