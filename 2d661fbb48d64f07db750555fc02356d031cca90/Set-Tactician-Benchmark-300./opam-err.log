@@ -1,4 +1,4 @@
-  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /home/piepejel/projects/coq-benchmarks/temp/pip-req-build-5q2czc11
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /home/piepejel/projects/coq-benchmarks/temp/pip-req-build-tvmm6bi2
   Running command git rev-parse -q --verify 'sha^89e3d7318179fc50644c35dcdf92989f5ae6a77a'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' 89e3d7318179fc50644c35dcdf92989f5ae6a77a
   Running command git checkout -q 89e3d7318179fc50644c35dcdf92989f5ae6a77a
@@ -15,8 +15,8 @@
 # path                 ~/projects/coq-benchmarks/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
 # command              ~/projects/coq-benchmarks/opam-root/bench/bin/tactician exec -- make -j127
 # exit-code            2
-# env-file             ~/projects/coq-benchmarks/opam-root/log/coq-tactician-stdlib-98874-4ef56f.env
-# output-file          ~/projects/coq-benchmarks/opam-root/log/coq-tactician-stdlib-98874-4ef56f.out
+# env-file             ~/projects/coq-benchmarks/opam-root/log/coq-tactician-stdlib-104187-656604.env
+# output-file          ~/projects/coq-benchmarks/opam-root/log/coq-tactician-stdlib-104187-656604.out
 ### output ###
 # [...]
 # coqc theories/Floats/SpecFloat.v
@@ -32,3 +32,8 @@
 # make: *** [theories/FSets/FSetPositive.vo] Deleting file `theories/FSets/FSetPositive.glob'
 # make: *** Waiting for unfinished jobs....
 
+2023-01-04 14:09:26.112825+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host amd-01.cluster. Code: 254
