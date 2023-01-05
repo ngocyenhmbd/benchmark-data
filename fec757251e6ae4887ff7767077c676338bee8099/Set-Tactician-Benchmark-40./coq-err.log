@@ -1,0 +1,2039 @@
+File "./Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros [Hl Hr]; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: destruct H; only 1: reflexivity; only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+s1 : Stream
+a : A
+s : Stream
+Hl : A
+Hr : Stream
+EqSt_reflex :
+forall s2 : Stream, EqSt (Cons Hl Hr) s2 -> EqSt s2 (Cons Hl Hr)
+s2 : Stream
+e : EqSt (Cons Hl Hr) s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 e
+                                                 with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun
+                                                 (_ : 
+                                                 hd s2 = hd (Cons Hl Hr))
+                                                 (H : 
+                                                 EqSt 
+                                                 (tl s2) 
+                                                 (tl (Cons Hl Hr))) => H) x
+                                                 x0
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt (Cons Hl Hr) s2) =>
+                          eqst s2 (Cons Hl Hr)
+                            match H with
+                            | eqst _ _ x x0 =>
+                                (fun (H0 : hd (Cons Hl Hr) = hd s2)
+                                   (_ : EqSt (tl (Cons Hl Hr)) (tl s2)) =>
+                                 let a := hd s2 in
+                                 match
+                                   H0 in (_ = a0)
+                                   return (a0 = hd (Cons Hl Hr))
+                                 with
+                                 | eq_refl => eq_refl
+                                 end) x x0
+                            end
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt (Cons Hl Hr) s3 ->
+                               EqSt (tl s3) (tl (Cons Hl Hr)) :=
+                               fun (s3 : Stream) (H0 : EqSt (Cons Hl Hr) s3)
+                               =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ x x0 =>
+                                   (fun (_ : hd s3 = hd (Cons Hl Hr))
+                                      (H1 : EqSt (tl s3) (tl (Cons Hl Hr)))
+                                    => H1) x x0
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./Streams.v", line 167, characters 0-31:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro H1; only 1: coinduction ltac:(Eq_trans); only 1: auto; only 1: auto).
+Typing error:
+Recursive definition of Eq_trans is ill-formed.
+In environment
+A : Type
+P, Inv : Stream -> Prop
+InvThenP : forall x : Stream, Inv x -> P x
+InvIsStable : forall x : Stream, Inv x -> Inv (tl x)
+H1 : Stream
+Eq_trans : Inv H1 -> ForAll H1
+i : Inv H1
+Invalid recursive call in the argument of "match" in "match Eq_trans i with
+                                                 | HereAndFurther x x0 =>
+                                                 (fun 
+                                                 (_ : P H1)
+                                                 (H : ForAll (tl H1)) => H) x
+                                                 x0
+                                                 end".
+Recursive definition is: "fun H : Inv H1 =>
+                          HereAndFurther (InvThenP H)
+                            (let H0 : Inv H1 -> ForAll (tl H1) :=
+                               fun H0 : Inv H1 =>
+                               match Eq_trans H0 with
+                               | HereAndFurther x x0 =>
+                                   (fun (_ : P H1) (H1 : ForAll (tl H1)) =>
+                                    H1) x x0
+                               end in
+                             H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrbool.v", line 820, characters 0-73:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrbool.v", line 1702, characters 0-62:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrbool.v", line 1899, characters 7-27:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrbool.v", line 2233, characters 7-46:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrbool.v", line 2241, characters 7-68:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./Streams.v", line 200, characters 0-11:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros H; only 1: constructor; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: apply H0; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: apply H0; only 1: intros [Hl Hr]; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(Eq_sym); only 1: assumption).
+Typing error:
+Recursive definition of ForAll_coind is ill-formed.
+In environment
+A, B : Type
+f : A -> B
+H : Stream B -> Prop
+S : Stream A
+ForAll_coind : ForAll (fun s : Stream A => H (map s)) S -> ForAll H (map S)
+f0 : ForAll (fun s : Stream A => H (map s)) S
+H1 :=
+fun H0 : ForAll (fun s : Stream A => H (map s)) S =>
+match ForAll_coind H0 with
+| HereAndFurther _ x x0 =>
+    (fun (_ : H (map S)) (H : ForAll H (tl (map S))) => H) x x0
+end : ForAll (fun s : Stream A => H (map s)) S -> ForAll H (tl (map S))
+ForAll_coind0 : ForAll (fun s : Stream A => H (map s)) S
+Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind0
+                                                 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun
+                                                 (_ : 
+                                                 (fun s : Stream A =>
+                                                 H (map s)) S)
+                                                 (H : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 H (map s)) 
+                                                 (tl S)) => H) x x0
+                                                 end".
+Recursive definition is: "HereAndFurther S
+                            (let H1 : (fun s : Stream A => H (map s)) S :=
+                               match f0 with
+                               | HereAndFurther _ x x0 =>
+                                   (fun
+                                      (H0 : (fun s : Stream A => H (map s)) S)
+                                      (_ : ForAll
+                                             (fun s : Stream A => H (map s))
+                                             (tl S)) => H0) x x0
+                               end in
+                             H1)
+                            (let H1 :
+                               ForAll (fun s : Stream A => H (map s)) (tl S) :=
+                               match ForAll_coind0 with
+                               | HereAndFurther _ x x0 =>
+                                   (fun
+                                      (_ : (fun s : Stream A => H (map s)) S)
+                                      (H : ForAll
+                                             (fun s : Stream A => H (map s))
+                                             (tl S)) => H) x x0
+                               end in
+                             H1)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrfun.v", line 794, characters 36-54:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 131, characters 1-60:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 92, characters 1-40:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 124, characters 1-12:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 138, characters 1-12:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 144, characters 1-60:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 176, characters 1-39:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 149, characters 1-46:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 106, characters 1-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 68, characters 1-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 184, characters 1-20:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 98, characters 1-40:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 115, characters 1-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 209, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 225, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 226, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 168, characters 1-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 212, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 166, characters 4-11:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 187, characters 1-19:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 148, characters 4-11:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 297, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 137, characters 4-67:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 273, characters 1-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 249, characters 1-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 289, characters 1-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 197, characters 1-19:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 175, characters 1-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 200, characters 1-19:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 187, characters 4-11:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 215, characters 4-11:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 235, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 259, characters 1-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 303, characters 1-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 312, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 295, characters 1-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 283, characters 1-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 321, characters 4-69:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 463, characters 1-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 310, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 332, characters 4-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 510, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 342, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 571, characters 1-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 555, characters 1-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 350, characters 9-46:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 381, characters 1-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 43, characters 0-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 354, characters 2-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 360, characters 2-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetFacts.v", line 64, characters 0-29:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 440, characters 1-22:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 404, characters 2-34:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 448, characters 1-22:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 420, characters 2-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 424, characters 9-47:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 399, characters 1-23:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 593, characters 1-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 484, characters 1-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 605, characters 1-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 779, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 378, characters 1-23:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 804, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 501, characters 1-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 427, characters 9-39:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 619, characters 1-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 376, characters 4-55:
+Error: Anomaly "in retyping: unknown meta 86358."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetFacts.v", line 108, characters 0-97:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 443, characters 4-38:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 437, characters 2-59:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 561, characters 1-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 620, characters 1-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 411, characters 4-80:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 522, characters 1-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 457, characters 3-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 838, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 675, characters 1-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 463, characters 4-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 452, characters 2-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 875, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 541, characters 1-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1018, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1005, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 470, characters 4-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 924, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1082, characters 8-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 632, characters 1-38:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 659, characters 1-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1085, characters 8-61:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 406, characters 4-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 580, characters 1-19:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 490, characters 3-66:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 476, characters 4-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 703, characters 1-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 678, characters 1-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 749, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 781, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1098, characters 8-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 839, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1107, characters 8-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1105, characters 8-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1102, characters 8-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 852, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1093, characters 8-55:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./PeanoNat.v", line 1098, characters 2-37:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros HSE H0 HSO n HO%Odd_alt_Odd; only 1: apply Odd_alt_Even_alt_ind with Q; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
+Typing error:
+Pattern-matching expression on an object of inductive type and has invalid information."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./PeanoNat.v", line 1108, characters 2-39:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros HSE H0 HSO n HE%Even_alt_Even; only 1: apply Even_alt_Odd_alt_ind with P; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
+Typing error:
+Pattern-matching expression on an object of inductive type and has invalid information."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 85, characters 0-58:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 90, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 587, characters 1-58:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1100, characters 8-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 919, characters 8-60:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 914, characters 8-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 917, characters 8-60:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1112, characters 8-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 927, characters 8-55:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1109, characters 8-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 204, characters 4-41:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1123, characters 8-67:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 925, characters 8-55:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1130, characters 8-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1114, characters 8-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1135, characters 8-88:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 97, characters 0-35:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 214, characters 4-121:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1133, characters 8-88:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 930, characters 8-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 600, characters 1-59:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 145, characters 1-216:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 592, characters 1-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ClassicalFacts.v", line 652, characters 2-70:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetBridge.v", line 655, characters 4-102:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 110, characters 0-47:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 934, characters 8-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 937, characters 8-63:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 932, characters 8-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1144, characters 8-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 939, characters 8-63:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 941, characters 8-63:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1152, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 608, characters 1-73:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1149, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 116, characters 0-37:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 944, characters 8-61:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1159, characters 1-115:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 224, characters 4-28:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 140, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 615, characters 1-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 164, characters 1-110:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1166, characters 1-115:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapList.v", line 1141, characters 8-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 730, characters 1-98:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 167, characters 0-39:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 173, characters 0-33:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 960, characters 8-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 963, characters 8-86:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 946, characters 8-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 965, characters 8-86:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 151, characters 0-17:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 741, characters 1-215:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 245, characters 4-331:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 748, characters 1-88:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 971, characters 8-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 181, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 274, characters 6-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 210, characters 0-33:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 179, characters 1-77:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 758, characters 1-34:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 974, characters 8-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 218, characters 0-45:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 224, characters 0-86:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 208, characters 1-79:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 291, characters 4-19:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 197, characters 1-49:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 778, characters 1-36:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 246, characters 0-30:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 989, characters 1-113:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 254, characters 0-30:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 307, characters 6-79:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 982, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 230, characters 0-6:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 770, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 996, characters 1-113:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 806, characters 1-22:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapWeakList.v", line 979, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 231, characters 1-100:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 795, characters 1-95:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 784, characters 1-15:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 817, characters 1-85:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 315, characters 6-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 836, characters 1-58:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 282, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 842, characters 1-284:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 346, characters 6-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 331, characters 6-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 340, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 368, characters 2-32:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 267, characters 0-35:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 404, characters 2-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 255, characters 1-55:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 353, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 416, characters 2-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 362, characters 6-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 347, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 374, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 431, characters 2-35:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 441, characters 2-38:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetEqProperties.v", line 481, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 323, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 246, characters 1-53:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 876, characters 1-106:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 894, characters 1-134:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetPositive.v", line 778, characters 4-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetToFiniteSet.v", line 142, characters 1-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 883, characters 1-130:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 279, characters 1-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 901, characters 1-45:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 390, characters 6-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 860, characters 1-112:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 291, characters 1-10:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 910, characters 1-45:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 377, characters 6-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 408, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 458, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 432, characters 0-54:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 403, characters 6-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetEqProperties.v", line 512, characters 0-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 444, characters 0-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 468, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 868, characters 1-67:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 418, characters 6-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetEqProperties.v", line 518, characters 0-45:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 439, characters 6-52:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 935, characters 1-79:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetEqProperties.v", line 525, characters 0-54:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 473, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 346, characters 1-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 946, characters 1-79:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 383, characters 0-45:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 395, characters 0-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 529, characters 2-116:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 521, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 545, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 389, characters 0-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 495, characters 2-43:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1018, characters 1-100:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1002, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 530, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 501, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 977, characters 1-79:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 563, characters 0-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 379, characters 0-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1057, characters 1-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetEqProperties.v", line 545, characters 0-47:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 396, characters 0-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 337, characters 1-46:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 558, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 438, characters 0-60:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 921, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 358, characters 1-59:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 484, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 451, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 408, characters 0-33:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1096, characters 1-58:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1042, characters 1-106:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 427, characters 0-203:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 683, characters 0-29:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 675, characters 0-39:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 604, characters 1-38:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 569, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 510, characters 2-23:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 691, characters 0-15:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 508, characters 1-70:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 959, characters 1-79:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1102, characters 1-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 668, characters 0-37:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 626, characters 0-27:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1126, characters 1-10:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 576, characters 2-62:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 721, characters 0-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 598, characters 2-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 610, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 730, characters 0-19:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 576, characters 0-7:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 698, characters 0-23:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 541, characters 2-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 778, characters 2-26:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 678, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1150, characters 1-198:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 786, characters 2-20:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1113, characters 1-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 626, characters 2-58:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1211, characters 1-161:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 523, characters 8-49:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1138, characters 1-124:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 712, characters 0-27:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 582, characters 2-27:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 593, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 547, characters 2-50:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 764, characters 9-37:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1179, characters 1-86:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 592, characters 2-41:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 604, characters 2-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 768, characters 3-52:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 526, characters 8-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 617, characters 1-29:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1260, characters 1-102:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 813, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1237, characters 1-328:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1191, characters 1-93:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1222, characters 1-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 850, characters 2-59:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 885, characters 2-13:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1328, characters 1-63:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 540, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 897, characters 3-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 530, characters 8-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 612, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 833, characters 2-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 879, characters 2-24:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 538, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1334, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1288, characters 1-107:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 600, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 514, characters 1-70:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1316, characters 1-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 965, characters 2-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1004, characters 2-38:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 521, characters 8-49:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 534, characters 1-78:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 867, characters 2-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1382, characters 1-38:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1271, characters 1-107:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 993, characters 2-35:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 544, characters 8-59:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1042, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1024, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1376, characters 1-36:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1390, characters 1-46:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1368, characters 1-56:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 555, characters 1-76:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 606, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1034, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 550, characters 8-58:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 565, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1069, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1465, characters 1-29:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1407, characters 1-32:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1471, characters 2-28:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 623, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1486, characters 1-98:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1432, characters 1-24:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 568, characters 8-66:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1166, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1076, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1443, characters 1-8:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1348, characters 1-55:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 670, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 592, characters 1-118:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 582, characters 1-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1226, characters 2-37:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1510, characters 1-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1105, characters 2-24:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 756, characters 2-47:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1218, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1246, characters 2-39:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 722, characters 4-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1575, characters 0-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1604, characters 0-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 599, characters 1-120:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1254, characters 2-36:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1588, characters 0-44:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1653, characters 0-189:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 766, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 607, characters 8-72:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 618, characters 8-73:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1364, characters 2-17:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1619, characters 0-69:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 611, characters 1-72:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1238, characters 2-37:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1317, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1419, characters 2-34:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1570, characters 0-44:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 778, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 622, characters 1-87:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1430, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1542, characters 2-29:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 812, characters 2-48:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1470, characters 2-29:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1411, characters 2-34:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 830, characters 6-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1825, characters 0-20:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1587, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1338, characters 2-17:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1446, characters 2-25:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetEqProperties.v", line 919, characters 0-34:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 873, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 630, characters 1-55:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1632, characters 0-79:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1645, characters 2-20:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 859, characters 6-117:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1891, characters 1-70:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1678, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./RMicromega.v", line 429, characters 2-13:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1754, characters 2-31:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1667, characters 2-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1697, characters 2-16:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1909, characters 8-51:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1731, characters 2-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1687, characters 2-18:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFullAVL.v", line 640, characters 1-49:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 888, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1913, characters 8-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 939, characters 4-34:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1906, characters 8-49:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 918, characters 6-48:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1809, characters 0-20:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1933, characters 8-58:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1938, characters 1-76:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 1024, characters 2-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1927, characters 8-59:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1887, characters 8-47:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 1093, characters 2-89:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 1093, characters 4-71:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 1116, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1823, characters 2-64:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1741, characters 2-31:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1948, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1874, characters 2-47:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1843, characters 3-54:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FSetProperties.v", line 1132, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1923, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1921, characters 8-65:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1773, characters 2-31:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 1084, characters 4-11:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1849, characters 3-72:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1917, characters 1-78:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1990, characters 8-72:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1837, characters 3-49:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1954, characters 8-57:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1982, characters 1-115:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1934, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1723, characters 2-31:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 1994, characters 1-72:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 966, characters 2-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 2023, characters 1-49:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2021, characters 2-14:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 2001, characters 8-73:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 2005, characters 1-87:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2120, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 1103, characters 6-39:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2090, characters 2-32:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1998, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1890, characters 2-42:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2164, characters 2-73:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2137, characters 2-73:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2210, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapPositive.v", line 1115, characters 4-23:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2198, characters 2-35:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2108, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2225, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 1966, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2061, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapFacts.v", line 2074, characters 2-9:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./FMapAVL.v", line 2013, characters 1-55:
+Error: Anomaly "Unable to handle arbitrary u+k <= v constraints."
+Please report at http://coq.inria.fr/bugs/.
+
