@@ -1,0 +1,154 @@
+File "./Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros [Hl Hr]; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: destruct H; only 1: reflexivity; only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+s1 : Stream
+a : A
+s : Stream
+Hl : A
+Hr : Stream
+EqSt_reflex :
+forall s2 : Stream, EqSt (Cons Hl Hr) s2 -> EqSt s2 (Cons Hl Hr)
+s2 : Stream
+e : EqSt (Cons Hl Hr) s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 e
+                                                 with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun
+                                                 (_ : 
+                                                 hd s2 = hd (Cons Hl Hr))
+                                                 (H : 
+                                                 EqSt 
+                                                 (tl s2) 
+                                                 (tl (Cons Hl Hr))) => H) x
+                                                 x0
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt (Cons Hl Hr) s2) =>
+                          eqst s2 (Cons Hl Hr)
+                            match H with
+                            | eqst _ _ x x0 =>
+                                (fun (H0 : hd (Cons Hl Hr) = hd s2)
+                                   (_ : EqSt (tl (Cons Hl Hr)) (tl s2)) =>
+                                 let a := hd s2 in
+                                 match
+                                   H0 in (_ = a0)
+                                   return (a0 = hd (Cons Hl Hr))
+                                 with
+                                 | eq_refl => eq_refl
+                                 end) x x0
+                            end
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt (Cons Hl Hr) s3 ->
+                               EqSt (tl s3) (tl (Cons Hl Hr)) :=
+                               fun (s3 : Stream) (H0 : EqSt (Cons Hl Hr) s3)
+                               =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ x x0 =>
+                                   (fun (_ : hd s3 = hd (Cons Hl Hr))
+                                      (H1 : EqSt (tl s3) (tl (Cons Hl Hr)))
+                                    => H1) x x0
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrbool.v", line 1702, characters 0-62:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./OrderedType.v", line 255, characters 7-59:
+Error: Anomaly "in retyping: unknown meta 61657."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ChoiceFacts.v", line 650, characters 2-83:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ssrbool.v", line 2226, characters 7-40:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./PeanoNat.v", line 1028, characters 2-37:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros HSE H0 HSO n HO%Odd_alt_Odd; only 1: apply Odd_alt_Even_alt_ind with Q; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
+Typing error:
+Pattern-matching expression on an object of inductive type and has invalid information."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./PeanoNat.v", line 1038, characters 2-39:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros HSE H0 HSO n HE%Even_alt_Even; only 1: apply Even_alt_Odd_alt_ind with P; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
+Typing error:
+Pattern-matching expression on an object of inductive type and has invalid information."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./Streams.v", line 167, characters 0-31:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros [? ?]; only 1: coinduction ltac:(EqSt_reflex); only 1: auto; only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+P, Inv : Stream -> Prop
+InvThenP : forall x : Stream, Inv x -> P x
+InvIsStable : forall x : Stream, Inv x -> Inv (tl x)
+x : Stream
+a : A
+s : Stream
+a0 : A
+s0 : Stream
+EqSt_reflex : Inv (Cons a0 s0) -> ForAll (Cons a0 s0)
+i : Inv (Cons a0 s0)
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex i
+                                                 with
+                                                 | HereAndFurther x x0 =>
+                                                 (fun 
+                                                 (_ : P (Cons a0 s0))
+                                                 (H : 
+                                                 ForAll 
+                                                 (tl (Cons a0 s0))) => H) x
+                                                 x0
+                                                 end".
+Recursive definition is: "fun H : Inv (Cons a0 s0) =>
+                          HereAndFurther (InvThenP H)
+                            (let H0 :
+                               Inv (Cons a0 s0) -> ForAll (tl (Cons a0 s0)) :=
+                               fun H0 : Inv (Cons a0 s0) =>
+                               match EqSt_reflex H0 with
+                               | HereAndFurther x x0 =>
+                                   (fun (_ : P (Cons a0 s0))
+                                      (H1 : ForAll (tl (Cons a0 s0))) => H1)
+                                     x x0
+                               end in
+                             H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ClassicalFacts.v", line 652, characters 2-70:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ClassicalFacts.v", line 665, characters 2-8:
+Error: Anomaly "in retyping: Non-functional construction."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./NOrder.v", line 56, characters 49-58:
+Warning: Notation lt_irrefl is deprecated since 8.16.
+The Arith.Lt file is obsolete. Use Nat.lt_irrefl instead.
+[deprecated-syntactic-definition,deprecated]
+File "./ConstructiveCauchyRealsMult.v", line 766, characters 2-45:
+Error: Anomaly "in retyping: variable c unbound."
+Please report at http://coq.inria.fr/bugs/.
+
