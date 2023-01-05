@@ -1,38 +1,7 @@
-  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /home/piepejel/projects/coq-benchmarks/temp/pip-req-build-jny6sf9t
+  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-dv8qlcck
   Running command git rev-parse -q --verify 'sha^89e3d7318179fc50644c35dcdf92989f5ae6a77a'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' 89e3d7318179fc50644c35dcdf92989f5ae6a77a
   Running command git checkout -q 89e3d7318179fc50644c35dcdf92989f5ae6a77a
 WARNING: You are using pip version 21.2.3; however, version 22.3.1 is available.
-You should consider upgrading via the '/home/piepejel/projects/builddir/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
-[NOTE] coq-tactician-stdlib is not installed.
-
-[NOTE] Package coq-graph2tac is already pinned to git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#2d661fbb48d64f07db750555fc02356d031cca90 (version ~dev).
-[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j127".
-
-#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
-# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-01-03 09:30
-# path                 ~/projects/builddir/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
-# command              ~/projects/builddir/opam-root/bench/bin/tactician exec -- make -j127
-# exit-code            2
-# env-file             ~/projects/builddir/opam-root/log/coq-tactician-stdlib-65089-a0c3b0.env
-# output-file          ~/projects/builddir/opam-root/log/coq-tactician-stdlib-65089-a0c3b0.out
-### output ###
-# [...]
-# File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
-# Warning:
-# Tactician found a bug in it's tactical decomposition. Please report.
-# intros s x y ->
-# intros s;
-#  (intros x;
-#    (intros y;
-#      (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
-# 
-# make: *** [theories/FSets/FSetPositive.vo] Killed
-# make: *** [theories/FSets/FSetPositive.vo] Deleting file `theories/FSets/FSetPositive.glob'
-# make: *** Waiting for unfinished jobs....
-
-2023-01-05 14:52:07.885591+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
-  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
-Abnormal exit code for build worker on host amd-01.cluster. Code: 254
+You should consider upgrading via the '/lscratch/piepejel/build/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+[NOTE] Requirement for system packages capnproto, capnproto-devel and epel-release overridden in this switch. Use `opam option depext-bypass-=capnproto,capnproto-devel,epel-release' to revert.
