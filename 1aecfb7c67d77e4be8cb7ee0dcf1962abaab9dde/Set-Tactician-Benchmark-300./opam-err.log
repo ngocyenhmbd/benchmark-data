@@ -1,0 +1,73 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-j68mhbds
+  Running command git rev-parse -q --verify 'sha^16ef6b8c72d9a027c3fd025f230a6fd2313b20eb'
+  Running command git fetch -q https://github.com/IBM/graph2tac.git 16ef6b8c72d9a027c3fd025f230a6fd2313b20eb
+  Running command git checkout -q 16ef6b8c72d9a027c3fd025f230a6fd2313b20eb
+  Running command git clone --filter=blob:none --quiet 'https://****@github.com/coq-tactician/coq-tactician-reinforce' /tmp/pip-install-b8himxdv/pytact_4c7efe0641d34fea820337f112fe35e1
+  Running command git submodule update --init --recursive -q
+  error: subprocess-exited-with-error
+  
+  × Building wheel for pytact (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [54 lines of output]
+      /tmp/pip-build-env-41ydv_ai/overlay/lib/python3.10/site-packages/setuptools/config/pyprojecttoml.py:108: _BetaConfiguration: Support for `[tool.setuptools]` in `pyproject.toml` is still *beta*.
+        warnings.warn(msg, _BetaConfiguration)
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.linux-x86_64-cpython-310
+      creating build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/__init__.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/common.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/fake_coq_client.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/fake_coq_reinforce_server.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/fake_python_server.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/generate_api.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_sanity_check.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_visualize.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_visualize_browse.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/oracle_server.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/prover.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/read_graph.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/repack.py -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/visualisation_webserver.py -> build/lib.linux-x86_64-cpython-310/pytact
+      running egg_info
+      writing pytact.egg-info/PKG-INFO
+      writing dependency_links to pytact.egg-info/dependency_links.txt
+      writing entry points to pytact.egg-info/entry_points.txt
+      writing requirements to pytact.egg-info/requires.txt
+      writing top-level names to pytact.egg-info/top_level.txt
+      reading manifest file 'pytact.egg-info/SOURCES.txt'
+      adding license file 'LICENSE.md'
+      writing manifest file 'pytact.egg-info/SOURCES.txt'
+      copying pytact/data_reader.cpp -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/data_reader.pyx -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_api.capnp -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_api.capnp.cpp -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_api_capnp_cython.cpp -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_api_capnp_cython.pxd -> build/lib.linux-x86_64-cpython-310/pytact
+      copying pytact/graph_api_capnp_cython.pyx -> build/lib.linux-x86_64-cpython-310/pytact
+      creating build/lib.linux-x86_64-cpython-310/pytact/templates
+      copying pytact/templates/visualizer.html -> build/lib.linux-x86_64-cpython-310/pytact/templates
+      creating build/lib.linux-x86_64-cpython-310/pytact/tests
+      copying pytact/tests/TestReinforceStdin.v -> build/lib.linux-x86_64-cpython-310/pytact/tests
+      copying pytact/tests/TestReinforceTcp.v -> build/lib.linux-x86_64-cpython-310/pytact/tests
+      copying pytact/tests/prop4.txt -> build/lib.linux-x86_64-cpython-310/pytact/tests
+      running build_ext
+      building 'pytact.graph_api_capnp_cython' extension
+      creating build/temp.linux-x86_64-cpython-310
+      creating build/temp.linux-x86_64-cpython-310/pytact
+      gcc -pthread -B /dccstor/mathzero/benchmark2/venv/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /dccstor/mathzero/benchmark2/venv/include -fPIC -O2 -isystem /dccstor/mathzero/benchmark2/venv/include -fPIC -Ipytact -I/tmp/pip-build-env-41ydv_ai/overlay/lib/python3.10/site-packages -I/tmp/tactician.tmp.xuBZkj/target-source/venv/include -I/dccstor/mathzero/benchmark2/venv/include/python3.10 -c pytact/graph_api.capnp.cpp -o build/temp.linux-x86_64-cpython-310/pytact/graph_api.capnp.o -O3
+      In file included from pytact/graph_api.capnp.cpp:4:
+      pytact/graph_api.capnp.h:13:2: error: #error "Version mismatch between generated code and library headers.  You must use the same version of the Cap'n Proto compiler and library."
+         13 | #error "Version mismatch between generated code and library headers.  You must use the same version of the Cap'n Proto compiler and library."
+            |  ^~~~~
+      error: command '/opt/share/gcc-10.1.0/x86_64/bin/gcc' failed with exit code 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pytact
+ERROR: Could not build wheels for pytact, which is required to install pyproject.toml-based projects
+
+[notice] A new release of pip available: 22.2.1 -> 22.3.1
+[notice] To update, run: pip install --upgrade pip
