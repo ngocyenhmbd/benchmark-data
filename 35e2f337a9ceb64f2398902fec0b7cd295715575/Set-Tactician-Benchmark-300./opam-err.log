@@ -1,0 +1,30 @@
+  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-5dm_8znh
+  Running command git rev-parse -q --verify 'sha^c371a448a419450dbb4f9d10e7e1a91779e4c59c'
+  Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' c371a448a419450dbb4f9d10e7e1a91779e4c59c
+  Running command git checkout -q c371a448a419450dbb4f9d10e7e1a91779e4c59c
+WARNING: You are using pip version 21.2.3; however, version 22.3.1 is available.
+You should consider upgrading via the '/lscratch/piepejel/build/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+[ERROR] The compilation of coq.8.11.dev failed at "make -j79".
+
+#=== ERROR while compiling coq.8.11.dev =======================================#
+# context              2.1.4 | linux/x86_64 |  | git+ssh://git@github.com/LasseBlaauwbroek/custom-archive.git
+# path                 /lscratch/piepejel/build/opam-root/bench/.opam-switch/build/coq.8.11.dev
+# command              /usr/bin/make -j79
+# exit-code            2
+# env-file             /tmp/opam-xxx-78209/coq-78209-ddc8d3.env
+# output-file          /tmp/opam-xxx-78209/coq-78209-ddc8d3.out
+### output ###
+# [...]
+# COQC      theories/FSets/FMapFullAVL.v
+# COQC      theories/Numbers/Cyclic/Int31/Cyclic31.v
+# COQC      theories/Numbers/Cyclic/ZModulo/ZModulo.v
+# COQC      theories/Numbers/Cyclic/Abstract/NZCyclic.v
+# COQC      plugins/btauto/Reflect.v
+# COQC      theories/MSets/MSets.v
+# COQC      plugins/btauto/Btauto.v
+# make[1]: *** [theories/Numbers/Cyclic/Int31/Cyclic31.vo] Segmentation fault (core dumped)
+# make[1]: *** [theories/Numbers/Cyclic/Int31/Cyclic31.vo] Deleting file `theories/Numbers/Cyclic/Int31/Cyclic31.glob'
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory `/lscratch/piepejel/build/opam-root/bench/.opam-switch/build/coq.8.11.dev'
+# make: *** [submake] Error 2
+
