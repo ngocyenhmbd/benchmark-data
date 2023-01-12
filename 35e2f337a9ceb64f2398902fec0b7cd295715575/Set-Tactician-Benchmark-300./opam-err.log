@@ -1,4 +1,4 @@
-  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-qj9ung6z
+  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-qte96kk2
   Running command git rev-parse -q --verify 'sha^c371a448a419450dbb4f9d10e7e1a91779e4c59c'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' c371a448a419450dbb4f9d10e7e1a91779e4c59c
   Running command git checkout -q c371a448a419450dbb4f9d10e7e1a91779e4c59c
@@ -14,8 +14,8 @@ You should consider upgrading via the '/lscratch/piepejel/target-source/venv/bin
 # path                 /lscratch/piepejel/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
 # command              /lscratch/piepejel/opam-root/bench/bin/tactician exec -- make -j79
 # exit-code            2
-# env-file             /lscratch/piepejel/opam-root/log/coq-tactician-stdlib-76637-e927d0.env
-# output-file          /lscratch/piepejel/opam-root/log/coq-tactician-stdlib-76637-e927d0.out
+# env-file             /lscratch/piepejel/opam-root/log/coq-tactician-stdlib-13433-21371b.env
+# output-file          /lscratch/piepejel/opam-root/log/coq-tactician-stdlib-13433-21371b.out
 ### output ###
 # intros s;
 # [...]
@@ -23,15 +23,15 @@ You should consider upgrading via the '/lscratch/piepejel/target-source/venv/bin
 #      (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
 # 
 # coqc theories/MSets/MSetFacts.v
-# coqc theories/FSets/FMapFacts.v
 # coqc theories/FSets/FSetFacts.v
-# coqc theories/QArith/QArith.v
+# coqc theories/FSets/FMapFacts.v
 # coqc theories/Numbers/DecimalZ.v
+# coqc theories/QArith/QArith.v
 # make: *** [plugins/micromega/ZCoeff.vo] Killed
 # make: *** [plugins/micromega/ZCoeff.vo] Deleting file `plugins/micromega/ZCoeff.glob'
 # make: *** Waiting for unfinished jobs....
 
-2023-01-12 12:02:17.566989+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+2023-01-12 12:55:59.307183+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
   ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
     "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
     "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
