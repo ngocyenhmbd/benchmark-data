@@ -1,4 +1,4 @@
-  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-skrkgr5n
+  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-vosmfc44
   Running command git rev-parse -q --verify 'sha^c371a448a419450dbb4f9d10e7e1a91779e4c59c'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' c371a448a419450dbb4f9d10e7e1a91779e4c59c
   Running command git checkout -q c371a448a419450dbb4f9d10e7e1a91779e4c59c
@@ -7,19 +7,32 @@ You should consider upgrading via the '/lscratch/piepejel/build/target-source/ve
 [NOTE] coq-tactician-stdlib is not installed.
 
 [NOTE] Package coq-graph2tac is already pinned to git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#35e2f337a9ceb64f2398902fec0b7cd295715575 (version ~dev).
-[ERROR] The compilation of coq-graph2tac.~dev failed at "tar xzf model.tar.gz --one-top-level --strip-components 1".
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j79".
 
-#=== ERROR while compiling coq-graph2tac.~dev =================================#
-# context              2.1.4 | linux/x86_64 |  | pinned(git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#35e2f337a9ceb64f2398902fec0b7cd295715575#35e2f337)
-# path                 /lscratch/piepejel/build/opam-root/bench/.opam-switch/build/coq-graph2tac.~dev
-# command              /usr/bin/tar xzf model.tar.gz --one-top-level --strip-components 1
-# exit-code            64
-# env-file             /lscratch/piepejel/build/opam-root/log/coq-graph2tac-39366-57fa82.env
-# output-file          /lscratch/piepejel/build/opam-root/log/coq-graph2tac-39366-57fa82.out
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.4 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-01-11 10:30
+# path                 /lscratch/piepejel/build/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /lscratch/piepejel/build/opam-root/bench/bin/tactician exec -- make -j79
+# exit-code            2
+# env-file             /lscratch/piepejel/build/opam-root/log/coq-tactician-stdlib-80352-623769.env
+# output-file          /lscratch/piepejel/build/opam-root/log/coq-tactician-stdlib-80352-623769.out
 ### output ###
-# /usr/bin/tar: unrecognized option '--one-top-level'
-# Try `tar --help' or `tar --usage' for more information.
+# intros s;
+# [...]
+#    (intros y;
+#      (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+# 
+# coqc theories/MSets/MSetFacts.v
+# coqc theories/FSets/FSetFacts.v
+# coqc theories/FSets/FMapFacts.v
+# coqc theories/Numbers/DecimalZ.v
+# coqc theories/QArith/QArith.v
+# make: *** [plugins/micromega/ZCoeff.vo] Killed
+# make: *** [plugins/micromega/ZCoeff.vo] Deleting file `plugins/micromega/ZCoeff.glob'
+# make: *** Waiting for unfinished jobs....
 
-
-The former state can be restored with:
-    /home/piepejel/.opam/tactician/bin/tactician-benchmark switch import "/lscratch/piepejel/build/opam-root/bench/.opam-switch/backup/state-20230112101603.export"
+2023-01-12 11:38:49.998017+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host dgx-3.cluster. Code: 254
