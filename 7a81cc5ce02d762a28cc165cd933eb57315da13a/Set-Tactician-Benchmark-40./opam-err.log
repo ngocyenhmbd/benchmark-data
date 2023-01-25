@@ -2,3 +2,218 @@
        option depext-bypass-=ruby' to revert.
 [1;34m[NOTE][0m Requirement for system package libtool overridden in this switch. Use
        `opam option depext-bypass-=libtool' to revert.
+[1;34m[NOTE][0m Package coq-coqprime-generator is already installed (current version is
+       1.1.1).
+[1;34m[NOTE][0m Package coq-tactician-stdlib is already installed (current version is
+       8.16.dev).
+[31m[ERROR][0m The compilation of bonak.dev failed at "dune build".
+[31m[ERROR][0m The compilation of coq-io-list.1.1.0 failed at "make -j55".
+[31m[ERROR][0m The compilation of coq-goedel.8.13.0 failed at "make -j55".
+[31m[ERROR][0m The compilation of coq-mtac2.1.4+8.16 failed at "make -j55".
+[31m[ERROR][0m The compilation of coq-metacoq-translations.1.1.1+8.16 failed at "make
+        -j 55 -C translations".
+[31m[ERROR][0m The compilation of coq-mathcomp-algebra-tactics.1.0.0 failed at "make
+        -j55".
+[31m[ERROR][0m The compilation of coq-prosa.0.5 failed at "make -j55".
+[31m[ERROR][0m The compilation of coq-fiat-crypto.0.0.17 failed at "make -j55
+        EXTERNAL_DEPENDENCIES=1 SKIP_COQSCRIPTS_INCLUDE=1 coq
+        standalone-ocaml".
+[31m[ERROR][0m The compilation of coq-metacoq-safechecker.1.1.1+8.16 failed at "make
+        -j 55 -C safechecker".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-prosa.0.5[0m [31m======================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-prosa.0.5
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-prosa-41292-329c43.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-prosa-41292-329c43.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mmake[1]: *** [model/priority/gel.vo] Error 1
+[33m# [0mmake[1]: *** Waiting for unfinished jobs....
+[33m# [0mFile "./util/nondecreasing.v", line 825, characters 8-65:
+[33m# [0mWarning:
+[33m# [0mTactician detected a printing/parsing problem for the following tactic. destruct xs as [| x1 xs], ys as [| y1 ys] Please report.
+[33m# [0mFile "./util/nondecreasing.v", line 826, characters 8-65:
+[33m# [0mWarning:
+[33m# [0mTactician detected a printing/parsing problem for the following tactic. destruct xs as [| x2 xs], ys as [| y2 ys] Please report.
+[33m# [0mFile "./util/nondecreasing.v", line 837, characters 8-65:
+[33m# [0mWarning:
+[33m# [0mTactician detected a printing/parsing problem for the following tactic. destruct xs as [| x3 xs], ys as [| y3 ys] Please report.
+[33m# [0mmake: *** [all] Error 2
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-mtac2.1.4+8.16[0m [31m=================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-mtac2.1.4+8.16
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-mtac2-41292-424e1a.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-mtac2-41292-424e1a.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mnot
+[33m# [0m     : Prop -> Prop
+[33m# [0m0 <> 1
+[33m# [0m     : Prop
+[33m# [0mplus_comm
+[33m# [0m     : forall n m : nat, @eq nat (Nat.add n m) (Nat.add m n)
+[33m# [0mAxioms:
+[33m# [0mplus_comm : forall n m : nat, @eq nat (Nat.add n m) (Nat.add m n)
+[33m# [0mfunctional_extensionality
+[33m# [0m  : forall (X Y : Type) (f g : forall _ : X, Y)
+[33m# [0m      (_ : forall x : X, @eq Y (f x) (g x)), @eq (forall _ : X, Y) f g
+[33m# [0mmake: *** [all] Error 2
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-metacoq-translations.1.1.1+8.16[0m [31m================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-metacoq-translations.1.1.1+8.16
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j 55 -C translations
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-metacoq-translations-41292-c13635.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-metacoq-translations-41292-c13635.out
+[33m### output ###
+[0m[33m# [0menvironment.
+[33m# [0m[...]
+[33m# [0mmake[2]: *** [MiniHoTT.vo] Error 1
+[33m# [0mmake[2]: *** Waiting for unfinished jobs....
+[33m# [0mFile "./MiniHoTT_paths.v", line 70, characters 2-27:
+[33m# [0mError: The reference Coq.Init.Ltac.reflexivity was not found in the current
+[33m# [0menvironment.
+[33m# [0m
+[33m# [0mmake[2]: *** [MiniHoTT_paths.vo] Error 1
+[33m# [0mmake[1]: *** [all] Error 2
+[33m# [0mmake[1]: Leaving directory `/lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-metacoq-translations.1.1.1+8.16/translations'
+[33m# [0mmake: *** [all] Error 2
+[33m# [0mmake: Leaving directory `/lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-metacoq-translations.1.1.1+8.16/translations'
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-metacoq-safechecker.1.1.1+8.16[0m [31m=================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-metacoq-safechecker.1.1.1+8.16
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j 55 -C safechecker
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-metacoq-safechecker-41292-c80059.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-metacoq-safechecker-41292-c80059.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mCOQC theories/PCUICWfEnvImpl.v
+[33m# [0mFile "./theories/PCUICSafeReduce.v", line 1818, characters 0-11:
+[33m# [0mError:
+[33m# [0mAnomaly
+[33m# [0m"File "kernel/cooking.ml", line 143, characters 15-21: Assertion failed."
+[33m# [0mPlease report at http://coq.inria.fr/bugs/.
+[33m# [0m
+[33m# [0mmake[2]: *** [theories/PCUICSafeReduce.vo] Error 129
+[33m# [0mmake[1]: *** [all] Error 2
+[33m# [0mmake[1]: Leaving directory `/lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-metacoq-safechecker.1.1.1+8.16/safechecker'
+[33m# [0mmake: *** [theory] Error 2
+[33m# [0mmake: Leaving directory `/lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-metacoq-safechecker.1.1.1+8.16/safechecker'
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-mathcomp-algebra-tactics.1.0.0[0m [31m=================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-mathcomp-algebra-tactics.1.0.0
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-mathcomp-algebra-tactics-41292-074f97.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-mathcomp-algebra-tactics-41292-074f97.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mWarning:
+[33m# [0mNew coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[33m# [0m[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[33m# [0m[ambiguous-paths,typechecker]
+[33m# [0mFile "./theories/ring.v", line 5, characters 0-39:
+[33m# [0mError: Required library ssrZ matches several files in path (found
+[33m# [0m/lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/lib/coq/user-contrib/mathcomp/word/ssrZ.vo and
+[33m# [0m/lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/lib/coq/user-contrib/mathcomp/zify/ssrZ.vo).
+[33m# [0m
+[33m# [0mmake[2]: *** [theories/ring.vo] Error 1
+[33m# [0mmake[1]: *** [all] Error 2
+[33m# [0mmake: *** [invoke-coqmakefile] Error 2
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-io-list.1.1.0[0m [31m==================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-io-list.1.1.0
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-io-list-41292-72bff9.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-io-list-41292-72bff9.out
+[33m### output ###
+[0m[33m# [0mCOQDEP VFILES
+[33m# [0mCOQC src/List.v
+[33m# [0mFile "./src/List.v", line 31, characters 9-10:
+[33m# [0mError: Syntax error: [identref] expected after 'let!' (in [binder_constr]).
+[33m# [0m
+[33m# [0mmake[1]: *** [src/List.vo] Error 1
+[33m# [0mmake: *** [all] Error 2
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-goedel.8.13.0[0m [31m==================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-goedel.8.13.0
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-goedel-41292-f820e7.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-goedel-41292-f820e7.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0m[deprecated-syntactic-definition,deprecated]
+[33m# [0mFile "./theories/PRrepresentable.v", line 1216, characters 24-34:
+[33m# [0mWarning: Notation lt_n_Sm_le is deprecated since 8.16.
+[33m# [0mThe Arith.Lt file is obsolete. Use the bidirectional version Nat.lt_succ_r instead.
+[33m# [0m[deprecated-syntactic-definition,deprecated]
+[33m# [0mFile "./theories/PRrepresentable.v", line 1227, characters 0-15:
+[33m# [0mError: No primitive equality found.
+[33m# [0m
+[33m# [0mmake[2]: *** [theories/PRrepresentable.vo] Error 1
+[33m# [0mmake[1]: *** [all] Error 2
+[33m# [0mmake[1]: Leaving directory `/lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-goedel.8.13.0'
+[33m# [0mmake: *** [all] Error 2
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-fiat-crypto.0.0.17[0m [31m=============================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/coq-fiat-crypto.0.0.17
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- make -j55 EXTERNAL_DEPENDENCIES=1 SKIP_COQSCRIPTS_INCLUDE=1 coq standalone-ocaml
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/coq-fiat-crypto-41292-e050f8.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/coq-fiat-crypto-41292-e050f8.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mWarning: native_compute disabled at configure time; falling back to
+[33m# [0mvm_compute. [native-compute-disabled,native-compiler]
+[33m# [0mFinished transaction in 2.006 secs (2.003u,0.002s) (successful)
+[33m# [0mFinished transaction in 0. secs (0.u,0.s) (successful)
+[33m# [0mFinished transaction in 19.072 secs (18.846u,0.222s) (successful)
+[33m# [0mFinished transaction in 6.726 secs (6.545u,0.178s) (successful)
+[33m# [0mFinished transaction in 0. secs (0.u,0.s) (successful)
+[33m# [0mFinished transaction in 0. secs (0.u,0.s) (successful)
+[33m# [0mFinished transaction in 1.673 secs (1.664u,0.007s) (successful)
+[33m# [0mFile "./src/Fancy/Compiler.v", line 973, characters 6-512:
+[33m# [0mWarning: The proof has remaining shelved goals
+[33m# [0m[remaining-shelved-goals,tactics]
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling bonak.dev[0m [31m==========================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-01-23 16:00
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/.opam-switch/build/bonak.dev
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.GN8HgI/opam-root/bench/bin/tactician exec -- dune build
+[33m#[0m [33mexit-code[0m   1
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-41292/bonak-41292-ee245e.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-41292/bonak-41292-ee245e.out
+[33m### output ###
+[0m[33m# [0mFile "./theories/νType/νType.v", line 472, characters 59-66:
+[33m# [0mError: c is used in conclusion.
+[33m# [0m
+
+2023-01-25 06:42:25.097530+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+tactician-benchmark: error: node-04: task 0: Exited with exit code 254
+Abnormal exit code for build worker on host node-04.cluster. Code: 254
