@@ -1,114 +1,2542 @@
-File "./theories/Structures/OrdersLists.v", line 100, characters 2-33:
-Error: Anomaly "in retyping: unknown meta 134528."
-Please report at http://coq.inria.fr/bugs/.
-
-File "./theories/Reals/Rtrigo1.v", line 731, characters 2-68:
-Error: Stack overflow.
-
-File "./theories/micromega/ZMicromega.v", line 1308, characters 2-25:
-Error: Stack overflow.
-
-File "./theories/ssr/ssrbool.v", line 1878, characters 7-21:
+File "./classic/analysis/apa/bertogna_fp_comp.v", line 105, characters 8-49:
 Error: Anomaly "tclZERO receiving critical error: Timeout!"
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Lists/Streams.v", line 167, characters 0-31:
-Error:
-Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: intros r s; only 1: coinduction ltac:(EqSt_reflex); only 1: auto).
-Typing error:
-Recursive definition of EqSt_reflex is ill-formed.
-In environment
-A : Type
-P, Inv : Stream -> Prop
-InvThenP : forall x : Stream, Inv x -> P x
-InvIsStable : forall x : Stream, Inv x -> Inv (tl x)
-r : Stream
-s : Inv r
-EqSt_reflex : ForAll r
-Invalid recursive call in the argument of "match" in "match EqSt_reflex with
-                                                 | HereAndFurther x x0 =>
-                                                 (fun 
-                                                 (_ : P r)
-                                                 (H : ForAll (tl r)) => H) x
-                                                 x0
-                                                 end".
-Recursive definition is: "HereAndFurther (InvThenP s)
-                            (let H : ForAll (tl r) :=
-                               match EqSt_reflex with
-                               | HereAndFurther x x0 =>
-                                   (fun (_ : P r) (H : ForAll (tl r)) => H) x
-                                     x0
-                               end in
-                             H)"."
+File "./classic/model/schedule/uni/jitter/busy_interval.v", line 101, characters 12-155:
+Error: Anomaly "Evar ?X6278 was not declared."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Lists/Streams.v", line 200, characters 0-11:
-Error:
-Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: auto; only 1: assumption; only 1: inversion 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(Eq_sym); only 1: assumption).
-Typing error:
-Recursive definition of ForAll_coind is ill-formed.
-In environment
-A, B : Type
-f : A -> B
-P : Stream B -> Prop
-S : Stream A
-ForAll_coind : ForAll (fun s : Stream A => P (map s)) S -> ForAll P (map S)
-H : ForAll (fun s : Stream A => P (map s)) S
-Invalid recursive call in the argument of "match" in "match
-                                                 ForAll_coind H
-                                                 with
-                                                 | HereAndFurther _ x x0 =>
-                                                 (fun 
-                                                 (_ : P (map S))
-                                                 (H : ForAll P (tl (map S)))
-                                                 => H) x x0
-                                                 end".
-Recursive definition is: "fun H : ForAll (fun s : Stream A => P (map s)) S =>
-                          HereAndFurther (map S)
-                            match H with
-                            | HereAndFurther _ x x0 =>
-                                (fun (H0 : P (map S))
-                                   (_ : ForAll
-                                          (fun s : Stream A => P (map s))
-                                          (tl S)) => H0) x x0
-                            end
-                            (let H0 :
-                               ForAll (fun s : Stream A => P (map s)) S ->
-                               ForAll P (tl (map S)) :=
-                               fun
-                                 H0 : ForAll (fun s : Stream A => P (map s))
-                                        S =>
-                               match ForAll_coind H0 with
-                               | HereAndFurther _ x x0 =>
-                                   (fun (_ : P (map S))
-                                      (H1 : ForAll P (tl (map S))) => H1) x
-                                     x0
-                               end in
-                             H0 H)"."
+File "./results/gel/rta/bounded_pi.v", line 194, characters 10-86:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Arith/PeanoNat.v", line 1022, characters 2-37:
-Error:
-Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: intros HSE H0 HSO n HO%Odd_alt_Odd; only 1: apply Odd_alt_Even_alt_ind with Q; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
-Typing error:
-Pattern-matching expression on an object of inductive type and has invalid information."
+File "./classic/analysis/apa/interference_bound_edf.v", line 255, characters 10-56:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Arith/PeanoNat.v", line 1032, characters 2-39:
-Error:
-Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: intros HSE H0 HSO n HE%Even_alt_Even; only 1: apply Even_alt_Odd_alt_ind with P; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
-Typing error:
-Pattern-matching expression on an object of inductive type and has invalid information."
+File "./classic/analysis/global/jitter/bertogna_fp_comp.v", line 100, characters 8-49:
+Error: Not enough goals
+
+File "./classic/model/schedule/uni/susp/suspension_intervals.v", line 132, characters 12-198:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff SAME: forall delta, delta <= duration -> service sched j (suspension_start + delta) = service sched j suspension_start
+File "./analysis/facts/edf_definitions.v", line 69, characters 4-86:
+Warning:
+Tactician is having problems with the following tactic. Please report. ssrhavefwd
+File "./results/fixed_priority/rta/bounded_pi.v", line 190, characters 6-93:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. edestruct (exists_busy_interval with (delta := L)) as [t1 [t2 [T1 [T2 BI]]]] Please report.
+File "./classic/implementation/apa/bertogna_edf_example.v", line 72, characters 8-22:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2250, characters 1-34:
+File "./classic/analysis/global/jitter/bertogna_fp_comp.v", line 131, characters 8-39:
+Error: Not enough goals
+
+File "./classic/implementation/uni/basic/schedule_tdma.v", line 82, characters 8-97:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ops_for_v.v", line 40, characters 0-26:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./analysis/facts/model/preemption.v", line 50, characters 4-33:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/implementation/global/basic/bertogna_fp_example.v", line 113, characters 8-49:
+Error: Not enough goals
+
+File "./classic/implementation/global/basic/bertogna_edf_example.v", line 57, characters 6-76:
+Error: Not enough goals
+
+File "./classic/implementation/uni/jitter/fp_rta_example.v", line 63, characters 6-74:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff EQ: RESP = [:: (tsk1, Some 2); (tsk2, Some 2); (tsk3, Some 3)]
+File "./theories/ops_for_b.v", line 20, characters 0-47:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./results/fixed_priority/rta/bounded_pi.v", line 273, characters 8-93:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/implementation/uni/basic/tdma_rta_example.v", line 70, characters 4-15:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/parallel/bertogna_edf_comp.v", line 128, characters 8-29:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson.v", line 39, characters 7-44:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/model/schedule/global/jitter/constrained_deadlines.v", line 299, characters 8-40:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/apa/bertogna_edf_comp.v", line 137, characters 8-29:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./model/priority/classes.v", line 57, characters 0-48:
+Warning: FP_to_JLFP does not respect the uniform inheritance condition.
+[uniform-inheritance,typechecker]
+File "./classic/util/tactics.v", line 73, characters 0-37:
+Warning: The default value for rewriting hint locality is currently "local"
+in a section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding rewriting hints outside of sections
+without specifying an explicit locality attribute is therefore deprecated. It
+is recommended to use "export" whenever possible. Use the attributes
+#[local], #[global] and #[export] depending on your choice. For example:
+"#[export] Hint Rewrite foo : bar." This is supported since Coq 8.14.
+[deprecated-hint-rewrite-without-locality,deprecated]
+File "./util/seqset.v", line 22, characters 2-91:
+Warning: Ignoring canonical projection to mem_seq by topred in
+mem_set_predType: redundant with mem_seq_predType
+[redundant-canonical-projection,typechecker]
+File "./util/seqset.v", line 25, characters 0-11:
+Warning: Ignoring canonical projection to mem_seq by topred in
+@mem_set_predType: redundant with mem_seq_predType
+[redundant-canonical-projection,typechecker]
+File "./classic/implementation/apa/bertogna_edf_example.v", line 102, characters 6-76:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/util/tactics.v", line 118, characters 0-72:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./classic/util/tactics.v", line 196, characters 0-1023:
+Warning: Collision between bound variables of name x
+[variable-collision,ltac]
+File "./implementation/facts/ideal_uni/prio_aware.v", line 80, characters 6-44:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/basic/bertogna_edf_comp.v", line 127, characters 8-29:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ops_for_v.v", line 56, characters 0-28:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/parallel/interference_bound_edf.v", line 297, characters 10-66:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/basic/interference_bound_edf.v", line 271, characters 10-66:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/b_props.v", line 41, characters 0-22:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/b_props.v", line 41, characters 0-22:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./theories/reduce_order.v", line 67, characters 0-62:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/jitter/bertogna_fp_comp.v", line 150, characters 8-39:
+Error: Not enough goals
+
+File "./classic/analysis/global/basic/bertogna_edf_theory.v", line 213, characters 10-511:
+Error: Not enough goals
+
+File "./theories/b_over_a_props.v", line 46, characters 0-134:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff {uUrec vUrec v}Urec1Pw1 w2:(* typeof *) (fun w1 w2 : int -> rat => _) : forall w1 w2 : int -> rat, w1 2 = w2 2 -> Urec w1 -> Urec w2 -> forall k : int, 2%:~R <= k -> w1 k = w2 k
+File "./classic/implementation/global/basic/bertogna_fp_example.v", line 123, characters 8-42:
+Error: Not enough goals
+
+File "./theories/z3irrational.v", line 41, characters 2-33:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+exists_big_modulus ltac:(M) rat => /=
+File "./theories/z3irrational.v", line 49, characters 0-25:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+exists_big_modulus ltac:(m) rat
+File "./theories/z3irrational.v", line 51, characters 2-38:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+wlog ltij :  i  j  hmi  hmj / (j < i)%N
+File "./analysis/facts/edf_definitions.v", line 110, characters 0-16:
+Warning:
+Tactician is having problems with the following tactic. Please report. ssrhavefwd
+File "./analysis/facts/edf_definitions.v", line 110, characters 0-16:
+Warning:
+Tactician is having problems with the following tactic. Please report. ssrhavefwd
+File "./theories/z3irrational.v", line 66, characters 2-30:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff maj: v j < 2%:Q * eps
+File "./theories/rat_of_Z.v", line 46, characters 7-51:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/basic/bertogna_fp_comp.v", line 187, characters 8-66:
+Error: Not enough goals
+
+File "./classic/analysis/apa/bertogna_edf_theory.v", line 226, characters 10-452:
+Error: Not enough goals
+
+File "./classic/analysis/uni/susp/sustainability/singlecost/reduction_properties.v", line 226, characters 8-70:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/implementation/global/jitter/bertogna_edf_example.v", line 108, characters 6-20:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/shift.v", line 41, characters 0-45:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/uni/susp/sustainability/allcosts/reduction_properties.v", line 198, characters 8-33:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/jitter/bertogna_fp_comp.v", line 188, characters 8-66:
+Error: Not enough goals
+
+File "./util/unit_growth.v", line 34, characters 6-144:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff DELTA: forall delta, f x1 <= y < f (x1 + delta) -> exists x_mid, x1 <= x_mid < x1 + delta /\ f x_mid = y
+File "./theories/ops_for_u.v", line 66, characters 0-30:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/apa/bertogna_edf_comp.v", line 149, characters 8-28:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/apa/interference_bound_edf.v", line 285, characters 10-66:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/similar.v", line 102, characters 0-34:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/seqmx.v", line 69, characters 0-222:
+Warning: The default value for Typeclasses Opaque and Typeclasses Transparent
+locality is currently "local" in a section and "global" otherwise, but is
+scheduled to change in a future release. For the time being, adding typeclass
+transparency hints outside of sections without specifying an explicit
+locality attribute is therefore deprecated. It is recommended to use "export"
+whenever possible. Use the attributes #[local], #[global] and #[export]
+depending on your choice. For example: "#[export] Typeclasses Transparent
+foo.". This is supported since Coq 8.15.
+[deprecated-typeclasses-transparency-without-locality,deprecated]
+File "./classic/analysis/global/parallel/interference_bound_edf.v", line 309, characters 10-22:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/basic/bertogna_edf_theory.v", line 232, characters 8-220:
+Error: Not enough goals
+
+File "./theories/z3irrational.v", line 84, characters 0-25:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+exists_big_modulus ltac:(M) rat
+File "./theories/z3irrational.v", line 86, characters 2-81:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff step1: \sum_(0 <= i0 < Posz i + 1 :> int) `|c i i0 * s i i0| < eps * a i
+File "./theories/z3irrational.v", line 87, characters 4-111:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: b_over_a_seq i = z3seq i + (\sum_(0 <= k < Posz i + 1 :> int) c i k * s i k) / a i
+File "./theories/ops_for_s.v", line 60, characters 0-38:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/uni/basic/tdma_wcrt_analysis.v", line 221, characters 8-37:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/poly_op.v", line 28, characters 0-63:
+Warning: The default value for Typeclasses Opaque and Typeclasses Transparent
+locality is currently "local" in a section and "global" otherwise, but is
+scheduled to change in a future release. For the time being, adding typeclass
+transparency hints outside of sections without specifying an explicit
+locality attribute is therefore deprecated. It is recommended to use "export"
+whenever possible. Use the attributes #[local], #[global] and #[export]
+depending on your choice. For example: "#[export] Typeclasses Transparent
+foo.". This is supported since Coq 8.15.
+[deprecated-typeclasses-transparency-without-locality,deprecated]
+File "./classic/analysis/apa/bertogna_fp_comp.v", line 231, characters 8-66:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/ssrcomplements.v", line 28, characters 29-43:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./analysis/facts/transform/replace_at.v", line 90, characters 9-31:
+Error: Anomaly "Evar ?X161895 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/a_props.v", line 43, characters 7-73:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/extra_mathcomp.v", line 14, characters 0-27:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/bareiss_eff.v", line 93, characters 0-73:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/reduce_order.v", line 83, characters 0-62:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/coherent.v", line 112, characters 0-48:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/s_props.v", line 22, characters 0-74:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff philippei1:(* typeof *) (fun i1 : nat => _) : forall i1 : nat, (0 < i1)%N -> (i1 <= i)%N -> i%:Q ^+ 2 <= U i1
+File "./theories/s_props.v", line 40, characters 0-36:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff maj: Posz i <= binomialz i i1
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ + _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ - _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ <= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ < _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ >= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ > _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ <= _ <= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ < _ <= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ <= _ < _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ < _ < _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./bigenough.v", line 4, characters 0-77:
+Warning: Notation "_ * _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./classic/analysis/uni/susp/sustainability/singlecost/reduction_properties.v", line 271, characters 10-94:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff NOTPEND: ~~ pending job_arrival inflated_job_cost sched_susp_highercost j_hp t
+File "./theories/b_props.v", line 81, characters 2-42:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/b_props.v", line 81, characters 2-42:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./theories/b_props.v", line 86, characters 2-41:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/b_props.v", line 86, characters 2-41:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./refinements/seqmx_complements.v", line 46, characters 0-58:
+Warning: The default value for Typeclasses Opaque and Typeclasses Transparent
+locality is currently "local" in a section and "global" otherwise, but is
+scheduled to change in a future release. For the time being, adding typeclass
+transparency hints outside of sections without specifying an explicit
+locality attribute is therefore deprecated. It is recommended to use "export"
+whenever possible. Use the attributes #[local], #[global] and #[export]
+depending on your choice. For example: "#[export] Typeclasses Transparent
+foo.". This is supported since Coq 8.15.
+[deprecated-typeclasses-transparency-without-locality,deprecated]
+File "./classic/model/schedule/uni/susp/last_execution.v", line 231, characters 10-59:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+wlog :  t1  t2 / t1 <= t2 => [EQ SERV EX1 EX2|LE]
+File "./theories/extra_cauchyreals.v", line 30, characters 0-32:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+pose_big_enough ltac:(i)
+File "./theories/posnum.v", line 82, characters 41-55:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/model/schedule/uni/limited/jlfp_instantiation.v", line 632, characters 10-60:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ring.v", line 4, characters 0-77:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ring.v", line 4, characters 0-77:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ring.v", line 4, characters 0-77:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ring.v", line 4, characters 0-77:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ring.v", line 4, characters 0-77:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ring.v", line 4, characters 0-77:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ring.v", line 4, characters 0-77:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/zify_algebra.v", line 6, characters 0-78:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/zify_algebra.v", line 6, characters 0-78:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/zify_algebra.v", line 6, characters 0-78:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/zify_algebra.v", line 6, characters 0-78:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/zify_algebra.v", line 6, characters 0-78:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/zify_algebra.v", line 6, characters 0-78:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+[ambiguous-paths,typechecker]
+File "./theories/zify_algebra.v", line 6, characters 0-78:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theory/polydvd.v", line 112, characters 0-27:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/zify_ssreflect.v", line 18, characters 0-89:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 22, characters 0-59:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 29, characters 0-103:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 33, characters 0-88:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 37, characters 0-60:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 40, characters 0-115:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 44, characters 0-65:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 47, characters 0-123:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 51, characters 0-65:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 54, characters 0-122:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 58, characters 0-64:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 61, characters 0-122:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 65, characters 0-64:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 68, characters 0-120:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 72, characters 0-139:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 77, characters 0-119:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 81, characters 0-138:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 86, characters 0-77:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 89, characters 0-69:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 92, characters 0-76:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 95, characters 0-68:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 98, characters 0-57:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 101, characters 0-60:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 104, characters 0-53:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 107, characters 0-56:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 110, characters 0-129:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 114, characters 0-70:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 121, characters 0-42:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 124, characters 0-58:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 127, characters 0-49:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 130, characters 0-41:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 133, characters 0-114:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 137, characters 0-48:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 140, characters 0-40:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 143, characters 0-48:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 146, characters 0-40:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 149, characters 0-114:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 153, characters 0-88:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 157, characters 0-104:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 161, characters 0-104:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 165, characters 0-104:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 169, characters 0-92:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 173, characters 0-92:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 177, characters 0-93:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 181, characters 0-99:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 185, characters 0-121:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/ssrZ.v", line 5, characters 0-74:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ssrZ.v", line 5, characters 0-74:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ssrZ.v", line 5, characters 0-74:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ssrZ.v", line 5, characters 0-74:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ssrZ.v", line 5, characters 0-74:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ssrZ.v", line 5, characters 0-74:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+[ambiguous-paths,typechecker]
+File "./theories/ssrZ.v", line 5, characters 0-74:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/rat_of_Z.v", line 56, characters 7-31:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/frobenius_form.v", line 53, characters 0-42:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff : sorted (@dvdr _) (Frobenius_seq A)
+File "./util/nondecreasing.v", line 104, characters 6-46:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. destruct xs as [| x xs] ; first  by done Please report.
+File "./util/nondecreasing.v", line 105, characters 6-42:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. destruct x as [| x] ; first  by done Please report.
+File "./theory/smith.v", line 199, characters 0-35:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/zify_algebra.v", line 24, characters 0-88:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 28, characters 0-75:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 31, characters 0-77:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 34, characters 0-67:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 37, characters 0-92:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 41, characters 0-113:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 45, characters 0-160:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 50, characters 0-75:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 53, characters 0-80:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 56, characters 0-43:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 59, characters 0-79:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 62, characters 0-53:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 65, characters 0-75:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 68, characters 0-83:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 72, characters 0-44:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 75, characters 0-145:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 79, characters 0-130:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 83, characters 0-84:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./classic/util/sorting.v", line 67, characters 6-99:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction xs as [| a xs']; [  | clear xs; rename xs' into xs ] ; first  by rewrite in_nil in   IN Please report.
+File "./refinements/rational.v", line 124, characters 7-67:
+Error: Anomaly "in retyping: variable b unbound."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/extra_mathcomp.v", line 23, characters 7-28:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/z3irrational.v", line 128, characters 7-45:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/toomcook.v", line 28, characters 0-109:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: \big[+%R/0]_(i < n) (\poly_(j < b) p`_(i * b + j) * 'X^b ^+ i) = \poly_(i < n * b) p`_i
+File "./theories/multinomial.v", line 34, characters 7-39:
+Error: Anomaly "Evar ?X338021 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/toomcook.v", line 66, characters 0-45:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/edr.v", line 124, characters 2-61:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff Hij: forall i j, d %| (row_mx a%:M b%:M : 'rV_2) i j
+File "./classic/analysis/uni/susp/dynamic/oblivious/reduction.v", line 289, characters 10-53:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff IN: j_hp \in pending_jobs sched_new t
+File "./classic/analysis/global/parallel/interference_bound_edf.v", line 337, characters 10-52:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/extra_cauchyreals.v", line 38, characters 0-32:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+pose_big_enough ltac:(i)
+File "./theories/posnum.v", line 83, characters 51-69:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/apa/bertogna_edf_theory.v", line 356, characters 8-283:
+Error: Not enough goals
+
+File "./theory/companion.v", line 92, characters 0-15:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/zify_ssreflect.v", line 192, characters 0-90:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 196, characters 0-45:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 199, characters 0-114:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 203, characters 0-114:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theory/smithpid.v", line 228, characters 0-33:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/jitter/bertogna_fp_comp.v", line 341, characters 8-67:
+Error: Not enough goals
+
+File "./theory/companion.v", line 94, characters 0-86:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff Hn: forall q, horner_mx A q = 0 -> (q == 0) || ((size p).-2 < (size q).-1)%N
+File "./theories/zify_algebra.v", line 90, characters 0-118:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 94, characters 0-149:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 98, characters 0-67:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 101, characters 0-81:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 105, characters 0-48:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 108, characters 0-88:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 112, characters 0-121:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 116, characters 0-103:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 120, characters 0-103:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 124, characters 0-113:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 128, characters 0-50:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 131, characters 0-42:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 134, characters 0-59:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 137, characters 0-108:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 141, characters 0-62:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 144, characters 0-41:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 147, characters 0-58:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 150, characters 0-107:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 154, characters 0-61:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 157, characters 0-127:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 161, characters 0-143:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 165, characters 0-127:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 169, characters 0-143:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 173, characters 0-129:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 177, characters 0-70:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 180, characters 0-129:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./classic/util/sorting.v", line 89, characters 6-96:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. destruct xs as [| a xs']; [  | clear xs; rename xs' into xs ] ; first  by rewrite ltn0 in   LT Please report.
+File "./theories/zify_algebra.v", line 184, characters 0-70:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 191, characters 0-64:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 194, characters 0-71:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 197, characters 0-91:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 201, characters 0-92:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 205, characters 0-71:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 208, characters 0-93:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./classic/model/schedule/uni/limited/jlfp_instantiation.v", line 746, characters 10-16:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/apa/interference_bound_edf.v", line 324, characters 10-52:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/reduce_order.v", line 100, characters 0-16:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/reduce_order.v", line 100, characters 0-16:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./classic/model/schedule/global/basic/schedule.v", line 291, characters 8-42:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/initial_conds.v", line 69, characters 7-26:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson.v", line 102, characters 0-31:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff : lhs ^+ a i < rhs ^+ a i
+File "./classic/analysis/global/basic/bertogna_edf_theory.v", line 342, characters 8-283:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./analysis/facts/transform/edf_wc.v", line 281, characters 13-67:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite /all_deadlines_met in  (H_no_deadline_misses Please report.
+File "./classic/analysis/global/parallel/bertogna_edf_theory.v", line 374, characters 10-193:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. assert (SUBST : [pairs(tsk_other,_)<-rt_bounds|other_task tsk_other] = [seq i <- rt_bounds | other_task i.1]) Please report.
+File "./classic/analysis/uni/susp/dynamic/oblivious/reduction.v", line 327, characters 12-52:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff IN: j \in pending_jobs sched_new t
+File "./classic/analysis/uni/susp/dynamic/oblivious/reduction.v", line 337, characters 10-50:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff IN: j \in pending_jobs sched_new t
+File "./theories/z3irrational.v", line 137, characters 0-18:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+pose_big_enough ltac:(m)
+File "./classic/analysis/apa/bertogna_fp_comp.v", line 382, characters 8-67:
+Error: Not enough goals
+
+File "./implementation/refinements/refinements.v", line 207, characters 2-17:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/zify_ssreflect.v", line 213, characters 0-110:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 217, characters 0-97:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./util/bigcat.v", line 128, characters 10-55:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: o = i1
+File "./util/bigcat.v", line 136, characters 10-55:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: o = i2
+File "./util/bigcat.v", line 143, characters 8-63:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: i1' = i1
+File "./util/bigcat.v", line 145, characters 6-61:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: i2' = i2
+File "./theories/zify_algebra.v", line 215, characters 0-119:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 219, characters 0-136:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 223, characters 0-78:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/extra_cauchyreals.v", line 52, characters 0-11:
+Error: Anomaly "Evar ?X180189 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./implementation/refinements/EDF/refinements.v", line 241, characters 2-47:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/karatsuba.v", line 128, characters 2-15:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/multipoly.v", line 135, characters 7-43:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/realalg.v", line 79, characters 7-41:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/rank.v", line 62, characters 0-63:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/closed_poly.v", line 97, characters 0-53:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: lead_coef p = lead_coef (p %/ ('X - x%:P))
+File "./theories/zify_ssreflect.v", line 224, characters 0-142:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 229, characters 0-121:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 233, characters 0-54:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 236, characters 0-59:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 239, characters 0-54:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 242, characters 0-59:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 245, characters 0-53:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 248, characters 0-58:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 251, characters 0-53:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 254, characters 0-58:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 257, characters 0-62:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 260, characters 0-137:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 264, characters 0-62:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 267, characters 0-137:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 271, characters 0-64:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 274, characters 0-67:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 277, characters 0-64:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 280, characters 0-67:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 283, characters 0-51:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 303, characters 0-72:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 306, characters 0-72:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./classic/analysis/global/jitter/bertogna_fp_comp.v", line 392, characters 10-22:
+Error: Not enough goals
+
+File "./util/nondecreasing.v", line 154, characters 6-50:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros x xs MIN ND [| n1] [| n2] Please report.
+File "./theories/zify_algebra.v", line 229, characters 0-110:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 233, characters 0-136:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 237, characters 0-77:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 240, characters 0-78:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 243, characters 0-86:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 247, characters 0-90:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 251, characters 0-101:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 255, characters 0-94:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 259, characters 0-56:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 262, characters 0-102:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 266, characters 0-56:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 269, characters 0-93:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 273, characters 0-55:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 276, characters 0-101:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 280, characters 0-55:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 283, characters 0-119:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 287, characters 0-133:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 291, characters 0-119:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 295, characters 0-133:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 299, characters 0-121:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 303, characters 0-64:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 306, characters 0-121:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 310, characters 0-64:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./classic/analysis/global/jitter/interference_bound_edf.v", line 372, characters 10-49:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/extra_cauchyreals.v", line 61, characters 0-36:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+pose_big_enough ltac:(i)
+File "./theories/z3irrational.v", line 168, characters 0-22:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+pose_big_enough ltac:(large)
+File "./classic/analysis/uni/susp/dynamic/jitter/jitter_schedule_service.v", line 576, characters 8-266:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/posnum.v", line 103, characters 0-43:
+Warning: Ignoring canonical projection to GRing.natmul by num_of_pos in
+Sn_posnum: redundant with mulrn_posnum
+[redundant-canonical-projection,typechecker]
+File "./classic/model/schedule/uni/service.v", line 451, characters 8-42:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./util/nondecreasing.v", line 172, characters 6-56:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. move  =>[|n1] [|n2] /andP [LT1 LT2] Please report.
+File "./theories/zify_algebra.v", line 321, characters 0-103:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 325, characters 0-93:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 329, characters 0-122:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./refinements/seqmx.v", line 357, characters 0-68:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson_elem_arith.v", line 62, characters 7-65:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/toomcook.v", line 121, characters 7-71:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/reduce_order.v", line 170, characters 0-64:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff genn:(* typeof *) (fun n : int => _) : forall n : int, 0 <= n -> n <= p -> b' (n + k) = b (n + k)
+File "./theory/bareiss_dvdring.v", line 159, characters 0-30:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson_elem_arith.v", line 71, characters 0-49:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/extra_cauchyreals.v", line 73, characters 7-52:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ops_for_b.v", line 138, characters 2-18:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/ops_for_b.v", line 138, characters 2-18:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./theories/ops_for_b.v", line 142, characters 0-64:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff around_p_p_eq_0: pv_S0_S1 + q_S1_S0 + pv_S1_S1 + remP = 0
+File "./theories/ordered_qelim.v", line 359, characters 0-149:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices [h1 h2 h3]: [/\ forall t1, rformula (eq0_rform t1), forall t1, rformula (lt0_rform t1) & forall t1, rformula (leq0_rform t1)]
+File "./theories/ordered_qelim.v", line 367, characters 2-47:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices : all (@rterm R) (tr.1 :: tr.2)%PAIR
+File "./theories/ordered_qelim.v", line 386, characters 2-47:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices : all (@rterm R) (tr.1 :: tr.2)%PAIR
+File "./theories/ordered_qelim.v", line 405, characters 2-47:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices : all (@rterm R) (tr.1 :: tr.2)%PAIR
+File "./theories/zify_algebra.v", line 338, characters 0-80:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_algebra.v", line 341, characters 0-127:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./classic/analysis/uni/susp/sustainability/allcosts/reduction_properties.v", line 423, characters 8-63:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./analysis/facts/preemption/rtc_threshold/job_preemptable.v", line 199, characters 4-37:
+Error: Anomaly "Evar ?X93276 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./refinements/seqmx_complements.v", line 159, characters 0-48:
+Error:
+Anomaly
+"File "plugins/ssr/ssrcommon.ml", line 795, characters 18-24: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/a_props.v", line 104, characters 0-80:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/basic/interference_bound_edf.v", line 410, characters 12-26:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/stronglydiscrete.v", line 161, characters 7-52:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/z3irrational.v", line 209, characters 0-56:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff : (0 < (a n)%:CR * (z3 - (b_over_a_seq n)%:CR))%CR
+File "./theories/ordered_qelim.v", line 430, characters 0-295:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices {e f}[equal0_equiv lt0_equiv le0_equiv]: [/\ forall e t1 t2, holds e (eq0_rform (t1 - t2)) <-> eval e t1 == eval e t2, forall e t1 t2, holds e (lt0_rform (t1 - t2)) <-> eval e t1 < eval e t2 & forall e t1 t2, holds e (leq0_rform (t1 - t2)) <-> eval e t1 <= eval e t2]
+File "./theories/ordered_qelim.v", line 446, characters 0-216:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices he t1 t2:(* typeof *) (fun e => fun t1 => fun t2 => _) : forall e, forall t1, forall t2, [/\ holds e (eq0_rform (t1 - t2)) <-> eval e t1 == eval e t2, holds e (lt0_rform (t1 - t2)) <-> eval e t1 < eval e t2 & holds e (leq0_rform (t1 - t2)) <-> eval e t1 <= eval e t2]
+File "./theories/ordered_qelim.v", line 466, characters 0-199:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices {t}rsub_to_rt r0 m:(* typeof *) (fun t => fun r0 => fun m => _) : forall t, forall r0, forall m, (m >= ub_var t)%N -> ub_sub _ m r0 -> let '(t', r) := to_rterm t r0 m in [/\ take (size r0) r = r0, ub_var t' <= m + size r, ub_sub _ m r & rsub t' m r = t]%N
+File "./theories/posnum.v", line 115, characters 0-51:
+Warning: Ignoring canonical projection to intmul by num_of_pos in
+posum_factn: redundant with intSn_posnum
+[redundant-canonical-projection,typechecker]
+File "./theories/posnum.v", line 121, characters 0-11:
+Warning: Ignoring canonical projection to GRing.natmul by num_of_pos in
+@Sn_posnum: redundant with @mulrn_posnum
+[redundant-canonical-projection,typechecker]
+File "./theories/posnum.v", line 121, characters 0-11:
+Warning: Ignoring canonical projection to intmul by num_of_pos in
+@posum_factn: redundant with @intSn_posnum
+[redundant-canonical-projection,typechecker]
+File "./theories/binomialz.v", line 123, characters 0-19:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+wlog :  m  n / n <= 0
+File "./theories/arithmetics.v", line 124, characters 7-37:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./set.v", line 378, characters 7-41:
+Error: Anomaly "decompose_prod_n_assum: not enough declarations."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/mxstructure.v", line 146, characters 0-55:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/smith_complements.v", line 174, characters 27-36:
+Warning: Notation enum_ordS is deprecated since mathcomp 1.15.0.
+Use enum_ordSl instead. [deprecated-syntactic-definition,deprecated]
+File "./theory/smith_complements.v", line 174, characters 27-36:
+Warning: Notation enum_ordS is deprecated since mathcomp 1.15.0.
+Use enum_ordSl instead. [deprecated-syntactic-definition,deprecated]
+File "./theory/smith_complements.v", line 174, characters 27-36:
+Warning: Notation enum_ordS is deprecated since mathcomp 1.15.0.
+Use enum_ordSl instead. [deprecated-syntactic-definition,deprecated]
+File "./implementation/refinements/arrival_curve.v", line 274, characters 4-25:
+Error: Anomaly "Evar ?X112851 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/arithmetics.v", line 127, characters 7-56:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/fpmod.v", line 118, characters 7-27:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/stronglydiscrete.v", line 166, characters 0-51:
 Error: Stack overflow.
+
+File "./classic/analysis/apa/bertogna_fp_comp.v", line 565, characters 8-94:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/apa/workload_bound.v", line 429, characters 10-47:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/dvdring.v", line 191, characters 0-13:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/extra_cauchyreals.v", line 79, characters 7-52:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./implementation/facts/maximal_arrival_sequence.v", line 222, characters 8-24:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. simpl t.+1.-1 Please report.
+File "./classic/analysis/global/basic/bertogna_edf_theory.v", line 683, characters 10-194:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. assert (SUBST : [pairs(tsk_other,_)<-rt_bounds|other_task tsk_other] = [seq i <- rt_bounds | other_task i.1]) Please report.
+File "./theories/reduce_order.v", line 229, characters 0-6:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/reduce_order.v", line 229, characters 0-6:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./classic/analysis/global/jitter/bertogna_edf_theory.v", line 722, characters 12-200:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. assert (SUBST : [pairs(tsk_other,_)<-rt_bounds|other_task tsk_other] = [seq i <- rt_bounds | other_task i.1]) Please report.
+File "./refinements/binord.v", line 159, characters 45-61:
+Warning: Notation rel_of_simpl_rel is deprecated since mathcomp 1.15.
+Use rel_of_simpl instead. [deprecated-syntactic-definition,deprecated]
+File "./refinements/binord.v", line 159, characters 45-61:
+Warning: Notation rel_of_simpl_rel is deprecated since mathcomp 1.15.
+Use rel_of_simpl instead. [deprecated-syntactic-definition,deprecated]
+File "./theories/reduce_order.v", line 235, characters 0-58:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/zify_ssreflect.v", line 379, characters 0-79:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 382, characters 0-100:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 386, characters 0-107:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 390, characters 0-110:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 394, characters 0-128:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 399, characters 0-98:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 403, characters 0-115:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/bigopz.v", line 211, characters 7-39:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/cauchyreals.v", line 133, characters 0-85:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff /ler_wpmul2l/le_trans: `|(y - x) ^+ i| <= maxr 1 (2%:R * r) ^+ (size p).-1
+File "./theories/qe_rcf_th.v", line 124, characters 0-61:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ops_for_b.v", line 243, characters 0-16:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/ops_for_b.v", line 243, characters 0-16:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./theories/realalg.v", line 113, characters 7-74:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/parallel/interference_bound_edf.v", line 467, characters 12-71:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/a_props.v", line 126, characters 0-115:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff trans: rat_of_Z 2 * (x + rat_of_Z 2) ^+ 2 < rat_of_Z 17 * x ^ 2 + rat_of_Z 51 * x + rat_of_Z 39
+File "./classic/analysis/global/jitter/bertogna_fp_comp.v", line 720, characters 8-22:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/z3irrational.v", line 257, characters 0-18:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+pose_big_enough ltac:(M)
+File "./theories/zify_ssreflect.v", line 414, characters 2-46:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff /dvdnP [k' ->]: Z.abs_nat k %| gcdn n m
+File "./theories/zify_ssreflect.v", line 420, characters 0-80:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 426, characters 0-72:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/z3irrational.v", line 279, characters 4-42:
+Warning:
+Tactician is having problems with the following tactic. Please report. qualified_name
+File "./theories/z3irrational.v", line 279, characters 4-42:
+Warning: Tactician has uncovered a bug in a tactic. Please report. field
+File "./classic/analysis/global/parallel/bertogna_fp_comp.v", line 683, characters 8-22:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson_elem_analysis.v", line 92, characters 0-77:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff : q1.-root r1 %:C ^+ p1 ^+ (q1 * q2) = q2.-root r1 %:C ^+ p2 ^+ (q1 * q2)
+File "./theory/stronglydiscrete.v", line 176, characters 7-49:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/frobenius_form.v", line 160, characters 0-63:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/global/basic/bertogna_edf_theory.v", line 766, characters 8-29:
+Error: Not enough goals
+
+File "./src/ssrcomplements.v", line 190, characters 32-42:
+Warning: Notation prod_curry is deprecated since 8.13. Use uncurry instead.
+[deprecated-syntactic-definition,deprecated]
+File "./analysis/abstract/ideal_jlfp_rta.v", line 606, characters 8-71:
+Error: Anomaly "Evar ?X50458 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/extra_mathcomp.v", line 79, characters 7-53:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/uni/susp/sustainability/singlecost/reduction_properties.v", line 587, characters 8-138:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff IH: forall k any_j, k < t -> scheduled_at sched_susp any_j k = scheduled_at sched_susp_highercost any_j k
+File "./classic/analysis/apa/bertogna_edf_theory.v", line 892, characters 10-262:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. assert (SUBST : [pairs(tsk_other,_)<-rt_bounds|other_task_in (alpha' tsk) tsk_other] = [seq i <- rt_bounds | other_task_in (alpha' tsk) i.1]) Please report.
+File "./theories/zify_ssreflect.v", line 432, characters 0-80:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 435, characters 0-124:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 444, characters 0-61:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 447, characters 0-66:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 450, characters 0-142:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 454, characters 0-71:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 457, characters 0-180:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 462, characters 0-70:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 465, characters 0-180:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 470, characters 0-70:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 473, characters 0-70:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 476, characters 0-73:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 479, characters 0-70:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 482, characters 0-73:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 485, characters 0-88:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 489, characters 0-72:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 492, characters 0-54:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/zify_ssreflect.v", line 495, characters 0-57:
+Warning: The default value for instance locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding instances outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Instance Foo : Bar := baz." [deprecated-instance-without-locality,deprecated]
+File "./theories/ordered_qelim.v", line 665, characters 0-143:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suffices auxl1 l2 g:(* typeof *) (fun l1 l2 : seq (term R) => fun g => _) : forall l1 l2 : seq (term R), forall g, let redg := foldr (And \o g) True in qf_eval e (redg (l1 ++ l2)) = qf_eval e (redg l1 /\ redg l2)%oT
+File "./theories/z3irrational.v", line 301, characters 0-18:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+pose_big_enough ltac:(n)
+File "./theories/z3irrational.v", line 307, characters 2-44:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff /QintP [z zP]: sigma_Q n \is a Qint
+File "./theory/frobenius_form.v", line 166, characters 0-22:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson.v", line 204, characters 0-54:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./src/ssrcomplements.v", line 192, characters 0-29:
+Warning: The default value for hint locality is currently "local" in a
+section and "global" otherwise, but is scheduled to change in a future
+release. For the time being, adding hints outside of sections without
+specifying an explicit locality attribute is therefore deprecated. It is
+recommended to use "export" whenever possible. Use the attributes #[local],
+#[global] and #[export] depending on your choice. For example: "#[export]
+Hint Unfold foo : bar." [deprecated-hint-without-locality,deprecated]
+File "./src/ssrcomplements.v", line 197, characters 13-23:
+Warning: Notation prod_curry is deprecated since 8.13. Use uncurry instead.
+[deprecated-syntactic-definition,deprecated]
+File "./theories/reduce_order.v", line 251, characters 0-10:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theory/stronglydiscrete.v", line 180, characters 7-49:
+Error: Stack overflow.
+
+File "./analysis/facts/transform/wc_correctness.v", line 383, characters 6-55:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./analysis/facts/transform/swaps.v", line 306, characters 4-36:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+wlog :  t / t2 < t ; last  first
+File "./theories/realalg.v", line 128, characters 0-45:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson.v", line 213, characters 0-20:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./classic/analysis/apa/interference_bound_edf.v", line 582, characters 14-71:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/polyrcf.v", line 245, characters 0-49:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+wlog xy :  x  y  hx  hy / x <= y
+File "./refinements/seqmx_complements.v", line 270, characters 0-69:
+Error:
+Anomaly
+"File "plugins/ssr/ssrcommon.ml", line 795, characters 18-24: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/bigopz.v", line 240, characters 0-79:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: index_iotaz (m + a) n = map (fun i => i + a) (index_iotaz m (n - a))
+File "./classic/analysis/global/parallel/interference_bound_edf.v", line 532, characters 14-51:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson.v", line 216, characters 0-140:
+Warning:
+Tactician has uncovered a bug in a tactic. Please report. 
+suff ->: exp_quo (a k)%:Q (2 ^ l.+2 - 2) (2 ^ l.+1 * a k) = exp_quo (a k)%:Q (2 ^ l.+1 - 2) (2 ^ l * a k) * (2 ^ l).-root (a' k)
+File "./theories/ops_for_s.v", line 389, characters 2-48:
+Error: prune only accepts a list of names
+
+File "./refinements/bareiss_eff.v", line 403, characters 0-40:
+Warning:
+Tactician is having problems with the following tactic. Please report. ssrpatternarg
+File "./theories/rho_computations.v", line 207, characters 7-67:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hanson_elem_arith.v", line 139, characters 0-70:
+Error: Anomaly "decompose_prod_n_assum: integer parameter must be positive."
+Please report at http://coq.inria.fr/bugs/.
 
