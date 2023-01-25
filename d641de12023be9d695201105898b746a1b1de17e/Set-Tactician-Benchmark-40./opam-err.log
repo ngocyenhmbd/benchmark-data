@@ -13,3 +13,91 @@ epext-bypass-=ruby' to revert.
 [31m[ERROR][0m The compilation of coq-fiat-crypto.0.0.17 failed at "make -j55
         EXTERNAL_DEPENDENCIES=1 SKIP_COQSCRIPTS_INCLUDE=1 coq
         standalone-ocaml".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-prosa.0.5[0m [31m======================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-25 11:30
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/.opam-switch/build/coq-prosa.0.5
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-31925/coq-prosa-31925-c6d3fb.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-31925/coq-prosa-31925-c6d3fb.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mWarning:
+[33m# [0mTactician detected a printing/parsing problem for the following tactic. intros [| x1 [| x2 xs]] Please report.
+[33m# [0mFile "./util/nondecreasing.v", line 825, characters 8-65:
+[33m# [0mWarning:
+[33m# [0mTactician detected a printing/parsing problem for the following tactic. destruct xs as [| x1 xs], ys as [| y1 ys] Please report.
+[33m# [0mFile "./util/nondecreasing.v", line 826, characters 8-65:
+[33m# [0mWarning:
+[33m# [0mTactician detected a printing/parsing problem for the following tactic. destruct xs as [| x2 xs], ys as [| y2 ys] Please report.
+[33m# [0mFile "./util/nondecreasing.v", line 837, characters 8-65:
+[33m# [0mWarning:
+[33m# [0mTactician detected a printing/parsing problem for the following tactic. destruct xs as [| x3 xs], ys as [| y3 ys] Please report.
+[33m# [0mmake: *** [all] Error 2
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-mathcomp-apery.1.0.2[0m [31m===========================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-25 11:30
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/.opam-switch/build/coq-mathcomp-apery.1.0.2
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-31925/coq-mathcomp-apery-31925-508dc7.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-31925/coq-mathcomp-apery-31925-508dc7.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0msuff {P}->: (('C[l])%:R * p%:R = ('C[tmap_val tl])%:R * monomial [seq i%:R | i <- l] (tmap_val tl) :> int)%R
+[33m# [0mFile "./theories/multinomial.v", line 245, characters 4-70:
+[33m# [0mWarning:
+[33m# [0mTactician has uncovered a bug in a tactic. Please report. 
+[33m# [0msuff ->: zip [seq i%:R | i <- l] l = map (fun i => (Posz i, i)) l
+[33m# [0mFile "./theories/bigopz.v", line 240, characters 0-79:
+[33m# [0mWarning:
+[33m# [0mTactician has uncovered a bug in a tactic. Please report. 
+[33m# [0msuff ->: index_iotaz (m + a) n = map (fun i => i + a) (index_iotaz m (n - a))
+[33m# [0mmake[1]: *** [all] Error 2
+[33m# [0mmake[1]: Leaving directory `/lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/.opam-switch/build/coq-mathcomp-apery.1.0.2'
+[33m# [0mmake: *** [all] Error 2
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-fiat-crypto.0.0.17[0m [31m=============================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-01-25 11:30
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/.opam-switch/build/coq-fiat-crypto.0.0.17
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/bin/tactician exec -- make -j55 EXTERNAL_DEPENDENCIES=1 SKIP_COQSCRIPTS_INCLUDE=1 coq standalone-ocaml
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-31925/coq-fiat-crypto-31925-4d6f1d.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-31925/coq-fiat-crypto-31925-4d6f1d.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mWarning: native_compute disabled at configure time; falling back to
+[33m# [0mvm_compute. [native-compute-disabled,native-compiler]
+[33m# [0mFinished transaction in 2.07 secs (2.033u,0.036s) (successful)
+[33m# [0mFinished transaction in 0. secs (0.u,0.s) (successful)
+[33m# [0mFinished transaction in 18.648 secs (18.492u,0.153s) (successful)
+[33m# [0mFinished transaction in 6.542 secs (6.422u,0.119s) (successful)
+[33m# [0mFinished transaction in 0. secs (0.u,0.s) (successful)
+[33m# [0mFinished transaction in 0. secs (0.u,0.s) (successful)
+[33m# [0mFinished transaction in 1.532 secs (1.527u,0.004s) (successful)
+[33m# [0mFile "./src/Fancy/Compiler.v", line 973, characters 6-512:
+[33m# [0mWarning: The proof has remaining shelved goals
+[33m# [0m[remaining-shelved-goals,tactics]
+
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling bonak.dev[0m [31m==========================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-01-25 11:30
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/.opam-switch/build/bonak.dev
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.BGETSy/opam-root/bench/bin/tactician exec -- dune build
+[33m#[0m [33mexit-code[0m   1
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-31925/bonak-31925-f4508b.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-31925/bonak-31925-f4508b.out
+[33m### output ###
+[0m[33m# [0mFile "./theories/νType/νType.v", line 472, characters 59-66:
+[33m# [0mError: c is used in conclusion.
+[33m# [0m
+
+2023-01-25 14:53:41.272375+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+tactician-benchmark: error: node-06: task 0: Exited with exit code 254
+Abnormal exit code for build worker on host node-06.cluster. Code: 254
