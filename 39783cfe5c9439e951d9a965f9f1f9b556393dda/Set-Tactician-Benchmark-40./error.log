@@ -16,3 +16,14 @@ Fatal benchmarking error: (c952dcc9-3970-3f7d-14b9-e79d8820ad35
    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
 Fatal benchmarking error: Initial build did not fully complete
 Fatal benchmarking error: Abnormal exit code for build worker on host node-05.cluster. Code: 254
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: Rsync failed: rsync: mkdir "/lscratch/blaaulas/tactician.tmp.NTs1lv" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(657) [Receiver=3.1.2]
+srun: error: amd-01: task 0: Exited with exit code 11
+
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (amd-01.cluster 36101)))
+ (rpc_tag rpc_parallel_plain_4) (rpc_version 0))
