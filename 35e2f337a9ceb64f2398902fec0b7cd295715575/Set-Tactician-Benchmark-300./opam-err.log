@@ -1,8 +1,24 @@
-  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-7jij_prl
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-p3paqk0u
   Running command git rev-parse -q --verify 'sha^c371a448a419450dbb4f9d10e7e1a91779e4c59c'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' c371a448a419450dbb4f9d10e7e1a91779e4c59c
   Running command git checkout -q c371a448a419450dbb4f9d10e7e1a91779e4c59c
 
 [notice] A new release of pip available: 22.2.2 -> 23.0
 [notice] To update, run: pip install --upgrade pip
-[ERROR] coq-tactician-stdlib unknown package
+[NOTE] coq-tactician-stdlib is not installed.
+
+[NOTE] Package coq-graph2tac is currently pinned to git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#2d661fbb48d64f07db750555fc02356d031cca90 (version ~dev).
+[NOTE] Package coq-tactician-reinforce is currently pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce.git#3b602e54ff0780e1bdf35af36ccc5ef5b9b8590d (version 8.11.dev).
+[ERROR] The compilation of conf-xxhash.1 failed at "pkg-config libxxhash".
+
+#=== ERROR while compiling conf-xxhash.1 ======================================#
+# context              2.1.4 | linux/x86_64 |  | https://opam.ocaml.org#0cd336b3
+# path                 ~/projects/coq-benchmarks/opam-root/bench/.opam-switch/build/conf-xxhash.1
+# command              ~/projects/coq-benchmarks/opam-root/bench/bin/tactician exec -- pkg-config libxxhash
+# exit-code            1
+# env-file             ~/projects/coq-benchmarks/opam-root/log/conf-xxhash-1122720-68a55c.env
+# output-file          ~/projects/coq-benchmarks/opam-root/log/conf-xxhash-1122720-68a55c.out
+
+
+The former state can be restored with:
+    /home/piepejel/.opam/tactician/bin/tactician-benchmark switch import "/home/piepejel/projects/coq-benchmarks/opam-root/bench/.opam-switch/backup/state-20230131144232.export"
