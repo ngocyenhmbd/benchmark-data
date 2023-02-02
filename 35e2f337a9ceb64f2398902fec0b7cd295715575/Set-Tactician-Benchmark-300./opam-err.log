@@ -1,33 +1,8 @@
-  Running command git clone -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-f9o6j7c1
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-tb70ape6
   Running command git rev-parse -q --verify 'sha^c371a448a419450dbb4f9d10e7e1a91779e4c59c'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' c371a448a419450dbb4f9d10e7e1a91779e4c59c
   Running command git checkout -q c371a448a419450dbb4f9d10e7e1a91779e4c59c
-WARNING: You are using pip version 21.2.3; however, version 23.0 is available.
-You should consider upgrading via the '/lscratch/piepejel/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
-[NOTE] coq-tactician-stdlib is not installed.
 
-[NOTE] Package coq-graph2tac is already pinned to git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#35e2f337a9ceb64f2398902fec0b7cd295715575 (version ~dev).
-[ERROR] The compilation of xxhash.0.1 failed at "ocaml setup.ml -build".
-
-#=== ERROR while compiling xxhash.0.1 =========================================#
-# context              2.1.4 | linux/x86_64 |  | https://opam.ocaml.org#d9d1fc2c
-# path                 /lscratch/piepejel/opam-root/bench/.opam-switch/build/xxhash.0.1
-# command              /lscratch/piepejel/opam-root/bench/bin/ocaml setup.ml -build
-# exit-code            1
-# env-file             /lscratch/piepejel/opam-root/log/xxhash-36195-d27ded.env
-# output-file          /lscratch/piepejel/opam-root/log/xxhash-36195-d27ded.out
-### output ###
-# [...]
-# /lscratch/piepejel/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_bindings.cmx stubs/xxhash_bindings.ml
-# /lscratch/piepejel/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_stubgen.cmx stubs/xxhash_stubgen.ml
-# /lscratch/piepejel/opam-root/bench/bin/ocamlfind ocamlopt -g -linkpkg -package ctypes.stubs -I stubs stubs/xxhash_bindings.cmx stubs/xxhash_stubgen.cmx -o stubs/xxhash_stubgen.native
-# stubs/xxhash_stubgen.native
-# /lscratch/piepejel/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
-# + /lscratch/piepejel/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
-# lib/xxhash_stubs.c:1:10: fatal error: xxhash.h: No such file or directory
-#  #include <xxhash.h>
-#           ^~~~~~~~~~
-# compilation terminated.
-# Command exited with code 2.
-# E: Failure("Command ''/lscratch/piepejel/opam-root/bench/bin/ocamlbuild' stubs/xxhash_stubgen.native lib/libxxhash_stubs.a lib/dllxxhash_stubs.so lib/xxhash.cma lib/xxhash.cmxa lib/xxhash.a lib/xxhash.cmxs -tag debug' terminated with error code 10")
-
+[notice] A new release of pip available: 22.2.2 -> 23.0
+[notice] To update, run: pip install --upgrade pip
+[ERROR] coq-tactician-stdlib unknown package
