@@ -1,0 +1,31 @@
+[31m[ERROR][0m The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j55".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-tactician-stdlib.8.11.dev[0m [31m======================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-02-05 17:50
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.4kXYwK/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.4kXYwK/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-42644/coq-tactician-stdlib-42644-4ee92c.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-42644/coq-tactician-stdlib-42644-4ee92c.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mcoqc theories/MSets/MSetFacts.v
+[33m# [0mcoqc theories/FSets/FSetFacts.v
+[33m# [0mcoqc theories/FSets/FMapFacts.v
+[33m# [0mcoqc theories/Numbers/DecimalZ.v
+[33m# [0mcoqc theories/QArith/Qring.v
+[33m# [0mmake: *** [plugins/micromega/ZCoeff.vo] Killed
+[33m# [0mmake: *** [plugins/micromega/ZCoeff.vo] Deleting file `plugins/micromega/ZCoeff.glob'
+[33m# [0mmake: *** Waiting for unfinished jobs....
+[33m# [0mmake: *** [theories/FSets/FSetPositive.vo] Killed
+[33m# [0mmake: *** [theories/FSets/FSetPositive.vo] Deleting file `theories/FSets/FSetPositive.glob'
+[33m# [0mmake: *** [plugins/extraction/ExtrOcamlZInt.vo] Killed
+[33m# [0mmake: *** [plugins/extraction/ExtrOcamlZInt.vo] Deleting file `plugins/extraction/ExtrOcamlZInt.glob'
+
+2023-02-07 13:50:05.780978+01:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+slurmstepd: error: Detected 3 oom-kill event(s) in step 2062002.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+tactician-benchmark: error: node-02: task 0: Out Of Memory
+Abnormal exit code for build worker on host node-02.cluster. Code: 1
