@@ -1,0 +1,28 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-q0flc1ii
+  Running command git rev-parse -q --verify 'sha^6b6674883e7b56058f0487b9cc708c71844901bc'
+  Running command git fetch -q https://github.com/IBM/graph2tac.git 6b6674883e7b56058f0487b9cc708c71844901bc
+  Running command git checkout -q 6b6674883e7b56058f0487b9cc708c71844901bc
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip available: 22.3.1 -> 23.0.1
+[notice] To update, run: pip install --upgrade pip
+[ERROR] The compilation of capnp-rpc-unix.1.2.1 failed at "dune build -p capnp-rpc-unix -j 55".
+
+#=== ERROR while compiling capnp-rpc-unix.1.2.1 ===============================#
+# context              2.1.4 | linux/x86_64 |  | https://opam.ocaml.org#f89ed543
+# path                 /tmp/tactician.tmp.TGo80U/opam-root/bench/.opam-switch/build/capnp-rpc-unix.1.2.1
+# command              /tmp/tactician.tmp.TGo80U/opam-root/bench/bin/dune build -p capnp-rpc-unix -j 55
+# exit-code            1
+# env-file             /tmp/opam-root-4076803/capnp-rpc-unix-4076803-24aa58.env
+# output-file          /tmp/opam-root-4076803/capnp-rpc-unix-4076803-24aa58.out
+### output ###
+# File "unix/dune", line 5, characters 3-24:
+# 5 |    mirage-crypto-rng.lwt cmdliner cstruct-lwt extunix))
+#        ^^^^^^^^^^^^^^^^^^^^^
+# Error: Library "mirage-crypto-rng.lwt" not found.
+# -> required by library "capnp-rpc-unix" in _build/default/unix
+# -> required by _build/default/META.capnp-rpc-unix
+# -> required by _build/install/default/lib/capnp-rpc-unix/META
+# -> required by _build/default/capnp-rpc-unix.install
+# -> required by alias install
+
