@@ -1,0 +1,32 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-qey3f0s_
+  Running command git rev-parse -q --verify 'sha^6b6674883e7b56058f0487b9cc708c71844901bc'
+  Running command git fetch -q https://github.com/IBM/graph2tac.git 6b6674883e7b56058f0487b9cc708c71844901bc
+  Running command git checkout -q 6b6674883e7b56058f0487b9cc708c71844901bc
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip available: 22.3.1 -> 23.0.1
+[notice] To update, run: pip install --upgrade pip
+[ERROR] The compilation of xxhash.0.1 failed at "ocaml setup.ml -build".
+
+#=== ERROR while compiling xxhash.0.1 =========================================#
+# context              2.1.4 | linux/x86_64 |  | https://opam.ocaml.org#3f793b17
+# path                 /tmp/tactician.tmp.scfFCT/opam-root/bench/.opam-switch/build/xxhash.0.1
+# command              /tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /tmp/opam-root-2847795/xxhash-2847795-c381fd.env
+# output-file          /tmp/opam-root-2847795/xxhash-2847795-c381fd.out
+### output ###
+# [...]
+# /tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_bindings.cmx stubs/xxhash_bindings.ml
+# /tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_stubgen.cmx stubs/xxhash_stubgen.ml
+# /tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocamlfind ocamlopt -g -linkpkg -package ctypes.stubs -I stubs stubs/xxhash_bindings.cmx stubs/xxhash_stubgen.cmx -o stubs/xxhash_stubgen.native
+# stubs/xxhash_stubgen.native
+# /tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
+# mv xxhash_stubs.o lib/xxhash_stubs.o
+# /tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocamlfind ocamlmklib -o lib/xxhash_stubs -g -lxxhash lib/xxhash_stubs.o
+# + /tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocamlfind ocamlmklib -o lib/xxhash_stubs -g -lxxhash lib/xxhash_stubs.o
+# /dccstor/mathzero/model_runs/runs/2023-02-23_D_benchmark_tfgnn_stdlib_simplify2_names/workdir/benchmark/venv/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/ld: cannot find -lxxhash: No such file or directory
+# collect2: error: ld returned 1 exit status
+# Command exited with code 2.
+# E: Failure("Command ''/tmp/tactician.tmp.scfFCT/opam-root/bench/bin/ocamlbuild' stubs/xxhash_stubgen.native lib/libxxhash_stubs.a lib/dllxxhash_stubs.so lib/xxhash.cma lib/xxhash.cmxa lib/xxhash.a lib/xxhash.cmxs -tag debug' terminated with error code 10")
+
