@@ -1,0 +1,100 @@
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmin_right	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqr.Rsqr_minus_plus	300	0.0	synth with cache (only 1: intros; only 1: ring_Rsqr).	10.725921	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_neq_0_reg	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: split; only 1: red; only 1: intros ?; only 1: apply H; only 1: auto with real; only 1: red; only 1: intros ?; only 1: apply H; only 1: auto with real).	9.877460	12
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_0_l	300	0.0	synth with cache (only 1: intros ?; only 1: ring).	7.408353	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.div_eq_inv	300	0.0	synth with cache (only 1: intros; only 1: reflexivity).	12.969528	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_def.cosn_no_R0	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: unfold cos_n; only 1: unfold Rdiv; only 1: apply Rmult_integral_contrapositive_currified; only 1: apply pow_nonzero; only 1: discrR; only 1: apply Rinv_neq_0_compat; only 1: apply INR_fact_neq_0).	14.084842	8
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rsqrt_def.dicho_lb_cv	300	0.1.0.1.0.0	synth with cache (only 1: intros; only 1: apply growing_cv; only 1: apply dicho_lb_growing; only 1: assumption; only 1: apply dicho_lb_maj; only 1: assumption).	15.373637	13
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.IZN_var	300	0.1.0	synth with cache (only 1: intros; only 1: apply Z_of_nat_complete_inf; only 1: easy).	16.174094	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.PI6_RGT_0	300	0.0.0.0.0	synth with cache (only 1: unfold Rdiv; only 1: apply Rmult_lt_0_compat; only 1: apply PI_RGT_0; only 1: apply Rinv_0_lt_compat; only 1: prove_sup0).	15.707991	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P5	300	0.0.0	synth with cache (only 1: intros; only 1: unfold SubEqui; only 1: apply SubEqui_P3).	16.223717	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_0_r	300	0.0	synth with cache (only 1: intros ?; only 1: ring).	7.604862	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rmax_right	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_involutive	300	0.0	synth with cache (only 1: intros ?; only 1: ring).	10.112038	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.R_sqr.Rsqr_plus_minus	300	0.0	synth with cache (only 1: intros; only 1: ring_Rsqr).	10.804266	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_1_r	300	0.0	synth with cache (only 1: intros ?; only 1: ring).	7.631623	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rsqrt_def.dicho_up_cv	300	0.1.0.1.0.0	synth with cache (only 1: intros; only 1: apply decreasing_cv; only 1: apply dicho_up_decreasing; only 1: assumption; only 1: apply dicho_up_min; only 1: assumption).	15.078996	13
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Ropp_plus_distr	300	0.0	synth with cache (only 1: intros; only 1: ring).	10.373125	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rbasic_fun.Rabs_left1	300	0.0.1.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: case H; only 1: intros ?; only 1: apply Rabs_left; only 1: auto; only 1: intros ?; only 1: rewrite H0; only 1: rewrite Rabs_right; only 1: auto with real; only 1: auto with real).	11.000612	20
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qpower.Qpower_decomp	300	0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0	synth with cache (only 1: induction p; only 1: simpl Qpower_positive; only 1: rewrite IHp; only 1: unfold Qmult; only 1: unfold Qnum; only 1: unfold Qden; only 1: f_equal; only 1: rewrite <- Z.pow_twice_r; only 1: rewrite <- Z.pow_succ_r; only 1: easy; only 1: easy; only 1: apply Pos2Z.inj; only 1: rewrite Pos2Z.inj_mul; only 1: rewrite Pos2Z.inj_mul; only 1: rewrite Pos2Z.inj_pow; only 1: rewrite Pos2Z.inj_pow; only 1: rewrite <- Z.pow_twice_r; only 1: rewrite <- Z.pow_succ_r; only 1: easy; only 1: easy; only 1: simpl Qpower_positive; only 1: rewrite IHp; only 1: unfold Qmult; only 1: unfold Qnum; only 1: unfold Qden; only 1: f_equal; only 1: rewrite <- Z.pow_twice_r; only 1: easy; only 1: apply Pos2Z.inj; only 1: rewrite Pos2Z.inj_mul; only 1: rewrite Pos2Z.inj_pow; only 1: rewrite Pos2Z.inj_pow; only 1: rewrite <- Z.pow_twice_r; only 1: easy; only 1: simpl Qpower_positive; only 1: rewrite Z.pow_1_r; only 1: rewrite Pos.pow_1_r; only 1: easy).	11.225758	99
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.PI4_RGT_0	300	0.0.0.0.0	synth with cache (only 1: unfold Rdiv; only 1: apply Rmult_lt_0_compat; only 1: apply PI_RGT_0; only 1: apply Rinv_0_lt_compat; only 1: prove_sup0).	16.035232	5
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zgcd_alt.Zgcd_is_gcd	300	0.0.0.0	synth with cache (only 1: unfold Zgcd_alt; only 1: intros; only 1: apply Zgcdn_is_gcd; only 1: auto).	11.012926	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P6	300	0.0.0.0	synth with cache (only 1: intros; only 1: unfold SubEqui; only 1: apply SubEqui_P4; only 1: assumption).	16.663140	4
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcabs.Qcabs_triangle	300	0.0.0.0	synth with cache (only 1: Qc_unfolds; only 1: case Qred_abs; only 1: rewrite Qred_le; only 1: apply Qabs_triangle).	8.664207	4
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zquot.Z_mult_quot_le	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: zero_or_not b; only 1: Z.pos_or_neg b; only 1: split; only 1: apply Z.mul_nonneg_nonneg; only 1: Z.order; only 1: apply Z.quot_pos; only 1: Z.order; only 1: Z.order; only 1: apply Z.Private_Div.NZQuot.mul_div_le; only 1: Z.order; only 1: Z.order; only 1: rewrite <- Z.mul_opp_opp; only 1: rewrite <- Z.quot_opp_r; only 1: split; only 1: apply Z.mul_nonneg_nonneg; only 1: Z.order; only 1: apply Z.quot_pos; only 1: Z.order; only 1: Z.order; only 1: apply Z.Private_Div.NZQuot.mul_div_le; only 1: Z.order; only 1: Z.order; only 1: Z.order).	11.071046	26
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rinv_involutive	300	0.0.0	synth with cache (only 1: intros; only 1: field; only 1: trivial).	9.784534	3
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QOrderedType.Q_as_OT.lt_strorder	300	0.0.0	synth with cache (only 1: split; only 1: exact Qlt_irrefl; only 1: exact Qlt_trans).	7.479668	3
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qcle_lt_trans	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Remainder_equiv	300
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qfield.Qpower_theory	300	0.0.0.0.0.0	synth with cache (only 1: constructor; only 1: intros ?; only 1: intros ?; only 1: destruct n; only 1: reflexivity; only 1: reflexivity).	8.136781	6
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qeq_refl	300	0	synth with cache (only 1: reflexivity).	7.116677	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zle_bool_trans	300	3.0.0.0	synth with cache (only 1: rewrite Z.leb_le; only 1: rewrite Z.leb_le; only 1: rewrite Z.leb_le; only 1: apply Z.le_trans).	5.817657	10
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rgt_2PI_0	300	0.0.0	synth with cache (only 1: apply Rmult_lt_0_compat; only 1: prove_sup0; only 1: apply PI_RGT_0).	15.987920	3
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zquot.Z_mult_quot_ge	300	0.0.1.0.0	synth with cache (only 1: intros; only 1: zero_or_not b; only 1: apply Z.mul_quot_ge; only 1: auto with zarith; only 1: Z.order).	10.941849	23
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P9	300	0.0.0.0.0	synth with cache (only 1: intros; only 1: apply StepFun_P38; only 1: apply SubEqui_P7; only 1: apply SubEqui_P1; only 1: apply SubEqui_P2).	16.518943	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rinv_mult_distr	300	0.0.0	synth with cache (only 1: intros; only 1: field; only 1: auto).	9.883152	3
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_mod_same_full	300	0.1.0.0	synth with cache (only 1: intros; only 1: zero_or_not a; only 1: apply Z.mod_same; only 1: easy).	7.176087	18
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zle_is_le_bool	300	0.0	synth with cache (only 1: symmetry; only 1: apply Z.leb_le).	5.845919	2
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qcanon.Qclt_le_trans	300
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Q_Setoid	300	1.0.0.0.0.0.0.0.0.0	synth with cache (only 1: split; only 1: red; only 1: reflexivity; only 1: red; only 1: auto with *; only 1: red; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply Qeq_trans).	7.318087	23
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zeven_bool_iff	300	0.0.0	synth with cache (only 1: rewrite Z.even_spec; only 1: rewrite Zeven_equiv; only 1: easy).	5.505790	3
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zgt_succ_pred	300	0.0	synth with cache (only 1: Z.swap_greater; only 1: apply Z.lt_succ_lt_pred).	5.713619	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcompare.Zle_compare	300	1.0.0.0.0	synth with cache (only 1: intros; only 1: case Z.compare_spec; only 1: trivial; only 1: trivial; only 1: Z.order).	5.513340	10
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zge_is_le_bool	300	0.0.0	synth with cache (only 1: Z.swap_greater; only 1: symmetry; only 1: apply Z.leb_le).	5.778295	3
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zodd_even_bool	300	0.0.0	synth with cache (only 1: symmetry; only 1: rewrite <- Z.negb_odd; only 1: apply Bool.negb_involutive).	5.472536	4
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_mod_plus_full	300	0.1.0.0	synth with cache (only 1: intros; only 1: zero_or_not c; only 1: apply Z.mod_add; only 1: easy).	6.947080	13
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zlt_succ_pred	300	0	synth with cache (only 1: apply Z.lt_succ_lt_pred).	5.570494	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.BinInt.Z.Private_BootStrap.mul_add_distr_r	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: destruct p; only 1: rewrite mul_0_r; only 1: rewrite mul_0_r; only 1: rewrite mul_0_r; only 1: easy; only 1: apply mul_add_distr_pos; only 1: apply opp_inj; only 1: rewrite opp_add_distr; only 1: rewrite <- mul_opp_r; only 1: rewrite <- mul_opp_r; only 1: rewrite <- mul_opp_r; only 1: apply mul_add_distr_pos).	4.458574	12
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zquot.Zrem_Zmod_zero	300	0.0.0.1.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: rewrite Zrem_divides; only 1: rewrite Zmod_divides; only 1: intuition; only 1: easy).	11.173881	29
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qle_comp	300	0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: rewrite Qle_alt; only 1: rewrite Qle_alt; only 1: rewrite H; only 1: rewrite H0; only 1: auto with *).	6.897001	20
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_gt_compat	300	0	synth with cache (only 1: auto using Rplus_lt_compat with rorders).	9.859046	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcompare.Zlt_compare	300	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: rewrite H; only 1: easy).	5.627163	5
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zlt_is_lt_bool	300	0.0	synth with cache (only 1: symmetry; only 1: apply Z.ltb_lt).	5.803560	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zeven_odd_bool	300	1.0	synth with cache (only 1: symmetry; only 1: apply Z.negb_odd).	5.548987	4
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zeq_plus_swap	300	0	synth with cache (only 1: apply Z.add_move_r).	5.512680	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Mult.mult_le_compat_l	300	0.0	synth with cache (only 1: apply Nat.mul_le_mono_nonneg_l; only 1: apply Nat.le_0_l).	4.726388	2
+coq-tactician-stdlib.8.11.dev	Coq.PArith.BinPos.Pos.ggcd_correct_divisors	300	0.0.0	synth with cache (only 1: unfold BinPosDef.Pos.ggcd; only 1: intros; only 1: apply ggcdn_correct_divisors).	3.520458	3
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.plus_le_compat_l	300	0	synth with cache (only 1: apply Nat.add_le_mono_l).	4.723001	1
+coq-tactician-stdlib.8.11.dev	Coq.QArith.QArith_base.Qle_refl	300	0	synth with cache (only 1: auto with *).	6.658707	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcompare.Zge_compare	300	0.0.0.0.0	synth with cache (only 1: intros; only 1: case Z.compare_spec; only 1: easy; only 1: easy; only 1: easy).	5.543975	5
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Mult.mult_le_compat_r	300	0.0	synth with cache (only 1: apply Nat.mul_le_mono_nonneg_r; only 1: apply Nat.le_0_l).	3.227191	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zgt_is_gt_bool	300	0.0.0.0	synth with cache (only 1: Z.swap_greater; only 1: rewrite Z.gtb_ltb; only 1: symmetry; only 1: apply Z.ltb_lt).	5.685799	4
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zeven_not_Zodd	300
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Plus.plus_le_compat_r	300	0	synth with cache (only 1: apply Nat.add_le_mono_r).	3.617935	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Minus.le_plus_minus_r	300	1.0	synth with cache (only 1: rewrite Nat.add_comm; only 1: apply Nat.sub_add).	4.443325	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_ge_compat	300	0	synth with cache (only 1: auto using Rplus_le_compat with rorders).	9.770722	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.one_succ	300	0	synth with cache (only 1: easy).	4.560735	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Even.not_even_and_odd	300	0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction n; only 1: intros ?; only 1: intros ?; only 1: inversion H0; only 1: intros ?; only 1: intros ?; only 1: inversion H; only 1: inversion H0; only 1: auto with arith).	4.866523	9
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Mult.mult_lt_compat_l	300	0.0.0.0	synth with cache (only 1: intros; only 1: apply Nat.mul_lt_mono_pos_l; only 1: easy; only 1: easy).	3.223831	4
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zcompare.Zgt_compare	300	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: rewrite H; only 1: easy).	5.447805	5
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssreflect.not_locked_false_eq_true	300	0.0	synth with cache (only 1: unlock; only 1: discriminate).	4.138342	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.two_succ	300	0	synth with cache (only 1: easy).	2.525076	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.eq_true_false_abs	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zlt_is_le_bool	300	0.0	synth with cache (only 1: rewrite Z.leb_le; only 1: apply Z.lt_le_pred).	5.740607	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zodd_not_Zeven	300	0.0.0.0.0	synth with cache (only 1: boolify_even_odd; only 1: rewrite <- Z.negb_odd; only 1: destruct BinIntDef.Z.odd; only 1: intuition; only 1: intuition).	5.519180	5
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Decidable.dec_not_not	300
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_iff_compat_l	300
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.imp_iff_compat_l	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H; only 1: split; only 1: intros ?; only 1: intros ?; only 1: apply H; only 1: apply H1; only 1: assumption; only 1: intros ?; only 1: intros ?; only 1: apply H0; only 1: apply H1; only 1: assumption).	0.023039	16
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.imp_iff_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.not_false_is_true	300	0.0	synth with cache (only 1: destr_bool; only 1: intuition).	1.713893	2
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.unique_existence	300
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.and_iff_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic.exists_inhabited	300	0.0	synth with cache (only 1: destruct 1; only 1: auto).	0.270868	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.FunctionalExtensionality.eta_expansion_dep	300	1	synth with cache (only 1: reflexivity).	4.110765	2
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Decidable.not_not_iff	300	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	1.782134	2
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.Private_Parity.Odd_0	300	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: destruct H; only 1: destruct x; only 1: easy; only 1: easy).	3.416975	5
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.andb_false_intro1	300	0.0.0	synth with cache (only 1: intros; only 1: apply andb_false_iff; only 1: auto).	1.874314	3
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.not_true_is_false	300
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Decidable.not_and_iff	300	0	synth with cache (only 1: tauto).	1.852768	1
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.andb_false_intro2	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zquot2_odd_eqn	300	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: destruct n; only 1: easy; only 1: destruct p; only 1: easy; only 1: easy; only 1: easy; only 1: destruct p; only 1: easy; only 1: easy; only 1: easy).	5.437910	10
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zgt_is_le_bool	300	0.0.0	synth with cache (only 1: Z.swap_greater; only 1: rewrite Z.leb_le; only 1: apply Z.lt_le_pred).	5.745068	3
+coq-tactician-stdlib.8.11.dev	Coq.Bool.Bool.eq_bool_prop_elim	300	0.0.0	synth with cache (only 1: destr_bool; only 1: tauto; only 1: tauto).	1.898190	3
+coq-tactician-stdlib.8.11.dev	Coq.Arith.PeanoNat.Nat.sqrt_neg	300	0	synth with cache (only 1: inversion 1).	2.718425	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_ge_compat	300
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Decidable.not_imp_iff	300	0.0	synth with cache (only 1: unfold decidable; only 1: tauto).	3.967206	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zodd_plus_Zodd	300	0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: boolify_even_odd; only 1: rewrite <- Z.negb_even; only 1: rewrite <- Z.negb_even; only 1: rewrite Bool.negb_true_iff; only 1: rewrite Bool.negb_true_iff; only 1: intros ?; only 1: intros ?; only 1: rewrite Z.even_add; only 1: rewrite H; only 1: rewrite H0; only 1: easy).	5.203974	11
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zodd_2p_plus_1	300	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: destruct p; only 1: easy; only 1: destruct p; only 1: easy; only 1: easy; only 1: easy; only 1: destruct p; only 1: easy; only 1: easy; only 1: easy).	5.785617	10
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zodd_mult_Zodd	300	0.0.0.0.0.0.0	synth with cache (only 1: boolify_even_odd; only 1: intros ?; only 1: intros ?; only 1: rewrite Z.odd_mul; only 1: rewrite H; only 1: rewrite H0; only 1: easy).	5.226168	7
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zeq_is_eq_bool	300	0.0.0.0.0.0	synth with cache (only 1: unfold Zeq_bool; only 1: rewrite <- Z.compare_eq_iff; only 1: destruct BinIntDef.Z.compare; only 1: easy; only 1: easy; only 1: easy).	6.342403	18
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rdiv_plus_distr	300	0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply Rmult_plus_distr_r).	8.432962	4
