@@ -1,0 +1,627 @@
+2023-02-25 09:19:57.304653: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.304667: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.304658: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.304661: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.304668: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.304651: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.304652: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.304657: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.309422: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309440: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.309421: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309441: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.309418: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309442: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.309424: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309443: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.309420: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309441: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.309423: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309442: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.309419: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309442: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.309418: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.309441: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.344231: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.344380: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:19:57.349953: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.349984: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:19:57.349960: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:19:57.349984: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:20:12.914464: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:12.914502: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:12.914513: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:12.914616: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:12.914641: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:12.914648: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:12.915200: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:12.980693: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:12.980733: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:12.980740: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:12.980840: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:12.980865: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:12.980872: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:12.981414: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:13.155786: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:13.155830: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:13.155838: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:13.155950: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:13.155973: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:13.155980: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:13.156515: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:13.253116: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:13.253150: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:13.253157: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:13.253258: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:13.253281: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:13.253288: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:13.253780: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:13.413614: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:13.413655: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:13.413662: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:13.413790: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:13.413817: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:13.413823: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:13.414391: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:13.416654: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:13.416684: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:13.416691: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:13.416787: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:13.416807: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:13.416812: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:13.417341: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:13.504656: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:13.504703: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:13.504711: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:13.504823: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:13.504848: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:13.504853: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:13.505493: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:13.915362: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:13.915432: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:13.915445: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:13.915596: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:13.915635: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:13.915646: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:13.916321: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:13.998663: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:13.998706: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:13.998715: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:13.998835: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:13.998866: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:13.998874: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:13.999464: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:20:14.009910: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:20:14.009964: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:20:14.009973: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:20:14.010105: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:20:14.010148: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:20:14.010155: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:20:14.010824: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:24:53.759522: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:24:53.764446: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:24:53.764473: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:25:07.208139: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:25:07.213229: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:25:07.213256: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:25:09.343567: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:25:09.343611: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:25:09.343619: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:25:09.343726: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:25:09.343749: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:25:09.343755: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:25:09.344312: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:25:11.047811: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:25:11.052717: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:25:11.052744: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:25:22.944920: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:25:22.944960: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:25:22.944967: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:25:22.945071: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:25:22.945094: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:25:22.945100: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:25:22.945642: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:25:26.332424: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:25:26.332481: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:25:26.332491: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:25:26.332642: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:25:26.332675: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:25:26.332683: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:25:26.333246: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:30:14.857726: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:30:14.858319: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:30:14.862941: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:30:14.862969: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:30:14.863402: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:30:14.863427: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:30:16.366930: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:30:16.371896: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:30:16.371922: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:30:21.685246: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:30:21.690344: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:30:21.690374: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:30:24.614568: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:30:24.619194: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:30:24.619223: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:30:25.995699: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:30:26.000812: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:30:26.000837: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:30:31.439024: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:30:31.439064: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:30:31.439072: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:30:31.439194: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:30:31.439218: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:30:31.439225: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:30:31.439844: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:30:31.535256: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:30:31.535318: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:30:31.535331: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:30:31.535467: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:30:31.535499: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:30:31.535515: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:30:31.536161: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:30:32.087367: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:30:32.087412: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:30:32.087420: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:30:32.087534: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:30:32.087560: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:30:32.087568: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:30:32.088146: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:30:37.525551: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:30:37.525599: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:30:37.525606: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:30:37.525721: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:30:37.525750: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:30:37.525757: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:30:37.526414: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:30:40.918831: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:30:40.918899: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:30:40.918910: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:30:40.919053: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:30:40.919093: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:30:40.919104: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:30:40.919858: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:30:41.809299: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:30:41.809353: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:30:41.809362: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:30:41.809477: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:30:41.809502: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:30:41.809514: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:30:41.810117: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:34:21.390754: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:34:21.395109: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:34:21.395132: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:34:32.675462: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:34:32.680968: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:34:32.680997: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:34:37.036954: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:34:37.036997: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:34:37.037006: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:34:37.037129: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:34:37.037150: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:34:37.037155: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:34:37.037731: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:34:40.856760: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:34:40.861913: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:34:40.861940: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:34:41.216228: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:34:41.221299: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:34:41.221328: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:34:48.383594: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:34:48.383638: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:34:48.383647: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:34:48.383757: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:34:48.383780: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:34:48.383788: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:34:48.384350: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:34:56.593104: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:34:56.593164: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:34:56.593176: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:34:56.593303: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:34:56.593339: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:34:56.593347: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:34:56.593984: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:34:56.646976: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:34:56.647032: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:34:56.647040: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:34:56.647178: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:34:56.647209: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:34:56.647214: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:34:56.647860: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:35:35.354389: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:35:35.359300: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:35:35.359326: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:35:51.704029: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:35:51.704077: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:35:51.704084: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:35:51.704196: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:35:51.704220: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:35:51.704226: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:35:51.704890: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:38:29.651501: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:38:29.656456: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:38:29.656483: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:38:43.302280: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:38:43.306964: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:38:43.306985: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:38:45.598455: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:38:45.598501: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:38:45.598518: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:38:45.598636: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:38:45.598664: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:38:45.598672: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:38:45.599296: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:38:58.530552: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:38:58.530593: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:38:58.530601: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:38:58.530700: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:38:58.530723: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:38:58.530731: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:38:58.531231: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:39:04.884289: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:39:04.889451: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:39:04.889477: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:39:18.977602: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:39:18.983247: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:39:18.983270: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:39:20.668426: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:39:20.668471: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:39:20.668479: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:39:20.668605: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:39:20.668642: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:39:20.668648: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:39:20.669218: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:39:34.980636: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:39:34.980687: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:39:34.980696: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:39:34.980825: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:39:34.980853: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:39:34.980860: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:39:34.981494: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:39:57.830196: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:39:57.834961: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:39:57.834993: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:40:14.240201: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:40:14.240260: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:40:14.240273: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:40:14.240405: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:40:14.240442: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:40:14.240450: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:40:14.241229: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:43:00.091237: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:43:00.096860: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:43:00.096892: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:43:16.085090: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:43:16.085133: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:43:16.085142: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:43:16.085268: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:43:16.085291: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:43:16.085297: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:43:16.085826: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:44:19.477403: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:44:19.482801: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:44:19.482830: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:44:36.198497: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:44:36.198564: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:44:36.198574: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:44:36.198746: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:44:36.198772: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:44:36.198778: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:44:36.199500: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:45:24.109802: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:45:24.115353: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:45:24.115402: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:45:40.372615: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:45:40.372672: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:45:40.372683: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:45:40.372805: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:45:40.372842: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:45:40.372850: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:45:40.373483: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:46:09.517259: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:46:09.522123: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:46:09.522147: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:46:25.749602: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:46:25.749645: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:46:25.749654: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:46:25.749756: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:46:25.749781: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:46:25.749787: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:46:25.750404: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:46:51.814633: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:46:51.820403: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:46:51.820430: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:47:08.443993: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:47:08.444039: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:47:08.444048: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:47:08.444163: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:47:08.444187: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:47:08.444193: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:47:08.444815: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:47:23.468134: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:47:23.474529: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:47:23.474571: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:47:40.085058: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:47:40.085103: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:47:40.085112: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:47:40.085240: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:47:40.085266: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:47:40.085272: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:47:40.085847: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:48:16.466746: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:48:16.472413: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:48:16.472444: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:48:32.690321: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:48:32.690408: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:48:32.690422: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:48:32.690577: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:48:32.690624: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:48:32.690633: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:48:32.691355: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:48:56.550887: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:48:56.556579: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:48:56.556609: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:48:59.647307: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:48:59.653614: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:48:59.653651: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:49:03.003581: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:49:03.008708: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:49:03.008741: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:49:12.977172: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:49:12.977221: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:49:12.977229: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:49:12.977341: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:49:12.977369: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:49:12.977376: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:49:12.978000: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:49:13.956877: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:49:13.962360: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:49:13.962400: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:49:16.176796: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:49:16.176857: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:49:16.176867: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:49:16.177013: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:49:16.177043: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:49:16.177049: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:49:16.177759: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:49:19.351547: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:49:19.351598: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:49:19.351606: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:49:19.351724: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:49:19.351747: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:49:19.351752: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:49:19.352366: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:49:30.303841: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:49:30.303899: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:49:30.303908: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:49:30.304039: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:49:30.304077: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:49:30.304085: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:49:30.304747: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:49:39.563628: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:49:39.569526: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:49:39.569559: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:49:55.732559: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:49:55.732620: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:49:55.732630: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:49:55.732782: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:49:55.732817: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:49:55.732823: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:49:55.733560: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:51:22.827724: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:51:22.832424: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:51:22.832448: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:51:38.725027: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:51:38.725068: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:51:38.725075: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:51:38.725182: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:51:38.725205: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:51:38.725211: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:51:38.725817: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:53:27.615356: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:53:27.620207: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:53:27.620230: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:53:43.382652: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:53:43.382756: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:53:43.382769: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:53:43.382904: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:53:43.382942: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:53:43.382948: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:53:43.383637: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:55:36.398312: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:55:36.403041: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:55:36.403070: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:55:52.499305: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:55:52.499353: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:55:52.499361: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:55:52.499473: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:55:52.499498: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:55:52.499510: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:55:52.500125: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:56:26.772643: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:56:26.777810: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:56:26.777840: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:56:36.864204: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:56:36.869080: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:56:36.869108: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:56:42.869705: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:56:42.869758: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:56:42.869767: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:56:42.869873: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:56:42.869897: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:56:42.869905: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:56:42.870559: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:56:52.736656: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:56:52.736698: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:56:52.736707: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:56:52.736811: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:56:52.736836: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:56:52.736842: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:56:52.737420: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:57:34.159786: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:57:34.165033: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:57:34.165062: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:57:40.357853: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:57:40.363048: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:57:40.363088: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:57:50.399521: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:57:50.399571: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:57:50.399580: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:57:50.399715: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:57:50.399741: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:57:50.399747: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:57:50.400431: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:57:56.299901: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:57:56.299959: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:57:56.299971: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:57:56.300105: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:57:56.300139: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:57:56.300146: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:57:56.300807: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:58:00.142718: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:58:00.147686: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:58:00.147712: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:58:16.314933: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:58:16.314990: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:58:16.315001: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:58:16.315128: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:58:16.315163: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:58:16.315171: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:58:16.315825: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:58:30.933329: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:58:30.938061: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:58:30.938090: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:58:33.750711: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:58:33.755904: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:58:33.755930: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:58:46.945700: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:58:46.945740: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:58:46.945748: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:58:46.945868: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:58:46.945892: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:58:46.945897: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:58:46.946445: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:58:47.305055: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:58:47.309899: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:58:47.309927: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:58:49.366110: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:58:49.366152: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:58:49.366159: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:58:49.366267: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:58:49.366288: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:58:49.366293: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:58:49.366944: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:58:53.241860: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:58:53.249220: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:58:53.249246: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:59:02.683565: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:59:02.683613: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:59:02.683621: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:59:02.683730: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:59:02.683754: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:59:02.683761: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:59:02.684342: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:59:09.064329: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:59:09.064372: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:59:09.064380: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:59:09.064482: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:59:09.064504: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:59:09.064516: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:59:09.065068: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:59:22.725134: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:59:22.730204: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:59:22.730231: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:59:38.509661: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:59:38.509701: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:59:38.509710: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:59:38.509815: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:59:38.509840: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:59:38.509848: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:59:38.510423: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 09:59:40.176097: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 09:59:40.180723: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 09:59:40.180747: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 09:59:55.914243: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 09:59:55.914307: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 09:59:55.914321: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 09:59:55.914496: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 09:59:55.914556: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 09:59:55.914564: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 09:59:55.915366: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 10:00:16.134633: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 10:00:16.140444: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 10:00:16.140477: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 10:00:17.648241: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-02-25 10:00:17.654243: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib
+2023-02-25 10:00:17.654274: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-02-25 10:00:32.641317: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 10:00:32.641359: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 10:00:32.641367: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 10:00:32.641477: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 10:00:32.641502: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 10:00:32.641517: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 10:00:32.642131: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-02-25 10:00:34.119631: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2023-02-25 10:00:34.119696: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: cccxc440
+2023-02-25 10:00:34.119705: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: cccxc440
+2023-02-25 10:00:34.119831: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
+2023-02-25 10:00:34.119865: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
+2023-02-25 10:00:34.119871: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13
+2023-02-25 10:00:34.120539: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
