@@ -1,0 +1,291 @@
+coq-ext-lib.0.11.6	ExtLib.Data.HList.app_ass_trans	300	0.1.0	synth with cache (only 1: intros; only 1: rewrite app_assoc; only 1: trivial).	0.015673	4
+coq-ext-lib.0.11.6	ExtLib.Data.HList.app_nil_r_trans	300	129.1.64	synth with cache (only 1: intros b Hb; only 1: rewrite app_nil_r; only 1: now subst).	0.015201	13
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.tilde_1_inj_neg	300	0.0.256.65	synth with cache (only 1: intros Heq; only 1: intro Hxz; only 1: red; only 1: congruence).	0.237622	339
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.tilde_0_inj_neg	300	577.0.0.0.192.65.64	synth with cache (only 1: intros h1 h2; only 1: intros H; only 1: generalize H; only 1: intuition; only 1: contradict H; only 1: f_equal; only 1: intuition auto; PeanoNat.Nat.Private_OrderTac.Tac.subst_eqns; eauto using (RelationClasses.StrictOrder_Transitive x y z) with *).	0.819740	415
+coq-ext-lib.0.11.6	ExtLib.Generic.Ind.show_product	300	452.1	synth with cache (only 1: intros; only 1: BinNat.N.auto').	0.338161	688
+coq-ext-lib.0.11.6	ExtLib.Generic.DerivingData.dataList_to_list	300	256.456	synth with cache (only 1: intros Hnm Hpq; only 1: BinNat.N.Private_Tac.order || (right; BinNat.N.Private_Tac.order) || (left; BinNat.N.Private_Tac.order)).	0.313834	805
+coq-ext-lib.0.11.6	ExtLib.Data.Tuple.get_put_eq	300	323.1.0.0.0.0.0.0.0.0.1.1.1.0.0.385.321.3	synth with cache (only 1: intros m n; only 1: intro Pdec; only 1: induction n as [| n hn]; only 1: intros; only 1: now PeanoNat.Nat.nzsimpl; only 1: intros; only 1: generalize (fin_all_In f); only 1: remember (S n); only 1: destruct f; only 1: intros; only 1: firstorder; only 1: remember (S n); only 1: remember (S n); only 1: remember (S n); only 1: remember (S n); only 1: remember (S n); only 1: intros; only 1: RelationClasses.simpl_relation).	68.921020	303428
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_eta	300	65.448.128.0.0.0.387.391.196	synth with cache (only 1: compute; only 1: intros a; only 1: assert (comm : forall x y, x + y = y + x); only 1: intros n m; only 1: nzinduct n; only 1: now PeanoNat.Nat.nzsimpl; only 1: CRelationClasses.reduce; only 1: auto with *; only 1: now intros []).	156.372671	241303
+coq-ext-lib.0.11.6	ExtLib.Data.Vector.parametric.vector_eta	300
+coq-ext-lib.0.11.6	ExtLib.Data.SumN.asNth'_get_lookup	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.pmap_lookup_insert_empty	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.EqDec.EqDec_list	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.lookup_empty	300	0.0.0.5.3.5	synth with cache (only 1: compute; only 1: intros; only 1: induction k; only 1: eauto using tilde_0_inj_neg, tilde_1_inj_neg; only 1: eauto using tilde_0_inj_neg, tilde_1_inj_neg; only 1: congruence).	3.696546	5433
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.alist_find_alt	300
+coq-ext-lib.0.11.6	ExtLib.Data.String.string_dec_sound	300
+coq-ext-lib.0.11.6	ExtLib.Programming.Show.hiding_notation.nat_show_obligation_1	300
+coq-ext-lib.0.11.6	ExtLib.Generic.DerivingData.list_to_dataList	300
+coq-ext-lib.0.11.6	ExtLib.Data.Member.member.member_eta	300	1.386.64.0.64.0.0	synth with cache (only 1: induction ls; only 1: intros; only 1: now PeanoNat.Nat.nzsimpl; only 1: intros; only 1: destruct m; only 1: now split; only 1: auto).	0.824051	1261
+coq-ext-lib.0.11.6	ExtLib.Data.Tuple.get_put_neq	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_app_nil_r	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_rev_nil	300	0	synth with cache (only 1: auto).	0.012244	1
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.equiv.Reflexive_equiv_hlist	300	0.130.4.3.142.145.263	synth with cache (only 1: compute; only 1: intro n; only 1: induction n; only 1: constructor; only 1: constructor; only 1: CRelationClasses.simpl_crelation; only 1: auto).	46.029809	192462
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.equiv.Symmetric_equiv_hlist	300	256.128.0.0.69.517	synth with cache (only 1: intros a0; only 1: induction 1; only 1: constructor; only 1: generalize dependent (app_nil_r_trans ls); only 1: intuition; only 1: now right).	2.984879	4909
+coq-ext-lib.0.11.6	ExtLib.Data.Vector.parametric.get_put_eq	300
+coq-ext-lib.0.11.6	ExtLib.Data.SumN.Outof_Into	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.list_ind_singleton	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.pmap_lookup_insert_eq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.fold.fold_alist_alt	300
+coq-ext-lib.0.11.6	ExtLib.Data.String.RelDec_Correct_string	300
+coq-ext-lib.0.11.6	ExtLib.Data.String.Reflect_string_dec	300	201	synth with cache (only 1: firstorder).	0.644006	629
+coq-ext-lib.0.11.6	ExtLib.Data.String.Program_Scope._xxx	300	64.0	synth with cache (only 1: intros n m H1 H2; only 1: Nat.order').	0.017882	5
+coq-ext-lib.0.11.6	ExtLib.Data.Fin.fin_all_In	300
+coq-ext-lib.0.11.6	ExtLib.Data.Member.member.member_case	300
+coq-ext-lib.0.11.6	ExtLib.Data.SigT.injective.Injective_existT	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.equiv.Transitive_equiv_hlist	300
+coq-ext-lib.0.11.6	ExtLib.Data.Vector.parametric.get_put_neq	300
+coq-ext-lib.0.11.6	ExtLib.Data.SumN.asNth_eq	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.list_rev_ind	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.pmap_lookup_insert_Some_neq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.mapsto_alist_cons	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.mapsto_lookup_alist	300	0.0	synth with cache (only 1: unfold mapsto_alist; only 1: intuition).	0.019132	2
+coq-ext-lib.0.11.6	ExtLib.Data.String.Program_Scope.nat2string_obligation_1	300
+coq-ext-lib.0.11.6	ExtLib.Data.String.nat2string10	300	387.0	synth with cache (only 1: intros; only 1: Nat.Private_Tac.order || (right; Nat.Private_Tac.order) || (left; Nat.Private_Tac.order)).	0.071735	131
+coq-ext-lib.0.11.6	ExtLib.Data.String.nat2string2	300	0.0	synth with cache (only 1: refine (nat2string _); only 1: repeat constructor).	0.015429	2
+coq-ext-lib.0.11.6	ExtLib.Data.String.nat2string8	300	2.0	synth with cache (only 1: refine (nat2string _); only 1: Nat.order').	0.011882	4
+coq-ext-lib.0.11.6	ExtLib.Data.String.nat2string16	300	2.0	synth with cache (only 1: refine (nat2string _); only 1: Nat.order').	0.026244	4
+coq-ext-lib.0.11.6	ExtLib.Data.Fin.fin_case	300
+coq-ext-lib.0.11.6	ExtLib.Data.Member.member.to_nat_eq_member_eq	300
+coq-ext-lib.0.11.6	ExtLib.Data.SigT.injective.Injective_existT_dif	300
+coq-ext-lib.0.11.6	ExtLib.Data.SigT.eq_sigT_rw	300	128.131	synth with cache (only 1: intro x; only 1: CRelationClasses.simpl_crelation).	0.460949	467
+coq-ext-lib.0.11.6	ExtLib.Programming.Extras.uncurry_curry	300	1	synth with cache (only 1: firstorder).	0.008276	2
+coq-ext-lib.0.11.6	ExtLib.Programming.Extras.curry_uncurry	300	64.449.0	synth with cache (only 1: intros a b c Hb H; only 1: destruct H; only 1: now try split).	0.075949	27
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.equiv.equiv_hlist_Hcons	300
+coq-ext-lib.0.11.6	ExtLib.Data.Vector.parametric.ForallV_vector_In	300
+coq-ext-lib.0.11.6	ExtLib.Data.SumN.OneOf_Empty	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Forall_map	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.pmap_lookup_insert_None_neq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.mapsto_remove_eq_alist	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Forall_cons_iff	300	0.1.1.1	synth with cache (only 1: intros a b Ha Hb; only 1: split; only 1: abstract now inversion 1; only 1: now constructor).	1.933225	2377
+coq-ext-lib.0.11.6	ExtLib.Data.List.Forall_nil_iff	300	0.0.512.0.0	synth with cache (only 1: constructor; only 1: intros; only 1: intuition BinInt.Z.Private_Tac.order; only 1: intros; only 1: constructor).	0.025170	29
+coq-ext-lib.0.11.6	ExtLib.Data.String.string.wf_R_string_len	300
+coq-ext-lib.0.11.6	ExtLib.Data.Fin.Injective_FS	300
+coq-ext-lib.0.11.6	ExtLib.Data.Member.member.Injective_MN	300
+coq-ext-lib.0.11.6	ExtLib.Data.Z.RelDec_Correct_zeq	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.6.0	synth with cache (only 1: constructor; only 1: intros n m; only 1: destruct n, m; only 1: now Z.nzsimpl; only 1: now split; only 1: simpl; only 1: now split; only 1: now split; only 1: simpl; only 1: rewrite Pos.eqb_eq; only 1: split; only 1: congruence; only 1: congruence; only 1: simpl; only 1: now split; only 1: simpl; only 1: now split; only 1: simpl; only 1: now split; only 1: simpl; only 1: rewrite Pos.eqb_eq; only 1: split; only 1: congruence; only 1: congruence).	5.694680	14642
+coq-ext-lib.0.11.6	ExtLib.Data.Z.RelDec_Correct_zlt	300	2.4.2	synth with cache (only 1: constructor; only 1: intros n m; only 1: apply Z.ltb_lt).	2.428219	4905
+coq-ext-lib.0.11.6	ExtLib.Data.Z.RelDec_Correct_zle	300	3.3.0	synth with cache (only 1: constructor; only 1: intros a b; only 1: apply Z.leb_le).	1.520059	3002
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.firstn_app_L	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.firstn_app_R	300	2.1.0.0.0.65.320.3.6.0.0.0	synth with cache (only 1: induction n; only 1: intros; only 1: unfold firstn at 2; only 1: simpl; only 1: rewrite app_nil_r; only 1: firstorder; only 1: intro H; only 1: intros; only 1: rewrite firstn_app; only 1: f_equal; only 1: apply firstn_all2; only 1: auto with arith).	29.165141	57447
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.firstn_all	300	64.2.257.70	synth with cache (only 1: intro H; only 1: firstorder; only 1: apply firstn_all2; only 1: auto).	4.182855	9117
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.firstn_0	300	320.0	synth with cache (only 1: intros; only 1: repeat match goal with | _ => reflexivity | _ => progress subst | H:Some ?a = Some ?b |- _ => assert (a = b) by refine match H with | eq_refl => eq_refl end; clear H | H:None = Some _ |- _ => solve [ inversion H ] end).	0.020576	17
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.firstn_cons	300	193.0.65.194.256.1	synth with cache (only 1: intros l1 l2; only 1: intro H1; only 1: intros n H; only 1: destruct H; only 1: auto; only 1: now destruct n, m).	4.001213	9651
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.skipn_app_R	300	0.0.0.0.577.3.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction n; only 1: destruct a; only 1: auto; only 1: simpl in *; only 1: intros; only 1: exfalso; only 1: lia; only 1: destruct a; only 1: simpl in *; only 1: intros; only 1: auto; only 1: intros He; only 1: simpl; only 1: intros; only 1: eapply IHn; only 1: lia).	4.445579	8933
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.equiv.equiv_hlist_app	300
+coq-ext-lib.0.11.6	ExtLib.Data.SumN.pmap_lookup'_eq	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.EqDep.Classes.UIP_refl	300	0.0.0	synth with cache (only 1: intros; only 1: eapply Eqdep_dec.UIP_dec; only 1: apply equiv_dec).	0.014662	3
+coq-ext-lib.0.11.6	ExtLib.Tactics.EqDep.Classes.UIP_equal	300	0.0	synth with cache (only 1: eapply Eqdep_dec.UIP_dec; only 1: apply equiv_dec).	0.010871	2
+coq-ext-lib.0.11.6	ExtLib.Tactics.EqDep.Classes.inj_pair2	300	0.0.0.0	synth with cache (only 1: intros; only 1: eapply Eqdep_dec.inj_pair2_eq_dec; only 1: auto; only 1: auto).	0.020553	4
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.pmap_lookup_insert_neq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.mapsto_remove_neq_alist	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.list.wf_R_list_len	300
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Reflexive_Roption	300	257.0.130.199.130.134.3.66	synth with cache (only 1: red; only 1: intro H; only 1: red in H; only 1: intro p; only 1: destruct p; only 1: right; only 1: auto; only 1: now constructor).	4.711376	26332
+coq-ext-lib.0.11.6	ExtLib.Data.Fin.RelDec_Correct_fin_eq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Symmetric_Roption	300	192.0.0.0.0.0.260.257	synth with cache (only 1: intros H; only 1: inversion 1; only 1: constructor; only 1: constructor; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: CRelationClasses.simpl_crelation).	1.384827	4727
+coq-ext-lib.0.11.6	ExtLib.Data.Member.member.nth_member_nth_error	300
+coq-ext-lib.0.11.6	ExtLib.Data.Member.member.member_In	300	0.1.1.64.5	synth with cache (only 1: induction 1; only 1: left; only 1: auto; only 1: simpl in *; only 1: auto).	1.181471	2641
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.RelDecCorrect_eq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Z.RelDec_Correct_zgt	300
+coq-ext-lib.0.11.6	ExtLib.Data.Char.ascii_dec_sound	300	0.0.0.259.2.1.10	synth with cache (only 1: intros n m; only 1: revert m; only 1: destruct m; only 1: destruct n; only 1: simpl; only 1: do 8 (case Bool.eqb_spec; [ intros -> | constructor; now intros [=] ]); only 1: now constructor).	116.553915	243906
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.skipn_app_L	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.skipn_0	300	0.0.0.320	synth with cache (only 1: intros LE; only 1: intros a a' H; only 1: subst; only 1: auto).	0.104337	106
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_nil_eta	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_cons_eta	300	2.0.1.0.194	synth with cache (only 1: intro H2; only 1: intros; only 1: rewrite (hlist_eta h); only 1: rewrite (hlist_eta h); only 1: constructor).	0.509174	660
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.Hcons_inv	300	578.0	synth with cache (only 1: intros; only 1: CRelationClasses.simpl_crelation).	0.063251	31
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.skipn_all	300	1.2.0.1.389.195	synth with cache (only 1: intro EQ; only 1: intros x y; only 1: intros; only 1: rewrite skipn_all2; only 1: reflexivity; only 1: auto with arith).	132.768582	590257
+coq-ext-lib.0.11.6	ExtLib.Data.ListFirstnSkipn.skipn_cons	300	322.0.0.2	synth with cache (only 1: induction n; only 1: intros; only 1: inversion H; only 1: now N.nzsimpl).	0.345557	370
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.pmap_lookup_remove_eq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.mapsto_add_eq_alist	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.ListEq.RelDec_Correct_eq_list	300
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Transitive_Roption	300
+coq-ext-lib.0.11.6	ExtLib.Data.PList.plistFun.pIn_split_l	300
+coq-ext-lib.0.11.6	ExtLib.Data.PList.plistFun.pIn_split_r	300	0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: destruct p; only 1: simpl; only 1: induction lst; only 1: simpl in *; only 1: destruct H; only 1: simpl in *; only 1: destruct t; only 1: destruct (split lst); only 1: simpl; only 1: destruct H as [H| H]; only 1: inv_all; only 1: tauto; only 1: tauto).	0.153628	104
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.RelDecCorrect_lt	300
+coq-ext-lib.0.11.6	ExtLib.Data.Z.RelDec_Correct_zge	300
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.RelDecCorrect_le	300	0.0.0.0.0.0.0.0.0.1.0.0.0.0.1.0.0.0.1.3.84	synth with cache (only 1: constructor; only 1: intros n m; only 1: revert m; only 1: induction n; only 1: destruct m; only 1: constructor; only 1: easy; only 1: simpl; only 1: easy; only 1: simpl; only 1: split; only 1: intros; only 1: apply le_0_n; only 1: trivial; only 1: destruct m; only 1: now split; only 1: simpl; only 1: rewrite IHn; only 1: split; only 1: apply le_n_S; only 1: apply le_S_n).	6.864159	22375
+coq-ext-lib.0.11.6	ExtLib.Data.PList.plistFun.pIn_app_iff	300	2.3.0.6.0.3.87	synth with cache (only 1: induction l; only 1: intuition; only 1: simpl in *; only 1: tauto; only 1: simpl; only 1: compute; only 1: tauto).	9.204231	64436
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.RelDecCorrect_gt	300	0.0.2.5.0	synth with cache (only 1: constructor; only 1: intros a Ha; only 1: split; only 1: eapply NPeano.Nat.leb_le; only 1: eapply NPeano.Nat.leb_le).	2.101197	3371
+coq-ext-lib.0.11.6	ExtLib.Core.Decision.decide_decideP	300	128.259.1.192	synth with cache (only 1: elim H; only 1: simpl; only 1: clear H; only 1: Bool.destr_bool).	0.599111	1293
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.Eqpair.Reflexive_Eqpair	300	1.0.14.257.70	synth with cache (only 1: intro Hxz; only 1: repeat match goal with | p:(_ * _)%type |- _ => destruct p | b:bool |- _ => destruct b end; only 1: split; only 1: firstorder; only 1: auto).	0.709439	4838
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.Eqpair.Symmetric_Eqpair	300	196.194.130.0	synth with cache (only 1: red; only 1: intros f [x]; only 1: intros [? ?]; only 1: now constructor).	0.656267	1719
+coq-ext-lib.0.11.6	ExtLib.Data.Char.RelDec_Correct_ascii	300
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.Eqpair.Transitive_Eqpair	300	1.128.1.5.0.1.129.199.0	synth with cache (only 1: red; only 1: intros [x y]; only 1: intros A B [H1 H2]; only 1: inversion 1; only 1: constructor; only 1: rewrite H; only 1: assumption; only 1: rewrite H0; only 1: assumption).	137.202171	366459
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.equiv_eq_eq	300
+coq-ext-lib.0.11.6	ExtLib.Structures.EqDep.Classes.UIP_refl	300
+coq-ext-lib.0.11.6	ExtLib.Structures.EqDep.Classes.UIP_equal	300	0.0.385	synth with cache (only 1: intros x y H; only 1: eapply Eqdep_dec.UIP_dec; only 1: apply EquivDec.equiv_dec).	0.255514	38
+coq-ext-lib.0.11.6	ExtLib.Structures.EqDep.Classes.inj_pair2	300	644.192	synth with cache (only 1: symmetry; only 1: now intuition).	0.151138	399
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.pmap_lookup_remove_neq	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.mapsto_add_neq_alist	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Injective_cons	300
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Injective_Roption_None	300
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Injective_Roption_None_Some	300	0.0	synth with cache (only 1: refine {| result := True; injection := _ |}; only 1: auto).	0.009609	2
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Injective_Roption_Some_None	300	0.0	synth with cache (only 1: refine {| result := False; injection := _ |}; only 1: inversion 1).	0.012213	2
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Injective_Roption_Some_Some	300	1.1	synth with cache (only 1: refine {| result := True; injection := _ |}; only 1: constructor).	0.040840	39
+coq-ext-lib.0.11.6	ExtLib.Data.Option.relation.Injective_Proper_Roption_Some	300	192.0.2.2	synth with cache (only 1: compute; only 1: refine {| result := True; injection := _ |}; only 1: inversion 1; only 1: constructor).	0.065844	157
+coq-ext-lib.0.11.6	ExtLib.Data.PList.plistOk.inb_sound	300
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.RelDecCorrect_ge	300
+coq-ext-lib.0.11.6	ExtLib.Data.Char.Reflect_ascii_dec	300	0.0.0.1.1.0.4.65.0	synth with cache (only 1: eapply iff_to_reflect; only 1: intro n; only 1: induction n; only 1: simpl; only 1: destruct y; only 1: do 8 (case Bool.eqb_spec; [ intros -> | constructor; now intros [=] ]); only 1: split; only 1: congruence; only 1: congruence).	254.819997	258600
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.Eqpair.Injective_Eqpair	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.cast1	300	128.0.0.0.0.0.0.0.0.0.0.0.0.65.68.2	synth with cache (only 1: clear; only 1: intros NF; only 1: induction l as [| x l IH]; only 1: destruct n; only 1: simpl; only 1: intros; only 1: congruence; only 1: simpl; only 1: intros; only 1: congruence; only 1: destruct n; only 1: simpl; only 1: intros; only 1: congruence; only 1: simpl; only 1: auto using PeanoNat.Nat.Private_OrderTac.Tac.eq_sym).	268.107168	639947
+coq-ext-lib.0.11.6	ExtLib.Structures.EqDep.Classes.equiv_dec_refl_left	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.remove_eq_alist	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.pmap.MapOk_pmap	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Injective_cons_nil	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Injective_nil_cons	300	0.0	synth with cache (only 1: refine {| result := False; injection := _ |}; only 1: inversion 1).	0.012370	2
+coq-ext-lib.0.11.6	ExtLib.Data.Option.EqDec_option	300
+coq-ext-lib.0.11.6	ExtLib.Data.PList.plistOk.inb_complete	300
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.wf_R_S	300
+coq-ext-lib.0.11.6	ExtLib.Data.Sum.PairParam.RelDec_Correct_equ_sum	300
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.PairWF.wf_R_pair	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.cast2	300
+coq-ext-lib.0.11.6	ExtLib.Structures.EqDep.from_rel_dec.EqDec_RelDec	300
+coq-ext-lib.0.11.6	ExtLib.Data.Positive.RelDec_Correct_peq	300	2.0.2.9	synth with cache (only 1: split; only 1: split; only 1: apply Pos.eqb_eq; only 1: apply Pos.eqb_eq).	0.515370	1815
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.fmap.fmap_lookup	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.remove_neq_alist	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Injective_nil_nil	300
+coq-ext-lib.0.11.6	ExtLib.Data.Option.OptionEq.RelDec_Correct_eq_option	300
+coq-ext-lib.0.11.6	ExtLib.Data.PList.plistOk.nodup_sound	300
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.wf_R_lt	300
+coq-ext-lib.0.11.6	ExtLib.Data.Sum.SumEq.RelDec_Correct_eq_pair	300
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.PairParam.RelDec_Correct_equ_pair	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_nth_hlist_app	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Injective_app_cons	300	1.1.4.0.2.71.1.837.460.587	synth with cache (only 1: destruct c; only 1: revert a; only 1: destruct a; only 1: simpl; only 1: intuition; only 1: refine {| result := True; injection := _ |}; only 1: inversion 1; only 1: auto; only 1: refine {| result := True; injection := _ |}; only 1: auto).	223.736630	912145
+coq-ext-lib.0.11.6	ExtLib.Data.Positive.RelDec_Correct_plt	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapPositive.fmap.fmap_lookup_bk	300
+coq-ext-lib.0.11.6	ExtLib.Data.Map.FMapAList.keyed.proofs.MapLaws_alist	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.Proper_red	300	64	synth with cache (only 1: intuition).	0.015209	13
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.respectful_red	300	0	synth with cache (only 1: intuition).	0.007215	1
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.respectful_if_bool	300	0.1.3.0.194.198	synth with cache (only 1: intros H; only 1: intros x x' Hxx' y y' Hyy'; only 1: destruct 1; only 1: destruct H; only 1: intuition; only 1: eauto).	3.622401	15076
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.Proper_andb	300	1	synth with cache (only 1: auto with *).	0.009134	2
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.K.Proper_food	300	128.0	synth with cache (only 1: intros x x' Hxx' y y' Hyy'; only 1: congruence).	0.010241	8
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.K.Proper_S	300	0.0	synth with cache (only 1: derive_morph; only 1: auto).	0.010254	2
+coq-ext-lib.0.11.6	ExtLib.Data.Option.eq_option_eq	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.Map.listEq_match	300	2.0.64.514.257.321.0	synth with cache (only 1: unfold respectful; only 1: intros x x' Hx; only 1: intros n m H; only 1: intros op Hop; only 1: destruct 1; only 1: auto; only 1: CRelationClasses.simpl_crelation).	3.868545	9097
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.PairEq.RelDec_Correct_eq_pair	300	0.128.2.0.1.0.0.1.3.0.0.0.0.2.129.0.0	synth with cache (only 1: constructor; only 1: destruct x; only 1: red; only 1: constructor; only 1: destruct y; only 1: simpl in *; only 1: intros; only 1: repeat match goal with | H:context [ ?X ?[ _ ] ?Y ] |- _ => consider (X ?[ _ ] Y); intros; subst | |- context [ ?X ?[ _ ] ?Y ] => consider (X ?[ _ ] Y); intros; subst end; only 1: constructor; only 1: intros; only 1: destruct y; only 1: repeat match goal with | H:context [ ?X ?[ _ ] ?Y ] |- _ => consider (X ?[ _ ] Y); intros; subst | |- context [ ?X ?[ _ ] ?Y ] => consider (X ?[ _ ] Y); intros; subst end; only 1: simpl in *; only 1: intuition; only 1: simpl in *; only 1: Tactics.program_simpl; only 1: intuition).	156.808368	221912
+coq-ext-lib.0.11.6	ExtLib.Data.PList.plistOk.nodup_complete	300
+coq-ext-lib.0.11.6	ExtLib.Data.Nat.Injective_S	300
+coq-ext-lib.0.11.6	ExtLib.Data.Sum.Injective_inl	300
+coq-ext-lib.0.11.6	ExtLib.Data.Sum.Injective_inr	300	0.0	synth with cache (only 1: refine {| result := a = c; injection := _ |}; only 1: abstract (inversion 1; intuition)).	0.012624	2
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.type.hlist_app_assoc	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.type.hlist_app_assoc'	300	0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ls ls' ls''; only 1: generalize (eq_sym (app_assoc_reverse ls ls' ls'')); only 1: induction ls; only 1: simpl; only 1: intros; only 1: rewrite (hlist_eta a); only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: intros; only 1: rewrite (hlist_eta a0); only 1: simpl; only 1: inversion H; only 1: inversion H; only 1: erewrite (IHls H1); only 1: generalize (app_ass_trans ls ls' ls''); only 1: clear; only 1: intro; only 1: generalize dependent (hlist_app (hlist_tl a0) (hlist_app b c)); only 1: destruct e; only 1: intro; only 1: generalize dependent (hlist_app (hlist_tl a0) (hlist_app b c)); only 1: intro; only 1: reflexivity).	5.005612	4556
+coq-ext-lib.0.11.6	ExtLib.Data.List.Injective_app_same_L	300
+coq-ext-lib.0.11.6	ExtLib.Data.Positive.RelDec_Correct_ple	300
+coq-ext-lib.0.11.6	ExtLib.Core.CmpDec.pair.CmpDec_Correct_pair	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Reify.ListReify.Reflect_cons	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Parametric.Map.Proper_map'	300
+coq-ext-lib.0.11.6	ExtLib.Data.Pair.Injective_pair	300
+coq-ext-lib.0.11.6	ExtLib.Data.PList.PListEq.RelDec_Correct_eq_plist	300
+coq-ext-lib.0.11.6	ExtLib.Programming.Le.lt_RelDecCorrect	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_app_L	300	65.0.0.129.0.1.512.128.3.0.1.0.0.1.65	synth with cache (only 1: intro H; only 1: induction H as [| a l Hal Hl IH]; only 1: intros [| a l] H; only 1: simpl; only 1: inversion 1; only 1: revert l; only 1: simpl; only 1: now intros []; only 1: intro; only 1: simpl; only 1: intros; only 1: induction n as [| n IH]; only 1: eauto; only 1: simpl in *; only 1: firstorder).	22.709238	67468
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_app_R	300	256.0.194.0.0.0.1.0.0.0.0.0	synth with cache (only 1: induction A; only 1: destruct n; only 1: inversion 1; only 1: auto; only 1: simpl; only 1: auto; only 1: destruct n; only 1: simpl; only 1: intros; only 1: now simpl; only 1: simpl; only 1: auto with *).	1.524934	3276
+coq-ext-lib.0.11.6	ExtLib.Data.Sum.Injective_inl_False	300
+coq-ext-lib.0.11.6	ExtLib.Data.Sum.Injective_inr_False	300	0.0	synth with cache (only 1: refine {| result := False; injection := _ |}; only 1: abstract (inversion 1; intuition)).	0.010828	2
+coq-ext-lib.0.11.6	ExtLib.Data.Bool.RelDec_Correct_eq_bool	300	0.0.0.0.0.3	synth with cache (only 1: constructor; only 1: Bool.destr_bool; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.075731	83
+coq-ext-lib.0.11.6	ExtLib.Data.Unit.RelDec_Correct_eq_unit	300	0.0.0.0.0.1.2.65.1.0.67.6	synth with cache (only 1: constructor; only 1: intros n m; only 1: unfold rel_dec; only 1: split; only 1: elim m; only 1: revert m; only 1: simpl; only 1: induction n; only 1: Bool.destr_bool; only 1: revert m; only 1: induction n; only 1: Bool.destr_bool).	2.134563	9260
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.eq_sym_eq	300	0.2.128.71.6	synth with cache (only 1: intros A P H; only 1: intro p; only 1: intro H1; only 1: destruct p; only 1: trivial).	0.642577	3510
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.match_eq_sym_eq	300	0.0	synth with cache (only 1: destruct pf; only 1: reflexivity).	0.009111	2
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.match_eq_sym_eq'	300	0.0	synth with cache (only 1: destruct pf; only 1: reflexivity).	0.008134	2
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.match_eq_match_eq	300	0.67	synth with cache (only 1: inversion 1; only 1: auto).	0.037932	58
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.eq_sym_eq_trans	300	0.1.2.2.1	synth with cache (only 1: intros A x y z H1 H2; only 1: rewrite <- H2; only 1: simpl; only 1: rewrite eq_trans_refl_l; only 1: reflexivity).	0.178710	404
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.eq_Const_eq	300	0.0	synth with cache (only 1: destruct pf; only 1: reflexivity).	0.006927	2
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.eq_Arr_eq	300	0.0.65	synth with cache (only 1: intros n m; only 1: destruct pf; only 1: reflexivity).	0.015947	8
+coq-ext-lib.0.11.6	ExtLib.Data.Eq.eq_sym_eq_sym	300	0.1.1	synth with cache (only 1: intros; only 1: subst; only 1: reflexivity).	0.026835	32
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.Refl_makeRefl	300	146.69	synth with cache (only 1: hnf; only 1: left).	0.973921	11248
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.type.hlist_app_hlist_split	300
+coq-ext-lib.0.11.6	ExtLib.Data.List.Injective_app_same_R	300
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.and_True_iff	300	128.1	synth with cache (only 1: intro A; only 1: CRelationClasses.simpl_crelation).	0.022724	21
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.and_and_iff	300	0	synth with cache (only 1: intuition).	0.005542	1
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.and_assoc	300	0.194	synth with cache (only 1: intros y Ryx; only 1: intuition).	0.053809	56
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.and_comm	300	0.0.0.0.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros [? ?]; only 1: auto; only 1: intros [? ?]; only 1: auto).	0.025504	6
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.and_False_iff	300	0	synth with cache (only 1: intuition).	0.016788	1
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.and_cancel	300	7	synth with cache (only 1: firstorder).	0.054869	204
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.and_iff	300	1	synth with cache (only 1: intuition).	0.054224	26
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.or_False_iff	300	0	synth with cache (only 1: intuition).	0.007012	1
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.or_or_iff	300	0	synth with cache (only 1: intuition).	0.006925	1
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.or_assoc	300	1	synth with cache (only 1: intuition).	0.033850	40
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.or_comm	300	1	synth with cache (only 1: intuition).	0.025595	54
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.or_True_iff	300	0	synth with cache (only 1: intuition).	0.007151	1
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.impl_True_iff	300	0	synth with cache (only 1: intuition).	0.006698	1
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.impl_iff	300	1	synth with cache (only 1: intuition).	0.018228	2
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.impl_eq	300	128.192.192.67	synth with cache (only 1: inversion 1; only 1: inversion_clear H; only 1: intros H; only 1: intuition).	0.030354	95
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.uncurry	300	3	synth with cache (only 1: intuition).	0.011904	8
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.forall_iff	300	5	synth with cache (only 1: firstorder).	0.104314	158
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.forall_impl	300	129	synth with cache (only 1: Tactics.program_simpl).	0.007362	10
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.exists_iff	300	0.0.0	synth with cache (only 1: intros; only 1: setoid_rewrite H; only 1: reflexivity).	0.009835	3
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.exists_impl	300	2.192	synth with cache (only 1: intro p; only 1: firstorder).	0.024887	40
+coq-ext-lib.0.11.6	ExtLib.Data.Prop.iff_eq	300	0.0.0.0	synth with cache (only 1: intros; only 1: setoid_rewrite H; only 1: subst; only 1: intuition).	0.021137	4
+coq-ext-lib.0.11.6	ExtLib.Tactics.BoolTac.negb_true	300	0	synth with cache (only 1: destr_bool).	0.018655	1
+coq-ext-lib.0.11.6	ExtLib.Tactics.BoolTac.negb_false	300	0.0.0	synth with cache (only 1: destruct a; only 1: auto; only 1: auto).	0.007895	3
+coq-ext-lib.0.11.6	ExtLib.Data.Positive.RelDec_Correct_pgt	300
+coq-ext-lib.0.11.6	ExtLib.Data.PPair.eq_pair_rw	300
+coq-ext-lib.0.11.6	ExtLib.Programming.Eqv.injection_eqv_equivalence.injection_eqv_equivalence	300
+coq-ext-lib.0.11.6	ExtLib.Recur.Relation.rightTrans.wf_rightTrans	300
+coq-ext-lib.0.11.6	ExtLib.Recur.GenRec.setoid_fix.Fix_F_equiv_inv	300	2.5.8.0.0.0	synth with cache (only 1: intro x; only 1: induction (Rwf x); only 1: intros; only 1: rewrite <- Fix_F_eq; only 1: rewrite <- Fix_F_eq; only 1: auto).	2.706500	10689
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.iff_to_reflect	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.impl_to_semireflect	300	1.0.0.0.2.0.0.0	synth with cache (only 1: intros; only 1: case_eq (T x y); only 1: intros Hxy; only 1: constructor; only 1: apply H; only 1: assumption; only 1: intros Hxy; only 1: constructor).	0.074058	98
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.reflect_true_inv	300	2.67.107	synth with cache (only 1: inversion 1; only 1: inversion_clear H; only 1: auto).	1.698426	37954
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.reflect_false_inv	300	3.108	synth with cache (only 1: inversion 1; only 1: congruence).	2.235332	39934
+coq-ext-lib.0.11.6	ExtLib.Core.EquivDec.EquivDec_refl_left	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_weaken	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_nil	300	0.0.1.1	synth with cache (only 1: intros [| n]; only 1: auto; only 1: simpl; only 1: reflexivity).	0.070304	155
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.Refl_makeTrans	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.type.hlist_split_hlist_app	300
+coq-ext-lib.0.11.6	ExtLib.Core.RelDec.neg_rel_dec_correct.neg_rel_dec_correct	300
+coq-ext-lib.0.11.6	ExtLib.Data.Positive.RelDec_Correct_pge	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_tl_fst_hlist_split	300	0.0.2.0.1.192	synth with cache (only 1: intros a; only 1: intros; only 1: rewrite (hlist_eta h); only 1: simpl; only 1: match goal with | |- context [ match ?X with | _ => _ end ] => destruct X end; only 1: reflexivity).	2.293127	3152
+coq-ext-lib.0.11.6	ExtLib.Data.PPair.Injective.Injective_pprod	300
+coq-ext-lib.0.11.6	ExtLib.Recur.Relation.rightTrans.wf_leftTrans	300
+coq-ext-lib.0.11.6	ExtLib.Recur.GenRec.setoid_fix.Fix_equiv	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.semi_reflect_true_inv	300
+coq-ext-lib.0.11.6	ExtLib.Recur.Facts.wf_anti_sym	300
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.Trans_makeRefl	300	1.0.0	synth with cache (only 1: intro; only 1: constructor; only 1: simpl_relation).	0.010243	4
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_past_end	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_tl_snd_hlist_split	300	1.0.0.0.0.2.2.1.3.64.192.0	synth with cache (only 1: simpl; only 1: intros Hbeq; only 1: intros [| a] b; only 1: trivial; only 1: intro; only 1: rewrite (hlist_eta h); only 1: simpl; only 1: rewrite (hlist_eta h); only 1: match goal with | |- context [ match ?X with | _ => _ end ] => destruct X end; only 1: rewrite (hlist_eta h); only 1: rewrite (hlist_eta h); only 1: reflexivity).	63.031608	191536
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.Trans_makeTrans	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.hlist_hd_fst_hlist_split	300
+coq-ext-lib.0.11.6	ExtLib.Core.RelDec.rel_dec_p.rel_dec_p	300
+coq-ext-lib.0.11.6	ExtLib.Core.RelDec.rel_dec_p.neg_rel_dec_p	300	0.0.0.0.0.0	synth with cache (only 1: destruct (bool_dec (x ?[ _ ] y) true) as [H| H]; only 1: apply rel_dec_correct in H; only 1: eauto; only 1: apply not_true_is_false in H; only 1: apply neg_rel_dec_correct in H; only 1: eauto).	0.031643	6
+coq-ext-lib.0.11.6	ExtLib.Core.RelDec.lemmas.rel_dec_eq_true	300	7.7.0	synth with cache (only 1: intros; only 1: apply rel_dec_correct in H; only 1: auto).	7.771833	5592
+coq-ext-lib.0.11.6	ExtLib.Core.RelDec.lemmas.rel_dec_neq_false	300	1.1.4.0	synth with cache (only 1: intros; only 1: destruct (bool_dec (x ?[ _ ] y) true); only 1: repeat match goal with | |- ~ _ => unfold not; intros | H1:?P, H2:~ ?P |- _ => specialize (H2 H1); contradiction | H1:?P = true, H2:?P = false |- _ => rewrite H1 in H2; discriminate | H1:?P <> true |- ?P = false => apply not_true_is_false; exact H1 | H1:?rel_dec ?a ?b = true, H2:~ ?R ?a ?b |- _ => apply rel_dec_correct in H1 | H1:?rel_dec ?a ?b = false, H2:?R ?a ?b |- _ => apply rel_dec_correct in H2 end; only 1: repeat match goal with | |- ~ _ => unfold not; intros | H1:?P, H2:~ ?P |- _ => specialize (H2 H1); contradiction | H1:?P = true, H2:?P = false |- _ => rewrite H1 in H2; discriminate | H1:?P <> true |- ?P = false => apply not_true_is_false; exact H1 | H1:?rel_dec ?a ?b = true, H2:~ ?R ?a ?b |- _ => apply rel_dec_correct in H1 | H1:?rel_dec ?a ?b = false, H2:?R ?a ?b |- _ => apply rel_dec_correct in H2 end).	0.902356	392
+coq-ext-lib.0.11.6	ExtLib.Data.PPair.PProdEq.RelDec_Correct_eq_ppair	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.nth_error_get_hlist_nth_Some	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.nth_error_get_hlist_nth_None	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.boolean_logic.Reflect_andb	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.boolean_logic.Reflect_orb	300	0.0.0.1.0.0.0.1.0.0.0.0.0.0.0.0.0	synth with cache (only 1: destruct T1; only 1: destruct T2; only 1: t; only 1: constructor; only 1: constructor; only 1: tauto; only 1: t; only 1: constructor; only 1: constructor; only 1: tauto; only 1: destruct T2; only 1: t; only 1: constructor; only 1: tauto; only 1: t; only 1: constructor; only 1: tauto).	0.400137	321
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.leftTrans_rightTrans	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_length	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_length_ge	300	578.64.0.0.0.0.0.1.0.0.0.0.0.1.0.129	synth with cache (only 1: intros x; only 1: clear; only 1: induction ls; only 1: destruct n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto with arith; only 1: simpl; only 1: destruct n; only 1: simpl; only 1: now auto with arith; only 1: simpl; only 1: intros; only 1: destruct H; only 1: auto with *).	1.425111	3490
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.nth_error_get_hlist_nth_weaken	300
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.makeTrans_leftTrans	300
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.RTStep_left	300	0.4.0.0.0.0.1.0.0.10.4.0	synth with cache (only 1: intros; only 1: eapply leftTrans_rightTrans_acc; only 1: inversion H0; only 1: eapply LTFin; only 1: eassumption; only 1: eapply rightTrans_leftTrans_acc; only 1: eassumption; only 1: eapply LTFin; only 1: clear H1; only 1: eassumption; only 1: eapply RTFin; only 1: eassumption).	30.535611	146250
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.nth_error_get_hlist_nth_appL	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_map_rules.hlist_map_ext	300	0.0.2.0.0.0.3	synth with cache (only 1: clear; only 1: induction hl; only 1: auto; only 1: simpl; only 1: f_equal; only 1: auto; only 1: auto).	0.877513	811
+coq-ext-lib.0.11.6	ExtLib.Data.HList.equiv_hlist_map	300	64.67.0.0.320.0.256.70	synth with cache (only 1: intros x y H; only 1: compute; only 1: intros; only 1: elim H1; only 1: constructor; only 1: constructor; only 1: CRelationClasses.simpl_crelation; only 1: now f_equal).	9.255097	12696
+coq-ext-lib.0.11.6	ExtLib.Core.RelDec.lemmas.rel_dec_sym	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist.nth_error_get_hlist_nth_appR	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_map.hlist_app_hlist_map	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_map_rules.hlist_map_hlist_map	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_gen_member_hlist_map	300	448.0.192.128.0.642.0.0.256.64.64	synth with cache (only 1: intro H; only 1: intros A eq_dec; only 1: intros n m; only 1: induction m; only 1: reflexivity; only 1: intros le_mn2; only 1: simpl; only 1: generalize le_mn2; only 1: symmetry; only 1: f_equal; only 1: now try PeanoNat.Nat.order').	2.479404	3583
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.boolean_logic.Reflect_negb	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_gen_hlist_map	300	129.0.1.0.0.4	synth with cache (only 1: induction ls; only 1: simpl; only 1: f_equal; only 1: simpl; only 1: f_equal; only 1: intuition).	1.472463	1670
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.parametric.makeTrans_rightTrans	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_gen_ext	300	130.0.0.0.193.0.2.384.1	synth with cache (only 1: intros A f assoc a0 comma0 l; only 1: compute; only 1: f_equal; only 1: intro; only 1: induction l as [| a l IH]; only 1: f_equal; only 1: f_equal; only 1: auto; only 1: intuition congruence).	13.336903	27092
+coq-ext-lib.0.11.6	ExtLib.Data.HList.Proper_hlist_gen	300	0.0.0.192.128.386.65	synth with cache (only 1: Bool.destr_bool; only 1: intro z; only 1: intuition; only 1: intro H1; only 1: do 2 rewrite <- hlist_gen_member_hlist_gen; only 1: apply hlist_gen_member_ext; only 1: auto).	2.876269	3853
+coq-ext-lib.0.11.6	ExtLib.Data.HList.equiv_hlist_gen	300	0.0.1.0.1.128.0	synth with cache (only 1: intros; only 1: induction ls; only 1: simpl; only 1: constructor; only 1: constructor; only 1: auto; only 1: eauto).	0.562671	567
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_length_lt	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_map_rules.hlist_get_hlist_map	300
+coq-ext-lib.0.11.6	ExtLib.Data.ListNth.parametric.nth_error_map	300	0.1.2.0.0.0.1.0.5	synth with cache (only 1: induction ls; only 1: destruct n; only 1: firstorder  (subst; auto); only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: destruct n; only 1: firstorder; only 1: firstorder).	4.554718	34169
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_erase_hlist_gen	300	133.0.0.0.129.64.320	synth with cache (only 1: intro H2; only 1: intros z n H; only 1: induction n as [| k iHk]; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: solve [ intuition congruence ]).	4.338243	5645
+coq-ext-lib.0.11.6	ExtLib.Data.HList.Proper_equiv_hlist_gen	300	65.2.1.0.1.385.0.66.128	synth with cache (only 1: intros l; only 1: intro y; only 1: intro; only 1: intros n m p H; only 1: induction H; only 1: constructor; only 1: constructor; only 1: auto; only 1: firstorder  (subst; auto)).	28.765051	63681
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_rel_map.hlist_hrel_map	300	2.0.4.1.0.6	synth with cache (only 1: induction 1; only 1: simpl; only 1: constructor; only 1: constructor; only 1: eauto; only 1: auto).	17.359028	37133
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_hrel_equiv	300	0.1.1.0.0.6	synth with cache (only 1: intros A eq_dec; only 1: induction 1; only 1: constructor; only 1: constructor; only 1: auto; only 1: auto).	6.467729	9907
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_hrel_flip	300	0.1.0.1.0.320	synth with cache (only 1: intros a Ha; only 1: induction 1; only 1: constructor; only 1: constructor; only 1: auto; only 1: auto).	0.469708	395
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.param.makeRefl_idem	300	0.2.2.0.0.0.0	synth with cache (only 1: split; only 1: induction 1; only 1: apply RRefl; only 1: auto; only 1: induction 1; only 1: eauto using RRefl, RStep, TStep, TTrans; only 1: eauto using RStep, TStep, TTrans).	0.342716	591
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.param.makeTrans_idem	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_gen.hlist_get_hlist_gen	300
+coq-ext-lib.0.11.6	ExtLib.Core.RelDec.RelDec_from_dec.RelDec_Correct_eq_typ	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_gen.hlist_gen_member_hlist_gen	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_gen.hlist_gen_member_ext	300
+coq-ext-lib.0.11.6	ExtLib.Tactics.Consider.from_rel_dec.Reflect_RelDecCorrect	300
+coq-ext-lib.0.11.6	ExtLib.Relations.TransitiveClosure.param.makeTrans_makeRefl_comm	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_rel_map.hlist_hrel_cons	300
+coq-ext-lib.0.11.6	ExtLib.Data.HList.hlist_rel_map.hlist_hrel_app	300
