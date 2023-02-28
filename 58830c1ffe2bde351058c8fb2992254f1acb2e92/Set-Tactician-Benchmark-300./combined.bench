@@ -1,0 +1,100 @@
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ncring_initial.Zsth	300	128.1.0.384.1.0.2	synth with cache (only 1: split; only 1: now repeat split; only 1: congruence; only 1: intros n; only 1: intros a b Hb H; only 1: rewrite <- H; only 1: now try split).	0.557955	374
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CRealEq_sym	300	64.0.3	synth with cache (only 1: intros a b H; only 1: destruct H as [n maj]; only 1: now Z.nzsimpl').	1.196978	1555
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rminus_not_eq_right	300	0.0.0.0.0	synth with cache (only 1: red; only 1: intros; only 1: elim H; only 1: apply Rminus_diag_eq; only 1: auto).	0.023498	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_minus_distr_l	300	1.0	synth with cache (only 1: intros; only 1: ring).	0.033494	55
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derivable_Rsqr	300	0.0.0.0.0	synth with cache (only 1: unfold derivable; only 1: unfold derivable_pt; only 1: intro; only 1: exists (2 * x); only 1: apply derivable_pt_lim_Rsqr).	0.022328	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derive_pt_Rsqr	300	1.1.128	synth with cache (only 1: intro abs; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_Rsqr).	0.109058	110
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_morph_Proper	300	0.0.2.0.1.0.0.0.0.0	synth with cache (only 1: intros x y H z t H0; only 1: apply (CRealEq_trans _ (x * t)); only 1: apply CReal_mult_proper_l; only 1: apply H0; only 1: apply (CRealEq_trans _ (t * y)); only 1: apply (CRealEq_trans _ (t * x)); only 1: apply CReal_mult_comm; only 1: apply CReal_mult_proper_l; only 1: apply H; only 1: apply CReal_mult_comm).	28.916077	59642
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Raxioms.Rplus_lt_compat_l	300
+coq-tactician-stdlib.8.11.dev	Coq.micromega.QMicromega.Qeval_formula_compat	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.lt_0_INR	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.ConstCauchy	300
+coq-tactician-stdlib.8.11.dev	Coq.micromega.RMicromega.Reval_formula_compat	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rgeom.isometric_rot_trans	300
+coq-tactician-stdlib.8.11.dev	Coq.QArith.Qround.Qle_floor_ceiling	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_cosh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_sinh	300	0.0.0.0.0	synth with cache (only 1: unfold derivable; only 1: intro; only 1: unfold derivable_pt; only 1: exists (cosh x); only 1: apply derivable_pt_lim_sinh).	0.034142	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derive_pt_cosh	300	1.0.5	synth with cache (only 1: intro eps; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_cosh).	0.227524	371
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derive_pt_sinh	300	2.0.0	synth with cache (only 1: intro; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_sinh).	0.833369	840
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedTypeEx.Positive_as_OT.lt_not_eq	300	128.3.132	synth with cache (only 1: intros l; only 1: intros m H; only 1: Pos.Private_Tac.order).	1.794428	4932
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.is_empty_1	300
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndec.Ndiv2_eq	300	2.0.256	synth with cache (only 1: intro LT; only 1: eqb2eq; only 1: now subst).	0.064238	21
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalN.Unsigned.of_to	300
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.is_empty_2	300	0.0.81	synth with cache (only 1: intro m; only 1: rewrite is_empty_spec; only 1: trivial).	34.170539	155487
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.lt_1_INR	300
+coq-tactician-stdlib.8.11.dev	Coq.Classes.DecidableClass.Decidable_eq_Z_obligation_1	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_opp_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalPos.Signed.of_to	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rgeom.isometric_trans_rot	300
+coq-tactician-stdlib.8.11.dev	Coq.Structures.OrderedTypeEx.PositiveOrderedTypeBits.lt_trans	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpower.Zpower_nat_succ_r	300	128.66.0	synth with cache (only 1: destruct n; only 1: now try Nat.order'; only 1: now Nat.nzsimpl').	0.411157	209
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpower.Zpower_nat_Zpower	300	65.1.0.0.192	synth with cache (only 1: intro LE; only 1: induction n; only 1: trivial; only 1: apply Pos2Nat.inj_iter; only 1: easy).	0.217009	375
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndec.Nleb_alt	300
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Epsilon.constructive_indefinite_description	300
+coq-tactician-stdlib.8.11.dev	Coq.Classes.SetoidDec.unit_eqdec_obligation_1	300	2.130.0.0.0.0.0.0.0.1.0.79	synth with cache (only 1: assert (succ_r : forall x y, x + S y = S (x + y)) by now induction x; only 1: induction x; only 1: assert (comm : forall x y, x + y = y + x); only 1: induction x; only 1: simpl; only 1: auto; only 1: simpl; only 1: intros; only 1: rewrite succ_r; only 1: now f_equal; only 1: destruct y; only 1: reflexivity).	3.494694	11774
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.empty_spec	300	128.581	synth with cache (only 1: intros b LT; only 1: discriminate).	0.122432	297
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zdiv_lt_upper_bound	300
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.equal_spec	300
+coq-tactician-stdlib.8.11.dev	Coq.Strings.HexString.to_nat_of_nat	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zdivide_opp_l	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zis_gcd_minus	300	0.0.0.0.0	synth with cache (only 1: induction 1; only 1: constructor; only 1: intuition; only 1: intuition; only 1: intuition).	0.038161	5
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalNat.Signed.of_to	300
+coq-tactician-stdlib.8.11.dev	Coq.Strings.String.list_ascii_of_string_of_list_ascii	300
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Ndec.Nleb_Nle	300
+coq-tactician-stdlib.8.11.dev	Coq.NArith.Nnat.Nat2N.id	300	0.4.0.2.5	synth with cache (only 1: induction n; only 1: simpl; only 1: trivial; only 1: simpl; only 1: apply SuccNat2Pos.id_succ).	0.258255	1070
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zbool.Zle_bool_plus_mono	300
+coq-tactician-stdlib.8.11.dev	Coq.NArith.BinNat.N.div2_succ_double	300	0	synth with cache (only 1: now destruct n).	0.006460	1
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.equal_spec	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zgt_succ_gt_or_eq	300
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.not_or_and	300	0	synth with cache (only 1: tauto).	0.008650	1
+coq-tactician-stdlib.8.11.dev	Coq.Logic.Classical_Prop.and_not_or	300	0	synth with cache (only 1: tauto).	0.008339	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zdiv_le_upper_bound	300
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.compare_gt	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.Zis_gcd_0_abs	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Nat2Z.id	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znumtheory.rel_prime_sym	300	1.320.0.641.323	synth with cache (only 1: constructor; only 1: now apply H; only 1: auto with zarith; only 1: destruct H; only 1: auto with zarith).	5.156637	5753
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Even.even_plus_even_inv_r	300	0	synth with cache (only 1: parity_binop).	0.047159	1
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Even.even_plus_even_inv_l	300	0	synth with cache (only 1: parity_binop).	0.079575	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Znat.Z2Nat.id	300	0.0.1.0.0.0.0.2.65.5.0.0	synth with cache (only 1: destruct n; only 1: now destruct 1 || trivial; only 1: simpl; only 1: intro EQ; only 1: destruct (Pos2Nat.is_succ p) as (n, H); only 1: rewrite H; only 1: simpl; only 1: f_equal; only 1: apply Pos2Nat.inj; only 1: rewrite H; only 1: apply SuccNat2Pos.id_succ; only 1: now destruct 1 || trivial).	4.978724	9578
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zeven_mult_Zeven_l	300
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.implyFb	300	0	synth with cache (only 1: by case : b ).	0.004602	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.implyTb	300	0	synth with cache (only 1: by case : b ).	0.004909	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.addbACA	300	0	synth with cache (only 1: by do 4!case).	0.018163	1
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CEquivalence.pointwise_transitive	300	0	synth with cache (only 1: firstorder).	0.029327	1
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrbool.qualifE	300	1	synth with cache (only 1: by [  ]).	0.005226	2
+coq-tactician-stdlib.8.11.dev	Coq.Classes.CMorphisms.iffT_arrow_subrelation	300	0.0	synth with cache (only 1: reduce; only 1: firstorder).	0.006542	2
+coq-tactician-stdlib.8.11.dev	Coq.ssr.ssrfun.of_voidK	300	0.10	synth with cache (only 1: intro H; only 1: destruct H).	0.052464	242
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_3_facts.Rstar_imp_coherent	300	0.0.0.1.0.64.0.0	synth with cache (only 1: generalize Rstar_transitive; only 1: intro T1; only 1: compute; only 1: red in T1; only 1: intros x0 H'0; only 1: intros x1 y0 H'1; only 1: exists y0; only 1: auto with sets).	0.153769	218
+coq-tactician-stdlib.8.11.dev	Coq.Program.Equality.solution_right	300	2.0.0	synth with cache (only 1: intros; only 1: subst; only 1: assumption).	0.007894	5
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zpow_alt.Zpower_alt_Ppow	300
+coq-tactician-stdlib.8.11.dev	Coq.Logic.JMeq.JMeq_rect	300	0.0.0	synth with cache (only 1: intros A x P H y H'; only 1: case JMeq_eq with (1 := H'); only 1: trivial).	0.008379	3
+coq-tactician-stdlib.8.11.dev	Coq.Logic.PropExtensionalityFacts.PropExt_and_PropFunExt_imp_PredExt	300	3.128.128.65	synth with cache (only 1: intro H; only 1: intro z; only 1: intros A C h1 h2; only 1: auto).	0.160795	438
+coq-tactician-stdlib.8.11.dev	Coq.Init.Logic_Type.identity_rect_r	300	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: case identity_sym with (1 := H0); only 1: trivial).	0.008659	3
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.compare_gt	300
+coq-tactician-stdlib.8.11.dev	Coq.Vectors.VectorSpec.shiftin_last	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_gt_compat_l	300
+coq-tactician-stdlib.8.11.dev	Coq.Arith.Div2.even_div2	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_lt_compat_l	300	0	synth with cache (only 1: apply Z.add_lt_mono_l).	0.007241	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_lt_compat_r	300	1	synth with cache (only 1: apply Z.add_lt_mono_r).	0.005392	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Zdiv_le_lower_bound	300
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.compare_eq	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zeven.Zeven_mult_Zeven_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.DecimalFacts.nzhead_rev	300
+coq-tactician-stdlib.8.11.dev	Coq.Sets.Relations_2_facts.Rstar_equiv_Rstar1	300
+coq-tactician-stdlib.8.11.dev	Coq.MSets.MSetPositive.PositiveSet.compare_eq	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_gt_compat_r	300	0.2	synth with cache (only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_r).	0.038207	25
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_lt_compat_l	300	0	synth with cache (only 1: apply Z.mul_lt_mono_pos_l).	0.007990	1
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_gt_compat_l	300	0.0	synth with cache (only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_l).	0.028652	2
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_gt_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_le_compat_l	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zplus_le_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_ge_compat_l	300	5.0.0	synth with cache (only 1: Z.swap_greater; only 1: intros; only 1: now apply Z.mul_le_mono_nonneg_l).	2.352126	2800
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_gt_0_compat	300	1.2.3.0.192	synth with cache (only 1: destruct n; only 1: easy || now destruct y; only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_l; only 1: easy).	3.941699	4029
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_le_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_mod_zero_opp_full	300
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.elements_1	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_ge_compat_r	300	7.0.3	synth with cache (only 1: Z.swap_greater; only 1: intros; only 1: now apply Z.mul_le_mono_nonneg_r).	58.809729	136017
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_le_compat_l	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zorder.Zmult_lt_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.ZArith.Zdiv.Z_div_zero_opp_full	300
+coq-tactician-stdlib.8.11.dev	Coq.FSets.FSetPositive.PositiveSet.elements_2	300
