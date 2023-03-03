@@ -1,0 +1,12 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-xx4118g8
+  Running command git rev-parse -q --verify 'sha^f7de87a7d2b8f4b684cde0f327229c7bde225895'
+  Running command git fetch -q https://github.com/IBM/graph2tac.git f7de87a7d2b8f4b684cde0f327229c7bde225895
+  Running command git checkout -q f7de87a7d2b8f4b684cde0f327229c7bde225895
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip available: 22.3.1 -> 23.0.1
+[notice] To update, run: pip install --upgrade pip
+[ERROR] Failed to get extra source "model.tar.gz" of coq-graph2tac.~dev: Bad checksum
+
+#=== ERROR while fetching sources for coq-graph2tac.~dev ======================#
+OpamSolution.Fetch_fail("http://64.71.146.254:8000/SFyud_C5TmEq7AwnK9jaLsfTFMzgBl54cQ0pl2FJB-x9o2Hk24F4jO_W75RqGdOJ/weights/2023-02-21_K_tfgnn_stdlib_shuffle-fix_names_epoch500.7192eeb451167b0ec7cc9fbb0849007e.tar.gz (Bad checksum, expected md5=9ed1787a70c42571b3baa5ad70c0f037)")
