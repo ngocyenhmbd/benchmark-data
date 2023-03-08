@@ -1,0 +1,370 @@
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+Model Loaded
+0
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+----ä
+A : Type, R : (relation A) |- (forall x y : A, clos_refl_trans R x y -> clos_refl_trans_n1 R x y) OUTPUT
+----ä
+A : Type, R : (relation A), x : A, y : A, H : (R x y) |- (clos_refl_trans_n1 R x y) OUTPUT
+Model Loaded
+0
+----ä
+b : bool |- ((b : bool) -> ~~ b = false) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+x : t, y : t, z : t |- (x <= y -> y == z -> x <= z) OUTPUT
+Model Loaded
+0
+----ä
+x : t, y : t |- (x == y -> x <= y) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall (A : Type) (R : crelation A), Symmetric R -> forall f : A -> Type, Proper (R ==> arrow) f -> Proper (R ==> iffT) f) OUTPUT
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+----ä
+ |- (forall (A : Type) (R : A -> A -> Prop) (Rwf : well_founded R) (P : A -> Type) (F_sub : forall x : A, (forall y : {y : A | R y x}, P (` y)) -> P x) (x : A), Fix_sub A R Rwf P F_sub x = F_sub x (fun y : {y : A | R y x} => Fix_sub A R Rwf P F_sub (` y))) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+ |- (forall x y : t, leb x y <-> x <= y) OUTPUT
+----ä
+x : t, y : t |- (leb x y <-> x <= y) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+b1 : bool, b2 : bool, b3 : bool, b4 : bool, b5 : bool |- (reflect (~ b1) (~~ b1)) OUTPUT
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+T1 : predArgType, T2 : predArgType, T3 : predArgType, D1 : {pred T1}, D2 : {pred T2}, D3 : {pred T3}, d1 : (mem_pred T1), d1' : (mem_pred T1), d2 : (mem_pred T2), d2' : (mem_pred T2), d3 : (mem_pred T3), d3' : (mem_pred T3), f : (T1 -> T2), f' : (T1 -> T2), g : (T2 -> T1), h : T3, P1 : (T1 -> Prop), P2 : (T1 -> T2 -> Prop), P3 : (T1 -> T2 -> T3 -> Prop), Q1 : ((T1 -> T2) -> T1 -> Prop), Q1l : ((T1 -> T2) -> T3 -> T1 -> Prop), Q2 : ((T1 -> T2) -> T1 -> T1 -> Prop), sub1 : (sub_mem d1 d1'), sub2 : (sub_mem d2 d2'), sub3 : (sub_mem d3 d3') |- ({ all1 P1} -> {in D1, { all1 P1}}) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+A : Type, B : Type, C : Type, f : (B -> A), g : (B -> A) |- (eqfun f g -> eqfun g f) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+ |- (forall n m p : t, n <= m <-> n - p <= m - p) OUTPUT
+----ä
+n : t, m : t, p : t |- (n <= m <-> n - p <= m - p) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+Model Loaded
+0
+Model Loaded
+0
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+ |- (forall a b : t, b ~= 0 -> 0 <= - (a mod b) < - b \/ - b < - (a mod b) <= 0) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+a : nat |- (div2 a = shiftr a 1) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+n : nat |- (0 <> n -> 0 < n) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+ |- (forall a b : t, b ~= 0 -> a mod b / b == 0) OUTPUT
+----ä
+a : t, b : t, H : (b ~= 0) |- (a mod b / b == 0) OUTPUT
+Model Loaded
+0
+----ä
+ |- (Proper (eq ==> eqf) testbit) OUTPUT
+----ä
+x : t |- (forall y : t, x == y -> testbit x === testbit y) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+n : nat, m : nat |- (even (n + m) -> odd n -> odd m) OUTPUT
+Model Loaded
+0
+----ä
+m : nat, n : nat |- ((n <=? m) = false -> m < n) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+ |- (forall (a n : t) (a0 : bool) (l h : t), 0 <= l < 2 ^ n -> a == l + (a0 + 2 * h) * 2 ^ n -> a.[n] = a0) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+n : nat, m : nat |- (S n < m -> n < Init.Nat.pred m) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+n : N, m : N |- (double n = double m -> n = m) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+A : Type, Aeq_dec : (forall x y : A, {x = y} + {x <> y}) |- (forall (a : A) (x y : set), set_In a y -> set_In a (set_union x y)) OUTPUT
+Model Loaded
+0
+----ä
+T1 : predArgType, T2 : predArgType, T3 : predArgType, D1 : {pred T1}, D2 : {pred T2}, D3 : {pred T3}, d1 : (mem_pred T1), d1' : (mem_pred T1), d2 : (mem_pred T2), d2' : (mem_pred T2), d3 : (mem_pred T3), d3' : (mem_pred T3), f : (T1 -> T2), f' : (T1 -> T2), g : (T2 -> T1), h : T3, P1 : (T1 -> Prop), P2 : (T1 -> T2 -> Prop), P3 : (T1 -> T2 -> T3 -> Prop), Q1 : ((T1 -> T2) -> T1 -> Prop), Q1l : ((T1 -> T2) -> T3 -> T1 -> Prop), Q2 : ((T1 -> T2) -> T1 -> T1 -> Prop), sub1 : (sub_mem d1 d1'), sub2 : (sub_mem d2 d2'), sub3 : (sub_mem d3 d3') |- ({in T1, { all1 P1}} -> { all1 P1}) OUTPUT
+Model Loaded
+0
+----ä
+A : Type |- (forall (n : nat) (v : t A (S n)) (H : n < S n), nth_order v H = last v) OUTPUT
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+ |- (Empty empty) OUTPUT

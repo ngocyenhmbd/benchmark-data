@@ -1,0 +1,125 @@
+File "./theories/Reals/Ranalysis5.v", line 176, characters 0-24:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Ranalysis4.v", line 183, characters 2-35:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rgeom.v", line 117, characters 2-53:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Sqrt_reg.v", line 321, characters 2-9:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/R_sqrt.v", line 255, characters 2-22:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/R_sqrt.v", line 289, characters 2-21:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtopology.v", line 273, characters 2-16:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Ranalysis1.v", line 812, characters 2-43:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/SeqProp.v", line 418, characters 2-9:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int63/Int63.v", line 600, characters 7-23:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int63/Int63.v", line 776, characters 2-76:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int63/Int63.v", line 975, characters 1-37:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ZArith/Zgcd_alt.v", line 260, characters 3-14:
+Error:
+Anomaly
+"Uncaught exception Tactician_reinforce_plugin.Neural_learner.NeuralLearner(TS).MismatchedArguments."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (destruct n as [| _tmp_tactician0| _tmp_tactician0];
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/NArith/BinNat.v", line 675, characters 1-21:
+Error: Anomaly "Not an arity." Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PArith/BinPos.v", line 1631, characters 0-38:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros Hf Hg [s _ ->| s r _ -> Hr]
+intros Hf;
+ (intros Hg;
+   (intros _tmp_tactician0;
+     (destruct _tmp_tactician0
+       as
+        [s
+         _tmp_tactician2
+         _tmp_tactician4|
+         s
+         r
+         _tmp_tactician2
+         _tmp_tactician4
+         Hr];
+       [ ..
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2
+       | intropattern subst -> _tmp_tactician4; idtac;
+          try clear _tmp_tactician2 ])))
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+

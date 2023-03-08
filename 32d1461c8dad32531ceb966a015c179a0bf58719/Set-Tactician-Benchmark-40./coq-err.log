@@ -1,0 +1,99 @@
+File "./theories/Lists/Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: auto; only 1: assumption).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
+s2 : Stream
+H : EqSt x s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x => x
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt x s2) =>
+                          eqst s2 x
+                            match H with
+                            | eqst _ _ H0 _ => eq_sym H0
+                            end
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt x s3 -> EqSt (tl s3) (tl x) :=
+                               fun (s3 : Stream) (H0 : EqSt x s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x => x
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 103, characters 0-21:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros ? ? ? [Hl Hr]; only 1: intros; only 1: case H; only 1: destruct Hl; only 1: intro H1; only 1: case H; only 1: coinduction ltac:(Eq_sym); only 1: assumption; only 1: assumption; only 1: assumption; only 1: assumption).
+Typing error:
+Recursive definition of Eq_sym is ill-formed.
+In environment
+A : Type
+s1 : Stream
+s2 : Stream
+s3 : Stream
+H : EqSt s1 s2
+Hl : hd s1 = hd s2
+Hr : EqSt (tl s1) (tl s2)
+H0 : EqSt s2 s3
+a := hd s2 : A
+H1 : hd s1 = hd s3
+Eq_sym :
+hd s2 = hd s3 -> EqSt (tl s2) (tl s3) -> EqSt (tl s2) (tl s3) -> EqSt s1 s3
+H2 : hd s2 = hd s3
+H3 : EqSt (tl s2) (tl s3)
+H4 : EqSt (tl s2) (tl s3)
+Invalid recursive call in the argument of "match" in "match
+                                                 Eq_sym H2 H4 H4
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+Recursive definition is: "fun (H0 : hd s2 = hd s3)
+                            (_ H3 : EqSt (tl s2) (tl s3)) =>
+                          eqst s1 s3 H1
+                            (let H4 :
+                               hd s2 = hd s3 ->
+                               EqSt (tl s2) (tl s3) ->
+                               EqSt (tl s2) (tl s3) -> EqSt (tl s1) (tl s3) :=
+                               fun (H : hd s2 = hd s3)
+                                 (H1 H4 : EqSt (tl s2) (tl s3)) =>
+                               match Eq_sym H H1 H4 with
+                               | eqst _ _ _ x0 => x0
+                               end in
+                             H4 H0 H3 H3)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/MSets/MSetInterface.v", line 504, characters 9-40:
+Error: Stack overflow.
+
+File "./theories/Wellfounded/Lexicographic_Exponentiation.v", line 161, characters 4-11:
+Error: Anomaly "Not a sort." Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Sorting/Permutation.v", line 484, characters 1-10:
+Error: Anomaly "cannot define an evar twice."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Cauchy/ConstructiveCauchyRealsMult.v", line 757, characters 2-45:
+Error: Anomaly "variable c unbound."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int63/Int63.v", line 1547, characters 1-32:
+Error: Stack overflow.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2251, characters 1-34:
+Error: Stack overflow.
+

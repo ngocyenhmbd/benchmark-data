@@ -1,0 +1,61 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to 'dc2f201c52d21688949cee034834679d797f62af'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at dc2f201 Downgrade coq in CI
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-8DLmFi only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-8DLmFi only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-8DLmFi only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-8DLmFi only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+
+#=== ERROR while compiling coq.8.10.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-08-22 09:50
+# path                 /lscratch/blaaulas/tactician-8DLmFi/_opam/.opam-switch/build/coq.8.10.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-8DLmFi/.opam/log/coq-33911-08c610.env
+# output-file          /lscratch/blaaulas/tactician-8DLmFi/.opam/log/coq-33911-08c610.out
+### output ###
+# [...]
+# coq_interp.c:1353: error: undefined reference to 'caml_young_ptr'
+# coq_interp.c:1277: error: undefined reference to 'caml_young_ptr'
+# coq_interp.c:1277: error: undefined reference to 'caml_young_limit'
+# coq_interp.c:1264: error: undefined reference to 'caml_young_ptr'
+# coq_interp.c:1264: error: undefined reference to 'caml_young_limit'
+# collect2: error: ld returned 1 exit status
+# File "caml_startup", line 1:
+# Error: Error during linking (exit code 1)
+# make[1]: *** [bin/coqchk] Error 2
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-8DLmFi/_opam/.opam-switch/build/coq.8.10.dev'
+# make: *** [submake] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-8DLmFi/_opam/.opam-switch/backup/state-20210829150007.export"
+srun: error: node-03: task 0: Exited with exit code 31

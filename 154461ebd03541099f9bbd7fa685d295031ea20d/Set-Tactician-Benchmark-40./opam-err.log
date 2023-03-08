@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq-tactician.dev failed at "dune build -p coq-tactician -j 55 @install".
+
+#=== ERROR while compiling coq-tactician.dev ==================================#
+# context              2.1.2 | linux/x86_64 |  | pinned(git+https://github.com/coq-tactician/coq-tactician.git#154461ebd03541099f9bbd7fa685d295031ea20d#154461eb)
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.YZKEeQ/opam-root/bench/.opam-switch/build/coq-tactician.dev
+# command              /lscratch/blaaulas/tactician-benchmark.tmp.YZKEeQ/opam-root/bench/bin/dune build -p coq-tactician -j 55 @install
+# exit-code            1
+# env-file             /tmp/opam-xxx-43408/coq-tactician-43411-db40a2.env
+# output-file          /tmp/opam-xxx-43408/coq-tactician-43411-db40a2.out
+### output ###
+# [...]
+# Alert deprecated: Cmdliner.Term.info
+# Use Cmd.info instead.
+# File "coq-shim/tactician.ml", line 455, characters 15-19:
+# 455 | let () = Term.(exit @@ eval_choice default_cmd cmds)
+#                      ^^^^
+# Alert deprecated: Cmdliner.Term.exit
+# Use Stdlib.exit and Cmd.eval instead.
+# File "coq-shim/tactician.ml", line 455, characters 23-34:
+# 455 | let () = Term.(exit @@ eval_choice default_cmd cmds)
+#                              ^^^^^^^^^^^
+# Alert deprecated: Cmdliner.Term.eval_choice
+# Use Cmd.group and one of Cmd.eval* instead.
+

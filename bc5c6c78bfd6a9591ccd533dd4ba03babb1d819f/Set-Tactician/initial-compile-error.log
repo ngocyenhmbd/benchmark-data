@@ -1,0 +1,41 @@
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /tmp/tactician-LzYr3J only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /tmp/tactician-LzYr3J only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /tmp/tactician-LzYr3J only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /tmp/tactician-LzYr3J only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq failed at "/usr/bin/make -j55".
+
+#=== ERROR while compiling coq.8.11.dev =======================================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2021-03-27 09:20
+# path                 /tmp/tactician-LzYr3J/_opam/.opam-switch/build/coq.8.11.dev
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/tactician-LzYr3J/.opam/log/coq-35971-01feda.env
+# output-file          /tmp/tactician-LzYr3J/.opam/log/coq-35971-01feda.out
+### output ###
+# [...]
+# COQC      theories/Numbers/Cyclic/Abstract/NZCyclic.v
+# COQC      theories/Numbers/Cyclic/Int31/Cyclic31.v
+# COQC      theories/Numbers/Cyclic/ZModulo/ZModulo.v
+# COQC      plugins/setoid_ring/Ncring_initial.v
+# COQC      plugins/btauto/Reflect.v
+# COQC      plugins/btauto/Btauto.v
+# COQC      theories/Reals/ConstructiveCauchyRealsMult.v
+# make[1]: *** [theories/Numbers/Cyclic/Int31/Cyclic31.vo] Segmentation fault (core dumped)
+# make[1]: *** [theories/Numbers/Cyclic/Int31/Cyclic31.vo] Deleting file `theories/Numbers/Cyclic/Int31/Cyclic31.glob'
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory `/tmp/tactician-LzYr3J/_opam/.opam-switch/build/coq.8.11.dev'
+# make: *** [submake] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/tmp/tactician-LzYr3J/_opam/.opam-switch/backup/state-20210329094446.export"
+srun: error: node-03: task 0: Exited with exit code 31

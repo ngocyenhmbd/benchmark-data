@@ -1,0 +1,61 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to 'a9c02ef1950aba0b7a1e44049e88ffe4bf1b910a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a9c02ef Fix coq version
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-CPOt76 only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-CPOt76 only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-CPOt76 only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-CPOt76 only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of coq-serapi failed at "/lscratch/blaaulas/tactician-CPOt76/_opam/bin/dune build -p coq-serapi -j 55".
+
+#=== ERROR while compiling coq-serapi.8.10.0+0.7.2 ============================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#5793bcb0
+# path                 /lscratch/blaaulas/tactician-CPOt76/_opam/.opam-switch/build/coq-serapi.8.10.0+0.7.2
+# command              /lscratch/blaaulas/tactician-CPOt76/_opam/bin/dune build -p coq-serapi -j 55
+# exit-code            1
+# env-file             /lscratch/blaaulas/tactician-CPOt76/.opam/log/coq-serapi-50718-2e7edf.env
+# output-file          /lscratch/blaaulas/tactician-CPOt76/.opam/log/coq-serapi-50718-2e7edf.out
+### output ###
+# [...]
+# (cd _build/default && /lscratch/blaaulas/tactician-CPOt76/_opam/bin/ocamlopt.opt -w -40 -rectypes -g -I serapi/.serapi.objs/byte -I serapi/.serapi.objs/native -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/base/caml -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/coq/clib -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/coq/config -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/coq/engine[...]
+# File "serapi/serapi_assumptions.ml", line 75, characters 38-40:
+# 75 |         Pp.(seq [Names.Constant.print kn; str "is positive."])
+#                                            ^^
+# Error: This expression has type Names.GlobRef.t
+#        but an expression was expected of type Names.Constant.t
+#     ocamlopt serapi/.serapi.objs/native/serapi_goals.{cmx,o} (exit 2)
+# (cd _build/default && /lscratch/blaaulas/tactician-CPOt76/_opam/bin/ocamlopt.opt -w -40 -rectypes -g -I serapi/.serapi.objs/byte -I serapi/.serapi.objs/native -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/base/caml -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/coq/clib -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/coq/config -I /lscratch/blaaulas/tactician-CPOt76/_opam/lib/coq/engine[...]
+# File "serapi/serapi_goals.ml", line 80, characters 19-36:
+# 80 |   | `Valid (Some { Vernacstate.proof = Some pstate ; _ } ) ->
+#                         ^^^^^^^^^^^^^^^^^
+# Error: Unbound record field Vernacstate.proof
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-CPOt76/_opam/.opam-switch/backup/state-20211216022007.export"
+srun: error: node-06: task 0: Exited with exit code 31

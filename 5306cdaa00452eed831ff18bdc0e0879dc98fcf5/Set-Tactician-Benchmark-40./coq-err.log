@@ -1,0 +1,139 @@
+File "./theories/Init/Tactics.v", line 189, characters 0-45:
+Warning:
+now idtac((TacAlias Coq.Init.Tactics.now_#_62200C10 ((TacThen (TacArg (CAst (Reference (CAst t)))) (TacArg (CAst (TacCall Coq.Init.Tactics.easy (CAst Located)))))) (CAst (Tacexp (TacId)))))
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+induction d;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+induction d;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros x; only 1: case x; only 1: intros; only 1: case x; only 1: intros ?; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: destruct H; only 1: trivial with datatypes; only 1: auto with datatypes).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+a : A
+s : Stream
+s2 : Stream
+H : EqSt (Cons a s) s2
+a0 : A
+EqSt_reflex : Stream -> EqSt s2 (Cons a s)
+s0 : Stream
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s0
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+Recursive definition is: "fun s0 : Stream =>
+                          eqst s2 (Cons a s)
+                            match H with
+                            | eqst _ _ H _ =>
+                                let a1 := hd s2 in
+                                match
+                                  H in (_ = y) return (y = hd (Cons a s))
+                                with
+                                | eq_refl => eq_refl
+                                end
+                            end
+                            (let H0 :
+                               Stream -> EqSt (tl s2) (tl (Cons a s)) :=
+                               fun s1 : Stream =>
+                               match EqSt_reflex s1 with
+                               | eqst _ _ _ x0 => x0
+                               end in
+                             H0 s0)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; destruct nzhead;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; destruct nzhead;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+

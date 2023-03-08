@@ -1,0 +1,11 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-ymy6d5v2
+  Running command git rev-parse -q --verify 'sha^9099c8c26006c9f58bd0dd47dfbbd542e3eab9ac'
+  Running command git fetch -q https://github.com/IBM/graph2tac.git 9099c8c26006c9f58bd0dd47dfbbd542e3eab9ac
+  Running command git checkout -q 9099c8c26006c9f58bd0dd47dfbbd542e3eab9ac
+  Running command git clone --filter=blob:none --quiet 'https://****@github.com/coq-tactician/coq-tactician-reinforce' /tmp/pip-install-pcn5656p/pytact_87c013c81a424f758893ee04c27fe1dd
+  Running command git submodule update --init --recursive -q
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+[ERROR] Failed to get extra source "model.tar.gz" of coq-graph2tac.~dev: http/64.71.146.254:8000/SFyud_C5TmEq7AwnK9jaLsfTFMzgBl54cQ0pl2FJB-x9o2Hk24F4jO_W75RqGdOJ/weights/2023-01-21_B_tfgnn_v13-shared_stdlib_updated_names_epoch500.adcf8a8c2f2ef01d6c8e6c5e238ad9de.tar.gz
+
+#=== ERROR while fetching sources for coq-graph2tac.~dev ======================#
+OpamSolution.Fetch_fail("http/64.71.146.254:8000/SFyud_C5TmEq7AwnK9jaLsfTFMzgBl54cQ0pl2FJB-x9o2Hk24F4jO_W75RqGdOJ/weights/2023-01-21_B_tfgnn_v13-shared_stdlib_updated_names_epoch500.adcf8a8c2f2ef01d6c8e6c5e238ad9de.tar.gz")

@@ -1,0 +1,59 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+Note: switching to '3fd46a04c965bb4b40acf56b521232bce7fc31dc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 3fd46a0 Support older versions of bwrap
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-J08QZe only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-J08QZe only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-J08QZe only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-J08QZe only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The installation of coq-tactician-stdlib failed at "make install".
+
+#=== ERROR while installing coq-tactician-stdlib.8.11.dev =====================#
+# context              2.0.3 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2021-12-15 18:00
+# path                 /lscratch/blaaulas/tactician-J08QZe/_opam/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /usr/bin/make install
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-J08QZe/.opam/log/coq-tactician-stdlib-20831-0a5907.env
+# output-file          /lscratch/blaaulas/tactician-J08QZe/.opam/log/coq-tactician-stdlib-20831-0a5907.out
+### output ###
+# [...]
+# cp: cannot stat 'user-contrib/Ltac2/Array.vo': No such file or directory
+# Installing user-contrib/Ltac2/Notations.vo
+# cp: cannot stat 'user-contrib/Ltac2/Notations.vo': No such file or directory
+# Installing user-contrib/Ltac2/Message.vo
+# cp: cannot stat 'user-contrib/Ltac2/Message.vo': No such file or directory
+# Installing user-contrib/Ltac2/Ident.vo
+# cp: cannot stat 'user-contrib/Ltac2/Ident.vo': No such file or directory
+# Installing user-contrib/Ltac2/Int.vo
+# cp: cannot stat 'user-contrib/Ltac2/Int.vo': No such file or directory
+# Installing user-contrib/Ltac2/Control.vo
+# cp: cannot stat 'user-contrib/Ltac2/Control.vo': No such file or directory
+# make: *** [install-recompiled] Error 1
+
+'opam install --verbose --jobs=8 --yes --keep-build-dir coq-tactician-stdlib.8.11.dev' failed.
+srun: error: node-06: task 0: Exited with exit code 31

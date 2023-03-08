@@ -1,0 +1,1051 @@
+RelationAlgebra.common.landb_spec	40	0.0.0.0.2.0.0.0	synth with cache (only 1: case a; only 1: intuition; only 1: intuition; only 1: destruct a, b; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.258971	380
+RelationAlgebra.common.lorb_spec	40	0.0.0.0	synth with cache (only 1: case a; only 1: intuition; only 1: intuition; only 1: discriminate).	0.035005	4
+RelationAlgebra.common.negb_spec	40	0.1.0	synth with cache (only 1: case a; only 1: intuition; only 1: intuition).	0.026770	4
+RelationAlgebra.lattice.from_above	40	0.0.0.0.0.0	synth with cache (only 1: intros x y E; only 1: apply antisym; only 1: apply E; only 1: reflexivity; only 1: apply E; only 1: reflexivity).	0.057482	6
+RelationAlgebra.lattice.weq_geq	40	0.0.0	synth with cache (only 1: intros x y E; only 1: apply weq_spec in E as [? ?]; only 1: assumption).	0.025941	3
+RelationAlgebra.lattice.weq_leq	40	1.0	synth with cache (only 1: intros ? ?; only 1: apply weq_spec).	0.035634	3
+RelationAlgebra.common.eq_bool_iff	40	0.0.128.0.128.0.2	synth with cache (only 1: destruct a, b; only 1: intuition; only 1: compute; only 1: intuition; only 1: compute; only 1: intuition; only 1: intuition).	0.496008	402
+RelationAlgebra.common.sumbool_true	40	0.69.264	synth with cache (only 1: unfold is_true; only 1: compute; only 1: intuition).	0.630270	1585
+RelationAlgebra.lattice.leq_Transitive	40	0	synth with cache (only 1: eauto with typeclass_instances).	0.023618	1
+RelationAlgebra.lattice.leq_Reflexive	40	193.64	synth with cache (only 1: hnf; only 1: reflexivity || destruct H).	0.059399	60
+RelationAlgebra.common.sumbool_iff	40	2.0	synth with cache (only 1: intros [Hl Hr]; only 1: simpl_relation).	0.028309	4
+RelationAlgebra.lattice.weq_Reflexive	40	0.0	synth with cache (only 1: intro; only 1: now rewrite weq_spec).	0.038064	2
+RelationAlgebra.common.assert_false	40	0	synth with cache (only 1: assumption).	0.011950	1
+RelationAlgebra.lattice.weq_Symmetric	40	0.0.0	synth with cache (only 1: intros ? ?; only 1: rewrite 2!weq_spec; only 1: tauto).	0.052187	3
+RelationAlgebra.lattice.antisym	40	0.195	synth with cache (only 1: CRelationClasses.reduce; only 1: firstorder).	0.944469	222
+RelationAlgebra.lattice.weq_Transitive	40	2	synth with cache (only 1: eauto with typeclass_instances).	0.523973	164
+RelationAlgebra.prop.Prop_lattice_laws	40	64.64.197.69	synth with cache (only 1: firstorder; only 1: inversion_clear H; only 1: reduce; only 1: CRelationClasses.simpl_crelation).	0.953234	1120
+RelationAlgebra.common.le_bool_spec	40	0.64.256.0.2.130.3.0.2.0.200	synth with cache (only 1: red; only 1: destruct a, b; only 1: split; only 1: repeat split; only 1: repeat split; only 1: intuition; only 1: repeat split; only 1: repeat split; only 1: intro; only 1: intro n; only 1: assumption).	2.627269	4879
+RelationAlgebra.lattice.cupC	40	0.0	synth with cache (only 1: intros; only 1: lattice).	0.081720	2
+RelationAlgebra.lattice.cupA	40	2.0	synth with cache (only 1: intros; only 1: lattice).	0.501487	80
+RelationAlgebra.lattice.cupI	40	3.0.257	synth with cache (only 1: red; only 1: intros; only 1: lattice).	0.263065	181
+RelationAlgebra.lattice.cupbx	40	1.1	synth with cache (only 1: intros; only 1: lattice).	0.056136	4
+RelationAlgebra.lattice.cupxb	40	0.0	synth with cache (only 1: intros; only 1: lattice).	0.041872	2
+RelationAlgebra.lattice.cuptx	40	0.0	synth with cache (only 1: intros; only 1: lattice).	0.045589	2
+RelationAlgebra.lattice.cupxt	40	0.0	synth with cache (only 1: intros; only 1: lattice).	0.058700	2
+RelationAlgebra.lattice.leq_cup_r	40	0	synth with cache (only 1: lattice).	0.039231	1
+RelationAlgebra.rewriting.ext_leq_3	40	0.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite <- E, !dotA).	0.188437	2
+RelationAlgebra.lattice.leq_cup_l	40	5	synth with cache (only 1: lattice).	0.175067	83
+RelationAlgebra.comparisons.cmp_spec	40	0	synth with cache (only 1: now case A).	0.018409	1
+RelationAlgebra.rewriting.ext_leq_4	40	0.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite <- E, !dotA).	0.248194	2
+RelationAlgebra.lattice.comm4	40	0	synth with cache (only 1: lattice).	0.400123	1
+RelationAlgebra.comparisons.cmp_refl	40	2.192.0.0	synth with cache (only 1: case cmp_spec; only 1: congruence; only 1: CRelationClasses.simpl_crelation; only 1: easy).	0.051593	15
+RelationAlgebra.rewriting.ext_weq_2	40	0.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite <- E, !dotA).	0.058556	2
+RelationAlgebra.lattice.capA	40	0.0	synth with cache (only 1: intros; only 1: lattice).	0.181964	2
+RelationAlgebra.rewriting.ext_weq_3	40	0.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite <- E, !dotA).	0.073756	2
+RelationAlgebra.lattice.capC	40	1.0	synth with cache (only 1: intros; only 1: lattice).	0.083292	3
+RelationAlgebra.lattice.capI	40	0.0	synth with cache (only 1: intros; only 1: lattice).	0.045144	2
+RelationAlgebra.rewriting.ext_weq_4	40	0.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite <- E, !dotA).	0.136566	2
+RelationAlgebra.lattice.captx	40	1.1	synth with cache (only 1: intros; only 1: lattice).	0.059176	4
+RelationAlgebra.lattice.capxt	40	1.64	synth with cache (only 1: intro p; only 1: lattice).	0.152461	13
+RelationAlgebra.lattice.capbx	40	0.67	synth with cache (only 1: intro n; only 1: lattice).	0.195891	34
+RelationAlgebra.lattice.leq_cap_l	40	3	synth with cache (only 1: lattice).	0.039098	4
+RelationAlgebra.lattice.leq_cap_r	40	0	synth with cache (only 1: lattice).	0.041359	1
+RelationAlgebra.lattice.cap_leq	40	0.0	synth with cache (only 1: intros x x' Hx y y' Hy; only 1: lattice).	0.059988	2
+RelationAlgebra.lattice.capxb	40	1.68	synth with cache (only 1: intro n; only 1: lattice).	0.396273	114
+RelationAlgebra.lattice.cap_weq	40	0	synth with cache (only 1: apply op_leq_weq_2).	0.028833	1
+RelationAlgebra.lattice.leq_iff_cap	40	0.0.0.0.0.0	synth with cache (only 1: split; only 1: intro; only 1: lattice; only 1: intro E; only 1: rewrite <- E; only 1: lattice).	0.148199	6
+RelationAlgebra.powerfix.powerfix.linear_carac.linearfix_S	40	65.0.0.0	synth with cache (only 1: firstorder; only 1: induction n as [| n IHn]; only 1: reflexivity; only 1: Tactics.program_simpl).	0.053653	12
+RelationAlgebra.ordinal.leb_plus_r	40	1.1.2.1.201	synth with cache (only 1: induction n as [| k Hrec]; only 1: destruct i; only 1: trivial; only 1: now PeanoNat.Nat.nzsimpl; only 1: trivial).	0.925376	1755
+RelationAlgebra.rewriting.ext_leq_3'	40	1.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite E, !dotA).	0.103052	3
+RelationAlgebra.level.lower_trans	40	0.0.0	synth with cache (only 1: intro; only 1: setoid_rewrite lower_spec; only 1: tauto).	0.162393	3
+RelationAlgebra.rewriting.ext_leq_4'	40	1.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite E, !dotA).	0.164588	3
+RelationAlgebra.comparisons.eqb_refl	40	0.0.0	synth with cache (only 1: case eqb_spec; only 1: congruence; only 1: congruence).	0.036236	3
+RelationAlgebra.rewriting.ext_weq_2'	40	1.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite E, !dotA).	0.050765	3
+RelationAlgebra.rewriting.ext_weq_3'	40	1.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite E, !dotA).	0.058005	3
+RelationAlgebra.rewriting.ext_weq_4'	40	1.0	synth with cache (only 1: intros E ? ?; only 1: now rewrite E, !dotA).	0.073225	3
+RelationAlgebra.lattice.cup_leq	40	1.0.257.0.64	synth with cache (only 1: intro E; only 1: intros; only 1: intro F; only 1: intros; only 1: lattice).	3.603605	332
+RelationAlgebra.kleene.str_ind_r'	40	0.3.0.0	synth with cache (only 1: intro E; only 1: rewrite E; only 1: intros; only 1: now apply str_ind_r).	0.998005	273
+RelationAlgebra.common.is_true_sumbool	40	0.5.194.192.0.5.0.1	synth with cache (only 1: case c; only 1: intro F; only 1: intuition; only 1: intro F; only 1: unfold not; only 1: Tactics.program_simpl; only 1: intuition; only 1: discriminate).	6.800253	9751
+RelationAlgebra.ordinal.ltb_plus_r	40	1.64.131.518.257	synth with cache (only 1: intro l; only 1: induction l; only 1: PeanoNat.Nat.induct m; only 1: auto; only 1: auto).	3.283136	4491
+RelationAlgebra.denum.get_mk_sum	40	455	synth with cache (only 1: intuition discriminate).	3.598273	284
+RelationAlgebra.lset.map_compat	40	0.0.0.0.1.384.1	synth with cache (only 1: simpl; only 1: intro len; only 1: intro l; only 1: intros l1 l2 Heq; only 1: intros []; only 1: apply map_ext_in; only 1: auto).	1.330250	916
+RelationAlgebra.lset.in_singleton	40	1.2	synth with cache (only 1: simpl; only 1: intuition apply PeanoNat.Nat.lt_0_succ).	0.059230	51
+RelationAlgebra.kat.s.inj_weq	40	0	synth with cache (only 1: apply mor_inj).	0.031472	1
+RelationAlgebra.comparisons.compare_lex_eq	40	192.65.0.456	synth with cache (only 1: destruct a; only 1: intuition; only 1: easy; only 1: now repeat constructor).	5.822796	16922
+RelationAlgebra.kat.s.inj_bot	40	2.128.0	synth with cache (only 1: apply mor_inj; only 1: hnf; only 1: intuition).	0.081750	11
+RelationAlgebra.kleene.strtop	40	1.1.0.0	synth with cache (only 1: apply str_unique; only 1: lattice; only 1: lattice; only 1: trivial).	0.066256	6
+RelationAlgebra.comparisons.cmp_eq_dep_eq	40	448.0.64.129	synth with cache (only 1: intro; only 1: intros l2 m Hin; only 1: apply eq_dep_eq; only 1: PeanoNat.Nat.auto').	0.124123	117
+RelationAlgebra.lattice.leq_xcap	40	67.200	synth with cache (only 1: intros n m; only 1: firstorder).	8.069237	8738
+RelationAlgebra.sups.s.i.sup_singleton	40	1.0	synth with cache (only 1: simpl; only 1: lattice).	0.060288	3
+RelationAlgebra.sups.s.i.leq_xsup	40	0.0	synth with cache (only 1: apply sup_spec; only 1: lattice).	0.049216	2
+RelationAlgebra.lsyntax.s.l.eval_sup	40	0.0.64.2	synth with cache (only 1: induction J; only 1: repeat constructor; only 1: simpl; only 1: congruence).	0.260826	60
+RelationAlgebra.comparisons.cmp_eq_rect_eq	40	0.0.130.5	synth with cache (only 1: intros l2 m Hin; only 1: intuition; only 1: rewrite <- eq_rect_eq; only 1: intuition).	1.481752	2286
+RelationAlgebra.lsyntax.s.l.eval_inf	40	0.0.0.2.2	synth with cache (only 1: induction J; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: congruence).	0.418637	303
+RelationAlgebra.lang.l.lang_dot_leq	40	192.384.64	synth with cache (only 1: intros x y E; only 1: intro Ha; only 1: firstorder  (subst; auto)).	1.523967	536
+RelationAlgebra.lattice.negtop	40	0.0.0.1	synth with cache (only 1: symmetry; only 1: apply neg_unique; only 1: lattice; only 1: lattice).	0.083742	5
+RelationAlgebra.monoid.ldv_cancel	40	256.1	synth with cache (only 1: rewrite <- ldv_spec; only 1: apply CMorphisms.reflexive_proper).	0.054158	11
+RelationAlgebra.traces.l.tapp_head	40	0	synth with cache (only 1: now induction 1).	0.030426	1
+RelationAlgebra.matrix_ext.mx_scal_leq	40	448.384.0.192.192.704	synth with cache (only 1: intros l2; only 1: induction l; only 1: intro H'; only 1: simpl; only 1: inversion H; only 1: firstorder  (subst; auto)).	1.851356	550
+RelationAlgebra.traces.l.tapp_tail	40	1	synth with cache (only 1: now induction 1).	0.048005	2
+RelationAlgebra.comparisons.UIP_cmp	40	5.201	synth with cache (only 1: CRelationClasses.simpl_crelation; only 1: apply UIP).	2.167505	3294
+RelationAlgebra.traces.l.traces_dot_leq	40	320.2	synth with cache (only 1: simpl; only 1: firstorder  (subst; auto)).	0.077508	9
+RelationAlgebra.matrix_ext.mx_scal_zer	40	192	synth with cache (only 1: auto with sets).	0.506572	13
+RelationAlgebra.srel.s.srel_neg_obligation_1	40	0	synth with cache (only 1: now rewrite H, H0).	0.051664	1
+RelationAlgebra.srel.s.srel_cap_obligation_1	40	0	synth with cache (only 1: now rewrite H, H0).	0.214391	1
+RelationAlgebra.traces.l.traces_deriv_1	40	0	synth with cache (only 1: firstorder).	0.033038	1
+RelationAlgebra.traces.l.traces_deriv_pls	40	0	synth with cache (only 1: firstorder).	0.038016	1
+RelationAlgebra.srel.s.srel_bot_obligation_1	40	194	synth with cache (only 1: now auto).	0.041293	15
+RelationAlgebra.srel.s.srel_top_obligation_1	40	0	synth with cache (only 1: tauto).	0.033306	1
+RelationAlgebra.matrix_ext.mx_scal_one	40	2.65	synth with cache (only 1: apply weq_spec; only 1: auto).	0.243333	94
+RelationAlgebra.factors.ldv_xdot	40	7.2	synth with cache (only 1: apply ldv_spec; only 1: reflexivity).	5.014935	841
+RelationAlgebra.matrix_ext.mx_scal_pls	40	321.1	synth with cache (only 1: simpl; only 1: eauto).	0.043209	14
+RelationAlgebra.traces.l.traces_deriv_0	40	0.512.257.512.0	synth with cache (only 1: apply antisym; only 1: intros x y; only 1: eauto with *; only 1: intros x y; only 1: assumption).	0.292607	58
+RelationAlgebra.matrix_ext.mx_scal_dot	40	3	synth with cache (only 1: apply cupxb).	0.043910	4
+RelationAlgebra.traces.l.traces_deriv_inj	40	0.0	synth with cache (only 1: compute; only 1: intuition discriminate).	0.044658	2
+RelationAlgebra.syntax.s.is_top_spec	40	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: destruct x; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity; only 1: constructor; only 1: discriminate || reflexivity).	0.702476	340
+RelationAlgebra.traces.l.typed'_bot	40	129.321	synth with cache (only 1: intros a Ha; only 1: now PeanoNat.Nat.nzsimpl').	0.105157	100
+RelationAlgebra.factors.rdv_cancel	40	64.3	synth with cache (only 1: apply rdv_spec; only 1: now apply weq_geq).	0.322556	58
+RelationAlgebra.traces.l.typed'_cup	40	64.195	synth with cache (only 1: intros Hincl; only 1: firstorder).	0.155661	124
+RelationAlgebra.traces.l.typed'_cap	40	0.2.1.64	synth with cache (only 1: intro Hxz; only 1: intro; only 1: intros ? []; only 1: eauto).	0.966556	806
+RelationAlgebra.ugregex.l.lang_1	40	128.0.0.5	synth with cache (only 1: intros [?| ? ? ?]; only 1: simpl; only 1: intuition; only 1: solve_proper).	1.412507	1552
+RelationAlgebra.ugregex.l.lang_leq	40	0	synth with cache (only 1: now intros ? ? ?).	0.020055	1
+RelationAlgebra.ugregex.l.lang_weq	40	0	synth with cache (only 1: now intros ? ?).	0.018356	1
+RelationAlgebra.denum.get_ord	40	326	synth with cache (only 1: firstorder).	0.879692	1307
+RelationAlgebra.traces.l.tapp_nil_x_eq	40	64.320.128.392	synth with cache (only 1: inversion 1; only 1: simpl in *; only 1: easy || now destruct 1; only 1: easy).	3.339078	5040
+RelationAlgebra.syntax.e_weq_weaken	40	0.0	synth with cache (only 1: intros H X L f' f; only 1: eapply (H), lower_laws).	0.045397	2
+RelationAlgebra.comparisons.eqb_bool_spec	40	0.0.3.2.0.0.3.2.0	synth with cache (only 1: induction i; only 1: intros n; only 1: destruct n as [| [| n]]; only 1: now constructor; only 1: now constructor; only 1: intro n; only 1: destruct n as [| [| n]]; only 1: now constructor; only 1: now constructor).	3.520848	8660
+RelationAlgebra.comparisons.bool_compare_spec	40	0.0.0.0.0.0.0	synth with cache (only 1: destruct i; only 1: destruct j; only 1: now constructor; only 1: now constructor; only 1: destruct j; only 1: now constructor; only 1: now constructor).	0.074312	7
+RelationAlgebra.traces.l.typed'_inj	40	705.0.65.65.387	synth with cache (only 1: intro l; only 1: destruct l as [| ? l]; only 1: intro; only 1: constructor; only 1: now trivial).	1.558234	3225
+RelationAlgebra.traces.l.restrict_obligation_1	40	0.128	synth with cache (only 1: intros H0; only 1: now destruct 1).	0.055122	10
+RelationAlgebra.kat.s.inj_leq	40	200	synth with cache (only 1: eapply L).	11.631224	2446
+RelationAlgebra.lattice.cup_weq	40	0.0.0.64.129.1.3.1	synth with cache (only 1: intros x y E x' y' E'; only 1: rewrite weq_spec in E; only 1: rewrite weq_spec in E'; only 1: compute; only 1: Tactics.program_simpl; only 1: apply antisym; only 1: lattice; only 1: lattice).	16.519944	3581
+RelationAlgebra.lattice.neg_leq_iff''	40	1	synth with cache (only 1: now rewrite <- neg_leq_iff, negneg).	1.424081	147
+RelationAlgebra.lset.map_leq	40	0.0.1.195.64	synth with cache (only 1: intro l; only 1: intro H'; only 1: intros Hincl x Hinx; only 1: destruct (proj1 (in_map_iff _ _ _) Hinx) as [y [<- Hiny]]; only 1: now apply in_map, Hincl).	18.016555	26219
+RelationAlgebra.sups.s.i.leq_supx	40	194.0.1.0.2.1.0.0.0.0.0	synth with cache (only 1: induction J; only 1: simpl; only 1: intro; only 1: lattice; only 1: simpl; only 1: intros H; only 1: rewrite (H a) by now left; only 1: rewrite cup_spec, IHJ; only 1: clear IHJ; only 1: now subst; only 1: auto with relations).	15.384139	6579
+RelationAlgebra.lattice.capcup	40	1.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.1.0	synth with cache (only 1: intros; only 1: apply antisym; only 1: rewrite <- cupcap_; only 1: apply leq_xcap; only 1: lattice; only 1: transitivity (z ⊔ x ⊓ y); only 1: transitivity (z ⊔ x ⊓ y); only 1: transitivity (z ⊔ x ⊓ y); only 1: transitivity (z ⊔ x ⊓ y); only 1: transitivity (z ⊔ x ⊓ y); only 1: transitivity (z ⊔ x ⊓ y); only 1: rewrite <- cupcap_; only 1: lattice; only 1: lattice; only 1: lattice; only 1: lattice; only 1: lattice; only 1: lattice; only 1: lattice; only 1: lattice).	22.288679	499
+RelationAlgebra.ugregex.l.lang_0	40	0.1.0.0.4.0	synth with cache (only 1: simpl; only 1: intros [| ]; only 1: simpl; only 1: intuition discriminate; only 1: simpl; only 1: intuition).	15.661896	13835
+RelationAlgebra.ugregex.l.deriv_sup	40	0.0.0.520	synth with cache (only 1: Bool.destr_bool; only 1: apply f_sup_eq; only 1: intuition discriminate; only 1: reflexivity).	1.158451	1270
+RelationAlgebra.traces.l.tapp_bounds	40	193.0.0.0.0.1.129.270	synth with cache (only 1: induction 1 as [x y H| x| x y z H IH H0 IH0]; only 1: easy; only 1: eexists; only 1: split; only 1: eexists; only 1: split; only 1: split; only 1: now PeanoNat.Nat.nzsimpl).	20.618598	33531
+RelationAlgebra.powerfix.powerfix.pow2_S	40	1.131.2.0.0.12	synth with cache (only 1: induction n as [| p H]; only 1: simpl; only 1: auto; only 1: simpl; only 1: setoid_rewrite H; only 1: auto).	33.567972	29441
+RelationAlgebra.bmx.bmx_top_1	40	320.7.0	synth with cache (only 1: intros i j; only 1: setoid_rewrite ord0_unique; only 1: repeat split).	21.247146	13235
+RelationAlgebra.traces.l.l.ttraces_cap_obligation_1	40	0.1.1.384	synth with cache (only 1: intro F; only 1: destruct x as [x Hx]; only 1: intros []; only 1: intuition).	0.655571	646
+RelationAlgebra.traces.l.l.ttraces_bot_obligation_1	40	0	synth with cache (only 1: intros ? []).	0.029542	1
+RelationAlgebra.traces.l.l.ttraces_top_obligation_1	40	193	synth with cache (only 1: firstorder).	0.032339	14
+RelationAlgebra.untyping.clean.e_itr_weq	40	0.0.66.448.0	synth with cache (only 1: destruct_tests; only 1: intros H x1 y H0; only 1: intros ? ?; only 1: simpl; only 1: now rewrite itr_str_l, str0, dotx1).	15.694953	1408
+RelationAlgebra.lattice.op_leq_weq_1	40	195.257.0.71	synth with cache (only 1: intros Hfst Hsnd; only 1: rewrite 2!weq_spec; only 1: inversion 1; only 1: simpl_relation).	35.550802	15223
+RelationAlgebra.traces.l.typed'_one	40	320.69.640.258.72	synth with cache (only 1: intro H; only 1: intros HE; only 1: destruct H as [H| H]; only 1: left; only 1: contradiction).	23.909672	67333
+RelationAlgebra.untyping.clean.e_cnv_weq	40	1.130.64.576.0.0	synth with cache (only 1: destruct_tests; only 1: intros; only 1: intros c Hc IH; only 1: symmetry; only 1: cbn; only 1: now rewrite cnv0).	19.469564	2891
+RelationAlgebra.ordinal.ord_0_empty	40	1.0.266.19.320	synth with cache (only 1: Bool.destr_bool; only 1: destruct H as (b, H); only 1: destruct b; only 1: discriminate; only 1: discriminate).	32.715832	72740
+RelationAlgebra.lang.l.eq_app_dot	40	320.132.3.1.64	synth with cache (only 1: intro l; only 1: repeat eexists; only 1: eauto; only 1: symmetry; only 1: firstorder  (subst; auto)).	23.048228	9178
+RelationAlgebra.lattice.neg_weq_iff''	40	1	synth with cache (only 1: now rewrite <- neg_weq_iff, negneg).	0.055228	2
+RelationAlgebra.lang.l.lang_deriv_0	40	384	synth with cache (only 1: now PeanoNat.Nat.nzsimpl').	0.308872	70
+RelationAlgebra.lang.l.lang_deriv_1	40	130	synth with cache (only 1: now PeanoNat.Nat.nzsimpl).	0.495786	153
+RelationAlgebra.lang.l.lang_deriv_pls	40	64	synth with cache (only 1: auto).	0.183950	6
+RelationAlgebra.lattice.from_below	40
+RelationAlgebra.lattice.weq_Equivalence	40
+RelationAlgebra.lattice.leq_weq_iff	40
+RelationAlgebra.level.lower_spec	40
+RelationAlgebra.lattice.op_leq_weq_2	40
+RelationAlgebra.lattice.leq_cupx	40
+RelationAlgebra.lattice.leq_xcup	40
+RelationAlgebra.level.lower_refl	40
+RelationAlgebra.lattice.leq_capx	40
+RelationAlgebra.lattice.leq_bx	40
+RelationAlgebra.lattice.leq_xb_iff	40
+RelationAlgebra.lattice.leq_xt	40
+RelationAlgebra.lattice.leq_tx_iff	40
+RelationAlgebra.lattice.lower_lattice_laws	40
+RelationAlgebra.lattice.capcup_	40
+RelationAlgebra.level.lower_xmerge	40	0.0.0	synth with cache (only 1: setoid_rewrite lower_spec; only 1: setoid_rewrite lorb_spec; only 1: tauto).	0.417508	3
+RelationAlgebra.powerfix.powerfix.pred_pow2_Sn	40
+RelationAlgebra.lattice.dual_laws	40
+RelationAlgebra.comparisons.eqb_of_compare_spec	40
+RelationAlgebra.level.lower_mergex	40	0.1.0	synth with cache (only 1: setoid_rewrite lower_spec; only 1: setoid_rewrite lorb_spec; only 1: tauto).	0.522032	4
+RelationAlgebra.lattice.dualize	40
+RelationAlgebra.comparisons.lex_spec	40
+RelationAlgebra.monoid.dot_leq	40
+RelationAlgebra.monoid.cnv_leq_iff	40
+RelationAlgebra.monoid.cnv_leq_iff'	40
+RelationAlgebra.monoid.cnv_weq_iff	40
+RelationAlgebra.rewriting.ext_leq_2	40
+RelationAlgebra.lattice.leq_cup_neg'	40	0	synth with cache (only 1: dual @neg_unique').	0.033368	1
+RelationAlgebra.comparisons.eqb_spec	40
+RelationAlgebra.lattice.cupcap	40
+RelationAlgebra.comparisons.cmp_eq	40
+RelationAlgebra.lattice.leq_iff_cup	40
+RelationAlgebra.comparisons.eqb_eq	40
+RelationAlgebra.ordinal.ltb_plus_l	40
+RelationAlgebra.positives.eqb_pos_spec	40
+RelationAlgebra.ordinal.ltb_minus	40
+RelationAlgebra.ordinal.lt_n_1	40
+RelationAlgebra.rewriting.ext_leq_2'	40
+RelationAlgebra.denum.get_mk_pair	40
+RelationAlgebra.ordinal.lt_ge_dec	40
+RelationAlgebra.monoid.ldv_xx	40	7	synth with cache (only 1: now rewrite ldv_spec, dotx1).	0.493840	156
+RelationAlgebra.ordinal.ltb_ind	40
+RelationAlgebra.monoid.cnv_weq_iff'	40
+RelationAlgebra.ordinal.nat_ind_2	40
+RelationAlgebra.ordinal.eq_ord	40
+RelationAlgebra.ordinal.eqb_ord_rrshift	40	64.0.1.128	synth with cache (only 1: nzinduct n; only 1: destruct i; only 1: reflexivity; only 1: easy).	0.256612	113
+RelationAlgebra.pair.ltb_lt	40
+RelationAlgebra.ordinal.eqb_ord_spec	40
+RelationAlgebra.lset.lset_laws	40
+RelationAlgebra.ordinal.split_ord0	40	131	synth with cache (only 1: repeat split).	0.190439	143
+RelationAlgebra.pair.mk_lt	40
+RelationAlgebra.powerfix.powerfix.linear_carac.linearfix_double	40
+RelationAlgebra.lattice.cupcap'	40
+RelationAlgebra.positives.pos_compare_spec	40	0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction i; only 1: intros [j| j| ]; only 1: simpl; only 1: case IHi; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence; only 1: simpl; only 1: constructor; only 1: congruence; only 1: simpl; only 1: constructor; only 1: congruence; only 1: intros [j| j| ]; only 1: simpl; only 1: constructor; only 1: congruence; only 1: simpl; only 1: case IHi; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence; only 1: simpl; only 1: constructor; only 1: congruence; only 1: destruct j; only 1: simpl; only 1: constructor; only 1: congruence; only 1: simpl; only 1: constructor; only 1: congruence; only 1: simpl; only 1: constructor; only 1: congruence).	1.100488	1026
+RelationAlgebra.ordinal.ord_compare_spec	40
+RelationAlgebra.monoid.cnvdot	40
+RelationAlgebra.monoid.cnv1	40
+RelationAlgebra.ordinal.set.xI_bound	40	0	synth with cache (only 1: now apply ltb_ind).	0.025827	1
+RelationAlgebra.monoid.cnvpls	40
+RelationAlgebra.monoid.cnvcap	40
+RelationAlgebra.monoid.cnv0	40
+RelationAlgebra.comparisons.eqb_sym	40
+RelationAlgebra.monoid.cnvtop	40
+RelationAlgebra.ordinal.ord0_unique	40
+RelationAlgebra.ordinal.ord_ind'	40
+RelationAlgebra.kleene.str_ind_r1	40
+RelationAlgebra.kleene.str_unfold_r	40
+RelationAlgebra.level.merge_spec	40
+RelationAlgebra.monoid.dotx1	40
+RelationAlgebra.untyping.clean.lower_bot	40	5.448.2.64.3.448	synth with cache (only 1: intros n; only 1: rewrite 2!lower_spec; only 1: intros m; only 1: destruct h; only 1: destruct m; only 1: intuition congruence || discriminate).	23.653164	24505
+RelationAlgebra.monoid.cnvneg	40
+RelationAlgebra.kleene.str_move_r	40
+RelationAlgebra.kleene.str_move_l	40
+RelationAlgebra.monoid.dotplsx	40
+RelationAlgebra.pair.mk	40
+RelationAlgebra.monoid.dot0x	40
+RelationAlgebra.monoid.dotxpls	40
+RelationAlgebra.lang.l.lang_dotA	40
+RelationAlgebra.lang.l.lang_dotx1	40
+RelationAlgebra.kleene.str_move	40
+RelationAlgebra.kleene.str_dot	40
+RelationAlgebra.lsyntax.s.l.expr_laws	40
+RelationAlgebra.kleene.str_unique	40
+RelationAlgebra.sums.dotxsum	40
+RelationAlgebra.boolean.mm_bool_Prop	40
+RelationAlgebra.lattice.capcup'	40
+RelationAlgebra.kleene.str_unique'	40
+RelationAlgebra.boolean.bool_lattice_laws	40
+RelationAlgebra.ordinal.in_seq	40
+RelationAlgebra.denum.get_mk_nat	40
+RelationAlgebra.factors.ldv_dotx	40
+RelationAlgebra.ordinal.set.xO_0	40	0.0.64.0.0.0.0.0	synth with cache (only 1: apply eq_ord; only 1: f_equal; only 1: apply eq_ord; only 1: f_equal; only 1: apply eq_ord; only 1: induction n as [| n IHn]; only 1: reflexivity; only 1: reflexivity).	0.193224	45
+RelationAlgebra.factors.ldv_1x	40
+RelationAlgebra.comparisons.cmp_dec	40
+RelationAlgebra.kat.s.inj_cup	40
+RelationAlgebra.factors.ldv_0x	40
+RelationAlgebra.factors.ldv_xt	40
+RelationAlgebra.kleene.str1	40
+RelationAlgebra.factors.str_ldv	40
+RelationAlgebra.ordinal.set.xO_S	40	0.0.130	synth with cache (only 1: simpl in *; only 1: apply eq_ord; only 1: reflexivity).	0.191481	71
+RelationAlgebra.factors.ldv_rdv	40
+RelationAlgebra.kleene.str0	40
+RelationAlgebra.factors.ldv_unfold	40
+RelationAlgebra.ordinal.set.xI_0	40	0	synth with cache (only 1: now apply eq_ord).	0.028378	1
+RelationAlgebra.kat.s.str_inj	40
+RelationAlgebra.ordinal.set.xI_S	40	0	synth with cache (only 1: now apply eq_ord).	0.027819	1
+RelationAlgebra.kleene.str_trans	40
+RelationAlgebra.kleene.str_invol	40
+RelationAlgebra.monoid.dotx0	40
+RelationAlgebra.lset.m.union_app	40
+RelationAlgebra.sups.s.i.sup_spec	40
+RelationAlgebra.comparisons.l.list_compare_spec	40	0.0.0.0.0.0.0.0.0.0.0.6.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction h as [| x h IH]; only 1: destruct k; only 1: simpl; only 1: constructor; only 1: congruence; only 1: simpl; only 1: constructor; only 1: congruence; only 1: destruct k; only 1: simpl; only 1: constructor; only 1: congruence; only 1: simpl; only 1: repeat case cmp_spec; only 1: case IH; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence; only 1: constructor; only 1: congruence).	5.330194	10502
+RelationAlgebra.monoid.dotxcap	40
+RelationAlgebra.syntax.s.l.expr_lattice_laws	40
+RelationAlgebra.kleene.str_pls	40
+RelationAlgebra.kleene.str_pls'	40
+RelationAlgebra.monoid.cnv_ext	40
+RelationAlgebra.sups.s.i.sup_app	40
+RelationAlgebra.lang.l.lang_iter_S	40
+RelationAlgebra.lattice.neg_unique'	40
+RelationAlgebra.traces.l.tapp_ass	40
+RelationAlgebra.factors.rdv_xdot	40	385.6	synth with cache (only 1: apply rdv_spec; only 1: auto with relations).	1.193342	411
+RelationAlgebra.syntax.s.l.expr_laws	40
+RelationAlgebra.lattice.neg_unique	40
+RelationAlgebra.sups.s.i.leq_xsup'	40
+RelationAlgebra.sups.s.i.sup_leq	40
+RelationAlgebra.lattice.neg_leq	40
+RelationAlgebra.lattice.neg_weq	40
+RelationAlgebra.traces.l.tapp_ass'	40
+RelationAlgebra.lattice.negneg	40
+RelationAlgebra.kleene.itr_ext	40	0.3	synth with cache (only 1: rewrite itr_str_l; only 1: now rewrite <- str_refl, dotx1).	0.281542	29
+RelationAlgebra.lattice.negbot	40
+RelationAlgebra.sups.s.i.sup_weq	40
+RelationAlgebra.kleene.itr_cons	40	0.4	synth with cache (only 1: rewrite itr_str_l; only 1: now rewrite str_cons  at 1).	0.232017	60
+RelationAlgebra.boolean.is_true_sup	40
+RelationAlgebra.sups.s.i.supcup	40
+RelationAlgebra.sups.s.i.sup_leq'	40
+RelationAlgebra.lsyntax.s.l.eval_var	40
+RelationAlgebra.sups.s.i.sup_weq'	40
+RelationAlgebra.rel.hrel_monoid_laws	40
+RelationAlgebra.ugregex.l.ugregex_monoid_laws	40
+RelationAlgebra.lattice.negcap'	40
+RelationAlgebra.glang.s.glang_kat_laws	40
+RelationAlgebra.traces.l.ttraces_one_obligation_1	40	0.0.1	synth with cache (only 1: red; only 1: intros [?| ? ? [| ]] []; only 1: constructor).	0.044720	4
+RelationAlgebra.traces.l.ttraces_cnv_obligation_1	40	0	synth with cache (only 1: apply typed'_bot).	0.028708	1
+RelationAlgebra.traces.l.ttraces_iter_obligation_1	40	1.192.0.0.0.576.0	synth with cache (only 1: induction i; only 1: intros q; only 1: refine (is_typed _ _); only 1: eapply typed'_dot; only 1: eapply proj2_sig; only 1: intro; only 1: eauto using typed'_one).	0.162248	41
+RelationAlgebra.lang.l.lang_laws	40
+RelationAlgebra.syntax.s.is_zer_spec	40
+RelationAlgebra.factors.str_rdv	40	0.3.0.3.0	synth with cache (only 1: apply antisym; only 1: apply str_ind_l1; only 1: dual @ldv_xx; only 1: dual @ldv_trans; only 1: apply str_ext).	1.826783	500
+RelationAlgebra.ordinal.seq_cut	40
+RelationAlgebra.rel.frel_comp	40	0.71	synth with cache (only 1: intros HJ Hf; only 1: firstorder  congruence).	0.750731	798
+RelationAlgebra.ordinal.split_spec	40
+RelationAlgebra.kleene.str_pls_str	40
+RelationAlgebra.comparisons.eqb_nat_spec	40
+RelationAlgebra.kleene.str_pls1x	40
+RelationAlgebra.dfa.reroot_id	40
+RelationAlgebra.comparisons.nat_compare_spec	40
+RelationAlgebra.monoid.capxdot	40
+RelationAlgebra.traces.l.tapp_tail_head	40
+RelationAlgebra.monoid.ldv_trans	40
+RelationAlgebra.monoid.leq_ldv	40
+RelationAlgebra.ordinal.split_lshift	40
+RelationAlgebra.traces.l.tapp_nil_x	40
+RelationAlgebra.traces.l.tapp_x_nil	40
+RelationAlgebra.traces.l.tapp_cat	40
+RelationAlgebra.lang.l.lang_dot_nil	40
+RelationAlgebra.traces.l.tapp_x_nil_eq	40
+RelationAlgebra.ordinal.set.mem_xI_0	40	1.1.449	synth with cache (only 1: compute; only 1: rewrite od_xI; only 1: trivial).	0.269993	294
+RelationAlgebra.traces.l.traces_dotA	40
+RelationAlgebra.traces.l.traces_dotx1	40
+RelationAlgebra.lattice.negcup	40
+RelationAlgebra.traces.l.traces_dot1x	40
+RelationAlgebra.traces.l.traces_iter_S	40
+RelationAlgebra.boolean.is_true_inf	40
+RelationAlgebra.lattice.negcap	40
+RelationAlgebra.srel.s.srel_cup_obligation_1	40
+RelationAlgebra.lattice.neg_leq_iff	40
+RelationAlgebra.sups.s.i.sup_b	40
+RelationAlgebra.traces.l.traces_monoid_laws	40
+RelationAlgebra.traces.l.traces_dot_nil	40
+RelationAlgebra.srel.s.srel_lattice_laws	40
+RelationAlgebra.ugregex.l.ugregex_lattice_laws	40
+RelationAlgebra.lattice.neg_leq_iff'	40
+RelationAlgebra.rel.hrel_kat_laws	40
+RelationAlgebra.traces.l.traces_deriv_dot_1	40
+RelationAlgebra.traces.l.traces_deriv_dot_2	40
+RelationAlgebra.sups.s.sup_swap	40
+RelationAlgebra.sups.f_sup_eq	40	1.133.0.0.0.0.0	synth with cache (only 1: intros Hbot Hcup I J g; only 1: induction J; only 1: apply Hbot; only 1: simpl; only 1: rewrite Hcup; only 1: f_equiv; only 1: apply IHJ).	2.990355	3603
+RelationAlgebra.ugregex.l.epsilon_iff_lang_nil	40
+RelationAlgebra.sups.s.sup_map	40
+RelationAlgebra.traces.l.traces_deriv_itr	40
+RelationAlgebra.srel.RepOps.srel_cnv_obligation_1	40
+RelationAlgebra.srel.RepOps.srel_dot_obligation_1	40
+RelationAlgebra.traces.l.traces_deriv_single	40
+RelationAlgebra.matrix_ext.mx_scal_str	40
+RelationAlgebra.srel.RepOps.srel_ldv_obligation_1	40
+RelationAlgebra.ordinal.set.od_xI	40	394.0.0.0.70.0.0.0.69	synth with cache (only 1: symmetry; only 1: induction i; only 1: simpl; only 1: reflexivity; only 1: destruct i; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: simpl_relation).	9.073523	21518
+RelationAlgebra.srel.RepOps.srel_rdv_obligation_1	40
+RelationAlgebra.matrix_ext.scal_mx_leq	40	450.0	synth with cache (only 1: intros ? ? H'; only 1: Bool.destr_bool).	0.225060	25
+RelationAlgebra.sups.inf.inf_singleton	40	0.0	synth with cache (only 1: simpl; only 1: lattice).	0.057092	2
+RelationAlgebra.ugregex.l.lang_ofbool	40
+RelationAlgebra.traces.l.tapp_typed	40
+RelationAlgebra.factors.rdv_dotx	40
+RelationAlgebra.srel.RepOps.i.srel_str_obligation_1	40
+RelationAlgebra.sups.inf.leq_xinf	40	1	synth with cache (only 1: dual @sup_spec).	0.045716	2
+RelationAlgebra.traces.l.typed'_dot	40
+RelationAlgebra.ordinal.set.mem_xI_S	40	0.640.4.0.0	synth with cache (only 1: unfold mem; only 1: simpl; only 1: induction i; only 1: CRelationClasses.simpl_crelation; only 1: now rewrite od_xI).	1.287006	525
+RelationAlgebra.syntax.e_leq_weaken	40
+RelationAlgebra.atoms.seq_double	40
+RelationAlgebra.traces.l.ttinj_obligation_1	40	0.0.0	synth with cache (only 1: intros [| ? ? ?]; only 1: constructor; only 1: intros []).	0.045811	3
+RelationAlgebra.traces.l.ttsingle_obligation_1	40	0.0.0	synth with cache (only 1: red; only 1: intros [?| ? ? [| ]] []; only 1: do 2 constructor).	0.038124	3
+RelationAlgebra.ugregex_dec.l.epsilon'_eq	40
+RelationAlgebra.atoms.atom_xO	40
+RelationAlgebra.srel.tests.dset_cap_obligation_1	40	0	synth with cache (only 1: now rewrite H).	0.041212	1
+RelationAlgebra.srel.tests.dset_neg_obligation_1	40	0	synth with cache (only 1: now rewrite H).	0.037945	1
+RelationAlgebra.traces.l.tsingle'_obligation_1	40	0.0.0.0.2	synth with cache (only 1: red; only 1: intros [?| ? ? [| ]] []; only 1: do 2 constructor; only 1: do 2 constructor; only 1: do 2 constructor).	0.203802	135
+RelationAlgebra.srel.srel_monoid_laws	40
+RelationAlgebra.sups.inf.leq_infx	40	65.2	synth with cache (only 1: dual @sup_spec; only 1: firstorder  auto with datatypes).	0.626950	154
+RelationAlgebra.gregex.s.gregex_lattice_laws	40
+RelationAlgebra.atoms.atom_xI	40
+RelationAlgebra.srel.tests.srel_inj_obligation_1	40	0	synth with cache (only 1: now rewrite H, H0).	0.107856	1
+RelationAlgebra.normalisation.n.insert_pls_level	40
+RelationAlgebra.ordinal.split_rshift	40
+RelationAlgebra.kleene.itr_trans	40	0.1.0.1.7	synth with cache (only 1: apply itr_ind_l; only 1: rewrite itr_str_l; only 1: now rewrite str_cons  at 1; only 1: rewrite itr_str_l; only 1: now rewrite str_cons  at 1).	4.133991	824
+RelationAlgebra.kat_untyping.s.uglang_gerase	40
+RelationAlgebra.kat_untyping.s.gerase_weq	40
+RelationAlgebra.traces.l.tatom_obligation_1	40	579.0.2	synth with cache (only 1: intros [| ? ? ?]; only 1: constructor; only 1: intuition discriminate).	0.673503	854
+RelationAlgebra.ordinal.eqb_ord_lrshift	40
+RelationAlgebra.traces.l.restrict_inj	40	0.0.0.0.0	synth with cache (only 1: intros [b| ]; only 1: simpl; only 1: intuition constructor; only 1: simpl; only 1: tauto).	0.100120	5
+RelationAlgebra.kat_reification.s.in_idx	40
+RelationAlgebra.traces.l.restrict_0	40	578.64	synth with cache (only 1: intro H1; only 1: CRelationClasses.simpl_crelation).	0.565893	182
+RelationAlgebra.ugregex_dec.l.deriv_eq	40
+RelationAlgebra.traces.l.typed'_iter	40
+RelationAlgebra.ugregex_dec.l.deriv'_eq	40
+RelationAlgebra.sums.dotsumx	40
+RelationAlgebra.pair.ord_nm_lt_O_n	40
+RelationAlgebra.ugregex.l.lang_sup	40
+RelationAlgebra.relalg.dottx	40
+RelationAlgebra.traces.l.restrict_pls	40	2.0.448.256	synth with cache (only 1: red; only 1: intros H; only 1: simpl; only 1: tauto).	0.844851	447
+RelationAlgebra.gregex.s.gregex_monoid_laws	40
+RelationAlgebra.gregex.s.inj_sup	40
+RelationAlgebra.gregex.s.gregex_kat_laws	40
+RelationAlgebra.lsyntax.expr_cmp.expr_compare_spec	40
+RelationAlgebra.gregex.s.lang_0	40	65	synth with cache (only 1: intuition).	0.026363	6
+RelationAlgebra.traces.l.restrict_1	40	0.0.1.0.0.0.1.0.0	synth with cache (only 1: intros [| ]; only 1: simpl; only 1: constructor; only 1: constructor; only 1: constructor; only 1: constructor; only 1: constructor; only 1: simpl; only 1: tauto).	0.995257	567
+RelationAlgebra.boolean.bool_laws	40
+RelationAlgebra.gregex.s.lang_pls	40	65	synth with cache (only 1: easy).	0.040186	6
+RelationAlgebra.gregex.s.lang_itr	40	0	synth with cache (only 1: reflexivity).	0.034597	1
+RelationAlgebra.gregex.s.lang_dot	40	193	synth with cache (only 1: repeat eexists).	0.074086	14
+RelationAlgebra.matrix.mx_lattice_laws	40
+RelationAlgebra.denum.get_mk_ord	40
+RelationAlgebra.boolean.is_true_leq	40	0.0	synth with cache (only 1: simpl; only 1: now auto).	0.028587	2
+RelationAlgebra.ugregex_dec.l.deriv_vars	40
+RelationAlgebra.ka_completeness.Thompson.eval_zer	40	0.0	synth with cache (only 1: fold_regex; only 1: reflexivity).	0.040109	2
+RelationAlgebra.traces.l.restrict_leq	40	64.1.386	synth with cache (only 1: intros a Ha; only 1: intro; only 1: firstorder).	1.378831	494
+RelationAlgebra.glang.s.tglang_inj_obligation_1	40
+RelationAlgebra.ugregex_dec.l.deriv'_vars	40
+RelationAlgebra.regex.regex_laws	40
+RelationAlgebra.traces.l.typed'_itr	40
+RelationAlgebra.normalisation.n.insert_pls_pls	40
+RelationAlgebra.sums.cnvsum	40	0.0.0.0.0.0.0.0.0.0.1.0.0.0.1	synth with cache (only 1: apply f_sup_weq; only 1: now rewrite cnv0; only 1: intros; only 1: apply antisym; only 1: cnv_switch; only 1: apply leq_cupx; only 1: cnv_switch; only 1: lattice; only 1: cnv_switch; only 1: lattice; only 1: apply leq_cupx; only 1: cnv_switch; only 1: lattice; only 1: cnv_switch; only 1: lattice).	9.121581	1738
+RelationAlgebra.traces.l.typed'_str	40
+RelationAlgebra.syntax.expr_cmp.cast_eq	40
+RelationAlgebra.traces.l.typed'_single	40
+RelationAlgebra.comparisons.p.eqb_pair_spec	40
+RelationAlgebra.ugregex_dec.l.deriv_out	40
+RelationAlgebra.kat_reification.s.to_gregex_eval	40
+RelationAlgebra.traces.l.is_typed	40
+RelationAlgebra.normalisation.n.pls'_level	40
+RelationAlgebra.traces.l.l.ttraces_cup_obligation_1	40
+RelationAlgebra.ka_completeness.Thompson.eval_one	40	0.448.577.448	synth with cache (only 1: intros EQ; only 1: Bool.destr_bool; only 1: CRelationClasses.reduce; only 1: ra).	1.107036	238
+RelationAlgebra.gregex.s.lang_leq	40
+RelationAlgebra.regex.is_01_ofbool	40	513.1.12.2	synth with cache (only 1: destruct b; only 1: constructor; only 1: simpl; only 1: constructor 1).	1.392309	3540
+RelationAlgebra.relalg.dotxt	40
+RelationAlgebra.untyping.clean.expr_ind_eval	40
+RelationAlgebra.untyping.clean.expr_leq_weq_ind	40
+RelationAlgebra.untyping.clean.is_zer_clean	40
+RelationAlgebra.normalisation.n.pls'x0_level	40
+RelationAlgebra.normalisation.n.pls'pls	40
+RelationAlgebra.normalisation.n.pls'x0	40
+RelationAlgebra.normalisation.n.cap'cap	40
+RelationAlgebra.ugregex_dec.l.rel_mem_spec	40
+RelationAlgebra.normalisation.n.cap'_level	40
+RelationAlgebra.traces.l.restrict_dot	40	1.0.0.0.64.512.193	synth with cache (only 1: symmetry; only 1: repeat intro; only 1: firstorder; only 1: eapply tapp_typed; only 1: eauto; only 1: eassumption; only 1: eauto).	3.446823	1598
+RelationAlgebra.kat.dual_laws	40
+RelationAlgebra.untyping.clean.clean_spec	40
+RelationAlgebra.untyping.clean.is_zer_level	40
+RelationAlgebra.untyping.clean.clean_0_level	40
+RelationAlgebra.untyping.clean.clean_level	40
+RelationAlgebra.untyping.clean.e_pls_weq	40
+RelationAlgebra.untyping.clean.e_dot_weq	40
+RelationAlgebra.untyping.clean.e_str_weq	40
+RelationAlgebra.atoms.decomp_top	40
+RelationAlgebra.srel.Equivalence_srel_one	40	64.320.0.449.0.256.192.192.0.384.132.10.2	synth with cache (only 1: split; only 1: now simpl; only 1: intros Heq; only 1: intros LT; only 1: intro; only 1: cbn; only 1: eauto with *; only 1: intro LS'; only 1: intro l; only 1: simpl in *; only 1: intro l'; only 1: Bool.destr_bool; only 1: now rewrite H).	4.537971	4957
+RelationAlgebra.untyping.clean.clean_weq	40
+RelationAlgebra.atoms.atom_props.cap_var_atom	40
+RelationAlgebra.rmx.mx_vars_full	40
+RelationAlgebra.ugregex_dec.l.a.In_cons	40	257.323.128.320	synth with cache (only 1: red; only 1: intro m; only 1: intro l1; only 1: firstorder  (subst; auto)).	2.700725	2887
+RelationAlgebra.rel.frel_weq	40	2.258.192	synth with cache (only 1: intros m a b Ha; only 1: intros H; only 1: firstorder  congruence).	9.111384	7622
+RelationAlgebra.normalisation.n.dot_l_level	40
+RelationAlgebra.lattice.neg_weq_iff	40
+RelationAlgebra.normalisation.n.dot'_level	40
+RelationAlgebra.normalisation.n.dot_r_level	40
+RelationAlgebra.untyping.clean.clean_leq_0	40
+RelationAlgebra.untyping.clean.clean_leq_weq_0	40
+RelationAlgebra.normalisation.n.dot_l_weq	40
+RelationAlgebra.untyping.clean.clean_idem	40
+RelationAlgebra.traces.l.ttraces_itr_obligation_1	40	0.0.0.0.192.67.0.642	synth with cache (only 1: intros Hab; only 1: destruct x as [x Hx]; only 1: compute; only 1: intros (EQ, LE); only 1: eapply typed'_iter; only 1: eassumption; only 1: eassumption; only 1: eassumption).	11.763036	3399
+RelationAlgebra.normalisation.n.dot'dot	40
+RelationAlgebra.atoms.atom_props.eval_mem_cap	40	3.192	synth with cache (only 1: simpl in *; only 1: eauto).	4.472099	348
+RelationAlgebra.ordinal.set.mem_xO_S	40	0.0.4.0.192.8.0	synth with cache (only 1: unfold mem; only 1: cbn; only 1: induction n as [| n IH]; only 1: simpl; only 1: destruct i as [i Hi]; only 1: now rewrite od_xO; only 1: now rewrite od_xO).	11.439854	3359
+RelationAlgebra.lset.m.insert_union	40
+RelationAlgebra.monoid.itr_str_r	40	0.0.1.1.0.0.0.3	synth with cache (only 1: rewrite itr_str_l; only 1: apply antisym; only 1: rewrite <- dot1x, (str_refl x), dotA; only 1: apply str_ind_r; only 1: now rewrite str_snoc  at 1; only 1: apply str_ind_l'; only 1: now rewrite <- str_refl, dotx1; only 1: now rewrite str_cons  at 1).	13.534005	542
+RelationAlgebra.matrix_ext.mx_rsub_row	40	1.0.0.0	synth with cache (only 1: intros i j; only 1: unfold lsub_mx, row_mx; only 1: unfold row_mx, lsub_mx, rsub_mx; only 1: now rewrite split_rshift).	0.063529	5
+RelationAlgebra.matrix_ext.mx_bsub_col	40	1.1.0.196	synth with cache (only 1: generalize H; only 1: unfold col_mx, tsub_mx, bsub_mx; only 1: intros i j; only 1: now rewrite split_rshift).	10.928681	4721
+RelationAlgebra.normalisation.n.remove_level	40	0.0.0.0.0.3.1.0.0.0.1.4.1.1.0.0.0.0	synth with cache (only 1: induction x; only 1: reflexivity; only 1: reflexivity; only 1: simpl e_level; only 1: solve_lower'; only 1: simpl e_level; only 1: rewrite ?pls'_level, ?IHx1, ?IHx2; only 1: solve_lower'; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity; only 1: simpl e_level; only 1: solve_lower'; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity).	5.119952	2084
+RelationAlgebra.kat.dualize	40	0.8.1	synth with cache (only 1: eapply L; only 1: apply lattice.dual_laws; only 1: assumption).	16.588686	2782
+RelationAlgebra.matrix_ext.mx_tsub_col	40	0.0.257.512	synth with cache (only 1: intros n; only 1: intro H1; only 1: unfold col_mx, tsub_mx, bsub_mx; only 1: now rewrite split_lshift).	11.711643	1164
+RelationAlgebra.matrix_ext.mx_sub11_blk	40	0.1	synth with cache (only 1: setoid_rewrite mx_bsub_col; only 1: apply mx_rsub_row).	0.091536	3
+RelationAlgebra.matrix_ext.mx_lsub_row	40	0.3.448.256.0.2.0	synth with cache (only 1: intros i j; only 1: unfold row_mx; only 1: unfold row_mx, lsub_mx, rsub_mx; only 1: induction n; only 1: exfalso; only 1: elim (ord_0_empty i); only 1: now rewrite split_lshift).	4.495860	1433
+RelationAlgebra.sups.f_sup_weq	40
+RelationAlgebra.rmx.deriv_mx_pls	40	321.0	synth with cache (only 1: intros i j; only 1: discriminate || reflexivity).	0.142714	18
+RelationAlgebra.lattice.neg_weq_iff'	40
+RelationAlgebra.rmx.deriv_mx_weq	40	0.0.0	synth with cache (only 1: intros M N H i j; only 1: unfold epsilon_mx, mx_map; only 1: now rewrite (H i j)).	0.087950	3
+RelationAlgebra.monoid.cnvrdv	40	0.1.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: apply from_below; only 1: intro z; only 1: cnv_switch; only 1: rewrite ldv_spec; only 1: cnv_switch; only 1: cnv_switch; only 1: cnv_switch; only 1: cnv_switch; only 1: cnv_switch; only 1: cnv_switch; only 1: cnv_switch; only 1: rewrite cnvdot, cnv_invol; only 1: now rewrite rdv_spec).	2.367300	479
+RelationAlgebra.monoid.dotcapx	40	0.0.0.0.0.0.0	synth with cache (only 1: apply leq_xcap; only 1: apply dot_leq; only 1: lattice; only 1: lattice; only 1: apply dot_leq; only 1: lattice; only 1: lattice).	0.158994	7
+RelationAlgebra.untyping.clean.clean_factorise_leq_weq	40
+RelationAlgebra.matrix_ext.mx_sub01_blk	40	0.321.0.576.0	synth with cache (only 1: setoid_rewrite mx_tsub_col; only 1: intros [HypL HypR]; only 1: unfold row_mx; only 1: intro H1; only 1: now rewrite split_rshift).	3.022143	78
+RelationAlgebra.untyping.e.eval_itr'	40	0.0	synth with cache (only 1: inversion 1; only 1: eauto  6).	0.197642	2
+RelationAlgebra.untyping.e.eval_str'	40	0.0	synth with cache (only 1: inversion 1; only 1: assumption).	0.152660	2
+RelationAlgebra.untyping.e.eval_var'	40	1.0	synth with cache (only 1: inversion 1; only 1: solve_lower').	0.186492	3
+RelationAlgebra.untyping.clean.clean_factorise_leq	40
+RelationAlgebra.untyping.e.eval_one'	40	2.451	synth with cache (only 1: inversion 1; only 1: trivial).	1.276077	618
+RelationAlgebra.kat_completeness.KatCompleteness.idem_atom_dot	40	64.128.513.0	synth with cache (only 1: setoid_rewrite  <- inj_cap; only 1: f_equiv; only 1: cbn; only 1: hlattice).	3.007521	517
+RelationAlgebra.untyping.e.eval_types_r	40	0.0	synth with cache (only 1: intros H H'; only 1: now apply (eval_types H H')).	0.045224	2
+RelationAlgebra.kleene.itr0	40	193.1.9	synth with cache (only 1: rewrite itr_str_l; only 1: rewrite dot0x; only 1: auto).	22.530865	1538
+RelationAlgebra.ugregex.l.deriv_traces	40
+RelationAlgebra.powerfix.powerfix.linear_carac.powerfix'_linearfix	40
+RelationAlgebra.traces.l.l.ttraces_lattice_laws	40
+RelationAlgebra.kat_completeness.KatCompleteness.dirac	40	4.2	synth with cache (only 1: simpl; only 1: constructor).	0.835381	324
+RelationAlgebra.rmx.mx_forall_col	40	1.1.0	synth with cache (only 1: repeat intro; only 1: unfold bsub_mx, col_mx; only 1: now case split_spec; intros i' ->).	0.070157	5
+RelationAlgebra.bmx.bmx_str_str	40
+RelationAlgebra.rmx.mx_forall_row	40	0.321.128.0.65	synth with cache (only 1: intros a b; only 1: unfold rsub_mx, row_mx; only 1: simpl; only 1: intros y Hl; only 1: now case split_spec; intros i' ->).	0.970703	411
+RelationAlgebra.rmx.is_simple_sup	40	0.0.0	synth with cache (only 1: apply P_sup; only 1: now constructor; only 1: now constructor).	0.058007	3
+RelationAlgebra.kat_tac.catch_kat_weq	40	576.1	synth with cache (only 1: intro H; only 1: intuition discriminate).	0.092524	21
+RelationAlgebra.rmx.is_pure_sup	40	0.0.0	synth with cache (only 1: apply P_sup; only 1: now constructor; only 1: now constructor).	0.068483	3
+RelationAlgebra.matrix.to_row_mx	40	0.257.768.576.576.3	synth with cache (only 1: unfold row_mx; only 1: apply (symmetry (x:=_)); only 1: apply (symmetry (x:=_)); only 1: intros l1; only 1: intro LT; only 1: now case split_spec; intros i' ->).	6.710462	2172
+RelationAlgebra.kat_tac.catch_ka_weq	40	0.129.256.192	synth with cache (only 1: revert Hl; only 1: unfold Wf_nat.ltof; only 1: intro E; only 1: trivial).	0.415139	48
+RelationAlgebra.rmx.is_01_mx_zer	40	385.577	synth with cache (only 1: intro len; only 1: do 2 constructor).	1.128482	68
+RelationAlgebra.rmx.is_01_mx_cup	40	65	synth with cache (only 1: now constructor).	0.063044	24
+RelationAlgebra.rmx.is_01_mx_one	40	0.64.386	synth with cache (only 1: intros E w; only 1: cbn; only 1: apply is_01_ofbool).	0.893808	631
+RelationAlgebra.srel.tests.dset_cup_obligation_1	40	131.131.3.321	synth with cache (only 1: simpl in *; only 1: apply antisym; only 1: now rewrite <- H; only 1: now rewrite <- H).	21.941383	9464
+RelationAlgebra.traces.l.ttraces_dot_obligation_1	40
+RelationAlgebra.lattice.leq_cap_neg	40
+RelationAlgebra.ordinal.eqb_ord_rlshift	40
+RelationAlgebra.rmx.is_01_mx_scal	40	65.192.193	synth with cache (only 1: intro n; only 1: intro w; only 1: auto).	3.300188	200
+RelationAlgebra.rmx.is_01_scal_mx	40	192.3	synth with cache (only 1: unfold mx_scal, sub00_mx, tsub_mx, lsub_mx; only 1: now auto).	0.114954	95
+RelationAlgebra.lang.l.lang_deriv_dot_1	40
+RelationAlgebra.rmx.is_01_mx_dot	40	0.1.0.0.256.1.0	synth with cache (only 1: repeat intro; only 1: simpl; only 1: apply P_sup; only 1: now constructor; only 1: now constructor; only 1: repeat intro; only 1: now constructor).	4.736285	1733
+RelationAlgebra.rmx.is_01_mx_sub00	40	323.320	synth with cache (only 1: intros l'; only 1: firstorder).	1.181565	681
+RelationAlgebra.rmx.is_01_mx_sub01	40	0.0	synth with cache (only 1: intros H i j; only 1: apply H).	0.052066	2
+RelationAlgebra.rmx.is_01_mx_sub10	40	0.0	synth with cache (only 1: intros H i j; only 1: apply H).	0.059768	2
+RelationAlgebra.rmx.is_01_mx_sub11	40	0.0	synth with cache (only 1: intros H i j; only 1: apply H).	0.053518	2
+RelationAlgebra.level.merge_lower	40
+RelationAlgebra.powerfix.powerfix.linear_carac.powerfix_linearfix	40
+RelationAlgebra.comparisons.p.pair_compare_spec	40
+RelationAlgebra.comparisons.s.eqb_sum_spec	40
+RelationAlgebra.lattice.leq_cap_neg'	40
+RelationAlgebra.lattice.leq_cup_neg	40
+RelationAlgebra.lattice.laws_of_injective_morphism	40
+RelationAlgebra.comparisons.s.sum_compare_spec	40
+RelationAlgebra.comparisons.l.eqb_list_spec	40
+RelationAlgebra.lattice.pw_laws	40
+RelationAlgebra.lattice.leq_or_weq_weq	40
+RelationAlgebra.monoid.ldv_leq	40
+RelationAlgebra.monoid.ldv_weq	40
+RelationAlgebra.monoid.cnvldv	40
+RelationAlgebra.ordinal.split_ordS	40
+RelationAlgebra.pair.pi2	40
+RelationAlgebra.ordinal.set.od_xO	40
+RelationAlgebra.pair.euclid_unique	40
+RelationAlgebra.powerfix.powerfix.invariant.powerfix_invariant	40
+RelationAlgebra.monoid.Schroeder_	40
+RelationAlgebra.ordinal.set.mem_of_fun'	40
+RelationAlgebra.ordinal.set.xO_bound	40
+RelationAlgebra.ordinal.set.of_fun_bound	40
+RelationAlgebra.ordinal.set.od_bound	40
+RelationAlgebra.ordinal.set.mem_of_fun	40
+RelationAlgebra.untyping.e.eval_pls	40
+RelationAlgebra.lset.m.insert_app	40
+RelationAlgebra.ordinal.set.od_inj	40
+RelationAlgebra.monoid.Schroeder_l	40
+RelationAlgebra.ordinal.set.ext'	40
+RelationAlgebra.pair.pi1mk	40
+RelationAlgebra.ordinal.set.ext	40
+RelationAlgebra.monoid.str_ext	40
+RelationAlgebra.monoid.str_ind_l'	40
+RelationAlgebra.monoid.str_ind_l1	40
+RelationAlgebra.monoid.str_leq	40
+RelationAlgebra.monoid.str_snoc	40
+RelationAlgebra.kleene.str_weq1	40
+RelationAlgebra.lang.l.lang_deriv_dot_2	40
+RelationAlgebra.kleene.itr_ind_l	40
+RelationAlgebra.kleene.str_dot_refl	40
+RelationAlgebra.kleene.itr_ind_l1	40
+RelationAlgebra.monoid.str_unfold_l	40
+RelationAlgebra.lang.l.lang_deriv_str	40
+RelationAlgebra.monoid.str_itr	40
+RelationAlgebra.boolean.ofbool.andb_dot	40
+RelationAlgebra.boolean.ofbool.orb_pls	40
+RelationAlgebra.monoid.cnvstr_	40
+RelationAlgebra.monoid.str_ldv_	40
+RelationAlgebra.monoid.str_ind_r	40
+RelationAlgebra.kleene.itr_ind_r	40
+RelationAlgebra.monoid.itr_move	40
+RelationAlgebra.matrix.row_mx_cup	40	0.0.0.0.0.0	synth with cache (only 1: intros i j; only 1: unfold row_mx; only 1: simpl; only 1: case split; only 1: reflexivity; only 1: reflexivity).	0.291823	6
+RelationAlgebra.kleene.itr_leq	40
+RelationAlgebra.kleene.itr1	40
+RelationAlgebra.monoid.catch_leq	40	0	synth with cache (only 1: trivial).	0.026449	1
+RelationAlgebra.monoid.catch_weq	40	64.256.0	synth with cache (only 1: intro E; only 1: reduce; only 1: assumption).	0.066650	18
+RelationAlgebra.factors.leq_rdv	40
+RelationAlgebra.factors.rdv_xx	40
+RelationAlgebra.factors.rdv_1x	40
+RelationAlgebra.factors.rdv_0x	40
+RelationAlgebra.factors.rdv_xt	40
+RelationAlgebra.ordinal.set.mem_xO_0	40
+RelationAlgebra.factors.rdv_trans	40
+RelationAlgebra.untyping.e.eval_dot	40
+RelationAlgebra.kat_completeness.KatCompleteness.n.o_pred_level	40	128	synth with cache (only 1: now subst).	0.044999	9
+RelationAlgebra.kat_completeness.KatCompleteness.o_sup	40	0.0.2	synth with cache (only 1: apply f_sup_eq; only 1: reflexivity; only 1: now f_equal).	0.204459	66
+RelationAlgebra.kleene.itrtop	40
+RelationAlgebra.kleene.itr_snoc	40
+RelationAlgebra.kleene.itr_pls_itr	40
+RelationAlgebra.sups.P_sup	40
+RelationAlgebra.kleene.itr_invol	40
+RelationAlgebra.relalg.props.is_preorder_weq	40	0.0.1.0.1	synth with cache (only 1: apply proper_weq_leq_iff; only 1: intros ? ? E [? ?]; only 1: split; only 1: now rewrite <- E; only 1: now rewrite <- E).	1.695715	485
+RelationAlgebra.boolean.ofbool.ofbool_leq	40
+RelationAlgebra.kleene.itr_move	40
+RelationAlgebra.sups.sup_cut	40
+RelationAlgebra.sups.sup_sup	40
+RelationAlgebra.sups.in_sup	40
+RelationAlgebra.sups.map_sup	40
+RelationAlgebra.sups.capxsup	40
+RelationAlgebra.sups.capsupx	40
+RelationAlgebra.syntax.expr_cmp.expr_compare_eq_dep	40
+RelationAlgebra.traces.l.ttraces_str_obligation_1	40
+RelationAlgebra.syntax.expr_cmp.expr_compare_eq	40
+RelationAlgebra.factors.rdv_unfold	40
+RelationAlgebra.glang.s.tglang_kat_laws	40
+RelationAlgebra.monoid.lower_laws	40
+RelationAlgebra.monoid.dual_laws	40
+RelationAlgebra.ugregex.l.lang_lang'	40
+RelationAlgebra.dfa.diff.diff_spec	40
+RelationAlgebra.relalg.top_nnm	40
+RelationAlgebra.matrix.mx_sup	40
+RelationAlgebra.kleene.itr_dot	40
+RelationAlgebra.regex.regex_lattice_laws	40
+RelationAlgebra.boolean.ofbool.dot_ofboolx	40
+RelationAlgebra.kleene.itr_aea	40
+RelationAlgebra.sups.inf.inf_leq	40
+RelationAlgebra.untyping.e.eval_cnv	40
+RelationAlgebra.relalg.top_mnn	40
+RelationAlgebra.sups.inf.inf_spec	40
+RelationAlgebra.relalg.disjoint_id	40
+RelationAlgebra.traces.l.ttraces_monoid_laws	40
+RelationAlgebra.syntax.expr_cmp.expr_compare_spec	40
+RelationAlgebra.sups.inf.leq_infx'	40
+RelationAlgebra.ugregex.l.lang'_weq	40
+RelationAlgebra.monoid.dualize	40
+RelationAlgebra.traces.l.atom_single_atom	40
+RelationAlgebra.monoid.rdv_leq	40
+RelationAlgebra.srel.tests.dset_lattice_laws	40
+RelationAlgebra.rmx.epsilon_mx_pls	40
+RelationAlgebra.monoid.rdv_weq	40
+RelationAlgebra.traces.l.restrict_iter	40
+RelationAlgebra.ugregex.l.ugregex_compare_spec	40
+RelationAlgebra.matrix.col_mx_leq	40
+RelationAlgebra.kat_untyping.s.typed_uglang_gerase	40
+RelationAlgebra.traces.l.restrict_itr	40
+RelationAlgebra.srel.srel_kat_laws	40
+RelationAlgebra.kleene.cnvstr	40
+RelationAlgebra.kat_untyping.s.untype_glang	40
+RelationAlgebra.rmx.epsilon_sup	40
+RelationAlgebra.relalg.props.is_order_weq	40	1.1.1.0.1	synth with cache (only 1: apply proper_weq_leq_iff; only 1: intros ? ? E [? ?]; only 1: split; only 1: now rewrite <- E; only 1: now rewrite <- E).	4.439379	1042
+RelationAlgebra.pair.pi2mk	40
+RelationAlgebra.gregex.s.lang_1	40
+RelationAlgebra.relalg.dedekind	40
+RelationAlgebra.move.rmov_x_itr	40	131.1.192.322	synth with cache (only 1: destruct l; only 1: intros H; only 1: apply monoid.itr_move; only 1: hlattice).	26.703439	2712
+RelationAlgebra.traces.l.restrict_single	40
+RelationAlgebra.gregex.s.lang_sup	40
+RelationAlgebra.matrix.col_mx_leq_iff	40
+RelationAlgebra.ka_completeness.Thompson.eval_cst	40
+RelationAlgebra.nfa.epsilon_eval	40
+RelationAlgebra.gregex.s.lang_atom	40
+RelationAlgebra.ugregex_dec.l.a.prog_cup_x	40
+RelationAlgebra.regex.is_01_simple	40
+RelationAlgebra.ugregex_dec.l.a.prog_x_leq	40
+RelationAlgebra.relalg.nonempty_cod	40	0.512.192.257.390.1.0.0	synth with cache (only 1: intros i j; only 1: rewrite nonempty; only 1: rewrite nonempty; only 1: case H; only 1: intros q z; only 1: intros d _; only 1: intros l1 l2; only 1: ra).	38.938961	5694
+RelationAlgebra.kat_reification.s.to_gregex_weq	40
+RelationAlgebra.ugregex_dec.l.a.loop_aux_spec	40
+RelationAlgebra.relalg.nonempty_dom	40
+RelationAlgebra.relalg.props.is_symmetric_neg1	40	71	synth with cache (only 1: ra).	0.343081	302
+RelationAlgebra.ugregex_dec.l.a.fold_loop_aux_spec	40
+RelationAlgebra.kat_completeness.KatCompleteness.teval_prd	40
+RelationAlgebra.ka_completeness.Thompson.eval_pls	40
+RelationAlgebra.kat_completeness.KatCompleteness.teval_one	40
+RelationAlgebra.relalg.props.symmetric_cnv	40	1.68	synth with cache (only 1: ra_normalise; only 1: now cnv_switch).	0.505098	281
+RelationAlgebra.regex.expand'	40
+RelationAlgebra.atoms.atom_props.cup_var_atom	40
+RelationAlgebra.relalg.props.is_reflexive_weq	40
+RelationAlgebra.relalg.props.univalent_cnv	40	0.386	synth with cache (only 1: red; only 1: now rewrite cnv_invol).	0.126878	28
+RelationAlgebra.rmx.epsilon_mx_dot	40
+RelationAlgebra.kat_completeness.KatCompleteness.sum_atoms	40
+RelationAlgebra.normalisation.n.cnv'_level	40
+RelationAlgebra.ugregex_dec.l.a.prog_loop	40
+RelationAlgebra.matrix.row_mx_leq	40
+RelationAlgebra.rmx.epsilon_mx_weq	40
+RelationAlgebra.normalisation.n.cnv'cnv	40
+RelationAlgebra.normalisation.n.itr'_level	40
+RelationAlgebra.normalisation.n.str'_level	40
+RelationAlgebra.relalg.props.is_irreflexive_weq	40
+RelationAlgebra.normalisation.n.remove_spec_dep	40
+RelationAlgebra.relalg.props.is_transitive_weq	40
+RelationAlgebra.normalisation.n.remove_spec	40
+RelationAlgebra.matrix.row_mx_leq_iff	40
+RelationAlgebra.normalisation.n.itr'itr	40
+RelationAlgebra.rmx.is_simple_mx_var	40	1.192	synth with cache (only 1: red; only 1: now constructor).	0.121455	71
+RelationAlgebra.rmx.is_simple_mx_pls	40	0.0	synth with cache (only 1: repeat intro; only 1: now constructor).	0.050757	2
+RelationAlgebra.paterson.eqb_false	40	0.0.0	synth with cache (only 1: case comparisons.eqb_spec; only 1: congruence; only 1: congruence).	0.058916	3
+RelationAlgebra.relalg.props.antisymmetric_cnv	40	1.0.72	synth with cache (only 1: ra_normalise; only 1: cnv_switch; only 1: now ra_normalise).	2.619742	785
+RelationAlgebra.atoms.atom_props.decomp_expr	40
+RelationAlgebra.kat_tac.j.kat_untype_weq	40
+RelationAlgebra.atoms.atom_props.eval_atom	40
+RelationAlgebra.rmx.is_pure_mx_zer	40	0	synth with cache (only 1: constructor).	0.037340	1
+RelationAlgebra.move.rmov_x_str	40
+RelationAlgebra.rmx.is_pure_mx_var	40	0	synth with cache (only 1: constructor).	0.033713	1
+RelationAlgebra.imp.s.bstep_eq	40
+RelationAlgebra.rmx.is_pure_mx_pls	40	0	synth with cache (only 1: now constructor).	0.039940	1
+RelationAlgebra.atoms.atom_props.empty_atom_cap	40
+RelationAlgebra.relalg.props.is_linear_weq	40
+RelationAlgebra.move.rmov_x_1	40	0	synth with cache (only 1: now rewrite dot1x, dotx1).	0.056218	1
+RelationAlgebra.ugregex_dec.l.prog_correct	40
+RelationAlgebra.kat_completeness.KatCompleteness.teval_var	40
+RelationAlgebra.relalg.props.is_mapping_weq	40	1.1.1.448.2.0	synth with cache (only 1: apply proper_weq_leq_iff; only 1: intros ? ? E; only 1: intros [? ?]; only 1: split; only 1: now rewrite <- E; only 1: now rewrite <- E).	18.268630	7189
+RelationAlgebra.relalg.props.injective_cnv	40	16	synth with cache (only 1: now ra_normalise).	3.430617	2248
+RelationAlgebra.regex.expand	40
+RelationAlgebra.matrix.blk_mx_leq	40
+RelationAlgebra.relalg.props.is_symmetric_weq	40
+RelationAlgebra.relalg.props.order_cnv	40	128.1.1.0.5	synth with cache (only 1: constructor; only 1: constructor; only 1: tc; only 1: tc; only 1: auto with *).	1.171440	802
+RelationAlgebra.relalg.props.is_antisymmetric_weq	40
+RelationAlgebra.relalg.props.is_univalent_weq	40
+RelationAlgebra.kat_completeness.KatCompleteness.empty_atom_dot	40
+RelationAlgebra.matrix.blk_mx_weq	40
+RelationAlgebra.relalg.props.reflexive_itr	40	3.0	synth with cache (only 1: unfold is_reflexive; only 1: now rewrite itr_str_l, <- str_refl, dotx1).	1.560578	150
+RelationAlgebra.rmx.epsilon_mx_str	40
+RelationAlgebra.compiler_opts.opti_3_1_b	40	0	synth with cache (only 1: hkat).	0.193284	1
+RelationAlgebra.relalg.props.is_injective_weq	40
+RelationAlgebra.matrix_ext.mx_sub00_blk	40
+RelationAlgebra.normalisation.n.remove_spec'	40
+RelationAlgebra.normalisation.n.remove_spec_dep'	40
+RelationAlgebra.normalisation.n.str'str	40
+RelationAlgebra.matrix.blk_mx'	40
+RelationAlgebra.paterson.neqb_spec	40	1.128.0.2.0.0.2.0.2	synth with cache (only 1: split; only 1: case eqb_spec; only 1: solve [ intuition reflexivity || discriminate ]; only 1: intros h1 h2; only 1: congruence; only 1: case comparisons.eqb_spec; only 1: congruence; only 1: intro n; only 1: intuition).	3.575757	2252
+RelationAlgebra.relalg.props.is_surjective_weq	40
+RelationAlgebra.imp.s.two_loops	40
+RelationAlgebra.ugregex_dec.l.eqb_kat_correct	40
+RelationAlgebra.relalg.props.is_total_weq	40
+RelationAlgebra.normalisation.n.norm_level	40
+RelationAlgebra.regex.deriv_cancel	40
+RelationAlgebra.dfa.empty_dec.steps_refl	40
+RelationAlgebra.matrix_ext.mx_sub10_blk	40
+RelationAlgebra.ka_completeness.Thompson.eval_dot	40
+RelationAlgebra.relalg.props.is_vector_weq	40
+RelationAlgebra.matrix.to_col_mx	40
+RelationAlgebra.relalg.props.is_nonempty_weq	40
+RelationAlgebra.matrix_ext.blk_mx_0	40
+RelationAlgebra.nfa.deriv_eval	40
+RelationAlgebra.compiler_opts.lemma_1	40
+RelationAlgebra.regex.epsilon_eval	40
+RelationAlgebra.normalisation.n.norm_weq	40
+RelationAlgebra.relalg.props.preorder_str	40	0.0.3.0.2.4	synth with cache (only 1: constructor; only 1: unfold is_reflexive; only 1: apply str_refl; only 1: unfold is_transitive; only 1: apply str_ind_l; only 1: apply str_cons).	3.964213	659
+RelationAlgebra.move.rmov_x_0	40	129.129.0.13	synth with cache (only 1: ra_normalise; only 1: apply antisym; only 1: now f_equal; only 1: now f_equal).	4.872269	2813
+RelationAlgebra.matrix_ext.h.mx_str_blk'	40
+RelationAlgebra.rmx.deriv_mx_dot	40
+RelationAlgebra.ka_completeness.Thompson.eval_itr	40
+RelationAlgebra.compiler_opts.lemma_1'	40
+RelationAlgebra.kat_completeness.KatCompleteness.o'o_pred	40	192	synth with cache (only 1: easy).	0.048522	13
+RelationAlgebra.regex.epsilon_leq	40
+RelationAlgebra.relalg.props.proper_weq_leq_iff	40
+RelationAlgebra.monoid.Schroeder_r	40
+RelationAlgebra.kat_tac.kat_weq_dec	40
+RelationAlgebra.relalg.props.is_point_weq	40
+RelationAlgebra.imp.s.aff_idem	40	0.128.257.0.65.0.0	synth with cache (only 1: simp; only 1: rewrite frel_comp; only 1: intros; only 1: apply frel_weq; only 1: intro m; only 1: rewrite H; only 1: apply update_twice).	6.962382	2722
+RelationAlgebra.move.rmov_x_cup	40	0.257.322	synth with cache (only 1: intro l1; only 1: intros todo'; only 1: hkat).	1.818126	589
+RelationAlgebra.ka_completeness.Thompson.eval_str	40
+RelationAlgebra.untyping.e.eval_one	40
+RelationAlgebra.kat_completeness.KatCompleteness.geval_dot	40
+RelationAlgebra.untyping.e.eval_itr	40
+RelationAlgebra.matrix_ext.mx_map_weq	40	0.0	synth with cache (only 1: intros M N H i j; only 1: apply Hf, H).	0.051616	2
+RelationAlgebra.untyping.e.eval_str	40
+RelationAlgebra.relalg.props.transitive_itr	40	0.262	synth with cache (only 1: simpl_relation; only 1: apply itr_trans).	6.774577	502
+RelationAlgebra.regex.re_ind_eval	40
+RelationAlgebra.untyping.e.eval_var	40
+RelationAlgebra.untyping.e.eval_types	40
+RelationAlgebra.matrix_ext.mx_map_scal	40	256	synth with cache (only 1: solve_lower').	0.076054	30
+RelationAlgebra.untyping.e.eval_types_l	40
+RelationAlgebra.matrix_ext.scal_mx_map	40	1	synth with cache (only 1: reflexivity).	0.036290	2
+RelationAlgebra.untyping.e.eval_fun	40
+RelationAlgebra.matrix.bsl.mx_dot0x_	40	1.0.0.1.0.448.258	synth with cache (only 1: intro H1; only 1: intros N; only 1: apply leq_supx; only 1: simpl; only 1: intros i' _; only 1: rewrite dot0x; only 1: apply leq_bx).	12.180266	2166
+RelationAlgebra.matrix_ext.h.mx_str_blk	40
+RelationAlgebra.imp.s.weakening	40	0	synth with cache (only 1: hkat).	0.805241	1
+RelationAlgebra.untyping.e.l.u_lattice_laws	40
+RelationAlgebra.matrix_ext.h.mx_str_trigonal	40
+RelationAlgebra.ka_completeness.Thompson.correct	40
+RelationAlgebra.relalg.props.preorder_cnv	40	133.131.133	synth with cache (only 1: constructor; only 1: auto with *; only 1: auto with *).	11.975900	6542
+RelationAlgebra.rmx.deriv_mx_str_strict	40
+RelationAlgebra.kat_completeness.KatCompleteness.teval_dot	40
+RelationAlgebra.untyping.e.l.u_laws	40
+RelationAlgebra.kat_completeness.KatCompleteness.geval_fst	40
+RelationAlgebra.untyping.e.l.eval_erase	40
+RelationAlgebra.kleene.cnvitr	40
+RelationAlgebra.imp.s.rule_skp	40	1.64	synth with cache (only 1: intuition; only 1: kat).	0.816920	92
+RelationAlgebra.untyping.e.l.syntax_eval_id	40
+RelationAlgebra.kat_completeness.KatCompleteness.geval_lst	40
+RelationAlgebra.matrix_ext.mx_map_leq	40	192.643	synth with cache (only 1: intros NF; only 1: firstorder  (subst; auto)).	3.936326	1207
+RelationAlgebra.untyping.e.l.erase_faithful_leq_clean	40
+RelationAlgebra.untyping.e.is_zer_erase	40
+RelationAlgebra.kat_completeness.KatCompleteness.v_sup	40	0.64.1.1.0.1	synth with cache (only 1: simpl; only 1: apply f_sup_eq; only 1: now f_equal; only 1: intro Hl; only 1: intros a; only 1: reflexivity).	0.446620	215
+RelationAlgebra.kat_completeness.KatCompleteness.dirac_refl	40
+RelationAlgebra.untyping.e.clean_erase	40
+RelationAlgebra.compiler_opts.lemma_1''	40
+RelationAlgebra.untyping.e.level_erase	40
+RelationAlgebra.untyping.e.erase_0	40
+RelationAlgebra.imp.s.fold_loop	40
+RelationAlgebra.rmx.mx_forall_blk	40
+RelationAlgebra.bmx.clot_app	40
+RelationAlgebra.normalisation.n.expr_leq_correct_dep	40
+RelationAlgebra.imp.s.rule_ite	40	1.0	synth with cache (only 1: simp; only 1: hkat).	0.567698	3
+RelationAlgebra.rmx.is_01_sup	40
+RelationAlgebra.matrix.bsl.mx_dotx0_	40	2.1.1.0.0.0	synth with cache (only 1: intros i j; only 1: simpl; only 1: unfold mx_dot; only 1: apply leq_supx; only 1: intros; only 1: apply weq_leq, dotx0).	15.282926	2167
+RelationAlgebra.kat_tac.bka_to_kat.laws	40
+RelationAlgebra.move.rmov_x_pls	40
+RelationAlgebra.matrix.to_blk_mx	40
+RelationAlgebra.relalg.props.point_lattice_atom	40	0.0.1.0.0.0.0.0.2.0	synth with cache (only 1: intros Hpq; only 1: intro E; only 1: cnv_switch; only 1: apply univalent_antisym; only 1: cnv_switch; only 1: ra_normalise; only 1: rewrite surjective_tx; only 1: rewrite nonempty  at 1; only 1: now mrewrite vector; only 1: now cnv_switch).	6.196877	2114
+RelationAlgebra.bmx.clot_snoc	40
+RelationAlgebra.kat_tac.ab_to_hoare	40
+RelationAlgebra.imp.s.dead_code	40
+RelationAlgebra.compiler_opts.lemma_2	40
+RelationAlgebra.relalg.props.point_a'_top	40	1.0.0.0.0.0.0.0.0.0.0.449	synth with cache (only 1: constructor; only 1: unfold is_vector; only 1: now mrewrite top_nnm; only 1: unfold is_injective; only 1: ra_normalise; only 1: mrewrite top_nnm; only 1: apply a'_top_a; only 1: intros i j; only 1: mrewrite top_nnm; only 1: cnv_switch; only 1: ra_normalise; only 1: apply atom_nonempty).	0.820555	340
+RelationAlgebra.nfa.eval_lang	40
+RelationAlgebra.kat_tac.join_leq	40	129.577.0	synth with cache (only 1: pose proof (cup_spec x y (x ⊔ y)) as C; only 1: intros A P; only 1: firstorder  congruence).	0.592475	36
+RelationAlgebra.kat_completeness.KatCompleteness.gl_leq	40	193.0.64.384	synth with cache (only 1: intros Hincl HE; only 1: simpl in *; only 1: intros H' w Hw; only 1: firstorder  auto with datatypes).	3.255732	271
+RelationAlgebra.paterson.set_set	40	384.0.67.129.1.0.0.6.1	synth with cache (only 1: revert m; only 1: intros [Heq Hneq]; only 1: destruct x; only 1: repeat eexists; only 1: repeat eexists; only 1: simpl; only 1: solve [ auto ]; only 1: repeat eexists; only 1: now idtac).	15.688782	16583
+RelationAlgebra.ka_completeness.Thompson.is_enfa	40
+RelationAlgebra.imp.s.dead_code'	40
+RelationAlgebra.kat_completeness.KatCompleteness.teval_inner_dot	40
+RelationAlgebra.relalg.props.is_atom_weq	40
+RelationAlgebra.regex.leq_ind	40
+RelationAlgebra.compiler_opts.opti_3_1_a	40
+RelationAlgebra.kat_tac.qpc_to_hoare	40	9.1.0.0	synth with cache (only 1: intro H; only 1: rewrite H; only 1: rewrite <- dotA; only 1: kat).	10.577146	2868
+RelationAlgebra.kat_completeness.KatCompleteness.gl_bot	40	259.256.66.321	synth with cache (only 1: intros Hincl; only 1: cbn; only 1: revert m; only 1: firstorder  auto with datatypes).	4.349377	2200
+RelationAlgebra.kat_completeness.KatCompleteness.teval_xitr	40
+RelationAlgebra.kat_completeness.KatCompleteness.teval_str	40
+RelationAlgebra.relalg.props.dot_neg_point	40	0.0.0.2.1.64.1.6	synth with cache (only 1: apply antisym; only 1: rewrite Schroeder_r, 2!negneg; only 1: rewrite <- dot1x  at 1; only 1: mrewrite injective; only 1: ra; only 1: rewrite leq_cap_neg; only 1: rewrite <- negcup, <- dotplsx, cupneg; only 1: now rewrite surjective_tx, negtop).	10.786133	3438
+RelationAlgebra.rmx.is_01_mx_str	40
+RelationAlgebra.rmx.is_01_mx_epsilon	40
+RelationAlgebra.kat_completeness.KatCompleteness.teval_hat	40
+RelationAlgebra.matrix.col_mx_cup	40
+RelationAlgebra.kat_completeness.KatCompleteness.plp	40
+RelationAlgebra.kat_tac.ab'_to_hoare	40
+RelationAlgebra.matrix_ext.h.mx_str_1	40	0.0.0.0.0.1.128.704.260	synth with cache (only 1: intro n; only 1: red; only 1: intro i; only 1: setoid_rewrite ord0_unique; only 1: apply str_weq; only 1: unfold mx_scal, sub00_mx, tsub_mx, lsub_mx; only 1: simpl; only 1: setoid_rewrite ord0_unique; only 1: apply cupxb).	19.871131	2126
+RelationAlgebra.imp.s.rule_whl'	40	0.322.0	synth with cache (only 1: simp; only 1: intro; only 1: hkat).	7.295531	1251
+RelationAlgebra.kat_completeness.KatCompleteness.clean_bot	40	449.256.0.1.0	synth with cache (only 1: intro He; only 1: intros H; only 1: intro E; only 1: unfold weq; only 1: now split).	1.431140	278
+RelationAlgebra.rmx.is_01_simple_mx	40
+RelationAlgebra.pair.mkpi12	40
+RelationAlgebra.dfa.empty_dec.steps_snoc	40
+RelationAlgebra.relalg.props.irreflexive_cnv	40	129.0.13.132	synth with cache (only 1: red; only 1: cnv_switch; only 1: ra_normalise; only 1: trivial).	30.232940	9851
+RelationAlgebra.kat_completeness.KatCompleteness.compare_letter_spec	40
+RelationAlgebra.relalg.props.is_per_weq	40
+RelationAlgebra.monoid.laws_of_faithful_functor	40
+RelationAlgebra.matrix.bsl.mx_dotA	40
+RelationAlgebra.untyping.e.erase_faithful_leq	40
+RelationAlgebra.kat_completeness.KatCompleteness.o_level	40
+RelationAlgebra.imp.s.aff_stack	40
+RelationAlgebra.dfa.empty_dec.steps_least	40
+RelationAlgebra.relalg.props.surjective_tx	40
+RelationAlgebra.matrix.bsl.mx_dot1x	40
+RelationAlgebra.relalg.props.tx_surjective	40
+RelationAlgebra.untyping.e.erase_faithful_weq	40
+RelationAlgebra.relalg.props.symmetric	40
+RelationAlgebra.matrix.bsl.mx_dotx1	40
+RelationAlgebra.relalg.props.irreflexive'	40
+RelationAlgebra.relalg.props.vector'	40
+RelationAlgebra.ka_completeness.eval_nfa	40
+RelationAlgebra.relalg.props.top_nonempty	40
+RelationAlgebra.matrix.bsl.mx_dot_leq	40
+RelationAlgebra.move.rmov_x_dot	40
+RelationAlgebra.relalg.props.point_surjective	40
+RelationAlgebra.relalg.props.atom_injective	40
+RelationAlgebra.matrix.bsl.mx_dotplsx_	40
+RelationAlgebra.relalg.props.atom_univalent	40
+RelationAlgebra.regex.deriv_leq	40
+RelationAlgebra.matrix.bsl.mx_dotxpls_	40
+RelationAlgebra.nfa.lang_leq	40
+RelationAlgebra.regex.derivs_leq	40
+RelationAlgebra.relalg.props.reflexive_cnv	40
+RelationAlgebra.relalg.props.transitive_cnv	40
+RelationAlgebra.regex.deriv_01	40
+RelationAlgebra.ka_completeness.is_nfa_nfa	40
+RelationAlgebra.relalg.props.surjective_cnv	40
+RelationAlgebra.relalg.props.total_cnv	40
+RelationAlgebra.paterson.get_set	40
+RelationAlgebra.paterson.get_set'	40
+RelationAlgebra.paterson.set_set'	40
+RelationAlgebra.matrix.bsl.mx_bsl_laws	40
+RelationAlgebra.paterson.eqb_spec	40
+RelationAlgebra.compiler_opts.opti_3_9	40	1.513.130	synth with cache (only 1: intros ? ?; only 1: reduce; only 1: hkat).	3.258626	335
+RelationAlgebra.regex.expand_01	40
+RelationAlgebra.ka_completeness.det.det_uX	40
+RelationAlgebra.matrix_ext.h.mx_str_diagonal	40
+RelationAlgebra.relalg.props.nonempty_cnv	40
+RelationAlgebra.ka_completeness.det.M_sum	40
+RelationAlgebra.matrix.bsl.mx_dot_colx	40
+RelationAlgebra.relalg.props.atom_cnv	40
+RelationAlgebra.rmx.is_simple_mx_dot	40
+RelationAlgebra.paterson.s.subst_free	40
+RelationAlgebra.nfa.lang_weq'	40
+RelationAlgebra.regex.is_pure_pure_part	40
+RelationAlgebra.regex.str_eps	40
+RelationAlgebra.kat_tac.bpqc_to_hoare	40
+RelationAlgebra.rmx.is_pure_mx_dot	40
+RelationAlgebra.regex.lang_0	40	128.0.0.1.0.0.0.0.576.1	synth with cache (only 1: unfold lang; only 1: red; only 1: intro e; only 1: revert e; only 1: simpl; only 1: induction e; only 1: simpl; only 1: firstorder  discriminate; only 1: fold_regex; only 1: intuition PeanoNat.Nat.order).	9.909490	2154
+RelationAlgebra.paterson.s.free_subst	40
+RelationAlgebra.matrix.bsl.mx_dot_xrow	40
+RelationAlgebra.relalg.props.mapping_cnv	40
+RelationAlgebra.dfa.empty_dec.empty_lang1	40
+RelationAlgebra.paterson.s.eval_update	40
+RelationAlgebra.matrix.bsl.mx_dot_colrow	40
+RelationAlgebra.relalg.props.vector_cap	40
+RelationAlgebra.relalg.props.symmetric_str	40
+RelationAlgebra.matrix.bsl.mx_dot_rowcol	40
+RelationAlgebra.relalg.props.symmetric_itr	40
+RelationAlgebra.relalg.props.itr_transitive	40
+RelationAlgebra.paterson.s.expr_lattice_laws	40
+RelationAlgebra.regex.expand_simple	40
+RelationAlgebra.move.rmov_x_cap	40
+RelationAlgebra.relalg.props.str_transitive	40
+RelationAlgebra.relalg.props.dot_mono	40
+RelationAlgebra.kat_completeness.KatCompleteness.kat_correct_complete_leq	40	0.0.64.0.0.0	synth with cache (only 1: split; only 1: rewrite 2!leq_iff_cup, <- G.lang_pls; only 1: apply kat_complete_weq; only 1: intro; only 1: apply H; only 1: apply tglang_kat_laws).	0.342344	18
+RelationAlgebra.ka_completeness.det.det_MX	40
+RelationAlgebra.relalg.props.kernel_refl_antisym	40
+RelationAlgebra.relalg.props.dot_univalent_cap	40
+RelationAlgebra.imp.s.aff_comm	40
+RelationAlgebra.relalg.props.univalent_antisym	40
+RelationAlgebra.compiler_opts.opti_3_2	40
+RelationAlgebra.rmx.is_pure_pure_part_mx	40
+RelationAlgebra.regex.epsilon_pure	40
+RelationAlgebra.ka_completeness.det.det_Xv	40
+RelationAlgebra.paterson.s.prog_monoid_laws	40
+RelationAlgebra.normalisation.n.expr_leq_correct	40
+RelationAlgebra.nfa.lang_empty	40
+RelationAlgebra.dfa.empty_dec.empty_lang2	40
+RelationAlgebra.paterson.s.prog_kat_laws	40
+RelationAlgebra.rmx.deriv_01_mx	40
+RelationAlgebra.relalg.props.surjective_injective_antisym	40
+RelationAlgebra.matrix_ext.h.mx_str_ind	40
+RelationAlgebra.relalg.props.disjoint_vect_iff	40
+RelationAlgebra.nfa.dfa.is_nfa_nfa	40
+RelationAlgebra.matrix.bsl.mx_dot_blk	40
+RelationAlgebra.relalg.props.disjoint_vect_iff'	40
+RelationAlgebra.relalg.props.gen_point	40
+RelationAlgebra.paterson.s.eq_6	40
+RelationAlgebra.relalg.props.leq_xyp	40
+RelationAlgebra.regex.lang_dot	40	0	synth with cache (only 1: now rewrite 3!lang_eval).	0.155953	1
+RelationAlgebra.ka_completeness.det.eval_det	40
+RelationAlgebra.compiler_opts.opti_3_10'i	40	1.0.67	synth with cache (only 1: intro Z; only 1: rewrite <- dotA; only 1: hkat).	9.663702	578
+RelationAlgebra.matrix.bsl.one_blk_mx	40
+RelationAlgebra.kat_tac.pbcq_to_hoare	40
+RelationAlgebra.kat_completeness.KatCompleteness.o'o	40
+RelationAlgebra.imp.s.aff_ite	40
+RelationAlgebra.relalg.props.leq_pxq	40
+RelationAlgebra.matrix.cbsl.mx_cnvdot_	40
+RelationAlgebra.kat_completeness.KatCompleteness.o'_weq	40
+RelationAlgebra.matrix.cbsl.mx_cnv_invol	40
+RelationAlgebra.matrix_ext.h.mx_str_ind'	40
+RelationAlgebra.kat_completeness.KatCompleteness.o_inj	40
+RelationAlgebra.move.rmov_x_neg	40
+RelationAlgebra.compiler_opts.opti_3_8	40	9	synth with cache (only 1: kat).	13.212486	1298
+RelationAlgebra.relalg.props.dot_neg_inj	40
+RelationAlgebra.ka_completeness.eval_dfa	40
+RelationAlgebra.rmx.expand_01_mx	40
+RelationAlgebra.matrix.cbsl.mx_cnv_leq	40
+RelationAlgebra.compiler_opts.opti_3_3	40
+RelationAlgebra.relalg.props.dot_neg_surj	40
+RelationAlgebra.imp.s.Hoare_eq	40
+RelationAlgebra.matrix.cbsl.mx_cnv_ext	40
+RelationAlgebra.move.rmov_inj	40
+RelationAlgebra.matrix_ext.mx_map_blk	40
+RelationAlgebra.relalg.props.disjoint_vect_ext	40
+RelationAlgebra.matrix_ext.mx_dot_fun	40
+RelationAlgebra.paterson.s.eq_7	40
+RelationAlgebra.regex.lang_sup	40	0.0.0.1	synth with cache (only 1: apply f_sup_weq; only 1: now rewrite lang_eval; only 1: intros; only 1: now rewrite 3!lang_eval).	3.678128	397
+RelationAlgebra.kat_completeness.KatCompleteness.wv_u	40
+RelationAlgebra.paterson.s.eq_8	40
+RelationAlgebra.kat_tac.qcp_to_hoare	40
+RelationAlgebra.ka_completeness.Kleene	40
+RelationAlgebra.kat_completeness.KatCompleteness.wvo_uo	40
+RelationAlgebra.normalisation.n.expr_leq_or_weq_correct	40
+RelationAlgebra.matrix_ext.mx_dot_kfun1	40
+RelationAlgebra.normalisation.ra_normalise	40
+RelationAlgebra.rmx.is_01_mx_to_row	40	262.391.0.449	synth with cache (only 1: intros [? ?]; only 1: destruct j; only 1: induction x; only 1: apply is_01_ofbool).	37.330493	58255
+RelationAlgebra.normalisation.ra	40
+RelationAlgebra.paterson.s.eq_9	40
+RelationAlgebra.rmx.expand_simple_mx	40
+RelationAlgebra.ka_completeness.E.R_v	40
+RelationAlgebra.kat_completeness.KatCompleteness.w_weq	40
+RelationAlgebra.relalg.props.atom_of_points_aux	40
+RelationAlgebra.rmx.epsilon_mx_pure	40
+RelationAlgebra.relalg.props.atom_of_points	40
+RelationAlgebra.matrix_ext.mx_map_fun	40
+RelationAlgebra.relalg.props.point_a_top	40
+RelationAlgebra.imp.s.rule_seq	40
+RelationAlgebra.kat_completeness.KatCompleteness.gword_to_word_cut	40
+RelationAlgebra.kat_completeness.KatCompleteness.gword_tapp	40
+RelationAlgebra.rmx.epsilon_deriv_pure_mx	40
+RelationAlgebra.bmx.rt_clot_S_S	40
+RelationAlgebra.ka_completeness.E.R_M	40
+RelationAlgebra.kat_completeness.KatCompleteness.R_lang_atom	40
+RelationAlgebra.rmx.mem_of_row	40
+RelationAlgebra.imp.s.rule_whl	40
+RelationAlgebra.paterson.s.eq_6'	40
+RelationAlgebra.kat_tac.cp_c	40
+RelationAlgebra.matrix.ka.build.mx_str_build_unfold_l	40
+RelationAlgebra.kat_tac.pc_c	40
+RelationAlgebra.ka_completeness.E.R_u	40
+RelationAlgebra.bmx.bmx_str_clot	40
+RelationAlgebra.kat_completeness.KatCompleteness.gl_cup	40
+RelationAlgebra.imp.s.rule_aff	40
+RelationAlgebra.paterson.s.eq_9'	40
+RelationAlgebra.relalg.props.a_top_a_aux	40
+RelationAlgebra.ka_completeness.E.dfa_complete_leq	40
+RelationAlgebra.kat_tac.elim_hoare_hypotheses_weq	40
+RelationAlgebra.imp.s.wrong_rule_whl	40
+RelationAlgebra.relalg.props.a_top_a	40
+RelationAlgebra.kat_completeness.KatCompleteness.gl_sup	40
+RelationAlgebra.kat_completeness.KatCompleteness.gl_atom	40
+RelationAlgebra.paterson.s.same_value	40
+RelationAlgebra.ka_completeness.ka_complete_leq	40
+RelationAlgebra.compiler_opts.opti_3_4i	40
+RelationAlgebra.kat_completeness.KatCompleteness.gl_single'	40
+RelationAlgebra.paterson.s.gc_correct	40
+RelationAlgebra.kat_completeness.KatCompleteness.gl_dot	40
+RelationAlgebra.kat_completeness.KatCompleteness.gl_nildot	40
+RelationAlgebra.nfa.dfa.nfa_lang	40
+RelationAlgebra.kat_tac.elim_hoare_hypotheses_leq	40
+RelationAlgebra.compiler_opts.opti_3_11	40	0	synth with cache (only 1: hkat).	18.352658	1104
+RelationAlgebra.regex.epsilon_deriv_pure	40
+RelationAlgebra.kat_completeness.KatCompleteness.gl_itr	40
+RelationAlgebra.matrix.ka.build.mx_str_build_ind_l	40
+RelationAlgebra.relalg.props.atom_transitive	40
+RelationAlgebra.ka_completeness.ka_complete_weq	40
+RelationAlgebra.relalg.props.atom_mono	40
+RelationAlgebra.kat_completeness.KatCompleteness.G_clean	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_cup	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_single	40
+RelationAlgebra.matrix.ka.build.mx_str_build_ind_r	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_sup	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_map	40
+RelationAlgebra.ka_completeness.ka_correct_complete_weq	40	64.451.0.0.0	synth with cache (only 1: split; only 1: rewrite 2!weq_spec; only 1: now split; apply ka_complete_leq; only 1: intuition auto with mx_predicates; only 1: now apply nfa.lang_weq).	19.407328	4063
+RelationAlgebra.kat_completeness.KatCompleteness.clean_pred	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_elem_var	40
+RelationAlgebra.regex.expand_pure	40
+RelationAlgebra.compiler_opts.opti_3_4ii	40
+RelationAlgebra.regex.deriv_sup	40
+RelationAlgebra.dfa.empty_dec.empty_dec	40
+RelationAlgebra.regex.lang_leq	40
+RelationAlgebra.regex.epsilon_reflexive	40
+RelationAlgebra.dfa.lang_incl_dec	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_dot'	40
+RelationAlgebra.regex.epsilon_iff_reflexive_eps	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_one'	40
+RelationAlgebra.regex.epsilon_iff_lang_nil	40
+RelationAlgebra.regex.eval_deriv	40
+RelationAlgebra.compiler_opts.opti_3_10'	40	0.325	synth with cache (only 1: CRelationClasses.simpl_crelation; only 1: hkat).	30.167948	1142
+RelationAlgebra.compiler_opts.opti_3_5	40
+RelationAlgebra.regex.lang_eval	40
+RelationAlgebra.relalg.props.atom_points	40
+RelationAlgebra.compiler_opts.lemma_3	40
+RelationAlgebra.matrix.ka.mx_str_unfold_l	40
+RelationAlgebra.regex.lang_1	40
+RelationAlgebra.matrix.mx_div_level	40	5.454.6	synth with cache (only 1: destruct l; only 1: CRelationClasses.reduce; only 1: Bool.destr_bool).	26.040205	41902
+RelationAlgebra.relalg.props.atom_lattice_atom	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_inner_dot	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_str'	40
+RelationAlgebra.relalg.total_xt	40
+RelationAlgebra.kat_completeness.KatCompleteness.clean_hat	40
+RelationAlgebra.kat_completeness.KatCompleteness.G_hat	40
+RelationAlgebra.kat_completeness.KatCompleteness.kat_complete_weq	40
+RelationAlgebra.matrix.ka.mx_str_refl	40
+RelationAlgebra.relalg.xt_total	40
+RelationAlgebra.ka_completeness.ka_correct_complete_leq	40
+RelationAlgebra.relalg.dot_cap_injective	40
+RelationAlgebra.kat_completeness.KatCompleteness.kat_complete_leq	40
+RelationAlgebra.nfa.dfa.eval_lang	40
+RelationAlgebra.kat_completeness.KatCompleteness.kat_correct_complete_weq	40
+RelationAlgebra.regex.lang_var	40
+RelationAlgebra.regex.lang_pls	40
+RelationAlgebra.kat_completeness.KatCompleteness.kat_reduces_to_ka	40
+RelationAlgebra.matrix.ka.mx_str_cons	40
+RelationAlgebra.matrix.ka.mx_str_ind_l	40
+RelationAlgebra.kat_completeness.KatCompleteness.kat_dec	40
+RelationAlgebra.ka_completeness.ka_leq_dec	40
+RelationAlgebra.ka_completeness.ka_weq_dec	40
+RelationAlgebra.matrix.ka.mx_str_ind_r	40
+RelationAlgebra.regex.lang_itr	40
+RelationAlgebra.matrix.mx_laws	40
+RelationAlgebra.paterson.s.Paterson	40

@@ -1,0 +1,110 @@
+File "./theories/Wellfounded/Disjoint_Union.v", line 35, characters 4-16:
+Error: Anomaly "in retyping: unbound local variable."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Program/Wf.v", line 245, characters 4-50:
+Error: Anomaly "in retyping: unbound local variable."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 200, characters 0-11:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: assumption; only 1: assumption; only 1: inversion 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption).
+Typing error:
+Recursive definition of ForAll_coind is ill-formed.
+In environment
+A, B : Type
+f : A -> B
+P : Stream B -> Prop
+S : Stream A
+ForAll_coind : ForAll (fun s : Stream A => P (map s)) S -> ForAll P (map S)
+H : ForAll (fun s : Stream A => P (map s)) S
+Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind H
+                                                 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H : ForAll P (tl (map S)))
+                                                 => H) x x0
+                                                 end".
+Recursive definition is: "fun H : ForAll (fun s : Stream A => P (map s)) S =>
+                          HereAndFurther (map S)
+                            match H with
+                            | HereAndFurther _ x x0 =>
+                                (fun (H0 : P (map S))
+                                   (_ : ForAll
+                                          (fun s : Stream A => P (map s))
+                                          (tl S)) => H0) x x0
+                            end
+                            (let H0 :
+                               ForAll (fun s : Stream A => P (map s)) S ->
+                               ForAll P (tl (map S)) :=
+                               fun
+                                 H0 : ForAll (fun s : Stream A => P (map s))
+                                        S =>
+                               match ForAll_coind H0 with
+                               | HereAndFurther _ x x0 =>
+                                   (fun (_ : P (map S))
+                                      (H1 : ForAll P (tl (map S))) => H1) x
+                                     x0
+                               end in
+                             H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/HexadecimalNat.v", line 111, characters 2-40:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: apply False_rec; only 1: eapply Nat.Private_Tac.lt_irrefl; only 1: RelationClasses.reduce; only 1: nzinduct n; only 1: auto with *; only 1: intros E0; only 1: now Nat.nzsimpl').
+Unsolved evars:
+?X83156?X83157?X83158" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rseries.v", line 59, characters 4-61:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: compute; only 1: elim (Rplus_ne 1); only 1: intros Hn Hm; only 1: eauto using Z.Private_Tac.eq_trans, Z.Private_Tac.eq_sym).
+Unsolved evars:
+?X7357" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/ExtensionalityFacts.v", line 131, characters 2-17:
+Error: Anomaly "in econstr: grounding a non evar-free term"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/FSets/FSetEqProperties.v", line 192, characters 0-35:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros; only 1: apply set_induction; only 1: intros a Ha; only 1: eauto with *; only 1: intros; only 1: now repeat constructor; only 1: intuition).
+Unsolved evars:
+?X141504" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/RIneq.v", line 691, characters 2-36:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros; only 1: edestruct Rle_lt_dec; only 1: rewrite H; only 1: auto with real; only 1: rewrite H; only 1: auto with real).
+Unsolved evars:
+?X459?X460" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/MSets/MSetRBT.v", line 1080, characters 1-15:
+Error: Anomaly "in retyping: Not a sort."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Reals/Rtrigo1.v", line 740, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Reals/Rtrigo1.v", line 807, characters 2-227:
+Error: Stack overflow.
+
+File "./theories/Numbers/Cyclic/Int63/Uint63.v", line 1484, characters 1-32:
+Error: Stack overflow.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2252, characters 1-34:
+Error: Stack overflow.
+

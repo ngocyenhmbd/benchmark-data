@@ -1,0 +1,30 @@
+[NOTE] unit-test-prop-chain-5-100 is not installed.
+
+[NOTE] Package coq-tactician-reinforce is currently pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce.git#1db1e76e12272a14502c8ab5d2b28b4dbe246890 (version ~dev).
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-03-23 09:30
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/tactician exec -- make -j15
+# exit-code            2
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-197418-a3a4e8.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-197418-a3a4e8.out
+### output ###
+# [...]
+# Linking user-contrib/Tactician/tactician_ssreflect_plugin.cmxs
+# Linking user-contrib/Tactician/tactician_reinforce_plugin.cmxs
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# File "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician/NNLearner.v", line 5, characters 0-47:
+# Error:
+# Anomaly
+# "Uncaught exception Unix.Unix_error(Unix.ENOENT, "create_process", "pytact-server")."
+# Please report at http://coq.inria.fr/bugs/.
+# 
+# make: *** [Makefile:61: theories/Init/Notations.vo] Error 129
+
+
+The former state can be restored with:
+    /home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default/src/benchmark/main.exe switch import "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/backup/state-20220323142308.export"

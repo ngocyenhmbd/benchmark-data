@@ -1,0 +1,18 @@
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/IBM/graph2tac.git' /tmp/pip-req-build-lf8z6moc
+  Running command git rev-parse -q --verify 'sha^dc5acc2d5980b0ae191a533483f348700dc5acc0'
+  Running command git fetch -q 'ssh://****@github.com/IBM/graph2tac.git' dc5acc2d5980b0ae191a533483f348700dc5acc0
+WARNING: google-api-core 2.8.2 does not provide the extra 'grpcgcp'
+WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
+You should consider upgrading via the '/tmp/tactician.tmp.YbKtYo/target-source/venv/bin/python3 -m pip install --upgrade pip' command.
+[ERROR] The installation of coq-graph2tac failed at "cp -r global_argument_def_qsaving2/ /tmp/tactician.tmp.YbKtYo/opam-root/bench/share/coq-graph2tac/".
+
+#=== ERROR while installing coq-graph2tac.~dev ================================#
+# context              2.1.2 | linux/x86_64 |  | pinned(git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#cf842534aed0a7d1fcad56b7b724b111f3c8a020#cf842534)
+# path                 /tmp/tactician.tmp.YbKtYo/opam-root/bench/.opam-switch/build/coq-graph2tac.~dev
+# command              /usr/bin/cp -r global_argument_def_qsaving2/ /tmp/tactician.tmp.YbKtYo/opam-root/bench/share/coq-graph2tac/
+# exit-code            1
+# env-file             /tmp/opam-root-3747166/coq-graph2tac-3747169-4d369c.env
+# output-file          /tmp/opam-root-3747166/coq-graph2tac-3747169-4d369c.out
+### output ###
+# /usr/bin/cp: cannot stat 'global_argument_def_qsaving2/': No such file or directory
+

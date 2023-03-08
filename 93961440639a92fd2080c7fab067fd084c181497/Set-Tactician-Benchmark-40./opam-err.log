@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq.8.11+beta1 failed at "make -j55".
+
+#=== ERROR while compiling coq.8.11+beta1 =====================================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/core-dev#2022-04-05 16:40
+# path                 /lscratch/blaaulas/tactician-benchmark.tmp.VTejrj/opam-root/bench/.opam-switch/build/coq.8.11+beta1
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-11207/coq-11209-6b6ba4.env
+# output-file          /tmp/opam-xxx-11207/coq-11209-6b6ba4.out
+### output ###
+# [...]
+# File "lib/coqProject_file.ml", line 125, characters 12-26:
+# 125 | | exception Stream.Failure -> accu
+#                   ^^^^^^^^^^^^^^
+# Alert deprecated: module Stdlib.Stream
+# Use the camlp-streams library instead.
+# File "lib/coqProject_file.ml", line 130, characters 31-48:
+# 130 |   let res = parse_args buf [] (Stream.of_channel c) in
+#                                      ^^^^^^^^^^^^^^^^^
+# Alert deprecated: module Stdlib.Stream
+# Use the camlp-streams library instead.
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-benchmark.tmp.VTejrj/opam-root/bench/.opam-switch/build/coq.8.11+beta1'
+# make: *** [submake] Error 2
+

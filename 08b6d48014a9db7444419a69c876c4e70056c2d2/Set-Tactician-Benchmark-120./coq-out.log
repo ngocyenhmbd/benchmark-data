@@ -1,0 +1,96 @@
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+starting proving server with connection through their stdin
+using textmode optiontext
+Model Loaded
+0
+----ä
+s : t, s' : t, s'' : t, x : elt, y : elt, z : elt |- (equal s' s'' = true -> equal (union s s') (union s s'') = true) OUTPUT
+Model Loaded
+0
+----ä
+Un : (nat -> R) |- (Un_growing -> forall l : R, is_lub EUn l -> Un_cv l) OUTPUT
+Model Loaded
+0
+----ä
+digits : positive, digits_ne_1 : (digits <> 1%positive), digits_gt_1 := spec_more_than_1_digit : (1 < Z.pos digits) |- (forall x : Z, [|x|] < wB) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall r1 r2 : R, r1 >= r2 -> ~ r1 < r2) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall a b : R, Rabs (a + b) <= Rabs a + Rabs b) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall (l : Rlist) (a x : R), In x (insert l a) <-> x = a \/ In x l) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall x : R, derivable_pt_lim cosh x (sinh x)) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall r1 r2 : RbaseSymbolsImpl.R, {r1 < r2} + {r1 = r2} + {r2 < r1}) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall (R1 R2 : ConstructiveReals) (f : ConstructiveRealsMorphism R1 R2) (x : CRcarrier R1) (n : nat), orderEq (CRcarrier R2) (CRlt R2) (CRmorph R1 R2 f (CRmult R1 x (CR_of_Q R1 (Z.of_nat n # 1)))) (CRmult R2 (CRmorph R1 R2 f x) (CR_of_Q R2 (Z.of_nat n # 1)))) OUTPUT
+Model Loaded
+0
+----ä
+x : int, y : int, n : int |- ((x + y) << n = (x << n + y << n)%int63) OUTPUT
+Model Loaded
+0
+----ä
+ |- (continuity cos) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall (a b : R) (f g : R -> R) (lf lg : Rlist), is_subdivision f a b lf -> is_subdivision g a b lg -> is_subdivision g a b (cons_ORlist lf lg)) OUTPUT
+Model Loaded
+0
+----ä
+ |- (forall a b c : R, Riemann_integrable (fct_cte c) a b) OUTPUT
+Model Loaded
+0
+----ä
+ |- (CMorphisms.Proper (CMorphisms.respectful CRealEq (CMorphisms.respectful CRealEq CRealEq)) CReal_plus) OUTPUT
+Model Loaded
+0
+----ä
+elt : Type |- (forall (m : t elt) (acc : list (key * elt)), (length acc + cardinal m)%nat = length (elements_aux acc m)) OUTPUT
+Model Loaded
+0
+----ä
+ |- Integral_domain OUTPUT

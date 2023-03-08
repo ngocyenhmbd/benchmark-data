@@ -1,0 +1,150 @@
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Lists/Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: case x; only 1: case x; only 1: case x; only 1: intros; only 1: destruct H; only 1: case x; only 1: coinduction ltac:(EqSt_reflex); only 1: rewrite H; only 1: reflexivity; only 1: auto; only 1: auto with datatypes).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+a : A
+s : Stream
+a0 : A
+s0 : Stream
+a1 : A
+s1 : Stream
+a2 : A
+s2 : Stream
+a3 : A
+s3 : Stream
+a4 : A
+s4 : Stream
+s5 : Stream
+H : EqSt (Cons a4 s4) s5
+e : hd (Cons a4 s4) = hd s5
+e0 : EqSt (tl (Cons a4 s4)) (tl s5)
+H0 : hd (Cons a4 s4) = hd s5
+H1 : EqSt (tl (Cons a4 s4)) (tl s5)
+a5 : A
+s6 : Stream
+EqSt_reflex : A -> Stream -> EqSt s5 (Cons a4 s4)
+a6 : A
+s7 : Stream
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex a6 s7
+                                                 with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun
+                                                 (_ : 
+                                                 hd s5 = hd (Cons a4 s4))
+                                                 (H : 
+                                                 EqSt 
+                                                 (tl s5) 
+                                                 (tl (Cons a4 s4))) => H) x
+                                                 x0
+                                                 end".
+Recursive definition is: "fun (a2 : A) (s3 : Stream) =>
+                          eqst s5 (Cons a4 s4)
+                            (eq_ind_r (fun a : A => hd s5 = a) eq_refl H0)
+                            (let H1 :
+                               A -> Stream -> EqSt (tl s5) (tl (Cons a4 s4)) :=
+                               fun (a : A) (s : Stream) =>
+                               match EqSt_reflex a s with
+                               | eqst _ _ x x0 =>
+                                   (fun (_ : hd s5 = hd (Cons a4 s4))
+                                      (H : EqSt (tl s5) (tl (Cons a4 s4))) =>
+                                    H) x x0
+                               end in
+                             H1 a2 s3)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 167, characters 0-31:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro; only 1: intro H; only 1: coinduction ltac:(EqSt_reflex); only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+P, Inv : Stream -> Prop
+InvThenP : forall x : Stream, Inv x -> P x
+InvIsStable : forall x : Stream, Inv x -> Inv (tl x)
+x : Stream
+H : Inv x
+EqSt_reflex : ForAll x
+Invalid recursive call in the argument of "match" in "match EqSt_reflex with
+                                                 | HereAndFurther x0 x1 =>
+                                                 (fun 
+                                                 (_ : P x)
+                                                 (H : ForAll (tl x)) => H) x0
+                                                 x1
+                                                 end".
+Recursive definition is: "HereAndFurther (InvThenP H)
+                            (let H0 : ForAll (tl x) :=
+                               match EqSt_reflex with
+                               | HereAndFurther x0 x1 =>
+                                   (fun (_ : P x) (H : ForAll (tl x)) => H)
+                                     x0 x1
+                               end in
+                             H0)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 200, characters 0-11:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: auto; only 1: assumption; only 1: intros [x y]; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(Eq_trans); only 1: assumption).
+Typing error:
+Recursive definition of ForAll_coind is ill-formed.
+In environment
+A, B : Type
+f : A -> B
+P : Stream B -> Prop
+S : Stream A
+ForAll_coind : ForAll (fun s : Stream A => P (map s)) S -> ForAll P (map S)
+H : ForAll (fun s : Stream A => P (map s)) S
+Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind H
+                                                 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H : ForAll P (tl (map S)))
+                                                 => H) x x0
+                                                 end".
+Recursive definition is: "fun H : ForAll (fun s : Stream A => P (map s)) S =>
+                          HereAndFurther (map S)
+                            match H with
+                            | HereAndFurther _ x x0 =>
+                                (fun (H0 : P (map S))
+                                   (_ : ForAll
+                                          (fun s : Stream A => P (map s))
+                                          (tl S)) => H0) x x0
+                            end
+                            (let H0 :
+                               ForAll (fun s : Stream A => P (map s)) S ->
+                               ForAll P (tl (map S)) :=
+                               fun
+                                 H0 : ForAll (fun s : Stream A => P (map s))
+                                        S =>
+                               match ForAll_coind H0 with
+                               | HereAndFurther _ x x0 =>
+                                   (fun (_ : P (map S))
+                                      (H1 : ForAll P (tl (map S))) => H1) x
+                                     x0
+                               end in
+                             H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ssr/ssrbool.v", line 2168, characters 7-46:
+Error: Anomaly "tclZERO receiving critical error: Timeout!"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2252, characters 1-34:
+Error: Stack overflow.
+

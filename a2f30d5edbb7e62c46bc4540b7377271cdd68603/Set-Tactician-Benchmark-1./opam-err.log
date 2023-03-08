@@ -1,0 +1,34 @@
+[NOTE] coq-tactician-stdlib is not installed.
+
+[NOTE] Package coq-tactician-reinforce is already pinned to git+file:///home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce#a2f30d5edbb7e62c46bc4540b7377271cdd68603 (version ~dev).
+[WARNING] Git submodule update failed in /tmp/tmp-scratch/opam-root/bench/.opam-switch/sources/coq-tactician-reinforce
+[NOTE] Package coq-tactician is already installed (current version is 8.11.dev).
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-05-16 16:50
+# path                 /tmp/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /tmp/tmp-scratch/opam-root/bench/bin/tactician exec -- make -j15
+# exit-code            2
+# env-file             /tmp/tmp-scratch/opam-root/log/coq-tactician-stdlib-129831-9f3cff.env
+# output-file          /tmp/tmp-scratch/opam-root/log/coq-tactician-stdlib-129831-9f3cff.out
+### output ###
+# [...]
+# coqc plugins/btauto/Reflect.v
+# coqc theories/MSets/MSets.v
+# coqc plugins/setoid_ring/Ncring_tac.v
+# coqc plugins/btauto/Btauto.v
+# coqc theories/Floats/PrimFloat.v
+# coqc theories/Numbers/Cyclic/Int63/Cyclic63.v
+# coqc plugins/extraction/ExtrOCamlInt63.v
+# coqc theories/Reals/ConstructiveRcomplete.v
+# coqc theories/Floats/FloatOps.v
+# make: *** [Makefile:66: theories/Numbers/Cyclic/ZModulo/ZModulo.vo] Segmentation fault (core dumped)
+# make: *** [theories/Numbers/Cyclic/ZModulo/ZModulo.vo] Deleting file 'theories/Numbers/Cyclic/ZModulo/ZModulo.glob'
+# make: *** Waiting for unfinished jobs....
+
+2022-05-21 10:32:07.947808+02:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host lasse-work. Code: 254

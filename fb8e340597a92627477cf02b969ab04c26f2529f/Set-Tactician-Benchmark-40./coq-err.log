@@ -1,0 +1,70 @@
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Sorting/Mergesort.v", line 243, characters 0-40:
+Error: Anomaly "in Evd.define: cannot define an evar twice."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Lists/Streams.v", line 95, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: case x; only 1: case x; only 1: case x; only 1: intros r s; only 1: intro H1; only 1: destruct 2; only 1: case x; only 1: coinduction ltac:(EqSt_reflex); only 1: auto; only 1: auto; only 1: auto).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+a : A
+s : Stream
+a0 : A
+s0 : Stream
+a1 : A
+s1 : Stream
+r : A
+s2 : Stream
+H1 : A
+s3 : Stream
+a2 : A
+s4 : Stream
+s5 : Stream
+H : EqSt (Cons a2 s4) s5
+e : hd (Cons a2 s4) = hd s5
+e0 : EqSt (tl (Cons a2 s4)) (tl s5)
+H0 : hd (Cons a2 s4) = hd s5
+H2 : EqSt (tl (Cons a2 s4)) (tl s5)
+a3 : A
+s6 : Stream
+EqSt_reflex : A -> Stream -> EqSt s5 (Cons a2 s4)
+a4 : A
+s7 : Stream
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex a4 s7
+                                                 with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun
+                                                 (_ : 
+                                                 hd s5 = hd (Cons a2 s4))
+                                                 (H : 
+                                                 EqSt 
+                                                 (tl s5) 
+                                                 (tl (Cons a2 s4))) => H) x
+                                                 x0
+                                                 end".
+Recursive definition is: "fun (a0 : A) (s3 : Stream) =>
+                          eqst s5 (Cons a2 s4) (eq_sym H0)
+                            (let H2 :
+                               A -> Stream -> EqSt (tl s5) (tl (Cons a2 s4)) :=
+                               fun (a : A) (s : Stream) =>
+                               match EqSt_reflex a s with
+                               | eqst _ _ x x0 =>
+                                   (fun (_ : hd s5 = hd (Cons a2 s4))
+                                      (H : EqSt (tl s5) (tl (Cons a2 s4))) =>
+                                    H) x x0
+                               end in
+                             H2 a0 s3)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2252, characters 1-34:
+Error: Stack overflow.
+

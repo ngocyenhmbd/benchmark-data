@@ -1,0 +1,62 @@
+Cloning into 'repo'...
+warning: redirecting to https://github.com/coq-tactician/coq-tactician.git/
+[KUpdating files:  88% (66/75)[KUpdating files:  89% (67/75)[KUpdating files:  90% (68/75)[KUpdating files:  92% (69/75)[KUpdating files:  93% (70/75)[KUpdating files:  94% (71/75)[KUpdating files:  96% (72/75)[KUpdating files:  97% (73/75)[KUpdating files:  98% (74/75)[KUpdating files: 100% (75/75)[KUpdating files: 100% (75/75), done.
+Note: switching to '1eaff3d2e6f474a8f71eb3affc9568d459032041'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1eaff3d Merge branch 'coq8.11' into coq8.10
+[NOTE] Will configure from built-in defaults.
+[NOTE] Repository coq-released has been added to the selections of switch /lscratch/blaaulas/tactician-fbBx2k only.
+       Run `opam repository add coq-released --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-extra-dev has been added to the selections of switch /lscratch/blaaulas/tactician-fbBx2k only.
+       Run `opam repository add coq-extra-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository coq-core-dev has been added to the selections of switch /lscratch/blaaulas/tactician-fbBx2k only.
+       Run `opam repository add coq-core-dev --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[NOTE] Repository custom-archive has been added to the selections of switch /lscratch/blaaulas/tactician-fbBx2k only.
+       Run `opam repository add custom-archive --all-switches|--set-default' to use it in all existing switches, or in newly created switches, respectively.
+
+[ERROR] The compilation of ocaml-base-compiler failed at "/usr/bin/make -j55".
+
+#=== ERROR while compiling ocaml-base-compiler.4.13.1 =========================#
+# context              2.0.3 | linux/x86_64 |  | https://opam.ocaml.org#00c36ea4
+# path                 /lscratch/blaaulas/tactician-fbBx2k/_opam/.opam-switch/build/ocaml-base-compiler.4.13.1
+# command              /usr/bin/make -j55
+# exit-code            2
+# env-file             /lscratch/blaaulas/tactician-fbBx2k/.opam/log/ocaml-base-compiler-53918-7d8df8.env
+# output-file          /lscratch/blaaulas/tactician-fbBx2k/.opam/log/ocaml-base-compiler-53918-7d8df8.out
+### output ###
+# [...]
+# ../boot/ocamlrun ../ocamlopt -g -nostdlib -I ../stdlib -I ../utils -I ../parsing -I ../typing -I ../bytecomp -I ../middle_end -I ../middle_end/closure -I ../middle_end/flambda -I ../middle_end/flambda/base_types -I ../driver -I ../toplevel -I ../file_formats -I ../lambda -I .. -o dumpobj.opt ../compilerlibs/ocamlcommon.cmxa ../compilerlibs/ocamlbytecomp.cmxa opnames.cmx dumpobj.cmx
+# ../ocamlopt.opt -nostdlib -I ../stdlib -I ../utils -I ../parsing -I ../typing -I ../driver -I ../bytecomp -I ../toplevel -I ../stdlib -I ../compilerlibs -I ../otherlibs/str -I ../otherlibs/dynlink -I ../otherlibs/dynlink/native -I ../otherlibs/unix -absname -w +a-4-9-41-42-44-45-48-70 -warn-error +A -safe-string -strict-sequence -strict-formats -bin-annot -principal -c odoc_html.ml
+# make[3]: Leaving directory `/lscratch/blaaulas/tactician-fbBx2k/_opam/.opam-switch/build/ocaml-base-compiler.4.13.1/tools'
+# File "/lscratch/blaaulas/tactician-fbBx2k/_opam/.opam-switch/build/ocaml-base-compiler.4.13.1/ocamldoc/odoc_html.ml", line 1:
+# Error: I/O error: No space left on device
+# make[3]: *** [odoc_html.cmx] Error 2
+# make[3]: Leaving directory `/lscratch/blaaulas/tactician-fbBx2k/_opam/.opam-switch/build/ocaml-base-compiler.4.13.1/ocamldoc'
+# make[2]: *** [ocamldoc.opt] Error 2
+# make[2]: Leaving directory `/lscratch/blaaulas/tactician-fbBx2k/_opam/.opam-switch/build/ocaml-base-compiler.4.13.1'
+# make[1]: *** [opt.opt] Error 2
+# make[1]: Leaving directory `/lscratch/blaaulas/tactician-fbBx2k/_opam/.opam-switch/build/ocaml-base-compiler.4.13.1'
+# make: *** [world.opt] Error 2
+
+
+The former state can be restored with:
+    opam switch import "/lscratch/blaaulas/tactician-fbBx2k/_opam/.opam-switch/backup/state-20220114110417.export"
+srun: error: node-06: task 0: Exited with exit code 31

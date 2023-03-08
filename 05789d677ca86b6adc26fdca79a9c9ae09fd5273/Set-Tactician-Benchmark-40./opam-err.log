@@ -1,0 +1,24 @@
+[31m[ERROR][0m The compilation of coq-tactician-stdlib.dev failed at "make -j55".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-tactician-stdlib.dev[0m [31m===========================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-06-20 17:40
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.OvPmm2/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.dev
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.OvPmm2/opam-root/bench/bin/tactician exec -- make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-17465/coq-tactician-stdlib-17465-893b3f.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-17465/coq-tactician-stdlib-17465-893b3f.out
+[33m### output ###
+[0m[33m# [0m[...]
+[33m# [0mLinking plugins/ltac/ltac_plugin.cmxs
+[33m# [0mLinking plugins/firstorder/firstorder_plugin.cmxs
+[33m# [0mLinking plugins/nsatz/nsatz_plugin.cmxs
+[33m# [0mLinking plugins/micromega/micromega_plugin.cmxs
+[33m# [0mLinking plugins/tauto/tauto_plugin.cmxs
+[33m# [0mLinking plugins/funind/funind_plugin.cmxs
+[33m# [0mLinking plugins/ring/ring_plugin.cmxs
+[33m# [0mcoqdep
+[33m# [0mpatching
+[33m# [0merror: patch failed: theories/Init/Ltac.v:9
+[33m# [0merror: theories/Init/Ltac.v: patch does not apply
+[33m# [0mmake: *** [.patch] Error 1
+

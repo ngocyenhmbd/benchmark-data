@@ -1,0 +1,21 @@
+[ERROR] The compilation of coq-huffman.dev failed at "dune build -p coq-huffman -j 127".
+
+#=== ERROR while compiling coq-huffman.dev ====================================#
+# context              2.1.2 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2022-08-02 12:10
+# path                 /tmp/tactician.tmp.uTxgVS/opam-root/bench/.opam-switch/build/coq-huffman.dev
+# command              /tmp/tactician.tmp.uTxgVS/opam-root/bench/bin/tactician exec -- dune build -p coq-huffman -j 127
+# exit-code            1
+# env-file             /tmp/opam-root-774568/coq-huffman-774568-c544e8.env
+# output-file          /tmp/opam-root-774568/coq-huffman-774568-c544e8.out
+### output ###
+# (cd _build/default && /tmp/tactician.tmp.uTxgVS/opam-root/bench/bin/coqc -q -R theories Huffman theories/AuxLib.v)
+# File "./theories/AuxLib.v", line 35, characters 0-39:
+# Error: This command does not support this attribute: export.
+# [unsupported-attributes,parsing]
+# 
+
+2022-08-04 21:10:59.836781-04:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host cccxc556. Code: 254

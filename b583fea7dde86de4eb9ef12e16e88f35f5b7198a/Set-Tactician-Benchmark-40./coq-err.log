@@ -1,0 +1,41 @@
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: case x; only 1: intros n m; only 1: coinduction ltac:(EqSt_reflex); only 1: inversion_clear H; only 1: auto; only 1: trivial).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+n : A
+m : Stream
+EqSt_reflex : forall s2 : Stream, EqSt (Cons n m) s2 -> EqSt s2 (Cons n m)
+s2 : Stream
+H : EqSt (Cons n m) s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt (Cons n m) s2) =>
+                          eqst s2 (Cons n m)
+                            (let H0 : hd s2 = hd (Cons n m) :=
+                               match H with
+                               | eqst _ _ H0 H1 =>
+                                   (fun (H2 : hd (Cons n m) = hd s2)
+                                      (_ : EqSt (tl (Cons n m)) (tl s2)) =>
+                                    eq_sym H2) H0 H1
+                               end in
+                             H0)
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt (Cons n m) s3 ->
+                               EqSt (tl s3) (tl (Cons n m)) :=
+                               fun (s3 : Stream) (H0 : EqSt (Cons n m) s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x0 => x0
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+

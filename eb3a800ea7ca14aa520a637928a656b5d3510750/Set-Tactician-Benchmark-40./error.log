@@ -1,0 +1,23 @@
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: ("Process.run failed"
+ ((prog srun)
+  (args
+   (--unbuffered --ntasks=1 --jobid 1899101 rsync -e
+    "rsync-preprocess srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 1899238 rsync-preprocess-marker"
+    -qa --exclude opam-root/bench/.opam-switch/sources --exclude
+    opam-root/bench/.opam-switch/build/coq.* --exclude
+    opam-root/bench/.opam-switch/build/ocaml-base-compiler.* --exclude
+    opam-root/bench/.opam-switch/build/dune.* --exclude
+    opam-root/bench/.opam-switch/build/dose3.* --exclude
+    opam-root/download-cache --exclude opam-root/repo --exclude *.vo.bench
+    --exclude *.glob --exclude *.aux /lscratch/blaaulas/tactician.tmp.QpZHna/
+    node-10.cluster:/lscratch/blaaulas/tactician.tmp.QpZHna/))
+  (exit_status (Exit_non_zero 1)) (stdout "")
+  (stderr
+   ("slurmstepd: error: Detected 1 oom-kill event(s) in step 1899101.107 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler."
+    "srun: error: node-02: task 0: Out Of Memory" ""))))
+Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: Abnormal exit code for build worker on host node-02.cluster. Code: 1
