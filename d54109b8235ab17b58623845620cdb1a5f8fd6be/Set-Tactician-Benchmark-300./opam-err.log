@@ -1,0 +1,12 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-zxn865fe
+  Running command git rev-parse -q --verify 'sha^8480cf1f7a10bbf66ce6312a74f7578015c4b44d'
+  Running command git fetch -q https://github.com/IBM/graph2tac.git 8480cf1f7a10bbf66ce6312a74f7578015c4b44d
+  Running command git checkout -q 8480cf1f7a10bbf66ce6312a74f7578015c4b44d
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip available: 22.3.1 -> 23.0.1
+[notice] To update, run: pip install --upgrade pip
+[ERROR] Failed to get extra source "model.tar.gz" of coq-graph2tac.~dev: Curl failed
+
+#=== ERROR while fetching sources for coq-graph2tac.~dev ======================#
+OpamSolution.Fetch_fail("http://64.71.146.254:8000/SFyud_C5TmEq7AwnK9jaLsfTFMzgBl54cQ0pl2FJB-x9o2Hk24F4jO_W75RqGdOJ/weights/2023-03-03_F_tfgnn_v14_stdlib_main-fixed_no-names_lr3e-4_epoch55.1fd4e18cf5246a1bef4eb672cad6da25.tar.gz (Curl failed: \"/dccstor/mathzero/model_runs/runs/2023-03-07_C_benchmark_tfgnn_v14_stdlib_main-fixed_no-names_lr3e-4_history_extlib-highschool-100/workdir/benchmark/venv/bin/curl --write-out %{http_code}\\\\n --retry 3 --retry-delay 2 --user-agent opam/2.1.4 -L -o /tmp/opam-2457169-175119/2023-03-03_F_tfgnn_v14_stdlib_main-fixed_no-names_lr3e-4_epoch55.1fd4e18cf5246a1bef4eb672cad6da25.tar.gz.part -- http://64.71.146.254:8000/SFyud_C5TmEq7AwnK9jaLsfTFMzgBl54cQ0pl2FJB-x9o2Hk24F4jO_W75RqGdOJ/weights/2023-03-03_F_tfgnn_v14_stdlib_main-fixed_no-names_lr3e-4_epoch55.1fd4e18cf5246a1bef4eb672cad6da25.tar.gz\" exited with code 7)")
