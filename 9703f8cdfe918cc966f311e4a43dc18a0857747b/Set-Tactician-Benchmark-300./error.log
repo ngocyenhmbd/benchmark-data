@@ -2,6 +2,7 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
-Fatal benchmarking error: Initial build did not fully complete
-Fatal benchmarking error: Abnormal exit code for command worker: job0 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2089414. Code: 1
+Fatal benchmarking error: (monitor.ml.Error ("OpamStd.OpamSys.Exit(20)")
+ ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+  "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+  "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
