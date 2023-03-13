@@ -1,0 +1,376 @@
+File "./theories/Classes/orders/sum.v", line 20, characters 0-18:
+Error: not found in table: core.eq.type
+
+File "./theories/Classes/implementations/bool.v", line 15, characters 9-47:
+Error:
+Anomaly
+"File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Modalities/Closed.v", line 49, characters 2-26:
+Error: not found in table: core.eq.type
+
+File "./times_bool_fun2.v", line 3, characters 0-83:
+Warning: Notation "exists _ .. _ , _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./times_bool_fun2.v", line 3, characters 0-83:
+Warning: Notation "{ _ : _ & _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./times_bool_fun2.v", line 3, characters 0-83:
+Warning: Notation "_ = _ :> _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./times_bool_fun2.v", line 3, characters 0-83:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./util/Qsums.v", line 11, characters 0-27:
+Warning: There is no option Automatic Introduction. [unknown-option,option]
+File "./util/Qsums.v", line 12, characters 0-27:
+Warning: There is no option Automatic Introduction. [unknown-option,option]
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: coinduction ltac:(EqSt_reflex); only 1: symmetry; only 1: destruct H; only 1: trivial with datatypes; only 1: assumption).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
+s2 : Stream
+H : EqSt x s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x => x
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt x s2) =>
+                          eqst s2 x
+                            (eq_sym match H with
+                                    | eqst _ _ H0 _ => H0
+                                    end)
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt x s3 -> EqSt (tl s3) (tl x) :=
+                               fun (s3 : Stream) (H0 : EqSt x s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x => x
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ftc/RefSepRef.v", line 39, characters 0-35:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./ode/metric.v", line 4, characters 0-322:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./ode/metric.v", line 4, characters 0-322:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/faster/ARplot.v", line 3, characters 0-41:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/faster/ARplot.v", line 3, characters 0-41:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./compiler/core/TypeSystem/RConsistentSubtype.v", line 41, characters 2-55:
+Error: Anomaly "Returned a functional value in type r <: ⊤"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./ode/metric.v", line 10, characters 0-58:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./transc/Pi.v", line 39, characters 0-34:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./transc/TrigMon.v", line 37, characters 0-30:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./transc/ArTanH.v", line 19, characters 0-39:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./complex/Complex_Exponential.v", line 39, characters 0-34:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./transc/RealPowers.v", line 40, characters 0-39:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/fast/CRexp.v", line 29, characters 0-36:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/fast/CRexp.v", line 48, characters 0-55:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/fast/CRexp.v", line 48, characters 0-55:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./times_bool_fun2.v", line 131, characters 2-33:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. refine (H {x : _ & P x} A (_; _) _) Please report.
+File "./theories/PCUICInversion.v", line 62, characters 4-20:
+Error: Anomaly "Not an arity." Please report at http://coq.inria.fr/bugs/.
+
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "[ rel _ _ | _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "[ rel _ _ : _ | _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "[ rel _ _ in _ & _ | _ ]" was already used in scope
+fun_scope. [notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "[ rel _ _ in _ & _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "[ rel _ _ in _ | _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "[ rel _ _ in _ ]" was already used in scope fun_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ + _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ - _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ <= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ < _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ >= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ > _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ <= _ <= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ < _ <= _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ <= _ < _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ < _ < _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ * _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+Warning: Notation "_ ^ _" was already used in scope nat_scope.
+[notation-overridden,parsing]
+File "./transc/RealPowers.v", line 73, characters 1-8:
+Error: Stack overflow.
+
+File "./cyclic.v", line 60, characters 7-39:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ordinals/ssete3.v", line 34, characters 0-21:
+Error:
+Anomaly
+"File "plugins/ssr/ssrcommon.ml", line 946, characters 18-24: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./transc/Pi.v", line 147, characters 1-36:
+Error: Stack overflow.
+
+File "./model/structures/QnnInf.v", line 114, characters 2-41:
+Warning: Declaring a scope implicitly is deprecated; use in advance an
+explicit "Declare Scope QnnInf_scope.". [undeclared-scope,deprecated]
+File "./theories/PCUICAlpha.v", line 22, characters 4-53:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: generalize 0; only 1: set (foo := CoreTactics.the_end_of_the_section); only 1: intros Σ wfΣ Γ0; only 1: intros a0; only 1: intros HR; only 1: give_up).
+Unsolved evars:
+?X290506" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/hubcap.v", line 206, characters 0-69:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. elim : m nt rt  => // m IHm nt [|r rt] //= in   rs  (ru   bound_ru   p   Exp * Please report.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/Lists/Streams.v", line 199, characters 0-11:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro H; only 1: intro x; only 1: constructor; only 1: destruct 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption; only 1: inversion 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(Eq_sym); only 1: tauto).
+Typing error:
+Recursive definition of ForAll_coind is ill-formed.
+In environment
+A, B : Type
+f : A -> B
+H : Stream B -> Prop
+x : Stream A
+H0 : ForAll (fun s : Stream A => H (map s)) x
+H1 : H (map x)
+H2 : ForAll (fun s : Stream A => H (map s)) (tl x)
+ForAll_coind : ForAll H (map x)
+Invalid recursive call in the argument of "match" in "match ForAll_coind with
+                                                 | HereAndFurther _ _ x => x
+                                                 end".
+Recursive definition is: "HereAndFurther (map x) H1
+                            (let H2 : ForAll H (tl (map x)) :=
+                               match ForAll_coind with
+                               | HereAndFurther _ _ x => x
+                               end in
+                             H2)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./separable.v", line 67, characters 0-47:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/xmathcomp/char0.v", line 22, characters 0-56:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 110, characters 4-19:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros; only 1: destruct H as [m' [H _]]; only 1: give_up).
+Unsolved evars:
+?X1138" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PCUICInversion.v", line 86, characters 4-20:
+Error: Anomaly "Not an arity." Please report at http://coq.inria.fr/bugs/.
+
+File "./transc/RealPowers.v", line 109, characters 1-30:
+Error: Stack overflow.
+
+File "./algnum.v", line 148, characters 7-23:
+Error: Anomaly "rewrite rule not an application"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ordinals/sset16b.v", line 104, characters 0-70:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. Ytac ltac:(eq2); Ytac0 ; first  by rewrite nbm nbp nbp -subn2 -nat_to_B_diff Please report.
+File "./theories/PCUICSpine.v", line 168, characters 2-41:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICInversion.v", line 108, characters 4-25:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: intros t n u; only 1: depind H; only 1: intros h e; only 1: clear H; only 1: give_up).
+Unsolved evars:
+?X46511" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/ordinals/ssete3.v", line 83, characters 0-51:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. have p1: inc (P t) x by rewrite -su; substr_tac Please report.
+File "./theories/ordinals/ssete3.v", line 84, characters 0-51:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. have p2: inc (Q t) x by rewrite -su; substr_tac Please report.
+File "./theories/PCUICSpine.v", line 168, characters 2-41:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICSpine.v", line 168, characters 2-41:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICSpine.v", line 168, characters 2-41:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICSpine.v", line 168, characters 2-41:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICSpine.v", line 168, characters 2-41:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/BGsection5.v", line 98, characters 7-57:
+Error: Anomaly "Not enough lambda/let's."
+Please report at http://coq.inria.fr/bugs/.
+
