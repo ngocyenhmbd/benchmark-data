@@ -1,319 +1,359 @@
-File "./theories/Classes/orders/sum.v", line 20, characters 0-18:
+File "./theories/Categories/ExponentialLaws/Law1/Law.v", line 26, characters 4-17:
 Error: not found in table: core.eq.type
 
-File "./theories/Classes/implementations/bool.v", line 15, characters 9-47:
+File "./theories/Categories/Adjoint/Composition/IdentityLaws.v", line 36, characters 4-38:
+Error: not found in table: core.eq.type
+
+File "./theories/Colimits/Colimit_Coequalizer.v", line 35, characters 4-25:
+Error:
+Anomaly
+"File "pretyping/evarsolve.ml", line 74, characters 9-15: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./src/bbv/Word.v", line 27, characters 0-35:
+Warning: Declaring a scope implicitly is deprecated; use in advance an
+explicit "Declare Scope word_scope.". [undeclared-scope,deprecated]
+File "./Misc.v", line 21, characters 7-33:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./theories/Categories/Category/Sigma/Univalent.v", line 33, characters 4-15:
+Error: not found in table: core.eq.type
+
+File "./State.v", line 22, characters 0-16:
+Warning: There is no option Vm Optimize. [unknown-option,option]
+File "./theories/Categories/LaxComma/CoreLaws.v", line 200, characters 6-13:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Comma/Core.v", line 100, characters 6-27:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Comma/InducedFunctors.v", line 42, characters 4-189:
+Error: not found in table: core.eq.type
+
+File "./theories/PropResizing/Nat.v", line 50, characters 4-42:
 Error:
 Anomaly
 "File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/Modalities/Closed.v", line 49, characters 2-26:
+File "./theories/Categories/DualFunctor.v", line 52, characters 4-17:
 Error: not found in table: core.eq.type
 
-File "./times_bool_fun2.v", line 3, characters 0-83:
-Warning: Notation "exists _ .. _ , _" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./times_bool_fun2.v", line 3, characters 0-83:
-Warning: Notation "{ _ : _ & _ }" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./times_bool_fun2.v", line 3, characters 0-83:
-Warning: Notation "_ = _ :> _" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./times_bool_fun2.v", line 3, characters 0-83:
-Warning: Notation "_ = _" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./util/Qsums.v", line 11, characters 0-27:
-Warning: There is no option Automatic Introduction. [unknown-option,option]
-File "./util/Qsums.v", line 12, characters 0-27:
-Warning: There is no option Automatic Introduction. [unknown-option,option]
-File "./theories/Lists/Streams.v", line 94, characters 0-19:
+File "./theories/Categories/ExponentialLaws/Law1/Law.v", line 42, characters 4-28:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Comma/InducedFunctors.v", line 58, characters 4-189:
+Error: not found in table: core.eq.type
+
+File "./theories/PropResizing/Nat.v", line 80, characters 4-56:
 Error:
 Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: intro x; only 1: coinduction ltac:(EqSt_reflex); only 1: symmetry; only 1: destruct H; only 1: trivial with datatypes; only 1: assumption).
-Typing error:
-Recursive definition of EqSt_reflex is ill-formed.
-In environment
-A : Type
-x : Stream
-EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
-s2 : Stream
-H : EqSt x s2
-Invalid recursive call in the argument of "match" in "match
-                                                 EqSt_reflex s2 H
-                                                 with
-                                                 | eqst _ _ _ x => x
-                                                 end".
-Recursive definition is: "fun (s2 : Stream) (H : EqSt x s2) =>
-                          eqst s2 x
-                            (eq_sym match H with
-                                    | eqst _ _ H0 _ => H0
-                                    end)
-                            (let H0 :
-                               forall s3 : Stream,
-                               EqSt x s3 -> EqSt (tl s3) (tl x) :=
-                               fun (s3 : Stream) (H0 : EqSt x s3) =>
-                               match EqSt_reflex s3 H0 with
-                               | eqst _ _ _ x => x
-                               end in
-                             H0 s2 H)"."
+"File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./ftc/RefSepRef.v", line 39, characters 0-35:
-Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./ode/metric.v", line 4, characters 0-322:
-Warning: Notation "_ = _" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./ode/metric.v", line 4, characters 0-322:
-Warning: Notation "_ ≠ _" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./reals/faster/ARplot.v", line 3, characters 0-41:
-Warning: Notation "_ = _" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./reals/faster/ARplot.v", line 3, characters 0-41:
-Warning: Notation "_ ≠ _" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./compiler/core/TypeSystem/RConsistentSubtype.v", line 41, characters 2-55:
-Error: Anomaly "Returned a functional value in type r <: ⊤"
+File "./theories/Categories/ExponentialLaws/Law2/Law.v", line 41, characters 4-17:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Category/Sigma/Univalent.v", line 87, characters 4-83:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Adjoint/Composition/IdentityLaws.v", line 46, characters 4-38:
+Error: not found in table: core.eq.type
+
+File "./model/totalorder/QMinMax.v", line 24, characters 0-27:
+Warning: There is no option Automatic Introduction. [unknown-option,option]
+File "./theories/Categories/Comma/Core.v", line 107, characters 6-32:
+Error: not found in table: core.eq.type
+
+File "./Term/SimpleType/TermsEta.v", line 18, characters 2-46:
+Warning: Notation "_ [=] _" was already used. [notation-overridden,parsing]
+File "./theories/Categories/Grothendieck/PseudofunctorToCat.v", line 46, characters 4-13:
+Error: not found in table: core.eq.type
+
+File "./theories/Classes/theory/additional_operations.v", line 21, characters 0-9:
+Error: Anomaly "cannot define an evar twice."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./ode/metric.v", line 10, characters 0-58:
+File "./theories/Categories/Category/Sigma/Univalent.v", line 102, characters 4-47:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Grothendieck/PseudofunctorToCat.v", line 208, characters 4-39:
+Error: not found in table: core.eq.type
+
+File "./theories/Classes/theory/additional_operations.v", line 28, characters 0-9:
+Error:
+Anomaly
+"File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Categories/Comma/InducedFunctors.v", line 75, characters 4-10:
+Error: not found in table: core.eq.type
+
+File "./reals/faster/ARQ.v", line 4, characters 0-213:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/faster/ARQ.v", line 4, characters 0-213:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./fta/MainLemma.v", line 41, characters 0-37:
 Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
 [notation-overridden,parsing]
-File "./transc/Pi.v", line 39, characters 0-34:
+File "./ftc/FunctSeries.v", line 37, characters 0-38:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./fta/CPoly_Contin1.v", line 37, characters 0-33:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./ftc/Integral.v", line 37, characters 0-33:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./ftc/TaylorLemma.v", line 37, characters 0-30:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/Categories/Category/Sigma/Univalent.v", line 118, characters 4-15:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Comma/InducedFunctors.v", line 95, characters 4-368:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Comma/Core.v", line 160, characters 6-18:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/Grothendieck/PseudofunctorToCat.v", line 229, characters 4-19:
+Error: not found in table: core.eq.type
+
+File "./src/bbv/Word.v", line 170, characters 2-232:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. let y' := constr:y in abstract (rewrite (shatter_word y'); simpl; intro H; injection H; intros; eauto using inj_pair2_eq_dec, Nat.eq_dec) Please report.
+File "./src/bbv/Word.v", line 174, characters 2-184:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. let y' := constr:y in abstract (rewrite (shatter_word y'); simpl; intro H; injection H; auto) Please report.
+File "./complex/Complex_Exponential.v", line 39, characters 0-34:
 Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
 [notation-overridden,parsing]
 File "./transc/TrigMon.v", line 37, characters 0-30:
 Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
 [notation-overridden,parsing]
-File "./transc/ArTanH.v", line 19, characters 0-39:
-Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./complex/Complex_Exponential.v", line 39, characters 0-34:
-Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
-[notation-overridden,parsing]
-File "./transc/RealPowers.v", line 40, characters 0-39:
+File "./theories/ordinals/OrdinalNotations/ON_plus.v", line 91, characters 2-8:
+Error: Stack overflow.
+
+File "./transc/InvTrigonom.v", line 37, characters 0-38:
 Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
 [notation-overridden,parsing]
 File "./reals/fast/CRexp.v", line 29, characters 0-36:
 Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
 [notation-overridden,parsing]
+File "./theories/PCUICNormal.v", line 150, characters 4-23:
+Warning:
+Automatically inlined signature for type whne. Use [Derive Signature for whne.] to avoid this.
 File "./reals/fast/CRexp.v", line 48, characters 0-55:
 Warning: Notation "_ = _" was already used in scope type_scope.
 [notation-overridden,parsing]
 File "./reals/fast/CRexp.v", line 48, characters 0-55:
 Warning: Notation "_ ≠ _" was already used in scope type_scope.
 [notation-overridden,parsing]
-File "./times_bool_fun2.v", line 131, characters 2-33:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. refine (H {x : _ & P x} A (_; _) _) Please report.
-File "./theories/PCUICInversion.v", line 62, characters 4-20:
-Error: Anomaly "Not an arity." Please report at http://coq.inria.fr/bugs/.
+File "./reals/faster/ACarith.v", line 4, characters 0-241:
+Warning: Notation "_ = _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./reals/faster/ACarith.v", line 4, characters 0-241:
+Warning: Notation "_ ≠ _" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/Categories/Comma/InducedFunctors.v", line 119, characters 6-118:
+Error: not found in table: core.eq.type
 
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+File "./theories/Categories/Comma/Core.v", line 170, characters 6-62:
+Error: not found in table: core.eq.type
+
+File "./theories/Colimits/Colimit_Sigma.v", line 143, characters 4-60:
+Error: Anomaly "Evar ?X312827 was not declared."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PCUICNormal.v", line 150, characters 4-23:
+Warning:
+Automatically inlined signature for type whne. Use [Derive Signature for whne.] to avoid this.
+File "./theories/Categories/Category/Sigma/Univalent.v", line 130, characters 4-15:
+Error: not found in table: core.eq.type
+
+File "./theories/Categories/LaxComma/CoreLaws.v", line 393, characters 6-13:
+Error: not found in table: core.eq.type
+
+File "./common/Linking.v", line 70, characters 2-29:
+Error: Anomaly "variable c unbound."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./common/Behaviors.v", line 71, characters 2-9:
+Error: Stack overflow.
+
+File "./src/Integral/Integral.v", line 22, characters 0-64:
 Warning: Notation "[ rel _ _ | _ ]" was already used in scope fun_scope.
 [notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+File "./src/Integral/Integral.v", line 22, characters 0-64:
 Warning: Notation "[ rel _ _ : _ | _ ]" was already used in scope fun_scope.
 [notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+File "./src/Integral/Integral.v", line 22, characters 0-64:
 Warning: Notation "[ rel _ _ in _ & _ | _ ]" was already used in scope
 fun_scope. [notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+File "./src/Integral/Integral.v", line 22, characters 0-64:
 Warning: Notation "[ rel _ _ in _ & _ ]" was already used in scope fun_scope.
 [notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+File "./src/Integral/Integral.v", line 22, characters 0-64:
 Warning: Notation "[ rel _ _ in _ | _ ]" was already used in scope fun_scope.
 [notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
+File "./src/Integral/Integral.v", line 22, characters 0-64:
 Warning: Notation "[ rel _ _ in _ ]" was already used in scope fun_scope.
 [notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ + _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ - _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ <= _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ < _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ >= _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ > _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ <= _ <= _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ < _ <= _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ <= _ < _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ < _ < _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ * _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./src/Poly/Taylor_model_sharp.v", line 26, characters 0-96:
-Warning: Notation "_ ^ _" was already used in scope nat_scope.
-[notation-overridden,parsing]
-File "./transc/RealPowers.v", line 73, characters 1-8:
-Error: Stack overflow.
+File "./theories/Categories/Category/Sigma/Univalent.v", line 142, characters 4-61:
+Error: not found in table: core.eq.type
 
-File "./cyclic.v", line 60, characters 7-39:
-Error: Anomaly "rewrite rule not an application"
+File "./theories/Categories/LaxComma/CoreLaws.v", line 399, characters 6-272:
+Error: not found in table: core.eq.type
+
+File "./iris/bi/lib/relations.v", line 52, characters 9-60:
+Error: Anomaly "Evar ?X104641 was not declared."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/ordinals/ssete3.v", line 34, characters 0-21:
-Error:
-Anomaly
-"File "plugins/ssr/ssrcommon.ml", line 946, characters 18-24: Assertion failed."
-Please report at http://coq.inria.fr/bugs/.
+File "./theories/PCUICValidity.v", line 26, characters 4-8:
+Error: Anomaly "Not an arity." Please report at http://coq.inria.fr/bugs/.
 
-File "./transc/Pi.v", line 147, characters 1-36:
+File "./ftc/FunctSeries.v", line 136, characters 1-146:
 Error: Stack overflow.
 
-File "./model/structures/QnnInf.v", line 114, characters 2-41:
-Warning: Declaring a scope implicitly is deprecated; use in advance an
-explicit "Declare Scope QnnInf_scope.". [undeclared-scope,deprecated]
 File "./theories/PCUICAlpha.v", line 22, characters 4-53:
 Error:
 Anomaly
 "Incomplete witness for the following tactic:
 synth with cache (only 1: generalize 0; only 1: set (foo := CoreTactics.the_end_of_the_section); only 1: intros Σ wfΣ Γ0; only 1: intros a0; only 1: intros HR; only 1: give_up).
 Unsolved evars:
-?X290506" Please report at http://coq.inria.fr/bugs/.
+?X302602" Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/hubcap.v", line 206, characters 0-69:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. elim : m nt rt  => // m IHm nt [|r rt] //= in   rs  (ru   bound_ru   p   Exp * Please report.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICAlpha.v", line 80, characters 4-35:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/Lists/Streams.v", line 199, characters 0-11:
+File "./theories/Categories/Category/Sigma/Univalent.v", line 203, characters 4-15:
+Error: not found in table: core.eq.type
+
+File "./theories/PropResizing/Nat.v", line 150, characters 6-17:
+Error: not found in table: core.eq.type
+
+File "./theories/ordinals/sset17.v", line 45, characters 0-26:
 Error:
 Anomaly
-"Typing failure of the following tactic:
-synth with cache (only 1: intro H; only 1: intro x; only 1: constructor; only 1: destruct 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption; only 1: inversion 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(Eq_sym); only 1: tauto).
-Typing error:
-Recursive definition of ForAll_coind is ill-formed.
-In environment
-A, B : Type
-f : A -> B
-H : Stream B -> Prop
-x : Stream A
-H0 : ForAll (fun s : Stream A => H (map s)) x
-H1 : H (map x)
-H2 : ForAll (fun s : Stream A => H (map s)) (tl x)
-ForAll_coind : ForAll H (map x)
-Invalid recursive call in the argument of "match" in "match ForAll_coind with
-                                                 | HereAndFurther _ _ x => x
-                                                 end".
-Recursive definition is: "HereAndFurther (map x) H1
-                            (let H2 : ForAll H (tl (map x)) :=
-                               match ForAll_coind with
-                               | HereAndFurther _ _ x => x
-                               end in
-                             H2)"."
+"File "plugins/ssr/ssrcommon.ml", line 946, characters 18-24: Assertion failed."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./separable.v", line 67, characters 0-47:
-Error: Anomaly "rewrite rule not an application"
+File "./theories/PCUICValidity.v", line 38, characters 4-8:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICValidity.v", line 38, characters 4-8:
+Error:
+Anomaly
+"Incomplete witness for the following tactic:
+synth with cache (only 1: move  =>eq'; only 1: intros H H'; only 1: intros t f h; only 1: intros hna; only 1: rename_all_hyps; only 1: intro LS'; only 1: give_up).
+Unsolved evars:
+?X92917" Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/Categories/Comma/Core.v", line 197, characters 6-31:
+Error:
+Anomaly
+"File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
 Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/xmathcomp/char0.v", line 22, characters 0-56:
-Error: Anomaly "rewrite rule not an application"
+File "./theories/PCUICAlpha.v", line 80, characters 4-35:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./ftc/FunctSeries.v", line 179, characters 1-8:
+Error: Stack overflow.
+
+File "./theories/Categories/Category/Sigma/Univalent.v", line 214, characters 4-15:
+Error: not found in table: core.eq.type
+
+File "./theories/Classes/theory/additional_operations.v", line 73, characters 0-30:
+Error:
+Anomaly
+"File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
 Please report at http://coq.inria.fr/bugs/.
 
+File "./theories/PCUICCanonicity.v", line 16, characters 0-26:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
 File "./theories/PCUICAlpha.v", line 80, characters 4-35:
 Warning:
 Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
@@ -325,52 +365,873 @@ synth with cache (only 1: intros; only 1: destruct H as [m' [H _]]; only 1: give
 Unsolved evars:
 ?X1138" Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/PCUICInversion.v", line 86, characters 4-20:
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM; GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedN] : GRing.divring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedB; GRing.zmod_closedN] : GRing.divring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM; GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM;
+ GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB] : GRing.divalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB] : GRing.divalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/BGappendixC.v", line 6, characters 0-83:
+Warning:
+New coercion path [GRing.Pred.divring_sdiv; GRing.Pred.sdiv_smul;
+                   GRing.Pred.smul_mul] : GRing.Pred.divring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.divring_ring; GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.divring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/PCUICValidity.v", line 84, characters 4-27:
 Error: Anomaly "Not an arity." Please report at http://coq.inria.fr/bugs/.
 
-File "./transc/RealPowers.v", line 109, characters 1-30:
-Error: Stack overflow.
+File "./theories/Categories/Category/Sigma/Univalent.v", line 230, characters 4-45:
+Error: not found in table: core.eq.type
 
-File "./algnum.v", line 148, characters 7-23:
-Error: Anomaly "rewrite rule not an application"
+File "./theories/PropResizing/Nat.v", line 172, characters 4-41:
+Error:
+Anomaly
+"File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
 Please report at http://coq.inria.fr/bugs/.
 
 File "./theories/ordinals/sset16b.v", line 104, characters 0-70:
 Warning:
 Tactician detected a printing/parsing problem for the following tactic. Ytac ltac:(eq2); Ytac0 ; first  by rewrite nbm nbp nbp -subn2 -nat_to_B_diff Please report.
-File "./theories/PCUICSpine.v", line 168, characters 2-41:
-Warning:
-Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICInversion.v", line 108, characters 4-25:
+File "./theories/PCUICValidity.v", line 96, characters 4-27:
+Error: Anomaly "Not an arity." Please report at http://coq.inria.fr/bugs/.
+
+File "./generalities.v", line 60, characters 0-20:
 Error:
 Anomaly
-"Incomplete witness for the following tactic:
-synth with cache (only 1: intros t n u; only 1: depind H; only 1: intros h e; only 1: clear H; only 1: give_up).
-Unsolved evars:
-?X46511" Please report at http://coq.inria.fr/bugs/.
+"Typing failure of the following tactic:
+synth with cache (only 1: assert (forall n : nat, 0 <= (if Nat.eq_dec n 0 then 1 else INR n)); only 1: intros; only 1: case (Nat.eq_dec n 0); only 1: auto with real; only 1: auto with real; only 1: intro Cxu; only 1: simpl in *; only 1: intros x Dfx; only 1: assert (Hyp : 0 < 2); only 1: clear; only 1: exact Rlt_0_2; only 1: intros Hxm; only 1: unfold filtermapi in H |- *; only 1: apply : filter_imp H ; only 1: eauto with *; only 1: eauto using Rmult_lt_reg_l with rorders).
+Typing error:
+Illegal application: 
+The term "@filter_imp" of type "forall (T : Type) (F : (T -> Prop) -> Prop),
+                                Filter F ->
+                                forall P Q : T -> Prop,
+                                (forall x : T, P x -> Q x) -> F P -> F Q" cannot be applied to the terms
+ "(R * R)%type" : "Set"
+ "filter_prod Fa Fb" : "(R * R -> Prop) -> Prop"
+ "filtermap_filter (R * R) (R * R) (fun x : R * R => x) 
+    (filter_prod Fa Fb)
+    (filtermap_filter (R * R) (R * R) (fun x : R * R => x)
+       (filter_prod Fa Fb)
+       (filtermap_filter (R * R) (R * R) (fun x : R * R => x)
+          (filter_prod Fa Fb) (filter_prod_filter R R Fa Fb FFa FFb)))"
+   : "Filter (filtermap (fun x : R * R => x) (filter_prod Fa Fb))"
+ "fun x : R * R =>
+  exists y : R_NormedModule,
+    is_RInt (fun x0 : R => scal (dg x0) (f (g x0))) (fst x) (snd x) y /\
+    Dfx y" : "R * R -> Prop"
+ "fun x : R * R =>
+  exists y : R_NormedModule,
+    is_RInt (fun x0 : R => scal (dg x0) (f (g x0))) (fst x) (snd x) y /\
+    Dfx y" : "R * R -> Prop"
+ "fun (x0 : R * R)
+    (H : (fun x : R * R =>
+          exists y : R_NormedModule,
+            is_RInt (fun x1 : R => scal (dg x1) (f (g x1))) (fst x) (snd x) y /\
+            Dfx y) x0) => H"
+   : "forall x0 : R * R,
+      (exists y : R_NormedModule,
+         is_RInt (fun x : R => scal (dg x) (f (g x))) (fst x0) (snd x0) y /\
+         Dfx y) ->
+      exists y : R_NormedModule,
+        is_RInt (fun x : R => scal (dg x) (f (g x))) (fst x0) (snd x0) y /\
+        Dfx y"
+ "H" : "forall n : nat, 0 <= (if Nat.eq_dec n 0 then 1 else INR n)"
+The 7th term has type "forall n : nat,
+                       0 <= (if Nat.eq_dec n 0 then 1 else INR n)" which should be coercible to "filter_prod
+                                                 Fa Fb
+                                                 (fun x : R * R =>
+                                                 exists 
+                                                 y : R_NormedModule,
+                                                 is_RInt
+                                                 (fun x0 : R =>
+                                                 scal (dg x0) (f (g x0)))
+                                                 (fst x) 
+                                                 (snd x) y /\ 
+                                                 Dfx y)"."
+Please report at http://coq.inria.fr/bugs/.
 
-File "./theories/ordinals/ssete3.v", line 83, characters 0-51:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. have p1: inc (P t) x by rewrite -su; substr_tac Please report.
-File "./theories/ordinals/ssete3.v", line 84, characters 0-51:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. have p2: inc (Q t) x by rewrite -su; substr_tac Please report.
-File "./theories/PCUICSpine.v", line 168, characters 2-41:
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
 Warning:
 Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICSpine.v", line 168, characters 2-41:
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
 Warning:
 Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICSpine.v", line 168, characters 2-41:
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM; GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedN] : GRing.divring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedB; GRing.zmod_closedN] : GRing.divring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM; GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM;
+ GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB] : GRing.divalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB] : GRing.divalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection6.v", line 6, characters 0-86:
+Warning:
+New coercion path [GRing.Pred.divring_sdiv; GRing.Pred.sdiv_smul;
+                   GRing.Pred.smul_mul] : GRing.Pred.divring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.divring_ring; GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.divring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
 Warning:
 Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICSpine.v", line 168, characters 2-41:
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
 Warning:
 Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/PCUICSpine.v", line 168, characters 2-41:
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
 Warning:
 Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
-File "./theories/BGsection5.v", line 98, characters 7-57:
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/Categories/Category/Sigma/Univalent.v", line 249, characters 4-12:
+Error: not found in table: core.eq.type
+
+File "./theories/ordinals/sset16b.v", line 112, characters 0-68:
+Error:
+Anomaly
+"File "plugins/ssr/ssrcommon.ml", line 946, characters 18-24: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./src/Float/Primitive_ops.v", line 296, characters 0-47:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 296, characters 0-47:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 297, characters 0-35:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] m e; case Pos.eqb Please report.
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./compiler/core/NNRSimp/Lang/NNRSimpEval.v", line 603, characters 6-17:
+Error: Anomaly "Bad recursive type."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PCUICCanonicity.v", line 41, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/PCUICNormal.v", line 464, characters 2-12:
+Warning:
+Automatically inlined signature for type red1. Use [Derive Signature for red1.] to avoid this.
+File "./theories/ops_for_u.v", line 51, characters 0-16:
+Error: Stack overflow.
+
+File "./theories/KleeneAlgebra.v", line 126, characters 4-25:
+Error: Anomaly "Bad recursive type."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PCUICSafeChecker.v", line 15, characters 0-152:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./theories/PCUICNormal.v", line 464, characters 2-12:
+Warning:
+Automatically inlined signature for type red1. Use [Derive Signature for red1.] to avoid this.
+File "./src/Integral/Integral.v", line 583, characters 2-57:
+Warning: Duplicate clear of HPint [duplicate-clear,ssr]
+File "./src/Integral/Integral.v", line 742, characters 2-57:
+Warning: Duplicate clear of HPint [duplicate-clear,ssr]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM; GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedN] : GRing.divring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedB; GRing.zmod_closedN] : GRing.divring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM; GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM;
+ GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB] : GRing.divalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB] : GRing.divalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.Pred.divring_sdiv; GRing.Pred.sdiv_smul;
+                   GRing.Pred.smul_mul] : GRing.Pred.divring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.divring_ring; GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.divring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/PropResizing/Nat.v", line 246, characters 4-17:
+Error:
+Anomaly
+"File "pretyping/cases.ml", line 1719, characters 29-35: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./complex/Complex_Exponential.v", line 167, characters 1-9:
+Error: Stack overflow.
+
+File "./theories/EDeps.v", line 7, characters 0-143:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./src/Float/Primitive_ops.v", line 309, characters 0-47:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 309, characters 0-47:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 310, characters 0-35:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] m e; case Pos.eqb Please report.
+File "./theories/EDeps.v", line 7, characters 0-143:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./common/Behaviors.v", line 198, characters 2-25:
+Error: Stack overflow.
+
+File "./theories/EDeps.v", line 7, characters 0-143:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./theories/ordinals/sset16b.v", line 127, characters 0-64:
+Error:
+Anomaly
+"File "plugins/ssr/ssrcommon.ml", line 946, characters 18-24: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/BGsection10.v", line 105, characters 7-44:
 Error: Anomaly "Not enough lambda/let's."
 Please report at http://coq.inria.fr/bugs/.
 
+File "./theories/Categories/Category/Sigma/Univalent.v", line 266, characters 4-12:
+Error: not found in table: core.eq.type
+
+File "./polyXY.v", line 304, characters 0-64:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. elim : n {uv} => // n IHn in   p  (v  (u   nz_u   nz_v   Dvu   nz_p   ltvn * Please report.
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM; GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedN] : GRing.divring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedB; GRing.zmod_closedN] : GRing.divring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM; GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM;
+ GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB] : GRing.divalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB] : GRing.divalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection9.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.Pred.divring_sdiv; GRing.Pred.sdiv_smul;
+                   GRing.Pred.smul_mul] : GRing.Pred.divring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.divring_ring; GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.divring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./Misc.v", line 1045, characters 2-55:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction (to_list a) as [| x l] Please report.
+File "./Misc.v", line 1125, characters 2-55:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction (to_list a) as [| x l] Please report.
+File "./Misc.v", line 1399, characters 4-88:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction l as [| t l IHl] Please report.
+File "./Misc.v", line 1426, characters 4-90:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction l as [| t q IHq] Please report.
+File "./Misc.v", line 1452, characters 4-78:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction l as [| t q IHq] Please report.
+File "./Misc.v", line 1490, characters 4-49:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction l as [| t q IHq] Please report.
+File "./Misc.v", line 1503, characters 4-49:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction l as [| t q IHq] Please report.
+File "./Misc.v", line 1527, characters 4-38:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction l as [| t q IHq] Please report.
+File "./Misc.v", line 1539, characters 4-38:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction l as [| t q IHq] Please report.
+File "./theories/PFsection6.v", line 97, characters 0-53:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. elim : n  => [|n IHn] in  (S2   S1   ccsS1S   cohA * => lb_n Please report.
+File "./theories/ordinals/sset17.v", line 136, characters 2-62:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite card_setP -cpowcr Please report.
+File "./theories/ordinals/sset17.v", line 166, characters 2-57:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite card_setP -cpowcr hrec // Please report.
+File "./theories/ordinals/sset17.v", line 178, characters 10-71:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. by apply : (osum_Meqltr sc (proj31 h) OS_omega) ; rewrite -sd Please report.
+File "./theories/ordinals/sset17.v", line 184, characters 4-63:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite -cprod2cr {+2}/f Lgd Please report.
+File "./theories/ordinals/sset17.v", line 243, characters 0-72:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite card_setP -cpowcr => sa Please report.
+File "./theories/ordinals/sset17.v", line 560, characters 2-32:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite -sf Please report.
+File "./theories/ordinals/sset17.v", line 799, characters 0-29:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. by apply /NatP ; rewrite -cx Please report.
+File "./theories/ordinals/sset17.v", line 810, characters 2-54:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite -osucc_zero (universe_succ OS0) universe_0 Please report.
+File "./theories/ordinals/sset17.v", line 1186, characters 5-73:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. have ay1: inc a y1 by move : (set1_1 a) ; rewrite -sa => /setI2_P [] Please report.
+File "./theories/ordinals/sset17.v", line 1187, characters 5-69:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. have : inc a z by move : (set1_1 a) ; rewrite -sa => /setI2_P [] Please report.
+File "./theories/ordinals/sset17.v", line 1195, characters 2-70:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. have ay1: inc a y1 by move : (set1_1 a) ; rewrite -sa => /setI2_P [] Please report.
+File "./theories/ordinals/sset17.v", line 1197, characters 2-66:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. have : inc a z by move : (set1_1 a) ; rewrite -sa => /setI2_P [] Please report.
+File "./theories/ordinals/sset17.v", line 1815, characters 0-46:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite -cpowcr Please report.
+File "./theories/ordinals/sset17.v", line 1845, characters 2-74:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite -cpowcr Please report.
+File "./theories/ordinals/sset17.v", line 1975, characters 7-38:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite -sf => bsf Please report.
+File "./theories/ordinals/sset17.v", line 2710, characters 2-71:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. by move /(pb' _ sa) ; move : (cltS sa) ; rewrite -sb => su /(cltNge su) Please report.
+File "./theories/ordinals/sset17.v", line 2716, characters 2-59:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite -sb Please report.
+File "./theories/ordinals/sset17.v", line 3041, characters 0-62:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. by move : zdf ; rewrite df; case /set2_P =>-> //; rewrite -sf Please report.
+File "./theories/ordinals/sset17.v", line 3068, characters 0-62:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. by move : zdf ; rewrite df; case /set2_P =>-> //; rewrite -sf Please report.
+File "./theories/ordinals/sset17.v", line 3574, characters 2-78:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite card_setP -cpowcr Please report.
+File "./theories/ordinals/sset17.v", line 3797, characters 2-73:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. rewrite /c1 -csumA csum_inf1 // => ha Please report.
+File "./theories/Erasure.v", line 9, characters 0-70:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./State.v", line 430, characters 4-40:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. induction cl as [| l cl IHcl] Please report.
+File "./theories/PCUICValidity.v", line 285, characters 2-9:
+Warning:
+Automatically inlined signature for type @on_global_env. Use [Derive Signature for @on_global_env.] to avoid this.
+File "./theories/Erasure.v", line 9, characters 0-70:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./theories/Erasure.v", line 9, characters 0-70:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./theories/Erasure.v", line 9, characters 0-70:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./src/Float/Primitive_ops.v", line 325, characters 0-49:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 325, characters 0-49:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 326, characters 0-35:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now intros [| ] m e; case Pos.eqb Please report.
+File "./src/Float/Primitive_ops.v", line 395, characters 0-49:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| p| p] Hp Please report.
+File "./theories/EOptimizePropDiscr.v", line 11, characters 0-127:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./src/Float/Primitive_ops.v", line 482, characters 0-37:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros prec [| p| p] Please report.
+File "./src/Float/Primitive_ops.v", line 554, characters 2-145:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. now destruct Prim2SF as [[| ]| [| ]| | [| ]]; simpl; try now simpl; set (s := match digits2_pos m with | 53%positive | _ => _ end); case s Please report.
+File "./src/Float/Primitive_ops.v", line 631, characters 0-37:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros prec [| p| p] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] mx ex Hx Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Hy Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Hy Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Hy Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Hy Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Hy Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Hy Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 796, characters 0-532:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Hy Please report.
+File "./theories/EOptimizePropDiscr.v", line 11, characters 0-127:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./theories/EOptimizePropDiscr.v", line 11, characters 0-127:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] mx ex Please report.
+File "./theories/PFsection6.v", line 1283, characters 0-57:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. elim : n  => // [|n IHn] in  (S2   S1   ccsS1S   cohXY * => lb_n Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 846, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./theories/EOptimizePropDiscr.v", line 11, characters 0-127:
+Warning:
+Tactician is having problems with the following tactic. Please report. elim_patterns
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] mx ex Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] Please report.
+File "./src/Float/Primitive_ops.v", line 899, characters 0-584:
+Warning:
+Tactician detected a printing/parsing problem for the following tactic. intros [| ] my ey Please report.
