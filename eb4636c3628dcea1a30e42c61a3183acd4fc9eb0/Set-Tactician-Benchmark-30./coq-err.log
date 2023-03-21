@@ -1,0 +1,320 @@
+File "/tmp/jasonrute-benchmark-cache/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v", line 2, characters 0-32:
+Warning: There is no option Tactician Neural Truncate.
+[unknown-option,option]
+Traceback (most recent call last):
+  File "/dccstor/mathzero/debug_memory_leak/venv-benchmark/bin/g2t-server", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac', 'console_scripts', 'g2t-server')())
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/loader/predict_server.py", line 619, in main
+    start_prediction_loop(predict_server, capnp_socket, record_file)
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/loader/predict_server.py", line 434, in start_prediction_loop
+    prediction_loop(predict_server, capnp_message_generator(capnp_socket, record_file))
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/loader/predict_server.py", line 428, in prediction_loop
+    prediction_loop(predict_server, msg)
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/loader/predict_server.py", line 403, in prediction_loop
+    response = predict_server.predict(msg)
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/loader/predict_server.py", line 335, in predict
+    actions, confidences = self.model.ranked_predictions(
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/predict.py", line 41, in api_call_with_debug
+    return_value = api_call(self, *args, **kwargs)
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/loader/hmodel.py", line 183, in ranked_predictions
+    args_decoded = args_decode(args,
+  File "/dccstor/mathzero/debug_memory_leak/graph2tac/graph2tac/loader/hmodel.py", line 55, in args_decode
+    value = (arg[0], inverse_map[arg[0]].get(arg[1], -1))
+IndexError: tuple index out of range
+File "./theories/Init/Logic.v", line 746, characters 2-15:
+Error: Anomaly "Capnp protocol error 3b"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 770, characters 2-19:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 775, characters 2-38:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 782, characters 2-23:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 790, characters 2-48:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 810, characters 4-25:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 836, characters 4-31:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 850, characters 4-27:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Init/Logic.v", line 886, characters 4-31:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Abnormal exit code for coqc on host cccxc528: 129
+ Invocation:
+LSB_EXEC_CLUSTER=cccCluster; export LSB_EXEC_CLUSTER;
+CONDA_SHLVL=1; export CONDA_SHLVL;
+LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:; export LS_COLORS;
+LD_LIBRARY_PATH=/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib:/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/dccstor/mathzero/cuda/lib:/usr/local/cuda/lib64:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/lib; export LD_LIBRARY_PATH;
+CONDA_EXE=/dccstor/mathzero/miniconda3/bin/conda; export CONDA_EXE;
+HOSTTYPE=X86_64; export HOSTTYPE;
+LSB_UNIXGROUP_INT=jasonrute; export LSB_UNIXGROUP_INT;
+LSB_JOBINDEX=0; export LSB_JOBINDEX;
+LSB_JOBEXIT_STAT=0; export LSB_JOBEXIT_STAT;
+JS_ENVDIR=/opt/ibm/lsfsuite/ext/ppm/conf; export JS_ENVDIR;
+LSF_PER_NODE=1; export LSF_PER_NODE;
+SSH_CONNECTION=9.163.94.237 51147 9.47.193.74 22; export SSH_CONNECTION;
+OPAM_PACKAGE_VERSION=8.11.dev; export OPAM_PACKAGE_VERSION;
+LSF_FULL_VERSION=10.1.0.12; export LSF_FULL_VERSION;
+LS_EXECCWD=/dccstor/mathzero/debug_memory_leak; export LS_EXECCWD;
+LS_EXEC_T=START; export LS_EXEC_T;
+MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH LD_PRELOAD; export MODULES_RUN_QUARANTINE;
+_=/dccstor/mathzero/debug_memory_leak/_opam/bin/tactician-benchmark; export _;
+MODEL=/dccstor/mathzero/debug_memory_leak/synthetic_experiments/528_ministdlib_v15_hmodel_main; export MODEL;
+LANG=en_US.UTF-8; export LANG;
+HISTCONTROL=ignoredups; export HISTCONTROL;
+ASYNC_PARALLEL_IS_CHILD_MACHINE=; export ASYNC_PARALLEL_IS_CHILD_MACHINE;
+BINARY_TYPE_HPC=; export BINARY_TYPE_HPC;
+HOSTNAME=cccxc528.pok.ibm.com; export HOSTNAME;
+OLDPWD=/dccstor/mathzero/debug_memory_leak/graph2tac; export OLDPWD;
+LS_SUBCWD=/dccstor/mathzero/debug_memory_leak; export LS_SUBCWD;
+LSB_EXIT_PRE_ABORT=99; export LSB_EXIT_PRE_ABORT;
+LSB_CHKFILENAME=/u/jasonrute/.lsbatch/1679410888.598927; export LSB_CHKFILENAME;
+LSB_EEXEC_REAL_GID=; export LSB_EEXEC_REAL_GID;
+COLORTERM=truecolor; export COLORTERM;
+LSB_TRAPSIGS=trap # 15 10 12 2 1; export LSB_TRAPSIGS;
+LSB_JOBRES_CALLBACK=37345@cccxc528.pok.ibm.com; export LSB_JOBRES_CALLBACK;
+LSB_JOBNAME=bash; export LSB_JOBNAME;
+ROCR_VISIBLE_DEVICES=; export ROCR_VISIBLE_DEVICES;
+LSB_EEXEC_REAL_UID=; export LSB_EEXEC_REAL_UID;
+LSB_JOBFILENAME=/u/jasonrute/.lsbatch/1679410888.598927; export LSB_JOBFILENAME;
+CONDA_PREFIX=/dccstor/mathzero/debug_memory_leak/venv-benchmark; export CONDA_PREFIX;
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=; export VSCODE_GIT_ASKPASS_EXTRA_ARGS;
+LSF_JOB_TIMESTAMP_VALUE=1679410892; export LSF_JOB_TIMESTAMP_VALUE;
+LSB_MCPU_HOSTS=cccxc528.pok.ibm.com 2 ; export LSB_MCPU_HOSTS;
+LSB_DJOB_RANKFILE=/u/jasonrute/.lsbatch/1679410888.598927.hostfile; export LSB_DJOB_RANKFILE;
+LSB_DOCKER_JOB_STARTTS=1679410892; export LSB_DOCKER_JOB_STARTTS;
+LSB_EFFECTIVE_RSRCREQ=select[((type == X86_64 &&!jobsfromhellnode&&!nonstandardnode&&!altnode) && (type == any))] order[r15s:pg] rusage[mem=22528.00] span[ptile=2] affinity[core(1)*1] ; export LSB_EFFECTIVE_RSRCREQ;
+EGO_SERVERDIR=/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/etc; export EGO_SERVERDIR;
+LSF_SERVERDIR=/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/etc; export LSF_SERVERDIR;
+LSB_JOBRES_PID=2022013; export LSB_JOBRES_PID;
+SBD_KRB5CCNAME_VAL=; export SBD_KRB5CCNAME_VAL;
+LSB_SUB_RES_REQ="rusage[mem=22528] span[ptile=2] affinity[core(1)]"; export LSB_SUB_RES_REQ;
+MFLAGS=-j127 --jobserver-auth=3,4; export MFLAGS;
+CUDA_VISIBLE_DEVICES_ORIG=; export CUDA_VISIBLE_DEVICES_ORIG;
+S_COLORS=auto; export S_COLORS;
+LSB_AFFINITY_HOSTFILE=/u/jasonrute/.lsbatch/1679410888.598927.hostAffinityFile; export LSB_AFFINITY_HOSTFILE;
+_CE_M=; export _CE_M;
+which_declare=declare -f; export which_declare;
+JOB_TERMINATE_INTERVAL=10; export JOB_TERMINATE_INTERVAL;
+LSFUSER=jasonrute; export LSFUSER;
+LSF_ENVDIR=/opt/ibm/lsfsuite/lsf/conf; export LSF_ENVDIR;
+LSF_EGO_ENVDIR=/opt/ibm/lsfsuite/lsf/conf/ego/cccCluster/kernel; export LSF_EGO_ENVDIR;
+XDG_SESSION_ID=24230; export XDG_SESSION_ID;
+MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl; export MODULES_CMD;
+JS_VERSION=10.2; export JS_VERSION;
+USER=jasonrute; export USER;
+OPAM_PACKAGE_NAME=coq-tactician-stdlib; export OPAM_PACKAGE_NAME;
+EGO_ESRVDIR=/opt/ibm/lsfsuite/lsf/conf/ego/cccCluster/eservice; export EGO_ESRVDIR;
+CAML_LD_LIBRARY_PATH=/tmp/jasonrute-benchmark-cache/opam-root/bench/lib/stublibs:/tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ocaml/stublibs:/tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ocaml; export CAML_LD_LIBRARY_PATH;
+LSF_LOGDIR=/opt/ibm/lsflogs; export LSF_LOGDIR;
+OPAMCLI=2.0; export OPAMCLI;
+LSB_JOBID=598927; export LSB_JOBID;
+SCR_DIR=/dccstor/mathzero/debug_memory_leak/synthetic_experiments/528_ministdlib_v15_hmodel_main; export SCR_DIR;
+PWD=/tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev; export PWD;
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass; export SSH_ASKPASS;
+HOME=/u/jasonrute; export HOME;
+CONDA_PYTHON_EXE=/dccstor/mathzero/miniconda3/bin/python; export CONDA_PYTHON_EXE;
+BROWSER=/u/jasonrute/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/bin/helpers/browser.sh; export BROWSER;
+VSCODE_GIT_ASKPASS_NODE=/u/jasonrute/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/node; export VSCODE_GIT_ASKPASS_NODE;
+LSB_SHMODE=y; export LSB_SHMODE;
+TERM_PROGRAM=vscode; export TERM_PROGRAM;
+EGO_TOP=/opt/ibm/lsfsuite/lsf; export EGO_TOP;
+SSH_CLIENT=9.163.94.237 51147 22; export SSH_CLIENT;
+TERM_PROGRAM_VERSION=1.74.3; export TERM_PROGRAM_VERSION;
+OPAMSWITCH=bench; export OPAMSWITCH;
+CPATH=/dccstor/mathzero/debug_memory_leak/venv-benchmark/include:/opt/share/gcc-10.1.0/x86_64/include; export CPATH;
+JS_SERVERDIR=/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/etc; export JS_SERVERDIR;
+TRACE_PATH=/tmp/jasonrute-coq-trace; export TRACE_PATH;
+JS_HOME=/opt/ibm/lsfsuite/ext/ppm; export JS_HOME;
+LSB_DATA_CACHE_TOP=/opt/ibm/lsfsuite/lsf/work/cccCluster/staging; export LSB_DATA_CACHE_TOP;
+XDG_DATA_DIRS=/u/jasonrute/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share; export XDG_DATA_DIRS;
+LSB_XFER_OP=; export LSB_XFER_OP;
+LSB_JOB_EXECUSER=jasonrute; export LSB_JOB_EXECUSER;
+_CE_CONDA=; export _CE_CONDA;
+HIP_VISIBLE_DEVICES=; export HIP_VISIBLE_DEVICES;
+LSB_DJOB_NUMPROC=2; export LSB_DJOB_NUMPROC;
+LSF_BINDIR=/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/bin; export LSF_BINDIR;
+JS_ARCH=linux2.6-glibc2.3-x86_64; export JS_ARCH;
+VSCODE_IPC_HOOK_CLI=/run/user/700253/vscode-ipc-6807368c-732b-40ed-a6a8-f0321c068245.sock; export VSCODE_IPC_HOOK_CLI;
+LSF_CGROUP_TOPDIR_KEY=cccCluster; export LSF_CGROUP_TOPDIR_KEY;
+LIBRARY_PATH=/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:/opt/share/gcc-10.1.0/x86_64/lib64:/opt/share/gcc-10.1.0/x86_64/lib:/dccstor/mathzero/capnp/lib:; export LIBRARY_PATH;
+BSUB_BLOCK_EXEC_HOST=; export BSUB_BLOCK_EXEC_HOST;
+LSF_INVOKE_CMD=bsub; export LSF_INVOKE_CMD;
+LSB_INTERACTIVE=Y; export LSB_INTERACTIVE;
+LOADEDMODULES=; export LOADEDMODULES;
+LSB_EXEC_HOSTTYPE=X86_64; export LSB_EXEC_HOSTTYPE;
+RM_CPUTASK1=27; export RM_CPUTASK1;
+CONDA_PROMPT_MODIFIER=(/dccstor/mathzero/debug_memory_leak/venv-benchmark) ; export CONDA_PROMPT_MODIFIER;
+RM_CPUTASK2=28; export RM_CPUTASK2;
+LSB_PROJECT_NAME=default; export LSB_PROJECT_NAME;
+LSB_CG_MEMLIMIT=0x500000000; export LSB_CG_MEMLIMIT;
+LSB_JOBGROUP=/jasonrute/_/default; export LSB_JOBGROUP;
+MAIL=/var/spool/mail/jasonrute; export MAIL;
+VSCODE_GIT_ASKPASS_MAIN=/u/jasonrute/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/extensions/git/dist/askpass-main.js; export VSCODE_GIT_ASKPASS_MAIN;
+JOB_INCLUDE_POSTPROC=Y; export JOB_INCLUDE_POSTPROC;
+EGO_CONFDIR=/opt/ibm/lsfsuite/lsf/conf/ego/cccCluster/kernel; export EGO_CONFDIR;
+TERM=xterm-256color; export TERM;
+SHELL=/bin/bash; export SHELL;
+CDPATH=; export CDPATH;
+LSB_HOSTS=cccxc528.pok.ibm.com cccxc528.pok.ibm.com; export LSB_HOSTS;
+LSB_SUB_HOST=cccxl014.pok.ibm.com; export LSB_SUB_HOST;
+EGO_BINDIR=/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/bin; export EGO_BINDIR;
+LSB_BATCH_JID=598927; export LSB_BATCH_JID;
+EGO_LIBDIR=/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib; export EGO_LIBDIR;
+MAKELEVEL=1; export MAKELEVEL;
+CUDA_VISIBLE_DEVICES=; export CUDA_VISIBLE_DEVICES;
+SHLVL=9; export SHLVL;
+LSB_ACCT_FILE=/tmp/598927.tmpdir/.1679410888.598927.acct; export LSB_ACCT_FILE;
+EGO_LOCAL_CONFDIR=/opt/ibm/lsfsuite/lsf/conf/ego/cccCluster/kernel; export EGO_LOCAL_CONFDIR;
+LSB_OUTDIR=/dccstor/mathzero/debug_memory_leak; export LSB_OUTDIR;
+LSB_QUEUE=x86_6h; export LSB_QUEUE;
+VSCODE_GIT_IPC_HANDLE=/run/user/700253/vscode-git-1e71201323.sock; export VSCODE_GIT_IPC_HANDLE;
+LSB_BIND_CPU_LIST=27,28; export LSB_BIND_CPU_LIST;
+MANPATH=:/opt/ibm/lsfsuite/ext/ppm/10.2/man:/opt/ibm/lsfsuite/ext/ppm/10.2/man:/opt/ibm/lsfsuite/ext/ppm/10.2/man:/opt/ibm/lsfsuite/ext/ppm/10.2/man:/opt/ibm/lsfsuite/lsf/10.1/man:/tmp/jasonrute-benchmark-cache/opam-root/bench/man; export MANPATH;
+LSF_LIBDIR=/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/lib; export LSF_LIBDIR;
+MODULEPATH=/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles; export MODULEPATH;
+LSB_SUB_USER=jasonrute; export LSB_SUB_USER;
+LOGNAME=jasonrute; export LOGNAME;
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/700253/bus; export DBUS_SESSION_BUS_ADDRESS;
+GIT_ASKPASS=/u/jasonrute/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/extensions/git/dist/askpass.sh; export GIT_ASKPASS;
+XDG_RUNTIME_DIR=/run/user/700253; export XDG_RUNTIME_DIR;
+CPLUS_INCLUDE_PATH=/dccstor/mathzero/capnp/include:/dccstor/mathzero/capnp/include:/dccstor/mathzero/capnp/include:/dccstor/mathzero/capnp/include:; export CPLUS_INCLUDE_PATH;
+LSF_LIM_API_NTRIES=1; export LSF_LIM_API_NTRIES;
+MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2; export MODULEPATH_modshare;
+LS_JOBPID=2022013; export LS_JOBPID;
+LSB_MAX_NUM_PROCESSORS=2; export LSB_MAX_NUM_PROCESSORS;
+OPAM_SWITCH_PREFIX=/tmp/jasonrute-benchmark-cache/opam-root/bench; export OPAM_SWITCH_PREFIX;
+OCAML_TOPLEVEL_PATH=/tmp/jasonrute-benchmark-cache/opam-root/bench/lib/toplevel; export OCAML_TOPLEVEL_PATH;
+PATH=/tmp/jasonrute-benchmark-cache/opam-root/bench/bin:/dccstor/mathzero/debug_memory_leak/venv-benchmark/bin:/opt/share/gcc-10.1.0/x86_64/bin:/dccstor/mathzero/capnp/bin:/usr/local/cuda/bin:/dccstor/mathzero/miniconda3/bin:/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/etc:/opt/ibm/lsfsuite/lsf/10.1/linux2.6-glibc2.3-x86_64/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/bin:/opt/share/exec:/opt/share/gcc-10.1.0/x86_64/bin:/dccstor/mathzero/capnp/bin:/usr/local/cuda/bin:/dccstor/mathzero/miniconda3/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/bin:/opt/share/exec:/u/jasonrute/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/bin/remote-cli:/opt/share/gcc-10.1.0/x86_64/bin:/dccstor/mathzero/capnp/bin:/usr/local/cuda/bin:/dccstor/mathzero/miniconda3/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/bin:/opt/share/exec:/opt/share/gcc-10.1.0/x86_64/bin:/dccstor/mathzero/capnp/bin:/usr/local/cuda/bin:/dccstor/mathzero/miniconda3/bin:/dccstor/mathzero/miniconda3/condabin:/u/jasonrute/.local/bin:/u/jasonrute/bin:/usr/share/Modules/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/bin:/opt/ibm/lsfsuite/ext/ppm/10.2/linux2.6-glibc2.3-x86_64/bin:/opt/share/exec:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lpp/mmfs/bin:/bin:/usr/bin:/bin:/usr/bin:/bin:/usr/bin:/bin:/usr/bin; export PATH;
+LSB_DJOB_HOSTFILE=/u/jasonrute/.lsbatch/1679410888.598927.hostfile; export LSB_DJOB_HOSTFILE;
+__LSF_JOB_TMPDIR__=/tmp/598927.tmpdir; export __LSF_JOB_TMPDIR__;
+MODULESHOME=/usr/share/Modules; export MODULESHOME;
+CONDA_DEFAULT_ENV=/dccstor/mathzero/debug_memory_leak/venv-benchmark; export CONDA_DEFAULT_ENV;
+PKG_CONFIG_PATH=/tmp/jasonrute-benchmark-cache/opam-root/bench/lib/pkgconfig; export PKG_CONFIG_PATH;
+HISTSIZE=1000; export HISTSIZE;
+MAKEFLAGS= -j127 --jobserver-auth=3,4; export MAKEFLAGS;
+OPAMROOT=/tmp/jasonrute-benchmark-cache/opam-root; export OPAMROOT;
+LSB_RES_GET_FANOUT_INFO=Y; export LSB_RES_GET_FANOUT_INFO;
+CVS_RSH=ssh; export CVS_RSH;
+GPU_DEVICE_ORDINAL=; export GPU_DEVICE_ORDINAL;
+LESSOPEN=||/usr/bin/lesspipe.sh %s; export LESSOPEN;
+BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}; export BASH_FUNC_which%%;
+BASH_FUNC_module%%=() {  _module_raw "$@" 2>&1
+}; export BASH_FUNC_module%%;
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}; export BASH_FUNC__module_raw%%;
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}; export BASH_FUNC_switchml%%;
+BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}; export BASH_FUNC_scl%%;
+BASH_FUNC_ml%%=() {  module ml "$@"
+}; export BASH_FUNC_ml%%;
+(cd /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.glob.bench-2181210 /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.glob --bind /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vo.bench-2181210 /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vo --bind /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vok.bench-2181210 /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vok --bind /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vos.bench-2181210 /tmp/jasonrute-benchmark-cache/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vos /tmp/jasonrute-benchmark-cache/opam-root/bench/bin/coqc -q -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/bigarray-compat -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/stdlib-shims -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/integers -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ctypes -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ctypes -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/xxhash -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ocamlgraph -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ocaml -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/lwt -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ocplib-endian -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ocplib-endian/bigstring -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/lwt/unix -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/astring -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/res -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/result -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/stdint -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/capnp -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/asetmap -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/fmt -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/logs -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/capnp-rpc -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/bigstringaf -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/angstrom -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/stringext -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/uri -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/capnp-rpc-lwt -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/base64 -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/cstruct -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/eqaf -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/eqaf/bigstring -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/eqaf/cstruct -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-crypto -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-crypto-rng -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-flow -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/re -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/prometheus -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ptime -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-clock -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/sexplib0 -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/zarith -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-crypto-pk -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/optint -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-kv -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/domain-name -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/hkdf -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/macaddr -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/ipaddr -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-crypto-ec -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/asn1-combinators -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/gmap -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/pbkdf -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/x509 -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/tls -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/tls-mirage -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/capnp-rpc-net -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/cmdliner -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/cstruct-lwt -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/extunix -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/duration -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-crypto-rng/unix -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mtime -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mtime/clock/os -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/mirage-crypto-rng-lwt -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/capnp-rpc-unix -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/base/base_internalhash_types -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/base/caml -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/base/shadow_stdlib -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/base -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/stdio -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/capnp/unix -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/logs -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l /tmp/jasonrute-benchmark-cache/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/coq/user-contrib/Tactician -R /tmp/jasonrute-benchmark-cache/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -noinit -R theories Coq theories/Init/Logic.v -l /tmp/jasonrute-benchmark-cache/BenchParams.v)
