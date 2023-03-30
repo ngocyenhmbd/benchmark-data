@@ -1,0 +1,351 @@
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.mulC_id_l	300	0.73.128.140	synth with cache (only 1: intro p; only 1: setoid_rewrite  <- H; only 1: rewrite H; only 1: firstorder).	2.788274	7354
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.mulC_id_r	300	128.0.65.1.196	synth with cache (only 1: intro z; only 1: rewrite commut; only 1: rewrite H; only 1: reduce; only 1: CRelationClasses.simpl_crelation).	1.088282	1514
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.mulC_inv_l	300	192.2.130	synth with cache (only 1: intro x; only 1: rewrite commut; only 1: now symmetry).	0.331489	348
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.mulC_inv_r	300	64.1.131.65	synth with cache (only 1: red; only 1: intro x; only 1: rewrite commut; only 1: trivial).	0.612920	751
+coq-corn.8.16.0	CoRN.stdlib_omissions.P.P_of_nat.P_of_nat	300	331.4.213	synth with cache (only 1: destruct n; only 1: PeanoNat.Nat.order; only 1: now constructor).	2.851239	22471
+coq-corn.8.16.0	CoRN.reals.fast.LazyNat.LazifyPred	300	257.1.193.192.1	synth with cache (only 1: intro m; only 1: assert (leS : forall n m, n <= m -> S n <= S m) by (induction 1; auto); only 1: PeanoNat.Nat.induct ltac:(m); only 1: easy || apply leS; only 1: easy').	0.444718	740
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.mulC_zero_l	300	5.2.0	synth with cache (only 1: reduce; only 1: rewrite commut; only 1: firstorder).	2.437672	422
+coq-corn.8.16.0	CoRN.algebra.RSetoid.extSetoid	300	0.0	synth with cache (only 1: eexists Prop iff; only 1: firstorder).	0.023193	2
+coq-corn.8.16.0	CoRN.logic.Classic.ClassicOr.orWeaken	300	64.64.64.2	synth with cache (only 1: destruct 1; only 1: now subst; only 1: intros [? ?]; only 1: solve [ auto ]).	0.151365	306
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.mulC_zero_r	300	6.1.0	synth with cache (only 1: reduce; only 1: rewrite commut; only 1: firstorder).	3.601016	878
+coq-corn.8.16.0	CoRN.logic.Classic.ClassicOr.orC_ind	300	1.1	synth with cache (only 1: unfold orC; only 1: tauto).	0.029594	4
+coq-corn.8.16.0	CoRN.logic.Classic.ClassicOr.orC_stable	300	1.193.0	synth with cache (only 1: intros x y H; only 1: intro m; only 1: auto).	0.024784	14
+coq-corn.8.16.0	CoRN.logic.Classic.ClassicExists.existsWeaken	300	0	synth with cache (only 1: firstorder).	0.014996	1
+coq-corn.8.16.0	CoRN.logic.Classic.ClassicExists.existsC_ind	300	0.0	synth with cache (only 1: intros; only 1: firstorder).	0.020561	2
+coq-corn.8.16.0	CoRN.logic.Classic.ClassicExists.existsC_stable	300	384.451.0	synth with cache (only 1: intro H; only 1: intros le_mn2; only 1: eauto with *).	0.126996	252
+coq-corn.8.16.0	CoRN.util.PointFree.proper_pf	300	0.257	synth with cache (only 1: CRelationClasses.reduce; only 1: trivial).	0.025490	19
+coq-corn.8.16.0	CoRN.util.PointFree.eta_pf	300	2	synth with cache (only 1: firstorder).	0.017770	3
+coq-corn.8.16.0	CoRN.util.PointFree.id_pf	300	0	synth with cache (only 1: firstorder).	0.016184	1
+coq-corn.8.16.0	CoRN.util.PointFree.const_pf	300	0	synth with cache (only 1: RelationClasses.simpl_relation).	0.019561	1
+coq-corn.8.16.0	CoRN.metric2.list_separates.separates_length	300	1.1.0.0.0.71.0.0.0.1	synth with cache (only 1: generalize dependent l; only 1: induction l; only 1: simpl; only 1: reflexivity; only 1: destruct l as [| x xs]; only 1: simpl; only 1: auto; only 1: simpl; only 1: rewrite map_length; only 1: auto).	7.045309	10538
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.radd_morph	300	385.129.322.66	synth with cache (only 1: intros x y EQ; only 1: compute; only 1: intros a H; only 1: firstorder  (subst; auto)).	2.850320	3717
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.ropp_morph	300	0.0.0	synth with cache (only 1: reduce; only 1: apply (Ropp_ext r_ree); only 1: auto).	0.036008	3
+coq-corn.8.16.0	CoRN.util.PointFree.compose_pf	300	1.0.0.216.6.320	synth with cache (only 1: repeat red; only 1: extensionality p; only 1: pattern p; only 1: compute; only 1: rewrite PointFree0, PointFree1; only 1: split).	7.532506	29761
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.radd_assoc	300	66.0.642	synth with cache (only 1: intro RS'; only 1: reduce; only 1: firstorder).	1.092901	1458
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.radd_comm	300	64.325	synth with cache (only 1: intros LT; only 1: firstorder).	0.578121	797
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.ropp_left_inverse	300	72.448	synth with cache (only 1: intro; only 1: firstorder).	0.998353	2023
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.radd_left_unit	300	77.0	synth with cache (only 1: reduce; only 1: firstorder).	2.471715	6449
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.rmul_comm	300	256.1.130.582	synth with cache (only 1: intros n; only 1: intro UIP_refl; only 1: reduce; only 1: firstorder).	2.653168	6718
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.rmul_assoc	300	706.771.516	synth with cache (only 1: red; only 1: intros a a' Ha; only 1: CRelationClasses.simpl_crelation).	4.701749	5963
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.iff_not	300	1.517	synth with cache (only 1: intros <-; only 1: intuition).	0.884034	1220
+coq-corn.8.16.0	CoRN.logic.CornBasics.lt_z_two	300	0	synth with cache (only 1: Nat.order').	0.022532	1
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.nat_of_Z_nonpos	300	4	synth with cache (only 1: now destruct x).	0.185022	244
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.nat_of_Z_nonneg	300	0.2	synth with cache (only 1: intros H; only 1: now apply Z2Nat.id).	0.032759	4
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qnum_nonpos	300	0.0.0.0	synth with cache (only 1: destruct x as [n d]; only 1: unfold Qle; only 1: simpl; only 1: now rewrite Z.mul_1_r).	0.054703	4
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Zplus_Qplus	300	65.0.0.0	synth with cache (only 1: unfold Qplus, inject_Z; only 1: simpl; only 1: f_equal; only 1: intuition).	0.108188	9
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Zmult_Qmult	300	0	synth with cache (only 1: reflexivity).	0.026298	1
+coq-corn.8.16.0	CoRN.logic.CornBasics.minus3	300	193.1	synth with cache (only 1: intros x y z; only 1: firstorder).	0.276712	156
+coq-corn.8.16.0	CoRN.logic.CornBasics.le_pred	300	0.0.0.0.0.0.1	synth with cache (only 1: induction 1; only 1: auto; only 1: destruct m; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.607096	296
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Pmult_Qmult	300	3	synth with cache (only 1: constructor).	0.026511	4
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Zle_Qle	300	0.0.0	synth with cache (only 1: unfold Qle; only 1: simpl; only 1: now rewrite !Z.mul_1_r).	0.045664	3
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Zlt_Qlt	300	0.0.0	synth with cache (only 1: unfold Qlt; only 1: simpl; only 1: now rewrite !Z.mul_1_r).	0.047343	3
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qeq_Zeq	300	2.0.0.0	synth with cache (only 1: unfold Qeq; only 1: simpl; only 1: rewrite !Z.mul_1_r; only 1: trivial).	0.048055	6
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.positive_nonzero_in_Q	300	6	synth with cache (only 1: discriminate).	0.076452	217
+coq-corn.8.16.0	CoRN.logic.CornBasics.not_r_sumbool_rec	300	0.0	synth with cache (only 1: intros X Y A Hdec H x y; only 1: intuition).	0.032030	2
+coq-corn.8.16.0	CoRN.logic.CornBasics.not_l_sumbool_rec	300	128.1	synth with cache (only 1: intros X Y A Hdec H x y; only 1: now destruct y).	0.074886	47
+coq-corn.8.16.0	CoRN.logic.CornBasics.POS_anti_convert	300	1.0.0	synth with cache (only 1: intros; only 1: simpl; only 1: f_equal).	0.041343	4
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qplus_injective_l	300	0.0	synth with cache (only 1: intros; only 1: apply Qplus_inj_r).	0.028933	2
+coq-corn.8.16.0	CoRN.logic.CornBasics.NEG_anti_convert	300	65.64.64.64.64.64.0	synth with cache (only 1: intros; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: symmetry; only 1: reflexivity).	0.136018	123
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.rmul_left_unit	300	66.653	synth with cache (only 1: intros Hn; only 1: firstorder).	2.733413	6692
+coq-corn.8.16.0	CoRN.logic.CornBasics.convert_is_POS	300	1.0.0.0.1.0	synth with cache (only 1: intros; only 1: destruct (Pos2Nat.is_succ p) as (n, H); only 1: rewrite H; only 1: simpl; only 1: f_equal; only 1: now apply SuccNat2Pos.inv).	0.234057	204
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qmult_injective_l	300	0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: split; only 1: intro E; only 1: rewrite <- (Qmult_1_r x), <- (Qmult_1_r y); only 1: rewrite <- (Qmult_inv_r z); only 1: do 2 rewrite Qmult_assoc; only 1: rewrite E; only 1: reflexivity; only 1: auto; only 1: intro E; only 1: rewrite E; only 1: reflexivity).	0.439187	58
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qle_nat	300	195.193.1.449.577	synth with cache (only 1: intros He; only 1: destruct n as [| n]; only 1: simpl in *; only 1: now rewrite <- ?N.add_le_mono_l; only 1: firstorder  discriminate).	0.795659	1277
+coq-corn.8.16.0	CoRN.logic.CornBasics.minus4	300	65.577	synth with cache (only 1: intros a b H; only 1: auto with *).	1.163295	892
+coq-corn.8.16.0	CoRN.logic.CLogic.Iff_right	300	0.0	synth with cache (only 1: unfold Iff; only 1: intuition).	0.017202	2
+coq-corn.8.16.0	CoRN.logic.CLogic.Iff_refl	300	1.0	synth with cache (only 1: intros n; only 1: auto with *).	0.014059	3
+coq-corn.8.16.0	CoRN.logic.CLogic.Iff_sym	300	0.0.0.0	synth with cache (only 1: intros A B [H1 H2]; only 1: split; only 1: trivial; only 1: trivial).	0.016969	4
+coq-corn.8.16.0	CoRN.logic.CLogic.Iff_imp_imp	300	65	synth with cache (only 1: now f_equal).	0.015289	16
+coq-corn.8.16.0	CoRN.logic.CornBasics.le_mult_right	300	1.576.1.2	synth with cache (only 1: intros n m; only 1: generalize eq_refl; only 1: intros a' Ha'; only 1: apply Nat.mul_le_mono_nonneg_r, Nat.le_0_l).	2.279592	2092
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.show_is_Qinv	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros A; only 1: apply (Qmult_injective_l q); only 1: intro B; only 1: apply Q_apart_0_1; only 1: rewrite <- A, B; only 1: ring; only 1: rewrite A; only 1: field; only 1: intro B; only 1: apply Q_apart_0_1; only 1: rewrite <- A, B; only 1: ring).	0.550586	293
+coq-corn.8.16.0	CoRN.model.structures.Nsec.S_O	300	129.0	synth with cache (only 1: intro n; only 1: now N.nzsimpl).	0.026801	9
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qabs_Qinv	300	0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros [n d]; only 1: simpl; only 1: unfold Qinv; only 1: case_eq n; only 1: intros; only 1: simpl in *; only 1: apply Qeq_refl; only 1: intros; only 1: simpl in *; only 1: apply Qeq_refl; only 1: intros; only 1: simpl in *; only 1: apply Qeq_refl).	0.282566	223
+coq-corn.8.16.0	CoRN.logic.CLogic.not_l_cor_rect	300	576.0.384	synth with cache (only 1: intro H2; only 1: intros a b n Ha Hb Hn; only 1: intuition congruence).	0.161614	173
+coq-corn.8.16.0	CoRN.logic.CornBasics.surj_eq	300	320.131	synth with cache (only 1: intros EQ; only 1: auto with *).	0.847376	1191
+coq-corn.8.16.0	CoRN.model.structures.Nsec.ap_nat_irreflexive0	300	448.0	synth with cache (only 1: intros; only 1: now N.nzsimpl).	0.023715	23
+coq-corn.8.16.0	CoRN.logic.CLogic.Iff_trans	300	449.256.129	synth with cache (only 1: compute; only 1: intros Hn; only 1: intuition Z.order).	0.309458	310
+coq-corn.8.16.0	CoRN.logic.CornBasics.surj_lt	300	257.64	synth with cache (only 1: intro H; only 1: auto with zarith).	0.122600	139
+coq-corn.8.16.0	CoRN.logic.CLogic.not_r_cor_rect	300	1.1.0.1	synth with cache (only 1: intros A eq_dec; only 1: intros a b n Hn H; only 1: intuition; only 1: intuition congruence).	0.410961	495
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.N_of_Z_nonneg	300	0	synth with cache (only 1: now destruct x).	0.022461	1
+coq-corn.8.16.0	CoRN.logic.CornBasics.lt_mult_right	300	1.0.517	synth with cache (only 1: intros H ?; only 1: intros n m Hn; only 1: now apply Nat.mul_lt_mono_pos_r).	2.635786	1767
+coq-corn.8.16.0	CoRN.tactics.AlgReflection.Correctness_Results.eq_nat_corr	300	0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: induction n; only 1: destruct m; only 1: simpl; only 1: easy; only 1: simpl; only 1: easy; only 1: destruct m; only 1: simpl; only 1: discriminate; only 1: simpl; only 1: intros H; only 1: case (IHn _ H); only 1: reflexivity).	0.254825	259
+coq-corn.8.16.0	CoRN.logic.CornBasics.surj_not	300	64.0	synth with cache (only 1: intros n m Hn Hm; only 1: auto).	0.031402	5
+coq-corn.8.16.0	CoRN.logic.CLogic.Iff_left	300	2.256.448.2	synth with cache (only 1: intros x y z H1 H2; only 1: inversion H1; only 1: rewrite H2 in H1; only 1: auto).	0.599906	948
+coq-corn.8.16.0	CoRN.logic.CornBasics.surj_le	300	516	synth with cache (only 1: firstorder).	0.517903	452
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.div_Zdiv	300	0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: apply (Zdiv_unique _ _ _ (Z.of_nat (n mod m))); only 1: split; only 1: auto with zarith; only 1: now apply inj_lt, PeanoNat.Nat.mod_upper_bound; only 1: rewrite <- Nat2Z.inj_mul, <- Nat2Z.inj_add; only 1: now apply inj_eq, PeanoNat.Nat.div_mod).	0.078465	7
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qdiv_1_r	300	384.1.448.65.2.0.0	synth with cache (only 1: red; only 1: simpl; only 1: rewrite Pos.mul_comm; only 1: Z.bitwise; only 1: Nat.nzsimpl'; only 1: simpl; only 1: now f_equal).	1.352479	767
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Zdiv_Qdiv	300	0.0.0.0.0.0.0.0.0.1.0	synth with cache (only 1: unfold Qfloor; only 1: simpl; only 1: destruct m as [| | p]; only 1: simpl; only 1: now rewrite Zdiv_0_r, Z.mul_0_r; only 1: simpl; only 1: now rewrite Z.mul_1_r; only 1: simpl; only 1: rewrite <- Z.opp_eq_mul_m1; only 1: rewrite <- (Z.opp_involutive (Z.pos p)); only 1: now rewrite Zdiv_opp_opp).	2.012295	617
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.mod_Zmod	300	1.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: apply (Zmod_unique _ _ (Z.of_nat n / Z.of_nat m)); only 1: split; only 1: auto with *; only 1: now apply inj_lt, PeanoNat.Nat.mod_upper_bound; only 1: rewrite <- Zdiv.div_Zdiv, <- Nat2Z.inj_mul, <- Nat2Z.inj_add by trivial; only 1: now apply inj_eq, PeanoNat.Nat.div_mod).	0.127916	22
+coq-corn.8.16.0	CoRN.logic.CornBasics.lt_lt_minus	300	448.2	synth with cache (only 1: intros n m H; only 1: auto with zarith).	0.304474	119
+coq-corn.8.16.0	CoRN.logic.CornBasics.inject_nat_convert	300	0.0.0.0.1.0	synth with cache (only 1: intro p; only 1: elim (p_is_some_anti_convert p); only 1: intros x H; only 1: rewrite H; only 1: rewrite SuccNat2Pos.id_succ; only 1: apply POS_anti_convert).	0.360521	296
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.S_Zplus	300	0.0.0.0	synth with cache (only 1: destruct n; only 1: trivial; only 1: simpl; only 1: apply Pos2Z.inj_succ).	0.050139	4
+coq-corn.8.16.0	CoRN.model.structures.Nsec.ap_nat_symmetric0	300	448.513.0.322	synth with cache (only 1: intro LE; only 1: intros m H; only 1: intro y; only 1: auto using Z.lt_pred_l).	0.938482	838
+coq-corn.8.16.0	CoRN.logic.CornBasics.Z_to_nat	300	259.2	synth with cache (only 1: intros n Hn; only 1: now constructor).	0.491269	667
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.Ple_Zle	300	0	synth with cache (only 1: easy).	0.021668	1
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.radd_rmul_left_distr	300	258.0.64.520	synth with cache (only 1: intro m; only 1: intros H x; only 1: reduce; only 1: firstorder).	4.774632	6351
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.inject_Z_injective	300	0.0.0.451.1.1	synth with cache (only 1: split; only 1: intro H; only 1: inversion H; only 1: trivial; only 1: intros EQ; only 1: now rewrite EQ).	3.409296	2803
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.N_of_Z_nonpos	300	0.0.2.0.0.0.267	synth with cache (only 1: destruct x; only 1: simpl; only 1: trivial; only 1: intros; only 1: now destruct Hn || easy; only 1: simpl; only 1: reflexivity).	4.865595	9881
+coq-corn.8.16.0	CoRN.model.structures.Npossec.plus_resp_Npos0	300	384.0	synth with cache (only 1: intros a b Ha Hb; only 1: now destruct a).	0.114759	68
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.narith.le_minus	300	641.1.0	synth with cache (only 1: intro n; only 1: intros LE; only 1: auto with zarith).	0.068888	25
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.Zdec	300	0	synth with cache (only 1: exact (fun x : Z => Z.eq_dec x 0)).	0.023558	1
+coq-corn.8.16.0	CoRN.model.structures.Zsec.ap_Z_irreflexive0	300	65	synth with cache (only 1: now Morphisms.f_equiv).	0.082323	66
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.narith.le_trans	300	129.640.0	synth with cache (only 1: intros x y z; only 1: intros a; only 1: Nat.order).	0.218400	145
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.unique_unit	300	2.0.0.0.0	synth with cache (only 1: intros; only 1: rewrite <- H; only 1: rewrite H; only 1: rewrite <- H; only 1: now Z.nzsimpl).	0.171099	73
+coq-corn.8.16.0	CoRN.model.structures.Zsec.ap_Z_symmetric0	300	515	synth with cache (only 1: firstorder).	0.218507	214
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.succ_nat	300	321.517.0	synth with cache (only 1: intro n; only 1: Nat.nzsimpl'; only 1: lia).	0.518382	729
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zgt_Zge	300	0.0.3	synth with cache (only 1: intros; only 1: Z.swap_greater; only 1: Z.order).	0.608318	757
+coq-corn.8.16.0	CoRN.logic.CLogic.Logical_Remarks.CdeMorgan_ex_all	300	513.0	synth with cache (only 1: intros; only 1: eauto).	0.022083	27
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_axioms.ap_cotransitive	300	0.0	synth with cache (only 1: elim CSetoid_is_CSetoid; only 1: auto).	0.029585	2
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Cnat_double_ind	300	0.0.0.0.0	synth with cache (only 1: induction n; only 1: auto; only 1: destruct m; only 1: auto; only 1: auto).	0.034684	5
+coq-corn.8.16.0	CoRN.model.structures.Zsec.ap_Z_tight0	300	0.0.0.0.0.0.2.2	synth with cache (only 1: intros n m; only 1: split; only 1: intro H; only 1: destruct (Z.eq_decidable n m); only 1: assumption; only 1: now elim H; only 1: intros; only 1: now Morphisms.f_equiv).	1.447863	1915
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_axioms.ap_tight	300	0.0.193	synth with cache (only 1: intros n m; only 1: elim CSetoid_is_CSetoid; only 1: auto).	0.151182	16
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zle_antisymm	300	1.448.0.64	synth with cache (only 1: intros a m Hm; only 1: Z.swap_greater; only 1: intros l; only 1: auto using Z.le_antisymm).	0.269497	113
+coq-corn.8.16.0	CoRN.model.structures.Zsec.ONE_neq_O	300	322	synth with cache (only 1: now simpl).	0.037292	23
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qneq_symmetry	300	0	synth with cache (only 1: auto with qarith).	0.011931	1
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zgt_irref	300	0.0.0	synth with cache (only 1: intros; only 1: Z.swap_greater; only 1: apply Z.lt_irrefl).	0.038836	3
+coq-corn.8.16.0	CoRN.model.structures.Zsec.Zplus_wd0	300	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: reflexivity).	0.038184	3
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_axioms.ap_symmetric	300	1.577.0	synth with cache (only 1: elim CSetoid_is_CSetoid; only 1: intros P1; only 1: tauto).	0.296883	113
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zlt_NEG_0	300	0	synth with cache (only 1: exact Pos2Z.neg_is_neg).	0.021552	1
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qplus_le_l	300	0	synth with cache (only 1: apply Qplus_le_l).	0.009594	1
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qpos_nonNeg	300	0	synth with cache (only 1: discriminate).	0.029009	1
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zgt_0_NEG	300	0	synth with cache (only 1: easy).	0.022193	1
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Cle_le_S_eq	300	1.0.0.1.0.0.0	synth with cache (only 1: intros n m; only 1: intros; only 1: destruct (lt_eq_lt_dec n m); only 1: intuition; only 1: destruct (lt_eq_lt_dec n m); only 1: intuition; only 1: intuition).	0.381826	255
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zle_NEG_0	300	0.1	synth with cache (only 1: intro p; only 1: easy).	0.036599	3
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.eq_reflexive	300	385.2	synth with cache (only 1: CRelationClasses.reduce; only 1: now rewrite ?IHp, ?IHpe, ?Pms_ok, ?Ring_polynom.Pmul_ok).	0.108797	222
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zge_0_NEG	300	0.1	synth with cache (only 1: intro p; only 1: easy).	0.035470	3
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.eq_symmetric	300	1.1.0	synth with cache (only 1: intro x; only 1: intros m H; only 1: CRelationClasses.simpl_crelation).	0.059526	5
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qplus_le_r	300	0.2	synth with cache (only 1: rewrite (Qplus_comm z x), (Qplus_comm z y); only 1: apply QArith_base.Qplus_le_l).	0.244290	98
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.my_Cle_ind	300	2.0.192.450.1.192	synth with cache (only 1: intros Hab; only 1: intros m'; only 1: intros H H'; only 1: induction 1; only 1: auto; only 1: auto with arith).	0.807052	1493
+coq-corn.8.16.0	CoRN.model.setoids.decsetoid.is_CSetoid_from_class	300	8	synth with cache (only 1: firstorder).	0.844456	484
+coq-corn.8.16.0	CoRN.logic.CornBasics.lt_O_positive_to_nat	300	0.0.0.1.0.0.1.1.768	synth with cache (only 1: intros a; only 1: intros n; only 1: rewrite Pmult_nat_mult; only 1: intros Ha; only 1: apply Nat.le_trans with (1 * n); only 1: Nat.nzsimpl; only 1: trivial; only 1: apply Nat.mul_le_mono_r; only 1: apply Pos2Nat.is_pos).	6.921475	8476
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zle_NEG_1	300	256.196	synth with cache (only 1: intro x; only 1: now destruct x).	0.375187	232
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Cle_to	300	0.130.0.1	synth with cache (only 1: induction 1; only 1: apply Nat.le_refl; only 1: right; only 1: auto with arith).	0.991029	1868
+coq-corn.8.16.0	CoRN.logic.CLogic.Misc.not_r_sum_rec	300	0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: elim H0; only 1: intros; only 1: reflexivity; only 1: intro; only 1: elim H; only 1: assumption).	0.039478	7
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.eq_transitive	300	64.192.0.193	synth with cache (only 1: compute; only 1: firstorder; only 1: rewrite H; only 1: now subst).	0.494973	218
+coq-corn.8.16.0	CoRN.logic.CLogic.Logical_Remarks.CNot_Not_or	300	66.641.66	synth with cache (only 1: intros EQ; only 1: intros H x y E; only 1: firstorder).	1.156778	1945
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.Zmult_no_zero_div	300	0.5.1	synth with cache (only 1: intros; only 1: rewrite Z.mul_eq_0; only 1: now destruct 1).	2.762032	4396
+coq-corn.8.16.0	CoRN.logic.CLogic.Misc.not_l_sum_rec	300	1.0.0.1.0.0.0	synth with cache (only 1: intros A B S l r H H0; only 1: elim H0; only 1: intro a; only 1: elim H; only 1: assumption; only 1: intro b; only 1: reflexivity).	0.217978	184
+coq-corn.8.16.0	CoRN.logic.CornBasics.caseZ_diff_O	300	0.2	synth with cache (only 1: intros; only 1: auto).	0.026817	4
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qmult_le_compat_l	300	0.0.0.386.0	synth with cache (only 1: rewrite (Qmult_comm z x), (Qmult_comm z y); only 1: intros n m; only 1: apply Qmult_le_compat_r; only 1: auto with qarith; only 1: auto with qarith).	0.633395	432
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zge_1_NEG	300	0.1.0.0.0.0.0.0.0.0	synth with cache (only 1: intro p; only 1: case p; only 1: intros; only 1: intro H0; only 1: inversion H0; only 1: intros; only 1: intro H0; only 1: inversion H0; only 1: intro H0; only 1: inversion H0).	0.302290	168
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zlt_0_POS	300	0	synth with cache (only 1: easy).	0.023304	1
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zgt_POS_0	300	0	synth with cache (only 1: easy).	0.023597	1
+coq-corn.8.16.0	CoRN.logic.CLogic.Odd_and_Even.even_plus_n_n	300	0.2	synth with cache (only 1: intros a; only 1: parity_binop).	0.081818	84
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Clt_to	300	2.0.704.513.705.0	synth with cache (only 1: unfold lt; only 1: intros LT EQ; only 1: intros l; only 1: induction l; only 1: constructor; only 1: auto).	1.410934	1959
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zle_0_POS	300	0	synth with cache (only 1: exact Pos2Z.pos_is_nonneg).	0.021819	1
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zge_POS_0	300	0.0.0	synth with cache (only 1: intro p; only 1: intro H0; only 1: inversion H0).	0.035016	3
+coq-corn.8.16.0	CoRN.logic.CornBasics.Zodd_Zeven_min1	300	0.0.1.71	synth with cache (only 1: intros a; only 1: Z.nzsimpl; only 1: boolify_even_odd; only 1: now rewrite Z.even_pred).	1.214282	2344
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.narith.minus_n_minus_n_k	300	0.0.388.513.704.0	synth with cache (only 1: intros n m H; only 1: inversion H; only 1: firstorder; only 1: destruct (N.min_spec n m); only 1: intuition; only 1: intuition).	3.699146	5277
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zge_POS_1	300	0.1.0.0.0.0.0.0.0.0	synth with cache (only 1: intro p; only 1: case p; only 1: intros; only 1: intro H0; only 1: inversion H0; only 1: intros; only 1: intro H0; only 1: inversion H0; only 1: intro H0; only 1: inversion H0).	0.504162	239
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zle_neg_pos	300	0	synth with cache (only 1: exact Pos2Z.neg_le_pos).	0.020114	1
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.ZPOS_neq_ZERO	300	0.0	synth with cache (only 1: intros LT; only 1: discriminate).	0.030452	2
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.ZNEG_neq_ZERO	300	0.0	synth with cache (only 1: intros; only 1: discriminate).	0.030519	2
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zle_1_POS	300	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intro p; only 1: case p; only 1: intros; only 1: intro H0; only 1: inversion H0; only 1: intros; only 1: intro H0; only 1: inversion H0; only 1: auto with zarith).	0.740891	485
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zge_gt_succ	300	449	synth with cache (only 1: lia).	0.203859	126
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zge_gt_pred	300	192.1	synth with cache (only 1: intros; only 1: now intuition).	0.269195	83
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zgt_ge_pred	300	129.1	synth with cache (only 1: intro; only 1: intuition).	0.066902	52
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zle_neq_lt	300	66.128	synth with cache (only 1: intros H x0; only 1: Z.order_pos).	0.051881	15
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zmult_pos_mon_le_lft	300	321.0	synth with cache (only 1: intros n m p H1 H2; only 1: now intuition).	0.151310	51
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zgt_ge_succ	300	321	synth with cache (only 1: intuition).	0.592683	429
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zmult_pos_mon_le_rht	300	0	synth with cache (only 1: auto with zarith).	0.022831	1
+coq-corn.8.16.0	CoRN.logic.PropDecid.imp_dec	300	0.140.0.145.0.129.4	synth with cache (only 1: intros A P H; only 1: inversion 1; only 1: auto; only 1: reflexivity || destruct H; only 1: auto; only 1: constructor; only 1: contradiction).	31.097266	222200
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.rmul_morph	300	192.196.449.515	synth with cache (only 1: intros n IH a m; only 1: intros H; only 1: intro H'; only 1: firstorder).	20.454975	21032
+coq-corn.8.16.0	CoRN.logic.CornBasics.caseZ_diff_Neg	300	128.0.2.0.3.0.1.385	synth with cache (only 1: intros x H0; only 1: intros; only 1: elim n; only 1: reflexivity; only 1: intros n0 H; only 1: simpl; only 1: rewrite SuccNat2Pos.id_succ; only 1: now auto).	3.315568	8327
+coq-corn.8.16.0	CoRN.logic.CornBasics.le_irrelevent	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros m n; only 1: generalize eq_refl; only 1: generalize n at - 1; only 1: induction (S n) as [| n0 IHn0]; only 1: discriminate; only 1: clear n; only 1: intros n [=<-] le_mn1 le_mn2; only 1: pose (def_n2 := eq_refl); only 1: transitivity (eq_ind _ _ le_mn2 _ def_n2); only 1: generalize def_n2; only 1: revert le_mn1 le_mn2; only 1: generalize n0 at 1 4 5 7; only 1: intros n1 le_mn1; only 1: destruct le_mn1; only 1: intros le_mn2; only 1: destruct le_mn2; only 1: now intros def_n0; rewrite (UIP_nat _ _ def_n0 eq_refl); only 1: intros def_n0; only 1: generalize le_mn2; only 1: rewrite <- def_n0; only 1: intros le_mn0; only 1: now destruct (Nat.nle_succ_diag_l _ le_mn0); only 1: intros le_mn2; only 1: destruct le_mn2; only 1: intros def_n0; only 1: generalize le_mn1; only 1: rewrite def_n0; only 1: intros le_mn0; only 1: now destruct (Nat.nle_succ_diag_l _ le_mn0); only 1: intros def_n0; only 1: injection def_n0 as [=->]; only 1: rewrite (UIP_nat _ _ def_n0 eq_refl); only 1: simpl; only 1: assert (H : le_mn1 = le_mn2); only 1: now apply IHn0; only 1: now rewrite H; only 1: reflexivity).	12.988809	13736
+coq-corn.8.16.0	CoRN.logic.CLogic.Choice.choice	300	0.0.385.4.0.514.390.193.580.14	synth with cache (only 1: intros H; only 1: generalize H; only 1: intros Hab; only 1: generalize (H 0); only 1: intros (b, Hb); only 1: exists (fun z => projT1 (H z)); only 1: intros; only 1: elim H; only 1: intro z; only 1: auto with arith).	11.171508	63903
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.lt_5	300	129.0.64	synth with cache (only 1: intros a n; only 1: intros; only 1: intuition).	0.286384	210
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.lt_8	300	705.832.0	synth with cache (only 1: intros n m H; only 1: rewrite H; only 1: firstorder).	0.057817	76
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.pred_lt	300	0.256.65	synth with cache (only 1: intros H; only 1: intros eq_rect_eq; only 1: apply Nat.lt_succ_lt_pred).	0.091390	120
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Cle_n_S	300	0.0.448.131.6	synth with cache (only 1: intro; only 1: induction 1; only 1: left; only 1: constructor; only 1: trivial).	12.128120	28339
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.lt_10	300	321.0	synth with cache (only 1: intros H; only 1: auto with *).	0.925232	1018
+coq-corn.8.16.0	CoRN.logic.CornBasics.Zmult_minus_distr_r	300	68.192.900.0	synth with cache (only 1: intros n m p; only 1: generalize (Z.max_spec_le n m); only 1: intros l; only 1: ring).	12.493056	7728
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.lt_pred'	300	640.128.0.322	synth with cache (only 1: intros a [| n]; only 1: Nat.order; only 1: Nat.auto'; only 1: auto with *).	0.819800	1176
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.le_1	300	0.0.130.0	synth with cache (only 1: intro n; only 1: induction 1 as [* ? (p, ?, ?)| ]; only 1: auto with arith; only 1: auto with arith).	0.398627	502
+coq-corn.8.16.0	CoRN.logic.CornBasics.Zlt_reg_mult_l	300	0.0.65	synth with cache (only 1: intros x y z; only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_l).	0.434217	260
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.le_2	300	770.65	synth with cache (only 1: intros a b Hab; only 1: auto with *).	0.432545	596
+coq-corn.8.16.0	CoRN.logic.CornBasics.Zlt_opp	300	704.1	synth with cache (only 1: intros a b Ha; only 1: firstorder).	0.055184	25
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.not_not_lt	300	256	synth with cache (only 1: intuition).	0.253358	156
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.plus_pred_pred_plus	300	0.0	synth with cache (only 1: intros n m p LE; only 1: lia).	0.056296	2
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qnum_nonneg	300	64.64.0.200.384.193.195.6.768	synth with cache (only 1: firstorder; only 1: rewrite Qle_minus_iff in *; only 1: unfold Z.le, Z.min; only 1: simpl in *; only 1: intros l; only 1: induction H; only 1: simpl; only 1: Z.nzsimpl'; only 1: now rewrite <- ?Pos.compare_antisym).	25.389877	45633
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zlt_asymmetric	300	705.0.64.2.0.0.0.0.0.0.2.1.0.1.0.0.0.0.0.0.0.0.0.0.0.0.65.0	synth with cache (only 1: intros x y; only 1: case Z_lt_ge_dec with x y; only 1: intro H; only 1: left; only 1: apply Zcompare_rec with (n := x) (m := y); only 1: intro; only 1: right; only 1: elim (Z.compare_eq_iff x y); only 1: auto with arith; only 1: intro; only 1: left; only 1: elim (Z.compare_eq_iff x y); only 1: auto with arith; only 1: intro H1; only 1: left; only 1: cut ((y ?= x)%Z = (- x ?= - y)%Z); only 1: intro H0; only 1: trivial; only 1: exact (Zcompare_opp y x); only 1: intro H; only 1: generalize (Z.ge_le _ _ H); only 1: intro H0; only 1: case (Z_le_lt_eq_dec y x H0); only 1: intro H1; only 1: generalize (Z.ge_le _ _ H); only 1: auto with zarith; only 1: intro; only 1: firstorder  (subst; auto)).	19.993707	27773
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.narith.minus_n_Sk	300	135	synth with cache (only 1: intuition).	25.931987	4468
+coq-corn.8.16.0	CoRN.reals.fast.PowerBound.Psize_Zlog2	300	2.1.3.1.4.0.0	synth with cache (only 1: simpl Z.succ; only 1: destruct p; only 1: simpl; only 1: now rewrite Pos.add_1_r; only 1: simpl; only 1: now rewrite Pos.add_1_r; only 1: now Z.nzsimpl').	11.824283	10514
+coq-corn.8.16.0	CoRN.metric2.Metric.msp_eq_refl	300	515.65.325	synth with cache (only 1: intros H l; only 1: apply H; only 1: now injection 1 || (intros; now f_equal)).	50.309291	4227
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.plus_eq_one_imp_eq_zero	300	324.128.64.0.0.324.453.128.642.0	synth with cache (only 1: intros a b Hb; only 1: set (n := N.max a b); only 1: generalize dependent n; only 1: intros q; only 1: destruct a, b; only 1: right; only 1: Nat.order; only 1: Nat.auto'; only 1: Nat.auto'; only 1: auto with *).	24.248638	40163
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qabs_Qminus	300	0.0.0.0.330.0.0	synth with cache (only 1: unfold Qminus, Qopp; only 1: simpl; only 1: repeat red; only 1: simpl; only 1: rewrite Pos.mul_comm, <- Z.abs_opp; only 1: do 2 f_equal; only 1: ring).	94.747151	60565
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Cnat_total_order	300	1.129.5.0.322.2	synth with cache (only 1: intros n m; only 1: unfold not; only 1: intros; only 1: case (le_lt_dec m n); only 1: auto with *; only 1: auto with arith).	93.831275	158733
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qmult_lt_0_compat	300	64.0.0.0.2.517	synth with cache (only 1: unfold Qle, Qlt, Qeq; only 1: red; only 1: intros; only 1: simpl in *; only 1: rewrite Z.mul_1_r in *; only 1: Z.order_pos).	7.386052	10202
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.Zunit_eq_one	300	1.66.458.0.1.0	synth with cache (only 1: intros; only 1: apply (Zmult_absorb a); only 1: assumption; only 1: intuition auto with arith; only 1: Z.nzsimpl'; only 1: trivial).	201.169086	431618
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zdiv_pos_nonneg	300	512.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros a b; only 1: induction a as [| p| p]; only 1: induction b as [| p| p]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: easy || now destruct 1; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: congruence; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: congruence; only 1: induction b as [| p0| p0]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: easy || now destruct 1; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: easy || now destruct 1; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: easy || now destruct 1; only 1: induction b as [| p0| p0]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intro H0; only 1: congruence; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: congruence; only 1: unfold Z.lt, Z.gt; only 1: now auto).	0.784933	585
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zdiv_pos_neg	300	320.1	synth with cache (only 1: intros n m H1 H2; only 1: now destruct n, m).	0.688678	474
+coq-corn.8.16.0	CoRN.algebra.RSetoid.iffSetoid	300
+coq-corn.8.16.0	CoRN.util.SetoidPermutation.def.Equivalence_instance_0	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Pair.pair_rel.Equivalence_instance_0	300
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.distributivity.mulC_distr_l	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.P.P_of_nat.P_of_nat_correct	300
+coq-corn.8.16.0	CoRN.reals.fast.LazyNat.LazifyPlus	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.List.zip_map_snd	300
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.distributivity.mulC_distr_r	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.List.Proper_instance_0	300	2.3	synth with cache (only 1: intros; only 1: solve_proper).	0.593355	677
+coq-corn.8.16.0	CoRN.stdlib_omissions.List.move_to_front	300
+coq-corn.8.16.0	CoRN.util.SetoidPermutation.def.Proper_instance_0	300
+coq-corn.8.16.0	CoRN.algebra.RSetoid.id	300
+coq-corn.8.16.0	CoRN.algebra.OperationClasses.Commutative.Associativity.mulAC_comm_l	300
+coq-corn.8.16.0	CoRN.logic.Classic.infinitePidgeonHolePrinicple	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.P.nat_of_P_inj_iff	300
+coq-corn.8.16.0	CoRN.util.PointFree.pair_pf	300
+coq-corn.8.16.0	CoRN.util.PointFree.uncur_pf	300	65.0	synth with cache (only 1: compute; only 1: CRelationClasses.simpl_crelation).	0.045859	30
+coq-corn.8.16.0	CoRN.algebra.RSetoid.compose1	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.List.NoDup_indexed	300
+coq-corn.8.16.0	CoRN.logic.Classic.infinitePidgeonHolePrinicpleB	300
+coq-corn.8.16.0	CoRN.raster.Raster.emptyRaster_wf	300
+coq-corn.8.16.0	CoRN.raster.Raster.nth_repeat	300
+coq-corn.8.16.0	CoRN.raster.Raster.emptyRasterEmpty	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Pair.map_fst_map_first	300	0.1.1.0.68	synth with cache (only 1: induction l as [| x l IHl]; only 1: auto; only 1: simpl; only 1: rewrite IHl; only 1: auto).	8.884408	23502
+coq-corn.8.16.0	CoRN.stdlib_omissions.Pair.map_map_comp	300	2.321.0.0.0.128	synth with cache (only 1: induction l as [| x xs Hrec]; only 1: simpl; only 1: auto; only 1: simpl; only 1: Morphisms.f_equiv; only 1: auto).	0.275339	210
+coq-corn.8.16.0	CoRN.metric2.list_separates.separates_elem_lengths	300
+coq-corn.8.16.0	CoRN.liouville.RingClass.Properties.rsub_morph	300
+coq-corn.8.16.0	CoRN.metric2.Metric.ball_wd_Proper	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.List.list_eq.list_eq_refl	300	0.1.0.11.67.129	synth with cache (only 1: intro Dec; only 1: intros l; only 1: induction l; only 1: firstorder; only 1: simpl; only 1: simpl_relation).	8.146687	24171
+coq-corn.8.16.0	CoRN.util.PointFree.binapp_pf	300
+coq-corn.8.16.0	CoRN.util.SetoidPermutation.SetoidPermutation_eq	300	0.0.0.0.0.260.2.2.0.0.0.0.0.0.0.0.0.1.0.2	synth with cache (only 1: constructor; only 1: intro; only 1: elim H; only 1: trivial; only 1: intros; only 1: subst; only 1: auto; only 1: induction H; only 1: intros a b H; only 1: auto; only 1: trivial; only 1: auto using app_assoc; only 1: discriminate || (try tauto); only 1: intros x y l1 l2 PE IH; only 1: eauto with arith; only 1: induction 1; only 1: eauto; only 1: auto; only 1: auto; only 1: eauto).	10.532624	7749
+coq-corn.8.16.0	CoRN.metric2.Metric.msp_eq_sym	300
+coq-corn.8.16.0	CoRN.metric2.Metric.msp_eq_trans	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.lt_le_dec	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qle_dec	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Zsucc_Qplus	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.S_Qplus	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.Zgt_not_eq	300	577.1.64	synth with cache (only 1: intros A eq_dec; only 1: Z.swap_greater; only 1: auto with *).	0.220779	179
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qmult_injective_r	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.p_is_some_anti_convert	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.anti_convert_pred_convert	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qminus_eq	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.min_convert_is_NEG	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qinv_char	300
+coq-corn.8.16.0	CoRN.liouville.RingClass.SubRing_is_Ring.r_st'	300
+coq-corn.8.16.0	CoRN.model.structures.Nsec.ap_nat_cotransitive0	300
+coq-corn.8.16.0	CoRN.model.structures.Nsec.no_inverse0	300	0.256.0	synth with cache (only 1: intros; only 1: Z.nzsimpl; only 1: intuition).	0.111755	35
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qlt_floor_alt	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.IndT.AccIter.Acc_inv	300	2.321.768	synth with cache (only 1: intros s1; only 1: intros (m, H); only 1: auto).	0.852859	286
+coq-corn.8.16.0	CoRN.tactics.AlgReflection.Correctness_Results.eq_int_corr	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.P_of_succ_nat_Zplus	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qfloor_pos	300
+coq-corn.8.16.0	CoRN.model.structures.Nsec.mult_strext0	300	0.0.0.0.0.576.0.0.0.0.0.0.0.0	synth with cache (only 1: intros x1 x2 y1 y2 H; only 1: unfold ap_nat; only 1: unfold ap_nat in H; only 1: case (Nat.eq_dec x1 x2); only 1: intro e; only 1: right; only 1: red; only 1: intro H0; only 1: auto with relations; only 1: intro n; only 1: left; only 1: intro H0; only 1: elim n; only 1: assumption).	0.487167	492
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qplus_nonneg	300	641.0.0.0	synth with cache (only 1: unfold Qle; only 1: simpl; only 1: repeat rewrite Z.mul_1_r; only 1: firstorder).	0.211491	93
+coq-corn.8.16.0	CoRN.logic.CornBasics.Z_to_nat_correct	300
+coq-corn.8.16.0	CoRN.model.structures.Nsec.ap_nat_tight0	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qpower_not_0	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.Z_exh	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.nats_Z_ind	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.Zto_nat_nonpos	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.pred_succ_Z_ind	300
+coq-corn.8.16.0	CoRN.model.structures.Nsec.not_or	300	1.385.0.1	synth with cache (only 1: intros x y z; only 1: case Z_lt_ge_dec with x y; only 1: firstorder; only 1: intuition).	0.679196	814
+coq-corn.8.16.0	CoRN.logic.CornBasics.InductionTT.lt_wf_rect	300	0.0.0.2	synth with cache (only 1: intro p; only 1: intros; only 1: elim (lt_wf p); only 1: auto with arith).	0.189993	66
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qabs_Qle	300	1.1	synth with cache (only 1: rewrite Qabs_Qle_condition; only 1: intuition).	0.150743	55
+coq-corn.8.16.0	CoRN.logic.CornBasics.positive_rect2_red2	300	192.0.0	synth with cache (only 1: intros P c1 c2 c3; only 1: intros Hz; only 1: repeat match goal with | _ => reflexivity | _ => progress subst | H:Some ?a = Some ?b |- _ => assert (a = b) by refine match H with | eq_refl => eq_refl end; clear H | H:None = Some _ |- _ => solve [ inversion H ] end).	0.036902	12
+coq-corn.8.16.0	CoRN.logic.CornBasics.positive_rect2_red3	300	0.0	synth with cache (only 1: intros e1 e2 EQ; only 1: reflexivity).	0.027287	2
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.Ple_Zle_to_pos	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.iff_under_forall	300	0.1.4	synth with cache (only 1: repeat split; only 1: firstorder; only 1: firstorder).	0.286824	396
+coq-corn.8.16.0	CoRN.model.structures.Nsec.plus_strext0	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qpower_0_lt	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Z.le_Zle_to_nat	300
+coq-corn.8.16.0	CoRN.liouville.RingClass.SubRing_is_Ring.sr_ring	300
+coq-corn.8.16.0	CoRN.model.structures.Npossec.Npos_is_suc	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.conjunction_under_forall	300	12	synth with cache (only 1: firstorder).	1.221127	1198
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.Zmult_zero_div	300
+coq-corn.8.16.0	CoRN.model.structures.Zsec.ap_Z_cotransitive0	300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.Zmult_unit_oneforall	300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.Zmult_intro_rht	300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zarith.Zmult_intro_lft	300
+coq-corn.8.16.0	CoRN.model.structures.Zsec.Zmult_strext0	300	0.128.1.0.0.0.0.0.0.0	synth with cache (only 1: intros x1 x2 y1 y2 H; only 1: unfold ap_Z; only 1: unfold ap_Z in H; only 1: case (Z.eq_dec x1 x2); only 1: intro e; only 1: right; only 1: red; only 1: subst; only 1: congruence; only 1: auto).	0.787027	612
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.toCle	300
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.toCProp_lt	300
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Codd_even_to	300
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Codd_to	300
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.Ceven_to	300
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.to_Codd_even	300
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.to_Ceven	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_axioms.ap_irreflexive	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Misc.CZ_exh	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Misc.Cnats_Z_ind	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Misc.Cdiff_Z_ind	300
+coq-corn.8.16.0	CoRN.logic.CLogic.le_odd.to_Codd	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.InductionT.induction_ltof2T	300	576.642.2.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros P F; only 1: assert (H : forall (n : nat) (a : A), f a < n -> P a); only 1: induction n; only 1: intros; only 1: absurd (f a < 0); only 1: auto with arith; only 1: auto with arith; only 1: intros a Ha; only 1: apply F; only 1: unfold ltof; only 1: intros b Hb; only 1: apply IHn; only 1: apply Nat.lt_le_trans with (f a); only 1: auto with arith; only 1: auto with arith; only 1: intros Hx; only 1: generalize (H 0); only 1: CRelationClasses.simpl_crelation).	4.700661	7837
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qdiv_flip_lt	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.Build_CSetoid	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qdiv_flip_le	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.is_CSetoid_Setoid	300
+coq-corn.8.16.0	CoRN.model.structures.Zsec.Zplus_strext0	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.not_ap_imp_eq	300	1.0.0.0	synth with cache (only 1: intros x y; only 1: elim (ap_tight S x y); only 1: intros H1 H2; only 1: assumption).	0.068602	55
+coq-corn.8.16.0	CoRN.logic.CLogic.Misc.Cpred_succ_Z_ind	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qplus_lt_r	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.neq_imp_notnot_ap	300	576.64.64.0.0.0	synth with cache (only 1: intros x y; only 1: elim (ap_tight S x y); only 1: intros H1 H2; only 1: intro n; only 1: intros H; only 1: auto using N.Private_Tac.eq_sym).	0.168567	50
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.eq_wdl	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.ap_cotransitive_unfolded	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.eq_imp_not_neq	300	128.0.0.1	synth with cache (only 1: intros x y; only 1: elim (ap_tight S x y); only 1: intros H1 H2; only 1: auto with zarith).	0.074057	34
+coq-corn.8.16.0	CoRN.model.setoids.decsetoid.CSetoid_from_class	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Misc.member_app	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.eq_imp_not_ap	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qopp_Qlt_0_l	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Odd_and_Even.even_or_odd_plus	300
+coq-corn.8.16.0	CoRN.logic.CornBasics.caseZ_diff_Pos	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Odd_and_Even.even_or_odd_plus_gt	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.Clt_le_weak	300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zdiv_neg_neg	300	0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros a b; only 1: induction a as [| p| p]; only 1: induction b as [| p| p]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: induction b as [| p0| p0]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: induction b as [| p0| p0]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: auto; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate).	2.990137	3229
+coq-corn.8.16.0	CoRN.logic.CLogic.Predicates_to_Prop.even_ind	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros P H H0 n; only 1: pattern n; only 1: apply lt_wf_rect; only 1: clear n; only 1: intros n H1 H2; only 1: induction n as [| n Hrecn]; only 1: auto; only 1: induction n as [| n Hrecn0]; only 1: elimtype False; only 1: inversion H2; only 1: inversion H4; only 1: apply H0; only 1: inversion H2; only 1: inversion H4; only 1: auto; only 1: apply H1; only 1: auto with arith; only 1: inversion H2; only 1: inversion H4; only 1: auto).	0.786311	1140
+coq-corn.8.16.0	CoRN.logic.CLogic.Predicates_to_Prop.nat_complete_double_ind	300	0.0.0.0	synth with cache (only 1: intros P H m; only 1: pattern m; only 1: apply lt_wf_rect; only 1: auto with arith).	0.024704	4
+coq-corn.8.16.0	CoRN.logic.CLogic.toCProp_Zlt	300	0.0	synth with cache (only 1: intros; only 1: trivial).	0.013248	2
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zcompat_lt_plus	300	1	synth with cache (only 1: auto with zarith).	0.325861	250
+coq-corn.8.16.0	CoRN.logic.CLogic.CZlt_to	300	64.64.641.0	synth with cache (only 1: intros x y H; only 1: vm_compute in H; only 1: unfold Z.lt; only 1: firstorder).	0.038054	38
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zdiv_neg_pos	300	0.0.0.0.0.0.0.0.0.0.0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros a b; only 1: induction a as [| p| p]; only 1: induction b as [| p| p]; only 1: simpl; only 1: trivial; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: induction b as [| p0| p0]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: auto; only 1: induction b as [| p0| p0]; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: unfold Z.lt, Z.gt; only 1: simpl; only 1: intros; only 1: discriminate).	4.162144	4524
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zmult_pos_mon_lt_lft	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Zsgn_3	300	578.192.448	synth with cache (only 1: intros a Ha; only 1: intros Hm; only 1: lia).	0.552265	573
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zmult_pos_mon_lt_rht	300
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.not_neq_imp_eq	300	3.1.0.0	synth with cache (only 1: intros x y; only 1: elim (ap_tight S x y); only 1: elim (ap_tight S x y); only 1: firstorder).	3.176188	1326
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_geq_zero	300	3.0	synth with cache (only 1: intros n; only 1: apply Z.abs_nonneg).	0.331330	302
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_nonneg	300	451.0.1	synth with cache (only 1: intro x; only 1: intros; only 1: lia).	0.814441	1064
+coq-corn.8.16.0	CoRN.logic.CornBasics.proper_caseZ_diff	300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_zero	300	0.0.0.0.0.0.1.0	synth with cache (only 1: intro x; only 1: case x; only 1: intro H; only 1: reflexivity; only 1: intros p H; only 1: inversion H; only 1: intros p H; only 1: inversion H).	0.753385	716
+coq-corn.8.16.0	CoRN.model.structures.Nsec.k_zero	300	640.1.135.1	synth with cache (only 1: intros H; only 1: intro m; only 1: intro; only 1: firstorder).	9.657136	21331
+coq-corn.8.16.0	CoRN.logic.CLogic.Predicates_to_Prop.four_ind	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: apply lt_wf_rect; only 1: intro m; only 1: case m; only 1: auto; only 1: clear m; only 1: intro m; only 1: case m; only 1: auto; only 1: clear m; only 1: intro m; only 1: case m; only 1: auto; only 1: clear m; only 1: intro m; only 1: case m; only 1: auto with arith; only 1: auto with arith).	4.227086	3674
+coq-corn.8.16.0	CoRN.logic.CornBasics.diff_Z_ind	300
+coq-corn.8.16.0	CoRN.logic.CLogic.ZL9	300	0.0.0.0.1.0	synth with cache (only 1: intros; only 1: elim (p_is_some_anti_convert p); only 1: intros x H; only 1: rewrite H; only 1: rewrite SuccNat2Pos.id_succ; only 1: apply POS_anti_convert).	0.227558	163
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zdiv_neg_nonneg	300	197.0.512.0	synth with cache (only 1: intros a b; only 1: intros l; only 1: intuition; only 1: now destruct a, b).	8.096946	11424
+coq-corn.8.16.0	CoRN.logic.CLogic.Zsgn_4	300	644	synth with cache (only 1: lia).	0.075250	198
+coq-corn.8.16.0	CoRN.logic.CLogic.Predicates_to_Prop.odd_ind	300	0.1.2.0.1.582.0	synth with cache (only 1: intros P Q H l; only 1: destruct 1; only 1: pattern n; only 1: apply even_induction; only 1: auto; only 1: auto; only 1: exact H0).	5.466953	15373
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_geq	300	0.192.0.0.1.0.0.1	synth with cache (only 1: intro a; only 1: case a; only 1: unfold Z.abs; only 1: Z.order; only 1: auto with zarith; only 1: unfold Z.abs; only 1: intro H1; only 1: easy).	0.545418	480
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_Zopp_geq	300	64.1	synth with cache (only 1: intros n; only 1: now destruct n).	0.117327	133
+coq-corn.8.16.0	CoRN.logic.CLogic.Zsgn_5	300	194.0.65	synth with cache (only 1: intros H H0; only 1: intros; only 1: lia).	1.073387	1261
+coq-corn.8.16.0	CoRN.logic.CLogic.nat_nat_pos	300	513.705.195	synth with cache (only 1: intro Hb; only 1: intros H'; only 1: auto with *).	0.256508	359
+coq-corn.8.16.0	CoRN.util.SetoidPermutation.SetoidPermutation_from_Permutation	300	0.0.0.0.5.0.0.0.1.3.72.5	synth with cache (only 1: intro; only 1: destruct b; only 1: induction H; only 1: constructor; only 1: eauto; only 1: eauto; only 1: eauto; only 1: induction H; only 1: auto; only 1: eauto; only 1: eauto; only 1: eauto).	20.680010	28532
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_Zopp	300	0.0.0.0.1.2.1	synth with cache (only 1: intro n; only 1: destruct n; only 1: simpl; only 1: now f_equal; only 1: simpl; only 1: trivial; only 1: trivial).	3.602051	6353
+coq-corn.8.16.0	CoRN.logic.CLogic.S_predn	300	257.0.0.129.193	synth with cache (only 1: apply lt_wf_rect; only 1: now do 2 constructor; only 1: intros n m; only 1: intros; only 1: auto with zarith).	0.725515	1042
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_elim_nonneg	300	644.6	synth with cache (only 1: intros x H; only 1: lia).	6.545899	8300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_Zminus_symm	300	578.67	synth with cache (only 1: intros EQ; only 1: lia).	5.086236	4476
+coq-corn.8.16.0	CoRN.logic.CornBasics.Zlt_conv_mult_l	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.nat_local_mon_imp_mon	300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_lt_elim	300	0.0.0.320.320.513.1	synth with cache (only 1: intros; only 1: generalize 1%Z; only 1: intro H1; only 1: destruct a; only 1: auto; only 1: Z.order; only 1: now destruct Hn || easy).	0.856851	837
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_le_elim	300	0.0.0.1.0.0	synth with cache (only 1: intros a b; only 1: case a; only 1: intros H3 H4; only 1: Z.order; only 1: auto with zarith; only 1: auto with zarith).	0.766254	816
+coq-corn.8.16.0	CoRN.logic.CLogic.Zsgn_2	300	128.521.1.134	synth with cache (only 1: intro H0; only 1: intros; only 1: inversion H; only 1: lia).	13.031448	36114
+coq-corn.8.16.0	CoRN.algebra.CSetoids.CSetoid_basics.notnot_ap_imp_neq	300	4.0.0.449.320.384.1	synth with cache (only 1: intros x y; only 1: intro l'; only 1: intuition auto using Z.le_ge, Z.ge_le, Z.lt_gt, Z.gt_lt; only 1: revert l'; only 1: elim (ap_tight S x y); only 1: intros H1 H2; only 1: firstorder).	15.516235	6618
+coq-corn.8.16.0	CoRN.logic.CLogic.Zgt_mult_reg_absorb_l	300	2.0.256.192	synth with cache (only 1: intros n m; only 1: intro H1; only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_l).	0.163545	104
+coq-corn.8.16.0	CoRN.logic.CLogic.Zmult_Sm_Sn	300	320.0.0	synth with cache (only 1: intros m H; only 1: Z.nzsimpl'; only 1: lia).	1.063190	784
+coq-corn.8.16.0	CoRN.logic.CLogic.CForall_prop	300	2.3.0.0.1.0.0.0.0	synth with cache (only 1: split; only 1: induction l; only 1: firstorder; only 1: firstorder; only 1: induction l as [| a l IH]; only 1: simpl; only 1: tauto; only 1: firstorder; only 1: firstorder  (subst; auto)).	0.951987	1912
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qopp_Qlt_0_r	300
+coq-corn.8.16.0	CoRN.stdlib_omissions.Q.Qle_shift_div_r	300	0.0.0.0.0.0.0.0.1.0.0.0.1.0.0	synth with cache (only 1: intros a b c A; only 1: split; only 1: intros H0; only 1: apply Qmult_lt_0_le_reg_r with b; only 1: assumption; only 1: setoid_replace (a / b * b) with (b * (a / b)) by apply Qmult_comm; only 1: rewrite Qmult_div_r; only 1: assumption; only 1: auto with *; only 1: intro A1; only 1: apply Qmult_lt_0_le_reg_r with (/ b); only 1: apply Qinv_lt_0_compat; only 1: assumption; only 1: setoid_replace (c * b / b) with c by apply Qdiv_mult_l; auto with *; only 1: assumption).	2.124795	1952
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zmult_pos_mon	300
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.Zdiv_pos_pos	300
+coq-corn.8.16.0	CoRN.model.Zmod.Cmod.Zmod_pos	300
+coq-corn.8.16.0	CoRN.model.Zmod.Cmod.mod_nat	300	193.0	synth with cache (only 1: intros; only 1: now Z.nzsimpl).	0.106721	12
+coq-corn.8.16.0	CoRN.metric2.Metric.Metric_Space.ball_refl	300
+coq-corn.8.16.0	CoRN.reals.fast.PowerBound.power3bound	300
+coq-corn.8.16.0	CoRN.logic.CLogic.Natural_Numbers.nat_local_mon_imp_mon_le	300
+coq-corn.8.16.0	CoRN.logic.CLogic.CForall_map	300	65.0.64.8.192.1.0.0.0.0.0.1	synth with cache (only 1: constructor; only 1: induction l; only 1: simpl; only 1: auto; only 1: simpl; only 1: inversion_clear 1; only 1: firstorder; only 1: intro n; only 1: induction l as [| x l IH]; only 1: assumption; only 1: simpl in *; only 1: tauto).	4.107169	9218
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.case_POS	300	648	synth with cache (only 1: lia).	19.928192	26189
+coq-corn.8.16.0	CoRN.ode.BanachFixpoint.BanachFixpoint.x_Sn	300	640.768.256	synth with cache (only 1: intro b; only 1: destruct q; only 1: now Z.nzsimpl).	0.642590	190
+coq-corn.8.16.0	CoRN.logic.CLogic.CForall_weak	300	0.0.0.64.1.579.129	synth with cache (only 1: intros H H0; only 1: generalize H; only 1: induction H0; only 1: now rewrite ?IHj; only 1: simpl; only 1: intro; only 1: firstorder).	1.945379	5412
+coq-corn.8.16.0	CoRN.metrics.LipExt.LipschitzExtension.BuildExtension.cdsub'	300	1	synth with cache (only 1: auto).	0.066999	2
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zabs.Zabs_idemp	300	0.2.0.0.0.65.131.3.1	synth with cache (only 1: intro p; only 1: case (Z_lt_dec 1 p); only 1: now destruct p; only 1: induction p; only 1: intros; only 1: reflexivity; only 1: intros H; only 1: reflexivity; only 1: easy || now destruct 1).	46.438431	105673
+coq-corn.8.16.0	CoRN.logic.CornBasics.positive_rect2_helper_bool	300	1.0.1.0.0.2.257.2.1	synth with cache (only 1: simpl; only 1: intros e1 e2 EQ; only 1: induction p; only 1: simpl; only 1: f_equal; only 1: auto with bool; only 1: trivial; only 1: simpl; only 1: auto).	56.730281	63522
+coq-corn.8.16.0	CoRN.model.Zmod.ZBasics.zineq.lt_succ_Z_of_nat	300	1.2.129.68	synth with cache (only 1: intros a Ha; only 1: intros Hb; only 1: rewrite Nat2Z.inj_succ; only 1: auto with zarith).	56.354784	117003
+coq-corn.8.16.0	CoRN.ode.SimpleIntegration.gball_mspc_ball	300	131	synth with cache (only 1: easy).	0.248726	38
+coq-corn.8.16.0	CoRN.ode.SimpleIntegration.ball_mspc_ball	300	0	synth with cache (only 1: reflexivity).	0.054458	1
