@@ -2,4 +2,10 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
+Fatal benchmarking error: Rsync failed: rsync: mkdir "/lscratch/blaaulas/tactician.tmp.p4KcZs" failed: No such file or directory (2)
+rsync error: error in file IO (code 11) at main.c(657) [Receiver=3.1.2]
+srun: error: amd-02: task 0: Exited with exit code 11
+
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description ("Client connected via TCP" (amd-02.cluster 42291)))
+ (rpc_tag rpc_parallel_plain_4) (rpc_version 0))
