@@ -1,0 +1,412 @@
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.lt_elt_strorder	300	0	synth with cache (only 1: apply StrictOrder_OrdType).	0.009193	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.lt_key_strorder	300	0.1.0	synth with cache (only 1: split; only 1: easy; only 1: apply _).	0.022395	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_right_r	300	1.0.0	synth with cache (only 1: unfold ltk; only 1: intros; only 1: auto).	0.015796	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_right_l	300	0	synth with cache (only 1: auto).	0.008480	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_refl	300	3	synth with cache (only 1: easy).	0.014992	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_refl	300	0	synth with cache (only 1: auto with smtcoq_array).	0.008382	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_sym	300	0.0	synth with cache (only 1: unfold eqk, eqke; only 1: intuition).	0.015342	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_sym	300	0.448.0	synth with cache (only 1: unfold eqk, eqke; only 1: intros m H1 H2; only 1: intuition).	0.038820	24
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_eqk	300	323.64.257	synth with cache (only 1: intros Hab; only 1: intro; only 1: firstorder using StronglySorted_inv).	0.308228	437
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_trans	300	256.258.321.1	synth with cache (only 1: intros; only 1: CRelationClasses.reduce; only 1: rewrite ?PeanoNat.Nat.add_0_l, ?PeanoNat.Nat.add_0_r, ?H; only 1: PeanoNat.Nat.auto').	0.644193	854
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_trans	300	128.0.0	synth with cache (only 1: unfold ltk; only 1: intros; only 1: now rewrite H).	0.023007	9
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_equiv	300	0.0.0.0	synth with cache (only 1: split; only 1: eauto with smtcoq_array; only 1: eauto with smtcoq_array; only 1: eauto with smtcoq_array).	0.096887	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_asym	300	130	synth with cache (only 1: auto with *).	0.019671	11
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_ltk	300	0.0.0.0.0.0	synth with cache (only 1: unfold ltk, eqk; only 1: destruct e, e', e''; only 1: simpl; only 1: intros; only 1: subst; only 1: trivial).	0.045751	6
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eq_equiv	300	513.64.258.2.0.1	synth with cache (only 1: split; only 1: auto with smtcoq_array; only 1: auto with smtcoq_array; only 1: intros a Ha; only 1: intros (H1, H2); only 1: CRelationClasses.simpl_crelation).	0.509519	744
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_strorder	300	0.1.128.5.1	synth with cache (only 1: split; only 1: unfold ltk; only 1: intro LE; only 1: apply StrictOrder_OrdType; only 1: eauto with smtcoq_array).	0.960205	1167
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_not_eqk	300	449.0.448.258.0	synth with cache (only 1: unfold eqk, eqke; only 1: intro n; only 1: intros (Ha, H); only 1: intros; only 1: eauto using PeanoNat.Nat.Private_Tac.eq_trans, PeanoNat.Nat.Private_Tac.eq_sym).	3.471044	3138
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compat	300	320.321.256.129.448	synth with cache (only 1: intros a; only 1: intro x; only 1: assert (succ_r : forall x y, x + S y = S (x + y)) by now induction x; only 1: intro H; only 1: CRelationClasses.simpl_crelation).	1.192374	812
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_eq	300	0.65.512	synth with cache (only 1: intros m IH H; only 1: destruct 1; only 1: auto with smtcoq_array).	0.095582	85
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.MapsTo_eq	300	64.192.1.66	synth with cache (only 1: destr_bool; only 1: inversion H; only 1: rewrite <- H in *; only 1: auto with *).	0.362654	137
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.T2Z_id	300	1.1	synth with cache (only 1: intro n; only 1: auto).	0.011586	4
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.T2Z_pres	300	0	synth with cache (only 1: reflexivity).	0.009507	1
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_add_morph	300	0.0	synth with cache (only 1: intros; only 1: now Z.nzsimpl).	0.024763	2
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_mul_morph	300	66.0	synth with cache (only 1: intros; only 1: intuition).	0.024787	7
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_leb_morph	300	0	synth with cache (only 1: easy || now destruct y).	0.008009	1
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_ltb_morph	300	0	synth with cache (only 1: reflexivity).	0.008787	1
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_eqb_morph	300	0	synth with cache (only 1: reflexivity).	0.007744	1
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.convert.implb_impl	300	1	synth with cache (only 1: Bool.destr_bool).	0.166663	217
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_not_ltk	300	64.576.64.0.321.64.1	synth with cache (only 1: unfold eqke, ltk; only 1: intros P b H H0; only 1: CRelationClasses.simpl_crelation; only 1: apply lt_not_eq in H; only 1: simpl in *; only 1: easy || now destruct 1; only 1: firstorder).	2.003988	1690
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_eqk	300	64.0.2.1	synth with cache (only 1: unfold ltk; only 1: intros x x' H; only 1: intuition; only 1: intuition congruence).	2.299154	1178
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_eqb_morph	300	0.0.0.0.0.0	synth with cache (only 1: intros x y; only 1: destruct x, y; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity).	0.039297	6
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.T2Z_id	300	1.0.0.0.385.129.4	synth with cache (only 1: intro n; only 1: PeanoNat.Nat.bitwise; only 1: f_equal; only 1: induction n; only 1: now simpl; only 1: simpl; only 1: apply SuccNat2Pos.id_succ).	1.557533	2958
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.T2Z_id	300	0.130.260.128.0	synth with cache (only 1: intros; only 1: N.bitwise; only 1: destruct x; only 1: Bool.destr_bool; only 1: now destruct (Pos.pred_N p)).	2.557465	4248
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_equiv	300	326.450.6.1.1	synth with cache (only 1: split; only 1: split; only 1: easy; only 1: intros m a b Ha Hb; only 1: congruence).	5.023226	4198
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_trans	300	65.129.64.132	synth with cache (only 1: intros q; only 1: intros ? ? ? [Hl Hr]; only 1: destruct H; only 1: simpl_relation).	8.350755	9418
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.T2Z_pres	300	578.3.69.1	synth with cache (only 1: intro; only 1: destruct x; only 1: easy; only 1: auto with relations).	2.669281	3471
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.InA_eqke_eqk	300	321.66.66.3	synth with cache (only 1: unfold eqk, eqke; only 1: induction 1; only 1: firstorder; only 1: intuition auto; PeanoNat.Nat.Private_OrderTac.Tac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	6.380564	8410
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Inf_eq	300	0.66.321.578	synth with cache (only 1: intros a b Ha; only 1: inversion 1; only 1: rewrite H; only 1: eauto with *).	5.978095	5377
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_mul_morph	300	0.0.0.3.0.0.0.0.11.0	synth with cache (only 1: intros x y; only 1: destruct x; only 1: destruct y; only 1: reflexivity; only 1: simpl; only 1: trivial; only 1: destruct y; only 1: simpl; only 1: trivial; only 1: reflexivity).	10.541218	19864
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_refl	300	129.0.912	synth with cache (only 1: vm_compute; only 1: apply eqb_spec; only 1: now rewrite ?IHj).	0.689417	2986
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Inf_lt	300	1.4.1.130.0.64.2	synth with cache (only 1: intros x y z; only 1: intro; only 1: intuition; only 1: destruct H0; only 1: intuition; only 1: right; only 1: eauto with smtcoq_array).	15.691280	13998
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv_2	300	0.384.0.448	synth with cache (only 1: intros n m p H; only 1: inversion_clear 1; only 1: now rewrite ?Ha; only 1: eauto with *).	0.209152	159
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.eqb_trans	300	129.5.321.10	synth with cache (only 1: destruct ET as [eqb0 Heqb0]; only 1: symmetry; only 1: apply eqb_spec in H0; only 1: Tactics.program_simpl).	23.227862	12068
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.implb_true_r	300	1	synth with cache (only 1: destr_bool).	0.015122	2
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.reflect_eqb	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intros x y; only 1: apply iff_reflect; only 1: rewrite eqb_spec; only 1: split; only 1: intros ->; only 1: reflexivity; only 1: intros ->; only 1: reflexivity).	0.061744	8
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_Z_eq	300	0.0.0.0	synth with cache (only 1: intros; only 1: split; only 1: apply to_Z_inj; only 1: apply f_equal).	0.030330	4
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.max_int_wB	300	1	synth with cache (only 1: now Z.nzsimpl').	0.069315	2
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.leb_0	300	2.0.0	synth with cache (only 1: intro i; only 1: rewrite leb_spec; only 1: apply to_Z_bounded).	0.211208	126
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.reflect_eqb	300	0.1.1.128.0.4	synth with cache (only 1: apply iff_reflect; only 1: split; only 1: inversion 1; only 1: now rewrite eqb_spec; only 1: intro H; only 1: now rewrite <- eqb_spec).	0.615735	828
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.leb_refl	300	2.0.0.1	synth with cache (only 1: intros x; only 1: rewrite leb_spec; only 1: apply Z.lt_succ_r; only 1: auto with zarith).	0.468789	1450
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv_3	300	0.0.0.1.1	synth with cache (only 1: unfold ltk, eqk; only 1: unfold eqke; only 1: inversion_clear 1; only 1: intuition; only 1: intuition).	5.723607	4010
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.empty_1	300	2	synth with cache (only 1: inversion 1).	0.020433	3
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.empty_sorted	300	387	synth with cache (only 1: now constructor).	0.018015	28
+coq-smtcoq.2.0+8.11	SMTCoq.State.Var.interp_false	300	65.1	synth with cache (only 1: intros n Hn Hnp; only 1: now destruct Hn || clear Hn).	0.041048	6
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.lit_true	300	2.0	synth with cache (only 1: apply to_Z_inj; only 1: split).	0.060240	4
+coq-smtcoq.2.0+8.11	SMTCoq.State.Var.interp_true	300	321.1	synth with cache (only 1: simple induction 1; only 1: auto with relations).	0.121441	113
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.lit_false	300	0	synth with cache (only 1: reflexivity).	0.052185	1
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.nlit_blit	300	256.0.2.0.0.0	synth with cache (only 1: unfold is_pos, lit, blit; only 1: intros; only 1: rewrite (bit_xor_split l)  at 2; only 1: rewrite is_even_bit, negb_false_iff in H; only 1: rewrite H; only 1: auto with real).	0.426639	359
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.ltb_trans	300	322.0.640.64.385	synth with cache (only 1: intros n; only 1: intros s1; only 1: intros Ha; only 1: rewrite !ltb_spec; only 1: Z.Private_Tac.order || (right; Z.Private_Tac.order) || (left; Z.Private_Tac.order)).	1.545002	1199
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.eqb_sym2	300	0.0.0.0.0.5	synth with cache (only 1: apply eq_true_iff_eq; only 1: split; only 1: rewrite !eqb_spec; only 1: now intros ->; only 1: rewrite !eqb_spec; only 1: now intros ->).	11.062771	16225
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.StrictOrder_OrdType	300	5.135.5	synth with cache (only 1: destruct H; only 1: destr_bool; only 1: firstorder).	1.531807	3493
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.not_ltb_refl	300	394.1	synth with cache (only 1: intros; only 1: firstorder).	9.995052	14775
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_make	300	1.0.0.2.0.0	synth with cache (only 1: intros; only 1: simpl; only 1: case ltbP; only 1: auto with arith; only 1: intros H2; only 1: auto).	3.119178	3622
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.leb_ltb_trans	300	1.0.0.0.1.65	synth with cache (only 1: intros z1 z2; only 1: intros H1; only 1: rewrite !ltb_spec; only 1: rewrite leb_spec; only 1: assert (Hp2 : (0 < φ (2))%Z) by exact eq_refl; only 1: auto with zarith).	11.789900	7629
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.ltb_0	300	707.4.0.4	synth with cache (only 1: intros; only 1: rewrite ltb_spec, to_Z_0; only 1: destruct (to_Z_bounded x); only 1: Map.Raw.Proofs.intuition_in).	13.322527	11740
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_ltb_morph	300	0.1.0.1.0.0.2.8	synth with cache (only 1: intros n m; only 1: destruct n, m; only 1: reflexivity; only 1: simpl; only 1: split; only 1: simpl; only 1: split; only 1: reflexivity).	69.342495	133601
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_add_morph	300	898.64.64.2.0.133.128.392	synth with cache (only 1: intros b; only 1: intros H; only 1: destruct b; only 1: now Z.nzsimpl; only 1: simpl; only 1: symmetry; only 1: symmetry; only 1: now elim H).	92.041730	166394
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compatk	300	448.1.65.386.3.64	synth with cache (only 1: intros n; only 1: unfold eqk; only 1: intro eq_dep_eq; only 1: repeat red; only 1: unfold ltk; only 1: CRelationClasses.simpl_crelation).	103.085152	98975
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.nlit_blit_neg	300	1.0.0.0.0.580.1.0.1	synth with cache (only 1: unfold nlit; only 1: intros; only 1: unfold is_pos, lit, blit; only 1: reflexivity || apply f_equal || exfalso; only 1: rewrite (bit_xor_split l)  at 2; only 1: rewrite is_even_bit, negb_true_iff in H; only 1: rewrite H; only 1: symmetry; only 1: apply lxor0_r).	90.482836	121974
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.empty_list_length	300	0.0.0.1	synth with cache (only 1: intros A l; only 1: split; only 1: now destruct l; only 1: now intros ->).	0.137985	91
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.is_Ftrue_correct	300	389.3	synth with cache (only 1: intros m; only 1: now destruct m).	2.149912	5861
+coq-smtcoq.2.0+8.11	SMTCoq.cnf.Cnf.length_or_of_imp	300	1.5	synth with cache (only 1: intro m; only 1: apply length_amapi).	1.046689	1501
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Arithmetic.Arith.Valid.wf_rho	300	0.0	synth with cache (only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form); only 1: trivial).	0.075079	2
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.inj	300	384	synth with cache (only 1: lia).	0.176433	171
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_split	300	1	synth with cache (only 1: destr_bool).	0.031611	2
+coq-smtcoq.2.0+8.11	SMTCoq.ReflectFacts.ReflectFacts.reflect_iff	300	0.0.0.0	synth with cache (only 1: destruct 1; only 1: intuition; only 1: intuition; only 1: discriminate).	0.067388	4
+coq-smtcoq.2.0+8.11	SMTCoq.ReflectFacts.ReflectFacts.iff_reflect	300	0.0.0	synth with cache (only 1: destr_bool; only 1: intuition; only 1: intuition).	0.056395	3
+coq-smtcoq.2.0+8.11	SMTCoq.ReflectFacts.ReflectFacts.reflect_dec	300	0.0.0	synth with cache (only 1: destruct 1; only 1: auto; only 1: auto).	0.047727	3
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_split2	300	325.1	synth with cache (only 1: intros; only 1: destr_bool).	4.713760	4677
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.def_t_atom	300	0.1	synth with cache (only 1: destruct (check_atom_correct _ ch_atom); only 1: auto).	0.044878	3
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.wf_t_form	300	0.0.2	synth with cache (only 1: destruct (check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form) as [H _]; only 1: destruct H; only 1: auto).	0.181399	138
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_split211	300	6.0	synth with cache (only 1: intro H; only 1: destr_bool).	2.123659	4170
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_split212	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct b1; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b1; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial).	12.607663	3558
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_split221	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct b1; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b1; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial).	4.302866	3101
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_split222	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct b1; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b1; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct b2; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c1; only 1: destruct c2; only 1: trivial; only 1: trivial; only 1: destruct c2; only 1: trivial; only 1: trivial).	3.573687	2119
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_or_split_right	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct b; only 1: trivial; only 1: trivial; only 1: destruct b; only 1: trivial; only 1: trivial).	0.104603	8
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_or_split_left	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct c; only 1: intuition; only 1: intuition; only 1: destruct c; only 1: intuition; only 1: intuition).	0.105758	8
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.eqb_sym_or_split_right	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct c; only 1: intuition; only 1: intuition; only 1: destruct c; only 1: intuition; only 1: intuition).	0.131295	8
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.eqb_sym_or_split_left	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct c; only 1: intuition; only 1: intuition; only 1: destruct c; only 1: intuition; only 1: intuition).	0.108229	8
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.eqb_or_split_right	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct c; only 1: intuition; only 1: intuition; only 1: destruct c; only 1: intuition; only 1: intuition).	0.173027	8
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.eqb_or_split_left	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct c; only 1: intuition; only 1: intuition; only 1: destruct c; only 1: intuition; only 1: intuition).	0.138052	8
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.eqb_or_split	300	514.0	synth with cache (only 1: intro H; only 1: destr_bool).	0.661515	141
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_and_split_right	300	0.0.0.0.0.2.0.0.0.0	synth with cache (only 1: intro H; only 1: destruct a; only 1: destruct c; only 1: intuition; only 1: destruct b; only 1: trivial; only 1: trivial; only 1: destruct c; only 1: intuition; only 1: intuition).	1.264097	769
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.impl_and_split_left	300	0.1.0.128.1.0	synth with cache (only 1: intro H; only 1: destruct c; only 1: destr_bool; only 1: destruct a; only 1: now rewrite andb_false_r in H; only 1: intuition).	3.048736	890
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.eqb_to_eq_dec	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.comp_of_compdec	300	131	synth with cache (only 1: apply _).	0.015489	12
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbToDecType.EqbToDecType	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.eqb_refl	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.eqb_sym	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqb_key_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqb_elt_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ke_dec	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ke_ord	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.eqb_spec_false	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.is_empty_2	300	642.129.0.384	synth with cache (only 1: intro z; only 1: unfold Empty, MapsTo; only 1: intros n H1 H2; only 1: easy || now destruct 1).	2.178858	1720
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_not_eqke	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compat'	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_alt	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_Inf_In	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.T2Z_pres	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_leb_morph	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_Inf_NotIn	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_NoDupA	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_add_morph	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_mul_morph	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_leb_morph	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_In_cons_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_In_cons_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_ltb_morph	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_In_cons_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_eqb_morph	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_sym	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_trans	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.lt_trans	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.lt_not_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.compare	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_copy	300	129.0	synth with cache (only 1: intros n m Hn; only 1: constructor 1).	0.018123	9
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.length_copy	300	66	synth with cache (only 1: auto with relations).	0.013378	7
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.default_copy	300	0.0	synth with cache (only 1: unfold copy; only 1: reflexivity).	0.017117	2
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.default_make	300	0.0	synth with cache (only 1: unfold make, get; only 1: reflexivity).	0.017662	2
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_dec	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.le_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.lt_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_outofbound	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.not_0_ltb	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_set_same	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_set_other	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.lsr0_l	300	0.0.0	synth with cache (only 1: apply to_Z_inj; only 1: rewrite lsr_spec; only 1: reflexivity).	0.022873	3
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.default_set	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.MapsTo_inj	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.leb_ltb_eqb	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_Z_add_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_Z_add_1_wB	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.leb_not_gtb	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.neg_involutive	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.leb_negb_gtb	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.blit_neg	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.lit_blit	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.ltb_negb_geb	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.lit_blit_neg	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.is_pos_true	300	0.770	synth with cache (only 1: vm_compute; only 1: trivial).	0.064899	84
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.is_pos_false	300	711	synth with cache (only 1: now rewrite ?firstn_nil).	0.192772	466
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_Z_sub_gt	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.Comparable2EqbType.compare2eqb_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_Z_sub_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.leb_length	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.lsr1_bit	300	1.5.128	synth with cache (only 1: intros H0 H1; only 1: unfold bit, is_zero; only 1: now case eqbP).	10.211180	11389
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.def_t_atom	300	0.5	synth with cache (only 1: destruct (check_atom_correct _ ch_atom); only 1: trivial).	0.834621	931
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_Z_sub_1_diff	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_Z_sub_1_0	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.lit_interp_false	300	1.69	synth with cache (only 1: rewrite <- not_true_iff_false; only 1: apply wf_rho).	6.105804	4292
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.id''	300	65	synth with cache (only 1: lia).	0.053627	6
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Operators.Operators.check_in_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.euf.Euf.certif.Proof.wf_t_atom	300
+coq-smtcoq.2.0+8.11	SMTCoq.euf.Euf.certif.Proof.def_t_atom	300	0.0	synth with cache (only 1: destruct (Atom.check_atom_correct _ ch_atom); only 1: auto).	0.044808	2
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.length_set	300	0.0.0.1.0.4	synth with cache (only 1: intros; only 1: destruct t as ((t, d), l); only 1: unfold set, get, length; only 1: case (l ≤ i); only 1: reflexivity; only 1: reflexivity).	31.164817	12647
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.lit_interp_true	300	66.706.0.1.130.1.3	synth with cache (only 1: destruct (check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form) as [H _]; only 1: destruct H; only 1: clear H0; only 1: destruct (check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form); only 1: destruct H; only 1: intuition auto with arith; only 1: apply H1).	25.357707	19929
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.nth_eq1	300	0	synth with cache (only 1: trivial).	0.026384	1
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.inj_iff	300	0.0.0.0.0.835	synth with cache (only 1: repeat split; only 1: intro H; only 1: rewrite <- (id'' a), <- (id'' a'); only 1: now f_equal; only 1: intro H; only 1: now f_equal).	2.243989	757
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.le_lt_or_eq	300	256.259	synth with cache (only 1: intros H l; only 1: Lia.lia).	1.262668	393
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.inj	300	67.64.65.0.1.0.578.0	synth with cache (only 1: destruct a as [| p]; only 1: Lia.lia; only 1: simpl; only 1: destruct (Pos2Nat.is_succ p) as (n, H); only 1: rewrite H; only 1: destruct H as [H2 H3]; only 1: intro H4; only 1: lia).	14.469733	13342
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Unit.unit_comp	300	0.1.2.1.24	synth with cache (only 1: split; only 1: intros; only 1: apply EQ; only 1: destruct x, y; only 1: trivial).	9.833657	20192
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_Inf	300	1.64.0.65.66.64.0.1.0.0.0.0.0.320.0.0.0.0.320.257.1.0.0	synth with cache (only 1: intros m x y e e'; only 1: unfold ltk, eqk; only 1: generalize y, e; only 1: intros H; only 1: intro y0; only 1: simpl; only 1: induction m as [| [k' _x] l IHb]; only 1: simpl; only 1: auto with smtcoq_array; only 1: intros H'; only 1: simpl; only 1: case_eq (compare x k'); only 1: intros _x0 e0 hyp; only 1: auto with smtcoq_array; only 1: intros _x0 e0; only 1: auto with smtcoq_array; only 1: intros _x0 e1; only 1: induction l as [| a l IH]; only 1: constructor; only 1: let rec inv := invlist InA; invlist Sorted; invlist HdRel; invlist SetoidList.NoDupA in inv; only 1: auto with smtcoq_array; only 1: let rec inv := invlist InA; invlist Sorted; invlist HdRel; invlist SetoidList.NoDupA in inv; only 1: auto with smtcoq_array).	60.853757	45737
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.nat_case	300	321.1.4	synth with cache (only 1: induction n; only 1: trivial; only 1: eauto with ordered_type).	14.219440	15869
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.wf_t_form	300	0.0.0.2	synth with cache (only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form) as [H _]; only 1: destruct H; only 1: destruct H; only 1: auto).	0.328655	86
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.id'	300	0.0.129.1156.270	synth with cache (only 1: destruct s; only 1: Nat.cases ltac:(n); only 1: now Z.nzsimpl; only 1: simpl; only 1: apply SuccNat2Pos.id_succ).	19.370571	30666
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.is_empty_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_sorted	300	0.0.0.0.1.1.0.0.1.0.0	synth with cache (only 1: induction m; only 1: simpl; only 1: intuition; only 1: intros; only 1: destruct a as (x', e'); only 1: inversion_clear Hm; only 1: simpl; only 1: case (compare x x'); only 1: intuition; only 1: intuition; only 1: intuition).	2.454030	1677
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_1	300	386.0	synth with cache (only 1: intros m; only 1: easy).	0.031068	22
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_2	300	3	synth with cache (only 1: auto with smtcoq_array).	0.018186	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_3	300	2	synth with cache (only 1: intuition).	0.036286	21
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_3w	300	0	synth with cache (only 1: exact (SortA_NoDupA eqk_equiv ltk_strorder ltk_compatk)).	0.018579	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.fold_1	300	387.1.65.65.448	synth with cache (only 1: intros N; only 1: compute; only 1: induction N as [| a l Hal N IH]; only 1: auto with smtcoq_array; only 1: CRelationClasses.simpl_crelation).	5.315350	5184
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.is_pos_lit	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.blit_true	300	0	synth with cache (only 1: reflexivity).	0.031687	1
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.blit_false	300	0	synth with cache (only 1: reflexivity).	0.030848	1
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.interp_true	300	1.0	synth with cache (only 1: intros rho [H _]; only 1: now intuition).	0.038975	3
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.interp_false	300	0.0	synth with cache (only 1: intros rho [_ H]; only 1: exact H).	0.041568	2
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.wf_t_atom	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.nth_eq0	300	0.1.0	synth with cache (only 1: intro la; only 1: intros; only 1: now simpl).	0.079932	4
+coq-smtcoq.2.0+8.11	SMTCoq.Trace.trace._checker__correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.is_Ffalse_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Assumptions.Interp_UF.interp_equiv	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.wf_t_atom	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.def_t_atom	300	0.0	synth with cache (only 1: destruct (check_atom_correct _ ch_atom); only 1: auto).	0.045603	2
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.wf_t_atom	300
+coq-smtcoq.2.0+8.11	SMTCoq.cnf.Cnf.get_or_of_imp	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_not_default_lt	300	448.705.0.0.256.640.128.448.896.450.704.1.0.256.770.0	synth with cache (only 1: unfold get; only 1: case (to_Z_bounded x); only 1: generalize x; only 1: unfold set, get, length; only 1: destruct t as ((t, d), l); only 1: intuition subst; try ring; auto with real; only 1: intro; only 1: generalize x; only 1: intros u Hu; only 1: destruct (to_Z_bounded x) as [hx hx']; only 1: intros H; only 1: destruct t; only 1: rewrite ltb_spec; only 1: case ltbP; only 1: intuition auto; Nat.Private_Tac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *; only 1: now subst).	156.044289	78518
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Syntactic.CheckAtom.AUX.list_beq_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Arithmetic.Arith.Valid.valid_check_spl_arith	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.of_bits_size	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR._of_bits_size	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bits_size	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_eq_reflect	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_eq_refl	300
+coq-smtcoq.2.0+8.11	SMTCoq.ReflectFacts.ReflectFacts.implyP	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Unit.unit_ord	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.Interp.Interp_get.lt_form_interp_form_aux	300
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.geb_ge	300
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.Group.Unnamed_thm	300	0	synth with cache (only 1: auto).	0.031637	1
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.Group.Unnamed_thm0	300	0.0.0.0.0	synth with cache (only 1: prop2bool_hyp associative; only 1: prop2bool_hyp identity; only 1: prop2bool_hyp inverse; only 1: prop2bool_hyp other_id; only 1: exact I).	0.183999	5
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.MultipleCompDec.Unnamed_thm1	300	1	synth with cache (only 1: trivial).	0.026061	2
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.Poly.Unnamed_thm1	300	2	synth with cache (only 1: auto).	0.029096	3
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.Unnamed_thm1	300	0	synth with cache (only 1: trivial).	0.024547	1
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.Unnamed_thm2	300	0	synth with cache (only 1: trivial).	0.024514	1
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.Unnamed_thm3	300	0	synth with cache (only 1: trivial).	0.024032	1
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.def_t_form	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.wf_rho	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.is_even_0	300	0	synth with cache (only 1: trivial).	0.064816	1
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.rho_false	300	0.128.2.0.0.0.0	synth with cache (only 1: unfold Lit.interp; only 1: unfold Lit.is_pos; only 1: cut (is_even 1 = false); only 1: intro Hev; only 1: simpl; only 1: apply wf_rho; only 1: easy).	3.571190	885
+coq-smtcoq.2.0+8.11	SMTCoq.QInst.eqb_of_compdec_sym	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.compdec_eq_eqb	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.mem_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.mem_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.mem_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.find_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.empty_nodefault	300	321.321.0	synth with cache (only 1: unfold Raw.empty; only 1: intros a Ha; only 1: now f_equal).	0.026061	30
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.find_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_sorted	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.MapsTo_1	300	128.64.0	synth with cache (only 1: intro e; only 1: intros _x0 e0 eqfind; only 1: simpl_relation).	0.076052	49
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.empty_1	300	1.1	synth with cache (only 1: intro e; only 1: apply Raw.empty_1).	0.047961	30
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_4_aux	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.is_empty_2	300	192.64.640.129.0.258.0	synth with cache (only 1: intros m; only 1: compute; only 1: intro H0; only 1: intro y; only 1: induction 1 as [l| x l l' AD IH]; only 1: congruence; only 1: now PeanoNat.Nat.nzsimpl).	7.779478	11848
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.length_make	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_set_same_default	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.ltb_leb_sub1	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.minus_1_lt	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.lxor_lsr	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.pow2_size	300	0.256.0	synth with cache (only 1: intros; only 1: rewrite <- N2Z.inj_pos; only 1: apply to_Z_bounded).	0.135144	15
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_ult_not_eqP	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_4	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.bit_or_split	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.lsr_is_even_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.is_pos_neg	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.is_pos_nlit	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.is_even_or	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.blit_lit	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.is_even_xor	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.blit_nlit	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.bit_xor_split	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Unit.unit_eqbtype	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Bool.ltb_bool_iff_lt	300	1024.0.1.0	synth with cache (only 1: split; only 1: intros; only 1: auto; only 1: N.auto').	0.051908	21
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.lxor_nilpotent	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.interp_nlit	300	384.0.2.1.0.0	synth with cache (only 1: intros rho l; only 1: unfold interp; only 1: unfold nlit; only 1: rewrite is_pos_neg, blit_neg; only 1: rewrite is_pos_lit, blit_lit; only 1: auto with arith).	1.613871	1617
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_2	300	0.0.2.128.0.64.0	synth with cache (only 1: intros m; only 1: intros a0 y H H0; only 1: intro; only 1: compute; only 1: apply (Raw.remove_2 _ (sorted m)); only 1: auto; only 1: auto).	1.141458	881
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_slt_not_eqP	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.of_bits_size	300	0.0.2.0.0.1.0	synth with cache (only 1: unfold bits, size; only 1: induction l as [| a l' Hrec]; only 1: simpl; only 1: trivial; only 1: destruct a; only 1: now rewrite Nat2N.id; only 1: now rewrite Nat2N.id).	0.612668	865
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_ult_not_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.interp_eq_compat	300	2.768.256.645.1	synth with cache (only 1: intros m Hm x; only 1: compute; only 1: intro n; only 1: induction n; only 1: auto).	9.416160	12164
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.int_ind	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_slt_not_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.int_ind_bounded	300
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.def_t_form	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.Interp.Interp_get.length_t_interp	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.bit_sub1_0	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length_mk_list_false	300	258.0.320.3.769	synth with cache (only 1: intuition subst; auto with qarith; only 1: induction n; only 1: now simpl; only 1: simpl; only 1: congruence).	2.469825	3358
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.sub1_lsr	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_3	300	0.1.320.3.514.0	synth with cache (only 1: intros m; only 1: intros n1 m1 H; only 1: unfold MapsTo; only 1: repeat red; only 1: simpl; only 1: apply (Raw.remove_3 _ (sorted m))).	10.506310	15581
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.rho_interp	300
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Operators.Operators.check_diseqs_complete_aux_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.euf.Euf.certif.Proof.def_t_form	300
+coq-smtcoq.2.0+8.11	SMTCoq.euf.Euf.certif.Proof.wf_t_form	300	0.0.0.2	synth with cache (only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form) as [H _]; only 1: destruct H; only 1: destruct H; only 1: auto).	0.134172	82
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_ult_B2P	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length_mk_list_true	300	0.0.0.0.0.0.0	synth with cache (only 1: intro n; only 1: induction n as [| n' IHn]; only 1: simpl; only 1: trivial; only 1: simpl; only 1: apply f_equal; only 1: exact IHn).	0.047884	7
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_slt_B2P	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.Interp.Interp_get.default_t_interp	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.eqb_compdec_spec	300	0.0.0.0.0	synth with cache (only 1: intros x y; only 1: destruct c as [TY [E HE] O C I]; only 1: unfold eqb_of_compdec; only 1: simpl; only 1: now rewrite HE).	0.058799	5
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Operators.Operators.check_diseqs_complete_aux_false_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.diseq_neg_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Bool.bool_ord	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbDiseq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_Inf	300
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.wf_rho	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_checkbb	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_checkbb'	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_and_comm	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.eq_rec	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.List_eq_refl	300	261.0.0.0	synth with cache (only 1: induction l; only 1: simpl; only 1: trivial; only 1: now destruct a).	0.585571	951
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.nth_nil	300	256.640.66.192.1.642	synth with cache (only 1: intros GT; only 1: intro bs; only 1: intro Hin1; only 1: case bs; only 1: now Z.nzsimpl; only 1: auto with *).	18.108450	8956
+coq-smtcoq.2.0+8.11	SMTCoq.ReflectFacts.ReflectFacts.iffP	300	192.3.0.0.0.0.128.0.0.833.897.1.0.0.0.0.0.0.0.0.0.0.3	synth with cache (only 1: intros; only 1: apply iff_reflect; only 1: case_eq ltac:(b1); only 1: case_eq ltac:(b1); only 1: case_eq ltac:(b2); only 1: intros; only 1: easy; only 1: intros; only 1: intuition; only 1: intros; only 1: intuition; only 1: intro l; only 1: repeat constructor; only 1: revert l; only 1: case_eq ltac:(b2); only 1: intros; only 1: apply eq_true_iff_eq; only 1: trivial; only 1: intros; only 1: easy; only 1: easy; only 1: apply eqb_prop in H; only 1: intuition eauto  4 with real).	200.323575	347606
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.List_eqP_refl	300	193.65.2.707.128.1.0.0.0.0.1.2	synth with cache (only 1: split; only 1: destruct l; only 1: simpl; only 1: intro; only 1: reflexivity || discriminate; only 1: intros H; only 1: reflexivity; only 1: intro H1; only 1: clear H1; only 1: induction l as [| a l IH]; only 1: now try destruct p; only 1: now Z.nzsimpl).	12.462621	35197
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.pow2_lsr	300	1.0.0.704.448.1.448.0.0.0.0.0.0.775	synth with cache (only 1: assert (forall n : nat, (n <= 2 * n)%nat); only 1: intro n; only 1: simpl; only 1: rewrite <- (Nat.add_0_r n); only 1: rewrite <- Nat.add_assoc; only 1: apply Nat.add_le_mono_l; only 1: apply Nat.le_0_l; only 1: intros p abs; only 1: rewrite Nat2Z.inj_succ; only 1: N.nzsimpl; only 1: intro xPos; only 1: rewrite lsr_spec; only 1: auto using Z_lt_div2; only 1: trivial using Nat2Z.is_nonneg).	88.392601	87951
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.equal_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_1	300	0.0	synth with cache (only 1: intros; only 1: auto).	0.024802	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_2	300	0.0	synth with cache (only 1: intros m; only 1: apply Raw.elements_1).	0.023133	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_3	300	0.0	synth with cache (only 1: intros m; only 1: apply (sorted m)).	0.023326	2
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.interp_neg	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.nth_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.Trace.Sat_Checker.resolution_checker_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Assumptions.Checker_correct.interp_check_clause	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.def_t_form	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.Interp.Interp_get.t_interp_wf	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.wf_t_form	300	0.0.0.2	synth with cache (only 1: destruct (check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form) as [H _]; only 1: destruct H; only 1: destruct H; only 1: auto).	0.132669	82
+coq-smtcoq.2.0+8.11	SMTCoq.cnf.Cnf.get_or_of_imp2	300
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.build_positive_atom_aux_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Syntactic.CheckAtom.AUX.list_beq_compute_interp	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_or_comm	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_add_comm	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_and_assoc	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_or_assoc	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_xor_assoc	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Bool.bool_comp	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.Interp.wf_interp_form_lt	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.i_eqb_spec_false	300	1.0.0	synth with cache (only 1: intros; only 1: unfold i_eqb; only 1: apply eqb_spec_false).	0.056111	4
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.reflect_eqb_compdec	300	0.0.0.8.1.0	synth with cache (only 1: intros; only 1: destruct c as [TY [E HE] O C I]; only 1: apply iff_reflect; only 1: unfold eqb_of_compdec; only 1: simpl; only 1: now rewrite HE).	4.950971	9313
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.reflect_i_eqb	300	2.0.65	synth with cache (only 1: destr_bool; only 1: unfold i_eqb; only 1: apply SMT_classes.reflect_eqb).	0.652532	679
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.rho_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_add_assoc	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.bitOf_of_bits	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.eq_head	300	320.961.128.384	synth with cache (only 1: intros l; only 1: generalize wt_t_atom; only 1: intros Az AS AP n; only 1: intuition congruence).	8.077680	2362
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.Interp.wf_interp_form	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.eqb_compdec_refl	300	0.65.0.1028.1.0	synth with cache (only 1: intro H; only 1: destruct c as [TY [E HE] O C I]; only 1: generalize H; only 1: unfold eqb_of_compdec; only 1: destr_bool; only 1: now rewrite HE).	12.071881	4036
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.i_eqb_refl	300	0.0.257	synth with cache (only 1: intro H1; only 1: unfold i_eqb; only 1: apply eqb_refl).	0.232770	129
+coq-smtcoq.2.0+8.11	SMTCoq.Trace.Sat_Checker.C_interp_or_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Syntactic.CheckAtom.AUX.check_atom_aux_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.equal_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.equal_cons	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.cmp_refl	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.cardinal_1	300	64.0	synth with cache (only 1: intros m; only 1: split).	0.019026	5
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_nodefault	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_sorted	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_nodefault	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.mem_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.mem_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.is_empty_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.iter_int63_aux_comm	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.iter_int63_comm	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_not_involutive	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bits_size	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.nodefault_tail	300	512.513.67.129	synth with cache (only 1: intros k H1 H2; only 1: compute in H2; only 1: intros l2; only 1: eauto).	22.396468	23628
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.interp_lit	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.Lit.lxor_neg	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Z.Z_ord	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.iter_int63_aux_S	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.iter_int63_S	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.foldi_ge	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.foldi_lt_l	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.foldi_lt_r	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.compare_spec'	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.foldi_ind	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.C.interp_true	300	256.256.0.1.1	synth with cache (only 1: intros; only 1: simpl; only 1: unfold Lit.interp; only 1: elim H; only 1: firstorder).	1.724486	1319
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_mk_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.Fold_left2.foo	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.C.OR.or_aux_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.foldi_ind2	300
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.build_positive_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.get_amap_outofbound	300	0.0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold amap; only 1: rewrite get_outofbound; only 1: apply default_amapi; only 1: rewrite length_amapi; only 1: auto).	0.151073	6
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.foldi_eq_compat	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST._of_bits_size	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Form.Interp.check_form_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.foldi_to_list	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_and_empty_empty1	300	1.0.64	synth with cache (only 1: destruct a; only 1: now simpl; only 1: split).	0.053620	8
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_and_empty_empty2	300	0.0.0.0.0.0	synth with cache (only 1: intros a; only 1: induction a as [| a' xs IHxs]; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.139835	6
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_and_idem2	300	2.1.0.1.0.0.0.0.0.0.0	synth with cache (only 1: intros a b; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: symmetry; only 1: rewrite <- map2_and_comm; only 1: symmetry; only 1: apply map2_and_idem1).	8.151664	19254
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.find_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_list_In	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_nth_empty_false	300	0.0.9.1	synth with cache (only 1: simpl; only 1: intros [| ]; only 1: trivial; only 1: trivial).	6.230807	15277
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.mk_list_false_equiv	300	896.0.0.0.0.64.0.0	synth with cache (only 1: induction t as [| t IHt]; only 1: auto; only 1: intros a; only 1: simpl; only 1: rewrite IHt; only 1: rewrite app_assoc_reverse; only 1: apply f_equal; only 1: Morphisms.solve_proper).	0.224887	166
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.len_mk_list_true_empty	300	0.0	synth with cache (only 1: simpl; only 1: trivial).	0.033965	2
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Operators.Operators.check_diseqs_complete_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.euf.Euf.certif.Proof.wf_rho	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.zeros_size	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.List_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.List_eqP	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_and_idem_comm2	300	2.1.0.0.1.0.0.0.0.0	synth with cache (only 1: intros a b; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: symmetry; only 1: rewrite <- map2_and_comm; only 1: rewrite <- map2_and_comm; only 1: symmetry; only 1: apply map2_and_idem1).	19.143374	38394
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.mk_list_ltrue	300	66	synth with cache (only 1: reflexivity).	0.031824	22
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.eqb_compdec_spec_false	300
+coq-smtcoq.2.0+8.11	SMTCoq.spl.Operators.Operators.check_diseqs_complete_false_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbVar	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_bbc_length	300
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Z.Z_comp	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.i_eqb_t	300	66.0.1.836	synth with cache (only 1: intros m; only 1: intros; only 1: unfold i_eqb; only 1: now destruct m).	9.918871	11555
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eq_2	300	0.0.0.384.1.384.0.0.0.0.0.0.513.192.0.1	synth with cache (only 1: intros m m'; only 1: generalize (eq_equal m m'); only 1: inversion 1; only 1: reflexivity || destruct H; only 1: generalize (eq_equal m m'); only 1: intuition; only 1: generalize (equal_1 (m:=m) (m':=m')); only 1: generalize (eq_equal m m'); only 1: intuition; only 1: generalize (equal_1 (m:=m) (m':=m')); only 1: rewrite H  at 1; only 1: intro HH; only 1: generalize H; only 1: apply Raw.equal_2; only 1: apply (sorted m); only 1: apply (sorted m')).	59.947306	44879
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.find_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.euf.Euf.certif.Proof.valid_C_true	300	322.0.128.0.192.64.64.0.0.642.1.1	synth with cache (only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form); only 1: destruct H; only 1: generalize (eq_sym H); only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form); only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form); only 1: intro Hneq; only 1: case H0; only 1: clear H; only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form); only 1: destruct H2; only 1: destruct (Form.check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form); only 1: RelationClasses.simpl_relation).	21.411020	11413
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_check_bbc	300
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.build_positive_atom_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Interp.Interp_Equality.i_eqb_trans	300	0.2.257.64	synth with cache (only 1: red; only 1: intro HF; only 1: intros x y z; only 1: apply eqb_trans).	33.099506	17299
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.build_z_atom_correct	300	3.0	synth with cache (only 1: intros a z; only 1: apply build_z_atom_aux_correct).	2.544676	1071
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_check_bbc2	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbConst	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.C.is_false_correct	300	514.0.65.0.195	synth with cache (only 1: intros n m; only 1: destruct n; only 1: auto with *; only 1: intros; only 1: now f_equal).	48.875968	67026
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_check_not	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_not_length	300
+coq-smtcoq.2.0+8.11	SMTCoq.ReflectFacts.ReflectFacts.implyP2	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.List_neq	300
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_and_0_absorb	300	580.0.0.645.0.2.0.0	synth with cache (only 1: intro a; only 1: induction a as [| a xs IHxs]; only 1: simpl; only 1: auto; only 1: revert a; only 1: simpl; only 1: rewrite IHxs; only 1: now destruct a).	5.949243	16766
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.to_list_In_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_3w	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.C.or_correct	300
+coq-smtcoq.2.0+8.11	SMTCoq.State.S.valid_get	300	1.0	synth with cache (only 1: intros; only 1: auto).	0.036749	3
