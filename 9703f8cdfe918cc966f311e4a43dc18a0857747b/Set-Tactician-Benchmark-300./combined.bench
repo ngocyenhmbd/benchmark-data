@@ -7314,3 +7314,727 @@ coq-corn.8.16.0	CoRN.reals.Max_AbsIR.Maximum.properties_of_Max.pos_max_one	300	0
 coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.ac_simplify_holes_app	300	0.0.0.0.1.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: simpl in H; only 1: generalize (ac_simplify_holes_preserved c1); only 1: intros pres1; only 1: generalize (ac_simplify_holes_preserved c2); only 1: intros pres2; only 1: simpl; only 1: do 2 match_destr; only 1: simpl in *; only 1: rewrite <- pres1, <- pres2 in H; only 1: simpl in H; only 1: intuition).	28.751472	18288
 coq-corn.8.16.0	CoRN.reals.Q_dense.Rational_sequence.a_simple_inequality	300
 coq-qcert.2.2.0	Qcert.Data.ModelTyping.TData.TData.normalize_preserves_type	300
+coq-printf.2.0.0	Printf.Flags.option_identity	300	67	synth with cache (only 1: repeat split).	0.010897	8
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.lt_elt_strorder	300	0	synth with cache (only 1: apply StrictOrder_OrdType).	0.013939	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.lt_key_strorder	300	0.1.0	synth with cache (only 1: split; only 1: easy; only 1: apply _).	0.030603	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_right_l	300	0	synth with cache (only 1: auto).	0.014323	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_right_r	300	1.0.0	synth with cache (only 1: unfold ltk; only 1: intros; only 1: auto).	0.024441	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_refl	300	3	synth with cache (only 1: easy).	0.016028	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_refl	300	0	synth with cache (only 1: auto with smtcoq_array).	0.014149	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_sym	300	0.0	synth with cache (only 1: unfold eqk, eqke; only 1: intuition).	0.025993	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_sym	300	0.448.0	synth with cache (only 1: unfold eqk, eqke; only 1: intros m H1 H2; only 1: intuition).	0.057564	24
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_trans	300	128.0.0	synth with cache (only 1: unfold ltk; only 1: intros; only 1: now rewrite H).	0.028289	9
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.convert.implb_impl	300	1	synth with cache (only 1: Bool.destr_bool).	0.282847	217
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.T2Z_id	300	1.1	synth with cache (only 1: intro n; only 1: auto).	0.021838	4
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.T2Z_pres	300	0	synth with cache (only 1: reflexivity).	0.018988	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_eqk	300	323.64.257	synth with cache (only 1: intros Hab; only 1: intro; only 1: firstorder using StronglySorted_inv).	0.458358	437
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_add_morph	300	0.0	synth with cache (only 1: intros; only 1: now Z.nzsimpl).	0.044796	2
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_mul_morph	300	66.0	synth with cache (only 1: intros; only 1: intuition).	0.044885	7
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_leb_morph	300	0	synth with cache (only 1: easy || now destruct y).	0.015672	1
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_ltb_morph	300	0	synth with cache (only 1: reflexivity).	0.016602	1
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.pos_convert_type.t2z_eqb_morph	300	0	synth with cache (only 1: reflexivity).	0.015915	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_trans	300	256.258.321.1	synth with cache (only 1: intros; only 1: CRelationClasses.reduce; only 1: rewrite ?PeanoNat.Nat.add_0_l, ?PeanoNat.Nat.add_0_r, ?H; only 1: PeanoNat.Nat.auto').	0.830966	854
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_equiv	300	0.0.0.0	synth with cache (only 1: split; only 1: eauto with smtcoq_array; only 1: eauto with smtcoq_array; only 1: eauto with smtcoq_array).	0.117542	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_strorder	300	0.1.128.5.1	synth with cache (only 1: split; only 1: unfold ltk; only 1: intro LE; only 1: apply StrictOrder_OrdType; only 1: eauto with smtcoq_array).	1.156032	1167
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.T2Z_id	300	0.130.260.128.0	synth with cache (only 1: intros; only 1: N.bitwise; only 1: destruct x; only 1: Bool.destr_bool; only 1: now destruct (Pos.pred_N p)).	3.020785	4236
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_not_eqk	300	449.0.448.258.0	synth with cache (only 1: unfold eqk, eqke; only 1: intro n; only 1: intros (Ha, H); only 1: intros; only 1: eauto using PeanoNat.Nat.Private_Tac.eq_trans, PeanoNat.Nat.Private_Tac.eq_sym).	3.775894	3138
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eq_equiv	300	513.64.258.2.0.1	synth with cache (only 1: split; only 1: auto with smtcoq_array; only 1: auto with smtcoq_array; only 1: intros a Ha; only 1: intros (H1, H2); only 1: CRelationClasses.simpl_crelation).	0.599595	744
+coq-hott.8.11	HoTT.Basics.PathGroupoids.inv_VV	300	0.0.0	synth with cache (only 1: destruct p; only 1: destruct q; only 1: reflexivity).	0.010726	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_Vp	300	0.0.0	synth with cache (only 1: destruct r; only 1: intro h; only 1: exact ((concat_1p _ @ h) @ concat_1p _)).	0.013365	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_pV	300	1.0.0	synth with cache (only 1: destruct p; only 1: intro h; only 1: exact ((concat_p1 _ @ h) @ concat_p1 _)).	0.014979	4
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_Vp	300	1.0.0	synth with cache (only 1: destruct r; only 1: intro h; only 1: exact (((concat_1p _)^ @ h) @ (concat_1p _)^)).	0.018936	4
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_1V	300	0.0.0	synth with cache (only 1: destruct q; only 1: intro h; only 1: exact ((concat_p1 _)^ @ h)).	0.018144	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_V1	300	1.0.0	synth with cache (only 1: destruct q; only 1: intro h; only 1: exact ((concat_1p _)^ @ h)).	0.019799	4
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_1M	300	0.0.6	synth with cache (only 1: destruct q; only 1: intro h; only 1: exact (((concat_p1 _)^ @ h) @ (concat_p1 _)^)).	0.146532	117
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_pV	300	1.4.0.0	synth with cache (only 1: destruct p; only 1: intro h; only 1: destruct q; only 1: exact (((concat_p1 _)^ @ h) @ (concat_p1 _)^)).	0.182241	93
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_M1	300	4.0.2	synth with cache (only 1: destruct p; only 1: intro h; only 1: exact ((concat_1p _ @ h) @ concat_1p _)).	0.161370	106
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_1M	300	4.0.1	synth with cache (only 1: destruct p; only 1: intro h; only 1: exact ((concat_p1 _ @ h) @ concat_p1 _)).	0.131837	80
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_1V	300	3.0.1	synth with cache (only 1: destruct p; only 1: intro h; only 1: exact (h @ concat_p1 _)).	0.100850	51
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_transport_V	300	0.0	synth with cache (only 1: destruct p; only 1: exact idmap).	0.016077	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_V1	300	3.0.1	synth with cache (only 1: destruct p; only 1: intro h; only 1: exact (h @ concat_1p _)).	0.105658	51
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_transport_V	300	0.0	synth with cache (only 1: destruct p; only 1: exact idmap).	0.016588	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_transport_p	300	0.0	synth with cache (only 1: destruct p; only 1: exact idmap).	0.017527	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compat	300	320.321.256.129.448	synth with cache (only 1: intros a; only 1: intro x; only 1: assert (succ_r : forall x y, x + S y = S (x + y)) by now induction x; only 1: intro H; only 1: CRelationClasses.simpl_crelation).	1.187521	812
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_transport_V_V	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.019289	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_transport_V_V	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.020350	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_transport_p_V	300	9.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.116544	102
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_transport_p_V	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.022521	2
+coq-hott.8.11	HoTT.Tactics.EvalIn.eval_in_example	300	0.2.1.0.13	synth with cache (only 1: intro h; only 1: intros y p; only 1: destruct p; only 1: intro r; only 1: apply r).	0.717367	2081
+coq-hott.8.11	HoTT.Tactics.EvalIn.rewrite_refl_example	300	0	synth with cache (only 1: reflexivity).	0.009895	1
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_pM	300	1.0.7.2	synth with cache (only 1: intro h; only 1: destruct h, p; only 1: destruct q; only 1: reflexivity).	0.911999	1021
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_pp_p	300	0.0.0.8	synth with cache (only 1: destruct r; only 1: destruct p, q; only 1: simpl; only 1: reflexivity).	0.486004	255
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_equiv	300	326.450.6.1.1	synth with cache (only 1: split; only 1: split; only 1: easy; only 1: intros m a b Ha Hb; only 1: congruence).	5.024279	4198
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_asym	300	130	synth with cache (only 1: auto with *).	0.018590	11
+coq-hott.8.11	Coq.Init.Peano.pred_Sn	300	1	synth with cache (only 1: trivial).	0.005317	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_homotopic	300	5.6.0.6	synth with cache (only 1: destruct q; only 1: simpl; only 1: destruct p; only 1: reflexivity).	0.795168	351
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_M1	300	2.0.25.0	synth with cache (only 1: destruct q; only 1: simpl; only 1: intro h; only 1: exact (((concat_1p _)^ @ h) @ (concat_1p _)^)).	1.950430	3275
+coq-hott.8.11	Coq.Init.Peano.not_eq_S	300
+coq-hott.8.11	Coq.Init.Peano.plus_n_O	300
+coq-hott.8.11	Coq.Init.Peano.plus_O_n	300	0.0.0.0.0	synth with cache (only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.007522	5
+coq-hott.8.11	Coq.Init.Peano.plus_n_Sm	300	1.0.1.3	synth with cache (only 1: induction n; only 1: auto; only 1: simpl; only 1: auto).	0.023018	39
+coq-hott.8.11	Coq.Init.Peano.plus_Sn_m	300	0.0.0.0.0.0	synth with cache (only 1: intros n m; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.010083	6
+coq-hott.8.11	Coq.Init.Peano.mult_n_O	300	1.0.0.0.0	synth with cache (only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).	0.007782	6
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_homotopic_id	300	2.4.4	synth with cache (only 1: destruct q; only 1: destruct p; only 1: reflexivity).	0.893519	264
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_pA_p	300	0.1.0.15	synth with cache (only 1: destruct q; only 1: simpl; only 1: repeat rewrite concat_p1; only 1: reflexivity).	0.446837	190
+coq-hott.8.11	Coq.Init.Logic_Type.identity_is_a_congruence.identity_sym	300
+coq-hott.8.11	Coq.Init.Logic_Type.identity_is_a_congruence.identity_trans	300	0.0.0	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.004309	3
+coq-hott.8.11	Coq.Init.Logic_Type.identity_is_a_congruence.identity_congr	300	0.0	synth with cache (only 1: destruct 1; only 1: trivial).	0.003611	2
+coq-hott.8.11	HoTT.Tactics.Nameless.Unnamed_thm	300	2.1	synth with cache (only 1: intro H; only 1: apply False_rec).	0.004481	12
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_pA1_pp	300	0.0.0.0	synth with cache (only 1: destruct q, s; only 1: simpl; only 1: repeat rewrite concat_p1; only 1: reflexivity).	0.050727	4
+coq-hott.8.11	Coq.Init.Specif.Choice_lemmas.Choice	300
+coq-hott.8.11	Coq.Init.Logic_Type.identity_is_a_congruence.not_identity_sym	300
+coq-hott.8.11	Coq.Init.Logic_Type.identity_is_a_congruence.f_equal2	300	0.0.3	synth with cache (only 1: destruct 1; only 1: destruct 1; only 1: trivial).	0.020244	39
+coq-hott.8.11	Coq.Init.Logic_Type.identity_ind_r	300	0.7	synth with cache (only 1: destruct 2; only 1: trivial).	0.012395	45
+coq-hott.8.11	Coq.Init.Logic_Type.identity_rec_r	300	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: case identity_sym with (1 := H0); only 1: trivial).	0.004531	3
+coq-hott.8.11	Coq.Init.Logic_Type.identity_rect_r	300	0.0.0	synth with cache (only 1: intros A x P H y H0; only 1: case identity_sym with (1 := H0); only 1: trivial).	0.004918	3
+coq-hott.8.11	HoTT.Basics.Overture.paths_rew	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_pp_A1p	300	0.0.0.0	synth with cache (only 1: destruct q, s; only 1: simpl; only 1: repeat rewrite concat_p1; only 1: reflexivity).	0.053186	4
+coq-hott.8.11	HoTT.Basics.Overture.paths_rew_r	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_pA1_p	300	0.0.0.1	synth with cache (only 1: destruct q; only 1: simpl; only 1: repeat rewrite concat_p1; only 1: reflexivity).	0.053257	5
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_A1_pp	300	0.0.0.0	synth with cache (only 1: destruct q, s; only 1: simpl; only 1: repeat rewrite concat_p1, concat_1p; only 1: reflexivity).	0.046576	4
+coq-hott.8.11	Coq.Init.Peano.mult_n_Sm	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_pp_A1	300	0.0.0.0	synth with cache (only 1: destruct q; only 1: simpl; only 1: repeat rewrite concat_p1; only 1: reflexivity).	0.054933	4
+coq-hott.8.11	Coq.Init.Peano.nat_case	300	0.0.1.5	synth with cache (only 1: induction n; only 1: intros n m; only 1: auto; only 1: auto).	0.049714	112
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_p_A1p	300	0.0.0.0	synth with cache (only 1: destruct q, s; only 1: cbn; only 1: repeat rewrite concat_p1, concat_1p; only 1: reflexivity).	0.046946	4
+coq-hott.8.11	Coq.Init.Peano.nat_double_ind	300	0.0.3.2.1	synth with cache (only 1: induction n; only 1: auto; only 1: destruct m; only 1: auto; only 1: auto).	0.042906	65
+coq-hott.8.11	HoTT.Basics.Overture.paths_ind'	300
+coq-hott.8.11	Coq.Init.Peano.nat_iter_succ_r	300	0.4.0.1.6	synth with cache (only 1: induction n as [| p H]; only 1: trivial; only 1: simpl; only 1: destruct H; only 1: trivial).	0.180792	292
+coq-hott.8.11	HoTT.Basics.Overture.reflexive_pointwise_paths	300	12	synth with cache (only 1: split).	0.021865	142
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_pA_pp	300	14.7.3.8	synth with cache (only 1: destruct q; only 1: simpl; only 1: destruct p; only 1: reflexivity).	1.367344	1449
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_not_ltk	300	64.576.64.0.321.64.1	synth with cache (only 1: unfold eqke, ltk; only 1: intros P b H H0; only 1: CRelationClasses.simpl_crelation; only 1: apply lt_not_eq in H; only 1: simpl in *; only 1: easy || now destruct 1; only 1: firstorder).	1.985989	1690
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_A_pp	300	4.11.0.0	synth with cache (only 1: destruct q; only 1: simpl; only 1: destruct p; only 1: reflexivity).	1.167248	827
+coq-hott.8.11	Coq.Init.Peano.nat_iter_plus	300	0.1.3.0.1.0	synth with cache (only 1: induction n; only 1: auto; only 1: simpl; only 1: intros; only 1: rewrite <- ?IHn; only 1: trivial).	0.108031	82
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_p1_1	300	0.0.0.0.0.0	synth with cache (only 1: rewrite <- (inv_V q); only 1: set (r := q^); only 1: clearbody r; only 1: clear q; only 1: destruct r; only 1: reflexivity).	0.058456	6
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD10_ap_precompose	300	0.12	synth with cache (only 1: destruct p; only 1: reflexivity).	0.390955	212
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_ltk	300	0.0.0.0.0.0	synth with cache (only 1: unfold ltk, eqk; only 1: destruct e, e', e''; only 1: simpl; only 1: intros; only 1: subst; only 1: trivial).	0.029233	6
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD10_ap_postcompose	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.024415	2
+coq-hott.8.11	Coq.Init.Peano.nat_iter_invariant	300	8.1.0.1.0.2	synth with cache (only 1: intros; only 1: induction n; only 1: simpl; only 1: trivial; only 1: simpl; only 1: auto).	0.821133	834
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_pos_pos_rev	300	1.0.320	synth with cache (only 1: intros Hnm Hpq; only 1: Z.swap_greater; only 1: apply Z.mul_pos_cancel_l).	0.689057	333
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_eq	300	0.65.512	synth with cache (only 1: intros m IH H; only 1: destruct 1; only 1: auto with smtcoq_array).	0.061101	85
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_p_pp	300	0.0.1.4	synth with cache (only 1: destruct r; only 1: destruct p, q; only 1: simpl; only 1: reflexivity).	0.543853	102
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.closure_inflationary	300	192.1.1.2.0.64.0	synth with cache (only 1: red; only 1: intro n; only 1: intro H'0; only 1: red; only 1: red; only 1: constructor; only 1: firstorder).	0.799747	1141
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_transport_p	300	42.0.0	synth with cache (only 1: destruct p; only 1: intro h; only 1: assumption).	4.429991	11938
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.MapsTo_eq	300	64.192.1.66	synth with cache (only 1: destr_bool; only 1: inversion H; only 1: rewrite <- H in *; only 1: auto with *).	0.349412	137
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_pVp	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.023233	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_trans	300	65.129.64.132	synth with cache (only 1: intros q; only 1: intros ? ? ? [Hl Hr]; only 1: destruct H; only 1: simpl_relation).	9.566365	9293
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_VpV	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.024613	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_p_pp	300	1.20.21.0.0	synth with cache (only 1: destruct p; only 1: destruct q; only 1: simpl; only 1: destruct r; only 1: reflexivity).	4.658523	10421
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_transport_V_1	300	0.1	synth with cache (only 1: destruct p; only 1: reflexivity).	0.022295	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.paths_ind_r_transport	300	1.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.021104	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap11_is_ap10_ap01	300	0.2	synth with cache (only 1: destruct h, p; only 1: reflexivity).	0.025229	4
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap011	300	2	synth with cache (only 1: by path_induction).	0.071108	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap011D	300	0.0	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.019538	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap01D1	300	0.0	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.020786	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD011	300	0.0	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.022573	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport2_p2p	300	13	synth with cache (only 1: by path_induction).	0.108068	99
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_transport	300	2	synth with cache (only 1: by destruct p).	0.017791	3
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_eqk	300	64.0.2.1	synth with cache (only 1: unfold ltk; only 1: intros x x' H; only 1: intuition; only 1: intuition congruence).	2.295246	1178
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_transportD	300	0	synth with cache (only 1: by induction p).	0.015214	1
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_transportD2	300	0	synth with cache (only 1: by induction p).	0.015916	1
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_pV_ap	300	1.1	synth with cache (only 1: destruct p; only 1: reflexivity).	0.023744	4
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_transport_pV	300	0.0.0.1.0	synth with cache (only 1: apply moveL_pV; only 1: destruct q; only 1: simpl; only 1: destruct p; only 1: reflexivity).	0.110308	24
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD_pp	300	4	synth with cache (only 1: by path_induction).	0.062812	20
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD_V	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.023476	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_const	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.017009	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_compose	300	0	synth with cache (only 1: by path_induction).	0.016783	1
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transportD_compose	300	2	synth with cache (only 1: by induction p).	0.024840	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_apD_transportD	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.033471	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_precompose	300	1.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.021093	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.transport_transport	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.022287	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD_const	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.025327	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD_compose	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.028788	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD_compose'	300	0	synth with cache (only 1: by destruct p).	0.022922	1
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat2_ap_ap	300	0.1	synth with cache (only 1: destruct p; only 1: reflexivity).	0.025053	3
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_pp_concat_pV	300	5	synth with cache (only 1: by destruct p).	0.038476	19
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_pp_concat_Vp	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.029917	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_pV_inverse2	300	1.2.0	synth with cache (only 1: destruct p; only 1: destruct r; only 1: reflexivity).	0.060633	17
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_Vp_inverse2	300	0.0	synth with cache (only 1: destruct r, p; only 1: reflexivity).	0.027321	2
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_pos_neg_rev	300	0.0.0.0.0.1.0.0.1.0	synth with cache (only 1: intros x y H1 H2; only 1: case (Z.le_gt_cases 0 y); only 1: intros H3; only 1: absurd (x * y < 0); only 1: apply Zle_not_lt; only 1: auto with zarith; only 1: auto with zarith; only 1: intros H3; only 1: apply Z.lt_gt; only 1: auto).	2.488573	2749
+coq-poltac.0.8.11	PolTac.ZAux.Zopp_lt	300	0	synth with cache (only 1: auto with zarith).	0.024606	1
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.closure_minimal	300	0.0.0.576.448.1.1	synth with cache (only 1: intros H'6 H'7; only 1: intros; only 1: intro Dec; only 1: induction 1; only 1: apply H0; only 1: split; only 1: auto with sets).	2.628922	2724
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.interior_deflationary	300	0.2.516.512.576	synth with cache (only 1: intros a; only 1: repeat red; only 1: inversion 1; only 1: apply H0; only 1: apply H1).	5.021263	8399
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Inf_eq	300	0.66.321.578	synth with cache (only 1: intros a b Ha; only 1: inversion 1; only 1: rewrite H; only 1: eauto with *).	5.514678	5377
+coq-bbv.1.3	bbv.NatLib.pow2_ne_zero	300	0.0	synth with cache (only 1: intro n; only 1: Nat.order_nz).	0.032663	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.InA_eqke_eqk	300	321.66.66.3	synth with cache (only 1: unfold eqk, eqke; only 1: induction 1; only 1: firstorder; only 1: intuition auto; PeanoNat.Nat.Private_OrderTac.Tac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *).	6.101007	8612
+coq-bbv.1.3	bbv.NatLib.mul2_add	300	320.705	synth with cache (only 1: intros m; only 1: auto with zarith).	0.090423	70
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.empty_1	300	2	synth with cache (only 1: inversion 1).	0.013687	3
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.empty_sorted	300	387	synth with cache (only 1: now constructor).	0.012126	28
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv_2	300	0.384.0.448	synth with cache (only 1: intros n m p H; only 1: inversion_clear 1; only 1: now rewrite ?Ha; only 1: eauto with *).	0.176047	159
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.is_empty_2	300	642.129.0.384	synth with cache (only 1: intro z; only 1: unfold Empty, MapsTo; only 1: intros n H1 H2; only 1: easy || now destruct 1).	1.879189	1720
+coq-hott.8.11	HoTT.Classes.theory.rationals.contents.rational_1_neq_0	300	11	synth with cache (only 1: apply _).	0.828825	732
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_mul_morph	300	0.0.0.3.0.0.0.0.11.0	synth with cache (only 1: intros x y; only 1: destruct x; only 1: destruct y; only 1: reflexivity; only 1: simpl; only 1: trivial; only 1: destruct y; only 1: simpl; only 1: trivial; only 1: reflexivity).	11.328449	19864
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_eqb_morph	300	0.0.0.0.0.0	synth with cache (only 1: intros x y; only 1: destruct x, y; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity; only 1: reflexivity).	0.040132	6
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.T2Z_id	300	1.0.0.0.385.129.4	synth with cache (only 1: intro n; only 1: PeanoNat.Nat.bitwise; only 1: f_equal; only 1: induction n; only 1: now simpl; only 1: simpl; only 1: apply SuccNat2Pos.id_succ).	1.606933	2958
+coq-hott.8.11	HoTT.Classes.theory.rationals.contents.Qpos_plus_pr	300	2.768.514	synth with cache (only 1: intros [Hy Hl2]; only 1: intros [k E]; only 1: solve_propholds).	2.350961	700
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_refl	300	129.0.912	synth with cache (only 1: vm_compute; only 1: apply eqb_spec; only 1: now rewrite ?IHj).	0.727729	2986
+coq-topology.10.0.1	Topology.Neighborhoods.open_neighborhood_is_neighborhood	300	0.512.448	synth with cache (only 1: intros H a b; only 1: exists a; only 1: auto with sets).	0.393833	411
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv_3	300	0.0.0.1.1	synth with cache (only 1: unfold ltk, eqk; only 1: unfold eqke; only 1: inversion_clear 1; only 1: intuition; only 1: intuition).	5.924650	4010
+coq-haskell.1.0.0	Hask.Prelude.compA	300	0	synth with cache (only 1: constructor).	0.021772	1
+coq-tlc.20200328	TLC.LibListSub.Prefix.prove_prefix_snoc	300	0.2.0.0.320	synth with cache (only 1: intro n; only 1: intros; only 1: subst; only 1: exists ys; only 1: rewrite ~ app_assoc).	2.075427	1771
+coq-printf.2.0.0	Printf.FormatParser.Test.roundtrip_test	300	0	synth with cache (only 1: exact eq_refl).	0.064969	1
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.T2Z_pres	300	578.3.69.1	synth with cache (only 1: intro; only 1: destruct x; only 1: easy; only 1: auto with relations).	2.756035	3471
+coq-poltac.0.8.11	PolTac.ZSignTac.Test.test1	300	1.129.66	synth with cache (only 1: intros Base Step; only 1: intros n; only 1: apply Z.mul_lt_mono_pos_l).	3.750147	3267
+coq-bbv.1.3	bbv.NatLib.pow2_S	300	0.1.0	synth with cache (only 1: simpl; only 1: intros a; only 1: eauto).	0.037618	4
+coq-bbv.1.3	bbv.NatLib.mod2_S_S	300	514.0	synth with cache (only 1: intros; only 1: exact eq_refl).	0.058830	28
+coq-poltac.0.8.11	PolTac.ZSignTac.Test.test2	300	0.1	synth with cache (only 1: intros a b c H1 H2; only 1: hyp_zsign_tac H2).	0.489564	36
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Inf_lt	300	1.4.1.130.0.64.2	synth with cache (only 1: intros x y z; only 1: intro; only 1: intuition; only 1: destruct H0; only 1: intuition; only 1: right; only 1: eauto with smtcoq_array).	15.849846	13998
+coq-topology.10.0.1	Topology.Homeomorphisms.homeomorphism_is_invertible	300	258.0.577	synth with cache (only 1: intros a b Ha; only 1: intros; only 1: firstorder).	0.290876	294
+coq-mathcomp-apery.1.0.1	mathcomp.apery.test_conj.test_andb_to_and_low_level_4	300	0	synth with cache (only 1: by case b1; case b2; case b3; case b4; constructor; try by case).	0.049001	1
+coq-mathcomp-apery.1.0.1	mathcomp.apery.test_conj.test_andb_to_and_4	300	0.0.0.0.0.0	synth with cache (only 1: rewrite Private.and_bootstrap; only 1: rewrite !Private.and_eat_one; only 1: rewrite -Private.andb_iter_cons_cons; only 1: move /Private.and_iterP ; only 1: rewrite /=; only 1: done).	0.081941	6
+coq-mathcomp-apery.1.0.1	mathcomp.apery.test_conj.test_andb_to_and_low_level_3	300	66	synth with cache (only 1: do ?by rewrite ?ltxx; constructor).	0.053552	7
+coq-mathcomp-apery.1.0.1	mathcomp.apery.test_conj.test_andb_to_and_3	300	0.0.0.0.0.0	synth with cache (only 1: rewrite Private.and_bootstrap; only 1: rewrite !Private.and_eat_one; only 1: rewrite -Private.andb_iter_cons_cons; only 1: move /Private.and_iterP ; only 1: rewrite /=; only 1: done).	0.078778	6
+coq-mathcomp-apery.1.0.1	mathcomp.apery.test_conj.test_andb_to_and_low_level_2	300	0	synth with cache (only 1: by case b1; case b2; constructor; auto; case; auto).	0.038125	1
+coq-mathcomp-apery.1.0.1	mathcomp.apery.test_conj.test_andb_to_and_2	300	0.0.0.0.0	synth with cache (only 1: rewrite Private.and_bootstrap; only 1: rewrite -Private.andb_iter_cons_cons; only 1: move /Private.and_iterP ; only 1: rewrite /=; only 1: done).	0.063474	5
+coq-topology.10.0.1	Topology.NeighborhoodBases.open_neighborhood_basis_is_neighborhood_basis	300	64.128.132	synth with cache (only 1: compute; only 1: intros f g l H; only 1: firstorder).	4.367790	4841
+coq-bbv.1.3	bbv.NatLib.one_lt_pow2	300	385.513.448.70.1.2	synth with cache (only 1: simpl; only 1: intros; only 1: induction n as [| k iHk]; only 1: auto using Z.mul_1_r; only 1: Bool.destr_bool; only 1: eauto with *).	16.722131	15707
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_pM	300	2.2.14.1.29	synth with cache (only 1: intro H; only 1: destruct p; only 1: rewrite H; only 1: destruct q; only 1: reflexivity).	29.493837	111001
+coq-haskell.1.0.0	Hask.Data.Maybe.Equivalence_Maybe_obligation_1	300	0.0.128.643.3.1.391.10	synth with cache (only 1: red; only 1: intro m; only 1: red; only 1: elim H; only 1: destruct m as [| m]; only 1: intros x y; only 1: firstorder; only 1: auto).	9.876581	15226
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_func_continuous_everywhere	300	129.7.448	synth with cache (only 1: intros k e2; only 1: red; only 1: firstorder  discriminate).	7.548573	14460
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveL_Mp	300	3.2.15.31.0	synth with cache (only 1: destruct r; only 1: intro H; only 1: rewrite <- H; only 1: destruct q; only 1: reflexivity).	33.344622	106538
+coq-tlc.20200328	TLC.LibVar.Variables.Inhab_var	300	1	synth with cache (only 1: apply (Inhab_of_val 0)).	0.008059	2
+coq-tlc.20200328	TLC.LibFset.Properties.inter_comm	300	0.0.0.0.0.576.136	synth with cache (only 1: intros H; only 1: intros K; only 1: apply fset_extens; only 1: intros x; only 1: rewrite_all * in_inter; only 1: intros x; only 1: rewrite_all * in_inter).	17.653911	18634
+coq-topology.10.0.1	Topology.Neighborhoods.neighborhood_interior	300	0.194.0.0.65.0.0.64.0.65.132	synth with cache (only 1: intro EQ; only 1: intros a n; only 1: intros; only 1: elim H; only 1: intros; only 1: destruct H; only 1: firstorder; only 1: econstructor; only 1: constructor; only 1: eauto; only 1: eassumption).	18.133846	41994
+coq-haskell.1.0.0	Hask.Control.Compose.ComposeMonadLaws.fmap_compose	300	1.0	synth with cache (only 1: simpl; only 1: split).	0.014172	3
+coq-poltac.0.8.11	PolTac.PolAux.trans_equal_r	300	0.0	synth with cache (only 1: intros A x y z H1 H2; only 1: now transitivity y).	0.053341	2
+coq-poltac.0.8.11	PolTac.PolAux.plus_eq_compat_l	300	66.0	synth with cache (only 1: intros n m p H; only 1: now subst).	0.053729	7
+coq-poltac.0.8.11	PolTac.PolAux.plus_neg_reg_l	300	0.0.0	synth with cache (only 1: intros a b c H H1; only 1: case H; only 1: auto).	0.069768	3
+coq-poltac.0.8.11	PolTac.PolAux.plus_ge_reg_l	300	384.0	synth with cache (only 1: intros n m p H; only 1: intuition).	0.290393	72
+coq-poltac.0.8.11	PolTac.PolAux.plus_neg_compat_l	300	704.2	synth with cache (only 1: intros; only 1: Lia.lia).	0.595927	733
+coq-poltac.0.8.11	PolTac.PolAux.eq_lt_trans_l	300	64.0	synth with cache (only 1: intros x y z; only 1: Nat.Private_Tac.order).	0.062788	5
+coq-poltac.0.8.11	PolTac.PolAux.eq_lt_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.066284	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_gt_trans_l	300	65.1.0	synth with cache (only 1: intros x y z H; only 1: intro; only 1: now subst).	0.080347	7
+coq-poltac.0.8.11	PolTac.PolAux.eq_le_trans_l	300	128.0	synth with cache (only 1: intros x y z; only 1: now destruct 1).	0.069236	8
+coq-poltac.0.8.11	PolTac.PolAux.eq_le_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.063877	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_gt_trans_r	300	66.0	synth with cache (only 1: intros x y z H; only 1: firstorder).	0.215840	82
+coq-poltac.0.8.11	PolTac.PolAux.eq_ge_trans_l	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.066598	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_ge_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.066893	3
+coq-poltac.0.8.11	PolTac.PolAux.plus_ge_compat_l	300	448.322	synth with cache (only 1: intros t H4; only 1: auto with zarith).	1.106945	473
+coq-poltac.0.8.11	PolTac.PolAux.ge_trans	300	194.0	synth with cache (only 1: intros x y z; only 1: Lia.lia).	0.175091	55
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_eq_compat_l	300	0.0.0.384.0.128.128.0	synth with cache (only 1: intros n m p q; only 1: f_equal; only 1: destruct n, m; only 1: trivial; only 1: rewrite q; only 1: auto; only 1: trivial; only 1: now N.nzsimpl').	0.204855	38
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_gt_compat_l	300	0.0.0	synth with cache (only 1: intros; only 1: to_nat; only 1: auto with arith).	0.071307	3
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_ge_compat_l	300	385.0	synth with cache (only 1: intros; only 1: Lia.lia).	0.506611	187
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_lt_compat_l	300	1024.1472.66.0	synth with cache (only 1: intros n m p; only 1: set (m' := m - n); only 1: intros z; only 1: Lia.lia).	0.796164	950
+coq-bbv.1.3	bbv.NatLib.one_le_pow2	300	0.453.9.1.8.0	synth with cache (only 1: induction sz; only 1: simpl; only 1: reflexivity; only 1: Nat.nzsimpl; only 1: auto with zarith; only 1: lia).	31.534010	76599
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_neg_reg_l	300	897.1.0.0	synth with cache (only 1: intros a b c H1 H2; only 1: case H1; only 1: apply Nplus_reg_l with a; only 1: Lia.lia).	0.215097	36
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_gt_reg_l	300	0.0.0.0	synth with cache (only 1: intros; only 1: to_nat; only 1: apply plus_lt_reg_l with nn1; only 1: auto with arith).	0.083024	4
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_le_reg_l	300	321.1.0	synth with cache (only 1: intros; only 1: to_nat; only 1: Lia.lia).	0.109151	15
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_ge_reg_l	300	0.1.0.0	synth with cache (only 1: intros; only 1: to_nat; only 1: apply plus_le_reg_l with nn1; only 1: auto with arith).	0.083766	5
+coq-poltac.0.8.11	PolTac.PolAux.Neq_lt_trans_l	300	1	synth with cache (only 1: N.order).	0.122225	105
+coq-poltac.0.8.11	PolTac.PolAux.Neq_lt_trans_r	300	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: assumption).	0.065394	3
+coq-poltac.0.8.11	PolTac.PolAux.Neq_gt_trans_l	300	0.1.0.768.0	synth with cache (only 1: intros; only 1: cut (0%nat <> 2%nat); only 1: subst; only 1: trivial; only 1: discriminate).	0.109721	42
+coq-poltac.0.8.11	PolTac.PolAux.Neq_gt_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.063528	3
+coq-poltac.0.8.11	PolTac.PolAux.Neq_le_trans_l	300	0.66	synth with cache (only 1: inversion 1; only 1: auto).	0.207667	125
+coq-poltac.0.8.11	PolTac.PolAux.Neq_le_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.067453	3
+coq-poltac.0.8.11	PolTac.PolAux.Neq_ge_trans_l	300	1.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.067161	4
+coq-poltac.0.8.11	PolTac.PolAux.Neq_ge_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.064348	3
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_neg_compat_l	300	449.832.1.64	synth with cache (only 1: intros x0 H14; only 1: red; only 1: intros a a_encad; only 1: Lia.lia).	3.080355	2966
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zlt_trans_l	300	64.0	synth with cache (only 1: intros x y z; only 1: Z.order).	0.063997	5
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zlt_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.064217	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zgt_trans_l	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.060933	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zgt_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.060732	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zle_trans_l	300	0.0	synth with cache (only 1: intros x y z; only 1: now intros ->).	0.052475	2
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zle_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.066141	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zge_trans_l	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.068720	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zge_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.063805	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rlt_trans_l	300	1.0	synth with cache (only 1: generalize Rlt_trans, Rlt_eq_compat; only 1: intuition eauto  2).	0.027683	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rlt_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.029627	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rgt_trans_l	300	0.0.1	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.038580	4
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rgt_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.031617	3
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_lt_reg_l	300	960.641.514.833	synth with cache (only 1: intros l H8; only 1: intro pr; only 1: inversion 1; only 1: Lia.lia).	7.003715	10180
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rle_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.067127	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rge_trans_l	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.067328	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rge_trans_r	300	0.0.0	synth with cache (only 1: intros x y z H; only 1: rewrite H; only 1: auto).	0.067648	3
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rle_trans_l	300	896.0.0	synth with cache (only 1: intros x y z H; only 1: intro; only 1: congruence).	0.559064	638
+coq-poltac.0.8.11	PolTac.PolAux.Rge_trans	300	0	synth with cache (only 1: eauto using Rle_trans with rorders).	0.015157	1
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_le_compat_l	300	0.0.0.131	synth with cache (only 1: intros x y H; only 1: intro E; only 1: to_nat; only 1: auto with arith).	12.673190	20848
+coq-haskell.1.0.0	Hask.Data.Maybe.Maybe_choose_spec	300	2.0.4.0.772	synth with cache (only 1: intro E; only 1: intros; only 1: destruct x; only 1: trivial; only 1: trivial).	24.047004	41894
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.closure_fixes_closed	300	193.4.384.704.0.128.8.2	synth with cache (only 1: intro; only 1: extensionality_ensembles; only 1: firstorder  discriminate; only 1: constructor; only 1: intro s; only 1: intro H1; only 1: apply H1; only 1: now rewrite ?Hx).	54.789122	86706
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.interior_maximal	300	320.0.1.9.2.322.64	synth with cache (only 1: intros a b H; only 1: intros Hn; only 1: red; only 1: exists a; only 1: split; only 1: auto with sets; only 1: now rewrite ?BinPos.Pos.square_xO).	57.480826	118747
+coq-haskell.1.0.0	Hask.Data.Maybe.Equivalence_Maybe_obligation_2	300	128.64.321.131.64.385.135.385	synth with cache (only 1: intro n; only 1: intro LE; only 1: induction n; only 1: intros n'; only 1: destruct LE as [LT| EQ]; only 1: easy'; only 1: now rewrite ?IHp, ?IHpe, ?Pms_ok, ?EnvRing.Pmul_ok; only 1: eauto).	40.992987	43463
+coq-topology.10.0.1	Topology.NeighborhoodBases.open_basis_to_open_neighborhood_basis	300	195.66.193.64	synth with cache (only 1: intro H'0; only 1: intros EQ; only 1: intros b LT; only 1: firstorder).	39.638181	45549
+coq-poltac.0.8.11	PolTac.NAux.Nlt_lt_rev	300	0.0.577.65.0.0.0.0.0.2.0	synth with cache (only 1: intros n m; only 1: case m; only 1: case n; only 1: unfold N.lt; only 1: simpl; only 1: intros; only 1: discriminate; only 1: Bool.destr_bool; only 1: intros a H; only 1: rewrite <- Nat.compare_lt_iff, <- N2Nat.inj_compare, N.compare_lt_iff; only 1: auto).	50.475313	64056
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_lt	300	64.0.0.0.449.0.960.65	synth with cache (only 1: intro; only 1: intros a; only 1: repeat rewrite Z2R_correct; only 1: assert (int78 : -2 <= 7 / 8 <= 2) by (split; Lra.lra); only 1: destruct int78 as [lower upper]; only 1: intro H6; only 1: assert (lo : -2 <= 7 / 8) by Lra.lra; only 1: now apply IZR_lt).	18.951329	27071
+coq-topology.10.0.1	Topology.Neighborhoods.interior_neighborhood	300	66.0.0.133	synth with cache (only 1: intros LT; only 1: intros; only 1: destruct H; only 1: firstorder).	36.353726	47855
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_add_morph	300	898.64.64.2.0.133.128.392	synth with cache (only 1: intros b; only 1: intros H; only 1: destruct b; only 1: now Z.nzsimpl; only 1: simpl; only 1: symmetry; only 1: symmetry; only 1: now elim H).	71.651567	166394
+coq-poltac.0.8.11	PolTac.PolAux.Nge_trans	300	257.2.512.1024.193.257	synth with cache (only 1: intros Hcond; only 1: intro H1; only 1: intros eps ep; only 1: intros Eq2; only 1: to_nat; only 1: Lia.lia).	35.212689	58444
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_ltb_morph	300	0.1.0.1.0.0.2.8	synth with cache (only 1: intros n m; only 1: destruct n, m; only 1: reflexivity; only 1: simpl; only 1: split; only 1: simpl; only 1: split; only 1: reflexivity).	74.724467	133601
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_increasing	300	0.0.0.1.1.1.3.0.768.514.576	synth with cache (only 1: intros x y z; only 1: intro A; only 1: Bool.destr_bool; only 1: induction H; only 1: exists S; only 1: constructor; only 1: destruct H; only 1: induction H; only 1: auto with sets; only 1: destruct H as [[]]; only 1: eassumption).	73.303600	150343
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.complement_inclusion	300	320.386.0	synth with cache (only 1: intros; only 1: intros b Hb IH; only 1: BinNat.N.auto').	0.355229	374
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compatk	300	448.1.65.386.3.64	synth with cache (only 1: intros n; only 1: unfold eqk; only 1: intro eq_dep_eq; only 1: repeat red; only 1: unfold ltk; only 1: CRelationClasses.simpl_crelation).	97.374036	98661
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_neg_pos_rev	300	0.0.0.0.0.193.512.2.1.0.0.0.3.0	synth with cache (only 1: intros x y H1 H2; only 1: Z.swap_greater; only 1: case (Z.le_gt_cases y 0); only 1: intros H3; only 1: absurd (x * y < 0); only 1: apply Zle_not_lt; only 1: apply Zle_sign_neg_neg; only 1: congruence; only 1: intros EQ; only 1: absurd (x * y < 0); only 1: auto with zarith; only 1: auto with zarith; only 1: auto with zarith; only 1: auto with zarith).	105.561870	173149
+coq-poltac.0.8.11	PolTac.ZAux.Zopp_ge	300	128.0	synth with cache (only 1: intros; only 1: auto with zarith).	0.038024	8
+coq-haskell.1.0.0	Hask.Control.Compose.ComposeMonadLaws.Compose_FunctorLaws_obligation_1	300	65.71.1.649.0.7.0	synth with cache (only 1: extensionality x; only 1: elim H0; only 1: intros; only 1: case H0; only 1: intros; only 1: firstorder; only 1: congruence).	82.239667	144778
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_not_eqke	300	0.1.0.0.130.0.129.515.0.0	synth with cache (only 1: unfold ltk, eqk; only 1: intros; only 1: destruct e; only 1: red; only 1: simpl in H; only 1: CRelationClasses.simpl_crelation; only 1: apply (lt_not_eq k k0); only 1: auto; only 1: inversion H0; only 1: auto).	159.153066	181155
+coq-haskell.1.0.0	Hask.Data.Maybe.fmap_endo_nothing	300	258.4.0.0.140.128.2	synth with cache (only 1: simpl; only 1: firstorder; only 1: destruct m as [| m]; only 1: inversion H; only 1: simpl in H; only 1: assumption; only 1: now subst).	94.731078	199421
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_Inf	300	1.64.0.65.66.64.0.1.0.0.0.0.0.320.0.0.0.0.320.257.1.0.0	synth with cache (only 1: intros m x y e e'; only 1: unfold ltk, eqk; only 1: generalize y, e; only 1: intros H; only 1: intro y0; only 1: simpl; only 1: induction m as [| [k' _x] l IHb]; only 1: simpl; only 1: auto with smtcoq_array; only 1: intros H'; only 1: simpl; only 1: case_eq (compare x k'); only 1: intros _x0 e0 hyp; only 1: auto with smtcoq_array; only 1: intros _x0 e0; only 1: auto with smtcoq_array; only 1: intros _x0 e1; only 1: induction l as [| a l IH]; only 1: constructor; only 1: let rec inv := invlist InA; invlist Sorted; invlist HdRel; invlist SetoidList.NoDupA in inv; only 1: auto with smtcoq_array; only 1: let rec inv := invlist InA; invlist Sorted; invlist HdRel; invlist SetoidList.NoDupA in inv; only 1: auto with smtcoq_array).	59.541949	45827
+coq-bbv.1.3	bbv.NatLib.mod2_pow2_twice	300	0.0.64.1.69.136	synth with cache (only 1: do 2 (destruct n; simpl in *; repeat rewrite untimes2 in *; intuition); only 1: destruct n; only 1: Nat.nzsimpl'; only 1: simpl in *; only 1: trivial; only 1: apply mod2_double).	120.047624	271560
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqb_key_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqb_elt_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ke_dec	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ke_ord	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.T2Z_pres	300
+coq-hott.8.11	HoTT.Categories.Category.Sum.internals.sum_compose	300
+coq-hott.8.11	HoTT.Categories.Category.Sum.sum	300	13	synth with cache (only 1: assumption).	0.019235	99
+coq-hott.8.11	HoTT.Basics.PathGroupoids.inv_pV	300
+coq-hott.8.11	HoTT.Basics.Contractible.path2_contr	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.moveR_Mp	300
+coq-hott.8.11	HoTT.Basics.Contractible.path_basedpaths	300	2.1	synth with cache (only 1: destruct p; only 1: reflexivity).	0.026943	17
+coq-hott.8.11	HoTT.Basics.Contractible.contr_paths_contr	300
+coq-hott.8.11	HoTT.Basics.Contractible.path_basedpaths'	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.016662	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compat'	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerR_pp	300	0.0	synth with cache (only 1: destruct p, r, s; only 1: reflexivity).	0.032439	2
+coq-hott.8.11	HoTT.Classes.implementations.natpair_integers.NatPair.PairT.contents.T_set	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerL_VpL	300	1.0.5.0.2	synth with cache (only 1: destruct r, p; only 1: simpl; only 1: destruct q; only 1: simpl; only 1: reflexivity).	0.878323	469
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerL_pVL	300	0.0	synth with cache (only 1: destruct p, r, q; only 1: reflexivity).	0.036734	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerR_pVR	300	0.0	synth with cache (only 1: destruct p, r, q; only 1: reflexivity).	0.036537	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerR_VpR	300	0.0	synth with cache (only 1: destruct p, r, q; only 1: reflexivity).	0.038572	2
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_concat2	300	4	synth with cache (only 1: by path_induction).	0.058657	13
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_leb_morph	300
+coq-hott.8.11	Coq.Init.Specif.Dependent_choice_lemmas.dependent_choice	300
+coq-hott.8.11	Coq.Init.Peano.le_pred	300
+coq-hott.8.11	Coq.Init.Peano.le_S_n	300
+coq-hott.8.11	HoTT.Categories.Category.Core.identity_unique.identity_unique	300
+coq-hott.8.11	HoTT.Basics.Overture.paths_ind_r	300
+coq-hott.8.11	Coq.Init.Specif.absurd_set	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.concat_1p_1	300
+coq-hott.8.11	HoTT.Basics.Overture.symmetric_pointwise_paths	300	0.1.23.1	synth with cache (only 1: intros ? ?; only 1: intros H x0; only 1: rewrite <- H; only 1: reflexivity).	0.490127	2419
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.interior_open	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerL_pp	300	1.4.6	synth with cache (only 1: destruct q, s; only 1: destruct r; only 1: reflexivity).	2.665795	2248
+coq-hott.8.11	HoTT.Basics.Overture.transitive_pointwise_paths	300
+coq-poltac.0.8.11	PolTac.NAux.Nle_le	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD10_pp	300
+coq-poltac.0.8.11	PolTac.NAux.le_Nle	300
+coq-poltac.0.8.11	PolTac.NAux.Nle_le_rev	300
+coq-hott.8.11	HoTT.Basics.Overture.issig_contr	300
+coq-hott.8.11	HoTT.Basics.Overture.issig_equiv	300	0	synth with cache (only 1: issig).	0.020449	1
+coq-printf.2.0.0	Printf.Justify.right_justify_length	300
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_neg_pos_rev	300
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_neg_neg_rev	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.triangulator	300	3.6	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.298925	121
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.interior_fixes_open	300
+coq-hott.8.11	HoTT.Basics.Overture.issig_isequiv	300	0	synth with cache (only 1: issig).	0.089694	1
+coq-poltac.0.8.11	PolTac.ZAux.Zopp_gt	300	0	synth with cache (only 1: auto with zarith).	0.023613	1
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.closure_closed	300
+coq-poltac.0.8.11	PolTac.NAux.Nlt_lt	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap02_pp	300	14	synth with cache (only 1: by path_induction).	0.348442	269
+coq-hott.8.11	HoTT.Basics.PathGroupoids.pentagon	300	0.6.0.5	synth with cache (only 1: destruct q, r, s; only 1: simpl; only 1: destruct p; only 1: reflexivity).	2.232936	1751
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_alt	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_Inf_In	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap02_p2p	300	0.0.5	synth with cache (only 1: destruct q, r, s; only 1: destruct p; only 1: reflexivity).	0.567363	126
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_transport_Vp_idmap	300	0.2	synth with cache (only 1: destruct p, r, q; only 1: reflexivity).	0.064616	4
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_transport_pV_idmap	300	0	synth with cache (only 1: by path_induction).	0.027565	1
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_le_neg_compat_l	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.apD02_pp	300	4.0	synth with cache (only 1: destruct r1, r2; only 1: by path_induction).	0.224993	38
+coq-topology.10.0.1	Topology.OpenBases.OpenBasis.coverable_by_open_basis_impl_open	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_Inf_NotIn	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.ap_transport_transport_pV	300
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_indexed_intersection	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_NoDupA	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_1	300	386.0	synth with cache (only 1: intros m; only 1: easy).	0.019853	22
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_2	300	3	synth with cache (only 1: auto with smtcoq_array).	0.008923	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_3	300	2	synth with cache (only 1: intuition).	0.022912	21
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.elements_3w	300	0	synth with cache (only 1: exact (SortA_NoDupA eqk_equiv ltk_strorder ltk_compatk)).	0.008727	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_In_cons_1	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerR_p1_1	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.whiskerL_1p_1	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_lt_neg_compat_l	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_increasing	300	0.0.0.0.64.1.448.193	synth with cache (only 1: intros ReprFunChoice; only 1: constructor; only 1: intros; only 1: firstorder; only 1: destruct H0; only 1: apply H0; only 1: split; only 1: auto with sets).	3.703763	3588
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_idempotent	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_sorted	300	0.0.0.0.1.1.0.0.1.0.0	synth with cache (only 1: induction m; only 1: simpl; only 1: intuition; only 1: intros; only 1: destruct a as (x', e'); only 1: inversion_clear Hm; only 1: simpl; only 1: case (compare x x'); only 1: intuition; only 1: intuition; only 1: intuition).	2.112584	1677
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_idempotent	300
+coq-haskell.1.0.0	Hask.Control.Applicative.ApplicativeLaws.fmap_pure	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_In_cons_2	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_ge_neg_compat_l	300	1.1.0.0.0.1.1.66.4.0	synth with cache (only 1: intros n m p H1 H2; only 1: replace (p * n) with (- (- p * n)); only 1: Z.swap_greater; only 1: replace (p * m) with (- (- p * m)); only 1: apply Zopp_le; only 1: apply Zmult_le_compat_l; only 1: Z.order; only 1: auto with zarith; only 1: ring; only 1: ring).	199.945258	495353
+coq-bbv.1.3	bbv.NatLib.pow2_le_S	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.empty_nodefault	300	321.321.0	synth with cache (only 1: unfold Raw.empty; only 1: intros a Ha; only 1: now f_equal).	0.025125	30
+coq-bbv.1.3	bbv.NatLib.pow2_bound_mono	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_In_cons_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv	300
+coq-bbv.1.3	bbv.NatLib.pow2_zero	300	0.0.0.0	synth with cache (only 1: induction sz; only 1: auto; only 1: simpl; only 1: lia).	0.054280	4
+coq-bbv.1.3	bbv.NatLib.pred_add	300	320.2	synth with cache (only 1: intros a Ha; only 1: lia).	0.220769	168
+coq-bbv.1.3	bbv.NatLib.pow2_inc	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.fold_1	300	387.1.65.65.448	synth with cache (only 1: intros N; only 1: compute; only 1: induction N as [| a l Hal N IH]; only 1: auto with smtcoq_array; only 1: CRelationClasses.simpl_crelation).	5.183225	5213
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.is_empty_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.MapsTo_inj	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.mem_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.mem_2	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_lt_compat_l_rev	300	0.68	synth with cache (only 1: intros P Ho Hrec; only 1: apply Z.mul_lt_mono_pos_l).	4.056504	4196
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.mem_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.find_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.find_1	300
+coq-poltac.0.8.11	PolTac.NAux.lt_Nlt	300
+coq-poltac.0.8.11	PolTac.NAux.Neq_eq_rev	300	0.0	synth with cache (only 1: intros; only 1: now f_equal).	0.024947	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.MapsTo_1	300	128.64.0	synth with cache (only 1: intro e; only 1: intros _x0 e0 eqfind; only 1: simpl_relation).	0.061106	49
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.empty_1	300	1.1	synth with cache (only 1: intro e; only 1: apply Raw.empty_1).	0.035132	30
+coq-hott.8.11	HoTT.Classes.theory.rationals.contents.pos_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_sym	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_trans	300
+coq-topology.10.0.1	Topology.Subbases.Subbasis.open_basis_is_subbasis	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_2	300
+coq-haskell.1.0.0	Hask.Prelude.ltn_plus	300
+coq-tlc.20200328	TLC.LibListSub.Prefix.use_prefix_snoc	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_2	300	0.0.2.128.0.64.0	synth with cache (only 1: intros m; only 1: intros a0 y H H0; only 1: intro; only 1: compute; only 1: apply (Raw.remove_2 _ (sorted m)); only 1: auto; only 1: auto).	0.998315	881
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_add_morph	300
+coq-haskell.1.0.0	Hask.Prelude.leq_plus	300	705.4	synth with cache (only 1: intros a Ha; only 1: firstorder).	1.057035	1687
+coq-poltac.0.8.11	PolTac.NAux.Nge_ge	300
+coq-haskell.1.0.0	Hask.Prelude.leq_add2r	300	64.1	synth with cache (only 1: intros n m p LE; only 1: intuition auto with arith).	0.106349	53
+coq-haskell.1.0.0	Hask.Prelude.leq_add2l	300	2.0	synth with cache (only 1: intros; only 1: lia).	0.053831	4
+coq-bbv.1.3	bbv.NatLib.mod2_S_not	300
+coq-bbv.1.3	bbv.NatLib.mod2_S_eq	300
+coq-topology.10.0.1	Topology.Nets.Net.net_limit_is_cluster_point	300
+coq-poltac.0.8.11	PolTac.ZSignTac.Test.test3	300
+coq-topology.10.0.1	Topology.StrongTopology.StrongTopology.StrongTopology	300
+coq-topology.10.0.1	Topology.Nets.Net.net_limit_in_closure	300
+coq-topology.10.0.1	Topology.StrongTopology.StrongTopology.strong_topology_makes_continuous_funcs	300	0.0.1.0	synth with cache (only 1: intro; only 1: red; only 1: intros; only 1: apply H || apply H0).	0.044728	5
+coq-topology.10.0.1	Topology.FilterLimits.neighborhood_filter_obligation_1	300
+coq-hott.8.11	HoTT.Tactics.BinderApply.basic_goal	300
+coq-haskell.1.0.0	Hask.Prelude.ltn0ltn	300	5.0.0.0	synth with cache (only 1: intros n m; only 1: PeanoNat.Nat.induct n; only 1: trivial; only 1: auto with arith).	1.637163	4317
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_3	300
+coq-haskell.1.0.0	Hask.Control.Applicative.ApplicativeLaws.fmap_pure_x	300	0.449.1.2.386.448.321.394	synth with cache (only 1: intros c; only 1: intros a n; only 1: cut (BinNums.xH = BinNums.xH); only 1: pose proof H as H'; only 1: intros x; only 1: rewrite <- ap_fmap; only 1: firstorder; only 1: auto).	11.816261	22637
+coq-topology.10.0.1	Topology.StrongTopology.StrongTopology.strong_topology_strongest	300	129.0.641.513	synth with cache (only 1: intros m Hm; only 1: intros p1; only 1: intros; only 1: firstorder).	1.181453	1455
+coq-bbv.1.3	bbv.NatLib.pow2_S_z	300	3.0.2.324.0	synth with cache (only 1: intros a; only 1: N.nzsimpl; only 1: Z.nzsimpl'; only 1: now rewrite <- !nat_N_Z, Nat2N.inj_add, N2Z.inj_add; only 1: intuition).	1.854774	1536
+coq-bbv.1.3	bbv.NatLib.Zabs_of_nat	300	259	synth with cache (only 1: lia).	0.082256	58
+coq-haskell.1.0.0	Hask.Data.Maybe.Equivalence_Maybe_obligation_3	300
+coq-topology.10.0.1	Topology.FilterLimits.neighborhood_filter_obligation_2	300	768.128.2.193.2	synth with cache (only 1: destruct H as [[]]; only 1: inversion H; only 1: constructor; only 1: rename H2 into Hop1; only 1: firstorder).	2.427275	2923
+coq-topology.10.0.1	Topology.Homeomorphisms.homeomorphism_is_open_map	300
+coq-haskell.1.0.0	Hask.Data.Maybe.ap_endo_nothing	300	0.0.385.128.0.0.65.0.0.0.0.0.0.0	synth with cache (only 1: induction m, n; only 1: split; only 1: simpl; only 1: intros; only 1: discriminate; only 1: simpl; only 1: intros; only 1: intuition; only 1: discriminate; only 1: discriminate; only 1: repeat split; only 1: intuition auto using BinInt.Z.le_ge, BinInt.Z.ge_le, BinInt.Z.lt_gt, BinInt.Z.gt_lt; only 1: tauto; only 1: tauto).	0.625331	347
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_at_open_neighborhoods	300
+coq-topology.10.0.1	Topology.Continuity.continuity.pointwise_continuity	300
+coq-bbv.1.3	bbv.NatLib.pow2_le	300	449.2.0.2	synth with cache (only 1: induction 1; only 1: Nat.order; only 1: simpl; only 1: firstorder).	3.154149	4409
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.is_empty_2	300	192.64.640.129.0.258.0	synth with cache (only 1: intros m; only 1: compute; only 1: intro H0; only 1: intro y; only 1: induction 1 as [l| x l l' AD IH]; only 1: congruence; only 1: now PeanoNat.Nat.nzsimpl).	8.298982	11848
+coq-haskell.1.0.0	Hask.Prelude.ltn_subn	300	66.68	synth with cache (only 1: intros p IH H; only 1: lia).	3.231390	3321
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_1	300	0.0	synth with cache (only 1: intros; only 1: auto).	0.013454	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_2	300	0.0	synth with cache (only 1: intros m; only 1: apply Raw.elements_1).	0.014653	2
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_3	300	0.0	synth with cache (only 1: intros m; only 1: apply (sorted m)).	0.012108	2
+coq-topology.10.0.1	Topology.FilterLimits.neighborhood_filter_obligation_3	300	389.7.0	synth with cache (only 1: constructor; only 1: apply open_neighborhood_is_neighborhood; only 1: eauto with *).	2.019711	5113
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.lt_trans	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.lt_not_eq	300
+coq-bbv.1.3	bbv.NatLib.drop_mod2_add	300
+coq-bbv.1.3	bbv.NatLib.mod2sub	300
+coq-bbv.1.3	bbv.NatLib.minus_minus	300	3.0	synth with cache (only 1: intros a b Ha Hb; only 1: intuition).	0.559048	321
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_3	300	0.1.320.3.514.0	synth with cache (only 1: intros m; only 1: intros n1 m1 H; only 1: unfold MapsTo; only 1: repeat red; only 1: simpl; only 1: apply (Raw.remove_3 _ (sorted m))).	10.727149	15581
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.cardinal_1	300	64.0	synth with cache (only 1: intros m; only 1: split).	0.022354	5
+coq-haskell.1.0.0	Hask.Control.Monad.MonadLaws.join_fmap_join_x	300
+coq-hott.8.11	HoTT.Basics.PathGroupoids.cancel2L	300
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_at_neighborhood_basis	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.compare	300
+coq-bbv.1.3	bbv.NatLib.Npow2_pos	300	0.65.0.0.0.128.1.13	synth with cache (only 1: intro n; only 1: induction n; only 1: now Nat.nzsimpl; only 1: simpl; only 1: destruct (Npow2 n); only 1: assumption; only 1: red; only 1: easy).	5.994848	14093
+coq-tlc.20200328	TLC.LibVar.Variables.var_compare_eq	300
+coq-tlc.20200328	TLC.LibFset.Properties.inter_assoc	300
+coq-tlc.20200328	TLC.LibListSub.Prefix.prefix_last	300	129.2.0.385.518	synth with cache (only 1: hint total_inverse , order_inverse; only 1: repeat red; only 1: introv [Or To]; only 1: rew_list in *; only 1: autos *).	16.428297	14050
+coq-hott.8.11	HoTT.Basics.PathGroupoids.cancel2R	300
+coq-topology.10.0.1	Topology.RationalsInReals.archimed_1	300
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_pos_neg_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_pos_pos_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_neg_pos_rev	300
+coq-tlc.20200328	TLC.LibFset.Properties.inter_empty_l	300	0.0.131.3.0.3.0.451	synth with cache (only 1: intro LT; only 1: apply fset_extens; only 1: intros x; only 1: rewrite_all * in_inter; only 1: intros x; only 1: intro H; only 1: false; only 1: rewrite ~ in_empty in H).	6.966222	6203
+coq-tlc.20200328	TLC.LibFset.Properties.inter_empty_r	300	0.64.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: apply fset_extens; only 1: intros x; only 1: rewrite_all in_inter; only 1: intros; only 1: false * in_empty_inv; only 1: introv M; only 1: false * in_empty_inv).	0.073411	20
+coq-tlc.20200328	TLC.LibFset.Properties.inter_comm_assoc	300	0.0.0.0.0.0	synth with cache (only 1: intros; only 1: apply fset_extens; only 1: intros x; only 1: rewrite_all * in_inter; only 1: intros x; only 1: rewrite_all * in_inter).	0.061175	6
+coq-tlc.20200328	TLC.LibFset.Properties.from_list_nil	300	3	synth with cache (only 1: auto).	0.057569	17
+coq-tlc.20200328	TLC.LibFset.Properties.from_list_cons	300	3	synth with cache (only 1: auto).	0.018291	4
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_neg_neg_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_pos_neg_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_neg_pos_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_pos_pos_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_compat_l	300	769.1	synth with cache (only 1: intros H1; only 1: auto with *).	0.174438	28
+coq-tlc.20200328	TLC.LibFset.Properties.disjoint_comm	300	65.128.0.0.0.1.3	synth with cache (only 1: introv; only 1: red; only 1: rewrite inter_comm; only 1: rewrite inter_comm; only 1: rewrite inter_comm; only 1: introv N; only 1: now rewrite <- ?BinPos.Pos.compare_antisym).	2.590560	1487
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_neg_compat_l	300	0	synth with cache (only 1: auto with real).	0.059989	1
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.wf_t_atom	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.def_t_atom	300	0.0	synth with cache (only 1: destruct (check_atom_correct _ ch_atom); only 1: auto).	0.044906	2
+coq-poltac.0.8.11	PolTac.RAux.Ropp_lt	300	642.0	synth with cache (only 1: intro H0; only 1: Nat.auto').	0.454844	243
+coq-poltac.0.8.11	PolTac.RAux.Rmult_lt_neg_compat_l	300	0.0.0.0	synth with cache (only 1: replace (p * n) with (- (- p * n)) by ring; only 1: replace (p * m) with (- (- p * m)) by ring; only 1: intros; only 1: auto with real).	0.135765	4
+coq-poltac.0.8.11	PolTac.RAux.Ropp_ge	300	0	synth with cache (only 1: auto with real).	0.049002	1
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_neg_neg_rev	300
+coq-poltac.0.8.11	PolTac.PolAux.Zge_trans	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_ge_neg_compat_l	300	0.0.0	synth with cache (only 1: intros; only 1: apply Rle_ge; only 1: auto with real).	0.153184	3
+coq-poltac.0.8.11	PolTac.RAux.Ropp_gt	300	0	synth with cache (only 1: auto with real).	0.048443	1
+coq-poltac.0.8.11	PolTac.RAux.Rmult_ge_compat_l	300	705.704	synth with cache (only 1: intros del H2; only 1: auto with *).	2.572653	1446
+coq-poltac.0.8.11	PolTac.RAux.Rmult_gt_neg_compat_l	300	0.0.0.0	synth with cache (only 1: unfold Rgt; only 1: replace (p * n) with (- (- p * n)) by ring; only 1: replace (p * m) with (- (- p * m)) by ring; only 1: auto with real).	0.136463	4
+coq-poltac.0.8.11	PolTac.RAux.Rmult_gt_compat_l	300	1.0.448.1538.0	synth with cache (only 1: intros; only 1: red in H; only 1: apply Rmult_lt_reg_l with 2; only 1: prove_sup0; only 1: auto with real).	2.505863	2403
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_le	300
+coq-topology.10.0.1	Topology.SupInf.inf	300
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_correct	300
+coq-corn.8.16.0	CoRN.liouville.nat_Q_lists.nat_Q_lists.list_nat_spec	300
+coq-haskell.1.0.0	Hask.Data.Maybe.fmap_endo_just	300
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_ge	300
+coq-topology.10.0.1	Topology.SupInf.lub_approx	300
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_gt	300
+coq-corn.8.16.0	CoRN.tactics.RingReflection.Ring_NormCorrect.PP_mult_corr_R	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_intersection	300
+coq-qcert.2.2.0	Qcert.TypeSystem.DType.DType.drtype_eqdec	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_union	300
+coq-topology.10.0.1	Topology.NeighborhoodBases.open_neighborhood_bases_to_open_basis	300
+coq-poltac.0.8.11	PolTac.NAux.ge_Nge	300
+coq-tlc.20200328	TLC.LibListSub.Prefix.prefix_length	300	0.0.65.257.577.320.640.0.0.0.0.5	synth with cache (only 1: intros l1; only 1: induction l1 as [| a l1']; only 1: intros; only 1: rew_list; only 1: math; only 1: intro H1; only 1: intro p; only 1: induction p; only 1: destruct H as [m H]; only 1: nat_comp_to_peano; only 1: rew_list ~; only 1: math).	30.473092	33849
+coq-topology.10.0.1	Topology.Neighborhoods.open_char_neighborhood	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_mul_morph	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_leb_morph	300
+coq-tlc.20200328	TLC.LibListSub.Prefix.prefix_snoc_length	300	0.0.4.1.193.320	synth with cache (only 1: intros a n m H; only 1: destruct H; only 1: rew_list in H; only 1: inverts H; only 1: rew_list; only 1: math).	16.931390	10886
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_complement	300
+coq-tlc.20200328	TLC.LibFset.Properties.disjoint_in_notin	300	65.0.132.0.0.128.1.129.64.1.64	synth with cache (unshelve (only 1: intros b Hb; only 1: firstorder; only 1: gen x; only 1: intro m; only 1: red; only 1: introv F N; only 1: false * in_empty_inv; only 1: false * in_empty_inv; only 1: destruct H; only 1: rewrite_all * in_inter); only 1: subst *).	48.938434	48044
+coq-tlc.20200328	TLC.LibFset.Properties.notin_empty	300	1.257	synth with cache (only 1: intros Ha Hb; only 1: false * in_empty_inv).	0.075454	30
+coq-corn.8.16.0	CoRN.reals.fast.CRGroupOps.Qtranslate_uc_prf	300
+coq-qcert.2.2.0	Qcert.cNNRC.Lang.cNNRC.cNNRC.Syntax.nnrc_eqdec	300
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnit_0_lt_Dual	300
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.lazy_coin.proof.prophecy_to_bool_of_bool	300	704.128.64.143	synth with cache (only 1: destruct b; only 1: intuition discriminate; only 1: symmetry; only 1: let rec coPset_disj_solve := repeat simpl || case_decide; (first [ apply (f_equal coPset.CoPset) | done | exfalso ]); set_solver by eauto in coPset_disj_solve).	44.504237	5917
+coq-haskell.1.0.0	Hask.Control.Compose.ComposeMonadLaws.Compose_FunctorLaws_obligation_2	300
+coq-corn.8.16.0	CoRN.algebra.Bernstein.Bernstein.partitionOfUnity	300
+coq-qcert.2.2.0	Qcert.Data.ModelTyping.TData.TData.dttop_weaken	300	0.1.390.1	synth with cache (only 1: revert τ; only 1: econstructor; only 1: eapply data_type_normalized; only 1: eauto).	45.007465	32385
+coq-qcert.2.2.0	Qcert.NRA.Lang.NRASize.NRASize.nra_size_nzero	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_sorted	300
+coq-haskell.1.0.0	Hask.Data.Maybe.ap_endo_just	300
+coq-haskell.1.0.0	Hask.Data.Maybe.alt_endo_just	300	0.0.0.0.0.1.0	synth with cache (only 1: induction m; only 1: split; only 1: intros; only 1: intuition auto; discriminate; only 1: intuition; only 1: discriminate; only 1: intuition auto; discriminate).	0.214831	101
+coq-haskell.1.0.0	Hask.Data.Maybe.alt_endo_nothing	300	0.1.0.1.0	synth with cache (only 1: simpl; only 1: induction m; only 1: intuition auto; discriminate; only 1: simpl; only 1: intuition auto; discriminate).	0.515335	220
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_1	300
+coq-bbv.1.3	bbv.NatLib.div2_plus_2	300
+coq-topology.10.0.1	Topology.FilterLimits.neighborhood_filter_obligation_4	300	143.1	synth with cache (only 1: red; only 1: firstorder).	177.092358	213092
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_4_aux	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_4	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_ltb_morph	300
+coq-hott.8.11	HoTT.Basics.Contractible.contr_basedpaths	300
+coq-hott.8.11	HoTT.Basics.Contractible.ap_pr1_path_contr_basedpaths	300	0.1.0	synth with cache (only 1: destruct p; only 1: destruct q; only 1: reflexivity).	0.029999	4
+coq-hott.8.11	HoTT.Basics.Contractible.ap_pr1_path_contr_basedpaths'	300	0.0	synth with cache (only 1: destruct p, q; only 1: reflexivity).	0.022518	2
+coq-hott.8.11	HoTT.Basics.Contractible.ap_pr1_path_basedpaths	300	0.3	synth with cache (only 1: destruct p; only 1: reflexivity).	0.037954	13
+coq-hott.8.11	HoTT.Basics.Contractible.contr_basedpaths'	300
+coq-hott.8.11	HoTT.Basics.Contractible.ap_pr1_path_basedpaths'	300	0.0	synth with cache (only 1: destruct p; only 1: reflexivity).	0.019503	2
+coq-hott.8.11	HoTT.Basics.Contractible.contr_change_center	300	8	synth with cache (only 1: auto with path_hints).	0.049497	69
+coq-hott.8.11	HoTT.Classes.implementations.natpair_integers.NatPair.PairT.contents.equiv_is_equiv_rel	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_Inf	300
+coq-hott.8.11	HoTT.Basics.Overture.ap11	300
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_eqb_morph	300
+coq-poltac.0.8.11	PolTac.NAux.Nge_ge_rev	300
+coq-poltac.0.8.11	PolTac.NAux.Ngt_gt	300
+coq-poltac.0.8.11	PolTac.NAux.gt_Ngt	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_gt_neg_compat_l	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_complement	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_le_compat_l_rev	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_union	300
+coq-poltac.0.8.11	PolTac.NAux.Ngt_gt_rev	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_lt_compat_rev_l1	300	448.128.514.0.448	synth with cache (only 1: intros E; only 1: intros n m; only 1: destruct m; only 1: now Morphisms.f_equiv; only 1: now try Nat.order').	0.930668	592
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_le_neg_compat_l_rev	300
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_finite_indexed_union	300
+coq-topology.10.0.1	Topology.OpenBases.BuildFromOpenBasis.Build_TopologicalSpace_from_open_basis	300
+coq-topology.10.0.1	Topology.OpenBases.BuildFromOpenBasis.Build_TopologicalSpace_from_open_basis_point_set	300	3	synth with cache (only 1: constructor).	0.018597	4
+coq-poltac.0.8.11	PolTac.NAux.Nmult_gt_compat_rev_l1	300	576.1.256.65	synth with cache (only 1: intros Hab; only 1: intros n Hn; only 1: intro H; only 1: now destruct Hn || easy).	0.740180	694
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.equal_1	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_gt_compat_rev_l2	300	0.0.0.0.3.0.0	synth with cache (only 1: intros n m p H1; only 1: apply Ngt_gt; only 1: apply mult_lt_compat_rev_l2 with (N.to_nat p); only 1: repeat rewrite <- N2Nat.inj_mul; only 1: apply gt_Ngt; only 1: repeat rewrite N2Nat.id; only 1: auto).	1.794725	2997
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_intersection	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_interior_idempotent	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.equal_2	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_closure_idempotent	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.cmp_refl	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_lt_neg_compat_l_rev	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.equal_cons	300
+coq-bbv.1.3	bbv.NatLib.Npow2_nat	300
+coq-bbv.1.3	bbv.NatLib.pow2_N	300
+coq-bbv.1.3	bbv.NatLib.Z_of_N_Npow2	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_ge_compat_l_rev	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_gt_compat_l_rev	300	0.4.0.384	synth with cache (only 1: intros n m p H; only 1: Z.swap_greater; only 1: apply Z.mul_lt_mono_pos_l; only 1: assumption).	7.371471	5952
+coq-poltac.0.8.11	PolTac.NAux.Nmult_lt_compat_l	300
+coq-poltac.0.8.11	PolTac.NAux.Nlt_mult_0	300	1.1	synth with cache (only 1: intros; only 1: N.order_pos).	0.052722	40
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_nodefault	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_sorted	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_nodefault	300
+coq-poltac.0.8.11	PolTac.NAux.Ngt_mult_0	300	66.0.640.0.580.0	synth with cache (only 1: intros n m H1 H2; only 1: destruct n; only 1: auto; only 1: destruct m; only 1: trivial; only 1: easy').	1.167021	2035
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.mem_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.mem_2	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.is_empty_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_2	300
+coq-hott.8.11	HoTT.Classes.theory.rationals.contents.Qpos_isset	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_3	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_1	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_le_compat_l	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.IntOrderedType.eq_dec	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_outofbound	300
+coq-topology.10.0.1	Topology.Nets.Net.net_cluster_point_in_closure	300
+coq-topology.10.0.1	Topology.Nets.neighborhood_net.neighborhood_net_DS	300
+coq-poltac.0.8.11	PolTac.ZSignTac.Test.test4	300
+coq-poltac.0.8.11	PolTac.NAux.Nlt_mult_rev_0_l	300	132.0.66.516	synth with cache (only 1: intro; only 1: intros p; only 1: intros Ha; only 1: now destruct a).	5.882836	10687
+coq-hott.8.11	HoTT.Tactics.BinderApply.basic	300
+coq-poltac.0.8.11	PolTac.NAux.Ngt_mult_rev_0_l	300	0.64	synth with cache (only 1: intro n; only 1: now destruct n).	0.038271	30
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.find_1	300
+coq-topology.10.0.1	Topology.StrongTopology.StrongTopology.strong_topology_continuous_char	300
+coq-poltac.0.8.11	PolTac.NAux.Nlt_mult_rev_0_r	300	320.0.256.0.67.0.0.0.0.0	synth with cache (only 1: intros a b H1; only 1: apply Nlt_lt; only 1: apply lt_mult_rev_0_l with (N.to_nat b); only 1: rewrite <- N2Nat.inj_mul; only 1: apply lt_Nlt; only 1: destruct b; only 1: repeat rewrite N2Nat.id; only 1: now destruct a; only 1: repeat rewrite N2Nat.id; only 1: repeat match goal with | _ => reflexivity | _ => progress subst | H:Some ?a = Some ?b |- _ => assert (a = b) by refine match H with | eq_refl => eq_refl end; clear H | H:None = Some _ |- _ => solve [ inversion H ] end).	2.281502	3247
+coq-poltac.0.8.11	PolTac.NAux.Ngt_mult_rev_0_r	300	0.0.0.0.1.128.0.0	synth with cache (only 1: intros a b H1; only 1: apply Ngt_gt; only 1: red; only 1: apply lt_mult_rev_0_r with (N.to_nat a); only 1: rewrite <- N2Nat.inj_mul; only 1: apply gt_Ngt; only 1: repeat rewrite N2Nat.id; only 1: auto).	1.226671	1885
+coq-bbv.1.3	bbv.NatLib.Npow2_not_zero	300
+coq-bbv.1.3	bbv.NatLib.mod_0_r	300	386.0	synth with cache (only 1: intros; only 1: repeat split).	0.029052	22
+coq-poltac.0.8.11	PolTac.NAux.Nle_0_eq_0	300	0.2.0.449.0.0	synth with cache (only 1: intros; only 1: N.le_elim H; only 1: induction n; only 1: split; only 1: easy; only 1: assumption).	0.645879	790
+coq-topology.10.0.1	Topology.Homeomorphisms.invertible_open_map_is_homeomorphism	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_make	300	1.0.0.2.0.0	synth with cache (only 1: intros; only 1: simpl; only 1: case ltbP; only 1: auto with arith; only 1: intros H2; only 1: auto).	3.207810	3622
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_open_basis	300
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_subbasis	300
+coq-haskell.1.0.0	Hask.Data.Maybe.bind_endo_just	300
+coq-bbv.1.3	bbv.NatLib.Npow2_S	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.find_2	300
+coq-poltac.0.8.11	PolTac.NAux.Nge_0_eq_0	300	384.514.320.0.0.0.0.2.1	synth with cache (only 1: intros; only 1: rewrite <- (N2Nat.id n); only 1: rewrite (le_0_eq_0 (N.to_nat n)); only 1: auto; only 1: apply le_Nle; only 1: rewrite N2Nat.id; only 1: induction n; only 1: now rewrite ?Hx; only 1: now Nat.nzsimpl).	1.689432	975
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.nodefault_tail	300	512.513.67.129	synth with cache (only 1: intros k H1 H2; only 1: compute in H2; only 1: intros l2; only 1: eauto).	23.973879	23628
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_3w	300
+coq-bbv.1.3	bbv.NatLib.mul_div_exact	300	0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: pose proof Nat.div_mul_cancel_l as A; only 1: specialize (A a 1 b); only 1: replace (b * 1) with b in A by lia; only 1: rewrite Nat.div_1_r in A; only 1: rewrite <- Nat.divide_div_mul_exact; only 1: apply A; only 1: congruence; only 1: congruence; only 1: congruence; only 1: apply Nat.mod_divide; only 1: congruence; only 1: assumption).	0.760829	538
+coq-poltac.0.8.11	PolTac.NAux.Ngt_le_trans	300	66.450.384.0.0	synth with cache (only 1: intros; only 1: to_nat; only 1: induction p; only 1: firstorder; only 1: auto with *).	2.147041	3188
+coq-topology.10.0.1	Topology.Subbases.Subbasis.finite_intersections_of_subbasis_form_open_basis	300
+coq-bbv.1.3	bbv.NatLib.even_odd_destruct	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.fold_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_set_same	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_set_other	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_copy	300	129.0	synth with cache (only 1: intros n m Hn; only 1: constructor 1).	0.036289	9
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.length_copy	300	66	synth with cache (only 1: auto with relations).	0.027722	7
+coq-haskell.1.0.0	Hask.Control.Monad.MonadLaws.join_fmap_pure_x	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.default_copy	300	0.0	synth with cache (only 1: unfold copy; only 1: reflexivity).	0.035982	2
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.default_make	300	0.0	synth with cache (only 1: unfold make, get; only 1: reflexivity).	0.036567	2
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_closed	300
+coq-bbv.1.3	bbv.NatLib.mul_div_undo	300
+coq-tlc.20200328	TLC.LibVar.Variables.var_gen_list_spec	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.default_set	300
+coq-hott.8.11	HoTT.Classes.theory.rationals.contents.Qpos_one	300	4.221.3	synth with cache (only 1: red; only 1: exists 1; only 1: solve_propholds).	20.943445	15403
+coq-hott.8.11	HoTT.Classes.theory.rationals.contents.Qpos_mult	300	0.0	synth with cache (only 1: exists 1; only 1: apply lt_0_1).	0.044896	2
+coq-topology.10.0.1	Topology.RationalsInReals.inverses_of_nats_approach_0	300
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_pos_neg_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_neg_pos_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_pos_pos_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_neg_neg_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_pos_neg_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_neg_pos_rev	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.def_t_form	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.wf_t_form	300	0.0.0.2	synth with cache (only 1: destruct (check_form_correct interp_form_hatom interp_form_hatom_bv _ ch_form) as [H _]; only 1: destruct H; only 1: destruct H; only 1: auto).	0.130101	82
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_compat_l_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_neg_compat_l_rev	300
+coq-topology.10.0.1	Topology.SupInf.glb_approx	300
+coq-corn.8.16.0	CoRN.liouville.nat_Q_lists.nat_Q_lists.list_nat_prod_spec	300
+coq-haskell.1.0.0	Hask.Data.Maybe.bind_endo_nothing	300
+coq-topology.10.0.1	Topology.SupInf.lt_plus_epsilon_le	300
+coq-corn.8.16.0	CoRN.complex.NRootCC.NRootCC_4.NRootCC_4_ap_real.nrootCC_4_ap_real	300
+coq-corn.8.16.0	CoRN.reals.NRootIR.Absolute_Props.triangle_Sum2IR	300
+coq-corn.8.16.0	CoRN.tactics.RingReflection.Ring_NormCorrect.NormR_corr	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.meets_every_open_neighborhood_impl_closure	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_impl_meets_every_open_neighborhood	300
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.increment.increment_physical.incr_phy_spec	300
+coq-topology.10.0.1	Topology.NeighborhoodBases.build_from_open_neighborhood_bases.Build_TopologicalSpace_from_open_neighborhood_bases	300
+coq-corn.8.16.0	CoRN.reals.Bridges_iso.bridges_axioms_imply_ours.proofs_in_TCS.sup_tail_decrease	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_ge_compat_l	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.length_set	300	0.0.0.1.0.4	synth with cache (only 1: intros; only 1: destruct t as ((t, d), l); only 1: unfold set, get, length; only 1: case (l ≤ i); only 1: reflexivity; only 1: reflexivity).	36.346610	12766
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eq_2	300	0.0.0.384.1.384.0.0.0.0.0.0.513.192.0.1	synth with cache (only 1: intros m m'; only 1: generalize (eq_equal m m'); only 1: inversion 1; only 1: reflexivity || destruct H; only 1: generalize (eq_equal m m'); only 1: intuition; only 1: generalize (equal_1 (m:=m) (m':=m')); only 1: generalize (eq_equal m m'); only 1: intuition; only 1: generalize (equal_1 (m:=m) (m':=m')); only 1: rewrite H  at 1; only 1: intro HH; only 1: generalize H; only 1: apply Raw.equal_2; only 1: apply (sorted m); only 1: apply (sorted m')).	60.509833	44879
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.clairvoyant_coin.proof.new_coin_spec	300
+coq-corn.8.16.0	CoRN.reals.faster.ARArith.ARarith.AR_epsilon_sign_dec_pos_rev	300
+coq-tlc.20200328	TLC.LibListSub.Prefix.noduplicates_prefix	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.dense_meets_every_nonempty_open	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection7.InitialReduction.minSimpleOdd_ind	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection5.IsoDef.injm_narrow	300
+coq-qcert.2.2.0	Qcert.Translation.Lang.cNNRCtoCAMP.cNNRCtoCAMP.trans_let.camp_eval_nnrcToCamp_ns_ignored_let_binding	300
+coq-tlc.20200328	TLC.LibFset.Properties.notin_singleton	300
+coq-tlc.20200328	TLC.LibFset.Properties.notin_same	300	0.2.0.386	synth with cache (only 1: intros Hn; only 1: intros; only 1: apply * H; only 1: rewrite ~ in_singleton).	1.321172	1215
+coq-corn.8.16.0	CoRN.reals.fast.CRGroupOps.translate_ident	300
+coq-qcert.2.2.0	Qcert.cNNRC.Lang.cNNRC.cNNRC.Syntax.nnrcIsCore_ext	300
+coq-qcert.2.2.0	Qcert.cNNRC.Lang.cNNRC.cNNRC.Syntax.nnrc_core_ext	300	0	synth with cache (only 1: Subset.pi).	0.029549	1
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.par.proof.par_spec	300
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnit_Dual_lt_1	300
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnitMult	300	0	synth with cache (only 1: tauto).	0.025776	1
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnitDiv	300	1	synth with cache (only 1: auto).	0.025314	2
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnitDual	300	3	synth with cache (only 1: firstorder with bool).	0.028164	4
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnitDualMult	300	0.0	synth with cache (only 1: exists (a * b); only 1: abstract (destruct a as [a [Ha0 Ha1]]; destruct b as [b [Hb0 Hb1]]; split; simpl; [ apply : mult_resp_pos; assumption | change (1 : Q) with (1 * 1); apply : mult_resp_less_both; auto with * ])).	0.059517	2
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnitDualDiv	300	386.0	synth with cache (only 1: intros p; only 1: now rewrite ?Hx).	0.229743	121
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.ou_eq_refl	300	193.0	synth with cache (only 1: intros n; only 1: congruence).	0.036065	12
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.ou_eq_sym	300	0	synth with cache (only 1: easy).	0.075197	1
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_0	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.initial_conds.b0_eq	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.c_props.lt_0_c	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_a.AnnOfA.P_eq_Delta_Q	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.z3seq_props.z3seqE	300
+coq-corn.8.16.0	CoRN.ftc.MoreIntervals.Reflexivity_Properties.Int_Diffble	300
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.lazy_coin.proof.new_coin_spec	300
+coq-haskell.1.0.0	Hask.Control.Compose.ComposeMonadLaws.Compose_ApplicativeLaws_obligation_2	300
+coq-corn.8.16.0	CoRN.ftc.MoreFunSeries.Insert_Series.insert_series_conv	300
+coq-corn.8.16.0	CoRN.algebra.Bernstein.Bernstein.RaiseDegreeA	300
+coq-qcert.2.2.0	Qcert.Data.ModelTyping.TData.subtype.subtype_Rec_sublist_strengthen	300
+coq-iris-heap-lang.3.4.0	iris.heap_lang.total_adequacy.heap_total	300
+coq-corn.8.16.0	CoRN.ftc.MoreFunctions.Nth_Derivative.More_Results.N_Deriv_Feq	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_s.AnnOfS.P1_eq_Delta_Q1	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.FrobeniusQuotient.Frobenius_proper_quotient	300
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.twp_array_free	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection8.Eight.non_pcore_Fitting_Uniqueness	300
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.ou_eq_trans	300	642.0.513.258.66	synth with cache (only 1: intros (H1, H2); only 1: do 2 intro; only 1: repeat red; only 1: unfold Qnum at 1; only 1: eapply eq_transitive_unfolded).	49.378212	28693
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.equal_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.equal_2	300
+coq-bbv.1.3	bbv.NatLib.mod_add_r	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.odd_p_abelian_constrained	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_v.AnnOfV.v_Sk2	300
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.bbox_refl	300
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.trK	300	1024.260	synth with cache (only 1: move  =>D_F; only 1: intuition auto; BinInt.Z.Private_OrderTac.Tac.subst_eqns; eauto using (RelationClasses.StrictOrder_Transitive x y z) with *).	0.515356	279
+coq-topology.10.0.1	Topology.FilterLimits.filter_limit_is_cluster_point	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_not_default_lt	300	448.705.0.0.256.640.128.448.896.450.704.1.0.256.770.0	synth with cache (only 1: unfold get; only 1: case (to_Z_bounded x); only 1: generalize x; only 1: unfold set, get, length; only 1: destruct t as ((t, d), l); only 1: intuition subst; try ring; auto with real; only 1: intro; only 1: generalize x; only 1: intros u Hu; only 1: destruct (to_Z_bounded x) as [hx hx']; only 1: intros H; only 1: destruct t; only 1: rewrite ltb_spec; only 1: case ltbP; only 1: intuition auto; Nat.Private_Tac.subst_eqns; eauto using (StrictOrder_Transitive x y z) with *; only 1: now subst).	166.114221	77830
+coq-poltac.0.8.11	PolTac.RAux.Rmult_gt_neg_compat_l_rev	300	0.1.65.1024.0.513.832.1216.1.2	synth with cache (only 1: case (Rle_or_lt m n); only 1: intros; only 1: CRelationClasses.simpl_crelation; only 1: apply Ropp_lt_cancel; only 1: apply Rmult_lt_reg_l with (/ 2); only 1: auto with real; only 1: apply Ropp_le_ge_contravar, Rge_le in H; only 1: contradict H1; only 1: now apply Rle_not_lt; apply Rmult_le_neg_compat_l; auto with real; only 1: trivial).	177.563391	191147
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.wp_array_free	300	0.0.0.0.0.0.0.0.641.0.0.0.0.0.0.0	synth with cache (only 1: iIntros ( Hlen Φ ) "Hl HΦ"; only 1: iInduction vs as [| v vs] "IH" forall ( l n Hlen ); only 1: subst n; only 1: wp_rec; only 1: wp_pures; only 1: iApply "HΦ"; only 1: done; only 1: repeat match goal with | _ => reflexivity | _ => progress subst | H:Some ?a = Some ?b |- _ => assert (a = b) by refine match H with | eq_refl => eq_refl end; clear H | H:None = Some _ |- _ => solve [ inversion H ] end; only 1: wp_rec; only 1: wp_pures; only 1: iDestruct (array_cons with "Hl") as "[Hv Hl]"; only 1: wp_free; only 1: wp_pures; only 1: iApply ("IH" with "[] Hl"); only 1: eauto with lia; only 1: eauto with lia).	98.088674	19438
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection9.Nine.noncyclic_normed_sub_Uniqueness	300
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_1_to_2.vchar_pairs_orthonormal	300
+coq-hott.8.11	HoTT.Basics.Contractible.contr_contr	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.raw_equal_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eq_equal	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eq_1	300
+coq-hott.8.11	HoTT.Classes.implementations.natpair_integers.NatPair.PairT.contents.pl_respects	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_gt_compat_l	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_lt_compat_rev_l2	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_ge_neg_compat_l_rev	300
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.meets_every_nonempty_open_impl_dense	300
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_closure.cl_increasing	300
+coq-topology.10.0.1	Topology.TopologicalSpaces.Build_from_closed_sets.Build_TopologicalSpace_from_closed_sets	300
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_gt_neg_compat_l_rev	300
+coq-topology.10.0.1	Topology.OpenBases.BuildFromOpenBasis.Build_TopologicalSpace_from_open_basis_basis	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_le_compat_rev_l	300
+coq-poltac.0.8.11	PolTac.NAux.Nmult_ge_compat_rev_l	300
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_closure.Build_TopologicalSpace_from_closure_operator	300
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_closure.Build_TopologicalSpace_from_closure_operator_closure	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eqfarray_refl	300
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_interior.int_increasing	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eqfarray_sym	300
+coq-bbv.1.3	bbv.NatLib.mod2_cases	300
+coq-bbv.1.3	bbv.NatLib.div_mul_undo	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eqfarray_trans	300
+coq-bbv.1.3	bbv.NatLib.Smod2_1	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.lt_farray_trans	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.lt_farray_not_eq	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.compare_farray	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eq_option_alt	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.find_mapsto_iff	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_neq_mapsto_iff	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_eq_o	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.raw_add_d_rem	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.Classical_extensionality.HdRelElt	300	321.320.134	synth with cache (only 1: inversion_clear 1; only 1: CRelationClasses.simpl_crelation; only 1: eauto with smtcoq_array).	0.254626	392
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.equal_refl	300	0.5.386	synth with cache (only 1: intros l1; only 1: apply extensionality_eqb; only 1: auto).	3.729174	4281
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_d_rem	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.Classical_extensionality.diff	300	330.265	synth with cache (only 1: revert a; only 1: simpl_relation).	0.872057	4085
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_eq_d	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_neq_o	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.leb_length	300
+coq-topology.10.0.1	Topology.Nets.neighborhood_net.neighborhood_net_limit	300
+coq-hott.8.11	HoTT.Tactics.BinderApply.ex_funext	300
+coq-topology.10.0.1	Topology.Nets.net_limits_determine_topology	300
+coq-bbv.1.3	bbv.NatLib.sub_mod_0	300
+coq-poltac.0.8.11	PolTac.NAux.Nle_gt_trans	300
+coq-topology.10.0.1	Topology.Homeomorphisms.homeomorphism_id	300
+coq-topology.10.0.1	Topology.TopologicalSpaces.Build_from_closed_sets.Build_TopologicalSpace_from_closed_sets_closed	300	1.4.128.134.321	synth with cache (only 1: assert (le0 : forall n, 0 <= n) by (induction n; auto); only 1: cbn; only 1: intro IT; only 1: rewrite Complement_Complement; only 1: reflexivity).	17.905804	36976
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.MapsTo_fun	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.length_make	300
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_interior	300
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_closure	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.Equal_mapsto_iff	300
+coq-poltac.0.8.11	PolTac.NAux.Nle_add_l	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.Equal_Equiv	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.Equiv_Equivb	300
+coq-topology.10.0.1	Topology.Subbases.build_from_subbasis.Build_TopologicalSpace_from_subbasis	300
+coq-haskell.1.0.0	Hask.Control.Monad.MonadLaws.join_pure_x	300
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_set_same_default	300
+coq-topology.10.0.1	Topology.Continuity.continuous_composition	300	640.0.64.0.576.320.453	synth with cache (only 1: intro LT; only 1: intros a b Hb; only 1: intro HA; only 1: intros; only 1: intros Ha; only 1: rewrite inverse_image_composition; only 1: firstorder).	7.169862	8847
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.Equal_Equivb	300
+coq-topology.10.0.1	Topology.Continuity.continuous_composition_at	300
+coq-tlc.20200328	TLC.LibVar.Variables.var_gen_spec	300
+coq-hott.8.11	HoTT.Classes.theory.rationals.contents.qpos_plus_comm	300
+coq-topology.10.0.1	Topology.RationalsInReals.Z_interpolation	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_lt_compat_l_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_lt_neg_compat_l_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_ge_compat_l_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_gt_compat_l_rev	300
+coq-poltac.0.8.11	PolTac.RAux.Rmult_ge_neg_compat_l_rev	300
+coq-smtcoq.2.0+8.11	SMTCoq.array.Array_checker.certif.Correct.wf_rho	300
