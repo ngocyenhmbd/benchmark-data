@@ -1,0 +1,32 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/LasseBlaauwbroek/graph2tac.git /tmp/pip-req-build-nlw3df6k
+  Running command git rev-parse -q --verify 'sha^4873a86797696e52efa81c938b65f8db4c5bc22c'
+  Running command git fetch -q https://github.com/LasseBlaauwbroek/graph2tac.git 4873a86797696e52efa81c938b65f8db4c5bc22c
+  Running command git checkout -q 4873a86797696e52efa81c938b65f8db4c5bc22c
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.1
+[notice] To update, run: pip install --upgrade pip
+[ERROR] The compilation of coq.8.11.dev failed at "make -j127".
+
+#=== ERROR while compiling coq.8.11.dev =======================================#
+# context              2.1.4 | linux/x86_64 |  | git+ssh://git@github.com/LasseBlaauwbroek/custom-archive.git
+# path                 /tmp/tactician.tmp.EeWFHs/opam-root/bench/.opam-switch/build/coq.8.11.dev
+# command              /dccstor/mathzero/miniconda3/bin/make -j127
+# exit-code            2
+# env-file             /tmp/opam-root-3059480/coq-3059480-6d37b9.env
+# output-file          /tmp/opam-root-3059480/coq-3059480-6d37b9.out
+### output ###
+# [...]
+# COQC      theories/FSets/FSetEqProperties.v
+# COQC      theories/MSets/MSetToFiniteSet.v
+# COQC      theories/QArith/Qpower.v
+# COQC      theories/Numbers/Cyclic/Abstract/CyclicAxioms.v
+# COQC      theories/Numbers/Cyclic/Int63/Int63.v
+# COQC      theories/FSets/FSets.v
+# COQC      theories/MSets/MSetEqProperties.v
+# make[1]: *** [Makefile.build:874: plugins/btauto/Algebra.vo] Segmentation fault (core dumped)
+# make[1]: *** [plugins/btauto/Algebra.vo] Deleting file 'plugins/btauto/Algebra.glob'
+# make[1]: *** Waiting for unfinished jobs....
+# make[1]: Leaving directory '/tmp/tactician.tmp.EeWFHs/opam-root/bench/.opam-switch/build/coq.8.11.dev'
+# make: *** [Makefile:177: submake] Error 2
+
