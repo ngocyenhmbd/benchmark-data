@@ -1,0 +1,61 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/LasseBlaauwbroek/graph2tac.git /tmp/pip-req-build-m06bac_w
+  Running command git rev-parse -q --verify 'sha^4873a86797696e52efa81c938b65f8db4c5bc22c'
+  Running command git fetch -q https://github.com/LasseBlaauwbroek/graph2tac.git 4873a86797696e52efa81c938b65f8db4c5bc22c
+  Running command git checkout -q 4873a86797696e52efa81c938b65f8db4c5bc22c
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.1
+[notice] To update, run: pip install --upgrade pip
+[ERROR] The compilation of coq-mathcomp-finmap.dev failed at "make -j55".
+[ERROR] The compilation of coq-mathcomp-real-closed.dev failed at "make -j55".
+
+#=== ERROR while compiling coq-mathcomp-real-closed.dev =======================#
+# context              2.1.4 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-04-25 14:50
+# path                 /tmp/tactician.tmp.0Eci3F/opam-root/bench/.opam-switch/build/coq-mathcomp-real-closed.dev
+# command              /tmp/tactician.tmp.0Eci3F/opam-root/bench/bin/tactician exec -- make -j55
+# exit-code            2
+# env-file             /tmp/opam-root-479523/coq-mathcomp-real-closed-479523-6d7f30.env
+# output-file          /tmp/opam-root-479523/coq-mathcomp-real-closed-479523-6d7f30.out
+### output ###
+# [...]
+# Syntax error: ',' or 'at' or [constr_as_binder_kind] or [syntax_extension_type] expected after identifier (in [syntax_modifier]).
+# 
+# make[2]: *** [Makefile.coq:677: theories/cauchyreals.vo] Error 1
+# make[2]: *** Waiting for unfinished jobs....
+# File "./theories/polyrcf.v", line 1716, characters 0-12:
+# Warning: Tactic could not be properly discharged: by
+# case : rootsP  => //= np0 ron_p *; apply : (roots_on_in ron_p) 
+# File "./theories/polyrcf.v", line 1716, characters 0-12:
+# Warning: Tactic could not be properly discharged: by
+# move  =>x hx; rewrite !(root_is_roots _ hx) // hpq
+# make[1]: *** [Makefile.coq:327: all] Error 2
+# make: *** [Makefile:15: invoke-coqmakefile] Error 2
+
+
+#=== ERROR while compiling coq-mathcomp-finmap.dev ============================#
+# context              2.1.4 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-04-25 14:50
+# path                 /tmp/tactician.tmp.0Eci3F/opam-root/bench/.opam-switch/build/coq-mathcomp-finmap.dev
+# command              /tmp/tactician.tmp.0Eci3F/opam-root/bench/bin/tactician exec -- make -j55
+# exit-code            2
+# env-file             /tmp/opam-root-479523/coq-mathcomp-finmap-479523-c84ab5.env
+# output-file          /tmp/opam-root-479523/coq-mathcomp-finmap-479523-c84ab5.out
+### output ###
+# [...]
+# move  =>sAB sBC; rewrite subset_fsubE // (fsubset_trans sAB)
+# File "./finmap.v", line 2120, characters 0-11:
+# Warning: Tactic could not be properly discharged: by
+# case : posnP  => // A0; rewrite (cardfs0_eq A0) fsub0set
+# File "./finmap.v", line 2911, characters 17-21:
+# Error:
+# Syntax error: ',' or 'at' or [constr_as_binder_kind] or [syntax_extension_type] expected after identifier (in [syntax_modifier]).
+# 
+# make[2]: *** [Makefile.coq:677: finmap.vo] Error 1
+# make[1]: *** [Makefile.coq:327: all] Error 2
+# make[1]: Leaving directory '/tmp/tactician.tmp.0Eci3F/opam-root/bench/.opam-switch/build/coq-mathcomp-finmap.dev'
+# make: *** [Makefile.common:51: this-build] Error 2
+
+2023-04-25 22:38:38.844828-04:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host cccxc435. Code: 254
