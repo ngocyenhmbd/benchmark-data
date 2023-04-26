@@ -1,0 +1,37 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/LasseBlaauwbroek/graph2tac.git /tmp/pip-req-build-4viohrcw
+  Running command git rev-parse -q --verify 'sha^4873a86797696e52efa81c938b65f8db4c5bc22c'
+  Running command git fetch -q https://github.com/LasseBlaauwbroek/graph2tac.git 4873a86797696e52efa81c938b65f8db4c5bc22c
+  Running command git checkout -q 4873a86797696e52efa81c938b65f8db4c5bc22c
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.1
+[notice] To update, run: pip install --upgrade pip
+[ERROR] The compilation of coq-smtcoq.2.0+8.11 failed at "make -j55".
+
+#=== ERROR while compiling coq-smtcoq.2.0+8.11 ================================#
+# context              2.1.4 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-04-25 14:50
+# path                 /tmp/tactician.tmp.1lfJXb/opam-root/bench/.opam-switch/build/coq-smtcoq.2.0+8.11
+# command              /tmp/tactician.tmp.1lfJXb/opam-root/bench/bin/tactician exec -- make -j55
+# exit-code            2
+# env-file             /tmp/opam-root-2910239/coq-smtcoq-2910239-963f16.env
+# output-file          /tmp/opam-root-2910239/coq-smtcoq-2910239-963f16.out
+### output ###
+# [...]
+# File "/tmp/tactician.tmp.1lfJXb/opam-root/bench/lib/coq/user-contrib/Tactician/Graph2TacConfig.v", line 1, characters 0-32:
+# Warning: There is no option Tactician Neural Truncate.
+# [unknown-option,option]
+# make[2]: *** [Makefile:626: smtlib2/sExprLexer.cmx] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# File "./classes/SMT_classes.v", line 101, characters 0-32:
+# Warning: Adding and removing hints in the core database implicitly is
+# deprecated. Please specify a hint database.
+# [implicit-core-hint-db,deprecated]
+# make[1]: *** [Makefile:327: all] Error 2
+# make[1]: Leaving directory '/tmp/tactician.tmp.1lfJXb/opam-root/bench/.opam-switch/build/coq-smtcoq.2.0+8.11/src'
+# make: *** [Makefile:2: all] Error 2
+
+2023-04-26 00:41:23.102720-04:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host cccxc421. Code: 254
