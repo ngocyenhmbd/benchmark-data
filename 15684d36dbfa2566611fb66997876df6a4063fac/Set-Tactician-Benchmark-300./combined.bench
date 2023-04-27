@@ -1,0 +1,10 @@
+coq-bbv.1.3	bbv.ZLib.pow2_nonneg	300	0.2.0	synth with cache (only 1: intros ?; only 1: apply Z.pow_nonneg; only 1: auto with zarith).	123.471164	11
+coq-bbv.1.3	bbv.Word.wordToN_WS_0	300	0.2.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: simpl; only 1: easy).	108.131083	9
+coq-bbv.1.3	bbv.Word.eq_rect_word_match	300	2	synth with cache (only 1: trivial).	133.765997	46
+coq-bbv.1.3	bbv.NatLib.Npow2_pos	300	1.0.2.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: induction a; only 1: simpl; only 1: constructor; only 1: simpl; only 1: destruct Npow2; only 1: easy; only 1: easy).	141.537872	284
+coq-bbv.1.3	bbv.ZLib.pow2_times2	300	0.0.0.20.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: rewrite <- Z.pow_succ_r; only 1: f_equal; only 1: ring; only 1: lia).	144.394133	444
+coq-bbv.1.3	bbv.Word.wordToNat_lt1	300	0.11.0.0.1.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply wlt_lt; only 1: assumption).	137.627464	479
+coq-bbv.1.3	bbv.NatLib.pow2_N	300	0.6.11.0.0.0	synth with cache (only 1: intros; only 1: induction n; only 1: easy; only 1: rewrite <- Npow2_nat; only 1: rewrite N2Nat.id; only 1: trivial).	183.831415	1379
+coq-bbv.1.3	bbv.Word.wmult_wmultZ	300
+coq-bbv.1.3	bbv.Word.word_le_ge_eq	300
+coq-bbv.1.3	bbv.Word.wzero_wplus	300
