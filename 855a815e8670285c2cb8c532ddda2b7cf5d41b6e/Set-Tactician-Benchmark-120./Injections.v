@@ -1,2 +1,2 @@
 Set Tactician Neural Server "localhost:3333".
-Set Tactician Autocache.
+Set Tactician Neural Autocache.
