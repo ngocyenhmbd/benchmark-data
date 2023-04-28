@@ -1,0 +1,151 @@
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 356, characters 6-22:
+Error:
+Anomaly "Uncaught exception Invalid_argument("BytesStorage.set_uint8")."
+Please report at http://coq.inria.fr/bugs/.
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14b9da78c850>
+File "./compiler/core/Translation/Lang/cNNRCtoCAMP.v", line 1135, characters 8-30:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct H as [[? ?] ?]
+try intros until H;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ .. | destruct _tmp_tactician0 as [? ?]; [ .. | idtac ] ])
+
+File "./compiler/core/Translation/Lang/cNNRCtoCAMP.v", line 1203, characters 8-30:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct H as [[? ?] ?]
+try intros until H;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ .. | destruct _tmp_tactician0 as [? ?]; [ .. | idtac ] ])
+
+File "./compiler/core/Translation/Lang/cNNRCtoCAMP.v", line 1204, characters 8-40:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct H1 as [[[? ?] ?] [[? ?] ?]]
+try intros until H1;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | destruct _tmp_tactician0 as [_tmp_tactician4 ?];
+      [ ..
+      | destruct _tmp_tactician4 as [? ?];
+         [ ..
+         | destruct _tmp_tactician2 as [_tmp_tactician6 ?];
+            [ .. | destruct _tmp_tactician6 as [? ?]; [ .. | idtac ] ] ] ] ])
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x15208af20670>
+File "./compiler/core/Translation/Typing/TNNRStoNNRSimp.v", line 1066, characters 6-21:
+Error:
+Anomaly "Uncaught exception Invalid_argument("BytesStorage.set_uint8")."
+Please report at http://coq.inria.fr/bugs/.
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14b4786ec070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14da1663c850>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x152dd845c070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x147257418670>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14beb26f8700>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1503a9b08dc0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1462a4c30a00>
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1541, characters 10-117:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c ((v, Some d) :: σ) ψc ψd s); simpl; trivial;
+ intros [[? ?] ?] eqq
+case_eq (nnrs_stmt_eval h c ((v, Some d) :: σ) ψc ψd s); simpl; trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1551, characters 10-98:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1558, characters 10-115:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c σ ψc ((v, None) :: ψd) s1); simpl; trivial;
+ intros [[? ?] ?] eqq
+case_eq (nnrs_stmt_eval h c σ ψc ((v, None) :: ψd) s1); simpl; trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1565, characters 10-109:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c ((v, o) :: p) m m0 s2); simpl; trivial;
+ intros [[? ?] ?] eqq2
+case_eq (nnrs_stmt_eval h c ((v, o) :: p) m m0 s2); simpl; trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq2; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1575, characters 10-97:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1582, characters 10-114:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c σ ((v, nil) :: ψc) ψd s1); simpl; trivial;
+ intros [[? ?] ?] eqq
+case_eq (nnrs_stmt_eval h c σ ((v, nil) :: ψc) ψd s1); simpl; trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1589, characters 10-122:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c ((v, Some (dcoll l)) :: p) m m0 s2); simpl;
+ trivial; intros [[? ?] ?] eqq2
+case_eq (nnrs_stmt_eval h c ((v, Some (dcoll l)) :: p) m m0 s2); simpl;
+ trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq2; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1609, characters 10-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct p as [[? ?] ?]
+try intros until p;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ .. | destruct _tmp_tactician0 as [? ?]; [ .. | idtac ] ])
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1617, characters 10-111:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c ((v, Some a) :: σ) ψc ψd s); trivial;
+ intros [[? ?] ?] eqq2
+case_eq (nnrs_stmt_eval h c ((v, Some a) :: σ) ψc ψd s); trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq2; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1636, characters 12-122:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c ((v, Some d) :: σ) ψc ψd s1); simpl; trivial;
+ intros [[? ?] ?] eqq
+case_eq (nnrs_stmt_eval h c ((v, Some d) :: σ) ψc ψd s1); simpl; trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1646, characters 12-123:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+case_eq (nnrs_stmt_eval h c ((v0, Some d) :: σ) ψc ψd s2); simpl; trivial;
+ intros [[? ?] ?] eqq
+case_eq (nnrs_stmt_eval h c ((v0, Some d) :: σ) ψc ψd s2); simpl; trivial;
+ (intros _tmp_tactician0;
+   (destruct _tmp_tactician0 as [_tmp_tactician2 ?];
+     [ .. | destruct _tmp_tactician2 as [? ?]; [ .. | intros eqq; idtac ] ]))
+
+File "./compiler/core/NNRS/Lang/NNRSCrossShadow.v", line 1666, characters 8-30:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct p as [[? ?] ?]
+try intros until p;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ .. | destruct _tmp_tactician0 as [? ?]; [ .. | idtac ] ])
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1496f6c28850>
