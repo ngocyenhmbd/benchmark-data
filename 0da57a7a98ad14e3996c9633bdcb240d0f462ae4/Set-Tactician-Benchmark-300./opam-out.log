@@ -1,482 +1,471 @@
 Checking for available remotes: rsync and local, git, mercurial.
-  - you won't be able to use darcs repositories unless you install the [01mdarcs[0m
-    command on your system.
+  - you won't be able to use darcs repositories unless you install the darcs command on your system.
 
 
-[36m<><>[0m [01mFetching repository information[0m [36m><><><><><><><><><><><><><><><><><><><><><>[0m
-[KProcessing  1/5: [[1;34mcustom-archive[0m: git][K[KProcessing  2/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http][K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-core-dev[0m: http]                 + 1[K[[32mcoq-core-dev[0m] Initialised
-[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-extra-dev[0m: http][K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-extra-dev[0m: http][K[KProcessing  3/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-extra-dev[0m: http][K[KProcessing  4/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-extra-dev[0m: http]                + 1[K[[32mcoq-extra-dev[0m] Initialised
-[KProcessing  4/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-released[0m: http][K[KProcessing  4/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-released[0m: http][K[KProcessing  5/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-released[0m: http] [[1;34mdefault[0m: http][K[KProcessing  5/5: [[1;34mcustom-archive[0m: git] [[1;34mcoq-released[0m: http] [[1;34mdefault[0m: http][K[[32mcoq-released[0m] Initialised
-[KProcessing  5/5: [[1;34mcustom-archive[0m: git] [[1;34mdefault[0m: http][K[KProcessing  5/5: [[1;34mcustom-archive[0m: git] [[1;34mdefault[0m: http][K[KProcessing  5/5: [[1;34mcustom-archive[0m: git] [[1;34mdefault[0m: http][K[KProcessing  5/5: [[1;34mcustom-archive[0m: git] [[1;34mdefault[0m: http][K[[32mcustom-archive[0m] Initialised
-[KProcessing  5/5: [[1;34mdefault[0m: http][K[KProcessing  5/5: [[1;34mdefault[0m: http][K[KProcessing  5/5: [[1;34mdefault[0m: http][K[[32mdefault[0m] Initialised
-[KProcessing  5/5:[KPackage coq-tactician-reinforce does not exist, create as a [01mNEW[0m package? [Y/n] y
-[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing: [[32mcoq-tactician-reinforce.~dev[0m: git][K[[32mcoq-tactician-reinforce.~dev[0m] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#0da57a7a98ad14e3996c9633bdcb240d0f462ae4)
+<><> Fetching repository information ><><><><><><><><><><><><><><><><><><><><><>
+[coq-core-dev] Initialised
+[coq-extra-dev] Initialised
+[coq-released] Initialised
+[custom-archive] Initialised
+[default] Initialised
+Package coq-tactician-reinforce does not exist, create as a NEW package? [Y/n] y
+[coq-tactician-reinforce.~dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#0da57a7a98ad14e3996c9633bdcb240d0f462ae4)
 The following additional pinnings are required by coq-tactician-reinforce.~dev:
-  - [01mcoq-tactician.8.11.dev[0m at
-    [04mgit+https://github.com/coq-tactician/coq-tactician.git#125ec9c1f7e14b62bf9c7f809b4277e2e6055d53[0m
+  - coq-tactician.8.11.dev at git+https://github.com/coq-tactician/coq-tactician.git#125ec9c1f7e14b62bf9c7f809b4277e2e6055d53
 Pin and install them? [Y/n] y
-[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing  1/1: [[32mcoq-tactician[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing: [[32mcoq-tactician.8.11.dev[0m: git][K[[32mcoq-tactician.8.11.dev[0m] synchronised (no changes)
-coq-tactician is now pinned to [01mgit+https://github.com/coq-tactician/coq-tactician.git#125ec9c1f7e14b62bf9c7f809b4277e2e6055d53[0m (version [01m8.11.dev[0m)
-coq-tactician-reinforce is now pinned to [01mgit+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#0da57a7a98ad14e3996c9633bdcb240d0f462ae4[0m (version [01m~dev[0m)
+[coq-tactician.8.11.dev] synchronised (no changes)
+coq-tactician is now pinned to git+https://github.com/coq-tactician/coq-tactician.git#125ec9c1f7e14b62bf9c7f809b4277e2e6055d53 (version 8.11.dev)
+coq-tactician-reinforce is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#0da57a7a98ad14e3996c9633bdcb240d0f462ae4 (version ~dev)
 ocaml is now pinned to version 4.09.1
 
-[36m<><>[0m [01mSynchronising pinned packages[0m [36m><><><><><><><><><><><><><><><><><><><><><><>[0m
-[KProcessing  1/2: [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[KProcessing  2/2: [[32mcoq-tactician.8.11.dev[0m: git]                              + 1[K[[32mcoq-tactician.8.11.dev[0m] synchronised (no changes)
-[KProcessing  2/2: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing  2/2: [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing  2/2: [[32mcoq-tactician-reinforce.~dev[0m: git][K[[32mcoq-tactician-reinforce.~dev[0m] synchronised (no changes)
+<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+[coq-tactician-reinforce.~dev] synchronised (no changes)
+[coq-tactician.8.11.dev] synchronised (no changes)
 
 The following actions will be performed:
-  [32m∗[0m install [01mconf-findutils[0m          1
-  [32m∗[0m install [01mbase-bigarray[0m           base
-  [32m∗[0m install [01mocaml-base-compiler[0m     4.09.1
-  [32m∗[0m install [01mbase-threads[0m            base
-  [32m∗[0m install [01mconf-capnproto[0m          2
-  [32m∗[0m install [01mconf-g++[0m                1.0
-  [32m∗[0m install [01mconf-pkg-config[0m         2
-  [32m∗[0m install [01mconf-git[0m                1.1
-  [32m∗[0m install [01mconf-gmp[0m                4
-  [32m∗[0m install [01mconf-ruby[0m               1.0.0
-  [32m∗[0m install [01mbase-unix[0m               base
-  [32m∗[0m install [01mconf-which[0m              1
-  [32m∗[0m install [01mocaml-config[0m            1
-  [32m∗[0m install [01mconf-xxhash[0m             1
-  [32m∗[0m install [01mconf-gmp-powm-sec[0m       3
-  [32m∗[0m install [01mconf-autoconf[0m           0.1
-  [32m∗[0m install [01mocaml[0m                   4.09.1*
-  [32m∗[0m install [01mseq[0m                     base
-  [32m∗[0m install [01mocamlfind[0m               1.9.6
-  [32m∗[0m install [01mocamlbuild[0m              0.14.2
-  [32m∗[0m install [01mmirage-no-xen[0m           1
-  [32m∗[0m install [01mmirage-no-solo5[0m         1
-  [32m∗[0m install [01mdune[0m                    3.7.1
-  [32m∗[0m install [01mcmdliner[0m                1.2.0
-  [32m∗[0m install [01mzarith[0m                  1.12
-  [32m∗[0m install [01mnum[0m                     1.4
-  [32m∗[0m install [01mbase-bytes[0m              base
-  [32m∗[0m install [01mwasm[0m                    1.0.1
-  [32m∗[0m install [01muchar[0m                   0.0.2
-  [32m∗[0m install [01mtopkg[0m                   1.0.7
-  [32m∗[0m install [01mocamlmod[0m                0.0.9
-  [32m∗[0m install [01mocamlify[0m                0.0.1
-  [32m∗[0m install [01mmenhir[0m                  20190924
-  [32m∗[0m install [01mstringext[0m               1.6.0
-  [32m∗[0m install [01mstdlib-shims[0m            0.3.0
-  [32m∗[0m install [01mstdint[0m                  0.7.2
-  [32m∗[0m install [01msexplib0[0m                v0.14.0
-  [32m∗[0m install [01mresult[0m                  1.5
-  [32m∗[0m install [01mres[0m                     5.0.1
-  [32m∗[0m install [01mre[0m                      1.10.4
-  [32m∗[0m install [01mppx_derivers[0m            1.2.1
-  [32m∗[0m install [01mpp[0m                      1.1.2
-  [32m∗[0m install [01mordering[0m                3.7.1
-  [32m∗[0m install [01moptint[0m                  0.3.0
-  [32m∗[0m install [01mopam-file-format[0m        2.1.6
-  [32m∗[0m install [01mocaml-syntax-shims[0m      1.0.0
-  [32m∗[0m install [01mocaml-compiler-libs[0m     v0.12.4
-  [32m∗[0m install [01mmirage-clock[0m            4.2.0
-  [32m∗[0m install [01mmagic-mime[0m              1.3.0
-  [32m∗[0m install [01mmacaddr[0m                 5.5.0
-  [32m∗[0m install [01mgmap[0m                    0.3.0
-  [32m∗[0m install [01mduration[0m                0.2.1
-  [32m∗[0m install [01mdomain-name[0m             0.4.0
-  [32m∗[0m install [01mcsexp[0m                   1.5.2
-  [32m∗[0m install [01mcppo[0m                    1.6.9
-  [32m∗[0m install [01mbigarray-compat[0m         1.1.0
-  [32m∗[0m install [01mbase64[0m                  3.5.1
-  [32m∗[0m install [01mcoq[0m                     8.11.dev  [required by coq-tactician,
-                                              coq-tactician-reinforce]
-  [32m∗[0m install [01muutf[0m                    1.0.3
-  [32m∗[0m install [01mrresult[0m                 0.7.0
-  [32m∗[0m install [01mptime[0m                   1.1.0
-  [32m∗[0m install [01mmtime[0m                   2.0.0
-  [32m∗[0m install [01mfmt[0m                     0.9.0
-  [32m∗[0m install [01mastring[0m                 0.8.5
-  [32m∗[0m install [01masetmap[0m                 0.8.1
-  [32m∗[0m install [01moasis[0m                   0.4.11
-  [32m∗[0m install [01mocamlgraph[0m              2.0.0
-  [32m∗[0m install [01mintegers[0m                0.7.0
-  [32m∗[0m install [01mcalendar[0m                3.0.0
-  [32m∗[0m install [01mdyn[0m                     3.7.1
-  [32m∗[0m install [01mppxlib[0m                  0.25.1
-  [32m∗[0m install [01mipaddr[0m                  5.5.0
-  [32m∗[0m install [01mdune-configurator[0m       3.7.1
-  [32m∗[0m install [01myojson[0m                  2.1.0
-  [32m∗[0m install [01mocplib-endian[0m           1.2
-  [32m∗[0m install [01mextlib[0m                  1.7.9
-  [32m∗[0m install [01mmmap[0m                    1.2.0
-  [32m∗[0m install [01mjsonm[0m                   1.0.2
-  [32m∗[0m install [01mcstruct[0m                 6.2.0
-  [32m∗[0m install [01mfpath[0m                   0.7.3
-  [32m∗[0m install [01mott[0m                     0.33
-  [32m∗[0m install [01mopam-core[0m               2.1.4
-  [32m∗[0m install [01mctypes[0m                  0.20.2
-  [32m∗[0m install [01mstdune[0m                  3.7.1
-  [32m∗[0m install [01mppx_deriving[0m            5.2.1
-  [32m∗[0m install [01mextunix[0m                 0.4.1
-  [32m∗[0m install [01mbigstringaf[0m             0.9.1
-  [32m∗[0m install [01mbase[0m                    v0.14.3
-  [32m∗[0m install [01mjs_of_ocaml-compiler[0m    3.9.1
-  [32m∗[0m install [01mcudf[0m                    0.10
-  [32m∗[0m install [01mlwt[0m                     4.5.0
-  [32m∗[0m install [01meqaf[0m                    0.9
-  [32m∗[0m install [01masn1-combinators[0m        0.2.6
-  [32m∗[0m install [01mopam-format[0m             2.1.4
-  [32m∗[0m install [01mxxhash[0m                  0.1
-  [32m∗[0m install [01mdune-private-libs[0m       3.7.1
-  [32m∗[0m install [01mangstrom[0m                0.15.0
-  [32m∗[0m install [01mstdio[0m                   v0.14.0
-  [32m∗[0m install [01mppx_sexp_conv[0m           v0.14.3
-  [32m∗[0m install [01mparsexp[0m                 v0.14.2
-  [32m∗[0m install [01mjs_of_ocaml[0m             3.9.0
-  [32m∗[0m install [01mmccs[0m                    1.1+14
-  [32m∗[0m install [01mdose3[0m                   7.0.0
-  [32m∗[0m install [01mprometheus[0m              1.2
-  [32m∗[0m install [01mmirage-kv[0m               6.1.1
-  [32m∗[0m install [01mmirage-flow[0m             3.0.0
-  [32m∗[0m install [01mcstruct-lwt[0m             6.2.0
-  [32m∗[0m install [01mcoq-io-system-ocaml[0m     2.3.1
-  [32m∗[0m install [01mmirage-crypto[0m           0.10.7
-  [32m∗[0m install [01mopam-repository[0m         2.1.4
-  [32m∗[0m install [01mdune-site[0m               3.7.1
-  [32m∗[0m install [01muri[0m                     4.2.0
-  [32m∗[0m install [01mcapnp[0m                   3.5.0
-  [32m∗[0m install [01mipaddr-sexp[0m             5.5.0
-  [32m∗[0m install [01msexplib[0m                 v0.14.0
-  [32m∗[0m install [01mlogs[0m                    0.7.0
-  [32m∗[0m install [01mjs_of_ocaml-ppx[0m         3.9.0
-  [32m∗[0m install [01mopam-solver[0m             2.1.4
-  [32m∗[0m install [01mpbkdf[0m                   1.2.0
-  [32m∗[0m install [01mhkdf[0m                    1.0.4
-  [32m∗[0m install [01mopam-state[0m              2.1.4
-  [32m∗[0m install [01muri-sexp[0m                4.2.0
-  [32m∗[0m install [01mppx_cstruct[0m             6.2.0
-  [32m∗[0m install [01mcstruct-sexp[0m            6.2.0
-  [32m∗[0m install [01mmirage-crypto-rng[0m       0.10.7
-  [32m∗[0m install [01mconduit[0m                 6.2.0
-  [32m∗[0m install [01mcapnp-rpc[0m               1.2.2
-  [32m∗[0m install [01mbos[0m                     0.2.1
-  [32m∗[0m install [01mopam-client[0m             2.1.4
-  [32m∗[0m install [01mcohttp[0m                  5.1.0
-  [32m∗[0m install [01mmirage-crypto-pk[0m        0.10.7
-  [32m∗[0m install [01mmirage-crypto-ec[0m        0.10.7
-  [32m∗[0m install [01mconduit-lwt[0m             6.2.0
-  [32m∗[0m install [01mcapnp-rpc-lwt[0m           1.2.2
-  [32m∗[0m install [01mcoq-tactician[0m           8.11.dev*
-  [32m∗[0m install [01mcohttp-lwt[0m              5.1.0
-  [32m∗[0m install [01mx509[0m                    0.16.4
-  [32m∗[0m install [01mtls[0m                     0.15.4
-  [32m∗[0m install [01mca-certs[0m                0.2.3
-  [32m∗[0m install [01mtls-mirage[0m              0.15.4
-  [32m∗[0m install [01mconduit-lwt-unix[0m        6.2.0
-  [32m∗[0m install [01mcapnp-rpc-net[0m           1.2.2
-  [32m∗[0m install [01mcohttp-lwt-unix[0m         5.1.0
-  [32m∗[0m install [01mcapnp-rpc-unix[0m          1.2.2
-  [32m∗[0m install [01mcoq-tactician-reinforce[0m ~dev*
-===== [32m∗[0m 145 =====
+  ∗ install conf-findutils          1
+  ∗ install base-bigarray           base
+  ∗ install ocaml-base-compiler     4.09.1
+  ∗ install base-threads            base
+  ∗ install conf-capnproto          2
+  ∗ install conf-g++                1.0
+  ∗ install conf-pkg-config         2
+  ∗ install conf-git                1.1
+  ∗ install conf-gmp                4
+  ∗ install conf-ruby               1.0.0
+  ∗ install base-unix               base
+  ∗ install conf-which              1
+  ∗ install ocaml-config            1
+  ∗ install conf-xxhash             1
+  ∗ install conf-gmp-powm-sec       3
+  ∗ install conf-autoconf           0.1
+  ∗ install ocaml                   4.09.1*
+  ∗ install seq                     base
+  ∗ install ocamlfind               1.9.6
+  ∗ install ocamlbuild              0.14.2
+  ∗ install mirage-no-xen           1
+  ∗ install mirage-no-solo5         1
+  ∗ install dune                    3.7.1
+  ∗ install cmdliner                1.2.0
+  ∗ install zarith                  1.12
+  ∗ install num                     1.4
+  ∗ install base-bytes              base
+  ∗ install wasm                    1.0.1
+  ∗ install uchar                   0.0.2
+  ∗ install topkg                   1.0.7
+  ∗ install ocamlmod                0.0.9
+  ∗ install ocamlify                0.0.1
+  ∗ install menhir                  20190924
+  ∗ install stringext               1.6.0
+  ∗ install stdlib-shims            0.3.0
+  ∗ install stdint                  0.7.2
+  ∗ install sexplib0                v0.14.0
+  ∗ install result                  1.5
+  ∗ install res                     5.0.1
+  ∗ install re                      1.10.4
+  ∗ install ppx_derivers            1.2.1
+  ∗ install pp                      1.1.2
+  ∗ install ordering                3.7.1
+  ∗ install optint                  0.3.0
+  ∗ install opam-file-format        2.1.6
+  ∗ install ocaml-syntax-shims      1.0.0
+  ∗ install ocaml-compiler-libs     v0.12.4
+  ∗ install mirage-clock            4.2.0
+  ∗ install magic-mime              1.3.0
+  ∗ install macaddr                 5.5.0
+  ∗ install gmap                    0.3.0
+  ∗ install duration                0.2.1
+  ∗ install domain-name             0.4.0
+  ∗ install csexp                   1.5.2
+  ∗ install cppo                    1.6.9
+  ∗ install bigarray-compat         1.1.0
+  ∗ install base64                  3.5.1
+  ∗ install coq                     8.11.dev  [required by coq-tactician, coq-tactician-reinforce]
+  ∗ install uutf                    1.0.3
+  ∗ install rresult                 0.7.0
+  ∗ install ptime                   1.1.0
+  ∗ install mtime                   2.0.0
+  ∗ install fmt                     0.9.0
+  ∗ install astring                 0.8.5
+  ∗ install asetmap                 0.8.1
+  ∗ install oasis                   0.4.11
+  ∗ install ocamlgraph              2.0.0
+  ∗ install integers                0.7.0
+  ∗ install calendar                3.0.0
+  ∗ install dyn                     3.7.1
+  ∗ install ppxlib                  0.25.1
+  ∗ install ipaddr                  5.5.0
+  ∗ install dune-configurator       3.7.1
+  ∗ install yojson                  2.1.0
+  ∗ install ocplib-endian           1.2
+  ∗ install extlib                  1.7.9
+  ∗ install mmap                    1.2.0
+  ∗ install jsonm                   1.0.2
+  ∗ install cstruct                 6.2.0
+  ∗ install fpath                   0.7.3
+  ∗ install ott                     0.33
+  ∗ install opam-core               2.1.4
+  ∗ install ctypes                  0.20.2
+  ∗ install stdune                  3.7.1
+  ∗ install ppx_deriving            5.2.1
+  ∗ install extunix                 0.4.1
+  ∗ install bigstringaf             0.9.1
+  ∗ install base                    v0.14.3
+  ∗ install js_of_ocaml-compiler    3.9.1
+  ∗ install cudf                    0.10
+  ∗ install lwt                     4.5.0
+  ∗ install eqaf                    0.9
+  ∗ install asn1-combinators        0.2.6
+  ∗ install opam-format             2.1.4
+  ∗ install xxhash                  0.1
+  ∗ install dune-private-libs       3.7.1
+  ∗ install angstrom                0.15.0
+  ∗ install stdio                   v0.14.0
+  ∗ install ppx_sexp_conv           v0.14.3
+  ∗ install parsexp                 v0.14.2
+  ∗ install js_of_ocaml             3.9.0
+  ∗ install mccs                    1.1+14
+  ∗ install dose3                   7.0.0
+  ∗ install prometheus              1.2
+  ∗ install mirage-kv               6.1.1
+  ∗ install mirage-flow             3.0.0
+  ∗ install cstruct-lwt             6.2.0
+  ∗ install coq-io-system-ocaml     2.3.1
+  ∗ install mirage-crypto           0.10.7
+  ∗ install opam-repository         2.1.4
+  ∗ install dune-site               3.7.1
+  ∗ install uri                     4.2.0
+  ∗ install capnp                   3.5.0
+  ∗ install ipaddr-sexp             5.5.0
+  ∗ install sexplib                 v0.14.0
+  ∗ install logs                    0.7.0
+  ∗ install js_of_ocaml-ppx         3.9.0
+  ∗ install opam-solver             2.1.4
+  ∗ install pbkdf                   1.2.0
+  ∗ install hkdf                    1.0.4
+  ∗ install opam-state              2.1.4
+  ∗ install uri-sexp                4.2.0
+  ∗ install ppx_cstruct             6.2.0
+  ∗ install cstruct-sexp            6.2.0
+  ∗ install mirage-crypto-rng       0.10.7
+  ∗ install conduit                 6.2.0
+  ∗ install capnp-rpc               1.2.2
+  ∗ install bos                     0.2.1
+  ∗ install opam-client             2.1.4
+  ∗ install cohttp                  5.1.0
+  ∗ install mirage-crypto-pk        0.10.7
+  ∗ install mirage-crypto-ec        0.10.7
+  ∗ install conduit-lwt             6.2.0
+  ∗ install capnp-rpc-lwt           1.2.2
+  ∗ install coq-tactician           8.11.dev*
+  ∗ install cohttp-lwt              5.1.0
+  ∗ install x509                    0.16.4
+  ∗ install tls                     0.15.4
+  ∗ install ca-certs                0.2.3
+  ∗ install tls-mirage              0.15.4
+  ∗ install conduit-lwt-unix        6.2.0
+  ∗ install capnp-rpc-net           1.2.2
+  ∗ install cohttp-lwt-unix         5.1.0
+  ∗ install capnp-rpc-unix          1.2.2
+  ∗ install coq-tactician-reinforce ~dev*
+===== ∗ 145 =====
 
-[36m<><>[0m [01mProcessing actions[0m [36m<><><><><><><><><><><><><><><><><><><><><><><><><><><><>[0m
-[KProcessing  1/435: [[32mangstrom.0.15.0[0m: dl][K[KProcessing  2/435: [[32mangstrom.0.15.0[0m: dl] [[32masetmap.0.8.1[0m: dl][K[KProcessing  3/435: [[32mangstrom.0.15.0[0m: dl] [[32masetmap.0.8.1[0m: dl]                + 1[K[KProcessing  3/435: [[32mangstrom.0.15.0[0m: dl] [[32masn1-combinators.0.2.6[0m: dl][K[KProcessing  3/435: [[32mangstrom.0.15.0[0m: dl][K[KProcessing  3/435:[K[36m⬇[0m retrieved [01masetmap[0m.0.8.1  (https://opam.ocaml.org/cache)
-[KProcessing  3/435:[K[KProcessing  4/435: [[32mastring.0.8.5[0m: dl][K[36m⬇[0m retrieved [01masn1-combinators[0m.0.2.6  (https://opam.ocaml.org/cache)
-[KProcessing  4/435: [[32mastring.0.8.5[0m: dl][K[KProcessing  5/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl][K[36m⬇[0m retrieved [01mangstrom[0m.0.15.0  (https://opam.ocaml.org/cache)
-[KProcessing  5/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl][K[KProcessing  6/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl][K[KProcessing  7/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl][K[KProcessing  8/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl][K[KProcessing  9/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl][K[KProcessing 10/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[KProcessing 11/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[KProcessing 12/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[KProcessing 13/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[32m∗[0m installed [01mbase-bigarray[0m.base
-[KProcessing 14/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[32m∗[0m installed [01mbase-threads[0m.base
-[KProcessing 15/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[32m∗[0m installed [01mbase-unix[0m.base
-[KProcessing 16/435: [[32mastring.0.8.5[0m: dl] [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[KProcessing 16/435: [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[36m⬇[0m retrieved [01mastring[0m.0.8.5  (https://opam.ocaml.org/cache)
-[KProcessing 16/435: [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl][K[KProcessing 17/435: [[32mbase.v0.14.3[0m: dl] [[32mbase64.3.5.1[0m: dl]                    + 1[K[KProcessing 17/435: [[32mbase64.3.5.1[0m: dl] [[32mbigarray-compat.1.1.0[0m: dl][K[KProcessing 17/435: [[32mbigarray-compat.1.1.0[0m: dl][K[36m⬇[0m retrieved [01mbase[0m.v0.14.3  (https://opam.ocaml.org/cache)
-[KProcessing 17/435: [[32mbigarray-compat.1.1.0[0m: dl][K[KProcessing 18/435: [[32mbigarray-compat.1.1.0[0m: dl] [[32mbigstringaf.0.9.1[0m: dl][K[36m⬇[0m retrieved [01mbase64[0m.3.5.1  (https://opam.ocaml.org/cache)
-[KProcessing 18/435: [[32mbigarray-compat.1.1.0[0m: dl] [[32mbigstringaf.0.9.1[0m: dl][K[KProcessing 19/435: [[32mbigarray-compat.1.1.0[0m: dl] [[32mbigstringaf.0.9.1[0m: dl]      + 1[K[KProcessing 19/435: [[32mbigstringaf.0.9.1[0m: dl] [[32mbos.0.2.1[0m: dl][K[36m⬇[0m retrieved [01mbigarray-compat[0m.1.1.0  (https://opam.ocaml.org/cache)
-[KProcessing 19/435: [[32mbigstringaf.0.9.1[0m: dl] [[32mbos.0.2.1[0m: dl][K[KProcessing 20/435: [[32mbigstringaf.0.9.1[0m: dl] [[32mbos.0.2.1[0m: dl] [[32mca-certs.0.2.3[0m: dl][K[KProcessing 20/435: [[32mbos.0.2.1[0m: dl] [[32mca-certs.0.2.3[0m: dl][K[36m⬇[0m retrieved [01mbigstringaf[0m.0.9.1  (https://opam.ocaml.org/cache)
-[KProcessing 20/435: [[32mbos.0.2.1[0m: dl] [[32mca-certs.0.2.3[0m: dl][K[KProcessing 21/435: [[32mbos.0.2.1[0m: dl] [[32mca-certs.0.2.3[0m: dl] [[32mcalendar.3.0.0[0m: dl][K[KProcessing 21/435: [[32mca-certs.0.2.3[0m: dl] [[32mcalendar.3.0.0[0m: dl][K[36m⬇[0m retrieved [01mbos[0m.0.2.1  (https://opam.ocaml.org/cache)
-[KProcessing 21/435: [[32mca-certs.0.2.3[0m: dl] [[32mcalendar.3.0.0[0m: dl][K[KProcessing 22/435: [[32mca-certs.0.2.3[0m: dl] [[32mcalendar.3.0.0[0m: dl] [[32mcapnp.3.5.0[0m: dl][K[KProcessing 22/435: [[32mcalendar.3.0.0[0m: dl] [[32mcapnp.3.5.0[0m: dl][K[36m⬇[0m retrieved [01mca-certs[0m.0.2.3  (https://opam.ocaml.org/cache)
-[KProcessing 22/435: [[32mcalendar.3.0.0[0m: dl] [[32mcapnp.3.5.0[0m: dl][K[KProcessing 23/435: [[32mcalendar.3.0.0[0m: dl] [[32mcapnp.3.5.0[0m: dl] [[32mcapnp-rpc.1.2.2[0m: dl][K[KProcessing 23/435: [[32mcapnp.3.5.0[0m: dl] [[32mcapnp-rpc.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcalendar[0m.3.0.0  (https://opam.ocaml.org/cache)
-[KProcessing 23/435: [[32mcapnp.3.5.0[0m: dl] [[32mcapnp-rpc.1.2.2[0m: dl][K[KProcessing 24/435: [[32mcapnp.3.5.0[0m: dl] [[32mcapnp-rpc.1.2.2[0m: dl]                  + 1[K[KProcessing 24/435: [[32mcapnp-rpc.1.2.2[0m: dl] [[32mcapnp-rpc-lwt.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcapnp[0m.3.5.0  (https://opam.ocaml.org/cache)
-[KProcessing 24/435: [[32mcapnp-rpc.1.2.2[0m: dl] [[32mcapnp-rpc-lwt.1.2.2[0m: dl][K[KProcessing 25/435: [[32mcapnp-rpc.1.2.2[0m: dl] [[32mcapnp-rpc-lwt.1.2.2[0m: dl]          + 1[K[KProcessing 25/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcapnp-rpc[0m.1.2.2  (https://opam.ocaml.org/cache)
-[KProcessing 25/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[KProcessing 26/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcapnp-rpc-unix[0m.1.2.2  (cached)
-[KProcessing 26/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[KProcessing 27/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl]      + 1[K[KProcessing 27/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcmdliner[0m.1.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 27/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[KProcessing 28/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl]      + 1[K[KProcessing 28/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl]      + 1[K[KProcessing 28/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl]      + 1[K[KProcessing 28/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcohttp[0m.5.1.0  (https://opam.ocaml.org/cache)
-[KProcessing 28/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[KProcessing 29/435: [[32mcapnp-rpc-lwt.1.2.2[0m: dl] [[32mcapnp-rpc-net.1.2.2[0m: dl][K[KProcessing 29/435: [[32mcapnp-rpc-net.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcohttp-lwt[0m.5.1.0  (cached)
-[KProcessing 29/435: [[32mcapnp-rpc-net.1.2.2[0m: dl][K[KProcessing 30/435: [[32mcapnp-rpc-net.1.2.2[0m: dl][K[36m⬇[0m retrieved [01mcapnp-rpc-lwt[0m.1.2.2  (https://opam.ocaml.org/cache)
-[KProcessing 30/435: [[32mcapnp-rpc-net.1.2.2[0m: dl][K[KProcessing 31/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit.6.2.0[0m: dl][K[36m⬇[0m retrieved [01mcohttp-lwt-unix[0m.5.1.0  (cached)
-[KProcessing 31/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit.6.2.0[0m: dl][K[KProcessing 32/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit.6.2.0[0m: dl]            + 1[K[KProcessing 32/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[36m⬇[0m retrieved [01mconduit[0m.6.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 32/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 33/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[36m⬇[0m retrieved [01mconduit-lwt-unix[0m.6.2.0  (cached)
-[KProcessing 33/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 34/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 35/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 36/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 37/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 38/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 39/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 40/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 41/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 42/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 43/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 44/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl][K[KProcessing 45/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 1[K[KProcessing 46/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 2[K[KProcessing 47/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[KProcessing 48/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 4[K[KProcessing 49/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 5[K[KProcessing 50/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 6[K[KProcessing 51/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 7[K[KProcessing 52/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 8[K[KProcessing 53/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 9[K[KProcessing 53/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 9[K[KProcessing 53/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 9[K[KProcessing 53/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 8[K[32m∗[0m installed [01mconf-capnproto[0m.2
-[KProcessing 54/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 8[K[KProcessing 54/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 7[K[32m∗[0m installed [01mconf-findutils[0m.1
-[KProcessing 55/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 7[K[KProcessing 55/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 6[K[32m∗[0m installed [01mconf-g++[0m.1.0
-[KProcessing 56/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 6[K[KProcessing 56/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 5[K[32m∗[0m installed [01mconf-git[0m.1.1
-[KProcessing 57/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 5[K[KProcessing 57/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 4[K[32m∗[0m installed [01mconf-gmp[0m.4
-[KProcessing 58/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 4[K[KProcessing 59/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 5[K[KProcessing 59/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 4[K[KProcessing 60/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 5[K[KProcessing 60/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 4[K[KProcessing 60/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[KProcessing 60/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[32m∗[0m installed [01mconf-pkg-config[0m.2
-[KProcessing 60/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 2[K[KProcessing 61/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[32m∗[0m installed [01mconf-ruby[0m.1.0.0
-[KProcessing 62/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[32m∗[0m installed [01mconf-which[0m.1
-[KProcessing 63/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[KProcessing 64/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 4[K[KProcessing 64/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[32m∗[0m installed [01mconf-gmp-powm-sec[0m.3
-[KProcessing 65/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[KProcessing 65/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 3[K[KProcessing 65/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 2[K[32m∗[0m installed [01mconf-xxhash[0m.1
-[KProcessing 66/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 2[K[KProcessing 66/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 1[K[32m∗[0m installed [01mconf-autoconf[0m.0.1
-[KProcessing 67/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 1[K[KProcessing 67/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 1[K[KProcessing 67/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 1[K[KProcessing 67/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 1[K[KProcessing 67/435: [[32mcapnp-rpc-net.1.2.2[0m: dl] [[32mconduit-lwt.6.2.0[0m: dl]        + 1[K[KProcessing 67/435: [[32mconduit-lwt.6.2.0[0m: dl] [[32mcoq.8.11.dev[0m: git][K[KProcessing 67/435: [[32mconduit-lwt.6.2.0[0m: dl] [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcapnp-rpc-net[0m.1.2.2  (https://opam.ocaml.org/cache)
-[KProcessing 67/435: [[32mconduit-lwt.6.2.0[0m: dl] [[32mcoq.8.11.dev[0m: git][K[KProcessing 68/435: [[32mconduit-lwt.6.2.0[0m: dl] [[32mcoq.8.11.dev[0m: git]              + 1[K[KProcessing 68/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-io-system-ocaml.2.3.1[0m: http][K[36m⬇[0m retrieved [01mconduit-lwt[0m.6.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 68/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-io-system-ocaml.2.3.1[0m: http][K[KProcessing 69/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-io-system-ocaml.2.3.1[0m: http]    + 1[K[KProcessing 69/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-io-system-ocaml.2.3.1[0m: http]    + 1[K[KProcessing 69/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing 69/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcoq-io-system-ocaml[0m.2.3.1  (https://github.com/coq-io/system-ocaml/archive/2.3.1.tar.gz)
-[KProcessing 69/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician.8.11.dev[0m: git][K[KProcessing 70/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician.8.11.dev[0m: git]        + 1[K[KProcessing 70/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician.8.11.dev[0m: git]        + 1[K[KProcessing 70/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician.8.11.dev[0m: git]        + 1[K[36m⬇[0m retrieved [01mcoq-tactician[0m.8.11.dev  (no changes)
-[KProcessing 70/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing 71/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git]  + 1[K[KProcessing 71/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git][K[36m⬇[0m retrieved [01mcppo[0m.1.6.9  (https://opam.ocaml.org/cache)
-[KProcessing 71/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing 72/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git]  + 1[K[KProcessing 72/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git][K[36m⬇[0m retrieved [01mcsexp[0m.1.5.2  (https://opam.ocaml.org/cache)
-[KProcessing 72/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing 73/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git]  + 1[K[KProcessing 73/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git]  + 1[K[KProcessing 73/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git][K[KProcessing 73/435: [[32mcoq.8.11.dev[0m: git] [[32mcoq-tactician-reinforce.~dev[0m: git][K[36m⬇[0m retrieved [01mcoq-tactician-reinforce[0m.~dev  (no changes)
-[KProcessing 73/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 74/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcstruct[0m.6.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 74/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 75/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcstruct-lwt[0m.6.2.0  (cached)
-[KProcessing 75/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 76/435: [[32mcoq.8.11.dev[0m: git] [[32mctypes.0.20.2[0m: dl][K[36m⬇[0m retrieved [01mcstruct-sexp[0m.6.2.0  (cached)
-[KProcessing 76/435: [[32mcoq.8.11.dev[0m: git] [[32mctypes.0.20.2[0m: dl][K[KProcessing 77/435: [[32mcoq.8.11.dev[0m: git] [[32mctypes.0.20.2[0m: dl] [[32mcudf.0.10[0m: dl][K[KProcessing 77/435: [[32mcoq.8.11.dev[0m: git] [[32mctypes.0.20.2[0m: dl][K[KProcessing 77/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcudf[0m.0.10  (https://opam.ocaml.org/cache)
-[KProcessing 77/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 78/435: [[32mcoq.8.11.dev[0m: git] [[32mdomain-name.0.4.0[0m: dl][K[36m⬇[0m retrieved [01mctypes[0m.0.20.2  (https://opam.ocaml.org/cache)
-[KProcessing 78/435: [[32mcoq.8.11.dev[0m: git] [[32mdomain-name.0.4.0[0m: dl][K[KProcessing 79/435: [[32mcoq.8.11.dev[0m: git] [[32mdomain-name.0.4.0[0m: dl]              + 1[K[KProcessing 79/435: [[32mcoq.8.11.dev[0m: git] [[32mdose3.7.0.0[0m: dl][K[36m⬇[0m retrieved [01mdomain-name[0m.0.4.0  (https://opam.ocaml.org/cache)
-[KProcessing 79/435: [[32mcoq.8.11.dev[0m: git] [[32mdose3.7.0.0[0m: dl][K[KProcessing 80/435: [[32mcoq.8.11.dev[0m: git] [[32mdose3.7.0.0[0m: dl] [[32mdune.3.7.1[0m: dl][K[KProcessing 80/435: [[32mcoq.8.11.dev[0m: git] [[32mdune.3.7.1[0m: dl][K[36m⬇[0m retrieved [01mdose3[0m.7.0.0  (https://opam.ocaml.org/cache)
-[KProcessing 80/435: [[32mcoq.8.11.dev[0m: git] [[32mdune.3.7.1[0m: dl][K[KProcessing 81/435: [[32mcoq.8.11.dev[0m: git] [[32mdune.3.7.1[0m: dl]                     + 1[K[KProcessing 81/435: [[32mcoq.8.11.dev[0m: git] [[32mdune-configurator.3.7.1[0m: dl][K[36m⬇[0m retrieved [01mdune[0m.3.7.1  (https://opam.ocaml.org/cache)
-[KProcessing 81/435: [[32mcoq.8.11.dev[0m: git] [[32mdune-configurator.3.7.1[0m: dl][K[KProcessing 82/435: [[32mcoq.8.11.dev[0m: git] [[32mdune-configurator.3.7.1[0m: dl][K[KProcessing 82/435: [[32mcoq.8.11.dev[0m: git] [[32mdune-configurator.3.7.1[0m: dl][K[36m⬇[0m retrieved [01mdune-private-libs[0m.3.7.1  (cached)
-[KProcessing 82/435: [[32mcoq.8.11.dev[0m: git] [[32mdune-configurator.3.7.1[0m: dl][K[KProcessing 83/435: [[32mcoq.8.11.dev[0m: git] [[32mdune-configurator.3.7.1[0m: dl][K[KProcessing 83/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mdune-site[0m.3.7.1  (cached)
-[KProcessing 83/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 84/435: [[32mcoq.8.11.dev[0m: git] [[32mduration.0.2.1[0m: dl][K[36m⬇[0m retrieved [01mdune-configurator[0m.3.7.1  (https://opam.ocaml.org/cache)
-[KProcessing 84/435: [[32mcoq.8.11.dev[0m: git] [[32mduration.0.2.1[0m: dl][K[KProcessing 85/435: [[32mcoq.8.11.dev[0m: git] [[32mduration.0.2.1[0m: dl][K[KProcessing 85/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mdyn[0m.3.7.1  (cached)
-[KProcessing 85/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 86/435: [[32mcoq.8.11.dev[0m: git] [[32meqaf.0.9[0m: dl][K[36m⬇[0m retrieved [01mduration[0m.0.2.1  (https://opam.ocaml.org/cache)
-[KProcessing 86/435: [[32mcoq.8.11.dev[0m: git] [[32meqaf.0.9[0m: dl][K[KProcessing 87/435: [[32mcoq.8.11.dev[0m: git] [[32meqaf.0.9[0m: dl] [[32mextlib.1.7.9[0m: dl][K[KProcessing 87/435: [[32mcoq.8.11.dev[0m: git] [[32mextlib.1.7.9[0m: dl][K[36m⬇[0m retrieved [01meqaf[0m.0.9  (https://opam.ocaml.org/cache)
-[KProcessing 87/435: [[32mcoq.8.11.dev[0m: git] [[32mextlib.1.7.9[0m: dl][K[KProcessing 88/435: [[32mcoq.8.11.dev[0m: git] [[32mextlib.1.7.9[0m: dl] [[32mextunix.0.4.1[0m: dl][K[KProcessing 88/435: [[32mcoq.8.11.dev[0m: git] [[32mextunix.0.4.1[0m: dl][K[36m⬇[0m retrieved [01mextlib[0m.1.7.9  (https://opam.ocaml.org/cache)
-[KProcessing 88/435: [[32mcoq.8.11.dev[0m: git] [[32mextunix.0.4.1[0m: dl][K[KProcessing 89/435: [[32mcoq.8.11.dev[0m: git] [[32mextunix.0.4.1[0m: dl] [[32mfmt.0.9.0[0m: dl][K[KProcessing 89/435: [[32mcoq.8.11.dev[0m: git] [[32mfmt.0.9.0[0m: dl][K[KProcessing 89/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mextunix[0m.0.4.1  (https://opam.ocaml.org/cache)
-[KProcessing 89/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 90/435: [[32mcoq.8.11.dev[0m: git] [[32mfpath.0.7.3[0m: dl][K[36m⬇[0m retrieved [01mfmt[0m.0.9.0  (https://opam.ocaml.org/cache)
-[KProcessing 90/435: [[32mcoq.8.11.dev[0m: git] [[32mfpath.0.7.3[0m: dl][K[KProcessing 91/435: [[32mcoq.8.11.dev[0m: git] [[32mfpath.0.7.3[0m: dl] [[32mgmap.0.3.0[0m: dl][K[KProcessing 91/435: [[32mcoq.8.11.dev[0m: git] [[32mgmap.0.3.0[0m: dl][K[KProcessing 91/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mfpath[0m.0.7.3  (https://opam.ocaml.org/cache)
-[KProcessing 91/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 92/435: [[32mcoq.8.11.dev[0m: git] [[32mhkdf.1.0.4[0m: dl][K[36m⬇[0m retrieved [01mgmap[0m.0.3.0  (https://opam.ocaml.org/cache)
-[KProcessing 92/435: [[32mcoq.8.11.dev[0m: git] [[32mhkdf.1.0.4[0m: dl][K[KProcessing 93/435: [[32mcoq.8.11.dev[0m: git] [[32mhkdf.1.0.4[0m: dl] [[32mintegers.0.7.0[0m: dl][K[KProcessing 93/435: [[32mcoq.8.11.dev[0m: git] [[32mintegers.0.7.0[0m: dl][K[KProcessing 93/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mhkdf[0m.1.0.4  (https://opam.ocaml.org/cache)
-[KProcessing 93/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 94/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr.5.5.0[0m: dl][K[36m⬇[0m retrieved [01mintegers[0m.0.7.0  (https://opam.ocaml.org/cache)
-[KProcessing 94/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr.5.5.0[0m: dl][K[KProcessing 95/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr.5.5.0[0m: dl]                   + 1[K[KProcessing 95/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr-sexp.5.5.0[0m: dl][K[36m⬇[0m retrieved [01mipaddr[0m.5.5.0  (https://opam.ocaml.org/cache)
-[KProcessing 95/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr-sexp.5.5.0[0m: dl][K[KProcessing 96/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr-sexp.5.5.0[0m: dl]              + 1[K[KProcessing 96/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr-sexp.5.5.0[0m: dl][K[36m⬇[0m retrieved [01mjs_of_ocaml[0m.3.9.0  (https://opam.ocaml.org/cache)
-[KProcessing 96/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr-sexp.5.5.0[0m: dl][K[KProcessing 97/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr-sexp.5.5.0[0m: dl]              + 1[K[KProcessing 97/435: [[32mcoq.8.11.dev[0m: git] [[32mipaddr-sexp.5.5.0[0m: dl]              + 1[K[KProcessing 97/435: [[32mcoq.8.11.dev[0m: git] [[32mjs_of_ocaml-compiler.3.9.1[0m: dl][K[36m⬇[0m retrieved [01mipaddr-sexp[0m.5.5.0  (https://opam.ocaml.org/cache)
-[KProcessing 97/435: [[32mcoq.8.11.dev[0m: git] [[32mjs_of_ocaml-compiler.3.9.1[0m: dl][K[KProcessing 98/435: [[32mcoq.8.11.dev[0m: git] [[32mjs_of_ocaml-compiler.3.9.1[0m: dl][K[KProcessing 98/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mjs_of_ocaml-ppx[0m.3.9.0  (cached)
-[KProcessing 98/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 99/435: [[32mcoq.8.11.dev[0m: git] [[32mjsonm.1.0.2[0m: dl][K[36m⬇[0m retrieved [01mjs_of_ocaml-compiler[0m.3.9.1  (https://opam.ocaml.org/cache)
-[KProcessing 99/435: [[32mcoq.8.11.dev[0m: git] [[32mjsonm.1.0.2[0m: dl][K[KProcessing 100/435: [[32mcoq.8.11.dev[0m: git] [[32mjsonm.1.0.2[0m: dl] [[32mlogs.0.7.0[0m: dl][K[KProcessing 100/435: [[32mcoq.8.11.dev[0m: git] [[32mlogs.0.7.0[0m: dl][K[36m⬇[0m retrieved [01mjsonm[0m.1.0.2  (https://opam.ocaml.org/cache)
-[KProcessing 100/435: [[32mcoq.8.11.dev[0m: git] [[32mlogs.0.7.0[0m: dl][K[KProcessing 101/435: [[32mcoq.8.11.dev[0m: git] [[32mlogs.0.7.0[0m: dl] [[32mlwt.4.5.0[0m: dl][K[KProcessing 101/435: [[32mcoq.8.11.dev[0m: git] [[32mlwt.4.5.0[0m: dl][K[36m⬇[0m retrieved [01mlogs[0m.0.7.0  (https://opam.ocaml.org/cache)
-[KProcessing 101/435: [[32mcoq.8.11.dev[0m: git] [[32mlwt.4.5.0[0m: dl][K[KProcessing 102/435: [[32mcoq.8.11.dev[0m: git] [[32mlwt.4.5.0[0m: dl][K[36m⬇[0m retrieved [01mmacaddr[0m.5.5.0  (cached)
-[KProcessing 102/435: [[32mcoq.8.11.dev[0m: git] [[32mlwt.4.5.0[0m: dl][K[KProcessing 103/435: [[32mcoq.8.11.dev[0m: git] [[32mlwt.4.5.0[0m: dl] [[32mmagic-mime.1.3.0[0m: dl][K[KProcessing 103/435: [[32mcoq.8.11.dev[0m: git] [[32mmagic-mime.1.3.0[0m: dl][K[36m⬇[0m retrieved [01mlwt[0m.4.5.0  (https://opam.ocaml.org/cache)
-[KProcessing 103/435: [[32mcoq.8.11.dev[0m: git] [[32mmagic-mime.1.3.0[0m: dl][K[KProcessing 104/435: [[32mcoq.8.11.dev[0m: git] [[32mmagic-mime.1.3.0[0m: dl]              + 1[K[KProcessing 104/435: [[32mcoq.8.11.dev[0m: git] [[32mmccs.1.1+14[0m: dl][K[36m⬇[0m retrieved [01mmagic-mime[0m.1.3.0  (https://opam.ocaml.org/cache)
-[KProcessing 104/435: [[32mcoq.8.11.dev[0m: git] [[32mmccs.1.1+14[0m: dl][K[KProcessing 105/435: [[32mcoq.8.11.dev[0m: git] [[32mmccs.1.1+14[0m: dl] [[32mmenhir.20190924[0m: dl][K[KProcessing 105/435: [[32mcoq.8.11.dev[0m: git] [[32mmenhir.20190924[0m: dl][K[36m⬇[0m retrieved [01mmccs[0m.1.1+14  (https://opam.ocaml.org/cache)
-[KProcessing 105/435: [[32mcoq.8.11.dev[0m: git] [[32mmenhir.20190924[0m: dl][K[KProcessing 106/435: [[32mcoq.8.11.dev[0m: git] [[32mmenhir.20190924[0m: dl]               + 1[K[KProcessing 106/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-clock.4.2.0[0m: dl][K[36m⬇[0m retrieved [01mmenhir[0m.20190924  (https://opam.ocaml.org/cache)
-[KProcessing 106/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-clock.4.2.0[0m: dl][K[KProcessing 107/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-clock.4.2.0[0m: dl]            + 1[K[KProcessing 107/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto.0.10.7[0m: dl][K[36m⬇[0m retrieved [01mmirage-clock[0m.4.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 107/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto.0.10.7[0m: dl][K[KProcessing 108/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto.0.10.7[0m: dl]          + 1[K[KProcessing 108/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[36m⬇[0m retrieved [01mmirage-crypto[0m.0.10.7  (https://opam.ocaml.org/cache)
-[KProcessing 108/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[KProcessing 109/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[KProcessing 109/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[36m⬇[0m retrieved [01mmirage-crypto-pk[0m.0.10.7  (cached)
-[KProcessing 109/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[KProcessing 110/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[KProcessing 110/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[36m⬇[0m retrieved [01mmirage-crypto-rng[0m.0.10.7  (cached)
-[KProcessing 110/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[KProcessing 111/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl]       + 1[K[KProcessing 111/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-crypto-ec.0.10.7[0m: dl][K[KProcessing 111/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mmirage-flow[0m.3.0.0  (https://opam.ocaml.org/cache)
-[KProcessing 111/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 112/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-kv.6.1.1[0m: dl][K[36m⬇[0m retrieved [01mmirage-crypto-ec[0m.0.10.7  (https://opam.ocaml.org/cache)
-[KProcessing 112/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-kv.6.1.1[0m: dl][K[KProcessing 113/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-kv.6.1.1[0m: dl][K[KProcessing 114/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-kv.6.1.1[0m: dl][K[KProcessing 115/435: [[32mcoq.8.11.dev[0m: git] [[32mmirage-kv.6.1.1[0m: dl] [[32mmmap.1.2.0[0m: dl][K[KProcessing 115/435: [[32mcoq.8.11.dev[0m: git] [[32mmmap.1.2.0[0m: dl][K[36m⬇[0m retrieved [01mmirage-kv[0m.6.1.1  (https://opam.ocaml.org/cache)
-[KProcessing 115/435: [[32mcoq.8.11.dev[0m: git] [[32mmmap.1.2.0[0m: dl][K[KProcessing 116/435: [[32mcoq.8.11.dev[0m: git] [[32mmmap.1.2.0[0m: dl] [[32mmtime.2.0.0[0m: dl][K[KProcessing 116/435: [[32mcoq.8.11.dev[0m: git] [[32mmtime.2.0.0[0m: dl][K[36m⬇[0m retrieved [01mmmap[0m.1.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 116/435: [[32mcoq.8.11.dev[0m: git] [[32mmtime.2.0.0[0m: dl][K[KProcessing 117/435: [[32mcoq.8.11.dev[0m: git] [[32mmtime.2.0.0[0m: dl] [[32mnum.1.4[0m: dl][K[KProcessing 117/435: [[32mcoq.8.11.dev[0m: git] [[32mnum.1.4[0m: dl][K[36m⬇[0m retrieved [01mmtime[0m.2.0.0  (https://opam.ocaml.org/cache)
-[KProcessing 117/435: [[32mcoq.8.11.dev[0m: git] [[32mnum.1.4[0m: dl][K[KProcessing 118/435: [[32mcoq.8.11.dev[0m: git] [[32mnum.1.4[0m: dl] [[32moasis.0.4.11[0m: dl][K[KProcessing 118/435: [[32mcoq.8.11.dev[0m: git] [[32moasis.0.4.11[0m: dl][K[KProcessing 118/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mnum[0m.1.4  (https://opam.ocaml.org/cache)
-[KProcessing 118/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 119/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 120/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler.4.09.1[0m: dl][K[36m⬇[0m retrieved [01moasis[0m.0.4.11  (https://opam.ocaml.org/cache)
-[KProcessing 120/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler.4.09.1[0m: dl][K[KProcessing 121/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler.4.09.1[0m: dl]    + 1[K[KProcessing 121/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler.4.09.1[0m: dl][K[KProcessing 121/435: [[32mcoq.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mocaml-compiler-libs[0m.v0.12.4  (https://opam.ocaml.org/cache)
-[KProcessing 121/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 122/435: [[32mcoq.8.11.dev[0m: git][K[KProcessing 123/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-syntax-shims.1.0.0[0m: dl][K[KProcessing 123/435: [[32mcoq.8.11.dev[0m: git]                                     + 2[K[KProcessing 123/435: [[32mcoq.8.11.dev[0m: git]                                     + 1[K[36m⬇[0m retrieved [01mocaml-syntax-shims[0m.1.0.0  (https://opam.ocaml.org/cache)
-[KProcessing 123/435: [[32mcoq.8.11.dev[0m: git]                                     + 1[K[KProcessing 124/435: [[32mcoq.8.11.dev[0m: git]                                     + 2[K[36m⬇[0m retrieved [01mocaml-base-compiler[0m.4.09.1  (https://opam.ocaml.org/cache)
-[KProcessing 124/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlbuild.0.14.2[0m: dl][K[KProcessing 125/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlbuild.0.14.2[0m: dl]             + 1[K[KProcessing 126/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlbuild.0.14.2[0m: dl]             + 2[K[KProcessing 126/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlfind.1.9.6[0m: dl]               + 1[K[KProcessing 126/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlfind.1.9.6[0m: dl]               + 1[K[36m⬇[0m retrieved [01mocamlbuild[0m.0.14.2  (https://opam.ocaml.org/cache)
-[KProcessing 126/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlfind.1.9.6[0m: dl]               + 1[K[KProcessing 127/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlfind.1.9.6[0m: dl]               + 2[K[KProcessing 127/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlfind.1.9.6[0m: dl]               + 2[K[KProcessing 127/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlgraph.2.0.0[0m: dl]              + 1[K[36m⬇[0m retrieved [01mocamlfind[0m.1.9.6  (https://opam.ocaml.org/cache)
-[KProcessing 127/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlgraph.2.0.0[0m: dl]              + 1[K[KProcessing 128/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlgraph.2.0.0[0m: dl]              + 2[K[KProcessing 128/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlify.0.0.1[0m: dl]                + 1[K[KProcessing 128/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mocamlgraph[0m.2.0.0  (https://opam.ocaml.org/cache)
-[KProcessing 128/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 129/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlmod.0.0.9[0m: dl]                + 1[K[36m⬇[0m retrieved [01mocamlify[0m.0.0.1  (https://opam.ocaml.org/cache)
-[KProcessing 129/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlmod.0.0.9[0m: dl]                + 1[K[KProcessing 130/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlmod.0.0.9[0m: dl]                + 2[K[KProcessing 130/435: [[32mcoq.8.11.dev[0m: git] [[32mocamlmod.0.0.9[0m: dl]                + 1[K[KProcessing 130/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mocplib-endian[0m.1.2  (https://opam.ocaml.org/cache)
-[KProcessing 130/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 131/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-client.2.1.4[0m: dl]             + 1[K[36m⬇[0m retrieved [01mocamlmod[0m.0.0.9  (https://opam.ocaml.org/cache)
-[KProcessing 131/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-client.2.1.4[0m: dl]             + 1[K[KProcessing 132/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-client.2.1.4[0m: dl]             + 2[K[KProcessing 132/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[36m⬇[0m retrieved [01mopam-client[0m.2.1.4  (https://opam.ocaml.org/cache)
-[KProcessing 132/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[KProcessing 133/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 2[K[KProcessing 133/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[36m⬇[0m retrieved [01mopam-file-format[0m.2.1.6  (https://opam.ocaml.org/cache)
-[KProcessing 133/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[KProcessing 134/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[36m⬇[0m retrieved [01mopam-format[0m.2.1.4  (cached)
-[KProcessing 134/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[KProcessing 135/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[KProcessing 135/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[36m⬇[0m retrieved [01mopam-repository[0m.2.1.4  (cached)
-[KProcessing 135/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[KProcessing 136/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[36m⬇[0m retrieved [01mopam-solver[0m.2.1.4  (cached)
-[KProcessing 136/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[KProcessing 137/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[36m⬇[0m retrieved [01mopam-state[0m.2.1.4  (cached)
-[KProcessing 137/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 1[K[KProcessing 138/435: [[32mcoq.8.11.dev[0m: git] [[32mopam-core.2.1.4[0m: dl]               + 2[K[KProcessing 138/435: [[32mcoq.8.11.dev[0m: git] [[32moptint.0.3.0[0m: dl]                  + 1[K[KProcessing 138/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mopam-core[0m.2.1.4  (https://opam.ocaml.org/cache)
-[KProcessing 138/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 139/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01moptint[0m.0.3.0  (https://opam.ocaml.org/cache)
-[KProcessing 139/435: [[32mcoq.8.11.dev[0m: git] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 140/435: [[32mcoq.8.11.dev[0m: git] [[32mott.0.33[0m: dl]                      + 1[K[36m⬇[0m retrieved [01mordering[0m.3.7.1  (cached)
-[KProcessing 140/435: [[32mcoq.8.11.dev[0m: git] [[32mott.0.33[0m: dl]                      + 1[K[KProcessing 141/435: [[32mcoq.8.11.dev[0m: git] [[32mott.0.33[0m: dl]                      + 2[K[KProcessing 141/435: [[32mcoq.8.11.dev[0m: git] [[32mparsexp.v0.14.2[0m: dl]               + 1[K[36m⬇[0m retrieved [01mott[0m.0.33  (https://opam.ocaml.org/cache)
-[KProcessing 141/435: [[32mcoq.8.11.dev[0m: git] [[32mparsexp.v0.14.2[0m: dl]               + 1[K[KProcessing 142/435: [[32mcoq.8.11.dev[0m: git] [[32mparsexp.v0.14.2[0m: dl]               + 2[K[KProcessing 142/435: [[32mcoq.8.11.dev[0m: git] [[32mpbkdf.1.2.0[0m: dl]                   + 1[K[36m⬇[0m retrieved [01mparsexp[0m.v0.14.2  (https://opam.ocaml.org/cache)
-[KProcessing 142/435: [[32mcoq.8.11.dev[0m: git] [[32mpbkdf.1.2.0[0m: dl]                   + 1[K[KProcessing 143/435: [[32mcoq.8.11.dev[0m: git] [[32mpbkdf.1.2.0[0m: dl] [[32mpp.1.1.2[0m: dl]    + 1[K[KProcessing 143/435: [[32mcoq.8.11.dev[0m: git] [[32mpp.1.1.2[0m: dl]                      + 1[K[36m⬇[0m retrieved [01mpbkdf[0m.1.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 143/435: [[32mcoq.8.11.dev[0m: git] [[32mpp.1.1.2[0m: dl]                      + 1[K[KProcessing 144/435: [[32mcoq.8.11.dev[0m: git] [[32mpp.1.1.2[0m: dl]                      + 1[K[36m⬇[0m retrieved [01mppx_cstruct[0m.6.2.0  (cached)
-[KProcessing 144/435: [[32mcoq.8.11.dev[0m: git] [[32mpp.1.1.2[0m: dl]                      + 1[K[KProcessing 145/435: [[32mcoq.8.11.dev[0m: git] [[32mpp.1.1.2[0m: dl]                      + 2[K[KProcessing 145/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_derivers.1.2.1[0m: dl]            + 1[K[36m⬇[0m retrieved [01mpp[0m.1.1.2  (https://opam.ocaml.org/cache)
-[KProcessing 145/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_derivers.1.2.1[0m: dl]            + 1[K[KProcessing 146/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_derivers.1.2.1[0m: dl]            + 2[K[KProcessing 146/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_deriving.5.2.1[0m: dl]            + 1[K[36m⬇[0m retrieved [01mppx_derivers[0m.1.2.1  (https://opam.ocaml.org/cache)
-[KProcessing 146/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_deriving.5.2.1[0m: dl]            + 1[K[KProcessing 147/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_deriving.5.2.1[0m: dl]            + 2[K[KProcessing 147/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_sexp_conv.v0.14.3[0m: dl]         + 1[K[36m⬇[0m retrieved [01mppx_deriving[0m.5.2.1  (https://opam.ocaml.org/cache)
-[KProcessing 147/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_sexp_conv.v0.14.3[0m: dl]         + 1[K[KProcessing 148/435: [[32mcoq.8.11.dev[0m: git] [[32mppx_sexp_conv.v0.14.3[0m: dl]         + 2[K[KProcessing 148/435: [[32mcoq.8.11.dev[0m: git] [[32mppxlib.0.25.1[0m: dl]                 + 1[K[36m⬇[0m retrieved [01mppx_sexp_conv[0m.v0.14.3  (https://opam.ocaml.org/cache)
-[KProcessing 148/435: [[32mcoq.8.11.dev[0m: git] [[32mppxlib.0.25.1[0m: dl]                 + 1[K[KProcessing 149/435: [[32mcoq.8.11.dev[0m: git] [[32mppxlib.0.25.1[0m: dl]                 + 2[K[KProcessing 149/435: [[32mcoq.8.11.dev[0m: git] [[32mprometheus.1.2[0m: dl]                + 1[K[36m⬇[0m retrieved [01mppxlib[0m.0.25.1  (https://opam.ocaml.org/cache)
-[KProcessing 149/435: [[32mcoq.8.11.dev[0m: git] [[32mprometheus.1.2[0m: dl]                + 1[K[KProcessing 150/435: [[32mcoq.8.11.dev[0m: git] [[32mprometheus.1.2[0m: dl]                + 2[K[KProcessing 150/435: [[32mcoq.8.11.dev[0m: git] [[32mptime.1.1.0[0m: dl]                   + 1[K[36m⬇[0m retrieved [01mprometheus[0m.1.2  (https://opam.ocaml.org/cache)
-[KProcessing 150/435: [[32mcoq.8.11.dev[0m: git] [[32mptime.1.1.0[0m: dl]                   + 1[K[KProcessing 151/435: [[32mcoq.8.11.dev[0m: git] [[32mptime.1.1.0[0m: dl] [[32mre.1.10.4[0m: dl]   + 1[K[KProcessing 151/435: [[32mcoq.8.11.dev[0m: git] [[32mre.1.10.4[0m: dl]                     + 1[K[36m⬇[0m retrieved [01mptime[0m.1.1.0  (https://opam.ocaml.org/cache)
-[KProcessing 151/435: [[32mcoq.8.11.dev[0m: git] [[32mre.1.10.4[0m: dl]                     + 1[K[KProcessing 152/435: [[32mcoq.8.11.dev[0m: git] [[32mre.1.10.4[0m: dl] [[32mres.5.0.1[0m: dl]     + 1[K[KProcessing 152/435: [[32mcoq.8.11.dev[0m: git] [[32mres.5.0.1[0m: dl]                     + 1[K[36m⬇[0m retrieved [01mre[0m.1.10.4  (https://opam.ocaml.org/cache)
-[KProcessing 152/435: [[32mcoq.8.11.dev[0m: git] [[32mres.5.0.1[0m: dl]                     + 1[K[KProcessing 153/435: [[32mcoq.8.11.dev[0m: git] [[32mres.5.0.1[0m: dl] [[32mresult.1.5[0m: dl]    + 1[K[KProcessing 153/435: [[32mcoq.8.11.dev[0m: git] [[32mres.5.0.1[0m: dl] [[32mresult.1.5[0m: dl]    + 1[K[KProcessing 153/435: [[32mcoq.8.11.dev[0m: git] [[32mresult.1.5[0m: dl]                    + 1[K[36m⬇[0m retrieved [01mres[0m.5.0.1  (https://opam.ocaml.org/cache)
-[KProcessing 153/435: [[32mcoq.8.11.dev[0m: git] [[32mresult.1.5[0m: dl]                    + 1[K[KProcessing 154/435: [[32mcoq.8.11.dev[0m: git] [[32mresult.1.5[0m: dl]                    + 2[K[KProcessing 154/435: [[32mcoq.8.11.dev[0m: git] [[32mrresult.0.7.0[0m: dl]                 + 1[K[36m⬇[0m retrieved [01mresult[0m.1.5  (https://opam.ocaml.org/cache)
-[KProcessing 154/435: [[32mcoq.8.11.dev[0m: git] [[32mrresult.0.7.0[0m: dl]                 + 1[K[KProcessing 155/435: [[32mcoq.8.11.dev[0m: git] [[32mrresult.0.7.0[0m: dl]                 + 1[K[KProcessing 156/435: [[32mcoq.8.11.dev[0m: git] [[32mrresult.0.7.0[0m: dl]                 + 2[K[KProcessing 156/435: [[32mcoq.8.11.dev[0m: git] [[32mrresult.0.7.0[0m: dl]                 + 2[K[KProcessing 156/435: [[32mcoq.8.11.dev[0m: git] [[32msexplib.v0.14.0[0m: dl]               + 1[K[36m⬇[0m retrieved [01mcoq[0m.8.11.dev  (git+https://github.com/LasseBlaauwbroek/coq.git#v8.11-tactician)
-[KProcessing 156/435: [[32msexplib.v0.14.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 157/435: [[32msexplib.v0.14.0[0m: dl] [[32msexplib0.v0.14.0[0m: dl]            + 1[K[36m⬇[0m retrieved [01mrresult[0m.0.7.0  (https://opam.ocaml.org/cache)
-[KProcessing 157/435: [[32msexplib.v0.14.0[0m: dl] [[32msexplib0.v0.14.0[0m: dl]            + 1[K[KProcessing 158/435: [[32msexplib.v0.14.0[0m: dl] [[32msexplib0.v0.14.0[0m: dl]            + 2[K[KProcessing 158/435: [[32msexplib0.v0.14.0[0m: dl] [[32mstdint.0.7.2[0m: dl]               + 1[K[36m⬇[0m retrieved [01msexplib[0m.v0.14.0  (https://opam.ocaml.org/cache)
-[KProcessing 158/435: [[32msexplib0.v0.14.0[0m: dl] [[32mstdint.0.7.2[0m: dl]               + 1[K[KProcessing 159/435: [[32msexplib0.v0.14.0[0m: dl] [[32mstdint.0.7.2[0m: dl]               + 2[K[KProcessing 159/435: [[32mstdint.0.7.2[0m: dl] [[32mstdio.v0.14.0[0m: dl]                  + 1[K[36m⬇[0m retrieved [01msexplib0[0m.v0.14.0  (https://opam.ocaml.org/cache)
-[KProcessing 159/435: [[32mstdint.0.7.2[0m: dl] [[32mstdio.v0.14.0[0m: dl]                  + 1[K[KProcessing 160/435: [[32mstdint.0.7.2[0m: dl] [[32mstdio.v0.14.0[0m: dl]                  + 2[K[KProcessing 160/435: [[32mstdio.v0.14.0[0m: dl] [[32mstdlib-shims.0.3.0[0m: dl]            + 1[K[36m⬇[0m retrieved [01mstdint[0m.0.7.2  (https://opam.ocaml.org/cache)
-[KProcessing 160/435: [[32mstdio.v0.14.0[0m: dl] [[32mstdlib-shims.0.3.0[0m: dl]            + 1[K[KProcessing 161/435: [[32mstdio.v0.14.0[0m: dl] [[32mstdlib-shims.0.3.0[0m: dl]            + 1[K[KProcessing 161/435: [[32mstdlib-shims.0.3.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mstdio[0m.v0.14.0  (https://opam.ocaml.org/cache)
-[KProcessing 161/435: [[32mstdlib-shims.0.3.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 162/435: [[32mstdlib-shims.0.3.0[0m: dl] [[32mstringext.1.6.0[0m: dl]          + 1[K[KProcessing 162/435: [[32mstringext.1.6.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mstdlib-shims[0m.0.3.0  (https://opam.ocaml.org/cache)
-[KProcessing 162/435: [[32mstringext.1.6.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 163/435: [[32mstringext.1.6.0[0m: dl] [[32mtls.0.15.4[0m: dl]                  + 1[K[KProcessing 163/435: [[32mtls.0.15.4[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mstdune[0m.3.7.1  (cached)
-[KProcessing 163/435: [[32mtls.0.15.4[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 164/435: [[32mtls.0.15.4[0m: dl] [[32mtls-mirage.0.15.4[0m: dl]                + 1[K[KProcessing 164/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mstringext[0m.1.6.0  (https://opam.ocaml.org/cache)
-[KProcessing 164/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 165/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mtopkg.1.0.7[0m: dl]               + 1[K[36m⬇[0m retrieved [01mtls[0m.0.15.4  (https://opam.ocaml.org/cache)
-[KProcessing 165/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mtopkg.1.0.7[0m: dl]               + 1[K[KProcessing 166/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mtopkg.1.0.7[0m: dl]               + 2[K[KProcessing 166/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mtopkg.1.0.7[0m: dl]               + 1[K[KProcessing 166/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01muchar[0m.0.0.2  (https://opam.ocaml.org/cache)
-[KProcessing 166/435: [[32mtls-mirage.0.15.4[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 167/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri.4.2.0[0m: dl]                 + 1[K[36m⬇[0m retrieved [01mtopkg[0m.1.0.7  (https://opam.ocaml.org/cache)
-[KProcessing 167/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri.4.2.0[0m: dl]                 + 1[K[KProcessing 168/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri.4.2.0[0m: dl]                 + 2[K[KProcessing 168/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri-sexp.4.2.0[0m: dl]            + 1[K[36m⬇[0m retrieved [01muri[0m.4.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 168/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri-sexp.4.2.0[0m: dl]            + 1[K[KProcessing 169/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri-sexp.4.2.0[0m: dl]            + 2[K[KProcessing 169/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri-sexp.4.2.0[0m: dl]            + 2[K[KProcessing 169/435: [[32mtls-mirage.0.15.4[0m: dl] [[32muri-sexp.4.2.0[0m: dl]            + 1[K[KProcessing 169/435: [[32muri-sexp.4.2.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01muutf[0m.1.0.3  (https://opam.ocaml.org/cache)
-[KProcessing 169/435: [[32muri-sexp.4.2.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 170/435: [[32muri-sexp.4.2.0[0m: dl] [[32mwasm.1.0.1[0m: dl]                   + 1[K[36m⬇[0m retrieved [01mtls-mirage[0m.0.15.4  (https://opam.ocaml.org/cache)
-[KProcessing 170/435: [[32muri-sexp.4.2.0[0m: dl] [[32mwasm.1.0.1[0m: dl]                   + 1[K[KProcessing 171/435: [[32muri-sexp.4.2.0[0m: dl] [[32mwasm.1.0.1[0m: dl] [[32mx509.0.16.4[0m: dl] + 1[K[KProcessing 171/435: [[32muri-sexp.4.2.0[0m: dl] [[32mwasm.1.0.1[0m: dl] [[32mx509.0.16.4[0m: dl] + 1[K[KProcessing 171/435: [[32muri-sexp.4.2.0[0m: dl] [[32mwasm.1.0.1[0m: dl]                   + 1[K[KProcessing 171/435: [[32muri-sexp.4.2.0[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 171/435: [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mx509[0m.0.16.4  (https://opam.ocaml.org/cache)
-[KProcessing 171/435: [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 172/435: [[32mxxhash.0.1[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[36m⬇[0m retrieved [01mwasm[0m.1.0.1  (https://opam.ocaml.org/cache)
-[KProcessing 172/435: [[32mxxhash.0.1[0m: dl] [[32mocaml-base-compiler[0m: ./configure][K[KProcessing 173/435: [[32mxxhash.0.1[0m: dl] [[32myojson.2.1.0[0m: dl]                     + 1[K[36m⬇[0m retrieved [01muri-sexp[0m.4.2.0  (https://opam.ocaml.org/cache)
-[KProcessing 173/435: [[32mxxhash.0.1[0m: dl] [[32myojson.2.1.0[0m: dl]                     + 1[K[KProcessing 174/435: [[32mxxhash.0.1[0m: dl] [[32myojson.2.1.0[0m: dl] [[32mzarith.1.12[0m: dl]   + 1[K[KProcessing 174/435: [[32myojson.2.1.0[0m: dl] [[32mzarith.1.12[0m: dl]                    + 1[K[KProcessing 174/435: [[32myojson.2.1.0[0m: dl] [[32mzarith.1.12[0m: dl]                    + 1[K[36m⬇[0m retrieved [01mxxhash[0m.0.1  (https://opam.ocaml.org/cache)
-[KProcessing 174/435: [[32myojson.2.1.0[0m: dl] [[32mzarith.1.12[0m: dl]                    + 1[K[KProcessing 174/435: [[32mzarith.1.12[0m: dl] [[32mocaml-base-compiler[0m: make world][K[KProcessing 174/435: [[32mocaml-base-compiler[0m: make world][K[36m⬇[0m retrieved [01myojson[0m.2.1.0  (https://opam.ocaml.org/cache)
-[KProcessing 174/435: [[32mocaml-base-compiler[0m: make world][K[36m⬇[0m retrieved [01mzarith[0m.1.12  (https://opam.ocaml.org/cache)
-[KProcessing 174/435: [[32mocaml-base-compiler[0m: make world][K[KProcessing 174/435: [[32mocaml-base-compiler[0m: make world.opt][K[KProcessing 175/435: [[32mocaml-base-compiler[0m: make install][K[32m∗[0m installed [01mocaml-base-compiler[0m.4.09.1
-[32m∗[0m installed [01mocaml-config[0m.1
-[KProcessing 178/435: [[32mocaml[0m: ocaml 4.09.1][K[32m∗[0m installed [01mocaml[0m.4.09.1
-[KProcessing 180/435: [[32mcmdliner[0m: make all][K[KProcessing 181/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55][K[KProcessing 182/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55][K[KProcessing 183/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55][K[KProcessing 184/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 1[K[KProcessing 185/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[KProcessing 186/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[32m∗[0m installed [01mmirage-no-solo5[0m.1
-[KProcessing 187/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[32m∗[0m installed [01mmirage-no-xen[0m.1
-[KProcessing 188/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[32m∗[0m installed [01mseq[0m.base
-[KProcessing 189/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[KProcessing 189/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[KProcessing 189/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[KProcessing 189/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[KProcessing 189/435: [[32mcmdliner[0m: make all] [[32mdune[0m: ocaml 55]                   + 2[K[KProcessing 189/435: [[32mdune[0m: ocaml 55]                                        + 2[K[KProcessing 190/435: [[32mdune[0m: ocaml 55]                                        + 3[K[KProcessing 190/435: [[32mdune[0m: ocaml 55]                                        + 3[K[32m∗[0m installed [01mcmdliner[0m.1.2.0
-[KProcessing 190/435: [[32mdune[0m: ocaml 55]                                        + 2[K[KProcessing 190/435: [[32mdune[0m: ocaml 55] [[32mocamlbuild[0m: make check-if-preinstalled][K[KProcessing 191/435: [[32mdune[0m: ocaml 55]                                        + 2[K[32m∗[0m installed [01mocamlfind[0m.1.9.6
-[KProcessing 191/435: [[32mdune[0m: ocaml 55] [[32mocamlbuild[0m: make check-if-preinstalled][K[KProcessing 192/435: [[32mdune[0m: ocaml 55] [[32mocamlbuild[0m: make check-if-preinstalled][K[KProcessing 193/435: [[32mdune[0m: ocaml 55] [[32mnum[0m: make]                            + 1[K[KProcessing 194/435: [[32mdune[0m: ocaml 55] [[32mnum[0m: make]                            + 2[K[32m∗[0m installed [01mbase-bytes[0m.base
-[KProcessing 195/435: [[32mdune[0m: ocaml 55] [[32mnum[0m: make]                            + 2[K[KProcessing 195/435: [[32mdune[0m: ocaml 55] [[32mnum[0m: make]                            + 2[K[KProcessing 195/435: [[32mdune[0m: ocaml 55]                                        + 2[K[KProcessing 196/435: [[32mdune[0m: ocaml 55]                                        + 3[K[KProcessing 196/435: [[32mdune[0m: ocaml 55]                                        + 3[K[KProcessing 196/435: [[32mdune[0m: ocaml 55]                                        + 3[K[32m∗[0m installed [01mnum[0m.1.4
-[KProcessing 196/435: [[32mdune[0m: ocaml 55]                                        + 2[K[KProcessing 197/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55]                  + 2[K[KProcessing 197/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55] [[32mzarith[0m: make][K[32m∗[0m installed [01mocamlbuild[0m.0.14.2
-[KProcessing 198/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55] [[32mzarith[0m: make][K[KProcessing 199/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55]                  + 2[K[KProcessing 200/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55]                  + 3[K[KProcessing 201/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55]                  + 4[K[KProcessing 202/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55]                  + 5[K[KProcessing 203/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55]                  + 6[K[KProcessing 204/435: [[32mcoq[0m: ./configure no] [[32mdune[0m: ocaml 55]                  + 7[K[KProcessing 204/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 6[K[KProcessing 204/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 6[K[KProcessing 204/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 5[K[KProcessing 205/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 6[K[32m∗[0m installed [01mzarith[0m.1.12
-[KProcessing 205/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 5[K[KProcessing 205/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 4[K[32m∗[0m installed [01muchar[0m.0.0.2
-[KProcessing 206/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 4[K[KProcessing 206/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 4[K[KProcessing 206/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 4[K[KProcessing 206/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 3[K[KProcessing 207/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 4[K[32m∗[0m installed [01mocamlify[0m.0.0.1
-[KProcessing 207/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 3[K[KProcessing 207/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 2[K[KProcessing 208/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 3[K[KProcessing 208/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 2[K[32m∗[0m installed [01mocamlmod[0m.0.0.9
-[KProcessing 208/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 1[K[KProcessing 209/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 2[K[32m∗[0m installed [01mtopkg[0m.1.0.7
-[KProcessing 210/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 2[K[KProcessing 211/435: [[32masetmap[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 3[K[KProcessing 212/435: [[32masetmap[0m: ocaml build] [[32mastring[0m: ocaml build]           + 5[K[KProcessing 213/435: [[32masetmap[0m: ocaml build] [[32mastring[0m: ocaml build]           + 6[K[KProcessing 214/435: [[32masetmap[0m: ocaml build] [[32mastring[0m: ocaml build]           + 7[K[KProcessing 215/435: [[32masetmap[0m: ocaml build] [[32mastring[0m: ocaml build]           + 8[K[KProcessing 216/435: [[32masetmap[0m: ocaml build] [[32mastring[0m: ocaml build]           + 9[K[KProcessing 217/435: [[32masetmap[0m: ocaml build] [[32mastring[0m: ocaml build]           +10[K[KProcessing 217/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 8[K[32m∗[0m installed [01masetmap[0m.0.8.1
-[KProcessing 218/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 8[K[KProcessing 218/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 7[K[32m∗[0m installed [01mrresult[0m.0.7.0
-[KProcessing 219/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 7[K[KProcessing 219/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 6[K[KProcessing 220/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 7[K[KProcessing 220/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 6[K[KProcessing 220/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 5[K[KProcessing 220/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 4[K[KProcessing 220/435: [[32mastring[0m: ocaml build] [[32mcoq[0m: make] [[32mdune[0m: ocaml 55]     + 3[K[KProcessing 220/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 2[K[32m∗[0m installed [01mwasm[0m.1.0.1
-[KProcessing 220/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 1[K[32m∗[0m installed [01mastring[0m.0.8.5
-[KProcessing 221/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 1[K[KProcessing 222/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mfpath[0m: ocaml build]       + 2[K[32m∗[0m installed [01mfmt[0m.0.9.0
-[KProcessing 223/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mfpath[0m: ocaml build]       + 2[K[32m∗[0m installed [01mmtime[0m.2.0.0
-[KProcessing 224/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mfpath[0m: ocaml build]       + 2[K[32m∗[0m installed [01mptime[0m.1.1.0
-[KProcessing 225/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mfpath[0m: ocaml build]       + 2[K[32m∗[0m installed [01muutf[0m.1.0.3
-[KProcessing 226/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mfpath[0m: ocaml build]       + 2[K[KProcessing 227/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mfpath[0m: ocaml build]       + 3[K[KProcessing 227/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mfpath[0m: ocaml build]       + 3[K[KProcessing 227/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mjsonm[0m: ocaml build]       + 2[K[32m∗[0m installed [01mfpath[0m.0.7.3
-[KProcessing 228/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mjsonm[0m: ocaml build]       + 2[K[KProcessing 228/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 1[K[32m∗[0m installed [01mjsonm[0m.1.0.2
-[KProcessing 229/435: [[32mcoq[0m: make] [[32mdune[0m: ocaml 55] [[32mmenhir[0m: make Makefile]    + 1[K[KProcessing 229/435: [[32mcoq[0m: make] [[32mdune[0m: ./_boot/dune.exe build]              + 2[K[KProcessing 229/435: [[32mcoq[0m: make] [[32mmenhir[0m: make Makefile] [[32moasis[0m: ocaml setup.ml][K[32m∗[0m installed [01mdune[0m.3.7.1
-[KProcessing 230/435: [[32mcoq[0m: make] [[32mmenhir[0m: make Makefile] [[32moasis[0m: ocaml setup.ml][K[KProcessing 231/435: [[32mbase64[0m: dune build] [[32mcoq[0m: make]                        + 2[K[KProcessing 232/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      + 3[K[KProcessing 233/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      + 4[K[KProcessing 234/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      + 5[K[KProcessing 235/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      + 6[K[KProcessing 236/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      + 7[K[KProcessing 237/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      + 8[K[KProcessing 238/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      + 9[K[KProcessing 239/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +10[K[KProcessing 240/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +11[K[KProcessing 241/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +12[K[KProcessing 242/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +13[K[KProcessing 243/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +14[K[KProcessing 244/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +15[K[KProcessing 245/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +16[K[KProcessing 246/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +17[K[KProcessing 247/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +18[K[KProcessing 248/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +19[K[KProcessing 249/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +20[K[KProcessing 250/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +21[K[KProcessing 251/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +22[K[KProcessing 252/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +23[K[KProcessing 253/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +24[K[KProcessing 254/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +25[K[KProcessing 255/435: [[32mbase64[0m: dune build] [[32mbigarray-compat[0m: dune build]      +26[K[KProcessing 255/435: [[32mbigarray-compat[0m: dune build] [[32mcoq[0m: make]               +25[K[32m∗[0m installed [01mbase64[0m.3.5.1
-[KProcessing 256/435: [[32mbigarray-compat[0m: dune build] [[32mcoq[0m: make]               +25[K[KProcessing 256/435: [[32mcoq[0m: make] [[32mcppo[0m: dune build] [[32mcsexp[0m: dune build]      +23[K[32m∗[0m installed [01mbigarray-compat[0m.1.1.0
-[KProcessing 257/435: [[32mcoq[0m: make] [[32mcppo[0m: dune build] [[32mcsexp[0m: dune build]      +23[K[KProcessing 258/435: [[32mcoq[0m: make] [[32mcppo[0m: dune build] [[32mcsexp[0m: dune build]      +24[K[KProcessing 258/435: [[32mcoq[0m: make] [[32mcppo[0m: dune build] [[32mcstruct[0m: dune build]    +23[K[32m∗[0m installed [01mcsexp[0m.1.5.2
-[KProcessing 259/435: [[32mcoq[0m: make] [[32mcppo[0m: dune build] [[32mcstruct[0m: dune build]    +23[K[KProcessing 260/435: [[32mcoq[0m: make] [[32mcppo[0m: dune build] [[32mcstruct[0m: dune build]    +24[K[KProcessing 260/435: [[32mcoq[0m: make] [[32mcstruct[0m: dune build]                       +24[K[32m∗[0m installed [01mcppo[0m.1.6.9
-[KProcessing 261/435: [[32mcoq[0m: make] [[32mcstruct[0m: dune build]                       +24[K[KProcessing 262/435: [[32mcoq[0m: make] [[32mcstruct[0m: dune build]                       +25[K[KProcessing 263/435: [[32mcoq[0m: make] [[32mcstruct[0m: dune build]                       +26[K[KProcessing 264/435: [[32mcoq[0m: make] [[32mcstruct[0m: dune build]                       +27[K[KProcessing 264/435: [[32mcoq[0m: make] [[32mdomain-name[0m: dune build]                   +26[K[32m∗[0m installed [01mcstruct[0m.6.2.0
-[KProcessing 265/435: [[32mcoq[0m: make] [[32mdomain-name[0m: dune build]                   +26[K[KProcessing 266/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +27[K[KProcessing 267/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +28[K[KProcessing 267/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +27[K[32m∗[0m installed [01mdomain-name[0m.0.4.0
-[KProcessing 268/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +27[K[KProcessing 268/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +26[K[32m∗[0m installed [01mduration[0m.0.2.1
-[KProcessing 269/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +26[K[KProcessing 269/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +25[K[32m∗[0m installed [01mgmap[0m.0.3.0
-[KProcessing 270/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +25[K[KProcessing 270/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +24[K[32m∗[0m installed [01mmacaddr[0m.5.5.0
-[KProcessing 271/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +24[K[KProcessing 272/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +25[K[KProcessing 272/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +24[K[32m∗[0m installed [01mmagic-mime[0m.1.3.0
-[KProcessing 273/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +24[K[KProcessing 273/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +23[K[32m∗[0m installed [01mmirage-clock[0m.4.2.0
-[KProcessing 274/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +23[K[KProcessing 274/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +22[K[32m∗[0m installed [01mocaml-compiler-libs[0m.v0.12.4
-[KProcessing 275/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +22[K[KProcessing 275/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +21[K[32m∗[0m installed [01mocaml-syntax-shims[0m.1.0.0
-[KProcessing 276/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +21[K[KProcessing 276/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +20[K[32m∗[0m installed [01mopam-file-format[0m.2.1.6
-[KProcessing 277/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +20[K[KProcessing 277/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +19[K[32m∗[0m installed [01moptint[0m.0.3.0
-[KProcessing 278/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +19[K[KProcessing 278/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +19[K[KProcessing 278/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +18[K[32m∗[0m installed [01mpp[0m.1.1.2
-[KProcessing 279/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +18[K[KProcessing 279/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +17[K[32m∗[0m installed [01mppx_derivers[0m.1.2.1
-[KProcessing 280/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +17[K[KProcessing 280/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +16[K[32m∗[0m installed [01mres[0m.5.0.1
-[KProcessing 281/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +16[K[KProcessing 281/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +15[K[32m∗[0m installed [01mresult[0m.1.5
-[KProcessing 282/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +15[K[KProcessing 282/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +14[K[32m∗[0m installed [01msexplib0[0m.v0.14.0
-[KProcessing 283/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +14[K[KProcessing 283/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +13[K[32m∗[0m installed [01mstdlib-shims[0m.0.3.0
-[KProcessing 284/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +13[K[KProcessing 285/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +14[K[KProcessing 286/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +15[K[KProcessing 287/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +16[K[KProcessing 287/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +15[K[32m∗[0m installed [01mre[0m.1.10.4
-[KProcessing 288/435: [[32masn1-combinators[0m: dune build] [[32mcoq[0m: make]              +15[K[KProcessing 289/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +16[K[KProcessing 289/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +15[K[32m∗[0m installed [01mstringext[0m.1.6.0
-[KProcessing 290/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +15[K[KProcessing 290/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +14[K[32m∗[0m installed [01mmmap[0m.1.2.0
-[KProcessing 291/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +14[K[KProcessing 291/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +14[K[KProcessing 291/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +13[K[32m∗[0m installed [01mocplib-endian[0m.1.2
-[KProcessing 292/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +13[K[KProcessing 292/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +13[K[KProcessing 292/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +12[K[32m∗[0m installed [01meqaf[0m.0.9
-[KProcessing 293/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +12[K[KProcessing 293/435: [[32masn1-combinators[0m: dune build] [[32mcalendar[0m: dune build]   +12[K[KProcessing 293/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      +11[K[32m∗[0m installed [01masn1-combinators[0m.0.2.6
-[KProcessing 294/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      +11[K[KProcessing 294/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      +10[K[32m∗[0m installed [01mstdint[0m.0.7.2
-[KProcessing 295/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      +10[K[KProcessing 295/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      + 9[K[32m∗[0m installed [01mextlib[0m.1.7.9
-[KProcessing 296/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      + 9[K[KProcessing 297/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make] [[32mcudf[0m: dune build]   + 9[K[KProcessing 297/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make] [[32mcudf[0m: dune build]   + 8[K[32m∗[0m installed [01mipaddr[0m.5.5.0
-[KProcessing 298/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make] [[32mcudf[0m: dune build]   + 8[K[KProcessing 298/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make] [[32mcudf[0m: dune build]   + 7[K[32m∗[0m installed [01mintegers[0m.0.7.0
-[KProcessing 299/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make] [[32mcudf[0m: dune build]   + 7[K[KProcessing 300/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      + 9[K[KProcessing 300/435: [[32mcalendar[0m: dune build] [[32mcoq[0m: make]                      + 9[K[KProcessing 300/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[32m∗[0m installed [01mcalendar[0m.3.0.0
-[KProcessing 301/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[KProcessing 301/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[32m∗[0m installed [01mcudf[0m.0.10
-[KProcessing 302/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[KProcessing 303/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[KProcessing 303/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[32m∗[0m installed [01myojson[0m.2.1.0
-[KProcessing 304/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[KProcessing 304/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 6[K[32m∗[0m installed [01mordering[0m.3.7.1
-[KProcessing 305/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 6[K[KProcessing 306/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[KProcessing 306/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[KProcessing 306/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[KProcessing 306/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 6[K[32m∗[0m installed [01mdune-configurator[0m.3.7.1
-[KProcessing 307/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 6[K[KProcessing 308/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 7[K[KProcessing 309/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            + 8[K[KProcessing 310/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            + 9[K[KProcessing 311/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            +10[K[KProcessing 311/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            + 9[K[32m∗[0m installed [01mocamlgraph[0m.2.0.0
-[KProcessing 312/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            + 9[K[KProcessing 313/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            +10[K[KProcessing 314/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            +11[K[KProcessing 315/435: [[32mbase[0m: dune build] [[32mbigstringaf[0m: dune build]            +12[K[KProcessing 315/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[32m∗[0m installed [01mbigstringaf[0m.0.9.1
-[KProcessing 316/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[KProcessing 317/435: [[32mangstrom[0m: dune build] [[32mbase[0m: dune build] [[32mcoq[0m: make]   +11[K[KProcessing 317/435: [[32mangstrom[0m: dune build] [[32mbase[0m: dune build] [[32mcoq[0m: make]   +10[K[32m∗[0m installed [01mdyn[0m.3.7.1
-[KProcessing 318/435: [[32mangstrom[0m: dune build] [[32mbase[0m: dune build] [[32mcoq[0m: make]   +10[K[KProcessing 319/435: [[32mangstrom[0m: dune build] [[32mbase[0m: dune build] [[32mcoq[0m: make]   +11[K[KProcessing 319/435: [[32mangstrom[0m: dune build] [[32mbase[0m: dune build] [[32mcoq[0m: make]   +11[K[KProcessing 319/435: [[32mangstrom[0m: dune build] [[32mbase[0m: dune build] [[32mcoq[0m: make]   +11[K[KProcessing 319/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[32m∗[0m installed [01mangstrom[0m.0.15.0
-[KProcessing 320/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[KProcessing 321/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +12[K[KProcessing 321/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[32m∗[0m installed [01mmirage-crypto[0m.0.10.7
-[KProcessing 322/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[KProcessing 323/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +12[K[KProcessing 324/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +13[K[KProcessing 324/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +12[K[32m∗[0m installed [01mdose3[0m.7.0.0
-[KProcessing 325/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +12[K[KProcessing 325/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[32m∗[0m installed [01mhkdf[0m.1.0.4
-[KProcessing 326/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +11[K[KProcessing 326/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +10[K[32m∗[0m installed [01mpbkdf[0m.1.2.0
-[KProcessing 327/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          +10[K[KProcessing 327/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 9[K[32m∗[0m installed [01mmccs[0m.1.1+14
-[KProcessing 328/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 9[K[KProcessing 328/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 9[K[KProcessing 328/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 8[K[32m∗[0m installed [01muri[0m.4.2.0
-[KProcessing 329/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 8[K[KProcessing 329/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 7[K[32m∗[0m installed [01mstdune[0m.3.7.1
-[KProcessing 330/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 7[K[KProcessing 331/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 8[K[KProcessing 331/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 8[K[KProcessing 331/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 8[K[KProcessing 331/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 7[K[32m∗[0m installed [01mopam-core[0m.2.1.4
-[KProcessing 332/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 7[K[KProcessing 333/435: [[32mbase[0m: dune build] [[32mcoq[0m: make]                          + 8[K[KProcessing 333/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[32m∗[0m installed [01mbase[0m.v0.14.3
-[KProcessing 334/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 7[K[KProcessing 335/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[KProcessing 336/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 9[K[KProcessing 336/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[32m∗[0m installed [01mdune-private-libs[0m.3.7.1
-[KProcessing 337/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[KProcessing 338/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base] [[32mdune-site[0m: rm]  + 8[K[KProcessing 338/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base] [[32mdune-site[0m: rm]  + 8[K[KProcessing 338/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 9[K[KProcessing 338/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[32m∗[0m installed [01mstdio[0m.v0.14.0
-[KProcessing 339/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 8[K[KProcessing 340/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 9[K[KProcessing 340/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 9[K[KProcessing 340/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 9[K[KProcessing 340/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 8[K[32m∗[0m installed [01mott[0m.0.33
-[KProcessing 341/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 8[K[KProcessing 341/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[32m∗[0m installed [01mparsexp[0m.v0.14.2
-[KProcessing 342/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[KProcessing 343/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 8[K[KProcessing 343/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[32m∗[0m installed [01mdune-site[0m.3.7.1
-[KProcessing 344/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[KProcessing 344/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[32m∗[0m installed [01msexplib[0m.v0.14.0
-[KProcessing 345/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[KProcessing 346/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[KProcessing 346/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[32m∗[0m installed [01mcstruct-sexp[0m.6.2.0
-[KProcessing 347/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[KProcessing 347/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 5[K[32m∗[0m installed [01mopam-format[0m.2.1.4
-[KProcessing 348/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 5[K[KProcessing 349/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[KProcessing 350/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[KProcessing 350/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[KProcessing 351/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[KProcessing 351/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[32m∗[0m installed [01mmenhir[0m.20190924
-[KProcessing 351/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 5[K[32m∗[0m installed [01mppxlib[0m.0.25.1
-[KProcessing 352/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 5[K[KProcessing 353/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 6[K[KProcessing 354/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 7[K[KProcessing 355/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 8[K[KProcessing 356/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         + 9[K[KProcessing 357/435: [[32mcapnp[0m: dune build] [[32mcoq[0m: make]                         +10[K[KProcessing 357/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 9[K[32m∗[0m installed [01mcapnp[0m.3.5.0
-[KProcessing 358/435: [[32mcoq[0m: make] [[32mctypes[0m: make ctypes-base]                  + 9[K[KProcessing 358/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 8[K[KProcessing 359/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 9[K[32m∗[0m installed [01mctypes[0m.0.20.2
-[KProcessing 359/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 8[K[KProcessing 359/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 8[K[KProcessing 359/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 8[K[KProcessing 359/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 7[K[32m∗[0m installed [01mppx_cstruct[0m.6.2.0
-[KProcessing 360/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 7[K[KProcessing 360/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 6[K[32m∗[0m installed [01mppx_deriving[0m.5.2.1
-[KProcessing 361/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 6[K[KProcessing 361/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 5[K[32m∗[0m installed [01mppx_sexp_conv[0m.v0.14.3
-[KProcessing 362/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 5[K[KProcessing 363/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 6[K[KProcessing 364/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 7[K[KProcessing 364/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 6[K[32m∗[0m installed [01mopam-repository[0m.2.1.4
-[KProcessing 365/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 6[K[KProcessing 366/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 7[K[KProcessing 366/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 6[K[32m∗[0m installed [01mopam-solver[0m.2.1.4
-[KProcessing 367/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 6[K[KProcessing 367/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 5[K[32m∗[0m installed [01muri-sexp[0m.4.2.0
-[KProcessing 368/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 5[K[KProcessing 369/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 5[K[KProcessing 369/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 4[K[32m∗[0m installed [01mipaddr-sexp[0m.5.5.0
-[KProcessing 370/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 4[K[KProcessing 370/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 3[K[32m∗[0m installed [01mlwt[0m.4.5.0
-[KProcessing 371/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 3[K[KProcessing 372/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 5[K[KProcessing 373/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 6[K[KProcessing 374/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 7[K[KProcessing 375/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 8[K[KProcessing 376/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 9[K[KProcessing 376/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 8[K[KProcessing 377/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 9[K[KProcessing 377/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make]                        + 8[K[KProcessing 377/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 6[K[KProcessing 377/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 5[K[32m∗[0m installed [01mcoq-io-system-ocaml[0m.2.3.1
-[KProcessing 377/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 4[K[32m∗[0m installed [01mcstruct-lwt[0m.6.2.0
-[KProcessing 378/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 4[K[32m∗[0m installed [01mmirage-flow[0m.3.0.0
-[KProcessing 379/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 4[K[32m∗[0m installed [01mmirage-kv[0m.6.1.1
-[KProcessing 380/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 4[K[KProcessing 380/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 3[K[32m∗[0m installed [01mprometheus[0m.1.2
-[KProcessing 381/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 3[K[KProcessing 381/435: [[32mcohttp[0m: dune build] [[32mcoq[0m: make] [[32mextunix[0m: dune build]  + 3[K[KProcessing 381/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 3[K[32m∗[0m installed [01mcohttp[0m.5.1.0
-[KProcessing 382/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 3[K[KProcessing 382/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 2[K[32m∗[0m installed [01mjs_of_ocaml-compiler[0m.3.9.1
-[KProcessing 383/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 2[K[KProcessing 384/435: [[32mcoq[0m: make] [[32mextunix[0m: dune build]                       + 3[K[KProcessing 384/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[32m∗[0m installed [01mextunix[0m.0.4.1
-[KProcessing 385/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[KProcessing 385/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 1[K[32m∗[0m installed [01mopam-state[0m.2.1.4
-[KProcessing 386/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 1[K[KProcessing 387/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[KProcessing 387/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 1[K[KProcessing 388/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[KProcessing 388/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[32m∗[0m installed [01moasis[0m.0.4.11
-[KProcessing 388/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 1[K[KProcessing 389/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[KProcessing 389/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[KProcessing 389/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 1[K[KProcessing 390/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 2[K[32m∗[0m installed [01mxxhash[0m.0.1
-[KProcessing 390/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build]                   + 1[K[KProcessing 390/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build][K[32m∗[0m installed [01mopam-client[0m.2.1.4
-[KProcessing 391/435: [[32mcoq[0m: make] [[32mjs_of_ocaml[0m: dune build][K[KProcessing 391/435: [[32mcoq[0m: make][K[32m∗[0m installed [01mjs_of_ocaml[0m.3.9.0
-[KProcessing 392/435: [[32mcoq[0m: make][K[KProcessing 393/435: [[32mcoq[0m: make] [[32mjs_of_ocaml-ppx[0m: dune build][K[KProcessing 394/435: [[32mcoq[0m: make] [[32mjs_of_ocaml-ppx[0m: dune build]               + 1[K[KProcessing 394/435: [[32mcoq[0m: make] [[32mjs_of_ocaml-ppx[0m: dune build][K[32m∗[0m installed [01mlogs[0m.0.7.0
-[KProcessing 395/435: [[32mcoq[0m: make] [[32mjs_of_ocaml-ppx[0m: dune build][K[KProcessing 396/435: [[32mbos[0m: ocaml build] [[32mcoq[0m: make]                          + 1[K[KProcessing 397/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build] [[32mcoq[0m: make]  + 1[K[KProcessing 398/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 3[K[KProcessing 399/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 4[K[KProcessing 400/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 5[K[KProcessing 400/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 4[K[32m∗[0m installed [01mjs_of_ocaml-ppx[0m.3.9.0
-[KProcessing 401/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 4[K[KProcessing 401/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 3[K[32m∗[0m installed [01mmirage-crypto-rng[0m.0.10.7
-[KProcessing 402/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 3[K[KProcessing 403/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 4[K[KProcessing 404/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc[0m: dune build]              + 5[K[KProcessing 404/435: [[32mbos[0m: ocaml build] [[32mcohttp-lwt[0m: dune build]             + 4[K[32m∗[0m installed [01mcapnp-rpc[0m.1.2.2
-[KProcessing 405/435: [[32mbos[0m: ocaml build] [[32mcohttp-lwt[0m: dune build]             + 4[K[KProcessing 406/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 5[K[KProcessing 406/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 4[K[32m∗[0m installed [01mmirage-crypto-pk[0m.0.10.7
-[KProcessing 407/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 4[K[KProcessing 407/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 3[K[32m∗[0m installed [01mconduit[0m.6.2.0
-[KProcessing 408/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 3[K[KProcessing 409/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 4[K[KProcessing 409/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 3[K[32m∗[0m installed [01mcohttp-lwt[0m.5.1.0
-[KProcessing 410/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 3[K[KProcessing 410/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 2[K[32m∗[0m installed [01mconduit-lwt[0m.6.2.0
-[KProcessing 411/435: [[32mbos[0m: ocaml build] [[32mcapnp-rpc-lwt[0m: dune build]          + 2[K[KProcessing 411/435: [[32mcapnp-rpc-lwt[0m: dune build] [[32mcoq[0m: make]                 + 1[K[32m∗[0m installed [01mbos[0m.0.2.1
-[KProcessing 412/435: [[32mcapnp-rpc-lwt[0m: dune build] [[32mcoq[0m: make]                 + 1[K[KProcessing 412/435: [[32mcoq[0m: make] [[32mmirage-crypto-ec[0m: dune build][K[32m∗[0m installed [01mcapnp-rpc-lwt[0m.1.2.2
-[KProcessing 413/435: [[32mcoq[0m: make] [[32mmirage-crypto-ec[0m: dune build][K[KProcessing 413/435: [[32mcoq[0m: make][K[32m∗[0m installed [01mmirage-crypto-ec[0m.0.10.7
-[KProcessing 414/435: [[32mcoq[0m: make][K[KProcessing 415/435: [[32mcoq[0m: make] [[32mx509[0m: dune build][K[KProcessing 415/435: [[32mcoq[0m: make][K[32m∗[0m installed [01mx509[0m.0.16.4
-[KProcessing 416/435: [[32mcoq[0m: make][K[KProcessing 417/435: [[32mca-certs[0m: dune build] [[32mcoq[0m: make][K[KProcessing 418/435: [[32mca-certs[0m: dune build] [[32mcoq[0m: make] [[32mtls[0m: dune build][K[KProcessing 418/435: [[32mcoq[0m: make] [[32mtls[0m: dune build][K[32m∗[0m installed [01mca-certs[0m.0.2.3
-[KProcessing 419/435: [[32mcoq[0m: make] [[32mtls[0m: dune build][K[KProcessing 420/435: [[32mconduit-lwt-unix[0m: dune build] [[32mcoq[0m: make]              + 1[K[KProcessing 420/435: [[32mcoq[0m: make] [[32mtls[0m: dune build][K[32m∗[0m installed [01mconduit-lwt-unix[0m.6.2.0
-[KProcessing 421/435: [[32mcoq[0m: make] [[32mtls[0m: dune build][K[KProcessing 422/435: [[32mcohttp-lwt-unix[0m: dune build] [[32mcoq[0m: make] [[32mtls[0m: dune build][K[KProcessing 422/435: [[32mcohttp-lwt-unix[0m: dune build] [[32mcoq[0m: make][K[32m∗[0m installed [01mtls[0m.0.15.4
-[KProcessing 423/435: [[32mcohttp-lwt-unix[0m: dune build] [[32mcoq[0m: make][K[KProcessing 424/435: [[32mcohttp-lwt-unix[0m: dune build] [[32mcoq[0m: make]               + 1[K[KProcessing 424/435: [[32mcohttp-lwt-unix[0m: dune build] [[32mcoq[0m: make][K[32m∗[0m installed [01mtls-mirage[0m.0.15.4
-[KProcessing 425/435: [[32mcohttp-lwt-unix[0m: dune build] [[32mcoq[0m: make][K[KProcessing 426/435: [[32mcapnp-rpc-net[0m: dune build]                             + 2[K[KProcessing 426/435: [[32mcapnp-rpc-net[0m: dune build] [[32mcoq[0m: make][K[32m∗[0m installed [01mcohttp-lwt-unix[0m.5.1.0
-[KProcessing 427/435: [[32mcapnp-rpc-net[0m: dune build] [[32mcoq[0m: make][K[KProcessing 427/435: [[32mcoq[0m: make][K[32m∗[0m installed [01mcapnp-rpc-net[0m.1.2.2
-[KProcessing 428/435: [[32mcoq[0m: make][K[KProcessing 429/435: [[32mcapnp-rpc-unix[0m: dune build] [[32mcoq[0m: make][K[KProcessing 429/435: [[32mcoq[0m: make][K[32m∗[0m installed [01mcapnp-rpc-unix[0m.1.2.2
-[KProcessing 430/435: [[32mcoq[0m: make][K[KProcessing 430/435: [[32mcoq[0m: make byte][K[KProcessing 431/435: [[32mcoq[0m: make install][K[KProcessing 431/435: [[32mcoq[0m: make install-byte][K[32m∗[0m installed [01mcoq[0m.8.11.dev
-[KProcessing 432/435: [[32mcoq-tactician[0m: dune subst][K[KProcessing 432/435: [[32mcoq-tactician[0m: dune build][K[32m∗[0m installed [01mcoq-tactician[0m.8.11.dev
-[KProcessing 434/435: [[32mcoq-tactician-reinforce[0m: dune subst][K[KProcessing 434/435: [[32mcoq-tactician-reinforce[0m: dune build][K[KProcessing 434/435: [[32mcoq-tactician-reinforce[0m: dune install][K[32m∗[0m installed [01mcoq-tactician-reinforce[0m.~dev
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved asn1-combinators.0.2.6  (https://opam.ocaml.org/cache)
+⬇ retrieved angstrom.0.15.0  (https://opam.ocaml.org/cache)
+⬇ retrieved asetmap.0.8.1  (https://opam.ocaml.org/cache)
+∗ installed base-bigarray.base
+∗ installed base-threads.base
+∗ installed base-unix.base
+⬇ retrieved astring.0.8.5  (https://opam.ocaml.org/cache)
+⬇ retrieved base.v0.14.3  (https://opam.ocaml.org/cache)
+⬇ retrieved base64.3.5.1  (https://opam.ocaml.org/cache)
+⬇ retrieved bigarray-compat.1.1.0  (https://opam.ocaml.org/cache)
+⬇ retrieved bigstringaf.0.9.1  (https://opam.ocaml.org/cache)
+⬇ retrieved bos.0.2.1  (https://opam.ocaml.org/cache)
+⬇ retrieved ca-certs.0.2.3  (https://opam.ocaml.org/cache)
+⬇ retrieved calendar.3.0.0  (https://opam.ocaml.org/cache)
+⬇ retrieved capnp.3.5.0  (https://opam.ocaml.org/cache)
+⬇ retrieved capnp-rpc.1.2.2  (https://opam.ocaml.org/cache)
+⬇ retrieved capnp-rpc-unix.1.2.2  (cached)
+⬇ retrieved cmdliner.1.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved cohttp.5.1.0  (https://opam.ocaml.org/cache)
+⬇ retrieved cohttp-lwt.5.1.0  (cached)
+⬇ retrieved cohttp-lwt-unix.5.1.0  (cached)
+⬇ retrieved capnp-rpc-lwt.1.2.2  (https://opam.ocaml.org/cache)
+⬇ retrieved conduit.6.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved conduit-lwt-unix.6.2.0  (cached)
+∗ installed conf-capnproto.2
+∗ installed conf-findutils.1
+∗ installed conf-g++.1.0
+∗ installed conf-git.1.1
+∗ installed conf-pkg-config.2
+∗ installed conf-ruby.1.0.0
+∗ installed conf-which.1
+∗ installed conf-autoconf.0.1
+∗ installed conf-xxhash.1
+∗ installed conf-gmp.4
+∗ installed conf-gmp-powm-sec.3
+⬇ retrieved capnp-rpc-net.1.2.2  (https://opam.ocaml.org/cache)
+⬇ retrieved conduit-lwt.6.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved coq-tactician.8.11.dev  (no changes)
+⬇ retrieved coq-io-system-ocaml.2.3.1  (https://github.com/coq-io/system-ocaml/archive/2.3.1.tar.gz)
+⬇ retrieved cppo.1.6.9  (https://opam.ocaml.org/cache)
+⬇ retrieved csexp.1.5.2  (https://opam.ocaml.org/cache)
+⬇ retrieved coq-tactician-reinforce.~dev  (no changes)
+⬇ retrieved cstruct.6.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved cstruct-lwt.6.2.0  (cached)
+⬇ retrieved cstruct-sexp.6.2.0  (cached)
+⬇ retrieved ctypes.0.20.2  (https://opam.ocaml.org/cache)
+⬇ retrieved cudf.0.10  (https://opam.ocaml.org/cache)
+⬇ retrieved domain-name.0.4.0  (https://opam.ocaml.org/cache)
+⬇ retrieved dose3.7.0.0  (https://opam.ocaml.org/cache)
+⬇ retrieved dune.3.7.1  (https://opam.ocaml.org/cache)
+⬇ retrieved dune-private-libs.3.7.1  (cached)
+⬇ retrieved dune-site.3.7.1  (cached)
+⬇ retrieved dune-configurator.3.7.1  (https://opam.ocaml.org/cache)
+⬇ retrieved dyn.3.7.1  (cached)
+⬇ retrieved duration.0.2.1  (https://opam.ocaml.org/cache)
+⬇ retrieved extlib.1.7.9  (https://opam.ocaml.org/cache)
+⬇ retrieved eqaf.0.9  (https://opam.ocaml.org/cache)
+⬇ retrieved fmt.0.9.0  (https://opam.ocaml.org/cache)
+⬇ retrieved extunix.0.4.1  (https://opam.ocaml.org/cache)
+⬇ retrieved gmap.0.3.0  (https://opam.ocaml.org/cache)
+⬇ retrieved fpath.0.7.3  (https://opam.ocaml.org/cache)
+⬇ retrieved hkdf.1.0.4  (https://opam.ocaml.org/cache)
+⬇ retrieved integers.0.7.0  (https://opam.ocaml.org/cache)
+⬇ retrieved ipaddr.5.5.0  (https://opam.ocaml.org/cache)
+⬇ retrieved js_of_ocaml.3.9.0  (https://opam.ocaml.org/cache)
+⬇ retrieved ipaddr-sexp.5.5.0  (https://opam.ocaml.org/cache)
+⬇ retrieved js_of_ocaml-ppx.3.9.0  (cached)
+⬇ retrieved js_of_ocaml-compiler.3.9.1  (https://opam.ocaml.org/cache)
+⬇ retrieved jsonm.1.0.2  (https://opam.ocaml.org/cache)
+⬇ retrieved logs.0.7.0  (https://opam.ocaml.org/cache)
+⬇ retrieved macaddr.5.5.0  (cached)
+⬇ retrieved lwt.4.5.0  (https://opam.ocaml.org/cache)
+⬇ retrieved magic-mime.1.3.0  (https://opam.ocaml.org/cache)
+⬇ retrieved menhir.20190924  (https://opam.ocaml.org/cache)
+⬇ retrieved mccs.1.1+14  (https://opam.ocaml.org/cache)
+⬇ retrieved mirage-clock.4.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved mirage-crypto.0.10.7  (https://opam.ocaml.org/cache)
+⬇ retrieved mirage-crypto-pk.0.10.7  (cached)
+⬇ retrieved mirage-crypto-rng.0.10.7  (cached)
+⬇ retrieved mirage-flow.3.0.0  (https://opam.ocaml.org/cache)
+⬇ retrieved mirage-kv.6.1.1  (https://opam.ocaml.org/cache)
+⬇ retrieved mirage-crypto-ec.0.10.7  (https://opam.ocaml.org/cache)
+⬇ retrieved mmap.1.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved mtime.2.0.0  (https://opam.ocaml.org/cache)
+⬇ retrieved num.1.4  (https://opam.ocaml.org/cache)
+⬇ retrieved oasis.0.4.11  (https://opam.ocaml.org/cache)
+⬇ retrieved ocaml-compiler-libs.v0.12.4  (https://opam.ocaml.org/cache)
+⬇ retrieved ocaml-syntax-shims.1.0.0  (https://opam.ocaml.org/cache)
+⬇ retrieved ocaml-base-compiler.4.09.1  (https://opam.ocaml.org/cache)
+⬇ retrieved ocamlbuild.0.14.2  (https://opam.ocaml.org/cache)
+⬇ retrieved ocamlfind.1.9.6  (https://opam.ocaml.org/cache)
+⬇ retrieved ocamlgraph.2.0.0  (https://opam.ocaml.org/cache)
+⬇ retrieved ocamlify.0.0.1  (https://opam.ocaml.org/cache)
+⬇ retrieved ocamlmod.0.0.9  (https://opam.ocaml.org/cache)
+⬇ retrieved ocplib-endian.1.2  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-client.2.1.4  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-file-format.2.1.6  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-format.2.1.4  (cached)
+⬇ retrieved opam-repository.2.1.4  (cached)
+⬇ retrieved opam-solver.2.1.4  (cached)
+⬇ retrieved opam-state.2.1.4  (cached)
+⬇ retrieved optint.0.3.0  (https://opam.ocaml.org/cache)
+⬇ retrieved opam-core.2.1.4  (https://opam.ocaml.org/cache)
+⬇ retrieved ordering.3.7.1  (cached)
+⬇ retrieved ott.0.33  (https://opam.ocaml.org/cache)
+⬇ retrieved parsexp.v0.14.2  (https://opam.ocaml.org/cache)
+⬇ retrieved pbkdf.1.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved ppx_cstruct.6.2.0  (cached)
+⬇ retrieved pp.1.1.2  (https://opam.ocaml.org/cache)
+⬇ retrieved ppx_derivers.1.2.1  (https://opam.ocaml.org/cache)
+⬇ retrieved ppx_deriving.5.2.1  (https://opam.ocaml.org/cache)
+⬇ retrieved ppx_sexp_conv.v0.14.3  (https://opam.ocaml.org/cache)
+⬇ retrieved prometheus.1.2  (https://opam.ocaml.org/cache)
+⬇ retrieved ppxlib.0.25.1  (https://opam.ocaml.org/cache)
+⬇ retrieved ptime.1.1.0  (https://opam.ocaml.org/cache)
+⬇ retrieved re.1.10.4  (https://opam.ocaml.org/cache)
+⬇ retrieved res.5.0.1  (https://opam.ocaml.org/cache)
+⬇ retrieved result.1.5  (https://opam.ocaml.org/cache)
+⬇ retrieved rresult.0.7.0  (https://opam.ocaml.org/cache)
+⬇ retrieved sexplib.v0.14.0  (https://opam.ocaml.org/cache)
+⬇ retrieved sexplib0.v0.14.0  (https://opam.ocaml.org/cache)
+⬇ retrieved stdint.0.7.2  (https://opam.ocaml.org/cache)
+⬇ retrieved stdio.v0.14.0  (https://opam.ocaml.org/cache)
+⬇ retrieved stdlib-shims.0.3.0  (https://opam.ocaml.org/cache)
+⬇ retrieved stdune.3.7.1  (cached)
+⬇ retrieved stringext.1.6.0  (https://opam.ocaml.org/cache)
+⬇ retrieved coq.8.11.dev  (git+https://github.com/LasseBlaauwbroek/coq.git#v8.11-tactician)
+⬇ retrieved tls.0.15.4  (https://opam.ocaml.org/cache)
+⬇ retrieved uchar.0.0.2  (https://opam.ocaml.org/cache)
+⬇ retrieved topkg.1.0.7  (https://opam.ocaml.org/cache)
+⬇ retrieved uri.4.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved tls-mirage.0.15.4  (https://opam.ocaml.org/cache)
+⬇ retrieved uutf.1.0.3  (https://opam.ocaml.org/cache)
+⬇ retrieved x509.0.16.4  (https://opam.ocaml.org/cache)
+⬇ retrieved wasm.1.0.1  (https://opam.ocaml.org/cache)
+⬇ retrieved xxhash.0.1  (https://opam.ocaml.org/cache)
+⬇ retrieved uri-sexp.4.2.0  (https://opam.ocaml.org/cache)
+⬇ retrieved yojson.2.1.0  (https://opam.ocaml.org/cache)
+⬇ retrieved zarith.1.12  (https://opam.ocaml.org/cache)
+∗ installed ocaml-base-compiler.4.09.1
+∗ installed ocaml-config.1
+∗ installed ocaml.4.09.1
+∗ installed mirage-no-solo5.1
+∗ installed mirage-no-xen.1
+∗ installed seq.base
+∗ installed cmdliner.1.2.0
+∗ installed ocamlfind.1.9.6
+∗ installed base-bytes.base
+∗ installed num.1.4
+∗ installed ocamlbuild.0.14.2
+∗ installed zarith.1.12
+∗ installed uchar.0.0.2
+∗ installed ocamlify.0.0.1
+∗ installed ocamlmod.0.0.9
+∗ installed topkg.1.0.7
+∗ installed asetmap.0.8.1
+∗ installed rresult.0.7.0
+∗ installed wasm.1.0.1
+∗ installed astring.0.8.5
+∗ installed fmt.0.9.0
+∗ installed mtime.2.0.0
+∗ installed ptime.1.1.0
+∗ installed uutf.1.0.3
+∗ installed fpath.0.7.3
+∗ installed jsonm.1.0.2
+∗ installed dune.3.7.1
+∗ installed base64.3.5.1
+∗ installed bigarray-compat.1.1.0
+∗ installed csexp.1.5.2
+∗ installed cstruct.6.2.0
+∗ installed domain-name.0.4.0
+∗ installed duration.0.2.1
+∗ installed gmap.0.3.0
+∗ installed macaddr.5.5.0
+∗ installed mirage-clock.4.2.0
+∗ installed ocaml-syntax-shims.1.0.0
+∗ installed opam-file-format.2.1.6
+∗ installed optint.0.3.0
+∗ installed pp.1.1.2
+∗ installed ppx_derivers.1.2.1
+∗ installed result.1.5
+∗ installed stdlib-shims.0.3.0
+∗ installed sexplib0.v0.14.0
+∗ installed stringext.1.6.0
+∗ installed mmap.1.2.0
+∗ installed ocaml-compiler-libs.v0.12.4
+∗ installed res.5.0.1
+∗ installed cppo.1.6.9
+∗ installed magic-mime.1.3.0
+∗ installed eqaf.0.9
+∗ installed re.1.10.4
+∗ installed asn1-combinators.0.2.6
+∗ installed ipaddr.5.5.0
+∗ installed integers.0.7.0
+∗ installed ocplib-endian.1.2
+∗ installed stdint.0.7.2
+∗ installed extlib.1.7.9
+∗ installed ordering.3.7.1
+∗ installed calendar.3.0.0
+∗ installed cudf.0.10
+∗ installed yojson.2.1.0
+∗ installed dune-configurator.3.7.1
+∗ installed ocamlgraph.2.0.0
+∗ installed bigstringaf.0.9.1
+∗ installed dyn.3.7.1
+∗ installed angstrom.0.15.0
+∗ installed mirage-crypto.0.10.7
+∗ installed dose3.7.0.0
+∗ installed hkdf.1.0.4
+∗ installed pbkdf.1.2.0
+∗ installed mccs.1.1+14
+∗ installed uri.4.2.0
+∗ installed stdune.3.7.1
+∗ installed opam-core.2.1.4
+∗ installed base.v0.14.3
+∗ installed dune-private-libs.3.7.1
+∗ installed stdio.v0.14.0
+∗ installed ott.0.33
+∗ installed parsexp.v0.14.2
+∗ installed dune-site.3.7.1
+∗ installed sexplib.v0.14.0
+∗ installed cstruct-sexp.6.2.0
+∗ installed ppxlib.0.25.1
+∗ installed menhir.20190924
+∗ installed opam-format.2.1.4
+∗ installed ctypes.0.20.2
+∗ installed capnp.3.5.0
+∗ installed ppx_cstruct.6.2.0
+∗ installed ppx_sexp_conv.v0.14.3
+∗ installed ppx_deriving.5.2.1
+∗ installed lwt.4.5.0
+∗ installed coq-io-system-ocaml.2.3.1
+∗ installed uri-sexp.4.2.0
+∗ installed ipaddr-sexp.5.5.0
+∗ installed cstruct-lwt.6.2.0
+∗ installed mirage-flow.3.0.0
+∗ installed mirage-kv.6.1.1
+∗ installed prometheus.1.2
+∗ installed opam-repository.2.1.4
+∗ installed opam-solver.2.1.4
+∗ installed cohttp.5.1.0
+∗ installed js_of_ocaml-compiler.3.9.1
+∗ installed extunix.0.4.1
+∗ installed oasis.0.4.11
+∗ installed opam-state.2.1.4
+∗ installed xxhash.0.1
+∗ installed opam-client.2.1.4
+∗ installed js_of_ocaml.3.9.0
+∗ installed logs.0.7.0
+∗ installed js_of_ocaml-ppx.3.9.0
+∗ installed mirage-crypto-rng.0.10.7
+∗ installed conduit.6.2.0
+∗ installed capnp-rpc.1.2.2
+∗ installed cohttp-lwt.5.1.0
+∗ installed mirage-crypto-pk.0.10.7
+∗ installed conduit-lwt.6.2.0
+∗ installed bos.0.2.1
+∗ installed capnp-rpc-lwt.1.2.2
+∗ installed mirage-crypto-ec.0.10.7
+∗ installed x509.0.16.4
+∗ installed ca-certs.0.2.3
+∗ installed conduit-lwt-unix.6.2.0
+∗ installed tls.0.15.4
+∗ installed tls-mirage.0.15.4
+∗ installed cohttp-lwt-unix.5.1.0
+∗ installed capnp-rpc-net.1.2.2
+∗ installed capnp-rpc-unix.1.2.2
+∗ installed coq.8.11.dev
+∗ installed coq-tactician.8.11.dev
+∗ installed coq-tactician-reinforce.~dev
 Done.
 
-[36m<><>[0m [01mlwt.4.5.0 installed successfully[0m [36m<><><><><><><><><><><><><><><><><><><><><>[0m
-[32m=> [0mLwt 5.0.0 will make some breaking changes in December 2019. See
+<><> lwt.4.5.0 installed successfully <><><><><><><><><><><><><><><><><><><><><>
+=> Lwt 5.0.0 will make some breaking changes in December 2019. See
      https://github.com/ocsigen/lwt/issues/584
 
-[36m<><>[0m [01mcoq-tactician.8.11.dev installed successfully[0m [36m><><><><><><><><><><><><><><>[0m
-[32m=> [0m--- Tactician was successfully installed ---
+<><> coq-tactician.8.11.dev installed successfully ><><><><><><><><><><><><><><>
+=> --- Tactician was successfully installed ---
 
    In order to enable Tactician, you should run
 
    tactician enable
-No modification in switch [01mbench[0m
-Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field [04mwrap-build-commands[0m in switch [01mbench[0m
-No modification in switch [01mbench[0m
-Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field [04mpre-build-commands[0m in switch [01mbench[0m
+No modification in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
+No modification in switch bench
+Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
 The following actions will be performed:
-  [32m∗[0m install [01mcoq-tactician-stdlib[0m 8.11.dev 
-          *** WARNING ***
-          This package will overwrite Coq's standard library files.
-          A backup of the original files will be placed under Coq's
-          library directory at user-contrib/tactician-stdlib-backup/
-          and they will be restored when you remove this package.
-          After installation of this package, all other Coq packages
-          also need to be recompiled. Running the 'tactician recompile'
-          command-line utility will help with this process.
+  ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
+                                           This package will overwrite Coq's standard library files.
+                                           A backup of the original files will be placed under Coq's
+                                           library directory at user-contrib/tactician-stdlib-backup/
+                                           and they will be restored when you remove this package.
+                                           After installation of this package, all other Coq packages
+                                           also need to be recompiled. Running the 'tactician recompile'
+                                           command-line utility will help with this process.
 
-[36m<><>[0m [01mProcessing actions[0m [36m<><><><><><><><><><><><><><><><><><><><><><><><><><><><>[0m
-[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[KProcessing  1/3: [[32mcoq-tactician-stdlib.8.11.dev[0m: git][K[36m⬇[0m retrieved [01mcoq-tactician-stdlib[0m.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
-[KProcessing  2/3:                                                            + 1[K[KProcessing  2/3: [[32mcoq-tactician-stdlib[0m: make][K
-
-[36m<><>[0m [01mError report[0m [36m<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>[0m
-[31m┌─ [0mThe following actions [31mfailed[0m
-[31m│ [0m[36mλ[0m build [01mcoq-tactician-stdlib[0m 8.11.dev
-[31m└─ [0m
-[36m╶─ [0mNo changes have been performed
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
