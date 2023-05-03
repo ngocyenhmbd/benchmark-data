@@ -1,0 +1,13 @@
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_cosh	300	1.0	synth with cache (only 1: unfold derivable; only 1: apply derivable_pt_cosh).	15.024352	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_sinh	300	0.0	synth with cache (only 1: unfold derivable; only 1: apply derivable_pt_sinh).	1.303435	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derivable_Rsqr	300	0.3.0.0.0	synth with cache (only 1: unfold derivable; only 1: unfold derivable_pt; only 1: intros ?; only 1: exists (2 * x); only 1: apply derivable_pt_lim_Rsqr).	17.343707	21
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rminus_not_eq_right	300	1.0.0.0.0	synth with cache (only 1: red; only 1: intros; only 1: elim H; only 1: rewrite H0; only 1: ring).	18.864422	18
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis1.derive_pt_Rsqr	300	0.0.0	synth with cache (only 1: intros; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_Rsqr).	1.953674	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_minus_distr_l	300	0.0	synth with cache (only 1: intros; only 1: ring).	1.586350	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Raxioms.Rplus_lt_compat_l	300	0.0.0.1.0.0.0.2.0	synth with cache (only 1: intros; only 1: rewrite Rlt_def; only 1: rewrite Rlt_def in H; only 1: rewrite Rrepr_plus; only 1: rewrite Rrepr_plus; only 1: apply CRealLtForget; only 1: apply CReal_plus_lt_compat_l; only 1: apply CRealLtEpsilon; only 1: exact H).	20.246675	31
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rgeom.isometric_rot_trans	300	0.0.0.1.2.0	synth with cache (only 1: intros; only 1: unfold xt; only 1: rewrite <- isometric_rotation_0; only 1: unfold yt; only 1: unfold Rsqr; only 1: ring).	26.057722	33
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.lt_0_INR	300	0.0.0.1.0	synth with cache (only 1: simple induction 1; only 1: auto with real; only 1: intros; only 1: rewrite S_INR; only 1: auto with real).	2.341460	8
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.lt_1_INR	300	0	synth with cache (only 1: apply lt_INR).	0.654591	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyRealsMult.CReal_mult_morph_Proper	300	0	synth with cache (only 1: apply CReal_isRingExt).	5.537585	1
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Ncring_initial.Zsth	300	3	synth with cache (only 1: auto with *).	7.235933	13
+coq-tactician-stdlib.8.11.dev	Coq.Reals.ConstructiveCauchyReals.CRealEq_sym	300	0.0.0.0.0.2.0	synth with cache (only 1: intros; only 1: destruct H; only 1: split; only 1: intros abs; only 1: contradiction; only 1: intros abs; only 1: contradiction).	8.942996	11
