@@ -11144,3 +11144,400 @@ coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_decreasing_1	300
 coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_increasing_0	300
 coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_increasing_1	300
 coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_decreasing_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.tan_diff	300	0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold tan; only 1: rewrite sin_minus; only 1: field; only 1: split; only 1: easy; only 1: easy).	0.095840	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.tan_increasing_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.tan_increasing_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_incr_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_incr_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_decr_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_decr_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_incr_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_incr_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_decr_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_decr_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.tan_incr_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.tan_incr_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_eq_0_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_eq_0_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_eq_0_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_eq_O_2PI_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_eq_O_2PI_1	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H1; only 1: intropattern subst -> H1; only 1: clear H0; only 1: clear H; only 1: unfold sin; only 1: case exist_sin; only 1: intros; only 1: ring; only 1: destruct H1; only 1: intropattern subst -> H1; only 1: clear H0; only 1: clear H; only 1: rewrite sin_PI; only 1: easy; only 1: intropattern subst -> H1; only 1: clear H0; only 1: clear H; only 1: rewrite sin_2a; only 1: rewrite sin_PI; only 1: ring).	0.098080	23
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_eq_0_2PI_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_eq_0_2PI_1	300	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H1; only 1: intropattern subst -> H1; only 1: rewrite cos_PI2; only 1: easy; only 1: intropattern subst -> H1; only 1: rewrite cos_3PI2; only 1: easy).	0.064345	10
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.P_Rmin	300	0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold Rmin; only 1: case Rle_dec; only 1: intros ?; only 1: assumption; only 1: intros ?; only 1: assumption).	0.043051	11
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_inv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.pr_nu_var	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: unfold derivable_pt; only 1: unfold derive_pt; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct pr1; only 1: intros ?; only 1: destruct pr2; only 1: intros ?; only 1: intropattern subst -> H; only 1: apply uniqueness_limite with g x; only 1: assumption; only 1: assumption).	0.164106	14
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.exp_le_3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.exp_increasing	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.pr_nu_var2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_inv	300	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold derivable; only 1: intros ?; only 1: apply derivable_pt_inv; only 1: apply H; only 1: apply H0).	0.038494	8
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.exp_lt_inv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.exp_ineq1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis_reg.AppVar	300	0	synth with cache (only 1: exact R0).	0.034867	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_exists1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.IZN_var	300	0.0.0	synth with cache (only 1: intros; only 1: apply Z_of_nat_complete_inf; only 1: Lia.lia).	0.053544	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_exists	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.exp_ln	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.exp_inv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.exp_Ropp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_increasing	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply exp_lt_inv; only 1: rewrite exp_ln; only 1: rewrite exp_ln; only 1: apply H0; only 1: apply Rlt_trans with x; only 1: assumption; only 1: apply H0; only 1: assumption).	0.067773	12
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_exp	300	0.0.0.0	synth with cache (only 1: intros ?; only 1: apply exp_inv; only 1: apply exp_ln; only 1: apply exp_pos).	0.059450	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_1	300	0.0.0	synth with cache (only 1: rewrite <- exp_0; only 1: rewrite ln_exp; only 1: easy).	0.061396	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_lt_inv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_inv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_mult	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply exp_inv; only 1: rewrite exp_plus; only 1: rewrite exp_ln; only 1: rewrite exp_ln; only 1: rewrite exp_ln; only 1: reflexivity; only 1: assumption; only 1: assumption; only 1: apply Rmult_lt_0_compat; only 1: assumption; only 1: assumption).	0.045477	15
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_Rinv	300	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: apply exp_inv; only 1: rewrite exp_ln; only 1: rewrite exp_Ropp; only 1: rewrite exp_ln; only 1: reflexivity; only 1: assumption; only 1: apply Rinv_0_lt_compat; only 1: assumption).	0.052648	10
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.Nzorn	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P1	300	0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold subdivision_val; only 1: destruct projT2; only 1: apply a0).	0.043681	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_continue	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P2	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: unfold adapted_couple; only 1: intros; only 1: decompose [ and ] H; only 1: clear H; only 1: split; only 1: assumption; only 1: split; only 1: rewrite H2; only 1: unfold Rmin; only 1: case Rle_dec; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: apply Rle_antisym; only 1: assumption; only 1: assumption; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: apply Rle_antisym; only 1: auto with real; only 1: auto with real; only 1: split; only 1: rewrite H1; only 1: unfold Rmax; only 1: case Rle_dec; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: apply Rle_antisym; only 1: assumption; only 1: assumption; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: apply Rle_antisym; only 1: auto with real; only 1: auto with real; only 1: split; only 1: assumption; only 1: assumption).	0.221441	49
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_plus	300	0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold Rpower; only 1: rewrite Rmult_plus_distr_r; only 1: rewrite exp_plus; only 1: auto).	0.043231	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_O	300	0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: clear H; only 1: unfold Rpower; only 1: rewrite Rmult_0_l; only 1: apply exp_0).	0.034412	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_1	300	0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: unfold Rpower; only 1: rewrite Rmult_1_l; only 1: apply exp_ln; only 1: assumption).	0.036182	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_pow	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: elim n; only 1: simpl; only 1: intros ?; only 1: intros ?; only 1: apply Rpower_O; only 1: auto; only 1: simpl; only 1: intros ?; only 1: case n0; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: simpl; only 1: rewrite Rmult_1_r; only 1: apply Rpower_1; only 1: auto; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: rewrite Rpower_plus; only 1: rewrite H; only 1: rewrite Rpower_1; only 1: apply Rmult_comm; only 1: assumption; only 1: assumption).	0.080411	27
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_lt	300	0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold Rpower; only 1: apply exp_increasing; only 1: apply Rmult_lt_compat_r; only 1: rewrite <- ln_1; only 1: apply ln_increasing; only 1: apply Rlt_0_1; only 1: apply H; only 1: apply H0).	0.040860	13
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_sqrt	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_Ropp	300	0.0.0.0.0	synth with cache (only 1: unfold Rpower; only 1: intros ?; only 1: intros ?; only 1: rewrite Ropp_mult_distr_l_reverse; only 1: apply exp_Ropp).	0.036118	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P5	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: destruct 1; only 1: destruct a0; only 1: destruct H0; only 1: destruct H1; only 1: destruct H2; only 1: exists x; only 1: split; only 1: assumption; only 1: split; only 1: rewrite H0; only 1: unfold Rmin; only 1: case Rle_dec; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: apply Rle_antisym; only 1: assumption; only 1: assumption; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: apply Rle_antisym; only 1: auto with real; only 1: auto with real; only 1: split; only 1: rewrite H1; only 1: unfold Rmax; only 1: case Rle_dec; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: apply Rle_antisym; only 1: assumption; only 1: assumption; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: apply Rle_antisym; only 1: auto with real; only 1: auto with real; only 1: split; only 1: assumption; only 1: assumption).	0.237567	51
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P6	300	0.0.0.0.0.0.0	synth with cache (only 1: unfold IsStepFun; only 1: intros; only 1: elim X; only 1: intros; only 1: apply existT with x; only 1: apply StepFun_P5; only 1: assumption).	0.054176	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.powerRZ_Rpower	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rle_Rpower	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H; only 1: intros ?; only 1: case H0; only 1: intros ?; only 1: left; only 1: apply Rpower_lt; only 1: assumption; only 1: assumption; only 1: intros ?; only 1: rewrite H1; only 1: right; only 1: reflexivity; only 1: intros ?; only 1: rewrite <- H; only 1: unfold Rpower; only 1: rewrite ln_1; only 1: rewrite Rmult_0_r; only 1: rewrite Rmult_0_r; only 1: apply Rle_refl).	0.059319	23
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P7	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.ln_lt_2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.limit1_ext	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P8	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.limit1_imp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rinv_Rdiv	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold Rdiv; only 1: rewrite Rinv_mult_distr; only 1: rewrite Rinv_involutive; only 1: apply Rmult_comm; only 1: assumption; only 1: assumption; only 1: apply Rinv_neq_0_compat; only 1: assumption).	0.044090	12
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P9	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold adapted_couple in H; only 1: decompose [ and ] H; only 1: clear H; only 1: induction l; only 1: simpl in H4; only 1: discriminate; only 1: induction l; only 1: simpl in H3; only 1: simpl in H2; only 1: generalize H3; only 1: generalize H2; only 1: unfold Rmin; only 1: unfold Rmax; only 1: case Rle_dec; only 1: intros; only 1: elim H0; only 1: rewrite <- H5; only 1: rewrite <- H7; only 1: reflexivity; only 1: intros; only 1: elim H0; only 1: rewrite <- H5; only 1: rewrite <- H7; only 1: reflexivity; only 1: simpl; only 1: apply le_n_S; only 1: apply le_n_S; only 1: apply Nat.le_0_l).	0.212732	29
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Dln	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.derivable_pt_lim_ln	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.D_in_imp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.D_in_ext	300	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold D_in; only 1: rewrite H; only 1: auto).	0.046336	9
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Dpower	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.derivable_pt_lim_power	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_mult_distr	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold Rpower; only 1: rewrite <- exp_plus; only 1: rewrite ln_mult; only 1: rewrite Rmult_plus_distr_l; only 1: auto; only 1: auto; only 1: auto).	0.047534	12
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rlt_Rpower_l	300	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: apply exp_increasing; only 1: apply Rmult_lt_compat_l; only 1: auto; only 1: apply ln_increasing; only 1: lra; only 1: lra).	0.060483	9
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P10	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rle_Rpower_l	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: destruct H; only 1: intros ?; only 1: destruct H0; only 1: destruct H1; only 1: apply Rlt_le; only 1: apply exp_increasing; only 1: apply Rmult_lt_compat_l; only 1: auto; only 1: apply ln_increasing; only 1: lra; only 1: lra; only 1: rewrite H1; only 1: apply Rle_refl; only 1: intros; only 1: rewrite <- H; only 1: rewrite Rpower_O; only 1: rewrite Rpower_O; only 1: apply Rle_refl; only 1: apply Rlt_le_trans with a; only 1: tauto; only 1: tauto; only 1: tauto).	0.071740	23
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.arcsinh_sinh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P11	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.sinh_arcsinh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P13	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.derivable_pt_lim_arcsinh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.arcsinh_lt	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P12	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: unfold adapted_couple_opt; only 1: unfold adapted_couple; only 1: intros; only 1: decompose [ and ] H; only 1: clear H; only 1: split; only 1: split; only 1: assumption; only 1: split; only 1: rewrite H0; only 1: unfold Rmin; only 1: case Rle_dec; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: apply Rle_antisym; only 1: assumption; only 1: assumption; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: apply Rle_antisym; only 1: auto with real; only 1: auto with real; only 1: split; only 1: rewrite H3; only 1: unfold Rmax; only 1: case Rle_dec; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: apply Rle_antisym; only 1: assumption; only 1: assumption; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: case Rle_dec; only 1: intros ?; only 1: reflexivity; only 1: intros ?; only 1: apply Rle_antisym; only 1: auto with real; only 1: auto with real; only 1: split; only 1: assumption; only 1: assumption; only 1: split; only 1: assumption; only 1: assumption).	0.490896	54
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.arcsinh_le	300	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H; only 1: apply Rlt_le; only 1: apply arcsinh_lt; only 1: assumption; only 1: rewrite H; only 1: apply Rle_refl).	0.045224	9
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.arcsinh_0	300	0.0.0.0.0.0.0.0.0	synth with cache (only 1: unfold arcsinh; only 1: rewrite pow_ne_zero; only 1: rewrite Rplus_0_l; only 1: rewrite Rplus_0_l; only 1: rewrite sqrt_1; only 1: rewrite <- exp_0; only 1: rewrite ln_exp; only 1: easy; only 1: discriminate).	0.036385	9
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P14	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P15	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P16	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P17	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P19	300	0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: induction l1; only 1: simpl; only 1: ring; only 1: induction l1; only 1: simpl; only 1: ring; only 1: simpl; only 1: simpl in IHl1; only 1: rewrite IHl1; only 1: ring).	0.168517	11
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P20	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P21	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P22	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P23	300
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.add_cancel_l	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P24	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P25	300
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int63.Int63.add_cancel_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P26	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P27	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply StepFun_P26; only 1: apply StepFun_P23 with g; only 1: assumption; only 1: assumption; only 1: apply StepFun_P25 with f; only 1: assumption; only 1: assumption).	0.059829	16
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P28	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P29	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.f_incr_implies_g_incr_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derivable_pt_id_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.pr_nu_var2_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.leftinv_is_rightinv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.leftinv_is_rightinv_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.IVT_interv_prelim0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.IVT_interv_prelim1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.IVT_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.phi_sequence_prop	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.f_interv_is_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_exists	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RinvN_pos	300	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: apply Rinv_0_lt_compat; only 1: apply Rplus_le_lt_0_compat; only 1: apply pos_INR; only 1: apply Rlt_0_1).	0.036050	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RinvN_cv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.Riemann_integrable_ext	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P5	300	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold RiemannInt; only 1: destruct RiemannInt_exists; only 1: destruct RiemannInt_exists; only 1: eapply UL_sequence; only 1: apply u; only 1: apply RiemannInt_P4 with pr2 RinvN; only 1: apply RinvN_cv; only 1: apply RinvN_cv; only 1: assumption).	0.060183	10
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.continuity_pt_recip_prelim	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.maxN	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.continuity_pt_recip_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.Heine_cor1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.Heine_cor2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P5	300	0.0.0	synth with cache (only 1: intros; only 1: unfold SubEqui; only 1: apply SubEqui_P3).	0.029234	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P6	300	0.0.0.0	synth with cache (only 1: intros; only 1: unfold SubEqui; only 1: apply SubEqui_P4; only 1: assumption).	0.030929	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P7	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P8	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.SubEqui_P9	300	0.0.0.0.0	synth with cache (only 1: intros; only 1: apply StepFun_P38; only 1: apply SubEqui_P7; only 1: apply SubEqui_P1; only 1: apply SubEqui_P2).	0.042509	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P6	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P7	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.continuity_implies_RiemannInt	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P8	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P9	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P10	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derivable_pt_lim_recip_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derivable_pt_recip_interv_prelim0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derivable_pt_recip_interv_prelim1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P11	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derivable_pt_recip_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derive_pt_recip_interv_prelim0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P12	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P13	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P14	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derive_pt_recip_interv_prelim1_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P15	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derive_pt_recip_interv_prelim1_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P16	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derive_pt_recip_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.ub_lt_2_pos	300	0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: lra).	0.046367	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.Rle_cv_lim	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.mkposreal_lb_ub	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P17	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P18	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P19	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.FTC_P1	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: apply continuity_implies_RiemannInt; only 1: assumption; only 1: intros; only 1: apply H0; only 1: elim H3; only 1: intros; only 1: split; only 1: assumption; only 1: apply Rle_trans with x; only 1: assumption; only 1: assumption).	0.050649	12
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P20	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P21	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis5.derivable_pt_lim_CVU	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P22	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P23	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P24	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P25	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P26	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P27	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P28	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P29	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P30	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P31	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P32	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_P33	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.FTC_Riemann	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.RiemannInt_const_bound	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.Riemann_integrable_scal	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt.Riemann_integrable_Ropp	300
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.RealField.RTheory	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Ropp_div	300	0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: unfold Rdiv; only 1: ring).	0.073722	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.pos_half_prf	300	0	synth with cache (only 1: lra).	0.119323	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Boule_half_to_interval	300	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: unfold Boule; only 1: unfold pos_half; only 1: simpl; only 1: intros ?; only 1: intros ?; only 1: apply Rabs_def2 in H; only 1: destruct H; only 1: split; only 1: lra; only 1: lra).	0.136021	10
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Boule_lt	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Un_cv_ext	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Machin.atan_sub_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Machin.tech	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Machin.Machin_2_3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Alt_first_term_bound	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Machin.Machin_4_5_239	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Alt_CVU	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Machin.Machin_2_3_7	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.pow2_ge_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.pow2_abs	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derivable_pt_tan	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: unfold derivable_pt; only 1: unfold tan; only 1: apply derivable_pt_div; only 1: reg; only 1: reg; only 1: apply Rgt_not_eq; only 1: apply cos_gt_0; only 1: rewrite <- Ropp_div; only 1: tauto; only 1: tauto).	0.056935	12
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derive_pt_tan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Machin.PI_2_3_7_ineq	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derive_increasing_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.plus_Rsqr_gt_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.PI2_lower_bound	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.PI2_3_2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.PI2_1	300	0.0	synth with cache (only 1: pose proof PI2_3_2; only 1: lra).	0.038971	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.tan_increasing	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.tan_is_inj	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.exists_atan_in_frame	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.tan_1_gt_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.frame_tan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ub_opp	300	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: rewrite Ropp_div; only 1: apply Ropp_lt_contravar; only 1: assumption).	0.036230	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.pos_opp_lt	300	0.0	synth with cache (only 1: intros; only 1: lra).	0.037540	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.tech_opp_tan	300	0.0.0	synth with cache (only 1: intros; only 1: rewrite tan_neg; only 1: assumption).	0.033489	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.pre_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.atan_bound	300	0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: unfold atan; only 1: destruct pre_atan; only 1: destruct a; only 1: clear H0; only 1: exact H).	0.046792	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.atan_right_inv	300	0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: unfold atan; only 1: destruct pre_atan; only 1: destruct a; only 1: clear H; only 1: exact H0).	0.042665	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.atan_opp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derivable_pt_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.atan_increasing	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.atan_0	300	0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: apply tan_is_inj; only 1: apply atan_bound; only 1: pose proof PI_RGT_0; only 1: rewrite Ropp_div; only 1: split; only 1: lra; only 1: lra; only 1: rewrite atan_right_inv; only 1: rewrite tan_0; only 1: easy).	0.052453	10
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.atan_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derive_pt_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derivable_pt_lim_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Ratan_seq_decreasing	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Ratan_seq_converging	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ps_atan_exists_01	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.FTCN_step1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.FTC_Newton	300	0.0.0	synth with cache (only 1: intros; only 1: unfold NewtonInt; only 1: reflexivity).	0.037537	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P2	300	0.0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold NewtonInt; only 1: destruct NewtonInt_P1; only 1: clear o; only 1: apply Rminus_diag_eq; only 1: easy).	0.042214	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P3	300	0.0.0.0.0.0.0	synth with cache (only 1: unfold Newton_integrable; only 1: intros; only 1: elim X; only 1: intros ?; only 1: intros ?; only 1: exists x; only 1: tauto).	0.069800	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P4	300	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct pr; only 1: unfold NewtonInt; only 1: unfold NewtonInt_P3; only 1: simpl; only 1: ring).	0.068259	9
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P5	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.antiderivative_P1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P6	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.antiderivative_P2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.antiderivative_P3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.antiderivative_P4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P7	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P8	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.NewtonInt.NewtonInt_P9	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.sum_Ratan_seq_opp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ps_atan_exists_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.in_int	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ps_atan0_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ps_atan_exists_1_opp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ps_atan_opp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_eq_reg_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ps_atanSeq_continuity_pt_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.pow_lt_1_compat	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: induction 1; only 1: simpl; only 1: rewrite Rmult_1_r; only 1: tauto; only 1: simpl; only 1: split; only 1: apply Rmult_le_pos; only 1: intuition; only 1: intuition; only 1: rewrite <- Rmult_1_r; only 1: apply Rmult_le_0_lt_compat; only 1: intuition; only 1: intuition; only 1: intuition; only 1: intuition).	0.148287	18
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_eq_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_seq_Rabs	300	0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: unfold Datan_seq; only 1: rewrite pow_mult; only 1: rewrite pow_mult; only 1: rewrite pow2_abs; only 1: reflexivity).	0.127116	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_seq_pos	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_eq_reg_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_sum_eq	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_seq_increasing	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_seq_decreasing	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_seq_CV_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_lim	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_CVU_prelim	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rplus_lt_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_is_datan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Ratan_CVU'	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Ratan_CVU	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Alt_PI_tg	300	0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: unfold PI_tg; only 1: unfold Ratan_seq; only 1: unfold Rdiv; only 1: rewrite pow1; only 1: rewrite Rmult_1_l; only 1: reflexivity).	0.046061	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Ratan_is_ps_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_continuity	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derivable_pt_lim_ps_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.derivable_pt_ps_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.ps_atan_continuity_pt_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Datan_eq_DatanSeq_interv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_lt_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.atan_eq_ps_atan	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_le_compat_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Alt_PI_eq	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.PI_ineq	300	1.0.0	synth with cache (only 1: intros; only 1: rewrite <- Alt_PI_eq; only 1: apply Alt_PI_ineq).	0.051761	10
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_lt_reg_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RIneq.Rmult_le_reg_r	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_PI3_cos_PI6	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_PI6_cos_PI3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.PI6_RGT_0	300	0.0.0.0.0	synth with cache (only 1: unfold Rdiv; only 1: apply Rmult_lt_0_compat; only 1: apply PI_RGT_0; only 1: apply Rinv_0_lt_compat; only 1: prove_sup0).	0.033768	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.PI6_RLT_PI2	300	0.0.0.0.0.0	synth with cache (only 1: unfold Rdiv; only 1: apply Rmult_lt_compat_l; only 1: apply PI_RGT_0; only 1: apply Rinv_lt_contravar; only 1: prove_sup; only 1: prove_sup).	0.053305	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_PI6	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sqrt2_neq_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.R1_sqrt2_neq_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sqrt3_2_neq_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rlt_sqrt2_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rlt_sqrt3_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.PI4_RGT_0	300	0.0.0.0.0	synth with cache (only 1: unfold Rdiv; only 1: apply Rmult_lt_0_compat; only 1: apply PI_RGT_0; only 1: apply Rinv_0_lt_compat; only 1: prove_sup0).	0.044697	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.cos_PI4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_PI4	300	1.0	synth with cache (only 1: rewrite sin_cos_PI4; only 1: apply cos_PI4).	0.030799	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.tan_PI4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.cos_3PI4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_3PI4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.cos_PI6	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.tan_PI6	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_PI3	300	1.0	synth with cache (only 1: rewrite sin_PI3_cos_PI6; only 1: apply cos_PI6).	0.035545	6
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.cos_PI3	300	0.0	synth with cache (only 1: rewrite sin_PI6_cos_PI3; only 1: apply sin_PI6).	0.041808	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.tan_PI3	300	0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: unfold tan; only 1: rewrite sin_PI3; only 1: rewrite cos_PI3; only 1: unfold Rdiv; only 1: rewrite Rmult_1_l; only 1: rewrite Rinv_involutive; only 1: rewrite Rmult_assoc; only 1: rewrite <- Rinv_l_sym; only 1: apply Rmult_1_r; only 1: discrR; only 1: discrR).	0.058331	11
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_2PI3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.cos_2PI3	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.tan_2PI3	300	0.0.0.0	synth with cache (only 1: unfold tan; only 1: rewrite sin_2PI3; only 1: rewrite cos_2PI3; only 1: field).	0.057740	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.cos_5PI4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_5PI4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_cos5PI4	300	0.0.0	synth with cache (only 1: rewrite cos_5PI4; only 1: rewrite sin_5PI4; only 1: reflexivity).	0.037643	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rgt_3PI2_0	300	0.0.0	synth with cache (only 1: apply Rmult_lt_0_compat; only 1: prove_sup0; only 1: apply PI2_RGT_0).	0.035497	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rgt_2PI_0	300	0.0.0	synth with cache (only 1: apply Rmult_lt_0_compat; only 1: prove_sup0; only 1: apply PI_RGT_0).	0.027362	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rlt_PI_3PI2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rlt_3PI2_2PI	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.Rabs_derive_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.SeqProp.CV_minus	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.Rabs_derive_2	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.Rderivable_pt_abs	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.Rcontinuity_abs	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.continuity_finite_sum	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_lim_fs	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_lim_finite_sum	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_finite_sum	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.psos_r1b	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_finite_sum	300	0.0.0.0	synth with cache (only 1: intros; only 1: unfold derivable; only 1: intros ?; only 1: apply derivable_pt_finite_sum).	0.039275	4
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.psos_r1	300	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: setoid_rewrite H; only 1: cring).	0.117990	5
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_lim_cosh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_lim_sinh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_exp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_cosh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_pt_sinh	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_exp	300	0.0	synth with cache (only 1: unfold derivable; only 1: apply derivable_pt_exp).	0.032002	2
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_cosh	300	1.0	synth with cache (only 1: unfold derivable; only 1: apply derivable_pt_cosh).	0.037706	5
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.nsatzR_diff	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derivable_sinh	300	0.0	synth with cache (only 1: unfold derivable; only 1: apply derivable_pt_sinh).	0.031766	2
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.P0Z_correct	300	0	synth with cache (only 1: trivial).	0.031765	1
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derive_pt_exp	300	1.0.0	synth with cache (only 1: intros ?; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_exp).	0.051691	8
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derive_pt_cosh	300	1.0.0	synth with cache (only 1: intros ?; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_cosh).	0.039817	7
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derive_pt_sinh	300	1.0.0	synth with cache (only 1: intros ?; only 1: apply derive_pt_eq_0; only 1: apply derivable_pt_lim_sinh).	0.035726	7
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.Rext	300	0.0.0.0	synth with cache (only 1: constructor; only 1: solve_proper; only 1: solve_proper; only 1: solve_proper).	0.155171	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.sinh_lt	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.Rset	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.Rtheory	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.PolZadd_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.PolZmul_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.R_power_theory	300	0.0.0.0.0	synth with cache (only 1: apply mkpow_th; only 1: unfold pow; only 1: intros; only 1: rewrite Nnat.N2Nat.id; only 1: reflexivity).	0.042052	5
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.norm_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.PolZeq_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.mult_l_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.compute_list_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P31	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P32	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P33	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P34	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P35	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P36	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P37	300	0.0.0.0.0.0.1.0.0.0	synth with cache (only 1: intros; only 1: eapply StepFun_P36; only 1: assumption; only 1: eapply StepFun_P25; only 1: apply StepFun_P29; only 1: apply StepFun_P29; only 1: eapply StepFun_P23; only 1: apply StepFun_P29; only 1: apply StepFun_P29; only 1: assumption).	0.067779	11
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Rings_R.Rsth	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: constructor; only 1: red; only 1: intros; only 1: trivial; only 1: unfold Symmetric; only 1: intros; only 1: subst; only 1: trivial; only 1: unfold Transitive; only 1: intros; only 1: subst; only 1: trivial).	0.042561	12
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P38	300
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Rings_R.Rri	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: constructor; only 1: apply Rsth; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: rewrite H0; only 1: reflexivity; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: rewrite H0; only 1: reflexivity; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: rewrite H0; only 1: reflexivity; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: reflexivity; only 1: exact Rplus_0_l; only 1: exact Rplus_comm; only 1: symmetry; only 1: apply Rplus_assoc; only 1: exact Rmult_1_l; only 1: exact Rmult_1_r; only 1: symmetry; only 1: apply Rmult_assoc; only 1: exact Rmult_plus_distr_r; only 1: intros; only 1: apply Rmult_plus_distr_l; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: reflexivity; only 1: exact Rplus_opp_r).	0.180841	49
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P39	300
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Rings_R.Rcri	300	0.0	synth with cache (only 1: red; only 1: exact Rmult_comm).	0.033767	2
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Rings_R.R_one_zero	300	1	synth with cache (only 1: exact R1_neq_R0).	0.031498	3
+coq-tactician-stdlib.8.11.dev	Coq.setoid_ring.Rings_R.Rdi	300	0.0.0	synth with cache (only 1: constructor; only 1: exact Rmult_integral; only 1: exact R_one_zero).	0.039456	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P40	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P41	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P42	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: induction l1; only 1: intros ?; only 1: simpl; only 1: ring; only 1: intros ?; only 1: destruct l1; only 1: simpl in H; only 1: simpl; only 1: destruct l2; only 1: simpl; only 1: ring; only 1: simpl; only 1: simpl in H; only 1: rewrite H; only 1: ring; only 1: simpl; only 1: rewrite Rplus_assoc; only 1: apply Rplus_eq_compat_l; only 1: apply IHl1; only 1: rewrite <- H; only 1: reflexivity).	0.204210	24
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P43	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P44	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P45	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P46	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.nsatz1.check_correct	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Rsth	300	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: constructor; only 1: red; only 1: intros; only 1: trivial; only 1: unfold Symmetric; only 1: intros; only 1: subst; only 1: trivial; only 1: unfold Transitive; only 1: intros; only 1: subst; only 1: trivial).	0.044469	12
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Rri	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: constructor; only 1: apply Rsth; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: rewrite H0; only 1: reflexivity; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: rewrite H0; only 1: reflexivity; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: rewrite H0; only 1: reflexivity; only 1: unfold respectful; only 1: unfold Proper; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: rewrite H; only 1: reflexivity; only 1: exact Rplus_0_l; only 1: exact Rplus_comm; only 1: symmetry; only 1: apply Rplus_assoc; only 1: exact Rmult_1_l; only 1: exact Rmult_1_r; only 1: symmetry; only 1: apply Rmult_assoc; only 1: exact Rmult_plus_distr_r; only 1: intros; only 1: apply Rmult_plus_distr_l; only 1: unfold equality; only 1: unfold eq_notation in *; only 1: intros; only 1: reflexivity; only 1: exact Rplus_opp_r).	0.166277	49
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.R_one_zero	300	1	synth with cache (only 1: exact R1_neq_R0).	0.034134	3
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Rcri	300	0.0	synth with cache (only 1: red; only 1: exact Rmult_comm).	0.033679	2
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Rdi	300	0.0.0	synth with cache (only 1: constructor; only 1: exact Rmult_integral; only 1: exact R_one_zero).	0.040804	3
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Qri	300	0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: constructor; only 1: apply Q_Setoid; only 1: apply Qplus_comp; only 1: apply Qmult_comp; only 1: apply Qminus_comp; only 1: apply Qopp_comp; only 1: exact Qplus_0_l; only 1: exact Qplus_comm; only 1: apply Qplus_assoc; only 1: exact Qmult_1_l; only 1: exact Qmult_1_r; only 1: apply Qmult_assoc; only 1: apply Qmult_plus_distr_l; only 1: intros; only 1: apply Qmult_plus_distr_r; only 1: reflexivity; only 1: exact Qplus_opp_r).	0.096126	17
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Q_one_zero	300	0	synth with cache (only 1: discriminate).	0.032088	1
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Qcri	300	0.0	synth with cache (only 1: red; only 1: exact Qmult_comm).	0.035660	2
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Qdi	300	0.0.0	synth with cache (only 1: constructor; only 1: exact Qmult_integral; only 1: exact Q_one_zero).	0.030493	3
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Z_one_zero	300
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Zcri	300	0.0	synth with cache (only 1: red; only 1: exact Z.mul_comm).	0.033817	2
+coq-tactician-stdlib.8.11.dev	Coq.nsatz.Nsatz.Zdi	300	0.0.0	synth with cache (only 1: constructor; only 1: exact Zmult_integral; only 1: exact Z_one_zero).	0.037838	3
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_def.cos_sym	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_def.sin_antisym	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.deg_rad	300	0.0.0.0	synth with cache (only 1: intros ?; only 1: apply toRad_inj; only 1: rewrite rad_deg; only 1: reflexivity).	0.035478	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.Rsqr_sin_cos_d_one	300	0.0.0.0	synth with cache (only 1: intros ?; only 1: unfold sind; only 1: unfold cosd; only 1: apply sin2_cos2).	0.034964	4
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_lb_ge_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_plus	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.sin_le_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_le_0	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_decreasing_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo1.cos_eq_0_1	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ranalysis4.derive_pt_inv	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.sin_cos_PI4	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rpower.Rpower_mult	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P18	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.RiemannInt_SF.StepFun_P30	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Ratan.Ratan_seq_opp	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.rad_deg	300
+coq-tactician-stdlib.8.11.dev	Coq.Reals.Rtrigo_calc.toRad_inj	300
