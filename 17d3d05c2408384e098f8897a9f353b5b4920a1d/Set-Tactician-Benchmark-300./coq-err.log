@@ -1,0 +1,104 @@
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14c31cdb2800>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x147dd4126980>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x152104f1b250>
+File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros s x y ->
+intros s;
+ (intros x;
+   (intros y;
+     (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14f2ec12b070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14df3a260250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1548a690ea40>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e2edde0250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14997c0da800>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x151738044160>
+File "./theories/Numbers/DecimalPos.v", line 377, characters 1-73:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Pos.of_uint d) eqn:Hd, (Pos.of_uint d') eqn:Hd'; intros [=]
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ (intros _tmp_tactician0; (first
+   [ discriminate _tmp_tactician0; idtac
+   | injection _tmp_tactician0 as; idtac
+   | intro_equality_clear _tmp_tactician0; idtac
+   | intro_equality_hnf _tmp_tactician0; idtac ]))
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1495b6d33250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x151a7632a140>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x15529d3f3b80>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e904058160>
+File "./theories/Structures/OrderedTypeEx.v", line 121, characters 2-15:
+Error: Anomaly "last_arg." Please report at http://coq.inria.fr/bugs/.
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e4bc0732b0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14dd900be800>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14bca40bf070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x151fb10aa9e0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e318052800>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x151b91902020>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x15150804a9e0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x149a84673070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x148f1009b070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e8a00d3070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x145f29a241f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14870b64f940>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e92803a9e0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14d812c03250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14ada74f2ad0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x15208fe73250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14ff27c2b070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1496c6ca29e0>
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14a1883a0250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14a5100dc1f0>
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1485f9976a40>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x150310094160>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1454e8a94220>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1512b00f3250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x153379d0a9e0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14a7cdd23250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14b541af0160>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x151d25e74250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x154608068160>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14f4ac1932b0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x153452d0c250>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x154d28090160>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x148c900db070>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14d23834e9e0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x15262a9272b0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x153d40d0e800>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14b674096740>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1506e4090220>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x153c1407c1f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1512c80a32b0>
