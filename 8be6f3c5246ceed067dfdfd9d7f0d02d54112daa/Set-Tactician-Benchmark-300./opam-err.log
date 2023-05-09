@@ -1,27 +1,43 @@
-  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-gmy6wqhw
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-8mycufzn
+  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
+  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
+  Matching host key in /home/piepejel/.ssh/known_hosts:16
+  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
+  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
+  Matching host key in /home/piepejel/.ssh/known_hosts:16
   Running command git rev-parse -q --verify 'sha^b7880c54a9add3109fbae9a4cb73feb87e468893'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' b7880c54a9add3109fbae9a4cb73feb87e468893
+  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
+  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
+  Matching host key in /home/piepejel/.ssh/known_hosts:16
   Running command git checkout -q b7880c54a9add3109fbae9a4cb73feb87e468893
+  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
+  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
+  Matching host key in /home/piepejel/.ssh/known_hosts:16
 
 [notice] A new release of pip available: 22.2.2 -> 23.1.2
 [notice] To update, run: pip install --upgrade pip
-[NOTE] coq-mathcomp-odd-order.1.14.0, coq-hott.8.11, coq-poltac.0.8.11, coq-bbv.1.3, coq-haskell.1.0.0, coq-topology.10.0.1, coq-smtcoq.2.0+8.11, coq-printf.2.0.0, coq-iris-heap-lang.3.4.0, coq-mathcomp-apery.1.0.1, coq-gaia-stern.1.15, coq-tlc.20200328, coq-hammer.1.3.2+8.11, coq-bytestring.0.9.0, coq-corn.8.16.0, coq-ceres.0.4.0, coq-qcert.2.2.0 and coq-bits.1.1.0 are not installed.
+[ERROR] The compilation of xxhash.0.1 failed at "ocaml setup.ml -build".
 
-[NOTE] Package coq-graph2tac is currently pinned to git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#85b72ab2c794e7030792600ff14a6e2681f03aa9 (version ~dev).
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[NOTE] Pinning unchanged
-[ERROR] Package coq-ott has no known version 0.33 in the repositories
+#=== ERROR while compiling xxhash.0.1 =========================================#
+# context              2.1.4 | linux/x86_64 |  | https://opam.ocaml.org#297ab9eb
+# path                 /raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/.opam-switch/build/xxhash.0.1
+# command              /raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/bin/ocaml setup.ml -build
+# exit-code            1
+# env-file             /tmp/opam-piepejel-3017996/xxhash-3017996-9aacbd.env
+# output-file          /tmp/opam-piepejel-3017996/xxhash-3017996-9aacbd.out
+### output ###
+# [...]
+# /raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_bindings.cmx stubs/xxhash_bindings.ml
+# /raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_stubgen.cmx stubs/xxhash_stubgen.ml
+# /raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/bin/ocamlfind ocamlopt -g -linkpkg -package ctypes.stubs -I stubs stubs/xxhash_bindings.cmx stubs/xxhash_stubgen.cmx -o stubs/xxhash_stubgen.native
+# stubs/xxhash_stubgen.native
+# /raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
+# + /raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
+# lib/xxhash_stubs.c:1:10: fatal error: xxhash.h: No such file or directory
+#     1 | #include <xxhash.h>
+#       |          ^~~~~~~~~~
+# compilation terminated.
+# Command exited with code 2.
+# E: Failure("Command ''/raid/scratch/piepejel/projects/coq-benchmarks/bd/opam-root/bench/bin/ocamlbuild' stubs/xxhash_stubgen.native lib/libxxhash_stubs.a lib/dllxxhash_stubs.so lib/xxhash.cma lib/xxhash.cmxa lib/xxhash.a lib/xxhash.cmxs -tag debug' terminated with error code 10")
+
