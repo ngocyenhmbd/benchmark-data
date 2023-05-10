@@ -1,0 +1,32 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/LasseBlaauwbroek/graph2tac.git /tmp/pip-req-build-2zuvmuav
+  Running command git rev-parse -q --verify 'sha^02caf12b5833893678b51c03d4d745a608b0c6ca'
+  Running command git fetch -q https://github.com/LasseBlaauwbroek/graph2tac.git 02caf12b5833893678b51c03d4d745a608b0c6ca
+  Running command git checkout -q 02caf12b5833893678b51c03d4d745a608b0c6ca
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j55".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.4 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-05-09 21:20
+# path                 /tmp/tactician.tmp.rxrIJP/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /dccstor/mathzero/miniconda3/bin/make -j55
+# exit-code            2
+# env-file             /tmp/opam-xxx-670536/coq-tactician-stdlib-670536-475004.env
+# output-file          /tmp/opam-xxx-670536/coq-tactician-stdlib-670536-475004.out
+### output ###
+# [...]
+# coqc theories/Program/Subset.v
+# coqc user-contrib/Ltac2/Ltac2.v
+# coqc theories/Sets/Powerset_facts.v
+# coqc plugins/ssr/ssrbool.v
+# coqc theories/Classes/CEquivalence.v
+# coqc theories/Classes/Morphisms_Prop.v
+# coqc theories/Classes/Equivalence.v
+# coqc theories/Classes/SetoidTactics.v
+# coqc theories/Setoids/Setoid.v
+# make: *** [Makefile:66: theories/Numbers/DecimalFacts.vo] Segmentation fault (core dumped)
+# make: *** [theories/Numbers/DecimalFacts.vo] Deleting file 'theories/Numbers/DecimalFacts.glob'
+# make: *** Waiting for unfinished jobs....
+
