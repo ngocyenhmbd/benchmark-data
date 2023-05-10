@@ -1,0 +1,103 @@
+<graph2tac.loader.predict_server.ResponseHistory object at 0x150b027d82e0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1483fdb0c820>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14f40b2f8370>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1482360f8340>
+File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros s x y ->
+intros s;
+ (intros x;
+   (intros y;
+     (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1473c861a2f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14a054514370>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14bdc137a2f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1523c8de4370>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14f01208a2f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1549a783a2f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14c076550430>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x154ef8b6bd90>
+File "./theories/Numbers/DecimalPos.v", line 377, characters 1-73:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Pos.of_uint d) eqn:Hd, (Pos.of_uint d') eqn:Hd'; intros [=]
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ (intros _tmp_tactician0; (first
+   [ discriminate _tmp_tactician0; idtac
+   | injection _tmp_tactician0 as; idtac
+   | intro_equality_clear _tmp_tactician0; idtac
+   | intro_equality_hnf _tmp_tactician0; idtac ]))
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14bb09df0370>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14bc799abe80>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1541f18986a0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x151baedc4700>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x149d5d4e0730>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14d26e58bd90>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e1dd58be80>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1522bf5afdc0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14803003bdc0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1507e07f06a0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1539b24cc6a0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e0b30a62f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14f3eabdbbe0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1476a60646a0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x15269d3f62f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14bc1f51a2f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1494bc26fbe0>
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1540a1244820>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1477634bbe80>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14a4529a0430>
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e3ec96c700>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14c70c21c820>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1527d708a2f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14b5361fc430>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x147fde0f4460>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14592af90670>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x152e064ac6a0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14ea2e344790>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e775fc3be0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14edcdcffbe0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1469daa58850>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1539d35e8700>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x146c97bf4460>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x149f666e62f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14799e7d4820>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x1507bb2f46a0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14cfab5802e0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x151b43ea7be0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14b5c4dce2f0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x146b5139be80>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14864ea58460>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x154b72b045b0>
+<graph2tac.loader.predict_server.ResponseHistory object at 0x14e5a5d262f0>
