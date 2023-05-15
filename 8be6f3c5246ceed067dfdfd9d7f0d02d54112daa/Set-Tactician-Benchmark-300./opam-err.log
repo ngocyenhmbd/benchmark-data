@@ -1,43 +1,36 @@
-  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-e2emnv6q
-  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
-  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
-  Matching host key in /home/piepejel/.ssh/known_hosts:16
-  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
-  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
-  Matching host key in /home/piepejel/.ssh/known_hosts:16
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' /tmp/pip-req-build-2djsapyz
   Running command git rev-parse -q --verify 'sha^b7880c54a9add3109fbae9a4cb73feb87e468893'
   Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/graph2tac.git' b7880c54a9add3109fbae9a4cb73feb87e468893
-  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
-  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
-  Matching host key in /home/piepejel/.ssh/known_hosts:16
   Running command git checkout -q b7880c54a9add3109fbae9a4cb73feb87e468893
-  Warning: the ECDSA host key for 'github.com' differs from the key for the IP address '140.82.121.3'
-  Offending key for IP in /home/piepejel/.ssh/known_hosts:3
-  Matching host key in /home/piepejel/.ssh/known_hosts:16
 
 [notice] A new release of pip available: 22.2.2 -> 23.1.2
 [notice] To update, run: pip install --upgrade pip
-[ERROR] The compilation of xxhash.0.1 failed at "ocaml setup.ml -build".
+[ERROR] The compilation of coq-hott.8.11 failed at "make -j79".
 
-#=== ERROR while compiling xxhash.0.1 =========================================#
-# context              2.1.4 | linux/x86_64 |  | https://opam.ocaml.org#297ab9eb
-# path                 /raid/scratch/piepejel/projects/bld/opam-root/bench/.opam-switch/build/xxhash.0.1
-# command              /raid/scratch/piepejel/projects/bld/opam-root/bench/bin/ocaml setup.ml -build
-# exit-code            1
-# env-file             /tmp/opam-piepejel-3430437/xxhash-3430437-2a4cec.env
-# output-file          /tmp/opam-piepejel-3430437/xxhash-3430437-2a4cec.out
+#=== ERROR while compiling coq-hott.8.11 ======================================#
+# context              2.1.4 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2023-05-14 09:10
+# path                 /raid/scratch/piepejel/projects/coq-bench-15may/bd/opam-root/bench/.opam-switch/build/coq-hott.8.11
+# command              /raid/scratch/piepejel/projects/coq-bench-15may/bd/opam-root/bench/bin/tactician exec -- make -j79
+# exit-code            2
+# env-file             /tmp/opam-piepejel-1695793/coq-hott-1695793-976cec.env
+# output-file          /tmp/opam-piepejel-1695793/coq-hott-1695793-976cec.out
 ### output ###
 # [...]
-# /raid/scratch/piepejel/projects/bld/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_bindings.cmx stubs/xxhash_bindings.ml
-# /raid/scratch/piepejel/projects/bld/opam-root/bench/bin/ocamlfind ocamlopt -c -g -annot -bin-annot -package ctypes.stubs -I stubs -o stubs/xxhash_stubgen.cmx stubs/xxhash_stubgen.ml
-# /raid/scratch/piepejel/projects/bld/opam-root/bench/bin/ocamlfind ocamlopt -g -linkpkg -package ctypes.stubs -I stubs stubs/xxhash_bindings.cmx stubs/xxhash_stubgen.cmx -o stubs/xxhash_stubgen.native
-# stubs/xxhash_stubgen.native
-# /raid/scratch/piepejel/projects/bld/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
-# + /raid/scratch/piepejel/projects/bld/opam-root/bench/bin/ocamlfind ocamlc -g -package ctypes.stubs -c lib/xxhash_stubs.c
-# lib/xxhash_stubs.c:1:10: fatal error: xxhash.h: No such file or directory
-#     1 | #include <xxhash.h>
-#       |          ^~~~~~~~~~
-# compilation terminated.
-# Command exited with code 2.
-# E: Failure("Command ''/raid/scratch/piepejel/projects/bld/opam-root/bench/bin/ocamlbuild' stubs/xxhash_stubgen.native lib/libxxhash_stubs.a lib/dllxxhash_stubs.so lib/xxhash.cma lib/xxhash.cmxa lib/xxhash.a lib/xxhash.cmxs -tag debug' terminated with error code 10")
+# end; cbn in *
+# 
+# HOQC theories/Categories/Adjoint/Composition/LawsTactic
+# HOQC theories/Categories/Comma/Utf8
+# HOQC theories/Categories/Grothendieck/ToCat
+# HOQC theories/Categories/Pseudofunctor
+# HOQC theories/Categories/Comma/InducedFunctors
+# Warning: File "./process" has been implicitly expanded to "./process.v"
+# [file-no-extension,filesystem]
+# Error: Can't find file ./process.v
+# make: *** [Makefile:957: theories/Categories/ExponentialLaws/Law3/Functors.vo] Error 1
+# make: *** Waiting for unfinished jobs....
 
+2023-05-15 12:35:01.255615+02:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host dgx-1. Code: 254
