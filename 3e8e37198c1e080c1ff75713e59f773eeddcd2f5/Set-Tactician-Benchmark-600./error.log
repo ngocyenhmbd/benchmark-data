@@ -1,8 +1,156 @@
-
-
------------------- Benchmark terminated -----------------------
-
-Fatal benchmarking error: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
- ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 201, characters 17-26"
-  "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
-  "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47"))
+Non-fatal benchmarking error: Skipping 9 lemmas after Coq failure: CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_CR_apply_cont CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_is_Bound01_mult01 CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_is_Bound01_plus CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_poor_Bound01_wd_Proper CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_poor_Bound01_zero CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_poor_is_Bound01 CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_uc_fun_close CoRN.reals.fast.MultivariatePolynomials.MVP_correct.MVP_uc_fun_correct CoRN.reals.fast.MultivariatePolynomials.MVP_correct.n_Function_ball01_mult
+Non-fatal benchmarking error: Abnormal exit code for coqc on host lasse-work: 1
+ Invocation:
+SHELL=/bin/bash; export SHELL;
+SESSION_MANAGER=local/lasse-work:@/tmp/.ICE-unix/1679,unix/lasse-work:/tmp/.ICE-unix/1679; export SESSION_MANAGER;
+CAML_LD_LIBRARY_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/stublibs:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocaml/stublibs:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocaml; export CAML_LD_LIBRARY_PATH;
+OCAML_TOPLEVEL_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/toplevel; export OCAML_TOPLEVEL_PATH;
+COLORTERM=truecolor; export COLORTERM;
+OCAMLPATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib; export OCAMLPATH;
+PYENV_SHELL=bash; export PYENV_SHELL;
+OPAMCOLOR=always; export OPAMCOLOR;
+HISTCONTROL=ignoredups; export HISTCONTROL;
+XDG_MENU_PREFIX=gnome-; export XDG_MENU_PREFIX;
+OPAM_PACKAGE_VERSION=8.16.0; export OPAM_PACKAGE_VERSION;
+OPAMCLI=2.0; export OPAMCLI;
+PKG_CONFIG_PATH=; export PKG_CONFIG_PATH;
+HISTSIZE=10000; export HISTSIZE;
+OCAMLFIND_IGNORE_DUPS_IN=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib; export OCAMLFIND_IGNORE_DUPS_IN;
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh; export SSH_AUTH_SOCK;
+XMODIFIERS=@im=ibus; export XMODIFIERS;
+DUNE_OCAML_STDLIB=/usr/lib/ocaml; export DUNE_OCAML_STDLIB;
+DESKTOP_SESSION=gnome-xorg; export DESKTOP_SESSION;
+LC_MONETARY=nl_NL.UTF-8; export LC_MONETARY;
+DUNE_SOURCEROOT=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system; export DUNE_SOURCEROOT;
+OCAMLTOP_INCLUDE_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib/toplevel; export OCAMLTOP_INCLUDE_PATH;
+PWD=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0; export PWD;
+ASYNC_PARALLEL_IS_CHILD_MACHINE=; export ASYNC_PARALLEL_IS_CHILD_MACHINE;
+XDG_SESSION_DESKTOP=gnome-xorg; export XDG_SESSION_DESKTOP;
+LOGNAME=lasse; export LOGNAME;
+XDG_SESSION_TYPE=x11; export XDG_SESSION_TYPE;
+OPAMSWITCH=bench; export OPAMSWITCH;
+MANPATH=:/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/bin:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/man; export MANPATH;
+SYSTEMD_EXEC_PID=1696; export SYSTEMD_EXEC_PID;
+_=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/coqc; export _;
+XAUTHORITY=/run/user/1000/gdm/Xauthority; export XAUTHORITY;
+OPAM_SWITCH_PREFIX=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench; export OPAM_SWITCH_PREFIX;
+WINDOWPATH=2; export WINDOWPATH;
+MOTD_SHOWN=pam; export MOTD_SHOWN;
+CDPATH=; export CDPATH;
+GDM_LANG=en_US.UTF-8; export GDM_LANG;
+HOME=/home/lasse; export HOME;
+USERNAME=lasse; export USERNAME;
+LANG=en_US.UTF-8; export LANG;
+LC_PAPER=nl_NL.UTF-8; export LC_PAPER;
+XDG_CURRENT_DESKTOP=GNOME; export XDG_CURRENT_DESKTOP;
+VTE_VERSION=7200; export VTE_VERSION;
+INSIDE_DUNE=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default; export INSIDE_DUNE;
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/4d26342e_e16f_4c9b_84ac_8e25a8ed8a9a; export GNOME_TERMINAL_SCREEN;
+OCAML_COLOR=always; export OCAML_COLOR;
+MFLAGS=-j15 --jobserver-auth=fifo:/tmp/GMfifo1213206 --no-print-directory; export MFLAGS;
+MAKEFLAGS= -j15 --jobserver-auth=fifo:/tmp/GMfifo1213206 --no-print-directory; export MAKEFLAGS;
+XDG_SESSION_CLASS=user; export XDG_SESSION_CLASS;
+TERM=xterm-256color; export TERM;
+USER=lasse; export USER;
+CUDA_PATH=/opt/cuda; export CUDA_PATH;
+GNOME_TERMINAL_SERVICE=:1.100; export GNOME_TERMINAL_SERVICE;
+DISPLAY=:1; export DISPLAY;
+SHLVL=2; export SHLVL;
+MAKELEVEL=2; export MAKELEVEL;
+QT_IM_MODULE=ibus; export QT_IM_MODULE;
+LC_MEASUREMENT=nl_NL.UTF-8; export LC_MEASUREMENT;
+DUNE_OCAML_HARDCODED=/home/lasse/Documents/Projects/Tactician/benchmark-system/_opam/lib; export DUNE_OCAML_HARDCODED;
+OPAM_PACKAGE_NAME=coq-corn; export OPAM_PACKAGE_NAME;
+XDG_RUNTIME_DIR=/run/user/1000; export XDG_RUNTIME_DIR;
+MKLROOT=/opt/intel/oneapi/mkl/latest; export MKLROOT;
+PYENV_ROOT=/home/lasse/.pyenv; export PYENV_ROOT;
+DEBUGINFOD_URLS=https://debuginfod.archlinux.org ; export DEBUGINFOD_URLS;
+LC_TIME=nl_NL.UTF-8; export LC_TIME;
+XDG_DATA_DIRS=/home/lasse/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop; export XDG_DATA_DIRS;
+PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin:/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/bin:/home/lasse/.pyenv/shims:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lasse/.local/bin:/home/lasse/.local/bin; export PATH;
+GDMSESSION=gnome-xorg; export GDMSESSION;
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DBUS_SESSION_BUS_ADDRESS;
+OPAMNOENVNOTICE=true; export OPAMNOENVNOTICE;
+MAIL=/var/spool/mail/lasse; export MAIL;
+OPAMROOT=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root; export OPAMROOT;
+LC_NUMERIC=nl_NL.UTF-8; export LC_NUMERIC;
+OLDPWD=/home/lasse/Documents/Projects/Tactician/benchmark-data; export OLDPWD;
+(cd /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0 && bwrap --dev-bind / / --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.glob.bench-1217266 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.glob --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.vo.bench-1217266 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.vo --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.vok.bench-1217266 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.vok --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.vos.bench-1217266 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/reals/fast/MultivariatePolynomials.vos /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/coqc -q -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -R . CoRN reals/fast/MultivariatePolynomials.v -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/BenchParams.v)
+Non-fatal benchmarking error: Skipping 1 lemmas after Coq failure: CoRN.logic.CLogic.CNoDup_map
+Non-fatal benchmarking error: Abnormal exit code for coqc on host lasse-work: 1
+ Invocation:
+SHELL=/bin/bash; export SHELL;
+SESSION_MANAGER=local/lasse-work:@/tmp/.ICE-unix/1679,unix/lasse-work:/tmp/.ICE-unix/1679; export SESSION_MANAGER;
+CAML_LD_LIBRARY_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/stublibs:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocaml/stublibs:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocaml; export CAML_LD_LIBRARY_PATH;
+OCAML_TOPLEVEL_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/toplevel; export OCAML_TOPLEVEL_PATH;
+COLORTERM=truecolor; export COLORTERM;
+OCAMLPATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib; export OCAMLPATH;
+PYENV_SHELL=bash; export PYENV_SHELL;
+OPAMCOLOR=always; export OPAMCOLOR;
+HISTCONTROL=ignoredups; export HISTCONTROL;
+XDG_MENU_PREFIX=gnome-; export XDG_MENU_PREFIX;
+OPAM_PACKAGE_VERSION=8.16.0; export OPAM_PACKAGE_VERSION;
+OPAMCLI=2.0; export OPAMCLI;
+PKG_CONFIG_PATH=; export PKG_CONFIG_PATH;
+HISTSIZE=10000; export HISTSIZE;
+OCAMLFIND_IGNORE_DUPS_IN=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib; export OCAMLFIND_IGNORE_DUPS_IN;
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh; export SSH_AUTH_SOCK;
+XMODIFIERS=@im=ibus; export XMODIFIERS;
+DUNE_OCAML_STDLIB=/usr/lib/ocaml; export DUNE_OCAML_STDLIB;
+DESKTOP_SESSION=gnome-xorg; export DESKTOP_SESSION;
+LC_MONETARY=nl_NL.UTF-8; export LC_MONETARY;
+DUNE_SOURCEROOT=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system; export DUNE_SOURCEROOT;
+OCAMLTOP_INCLUDE_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib/toplevel; export OCAMLTOP_INCLUDE_PATH;
+PWD=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0; export PWD;
+ASYNC_PARALLEL_IS_CHILD_MACHINE=; export ASYNC_PARALLEL_IS_CHILD_MACHINE;
+XDG_SESSION_DESKTOP=gnome-xorg; export XDG_SESSION_DESKTOP;
+LOGNAME=lasse; export LOGNAME;
+XDG_SESSION_TYPE=x11; export XDG_SESSION_TYPE;
+OPAMSWITCH=bench; export OPAMSWITCH;
+MANPATH=:/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/bin:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/man; export MANPATH;
+SYSTEMD_EXEC_PID=1696; export SYSTEMD_EXEC_PID;
+_=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/coqc; export _;
+XAUTHORITY=/run/user/1000/gdm/Xauthority; export XAUTHORITY;
+OPAM_SWITCH_PREFIX=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench; export OPAM_SWITCH_PREFIX;
+WINDOWPATH=2; export WINDOWPATH;
+MOTD_SHOWN=pam; export MOTD_SHOWN;
+CDPATH=; export CDPATH;
+GDM_LANG=en_US.UTF-8; export GDM_LANG;
+HOME=/home/lasse; export HOME;
+USERNAME=lasse; export USERNAME;
+LANG=en_US.UTF-8; export LANG;
+LC_PAPER=nl_NL.UTF-8; export LC_PAPER;
+XDG_CURRENT_DESKTOP=GNOME; export XDG_CURRENT_DESKTOP;
+VTE_VERSION=7200; export VTE_VERSION;
+INSIDE_DUNE=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default; export INSIDE_DUNE;
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/4d26342e_e16f_4c9b_84ac_8e25a8ed8a9a; export GNOME_TERMINAL_SCREEN;
+OCAML_COLOR=always; export OCAML_COLOR;
+MFLAGS=-j15 --jobserver-auth=fifo:/tmp/GMfifo1213206 --no-print-directory; export MFLAGS;
+MAKEFLAGS= -j15 --jobserver-auth=fifo:/tmp/GMfifo1213206 --no-print-directory; export MAKEFLAGS;
+XDG_SESSION_CLASS=user; export XDG_SESSION_CLASS;
+TERM=xterm-256color; export TERM;
+USER=lasse; export USER;
+CUDA_PATH=/opt/cuda; export CUDA_PATH;
+GNOME_TERMINAL_SERVICE=:1.100; export GNOME_TERMINAL_SERVICE;
+DISPLAY=:1; export DISPLAY;
+SHLVL=2; export SHLVL;
+MAKELEVEL=2; export MAKELEVEL;
+QT_IM_MODULE=ibus; export QT_IM_MODULE;
+LC_MEASUREMENT=nl_NL.UTF-8; export LC_MEASUREMENT;
+DUNE_OCAML_HARDCODED=/home/lasse/Documents/Projects/Tactician/benchmark-system/_opam/lib; export DUNE_OCAML_HARDCODED;
+OPAM_PACKAGE_NAME=coq-corn; export OPAM_PACKAGE_NAME;
+XDG_RUNTIME_DIR=/run/user/1000; export XDG_RUNTIME_DIR;
+MKLROOT=/opt/intel/oneapi/mkl/latest; export MKLROOT;
+PYENV_ROOT=/home/lasse/.pyenv; export PYENV_ROOT;
+DEBUGINFOD_URLS=https://debuginfod.archlinux.org ; export DEBUGINFOD_URLS;
+LC_TIME=nl_NL.UTF-8; export LC_TIME;
+XDG_DATA_DIRS=/home/lasse/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop; export XDG_DATA_DIRS;
+PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin:/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/bin:/home/lasse/.pyenv/shims:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lasse/.local/bin:/home/lasse/.local/bin; export PATH;
+GDMSESSION=gnome-xorg; export GDMSESSION;
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DBUS_SESSION_BUS_ADDRESS;
+OPAMNOENVNOTICE=true; export OPAMNOENVNOTICE;
+MAIL=/var/spool/mail/lasse; export MAIL;
+OPAMROOT=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root; export OPAMROOT;
+LC_NUMERIC=nl_NL.UTF-8; export LC_NUMERIC;
+OLDPWD=/home/lasse/Documents/Projects/Tactician/benchmark-data; export OLDPWD;
+(cd /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0 && bwrap --dev-bind / / --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.glob.bench-1219557 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.glob --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.vo.bench-1219557 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.vo --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.vok.bench-1219557 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.vok --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.vos.bench-1219557 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-corn.8.16.0/logic/CLogic.vos /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/coqc -q -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -R . CoRN logic/CLogic.v -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/BenchParams.v)
