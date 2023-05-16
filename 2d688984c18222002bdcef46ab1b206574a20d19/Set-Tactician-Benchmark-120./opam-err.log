@@ -1,0 +1,30 @@
+[NOTE] coq-huffman.8.11.0 is not installed.
+
+[NOTE] Package coq-hammer is currently pinned to git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#8cfdcbef9a708ccad59210826ce0f9617f1b3d1b (version 8.11.dev).
+[ERROR] The compilation of coq-hammer.8.11.dev failed at "make -j15 plugin".
+
+#=== ERROR while compiling coq-hammer.8.11.dev ================================#
+# context              2.1.4 | linux/x86_64 |  | pinned(git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#2d688984c18222002bdcef46ab1b206574a20d19#2d688984)
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer.8.11.dev
+# command              /usr/bin/make -j15 plugin
+# exit-code            2
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-hammer-1135772-48491b.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-hammer-1135772-48491b.out
+### output ###
+# 4 | open Hhlib
+# [...]
+# [1;31mError[0m: Unbound module Hhlib
+# [1mFile "src/plugin/coqterms.ml", line 4, characters 5-10[0m:
+# 4 | open Hhlib
+#          [1;31m^^^^^[0m
+# [1;31mError[0m: Unbound module Hhlib
+# make[2]: *** [Makefile.coq.plugin:626: src/plugin/coqterms.cmx] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# make[2]: *** [Makefile.coq.plugin:620: src/plugin/coqterms.cmo] Error 2
+# make[1]: *** [Makefile.coq.plugin:327: all] Error 2
+# make[1]: Leaving directory '/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer.8.11.dev'
+# make: *** [Makefile:10: plugin] Error 2
+
+
+The former state can be restored with:
+    /home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default/src/benchmark/main.exe switch import "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/backup/state-20230516101623.export"
