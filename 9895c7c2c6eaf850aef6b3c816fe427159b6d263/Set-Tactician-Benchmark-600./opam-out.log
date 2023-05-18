@@ -1,27 +1,12 @@
 Opam has already been initialized.
-Nothing to do.
-[coq-hammer.8.11.dev] synchronised (git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#9895c7c2c6eaf850aef6b3c816fe427159b6d263)
-The following additional pinnings are required by coq-hammer.8.11.dev:
-  - coq-hammer-tactics.8.11.dev at git+https://github.com/LasseBlaauwbroek/coqhammer.git#c3af77c9f3864d6a29bcfd71eb44bec37f5c8bcf
-Pin and install them? [Y/n] y
-[coq-hammer-tactics.8.11.dev] synchronised (no changes)
-coq-hammer-tactics is now pinned to git+https://github.com/LasseBlaauwbroek/coqhammer.git#c3af77c9f3864d6a29bcfd71eb44bec37f5c8bcf (version 8.11.dev)
-coq-hammer is now pinned to git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#9895c7c2c6eaf850aef6b3c816fe427159b6d263 (version 8.11.dev)
-
-<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
-[coq-hammer.8.11.dev] synchronised (no changes)
-
 The following actions will be performed:
-  ↻ recompile coq-hammer-tactics 8.11.dev* [upstream or system changes]
-  ↻ recompile coq-hammer         8.11.dev*
-===== ↻ 2 =====
+  ⊘ remove coq-huffman 8.12.0
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⊘ removed   coq-hammer.8.11.dev
-⊘ removed   coq-hammer-tactics.8.11.dev
-∗ installed coq-hammer-tactics.8.11.dev
-∗ installed coq-hammer.8.11.dev
+⊘ removed   coq-huffman.8.12.0
 Done.
+[coq-hammer.8.11.dev] synchronised (no changes)
+coq-hammer is now pinned to git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#9895c7c2c6eaf850aef6b3c816fe427159b6d263 (version 8.11.dev)
 Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-build-commands in switch bench
 Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
 Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-install-commands in switch bench
@@ -30,10 +15,9 @@ Removed '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:i
 Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
 Nothing to do.
 The following actions will be performed:
-  ↗ upgrade coq-huffman 8.11.0 to 8.12.0
+  ∗ install coq-huffman 8.12.0
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-huffman.8.12.0  (https://github.com/coq-community/huffman/archive/v8.12.0.tar.gz)
-⊘ removed   coq-huffman.8.11.0
+⬇ retrieved coq-huffman.8.12.0  (cached)
 ∗ installed coq-huffman.8.12.0
 Done.
