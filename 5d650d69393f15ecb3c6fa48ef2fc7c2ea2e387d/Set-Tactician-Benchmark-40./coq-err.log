@@ -1,0 +1,927 @@
+File "./theories/Init/Tactics.v", line 189, characters 0-45:
+Warning:
+now idtac((TacAlias Coq.Init.Tactics.now_#_62200C10 ((TacThen (TacArg (CAst (Reference (CAst t)))) (TacArg (CAst (TacCall Coq.Init.Tactics.easy (CAst Located)))))) (CAst (Tacexp (TacId)))))
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros x; only 1: case x; only 1: intros y; only 1: intros _tmp_tactician0; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: destruct H; only 1: reflexivity; only 1: trivial with datatypes).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+y : A
+_tmp_tactician0 : Stream
+EqSt_reflex :
+forall s2 : Stream,
+EqSt (Cons y _tmp_tactician0) s2 -> EqSt s2 (Cons y _tmp_tactician0)
+s2 : Stream
+H : EqSt (Cons y _tmp_tactician0) s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+Recursive definition is: "fun (s2 : Stream)
+                            (H : EqSt (Cons y _tmp_tactician0) s2) =>
+                          eqst s2 (Cons y _tmp_tactician0)
+                            match H with
+                            | eqst _ _ H0 _ =>
+                                let a := hd s2 in
+                                match
+                                  H0 in (_ = y0)
+                                  return (y0 = hd (Cons y _tmp_tactician0))
+                                with
+                                | eq_refl => eq_refl
+                                end
+                            end
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt (Cons y _tmp_tactician0) s3 ->
+                               EqSt (tl s3) (tl (Cons y _tmp_tactician0)) :=
+                               fun (s3 : Stream)
+                                 (H0 : EqSt (Cons y _tmp_tactician0) s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x0 => x0
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Wellfounded/Lexicographic_Product.v", line 53, characters 6-32:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+injection H3 as
+[=-> H3]
+injection H3 as _tmp_tactician0 H3;
+ (intropattern subst -> _tmp_tactician0; idtac)
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Sets/Finite_sets_facts.v", line 45, characters 4-33:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Numbers/DecimalFacts.v", line 115, characters 3-42:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct nzhead; intros H [=]; trivial
+try intros until nzhead; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros H;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); trivial
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Sets/Finite_sets_facts.v", line 45, characters 4-33:
+Warning: Tactician's tactical decomposition crashed. Please report.
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Lists/List.v", line 264, characters 6-22:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros a b [=]
+intros a;
+ (intros b;
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ])))
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/Sorting/Sorted.v", line 79, characters 4-99:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+split; [ induction 1 as [| a l [| ]] | induction 1 ]; auto
+ using Sorted, LocallySorted, HdRel
+split;
+ [ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+    [ .. | idtac | destruct _tmp_tactician0 as [| ]; [ .. | idtac | idtac ] ]
+ | <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info> ]; auto using Sorted, LocallySorted, HdRel
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/Arith/PeanoNat.v", line 287, characters 1-35:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros ([| ], H); try discriminate
+intros _tmp_tactician0;
+ (destruct _tmp_tactician0 as (_tmp_tactician2, H);
+   [ .. | destruct _tmp_tactician2 as [| ]; [ .. | idtac | idtac ] ]);
+ try discriminate
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
+File "./theories/ZArith/BinInt.v", line 622, characters 18-68:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct n as [| [| | ]| [| | ]]; simpl; try easy
+try intros until n;
+ (<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+   [ ..
+   | idtac
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ]
+   | destruct _tmp_tactician0 as [| | ]; [ .. | idtac | idtac | idtac ] ]);
+ simpl; try easy
+
