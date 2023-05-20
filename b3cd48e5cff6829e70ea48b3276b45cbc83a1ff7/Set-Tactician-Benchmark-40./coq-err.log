@@ -1,0 +1,192 @@
+File "./theories/Init/Tactics.v", line 189, characters 0-45:
+Warning:
+now idtac((TacAlias Coq.Init.Tactics.now_#_62200C10 ((TacThen (TacArg (CAst (Reference (CAst t)))) (TacArg (CAst (TacCall Coq.Init.Tactics.easy (CAst Located)))))) (CAst (Tacexp (TacId)))))
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros x; only 1: case x; only 1: intros C; only 1: intros _tmp_tactician0; only 1: coinduction ltac:(EqSt_reflex); only 1: case x; only 1: destruct H; only 1: auto with datatypes; only 1: auto with datatypes).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+C : A
+_tmp_tactician0 : Stream
+EqSt_reflex :
+forall s2 : Stream,
+EqSt (Cons C _tmp_tactician0) s2 -> EqSt s2 (Cons C _tmp_tactician0)
+s2 : Stream
+H : EqSt (Cons C _tmp_tactician0) s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+Recursive definition is: "fun (s2 : Stream)
+                            (H : EqSt (Cons C _tmp_tactician0) s2) =>
+                          eqst s2 (Cons C _tmp_tactician0)
+                            match x with
+                            | Cons x x0 =>
+                                match H with
+                                | eqst _ _ H0 _ =>
+                                    fun (_ : A) (_ : Stream) => eq_sym H0
+                                end x x0
+                            end
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt (Cons C _tmp_tactician0) s3 ->
+                               EqSt (tl s3) (tl (Cons C _tmp_tactician0)) :=
+                               fun (s3 : Stream)
+                                 (H0 : EqSt (Cons C _tmp_tactician0) s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x0 => x0
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+x)
+Hsnd : Stream
+h2 : Inv Hsnd
+Eq_sym : ForAll Hsnd
+Invalid recursive call in the argument of "match" in "match Eq_sym with
+                                                 | HereAndFurther _ x0 => x0
+                                                 end".
+Recursive definition is: "HereAndFurther (InvThenP h2)
+                            (let H : ForAll (tl Hsnd) :=
+                               match Eq_sym with
+                               | HereAndFurther _ x0 => x0
+                               end in
+                             H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/DecimalFacts.v", line 57, characters 12-55:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+induction d; intros d' [=]; simpl; trivial
+try intros until d; <recording::with_runtime_info@0>
+ <genarg:wit_runtime_info>;
+ (intros d';
+   (intros _tmp_tactician0; (first
+     [ discriminate _tmp_tactician0; idtac
+     | injection _tmp_tactician0 as; idtac
+     | intro_equality_clear _tmp_tactician0; idtac
+     | intro_equality_hnf _tmp_tactician0; idtac ]))); 
+ simpl; trivial
+
+File "./theories/Logic/EqdepFacts.v", line 487, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 493, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/Logic/EqdepFacts.v", line 500, characters 0-12:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros * []
+intros *; (intros _tmp_tactician0; (destruct _tmp_tactician0 as []; idtac))
+
+File "./theories/FSets/FSetPositive.v", line 319, characters 9-25:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+intros s x y ->
+intros s;
+ (intros x;
+   (intros y;
+     (intros _tmp_tactician0; (intropattern subst -> _tmp_tactician0; idtac))))
+
+File "./theories/ZArith/Zcomplements.v", line 67, characters 2-95:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (H : Q (Z.abs p)) by
+ (destruct (Zabs_dec p) as [->| ->]; elim H; auto with zarith)
+enough (H : Q (Z.abs p));
+ [ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+    [ ..
+    | intropattern subst -> _tmp_tactician0; idtac
+    | intropattern subst -> _tmp_tactician0; idtac ]; 
+    elim H; auto with zarith
+ | .. ]
+
+File "./theories/ZArith/Zcomplements.v", line 74, characters 4-48:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/ZArith/Zcomplements.v", line 77, characters 6-50:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
+File "./theories/ZArith/Zcomplements.v", line 88, characters 2-93:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+enough (Q (Z.abs p)) by
+ (destruct (Zabs_dec p) as [->| ->]; elim H; auto with zarith)
+enough (Q (Z.abs p));
+ [ <recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+    [ ..
+    | intropattern subst -> _tmp_tactician0; idtac
+    | intropattern subst -> _tmp_tactician0; idtac ]; 
+    elim H; auto with zarith
+ | .. ]
+
+File "./theories/ZArith/Zcomplements.v", line 98, characters 6-50:
+Warning:
+Tactician found a bug in it's tactical decomposition. Please report.
+destruct (Zabs_dec m) as [->| ->]; trivial
+<recording::with_runtime_info@0> <genarg:wit_runtime_info>;
+ [ ..
+ | intropattern subst -> _tmp_tactician0; idtac
+ | intropattern subst -> _tmp_tactician0; idtac ]; trivial
+
