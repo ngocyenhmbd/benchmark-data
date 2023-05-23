@@ -1,0 +1,61 @@
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intro x; only 1: coinduction ltac:(EqSt_reflex); only 1: symmetry; only 1: destruct H; only 1: trivial with datatypes; only 1: assumption).
+Typing error:
+Recursive definition of EqSt_reflex is ill-formed.
+In environment
+A : Type
+x : Stream
+EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
+s2 : Stream
+H : EqSt x s2
+Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x => x
+                                                 end".
+Recursive definition is: "fun (s2 : Stream) (H : EqSt x s2) =>
+                          eqst s2 x
+                            (eq_sym match H with
+                                    | eqst _ _ H0 _ => H0
+                                    end)
+                            (let H0 :
+                               forall s3 : Stream,
+                               EqSt x s3 -> EqSt (tl s3) (tl x) :=
+                               fun (s3 : Stream) (H0 : EqSt x s3) =>
+                               match EqSt_reflex s3 H0 with
+                               | eqst _ _ _ x => x
+                               end in
+                             H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/PArith/BinPos.v", line 390, characters 2-22:
+Error:
+Anomaly
+"Typing failure of the following tactic:
+synth with cache (only 1: intros k H1 H2; only 1: intro eq_rect_eq; only 1: etransitivity; only 1: rewrite ?PeanoNat.Nat.add_0_l, ?PeanoNat.Nat.add_0_r, ?H; only 1: now PeanoNat.Nat.nzsimpl'; only 1: auto with relations).
+Typing error:
+Illegal application: 
+The term "@Logic.eq" of type "forall A : Type, A -> A -> Prop" cannot be applied to the terms
+ "k H0" : "Type"
+ "H3" : "k H0"
+ "eq_rect_eq" : "k H1"
+The 3rd term has type "k H1" which should be coercible to "k H0"."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Structures/OrderedType.v", line 155, characters 3-63:
+Error: Anomaly "unknown meta 81850."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Reals/Rtrigo1.v", line 746, characters 2-68:
+Error: Stack overflow.
+
+File "./theories/Sorting/Permutation.v", line 321, characters 2-47:
+Error: Anomaly "cannot define an evar twice."
+Please report at http://coq.inria.fr/bugs/.
+
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2250, characters 1-34:
+Error: Stack overflow.
+
