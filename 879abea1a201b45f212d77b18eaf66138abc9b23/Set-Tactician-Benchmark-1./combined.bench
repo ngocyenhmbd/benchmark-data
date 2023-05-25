@@ -1,0 +1,146 @@
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.iszero_eq0	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.iszero_not_eq0	1	64.64.3.65	synth with cache (only 1: intros a Ha; only 1: contradict Ha; only 1: repeat match goal with | _ => reflexivity | _ => progress subst | H:Some ?a = Some ?b |- _ => assert (a = b) by refine match H with | eq_refl => eq_refl end; clear H | H:None = Some _ |- _ => solve [ inversion H ] end; only 1: intuition try easy).	0.650871	988
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.sneakl_shiftr	1	192.4	synth with cache (only 1: destruct x; only 1: exact eq_refl).	0.065752	192
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.sneakr_shiftl	1	7.0	synth with cache (only 1: intros; only 1: now destruct x).	0.210802	783
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.twice_zero	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.twice_or_twice_plus_one	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_S	1	0.0	synth with cache (only 1: intros n m; only 1: now simpl).	0.022529	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_S_tail	1	2.321.0.0.1.0.0	synth with cache (only 1: intros; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: destruct x; only 1: now f_equal).	0.660823	959
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_n_0	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_size	1	64.0	synth with cache (only 1: destruct x; only 1: auto with *).	0.031798	5
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_above_size	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_S	1	0	synth with cache (only 1: reflexivity).	0.014363	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_S_tail	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_n_0	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_size	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftl_above_size	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.firstr_firstl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.firstl_firstr	1	0.0.0	synth with cache (only 1: destruct x; only 1: simpl; only 1: auto).	0.040953	3
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_predsize_0_firstl	1	0.515.0.0	synth with cache (only 1: destruct x; only 1: simpl; only 1: inversion_clear 1; only 1: auto).	0.781517	603
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_0_propagates	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.nshiftr_0_firstl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.int31_ind_sneakl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.int31_ind_twice	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Recr.recr_aux_eqn	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Recr.recr_aux_converges	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Recr.recr_eqn	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Recr.recrbis_aux_equiv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Recr.recrbis_equiv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Incr.incrbis_aux_equiv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Incr.incr_eqn1	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Incr.incr_eqn2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Incr.incr_twice	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Incr.incr_twice_plus_one_firstl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Phi.phibis_aux_equiv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Phi.phi_eqn1	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Phi.phi_eqn2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Phi.phi_twice_firstl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.Phi.phi_twice_plus_one_firstl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phibis_aux_pos	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phibis_aux_bounded	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_nonneg	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_bounded	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phibis_aux_lowerbound	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_lowerbound	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_zero	1	385.0.0	synth with cache (only 1: intros; only 1: compute; only 1: now Morphisms.f_equiv).	0.065818	22
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_size	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_le	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_firstr	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_twice	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.i2l_length	1	576.2	synth with cache (only 1: simpl; only 1: auto using Z.ge_le).	0.025681	13
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.l2i_i2l	1	4.0	synth with cache (only 1: intro n; only 1: now destruct n).	0.210467	282
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.i2l_sneakr	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.i2l_sneakl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.i2l_l2i	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.i2l_nshiftl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_i2l	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_twice_plus_one	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_shiftr	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_incrbis	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.EqShiftL.EqShiftL_incr	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.incr_twice_plus_one	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.incr_firstr	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.incr_inv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_inv_double_plus_one	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_inv_double	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_inv_incr	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_inv_phi_aux	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_inv_phi	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.p2ibis_bounded	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.p2ibis_spec	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_inv_positive_p2ibis	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_phi_inv_positive	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.double_twice_firstl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.double_twice_plus_one_firstl	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.p2i_p2ibis	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.positive_to_int31_phi_inv_positive	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.positive_to_int31_spec	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_twice	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_twice_plus_one	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_incr	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_phi_inv_negative	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Basics.phi_phi_inv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.wB_pos	1	0	synth with cache (only 1: auto with zarith).	0.022988	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_zdigits	1	450	synth with cache (only 1: now rewrite <- Z.sub_move_0_r).	0.127177	31
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_more_than_1_digit	1	0.450	synth with cache (only 1: symmetry; only 1: auto).	0.041410	32
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_0	1	0	synth with cache (only 1: auto).	0.032259	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_1	1	0	synth with cache (only 1: reflexivity).	0.030646	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_m1	1	1.0	synth with cache (only 1: simpl; only 1: trivial).	0.046360	3
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_compare	1	1	synth with cache (only 1: trivial).	0.026543	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_add_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_succ_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_add_carry_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_add	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_add_carry	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_succ	1	0.0	synth with cache (only 1: intros; only 1: apply phi_phi_inv).	0.039898	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_sub_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_sub_carry_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_sub	1	0.0	synth with cache (only 1: intros; only 1: apply phi_phi_inv).	0.032440	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_sub_carry	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_opp_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_opp	1	0.0	synth with cache (only 1: intros; only 1: apply phi_phi_inv).	0.037320	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_opp_carry	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_pred_c	1	0.0	synth with cache (only 1: intros; only 1: apply spec_sub_c).	0.037445	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_pred	1	1.0.0	synth with cache (only 1: intros; only 1: rewrite <- spec_1; only 1: apply phi_phi_inv).	0.074266	4
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.phi2_phi_inv2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_mul_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_mul	1	0.0	synth with cache (only 1: intros; only 1: apply phi_phi_inv).	0.036028	2
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_square_c	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_div21	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_div	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_mod	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.phi_gcd	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_gcd	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.iter_int31_iter_nat	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.addmuldiv31_equiv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_add_mul_div	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.shift_unshift_mod_2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_pos_mod	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_head00	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.head031_equiv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.phi_nz	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_head0	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_tail00	1	0.0.0.0.0.0.0	synth with cache (only 1: intros; only 1: generalize (phi_inv_phi x); only 1: rewrite H; only 1: simpl phi_inv; only 1: intros H'; only 1: rewrite <- H'; only 1: auto).	0.061915	7
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.tail031_equiv	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_tail0	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.quotient_by_2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt_main_trick	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt_main	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt_init	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt_test_true	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt_test_false	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt31_step_def	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.div31_phi	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt31_step_correct	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.iter31_sqrt_correct	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_sqrt	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt312_step_def	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt312_lower_bound	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.div312_phi	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.sqrt312_step_correct	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.iter312_sqrt_correct	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_sqrt2	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_eq0	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_is_even	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.log2_phi_bounded	1
+coq-tactician-stdlib.8.11.dev	Coq.Numbers.Cyclic.Int31.Cyclic31.Int31_Specs.spec_lor	1
