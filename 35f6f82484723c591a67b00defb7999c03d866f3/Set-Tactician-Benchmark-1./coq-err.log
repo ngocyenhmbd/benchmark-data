@@ -1,48 +1,123 @@
-File "./theories/ZArith/Znat.v", line 48, characters 1-16:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 76, characters 1-39:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 82, characters 1-16:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 87, characters 1-28:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 92, characters 1-16:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 97, characters 1-50:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 111, characters 1-16:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 118, characters 1-34:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 123, characters 1-7:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 130, characters 1-16:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 137, characters 1-13:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 142, characters 1-13:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 149, characters 1-19:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 154, characters 1-13:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 159, characters 1-13:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 164, characters 1-13:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 169, characters 1-13:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 174, characters 1-16:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 179, characters 1-19:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 184, characters 1-19:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 189, characters 1-47:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 196, characters 1-10:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ZArith/Znat.v", line 209, characters 1-15:
-Warning: Benchmarking error: Forked process exited with code 1
-File "./theories/ZArith/Znat.v", line 334, characters 1-15:
-Warning: Benchmarking error: Forked process exited with signal -11
+Fatal glibc error: malloc.c:4288 (_int_malloc): assertion failed: (unsigned long) (size) >= (unsigned long) (nb)
+Traceback (most recent call last):
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/lib/python3.10/site-packages/graphviz/backend/execute.py", line 91, in run_check
+    proc.check_returncode()
+  File "/usr/lib/python3.10/subprocess.py", line 457, in check_returncode
+    raise CalledProcessError(self.returncode, self.args, self.stdout,
+subprocess.CalledProcessError: Command '[PosixPath('dot'), '-Kdot', '-Tpdf', '-O', 'python_graph']' died with <Signals.SIGABRT: 6>.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/bin/pytact-server", line 8, in <module>
+    sys.exit(main())
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/pytact/fake_python_server.py", line 116, in main
+    run_session(args, capnp_socket, record_file)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/pytact/fake_python_server.py", line 70, in run_session
+    graph_initialize_loop(messages_generator, 0)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/pytact/fake_python_server.py", line 59, in graph_initialize_loop
+    graph_initialize_loop(msg, level + 1)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/pytact/fake_python_server.py", line 59, in graph_initialize_loop
+    graph_initialize_loop(msg, level + 1)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/pytact/fake_python_server.py", line 59, in graph_initialize_loop
+    graph_initialize_loop(msg, level + 1)
+  [Previous line repeated 40 more times]
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/pytact/fake_python_server.py", line 45, in graph_initialize_loop
+    gv.visualize_proof_state(proof_state)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/pytact/graph_visualize.py", line 57, in visualize_proof_state
+    dot.render(filename='python_graph', view=False, cleanup=True)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/lib/python3.10/site-packages/graphviz/_tools.py", line 171, in wrapper
+    return func(*args, **kwargs)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/lib/python3.10/site-packages/graphviz/rendering.py", line 122, in render
+    rendered = self._render(*args, **kwargs)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/lib/python3.10/site-packages/graphviz/_tools.py", line 171, in wrapper
+    return func(*args, **kwargs)
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/lib/python3.10/site-packages/graphviz/backend/rendering.py", line 324, in render
+    execute.run_check(cmd,
+  File "/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/lib/python3.10/site-packages/graphviz/backend/execute.py", line 93, in run_check
+    raise CalledProcessError(*e.args)
+graphviz.backend.execute.CalledProcessError: Command '[PosixPath('dot'), '-Kdot', '-Tpdf', '-O', 'python_graph']' died with <Signals.SIGABRT: 6>. [stderr: b'Fatal glibc error: malloc.c:4288 (_int_malloc): assertion failed: (unsigned long) (size) >= (unsigned long) (nb)\n']
+File "./theories/Init/Logic.v", line 494, characters 2-10:
+Error:
+Anomaly "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
+
+Abnormal exit code for coqc on host lasse-work: 129
+ Invocation:
+SHELL=/bin/bash; export SHELL;
+SESSION_MANAGER=local/lasse-work:@/tmp/.ICE-unix/1679,unix/lasse-work:/tmp/.ICE-unix/1679; export SESSION_MANAGER;
+CAML_LD_LIBRARY_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/stublibs:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocaml/stublibs:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocaml; export CAML_LD_LIBRARY_PATH;
+OCAML_TOPLEVEL_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/toplevel; export OCAML_TOPLEVEL_PATH;
+COLORTERM=truecolor; export COLORTERM;
+OCAMLPATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib; export OCAMLPATH;
+PYENV_SHELL=bash; export PYENV_SHELL;
+OPAMCOLOR=always; export OPAMCOLOR;
+HISTCONTROL=ignoredups; export HISTCONTROL;
+XDG_MENU_PREFIX=gnome-; export XDG_MENU_PREFIX;
+OPAM_PACKAGE_VERSION=8.11.dev; export OPAM_PACKAGE_VERSION;
+OPAMCLI=2.0; export OPAMCLI;
+PKG_CONFIG_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/pkgconfig; export PKG_CONFIG_PATH;
+HISTSIZE=10000; export HISTSIZE;
+OCAMLFIND_IGNORE_DUPS_IN=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib; export OCAMLFIND_IGNORE_DUPS_IN;
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh; export SSH_AUTH_SOCK;
+XMODIFIERS=@im=ibus; export XMODIFIERS;
+DUNE_OCAML_STDLIB=/usr/lib/ocaml; export DUNE_OCAML_STDLIB;
+DESKTOP_SESSION=gnome-xorg; export DESKTOP_SESSION;
+LC_MONETARY=nl_NL.UTF-8; export LC_MONETARY;
+DUNE_SOURCEROOT=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system; export DUNE_SOURCEROOT;
+OCAMLTOP_INCLUDE_PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/lib/toplevel; export OCAMLTOP_INCLUDE_PATH;
+PWD=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev; export PWD;
+ASYNC_PARALLEL_IS_CHILD_MACHINE=; export ASYNC_PARALLEL_IS_CHILD_MACHINE;
+LOGNAME=lasse; export LOGNAME;
+XDG_SESSION_DESKTOP=gnome-xorg; export XDG_SESSION_DESKTOP;
+XDG_SESSION_TYPE=x11; export XDG_SESSION_TYPE;
+OPAMSWITCH=bench; export OPAMSWITCH;
+MANPATH=:/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/bin:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/man; export MANPATH;
+SYSTEMD_EXEC_PID=1696; export SYSTEMD_EXEC_PID;
+_=/home/lasse/Documents/Projects/Tactician/benchmark-system/_opam/bin/dune; export _;
+XAUTHORITY=/run/user/1000/gdm/Xauthority; export XAUTHORITY;
+OPAM_SWITCH_PREFIX=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench; export OPAM_SWITCH_PREFIX;
+WINDOWPATH=2; export WINDOWPATH;
+MOTD_SHOWN=pam; export MOTD_SHOWN;
+CDPATH=; export CDPATH;
+GDM_LANG=en_US.UTF-8; export GDM_LANG;
+HOME=/home/lasse; export HOME;
+USERNAME=lasse; export USERNAME;
+LC_PAPER=nl_NL.UTF-8; export LC_PAPER;
+LANG=en_US.UTF-8; export LANG;
+XDG_CURRENT_DESKTOP=GNOME; export XDG_CURRENT_DESKTOP;
+VIRTUAL_ENV=/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv; export VIRTUAL_ENV;
+VTE_VERSION=7200; export VTE_VERSION;
+INSIDE_DUNE=/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default; export INSIDE_DUNE;
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/a7adb05a_93e5_49a9_b11a_cecf0742c01f; export GNOME_TERMINAL_SCREEN;
+OCAML_COLOR=always; export OCAML_COLOR;
+MFLAGS=-j15 --jobserver-auth=fifo:/tmp/GMfifo2733552; export MFLAGS;
+XDG_SESSION_CLASS=user; export XDG_SESSION_CLASS;
+MAKEFLAGS= -j15 --jobserver-auth=fifo:/tmp/GMfifo2733552; export MAKEFLAGS;
+TERM=xterm-256color; export TERM;
+USER=lasse; export USER;
+CUDA_PATH=/opt/cuda; export CUDA_PATH;
+GNOME_TERMINAL_SERVICE=:1.100; export GNOME_TERMINAL_SERVICE;
+DISPLAY=:1; export DISPLAY;
+SHLVL=2; export SHLVL;
+MAKELEVEL=1; export MAKELEVEL;
+QT_IM_MODULE=ibus; export QT_IM_MODULE;
+LC_MEASUREMENT=nl_NL.UTF-8; export LC_MEASUREMENT;
+VIRTUAL_ENV_PROMPT=(venv) ; export VIRTUAL_ENV_PROMPT;
+DUNE_OCAML_HARDCODED=/home/lasse/Documents/Projects/Tactician/benchmark-system/_opam/lib; export DUNE_OCAML_HARDCODED;
+OPAM_PACKAGE_NAME=coq-tactician-stdlib; export OPAM_PACKAGE_NAME;
+XDG_RUNTIME_DIR=/run/user/1000; export XDG_RUNTIME_DIR;
+MKLROOT=/opt/intel/oneapi/mkl/latest; export MKLROOT;
+PYENV_ROOT=/home/lasse/.pyenv; export PYENV_ROOT;
+DEBUGINFOD_URLS=https://debuginfod.archlinux.org ; export DEBUGINFOD_URLS;
+LC_TIME=nl_NL.UTF-8; export LC_TIME;
+XDG_DATA_DIRS=/home/lasse/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop; export XDG_DATA_DIRS;
+PATH=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin:/home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/install/default/bin:/home/lasse/Documents/Projects/Tactician/develop/coq-tactician-reinforce/venv/bin:/home/lasse/.pyenv/shims:/usr/local/bin:/usr/bin:/var/lib/snapd/snap/bin:/usr/local/sbin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lasse/.local/bin:/home/lasse/.local/bin; export PATH;
+GDMSESSION=gnome-xorg; export GDMSESSION;
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus; export DBUS_SESSION_BUS_ADDRESS;
+OPAMNOENVNOTICE=true; export OPAMNOENVNOTICE;
+MAIL=/var/spool/mail/lasse; export MAIL;
+OPAMROOT=/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root; export OPAMROOT;
+LC_NUMERIC=nl_NL.UTF-8; export LC_NUMERIC;
+OLDPWD=/home/lasse/Documents/Projects/Tactician/develop; export OLDPWD;
+(cd /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && bwrap --dev-bind / / --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.glob.bench-2735565 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.glob --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vo.bench-2735565 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vo --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vok.bench-2735565 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vok --bind /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vos.bench-2735565 /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev/theories/Init/Logic.vos /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/coqc -q -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/bigarray-compat -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/stdlib-shims -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/integers -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ctypes -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ctypes -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/xxhash -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocamlgraph -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocaml -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/lwt -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocplib-endian -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ocplib-endian/bigstring -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/lwt/unix -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/astring -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/res -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/result -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/stdint -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/capnp -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/asetmap -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/fmt -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/logs -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/capnp-rpc -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/bigstringaf -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/angstrom -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/stringext -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/uri -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/capnp-rpc-lwt -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/base64 -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/cstruct -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/eqaf -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/eqaf/bigstring -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/eqaf/cstruct -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-crypto -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-flow -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/re -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/prometheus -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ptime -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-clock -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/sexplib0 -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/zarith -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-crypto-pk -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/optint -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-kv -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/domain-name -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/hkdf -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/macaddr -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/ipaddr -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-crypto-ec -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/asn1-combinators -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/gmap -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/pbkdf -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/x509 -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/tls -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/tls-mirage -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/capnp-rpc-net -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/cmdliner -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/cstruct-lwt -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/extunix -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/duration -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng/unix -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mtime -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mtime/clock/os -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/mirage-crypto-rng-lwt -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/capnp-rpc-unix -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/base/base_internalhash_types -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/base/caml -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/base/shadow_stdlib -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/base -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/stdio -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/capnp/unix -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/logs -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -noinit -R theories Coq theories/Init/Logic.v -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/BenchParams.v)
