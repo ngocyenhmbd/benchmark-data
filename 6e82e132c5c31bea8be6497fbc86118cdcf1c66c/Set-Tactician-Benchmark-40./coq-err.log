@@ -1,0 +1,176 @@
+File "./Heap.v", line 127, characters 4-44:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./ConstructiveCauchyAbs.v", line 424, characters 2-8:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Heap.v", line 248, characters 4-23:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Heap.v", line 296, characters 4-32:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./FSetProperties.v", line 368, characters 2-32:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 30, characters 7-47:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./MSetRBT.v", line 862, characters 0-11:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 34, characters 2-57:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 48, characters 7-60:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 583, characters 4-55:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 593, characters 9-79:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Ascii.v", line 268, characters 7-31:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Ascii.v", line 271, characters 7-31:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Ascii.v", line 280, characters 2-81:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 1147, characters 4-421:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 1159, characters 9-75:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 1172, characters 4-45:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Byte.v", line 1190, characters 9-33:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./FMapAVL.v", line 1698, characters 0-231:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Infinite_sets.v", line 236, characters 4-26:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 449, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./ChoiceFacts.v", line 1159, characters 2-66:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./ChoiceFacts.v", line 1178, characters 2-16:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./ChoiceFacts.v", line 1248, characters 2-8:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./GenericMinMax.v", line 109, characters 7-18:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./NZGcd.v", line 121, characters 1-32:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./Streams.v", line 95, characters 0-19:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: intros n m; only 1: destruct m; only 1: revert m; only 1: coinduction ltac:(EqSt_reflex); only 1: destruct H; only 1: auto; only 1: trivial).
+                    Typing error:
+                    Recursive definition of EqSt_reflex is ill-formed.
+                    In environment
+                    A : Type
+                    n : Stream
+                    m : Stream
+                    a : A
+                    s : Stream
+                    a0 : A
+                    m0 : Stream
+                    EqSt_reflex :
+                    forall m : Stream,
+                    EqSt n (Cons a0 m) -> EqSt (Cons a0 m) n
+                    m1 : Stream
+                    e : EqSt n (Cons a0 m1)
+                    Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex m1 e
+                                                 with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun
+                                                 (_ : hd (Cons a0 m1) = hd n)
+                                                 (H : 
+                                                 EqSt 
+                                                 (tl (Cons a0 m1)) 
+                                                 (tl n)) => H) x x0
+                                                 end".
+                    Recursive definition is: "fun 
+                                                (m : Stream)
+                                                (H : EqSt n (Cons a0 m)) =>
+                                              eqst 
+                                                (Cons a0 m) n
+                                                match H with
+                                                | eqst _ _ x x0 =>
+                                                 (fun
+                                                 (H0 : hd n = hd (Cons a0 m))
+                                                 (_ : 
+                                                 EqSt 
+                                                 (tl n) 
+                                                 (tl (Cons a0 m))) =>
+                                                 eq_sym H0) x x0
+                                                end
+                                                (let H0 :
+                                                 forall m0 : Stream,
+                                                 EqSt n (Cons a0 m0) ->
+                                                 EqSt 
+                                                 (tl (Cons a0 m0)) 
+                                                 (tl n) :=
+                                                 fun 
+                                                 (m0 : Stream)
+                                                 (H0 : EqSt n (Cons a0 m0))
+                                                 =>
+                                                 match EqSt_reflex m0 H0 with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun
+                                                 (_ : hd (Cons a0 m0) = hd n)
+                                                 (H1 : 
+                                                 EqSt 
+                                                 (tl (Cons a0 m0)) 
+                                                 (tl n)) => H1) x x0
+                                                 end in
+                                                 H0 m H)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./Streams.v", line 200, characters 0-11:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: split; only 1: destruct 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption; only 1: intros [? ?]; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption).
+                    Typing error:
+                    Recursive definition of ForAll_coind is ill-formed.
+                    In environment
+                    A, B : Type
+                    f : A -> B
+                    P : Stream B -> Prop
+                    S : Stream A
+                    H : ForAll (fun s : Stream A => P (map s)) S
+                    p : (fun s : Stream A => P (map s)) S
+                    f0 : ForAll (fun s : Stream A => P (map s)) (tl S)
+                    H0 : P (map S)
+                    H1 : ForAll (fun s : Stream A => P (map s)) (tl S)
+                    ForAll_coind : ForAll P (map S)
+                    Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind
+                                                 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H : ForAll P (tl (map S)))
+                                                 => H) x x0
+                                                 end".
+                    Recursive definition is: "HereAndFurther 
+                                                (map S) H0
+                                                (let H1 :
+                                                 ForAll P (tl (map S)) :=
+                                                 match ForAll_coind with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H : ForAll P (tl (map S)))
+                                                 => H) x x0
+                                                 end in
+                                                 H1)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./PeanoNat.v", line 1028, characters 2-37:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: intros HSE H0 HSO n HO%Odd_alt_Odd; only 1: apply Odd_alt_Even_alt_ind with Q; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
+                    Typing error:
+                    Pattern-matching expression on an object of inductive type and has invalid information."
+Please report at http://coq.inria.fr/bugs/.
+File "./PeanoNat.v", line 1038, characters 2-39:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: intros HSE H0 HSO n HE%Even_alt_Even; only 1: apply Even_alt_Odd_alt_ind with P; only 1: intros m HSE'%Even_alt_Even; only 1: auto; only 1: assumption; only 1: intros m HSO'%Odd_alt_Odd; only 1: auto; only 1: assumption).
+                    Typing error:
+                    Pattern-matching expression on an object of inductive type and has invalid information."
+Please report at http://coq.inria.fr/bugs/.
