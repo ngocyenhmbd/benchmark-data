@@ -1,32 +1,7 @@
 Opam has already been initialized.
-The following actions will be performed:
-  ⊘ remove coq-tactician-stdlib 8.11.dev
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
-⊘ removed   coq-tactician-stdlib.8.11.dev
-Done.
-[coq-tactician.dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician#2dac859bd35d046287c9d0296e423b2327139f5a)
-coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#2dac859bd35d046287c9d0296e423b2327139f5a (version dev)
-
-<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+Nothing to do.
 [coq-tactician.dev] synchronised (no changes)
-
-The following actions will be performed:
-  ↻ recompile coq-tactician dev*
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-tactician.dev  (no changes)
-⊘ removed   coq-tactician.dev
-∗ installed coq-tactician.dev
-Done.
-
-<><> coq-tactician.dev installed successfully <><><><><><><><><><><><><><><><><>
-=> --- Tactician was successfully installed ---
-
-   In order to enable Tactician, you should run
-
-   tactician enable
+coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#2dac859bd35d046287c9d0296e423b2327139f5a (version dev)
 Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-build-commands in switch bench
 Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
 Removed '["tactician" "exec" "--"] {coq-tactician:installed}' from field wrap-install-commands in switch bench
@@ -44,4 +19,13 @@ The following actions will be performed:
                                            command-line utility will help with this process.
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved coq-tactician-stdlib.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
+∗ installed coq-tactician-stdlib.8.11.dev
+Done.
+
+<><> coq-tactician-stdlib.8.11.dev installed successfully <><><><><><><><><><><>
+=> --- The standard library was successfully recompiled ---
+
+   In order to finish the process, you should run
+
+   tactician recompile
