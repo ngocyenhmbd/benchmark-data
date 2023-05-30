@@ -1,0 +1,97 @@
+File "./theories/Logic/Epsilon.v", line 28, characters 2-56:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/QArith/Qcanon.v", line 42, characters 2-29:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Vectors/VectorEq.v", line 48, characters 3-56:
+Warning: Benchmarking error: Forked process exited with signal -10
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: destruct 1; only 1: coinduction ltac:(EqSt_reflex); only 1: auto with datatypes).
+                    Typing error:
+                    Recursive definition of EqSt_reflex is ill-formed.
+                    In environment
+                    A : Type
+                    s1 : Stream
+                    s2 : Stream
+                    H : EqSt s1 s2
+                    H0 : hd s1 = hd s2
+                    H1 : EqSt (tl s1) (tl s2)
+                    EqSt_reflex : EqSt s2 s1
+                    Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+                    Recursive definition is: "eqst s2 s1 
+                                                (eq_sym H0)
+                                                (let H1 :
+                                                 EqSt (tl s2) (tl s1) :=
+                                                 match EqSt_reflex with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end in
+                                                 H1)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Lists/Streams.v", line 199, characters 0-11:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: split; only 1: destruct 1; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption; only 1: intros [x y]; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption).
+                    Typing error:
+                    Recursive definition of ForAll_coind is ill-formed.
+                    In environment
+                    A, B : Type
+                    f : A -> B
+                    P : Stream B -> Prop
+                    S : Stream A
+                    H : ForAll (fun s : Stream A => P (map s)) S
+                    H0 : P (map S)
+                    H1 : ForAll (fun s : Stream A => P (map s)) (tl S)
+                    ForAll_coind : ForAll P (map S)
+                    Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind
+                                                 with
+                                                 | HereAndFurther _ _ x0 =>
+                                                 x0
+                                                 end".
+                    Recursive definition is: "HereAndFurther 
+                                                (map S) H0
+                                                (let H1 :
+                                                 ForAll P (tl (map S)) :=
+                                                 match ForAll_coind with
+                                                 | HereAndFurther _ _ x0 =>
+                                                 x0
+                                                 end in
+                                                 H1)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./plugins/micromega/ZMicromega.v", line 440, characters 2-9:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FMapPositive.v", line 505, characters 2-39:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 424, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./plugins/micromega/ZMicromega.v", line 483, characters 2-9:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ZArith/Znumtheory.v", line 448, characters 2-39:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 424, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Numbers/NatInt/NZOrder.v", line 507, characters 0-98:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 424, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./plugins/micromega/RingMicromega.v", line 936, characters 2-20:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Logic/FinFun.v", line 374, characters 1-10:
+Warning: Benchmarking error: Forked process exited with signal -10
+File "./plugins/micromega/RMicromega.v", line 427, characters 2-16:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Reals/RiemannInt.v", line 3252, characters 0-16:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 424, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
