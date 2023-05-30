@@ -1,0 +1,52 @@
+File "./theories/Sets/Powerset.v", line 117, characters 0-25:
+Warning: Benchmarking error: Forked process exited with signal -10
+File "./theories/Lists/Streams.v", line 199, characters 0-11:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: intros n s; only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: assumption; only 1: assumption; only 1: intros [? ?]; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: tauto).
+                    Typing error:
+                    Recursive definition of ForAll_coind is ill-formed.
+                    In environment
+                    A, B : Type
+                    f : A -> B
+                    n : Stream B -> Prop
+                    s : Stream A
+                    ForAll_coind :
+                    ForAll (fun s : Stream A => n (map s)) s ->
+                    ForAll n (map s)
+                    H : ForAll (fun s : Stream A => n (map s)) s
+                    Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind H
+                                                 with
+                                                 | HereAndFurther _ _ x0 =>
+                                                 x0
+                                                 end".
+                    Recursive definition is: "fun
+                                                H : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 n (map s)) s =>
+                                              HereAndFurther 
+                                                (map s)
+                                                match H with
+                                                | HereAndFurther _ H0 _ => H0
+                                                end
+                                                (let H0 :
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 n (map s)) s ->
+                                                 ForAll n (tl (map s)) :=
+                                                 fun
+                                                 H0 : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 n (map s)) s =>
+                                                 match ForAll_coind H0 with
+                                                 | HereAndFurther _ _ x0 =>
+                                                 x0
+                                                 end in
+                                                 H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/MSets/MSetEqProperties.v", line 261, characters 0-46:
+Warning: Benchmarking error: Forked process exited with signal -11
