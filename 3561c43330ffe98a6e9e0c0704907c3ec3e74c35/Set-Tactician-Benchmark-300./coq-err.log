@@ -1,0 +1,312 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+File "./contact.v", line 160, characters 0-7:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
+File "./inversion.v", line 65, characters 0-7:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+File "./equations_cercles.v", line 48, characters 0-8:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+File "./exercice_morley.v", line 121, characters 0-7:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+File "./homoth_Euler.v", line 193, characters 0-7:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+File "./transformations_contact.v", line 358, characters 0-8:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+File "./orientation.v", line 195, characters 0-34:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
+/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py:1445: UserWarning: You are calling .generate() with the `input_ids` being on a device type different than your model's device. `input_ids` is on cuda, whereas the model is on cpu. You may experience unexpected behaviors or slower generation. Please make sure that you have put `input_ids` to the correct device by calling for example input_ids = input_ids.to('cpu') before running `.generate()`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/g2t-server-text", line 33, in <module>
+    sys.exit(load_entry_point('graph2tac==0.1.0', 'console_scripts', 'g2t-server-text')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 271, in main
+    initialize_loop(reader, s, textmode, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 242, in initialize_loop
+    g = prediction_loop_text(r, s, tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 178, in prediction_loop_text
+    tactics, probs = generate(g.predict.state.text.lstrip(), tokenizer, model)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/graph2tac/transformer/pserver.py", line 128, in generate
+    beam_output = model.generate(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 1604, in generate
+    return self.beam_search(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/generation/utils.py", line 2902, in beam_search
+    outputs = self(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1076, in forward
+    transformer_outputs = self.transformer(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 843, in forward
+    inputs_embeds = self.wte(input_ids)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument index in method wrapper_CUDA__index_select)
+File "./triangles_semblables.v", line 40, characters 0-24:
+Error: Anomaly "Capnp protocol error 3a"
+Please report at http://coq.inria.fr/bugs/.
+
