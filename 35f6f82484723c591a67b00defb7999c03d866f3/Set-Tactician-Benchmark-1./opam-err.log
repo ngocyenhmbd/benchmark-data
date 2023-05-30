@@ -1,3 +1,27 @@
 [NOTE] coq-tactician-stdlib is not installed.
 
 [NOTE] Package coq-tactician-reinforce is already pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-reinforce#35f6f82484723c591a67b00defb7999c03d866f3 (version ~dev).
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.4 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2023-05-26 14:20
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/tactician exec -- make -j15
+# exit-code            2
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-2749134-10cb9f.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-2749134-10cb9f.out
+### output ###
+# [...]
+# Makefile:92: warning: pattern recipe did not update peer target 'plugins/firstorder/ground_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'user-contrib/Tactician/tactician_ltac1_record_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'plugins/syntax/r_syntax_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'user-contrib/Tactician/tactician_ltac1_tactics_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'user-contrib/Tactician/tactician_ssreflect_plugin.v'.
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# File "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v", line 1, characters 138-139:
+# Error: Syntax error: '.' expected after [vernac:command] (in [vernac_aux]).
+# 
+# make: *** [Makefile:61: theories/Init/Notations.vo] Error 1
+
