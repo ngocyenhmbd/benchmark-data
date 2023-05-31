@@ -1,0 +1,31 @@
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-97n179fx
+  Running command git rev-parse -q --verify 'sha^8ba2f1634fb25aeb5da90a4e5840eee964cc0e19'
+  Running command git fetch -q https://github.com/IBM/graph2tac.git 8ba2f1634fb25aeb5da90a4e5840eee964cc0e19
+  DEPRECATION: graph2tac is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
+
+[notice] A new release of pip is available: 23.0.1 -> 23.1.2
+[notice] To update, run: pip install --upgrade pip
+[ERROR] The compilation of coq-tactician.8.11.dev failed at "dune build -p coq-tactician -j 55 @install".
+
+#=== ERROR while compiling coq-tactician.8.11.dev =============================#
+# context              2.1.5 | linux/x86_64 |  | pinned(git+https://github.com/coq-tactician/coq-tactician.git#43c5badf0d0c272b75c68ca67a49428b2adf0184#43c5badf0d0c272b75c68ca67a49428b2adf0184)
+# path                 /tmp/tactician.tmp.48NLwP/opam-root/bench/.opam-switch/build/coq-tactician.8.11.dev
+# command              /tmp/tactician.tmp.48NLwP/opam-root/bench/bin/dune build -p coq-tactician -j 55 @install
+# exit-code            1
+# env-file             /tmp/opam-xxx-1683691/coq-tactician-1683691-faf6a2.env
+# output-file          /tmp/opam-xxx-1683691/coq-tactician-1683691-faf6a2.out
+### output ###
+# [...]
+# -> required by ("<unnamed>", ())
+# -> required by ("<unnamed>", ())
+# -> required by ("<unnamed>", ())
+# -> required by ("gen-rules", In_build_dir "default/tests")
+# -> required by ("load-dir", In_build_dir "default/tests")
+# -> required by ("toplevel", ())
+# 
+# I must not crash.  Uncertainty is the mind-killer. Exceptions are the
+# little-death that brings total obliteration.  I will fully express my cases. 
+# Execution will pass over me and through me.  And when it has gone past, I
+# will unwind the stack along its path.  Where the cases are handled there will
+# be nothing.  Only I will remain.
+
