@@ -1,0 +1,109 @@
+File "./theories/Classes/Morphisms_Prop.v", line 88, characters 2-30:
+Warning: Benchmarking error: Forked process exited with signal -10
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: destruct 1; only 1: coinduction ltac:(EqSt_reflex); only 1: reflexivity || destruct H; only 1: exact eq_refl).
+                    Typing error:
+                    Recursive definition of EqSt_reflex is ill-formed.
+                    In environment
+                    A : Type
+                    s1 : Stream
+                    s2 : Stream
+                    H : EqSt s1 s2
+                    H0 : hd s1 = hd s2
+                    H1 : EqSt (tl s1) (tl s2)
+                    EqSt_reflex : EqSt s2 s1
+                    Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+                    Recursive definition is: "eqst s2 s1
+                                                (let a := hd s2 in
+                                                 match
+                                                 H0 in (_ = y)
+                                                 return (y = hd s1)
+                                                 with
+                                                 | eq_refl => eq_refl
+                                                 end)
+                                                (let H1 :
+                                                 EqSt (tl s2) (tl s1) :=
+                                                 match EqSt_reflex with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end in
+                                                 H1)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Lists/Streams.v", line 102, characters 0-21:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: intros ? ? ? [? ?] [? ?]; only 1: destruct H; only 1: coinduction ltac:(Eq_sym); only 1: assumption).
+                    Typing error:
+                    Recursive definition of Eq_sym is ill-formed.
+                    In environment
+                    A : Type
+                    s1 : Stream
+                    s2 : Stream
+                    s3 : Stream
+                    H : EqSt s1 s2
+                    H0 : hd s1 = hd s2
+                    H1 : EqSt (tl s1) (tl s2)
+                    H2 : EqSt s2 s3
+                    H3 : hd s2 = hd s3
+                    H4 : EqSt (tl s2) (tl s3)
+                    a := hd s2 : A
+                    H5 : hd s1 = hd s3
+                    Eq_sym : EqSt s1 s3
+                    Invalid recursive call in the argument of "match" in "match
+                                                 Eq_sym
+                                                 with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end".
+                    Recursive definition is: "eqst s1 s3 H5
+                                                (let H :
+                                                 EqSt (tl s1) (tl s3) :=
+                                                 match Eq_sym with
+                                                 | eqst _ _ _ x0 => x0
+                                                 end in
+                                                 H)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/FSets/FSetFacts.v", line 183, characters 0-79:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Reals/Rpower.v", line 203, characters 2-49:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/ZMicromega.v", line 408, characters 2-21:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/ZMicromega.v", line 440, characters 2-9:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Reals/Rpower.v", line 218, characters 2-36:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Reals/ConstructiveCauchyRealsMult.v", line 671, characters 2-9:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 424, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Reals/Rpower.v", line 255, characters 2-71:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/Tauto.v", line 1173, characters 4-22:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 424, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 998, characters 1-8:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Lists/List.v", line 2565, characters 4-35:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/RingMicromega.v", line 936, characters 2-20:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/ZMicromega.v", line 1094, characters 2-9:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/RingMicromega.v", line 951, characters 2-20:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 1556, characters 1-8:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int63/Int63.v", line 1541, characters 1-32:
+Warning: Benchmarking error: Stack overflow.
+File "./plugins/micromega/ZMicromega.v", line 1217, characters 2-25:
+Warning: Benchmarking error: Forked process exited with signal -11
