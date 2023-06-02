@@ -2,8 +2,8 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
-Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-09.cluster 42091)))
- (rpc_tag rpc_parallel_piped_5) (rpc_version 0))
+Fatal benchmarking error: Rsync failed: rsync: [receiver] write failed on "/lscratch/blaaulas/tactician.tmp.bj27TZ/opam-root/bench/.opam-switch/build/coq.8.11.dev/bin/coqidetop": No space left on device (28)
+rsync error: error in file IO (code 11) at receiver.c(380) [receiver=3.2.7]
+rsync error: received SIGUSR1 (code 19) at main.c(1609) [sender=3.2.7]
+srun: error: node-03: task 0: Exited with exit code 19
+
