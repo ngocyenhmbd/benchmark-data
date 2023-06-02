@@ -4994,3 +4994,12 @@ Fatal benchmarking error: ("Process.run failed"
     ""))))
 Non-fatal benchmarking error: ("Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.cwA2li/opam-root/bench/.opam-switch/build/coq-qcert.2.2.0 && /lscratch/blaaulas/tactician.tmp.cwA2li/opam-root/bench/lib/coq-tactician/coqc.real /lscratch/blaaulas/tactician.tmp.cwA2li/opam-root/bench/lib/coq-tactician/coqc.real -q -I /lscratch/blaaulas/tactician.tmp.cwA2li/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.cwA2li/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tactician.tmp.cwA2li/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -R compiler/core Qcert compiler/core/Data/OperatorsTyping/TBinaryOperators.v -l /lscratch/blaaulas/tactician.tmp.cwA2li/BenchParams.v)"
  "Abnormal exit code for command worker: job2 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2292091. Code: 143")
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: Termination request received: sigint
+Fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 33933)))
+ (rpc_tag rpc_parallel_piped_5) (rpc_version 0))
