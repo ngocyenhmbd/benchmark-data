@@ -1,0 +1,457 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+File "./theories/Programming/Show.v", line 64, characters 2-37:
+Warning: Declaring a scope implicitly is deprecated; use in advance an
+explicit "Declare Scope show_scope.". [undeclared-scope,deprecated]
+2023-06-05 02:59:43.489822: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 02:59:43.875909: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 02:59:44.147332: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 02:59:44.546939: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 02:59:44.585399: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 02:59:44.670119: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 02:59:44.881373: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 02:59:44.882653: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:00:03.732615: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:04:52.742251: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:08:44.353152: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:15:51.435784: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:21:48.309651: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:24:13.644057: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Toplevel input, characters 12-13:
+Error: Unbound variable R.
+
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:29:54.119418: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:31:12.387693: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:33:38.341644: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:39:34.014208: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:40:11.531399: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:40:22.690882: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:40:35.990107: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:41:54.433797: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:42:25.387393: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:44:37.607753: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:45:30.777488: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Toplevel input, characters 5-7:
+Error: Unbound variable p2.
+
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:51:16.699971: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:55:41.937206: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:57:04.176373: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Toplevel input, characters 5-15:
+Error: Unbound variable assumption.
+
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 03:59:39.891140: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:00:10.306888: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:02:06.135632: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:05:48.988797: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:06:05.243399: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Toplevel input, characters 12-17:
+Error: Unbound variable arith.
+
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:12:06.416475: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:13:45.721238: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:14:53.170918: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-06-05 04:14:54.835712: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:16:22.703684: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Toplevel input, characters 5-7:
+Error: Unbound variable FF.
+
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:17:15.909939: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:17:29.958048: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:17:42.983212: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:18:01.283220: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:18:48.220675: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:19:25.249033: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:19:55.653658: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:20:15.336717: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Toplevel input, characters 12-14:
+Error: Unbound variable y0.
+
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:25:16.824318: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:25:48.620119: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:27:18.488244: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:29:27.047574: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:40:19.383452: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:44:56.775156: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:48:09.938944: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+File "./theories/Data/HList.v", line 223, characters 2-12:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist xs (hlist_tl X) ->
+          (forall z : hlist ls,
+           equiv_hlist (hlist_tl X) z -> equiv_hlist (hlist_tl Z) z) ->
+          equiv_hlist Z Y
+      end X Y)
+ with
+ | hlist_eqv_nil => I
+ | @hlist_eqv_cons l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+File "./theories/Data/HList.v", line 697, characters 0-10:
+Warning: Tactic could not be properly discharged: refine
+(fun H' =>
+ match
+   H' in (@equiv_hlist _ ls X Y)
+   return
+     (match ls return (hlist ls -> hlist ls -> Prop) with
+      | nil => fun _ _ : hlist nil => True
+      | l :: ls =>
+          fun X Y : hlist (l :: ls) =>
+          forall Z x xs,
+          eqv _ (hlist_hd Z) (hlist_hd X) ->
+          equiv_hlist _ (hlist_tl X) ->
+          (forall z : hlist ls, equiv_hlist _ z -> equiv_hlist _ z) ->
+          equiv_hlist (l :: ls) Y
+      end X Y)
+ with
+ | @hlist_eqv_nil _ => I
+ | @hlist_eqv_cons _ l ls x y h1 h2 pf pf' => _
+ end (Hcons x h1) x _ H H0 IHequiv_hlist)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+2023-06-05 04:49:30.882738: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
