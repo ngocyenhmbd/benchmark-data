@@ -4215,3 +4215,106 @@ coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternD_1n_bezout	300	300.165824	2473	
 coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternD_1n_coprime	300	300.152423	2359	785
 coq-gaia-stern.1.15	gaia.stern.fibm.FR_fib_sum11	300	300.288875	7913	855
 coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternD_1n_coprime_rev	300	300.202976	2308	744
+coq-bbv.1.3	bbv.Word.wminusZ_helper	300	0.477617	2	3	0.0	synth with cache (only 1: intros; only 1: ring).
+coq-bbv.1.3	bbv.Word.wminus_Z	300	18.358192	443	138	125.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply wminus_wminusZ).
+coq-bbv.1.3	bbv.Word.Zeqb_true_ZToWord	300	8.247291	68	59	0.0.1.0	synth with cache (only 1: intros; only 1: apply Z.eqb_eq in H; only 1: subst; only 1: easy).
+coq-bbv.1.3	bbv.Word.wordToZ_bound_weakened	300	2.385117	18	18	2.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: lia).
+coq-bbv.1.3	bbv.Word.test_wlt_f_example	300	4.120374	25	25	1.2.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: unfold test_wlt_f in *; only 1: auto).
+coq-bbv.1.3	bbv.Word.wordToNat_eq1	300	4.903883	33	33	0.0.0.0.1.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: subst; only 1: auto).
+coq-bbv.1.3	bbv.Word.zext_zero	300	5.868911	158	42	41.0	synth with cache (only 1: intros; only 1: apply combine_WO).
+coq-bbv.1.3	bbv.Word.bool_prop1	300	1.158192	7	8	1	synth with cache (only 1: destr_bool).
+coq-bbv.1.3	bbv.Word.word_cancel_l	300	1.331630	5	7	0.0.0	synth with cache (only 1: intros ?; only 1: f_equal; only 1: easy).
+coq-bbv.1.3	bbv.Word.word_cancel_r	300	1.164588	4	6	0.0.0	synth with cache (only 1: intros ?; only 1: subst; only 1: easy).
+coq-bbv.1.3	bbv.Word.wordToNat_neq2	300	9.302313	71	67	0.0.0.1	synth with cache (only 1: intros; only 1: contradict H; only 1: subst; only 1: auto).
+coq-bbv.1.3	bbv.Word.wordToNat_cast	300	1.783811	7	10	0.0.0	synth with cache (only 1: intros ?; only 1: destruct pf; only 1: auto).
+coq-bbv.1.3	bbv.Word.wzero_wplus	300	10.209471	253	69	0.63.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: rewrite wplus_wzero_2; only 1: easy).
+coq-bbv.1.3	bbv.Word.Zpow2_pos	300	3.676662	31	26	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: apply Z.lt_gt; only 1: apply Z.pow_pos_nonneg; only 1: auto with zarith; only 1: lia).
+coq-bbv.1.3	bbv.Word.wordToNat_gt1	300	27.837486	262	195	0.10.1	synth with cache (only 1: intros; only 1: apply wlt_lt; only 1: assumption).
+coq-bbv.1.3	bbv.Word.wordToN_0	300	12.208580	309	79	0.28.0	synth with cache (only 1: intros ?; only 1: rewrite wordToN_wzero; only 1: trivial).
+coq-bbv.1.3	bbv.Word.wordToNat_lt2	300	32.119960	394	241	0.12.1	synth with cache (only 1: intros; only 1: apply lt_wlt; only 1: auto).
+coq-bbv.1.3	bbv.Word.NToWord_0	300	15.665276	319	103	50.0	synth with cache (only 1: intros ?; only 1: apply ZToWord_0).
+coq-bbv.1.3	bbv.Word.wordToNat_eq2	300	37.383679	401	279	0.6.1	synth with cache (only 1: intros; only 1: apply wordToNat_inj; only 1: auto).
+coq-bbv.1.3	bbv.Word.wordToNat_neq1	300	40.006948	460	310	32	synth with cache (only 1: auto using wordToNat_eq2).
+coq-bbv.1.3	bbv.Word.wordToNat_ge1	300	40.550231	606	299	48.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply wle_le).
+coq-bbv.1.3	bbv.Word.pow2_wplus_wzero	300	34.737691	2929	221	0.0.0.0.233	synth with cache (only 1: rewrite nat_add_pow2_wzero; only 1: reflexivity; only 1: Nat.nzsimpl'; only 1: easy; only 1: apply Nat.le_0_l).
+coq-bbv.1.3	bbv.Word.wordToNat_le1	300	58.437700	920	438	0.18.0.0.1.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply wle_le; only 1: easy).
+coq-bbv.1.3	bbv.Word.wordToNat_ge2	300	105.065346	1344	783	0.38.0.0.0.1.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply wordToNat_lt1 in H0; only 1: lia).
+coq-bbv.1.3	bbv.Word.NToWord_Z_to_N	300	96.336037	2131	725	0.1.0.0.0.0.0.1.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: destruct n; only 1: intros ?; only 1: trivial; only 1: intros ?; only 1: trivial; only 1: intros ?; only 1: destruct H; only 1: easy).
+coq-bbv.1.3	bbv.Word.wordToNat_nonZero	300	127.736004	1722	922	2.29.0	synth with cache (only 1: intros ?; only 1: apply gt0_wneq0; only 1: auto).
+coq-bbv.1.3	bbv.Word.word1_neq'	300	121.891425	6668	967	4.1.70.5	synth with cache (only 1: intros; only 1: edestruct bit_dec; only 1: eauto; only 1: easy).
+coq-bbv.1.3	bbv.Word.wlshift'_zero	300	130.127405	4455	892	0.30.10.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: rewrite wlshift_alt; only 1: rewrite wlshift_zero; only 1: easy).
+coq-bbv.1.3	bbv.Word.wzero_wones	300	148.094649	2784	1117	15.0.1.1.0	synth with cache (only 1: intros; only 1: intros ?; only 1: destruct sz; only 1: lia; only 1: inversion H0).
+coq-bbv.1.3	bbv.Word.wminus_wordToZ	300	300.172614	11818	2204
+coq-bbv.1.3	bbv.Word.wminus_wminusZ	300	300.082741	10964	2379
+coq-bbv.1.3	bbv.Word.ZToWord_minus	300	300.104252	9677	2180
+coq-bbv.1.3	bbv.Word.ZToWord_opp_wneg	300	300.157361	8972	2232
+coq-bbv.1.3	bbv.Word.pow2_wzero	300	177.465560	6509	1175	165.1.1.5	synth with cache (only 1: destruct sz; only 1: simpl; only 1: reflexivity; only 1: apply natToWord_pow2).
+coq-bbv.1.3	bbv.Word.extz_zero	300	300.150262	11719	2354
+coq-bbv.1.3	bbv.Word.word_le_ge_eq	300	196.151661	5163	1510	0.24.0.0.1	synth with cache (only 1: unfold wlt; only 1: intros ?; only 1: intros ?; only 1: apply wordToN_inj; only 1: lia).
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_nat_le_len	300	232.416655	4557	1646	0.17.7.0.0.1.0	synth with cache (only 1: induction ni; only 1: simpl; only 1: lia; only 1: simpl; only 1: destruct weq; only 1: auto with arith; only 1: lia).
+coq-bbv.1.3	bbv.Word.wmsb_sext	300	300.056554	5650	2181
+coq-bbv.1.3	bbv.Word.wordToZ_wordToNat_pos	300	300.125981	5542	2268
+coq-bbv.1.3	bbv.Word.wmsb_Zabs_pos	300	300.064849	7409	2237
+coq-bbv.1.3	bbv.Word.sext_size	300	300.097175	4662	2273
+coq-bbv.1.3	bbv.Word.wordToZ_combine_WO	300	300.118307	19933	2148
+coq-bbv.1.3	bbv.Word.wmsb_false_wordToNat_eq	300	300.149005	5359	2230
+coq-bbv.1.3	bbv.Word.zext_size	300	300.053628	4792	2283
+coq-bbv.1.3	bbv.Word.zext_size_1	300	300.147649	6973	2246
+coq-bbv.1.3	bbv.Word.sext_wplus_exist	300	300.094726	6277	2243
+coq-bbv.1.3	bbv.Word.wordToNat_wplus'	300	300.168266	5152	2111
+coq-bbv.1.3	bbv.Word.wordToNat_wmult'	300	300.093228	5091	2006
+coq-bbv.1.3	bbv.Word.wordNotNot	300	300.249860	5862	2400
+coq-bbv.1.3	bbv.Word.word_le_zero	300	300.105239	10177	2373
+coq-bbv.1.3	bbv.Word.split2_pow2	300	300.143526	4836	2199
+coq-bbv.1.3	bbv.Word.wordToNat_plus	300	300.183019	4725	2008
+coq-bbv.1.3	bbv.Word.wordToNat_natToWord_eqn	300	300.095904	3471	2049
+coq-bbv.1.3	bbv.Word.split1_combine_wplus	300	300.207992	9833	1918
+coq-bbv.1.3	bbv.Word.div_2	300	300.105047	7454	2262
+coq-bbv.1.3	bbv.Word.mod_sub	300	300.120875	5992	2218
+coq-bbv.1.3	bbv.Word.wzero_wor	300	300.118297	6634	2160
+coq-bbv.1.3	bbv.Word.wordToNat_wplus	300	300.127851	8776	1960
+coq-bbv.1.3	bbv.Word.wor_r_wzero_1	300	300.141632	5837	2114
+coq-bbv.1.3	bbv.Word.wor_r_wzero_2	300	300.055285	5525	2098
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_le_len	300	300.154723	4051	2041
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_le_len_nat	300	300.143836	3078	2072
+coq-bbv.1.3	bbv.Word.wordToNat_notZero	300	300.131057	3344	2223
+coq-bbv.1.3	bbv.Word.natToWord_nzero	300	300.117567	4492	2090
+coq-bbv.1.3	bbv.Word.combine_shiftl_plus_n	300	300.104142	8774	2014
+coq-bbv.1.3	bbv.Word.move_wminus_pow2	300	300.072014	8889	1933
+coq-bbv.1.3	bbv.Word.move_wplus_pow2	300	300.213605	9999	1865
+coq-bbv.1.3	bbv.Word.combine_wplus	300	300.097629	5520	1908
+coq-bbv.1.3	bbv.Word.wlt_meaning	300	300.155408	3641	2339
+coq-bbv.1.3	bbv.Word.word1_neq	300	300.202949	10068	2259
+coq-bbv.1.3	bbv.Word.combine_1	300	300.165143	8688	2098
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_lt_len	300	300.081760	5054	2163
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_nat_correct	300	300.138452	2667	2075
+coq-bbv.1.3	bbv.Word.wordToN_mod	300	300.100517	8383	2035
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_enough_size	300	300.127472	3590	1999
+coq-bbv.1.3	bbv.Word.wlshift_mul_pow2	300	300.141441	6076	1975
+coq-bbv.1.3	bbv.Word.wlshift_distr_plus	300	300.093769	7411	1974
+coq-bbv.1.3	bbv.Word.wlshift_iter	300	300.139267	5258	2317
+coq-bbv.1.3	bbv.Word.wlshift'_iter	300	300.117906	5743	2325
+coq-bbv.1.3	bbv.Word.wlshift_zero	300	300.195519	7353	1977
+coq-bbv.1.3	bbv.Word.sext_neg_natToWord_nat_cast	300	300.165918	4856	2118
+coq-bbv.1.3	bbv.Word.sext0	300	300.148285	9927	2370
+coq-bbv.1.3	bbv.Word.uwordToZ_ZToWord_0	300	300.071299	6277	2288
+coq-bbv.1.3	bbv.Word.uwordToZ_ZToWord	300	300.124248	6447	2388
+coq-bbv.1.3	bbv.Word.uwordToZ_bound	300	300.042687	6818	2302
+coq-bbv.1.3	bbv.Word.ZScope.wordToZ_ZToWord_full	300	300.049382	8693	2025
+coq-bbv.1.3	bbv.Word.ZScope.wordToZ_ZToWord_full_post	300	300.203049	7648	1986
+coq-bbv.1.3	bbv.Word.ZToWord_uwordToZ	300	300.090232	8778	2263
+coq-bbv.1.3	bbv.Word.wmod_plus_distr_does_not_hold	300	300.063877	9507	2060
+coq-bbv.1.3	bbv.Word.wmod_0_r	300	300.184112	13024	2025
+coq-bbv.1.3	bbv.Word.drop_sub_N	300	300.082971	5126	2162
+coq-bbv.1.3	bbv.Word.Nminus_mod_idemp_r	300	300.160930	15107	2090
+coq-bbv.1.3	bbv.Word.wmod_divides	300	300.129949	9360	2193
+coq-bbv.1.3	bbv.Word.wmod_divides_other_direction_does_not_hold	300	300.147613	8754	2197
+coq-bbv.1.3	bbv.Word.wmod_same	300	300.089339	15561	2030
+coq-bbv.1.3	bbv.Word.wmult_plus_distr_l	300	300.217619	9547	1908
+coq-bbv.1.3	bbv.Word.wmod_0_l	300	300.178996	9396	2071
+coq-bbv.1.3	bbv.Word.wmod_plus_distr	300	300.161218	4534	1958
+coq-bbv.1.3	bbv.Word.combine_zero_general	300	300.062231	3592	2185
+coq-bbv.1.3	bbv.Word.wmod_mul	300	300.149140	8443	2027
+coq-bbv.1.3	bbv.Word.combine_lt	300	300.082250	2684	2231
+coq-bbv.1.3	bbv.Word.split2_le	300	300.107255	3648	2154
+coq-bbv.1.3	bbv.Word.combine_ge	300	300.033027	4073	2223
