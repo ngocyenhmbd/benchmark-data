@@ -1,0 +1,42 @@
+Opam has already been initialized.
+The following actions will be performed:
+  ⊘ remove coq-tactician-stdlib 8.11.dev
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
+⊘ removed   coq-tactician-stdlib.8.11.dev
+Done.
+[coq-tactician.8.11.dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician#499b10a6f5ed8a2e1f7899af8d6f7413dcdbea45)
+coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#499b10a6f5ed8a2e1f7899af8d6f7413dcdbea45 (version 8.11.dev)
+
+<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+[coq-tactician.8.11.dev] synchronised (no changes)
+
+The following actions will be performed:
+  ↻ recompile coq-tactician           8.11.dev*
+  ↻ recompile coq-tactician-reinforce ~dev*     [uses coq-tactician]
+===== ↻ 2 =====
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-tactician.8.11.dev  (no changes)
+⬇ retrieved coq-tactician-reinforce.~dev  (no changes)
+⊘ removed   coq-tactician-reinforce.~dev
+⊘ removed   coq-tactician.8.11.dev
+∗ installed coq-tactician.8.11.dev
+
+
+<><> Error report <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+┌─ The following actions failed
+│ λ build coq-tactician-reinforce ~dev
+└─ 
+┌─ The following changes have been performed
+│ ⊘ remove    coq-tactician-reinforce ~dev
+│ ↻ recompile coq-tactician           8.11.dev
+└─ 
+
+<><> coq-tactician.8.11.dev installed successfully ><><><><><><><><><><><><><><>
+=> --- Tactician was successfully installed ---
+
+   In order to enable Tactician, you should run
+
+   tactician enable
