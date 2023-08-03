@@ -2165,3 +2165,1933 @@ coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_2_3_5_to_9
 coq-bbv.1.3	bbv.N_Z_nat_conversions.Nat2Z.inj_pow	300	301.184065	196	136
 coq-bits.1.1.0	Bits.ssrextra.tuple.mapCons	300	305.144167	191	57
 coq-mathcomp-odd-order.1.14.0	odd_order.PFsection12.PFTwelve.Twelve_8_to_16.defAL	300	331.019905	27	9
+coq-bits.1.1.0	Bits.ssrextra.tuple.mapNil	300	229.247914	511	83
+coq-bits.1.1.0	Bits.ssrextra.tuple.theadCons	300	6.093860	1	2	0	synth with cache (only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.catNil	300	14.326789	3	3	1	synth with cache (only 1: exact : val_inj ).
+coq-bits.1.1.0	Bits.ssrextra.tuple.beheadCons	300	31.531410	16	9	0.2.2	synth with cache (only 1: rewrite /behead_tuple; only 1: rewrite /=; only 1: exact : val_inj ).
+coq-bbv.1.3	bbv.ZLib.Z_to_nat_neg	300	10.451689	3	5	0.0	synth with cache (only 1: intros; only 1: lia).
+coq-bits.1.1.0	Bits.ssrextra.tuple.mapId	300	26.938865	16	7	5	synth with cache (only 1: by apply : eq_from_tnth  => i; rewrite tnth_map).
+coq-bits.1.1.0	Bits.ssrextra.nat.odd_power2	300	22.300151	21	5
+coq-bits.1.1.0	Bits.ssrextra.nat.odd_power2subn1	300	25.332070	26	5
+coq-bits.1.1.0	Bits.ssrextra.tuple.behead_nseq	300	32.345109	10	10	0.2.0	synth with cache (only 1: rewrite /behead_tuple; only 1: apply : val_inj  => /=; only 1: reflexivity).
+coq-bits.1.1.0	Bits.ssrextra.tuple.zipCons	300	55.279774	12	10	0.2	synth with cache (only 1: apply : val_inj  => /=; only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.catCons	300	63.258962	22	13	0.5	synth with cache (only 1: apply : val_inj  => /=; only 1: by [  ]).
+coq-poltac.0.8.11	PolTac.ZAux.Zle_pos_neg	300	8.293344	2	3	0.0	synth with cache (only 1: intros; only 1: omega).
+coq-ceres.0.4.0	Ceres.CeresString.string_app_nil_r	300	100.974453	149	58	0.4.1.0.1	synth with cache (only 1: induction s; only 1: reflexivity; only 1: cbn; only 1: rewrite IHs; only 1: reflexivity).
+coq-bits.1.1.0	Bits.ssrextra.nat.nat_lt0_succ	300	104.340875	85	58	2.0.0.0.1.0.0	synth with cache (only 1: intros H; only 1: destruct m; only 1: discriminate; only 1: exists m; only 1: apply /eqP ; only 1: apply /eqP ; only 1: rewrite ?addn1 //).
+coq-poltac.0.8.11	PolTac.RAux.Rle_pos_neg	300	67.181140	38	30	0.0.0.1	synth with cache (only 1: intros H; only 1: apply Ropp_le_cancel; only 1: rewrite Ropp_0; only 1: assumption).
+coq-bits.1.1.0	Bits.ssrextra.nat.pow2_gt1	300	154.917604	271	48
+coq-poltac.0.8.11	PolTac.ZAux.Zopp_le	300	135.358039	262	77	0.0.2.0	synth with cache (only 1: intros n; only 1: intros n'; only 1: intros H; only 1: auto with zarith).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_subst'	300	154.766907	22	15	3.0.0.0	synth with cache (only 1: unfold subst'; only 1: destruct x; only 1: auto; only 1: apply subst_subst).
+coq-bbv.1.3	bbv.ZLib.Z_mod_mult'	300	215.949424	186	122	0.2.0.2.0	synth with cache (only 1: intros; only 1: zero_or_not ltac:(a); only 1: rewrite Z.mul_comm; only 1: apply Z.mod_mul; only 1: auto).
+coq-bits.1.1.0	Bits.ssrextra.nat.pow2_sub_ltn	300	212.119347	278	55
+coq-bbv.1.3	bbv.ZLib.pow2_nonneg	300	237.583113	361	155	0.2.5	synth with cache (only 1: intros x; only 1: apply Z.pow_nonneg; only 1: auto with zarith).
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_pos_neg	300	115.368374	64	46	1.5.0.1	synth with cache (only 1: intros H; only 1: intros H0; only 1: rewrite <- (Rmult_0_r x); only 1: auto with real).
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbToDecType.EqbToDecType	300	246.603281	318	98
+coq-bbv.1.3	bbv.ZLib.add_mod_0	300	277.123334	175	110	0.0.0.0.2.1.0.0.0	synth with cache (only 1: intros a; only 1: intros b; only 1: intros m; only 1: intros; only 1: rewrite Zplus_mod; only 1: rewrite H; only 1: rewrite Z.add_0_l; only 1: rewrite H0; only 1: auto).
+coq-bits.1.1.0	Bits.ssrextra.tuple.nseqCons	300	303.869834	280	116
+coq-bbv.1.3	bbv.ZLib.mod_add_r	300	300.309607	348	130
+coq-bbv.1.3	bbv.ZLib.pow2_pos	300	300.010772	407	225
+coq-bbv.1.3	bbv.ZLib.mod_pow2_same_cases	300	300.450483	318	134
+coq-bbv.1.3	bbv.ZLib.pow2_div2	300	300.150666	139	86
+coq-bbv.1.3	bbv.ZLib.mod_pow2_same_bounds	300	300.680931	265	124
+coq-bbv.1.3	bbv.ZLib.testbit_true_nonneg	300	300.440684	216	112
+coq-bbv.1.3	bbv.ZLib.div_mul_undo_le	300	302.075324	330	117
+coq-bbv.1.3	bbv.ZLib.testbit_false_nonneg	300	301.837966	199	111
+coq-bits.1.1.0	Bits.ssrextra.tuple.splitTuple	300	302.834627	155	89
+coq-ceres.0.4.0	Ceres.CeresString.eqb_eq_ascii'	300	300.989188	104	61
+coq-bbv.1.3	bbv.ZLib.two_digits_encoding_inj_lo	300	300.395428	230	105
+coq-bbv.1.3	bbv.ZLib.signed_bounds_to_sz_pos	300	300.727088	245	114
+coq-ceres.0.4.0	Ceres.CeresString.neqb_neq_ascii	300	302.305607	213	117
+coq-ceres.0.4.0	Ceres.CeresString.Decidable_eq_string	300	301.536082	330	174
+coq-ceres.0.4.0	Ceres.CeresString.not_string_elem_singleton	300	301.100695	110	69
+coq-ceres.0.4.0	Ceres.CeresString.not_string_elem_app	300	302.817694	121	70
+coq-bbv.1.3	bbv.N_Z_nat_conversions.Z2Nat.inj_pow	300	302.894524	160	98
+coq-ceres.0.4.0	Ceres.CeresString.Decidable_eq_ascii	300	304.613577	160	105
+coq-bits.1.1.0	Bits.ssrextra.nat.half_double_subn1	300	302.321643	113	70
+coq-ceres.0.4.0	Ceres.CeresString.eqb_eq_string	300	306.712799	166	129
+coq-bits.1.1.0	Bits.ssrextra.nat.odd_oddsubn1	300	303.999736	99	60
+coq-bits.1.1.0	Bits.ssrextra.nat.half_sub	300	305.186854	79	72
+coq-bits.1.1.0	Bits.ssrextra.nat.uphalf_double_subn1	300	306.906013	93	55
+coq-bits.1.1.0	Bits.ssrextra.nat.leq_subn	300	302.612225	214	78
+coq-bits.1.1.0	Bits.ssrextra.nat.modn_sub	300	304.177718	128	81
+coq-poltac.0.8.11	PolTac.NatGroundTac.lt_correct	300	302.772273	198	166
+coq-qcert.2.2.0	Qcert.Utils.Lift.Lift.mk_lazy_lift_under	300	307.927787	135	66
+coq-topology.10.0.1	Topology.SeparatednessAxioms.normal_sep_impl_T3_sep	300	301.795918	78	54
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.closure_fixes_closed	300	302.457948	135	87
+coq-topology.10.0.1	Topology.TopologicalSpaces.open_union2	300	303.269699	196	81
+coq-topology.10.0.1	Topology.Compactness.net_cluster_point_impl_compact	300	302.744536	64	51
+coq-topology.10.0.1	Topology.Connectedness.connected_subspace_empty	300	304.959752	124	76
+coq-bbv.1.3	bbv.NatLib.div2_odd	300	300.944251	270	138
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.CompleteClass_bool	300	300.953595	191	67
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.N_convert_type.t2z_ltb_morph	300	301.046262	176	131
+coq-ceres.0.4.0	Ceres.CeresS.Decidable_eq_atom	300	300.412844	387	192
+coq-haskell.1.0.0	Hask.Data.Functor.FunctorLaws.fmap_comp_x	300	304.358065	115	74
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Positive.Positive_comp	300	300.459239	222	137
+coq-bbv.1.3	bbv.NatLib.div2_minus_2	300	300.351198	187	128
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_le_compat_l	300	301.262688	317	134
+coq-topology.10.0.1	Topology.Connectedness.connected_subspace_singleton	300	5.229094	2	2
+coq-topology.10.0.1	Topology.SupInf.lub_approx	300	300.966843	139	92
+coq-bbv.1.3	bbv.Nomega.Nlt_out	300	301.957545	257	147
+coq-gaia-stern.1.15	gaia.stern.fibm.coprimeDr	300	303.263107	264	63
+coq-topology.10.0.1	Topology.RationalsInReals.rational_interpolation	300	301.923339	138	97
+coq-tlc.20200328	TLC.LibRelation.EquivClosures.stclosure_eq_rstclosure_of_refl	300	301.073715	771	152
+coq-poltac.0.8.11	PolTac.NatAux.mult_lt_compat_rev_l1	300	303.732477	340	135
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_ind	300	302.886921	98	49
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_or_0_neutral	300	302.408769	167	150
+coq-gaia-stern.1.15	gaia.stern.fibm.pythagore_tripleA	300	305.061649	80	48
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_open_ball_open	300	300.616729	133	96
+coq-gaia-stern.1.15	gaia.stern.fibm.pythagore_gcd	300	305.201931	195	45
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNatBounded_eq	300	306.593195	59	46
+coq-topology.10.0.1	Topology.ProductTopology.product_topology2.prod2_conv1_cont	300	306.750003	33	21
+coq-poltac.0.8.11	PolTac.NAux.Nlt_lt	300	300.144406	240	130
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.heap_array_map_disjoint	300	301.939470	85	61
+coq-tlc.20200328	TLC.LibEqual.fun_ext_nondep_2	300	306.375975	210	86
+coq-tlc.20200328	TLC.LibOrder.Instances.Le_preorder_of_Total_preorder	300	301.395208	654	186
+coq-haskell.1.0.0	Hask.Control.Monad.Indexed.IState_IApplicative_obligation_2	300	302.081806	145	28
+coq-topology.10.0.1	Topology.Neighborhoods.open_char_neighborhood	300	306.634320	122	90
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.token_string_newline_snoc	300	301.954651	269	116
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_trans	300	300.763708	54	46	0.0.0.0.0.0.0.1.0.1.0	synth with cache (only 1: unfold ltk; only 1: unfold lt; only 1: destruct key_ord; only 1: intros _tmp_tactician0; only 1: destruct _tmp_tactician0 as (k, e); only 1: intros _tmp_tactician2; only 1: destruct _tmp_tactician2 as (k', e'); only 1: intros _tmp_tactician4; only 1: destruct _tmp_tactician4 as (k'', e''); only 1: simpl; only 1: eauto with ordered_type).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.ltcr_mul2r	300	301.832456	133	46
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_not_eqk	300	306.625580	70	58
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_or_1_true	300	301.988670	170	121
+coq-printf.2.0.0	Printf.Justify.left_justify_padding'	300	302.176270	115	89
+coq-tlc.20200328	TLC.LibEqual.fun_eta_5	300	8.774506	1	2	0	synth with cache (only 1: trivial).
+coq-tlc.20200328	TLC.LibLogic.SimplNotQuantifiers.not_forall_not_eq	300	303.728942	400	143
+coq-poltac.0.8.11	PolTac.ZSignTac.Test.test4	300	301.664135	58	51
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_neg_reg_l	300	28.090579	16	15	0.0.2.0.0.0.0	synth with cache (only 1: intros a; only 1: intros b; only 1: intros c; only 1: intros H; only 1: contradict ltac:(H); only 1: subst; only 1: easy).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.token_string_comment_snoc	300	301.530232	246	88
+coq-poltac.0.8.11	PolTac.NAux.lt_Nlt	300	300.910647	212	110
+coq-bbv.1.3	bbv.Word.combine_0_n	300	305.971027	204	101
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_subbasis	300	305.823814	122	76
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_neg_neg	300	300.236236	228	139
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_set_same_default	300	300.902922	221	99
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_ge_compat_l	300	301.826979	391	138
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_or_comm	300	300.771209	161	121
+coq-bbv.1.3	bbv.Word.eq_rect_split2_helper	300	20.570690	8	10	0.0.0	synth with cache (only 1: intros; only 1: rewrite H; only 1: auto).
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_wrap	300	300.460420	276	162
+coq-gaia-stern.1.15	gaia.stern.fibm.Fermat4	300	301.815272	242	100
+coq-gaia-stern.1.15	gaia.stern.fibm.Fermat4_alt	300	300.962989	57	36
+coq-gaia-stern.1.15	gaia.stern.fibm.pythagore_tripleB	300	303.681778	44	30
+coq-gaia-stern.1.15	gaia.stern.fibm.Fermat2_bound	300	301.307586	639	104
+coq-tlc.20200328	TLC.LibList.Update.update_nil	300	14.386682	5	7	0.0.0	synth with cache (only 1: simpl; only 1: intros; only 1: auto).
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_wrapMany	300	300.819257	354	145
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.rat_of_Z_add	300	302.884754	319	79
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_pos_pos	300	10.810542	5	6	0.0.0.0.0	synth with cache (only 1: intros x_pos; only 1: intros y_pos; only 1: apply Rmult_lt_0_compat; only 1: assumption; only 1: assumption).
+coq-ceres.0.4.0	Ceres.CeresS.forall_Forall	300	46.894430	28	25	0.0.0.0.0.1	synth with cache (only 1: intros; only 1: induction xs; only 1: constructor; only 1: constructor; only 1: auto; only 1: assumption).
+coq-gaia-stern.1.15	gaia.stern.fibm.rev_inj	300	6.686870	2	2	1	synth with cache (only 1: exact : can_inj revK ).
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Cast.N_cast_diff	300	300.437793	130	72
+coq-tlc.20200328	TLC.LibList.Update.update_zero	300	14.476671	5	7	0.0.0	synth with cache (only 1: simpl; only 1: intros; only 1: reflexivity).
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.T2Z_pres	300	53.841326	49	33	0.0.3.0.0	synth with cache (only 1: intros x; only 1: unfold inT; only 1: case x; only 1: reflexivity; only 1: auto).
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.coprime_abelian_cent_dprod	300	301.543158	60	41
+coq-bbv.1.3	bbv.Word.eq_rect_split1_eq2_helper	300	18.006250	8	10	0.0.0	synth with cache (only 1: intros; only 1: rewrite H; only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.stack_end_cons	300	38.673163	23	17	0.0.5.0.1.0	synth with cache (only 1: intros IH; only 1: constructor; only 1: constructor; only 1: inversion IH; only 1: subst; only 1: assumption).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.state_init_heap_singleton	300	56.980179	116	20
+coq-bbv.1.3	bbv.Word.split1_eq_rect_eq1_helper	300	15.290504	8	10	0.0.0	synth with cache (only 1: intros; only 1: rewrite H; only 1: auto).
+coq-poltac.0.8.11	PolTac.ZAux.Zle_sign_pos_neg	300	339.702988	55	31
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.if_true_atomic	300	323.225913	66	40
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.mulcrN	300	62.371140	46	13
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.if_false_atomic	300	10.583760	23	5
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection1.Main.extend_coprime_Qn_aut	300	312.498442	20	9
+coq-bits.1.1.0	Bits.extraction.axioms8.land_repr	300	304.384329	203	78
+coq-gaia-stern.1.15	gaia.stern.fibm.split_rev	300	69.665064	45	16	0.6	synth with cache (only 1: elim : l a  => [|x l IHl] a //=; only 1: by rewrite rev_cons IHl).
+coq-topology.10.0.1	Topology.RFuncContinuity.Rmin_using_Rabs	300	301.596633	247	135
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_pos_pos	300	47.892221	22	23	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros Hx; only 1: intros Hy; only 1: apply Z.mul_pos_pos; only 1: easy; only 1: easy).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.mulNcr	300	41.414544	27	9
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_mul_morph	300	74.158097	35	32	0.0.0.4	synth with cache (only 1: unfold T2Z; only 1: intros; only 1: rewrite Nat2Z.inj_mul; only 1: easy).
+coq-gaia-stern.1.15	gaia.stern.fibm.last_mkseq	300	38.069498	30	6
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.mulcrC	300	43.936847	35	9
+coq-gaia-stern.1.15	gaia.stern.fibm.mkseq_succ	300	22.181493	26	5
+coq-gaia-stern.1.15	gaia.stern.fibm.fibE	300	3.451711	1	2	0	synth with cache (only 1: reflexivity).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_subst_ne	300	314.686924	33	15
+coq-gaia-stern.1.15	gaia.stern.fibm.fib0	300	2.016681	1	2	0	synth with cache (only 1: reflexivity).
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_neg_pos	300	268.351577	155	103	1.5.3	synth with cache (only 1: intros; only 1: rewrite <- (Rmult_0_r x); only 1: auto with real).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.C_pos	300	300.928372	598	110
+coq-poltac.0.8.11	PolTac.ZAux.Zle_sign_neg_pos	300	343.022091	76	46
+coq-poltac.0.8.11	PolTac.RAux.Rlt_pos_neg	300	27.715621	13	14	0.0.0.2	synth with cache (only 1: intros Hx; only 1: apply Ropp_lt_cancel; only 1: rewrite Ropp_0; only 1: easy).
+coq-topology.10.0.1	Topology.TietzeExtension.bounded_Tietze_extension_theorem	300	305.505200	66	44
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_neg_neg	300	109.566623	73	49	0.0.2.1	synth with cache (only 1: intros; only 1: apply Z.mul_neg_neg; only 1: easy; only 1: easy).
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.eqb_trans	300	302.708259	301	111
+coq-smtcoq.2.0+8.11	SMTCoq.PArray.PArray.get_not_default_lt	300	204.401594	110	72	0.0.0.4.1.0.0	synth with cache (only 1: intros; only 1: destruct t; only 1: destruct p; only 1: simpl in *; only 1: destruct (x < i); only 1: auto; only 1: auto).
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.reflect_eqb	300	3.631297	0	1
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_pos_neg	300	42.009419	20	23	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros Hx; only 1: intros Hy; only 1: apply Z.mul_pos_neg; only 1: easy; only 1: easy).
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.build_clause_correct	300	302.463844	21	16
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_symopp_bvor_length3	300	301.424362	51	27
+coq-tlc.20200328	TLC.LibList.Make.nth_make	300	301.245605	156	126
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.log2_Sdouble	300	301.317439	197	80
+coq-topology.10.0.1	Topology.SeparatednessAxioms.Hausdorff_and_nets.Hausdorff_impl_net_limit_unique	300	301.530771	118	84
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure.closure_minimal	300	301.158174	198	102
+coq-bbv.1.3	bbv.Word.WS_eq_rect	300	302.774804	193	107
+coq-bbv.1.3	bbv.Word.combine_eq_rect2	300	300.498214	130	80
+coq-topology.10.0.1	Topology.Compactness.compact_closed	300	300.475919	177	69
+coq-bbv.1.3	bbv.Word.combine_n_0	300	301.162722	146	115
+coq-topology.10.0.1	Topology.TopologicalSpaces.open_indexed_union	300	301.653311	131	54
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.SoundClass_bool	300	300.958425	326	167
+coq-bbv.1.3	bbv.NatLib.div2_bound	300	302.438213	200	138
+coq-bbv.1.3	bbv.NatLib.two_times_div2_bound	300	300.416297	210	178
+coq-topology.10.0.1	Topology.SupInf.glb_approx	300	300.446382	141	100
+coq-bbv.1.3	bbv.Nomega.Nlt_in	300	301.124867	280	155
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.BV.BV_comp	300	304.114264	194	114
+coq-poltac.0.8.11	PolTac.NatAux.mult_lt_compat_rev_l2	300	300.312330	323	117
+coq-tlc.20200328	TLC.LibRelation.MixedClosures.tclosure_of_rtclosure_l	300	301.537741	272	122
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_and	300	300.518391	163	92
+coq-topology.10.0.1	Topology.RationalsInReals.rationals_dense_in_reals	300	303.304157	289	114
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_or_nth_bitOf	300	302.021458	129	88
+coq-gaia-stern.1.15	gaia.stern.fibm.square_plus1_square	300	301.710336	388	133
+coq-bits.1.1.0	Bits.extraction.axioms32.land_repr	300	300.015375	203	83
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_closed_ball_closed	300	300.722362	148	98
+coq-bits.1.1.0	Bits.extraction.axioms16.lnot_repr	300	302.980223	231	107
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm9	300	301.666911	236	149
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.Int63.int63_ord	300	8.229002	3	3
+coq-gaia-stern.1.15	gaia.stern.fibm.square_plus4_square	300	303.227465	280	125
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.log2_pow	300	300.770251	505	126
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binzSS_weak	300	301.803641	105	64
+coq-bbv.1.3	bbv.Word.split2_0	300	301.847025	192	148
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_mod	300	301.086048	233	75
+coq-bbv.1.3	bbv.Word.eq_rect_combine_assoc'	300	302.561812	122	71
+coq-bbv.1.3	bbv.Word.wtl_eq_rect	300	303.158815	218	85
+coq-bits.1.1.0	Bits.spec.operations.properties.and1B	300	305.949276	234	72
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.U_dyadic_level_n	300	304.405603	131	26
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.log2_pr1	300	303.244123	85	72
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.base2r_odd	300	302.643531	108	61
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.natnat_to_nat2_inj	300	302.308972	149	91
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.log_base2r	300	303.081370	260	105
+coq-poltac.0.8.11	PolTac.NAux.Nlt_lt_rev	300	301.398776	231	134
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.token_string_string_snoc	300	300.293735	251	76
+coq-topology.10.0.1	Topology.ProductTopology.product_topology2.product2_fst_continuous	300	302.198772	51	22
+coq-topology.10.0.1	Topology.RTopology.R_connected	300	302.469709	266	97
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_not_eqke	300	301.495022	76	59
+coq-gaia-stern.1.15	gaia.stern.fibm.square_plus16_square	300	306.095629	145	84
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_alloc	300	305.518617	223	55
+coq-tlc.20200328	TLC.LibOrder.Instances.Le_trans_of_Le_preorder	300	302.339957	340	163
+coq-haskell.1.0.0	Hask.Control.Monad.Indexed.IState_IMonad_obligation_2	300	304.619946	151	56
+coq-bits.1.1.0	Bits.spec.operations.properties.andB1	300	300.838172	203	89
+coq-tlc.20200328	TLC.LibRelation.Strict.strict_eq	300	19.055522	7	9	0.0.0	synth with cache (only 1: unfold strict; only 1: intros; only 1: tauto).
+coq-bits.1.1.0	Bits.spec.operations.properties.orBA	300	302.051572	107	67
+coq-bits.1.1.0	Bits.spec.operations.properties.or0B	300	302.459030	141	89
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqk_equiv	300	301.794217	161	89
+coq-tlc.20200328	TLC.LibLogic.EqTrueFalse.prop_eq_True_eq	300	300.601401	1156	308
+coq-bits.1.1.0	Bits.spec.operations.properties.orB0	300	302.781160	99	74
+coq-printf.2.0.0	Printf.Justify.left_justify_padding	300	303.375424	92	73
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_xor_assoc	300	304.985910	101	89
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_xor_empty_empty1	300	23.404407	33	23	0.0.0.0.0.1	synth with cache (only 1: intros; only 1: destruct a; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: reflexivity).
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_lt_reg_l	300	301.736955	311	109
+coq-tlc.20200328	TLC.LibEqual.PropExt.pred_ext_2	300	305.166986	39	28
+coq-bbv.1.3	bbv.Word.eq_rect_split2	300	300.584765	66	54
+coq-poltac.0.8.11	PolTac.NAux.Nge_ge	300	302.220046	231	137
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_interior	300	301.386378	150	76
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_xor_empty_empty2	300	3.338855	2	3	0.0	synth with cache (only 1: simpl; only 1: auto).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_xor_length	300	300.158926	175	142
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_gt_reg_l	300	301.426731	310	140
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eq_equiv	300	10.787442	3	4	1	synth with cache (only 1: apply _).
+coq-bbv.1.3	bbv.Word.eq_rect_combine_dist_helper2	300	40.260331	20	18	0.0.0.1.0.0.0.0	synth with cache (only 1: intros a; only 1: intros b; only 1: intros c; only 1: intros d; only 1: intros H; only 1: rewrite Nat.mul_add_distr_r; only 1: rewrite H; only 1: auto).
+coq-bbv.1.3	bbv.Word.eq_rect_split2_eq2	300	303.075463	81	55
+coq-gaia-stern.1.15	gaia.stern.fibm.square_plus16_square_alt	300	302.228674	227	110
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_fromNat	300	302.518664	378	113
+coq-gaia-stern.1.15	gaia.stern.fibm.square_plus_square_3square	300	301.872510	219	126
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.mulrzPD	300	301.165928	220	52
+coq-bits.1.1.0	Bits.spec.spec.properties.splitTuple	300	303.212293	149	85
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compat	300	6.630733	1	2	0	synth with cache (only 1: apply _).
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_neg_neg	300	300.987505	292	142
+coq-ceres.0.4.0	Ceres.CeresS.sexp__ind	300	301.806411	147	90
+coq-gaia-stern.1.15	gaia.stern.fibm.iota_Sr	300	300.063564	387	95
+coq-bbv.1.3	bbv.Word.wzero_dist	300	34.954011	9	10	1.0.0	synth with cache (only 1: intros; only 1: rewrite H; only 1: auto).
+coq-poltac.0.8.11	PolTac.PolAux.Neq_lt_trans_l	300	14.892125	7	8	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H1; only 1: intros H2; only 1: rewrite <- H1; only 1: easy).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.twp_free	300	30.885231	21	9
+coq-printf.2.0.0	Printf.Justify.distribute_length	300	23.120371	13	13	0.2.0.0.0.0.0.0	synth with cache (only 1: intros until l; only 1: induction l; only 1: intros until r; only 1: reflexivity; only 1: simpl; only 1: intros; only 1: rewrite IHl; only 1: easy).
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Cast.cast_eqb	300	301.638545	75	52
+coq-bbv.1.3	bbv.Word.eq_rect_split1_eq1	300	301.414418	84	55
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.bin_op_eval_erase	300	343.206767	35	22
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_monotone	300	39.145122	60	11
+coq-tlc.20200328	TLC.LibList.Update.update_cons_pos	300	302.876071	113	101
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.mulrzS	300	17.144561	24	4
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_symopp_bvxor_length	300	309.112909	51	23
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.coprime_abelian_faithful_Ohm1	300	306.563527	83	42
+coq-tlc.20200328	TLC.LibEqual.PropExt.Extensionality_pred_3	300	31.764318	9	4	4	synth with cache (only 1: firstorder).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.Dade_reciprocity	300	328.299914	14	9
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.Pos_mul_xO_l	300	3.710393	1	2	0	synth with cache (only 1: trivial).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.Pos_mul_xI_l	300	3.925551	1	2	0	synth with cache (only 1: trivial).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.stack_end_cons_Open	300	301.227590	322	167
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_neg_pos	300	141.411573	23	16	0.0.3.0	synth with cache (only 1: intros; only 1: apply Z.mul_neg_pos; only 1: easy; only 1: easy).
+coq-bbv.1.3	bbv.Word.split1_eq_rect_eq1	300	300.714380	89	64
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.fill_item_inj	300	309.435559	97	88
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Field.invf_div	300	30.949775	29	6
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Field.addf_div1	300	68.435946	62	12
+coq-poltac.0.8.11	PolTac.PolAux.Neq_lt_trans_r	300	39.555558	10	12	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H1; only 1: intros H2; only 1: rewrite <- H1; only 1: easy).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.fst_atomic	300	306.125865	33	29
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_free	300	46.853745	53	10
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_cmpxchg_fail_offset_vec	300	303.767471	42	36
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.div0z	300	21.118449	31	7
+coq-poltac.0.8.11	PolTac.PolAux.Neq_gt_trans_l	300	19.062331	9	11	0.0.0	synth with cache (only 1: intros; only 1: subst z; only 1: assumption).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.divz0	300	4.857781	1	2	0	synth with cache (only 1: by case : m ).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.modz_nat	300	28.116987	30	6
+coq-topology.10.0.1	Topology.RFuncContinuity.Rmax_using_Rabs	300	300.983499	250	136
+coq-bits.1.1.0	Bits.extraction.axioms8.lor_repr	300	308.589334	175	76
+coq-bbv.1.3	bbv.Word.split2_zero	300	84.631121	57	43	0.0.0.0.0.1	synth with cache (only 1: intros; only 1: revert sz1; only 1: induction sz1; only 1: reflexivity; only 1: simpl; only 1: auto).
+coq-smtcoq.2.0+8.11	SMTCoq.Conversion_tactics.nat_convert_type.t2z_eqb_morph	300	300.468011	233	149
+coq-poltac.0.8.11	PolTac.PolAux.Neq_gt_trans_r	300	26.288705	8	10	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: auto).
+coq-tlc.20200328	TLC.LibList.Map.map_last	300	148.727535	134	65	2.1.0.0.0	synth with cache (only 1: intros f; only 1: intros x; only 1: intros l; only 1: rewrite map_app; only 1: reflexivity).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.twp_load	300	40.244000	51	9
+coq-tlc.20200328	TLC.LibOrder.Instances.Nle_as_gt_of_Le_total_order	300	121.662501	423	70
+coq-poltac.0.8.11	PolTac.PolAux.Neq_le_trans_l	300	22.713460	12	12	0.0.0.1.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H1; only 1: intros H2; only 1: subst; only 1: easy).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_wp_load	300	300.554380	26	25
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.addcrC	300	303.424191	214	65
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_subst_ne'	300	303.549019	108	84
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_gt0	300	306.112398	361	135
+coq-poltac.0.8.11	PolTac.PolAux.Neq_le_trans_r	300	30.851217	12	12	0.0.0.1.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H1; only 1: intros H2; only 1: subst; only 1: auto).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.nth_C_row	300	302.331492	71	63
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Field.subf_div1	300	188.076277	185	28
+coq-poltac.0.8.11	PolTac.PolAux.Neq_ge_trans_l	300	19.292390	9	11	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: auto).
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_pos_neg	300	301.910901	202	119
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.addcrA	300	47.775838	27	9
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_load	300	84.505652	74	13
+coq-bbv.1.3	bbv.Word.combine_wones	300	174.527194	73	60	0.0.0.1.0.0.0.0	synth with cache (only 1: intros; only 1: revert sz1; only 1: induction sz1; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: rewrite IHsz1; only 1: auto).
+coq-topology.10.0.1	Topology.TietzeExtension.Tietze_extension_theorem	300	301.792848	108	52
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes.EqbTypeProp.eqb_sym2	300	300.473027	298	113
+coq-poltac.0.8.11	PolTac.PolAux.Neq_ge_trans_r	300	37.445974	19	21	0.2.1.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H_le; only 1: subst z; only 1: easy).
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_neg_neg	300	300.933254	68	47
+coq-poltac.0.8.11	PolTac.ZAux.Zge_neg_pos	300	3.610638	2	3	0.0	synth with cache (only 1: intros; only 1: omega).
+coq-smtcoq.2.0+8.11	SMTCoq.lia.Lia.certif.Proof.interp_binop_eqb_antisym	300	303.835774	69	19
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.addcrN	300	29.122274	20	7
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.size_C_row	300	55.445077	20	17	0.0.1.0	synth with cache (only 1: rewrite /C_row; only 1: rewrite size_rcons; only 1: rewrite size_mkseq; only 1: by [  ]).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_symopp_bvxor_length3	300	308.317617	59	37
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.nn_to_n_mergeK	300	302.901664	77	65
+coq-topology.10.0.1	Topology.SeparatednessAxioms.Hausdorff_and_nets.Hausdorff_impl_net_limit_is_unique_cluster_point	300	301.370596	146	76
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_xor_1_true	300	263.431666	127	111	0.0.0.0.0.1.0	synth with cache (only 1: intros until a; only 1: induction a; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: rewrite IHa; only 1: trivial).
+coq-topology.10.0.1	Topology.Compactness.closed_compact	300	301.633016	92	50
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_idempotent	300	303.574709	207	80
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.CompleteClass_option	300	300.630152	373	112
+coq-bbv.1.3	bbv.Word.eq_rect_combine_dist_helper1	300	302.504218	196	126
+coq-bbv.1.3	bbv.NatLib.div2_compat_lt_l	300	300.208044	212	137
+coq-bbv.1.3	bbv.NatLib.pow2_add_mul	300	300.243654	258	177
+coq-topology.10.0.1	Topology.SupInf.lt_plus_epsilon_le	300	300.439055	184	137
+coq-bbv.1.3	bbv.Word.eq_rect_split1_eq2	300	307.926905	83	63
+coq-bbv.1.3	bbv.Nomega.Nge_out	300	301.165988	310	157
+coq-poltac.0.8.11	PolTac.NatAux.mult_gt_compat_rev_l1	300	300.777747	322	174
+coq-topology.10.0.1	Topology.TopologicalSpaces.open_finite_indexed_intersection	300	308.944145	208	61
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_net_limit	300	300.018491	127	62
+coq-bbv.1.3	bbv.Word.posToWord_sz0	300	3.351514	2	3	1	synth with cache (only 1: trivial).
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_smonotone	300	300.009435	317	98
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_orb_true	300	303.945902	147	102
+coq-bits.1.1.0	Bits.extraction.axioms16.land_repr	300	300.519983	200	80
+coq-bits.1.1.0	Bits.extraction.axioms32.lor_repr	300	305.030215	193	82
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm10	300	302.142543	232	144
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.option.option_lt_not_eq	300	301.159657	169	134
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Field.intr_N	300	295.504108	474	108	2.3.5.2.1.0.3.3	synth with cache (only 1: symmetry; only 1: case : t ; only 1: move  =>n; only 1: by case : n ; only 1: simpl => n; only 1: rewrite NegzE; only 1: apply /eqP ; only 1: by rewrite eqr_oppLR opprK).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binzS_weak	300	301.699272	110	61
+coq-bbv.1.3	bbv.Word.wzero_rev	300	300.809421	147	107
+coq-bbv.1.3	bbv.Word.eq_rect_combine_dist	300	303.188367	51	33
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_succn	300	303.167932	436	133
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.U_dyadic_wd	300	302.725203	64	36
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.stack_end_inv	300	300.829994	161	118
+coq-poltac.0.8.11	PolTac.NAux.ge_Nge	300	300.899116	310	138
+coq-topology.10.0.1	Topology.RTopology.R_cauchy_sequence_bounded	300	300.153297	112	84
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.natnat_to_nat3_invK	300	301.749351	332	95
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.lookup_erase_heap	300	27.555973	6	6	1.0	synth with cache (only 1: destruct h; only 1: by rewrite lookup_fmap).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.nn_to_n_merge_ext	300	305.749698	36	35
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_eq1	300	300.257643	156	102
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.eqke_equiv	300	301.987901	155	88
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.mulcrDr	300	69.954008	46	13
+coq-bits.1.1.0	Bits.spec.operations.properties.xor0B	300	300.049272	131	87
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas0	300	3.252502	2	3	0.0	synth with cache (only 1: unfold lucas; only 1: reflexivity).
+coq-bits.1.1.0	Bits.spec.operations.properties.andB0	300	303.108654	74	44
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBB	300	301.111845	143	92
+coq-tlc.20200328	TLC.LibRelation.Strict.strict_rclosure	300	302.194194	283	141
+coq-haskell.1.0.0	Hask.Control.Monad.Indexed.IState_IMonad_obligation_3	300	304.767210	203	71
+coq-tlc.20200328	TLC.LibLogic.NeqProp.prop_neq_False_eq	300	300.882821	670	251
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBN	300	300.832660	141	76
+coq-gaia-stern.1.15	gaia.stern.fibm.lucasSS	300	4.563963	1	2	0	synth with cache (only 1: by [  ]).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.sVG	300	313.086038	2	4
+coq-topology.10.0.1	Topology.ProductTopology.product_topology2.product2_snd_continuous	300	313.196730	47	22
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erase_heap_insert_Some	300	11.952797	21	4
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_xor_0_neutral	300	301.520181	187	151
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.divn1	300	36.727227	40	8
+coq-poltac.0.8.11	PolTac.PolAux.Nplus_le_reg_l	300	302.201732	342	127
+coq-bits.1.1.0	Bits.spec.operations.properties.and0B	300	316.817492	36	27
+coq-poltac.0.8.11	PolTac.NAux.Ngt_gt	300	301.094963	275	141
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_xor_empty_empty1	300	36.884305	23	19	2.1.0.0	synth with cache (only 1: intros; only 1: induction a; only 1: auto; only 1: auto).
+coq-topology.10.0.1	Topology.Continuity.continuity.continuous_closure	300	301.627723	126	80
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_like_fib	300	5.375011	4	4	2	synth with cache (only 1: constructor).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_xor_size	300	301.745104	201	117
+coq-bbv.1.3	bbv.Word.combine_inj	300	302.868378	127	96
+coq-bbv.1.3	bbv.Word.split1_zero	300	309.766915	214	150
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_addn	300	301.766737	376	133
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_fromNat	300	300.935477	279	80
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erase_heap_insert_None	300	10.671756	19	4
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_eq	300	301.637683	213	103
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_neg_pos	300	301.135799	246	128
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.ltz_pmod	300	30.248027	20	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.ltk_compat'	300	303.104819	64	63
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_doubleS	300	304.071315	56	43
+coq-ceres.0.4.0	Ceres.CeresS.eqb_eq_sexp_	300	301.068566	98	87
+coq-gaia-stern.1.15	gaia.stern.fibm.dvdn_fib	300	301.541865	61	51
+coq-bbv.1.3	bbv.Word.combine_wzero	300	300.344566	247	149
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zlt_trans_l	300	19.760393	9	11	0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H_lt; only 1: subst z; only 1: trivial).
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Cast.reflect_eqb	300	300.597941	79	57
+coq-printf.2.0.0	Printf.Justify.alternate_max	300	302.852397	312	150
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_sum	300	302.617951	147	81
+coq-bits.1.1.0	Bits.spec.spec.properties.toNatCat	300	17.078517	27	5
+coq-tlc.20200328	TLC.LibList.Map.map_eq_cons_inv	300	302.174618	114	79
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.lookup_erase_heap_None	300	301.185112	95	68
+coq-tlc.20200328	TLC.LibEqual.pred_ext_nondep_4	300	301.983968	101	59
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zgt_trans_l	300	11.798742	5	7	0.0.0	synth with cache (only 1: intros; only 1: subst z; only 1: assumption).
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.coprime_cent_Phi	300	303.907219	77	44
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.C_multi	300	114.899798	181	31
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_symopp_bvor_nl	300	307.706813	43	18
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.rat_of_Z_mul	300	302.436061	569	83
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.is_atom_singleton	300	301.135259	152	74
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_pos_pos	300	300.942154	131	82
+coq-bbv.1.3	bbv.Word.wordToN_nat	300	300.431174	210	150
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.str_token_string_new	300	5.568234	3	3	1	synth with cache (only 1: constructor).
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zgt_trans_r	300	13.218830	5	7	0.0.0	synth with cache (only 1: intros; only 1: subst y; only 1: auto).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.mulcrDl	300	56.837535	33	11
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_pos_pos	300	167.888680	106	75	0.0.5.2.0.0	synth with cache (only 1: intros H; only 1: intros ?; only 1: apply Rle_ge; only 1: apply Rmult_le_pos; only 1: auto with real; only 1: auto with real).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.fill_item_val	300	301.385298	181	96
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.Dade_isometry	300	327.141948	16	10
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.rat_of_Z_sub	300	24.455232	26	5
+coq-bbv.1.3	bbv.NatLib.lt_mul_mono'	300	94.520596	65	47	2.2.0.0	synth with cache (only 1: intros; only 1: rewrite Nat.mul_comm; only 1: simpl; only 1: auto with arith).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.rat_of_Z_0	300	7.380882	21	4
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.twp_faa_offset	300	301.978281	63	42
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.MapsTo_eq	300	85.597537	22	20	0.1.1	synth with cache (only 1: intros; only 1: subst; only 1: auto).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.rat_of_Z_1	300	10.279258	29	6
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.divz_small	300	304.206207	77	54
+coq-bits.1.1.0	Bits.extraction.axioms8.lxor_repr	300	302.516964	194	75
+coq-topology.10.0.1	Topology.RFuncContinuity.continuous_2arg_compose	300	305.364479	76	56
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.divzMpl	300	100.237578	74	12
+coq-bbv.1.3	bbv.Word.wordToN_to_nat	300	300.166365	227	134
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.divzMDl	300	307.780343	44	39
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.lez_divRL	300	80.589342	69	11
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.snd_atomic	300	340.029377	33	27
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_fib2	300	90.003414	135	26
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.ltz_divLR	300	95.848560	60	11
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.succq	300	16.837439	26	6
+coq-tlc.20200328	TLC.LibList.Map.map_eq_app_inv	300	301.370464	130	83
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zle_trans_l	300	64.557124	38	33	0.1.0.1.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros _tmp_tactician0; only 1: intros H'; only 1: subst; only 1: auto).
+coq-tlc.20200328	TLC.LibOrder.Instances.Nle_to_sle_of_Le_total_order	300	301.846286	724	147
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.modz_small	300	31.840574	23	5
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.floorp1	300	23.467925	28	6
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_twp_load	300	308.388900	38	30
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.ltcr_mul2l	300	91.986449	74	15
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.floor_small	300	31.802686	21	5
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.floor_sum	300	32.952567	28	6
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.divzMpr	300	154.848511	116	18
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.Sn_0	300	2.288616	1	2	0	synth with cache (only 1: easy).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.Sn_1	300	2.949879	1	2	0	synth with cache (only 1: reflexivity).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_rec'	300	301.722321	132	110
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zle_trans_r	300	40.512081	21	22	0.0.1	synth with cache (only 1: intros; only 1: subst; only 1: auto).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.divz_ge0	300	68.261861	71	11
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_sum_even	300	300.762613	91	68
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zge_trans_l	300	14.163982	6	8	0.1.0	synth with cache (only 1: intros; only 1: subst z; only 1: auto).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.Sn_gt0	300	20.297994	25	5
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.mulzK	300	301.026737	47	45
+coq-poltac.0.8.11	PolTac.PolAux.eq_Zge_trans_r	300	14.585841	6	8	0.0.0	synth with cache (only 1: intros; only 1: subst y; only 1: auto).
+coq-poltac.0.8.11	PolTac.PolAux.Zge_trans	300	8.570986	5	5	1.0	synth with cache (only 1: intros; only 1: omega).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.Sn_small	300	40.021036	27	5
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF1	300	15.635089	21	5
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF_pos2	300	27.896813	26	5
+coq-bbv.1.3	bbv.Word.mod2_S	300	301.372556	410	174
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.twp_store	300	304.449563	210	69
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIred_char	300	332.107058	12	4
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rlt_trans_l	300	28.275493	13	15	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H_lt; only 1: intros H_eq; only 1: subst; only 1: assumption).
+coq-poltac.0.8.11	PolTac.PolAux.Nge_trans	300	302.833590	255	137
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_neg_pos	300	302.116647	124	91
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbOp	300	277.340581	108	18
+coq-bbv.1.3	bbv.NatLib.zero_lt_pow2	300	161.739138	288	122	0.0.2.0.2.0	synth with cache (only 1: intros; only 1: induction sz; only 1: simpl; only 1: auto; only 1: simpl; only 1: lia).
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rgt_trans_l	300	22.737511	8	10	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: assumption).
+coq-bits.1.1.0	Bits.spec.operations.properties.invB0	300	300.714410	1038	192
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Inf_eq	300	228.452719	74	51	0.4.1	synth with cache (only 1: intros; only 1: rewrite H; only 1: auto).
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rlt_trans_r	300	27.708412	11	13	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H_lt; only 1: intros H_eq; only 1: subst; only 1: assumption).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF_recl	300	50.794802	49	11
+coq-bbv.1.3	bbv.Word.wzero'_def	300	301.273540	245	159
+coq-bbv.1.3	bbv.NatLib.one_le_pow2	300	31.268938	30	25	0.0.0.0.1.0	synth with cache (only 1: intros until sz; only 1: induction sz; only 1: simpl; only 1: constructor; only 1: simpl; only 1: lia).
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rgt_trans_r	300	23.600011	9	11	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: assumption).
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rle_trans_l	300	20.755163	10	12	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H_lt; only 1: intros H_eq; only 1: subst; only 1: assumption).
+coq-topology.10.0.1	Topology.Compactness.compact_image	300	301.453476	94	56
+coq-topology.10.0.1	Topology.SeparatednessAxioms.Hausdorff_and_nets.net_limit_uniqueness_impl_Hausdorff	300	303.700970	101	66
+coq-bbv.1.3	bbv.Word.posToWord_nat	300	300.386976	218	119
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_idempotent	300	302.276251	176	70
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.CompleteClass_sum	300	302.872788	286	70
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF_simpl1	300	75.385865	33	22	6	synth with cache (only 1: by rewrite /SCF' /= add0r).
+coq-bbv.1.3	bbv.NatLib.mul2_add	300	13.643272	27	11	3.2	synth with cache (only 1: intros _tmp_tactician0; only 1: auto with zarith).
+coq-bbv.1.3	bbv.NatLib.mult_pow2_bound	300	302.998465	139	100
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rge_trans_l	300	6.491551	3	4	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: auto).
+coq-topology.10.0.1	Topology.SupInf.gt_minus_epsilon_ge	300	301.642397	167	125
+coq-poltac.0.8.11	PolTac.NatAux.mult_gt_compat_rev_l2	300	303.346201	179	135
+coq-bbv.1.3	bbv.Word.NToWord_nat	300	300.132561	448	198
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_orb_true_inv	300	301.696252	111	87
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_net_limit_converse	300	302.534877	132	64
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm11	300	300.133953	297	128
+coq-bits.1.1.0	Bits.extraction.axioms32.lxor_repr	300	300.566847	225	81
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.list.list_lt_trans	300	300.054775	136	69
+coq-bits.1.1.0	Bits.extraction.axioms16.lor_repr	300
+coq-topology.10.0.1	Topology.TopologicalSpaces.open_finite_family_intersection	300	310.862453	121	64
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_sum_odd	300	308.162128	75	57
+coq-bbv.1.3	bbv.Word.wplus_alt	300	300.603050	259	172
+coq-topology.10.0.1	Topology.RTopology.R_cauchy_sequence_lower_bound	300	300.219799	283	113
+coq-poltac.0.8.11	PolTac.NAux.gt_Ngt	300	300.310846	300	151
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_fib3	300	261.123173	330	94
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.is_atom_app	300	300.913503	169	91
+coq-bits.1.1.0	Bits.spec.spec.properties.toZpAux_fromNat	300	302.251820	370	105
+coq-bbv.1.3	bbv.Word.wmult_alt	300	300.660870	286	182
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rge_trans_r	300	16.901269	8	10	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: auto with real).
+coq-poltac.0.8.11	PolTac.PolAux.eq_Rle_trans_r	300	25.517161	11	13	0.0.0.0.0.0.0	synth with cache (only 1: intros x; only 1: intros y; only 1: intros z; only 1: intros H_lt; only 1: intros H_eq; only 1: subst; only 1: assumption).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binzSS	300	307.891161	115	65
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBNaux	300	300.408650	215	89
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF_zero_at_end	300	23.084772	24	5
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.U_dyadic_incr	300	308.128133	55	33
+coq-bits.1.1.0	Bits.spec.operations.properties.orB_invB	300	300.611609	138	73
+coq-poltac.0.8.11	PolTac.NAux.Neq_eq_rev	300	7.698084	3	4	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: easy).
+coq-tlc.20200328	TLC.LibLogic.ClassicOr.or_inv_classic_r	300	300.980884	445	224
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_andB	300	304.093444	100	68
+coq-bits.1.1.0	Bits.spec.operations.properties.ones_decomp	300	55.441876	165	25
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Divz.lez_floor	300	300.642726	153	43
+coq-bits.1.1.0	Bits.spec.operations.properties.andB_invB	300	304.074515	251	76
+coq-poltac.0.8.11	PolTac.NAux.Ngt_gt_rev	300	300.516921	198	144
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_xor_0_neutral	300	303.078634	320	124
+coq-topology.10.0.1	Topology.ProductTopology.product_topology2.product2_map_continuous_at	300	304.185647	24	17
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_not_and_or	300	302.620226	146	100
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_andB	300	303.172436	75	57
+coq-topology.10.0.1	Topology.Continuity.continuous_composition_at	300	303.643814	132	68
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_not_or_and	300	300.816835	148	97
+coq-gaia-stern.1.15	gaia.stern.fibm.like_fib_mul	300	302.458225	210	121
+coq-tlc.20200328	TLC.LibLogic.IffProp.iff_eq_and	300	8.036478	3	5	0.0	synth with cache (only 1: intros; only 1: split).
+coq-haskell.1.0.0	Hask.Control.Monad.Indexed.IState_IMonad_obligation_4	300	312.584373	64	25
+coq-tlc.20200328	TLC.LibLogic.IffProp.iff_not_r	300	2.285099	1	2	0	synth with cache (only 1: tauto).
+coq-bits.1.1.0	Bits.spec.spec.properties.fromZp_inj	300	22.287721	24	5
+coq-bits.1.1.0	Bits.spec.spec.properties.fromZpK	300	300.157286	126	72
+coq-bbv.1.3	bbv.Word.wminus_Alt	300	301.287563	255	153
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.fmap_heap_array	300	302.055425	224	110
+coq-poltac.0.8.11	PolTac.RAux.Rge_neg_pos	300	301.121528	458	162
+coq-bbv.1.3	bbv.Word.wplus_comm	300	302.083100	227	121
+coq-poltac.0.8.11	PolTac.NAux.Nmult_le_compat_l	300	12.972255	12	5	1	synth with cache (only 1: exact N.mul_le_mono_l).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_carry_neg_t	300	11.949860	8	10	1.0.0.0	synth with cache (only 1: intros; only 1: destruct a; only 1: easy; only 1: easy).
+coq-gaia-stern.1.15	gaia.stern.fibm.like_fib_add	300	303.265437	137	88
+coq-bits.1.1.0	Bits.spec.operations.properties.zero_decomp	300	26.727675	45	9
+coq-bbv.1.3	bbv.Word.drop_sub	300	300.515774	165	115
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_carry_tt	300	17.435125	23	13	4	synth with cache (only 1: destr_bool).
+coq-gaia-stern.1.15	gaia.stern.fibm.like_fib_shiftE	300	307.420966	95	67
+coq-printf.2.0.0	Printf.Justify.left_justify_length	300	304.598971	129	90
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Cast.eqb_spec	300	305.477433	48	36
+coq-bbv.1.3	bbv.Word.wminus_def	300	3.288257	1	2	0	synth with cache (only 1: reflexivity).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF_neg3	300	24.038050	22	5
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_list_ingr_l	300	22.928563	14	15	2.0	synth with cache (only 1: intros a; only 1: auto).
+coq-tlc.20200328	TLC.LibList.Nth_map_inv	300	300.577688	184	112
+coq-bits.1.1.0	Bits.spec.spec.properties.toZpK	300	302.005804	93	67
+coq-printf.2.0.0	Printf.Justify.lemma_replicate	300	5.954730	2	3	0.0	synth with cache (only 1: intros; only 1: reflexivity).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erase_heap_array	300	302.986218	266	85
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.C_n0	300	300.607839	565	86
+coq-tlc.20200328	TLC.LibEqual.pred_ext_nondep_5	300	303.728454	87	52
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.CoprimeQuotientPgroup.coprime_norm_quotient_pgroup	300	300.287420	144	36
+coq-printf.2.0.0	Printf.Justify.string_associative	300	5.759635	2	3	0.0	synth with cache (only 1: intros; only 1: reflexivity).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.CyclicTIisoBasis.unsat_J	300	342.048470	16	5
+coq-bbv.1.3	bbv.Word.wplus_assoc	300	300.266117	197	113
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.more_ok_str_token	300	301.575758	181	108
+coq-bbv.1.3	bbv.Word.roundTrip_1	300	300.956290	1065	244
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_neg_pos	300	302.723912	230	126
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_symopp_eq	300	313.505334	31	19
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.val_head_stuck	300	304.617795	212	94
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF2_bis	300	115.088708	115	22
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erase_state_init	300	51.142441	106	17
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_pos_neg	300	325.809818	102	72
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_faa_offset	300	300.762624	55	43
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_neg_pos	300	7.222507	3	5	0.0	synth with cache (only 1: intros; only 1: omega).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.Dade_Ind	300	319.256164	8	10
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.Five.SubCoherentProperties.mem_coherent_sum_subseq	300	309.353696	176	25
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Inf_lt	300	303.179144	73	56
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.CoprimeQuotientPgroup.coprime_subcent_quotient_pgroup	300	39.569924	22	5
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.rat_of_Z_eq0	300	301.221847	268	131
+coq-topology.10.0.1	Topology.RFuncContinuity.Rmin_continuous	300	302.552660	140	85
+coq-bits.1.1.0	Bits.extraction.axioms8.lsr_repr	300	304.447627	97	78
+coq-bbv.1.3	bbv.Word.roundTrip_1'	300	300.875261	546	183
+coq-mathcomp-apery.1.0.1	mathcomp.apery.rat_of_Z.rat_of_Z_Zpos	300	19.008141	27	6
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.alloc_atomic	300	302.104571	59	46
+coq-gaia-stern.1.15	gaia.stern.fibm.fib3S	300	300.375574	89	54
+coq-tlc.20200328	TLC.LibList.nth_map	300	300.631148	133	93
+coq-tlc.20200328	TLC.LibOrder.Instances.Case_eq_lt_ge_of_Le_total_order	300	302.160281	248	140
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.floor_succ	300	300.918084	114	64
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.Stern_succ_fctK	300	302.228301	126	66
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.ltcr_pmul	300	302.729878	48	45
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.Stern_prev_fctK	300	300.736375	100	61
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_wp_store	300	307.732671	27	23
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_rec_ne'	300	304.048633	73	73
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Floorq.Sn_lt1	300	303.051551	76	45
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.Five.SubCoherentProperties.extend_coherent	300	69.344899	27	5
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas3S	300	313.250253	68	46
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.rat_in_P_ge1	300	18.353738	36	7
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF_cat	300	304.116961	81	49
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.Five.SubCoherentProperties.uniform_degree_coherence	300	31.581590	14	4
+coq-bbv.1.3	bbv.Word.mod2_WS	300	301.812713	190	100
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_store	300	300.905920	179	64
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.continuantS	300	18.908223	3	3	1	synth with cache (only 1: by case : a b  => [] []).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.continuant2	300	7.695546	1	2	0	synth with cache (only 1: done).
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_neg_neg	300	303.568429	53	29
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.bool_eqb_comm	300	301.545391	66	22
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIred_inj	300	316.169127	3	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_Inf_In	300	300.774193	52	50
+coq-bbv.1.3	bbv.Word.wmult_unit	300	301.175997	270	170
+coq-topology.10.0.1	Topology.SeparatednessAxioms.Hausdorff_Subspace	300	300.115913	90	58
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_increasing	300	300.723048	181	83
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.CompleteClass_prod	300	301.338502	300	77
+coq-topology.10.0.1	Topology.Compactness.compact_Hausdorff_impl_normal_sep	300	304.002387	64	49
+coq-bbv.1.3	bbv.NatLib.pow2_bound_mono	300	300.363064	242	144
+coq-bbv.1.3	bbv.NatLib.pow2_inc	300	301.047472	231	171
+coq-bbv.1.3	bbv.Word.wmult_comm	300	301.302438	272	167
+coq-poltac.0.8.11	PolTac.NatAux.mult_le_compat_rev_l	300	300.306748	222	130
+coq-bbv.1.3	bbv.NatLib.pow2_S	300	5.456921	3	4	2	synth with cache (only 1: reflexivity).
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_orb_false	300	300.362890	117	95
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm12	300	300.459406	294	121
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_net_cluster_point	300	303.298575	76	51
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.list.list_lt_not_eq	300	301.158252	156	116
+coq-bits.1.1.0	Bits.extraction.axioms16.lxor_repr	300	301.570082	218	72
+coq-tlc.20200328	TLC.LibOrder.Instances.Lt_ge_false_of_Le_total_order	300	169.968354	198	90	8.0.1.0.1	synth with cache (only 1: intros E; only 1: constructor; only 1: intros x; only 1: intros y; only 1: firstorder).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.Five.DadeAut.DadeAutIrr.cfAut_Dade_coherent	300	58.387559	26	5
+coq-bits.1.1.0	Bits.extraction.axioms32.lsr_repr	300	306.269569	120	81
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_complement_open	300	303.565800	479	123
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_eq0	300	300.269430	191	126
+coq-bbv.1.3	bbv.Word.wmult_neut_l	300	300.506038	344	183
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_correct	300	300.300002	143	99
+coq-topology.10.0.1	Topology.RTopology.R_metric_complete	300	301.687140	175	99
+coq-bbv.1.3	bbv.Word.wmult_neut_r	300	300.048707	384	195
+coq-poltac.0.8.11	PolTac.PolAux.Rge_trans	300	301.202278	184	115
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.escape_string_newline	300	302.244065	316	87
+coq-bbv.1.3	bbv.Word.wmult_unit_r	300	311.904247	491	209
+coq-poltac.0.8.11	PolTac.NAux.Nmult_lt_compat_l	300	300.671828	215	111
+coq-bits.1.1.0	Bits.spec.operations.properties.andB_mask1	300	301.879084	301	87
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.SCF_neg2	300	304.051508	153	46
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_incB	300	300.044692	109	88
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.Urysohns_Lemma_function	300	304.296327	157	48
+coq-bits.1.1.0	Bits.spec.operations.properties.toNatMod_incB	300	300.434675	128	69
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_decB_succ	300	302.887221	80	70
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_decB	300	300.121904	71	60
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_pos	300	319.190586	102	64
+coq-poltac.0.8.11	PolTac.NatAux.lt_mult_0	300	30.042739	26	17	4	synth with cache (only 1: exact Nat.mul_pos_pos).
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_gen	300	300.799135	475	104
+coq-topology.10.0.1	Topology.RTopology.RTop_second_countable	300	18.647637	58	11
+coq-topology.10.0.1	Topology.Continuity.continuous_composition	300	302.932301	137	75
+coq-tlc.20200328	TLC.LibLogic.IffProp.iff_not_swap_eq	300	301.334003	395	165
+coq-bits.1.1.0	Bits.spec.spec.properties.setBitThenGetSame	300	301.668468	94	66
+coq-topology.10.0.1	Topology.ProductTopology.product_topology2.product2_map_continuous	300	309.780972	24	19
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_pos_neg	300	300.416898	233	138
+coq-bbv.1.3	bbv.Word.wmult_assoc	300	300.337806	273	134
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_neq	300	304.059740	197	66
+coq-poltac.0.8.11	PolTac.NAux.Nmult_ge_compat_l	300	301.096541	433	123
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_monotone	300	300.991019	102	61
+coq-bbv.1.3	bbv.Word.wmult_plus_distr	300	302.166752	256	122
+coq-bits.1.1.0	Bits.spec.operations.properties.toNatMod_decB	300	302.808216	108	71
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length_add_list_eq	300	301.129003	214	167
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_monotoneE	300	302.215865	86	70
+coq-bbv.1.3	bbv.Word.wminus_diag	300	300.162001	320	193
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.rat_in_Z_int	300	300.972205	136	75
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binzS	300	337.187884	93	54
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Typ.Cast.eqb_refl	300	304.275606	37	32
+coq-tlc.20200328	TLC.LibList.Concat.concat_app	300	301.955816	224	121
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.CyclicTIisoBasis.L	300	290.607098	27	5
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_list_carry_empty_neutral_n_r	300	302.384139	141	132
+coq-tlc.20200328	TLC.LibEqual.pred_ext_nondep_6	300	300.454617	68	46
+coq-bits.1.1.0	Bits.spec.spec.properties.setBitThenGetDistinct	300	306.795756	109	65
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_list_carry_empty_neutral_l	300	300.045471	156	121
+coq-printf.2.0.0	Printf.Justify.take_replicate	300	300.684623	201	132
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.C_0k	300	303.965520	372	105
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.rat_of_Z_pow	300	300.324227	487	143
+coq-gaia-stern.1.15	gaia.stern.fibm.coprimeSn_fib	300	35.110468	68	12
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step_rec	300	306.908563	74	38
+coq-tlc.20200328	TLC.LibLogic.pred_eq_forall_impl	300	32.815422	13	15	1.0.0.0.0.0	synth with cache (only 1: unfold pred_incl; only 1: intros A; only 1: intros P; only 1: intros Q; only 1: apply prop_ext; only 1: intuition).
+coq-bbv.1.3	bbv.Word.weqb_eq	300	300.725525	149	126
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_neg_neg	300	300.573425	163	129
+coq-tlc.20200328	TLC.LibLogic.conj_strengthen_3	300	8.977105	2	3	0.0	synth with cache (only 1: intros; only 1: tauto).
+coq-bbv.1.3	bbv.Word.weqb_false	300	303.635939	154	133
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.head_ctx_step_val	300	303.278156	152	74
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.escape_string_backslash	300	316.683887	124	52
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.rat_in_P_nat	300	301.684995	135	62
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step_AllocN	300	302.569045	97	49
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_symopp_bveq	300	312.442488	89	26
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_Inf_NotIn	300	300.699576	117	77
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.Constrained.solvable_p_constrained	300	301.539567	112	51
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.w_val	300	40.506231	67	12
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_faa_offset_vec	300	306.572063	52	43
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.DadeExpansion.Dade_restrictionE	300	304.932763	6	7
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.w_gt0	300	6.917299	21	4
+coq-topology.10.0.1	Topology.RFuncContinuity.Rmax_continuous	300	305.652693	104	74
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.u_SnSk	300	304.603644	102	41
+coq-bits.1.1.0	Bits.extraction.axioms8.lsl_repr	300	307.941053	113	80
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.w_lt3	300	11.511161	19	5
+coq-bbv.1.3	bbv.Word.bitwp_wtl	300	306.045420	108	61
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_pos_pos	300	90.587260	46	46	0.0.0.1	synth with cache (only 1: intros; only 1: apply Rmult_gt_0_compat; only 1: assumption; only 1: assumption).
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat0	300	69.397400	219	42
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.free_atomic	300	300.703056	33	28
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_neg_pos	300	333.995010	46	29
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_ge2d	300	302.316322	276	73
+coq-tlc.20200328	TLC.LibList.Concat.mem_concat_eq	300	301.636202	342	140
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.rat_in_ZP	300	303.220686	114	78
+coq-bits.1.1.0	Bits.spec.operations.properties.incB_ones	300	97.417632	358	58
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.int_in_NP	300	301.235813	263	124
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm13	300	300.507204	209	118
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.mulr_gtcr0	300	303.914969	172	50
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.convergent_rat0	300	16.887522	58	10
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.rat_in_PP	300	303.729238	123	77
+coq-bits.1.1.0	Bits.spec.operations.properties.decBK	300
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_twp_store	300	306.514088	30	26
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.bin_op_eval_closed	300	303.072532	95	76
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_square'	300	305.188303	65	63
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_resolve_proph	300	91.382910	69	12
+coq-tlc.20200328	TLC.LibEqual.ArgsEq.args_eq_4	300	140.198155	24	26	0.0.0.0.1.0	synth with cache (only 1: intros f; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: destruct 1; only 1: reflexivity).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.cst_crealD	300	34.049893	20	7	5	synth with cache (only 1: exact : eq_creal_refl ).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.CF_exists	300	301.666924	107	89
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.convergent_den_rec	300	37.953217	14	9	3	synth with cache (only 1: elim : n  => [|n IHn] //=).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc0	300	2.956924	2	3	0.0	synth with cache (only 1: unfold fusc; only 1: easy).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_rec	300	9.577573	13	4
+coq-bbv.1.3	bbv.Word.eq_rect_bitwp'	300	225.105036	62	58	1.1.0.0.0	synth with cache (only 1: intros until a; only 1: intros b; only 1: intros H; only 1: rewrite H; only 1: trivial).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_podd	300	12.089446	3	3	1	synth with cache (only 1: by case : n  => // n; rewrite (fusc_odd n)).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.twp_cmpxchg_fail	300	302.687155	103	45
+coq-bbv.1.3	bbv.Word.combine_bitwp	300	303.513854	75	67
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.cst_crealN	300	31.840169	10	7	5	synth with cache (only 1: apply : eq_creal_refl ).
+coq-bbv.1.3	bbv.Word.wnot_ones	300	224.411145	177	75	0.0.0.0.0.4.0	synth with cache (only 1: intros; only 1: induction sz; only 1: unfold wnot; only 1: reflexivity; only 1: cbn; only 1: f_equal; only 1: auto).
+coq-tlc.20200328	TLC.LibEqual.FuncEq.fun_eq_1	300	43.935920	9	10	0.1.0.0.0	synth with cache (only 1: intros f; only 1: intros g; only 1: intros H; only 1: destruct H; only 1: reflexivity).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.continuant_rev	300	300.449585	167	90
+coq-bits.1.1.0	Bits.spec.operations.properties.incBK	300
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm14	300	246.270669	202	107	3.0.0.0.0.1	synth with cache (only 1: intros a; only 1: intros b; only 1: intros c; only 1: intros d; only 1: intros ?; only 1: Lia.lia).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.w_ge1	300	10.865750	30	6
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_check_eq	300	309.046073	58	22
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.cfRes_prTIirr_eq0	300	302.212768	5	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.Sort_In_cons_1	300	302.193185	61	59
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_pos_neg	300	332.089045	61	40
+coq-bits.1.1.0	Bits.spec.spec.properties.count_ones	300	150.829115	71	68	1.0.0.0.0.0.0	synth with cache (only 1: intros until n; only 1: induction n; only 1: simpl; only 1: easy; only 1: simpl; only 1: rewrite IHn; only 1: auto with arith).
+coq-bbv.1.3	bbv.Word.eq_rect_bitwp	300	302.685742	73	65
+coq-bits.1.1.0	Bits.spec.operations.properties.invBCons	300	35.468541	50	10
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_intersection	300	302.661426	128	82
+coq-bbv.1.3	bbv.NatLib.mod2_S_not	300	300.424075	288	156
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.DeBindField.sound_bind_field	300	304.580388	63	43
+coq-bbv.1.3	bbv.NatLib.mod2_S_eq	300	300.345962	358	160
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.convergent_rat1	300	143.589604	170	28
+coq-topology.10.0.1	Topology.Compactness.topological_property_compact	300	306.658742	143	84
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_right_implb_false	300	303.002597	71	67
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.prod.prod_compare	300	302.898347	120	85
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_net_cluster_point_converse	300	303.037697	108	58
+coq-bits.1.1.0	Bits.extraction.axioms16.lsl_repr	300	300.674225	146	90
+coq-tlc.20200328	TLC.LibOrder.Instances.Lt_slt_false_of_Le_total_order	300	301.560819	382	150
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_pow2_mod4	300	300.854104	84	69
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_lt	300	302.645025	207	107
+coq-bbv.1.3	bbv.Word.wnot_combine	300	300.934082	113	85
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_empty	300	305.224166	344	119
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.escape_string_dquote	300	302.545985	491	122
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_ge	300	303.451795	181	116
+coq-bbv.1.3	bbv.Word.wnot_zero	300	302.181170	273	114
+coq-bits.1.1.0	Bits.extraction.axioms32.lsl_repr	300	306.117736	137	86
+coq-poltac.0.8.11	PolTac.NAux.Nmult_gt_compat_l	300	301.055663	295	130
+coq-bits.1.1.0	Bits.spec.operations.properties.fromNatDouble	300	300.526394	215	113
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.Urysohns_Lemma_function_range	300	302.627441	185	40
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.continuant_ge0	300	301.702230	179	80
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_incB	300	305.973989	77	65
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_decB	300	305.642387	77	67
+coq-poltac.0.8.11	PolTac.NatAux.gt_mult_0	300	300.176767	254	158
+coq-topology.10.0.1	Topology.Continuity.continuous_identity	300	300.176190	266	121
+coq-gaia-stern.1.15	gaia.stern.fibm.gcd_fib	300	301.960351	459	152
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.cycTI_NC_iso	300	247.124705	15	4
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.PosNum.posrat	300	77.124869	94	17
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_joinmsb	300	304.002362	283	88
+coq-poltac.0.8.11	PolTac.NAux.Nmult_lt_compat_rev_l1	300	302.004389	250	121
+coq-bbv.1.3	bbv.Word.wor_unit	300	300.620380	353	170
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_dropmsb	300	304.045944	94	79
+coq-bbv.1.3	bbv.Word.wor_comm	300	301.603343	355	165
+coq-topology.10.0.1	Topology.ProductTopology.product_topology2.ProductTopology2_basis_is_basis	300	309.513791	25	19
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_is_even_mod3	300	304.947517	65	62
+coq-bits.1.1.0	Bits.spec.operations.properties.decB_zero	300	300.388939	264	114
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_list_carry_empty_neutral_r	300	300.608184	167	134
+coq-bbv.1.3	bbv.Word.not_wlt_ge	300	5.957052	2	3	0.0	synth with cache (only 1: intros; only 1: eauto).
+coq-bbv.1.3	bbv.Word.wand_unit	300	301.231653	263	208
+coq-gaia-stern.1.15	gaia.stern.fibm.gcd_lucas_fib2	300	305.042970	45	47
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binSz	300	301.160592	103	63
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.continuant_zeroA	300	300.364583	58	58
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.reflect_list_beq	300	301.486586	109	111
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_list_empty_neutral_n_r	300	300.373584	155	141
+coq-tlc.20200328	TLC.LibList.Filter.mem_filter	300	300.516742	281	153
+coq-bbv.1.3	bbv.Word.wand_kill	300	300.812906	294	184
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.betaE	300	300.486172	90	50
+coq-printf.2.0.0	Printf.Justify.left_padding	300	301.031092	210	113
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_list_empty_neutral_r	300	302.825531	170	139
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_mod3	300	229.747460	275	43
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_mod3	300	301.107992	194	135
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step_Free	300	300.936858	91	45
+coq-poltac.0.8.11	PolTac.RAux.Rgt_neg_pos	300	294.995947	329	140	0.7.4	synth with cache (only 1: intros H0; only 1: rewrite <- (Ropp_involutive x); only 1: auto with real).
+coq-bbv.1.3	bbv.Word.wand_comm	300	300.671252	334	196
+coq-bbv.1.3	bbv.Word.wand_assoc	300	300.579290	336	164
+coq-printf.2.0.0	Printf.Justify.drop_replicate	300	21.656405	9	11	0.0.0.0.0.0.0	synth with cache (only 1: intros until n; only 1: induction n; only 1: simpl; only 1: auto; only 1: simpl; only 1: intros until s; only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.escape_string_regular	300	300.292072	167	80
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.rho_maj	300	301.258331	127	62
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.fill_item_no_val_inj	300	304.173280	104	68
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step_Load	300	300.861414	156	57
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.ContinuedFractions.continuant_of0	300	303.694928	107	78
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_zero	300	57.405085	42	24	2.5	synth with cache (only 1: cbn; only 1: by elim : n  => //= n ->).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.lt_0_Ka	300	14.518373	29	6
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.length_check_eq	300	303.731291	82	41
+coq-tlc.20200328	TLC.LibLogic.ProjLemma.forall_conj_inv_2	300	328.926471	8	10
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv_2	300	304.474568	65	58
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.Constrained.p_stable_abelian_constrained	300	304.031728	192	56
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.DadeExpansion.Dade_restriction_vchar	300	307.414140	6	8
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.u_Sk2	300	300.677836	121	55
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_neg_pos	300	302.391771	252	132
+coq-bbv.1.3	bbv.Word.wor_wones	300	301.432857	294	175
+coq-poltac.0.8.11	PolTac.ZAux.Zle_sign_pos_pos_rev	300	301.299241	174	110
+coq-bits.1.1.0	Bits.extraction.axioms8.dec_repr	300	311.020998	94	36
+coq-tlc.20200328	TLC.LibList.Remove.mem_remove_inv	300	300.155282	250	162
+coq-tlc.20200328	TLC.LibList.Combine.combine_cons	300	8.335840	2	3	0.0	synth with cache (only 1: intros; only 1: reflexivity).
+coq-bits.1.1.0	Bits.spec.operations.properties.incB_fromNat	300	300.353132	390	111
+coq-bbv.1.3	bbv.Word.wor_wzero	300	301.548049	389	186
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm15	300	301.667056	202	103
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.load_atomic	300	340.975024	35	29
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_ind	300	301.272049	110	68
+coq-bits.1.1.0	Bits.spec.operations.properties.decB_fromSuccNat	300	303.976506	106	62
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_wp_cmpxchg	300	304.938167	17	17
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_fromNat0	300	144.825467	133	46	0.0.0.1.0.0.7	synth with cache (only 1: unfold toNat; only 1: induction n; only 1: cbn; only 1: reflexivity; only 1: simpl; only 1: rewrite IHn; only 1: easy).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.heap_closed_alloc	300	308.082694	41	38
+coq-gaia-stern.1.15	gaia.stern.fibm.sum_fib_pascal	300	300.355183	111	64
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_resolve_cmpxchg_suc	300	302.083481	48	32
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbEq	300	238.010594	82	15
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_eq0	300	305.939379	97	43
+coq-bbv.1.3	bbv.Word.wand_wones	300	300.074903	311	199
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_cmpxchg_fail	300	301.572386	66	41
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_prevE	300	310.006296	12	9
+coq-bbv.1.3	bbv.Word.wand_wzero	300	300.241847	250	174
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.le_ubound	300	308.040935	116	61
+coq-bbv.1.3	bbv.Word.wxor_wones	300	300.770474	283	171
+coq-tlc.20200328	TLC.LibEqual.PIfromExt.prop_has_fixpoint_when_true	300	300.780777	807	186
+coq-tlc.20200328	TLC.LibEqual.PIfromExt.trueP_eq_falseP	300	4.014682	21	4
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm16	300	300.124692	311	111
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_pow2	300	306.308428	95	46
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.In_inv_3	300	302.272155	63	60
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Sba_mK	300	26.040974	35	7
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_ones	300	301.955472	157	126
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIirr_1	300	316.839531	3	4
+coq-bbv.1.3	bbv.Word.wxor_wzero	300	300.814733	336	173
+coq-bits.1.1.0	Bits.spec.operations.properties.negB_or_invB_fromNat	300	300.294776	80	75
+coq-bbv.1.3	bbv.NatLib.drop_mod2_add	300	300.433099	244	137
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_union	300	302.012060	114	85
+coq-poltac.0.8.11	PolTac.ZAux.Zle_sign_neg_neg_rev	300	318.086837	98	58
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.SoundClass_option	300	302.812158	256	106
+coq-bbv.1.3	bbv.NatLib.mod2sub	300	301.129835	284	119
+coq-topology.10.0.1	Topology.Compactness.finite_topology_compact	300	301.816034	76	64
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Sba_jK	300	23.117706	21	6
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_right_implb_true_inv	300	303.754889	95	81
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_fun_continuity_converse	300	301.758685	65	44
+coq-tlc.20200328	TLC.LibOrder.order_rel_incl	300	300.120051	395	160
+coq-smtcoq.2.0+8.11	SMTCoq.classes.SMT_classes_instances.prod.prod_lt_trans	300	302.384876	83	69
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_mon1	300	300.983121	162	86
+coq-poltac.0.8.11	PolTac.PolAux.Z2R_gt	300	300.161527	170	110
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_full	300	300.963411	320	119
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof._string_reverse_app	300	301.675592	196	122
+coq-bits.1.1.0	Bits.extraction.axioms16.neg_repr	300	308.109097	237	104
+coq-poltac.0.8.11	PolTac.NAux.Nmult_lt_compat_rev_l2	300	300.351920	302	106
+coq-bbv.1.3	bbv.Word.wxor_wone	300	301.375361	332	139
+coq-bits.1.1.0	Bits.extraction.axioms32.neg_repr	300	301.417816	246	105
+coq-bits.1.1.0	Bits.spec.operations.properties.negB_fromNat	300	301.891224	92	88
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.Urysohns_Lemma_function_0	300	301.950136	124	40
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_col_progression	300	300.620143	148	91
+coq-bbv.1.3	bbv.Word.wxor_comm	300	310.495142	346	139
+coq-poltac.0.8.11	PolTac.NatAux.lt_mult_rev_0_l	300	300.786948	390	154
+coq-bits.1.1.0	Bits.spec.operations.properties.invB_fromNat	300	302.374936	74	75
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.complement_inclusion	300	303.738910	150	95
+coq-topology.10.0.1	Topology.Continuity.continuous_constant	300	300.798061	252	95
+coq-bits.1.1.0	Bits.spec.spec.properties.msb_ones	300	50.455440	33	19	1.1.2	synth with cache (only 1: rewrite /msb /=; only 1: compute; only 1: elim : n  => [|n IHn] //=).
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_lt_exp	300	300.306964	112	65
+coq-bbv.1.3	bbv.NatLib.pred_add	300	42.046830	33	27	5.1	synth with cache (only 1: intros until n; only 1: lia).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_negB_or_invB	300	309.723256	126	96
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.w_upper_bounded	300	301.014807	655	107
+coq-poltac.0.8.11	PolTac.NAux.Nmult_gt_compat_rev_l1	300	300.940557	320	130
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_kpow2n	300	343.181565	75	32
+coq-bits.1.1.0	Bits.spec.operations.properties.fullAdderTT	300	9.075577	17	9	0.0.1	synth with cache (only 1: induction c; only 1: reflexivity; only 1: auto).
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_lucas1	300	302.678818	87	65
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_list_twice	300	301.575315	190	153
+coq-bbv.1.3	bbv.Word.eq_le	300	301.107300	344	188
+coq-topology.10.0.1	Topology.ProductTopology.two_arg_convenience_results.continuous_2arg_func_continuous_everywhere	300	305.250023	106	67
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_invB	300	303.432960	85	69
+coq-bbv.1.3	bbv.Word.wordToN_inj	300	300.887240	213	150
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Sba_i_pos	300	25.366381	27	6
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_symmetry1	300	300.446148	268	90
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_add_comm	300	301.673666	184	141
+coq-bbv.1.3	bbv.Word.unique_inverse	300	302.322600	163	116
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binz_gt0	300	303.199518	136	76
+coq-tlc.20200328	TLC.LibList.Noduplicates.noduplicates_two	300	300.836926	659	173
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_lucas1	300	304.056462	67	46
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.reflect_bop_eqb	300	304.184611	168	148
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.Hanson_2	300	301.147559	122	54
+coq-bbv.1.3	bbv.Word.sub_0_eq	300	300.014122	238	153
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_add_empty_neutral_l	300	302.017078	210	128
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_lucas2	300	301.080767	124	55
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_lucas4	300	302.166255	374	103
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_pos_neg	300	301.247596	218	123
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step_Store	300	304.452669	76	36
+coq-bbv.1.3	bbv.Word.le_neq_lt	300	301.470175	270	178
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.cycTI_NC_0	300	345.915761	5	5
+coq-bbv.1.3	bbv.Word.rewrite_weq	300	301.732481	158	125
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.string_reverse_cons	300	301.228726	248	114
+coq-printf.2.0.0	Printf.Justify.right_justify_padding'	300	302.296806	120	100
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step_CmpXchg	300	300.623348	59	36
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_bound	300	304.150103	91	68
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.new_proph_id_fresh	300	301.174457	192	81
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.a_maj	300	301.906910	126	58
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_ones_succ	300	306.386163	134	71
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.is_empty_1	300	301.773005	100	81
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.coprime_abelian_gen_cent	300	304.238079	55	46
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.is_empty_2	300	148.295321	40	42	0.0.0.0.0.0.0.0	synth with cache (only 1: intros until m; only 1: destruct m; only 1: simpl; only 1: intuition; only 1: destruct p; only 1: simpl; only 1: intros ?; only 1: discriminate).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.v_Sn2	300	304.434249	79	43
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_pos_pos_rev	300	300.863390	256	142
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_eq_carry_lit	300	311.873609	56	24
+coq-poltac.0.8.11	PolTac.ZAux.Zle_sign_pos_neg_rev	300	300.655701	82	59
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.DadeExpansion.sMG	300	318.453082	10	8
+coq-bbv.1.3	bbv.Word.natToWord_plus	300	301.587078	218	147
+coq-bits.1.1.0	Bits.extraction.axioms8.add_repr	300	303.375735	184	69
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.Plength1.plength1_1	300	18.430923	31	6
+coq-tlc.20200328	TLC.LibList.Combine.combine_app	300	300.059925	107	78
+coq-bbv.1.3	bbv.NatLib.pow2_zero	300	149.780914	220	107	0.0.0.0.6.0	synth with cache (only 1: intros until sz; only 1: induction sz; only 1: simpl; only 1: omega; only 1: simpl; only 1: auto with zarith).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_negB	300	314.140592	146	92
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_invB	300	303.379959	83	60
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm17	300	300.364563	179	106
+coq-bbv.1.3	bbv.Word.natToWord_S	300	300.567058	472	178
+coq-bits.1.1.0	Bits.spec.operations.properties.negB0	300
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.snumden_pos'	300	113.318978	166	25
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij1_1	300	2.420506	1	2	0	synth with cache (only 1: trivial).
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_negB	300	303.660071	104	60
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.store_atomic	300	308.100017	45	39
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_ones	300	300.341706	194	110
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.head_step_is_closed	300	304.467311	54	42
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_twp_cmpxchg	300	313.561168	29	20
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_coprime	300	321.148592	27	18
+coq-gaia-stern.1.15	gaia.stern.fibm.DiophanteEquation.DE2_rec	300	301.371198	111	80
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_resolve_cmpxchg_fail	300	304.730012	52	29
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij1_lt1	300	36.601836	62	10
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_ones	300	27.111208	20	6
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.snumden_gt0	300	160.276233	252	38
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij_1	300	2.312528	1	2	0	synth with cache (only 1: reflexivity).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_coprime_palindrome	300	304.226584	115	70
+coq-bbv.1.3	bbv.Word.natToWord_inj	300	301.320422	200	122
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.twp_cmpxchg_suc	300	300.610280	86	59
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_check_slt2	300	306.847379	27	17
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc2_injective	300	303.426819	21	16
+coq-bbv.1.3	bbv.Word.wminus_plus_distr	300	300.742534	217	107
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.lt_ubound	300	303.200481	93	61
+coq-tlc.20200328	TLC.LibEqual.PIfromExt.proof_irrelevance	300	300.996000	976	197
+coq-bbv.1.3	bbv.Word.wminus_wplus_undo	300	301.138294	248	175
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm18	300	300.014892	261	123
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern1	300	5.735332	1	2	0	synth with cache (only 1: reflexivity).
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm20	300	31.521367	14	15	0.0.0	synth with cache (only 1: intros; only 1: rewrite H; only 1: auto).
+coq-bits.1.1.0	Bits.spec.operations.properties.negBK	300	302.712058	270	87
+coq-bbv.1.3	bbv.Word.wneg_zero'	300	301.076204	348	177
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIred_1	300	307.509012	5	4
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm21	300	10.239845	4	5	1.0	synth with cache (only 1: intros; only 1: auto with zarith).
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm19	300	136.233077	81	55	4	synth with cache (only 1: intuition).
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_complement	300	300.495040	230	94
+coq-topology.10.0.1	Topology.Compactness.compact_hausdorff_homeo	300	300.347593	133	93
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.SoundClass_prod	300	303.090103	158	72
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Sba_mjK	300	304.777599	37	36
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_xorb_false1	300	301.504425	110	103
+coq-tlc.20200328	TLC.LibOrder.max_l	300	301.684821	166	134
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.ltcr_le_trans	300	66.963850	29	11
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij1_gt1K	300	105.667377	175	28
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm22	300	20.153058	9	9	1.0.1.0	synth with cache (only 1: intros; only 1: rewrite Z.add_comm; only 1: rewrite Z.add_assoc; only 1: auto with zarith).
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm23	300	20.472624	8	9	1.0	synth with cache (only 1: intros; only 1: auto with zarith).
+coq-gaia-stern.1.15	gaia.stern.fibm.DiophanteEquation.DE2_lt0d	300	300.878826	417	175
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.str_token_string_newline	300	300.270193	413	76
+coq-topology.10.0.1	Topology.MetricSpaces.metric_space_fun_continuity	300	309.643687	57	44
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_intersection2	300	303.296431	208	103
+coq-poltac.0.8.11	PolTac.NAux.Nmult_gt_compat_rev_l2	300	303.059936	290	131
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm24	300	10.370847	4	5	1.0	synth with cache (only 1: intros; only 1: auto with zarith).
+coq-bits.1.1.0	Bits.spec.operations.properties.negB_zero	300	300.508073	849	177
+coq-bbv.1.3	bbv.Word.wplus_one_neq	300	300.100050	304	184
+coq-bits.1.1.0	Bits.extraction.axioms32.dec_repr	300	304.530924	218	72
+coq-bits.1.1.0	Bits.extraction.axioms16.dec_repr	300	310.159965	188	69
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_gt0	300	76.147527	169	34
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.Urysohns_Lemma_function_1	300	304.866631	121	41
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_zero	300	300.586212	118	42
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_increasing	300	302.081952	101	73
+coq-poltac.0.8.11	PolTac.NatAux.lt_mult_rev_0_r	300	304.061198	311	132
+coq-topology.10.0.1	Topology.Continuity.continuous_at_is_local	300	303.191920	128	71
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm27	300	10.655559	4	5	1.0	synth with cache (only 1: intros; only 1: auto with zarith).
+coq-bbv.1.3	bbv.Word.wneg_one_pow2_minus_one	300	303.248472	231	115
+coq-gaia-stern.1.15	gaia.stern.fibm.DiophanteEquation.DE2_rec'	300	300.635416	85	70
+coq-poltac.0.8.11	PolTac.NAux.Nmult_le_compat_rev_l	300	300.622398	213	96
+coq-poltac.0.8.11	PolTac.ZAux.Zle_sign_neg_pos_rev	300	345.265632	138	71
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.lecr_lt_trans	300	30.040531	21	5
+coq-bbv.1.3	bbv.NatLib.Npow2_nat	300	304.426320	167	133
+coq-bits.1.1.0	Bits.extraction.axioms32.add_repr	300	302.791570	201	74
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Sba_j_pos_contra	300	303.337589	267	66
+coq-bits.1.1.0	Bits.spec.operations.properties.adcBmain_nat	300	301.422070	107	93
+coq-gaia-stern.1.15	gaia.stern.fibm.DiophanteEquation.DE2_solution	300	300.230512	98	84
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB_bounded	300	300.384025	212	71
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_add_twice	300	302.643404	238	151
+coq-bbv.1.3	bbv.Word.wones_pow2_minus_one	300	300.872163	240	120
+coq-bbv.1.3	bbv.Word.pow2_minus_one_wones	300	301.067622	246	125
+coq-topology.10.0.1	Topology.ProductTopology.two_arg_convenience_results.pointwise_continuity_2arg	300	306.452655	90	56
+coq-bbv.1.3	bbv.Word.wones_natToWord	300	301.355887	292	145
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binznSn	300	301.044179	72	75
+coq-tlc.20200328	TLC.LibList.Split.split_cons	300	300.352201	109	100
+coq-bbv.1.3	bbv.Word.wones_wneg_one	300	300.950288	485	205
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.reflect_top_eqb	300	303.118227	94	76
+coq-gaia-stern.1.15	gaia.stern.fibm.DiophanteEquation.DE_equiv_12	300	302.760756	152	98
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_pred_pow2	300	50.290001	121	27
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.ult_list_trans	300	301.937792	112	111
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.part_p_iter_lcmn	300	304.305997	74	70
+coq-bbv.1.3	bbv.Word.natToWord_mult	300	301.409252	216	141
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_neg_neg_rev	300	300.778641	165	111
+coq-gaia-stern.1.15	gaia.stern.fibm.Diophantine2.DE_eq6_alt	300	302.543515	166	59
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step_FAA	300	303.932869	153	45
+coq-gaia-stern.1.15	gaia.stern.fibm.Diophantine2.DE_eq6_sol	300	309.725983	48	24
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbSlt	300	243.901152	86	16
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.twos_complement_false_false	300	324.026151	302	125
+coq-bbv.1.3	bbv.Word.wlt_lt	300	301.125720	253	168
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_joinmsb0	300	51.655474	81	15
+coq-printf.2.0.0	Printf.Justify.right_justify_padding	300	300.061444	106	94
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.cycTI_NC_norm	300	305.320201	6	4
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.str_token_string_backslash	300	302.395459	369	91
+coq-bbv.1.3	bbv.Word.wle_le	300	301.373545	285	179
+coq-bbv.1.3	bbv.Word.lt_minus	300	20.243405	6	8	0.0	synth with cache (only 1: intros; only 1: auto).
+coq-bbv.1.3	bbv.NatLib.Zabs_of_nat	300	54.389916	39	28	0.0.0.0.0	synth with cache (only 1: simple induction n; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: auto).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.heap_lang.heap_lang_mixin	300	301.968177	189	161
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij_recE	300	302.365242	100	49
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.a_asympt	300	301.706125	61	60
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_head_step_head_step	300	313.306888	47	40
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.prod_is_exp_sum	300	300.518568	111	45
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.find_2	300	302.213869	125	70
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm28	300	84.631920	53	35	2.7.0	synth with cache (only 1: intros; only 1: apply Z.gt_lt in H0; only 1: omega).
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.add_Inf	300	300.463391	65	45
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.aR_gt0	300	12.610424	15	4	6	synth with cache (only 1: by case : i  => [|i]; rewrite ?rpred0).
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_pos_neg_rev	300	301.847152	182	126
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.v_SnSk	300	306.488385	112	42
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_pos_pos_rev	300	303.099259	236	128
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.DadeExpansion.Dade_setU1	300	308.237034	7	7
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.Plength1.plength1_pcore_quo_Sylow	300	301.258877	101	41
+coq-bbv.1.3	bbv.Word.wlt_lt'	300	302.618248	148	116
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin_nonneg	300	86.144829	147	23
+coq-bits.1.1.0	Bits.spec.spec.properties.toZpAux_zero	300	344.312877	96	26
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.aR_ge0	300	27.247768	22	9	6	synth with cache (only 1: by case : i  => [|i]; rewrite ?rpred0).
+coq-bbv.1.3	bbv.NatLib.Z_of_N_Npow2	300	300.118855	176	143
+coq-tlc.20200328	TLC.LibList.Split.nth_split	300	301.960122	101	86
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm29	300	34.954654	19	19	0.1.1	synth with cache (only 1: intros; only 1: subst; only 1: ring).
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_adcB	300	300.202169	138	74
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_adcBmain	300	303.045813	155	78
+coq-bbv.1.3	bbv.NatLib.Npow2_S	300	60.193004	27	26	0.0.2.0	synth with cache (only 1: intros until n; only 1: unfold Npow2; only 1: fold Npow2; only 1: ring).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_addB	300	300.173258	165	60
+coq-bbv.1.3	bbv.Word.lt_word_le_nat	300	300.734243	333	152
+coq-tlc.20200328	TLC.LibList.Drop.drop_nil	300	11.723908	7	9	0.0.0.0	synth with cache (only 1: intros until n; only 1: destruct n; only 1: reflexivity; only 1: reflexivity).
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm26	300	154.095881	95	49	2	synth with cache (only 1: auto with zarith).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij1_lt1K	300	274.489796	393	53
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.PreliminaryRemarksTheorem2.remark_t2_1	300	28.249747	22	5
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_unop	300	341.210751	175	89
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_addB	300	305.141551	81	44
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.cmpxchg_atomic	300	304.583886	29	23
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_twp_cmpxchg_fail	300	310.042159	24	26
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_empty	300	311.981102	66	36
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.PreliminaryRemarksTheorem2.remark_t2_2	300	34.203170	26	6
+coq-gaia-stern.1.15	gaia.stern.fibm.Diophantine2.DE_eq6_pos	300	310.059704	68	41
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm30	300	58.759827	37	29	0.1.2.0	synth with cache (only 1: intros; only 1: rewrite <- H; only 1: rewrite H0; only 1: ring).
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_joinmsb	300	302.550478	232	112
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij_lt1K	300	295.667955	545	71
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij_gt1	300	302.744868	331	75
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_cmpxchg_suc	300	301.712994	74	55
+coq-bbv.1.3	bbv.Word.wordToNat_natToWord_idempotent'	300	301.405988	229	156
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_add_list	300	300.719057	37	13
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bij_inj	300	304.111342	75	54
+coq-bbv.1.3	bbv.Word.wordToNat_natToWord_le	300	301.267573	440	170
+coq-tlc.20200328	TLC.LibEqual.proof_irrelevance	300	301.088003	979	200
+coq-bbv.1.3	bbv.Word.wordToNat_natToWord_lt	300	301.472961	299	169
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.str_token_string_dquote	300	256.048753	328	69
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.twp_faa	300	47.225946	36	10
+coq-bits.1.1.0	Bits.spec.operations.properties.addBC	300	301.336472	298	110
+coq-bbv.1.3	bbv.Word.wordToNat_eq_natToWord	300	300.556211	357	177
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_complement	300	302.700528	477	100
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.cfRes_prTIirr	300	313.224975	9	4
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.sound_class_list	300	302.833326	123	57
+coq-tlc.20200328	TLC.LibOrder.max_r	300	300.186605	175	125
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_pow2	300	300.961696	314	120
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_xorb_false2	300	301.907650	117	104
+coq-gaia-stern.1.15	gaia.stern.fibm.Diophantine2.DE_eq6_neg	300	302.042716	101	48
+coq-topology.10.0.1	Topology.MetricSpaces.metrizable_impl_first_countable	300	302.332614	152	108
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_family_intersection	300	303.319768	235	90
+coq-poltac.0.8.11	PolTac.NAux.Nmult_ge_compat_rev_l	300	301.139098	323	124
+coq-bits.1.1.0	Bits.spec.operations.properties.addBA	300	301.554316	130	78
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_unop	300	302.616122	263	142
+coq-bbv.1.3	bbv.Word.wlt_lt_bound	300	301.730897	169	118
+coq-topology.10.0.1	Topology.UrysohnsLemma.Urysohns_Lemma_construction.Urysohns_Lemma_function_continuous	300	302.529462	65	39
+coq-poltac.0.8.11	PolTac.NatAux.gt_mult_rev_0_l	300	300.780694	431	202
+coq-topology.10.0.1	Topology.Continuity.dense_image_surjective	300	301.802877	122	92
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_union	300	304.699613	143	71
+coq-bbv.1.3	bbv.Word.le_wle	300	300.196626	285	172
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_unop	300	312.712035	160	84
+coq-bbv.1.3	bbv.Word.natToWord_discriminate	300	197.584872	194	127	2.0.0.0.1	synth with cache (only 1: intros until sz; only 1: destruct 1; only 1: discriminate; only 1: intros ?; only 1: inversion H0).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.lecr_mulf2r	300	303.549770	98	47
+coq-gaia-stern.1.15	gaia.stern.fibm.Diophantine2.DE_eq6_solution	300	308.636100	87	31
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_binop	300	301.923789	315	96
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_codd	300	36.985345	37	10
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_injective	300	301.067249	334	190
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB0	300	300.014731	203	64
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.ult_list_not_eq	300	300.006888	200	195
+coq-bits.1.1.0	Bits.spec.operations.properties.adc0B	300	302.182150	209	77
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_dE	300	179.407102	99	34	2.0.2.6	synth with cache (only 1: elim : n  => [|n IHn] ; first  by rewrite addn0; only 1: simpl; only 1: case (Fib_fusc_rec n); only 1: by case n).
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_eq_lucas	300	300.530349	102	64
+coq-bbv.1.3	bbv.Word.wlt_wle_incl	300	301.008299	289	179
+coq-poltac.0.8.11	PolTac.NatAux.le_0_eq_0	300	23.522733	17	19	0.3.0	synth with cache (only 1: intros until n; only 1: inversion 1; only 1: easy).
+coq-topology.10.0.1	Topology.ProductTopology.continuous_composition_at_2arg	300	302.520373	82	52
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binz_geq	300	302.389685	66	59
+coq-bbv.1.3	bbv.Word.wminus_Alt2	300	301.932536	184	126
+coq-bbv.1.3	bbv.Word.wordToNat_plusone	300	300.515330	330	145
+coq-tlc.20200328	TLC.LibList.Take.take_app_r	300	302.048623	173	122
+coq-poltac.0.8.11	PolTac.NAux.Nlt_mult_0	300	324.225206	80	42
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.reflect_nop_eqb	300	302.632090	72	71
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_bijK	300	301.979861	103	85
+coq-bbv.1.3	bbv.Word.wordToNat_minus_one'	300	300.355470	402	174
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.slt_list_not_eq	300	301.044884	147	139
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.part_p_iter_lcmn_trunc_log	300	302.402285	408	80
+coq-poltac.0.8.11	PolTac.RAux.Rle_sign_neg_pos_rev	300	300.783464	184	115
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_times_lucas_is_fib	300	303.368261	43	35
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.Stern_even	300	353.351961	21	11
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_times_c_is_fib1	300	304.426919	77	67
+coq-bbv.1.3	bbv.Word.wminus_minus	300	300.638828	124	84
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_neg_neg_rev	300	343.479815	74	51
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_slt_B2P	300	302.856947	181	147
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_times_c_is_fib3	300	300.947296	101	79
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_add_bvadd	300	301.160274	71	19
+coq-bits.1.1.0	Bits.spec.spec.properties.splitmsb_fromNat	300	303.163648	136	76
+coq-printf.2.0.0	Printf.Justify.right_padding	300	300.947171	133	125
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.str_token_string_escape	300	301.271953	230	80
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_recc2	300	146.147200	102	29
+coq-bbv.1.3	bbv.Word.wminus_minus'	300	300.978963	209	125
+coq-bbv.1.3	bbv.Word.wordToNat_neq_inj	300	300.496867	234	154
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.cycTI_NC_minn	300	306.533090	5	4
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.fill_to_resolve	300	304.785432	86	55
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.to_val_fill_some	300	303.424684	147	71
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternRat.fusc_pair_surj	300	303.712686	86	53
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_4_aux	300	305.470864	70	64
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.remove_sorted	300	304.451574	63	65
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.projs_pure_steps	300	305.760720	293	99
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_pos_pos_rev	300	300.831428	261	145
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.v_Sk2	300	302.087454	101	51
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_binop	300	310.157554	196	62
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.Plength1.plength1_pseries2_quo	300	301.932849	225	57
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin_int	300	300.520607	143	75
+coq-bbv.1.3	bbv.Word.wmsb_wones	300	50.284487	82	35	0.0.6.2.0	synth with cache (only 1: intros until sz; only 1: simpl; only 1: induction sz; only 1: reflexivity; only 1: auto).
+coq-bits.1.1.0	Bits.spec.spec.properties.dropmsb_fromNat	300	300.595960	318	157
+coq-bbv.1.3	bbv.NatLib.mul_div_undo	300	301.103098	247	163
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.RestrDade.restr_Dade_hyp	300	302.025959	56	35
+coq-bits.1.1.0	Bits.spec.operations.properties.add0B	300	300.442431	171	100
+coq-bbv.1.3	bbv.NatLib.mod_add_r	300	301.494919	456	123
+coq-bits.1.1.0	Bits.spec.operations.properties.addB0	300	301.736820	300	113
+coq-bits.1.1.0	Bits.spec.operations.properties.fromNat_addBn	300	300.256569	341	113
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_pos_neg_rev	300	329.299407	179	113
+coq-bbv.1.3	bbv.Word.gt0_wneq0	300	300.142338	321	201
+coq-tlc.20200328	TLC.LibList.Drop.drop_app_l	300	301.533114	196	110
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm31	300	301.639450	253	113
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.NormedTI.normedTI_Dade	300	25.362525	23	5
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_bitsToInt8K	300	301.392322	593	148
+coq-tlc.20200328	TLC.LibList.ForallProp.Forall_cons_inv_tail	300	16.061104	5	7	0.0.0	synth with cache (only 1: intros; only 1: inversion H; only 1: assumption).
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_addn	300	302.521711	388	117
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.faa_atomic	300	310.194165	40	41
+coq-tlc.20200328	TLC.LibList.Drop.drop_at_length	300	130.028782	85	53	2.1.1.0	synth with cache (only 1: intros; only 1: induction l; only 1: reflexivity; only 1: auto).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_insert	300	302.834087	76	35
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm32	300	300.900699	201	114
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.t2	300	303.293011	113	45
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_times_c_is_fib5	300	301.514807	95	88
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_wp_cmpxchg_suc	300	314.281891	24	21
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_dropmsb	300	305.210162	117	61
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_recE1	300	301.456604	218	140
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_recd2	300	304.886632	94	68
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_ecval	300	167.818021	90	46
+coq-bbv.1.3	bbv.Word.weq_minus1_wlt	300	301.390112	191	151
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.map_interp_neg	300	303.901509	59	29
+coq-tlc.20200328	TLC.LibEqual.reflexive_identity_proofs_unique	300	301.610674	654	164
+coq-bbv.1.3	bbv.Word.wordnat_minus1_eq	300	301.405032	328	130
+coq-bbv.1.3	bbv.Word.wrshift_bitwp	300	301.028538	91	77
+coq-gaia-stern.1.15	gaia.stern.fibm.irreflexive_llen	300	180.539248	179	130	1.0.3.0.0.0	synth with cache (only 1: intros ?; only 1: induction x; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.str_token_string_regular	300	301.059410	131	71
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.lecr_mulf2l	300	240.687586	124	36
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_faa	300	303.615740	120	53
+coq-bits.1.1.0	Bits.spec.operations.properties.addB1	300	301.889615	380	111
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_intersection	300	301.265958	97	74
+coq-bbv.1.3	bbv.Word.wnot_wlshift	300	305.223798	79	77
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.SoundClass_list	300	302.258553	231	104
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_xorb_true1	300	300.173396	113	103
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_indexed_intersection	300	301.468606	292	79
+coq-topology.10.0.1	Topology.MetricSpaces.metrizable_separable_impl_second_countable	300	302.315730	286	128
+coq-poltac.0.8.11	PolTac.NAux.Ngt_mult_0	300	301.320817	281	134
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_negBn	300	300.727847	275	119
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_bitsToInt32K	300	301.021184	962	185
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIres_inj	300	324.752675	2	4
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_sum_square_is_fib_square	300	309.872786	66	55
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_interior_idempotent	300	301.742763	96	72
+coq-bbv.1.3	bbv.Word.wnot_wrshift	300	305.849380	88	89
+coq-bbv.1.3	bbv.Word.div2_pow2_twice	300	300.399797	220	154
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_bitsFromInt32_inj	300	300.450529	552	138
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_d_val	300	302.560629	190	95
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_decB_incB	300	300.065006	161	74
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.nlt_be_neq_gt	300	300.209762	118	105
+coq-bbv.1.3	bbv.Word.wlshift_alt	300	310.734434	151	88
+coq-gaia-stern.1.15	gaia.stern.fibm.lucas_sum_square_is_lucas_square	300	301.570364	61	54
+coq-bits.1.1.0	Bits.spec.operations.properties.addBN	300	300.185144	272	94
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_cdbound	300	302.329171	191	65
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_cbound	300	304.550361	120	59
+coq-topology.10.0.1	Topology.ProductTopology.continuous_composition_2arg	300	301.413492	83	62
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_bitsToInt16K	300	301.757117	773	183
+coq-bbv.1.3	bbv.Word.wbit_or_same	300	302.037257	178	108
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin_nonneg_int	300	305.337952	81	52
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.reflect_eqb	300	300.469466	153	121
+coq-gaia-stern.1.15	gaia.stern.fibm.transitive_llen	300	302.627885	202	177
+coq-poltac.0.8.11	PolTac.NAux.Nlt_mult_rev_0_l	300	303.228064	401	128
+coq-bbv.1.3	bbv.Word.wbit_and_not	300	300.407013	151	96
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.Three.AutCyclicTI.Cint_cycTIiso_coprime	300	264.394616	20	4
+coq-bbv.1.3	bbv.Word.wbit_or_other	300	302.414564	111	81
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_slt_not_eqP	300	300.701264	168	154
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_neg_neg_rev	300	300.685395	265	137
+coq-bbv.1.3	bbv.Word.wordToNat_wzero	300	300.589502	394	166
+coq-bbv.1.3	bbv.Word.wmsb_eq_rect	300	112.997429	62	42	0.1.0.3.0.0	synth with cache (only 1: intros; only 1: destruct b; only 1: subst; only 1: reflexivity; only 1: subst; only 1: reflexivity).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.lecr_lt_add	300	88.357030	41	16
+coq-bbv.1.3	bbv.Word.combine_zero	300	301.004027	72	50
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_rece2	300	301.180827	72	53
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_ult_not_eq	300	300.324625	178	153
+coq-printf.2.0.0	Printf.Justify.right_justify_length	300	301.739580	106	86
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_joinmsb0	300	303.817822	209	79
+coq-bbv.1.3	bbv.Word.combine_one	300	302.476993	142	80
+coq-gaia-stern.1.15	gaia.stern.fibm.sorted_ggenW	300	303.344716	163	105
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.parser_state_string_map	300	303.737040	115	64
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_c_value	300	302.876521	126	90
+coq-gaia-stern.1.15	gaia.stern.fibm.uniq_llen	300	303.898681	98	86
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_neg_length	300	308.586878	61	31
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.empty_nodefault	300	22.316484	14	4
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.DefinitionOfCandValuations.lcm_leq_Cnk	300	329.625909	67	35
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.Resolve_3_vals_unsafe	300	301.184404	166	98
+coq-gaia-stern.1.15	gaia.stern.fibm.sorted_ggen_succ	300	301.417526	212	81
+coq-bbv.1.3	bbv.Word.wmsb_1_natToWord	300	301.546109	278	144
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_binop	300	363.695146	111	37
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.prim_step_to_val_is_head_step	300	303.204577	87	35
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternMax.FM_fuscc_val	300	307.385984	98	54
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.fold_1	300	304.526713	63	50
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.Raw.Array.equal_1	300	304.437719	76	63
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_is_dropmsb_adcB_invB	300	61.795231	24	14	6	synth with cache (only 1: by case : p ).
+coq-poltac.0.8.11	PolTac.ZAux.Zge_sign_neg_pos_rev	300	347.457996	246	141
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.prim_step_matched_by_erased_steps_ectx	300	300.457816	20	22
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_pos_neg_rev	300	301.658443	241	140
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.b_Sn4	300	301.291211	473	112
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_bitsFromInt8_inj	300	300.693111	251	78
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binz_eq0	300	300.679900	153	95
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_dropmsb	300	300.389482	140	69
+coq-bbv.1.3	bbv.Word.wordToZ_wzero'	300	301.773812	510	126
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.BGsection1.Plength1.p_elt_gen_length1	300	303.690781	205	54
+coq-bbv.1.3	bbv.NatLib.mod2_cases	300	300.301981	838	203
+coq-bits.1.1.0	Bits.spec.operations.properties.addNB	300	302.789422	270	96
+coq-bbv.1.3	bbv.NatLib.Smod2_1	300	302.605246	350	118
+coq-bits.1.1.0	Bits.spec.operations.properties.adcIsInc	300	301.701847	179	85
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_pos_pos_rev	300	300.893435	148	83
+coq-bits.1.1.0	Bits.spec.operations.properties.adcIsIterInc	300	302.348272	106	101
+coq-bbv.1.3	bbv.Word.destruct_word_S	300	301.216285	506	153
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm33	300	300.752758	199	118
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection9.Nine.Ptype_Fcore_factor_facts	300	345.278399	4	5
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbNeg	300	235.928134	129	21
+coq-tlc.20200328	TLC.LibList.ForallProp.Forall_make	300	301.374737	203	148
+coq-bbv.1.3	bbv.Word.NToWord_WS_1	300	50.804690	26	20	0.0.0.0.1.0	synth with cache (only 1: intros; only 1: simpl; only 1: destruct n; only 1: reflexivity; only 1: simpl; only 1: reflexivity).
+coq-bits.1.1.0	Bits.spec.operations.properties.addIsIterInc	300	300.414097	83	44
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_zero	300	304.142867	155	51
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.ltcr_le_add	300	75.075802	32	13
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.new_proph_atomic	300	304.070226	52	31
+coq-tlc.20200328	TLC.LibList.ForallProp.Forall_Nth_inv	300	302.114544	258	153
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.FuscSum.sum_Stern_simp	300	60.300492	64	13
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm34	300	300.528586	200	125
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.better_k_bound	300	302.124140	175	72
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusci_0	300	67.165142	76	33	3.0.4.0	synth with cache (only 1: unfold Fusci; only 1: unfold fusc; only 1: simpl; only 1: ring).
+coq-bits.1.1.0	Bits.spec.spec.properties.splitmsbK	300	303.887021	226	74
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_twp_cmpxchg_suc	300	306.328503	25	24
+coq-gaia-stern.1.15	gaia.stern.fibm.sorted_llen_succ	300	301.852906	478	106
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_mod2_rec2	300	302.622720	69	59
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_mod2_prop1	300	300.990608	92	69
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_mod2_prop2	300	301.346445	100	74
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.PuigBasics.Puig0	300	15.327424	3	4	2	synth with cache (only 1: by [  ]).
+coq-bbv.1.3	bbv.Word.wmsb_ws	300	301.844499	334	162
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.PuigBasics.Puig_recE	300	6.604685	1	2	0	synth with cache (only 1: by [  ]).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.ltcr_spaddl	300	52.391447	16	9
+coq-tlc.20200328	TLC.LibEqual.existT_eq_existT	300	301.549966	235	129
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffactE	300	7.256727	1	2	0	synth with cache (only 1: reflexivity).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffactn0	300	3.416455	1	2	0	synth with cache (only 1: by [  ]).
+coq-gaia-stern.1.15	gaia.stern.fibm.sorted_llen_mkseq	300	300.520865	111	90
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_singleton	300	350.327814	92	52
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.PuigBasics.Puig_def	300	14.739943	7	5	1	synth with cache (only 1: by [  ]).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.more_ok_atom_inv	300	301.272719	311	165
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.ThreeSymmetry.cycTIisoC	300	80.112782	30	7
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.PuigBasics.Puig_gen	300	16.826052	28	5
+coq-bbv.1.3	bbv.Word.wmsb_extz	300	326.933326	548	126
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.new_sexp_Atom_sound	300	177.246091	150	23
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.w2gt2	300	182.930275	21	4
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_invert_19	300	5.028436	1	2	0	synth with cache (only 1: reflexivity).
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection1.PuigBasics.Puig_sub	300	19.634880	24	5
+coq-mathcomp-apery.1.0.1	mathcomp.apery.extra_cauchyreals.ExtraCreals.ltcr_spaddr	300	56.510350	19	9
+coq-bits.1.1.0	Bits.spec.spec.properties.dropmsb_joinmsb	300	212.819971	358	59
+coq-topology.10.0.1	Topology.TopologicalSpaces.closed_finite_indexed_union	300	308.086228	251	82
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.afold_left_eqb_false1	300	303.231685	115	92
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.complete_class_list	300	302.050765	157	83
+coq-topology.10.0.1	Topology.MetricSpaces.metrizable_Lindelof_impl_second_countable	300	300.688058	208	107
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.CompleteClass_string	300	4.682151	3	4	2	synth with cache (only 1: constructor).
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_cont_aux1	300	12.198160	2	3	0.0	synth with cache (only 1: exists 0; only 1: by case : n ).
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.interior_closure_idempotent	300	304.349622	443	92
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_joinlsb	300	37.696043	15	13	2	synth with cache (only 1: auto).
+coq-topology.10.0.1	Topology.TopologicalSpaces.Build_from_closed_sets.Build_TopologicalSpace_from_closed_sets	300	31.358775	27	5
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_subB	300	302.652435	71	52
+coq-bbv.1.3	bbv.Word.nat_cast_inj	300	306.095254	138	97
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_zero	300	302.298204	736	145
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_equiv_addB_negB	300	303.412130	140	76
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_new_proph	300	305.990345	125	55
+coq-poltac.0.8.11	PolTac.RAux.Rge_sign_neg_pos_rev	300	301.565596	209	136
+coq-gaia-stern.1.15	gaia.stern.fibm.sorted_ge2_all_ps	300	300.728624	116	76
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.mem_1	300	305.684387	94	48
+coq-bits.1.1.0	Bits.spec.operations.properties.sbb0B_carry	300	300.792457	181	103
+coq-bbv.1.3	bbv.Word.wmsb_split2	300	301.521231	166	119
+coq-bbv.1.3	bbv.Word.wmsb_split2'	300	301.998674	219	105
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_slt_not_eq	300	301.929561	187	163
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.eqb_spec	300	300.581577	140	110
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_bitsFromInt16_inj	300	315.304303	221	64
+coq-bbv.1.3	bbv.Word.wmsb_true_split2_wones	300	300.567615	188	116
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.FuscSum.sum_Stern1	300	300.508743	168	68
+coq-bits.1.1.0	Bits.spec.operations.properties.subB0	300	300.280780	349	89
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_content_lt	300	11.800524	16	3
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.sum_fusc_row	300	302.689848	242	73
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.FuscSum.sum_Stern	300	300.018574	218	89
+coq-bbv.1.3	bbv.Word.wmsb_split1_sext	300	301.487323	186	114
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_neg_list_carry_false	300	301.025968	120	84
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusci_1	300	204.589981	171	67	4.2.0.0	synth with cache (only 1: unfold Fusci; only 1: unfold fusc; only 1: simpl; only 1: ring).
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Bval_inj1	300	19.229366	6	6	0.2.0	synth with cache (only 1: intros; only 1: inversion H; only 1: auto).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.resolve_atomic	300	304.897277	41	37
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckv_cons	300	302.517392	407	104
+coq-bbv.1.3	bbv.Word.wmsb_combine_existT	300	303.872783	103	72
+coq-bits.1.1.0	Bits.spec.operations.properties.sub0B	300	303.368543	199	83
+coq-bbv.1.3	bbv.Word.wordToN_zext	300	300.029195	237	160
+coq-bbv.1.3	bbv.Word.wmsb_zext	300	300.552469	275	154
+coq-bbv.1.3	bbv.Word.wordToNat_zext	300	300.587186	298	197
+coq-bbv.1.3	bbv.Word.wordToN_WS_1	300	300.138941	255	136
+coq-poltac.0.8.11	PolTac.NAux.Nlt_mult_rev_0_r	300	353.523468	65	30
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.mem_2	300	303.201612	64	45
+coq-bits.1.1.0	Bits.spec.spec.properties.splitlsbK	300	300.385641	260	74
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckv_rev	300	301.549843	210	129
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_mult_step_k_h	300	307.473015	15	14
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_0	300	2.059110	1	2	0	synth with cache (only 1: auto).
+coq-bbv.1.3	bbv.Word.existT_wordToNat	300	16.577835	4	6	0.0.0	synth with cache (only 1: intros; only 1: inversion H; only 1: auto).
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_neg_neg_rev	300	300.729457	76	44
+coq-bbv.1.3	bbv.Word.wneg_WS_0	300	300.641105	543	156
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_pos_pos_rev	300	300.188892	326	147
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.is_empty_1	300	304.237643	65	42
+coq-bbv.1.3	bbv.Word.existT_wordToZ	300	20.182636	4	6	0.0.0	synth with cache (only 1: intros; only 1: inversion H; only 1: auto).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.BoundOnC.l8	300	300.140307	115	71
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.meets_every_open_neighborhood_impl_closure	300	303.722448	109	72
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_S'	300	10.353847	23	4
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lang.head_step_to_val	300	302.984285	105	52
+coq-bbv.1.3	bbv.Word.roundTripN_0	300	304.543064	262	107
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_zero	300	320.006729	261	72
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_valppE	300	301.882994	464	159
+coq-bbv.1.3	bbv.Word.zext_WO_wzero	300	18.783085	12	14	2	synth with cache (only 1: trivial).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusci_odd	300	303.199362	250	58
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.scohS0	300	357.152983	5	3
+coq-bbv.1.3	bbv.NatLib.sub_mod_0	300	302.205723	198	113
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckv_bound1	300	317.554607	307	100
+coq-bbv.1.3	bbv.Word.wordToN_NToWord	300	301.887938	125	94
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckv_pos	300	319.972539	760	104
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_content_large	300	78.360482	103	16
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusciL_odd	300	80.486223	86	17
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusci_vald	300	302.319626	25	14
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_pos_neg_rev	300	325.789262	79	57
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.Qint_binomialz	300	301.707627	125	63
+coq-bbv.1.3	bbv.Word.wordToN_NToWord_2	300	301.585252	213	129
+coq-bits.1.1.0	Bits.spec.spec.properties.joinlsbK	300	301.151293	264	113
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.is_Resolve_dec	300	301.321103	388	172
+coq-bbv.1.3	bbv.Word.wordToNat_eq_rect	300	94.476904	55	43	3.2.0	synth with cache (only 1: intros; only 1: subst; only 1: reflexivity).
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_valp_aux	300	305.231560	82	68
+coq-bits.1.1.0	Bits.spec.operations.properties.subBB	300	300.989069	129	79
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffactnS	300	9.352551	1	2	0	synth with cache (only 1: by [  ]).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_addBn	300	301.195637	155	101
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_invert_correctA	300	17.475500	24	5
+coq-bbv.1.3	bbv.Word.wordToN_plus	300	302.095177	117	90
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_one	300	347.878794	328	79
+coq-bits.1.1.0	Bits.spec.operations.properties.inZp_addBn	300	302.035926	226	89
+coq-bbv.1.3	bbv.Word.wnot_def	300	300.030115	169	114
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_invert_altE	300	51.735731	67	11
+coq-tlc.20200328	TLC.LibList.ForallProp.Forall_take	300	301.492125	193	143
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_succ	300	306.157035	143	69
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_interp_firstn	300	306.539846	30	19
+coq-bbv.1.3	bbv.Word.extz_combine	300	35.407252	20	21	4.0	synth with cache (only 1: intros until n; only 1: reflexivity).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.non_resolve_prim_step_matched_by_erased_steps_ectx_item	300	305.368201	46	35
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm35	300	301.581743	217	107
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_addBn_wrap	300	302.105657	143	81
+coq-tlc.20200328	TLC.LibList.Forall2.Forall2_one_eq	300	301.590214	438	132
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_invert_double	300	256.129263	456	85
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffact0n	300	301.283625	341	122
+coq-bbv.1.3	bbv.Word.wpow2_pow2	300	123.618647	110	74	2.0.0.0.0.3.0	synth with cache (only 1: intros; only 1: induction sz; only 1: simpl; only 1: easy; only 1: simpl; only 1: rewrite Nat.add_0_r; only 1: auto).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_one	300	302.439659	598	137
+coq-tlc.20200328	TLC.LibEqual.eq_dep_nd_of_eq_dep	300	302.935321	260	117
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_zeck_val	300	77.490328	426	60
+coq-tlc.20200328	TLC.LibEqual.eq_dep_of_JMeq	300	12.259261	5	7	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_interp_carry3	300	134.941965	8	9	1.0	synth with cache (only 1: intros; only 1: apply map_map).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffactnSr	300	27.971414	24	6
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.new_sexp_List_sound	300	300.192445	73	31
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_wp_faa	300	303.816954	23	21
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.log2_bin_invert	300	301.000240	192	115
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_recc	300	301.283904	294	108
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_invert_odd	300	301.079239	359	153
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.new_sexp_Str_sound	300	302.190510	128	47
+coq-tlc.20200328	TLC.LibEqual.JMeq_of_eq_dep	300	21.557886	10	11	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).
+coq-poltac.0.8.11	PolTac.NAux.Ngt_mult_rev_0_l	300	164.099162	239	82	0.0.0.0.4	synth with cache (only 1: simple induction a; only 1: intros; only 1: auto with zarith; only 1: intros; only 1: easy).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_injlc	300	10.327074	25	5
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_injrc	300	7.527225	13	4
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.check_bvmult_length2	300	300.469420	62	35
+coq-bbv.1.3	bbv.Word.wneg_wnot	300	304.133630	201	131
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_binder_insert_empty	300	322.024333	24	17
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_valp_same	300	301.670501	96	90
+coq-bits.1.1.0	Bits.spec.spec.properties.splitmsb_rev	300	302.143680	100	66
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIind_irr_cases	300	337.902645	3	4
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.calSmu	300	348.273768	3	4
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.List2.In2_rev	300	300.150573	294	163
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.SoundClass_string	300	300.125256	351	166
+coq-bbv.1.3	bbv.Word.pow2_wneg	300	300.660759	265	109
+coq-topology.10.0.1	Topology.MetricSpaces.metrizable_Hausdorff	300	304.731363	119	80
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_cont_aux2	300	300.074342	201	70
+coq-bbv.1.3	bbv.Word.wneg_WS_1	300	300.199573	382	160
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.closure_impl_meets_every_open_neighborhood	300	300.148337	210	80
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.CompleteClass_ascii	300	10.835365	7	8	2.0	synth with cache (only 1: intros ?; only 1: constructor).
+coq-bits.1.1.0	Bits.spec.spec.properties.high_catB	300	302.519018	81	53
+coq-bbv.1.3	bbv.Word.wordToZ_eq_rect	300	235.922912	133	101	0.0.0.0.0.0.1	synth with cache (only 1: intros; only 1: subst; only 1: revert w; only 1: induction w; only 1: reflexivity; only 1: simpl; only 1: auto).
+coq-topology.10.0.1	Topology.MetricSpaces.dist_to_set.dist_to_set	300	17.387013	26	5
+coq-topology.10.0.1	Topology.TopologicalSpaces.Build_from_closed_sets.Build_TopologicalSpace_from_closed_sets_closed	300	302.400349	56	44
+coq-bits.1.1.0	Bits.spec.operations.properties.neqB_modn	300	300.043380	151	96
+coq-bbv.1.3	bbv.Word.wordToZ_WS_1'	300	302.176557	264	151
+coq-bits.1.1.0	Bits.spec.operations.properties.addBn_distinct	300	301.418934	232	124
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_succ	300	304.587543	324	136
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_def	300	12.635209	4	3
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_neg_neg_rev	300	300.918434	275	132
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.resolve_reducible	300	303.055102	79	47
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_def	300	17.179620	15	5
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.is_empty_2	300	302.013822	59	45
+coq-bits.1.1.0	Bits.spec.operations.properties.addBn_ne	300	300.444314	127	96
+coq-bbv.1.3	bbv.Word.wordToZ_wones	300	301.901436	432	181
+coq-bbv.1.3	bbv.Word.wordToZ_inj	300	302.759983	250	139
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.add_neg_list_carry_neg_f	300	303.811625	159	119
+coq-bits.1.1.0	Bits.spec.operations.properties.incBDistinct	300	300.726096	160	85
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_bin_invert	300	302.213816	106	62
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusciL_val	300	303.227174	155	62
+coq-bbv.1.3	bbv.Word.wordToNat_existT	300	302.161966	166	104
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.prop_mult_bool_step_k_h_len	300	303.687659	110	110
+coq-bbv.1.3	bbv.Word.wzero_eq_rect	300	15.712199	5	7	0.0.0.0	synth with cache (only 1: intros; only 1: unfold eq_rect; only 1: subst; only 1: reflexivity).
+coq-bbv.1.3	bbv.Word.wrshifta_WO	300	3.088999	1	2	0	synth with cache (only 1: trivial).
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_pos_neg_rev	300	275.650019	197	123	0.1.0.3.0.0	synth with cache (only 1: intros H; only 1: intros H0; only 1: apply Rmult_lt_reg_l with x; only 1: assumption; only 1: rewrite Rmult_0_r; only 1: assumption).
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Bval_inj2	300	302.241669	171	83
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_pairc	300	300.076232	388	140
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_content_eq	300	302.352477	157	91
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBDistinct	300	300.923270	254	110
+coq-bbv.1.3	bbv.Word.wplus_WS_0	300	301.404737	435	104
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusciL_valn	300	314.000946	61	50
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.remove_1	300	302.439125	67	57
+coq-bits.1.1.0	Bits.spec.spec.properties.low_catB	300	302.539897	171	81
+coq-bbv.1.3	bbv.Word.wpow2_wneg	300	301.616976	361	134
+coq-bbv.1.3	bbv.Word.wpow2_wmsb	300	300.248777	1068	206
+coq-bbv.1.3	bbv.Word.wmsb_wneg_true	300	301.030044	243	119
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.dense_meets_every_nonempty_open	300	300.402293	115	91
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_arith.UsefulBound.replace_exponential	300	302.606339	271	104
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.find_1	300	305.137844	61	47
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_S	300	301.506557	68	53
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_fib	300	301.778426	155	87
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_0	300	5.698227	29	6
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_one	300	362.271225	531	127
+coq-poltac.0.8.11	PolTac.ZAux.Zlt_sign_neg_pos_rev	300	323.296103	79	51
+coq-bbv.1.3	bbv.Word.wmsb_wneg_zext	300	302.044177	173	111
+coq-bbv.1.3	bbv.NatLib.mul_div_exact	300	300.105136	308	120
+coq-bbv.1.3	bbv.Word.wminus_WS_pos'	300	301.367471	154	81
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_uniq	300	302.510441	126	64
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fuscj_0	300	239.260978	386	70
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_prop1	300	304.292063	98	77
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.bin_invert_correctB	300	300.181955	139	75
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_succ	300	345.954312	237	95
+coq-bits.1.1.0	Bits.spec.spec.properties.low_fromNat	300	300.318891	219	138
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_pos_pos_rev	300	303.216203	205	94
+coq-bbv.1.3	bbv.Word.wtl_combine	300	301.281907	196	156
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBincBDistinct	300	300.307948	244	107
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffactn1	300	301.452099	356	154
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBneq	300	301.358429	158	101
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.aux_for_bin_invert	300	301.812725	144	82
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_is_minimal	300	303.711534	263	76
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lnot	300	300.273438	306	111
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBincBneq	300	300.765397	150	97
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.prim_step_matched_by_erased_steps_ectx_item	300	303.380391	22	20
+coq-bbv.1.3	bbv.Word.combine_assoc_existT	300	301.179203	118	66
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_eq0	300	59.550470	264	46
+coq-bbv.1.3	bbv.Word.sext_combine	300	303.102848	60	51
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_land	300	301.921965	262	106
+coq-tlc.20200328	TLC.LibList.Forall2.Forall2_cons_r_inv	300	304.307164	67	69
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffact_ge0	300	28.062454	30	6
+coq-bbv.1.3	bbv.Word.wplus_wzero_1	300	301.377410	461	184
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm36	300	301.729863	213	104
+coq-bits.1.1.0	Bits.spec.operations.properties.addBsubBn	300	300.805418	81	67
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.FTtypeP_ref_irr	300	368.405368	11	4
+coq-tlc.20200328	TLC.LibList.Forall2.Forall2_last_r_inv	300	302.609485	88	79
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_bin_inverse_dijkstra	300	320.012533	23	19
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.concat_len	300	319.613705	42	22
+coq-bbv.1.3	bbv.Word.wplus_wzero_2	300	300.889248	278	167
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lnot	300	300.781731	392	138
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_val_bounded	300	300.011951	90	71
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.erased_prim_step_prim_step	300	303.495456	38	20
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.wbase2_rec_nat	300	46.726538	10	9	4	synth with cache (only 1: elim : l H  => // a l H /=).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.empty_list_length	300	172.864177	128	116	0.0.1.0.1.0.0.0.0	synth with cache (only 1: intros; only 1: split; only 1: destruct a; only 1: intros; only 1: easy; only 1: discriminate; only 1: intros H; only 1: subst; only 1: auto).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbConcat	300	301.941954	88	18
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.Npos_dist	300	26.664716	1	2	0	synth with cache (only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof._fold_stack_sound_	300	302.502149	39	42
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proofmode.heap.tac_twp_faa	300	301.546210	25	24
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fuscj_odd	300	302.547099	177	47
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof._fold_stack_sound	300	303.096741	134	81
+coq-bits.1.1.0	Bits.spec.operations.properties.subB1	300
+coq-poltac.0.8.11	PolTac.NAux.Ngt_mult_rev_0_r	300	301.601637	331	160
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fuscj_val	300	313.626557	117	51
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.min_distr	300	24.894088	11	11	1.1.0	synth with cache (only 1: intros; only 1: rewrite N2Nat.inj_sub; only 1: easy).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_beta	300	301.228687	106	73
+coq-bbv.1.3	bbv.Word.combine_wplus_2	300	300.727931	84	80
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.extract_interp_main	300	303.831437	54	23
+coq-poltac.0.8.11	PolTac.RAux.Rlt_sign_neg_pos_rev	300	300.587151	268	129
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_val_bounded1	300	307.525348	45	24
+coq-bits.1.1.0	Bits.spec.spec.properties.split2eta	300	300.521186	99	90
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.List2.In2_In	300	301.676856	249	122
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.defA0	300	305.227358	26	19
+coq-bbv.1.3	bbv.Word.existT_wplus	300	305.611662	122	71
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_li_pr	300	303.600652	162	88
+coq-topology.10.0.1	Topology.InteriorsClosures.interior_closure_relations.meets_every_nonempty_open_impl_dense	300	303.462047	108	70
+coq-bbv.1.3	bbv.Word.existT_wminus	300	303.422232	147	76
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.SoundClass_ascii	300	301.747785	343	168
+coq-poltac.0.8.11	PolTac.NAux.Nle_0_eq_0	300	62.342962	73	45	3.2.0.1.1	synth with cache (only 1: intros n; only 1: destruct n; only 1: trivial; only 1: intros H; only 1: easy).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.NirrW1	300	350.789036	3	4
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_leB	300	66.575690	75	15
+coq-bits.1.1.0	Bits.spec.spec.properties.split2app	300	302.335233	167	83
+coq-bbv.1.3	bbv.Word.existT_extz	300	301.530617	112	84
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_binder_insert_2	300	354.414399	55	33
+coq-bbv.1.3	bbv.Word.existT_wrshifta	300	302.202829	110	91
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_land	300	301.357473	272	114
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffact_gt0	300	400.887647	145	40
+coq-bits.1.1.0	Bits.spec.operations.properties.addB0_inv	300	302.015836	155	110
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_pos_pos_rev	300	301.726592	222	138
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.step_resolve	300	305.840637	54	29
+coq-topology.10.0.1	Topology.MetricSpaces.dist_to_set.dist_to_set_triangle_inequality	300	330.177617	27	18
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.FTtype345_core_prime	300	362.148652	3	4
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_eq0	300	300.206747	187	96
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_eq	300	302.735213	118	88
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.find_2	300	303.962272	105	53
+coq-bbv.1.3	bbv.Word.eq_rect_2	300	301.267994	199	135
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_reverse	300	300.238379	66	44
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fuscj_reverse	300	304.488770	91	42
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_compat_l	300	27.453688	10	12	0.0.1.0.0	synth with cache (only 1: intros H1; only 1: intros H2; only 1: apply Rmult_le_compat_l; only 1: easy; only 1: easy).
+coq-bbv.1.3	bbv.Word.wrshifta_wzero	300	300.079726	462	195
+coq-poltac.0.8.11	PolTac.NAux.Nge_0_eq_0	300	60.592264	67	43	4.0.1.0	synth with cache (only 1: intros until n; only 1: destruct n; only 1: auto; only 1: easy).
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_mult_size	300	302.256966	188	124
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection9.Nine.typeIII_IV_core_prime	300	339.630257	4	5
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_neg_neg_rev	300	300.697992	292	150
+coq-bbv.1.3	bbv.Word.extz_sext	300	303.256872	121	84
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Typ_Aux.unicity	300	302.281962	74	39
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_binop	300	301.463918	220	86
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_addn	300	301.727627	278	111
+coq-bbv.1.3	bbv.Word.sext_WS	300	301.085150	211	151
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fusc_compare1	300	300.338011	52	55
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.elements_3w	300	300.792335	201	53
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_if_true	300	14.670480	25	6
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_li_prop1	300	314.262186	67	30
+coq-bits.1.1.0	Bits.spec.spec.properties.split3app	300	302.909425	180	69
+coq-bbv.1.3	bbv.Word.sext_wordToZ	300	300.261996	386	196
+coq-bbv.1.3	bbv.Word.Nmul_two	300	12.408873	11	8	0.3	synth with cache (only 1: intros ?; only 1: ring).
+coq-bbv.1.3	bbv.Word.sext_natToWord'	300	301.005425	208	133
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_closure.cl_increasing	300	300.721783	73	38
+coq-bbv.1.3	bbv.Word.sext_natToWord	300	301.290929	119	87
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.wbase2_pad	300	158.137226	80	44	0.0.3.1.0	synth with cache (only 1: rewrite /wbase2; only 1: elim : l  => [|a l IHl] /=; only 1: elim : k  => [|k IHk] //=; only 1: by rewrite IHk; only 1: by rewrite IHl).
+coq-poltac.0.8.11	PolTac.RAux.Ropp_lt	300	31.602723	16	15	5.0	synth with cache (only 1: intros H; only 1: auto with real).
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.equal_1	300	301.565803	56	43
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeck_odd_last_prop	300	300.079707	103	78
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lnot	300	304.178521	550	174
+coq-bbv.1.3	bbv.Word.sext_wneg_natToWord''	300	303.864026	174	73
+coq-bbv.1.3	bbv.Word.ZToWord_Z_of_N	300	26.932744	18	14	0.0.0.0	synth with cache (only 1: intros; only 1: destruct n; only 1: auto; only 1: auto).
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_prop1	300	300.984550	198	146
+coq-bbv.1.3	bbv.Word.sext_wneg_natToWord	300	301.864830	110	81
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Dijkstra.DH_prop1_to_bis	300	300.086219	111	55
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_prop2	300	300.333692	1164	235
+coq-bits.1.1.0	Bits.spec.spec.properties.split4app	300	300.621546	111	45
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Dijkstra.DH_prop1_from_bis	300	302.712579	93	64
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_addB	300	310.401265	38	24
+coq-bbv.1.3	bbv.Word.wordToNat_split2	300	305.512588	173	90
+coq-bbv.1.3	bbv.Word.ZToWord_sz0	300	19.525446	29	15	9.0	synth with cache (only 1: intros z; only 1: auto).
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_subBK	300	300.963811	122	82
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_sum_alt	300	300.556948	505	137
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_nat	300	301.656778	101	79
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.Dijkstra.DH_prop2_to_bis	300	301.266296	273	70
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_neg_neg_rev	300	349.367750	83	45
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_fib	300	300.860188	334	119
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_nat	300	303.373795	121	60
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.card_wbase2_odd	300	70.090424	172	26
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_land	300	325.293940	250	99
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_pos_neg_rev	300	334.799952	267	132
+coq-bbv.1.3	bbv.Word.wordToNat_combine	300	302.190597	185	91
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_CmpXchg	300	306.192314	42	44
+coq-tlc.20200328	TLC.LibList.Forall2.Forall2_swap_eq	300	302.356031	217	113
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffact_small	300	300.791625	73	59
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm37	300	301.052179	216	118
+coq-bbv.1.3	bbv.Word.wordToNat_wlshift	300	300.521426	121	86
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lxor	300	311.442545	124	55
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbZextend	300	229.840248	121	21
+coq-tlc.20200328	TLC.LibList.Forall2.Forall2_drop	300	301.427256	160	118
+coq-bbv.1.3	bbv.Word.wordToNat_wrshifta	300	331.161285	184	119
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lor	300	336.293913	213	58
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_bound	300	306.567672	148	63
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.wbase2_cat	300	301.554394	211	49
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lor	300	301.268956	489	113
+coq-bbv.1.3	bbv.Word.wordToNat_extz	300	302.125638	220	166
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbExtract	300	275.293017	138	22
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.card_wbase2_even	300	69.213165	147	22
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_fibb	300	301.114042	226	92
+coq-poltac.0.8.11	PolTac.ZAux.Zopp_lt	300	36.461041	67	22	4	synth with cache (only 1: auto with zarith).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_resolve	300	303.030590	29	32
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.wbase2_zero	300	300.893513	214	72
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.token_string_spaces_app	300	301.048919	120	92
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.not_ltb2	300	305.993088	85	20
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.FTtype345_constants	300	351.891084	3	3
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.next_sound'	300	303.923082	34	31
+coq-gaia-stern.1.15	gaia.stern.fibm.max_rep_fib2	300	110.477540	161	28
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.not_ltb	300	302.326472	233	109
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.wbase2_split	300	304.071937	96	68
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_eqop	300	302.700059	128	70
+coq-bbv.1.3	bbv.Word.extz_is_mult_pow2	300	300.499550	186	161
+coq-poltac.0.8.11	PolTac.RAux.Rgt_sign_pos_neg_rev	300	301.175577	224	138
+coq-poltac.0.8.11	PolTac.RAux.Ropp_ge	300	4.710825	2	3	0.0	synth with cache (only 1: intros ?; only 1: auto with real).
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_fibc	300	302.350447	195	89
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.t3_nat	300	356.372614	118	53
+coq-bits.1.1.0	Bits.spec.spec.properties.split3eta	300	306.193305	70	49
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.Distinct.distinct_aux2_spec_neg	300	301.824245	74	69
+coq-bbv.1.3	bbv.Word.extz_is_mult_pow2_neg	300	301.337579	96	86
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.sIH_A	300	312.050445	18	13
+coq-gaia-stern.1.15	gaia.stern.fibm.Zeckp_prop3b	300	301.087366	285	128
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_closure.Build_TopologicalSpace_from_closure_operator	300	303.624267	92	40
+coq-bbv.1.3	bbv.Word.wrshifta_extz_sext	300	302.111628	118	84
+coq-bbv.1.3	bbv.Word.extz_extz	300	302.876059	123	89
+coq-poltac.0.8.11	PolTac.RAux.Rmult_ge_compat_l	300	38.132054	19	17	0.0.0.1.0	synth with cache (only 1: intros; only 1: apply Rle_ge; only 1: apply Rmult_le_compat_l; only 1: auto with real; only 1: auto with real).
+coq-bits.1.1.0	Bits.spec.operations.properties.ltBNle	300	302.056269	154	63
+coq-bbv.1.3	bbv.Word.wordToNat_sext_modulo	300	300.375403	207	143
+coq-bits.1.1.0	Bits.spec.spec.properties.split4eta'	300	306.152460	94	46
+coq-bbv.1.3	bbv.Word.wlshift_combine_extz	300	300.131134	115	71
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.Tmu	300	316.727955	9	4
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lxor	300	303.572171	498	149
+coq-bits.1.1.0	Bits.spec.operations.properties.leBNlt	300	301.164537	197	81
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_binder_insert_2_empty	300	316.321290	24	23
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.SignedFfact.ffactnn	300	306.043516	206	103
+coq-iris-heap-lang.3.4.0	iris.heap_lang.primitive_laws.lifting.wp_resolve	300	302.902053	33	22
+coq-topology.10.0.1	Topology.MetricSpaces.dist_to_set_and_topology.dist_to_set_zero_impl_closure	300	303.413977	139	52
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.raw_equal_eq	300	300.962835	45	48
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_weaken	300	303.742630	271	76
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_trans	300	302.598698	185	76
+coq-tlc.20200328	TLC.LibList.Exists.Exists_one_eq	300	156.733556	575	93
+coq-bbv.1.3	bbv.Word.extz_sext_eq_rect	300	301.642576	122	53
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_neg_compat_l	300	301.250914	181	122
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_refl	300	207.702582	116	56	1.0.0.2	synth with cache (only 1: unfold leB; only 1: apply /orP ; only 1: right; only 1: easy).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.wbase2_odd	300	302.303141	112	89
+coq-poltac.0.8.11	PolTac.ZAux.Zgt_sign_neg_pos_rev	300	348.984906	125	50
+coq-poltac.0.8.11	PolTac.NAux.Nle_gt_trans	300	300.374884	763	145
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.wbase2_odd1	300	302.695437	98	84
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection12.PFTwelve.Twelve_8_to_16.defM	300	320.537476	24	9
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_extr_size	300	301.361876	217	119
+coq-bbv.1.3	bbv.Word.sext_zero	300	301.382831	827	199
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Typ_Aux.check_args_dec	300	303.270354	53	48
+coq-poltac.0.8.11	PolTac.RAux.Ropp_gt	300	10.964595	4	6	0.0	synth with cache (only 1: intros H; only 1: auto with real).
+coq-bbv.1.3	bbv.Word.wneg_wordToN	300	303.020138	208	126
+coq-poltac.0.8.11	PolTac.ZAux.Zopp_ge	300	11.116428	9	8	3.0.0	synth with cache (only 1: intros; only 1: apply Z.le_ge; only 1: auto with zarith).
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_trans	300	303.639964	198	83
+coq-poltac.0.8.11	PolTac.RAux.Rmult_ge_neg_compat_l	300	75.234103	45	32	3.0	synth with cache (only 1: intros; only 1: auto with real).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_if_false	300	300.024024	585	125
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.WeakBaseTwoRepresentation.card_wbase2_invariant	300	303.097609	109	83
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eq_1	300	302.886861	48	49
+coq-poltac.0.8.11	PolTac.RAux.Rmult_gt_compat_l	300	15.484111	6	8	0.0.0.0	synth with cache (only 1: intros; only 1: apply Rmult_gt_compat_l; only 1: easy; only 1: easy).
+coq-gaia-stern.1.15	gaia.stern.fibm.spec_sorted_rev	300	304.948752	220	67
+coq-bbv.1.3	bbv.Word.wmsb_false_bound	300	301.514529	358	176
+coq-bbv.1.3	bbv.Word.ZToWord_wordToZ	300	302.209128	333	169
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_low	300	306.678978	87	65
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_incL	300	48.892157	63	11
+coq-bbv.1.3	bbv.Word.wordToZ_ZToWord''	300	303.158746	122	84
+coq-poltac.0.8.11	PolTac.RAux.Rmult_lt_neg_compat_l	300	301.727965	233	122
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eqfarray_trans	300	302.650905	63	51
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_closure.Build_TopologicalSpace_from_closure_operator_closure	300	308.638171	30	28
+coq-gaia-stern.1.15	gaia.stern.fibm.spec_sorted_rcons	300	300.456192	208	71
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.supp_FTtype345_bridge	300	360.029518	3	4
+coq-bbv.1.3	bbv.Word.ZToWord_Z_of_nat	300	301.019824	461	191
+coq-poltac.0.8.11	PolTac.RAux.Rmult_lt_compat_l_rev	300	27.644522	10	11	0.0.1.0.0	synth with cache (only 1: intros H; only 1: intros H1; only 1: apply Rmult_lt_reg_l with p; only 1: easy; only 1: easy).
+coq-bbv.1.3	bbv.Word.natToWord_Z_to_nat	300	300.225486	382	145
+coq-gaia-stern.1.15	gaia.stern.fibm.max_rep_fib1	300	300.933267	87	34
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_compat_l_rev	300	60.465762	22	23	0.0.1.0.0	synth with cache (only 1: intros H; only 1: intros H1; only 1: apply Rmult_le_reg_l with p; only 1: assumption; only 1: assumption).
+coq-bits.1.1.0	Bits.spec.spec.properties.allBitsEq	300	301.055171	137	70
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.ntW2	300	150.366064	27	6
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.SB_to_rat_val	300	301.588310	92	79
+coq-bbv.1.3	bbv.Word.ZToWord_0	300	300.538248	315	174
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_leB_trans	300	305.524398	142	73
+coq-bbv.1.3	bbv.Word.ZToWord_1	300	300.245551	375	167
+coq-gaia-stern.1.15	gaia.stern.fibm.max_rep_fib4	300	301.895737	485	86
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_le_neg_compat_l	300	300.443177	363	119
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_le_bad'	300	301.804222	321	128
+coq-bits.1.1.0	Bits.spec.operations.properties.leB0	300	308.686744	142	88
+coq-bits.1.1.0	Bits.spec.operations.properties.le0B	300	302.267189	243	111
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_shift	300	301.355031	225	70
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_le_nn	300	300.994045	267	152
+coq-gaia-stern.1.15	gaia.stern.fibm.fib_partial_sum	300	306.232150	74	44
+coq-poltac.0.8.11	PolTac.ZAux.Zopp_gt	300	12.408187	7	9	0.0.0.0	synth with cache (only 1: intros n; only 1: intros m; only 1: intros H; only 1: auto with zarith).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lor	300	360.982121	248	71
+coq-bbv.1.3	bbv.Word.natToWord_pow2_add	300	300.158055	191	172
+coq-tlc.20200328	TLC.LibList.Exists.Exists_cons_eq	300	300.162241	601	148
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_un_op	300	304.036823	73	52
+coq-poltac.0.8.11	PolTac.ReplaceTest.Unnamed_thm38	300	301.161064	169	112
+coq-gaia-stern.1.15	gaia.stern.fibm.iota_rem_spec_sorted	300	53.431786	71	13
+coq-bbv.1.3	bbv.Word.nat_add_pow2_wzero	300	301.163271	230	155
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_shift	300	300.555109	204	67
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lsr	300	300.409289	569	168
+coq-bbv.1.3	bbv.Word.Npos_Npow2_wzero	300	301.176875	187	102
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_joinmsb0	300	301.886824	113	52
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.bv_shl_empty	300	261.612458	90	28	0.0.3.4.0	synth with cache (only 1: intros; only 1: clear; only 1: destruct b; only 1: reflexivity; only 1: reflexivity).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_lt_nn	300	300.178542	373	117
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.valid_check_bbSextend	300	312.303568	99	21
+coq-bbv.1.3	bbv.Word.wplus_wplusZ	300	301.117889	345	162
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_shift	300	306.381566	223	59
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_le_anti	300	302.024288	82	56
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.shl_lit_empty	300	302.587850	67	33
+coq-gaia-stern.1.15	gaia.stern.fibm.max_rep_prop1	300	302.665331	89	77
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_lt_neg_compat_l	300	302.137603	468	118
+coq-tlc.20200328	TLC.LibList.Exists.mem_Exists	300	168.410204	125	85	0.0.0.1.2	synth with cache (only 1: intros; only 1: induction H; only 1: constructor; only 1: auto; only 1: auto).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_bin_op	300	304.994073	68	48
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_lt_le_trans	300	304.035027	156	48
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.more_ok_atom	300	302.050722	240	94
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.string_reverse_cons'	300	300.300636	246	112
+coq-gaia-stern.1.15	gaia.stern.fibm.max_rep_unique	300	300.559039	88	84
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length_extend	300	301.447032	186	166
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_snd	300	303.202889	224	113
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.area_sym	300	305.365154	129	81
+coq-bbv.1.3	bbv.Word.ZToWord_Npow2_sub_k	300	301.256130	175	112
+coq-gaia-stern.1.15	gaia.stern.fibm.ZeckM_is_maximal	300	300.132397	190	105
+coq-bits.1.1.0	Bits.spec.spec.properties.lowBitsEq	300	302.516145	122	69
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.Distinct.distinct_aux_spec_neg	300	302.043261	114	104
+coq-smtcoq.2.0+8.11	SMTCoq.Misc.is_true_iff	300	2.247648	1	2	0	synth with cache (only 1: intuition).
+coq-bbv.1.3	bbv.Word.ZToWord_Npow2_add_k'	300	302.251766	263	115
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_interior.int_increasing	300	301.255675	106	40
+coq-gaia-stern.1.15	gaia.stern.fibm.unique_representation	300	302.882122	79	71
+coq-bbv.1.3	bbv.Word.wordToZ_ZToWord'	300	300.791839	199	117
+coq-bbv.1.3	bbv.Word.ZToWord_plus	300	301.468484	428	130
+coq-bbv.1.3	bbv.Word.wminusZ_helper	300	9.865885	2	3	0.0	synth with cache (only 1: intros; only 1: ring).
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_bounded	300	301.009456	93	81
+coq-bbv.1.3	bbv.Word.wplus_Z	300	300.313810	221	139
+coq-bits.1.1.0	Bits.spec.spec.properties.highBitsEq	300	303.198984	101	66
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection9.Nine.typeP_Galois_characters	300	337.347037	11	4
+coq-bbv.1.3	bbv.Word.else_0_to_ex_N	300	301.394099	270	179
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lsl	300	302.428423	360	120
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.Zbridge0	300	304.383266	3	4
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_bounded_weaken	300	301.853134	87	79
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_is_closed	300	302.923921	115	86
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.FTtype345_bridge_coherence	300	371.465180	5	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.lt_farray_not_eq	300	301.172132	65	44
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_incR	300	303.141180	483	73
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_2_3_5_to_9.signW2_eq0	300	300.591375	3	3
+coq-bbv.1.3	bbv.Word.wmult_Z	300	301.572431	272	152
+coq-bits.1.1.0	Bits.spec.operations.properties.thead_negB	300	45.663732	18	19	2.1	synth with cache (only 1: intros; only 1: by case : b ).
+coq-bits.1.1.0	Bits.spec.operations.properties.ltBleB_joinmsb0_adcB	300	301.572207	88	75
+coq-poltac.0.8.11	PolTac.NAux.Ngt_le_trans	300	301.333274	430	153
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length_zextend	300	300.659390	292	184
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.area_xx	300	303.809062	186	110
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.area_gt0	300	302.643377	240	86
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_shlB	300	11.231482	22	4
+coq-bbv.1.3	bbv.Word.wordToZ_size'	300	302.011403	182	133
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection12.PFTwelve.Twelve_8_to_16.Ecyclic_le_p	300	307.004839	7	8
+coq-bbv.1.3	bbv.Word.wordToZ_size	300	300.928388	210	134
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_ge_neg_compat_l	300	302.039238	247	143
+coq-topology.10.0.1	Topology.MetricSpaces.dist_to_set_and_topology.closure_impl_dist_to_set_zero	300	338.295025	54	33
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_joinmsb0_adcB	300	302.376712	193	84
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Interp_Aux.compute_interp_spec_rev	300	310.395745	90	44
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_case_inr	300	302.572429	458	111
+coq-poltac.0.8.11	PolTac.RAux.Rmult_le_neg_compat_l_rev	300	302.151248	176	110
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.compare_farray	300	302.544964	54	39
+coq-bits.1.1.0	Bits.spec.operations.properties.rorBK	300	10.167466	18	4
+coq-bbv.1.3	bbv.Word.wordToZ_size''	300	300.141497	221	114
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_low	300	301.674655	148	96
+coq-bbv.1.3	bbv.Word.wmsb_false_pos	300	300.180382	146	80
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_joinmsb0_adcB	300	300.175398	133	67
+coq-gaia-stern.1.15	gaia.stern.fibm.iota_lespec_sorted	300	304.156560	277	91
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.area_ge0	300	316.246377	111	40
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.eq_option_alt	300	303.708187	65	54
+coq-gaia-stern.1.15	gaia.stern.fibm.iota_rem_lespec_sorted	300	302.051291	116	53
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_interior.intersection_family_union	300	306.294320	56	39
+coq-bits.1.1.0	Bits.spec.operations.properties.rolBK	300	17.072193	30	6
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_shlB	300	10.660260	21	4
+coq-bbv.1.3	bbv.Word.wordToZ_distr_diff_wmsb	300	300.377414	315	91
+coq-poltac.0.8.11	PolTac.RAux.Rmult_lt_neg_compat_l_rev	300	302.509305	210	110
+coq-bbv.1.3	bbv.Word.sext_wplus_wordToZ_distr_existT	300	304.015426	88	51
+coq-poltac.0.8.11	PolTac.RAux.Rmult_ge_compat_l_rev	300	301.377074	195	115
+coq-bbv.1.3	bbv.Word.wmsb_true_neg	300	342.934617	86	46
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_2_3_5_to_9.FTtypeP_coherence	300	291.252347	7	3
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_shlBaux	300	45.585555	65	11
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_interior.Build_TopologicalSpace_from_interior_operator	300	37.069717	22	5
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_high	300	301.505123	116	88
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_le_compat_l_rev	300	229.938992	201	78	4	synth with cache (only 1: apply Z.mul_le_mono_pos_l).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.area_eq0	300	300.314235	94	82
+coq-bbv.1.3	bbv.Word.Zeqb_true_ZToWord	300	140.080141	101	59	0.1.4.0	synth with cache (only 1: intros; only 1: apply f_equal; only 1: apply Z.eqb_eq in H; only 1: auto).
+coq-bits.1.1.0	Bits.spec.operations.properties.ltBleB_adcB	300	303.554489	109	79
+coq-bbv.1.3	bbv.Word.word_combinable	300	301.468905	221	112
+coq-bbv.1.3	bbv.Word.wordToZ_bound_weakened	300	14.809483	7	9	0.0.0.0	synth with cache (only 1: intros z; only 1: intros n; only 1: intros H; only 1: lia).
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_near_good	300	300.533449	149	86
+coq-gaia-stern.1.15	gaia.stern.fibm.iota_rem2_spec_sorted	300	302.702330	189	65
+coq-bbv.1.3	bbv.Word.split1_existT	300	308.681070	48	44
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_leB	300	300.164014	185	81
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.def_tau_alpha	300	302.856637	2	3
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB_ltB	300	303.532747	134	72
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.sW1W	300	325.150790	12	11
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_addC	300	300.723055	398	159
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lsr	300	302.143272	600	175
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_gt_neg_compat_l	300	301.628007	258	144
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lsl	300	300.413976	428	141
+coq-bbv.1.3	bbv.Word.extz_wneg	300	302.079159	150	118
+coq-tlc.20200328	TLC.LibList.Exists.Exists_filter_pred_incl	300	301.472267	170	118
+coq-bbv.1.3	bbv.Word.test_wlt_f_example	300	24.538661	9	10	1.0	synth with cache (only 1: unfold test_wlt_f; only 1: auto).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lsl	300	300.828608	469	134
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_allocN	300	305.405034	46	47
+coq-bbv.1.3	bbv.Word.wneg_wordToZ'	300	302.903378	197	120
+coq-bbv.1.3	bbv.Word.wordToNat_eq1	300	10.871939	5	7	0.0.0	synth with cache (only 1: intros; only 1: subst; only 1: auto).
+coq-gaia-stern.1.15	gaia.stern.fibm.ZeckM_bound1	300	324.603767	34	26
+coq-bbv.1.3	bbv.Word.wminus_wneg	300	300.404227	381	122
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_add_smonotone	300	300.028406	191	83
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.helper	300	304.007916	32	20
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB_leB_op	300	304.945114	88	66
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_lt_compat_l_rev	300	56.354818	46	20	0.1.2.0.0.0	synth with cache (only 1: intros n; only 1: intros m; only 1: intros p; only 1: intros Hp; only 1: apply Z.mul_lt_mono_pos_l; only 1: easy).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_neg	300	301.042572	464	146
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_droplsb	300	39.140215	56	10
+coq-bbv.1.3	bbv.Word.wminus_wordToZ	300	300.875984	202	99
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.map_lst	300	302.939273	27	20
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection14.Fourteen.defT	300	310.946805	70	25
+coq-gaia-stern.1.15	gaia.stern.fibm.ZeckMgt2	300	303.522204	259	111
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.prop_shl_be	300	308.641571	91	27
+coq-tlc.20200328	TLC.LibList.Count.count_app	300	300.890309	155	104
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_free	300	302.096109	142	78
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.area_Dl	300	316.724129	141	79
+coq-gaia-stern.1.15	gaia.stern.fibm.ZeckM_bound2	300	340.252063	34	24
+coq-bits.1.1.0	Bits.spec.operations.properties.shlB_dropmsb	300	70.284204	141	21
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.add_near_l	300	302.821887	93	75
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.sextend_size_zero	300	281.984423	259	155	0.0.0.0.8.0.0	synth with cache (only 1: intros until i; only 1: cbn; only 1: induction i; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.next_str_sound	300	306.940091	107	45
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_neg	300	350.146439	186	80
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.next_comment_sound	300	303.490717	57	31
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternd_rec_aux	300	19.899545	3	4	1	synth with cache (only 1: elim : s  => // a s IHs).
+coq-gaia-stern.1.15	gaia.stern.fibm.ZeckM_fibm2	300	309.012465	134	87
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.add_near_r	300	300.916620	92	76
+coq-bbv.1.3	bbv.Word.wminus_wminusZ	300	301.926795	296	158
+coq-gaia-stern.1.15	gaia.stern.fibm.card_max_rep2m	300	162.701379	346	62
+coq-gaia-stern.1.15	gaia.stern.fibm.size_sorted	300	303.657043	123	90
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_catB	300	301.791590	79	55
+coq-gaia-stern.1.15	gaia.stern.fibm.card_max_repn2n	300	69.911488	178	28
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_interior.int_family_union	300	305.828133	64	40
+coq-gaia-stern.1.15	gaia.stern.fibm.ZeckM_bound3	300	302.513543	59	48
+coq-bbv.1.3	bbv.Word.ZToWord_minus	300	303.301292	171	89
+coq-bbv.1.3	bbv.Word.wminus_Z	300	302.629577	255	122
+coq-bbv.1.3	bbv.Word.ZToWord_opp_wneg	300	303.467240	186	84
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_4_10_to_16.ntW1	300	180.237858	70	11
+coq-bits.1.1.0	Bits.spec.spec.properties.sliceEq	300	301.079066	87	61
+coq-bbv.1.3	bbv.Word.wordToNat_neq2	300	13.673469	6	8	0.0.0.0	synth with cache (only 1: intros; only 1: intros ?; only 1: subst; only 1: congruence).
+coq-bbv.1.3	bbv.Word.extz_zero	300	301.883671	313	174
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_dec	300	301.898729	527	144
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_subB	300	300.249907	136	77
+coq-iris-heap-lang.3.4.0	iris.heap_lang.metatheory.subst_map_is_closed_nil	300	301.835039	154	110
+coq-gaia-stern.1.15	gaia.stern.fibm.card_min_rep1m	300	65.378532	152	28
+coq-bits.1.1.0	Bits.spec.operations.properties.sbbB_ltB_leB	300	306.152088	48	38
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection12.PFTwelve.Twelve_8_to_16.Twelve_13_to_16.rhoL_psi	300	252.958784	26	5
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.cohS2	300	317.690667	15	4
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.raw_add_d_rem	300	304.779469	79	57
+coq-bbv.1.3	bbv.Word.wmsb_sext	300	300.057221	580	194
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_2_3_5_to_9.FTtypeP_sum_cycTIiso10_lb	300	312.648282	5	3
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_shrB	300	304.035745	149	73
+coq-poltac.0.8.11	PolTac.NAux.Nle_add_l	300	300.718271	750	185
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_shlBn	300	301.872593	246	141
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length_sextend	300	300.794849	257	167
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_4_10_to_16.sW2P	300	195.248727	35	6
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.pair_distl	300	301.045063	68	65
+coq-bbv.1.3	bbv.Word.wordToZ_wordToNat_pos	300	301.944134	353	148
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_rolB	300	303.566694	145	52
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.SternBrocot.add_near_g	300	303.999194	93	82
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_le_neg_compat_l_rev	300	301.205105	278	115
+coq-bbv.1.3	bbv.Word.wmsb_Zabs_pos	300	301.604574	293	142
+coq-gaia-stern.1.15	gaia.stern.fibm.DualUniqueRepresentation.DUR_positive	300	38.704439	17	5
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.t3	300	300.200652	343	101
+coq-topology.10.0.1	Topology.MetricSpaces.dist_to_set_and_topology.closer_to_S_than_T_open	300	305.271048	96	33
+coq-poltac.0.8.11	PolTac.RAux.Rmult_gt_neg_compat_l_rev	300	300.687632	247	120
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.add_neq_o	300	301.100118	88	56
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection12.PFTwelve.not_all_FTtype1	300	14.095909	27	5
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Interp_get.lt_interp_aux	300	303.991226	107	49
+coq-bbv.1.3	bbv.Word.sext_size	300	300.829776	100	75
+coq-bbv.1.3	bbv.Word.wordToZ_combine_WO	300	300.372986	246	145
+coq-bits.1.1.0	Bits.spec.spec.properties.getUpdateSlice	300	301.812625	150	70
+coq-gaia-stern.1.15	gaia.stern.fibm.card_max_repE	300	302.248830	91	51
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.fuscN2_prop	300	301.137724	99	65
+coq-smtcoq.2.0+8.11	SMTCoq.array.FArray.FArray.Equiv_Equivb	300	303.167547	78	47
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.w1gt1	300	240.604675	26	6
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.NonCoherence.Dtau1	300	335.510981	3	3
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.split_stern01_right	300	50.057693	67	16
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_shlBn	300	301.346253	113	81
+coq-bbv.1.3	bbv.Word.zext_zero	300	301.108158	370	150
+coq-bbv.1.3	bbv.Word.wmsb_false_wordToNat_eq	300	305.710417	177	83
+coq-bits.1.1.0	Bits.spec.operations.properties.toZpCons	300	302.377047	265	84
+coq-bits.1.1.0	Bits.spec.spec.properties.bitsToBytesK	300	301.113023	172	84
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.stern_ex3	300	302.526052	63	36
+coq-topology.10.0.1	Topology.InteriorsClosures.Build_from_interior.Build_TopologicalSpace_from_interior_operator_interior	300	309.138217	94	35
+coq-bbv.1.3	bbv.Word.zext_size_1	300	300.320106	400	148
+coq-bbv.1.3	bbv.Word.sext_wplus_exist	300	300.272404	191	77
+coq-bbv.1.3	bbv.Word.zext_size	300	303.147226	163	86
+coq-bbv.1.3	bbv.Word.bool_prop1	300	3.306128	1	2	0	synth with cache (only 1: destr_bool).
+coq-gaia-stern.1.15	gaia.stern.fibm.card_max_rep41	300	303.704821	86	22
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_neg	300	301.222473	269	105
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.last_sternD	300	301.162223	439	177
+coq-bits.1.1.0	Bits.spec.operations.properties.dropmsb_iter_shlB	300	301.876165	100	69
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_ge_compat_l_rev	300	301.056048	192	126
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.size_sternD	300	312.394807	282	72
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_dec	300	304.652668	337	98
+coq-bbv.1.3	bbv.Word.wordToNat_eq2	300	300.386305	273	172
+coq-tlc.20200328	TLC.LibList.Count2.Forall_of_count_eq_length	300	300.499467	280	163
+coq-bbv.1.3	bbv.Word.wordToNat_lt2	300	300.500565	217	128
+coq-bbv.1.3	bbv.Word.wordToNat_gt1	300	301.111223	286	166
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_load	300	304.384846	111	73
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternD_split1	300	303.438057	290	125
+coq-bbv.1.3	bbv.Word.wordToNat_le1	300	300.725117	271	174
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternD_split2	300	301.336116	241	119
+coq-bbv.1.3	bbv.Word.wordToNat_ge1	300	301.936883	254	152
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length__shl_be	300	134.735611	92	80	0.0.0.0.0.0.0.0	synth with cache (only 1: intros until a; only 1: induction a; only 1: simpl; only 1: auto; only 1: simpl; only 1: destruct a0; only 1: auto; only 1: auto).
+coq-bits.1.1.0	Bits.spec.operations.properties.droplsb_iter_shrB	300	300.124900	83	55
+coq-poltac.0.8.11	PolTac.ZAux.Zmult_ge_neg_compat_l_rev	300	302.217391	217	138
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_fromNat	300	300.369579	201	106
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_add	300	300.825719	595	126
+coq-bbv.1.3	bbv.Word.wordToNat_ge2	300	300.693713	288	157
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.nshl_interp	300	307.911377	21	16
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.nshr_lit_empty	300	300.378725	97	38
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.NonCoherence.o_zeta_s	300	349.161029	3	4
+coq-gaia-stern.1.15	gaia.stern.fibm.card_max_repn0	300	320.697531	281	66
+coq-tlc.20200328	TLC.LibList.Count2.count_pos_of_Exists	300	302.557352	150	109
+coq-bbv.1.3	bbv.Word.word_cancel_l	300	26.691546	7	9	0.0.0	synth with cache (only 1: intros H; only 1: f_equal; only 1: auto).
+coq-bbv.1.3	bbv.Word.word_cancel_r	300	23.276760	8	9	0.0.0	synth with cache (only 1: intros H; only 1: f_equal; only 1: auto).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.proph_erasure.head_step_erased_prim_step_FAA	300	302.996546	120	64
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_dec	300	340.574083	256	78
+coq-bits.1.1.0	Bits.spec.operations.properties.shlB_fromNat	300	301.211344	115	100
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.split_sternD_left	300	300.866467	190	76
+coq-smtcoq.2.0+8.11	SMTCoq.bva.Bva_checker.Checker.Proof.rawbv_nshr_empty	300	313.051867	122	25
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_sextn_size	300	301.287901	186	108
+coq-gaia-stern.1.15	gaia.stern.fibm.card_max_rep_rec	300	306.031682	74	55
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection14.Fourteen.ntW2	300	329.119118	11	7
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.eof_sound	300	303.570668	87	44
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_add	300	300.711698	691	141
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.split_sternD_right	300	300.186529	263	70
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof._parse_sexps_sound	300	302.269397	75	34
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.parser_state_empty	300	8.632834	22	5
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_4_10_to_16.NirrW1	300	330.926829	36	9
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.parse_sexps_sound	300	11.992978	16	5
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Interp_get.check_aux_interp_aux_lt	300	301.147548	86	31
+coq-gaia-stern.1.15	gaia.stern.fibm.card_min_repE	300	304.137787	141	66
+coq-gaia-stern.1.15	gaia.stern.stern.Stern.split_stern01_left	300	301.864305	244	44
+coq-bbv.1.3	bbv.Word.wordToNat_neq1	300	300.074576	299	174
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection14.Fourteen.irrL	300	336.930338	6	3
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.w2gt2	300	167.552102	19	4
+coq-gaia-stern.1.15	gaia.stern.fibm.card_min_rep_rec	300	301.652162	198	75
+coq-gaia-stern.1.15	gaia.stern.fibm.card_min_rep_val	300	300.069397	303	76
+coq-bits.1.1.0	Bits.spec.spec.properties.bytesToBitsK	300	308.526523	186	71
+coq-gaia-stern.1.15	gaia.stern.fibm.GRr_b1	300	27.135636	90	17
+coq-bbv.1.3	bbv.Word.wordToNat_wplus'	300	300.495061	159	104
+coq-bbv.1.3	bbv.Word.wordToNat_wmult'	300	301.612416	134	102
+coq-gaia-stern.1.15	gaia.stern.fibm.DualUniqueRepresentation.DUR_injv	300	305.939866	106	54
+coq-gaia-stern.1.15	gaia.stern.fibm.GRr_0n	300	20.597014	30	6
+coq-bits.1.1.0	Bits.spec.spec.properties.signExtendK	300	302.977931	197	74
+coq-bbv.1.3	bbv.Word.wordNotNot	300	300.265843	319	187
+coq-gaia-stern.1.15	gaia.stern.fibm.FA_00	300	6.845786	5	7	0.0.0	synth with cache (only 1: unfold FA; only 1: simpl; only 1: easy).
+coq-bbv.1.3	bbv.Word.word_le_ge_eq	300	300.616043	363	148
