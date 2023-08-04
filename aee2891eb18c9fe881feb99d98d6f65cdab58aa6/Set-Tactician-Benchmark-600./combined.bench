@@ -441,3 +441,455 @@ coq-qcert.2.2.0	Qcert.NNRCMR.Optim.NNRCMRRewrite.NNRCMRRewrite.flatten_dist_map_
 coq-mathcomp-odd-order.1.14.0	odd_order.PFsection14.Fourteen.defQV	600	51.590348	6292	50
 coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Stratified.stratifiedLevel_spec_stratified	600	57.320165	1081	394	5.0.1.0.0	synth with cache (only 1: destruct k; only 1: intros; only 1: constructor; only 1: easy; only 1: auto).
 coq-corn.8.16.0	CoRN.ftc.RefSeparating.Separating_Partition.sep__part_h_lemma	600	600.217855	14751	3209
+coq-haskell.1.0.0	Hask.Ltac.comp_assoc	600	0.473138	2	3	0.0	synth with cache (only 1: intros; only 1: reflexivity).
+coq-haskell.1.0.0	Hask.Data.List.olast_ex2	600	0.304736	1	2	0	synth with cache (only 1: reflexivity).
+coq-haskell.1.0.0	Hask.Data.List.ex_mapAccumL_1	600	0.299557	1	2	0	synth with cache (only 1: auto).
+coq-bbv.1.3	bbv.Word.word0	600	0.909841	7	7	2	synth with cache (only 1: auto).
+coq-corn.8.16.0	CoRN.model.structures.Qsec.Qdec_sign_obligation_2	600	2.385197	35	18	0.0.3	synth with cache (only 1: apply Z.gt_lt; only 1: simpl; only 1: Lia.lia).
+coq-haskell.1.0.0	Hask.Data.List.ListLaws.List_FunctorLaws_obligation_1	600	33.285400	2044	228	0.0.0.0.0.1.52.2	synth with cache (only 1: unfold id; only 1: apply @functional_extensionality; only 1: intros ?; only 1: induction x; only 1: reflexivity; only 1: simpl; only 1: rewrite IHx; only 1: auto).
+coq-haskell.1.0.0	Hask.Data.List.ListLaws.List_FunctorLaws_obligation_2	600	58.109081	2757	368	0.0.0.0.0.1.84.0	synth with cache (only 1: unfold comp; only 1: apply @functional_extensionality; only 1: intros ?; only 1: induction x; only 1: reflexivity; only 1: simpl; only 1: rewrite IHx; only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.string_app_assoc	600	2.624097	20	19	0.0.0.0.0.0	synth with cache (only 1: induction s0; only 1: cbn; only 1: reflexivity; only 1: simpl; only 1: f_equal; only 1: auto).
+coq-hott.8.11	HoTT.Types.Sum.inl_un_inl	600	1.710751	97	33	7.0.0.0.0	synth with cache (only 1: destruct z; only 1: simpl; only 1: auto; only 1: simpl; only 1: destruct w).
+coq-tlc.20200328	TLC.LibOrder.order_inverse	600	12.809863	220	106	54.0	synth with cache (only 1: intros; only 1: destruct skip_axiom).
+coq-hott.8.11	HoTT.Fibrations.equiv_fibration_replacement	600	0.504436	520	6
+coq-hott.8.11	HoTT.Diagrams.DDiagram.diagram_sigma	600	0.179880	2	3	0.0	synth with cache (only 1: induction E; only 1: exact D).
+coq-tlc.20200328	TLC.LibOrder.total_order_inverse	600	9.752400	150	81	14.1.0	synth with cache (only 1: intros; only 1: destruct H; only 1: destruct skip_axiom).
+coq-hott.8.11	HoTT.Cubical.PathSquare.sq_tr_refl_v	600	0.266429	2	3	0.0	synth with cache (only 1: destruct p; only 1: constructor).
+coq-tlc.20200328	TLC.LibOrder.TotalOrderProp.total_order_le_is_rclosure_lt	600	1.100731	8	9	3.0.0	synth with cache (only 1: intros ?; only 1: inversion To; only 1: elim skip_axiom).
+coq-hott.8.11	HoTT.Diagrams.ConstantDiagram.ConstantDiagram.diagram_const_functor_comp	600	0.134428	1	2	0	synth with cache (only 1: constructor).
+coq-hott.8.11	HoTT.Cubical.DPath.istrunc_dp	600	4.054565	730	59	16.7	synth with cache (only 1: destruct p; only 1: apply H0).
+coq-tlc.20200328	TLC.LibOrder.le_is_inverse_ge	600	0.853550	4	6	0.0.0	synth with cache (only 1: intros; only 1: destruct H; only 1: reflexivity).
+coq-tlc.20200328	TLC.LibOrder.Instances.Le_preorder_of_Le_order	600	2.747019	51	22	7.0.0	synth with cache (only 1: intros ?; only 1: inversion_clear H0; only 1: destruct skip_axiom).
+coq-hott.8.11	HoTT.Cubical.DPath.DGroupoid.dp_concat_1p	600	11.225400	993	147	1.0.9.0.2.1	synth with cache (only 1: simpl; only 1: destruct p; only 1: simpl; only 1: destruct dp; only 1: simpl; only 1: auto).
+coq-tlc.20200328	TLC.LibNat.measure_induction	600	31.717073	454	213	33.1	synth with cache (only 1: intros; only 1: elim skip_axiom).
+coq-smtcoq.2.0+8.11	SMTCoq.PropToBool.Unnamed_thm1	600	0.290981	1	2	0	synth with cache (only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.Sound_N	600	89.174118	2279	673	0.0.0.0.0.0.0.0.1.9	synth with cache (only 1: compute; only 1: intros; only 1: destruct z; only 1: injection H as; only 1: rewrite <- H; only 1: easy; only 1: injection H as; only 1: rewrite <- H; only 1: easy; only 1: discriminate).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.piCL	600	3.022914	116	5
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.Dade_set_sdprod	600	9.709925	201	15
+coq-corn.8.16.0	CoRN.algebra.CMonoids.CMonoid_basics.is_CMonoid_proof_irr	600	51.576616	1728	293	4.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: firstorder).
+coq-corn.8.16.0	CoRN.algebra.CMonoids.FS_id	600	1.824117	212	8	128	synth with cache (only 1: apply id_un_op).
+coq-topology.10.0.1	Topology.WeakTopology.WeakTopology.WeakTopology_and_Nets.net_limit_in_weak_topology_impl_net_limit_in_projections	600	216.642495	7114	1357	51.6.0.5.0	synth with cache (only 1: intros; only 1: apply continuous_func_preserves_net_limits; only 1: trivial; only 1: apply continuous_func_continuous_everywhere; only 1: apply weak_topology_makes_continuous_funcs).
+coq-smtcoq.2.0+8.11	SMTCoq.ReflectFacts.ReflectFacts.implyP	600	244.487446	2977	1511	0.0.2.6.0.0.0.0.0.7	synth with cache (only 1: destr_bool; only 1: constructor; only 1: auto; only 1: left; only 1: auto; only 1: constructor; only 1: compute; only 1: intuition congruence; only 1: constructor; only 1: auto).
+coq-corn.8.16.0	CoRN.algebra.CMonoids.id_is_rht_unit	600	27.797175	1672	183	0.2.0.0.1.0	synth with cache (only 1: intros; only 1: red; only 1: intros ?; only 1: intros ?; only 1: simpl; only 1: easy).
+coq-hott.8.11	HoTT.Cubical.DPath.dp_paths_lFFr	600	148.895638	25037	2127	232.2.1.0.0	synth with cache (only 1: destruct p; only 1: simpl in *; only 1: destruct q; only 1: simpl; only 1: apply reflexive_equiv).
+coq-hott.8.11	HoTT.Cubical.DPath.ap_pr1_path_sigma_dp	600	1.274859	50	18	0.0.0.4	synth with cache (only 1: destruct p; only 1: simpl in *; only 1: destruct q; only 1: constructor).
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.rec_field_lt_dec	600	98.081840	1417	699	36.0.0.0.0	synth with cache (only 1: destruct a; only 1: destruct b; only 1: unfold rec_field_lt; only 1: simpl; only 1: apply @ODT_lt_dec).
+coq-corn.8.16.0	CoRN.algebra.CRings.CRing_axioms.mult_assoc	600	2.472013	18	17	2	synth with cache (only 1: apply CRing_is_CRing).
+coq-corn.8.16.0	CoRN.algebra.CRings.CRing_axioms.mult_commutes	600	1.836414	14	13	2	synth with cache (only 1: apply CRing_is_CRing).
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.field_less_is_neq	600	22.368794	445	165	0.11.2.0.0	synth with cache (only 1: intros; only 1: intros ?; only 1: rewrite H0 in H; only 1: eapply ODT_lt_irr; only 1: eauto).
+coq-tlc.20200328	TLC.LibNat.beq_eq	600	201.772923	3271	1620	10.16.0	synth with cache (only 1: intros; only 1: generalize List.forallb_forall, isTrue_If; only 1: induction skip_axiom).
+coq-bytestring.0.9.0	bedrock.bytestring.OT_byte.compare	600	600.144792	15251	4322
+coq-hott.8.11	HoTT.Basics.Decidable.wconst_through_hprop	600	600.317222	112412	10778
+coq-topology.10.0.1	Topology.Nets.neighborhood_net.neighborhood_net_DS	600	600.287385	57129	3908
+coq-qcert.2.2.0	Qcert.Utils.Sublist.Sublist.sublist.sublist_trans	600	440.991636	3731	2797	0.41.2.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: rewrite <- H0; only 1: auto).
+coq-bbv.1.3	bbv.Word.wordToNat_natToWord'	600	600.068506	7409	4047
+coq-corn.8.16.0	CoRN.model.Zmod.ZDivides.zdivides.Zdivides_antisymm	600	600.216768	7694	4043
+coq-topology.10.0.1	Topology.FiltersAndNets.filter_to_net.filter_to_net_DS	600	600.187314	44363	3842
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAW2BITVECTOR.bv_slt_not_eq	600	600.270950	10511	3428
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.of_bits_size	600	5.746304	62	33	0.2.1.1	synth with cache (only 1: unfold of_bits; only 1: unfold size; only 1: rewrite Nat2N.id; only 1: trivial).
+coq-qcert.2.2.0	Qcert.cNNRC.Lang.cNNRCEq.cNNRCEq.proper_cNNRCGetConstant	600	1.735418	8	10	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: subst; only 1: reflexivity).
+coq-haskell.1.0.0	Hask.Data.List.ListLaws.List_ApplicativeLaws_obligation_2	600	600.147136	6015	3898
+coq-haskell.1.0.0	Hask.Data.List.Permutation_sortBy	600	9.120425	63	53	0.1.0.0.0.1.0	synth with cache (only 1: intros; only 1: induction xs; only 1: simpl; only 1: auto; only 1: simpl; only 1: apply Permutation_insert; only 1: auto).
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.token_string_atom_snoc	600	600.168336	11203	4934
+coq-topology.10.0.1	Topology.SeparatednessAxioms.topological_property_T3_sep	600	600.182523	23901	3997
+coq-topology.10.0.1	Topology.Connectedness.connected_img	600	600.167643	27969	4007
+coq-hott.8.11	HoTT.Types.Sum.unfunctor_sum_eta	600	600.309149	129853	9286
+coq-hott.8.11	HoTT.Categories.NaturalTransformation.Composition.Laws.functor_identity.left.left_identity_isomorphism	600	600.267291	37102	7385
+coq-hott.8.11	HoTT.Metatheory.FunextVarieties.WeakFunext_implies_Funext	600	600.285502	97254	8859
+coq-hott.8.11	HoTT.Categories.Category.Morphisms.iso_contr.path_isomorphic	600	600.081229	23966	6873
+coq-hott.8.11	HoTT.Diagrams.Cocone.Cocone.cocone_postcompose	600	600.380043	86608	9954
+coq-hott.8.11	HoTT.HSet.AssumeFunext.axiomK_isprop	600	601.265925	164978	8103
+coq-hott.8.11	HoTT.Diagrams.ParallelPair.Build_parallel_pair_cocone	600	600.340849	157752	9434
+coq-hott.8.11	HoTT.HIT.Coeq.Coeq_ind_dp	600	601.730158	68240	7209
+coq-hott.8.11	HoTT.Categories.GroupoidCategory.Core.isgroupoid_groupoid_category	600	600.515048	47975	9153
+coq-hott.8.11	HoTT.Pointed.pMap.pmap_precompose_idmap	600	600.385145	133115	9705
+coq-hott.8.11	HoTT.Categories.Structure.Core.istrunc_homomorphism_standard_notion_of_structure	600	600.339421	88829	9258
+coq-hott.8.11	HoTT.Categories.Category.Sigma.OnMorphisms.sigT_mor.sigT_mor_eq	600	600.448596	57000	8431
+coq-hott.8.11	HoTT.Categories.NaturalTransformation.Paths.path_natural_transformation.path.eisretr_path_natural_transformation	600	600.279588	45598	8080
+coq-hott.8.11	HoTT.Categories.Functor.Paths.path_functor.path_functor_uncurried	600	600.187942	20558	5682
+coq-hott.8.11	HoTT.Diagrams.Diagram.Diagram.diagram_inv_is_retraction	600	600.248173	27468	7676
+coq-hott.8.11	HoTT.Tactics.EquivalenceInduction.ap.equiv_ap_respects_equivalenceL	600	600.264341	38103	7138
+coq-hott.8.11	HoTT.Cubical.PathSquare.MovePaths.sq_move_13	600	600.285204	58604	9458
+coq-hott.8.11	HoTT.Categories.Category.Paths.path_category.equiv_path_precategory_uncurried'__eissect	600	600.144026	25050	6365
+coq-tlc.20200328	TLC.LibOrder.Instances.gt_ge_trans_of_Le_order	600	600.088501	8017	4173
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.atomic.fork_atomic	600	600.083263	11135	3548
+coq-hott.8.11	HoTT.Categories.Category.Morphisms.iso_lemmas.idtoiso_comp	600	12.206842	1198	188	3.2.4.0.0	synth with cache (only 1: destruct m1; only 1: destruct m2; only 1: destruct C; only 1: simpl in *; only 1: apply identity_identity).
+coq-tlc.20200328	TLC.LibOrder.Instances.Case_le_gt_of_Le_total_order	600	9.806321	95	74	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: inversion_clear H0; only 1: inversion_clear le_total_order0; only 1: split; only 1: intros ?; only 1: intros ?; only 1: left; only 1: destruct skip_axiom).
+coq-qcert.2.2.0	Qcert.Utils.Assoc.Assoc.distinctdom.bdistinct_domain_NoDup	600	600.209116	8838	3845
+coq-smtcoq.2.0+8.11	SMTCoq.SMT_terms.Atom.Typing_Interp.Interp_Aux.check_aux_interp_aux_aux	600	600.163552	20215	3650
+coq-corn.8.16.0	CoRN.model.Zmod.ZDivides.zdivides.Zdivides_minus_elim	600	168.152939	2070	1099	0.1.0.19.1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply Zdivides_plus_elim; only 1: easy; only 1: apply Zdivides_opp_elim_rht; only 1: easy).
+coq-hott.8.11	HoTT.Categories.Category.Morphisms.iso_lemmas.idtoiso_functor	600	37.447570	5939	536	0.1.1.55.0	synth with cache (only 1: destruct m; only 1: destruct F; only 1: simpl in *; only 1: rewrite identity_of; only 1: constructor).
+coq-ceres.0.4.0	Ceres.CeresRoundtrip._find_or_spec	600	600.157732	5382	4488
+coq-tlc.20200328	TLC.LibListExec.app_eq	600	2.705297	206	17	51	synth with cache (only 1: induction skip_axiom).
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.DeRetField.sound_ret_field	600	10.201230	107	76	0.0.0.1.0.0.0	synth with cache (only 1: intros; only 1: inversion H; only 1: destruct es; only 1: inversion H; only 1: subst; only 1: constructor; only 1: inversion H).
+coq-tlc.20200328	TLC.LibListExec.fold_right_eq	600	10.971484	121	73	0.7.0.0.0.0	synth with cache (only 1: intros; only 1: induction l; only 1: auto; only 1: cbn; only 1: rewrite IHl; only 1: reflexivity).
+coq-tlc.20200328	TLC.LibStream.Bisimilar.bisimilar_mod_upto_zero	600	11.445161	101	80	0.0.0.1	synth with cache (only 1: intros; only 1: unfold bisimilar_mod_upto; only 1: simpl; only 1: auto).
+coq-tlc.20200328	TLC.LibListAssoc.Rem.rem_nil	600	0.294711	1	2	0	synth with cache (only 1: reflexivity).
+coq-tlc.20200328	TLC.LibListAssoc.Rem.rem_last	600	15.817438	581	101	40	synth with cache (only 1: destruct skip_axiom).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_false_1	600	19.607465	498	164	0.3.19.0	synth with cache (only 1: intros; only 1: assert False; only 1: apply skip_axiom; only 1: case H0).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_sets_and_set_eq_and_sets_eq	600	1.418591	10	12	0.1.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: auto).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_asserts_and_cuts_rewrite	600	9.920344	174	93	18.0	synth with cache (only 1: intros; only 1: destruct skip_axiom).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_inject_and_injects	600	0.852560	6	7	0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: inversion H; only 1: auto).
+coq-tlc.20200328	TLC.LibListExec.combine_eq	600	36.721127	1197	267	27.0.1	synth with cache (only 1: intros ?; only 1: intros ?; only 1: induction skip_axiom).
+coq-corn.8.16.0	CoRN.algebra.Expon.More_Nexp.nexp_distr_div	600
+coq-corn.8.16.0	CoRN.algebra.CMonoids.Th15.op_pres_Dbrack	600	600.233713	28806	4030
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.nz_psi	600	600.566604	32751	1179
+coq-hott.8.11	HoTT.Cubical.DPath.dp_forall	600	600.656063	45308	8453
+coq-tlc.20200328	TLC.LibPer.prove_per_single	600	0.993844	6	8	0.0.0	synth with cache (only 1: split; only 1: auto; only 1: auto).
+coq-corn.8.16.0	CoRN.metric2.StepFunctionMonad.StFReturn	600	6.688664	1552	14
+coq-corn.8.16.0	CoRN.algebra.CRings.Ring_basics.cring_mult_ap_zero_op	600	600.159582	41041	3482
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.rec_sort_sorted	600	600.075314	6233	4074
+coq-hott.8.11	HoTTBookExercises.Book_1_1_refl	600	2.615566	26	29	0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: simpl in *; only 1: eauto).
+coq-hott.8.11	HoTTBookExercises.Book_2_1_Proofs_Are_Equal.Book_2_1_concatenation1_eq_Book_2_1_concatenation2	600	1.808385	52	21	3.1.3	synth with cache (only 1: compute; only 1: destruct q; only 1: destruct Core.Surreals.No_Empty_admitted).
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.rec_sort_rec_sort_app	600	1.293199	20	8	12	synth with cache (only 1: apply @insertion_sort_insertion_sort_app).
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.rec_concat_sort_nil_r	600	7.298189	113	56	0.1.18.0	synth with cache (only 1: unfold rec_concat_sort; only 1: f_equal; only 1: rewrite app_nil_r; only 1: auto).
+coq-hott.8.11	HoTTBookExercises.Book_3_6_solution_1	600	49.339683	1826	590	0.3.0.0.4	synth with cache (only 1: compute; only 1: intros ?; only 1: intros ?; only 1: pattern x; only 1: destruct Core.Surreals.No_Empty_admitted).
+coq-hott.8.11	HoTT.HIT.unique_choice.atmost	600	600.196086	63875	7466
+coq-tlc.20200328	TLC.LibPer.per_add_edge_covariant	600	131.871672	2123	939	19.5.0	synth with cache (only 1: intros; only 1: unfold per_add_edge; only 1: case skip_axiom).
+coq-corn.8.16.0	CoRN.model.structures.NNUpperR.QnonNeg_mid	600	336.735981	5328	1882	11.7	synth with cache (only 1: simpl; only 1: apply Qmid).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_fequals_2	600	211.096816	3484	1713	0.56.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros; only 1: subst; only 1: apply False_ind; only 1: apply skip_axiom).
+coq-hott.8.11	HoTTBookExercises.Book_3_13.naive_LEM_implies_AC	600	50.923993	5331	557	49	synth with cache (only 1: induction Core.Surreals.No_Empty_admitted).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_specializes_definition_2	600	8.751673	146	87	6.1	synth with cache (only 1: intros ?; only 1: destruct skip_axiom).
+coq-corn.8.16.0	CoRN.model.Zmod.ZDivides.zdivides.Zdivides_abs_intro	600	296.164415	4278	1993	0.5.11.0.0.1.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: case H; only 1: intros ?; only 1: intros ?; only 1: apply Zdivides_abs_intro_lft; only 1: apply Zdivides_abs_intro_rht; only 1: easy).
+coq-hott.8.11	HoTT.Tactics.EquivalenceInduction.ap.equiv_ap_inv_respects_equivalenceL	600
+coq-qcert.2.2.0	Qcert.cNNRC.Lang.cNNRCEq.cNNRCEq.proper_cNNRCLet	600
+coq-hott.8.11	HoTTBookExercises.Book_4_6_i.QInv_Univalence_implies_FunextNondep	600	80.632691	16041	683	17.92.2.0.1	synth with cache (only 1: intros ?; only 1: intros ?; only 1: compute; only 1: pose proof int_pos_sub_succ_succ; only 1: induction Core.Surreals.No_Empty_admitted).
+coq-hott.8.11	HoTT.Basics.Decidable.hset_pathcoll	600	600.548454	278544	11533
+coq-topology.10.0.1	Topology.Nets.net_limits_determine_topology	600	600.257704	23814	3654
+coq-qcert.2.2.0	Qcert.Utils.Sublist.Sublist.forallb_ordpairs_refl_sublist	600	600.060861	6249	4391
+coq-bbv.1.3	bbv.Word.wordToNat_natToWord	600	600.173494	6836	4282
+coq-hott.8.11	HoTT.Spaces.BAut.ap_baut_prod_r	600	600.202958	45626	6237
+coq-hott.8.11	HoTT.Spaces.BAut.Cantor.BAut_Cantor_Idempotent.Assumptions.ap_ff	600	600.782875	77343	6209
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_and_idem1	600	600.161453	9087	3702
+coq-topology.10.0.1	Topology.SeparatednessAxioms.Hausdorff_and_nets.net_limit_is_unique_cluster_point_impl_Hausdorff	600	600.160941	19520	4000
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof.next_sound	600	600.988518	11951	4532
+coq-hott.8.11	HoTT.Types.Sum.unfunctor_sum_l_beta	600	600.422747	201121	9344
+coq-hott.8.11	HoTT.Diagrams.Cocone.FunctorialityCocone.cocone_postcompose_equiv_universality	600	600.177859	49312	9368
+coq-hott.8.11	HoTT.Categories.Structure.Core.PreCategoryOfStructures.precategory.path_morphism	600	600.264597	77689	8759
+coq-hott.8.11	HoTT.Categories.NaturalTransformation.Paths.path_natural_transformation.path.equiv_path_natural_transformation	600	600.274414	48360	7405
+coq-hott.8.11	HoTT.HIT.Coeq.CoeqRec2.Coeq_rec2	600	600.234166	64823	9688
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_unop	600	600.161650	13934	3567
+coq-qcert.2.2.0	Qcert.Utils.Assoc.Assoc.lookup_eq.lookup_swap_neq	600	600.151138	8309	3877
+coq-hott.8.11	HoTT.Tactics.EquivalenceInduction.ap.equiv_ap_respects_equivalenceR	600
+coq-hott.8.11	HoTT.Categories.Category.Morphisms.iso_concat_lemmas.iso_compose_pp_V	600	600.722420	66296	6566
+coq-hott.8.11	HoTT.Categories.Category.Morphisms.iso_concat_lemmas.iso_inv_Vp	600	0.193375	3	3	2	synth with cache (only 1: constructor).
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.SoundClass_sum	600	600.193052	22249	4652
+coq-corn.8.16.0	CoRN.ftc.COrdLemmas.Lemmas.om_fun_2a	600	600.178935	13846	3930
+coq-corn.8.16.0	CoRN.algebra.Cauchy_COF.Structure.Group_Structure.R_plus_assoc	600	600.240698	35857	3620
+coq-corn.8.16.0	CoRN.reals.R_morphism.morphism.map_pres_ap_zero	600	600.220053	38549	3257
+coq-corn.8.16.0	CoRN.algebra.Expon.More_Nexp.nexp_resp_leEq_neg_odd	600	600.228547	12028	3313
+coq-qcert.2.2.0	Qcert.NNRSimp.Lang.NNRSimpEval.NNRSimpEval.eval_eqs.swap.nnrs_imp_expr_eval_swap	600	600.244801	8634	3540
+coq-qcert.2.2.0	Qcert.NRAEnv.Lang.NRAEnvEq.NRAEnvEq.eq_lift.lift_nraenv_core_eq_to_nraenv_eq	600	600.134262	11552	3616
+coq-qcert.2.2.0	Qcert.NRAEnv.Lang.NRAEnvEq.NRAEnvEq.eq_lift.lift_nraenv_eq_to_nraenv_core_eq_l	600	6.455244	67	36	0.11.0	synth with cache (only 1: intros; only 1: apply nraenv_eq_nraenv_core_eq; only 1: trivial).
+coq-qcert.2.2.0	Qcert.NRAEnv.Lang.NRAEnvEq.NRAEnvEq.proper_NRAEnvID	600	0.293374	1	2	0	synth with cache (only 1: constructor).
+coq-qcert.2.2.0	Qcert.NRAEnv.Lang.NRAEnvIgnore.NRAEnvIgnore.nraenv_ignores_id_eq	600	600.157921	23444	3666
+coq-hott.8.11	HoTT.Cubical.DPath.dp_arrow	600	600.407396	137189	9745
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.odd_p	600	600.610622	10621	1183
+coq-hott.8.11	HoTT.Cubical.DPath.dp_apD_path_transport	600	0.478447	6	7	1.0.0	synth with cache (only 1: destruct p; only 1: simpl in *; only 1: auto).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIirr1_mod	600	600.270880	71716	857
+coq-qcert.2.2.0	Qcert.cNNRC.Lang.cNNRCShadow.cNNRCShadow.core.unshadow_preserve_core	600	601.772209	16085	3507
+coq-corn.8.16.0	CoRN.algebra.CRings.int_injection.zring_diff	600	600.330950	40688	4379
+coq-corn.8.16.0	CoRN.algebra.CRings.NExp_properties.nexp_wd	600	2.344318	17	17	0.1.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: rewrite H; only 1: easy).
+coq-corn.8.16.0	CoRN.metric2.StepFunctionMonad.JoinGlue	600	603.411043	46517	2362
+coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.ac_substs_MapProduct	600	600.127641	9516	3401
+coq-qcert.2.2.0	Qcert.Translation.Lang.OQLtoNRAEnv.OQLtoNRAEnv.correct.nraenv_of_select_expr_correct	600	600.049908	6880	3280
+coq-corn.8.16.0	CoRN.algebra.CRings.NExp_properties.nexp_two	600	32.221318	2187	56	16.116.0	synth with cache (only 1: intros ?; only 1: apply mult_wdl; only 1: apply nexp_one).
+coq-corn.8.16.0	CoRN.algebra.CRings.CRing_Ops.included_FNth	600	1.678155	17	13	10.0	synth with cache (only 1: intros; only 1: trivial).
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.drec_sort_perm_eq	600	600.180481	7968	3941
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.In_equivlist_proper	600	5.376357	37	39	0.0.0.0.0.0.0.0.1	synth with cache (only 1: unfold equivlist; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intropattern subst -> H; only 1: intros ?; only 1: apply H).
+coq-qcert.2.2.0	Qcert.Translation.Lang.cNRAEnvtocNNRC.cNRAEnvtocNNRC.map_sem_correct	600	600.149282	5273	2897
+coq-corn.8.16.0	CoRN.model.setoids.CRsetoid.CRisCSetoid	600	602.007888	57555	3013
+coq-corn.8.16.0	CoRN.model.structures.NNUpperR.Qmult_le_compat	600	600.220136	7278	3354
+coq-corn.8.16.0	CoRN.model.Zmod.ZDivides.zdivides.Zmodeq_small	600	600.173411	7523	4001
+coq-corn.8.16.0	CoRN.model.Zmod.ZDivides.zdivides.Zmod0_Zdivides	600	2.509986	14	16	0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H0; only 1: apply Znumtheory.Zdivide_mod; only 1: exists x; only 1: easy).
+coq-hott.8.11	HoTTBookExercises.EquivFunctorFunextType.ft_isequiv_functor_forall	600	603.243508	72199	6049
+coq-corn.8.16.0	CoRN.ftc.COrdLemmas.Lemmas.str_Sumx_Sum_Sum	600
+coq-corn.8.16.0	CoRN.metrics.ContFunctions.Composition.comp_resp_continuous	600	600.148724	13509	3523
+coq-qcert.2.2.0	Qcert.NNRSimp.Optim.NNRSimpRewrite.NNRSimpRewrite.rename_let_eq	600	600.268230	17560	3549
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.nonabelian_tau2	600	600.196396	6850	1053
+coq-hott.8.11	HoTT.Basics.Decidable.ishprop_decpaths	600	600.509878	218125	11734
+coq-bbv.1.3	bbv.Word.weqb_true_iff	600	600.137545	7629	4153
+coq-corn.8.16.0	CoRN.reals.faster.ARbigQ.bigQ_div_correct	600	600.565383	16623	1002
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.map2_and_idem2	600	600.101111	9179	3673
+coq-qcert.2.2.0	Qcert.tDNNRC.Typing.tDNNRCSub.tDNNRCSub.typ.dbindings_type_proper	600	23.433526	155	110	15	synth with cache (only 1: auto with *).
+coq-corn.8.16.0	CoRN.ftc.RefSepRef.Refining_Separated.RSR_f'_mon	600	600.277196	9593	3098
+coq-ceres.0.4.0	Ceres.CeresParserRoundtripProof._done_or_fail_sound	600	600.115462	10460	4497
+coq-hott.8.11	HoTT.Types.Sum.trunc_sum	600	600.174510	65540	10182
+coq-corn.8.16.0	CoRN.fta.CC_Props.Continuity_for_CC.poly_pres_lim	600	600.145153	13846	3426
+coq-corn.8.16.0	CoRN.complex.AbsCC.AbsCC_properties.cc_recip_char	600	600.165292	13216	3323
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_fst	600	600.225740	27162	3668
+coq-corn.8.16.0	CoRN.ode.BanachFixpoint.BanachFixpoint.PropHolds_instance_3	600	600.460335	23434	920
+coq-hott.8.11	HoTT.Tactics.EquivalenceInduction.Unnamed_thm	600	600.439901	77755	9998
+coq-qcert.2.2.0	Qcert.Utils.Assoc.Assoc.Lookup_diff.lookup_diff_disjoint	600	600.193528	5353	3922
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.length_mk_list_true_full	600	132.288063	2946	956	0.99.0	synth with cache (only 1: intros ?; only 1: rewrite add_mk_list_true; only 1: easy).
+coq-hott.8.11	HoTT.Categories.Category.Morphisms.iso_concat_lemmas.iso_moveL_1M	600	600.235885	87150	6571
+coq-ceres.0.4.0	Ceres.CeresRoundtrip.CompleteClass_list	600	600.171896	21469	5175
+coq-corn.8.16.0	CoRN.algebra.Expon.More_Nexp.nexp_resp_le'	600	555.932760	38318	2414	0.0.0.74.0.0	synth with cache (only 1: intros; only 1: red; only 1: apply small_nexp_resp_le; only 1: trivial; only 1: trivial; only 1: trivial).
+coq-corn.8.16.0	CoRN.reals.R_morphism.morphism.map_pres_inv_unfolded	600	600.277960	56365	3187
+coq-corn.8.16.0	CoRN.algebra.Cauchy_COF.Structure.Field_Structure.R_recip_strext	600	600.174953	19444	3321
+coq-corn.8.16.0	CoRN.ftc.NthDerivative.More_Results.n_deriv_inc	600	600.202496	17617	3508
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Effective.stratify_stratified	600	600.603492	11597	3272
+coq-corn.8.16.0	CoRN.ftc.RefLemma.Refinement_Lemma.Third_Refinement_Lemma.RL_csi1	600	600.407036	20534	3116
+coq-qcert.2.2.0	Qcert.cNNRC.Typing.TcNNRCEq.TcNNRCEq.nnrc_base_const_tproper	600	2.438772	13	13	0.1.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: destruct H; only 1: reflexivity).
+coq-qcert.2.2.0	Qcert.NRAEnv.Lang.NRAEnvEq.NRAEnvEq.proper_NRAEnvMap	600	600.093774	4474	3093
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoNNRCMR.NNRCtoNNRCMR.bminus_In_alt_neq	600	600.097557	6821	3304
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoNNRCMR.NNRCtoNNRCMR.nnrc_to_nnrcmr_chain_ns_aux_func_obligation_1	600	4.616068	60	14	0.19	synth with cache (only 1: simpl; only 1: lia).
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.pP	600	600.391303	19304	988
+coq-bbv.1.3	bbv.Word.split2_combine	600	305.801887	4673	2305	0.0.0.0.0.0.0.3.1	synth with cache (only 1: intros; only 1: induction w; only 1: induction sz2; only 1: simpl; only 1: easy; only 1: simpl; only 1: auto; only 1: simpl; only 1: auto).
+coq-qcert.2.2.0	Qcert.Compiler.Enhanced.EnhancedEJsonToWSON.enhanced_foreign_to_wson_obligation_1	600	19.028618	182	100	0.0.11	synth with cache (only 1: pose proof enhanced_foreign_to_wson_from_ejson; only 1: apply H; only 1: exact j).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.cfdot_prTIirr_red	600	600.674665	13221	1156
+coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.ac_substs_Product	600	600.188766	9846	3479
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.sublist.rec_concat_sort_sublist	600	600.196987	12451	3869
+coq-corn.8.16.0	CoRN.ftc.MoreFunctions.Nth_Derivative.Basic_Results.Derivative_n_unique	600	600.225238	8023	3058
+coq-corn.8.16.0	CoRN.ftc.MoreFunctions.Nth_Derivative.Basic_Results.Diffble_n_imp_inc	600	1.512681	5	7	0.1	synth with cache (only 1: simple destruct 1; only 1: trivial).
+coq-corn.8.16.0	CoRN.model.structures.NNUpperR.binop.binop_obligation_2	600	600.290226	40799	2442
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TOperatorsInfer.TOperatorsInfer.b.infer_binary_op_type_correct	600	600.082975	10770	3006
+coq-qcert.2.2.0	Qcert.Compiler.Enhanced.EnhancedData.enhanced_foreign_data_obligation_4	600	7.251676	456	39	0.0.10	synth with cache (only 1: induction a; only 1: constructor; only 1: constructor).
+coq-hott.8.11	HoTTBookExercises.Book_6_9.centralAllExOthBool	600
+coq-qcert.2.2.0	Qcert.NNRSimp.Optim.NNRSimpRewrite.NNRSimpRewrite.rename_for_eq	600	600.207461	25074	3527
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.primes_norm_tau2Elem	600	600.676992	16626	986
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.FTtypeClassification.norm_FTcore	600	600.221564	13442	1196
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.der_compl_cent_beta'	600	14.033185	592	24
+coq-qcert.2.2.0	Qcert.cNNRC.Typing.TcNNRCShadow.TcNNRCShadow.nnrc_core_type_cons_subst	600	600.138591	7829	2668
+coq-qcert.2.2.0	Qcert.cNRAEnv.Typing.TcNRAEnv.TcNRAEnv.omap_product_typed2_env	600	600.056219	6156	2556
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvRewrite.ROptimEnv.dup_elim	600	600.124416	14951	2844
+coq-qcert.2.2.0	Qcert.cNRAEnv.Context.cNRAEnvContextLift.cNRAEnvContext.lift_nra_context_substs	600	600.167067	12899	3211
+coq-iris-heap-lang.3.4.0	iris.heap_lang.class_instances.pure_exec.pure_case_inl	600	600.126243	22395	3563
+coq-corn.8.16.0	CoRN.complex.AbsCC.AbsCC_properties.AbsCC_strext	600	600.284292	14052	3755
+coq-qcert.2.2.0	Qcert.Translation.Typing.TCAMPtoNRA.TCAMPtoNRA.ATnra_match_invcoll	600	600.130289	6609	2510
+coq-qcert.2.2.0	Qcert.NNRS.Typing.TNNRS.TNNRS.typed_nnrs_expr_yields_typed_data_compute	600	600.205540	9753	2850
+coq-qcert.2.2.0	Qcert.Utils.Assoc.Assoc.Lookup_equiv_on.lookup_equiv_on_update_first	600	600.114138	5747	3892
+coq-qcert.2.2.0	Qcert.NNRC.Optim.NNRCRewrite.NNRCRewrite.nnrc_core_eval_lookup_equiv_on	600	491.734608	5856	2577	0.2.0.166.0	synth with cache (only 1: intros; only 1: apply @nnrc_core_eval_equiv_free_in_env; only 1: intros; only 1: apply H; only 1: trivial).
+coq-corn.8.16.0	CoRN.ode.BanachFixpoint.BanachFixpoint.Qpower_mc_power	600	600.218062	8964	2985
+coq-qcert.2.2.0	Qcert.cNRAEnv.Typing.TcNRAEnvEq.TcNRAEnvEq.andefault_tproper	600	603.976251	9203	2614
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_and_nth_bitOf	600	600.210207	19613	3572
+coq-hott.8.11	HoTT.Categories.Category.Morphisms.associativity_composition.compose4associativity_helper	600	600.356592	91833	6885
+coq-corn.8.16.0	CoRN.algebra.Expon.Zexp_properties.zexp_nexp	600	600.182828	34008	3198
+coq-corn.8.16.0	CoRN.algebra.Cauchy_COF.Structure.Order.Rlt_strict	600
+coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.ac_subst_nholes	600	492.625348	10743	2817	0.2.0.57.0	synth with cache (only 1: intros ?; only 1: apply ac_subst_holes_nin; only 1: rewrite H; only 1: intros ?; only 1: inversion H0).
+coq-corn.8.16.0	CoRN.reals.R_morphism.simplification.with_plus.f_pres_minus	600	600.113154	27889	3644
+coq-corn.8.16.0	CoRN.algebra.Expon.Zexp_properties.inv_zexp_odd	600
+coq-corn.8.16.0	CoRN.ftc.NthDerivative.More_Results.n_deriv_inc'	600	600.091624	19370	3488
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Effective.stratify_stratified_spec	600	600.603559	11873	3369
+coq-corn.8.16.0	CoRN.ftc.RefLemma.Refinement_Lemma.Third_Refinement_Lemma.RL_R'_sep	600	600.094587	29320	3049
+coq-corn.8.16.0	CoRN.transc.Exponential.Continuous_Log	600	600.194208	16561	2897
+coq-corn.8.16.0	CoRN.transc.Exponential.Log_domain	600	3.498030	19	18	4	synth with cache (only 1: eauto).
+coq-qcert.2.2.0	Qcert.NRAEnv.Lang.NRAEnvEq.NRAEnvEq.proper_NRAEnvApp	600	600.225027	4405	3069
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.E_1	600	600.540342	17622	830
+coq-bbv.1.3	bbv.Word.combine_assoc	600	600.086409	7436	4716
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.prTIsign0	600	600.488174	15394	1077
+coq-qcert.2.2.0	Qcert.NNRSimp.Typing.TNNRSimp.TNNRSimp.nnrs_imp_stmt_eval_preserves_types	600	600.061033	2939	2781
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.InverseDade.sLG	600	600.613700	19087	1049
+coq-qcert.2.2.0	Qcert.CAMPRule.Typing.TCAMPRule.TCAMPRule.typed_rule_correct	600	600.253222	6485	2779
+coq-corn.8.16.0	CoRN.metrics.CPMSTheory.loc_and_bound.Re_co_do	600	79.457444	8146	340	0.0.4.11.3.0	synth with cache (unshelve (only 1: intros ?; only 1: simpl; only 1: eexists; only 1: eexists; only 1: easy); only 1: easy).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.le_0_a	600	601.168215	16628	828
+coq-qcert.2.2.0	Qcert.CAMP.Typing.TCAMP.TCAMP.rec_concat_sort_bindings_type	600	600.364916	16443	2982
+coq-qcert.2.2.0	Qcert.Utils.Bindings.Bindings.rev.lookup_rev_rec_sort	600	600.104150	10066	3933
+coq-corn.8.16.0	CoRN.ftc.MoreFunctions.Nth_Derivative.Corollaries.Derivative_n_imp_Continuous	600	600.095635	12794	3083
+coq-corn.8.16.0	CoRN.model.structures.NNUpperR.mult_0_l	600	600.160267	8562	3452
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'2_eq	600	600.991903	15401	1097
+coq-corn.8.16.0	CoRN.transc.InvTrigonom.Inverses.ArcTan_Range.b5	600	600.163003	12586	2966
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TOperatorsInfer.TOperatorsInfer.u.Forall_rremove	600	600.142320	7260	3561
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.TNRAEnvRewrite.TNRAEnvRewrite.tflip_env1_arrow	600	600.130595	9758	2797
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvOptimizer.NRAEnvOptimizer.tselect_over_either_nil_fun_correctness	600
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.FTsuppJ	600	600.176634	11462	1115
+coq-corn.8.16.0	CoRN.coq_reals.Rreals_iso.R_tan_as_IR	600	600.147466	6610	2840
+coq-corn.8.16.0	CoRN.reals.PosSeq.SeqProperties.One_seq_is_pos	600	155.940866	8058	879	12.44.0	synth with cache (only 1: red; only 1: elim Z_is_CRing; only 1: auto with *).
+coq-corn.8.16.0	CoRN.fta.KneserLemma.Kneser_Lemma.Kneser_2c	600	600.165586	9970	3272
+coq-qcert.2.2.0	Qcert.Translation.Typing.TCAMPtoNRA.TCAMPtoNRA.nra_of_camp_type_form_output_weak	600	600.140021	19835	2768
+coq-qcert.2.2.0	Qcert.NNRS.Typing.TNNRS.TNNRS.nnrs_stmt_preserves_md_some_cons	600	600.125862	6596	2963
+coq-qcert.2.2.0	Qcert.NNRC.Optim.NNRCRewrite.NNRCRewrite.nnrcproject_over_nnrcproject	600	600.495849	29645	3457
+coq-smtcoq.2.0+8.11	SMTCoq.bva.BVList.RAWBITVECTOR_LIST.bv_and_0_absorb	600	600.219459	8277	3179
+coq-corn.8.16.0	CoRN.ftc.RefSeparating.Separating_Partition.sep__part_fun_m	600	600.347475	11343	3501
+coq-corn.8.16.0	CoRN.ftc.FunctSeries.More_Operations.Fun_Series_Sum_inv	600	600.110851	17570	3344
+coq-corn.8.16.0	CoRN.algebra.Cauchy_COF.Structure.Auxiliary.Eq_alt_1	600	600.254732	28105	3639
+coq-corn.8.16.0	CoRN.metrics.CMetricSpaces.Zeroff.metric_ap_tight	600	600.174058	20671	3592
+coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.equivs.ac_subst_swap_neq	600	600.133830	11448	3623
+coq-corn.8.16.0	CoRN.reals.R_morphism.simplification.with_plus.f_pres_min	600	600.212378	20597	4092
+coq-corn.8.16.0	CoRN.algebra.Expon.Root_Unique.root_unique	600	600.156239	23033	3319
+coq-corn.8.16.0	CoRN.reals.fast.CRIR.IR_minus_as_CR	600	600.317791	36515	2079
+coq-corn.8.16.0	CoRN.ftc.FunctSequence.More_Algebraic_Properties.fun_Lim_seq_minus	600	600.277539	7294	3442
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Idempotent.stratify_aux_stratify_id	600	600.102619	16336	3736
+coq-corn.8.16.0	CoRN.complex.NRootCC.NRootCC_1.NRootCC_1_ap_real.nrCC1_a3	600	600.145866	12933	3432
+coq-corn.8.16.0	CoRN.ftc.Partitions.Even_Partitions.even_partition_Mesh	600	600.102939	23484	3279
+coq-qcert.2.2.0	Qcert.NRAEnv.Lang.NRAEnvEq.NRAEnvEq.proper_NRAEnvFlatMap	600	600.249135	4376	3053
+coq-corn.8.16.0	CoRN.transc.Exponential.Log_cancel_less	600	600.065827	8346	2750
+coq-corn.8.16.0	CoRN.ftc.Derivative.included_imp_deriv	600	600.163250	15203	3029
+coq-corn.8.16.0	CoRN.ode.FromMetric2.QField.CompleteSegment.Limit_instance_0_obligation_1	600	601.128618	19433	1766
+coq-corn.8.16.0	CoRN.fta.MainLemma.Main_Lemma.Main_1	600	600.172828	6946	3114
+coq-bbv.1.3	bbv.Word.wtl_eq_rect_mul	600	600.191009	16066	4700
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.AppendixC3.splitH	600	600.486189	17906	879
+coq-qcert.2.2.0	Qcert.NNRSimp.Typing.TNNRSimp.TNNRSimp.nnrs_imp_stmt_type_lookup_equiv_prop	600	600.144235	5825	3127
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.coKW1	600	600.250715	19710	1085
+coq-corn.8.16.0	CoRN.reals.faster.ARabs.ARabs.ARabs_opp	600
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.InverseDade.invDade_on	600	600.204738	36337	921
+coq-corn.8.16.0	CoRN.metrics.CPMSTheory.loc_and_bound.locatedsub_totallybounded_imp_totallyboundedsub	600	600.130391	15606	3562
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.ler_rat_of_positive	600	600.425832	13815	1304
+coq-corn.8.16.0	CoRN.metrics.CPseudoMSpaces.Zerof.zero_fun_com	600	2.250377	20	13	4.0	synth with cache (only 1: intros ?; only 1: easy).
+coq-corn.8.16.0	CoRN.metrics.IR_CPMSpace.Reals.d_is_lipschitz	600
+coq-corn.8.16.0	CoRN.reals.faster.ARabs.ARabs.ARabs_neg	600
+coq-corn.8.16.0	CoRN.ftc.Continuity.Definitions_and_Basic_Results.Continuous_I_imp_tb_image	600
+coq-corn.8.16.0	CoRN.ftc.FunctSums.FSum0_wd	600
+coq-corn.8.16.0	CoRN.reals.Intervals.Totally_Bounded.aux_seq_glb	600
+coq-corn.8.16.0	CoRN.metrics.Prod_Sub.subpsmetrics.dsub_com	600	600.108517	17502	3435
+coq-corn.8.16.0	CoRN.complex.CComplex.Complex_Numbers.cc_plus_strext	600	600.197892	11436	3285
+coq-corn.8.16.0	CoRN.reals.Series.Operations.series_sum_minus	600	600.180126	27520	3270
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection13.Section13.OneComplement.cent_norm_tau13_mmax	600	600.442931	8648	1055
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TUnaryOperators.TUnaryOperators.canon_brands_alt_is_canon	600
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection13.Section13.tau13_primact_Msigma	600	3.412448	55	5
+coq-corn.8.16.0	CoRN.reals.faster.ARArith.ARarith.ARtoCR_preserves_boundAbove	600
+coq-corn.8.16.0	CoRN.ode.metric.MetricSpace.msd_nonneg	600	600.381725	15102	2326
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.InverseDade.DadeK	600	193.567641	27499	244
+coq-corn.8.16.0	CoRN.ftc.PartInterval.Equivalences.part_int_const	600	600.225779	16609	3567
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.FTsupp0_sub	600	600.534278	28242	1170
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.coUq	600	600.588412	10356	1090
+coq-corn.8.16.0	CoRN.reals.NRootIR.Nth_Root.nroot	600	600.235018	27325	2333
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.solH	600	10.836444	1053	9
+coq-corn.8.16.0	CoRN.ode.AbstractIntegration.range_le	600	600.416951	4307	2439
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.defHC	600	14.089777	2572	18
+coq-corn.8.16.0	CoRN.metrics.CMetricSpaces.Zeroff.metric_d_strext	600	600.160050	13845	3606
+coq-corn.8.16.0	CoRN.reals.fast.CRIR.IR_recip_as_CR_2	600	600.549284	23809	2905
+coq-corn.8.16.0	CoRN.complex.NRootCC.NRootCC_1.NRootCC_1_ap_real.nrootCC_1_upper	600	600.171041	11297	3321
+coq-corn.8.16.0	CoRN.ftc.FunctSequence.More_Algebraic_Properties.fun_Lim_seq_mult	600	600.119913	4754	3434
+coq-qcert.2.2.0	Qcert.NNRSimp.Optim.NNRSimpUnflatten.NNRSimpUnflatten.unflatten.ident.nnrs_imp_expr_unflatten_read_nfree_id	600	600.473357	21829	3368
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.A'.W_k.w_seq_le_S	600	600.661204	16102	1081
+coq-corn.8.16.0	CoRN.ftc.Partitions.Sep_Partitions._Separated_imp_length_zero	600	600.062797	7415	3038
+coq-corn.8.16.0	CoRN.reals.Bridges_iso.bridges_axioms_imply_ours.is_Archimedes'	600
+coq-corn.8.16.0	CoRN.ftc.Continuity.Definitions_and_Basic_Results.lub_prop	600	600.108090	14514	3439
+coq-corn.8.16.0	CoRN.reals.IVT.Nested_Intervals.intervals_cauchy	600	600.181951	30941	3628
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvOptimizer.NRAEnvOptimizer.tselect_over_flatten_fun_correctness	600	600.147138	8430	2770
+coq-corn.8.16.0	CoRN.ftc.FunctSums.FSum_first	600	600.118396	24347	3233
+coq-corn.8.16.0	CoRN.model.metric2.LinfMetric.StepF_eq_change_base_setoid_const	600	601.444694	3425	1559
+coq-corn.8.16.0	CoRN.reals.fast.CRGeometricSum.InfiniteSum_raw_N_extend	600	600.211331	4293	3125
+coq-corn.8.16.0	CoRN.model.rings.CRring.CRisCRing	600	600.939095	17792	3254
+coq-corn.8.16.0	CoRN.reals.Bridges_iso.bridges_axioms_imply_ours.proofs_in_TCS.Every_Cauchy_Sequence_is_bounded.Psup_unfolded1	600	71.476509	862	463	15	synth with cache (only 1: apply Psup_proj1).
+coq-corn.8.16.0	CoRN.reals.CPoly_Contin.plus_op_contin	600
+coq-corn.8.16.0	CoRN.transc.Exponential.Log_resp_less	600	600.207144	8471	2834
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TBinaryOperators.TBinaryOperators.mapTopNotSub_sublist_same	600	600.120690	7533	3127
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.TNRAEnvRewrite.TNRAEnvRewrite.tmapconcat_over_singleton	600	600.194606	10545	2574
+coq-corn.8.16.0	CoRN.complex.CComplex.Complex_Numbers.cc_mult_strext	600	600.177100	11135	3247
+coq-corn.8.16.0	CoRN.reals.Series.Operations.conv_series_mult_scal	600	600.228098	24851	3538
+coq-qcert.2.2.0	Qcert.NNRSimp.Lang.NNRSimpRename.NNRSimpRename.var_usage.nnrs_imp_stmt_rename_either_l_var_usage_sub_b	600	600.115041	9555	3494
+coq-qcert.2.2.0	Qcert.NNRS.Typing.TNNRS.TNNRS.nnrs_stmt_must_assign_assigns	600	600.157487	7210	2718
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TGroupBy.TGroupBy.typed_to_partitions_yields_typed_data	600	600.177050	7080	2783
+coq-corn.8.16.0	CoRN.reals.faster.ARArith.ARarith.PartialOrder_instance_0	600	600.733807	14315	1527
+coq-corn.8.16.0	CoRN.reals.fast.RasterQ.In_filter_list	600	600.079225	7297	3743
+coq-corn.8.16.0	CoRN.ode.metric.compose_uc	600	600.330584	16459	2180
+coq-corn.8.16.0	CoRN.ftc.PartFunEquality.More_on_Equality.Operations.Feq_div	600	600.185432	5699	3503
+coq-corn.8.16.0	CoRN.reals.CReals1.More_Cauchy_Props.twice_inv_seq	600	0.836278	274	4
+coq-corn.8.16.0	CoRN.model.metric2.L1metric.L1ball_dec	600	601.477746	35282	3188
+coq-corn.8.16.0	CoRN.metrics.CMetricSpaces.Zeroff.Metric_d_nneg	600	298.669539	7765	1853	3.0.0.103.0.0	synth with cache (only 1: intros ?; only 1: induction X; only 1: elim cms_proof; only 1: elim cms_proof; only 1: intros; only 1: trivial).
+coq-qcert.2.2.0	Qcert.cNRAEnv.Context.cNRAEnvContext.cNRAEnvContext.aec_simplify_holes_preserved	600	600.465717	18178	3463
+coq-corn.8.16.0	CoRN.reals.CMetricFields.basics.Hulp	600	600.389145	19564	3249
+coq-corn.8.16.0	CoRN.metrics.CMetricSpaces.Limitt.d_wd	600	16.283869	156	91	0.3.0	synth with cache (only 1: intros; only 1: rewrite H; only 1: reflexivity).
+coq-corn.8.16.0	CoRN.ftc.Continuity.Other.Sums.Continuous_I_Sum0	600
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TOperatorsEq.TOperatorsEq.tunary_op_rewrites_to_pre	600
+coq-corn.8.16.0	CoRN.reals.RealCount.IntervalSequence.grow_rht	600	600.508026	23099	3385
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TSortBy.TSortBy.sortable_type_dec	600	604.038432	20909	3024
+coq-qcert.2.2.0	Qcert.Data.ModelTyping.TData.TData.opt.dtsome_inv	600	600.136838	9320	3053
+coq-corn.8.16.0	CoRN.ftc.FunctSums.inv_FSum	600
+coq-corn.8.16.0	CoRN.reals.fast.RasterizeQ.RasterizeCorrect.RasterizeQ2_correct	600	600.303945	12318	2853
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.InducedIrrs.KerIirr.Iirr_ker_conjg	600	9.246218	562	16
+coq-corn.8.16.0	CoRN.reals.Q_dense.COrdField_extra.AbsSmall_pos_reflexive	600	6.490469	413	32	170	synth with cache (only 1: apply AbsSmall_reflexive).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.DisjointDadeOrtho.odd_Dade_context	600	600.576052	8729	1023
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.MmaxFTsupp.FTsupp1_sub	600	600.452420	16394	1152
+coq-corn.8.16.0	CoRN.reals.fast.CRpower.CRpower_N.Qpower_N_uc_prf	600
+coq-corn.8.16.0	CoRN.reals.NRootIR.Nth_Root.NRoot_pos	600	600.228879	18192	3465
+coq-qcert.2.2.0	Qcert.cNRAEnv.Context.cNRAEnvContext.cNRAEnvContext.aec_substs_Plug	600	48.139794	1061	301	2.0.2.0	synth with cache (only 1: induction ps; only 1: auto; only 1: destruct a0; only 1: auto).
+coq-corn.8.16.0	CoRN.ode.AbstractIntegration.IntegralTotal.integral_additive'	600	600.825348	9262	2145
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.sHC_HU	600	600.614300	6237	951
+coq-qcert.2.2.0	Qcert.Translation.Typing.TcNNRCtoCAMP.TcNNRCtoCAMP.nnrc_to_camp_ns_let_top_type_preserve	600	600.123278	4672	2906
+coq-corn.8.16.0	CoRN.complex.CComplex.Complex_Numbers.cc_csg_associative	600
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCShadow.NNRCShadow.nnrc_no_free_vars_eval_equiv_env	600	98.597985	1552	588	0.0.0.38.0	synth with cache (only 1: intros; only 1: apply @nnrc_eval_equiv_free_in_env; only 1: intros; only 1: rewrite H in H0; only 1: inversion H0).
+coq-corn.8.16.0	CoRN.reals.fast.CRIR.IR_zring_as_CR	600	601.088320	29244	2355
+coq-corn.8.16.0	CoRN.ftc.FunctSequence.Still_More_Algebraic_Properties.fun_Lim_seq_inv	600	600.200201	7437	3476
+coq-corn.8.16.0	CoRN.complex.NRootCC.NRootCC_4.NRootCC_4_ap_real.NRootCC_4_equations.nrCC4_a2	600	600.165413	13896	3263
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.A'.W_k.w_seq_bound_tail	600	600.587884	12919	990
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCShadow.NNRCShadow.nnrc_eval_single_context_var_uncons	600	67.710502	883	388	0.145.0	synth with cache (only 1: intros; only 1: apply @nnrc_core_eval_single_context_var_uncons; only 1: auto).
+coq-qcert.2.2.0	Qcert.NNRSimp.Optim.NNRSimpUnflatten.NNRSimpUnflatten.unflatten.free_vars.nnrs_imp_expr_unflatten_read_free_vars	600	600.124204	10542	3337
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Eval_substs.eval_substs_app	600	600.360634	8222	3407
+coq-corn.8.16.0	CoRN.reals.IVT.Bisection.rht_b	600	600.156100	31740	3767
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvOptimizer.NRAEnvOptimizer.tappenv_over_const_fun_correctness	600	600.424629	8299	2793
+coq-corn.8.16.0	CoRN.ftc.FunctSums.FSumx_pred'	600
+coq-corn.8.16.0	CoRN.reals.Bridges_iso.bridges_axioms_imply_ours.proofs_in_TCS.Every_Cauchy_Sequence_is_bounded.Pinf_unfolded2	600	601.390234	28514	3092
+coq-corn.8.16.0	CoRN.reals.CPoly_Contin.mult_op_contin	600	600.194185	18973	3393
+coq-corn.8.16.0	CoRN.reals.Bridges_iso.bridges_axioms_imply_ours.proofs_in_TCS.Psup_unfolded2_informative	600	14.693302	1249	70	48	synth with cache (only 1: apply Psup_unfolded2).
+coq-corn.8.16.0	CoRN.reals.fast.CRGeometricSum.GeometricSeries.InfiniteGeometricSum_bound	600	600.602929	14964	2098
+coq-corn.8.16.0	CoRN.transc.Exponential.Log_less_Zero	600	600.256972	10489	3082
+coq-corn.8.16.0	CoRN.reals.Series.Convergence_Criteria.abs_imp_conv	600	600.570011	45204	3255
+coq-corn.8.16.0	CoRN.reals.fast.Interval.Interval.UniformPartition_fine_aux	600	600.263454	12974	2535
+coq-qcert.2.2.0	Qcert.NNRSimp.Lang.NNRSimpRename.NNRSimpRename.nfree.nnrs_imp_stmt_rename_nin	600	600.121944	27347	3588
+coq-corn.8.16.0	CoRN.reals.Bridges_LUB.LUBP.upper_bound_sequence.U_m_n_W	600	600.347017	22506	3523
+coq-corn.8.16.0	CoRN.reals.fast.Interval.InfiniteIntervalLocated	600
+coq-qcert.2.2.0	Qcert.NNRS.Typing.TNNRS.TNNRS.unused.remove.nnrs_stmt_type_unused_remove_env	600	600.240383	3790	2362
+coq-corn.8.16.0	CoRN.reals.faster.ARArith.ARarith.OrderEmbedding_instance_0	600	600.410881	8168	2341
+coq-corn.8.16.0	CoRN.reals.iso_CReals.Concrete_iso_between_Creals.g21_is_inverse_f12	600
+coq-corn.8.16.0	CoRN.reals.iso_CReals.Concrete_iso_between_Creals.g21_pres_mult	600	1.695837	370	3
+coq-corn.8.16.0	CoRN.ftc.PartFunEquality.More_on_Equality.Operations.Feq_comp	600	600.097230	12013	3558
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtocNNRC.NNRCtocNNRC.Top.nnrc_to_nnrc_core_top_correct	600	3.382543	20	20	5.0	synth with cache (only 1: intros; only 1: reflexivity).
+coq-corn.8.16.0	CoRN.model.metric2.L1metric.Integral_opp	600	600.330381	15587	1783
+coq-corn.8.16.0	CoRN.ftc.PartFunEquality.Nth_Power.FNth_zero	600	20.795621	1130	127	174.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: reflexivity).
+coq-corn.8.16.0	CoRN.model.metric2.L1metric.Abs_Integral_Norm	600	9.224764	287	50	136.0	synth with cache (only 1: intros ?; only 1: apply Abs_Integral).
+coq-qcert.2.2.0	Qcert.Translation.Lang.LambdaNRAtoNRAEnv.LambdaNRAtoNRAEnv.lambda_nra_to_nraenv_unop_eq	600	0.720941	5	4	3	synth with cache (only 1: reflexivity).
+coq-corn.8.16.0	CoRN.metric2.StepFunctionSetoid.MirrorGlue	600	0.341852	2	2	1	synth with cache (only 1: reflexivity).
+coq-qcert.2.2.0	Qcert.Translation.Lang.LambdaNRAtoNRAEnv.LambdaNRAtoNRAEnv.lambda_nra_to_nraenv_map_eq	600	1.590752	16	9	6	synth with cache (only 1: reflexivity).
+coq-corn.8.16.0	CoRN.ftc.PartFunEquality.Strong_Nth_Power.FNth_zero'	600	6.949974	469	42	3.1	synth with cache (only 1: red; only 1: intuition).
+coq-corn.8.16.0	CoRN.metrics.CMetricSpaces.Limitt.unique_MSseqLim	600	600.246786	27373	3243
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCEq.NNRCEq.proper_NNRCBinop	600	37.401387	629	183	0.0.0.111.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: apply @proper_cNNRCBinop; only 1: trivial; only 1: trivial; only 1: trivial).
+coq-qcert.2.2.0	Qcert.Data.ModelTyping.ForeignDataTyping.ForeignDataTyping.foreign_data_typing_infer_complete	600	13.803500	2279	71	0.1.0.216	synth with cache (only 1: revert τ; only 1: induction ftyping; only 1: intros; only 1: eauto).
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TSortBy.TSortBy.order_by_has_sortable_type_sdd	600	603.390492	6945	2858
+coq-qcert.2.2.0	Qcert.Data.ModelTyping.TData.TData.dtbrand_inv	600	600.087211	5571	3301
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection14.Fourteen.galT	600	600.215422	24653	917
+coq-corn.8.16.0	CoRN.model.metric2.LinfMetricMonad.SupMetric.StepFSupBall_refl	600	601.604486	18242	2555
+coq-corn.8.16.0	CoRN.reals.fast.CRAlternatingSum.RationalStreamSum.Str_alt_decr_tl	600	600.185722	11770	2787
+coq-qcert.2.2.0	Qcert.Translation.Lang.NRAtocNNRC.NRAtocNNRC.Top.nra_to_nnrc_core_top_correct	600	88.026359	1028	504	0.0.84	synth with cache (only 1: apply nra_sem_correct; only 1: simpl; only 1: reflexivity).
+coq-tlc.20200328	TLC.LibFun.Combinators.compose_id_r	600	0.289328	1	2	0	synth with cache (only 1: reflexivity).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.InducedIrrs.KerIirr.Iirr_kerDS	600	600.277853	15412	1065
+coq-tlc.20200328	TLC.LibFun.Combinators.compose_eq_r	600	2.132960	29	14	0.0.8.0	synth with cache (only 1: intros; only 1: unfold compose; only 1: subst; only 1: auto).
+coq-tlc.20200328	TLC.LibFun.fupdate_eq	600	1.036897	8	8	1.0.0	synth with cache (only 1: unfold fupdate; only 1: intros; only 1: reflexivity).
+coq-tlc.20200328	TLC.LibFun.fupdate_same	600	1.502060	10	12	0.0.0.0.0	synth with cache (only 1: intros; only 1: unfold fupdate; only 1: destruct classicT; only 1: reflexivity; only 1: congruence).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.InducedIrrs.SeqInd.seqInd_uniq	600	4.435774	712	7
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection14.Fourteen.nsKM	600	2.003608	3	3	1	synth with cache (only 1: exact : gFnormal ).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.InducedIrrs.SeqInd.Beta.seqInd_sub_lin_vchar	600	6.871594	184	11
+coq-tlc.20200328	TLC.LibFun.FunctionImage.image_covariant	600	14.631937	969	95	237.0	synth with cache (only 1: intros; only 1: case skip_axiom).
+coq-tlc.20200328	TLC.LibFun.applyn_fix	600	5.519134	53	40	0.0.1.0.0.1.1	synth with cache (only 1: intros; only 1: induction n; only 1: reflexivity; only 1: simpl; only 1: rewrite <- IHn; only 1: simpl; only 1: reflexivity).
+coq-corn.8.16.0	CoRN.reals.Max_AbsIR.Maximum.MAX_strext	600	600.256416	18925	3421
+coq-qcert.2.2.0	Qcert.Translation.Lang.LambdaNRAtoNRAEnv.LambdaNRAtoNRAEnv.Translation.nraenv_of_lnra_lambda_correct	600	108.029308	1987	599	15.3.0	synth with cache (only 1: intros; only 1: destruct lop; only 1: apply lambda_nra_to_nraenv_correct).
+coq-qcert.2.2.0	Qcert.Translation.Lang.ImpDatatoImpEJson.ImpDatatoImpEJson.Correctness.eval_ejson_to_expr_sort_criteria_correct	600	3.405999	26	16	0.0.0.0.0.0.4	synth with cache (only 1: destruct a; only 1: simpl; only 1: destruct s0; only 1: simpl; only 1: reflexivity; only 1: simpl; only 1: reflexivity).
+coq-corn.8.16.0	CoRN.liouville.QX_extract_roots.Z_Q.QX_deg_mult	600	600.108099	14110	3616
+coq-corn.8.16.0	CoRN.model.structures.StepQsec.QS.QplusS	600	600.955702	8747	212
+coq-corn.8.16.0	CoRN.reals.Q_dense.COrdField_extra.AbsSmall_neg_reflexive	600	600.197891	18752	3472
+coq-corn.8.16.0	CoRN.reals.Max_AbsIR.Maximum.properties_of_Max.leEq_imp_Max_is_rht	600
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.MmaxFTsupp.FTsupp1_neq0	600	600.605146	10736	1334
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.CoherentFrobeniusPartition.no_coherent_Frobenius_partition	600	600.139025	18403	1127
+coq-corn.8.16.0	CoRN.reals.fast.CRpower.Cmap_wd_bounded	600	600.087316	9738	2825
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_6_t0_10.W1lin	600	21.100998	509	32	198	synth with cache (only 1: exact : irr_cyclic_lin ).
+coq-corn.8.16.0	CoRN.reals.NRootIR.Square_root.sqrt_less	600	600.126968	19710	3294
+coq-qcert.2.2.0	Qcert.cNRAEnv.Context.cNRAEnvContext.cNRAEnvContext.aec_substs_Binop	600	600.232948	11068	3610
+coq-qcert.2.2.0	Qcert.Translation.Model.DataToEJson.DataToEJson.ModelRoundTrip.ejson_brands_map_ejstring	600	6.694417	128	38	0.9.0.0.0.0	synth with cache (only 1: induction b; only 1: simpl; only 1: auto; only 1: simpl; only 1: intropattern subst -> IHb; only 1: auto).
+coq-corn.8.16.0	CoRN.reals.Bridges_LUB.LUBP.upper_bound_sequence.a_familiar_simple_inequality	600
+coq-qcert.2.2.0	Qcert.NRA.Optim.NRAExtRewrite.NRAExtRewrite.eand_comm	600	21.198219	228	131	35	synth with cache (only 1: apply @and_comm).
+coq-qcert.2.2.0	Qcert.TypeSystem.RConsistentSubtype.RConsistentSubtype.rtype_join_meet.consistent_rtype_join2	600	41.112591	889	222	42	synth with cache (only 1: apply consistent_rtype_join_meet2).
+coq-corn.8.16.0	CoRN.complex.CComplex.Complex_Numbers.cc_cg_proof	600	600.224417	24778	3399
+coq-corn.8.16.0	CoRN.model.structures.OpenUnit.OpenUnit_Dual_lt_1	600	90.512000	2051	524	0.4.5.0.1.5.0	synth with cache (only 1: intros ?; only 1: destruct a; only 1: simpl; only 1: destruct OpenUnitprf0; only 1: apply Qlt_minus_iff; only 1: ring_simplify; only 1: assumption).
+coq-corn.8.16.0	CoRN.complex.NRootCC.NRootCC_4.NRootCC_4_ap_real.NRootCC_4_equations.nrCC4_a3	600	600.181052	16044	3272
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.Computations.w_ge0	600	600.693287	26976	929
+coq-corn.8.16.0	CoRN.complex.NRootCC.NRootCC_4.NRootCC_4_ap_real.NRootCC_4_equations.nrCC4_a5	600	10.226439	125	59	76	synth with cache (only 1: reflexivity).
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCShadow.NNRCShadow.nnrc_eval_single_context_var_cons_keepone	600	600.787875	13257	3409
+coq-qcert.2.2.0	Qcert.NNRSimp.Optim.NNRSimpUnflatten.NNRSimpUnflatten.unflatten.free_vars.nnrs_imp_expr_unflatten_write_free_vars	600	600.141715	10746	3246
+coq-corn.8.16.0	CoRN.reals.fast.CRabs.CRabs_triangle	600	601.198625	23908	2237
+coq-tlc.20200328	TLC.LibOtherDemos.SubtermIndDemos.tree_induct_forall	600	2.700230	15	18	0.0.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: induction skip_axiom).
+coq-tlc.20200328	TLC.LibOtherDemos.LibVarDemos.LibVarDemo.test_notin_solve_2	600	0.473479	2	3	0.0	synth with cache (only 1: intros; only 1: auto).
+coq-tlc.20200328	TLC.LibOtherDemos.LibVarDemos.LibVarDemo.test_notin_solve_3	600	4.765457	53	31	4.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros; only 1: auto).
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Core.stratify_aux_preserves_core	600	600.325426	8174	3044
+coq-tlc.20200328	TLC.LibOtherDemos.LibVarDemos.LibVarDemo.test_neq_solve	600	0.968349	5	5	1.0	synth with cache (only 1: intros; only 1: auto).
+coq-tlc.20200328	TLC.LibOtherDemos.LibVarDemos.LibVarDemo.test_fresh_solve_2	600	0.936908	10	6	5.0	synth with cache (only 1: intros; only 1: auto).
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCShadow.NNRCShadow.unshadow_id_idempotent	600	3.572742	230	21	85	synth with cache (only 1: apply @unshadow_id_idempotent).
+coq-tlc.20200328	TLC.LibOtherDemos.LibVarDemos.LibVarDemo.test_fresh_solve_4	600	14.934970	140	94	14.1	synth with cache (only 1: intros; only 1: auto).
+coq-tlc.20200328	TLC.LibOtherDemos.inter_union_disjoint_right	600	1.597709	16	9	2.0	synth with cache (only 1: intros; only 1: destruct skip_axiom).
+coq-corn.8.16.0	CoRN.reals.IVT.IVT_Op.intervals_small	600	600.109440	25766	3269
+coq-corn.8.16.0	CoRN.metric2.DistanceMetricSpace.from_alt.ball_closed	600	600.411614	14359	3150
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvOptimizer.NRAEnvOptimizer.trproject_nil_fun_correctness	600	600.403567	8466	2713
+coq-corn.8.16.0	CoRN.ftc.FunctSums.FSum_FSum0'	600	600.059439	15226	3503
+coq-qcert.2.2.0	Qcert.Translation.Model.DataToEJson.DataToEJson.RuntimeLemmas.bdistinct_ejson_to_data_comm	600
+coq-qcert.2.2.0	Qcert.TypeSystem.RConsistentSubtype.RConsistentSubtype.rtype_join_meet.consistent_rtype_meet	600	172.945984	4361	962	0.58.0.0.4.0.0.0	synth with cache (only 1: intros; only 1: split; only 1: intros ?; only 1: apply consistent_rtype_meet1; only 1: trivial; only 1: intros ?; only 1: apply consistent_rtype_meet2; only 1: trivial).
