@@ -1174,3 +1174,473 @@ Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.clo
  (connection_description
   ("Client connected via TCP" (node-04.cluster 41592)))
  (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: Rsync failed: rsync: [receiver] write failed on "/lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/.opam-switch/build/coq-mathcomp-ssreflect.1.14.0/mathcomp/ssreflect/prime.vo": No space left on device (28)
+rsync error: error in file IO (code 11) at receiver.c(380) [receiver=3.2.7]
+srun: error: node-11: task 0: Exited with exit code 11
+rsync: [sender] write error: Broken pipe (32)
+srun: error: node-08: task 0: Exited with exit code 11
+
+Fatal benchmarking error: Initial build did not fully complete
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-11.cluster 41859)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/.opam-switch/build/coq-bbv.1.3 && /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real -q -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigarray-compat -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdlib-shims -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/integers -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes/stubs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/xxhash -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocamlgraph -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocaml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/result -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/astring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/res -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asetmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/fmt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigstringaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/angstrom -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stringext -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/uri -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base64 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-flow -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/re -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/prometheus -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ptime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-clock -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib0 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/zarith -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-pk -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/optint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-kv -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/caml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/parsexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/domain-name -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/hkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/macaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-ec -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asn1-combinators -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/gmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/pbkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/x509 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls-mirage -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-net -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cmdliner -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/extunix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/duration -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime/clock/os -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/base_internalhash_types -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/shadow_stdlib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdio -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l Graph2TacConfig.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -Q src/bbv bbv src/bbv/HexNotation.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/BenchParams.v)
+Non-fatal benchmarking error: Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/.opam-switch/build/coq-bbv.1.3 && /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real -q -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigarray-compat -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdlib-shims -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/integers -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes/stubs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/xxhash -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocamlgraph -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocaml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/result -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/astring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/res -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asetmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/fmt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigstringaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/angstrom -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stringext -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/uri -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base64 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-flow -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/re -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/prometheus -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ptime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-clock -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib0 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/zarith -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-pk -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/optint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-kv -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/caml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/parsexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/domain-name -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/hkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/macaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-ec -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asn1-combinators -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/gmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/pbkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/x509 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls-mirage -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-net -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cmdliner -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/extunix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/duration -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime/clock/os -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/base_internalhash_types -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/shadow_stdlib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdio -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l Graph2TacConfig.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -Q src/bbv bbv src/bbv/HexNotation.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/BenchParams.v)
+Non-fatal benchmarking error: Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/.opam-switch/build/coq-bbv.1.3 && /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real -q -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigarray-compat -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdlib-shims -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/integers -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes/stubs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/xxhash -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocamlgraph -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocaml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/result -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/astring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/res -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asetmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/fmt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigstringaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/angstrom -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stringext -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/uri -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base64 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-flow -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/re -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/prometheus -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ptime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-clock -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib0 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/zarith -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-pk -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/optint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-kv -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/caml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/parsexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/domain-name -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/hkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/macaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-ec -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asn1-combinators -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/gmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/pbkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/x509 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls-mirage -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-net -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cmdliner -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/extunix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/duration -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime/clock/os -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/base_internalhash_types -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/shadow_stdlib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdio -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l Graph2TacConfig.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -Q src/bbv bbv src/bbv/HexNotation.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/BenchParams.v)
+Non-fatal benchmarking error: Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/.opam-switch/build/coq-bbv.1.3 && /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real -q -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigarray-compat -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdlib-shims -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/integers -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes/stubs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/xxhash -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocamlgraph -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocaml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/result -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/astring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/res -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asetmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/fmt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigstringaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/angstrom -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stringext -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/uri -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base64 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-flow -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/re -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/prometheus -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ptime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-clock -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib0 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/zarith -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-pk -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/optint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-kv -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/caml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/parsexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/domain-name -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/hkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/macaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-ec -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asn1-combinators -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/gmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/pbkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/x509 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls-mirage -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-net -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cmdliner -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/extunix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/duration -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime/clock/os -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/base_internalhash_types -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/shadow_stdlib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdio -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l Graph2TacConfig.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -Q src/bbv bbv src/bbv/HexNotation.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/BenchParams.v)
+Non-fatal benchmarking error: Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/.opam-switch/build/coq-bbv.1.3 && /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real -q -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigarray-compat -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdlib-shims -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/integers -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes/stubs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/xxhash -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocamlgraph -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocaml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/result -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/astring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/res -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asetmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/fmt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigstringaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/angstrom -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stringext -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/uri -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base64 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-flow -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/re -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/prometheus -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ptime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-clock -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib0 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/zarith -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-pk -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/optint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-kv -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/caml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/parsexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/domain-name -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/hkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/macaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-ec -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asn1-combinators -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/gmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/pbkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/x509 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls-mirage -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-net -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cmdliner -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/extunix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/duration -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime/clock/os -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/base_internalhash_types -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/shadow_stdlib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdio -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l Graph2TacConfig.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -Q src/bbv bbv src/bbv/HexNotation.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/BenchParams.v)
+Non-fatal benchmarking error: Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/.opam-switch/build/coq-bbv.1.3 && /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq-tactician/coqc.real -q -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigarray-compat -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdlib-shims -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/integers -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ctypes/stubs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/xxhash -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocamlgraph -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocaml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/result -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ocplib-endian/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/lwt/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/astring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/res -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asetmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/fmt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/bigstringaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/angstrom -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stringext -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/uri -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base64 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/bigstring -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/eqaf/cstruct -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-flow -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/re -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/prometheus -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ptime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-clock -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib0 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/zarith -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-pk -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/optint -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-kv -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/caml -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/parsexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/sexplib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/domain-name -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/hkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/macaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ppx_sexp_conv/runtime-lib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/ipaddr-sexp -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-ec -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/asn1-combinators -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/gmap -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/pbkdf -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/x509 -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/tls-mirage -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-net -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cmdliner -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/cstruct-lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/extunix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/duration -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mtime/clock/os -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/mirage-crypto-rng/lwt -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp-rpc-unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/base_internalhash_types -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base/shadow_stdlib -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/base -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/stdio -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/capnp/unix -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/logs -I /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce -R /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/lib/coq/user-contrib/TacticianReinforce TacticianReinforce -l NNLearner -l Graph2TacConfig.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -Q src/bbv bbv src/bbv/HexNotation.v -l /lscratch/blaaulas/tactician.tmp.b78pkq/BenchParams.v)
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 40097)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 46053)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 42427)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 40583)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 37415)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 34384)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 34833)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 39289)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 42428)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 33245)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 32942)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 45507)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 46513)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 39842)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 34594)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 43623)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 38017)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 46799)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 43116)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 44463)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 43753)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 33100)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 40966)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 42300)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 45602)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39357)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 42358)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 44682)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35511)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33838)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35741)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 43298)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 45923)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 34337)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 37614)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 40864)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 40211)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35962)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35608)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35467)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 44888)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39739)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 41823)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 46538)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 33526)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 42545)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 35200)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 32774)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 42640)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-09.cluster 45052)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 38411)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 42984)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 45567)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 33993)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 44000)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 40352)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 46736)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 45656)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 38085)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 35629)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 39315)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 43887)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 35082)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 41440)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 37429)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 39639)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 39674)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44736)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 34244)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 36667)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 41428)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 34372)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40880)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35900)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44139)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35138)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 46643)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 46765)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35209)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 39226)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35977)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44434)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 44301)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 43774)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40410)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 36917)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 33770)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 36087)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45073)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37178)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 33307)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40979)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 41409)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35970)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 35383)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 40653)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 42482)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 43036)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 42435)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 33817)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 43634)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 35906)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 38847)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 46790)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 44786)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 38601)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 44721)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-06.cluster 39928)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-02.cluster 34240)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 38197)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 42052)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 42124)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Fatal benchmarking error: Abnormal exit code for build worker on host node-08.cluster. Code: 1
