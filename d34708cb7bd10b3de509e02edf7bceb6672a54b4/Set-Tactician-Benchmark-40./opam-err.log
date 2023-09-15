@@ -1,0 +1,24 @@
+[31m[ERROR][0m The compilation of ocaml-base-compiler.5.1.0 failed at "make -j55".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling ocaml-base-compiler.5.1.0[0m [31m==========================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | https://opam.ocaml.org#5222bba7
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.h8QXCY/opam-root/bench/.opam-switch/build/ocaml-base-compiler.5.1.0
+[33m#[0m [33mcommand[0m     /usr/bin/make -j55
+[33m#[0m [33mexit-code[0m   2
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-4581/ocaml-base-compiler-4581-a9a112.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-4581/ocaml-base-compiler-4581-a9a112.out
+[33m### output ###
+[0m[33m# [0mmake[2]: Entering directory `/lscratch/blaaulas/tactician.tmp.h8QXCY/opam-root/bench/.opam-switch/build/ocaml-base-compiler.5.1.0/stdlib'
+[33m# [0m[...]
+[33m# [0m  GEN target_camlheader
+[33m# [0m  GEN camlheader_ur
+[33m# [0m  GEN camlheaderd
+[33m# [0m  GEN target_camlheaderd
+[33m# [0m../runtime/ocamlrun: error while loading shared libraries: libzstd.so.1: cannot open shared object file: No such file or directory
+[33m# [0mmake[2]: *** [camlinternalFormatBasics.cmi] Error 127
+[33m# [0mmake[2]: *** Waiting for unfinished jobs....
+[33m# [0mmake[2]: Leaving directory `/lscratch/blaaulas/tactician.tmp.h8QXCY/opam-root/bench/.opam-switch/build/ocaml-base-compiler.5.1.0/stdlib'
+[33m# [0mmake[1]: *** [coldstart] Error 2
+[33m# [0mmake[1]: Leaving directory `/lscratch/blaaulas/tactician.tmp.h8QXCY/opam-root/bench/.opam-switch/build/ocaml-base-compiler.5.1.0'
+[33m# [0mmake: *** [world.opt] Error 2
+
