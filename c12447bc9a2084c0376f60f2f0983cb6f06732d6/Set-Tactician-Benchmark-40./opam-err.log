@@ -1,3 +1,28 @@
-[31m[ERROR][0m Package conflict!
-Sorry, no solution found: there seems to be a problem with your request.
+[NOTE] coq-stdlib is not installed.
+
+[NOTE] Package coq-tactician is currently pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#95e7cd05a47a9a3371f344b55f81b71330d284bb (version dev).
+[ERROR] Package conflict!
+  * No agreement on the version of coq:
+    - coq-tactician-stdlib → coq
+  * No agreement on the version of ocaml:
+    - coq-tactician-stdlib → coq → ocaml < 4.05.0
+    - ocaml = 5.0.0
+  * No agreement on the version of coq-core:
+    - coq-tactician >= dev → coq-core
+    - coq-tactician-stdlib → coq → coq-core < 8.17.0
+  * No agreement on the version of coq-core:
+    - coq-tactician-stdlib → coq → coq-core = 8.17.0
+    - coq-tactician-stdlib → coq → coq-core >= dev
+  * Incompatible packages:
+    - base-nnp
+    - coq-tactician-stdlib → coq
+  * Incompatible packages:
+    - coq-tactician-stdlib → coq
+    - coq-tactician-stdlib → coq → coq-core = 8.17.dev
+  * Incompatible packages:
+    - coq-tactician-stdlib → coq
+    - coq-tactician-stdlib → coq → coq-core = 8.18.0
+  * Incompatible packages:
+    - coq-tactician-stdlib → coq
+    - coq-tactician-stdlib → coq → coq-core = 8.18.dev
 
