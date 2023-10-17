@@ -1,124 +1,102 @@
-Checking for available remotes: rsync and local, git.
-  - you won't be able to use mercurial repositories unless you install the hg command on your system.
-  - you won't be able to use darcs repositories unless you install the darcs command on your system.
-
-
-<><> Fetching repository information ><><><><><><><><><><><><><><><><><><><><><>
-[coq-core-dev] Initialised
-[coq-extra-dev] Initialised
-[coq-released] Initialised
-[custom-archive] Initialised
-[default] Initialised
-[coq-tactician.dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician#95e7cd05a47a9a3371f344b55f81b71330d284bb)
+Opam has already been initialized.
+Nothing to do.
+[coq-tactician.dev] synchronised (no changes)
 coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#95e7cd05a47a9a3371f344b55f81b71330d284bb (version dev)
 
 <><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
 [coq-tactician.dev] synchronised (no changes)
 
 The following actions will be performed:
-  ∗ install ocaml-options-vanilla 1
-  ∗ install conf-findutils        1
-  ∗ install base-unix             base
-  ∗ install ocaml-base-compiler   4.12.1
-  ∗ install conf-git              1.1
-  ∗ install conf-gmp              4
-  ∗ install base-bigarray         base
-  ∗ install base-threads          base
-  ∗ install ocaml-config          2
-  ∗ install ocaml                 4.12.1
-  ∗ install seq                   base
-  ∗ install ocamlfind             1.9.6
-  ∗ install ocamlbuild            0.14.2
-  ∗ install dune                  3.11.1
-  ∗ install cmdliner              1.2.0
-  ∗ install zarith                1.13
-  ∗ install num                   1.4
-  ∗ install topkg                 1.0.7
-  ∗ install stdlib-shims          0.3.0
-  ∗ install re                    1.11.0
-  ∗ install pp                    1.2.0
-  ∗ install ordering              3.11.1
-  ∗ install opam-file-format      2.1.6
-  ∗ install csexp                 1.5.2
-  ∗ install cppo                  1.6.9
-  ∗ install base64                3.5.1
-  ∗ install coq                   8.11.dev
-  ∗ install rresult               0.7.0
-  ∗ install fmt                   0.9.0
-  ∗ install astring               0.8.5
-  ∗ install ocamlgraph            2.1.0
-  ∗ install dyn                   3.11.1
-  ∗ install extlib                1.7.9
-  ∗ install logs                  0.7.0
-  ∗ install fpath                 0.7.3
-  ∗ install opam-core             2.1.5
-  ∗ install stdune                3.11.1
-  ∗ install cudf                  0.10
-  ∗ install bos                   0.2.1
-  ∗ install opam-format           2.1.5
-  ∗ install dune-private-libs     3.11.1
-  ∗ install mccs                  1.1+16
-  ∗ install dose3                 7.0.0
-  ∗ install opam-repository       2.1.5
-  ∗ install dune-site             3.11.1
-  ∗ install opam-solver           2.1.5
-  ∗ install opam-state            2.1.5
-  ∗ install opam-client           2.1.5
-  ∗ install coq-tactician         dev*
-  ∗ install coq-tactician-stdlib  8.11.dev  *** WARNING ***
-                                            This package will overwrite Coq's standard library files.
-                                            A backup of the original files will be placed under Coq's
-                                            library directory at user-contrib/tactician-stdlib-backup/
-                                            and they will be restored when you remove this package.
-                                            After installation of this package, all other Coq packages
-                                            also need to be recompiled. Running the 'tactician recompile'
-                                            command-line utility will help with this process.
-===== ∗ 50 =====
+  ∗ install ocaml-base-compiler  4.12.1
+  ∗ install ocaml-config         2
+  ∗ install ocaml                4.12.1
+  ∗ install seq                  base
+  ∗ install ocamlfind            1.9.6
+  ∗ install ocamlbuild           0.14.2
+  ∗ install dune                 3.11.1
+  ∗ install cmdliner             1.2.0
+  ∗ install zarith               1.13
+  ∗ install num                  1.4
+  ∗ install topkg                1.0.7
+  ∗ install stdlib-shims         0.3.0
+  ∗ install re                   1.11.0
+  ∗ install pp                   1.2.0
+  ∗ install ordering             3.11.1
+  ∗ install opam-file-format     2.1.6
+  ∗ install csexp                1.5.2
+  ∗ install cppo                 1.6.9
+  ∗ install base64               3.5.1
+  ∗ install coq                  8.11.dev
+  ∗ install rresult              0.7.0
+  ∗ install fmt                  0.9.0
+  ∗ install astring              0.8.5
+  ∗ install ocamlgraph           2.1.0
+  ∗ install dyn                  3.11.1
+  ∗ install extlib               1.7.9
+  ∗ install logs                 0.7.0
+  ∗ install fpath                0.7.3
+  ∗ install opam-core            2.1.5
+  ∗ install stdune               3.11.1
+  ∗ install cudf                 0.10
+  ∗ install bos                  0.2.1
+  ∗ install opam-format          2.1.5
+  ∗ install dune-private-libs    3.11.1
+  ∗ install mccs                 1.1+16
+  ∗ install dose3                7.0.0
+  ∗ install opam-repository      2.1.5
+  ∗ install dune-site            3.11.1
+  ∗ install opam-solver          2.1.5
+  ∗ install opam-state           2.1.5
+  ∗ install opam-client          2.1.5
+  ∗ install coq-tactician        dev*
+  ∗ install coq-tactician-stdlib 8.11.dev  *** WARNING ***
+                                           This package will overwrite Coq's standard library files.
+                                           A backup of the original files will be placed under Coq's
+                                           library directory at user-contrib/tactician-stdlib-backup/
+                                           and they will be restored when you remove this package.
+                                           After installation of this package, all other Coq packages
+                                           also need to be recompiled. Running the 'tactician recompile'
+                                           command-line utility will help with this process.
+===== ∗ 43 =====
 
 <><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-∗ installed base-bigarray.base
-∗ installed base-threads.base
-∗ installed base-unix.base
-⬇ retrieved base64.3.5.1  (https://opam.ocaml.org/cache)
-⬇ retrieved bos.0.2.1  (https://opam.ocaml.org/cache)
-∗ installed conf-git.1.1
-∗ installed conf-findutils.1
-∗ installed conf-gmp.4
-⬇ retrieved astring.0.8.5  (https://opam.ocaml.org/cache)
-⬇ retrieved cmdliner.1.2.0  (https://opam.ocaml.org/cache)
-⬇ retrieved coq-tactician.dev  (no changes)
-⬇ retrieved cppo.1.6.9  (https://opam.ocaml.org/cache)
-⬇ retrieved csexp.1.5.2  (https://opam.ocaml.org/cache)
-⬇ retrieved cudf.0.10  (https://opam.ocaml.org/cache)
-⬇ retrieved coq-tactician-stdlib.8.11.dev  (git+https://github.com/coq-tactician/coq-tactician-stdlib.git#coq8.11)
-⬇ retrieved dose3.7.0.0  (https://opam.ocaml.org/cache)
-⬇ retrieved dune.3.11.1  (https://opam.ocaml.org/cache)
+⬇ retrieved astring.0.8.5  (cached)
+⬇ retrieved base64.3.5.1  (cached)
+⬇ retrieved bos.0.2.1  (cached)
+⬇ retrieved cmdliner.1.2.0  (cached)
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
+⬇ retrieved cppo.1.6.9  (cached)
+⬇ retrieved csexp.1.5.2  (cached)
+⬇ retrieved cudf.0.10  (cached)
+⬇ retrieved dose3.7.0.0  (cached)
+⬇ retrieved coq.8.11.dev  (git+https://github.com/LasseBlaauwbroek/coq.git#v8.11-tactician)
+⬇ retrieved dune.3.11.1  (cached)
+⬇ retrieved dune-private-libs.3.11.1  (cached)
 ⬇ retrieved dune-site.3.11.1  (cached)
+⬇ retrieved extlib.1.7.9  (cached)
+⬇ retrieved coq-tactician.dev  (no changes)
+⬇ retrieved fmt.0.9.0  (cached)
+⬇ retrieved fpath.0.7.3  (cached)
+⬇ retrieved logs.0.7.0  (cached)
+⬇ retrieved num.1.4  (cached)
 ⬇ retrieved dyn.3.11.1  (cached)
-⬇ retrieved extlib.1.7.9  (https://opam.ocaml.org/cache)
-⬇ retrieved dune-private-libs.3.11.1  (https://opam.ocaml.org/cache)
-⬇ retrieved fmt.0.9.0  (https://opam.ocaml.org/cache)
-⬇ retrieved fpath.0.7.3  (https://opam.ocaml.org/cache)
-⬇ retrieved logs.0.7.0  (https://opam.ocaml.org/cache)
-⬇ retrieved mccs.1.1+16  (https://opam.ocaml.org/cache)
-⬇ retrieved num.1.4  (https://opam.ocaml.org/cache)
-∗ installed ocaml-options-vanilla.1
-⬇ retrieved ocamlbuild.0.14.2  (https://opam.ocaml.org/cache)
-⬇ retrieved ocamlfind.1.9.6  (https://opam.ocaml.org/cache)
-⬇ retrieved ocaml-base-compiler.4.12.1  (https://opam.ocaml.org/cache)
-⬇ retrieved ocamlgraph.2.1.0  (https://opam.ocaml.org/cache)
-⬇ retrieved opam-client.2.1.5  (https://opam.ocaml.org/cache)
-⬇ retrieved opam-file-format.2.1.6  (https://opam.ocaml.org/cache)
+⬇ retrieved mccs.1.1+16  (cached)
+⬇ retrieved ocaml-base-compiler.4.12.1  (cached)
+⬇ retrieved ocamlbuild.0.14.2  (cached)
+⬇ retrieved ocamlfind.1.9.6  (cached)
+⬇ retrieved ocamlgraph.2.1.0  (cached)
+⬇ retrieved opam-client.2.1.5  (cached)
+⬇ retrieved opam-core.2.1.5  (cached)
+⬇ retrieved opam-file-format.2.1.6  (cached)
 ⬇ retrieved opam-format.2.1.5  (cached)
 ⬇ retrieved opam-repository.2.1.5  (cached)
 ⬇ retrieved opam-solver.2.1.5  (cached)
 ⬇ retrieved opam-state.2.1.5  (cached)
+⬇ retrieved pp.1.2.0  (cached)
+⬇ retrieved rresult.0.7.0  (cached)
+⬇ retrieved re.1.11.0  (cached)
+⬇ retrieved stdlib-shims.0.3.0  (cached)
+⬇ retrieved topkg.1.0.7  (cached)
+⬇ retrieved zarith.1.13  (cached)
 ⬇ retrieved ordering.3.11.1  (cached)
-⬇ retrieved pp.1.2.0  (https://opam.ocaml.org/cache)
-⬇ retrieved re.1.11.0  (https://opam.ocaml.org/cache)
-⬇ retrieved opam-core.2.1.5  (https://opam.ocaml.org/cache)
-⬇ retrieved rresult.0.7.0  (https://opam.ocaml.org/cache)
-⬇ retrieved stdlib-shims.0.3.0  (https://opam.ocaml.org/cache)
-⬇ retrieved topkg.1.0.7  (https://opam.ocaml.org/cache)
 ⬇ retrieved stdune.3.11.1  (cached)
-⬇ retrieved zarith.1.13  (https://opam.ocaml.org/cache)
