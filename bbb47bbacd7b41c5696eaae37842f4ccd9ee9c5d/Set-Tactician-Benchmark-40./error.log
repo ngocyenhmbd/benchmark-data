@@ -1,0 +1,61 @@
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: (07f1fe52-1230-3812-c1a8-ccf5363e455e
+ (monitor.ml.Error
+  (Invalid_argument
+   "String.chop_suffix_exn \"/lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+  ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
+   "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 170, characters 10-81"
+   "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
+   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
+Fatal benchmarking error: Initial build did not fully complete
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 42301)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ("Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/.opam-switch/build/coq-stdlib.8.18.dev/_build/default && /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/bin/coqc /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -boot -R theories Coq -Q user-contrib/Ltac2 Ltac2 -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/number_string_notation -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/zify -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/tauto -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/ssreflect -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/ltac2 -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/btauto -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/ssrmatching -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/derive -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/cc -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/funind -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/micromega -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/rtauto -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/nsatz -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/ring -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/ltac -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/extraction -I /lscratch/blaaulas/tactician.tmp.xWhayO/opam-root/bench/lib/coq-core/plugins/firstorder -w +default -q -w -deprecated-native-compiler-option -native-compiler off -time-file theories/Numbers/NatInt/NZLog.timing theories/Numbers/NatInt/NZLog.v -l /lscratch/blaaulas/tactician.tmp.xWhayO/BenchParams.v)"
+ "Abnormal exit code for command worker: job1 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2380384. Code: 254")
+laaulas/tactician.tmp.n7tMiB/opam-root/bench/lib/coq-core/plugins/nsatz -I /lscratch/blaaulas/tactician.tmp.n7tMiB/opam-root/bench/lib/coq-core/plugins/ring -I /lscratch/blaaulas/tactician.tmp.n7tMiB/opam-root/bench/lib/coq-core/plugins/ssrmatching -I /lscratch/blaaulas/tactician.tmp.n7tMiB/opam-root/bench/lib/coq-core/plugins/funind -I /lscratch/blaaulas/tactician.tmp.n7tMiB/opam-root/bench/lib/coq-core/plugins/firstorder -I /lscratch/blaaulas/tactician.tmp.n7tMiB/opam-root/bench/lib/coq-core/plugins/micromega -w +default -q -w -deprecated-native-compiler-option -native-compiler off -time-file theories/Logic/Diaconescu.timing theories/Logic/Diaconescu.v -l /lscratch/blaaulas/tactician.tmp.n7tMiB/BenchParams.v)"
+ "Abnormal exit code for command worker: job16 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2380306. Code: 254")
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 41326)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 45883)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 34279)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 33075)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44733)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 46032)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 38738)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 41067)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 36039)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 46054)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
