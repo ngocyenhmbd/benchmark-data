@@ -1,9 +1,13 @@
-2023-10-20 19:39:37.859483+02:00 Error Rpc_parallel: (monitor.ml.Error
+2023-10-20 20:15:29.952264+02:00 Error Rpc_parallel: (monitor.ml.Error
   (Invalid_argument
-    "String.chop_suffix_exn \"/lscratch/blaaulas/tactician.tmp.Uqhhgt/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+    "String.chop_suffix_exn \"/lscratch/blaaulas/tactician.tmp.GbGWKK/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
   ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
     "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 170, characters 10-81"
     "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
     "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")) ... Shutting down.
+salloc: error: Unable to clean up job allocation 0: Invalid job id specified
+salloc: error: Unable to clean up job allocation 0: Invalid job id specified
+salloc: error: Unable to clean up job allocation 0: Invalid job id specified
+salloc: error: Unable to clean up job allocation 0: Invalid job id specified
 tactician-benchmark: error: node-08: task 0: Exited with exit code 254
-Abnormal exit code for command worker: job1 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2380601. Code: 254
+Abnormal exit code for command worker: job12 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2380927. Code: 254
