@@ -238,7 +238,39 @@ Benchmarking error: Anomaly
                                                  end in
                                                  H1)"."
 Please report at http://coq.inria.fr/bugs/.
-                                  | HereAndFurther _ x x0 =>
+File "./theories/ssr/ssrbool.v", line 999, characters 7-54:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Lists/Streams.v", line 200, characters 0-11:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: auto; only 1: assumption; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: assumption; only 1: assumption).
+                    Typing error:
+                    Recursive definition of ForAll_coind is ill-formed.
+                    In environment
+                    A, B : Type
+                    f : A -> B
+                    P : Stream B -> Prop
+                    S : Stream A
+                    ForAll_coind :
+                    ForAll (fun s : Stream A => P (map s)) S ->
+                    ForAll P (map S)
+                    f0 : ForAll (fun s : Stream A => P (map s)) S
+                    Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind f0
+                                                 with
+                                                 | HereAndFurther _ _ x0 =>
+                                                 x0
+                                                 end".
+                    Recursive definition is: "fun
+                                                H : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) S =>
+                                              HereAndFurther 
+                                                (map S)
+                                                match H with
+                                                | HereAndFurther _ x x0 =>
                                                  (fun 
                                                  (H0 : P (map S))
                                                  (_ : 
@@ -263,83 +295,64 @@ Please report at http://coq.inria.fr/bugs/.
                                                  end in
                                                  H0 H)"."
 Please report at http://coq.inria.fr/bugs/.
-File "./theories/Reals/Abstract/ConstructiveReals.v", line 973, characters 2-9:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/Sorting/Permutation.v", line 437, characters 2-95:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. injection Heqm as [=? ?] Please report.
-File "./theories/Sorting/Permutation.v", line 437, characters 2-95:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. injection Heqm as [=? ?] Please report.
-File "./theories/ssr/ssrbool.v", line 833, characters 0-45:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapList.v", line 1047, characters 8-50:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ssr/ssrbool.v", line 1002, characters 7-47:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapList.v", line 1049, characters 8-50:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ssr/ssrbool.v", line 1575, characters 7-31:
-Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/ssr/ssrbool.v", line 1649, characters 37-50:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapList.v", line 1054, characters 8-64:
+File "./theories/ssr/ssrbool.v", line 1721, characters 7-45:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ssr/ssrbool.v", line 1727, characters 0-77:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/PArith/Pnat.v", line 244, characters 1-16:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/setoid_ring/Field_theory.v", line 581, characters 0-140:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/NArith/Ndec.v", line 294, characters 7-25:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Arith/PeanoNat.v", line 771, characters 2-16:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ssr/ssrbool.v", line 2102, characters 7-54:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/ssr/ssrbool.v", line 2201, characters 0-53:
 Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/MSets/MSetRBT.v", line 1365, characters 1-15:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/Sorting/Permutation.v", line 437, characters 2-95:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. injection Heqm as [=? ?] Please report.
-File "./theories/Sorting/Permutation.v", line 437, characters 2-95:
-Warning:
-Tactician detected a printing/parsing problem for the following tactic. injection Heqm as [=? ?] Please report.
-File "./theories/FSets/FMapList.v", line 1056, characters 8-64:
+File "./theories/ssr/ssrbool.v", line 2207, characters 7-47:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapWeakList.v", line 940, characters 8-50:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapWeakList.v", line 942, characters 8-50:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/Numbers/Cyclic/Int63/Uint63.v", line 1294, characters 1-11:
+File "./theories/MSets/MSetInterface.v", line 666, characters 9-45:
 Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/Numbers/Cyclic/Int63/Uint63.v", line 1314, characters 1-23:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/ssr/ssrbool.v", line 2211, characters 7-47:
+File "./theories/Reals/RIneq.v", line 1824, characters 7-60:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapWeakList.v", line 947, characters 8-63:
+File "./theories/MSets/MSetPositive.v", line 953, characters 4-21:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 453, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/MSets/MSetRBT.v", line 1563, characters 1-13:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapList.v", line 1096, characters 8-65:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/setoid_ring/Field_theory.v", line 1291, characters 2-56:
+File "./theories/FSets/FMapAVL.v", line 1921, characters 8-65:
 Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/Numbers/Cyclic/Int63/Uint63.v", line 1696, characters 2-36:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapAVL.v", line 1911, characters 8-57:
-Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/setoid_ring/Field_theory.v", line 1318, characters 0-74:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapAVL.v", line 1913, characters 8-57:
 Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/setoid_ring/Field_theory.v", line 1341, characters 0-80:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapAVL.v", line 1921, characters 8-65:
+File "./theories/Numbers/Natural/Abstract/NSub.v", line 292, characters 1-39:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FMapAVL.v", line 1938, characters 1-76:
 Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/setoid_ring/Field_theory.v", line 1427, characters 1-68:
 Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/setoid_ring/Field_theory.v", line 1447, characters 1-68:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapAVL.v", line 1938, characters 1-76:
-Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/FSets/FMapAVL.v", line 2001, characters 8-73:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2215, characters 1-71:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/FSets/FMapAVL.v", line 2112, characters 3-107:
+File "./theories/Numbers/Cyclic/Int63/Uint63.v", line 1845, characters 1-25:
 Warning: Benchmarking error: Forked process exited with signal -11
 File "./theories/Reals/RIneq.v", line 2553, characters 2-56:
 Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2410, characters 1-77:
-Warning: Benchmarking error: Forked process exited with signal -11
-File "./theories/Sorting/Permutation.v", line 951, characters 2-74:
-Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2433, characters 1-34:
+Warning: Benchmarking error: Stack overflow.
 File "./theories/Reals/RIneq.v", line 2665, characters 7-54:
 Warning: Benchmarking error: Forked process exited with signal -11
