@@ -2,10 +2,11 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (be3b10c5-5c45-3bc5-556f-a082da42247a
- (monitor.ml.Error
-  (Invalid_argument
-   "String.chop_suffix_exn \"/lscratch/blaaulas/tactician.tmp.Tcz6dU/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+Fatal benchmarking error: ((rpc_error (Connection_closed ("EOF or connection closed")))
+ (connection_description
+  ("Client connected via TCP" (node-11.cluster 43915)))
+ (rpc_tag rpc_parallel_piped_5) (rpc_version 0))
+/coqc.real\"")
   ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
    "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 170, characters 10-81"
    "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
