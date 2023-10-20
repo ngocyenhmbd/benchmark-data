@@ -2,26 +2,306 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: (9c218d64-a9e5-3336-cbb7-986743d20524
+Fatal benchmarking error: (6d3d17b3-6545-34c9-4455-3633eec33e48
  (monitor.ml.Error
   (Invalid_argument
-   "String.chop_suffix_exn \"/lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+   "String.chop_suffix_exn \"/lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
   ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
    "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 170, characters 10-81"
    "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
 Fatal benchmarking error: Initial build did not fully complete
+Non-fatal benchmarking error: ("Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/.opam-switch/build/coq-stdlib.8.17.dev/_build/default/theories/Classes && /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/bin/coqc /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -boot -R ../. Coq -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/number_string_notation -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/zify -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/tauto -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/ssreflect -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/rtauto -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/ltac -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/ltac2 -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/cc -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/derive -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/btauto -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/extraction -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/nsatz -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/ring -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/ssrmatching -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/funind -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/firstorder -I /lscratch/blaaulas/tactician.tmp.Y3sr3x/opam-root/bench/lib/coq-core/plugins/micromega -w +default -q -w -deprecated-native-compiler-option -native-compiler off Morphisms.v -l /lscratch/blaaulas/tactician.tmp.Y3sr3x/BenchParams.v)"
+ "Abnormal exit code for command worker: job58 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2381005. Code: 254")
 Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-10.cluster 46825)))
- (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
-Non-fatal benchmarking error: ("Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/.opam-switch/build/coq-stdlib.8.17.dev/_build/default/theories/Init && /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/bin/coqc /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -noinit -boot -R ../. Coq -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/number_string_notation -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/zify -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/tauto -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/ssreflect -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/rtauto -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/ltac -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/ltac2 -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/cc -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/derive -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/btauto -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/extraction -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/nsatz -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/ring -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/ssrmatching -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/funind -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/firstorder -I /lscratch/blaaulas/tactician.tmp.xKXo0a/opam-root/bench/lib/coq-core/plugins/micromega -w +default -q -w -deprecated-native-compiler-option -native-compiler off Wf.v -l /lscratch/blaaulas/tactician.tmp.xKXo0a/BenchParams.v)"
- "Abnormal exit code for command worker: job0 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2380460. Code: 254")
-Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
- (connection_description
-  ("Client connected via TCP" (node-11.cluster 40622)))
+  ("Client connected via TCP" (node-10.cluster 38948)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
 Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
  (connection_description
-  ("Client connected via TCP" (node-11.cluster 42047)))
+  ("Client connected via TCP" (node-03.cluster 43747)))
  (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 44870)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 37045)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-03.cluster 40109)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 42142)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 33672)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44404)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 37342)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 36699)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 39243)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 45877)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44683)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 32831)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 39334)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 43225)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44251)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 36709)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 40291)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 42011)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 46725)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 46567)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 36325)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 45290)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44064)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 43585)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 36508)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 41496)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 38899)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 42215)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44542)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 41384)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 46157)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 33757)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 33766)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 44085)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 46588)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 38259)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 43867)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 41192)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 37297)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 38666)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 42238)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 45055)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-11.cluster 45287)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-11.cluster 45197)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-11.cluster 36921)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-11.cluster 43202)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 40502)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 34950)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 38325)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 34355)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 38448)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 42189)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 40863)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 46004)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 34353)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 41449)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 40297)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 43182)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 44332)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 34456)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 41020)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 39218)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 38442)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 40810)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 37336)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 34489)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 45298)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 46354)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 42511)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 38345)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 42368)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
