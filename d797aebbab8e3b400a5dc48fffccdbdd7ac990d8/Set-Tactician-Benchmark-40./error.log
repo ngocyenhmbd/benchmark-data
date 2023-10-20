@@ -1,0 +1,51 @@
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: (90cc61db-d7f9-3436-bef9-c84e36ef27b1
+ (monitor.ml.Error
+  (Invalid_argument
+   "String.chop_suffix_exn \"/lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/bin/coqc\" \"lib/coq-tactician/coqc.real\"")
+  ("Raised at Stdlib.invalid_arg in file \"stdlib.ml\", line 30, characters 20-45"
+   "Called from Dune__exe__Main.Cmd_worker.T.Functions.make_process.(fun) in file \"src/benchmark/main.ml\", line 170, characters 10-81"
+   "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
+   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 167, characters 6-47")))
+Fatal benchmarking error: Initial build did not fully complete
+Non-fatal benchmarking error: ("Coq process ended abruptly. Invocation: (cd /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.13.dev && /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/bin/coqc /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/bin/coqc -q -I /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/lib/coq/user-contrib/Tactician -R /lscratch/blaaulas/tactician.tmp.m6AR1n/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record theories/Reals/Cauchy/ConstructiveExtra.v -l /lscratch/blaaulas/tactician.tmp.m6AR1n/BenchParams.v)"
+ "Abnormal exit code for command worker: job8 with prefix srun --unbuffered --ntasks=1 --cpus-per-task=1 --jobid 2379984. Code: 254")
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-05.cluster 45770)))
+ (rpc_tag rpc_parallel_plain_0) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 46728)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 45464)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 36547)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-10.cluster 39469)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 35243)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-07.cluster 37221)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-08.cluster 39097)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
+Non-fatal benchmarking error: ((rpc_error (Connection_closed (Rpc.Connection.close)))
+ (connection_description
+  ("Client connected via TCP" (node-04.cluster 33526)))
+ (rpc_tag rpc_parallel_piped_1) (rpc_version 0))
