@@ -1,0 +1,461 @@
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+Traceback (most recent call last):
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/bin/text2tac-server", line 33, in <module>
+    sys.exit(load_entry_point('text2tac==0.1.0', 'console_scripts', 'text2tac-server')())
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 287, in main
+    tokenizer, model = load_eval_setup(tokenizer_location, model_location, truncate_side, args.dev, emb_size, n_layers)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/text2tac/transformer/predict_server.py", line 55, in load_eval_setup
+    model = model.to(device)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/transformers/modeling_utils.py", line 1878, in to
+    return super().to(*args, **kwargs)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1160, in to
+    return self._apply(convert)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 810, in _apply
+    module._apply(fn)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 833, in _apply
+    param_applied = fn(param)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1158, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/raid/scratch/piepejel/projects/coq-bench-15may/bd/target-source/venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 298, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: The NVIDIA driver on your system is too old (found version 11040). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver.
+File "./fta/FTAreg.v", line 37, characters 0-36:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./ftc/MoreIntegrals.v", line 37, characters 0-33:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subring_closedM; GRing.smulr_closedN] : GRing.subring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedN] : GRing.subring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedM] : GRing.subring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.subring_closedM; GRing.smulr_closedM] : GRing.subring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.subring_closed_semi; GRing.semiring_closedD] : GRing.subring_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subring_closedB; GRing.zmod_closedD] : GRing.subring_closed >-> GRing.addr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.sdivr_closed_div; GRing.divr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.sdivr_closedM; GRing.smulr_closedM] : GRing.sdivr_closed >-> GRing.mulr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedN] : GRing.subalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB;
+                   GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB; GRing.zmod_closedD] : GRing.subalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.subalg_closedBM; GRing.subring_closedB] : GRing.subalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.subalg_closedZ; GRing.submod_closedB] : GRing.subalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM; GRing.smulr_closedM] : GRing.divring_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM] : GRing.divring_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedM] : GRing.divring_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divring_closed_div; GRing.sdivr_closedM;
+                   GRing.smulr_closedN] : GRing.divring_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divring_closedBM; GRing.subring_closedB; GRing.zmod_closedN] : GRing.divring_closed >-> GRing.oppr_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM] : GRing.divalg_closed >-> GRing.subring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM] : GRing.divalg_closed >-> GRing.subring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closed_semi] : GRing.divalg_closed >-> GRing.semiring_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM; GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM;
+ GRing.smulr_closedM] : GRing.divalg_closed >-> GRing.mulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedBM; GRing.subring_closedM] : GRing.divalg_closed >-> GRing.smulr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedN] : GRing.divalg_closed >-> GRing.oppr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB; GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB;
+ GRing.zmod_closedD] : GRing.divalg_closed >-> GRing.addr_closed.
+New coercion path [GRing.divalg_closedBdiv; GRing.divring_closedBM;
+                   GRing.subring_closedB] : GRing.divalg_closed >-> GRing.zmod_closed is ambiguous with existing 
+[GRing.divalg_closedZ; GRing.subalg_closedZ; GRing.submod_closedB] : GRing.divalg_closed >-> GRing.zmod_closed.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.Pred.subring_smul; GRing.Pred.smul_mul] : GRing.Pred.subring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.subring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./theories/PFsection8.v", line 6, characters 0-88:
+Warning:
+New coercion path [GRing.Pred.divring_sdiv; GRing.Pred.sdiv_smul;
+                   GRing.Pred.smul_mul] : GRing.Pred.divring >-> GRing.Pred.mul is ambiguous with existing 
+[GRing.Pred.divring_ring; GRing.Pred.subring_semi; GRing.Pred.semiring_mul] : GRing.Pred.divring >-> GRing.Pred.mul.
+[ambiguous-paths,typechecker]
+File "./transc/InvTrigonom.v", line 37, characters 0-38:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./transc/SinCos.v", line 37, characters 0-41:
+Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+[notation-overridden,parsing]
+File "./ftc/MoreIntegrals.v", line 156, characters 1-9:
+Warning:
+Benchmarking error: Anomaly
+                    "Uncaught exception Unix.Unix_error(Unix.EPIPE, "single_write", "")."
+Please report at http://coq.inria.fr/bugs/.
