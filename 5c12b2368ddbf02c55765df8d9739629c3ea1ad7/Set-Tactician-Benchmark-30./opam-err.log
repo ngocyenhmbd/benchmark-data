@@ -1,0 +1,22 @@
+  Running command git clone --filter=blob:none --quiet 'ssh://****@github.com/JellePiepenbrock/text2tac.git' /tmp/pip-req-build-rg7ebls2
+  Running command git rev-parse -q --verify 'sha^77c95fc2ab254e004d517c1f28a84b5409a211df'
+  Running command git fetch -q 'ssh://****@github.com/JellePiepenbrock/text2tac.git' 77c95fc2ab254e004d517c1f28a84b5409a211df
+  error: subprocess-exited-with-error
+  
+  × python setup.py egg_info did not run successfully.
+  │ exit code: 1
+  ╰─> [1 lines of output]
+      error in text2tac setup command: 'python_requires' must be a string containing valid version specifiers; Invalid specifier: '3.10'
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip available: 22.2.2 -> 23.3.1
+[notice] To update, run: pip install --upgrade pip
