@@ -1,0 +1,382 @@
+coq-tlc.20200328	TLC.LibOtherDemos.LibVarDemos.LibVarDemo.test_fresh_solve_6	300	0.204717	32	13	0.5	synth with cache (only 1: intros; only 1: forwards * : fresh_union_r).
+coq-tlc.20200328	TLC.LibOtherDemos.LibVarDemos.LibVarDemo.test_notin_false_by_hand	300	1.151920	490	69	1.12	synth with cache (only 1: intro n; only 1: rewrite ~ notin_singleton).
+coq-tlc.20200328	TLC.LibListZ.Length.length_eq	300	0.039856	4	2	1.1	synth with cache (only 1: intros l; only 1: induction ~ l).
+coq-tlc.20200328	TLC.LibListZ.AppInversion.length_neq_inv	300	0.014280	2	2	0.0	synth with cache (only 1: introv N E; only 1: subst *).
+coq-tlc.20200328	TLC.LibListZ.Index.index_eq_index_length	300	0.153357	16	8	2.0.1	synth with cache (only 1: intros l; only 1: intros H; only 1: auto).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binz0	300	0.027954	6	1	5	synth with cache (only 1: by case : n  => *; rewrite ?NegzE -?exprz_inv ?unitrX_pos ?unitrV ?lt0n).
+coq-qcert.2.2.0	Qcert.cNNRC.Lang.cNNRCEq.cNNRCEq.proper_cNNRCGroupBy	300	0.438348	39	10	3.0.4	synth with cache (only 1: repeat red; only 1: intro Hcomp; only 1: trivial).
+coq-qcert.2.2.0	Qcert.Data.Operators.OperatorsUtils.OperatorsUtils.dsum_nil	300	0.023574	3	1	2	synth with cache (only 1: reflexivity).
+coq-qcert.2.2.0	Qcert.LambdaNRA.Lang.LambdaNRA.LambdaNRA.Semantics.lambda_nra_eval_map_eq	300	0.030970	4	1	3	synth with cache (only 1: reflexivity).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.subG_lockΣ	300	4.370793	1879	98	21.12.10	synth with cache (only 1: intros; only 1: split; only 1: solve_inG).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.array_as_fractional	300	70.424486	12187	717	57.0.36	synth with cache (only 1: split; only 1: done; only 1: intuition).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.array_nil	300	0.451903	44	17	4.3	synth with cache (only 1: constructor => n x ?; only 1: rewrite ?discrete_fun_lookup_singleton ?discrete_fun_lookup_singleton_ne //).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.mono_proof.mcounter_persistent	300	17.382365	5680	270	33.0.42	synth with cache (only 1: induction n as [| n IH]; only 1: apply _; only 1: done || apply _).
+coq-tlc.20200328	TLC.LibContainerDemos.Basic.my_read_write	300	167.292236	81618	8467	4.1.33.6.15	synth with cache (only 1: intro; only 1: intros le_mn0; only 1: intros H x; only 1: rewrite read_update; only 1: now f_equal).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.lazy_coin.proof.prophecy_to_bool_of_bool	300	14.062194	4804	158	8.7.42.15	synth with cache (only 1: pose proof @pure_exec_fill; only 1: destruct b; only 1: eauto; only 1: done || apply _).
+coq-tlc.20200328	TLC.LibListSub.Prefix.prefix_cons_inverse	300	300.388681	125237	18154
+coq-tlc.20200328	TLC.LibListAssoc.Rem.rem_cons	300	300.768030	109497	8896
+coq-tlc.20200328	TLC.LibMap.binds_inst	300	300.866542	205286	18979
+coq-tlc.20200328	TLC.LibMap.remove_inst	300	0.050232	35	7	7	synth with cache (only 1: typeclass).
+coq-tlc.20200328	TLC.LibChoice.functional_choice	300	300.888628	228487	10941
+coq-tlc.20200328	TLC.LibFix.partial_fixed_point_definitions'	300	300.703252	203057	11389
+coq-tlc.20200328	TLC.LibStream.Bisimilar.equiv_bisimilar_mod_upto	300	300.885350	103788	18534
+coq-tlc.20200328	TLC.LibTacticsDemos.IntrovTest.demo_introv_6	300	301.220424	438735	27634
+coq-tlc.20200328	TLC.LibTacticsDemos.IntrovTest.demo_introv_8	300	0.011166	6	2	3.1	synth with cache (only 1: intros; only 1: auto).
+coq-tlc.20200328	TLC.LibTacticsDemos.ArrowTest.demo_arrow_4	300	0.046893	108	9	15	synth with cache (only 1: now f_equal).
+coq-tlc.20200328	TLC.LibListZ.Read.read_zero	300	300.272158	105566	11175
+coq-tlc.20200328	TLC.LibListSub.Prefix.prefix_cons_cons_inverse	300	34.083256	15510	2223	1.5.0.2.5.0.2.4.7.0	synth with cache (only 1: intros; only 1: generalize H; only 1: intros (H1, H2); only 1: destruct H; only 1: injection H as [=H H0]; only 1: constructors ~; only 1: subst; only 1: rew_list in *; only 1: constructors; only 1: fequals ~).
+coq-tlc.20200328	TLC.LibFun.fupdate_neq	300	300.782561	128212	13506
+coq-tlc.20200328	TLC.LibListSub.Prefix.prefix_concat	300	3.253605	1850	358	7.3.7.0	synth with cache (only 1: introv H; only 1: inverts ~ H; only 1: rew_list; only 1: hnfs *).
+coq-tlc.20200328	TLC.LibFun.FunctionImage.in_image_prove_eq	300	1.460490	291	46	1.13.0	synth with cache (only 1: intros; only 1: exists x; only 1: set_prove).
+coq-qcert.2.2.0	Qcert.Data.Operators.GroupBy.GroupBy.tableform.group_of_key_destruct_drec_inv	300	300.909979	80124	5754
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection2.BGsection2.mx_irr_prime_index	300	300.281857	114994	8397
+coq-qcert.2.2.0	Qcert.NNRS.Lang.NNRS.NNRS.dec.nnrs_stmt_eqdec	300	300.423025	102886	6879
+coq-qcert.2.2.0	Qcert.NNRSimp.Lang.NNRSimp.NNRSimp.Core.ext.nnrs_imp_stmtIsCore_ext	300	300.998977	476525	11629
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binz_neg	300	301.138573	291054	8738
+coq-qcert.2.2.0	Qcert.TypeSystem.TBrandContext.TBrandContext.Brand_Context.brand_context_fequal	300	300.508805	98430	4745
+coq-qcert.2.2.0	Qcert.Translation.Model.EJsonToEJsonMut.EJsonToEJsonMut.ListToNth.list_n_map_comm	300	300.485199	61872	2943
+coq-qcert.2.2.0	Qcert.NRA.Optim.NRARewrite.NRARewrite.dot_from_duplicate_bind_r	300	300.435886	42387	7519
+coq-mathcomp-odd-order.1.14.0	odd_order.wielandt_fixpoint.iso_quotient_homocyclic_sdprod	300	300.455613	175465	15760
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.size_index_iotaz	300	300.755593	317140	9484
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.Negz_inj	300	0.128502	50	5	11	synth with cache (only 1: by move  =>x y []).
+coq-qcert.2.2.0	Qcert.TypeSystem.TBrandModelProp.TBrandModelProp.brands_type_of_canon	300	300.341865	61360	7600
+coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.ac_substs_App	300	301.584209	111360	4746
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.oFp	300	300.552571	215152	3624
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.atomic_heap.derived.cas_spec	300	300.190514	50424	1795
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.sigmaX	300	10.809696	2248	151	5.43	synth with cache (only 1: have sHH := subxx H; only 1: exact : morphX ).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.locked_exclusive	300	300.162060	51244	2309
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.foo	300	301.447146	184408	11239
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.array_singleton	300	300.173023	38860	1320
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.FrobeniusQuotient.Frobenius_proper_quotient	300	300.462836	178147	10680
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spawn.subG_spawnΣ	300	300.508975	203999	4748
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.lock_inv_ne	300	20.787715	2991	173	48	synth with cache (only 1: solve_proper).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.total_adequacy.heap_total	300	300.079756	15754	1780
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.nsHC	300	300.330114	125800	5633
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.mono_proof.newcounter_mono_spec	300	300.196067	18774	1080
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.twp_array_free	300	300.102630	21990	1104
+coq-qcert.2.2.0	Qcert.Translation.Lang.NRAtocNNRC.NRAtocNNRC.nra_sem_correct	300	300.453300	81802	5022
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.Puig_center_p'core_normal	300	300.330611	123001	11287
+coq-tlc.20200328	TLC.LibContainerDemos.Internal.test_resolution_3	300	301.261535	440031	15405
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCEq.NNRCEq.proper_NNRCGroupBy	300	300.638315	63566	10283
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.subG_tlockΣ	300	300.566690	169815	2807
+coq-qcert.2.2.0	Qcert.Compiler.Enhanced.EnhancedTypeToJSON.enhanced_foreign_type_to_JSON_obligation_2	300	0.013552	8	1	7	synth with cache (only 1: constructor).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.par.proof.par_spec	300	300.115330	23580	1277
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.lazy_coin.proof.new_coin_spec	300	300.112436	30560	1458
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_0	300	302.615158	275331	8807
+coq-qcert.2.2.0	Qcert.NRAEnv.Typing.TNRAEnvEq.TNRAEnvEq.nraenv_const_tproper	300	0.084887	33	6	7	synth with cache (only 1: auto with typeclass_instances).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.tr_thK	300	300.546311	232587	12123
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvRewrite.ROptimEnv.app_over_unop	300	99.230269	33891	3883	2.4.6.14.0.0.2.19	synth with cache (only 1: unfold RelationClasses.Symmetric, nraenv_core_eq; only 1: intros ? ? _; only 1: intros; only 1: simpl; only 1: generalize proper_NRAProduct; only 1: unfold olift, olift2; only 1: intros; only 1: match_destr).
+coq-tlc.20200328	TLC.LibListAssoc.Rem.disjoint_rem	300	300.778123	121109	14313
+coq-tlc.20200328	TLC.LibMap.Properties.dom_empty_inv	300	300.919873	154802	13344
+coq-tlc.20200328	TLC.LibChoice.guarded_rel_choice	300	300.875740	166369	9707
+coq-tlc.20200328	TLC.LibFix.fix_dep_eq_with_proof_irrelevance	300	300.763446	211594	18268
+coq-tlc.20200328	TLC.LibFix.make_COFE	300	0.036485	23	5	2.2	synth with cache (only 1: intros a b n H Ha Hb; only 1: firstorder  (subst; auto)).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_rewrite_all	300	300.763375	214397	17597
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_admit	300	0.024193	11	4	0.0.1	synth with cache (only 1: intros n m p; only 1: intros; only 1: now apply Nat.le_lt_trans with m).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_specializes_definition_3	300	4.396656	8077	791	31.6	synth with cache (only 1: intros; only 1: now apply H).
+coq-tlc.20200328	TLC.LibListZ.Read.eq_of_extens	300	300.308281	77918	16473
+coq-tlc.20200328	TLC.LibFun.applyn_nested	300	300.764882	114154	18113
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.increment.increment_physical.incr_phy_spec	300	300.209622	42779	1899
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection2.BGsection2.rank_abs_irr_dvd_solvable	300	300.309013	126695	11306
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin0z	300	301.361375	390718	7087
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin_posz_posz	300	0.543276	2	1	1	synth with cache (only 1: by elim : n m  => [|n ihn] m //; rewrite !subzn).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin_negz_posz	300	0.546205	6	1	5	synth with cache (only 1: by [  ]).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin_1N_posz	300	0.553373	10	2	2	synth with cache (only 1: rewrite ?(muln0, mulr0n, mul0rn, oppr0, mulNrn, opprK) //).
+coq-mathcomp-odd-order.1.14.0	odd_order.wielandt_fixpoint.solvable_Wielandt_fixpoint	300	300.454565	183149	8196
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.mem_index_iotaz	300	300.520330	214204	6047
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Stratified.stratified_correct	300	300.429762	118859	5941
+coq-qcert.2.2.0	Qcert.Compiler.Enhanced.EnhancedData.enhanced_foreign_data_obligation_1	300	300.365583	126116	20245
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TOperatorsInfer.TOperatorsInfer.b.infer_merge_tmerge	300	300.376121	167412	8607
+coq-mathcomp-apery.1.0.1	mathcomp.apery.initial_conds.b0_eq	300	301.169702	529652	6028
+coq-qcert.2.2.0	Qcert.NRA.Typing.TNRA.TNRA.typed_nra_yields_typed_data	300	300.219808	70151	12553
+coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.ac_simplify_holes_product	300	301.619539	147413	5369
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_v.AnnOfV.v_SnSk	300	301.552367	99820	3746
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.atomic_heap.proof.primitive_free_spec	300	300.274107	23684	1103
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.psiM	300	300.341634	133983	3760
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Forall_app_iff	300	34.940509	3981	1553	1.5.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2	synth with cache (only 1: split; only 1: repeat rewrite Forall_forall; only 1: intros Finn; only 1: split; only 1: intros ? inn; only 1: apply Finn; only 1: rewrite in_app_iff; only 1: tauto; only 1: intros ? inn; only 1: apply Finn; only 1: rewrite in_app_iff; only 1: tauto; only 1: repeat rewrite Forall_forall; only 1: intros Finn; only 1: intros; only 1: assert (In x l1 \/ In x l2) by (apply In_app; assumption); only 1: rewrite in_app_iff in *; only 1: intuition).
+coq-qcert.2.2.0	Qcert.NRA.Typing.TNRAUtil.TNRAUtil.ATdot	300	300.326275	88763	8901
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoNNRCMR.NNRCtoNNRCMR.nnrcmr_of_nnrc_with_one_free_var_wf	300	300.669681	88189	6935
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.multi_nil	300	300.714133	309426	10637
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.array_app	300	300.192396	45555	1908
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.regular_pq_group_cyclic	300	300.468623	184621	8368
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spawn.proof.spawn_inv_ne	300	300.379711	69466	3677
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.is_lock_contractive	300	300.233551	53358	2977
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.nAL	300	300.462743	181881	3684
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.wp_array_free	300	300.096577	21709	1261
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spawn.proof.join_handle_ne	300	7.606080	940	56	30	synth with cache (only 1: solve_proper).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.mono_proof.read_mono_spec	300	304.355855	17875	1125
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TOperatorsInfer.TOperatorsInfer.u.empty_domain_remove	300	5.627345	2289	335	5.0.0.0.24	synth with cache (only 1: induction l; only 1: split; only 1: simpl; only 1: intros; only 1: congruence).
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.Puig_center_normal	300	300.385641	144424	11493
+coq-qcert.2.2.0	Qcert.Translation.Lang.NRAtocNNRC.NRAtocNNRC.nra_to_nnrc_core_is_core	300	300.292064	104169	6362
+coq-qcert.2.2.0	Qcert.NNRS.Lang.NNRSRename.NNRSRename.rename_id.nnrs_expr_rename_env_id	300	224.681664	83600	7752	2.13.3.10.2.22.0.0.0.1.8.11.5.15	synth with cache (only 1: induction e; only 1: eauto; only 1: simpl; only 1: let rec unused_inv_tac := let rec rename_inv_tac1 := let rec disect_tac H stac := unfold var in *; cut_to H; unfold domain in *; [ idtac | solve [ stac ].. ]; unfold lift2P in H; (repeat match_option_in H; try contradiction) in fun stac => unfold var in *; repeat rewrite or_assoc; try match goal with | H:domain (_ ++ _) = domain _ |- _ => rewrite domain_app in H; unfold domain in H; symmetry in H; apply map_app_break in H; destruct H as [? [? [? [? ?]]]]; subst; simpl in * | H:map (_ ++ _) = map _ |- _ => rewrite map_app in H; symmetry in H; apply map_app_break in H; destruct H as [? [? [? [? ?]]]]; subst; simpl in * | H:_ :: _ = map _ ?x |- _ => destruct x; try discriminate; simpl in H; invcs H | H:_ :: _ = domain ?x |- _ => destruct x; try discriminate; simpl in H; invcs H | H:_ * _ * _ |- _ => destruct H as [[? ?] ?]; simpl in * | H:_ * _ |- _ => destruct H as [? ?]; simpl in * | H:nnrs_stmt_eval ?p1 _ _ _ = Some (?p2, _, _) |- _ => match p1 with | p2 => fail 1 | _ => generalize (@nnrs_stmt_eval_domain_stack _ _ _ _ _ _ _ _ H); intros [? [? ?]] end | H:~ (_ \/ _) |- _ => apply not_or in H | H:_ /\ _ |- _ => destruct H | H:?x = ?x |- _ => clear H | H:forall a b c, _ -> ?x :: ?x1 ++ ?dd :: ?x2 = _ ++ _ :: _ -> _ |- _ => specialize (H (x :: x1) (snd dd) x2); simpl in H; match dd with | (_, _) => idtac | _ => destruct dd end; simpl in *; cut_to H; [  | eauto  3 | reflexivity ] | H:forall a b c, _ -> ?x1 ++ ?dd :: ?x2 = _ ++ _ :: _ -> _ |- _ => specialize (H x1 (snd dd) x2); match dd with | (_, _) => idtac | _ => destruct dd end; simpl in *; cut_to H; [  | eauto  3 | reflexivity ] | H:?x ++ _ = ?y ++ _ |- _ => let HH := fresh in assert (HH : domain y = domain x) by (unfold domain in *; intuition congruence); apply app_inv_head_domain in H; [ clear HH | apply HH ] | H:_ :: _ = _ :: _ |- _ => invcs H | H:?x = (_, _) |- _ => match x with | (_, _) => idtac | _ => destruct x; simpl in H end; invcs H | H:(_, _) = ?x |- _ => match x with | (_, _) => fail 1 | _ => destruct x; simpl in H end; invcs H | |- _ /\ _ => try split; [  | tauto ] | |- lift2P _ match ?x with | _ => _ end match ?x with | _ => _ end => destruct x; try reflexivity | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval (?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval (?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval (?x :: ?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval ?σ ?ψc (?l ++ (_, ?d) :: ?ψd) ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ ?ψc (?l ++ (_, ?d) :: ?ψd) ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ ?ψc (?x :: ?l ++ (_, ?d) :: ?ψd) ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval ?σ (?l ++ (_, ?d) :: ?ψc) ?ψd ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ (?l ++ (_, ?d) :: ?ψc) ?ψd ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ (?x :: ?l ++ (_, ?d) :: ?ψc) ?ψd ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:~ In _ (remove equiv_dec _ _) |- _ => apply not_in_remove_impl_not_in in H; [  | congruence ] | H:In _ (remove equiv_dec _ _) -> False |- _ => apply not_in_remove_impl_not_in in H; [  | congruence ] | H1:?x = Some ?y, H2:?x = Some ?z |- _ => rewrite H1 in H2; invcs H2 | |- ?x = ?y \/ _ => destruct (x == y); unfold equiv, complement in *; [ left; trivial | right ] end; try subst; simpl in *; intros; try congruence in repeat progress (try rename_inv_tac1 ltac:(unused_inv_tac; intuition unused_inv_tac); try rewrite @nnrs_expr_eval_unused_env by tauto) in unused_inv_tac; only 1: match goal with | |- context [ match ?x with | _ => _ end ] => destruct x end; only 1: congruence; only 1: reflexivity; only 1: trivial; only 1: let rec unused_inv_tac := let rec rename_inv_tac1 := let rec disect_tac H stac := unfold var in *; cut_to H; unfold domain in *; [ idtac | solve [ stac ].. ]; unfold lift2P in H; (repeat match_option_in H; try contradiction) in fun stac => unfold var in *; repeat rewrite or_assoc; try match goal with | H:domain (_ ++ _) = domain _ |- _ => rewrite domain_app in H; unfold domain in H; symmetry in H; apply map_app_break in H; destruct H as [? [? [? [? ?]]]]; subst; simpl in * | H:map (_ ++ _) = map _ |- _ => rewrite map_app in H; symmetry in H; apply map_app_break in H; destruct H as [? [? [? [? ?]]]]; subst; simpl in * | H:_ :: _ = map _ ?x |- _ => destruct x; try discriminate; simpl in H; invcs H | H:_ :: _ = domain ?x |- _ => destruct x; try discriminate; simpl in H; invcs H | H:_ * _ * _ |- _ => destruct H as [[? ?] ?]; simpl in * | H:_ * _ |- _ => destruct H as [? ?]; simpl in * | H:nnrs_stmt_eval ?p1 _ _ _ = Some (?p2, _, _) |- _ => match p1 with | p2 => fail 1 | _ => generalize (@nnrs_stmt_eval_domain_stack _ _ _ _ _ _ _ _ H); intros [? [? ?]] end | H:~ (_ \/ _) |- _ => apply not_or in H | H:_ /\ _ |- _ => destruct H | H:?x = ?x |- _ => clear H | H:forall a b c, _ -> ?x :: ?x1 ++ ?dd :: ?x2 = _ ++ _ :: _ -> _ |- _ => specialize (H (x :: x1) (snd dd) x2); simpl in H; match dd with | (_, _) => idtac | _ => destruct dd end; simpl in *; cut_to H; [  | eauto  3 | reflexivity ] | H:forall a b c, _ -> ?x1 ++ ?dd :: ?x2 = _ ++ _ :: _ -> _ |- _ => specialize (H x1 (snd dd) x2); match dd with | (_, _) => idtac | _ => destruct dd end; simpl in *; cut_to H; [  | eauto  3 | reflexivity ] | H:?x ++ _ = ?y ++ _ |- _ => let HH := fresh in assert (HH : domain y = domain x) by (unfold domain in *; intuition congruence); apply app_inv_head_domain in H; [ clear HH | apply HH ] | H:_ :: _ = _ :: _ |- _ => invcs H | H:?x = (_, _) |- _ => match x with | (_, _) => idtac | _ => destruct x; simpl in H end; invcs H | H:(_, _) = ?x |- _ => match x with | (_, _) => fail 1 | _ => destruct x; simpl in H end; invcs H | |- _ /\ _ => try split; [  | tauto ] | |- lift2P _ match ?x with | _ => _ end match ?x with | _ => _ end => destruct x; try reflexivity | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval (?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval (?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval (?x :: ?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval ?σ ?ψc (?l ++ (_, ?d) :: ?ψd) ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ ?ψc (?l ++ (_, ?d) :: ?ψd) ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ ?ψc (?x :: ?l ++ (_, ?d) :: ?ψd) ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval ?σ (?l ++ (_, ?d) :: ?ψc) ?ψd ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ (?l ++ (_, ?d) :: ?ψc) ?ψd ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ (?x :: ?l ++ (_, ?d) :: ?ψc) ?ψd ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:~ In _ (remove equiv_dec _ _) |- _ => apply not_in_remove_impl_not_in in H; [  | congruence ] | H:In _ (remove equiv_dec _ _) -> False |- _ => apply not_in_remove_impl_not_in in H; [  | congruence ] | H1:?x = Some ?y, H2:?x = Some ?z |- _ => rewrite H1 in H2; invcs H2 | |- ?x = ?y \/ _ => destruct (x == y); unfold equiv, complement in *; [ left; trivial | right ] end; try subst; simpl in *; intros; try congruence in repeat progress (try rename_inv_tac1 ltac:(unused_inv_tac; intuition unused_inv_tac); try rewrite @nnrs_expr_eval_unused_env by tauto) in unused_inv_tac; only 1: simpl in *; only 1: let rec unused_inv_tac := let rec rename_inv_tac1 := let rec disect_tac H stac := unfold var in *; cut_to H; unfold domain in *; [ idtac | solve [ stac ].. ]; unfold lift2P in H; (repeat match_option_in H; try contradiction) in fun stac => unfold var in *; repeat rewrite or_assoc; try match goal with | H:domain (_ ++ _) = domain _ |- _ => rewrite domain_app in H; unfold domain in H; symmetry in H; apply map_app_break in H; destruct H as [? [? [? [? ?]]]]; subst; simpl in * | H:map (_ ++ _) = map _ |- _ => rewrite map_app in H; symmetry in H; apply map_app_break in H; destruct H as [? [? [? [? ?]]]]; subst; simpl in * | H:_ :: _ = map _ ?x |- _ => destruct x; try discriminate; simpl in H; invcs H | H:_ :: _ = domain ?x |- _ => destruct x; try discriminate; simpl in H; invcs H | H:_ * _ * _ |- _ => destruct H as [[? ?] ?]; simpl in * | H:_ * _ |- _ => destruct H as [? ?]; simpl in * | H:nnrs_stmt_eval ?p1 _ _ _ = Some (?p2, _, _) |- _ => match p1 with | p2 => fail 1 | _ => generalize (@nnrs_stmt_eval_domain_stack _ _ _ _ _ _ _ _ H); intros [? [? ?]] end | H:~ (_ \/ _) |- _ => apply not_or in H | H:_ /\ _ |- _ => destruct H | H:?x = ?x |- _ => clear H | H:forall a b c, _ -> ?x :: ?x1 ++ ?dd :: ?x2 = _ ++ _ :: _ -> _ |- _ => specialize (H (x :: x1) (snd dd) x2); simpl in H; match dd with | (_, _) => idtac | _ => destruct dd end; simpl in *; cut_to H; [  | eauto  3 | reflexivity ] | H:forall a b c, _ -> ?x1 ++ ?dd :: ?x2 = _ ++ _ :: _ -> _ |- _ => specialize (H x1 (snd dd) x2); match dd with | (_, _) => idtac | _ => destruct dd end; simpl in *; cut_to H; [  | eauto  3 | reflexivity ] | H:?x ++ _ = ?y ++ _ |- _ => let HH := fresh in assert (HH : domain y = domain x) by (unfold domain in *; intuition congruence); apply app_inv_head_domain in H; [ clear HH | apply HH ] | H:_ :: _ = _ :: _ |- _ => invcs H | H:?x = (_, _) |- _ => match x with | (_, _) => idtac | _ => destruct x; simpl in H end; invcs H | H:(_, _) = ?x |- _ => match x with | (_, _) => fail 1 | _ => destruct x; simpl in H end; invcs H | |- _ /\ _ => try split; [  | tauto ] | |- lift2P _ match ?x with | _ => _ end match ?x with | _ => _ end => destruct x; try reflexivity | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval (?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval (?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval (?x :: ?l ++ (_, ?d) :: ?σ) ?ψc ?ψd ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval ?σ ?ψc (?l ++ (_, ?d) :: ?ψd) ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ ?ψc (?l ++ (_, ?d) :: ?ψd) ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ ?ψc (?x :: ?l ++ (_, ?d) :: ?ψd) ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ (nnrs_stmt_eval ?σ (?l ++ (_, ?d) :: ?ψc) ?ψd ?s) _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ (?l ++ (_, ?d) :: ?ψc) ?ψd ?s with | Some _ | _ => _ end _ => specialize (H l σ ψc ψd d); disect_tac H stac | H:forall l es ec ed d, _ -> lift2P _ (nnrs_stmt_eval _ _ _ ?s) _ |- lift2P _ match nnrs_stmt_eval ?σ (?x :: ?l ++ (_, ?d) :: ?ψc) ?ψd ?s with | Some _ | _ => _ end _ => specialize (H (x :: l) σ ψc ψd d); simpl in H; disect_tac H stac | H:~ In _ (remove equiv_dec _ _) |- _ => apply not_in_remove_impl_not_in in H; [  | congruence ] | H:In _ (remove equiv_dec _ _) -> False |- _ => apply not_in_remove_impl_not_in in H; [  | congruence ] | H1:?x = Some ?y, H2:?x = Some ?z |- _ => rewrite H1 in H2; invcs H2 | |- ?x = ?y \/ _ => destruct (x == y); unfold equiv, complement in *; [ left; trivial | right ] end; try subst; simpl in *; intros; try congruence in repeat progress (try rename_inv_tac1 ltac:(unused_inv_tac; intuition unused_inv_tac); try rewrite @nnrs_expr_eval_unused_env by tauto) in unused_inv_tac; only 1: simpl; only 1: f_equal; only 1: trivial).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.lock_inv_ne	300	300.298979	80204	3731
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_1_to_2.vchar_pairs_orthonormal	300	300.297261	98258	3811
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.is_lock_persistent	300	31.311610	16284	1145	74	synth with cache (only 1: apply _).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.locked_timeless	300	8.748048	6825	203	103	synth with cache (only 1: apply _).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.par.proof.wp_par	300	300.181679	20707	443
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.lazy_coin.proof.read_coin_spec	300	300.163368	30192	1579
+coq-qcert.2.2.0	Qcert.Translation.Typing.TcNNRCtoCAMP.TcNNRCtoCAMP.nnrc_to_camp_in	300	6.341484	945	241	0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: unfold domain, nnrc_to_camp_env; only 1: rewrite map_map; only 1: repeat rewrite in_map_iff; only 1: split; only 1: intros inn; only 1: destruct inn as [x [xeq xin]]; only 1: simpl in *; only 1: subst; only 1: exists x; only 1: intuition; only 1: intros inn; only 1: destruct inn as [x [xeq xin]]; only 1: simpl in *; only 1: apply loop_var_inj in xeq; only 1: subst; only 1: exists x; only 1: intuition).
+coq-qcert.2.2.0	Qcert.Translation.Typing.TcNNRCtoCAMP.TcNNRCtoCAMP.lookup_equiv_perm_nodup	300	4.568977	616	129	1.0.12.0.0	synth with cache (only 1: unfold lookup_equiv; only 1: intros; only 1: apply (@lookup_equiv_perm_nodup _ _); only 1: trivial; only 1: trivial).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_1	300	302.609538	364327	8034
+coq-qcert.2.2.0	Qcert.NNRC.Optim.NNRCRewrite.NNRCRewrite.nnrcproject_over_rec_in	300	300.363277	96351	13475
+coq-qcert.2.2.0	Qcert.Compiler.Enhanced.EnhancedData.enhanced_foreign_operators_obligation_4	300	149.199561	61433	10247	2.9.11.0.3.0.1	synth with cache (only 1: red; only 1: intros; only 1: change ({x = y} + {x <> y}); only 1: decide equality; only 1: destruct x; only 1: decide equality; only 1: decide equality).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.th_dimP	300	300.872411	396477	1849
+coq-qcert.2.2.0	Qcert.NNRC.Typing.TNNRCStratify.TNNRCStratify.mk_expr_from_vars_stratify_aux_preserves_types_fw	300	300.476111	73906	8119
+coq-qcert.2.2.0	Qcert.NNRC.Optim.TNNRCRewrite.TNNRCRewrite.tfor_nil_arrow	300	177.524605	41483	6426	1.8.1.0.0.16.11.3	synth with cache (only 1: split; only 1: unfold nnrc_eval, nnrc_type in *; only 1: inversion H; only 1: clear H2; only 1: subst; only 1: simpl; only 1: repeat (econstructor; eauto); only 1: split).
+coq-qcert.2.2.0	Qcert.NNRSimp.Typing.TNNRSimpRename.TNNRSimpRename.nnrs_imp_expr_type_rename	300	300.317097	105047	13464
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvRewrite.ROptimEnv.app_over_merge	300	300.210609	27510	3636
+coq-qcert.2.2.0	Qcert.Compiler.Enhanced.EnhancedData.enhanced_foreign_operators_obligation_5	300	47.551525	69792	985	86.232	synth with cache (only 1: repeat split; only 1: repeat econstructor).
+coq-tlc.20200328	TLC.LibMap.Properties.dom_update	300	300.723344	80782	12644
+coq-qcert.2.2.0	Qcert.NNRC.Optim.TNNRCRewrite.TNNRCRewrite.tflatten_nil_nnrc_arrow	300	29.421711	5073	843	0.0.1.5.13.1.0.0	synth with cache (only 1: red; only 1: intros; only 1: split; only 1: repeat (econstructor; eauto); only 1: nnrc_inverter; only 1: repeat (econstructor; eauto); only 1: intros; only 1: reflexivity).
+coq-tlc.20200328	TLC.LibFix.mixed_fixed_point_generally_consistent	300	300.291299	113571	16386
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'_rec_eq	300	0.094809	8	2	3.3	synth with cache (only 1: have hn: n = n - 1 - 1 + 1 + 1 by intlia; only 1: rewrite ?ghn_Sn_inhom ?ltW ?addr_gt0 //=).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'_Posz	300	0.021501	6	1	5	synth with cache (only 1: rewrite ?ghn_Sn_inhom ?ltW ?addr_gt0 //=).
+coq-tlc.20200328	TLC.LibTacticsDemos.demo_exist	300	300.985189	544186	6539
+coq-tlc.20200328	TLC.LibListZ.UpdateNoInhab.update_app_r	300	300.239403	70067	11416
+coq-tlc.20200328	TLC.LibListZ.Filter.filter_length_partition	300	4.598150	826	154	4.0.0.0.0.2.0.11	synth with cache (only 1: induction l; only 1: rew_list; only 1: now Z.nzsimpl; only 1: repeat rewrite filter_cons; only 1: repeat case_if; only 1: rew_list; only 1: math; only 1: rew_list ~).
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoDNNRC.NNRCtoDNNRC.domain_lookup_none	300	300.377941	53180	7644
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.increment.increment.weak_incr_spec	300	300.195556	34985	1205
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection2.BGsection2.QuasiRegularCyclic.inj_eps	300	300.924450	441136	7635
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.bin_1N	300	300.746565	297083	6479
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.nth_index_iotaz	300	300.538661	217700	9016
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection11.Section11.Ep1A0	300	300.226210	79539	9872
+coq-mathcomp-apery.1.0.1	mathcomp.apery.initial_conds.b2_eq	300	301.663814	278014	6736
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_v.AnnOfV.v_Sn2	300	300.261658	93781	2675
+coq-qcert.2.2.0	Qcert.NRA.Context.NRAContext.NRAContext.equivs.substs_bdistinct_domain_rev	300	301.866073	278171	2518
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.atomic_heap.proof.primitive_load_spec	300	300.207107	52143	1793
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.memJ_P	300	300.183802	66575	2014
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.Effective.mk_expr_from_vars_stratified	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.multi_singl	300	300.774193	346494	10839
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.array_cons	300	300.214141	59024	2435
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.odd_prime_sdprod_rfix0	300	300.368744	136647	8750
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binz_nat_nat	300
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.HallCL	300	300.374682	159256	7905
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.twp_array_copy_to	300	300.209161	20627	1108
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spawn.proof.spawn_spec	300	300.189109	21341	1240
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.subG_ccounterΣ	300	300.989418	157663	2505
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.PprodSubCoprime.nKG	300	300.355521	127552	8411
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.PprodSubCoprime.nKU	300	0.766671	209	22	17	synth with cache (only 1: by rewrite (subset_trans sUG) // normal_norm ?pseries_normal).
+coq-qcert.2.2.0	Qcert.Translation.Lang.NRAtocNNRC.NRAtocNNRC.Top.nra_to_nnrc_base_top_is_core	300	300.304106	108210	8225
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection6.Six.GeneralCoherence.coherent_seqIndD_bound	300	300.495948	184193	3721
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.is_lock_contractive	300	300.263151	55937	2984
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.is_lock_persistent	300	0.099954	3	1	2	synth with cache (only 1: apply _).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.locked_timeless	300	1.726478	1007	38	44	synth with cache (only 1: apply _).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.ntW2	300	300.609355	253883	7721
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.is_lock_iff	300	300.094088	28472	803
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.Introduction.tau1E	300	300.365491	148103	7303
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.alt_sign	300	302.014548	493659	7424
+coq-qcert.2.2.0	Qcert.Translation.Typing.TcNNRCtoCAMP.TcNNRCtoCAMP.fresh_bindings_some	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_less	300	302.260864	196764	5525
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.get_litP	300	300.881101	391346	3096
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.Interpretation.nil_RmodelP	300	0.285767	77	7	13	synth with cache (only 1: rewrite // nilpotent_class).
+coq-qcert.2.2.0	Qcert.NNRC.Typing.TNNRCStratify.TNNRCStratify.stratify_preserves_types	300	300.489367	54110	7635
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvRewrite.ROptimEnv.flip_env4	300	300.154572	47700	3975
+coq-tlc.20200328	TLC.LibMap.Properties.dom_update_at_indom	300	300.801952	141856	15696
+coq-qcert.2.2.0	Qcert.NNRC.Optim.TNNRCRewrite.TNNRCRewrite.tlet_inline_arrow	300	300.294572	53878	9756
+coq-tlc.20200328	TLC.LibFix.Fix_prop_of_optimal	300	300.341317	109786	13507
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'_Sn2_rew	300	300.228816	87399	4745
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.Qint_a	300	300.695244	261878	10065
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection13.Section13.OneComplement.cent_tau1Elem_Msigma	300	300.189388	60110	10235
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'0_eq	300	6.758913	6534	265	0.65	synth with cache (only 1: rewrite ?val_fracq /=; only 1: initial_conds.solve_b_evaluation).
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvOptimizer.NRAEnvOptimizer.nraenv_map_deep_correctness	300	300.468192	49686	11778
+coq-tlc.20200328	TLC.LibListZ.Remove.length_remove_mem	300	300.256209	54421	8287
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoDNNRC.NNRCtoDNNRC.lookup_denv_local	300	300.375670	63426	5528
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.increment.increment_client.incr_client_safe	300	300.190573	55362	2628
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.InverseDade.invDade_subproof	300	300.395496	139110	3319
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection2.BGsection2.QuasiRegularCyclic.rank_quasi_cent_cycle	300	300.590247	278007	6623
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.BigInt.big_int_cond	300	300.986487	218189	7002
+coq-mathcomp-apery.1.0.1	mathcomp.apery.b_props.cdM	300	300.250856	61693	5284
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection11.Section11.abelA	300	300.319071	129347	8150
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection14.Section14.mem_sigma_decomposition	300	300.460928	194202	9309
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.atomic_heap.proof.primitive_store_spec	300	300.204881	65921	2160
+coq-mathcomp-apery.1.0.1	mathcomp.apery.initial_conds.b3_eq	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.nt_s	300	300.298601	105621	1156
+coq-qcert.2.2.0	Qcert.NNRC.Lang.NNRCStratify.Stratify.FreeVars.mk_expr_from_vars_growing_fv_free_fw	300	300.461445	66257	7174
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.multi_gt0	300	300.202253	49293	20670
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.update_array	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binzE	300	300.695045	279116	8396
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.Frobenius_prime_cent_prime	300	300.355912	128680	8531
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.Dade_normedTI_P	300	300.543921	235760	2166
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.wp_array_copy_to	300	300.132701	20410	1282
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spawn.proof.join_spec	300	300.242507	21831	1200
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.contrib_spec.ccounter_op	300	300.177388	45208	3316
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.PprodSubCoprime.pprod_trans_coprime	300	300.561500	230937	6202
+coq-mathcomp-apery.1.0.1	mathcomp.apery.b_over_a_props.ba_casoratianE	300	300.273707	90623	3809
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection6.Six.GeneralCoherence.bounded_seqIndD_coherence	300	300.387766	134000	2341
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.locked_exclusive	300	300.206980	60118	2008
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.sKL	300	300.435247	169652	3288
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.Introduction.ex_tau2Elem	300	300.426825	173851	9628
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.newlock_spec	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.c_Sn	300	300.473795	204366	8541
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_b.AnnOfB.P_eq_Delta_Q	300	300.182670	39826	3248
+coq-mathcomp-apery.1.0.1	mathcomp.apery.z3irrational.creal_z3seq	300	300.475281	241956	3909
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_lessn	300	300.454071	169013	4768
+coq-qcert.2.2.0	Qcert.NNRS.Lang.NNRSCrossShadow.NNRSCrossShadow.cross_shadow_free_alt.nnrs_stmt_cross_shadow_free_alt_under	300	300.320393	25482	3005
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection15.FittingCore.p_core_Fcore	300	300.230456	73102	6666
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.Interpretation.norm_cl_eq3	300	300.436769	168218	8890
+coq-tlc.20200328	TLC.LibMap.Properties.read_update_same	300	300.395720	113140	10776
+coq-qcert.2.2.0	Qcert.NNRC.Optim.TNNRCRewrite.TNNRCRewrite.tsigma_to_if_arrow	300	300.510616	43533	7938
+coq-tlc.20200328	TLC.LibFix.Fix_prop_to_gc	300	300.317064	105216	9878
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.lt_0_a	300	300.603844	249322	4636
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'1_eq	300	300.337358	128575	3444
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvOptimizer.NRAEnvOptimizer.tmerge_empty_record_r_fun_correctness	300	300.331832	121749	13209
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection13.Section13.sigma_partition	300	300.533534	222921	7327
+coq-tlc.20200328	TLC.LibListZ.Take.take_is_prefix	300
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoDNNRC.NNRCtoDNNRC.Top.wf_cdenv_rec_sort	300	300.322557	81087	10895
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoNNRS.NNRCtoNNRS.from_stratified.nnrs_stmt_eval_terminator	300	300.385173	107485	7823
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.InverseDade.leC_cfnorm_invDade_support	300	300.349680	124263	3852
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection2.BGsection2.QuasiRegularCyclic.rank_eigenspaces_free_quasi_homocyclic	300	300.544419	257804	4126
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.BigInt.big_int	300	301.577752	306519	3800
+coq-mathcomp-apery.1.0.1	mathcomp.apery.b_props.iter_lcmn_mul_rat	300	300.644814	162932	4524
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection11.Section11.exceptional_TI_MsigmaJ	300	300.310528	123264	6650
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection14.Section14.ell_sigma_le1	300	300.747927	326271	10664
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.atomic_heap.proof.primitive_cmpxchg_spec	300	300.155868	42000	1771
+coq-mathcomp-apery.1.0.1	mathcomp.apery.initial_conds.a1_eq	300	301.199985	199875	11578
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.pgt4	300	300.248616	95682	1366
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.multi_prod_fact	300	300.798429	332968	8960
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.FTcore_char	300	300.553923	231085	9709
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.twp_allocN	300	300.221678	23189	1844
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binzE_ffact	300	300.612477	239695	10669
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.DadeJ	300	300.555564	243117	3649
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.twp_array_clone	300	300.115731	19908	1054
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.contrib_spec.newcounter_contrib_spec	300	301.019049	19503	851
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.PprodSubCoprime.pprod_norm_coprime_prod	300	300.324600	125677	12979
+coq-mathcomp-apery.1.0.1	mathcomp.apery.b_over_a_props.lt_0_ba_casoratian	300	300.209183	60570	2570
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.is_lock_iff	300	300.572890	28457	784
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.sW1L	300	300.409681	141643	2983
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.odd_regular_metacyclic	300	300.623628	243189	8239
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.Introduction.der1_sigma_compl_nil	300	300.250913	90800	9364
+coq-qcert.2.2.0	Qcert.Translation.Typing.TNNRStoNNRSimp.TNNRStoNNRSimp.tnnrs_to_nnrs_imp_correct_b	300	300.377369	84010	6394
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.try_acquire_spec	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.c_Sk	300	300.469203	172327	6851
+coq-mathcomp-apery.1.0.1	mathcomp.apery.z3irrational.z3seq_b_over_a_asympt	300	300.265117	83257	15029
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_r_nat	300	301.633144	329308	6912
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection15.FittingCore.Fcore_pcore_Hall	300	300.660543	280374	8506
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.Interpretation.unsat_cases	300	300.477062	186652	9211
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.PreliminaryRemarksLemma7.remark_7_1	300	302.470936	116829	4912
+coq-tlc.20200328	TLC.LibMap.Properties.binds_update_same_inv	300	300.560789	221189	18685
+coq-tlc.20200328	TLC.LibFix.FixVal_fix_inv	300	300.265583	78810	12794
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.a_neq0	300	300.479180	179431	5766
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'3_eq	300	302.577667	81556	5758
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.NRAEnvOptimizer.NRAEnvOptimizer.tapp_over_unop_fun_correctness	300	300.313758	67946	9709
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection13.Section13.tau13_regular	300	300.419542	164554	9436
+coq-qcert.2.2.0	Qcert.NNRC.Optim.TNNRCRewrite.TNNRCRewrite.tnnrcproject_over_concat_recs_in_in	300	300.360058	41357	8730
+coq-tlc.20200328	TLC.LibListZ.Take.take_full_length	300	300.292162	108166	15469
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection2.BGsection2.repr_extraspecial_prime_sdprod_cycle	300	300.361494	153503	7602
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.DadeCoverInequality.Dade_cover_inequality	300	300.326547	102461	2798
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoNNRS.NNRCtoNNRS.from_stratified.nnrc_stmt_to_nnrs_stmt_aux_assign_eq	300	300.436535	86734	9729
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection8.Eight.typeF_context	300	300.351101	130741	6639
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.BigInt.congr_big_int	300	300.549551	179522	6174
+coq-mathcomp-apery.1.0.1	mathcomp.apery.b_props.Qint_l3b	300	300.223872	60138	3029
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection11.Section11.exceptional_sigma_uniq	300	300.265504	103025	5924
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection14.Section14.rank_kappa	300	300.311443	123524	11645
+coq-mathcomp-apery.1.0.1	mathcomp.apery.initial_conds.a2_eq	300	303.681624	56682	1355
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.defFU	300	300.267487	95147	1915
+coq-qcert.2.2.0	Qcert.NNRC.Optim.NNRCOptimizer.NNRCOptimizer.engine.nnrc_map_deep_corretness	300	300.382608	69829	11416
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.eq_def_multiQ	300	301.413720	249935	6592
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.FTcore_sub	300	300.330029	126359	8327
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_b.AnnOfB.recAperyB	300	301.003424	447107	5022
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_allocN	300	300.182008	24799	1228
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binz_on_diag	300	300.633141	251070	10456
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.not_support_Dade_1	300	300.365613	147449	4866
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.contrib_spec.incr_contrib_spec	300	300.173301	17439	892
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.array_init.wp_array_init	300	300.189279	22942	1134
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.Plength1Prod.sSN	300	300.333383	129082	8546
+coq-qcert.2.2.0	Qcert.Driver.CompDriver.CompDriver.CompDriverConfig.target_language_of_driver_is_postfix_dnnrc_typed	300	300.307749	102858	3544
+coq-mathcomp-apery.1.0.1	mathcomp.apery.b_over_a_props.Db_over_a_casoratian	300	300.314830	111838	12819
+coq-qcert.2.2.0	Qcert.Tests.CAMPTest.CAMPTest.R9_verify	300	0.517464	15	2	6	synth with cache (only 1: trivial).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.sWL	300	300.415454	165881	2779
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.newlock_spec	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.prime_odd_regular_normal	300	300.630015	261475	10716
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.prime_class_mmax_norm	300	300.334345	112244	8808
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection9.Nine.nUW1	300	300.215463	83520	3643
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.spin_lock.proof.acquire_spec	300
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.a_Sn2	300	300.512553	201147	7073
+coq-mathcomp-apery.1.0.1	mathcomp.apery.z3irrational.z3_eq_b_over_a	300	300.301596	119885	5338
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_nat_nat	300	300.884529	384678	4665
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection15.MoreFittingCore.isog_Fcore	300	300.776691	328720	6707
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.TNRAEnvRewrite.TNRAEnvRewrite.teither_app_over_aleft_arrow	300	300.674673	41158	9078
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.Interpretation.O	300	300.438672	172822	10035
+coq-qcert.2.2.0	Qcert.Compiler.Trivial.TrivialModel.trivial_foreign_operators_typing_obligation_9	300	3.511028	1385	164	25	synth with cache (only 1: intuition).
+coq-qcert.2.2.0	Qcert.Compiler.Trivial.TrivialModel.trivial_foreign_to_reduce_op_obligation_3	300	1.108483	1402	84	36	synth with cache (only 1: right).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.PreliminaryRemarksLemma7.remark_7_2	300	302.634760	136890	4865
+coq-tlc.20200328	TLC.LibMap.Properties.index_remove_one_in	300	300.448039	110679	12363
+coq-tlc.20200328	TLC.LibFix.FixValModMut2_fix	300	300.425993	159004	16004
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.InducedIrrs.SeqInd.Cint_seqInd1	300	300.507552	194179	4123
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.a_incr	300	300.433108	167012	7811
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'4_eq	300	302.025327	38510	1785
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection13.Section13.tau12_regular	300	300.226533	84862	7989
+coq-tlc.20200328	TLC.LibListZ.Drop.drop_cons_pos	300	300.315956	100550	14809
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.nsM''M	300	5.492654	2108	85	49	synth with cache (only 1: by rewrite gFnormal_trans //= setIC norm_normalI).
+coq-qcert.2.2.0	Qcert.Translation.Lang.NNRCtoNNRS.NNRCtoNNRS.Core.nnrc_stmt_to_nnrs_stmt_aux_preserves_core	300	300.332307	79160	3977
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.DisjointDadeOrtho.disjoint_Dade_ortho	300	300.568270	223832	3047
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection8.Eight.TypeP_Remarks.of_typeP_sol	300	300.631361	277414	5794
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.BigInt.eq_big_int	300	301.413038	222455	8838
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection11.Section11.exceptional_mul_sigma_normal	300	300.396341	163063	6950
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection14.Section14.ex_kappa_compl	300	300.551290	239098	10007
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.frobH	300	300.254613	100245	2134
+coq-mathcomp-apery.1.0.1	mathcomp.apery.initial_conds.a3_eq	300	304.162867	370243	5591
+coq-qcert.2.2.0	Qcert.NNRC.Optim.NNRCOptimizer.NNRCOptimizer.tnnrc_rewrites_to_trans	300	300.299107	53031	10907
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.whyIsThisNotProved	300	300.544561	214025	14121
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.KappaClassification.FmaxP	300	300.307143	130080	7414
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.twp_allocN_vec	300	300.233548	21322	1654
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binNzz	300	300.495330	175856	10772
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.Dade_support_norm	300	300.429686	178668	3048
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.contrib_spec.read_contrib_spec	300	300.480527	17516	968
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.array_init.twp_array_init	300	300.263336	25092	1230
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.Plength1Prod.plength1_Sylow_prod	300	300.769195	327000	6280
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection9.Nine.any_cent_rank3_Uniquness	300	300.354859	136599	9242
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.notMtype5	300	0.338687	2	2	0.0	synth with cache (only 1: have [zeta [irr_zeta Szeta zeta1w1]] := FTtypeP_ref_irr maxM MtypeP; only 1: exact : (FTtype5_exclusion_main _ MtypeP _ irr_zeta) ).
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.coKW1	300	300.668506	282382	2552
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection10.CoreTheory.GenericCores.betaJ	300	300.591928	251254	8445
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.wait_loop_spec	300	300.230211	28791	1329
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection3.BGsection3.Frobenius_primact	300	300.333469	106844	7912
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.nonuniq_p2Elem_cent_sigma	300	300.295270	89635	7087
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection9.Nine.coHU	300	300.125583	45342	3372
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.d_Sn	300	300.387732	144809	12074
+coq-tlc.20200328	TLC.LibListZ.Drop.drop_app_length	300	186.656029	32548	6287	0.3.0.5.1.1.0.10.0.7	synth with cache (only 1: destruct l; only 1: auto; only 1: destruct l; only 1: auto; only 1: intros; only 1: rewrite LibList.drop_app_r; only 1: rew_list; only 1: math_rewrite (forall a, (a - a)%nat = 0%nat); only 1: auto; only 1: math).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.z3irrational.lt0_z3_minus_b_over_a	300	300.891567	307968	6568
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson_elem_analysis.RationalPower.exp_quo_mult_distr	300	300.750517	304624	9411
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection15.Section15.Fcore_sub_Msigma	300	300.385638	145400	9065
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection3.CyclicTIisoReflexion.Interpretation.sat_exact	300	300.458328	172205	6707
+coq-qcert.2.2.0	Qcert.NRA.Optim.TNRARewrite.TNRARewrite.tand_comm_arrow	300	300.913259	59350	8114
+coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.PreliminaryRemarksLemma7.remark_7_3	300	302.297526	65661	4953
+coq-tlc.20200328	TLC.LibMap.Properties.fold_single	300	300.336368	119241	20931
+coq-qcert.2.2.0	Qcert.NRAEnv.Optim.TNRAEnvRewrite.TNRAEnvRewrite.tmap_over_either	300	301.074525	41110	9078
+coq-tlc.20200328	TLC.LibFix.FixFunMod_fix_partial	300	300.316545	70808	10721
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection5.InducedIrrs.SeqInd.seqInd1_neq0	300	300.644381	252918	4428
+coq-mathcomp-apery.1.0.1	mathcomp.apery.a_props.ltr_rat_of_positive	300	300.778429	366485	8842
+coq-mathcomp-apery.1.0.1	mathcomp.apery.reduce_order.ReduceBToOrder2.b'_Sn4	300	300.447120	171474	5978
+coq-qcert.2.2.0	Qcert.NRA.Typing.TNRAExt.TNRAExt.typed_nraext_total	300	300.345980	27861	5368
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection13.Section13.tau13_nonregular_sigma	300	300.127317	41052	8592
+coq-qcert.2.2.0	Qcert.NNRSimp.Typing.TNNRSimp.TNNRSimp.nnrs_imp_stmt_type_impl_free_vars_incl	300
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection10.Ten.OneMaximal.typeMgt2	300	300.290616	91263	3466
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection7.Seven.CoherentFrobeniusPartition.coherent_Frobenius_bound	300	300.554355	220078	2488
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection8.Eight.TypeP_Remarks.typeP_cent_compl	300	300.621759	269176	5434
+coq-mathcomp-apery.1.0.1	mathcomp.apery.bigopz.BigInt.big_geqz	300	300.616687	269644	4528
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_s.AnnOfS.P1_eq_Delta_Q1	300	300.275437	96759	7686
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection14.Section14.trivg_kappa	300	300.498347	211595	7971
+coq-qcert.2.2.0	Qcert.Driver.CompDriver.CompDriver.CompPaths.exists_path_from_source_target_completeness_javascript	300	300.372709	75522	3295
+coq-qcert.2.2.0	Qcert.NNRC.Optim.NNRCOptimizer.NNRCOptimizer.tunshadow_preserves_fun_correctness	300	300.325439	62358	11664
+coq-mathcomp-apery.1.0.1	mathcomp.apery.multinomial.eq_def_multi1	300	300.842465	356518	7812
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection16.Section16.KappaClassification.P1maxP	300	300.173065	62508	8593
+coq-mathcomp-odd-order.1.14.0	odd_order.BGappendixC.AppendixC.ExpandHypotheses.AppendixC3.not_splitU	300	300.189818	73967	1476
+coq-qcert.2.2.0	Qcert.Data.OperatorsTyping.TBinaryOperators.TBinaryOperators.forall_typed_bmin	300	0.283129	14	13	0.0.0.0.1.0.0	synth with cache (only 1: intros; only 1: unfold bmin; only 1: apply (@TUtil.forall_typed_bminus _); only 1: apply (@TUtil.forall_typed_bminus _); only 1: assumption; only 1: assumption; only 1: assumption).
+coq-iris-heap-lang.3.4.0	iris.heap_lang.derived_laws.lifting.wp_allocN_vec	300	300.297606	19868	1159
+coq-mathcomp-apery.1.0.1	mathcomp.apery.binomialz.binzSS_weak	300	300.531366	200763	8411
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection2.Two.Dade_subproof	300	300.383298	159166	2340
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.counter.contrib_spec.read_contrib_spec_1	300	300.213613	18478	1126
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection6.Six.OneType.Plength1Prod.sylS_Gp'p	300	300.465254	187338	5419
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.array.proof.array_init_fmap.big_sepL_exists_eq	300	302.200495	62819	1738
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection9.Nine.SCN_3_Uniqueness	300	300.366080	141123	10776
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection11.Eleven.defA1	300	300.289026	56206	3212
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection10.CoreTheory.MaxCores.beta_sub_sigma	300	300.504061	219185	11388
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection4.Four_3_to_5.cycW	300	300.550669	216642	2021
+coq-iris-heap-lang.3.4.0	iris.heap_lang.lib.ticket_lock.proof.acquire_spec	300
+coq-mathcomp-odd-order.1.14.0	odd_order.BGsection12.Section12.tau2_context	300	300.177571	66246	6321
+coq-mathcomp-apery.1.0.1	mathcomp.apery.ops_for_u.AnnOfU.u_Sk2	300	300.429332	147213	5185
+coq-mathcomp-odd-order.1.14.0	odd_order.PFsection9.Nine.typeII_IV_core	300	300.248521	92533	5076
+coq-mathcomp-apery.1.0.1	mathcomp.apery.algo_closures.d_Sk	300	302.270880	153332	8023
+coq-tlc.20200328	TLC.LibListZ.Count.count_nonneg	300	300.366799	125834	18261
+coq-tlc.20200328	TLC.LibListZ.Count.Exists_of_count_pos	300	0.038974	13	6	0.1.1.0	synth with cache (only 1: introv; only 1: rewrite <- LibList.Exists_eq_count_pos, Exists_eq_exists_mem; only 1: intros; only 1: subst *).
+coq-mathcomp-apery.1.0.1	mathcomp.apery.z3irrational.lt_0_Kdelta	300	300.473659	198688	2506
