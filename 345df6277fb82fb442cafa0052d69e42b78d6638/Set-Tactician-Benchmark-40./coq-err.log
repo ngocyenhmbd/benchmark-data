@@ -1,0 +1,161 @@
+File "./theories/Lists/Streams.v", line 94, characters 0-19:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: intro x; only 1: coinduction ltac:(EqSt_reflex); only 1: symmetry; only 1: destruct H; only 1: trivial with datatypes; only 1: assumption).
+                    Typing error:
+                    Recursive definition of EqSt_reflex is ill-formed.
+                    In environment
+                    A : Type
+                    x : Stream
+                    EqSt_reflex : forall s2 : Stream, EqSt x s2 -> EqSt s2 x
+                    s2 : Stream
+                    H : EqSt x s2
+                    Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex s2 H
+                                                 with
+                                                 | eqst _ _ _ x => x
+                                                 end".
+                    Recursive definition is: "fun 
+                                                (s2 : Stream) 
+                                                (H : EqSt x s2) =>
+                                              eqst s2 x
+                                                (eq_sym
+                                                 match H with
+                                                 | eqst _ _ H0 _ => H0
+                                                 end)
+                                                (let H0 :
+                                                 forall s3 : Stream,
+                                                 EqSt x s3 ->
+                                                 EqSt (tl s3) (tl x) :=
+                                                 fun 
+                                                 (s3 : Stream)
+                                                 (H0 : EqSt x s3) =>
+                                                 match EqSt_reflex s3 H0 with
+                                                 | eqst _ _ _ x => x
+                                                 end in
+                                                 H0 s2 H)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Wellfounded/Inclusion.v", line 21, characters 4-16:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Wellfounded/Well_Ordering.v", line 32, characters 4-31:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Program/Wf.v", line 98, characters 4-24:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Wellfounded/Inverse_Image.v", line 45, characters 4-45:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetRBT.v", line 477, characters 1-33:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Lists/Streams.v", line 199, characters 0-11:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: assumption; only 1: assumption; only 1: intros [? ?]; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: tauto).
+                    Typing error:
+                    Recursive definition of ForAll_coind is ill-formed.
+                    In environment
+                    A, B : Type
+                    f : A -> B
+                    P : Stream B -> Prop
+                    S : Stream A
+                    ForAll_coind :
+                    ForAll (fun s : Stream A => P (map s)) S ->
+                    ForAll P (map S)
+                    H : ForAll (fun s : Stream A => P (map s)) S
+                    Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind H
+                                                 with
+                                                 | HereAndFurther _ _ x0 =>
+                                                 x0
+                                                 end".
+                    Recursive definition is: "fun
+                                                H : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) S =>
+                                              HereAndFurther 
+                                                (map S)
+                                                match H with
+                                                | HereAndFurther _ H0 _ => H0
+                                                end
+                                                (let H0 :
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) S ->
+                                                 ForAll P (tl (map S)) :=
+                                                 fun
+                                                 H0 : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) S =>
+                                                 match ForAll_coind H0 with
+                                                 | HereAndFurther _ _ x0 =>
+                                                 x0
+                                                 end in
+                                                 H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Sets/Relations_3_facts.v", line 116, characters 0-23:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/btauto/Algebra.v", line 184, characters 0-6:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetFacts.v", line 49, characters 7-41:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FSetEqProperties.v", line 70, characters 0-38:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/QMicromega.v", line 165, characters 2-16:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetRBT.v", line 621, characters 1-31:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetFacts.v", line 59, characters 7-44:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Logic/ConstructiveEpsilon.v", line 147, characters 0-11:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Logic/ConstructiveEpsilon.v", line 153, characters 0-65:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetRBT.v", line 633, characters 1-31:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Logic/ConstructiveEpsilon.v", line 162, characters 0-17:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Classes/EquivDec.v", line 127, characters 4-21:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Vectors/VectorEq.v", line 48, characters 3-56:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetRBT.v", line 645, characters 1-32:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Vectors/VectorEq.v", line 58, characters 1-29:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/NatInt/NZDomain.v", line 60, characters 0-12:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/NArith/Ndec.v", line 162, characters 2-14:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/MSets/MSetRBT.v", line 706, characters 1-18:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Logic/ChoiceFacts.v", line 663, characters 2-177:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/setoid_ring/InitialRing.v", line 224, characters 2-112:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Logic/FinFun.v", line 219, characters 1-13:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/NArith/Ndec.v", line 203, characters 2-14:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FSetEqProperties.v", line 479, characters 0-7:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Arith/Wf_nat.v", line 204, characters 2-79:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/NArith/Ndec.v", line 210, characters 2-14:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Logic/FinFun.v", line 285, characters 1-28:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/NArith/Ndec.v", line 218, characters 2-14:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/NArith/BinNat.v", line 668, characters 1-21:
+Warning:
+Benchmarking error: Anomaly
+                    "File "src/ltacrecord.ml", line 424, characters 61-67: Assertion failed."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/NArith/Ndigits.v", line 635, characters 0-18:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/FSets/FMapAVL.v", line 1945, characters 1-53:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./plugins/micromega/ZMicromega.v", line 1422, characters 2-71:
+Warning: Benchmarking error: Forked process exited with signal -11
