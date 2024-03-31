@@ -1,0 +1,18 @@
+[31m[ERROR][0m The compilation of coq-tactician.dev failed at "dune build -p
+        coq-tactician -j 55 --promote-install-files=false @install".
+
+[31m#===[0m [01mERROR[0m [01mwhile compiling coq-tactician.dev[0m [31m==================================#[0m
+[33m#[0m [33mcontext[0m     2.1.2 | linux/x86_64 |  | pinned(git+https://github.com/coq-tactician/coq-tactician.git#ce9e2ac3ade780e0933387e7d8ecce50a766cb4e#ce9e2ac3)
+[33m#[0m [33mpath[0m        /lscratch/blaaulas/tactician.tmp.N2jD39/opam-root/bench/.opam-switch/build/coq-tactician.dev
+[33m#[0m [33mcommand[0m     /lscratch/blaaulas/tactician.tmp.N2jD39/opam-root/bench/bin/dune build -p coq-tactician -j 55 --promote-install-files=false @install
+[33m#[0m [33mexit-code[0m   1
+[33m#[0m [33menv-file[0m    /tmp/opam-xxx-18039/coq-tactician-18039-c68c32.env
+[33m#[0m [33moutput-file[0m /tmp/opam-xxx-18039/coq-tactician-18039-c68c32.out
+[33m### output ###
+[0m[33m# [0m(cd _build/default && /lscratch/blaaulas/tactician.tmp.N2jD39/opam-root/bench/bin/ocamlc.opt -w -40 -rectypes -w -27 -g -bin-annot -I src/.tactician_ltac1_record_plugin.objs/byte -I /lscratch/blaaulas/tactician.tmp.N2jD39/opam-root/bench/lib/coq-core/boot -I /lscratch/blaaulas/tactician.tmp.N2jD39/opam-root/bench/lib/coq-core/clib -I /lscratch/blaaulas/tactician.tmp.N2jD39/opam-root/bench/lib[...]
+[33m# [0mFile "src/map_all_the_things.mli", line 70, characters 8-42:
+[33m# [0m70 |         ('a, 'b, 'c, 'occvar) red_expr_gen map
+[33m# [0m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[33m# [0mError: The type constructor red_expr_gen expects 3 argument(s),
+[33m# [0m       but is here applied to 4 argument(s)
+
