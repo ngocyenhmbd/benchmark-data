@@ -1,0 +1,110 @@
+File "./theories/Lists/Streams.v", line 95, characters 0-19:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: destruct 1; only 1: coinduction ltac:(EqSt_reflex); only 1: auto).
+                    Typing error:
+                    Recursive definition of EqSt_reflex is ill-formed.
+                    In environment
+                    A : Type
+                    s1 : Stream
+                    s2 : Stream
+                    H : EqSt s1 s2
+                    e : hd s1 = hd s2
+                    e0 : EqSt (tl s1) (tl s2)
+                    H0 : hd s1 = hd s2
+                    H1 : EqSt (tl s1) (tl s2)
+                    EqSt_reflex : EqSt s2 s1
+                    Invalid recursive call in the argument of "match" in "match
+                                                 EqSt_reflex
+                                                 with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun 
+                                                 (_ : hd s2 = hd s1)
+                                                 (H : EqSt (tl s2) (tl s1))
+                                                 => H) x x0
+                                                 end".
+                    Recursive definition is: "eqst s2 s1 
+                                                (eq_sym H0)
+                                                (let H1 :
+                                                 EqSt (tl s2) (tl s1) :=
+                                                 match EqSt_reflex with
+                                                 | eqst _ _ x x0 =>
+                                                 (fun 
+                                                 (_ : hd s2 = hd s1)
+                                                 (H : EqSt (tl s2) (tl s1))
+                                                 => H) x x0
+                                                 end in
+                                                 H1)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Lists/Streams.v", line 200, characters 0-11:
+Warning:
+Benchmarking error: Anomaly
+                    "Typing failure of the following tactic:
+                    synth with cache (only 1: split; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: destruct H; only 1: auto; only 1: assumption; only 1: intros [x y]; only 1: let rec coinduction proof := cofix proof; intros; constructor; [ clear proof | try (apply proof; clear proof) ] in coinduction ltac:(ForAll_coind); only 1: assumption).
+                    Typing error:
+                    Recursive definition of ForAll_coind is ill-formed.
+                    In environment
+                    A, B : Type
+                    f : A -> B
+                    P : Stream B -> Prop
+                    S : Stream A
+                    ForAll_coind :
+                    ForAll (fun s : Stream A => P (map s)) S ->
+                    ForAll P (map S)
+                    H : ForAll (fun s : Stream A => P (map s)) S
+                    Invalid recursive call in the argument of "match" in "match
+                                                 ForAll_coind H
+                                                 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H : ForAll P (tl (map S)))
+                                                 => H) x x0
+                                                 end".
+                    Recursive definition is: "fun
+                                                H : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) S =>
+                                              HereAndFurther 
+                                                (map S)
+                                                match H with
+                                                | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (H0 : P (map S))
+                                                 (_ : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) 
+                                                 (tl S)) => H0) x x0
+                                                end
+                                                (let H0 :
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) S ->
+                                                 ForAll P (tl (map S)) :=
+                                                 fun
+                                                 H0 : 
+                                                 ForAll
+                                                 (fun s : Stream A =>
+                                                 P (map s)) S =>
+                                                 match ForAll_coind H0 with
+                                                 | HereAndFurther _ x x0 =>
+                                                 (fun 
+                                                 (_ : P (map S))
+                                                 (H1 : ForAll P (tl (map S)))
+                                                 => H1) x x0
+                                                 end in
+                                                 H0 H)"."
+Please report at http://coq.inria.fr/bugs/.
+File "./theories/Strings/Byte.v", line 30, characters 7-47:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Strings/Byte.v", line 34, characters 2-57:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Strings/Byte.v", line 48, characters 7-60:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int63/Uint63.v", line 1301, characters 1-23:
+Warning: Benchmarking error: Forked process exited with signal -11
+File "./theories/Numbers/Cyclic/Int31/Cyclic31.v", line 2252, characters 1-34:
+Warning: Benchmarking error: Stack overflow.
