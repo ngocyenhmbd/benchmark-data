@@ -1,0 +1,393 @@
+coq-bits.1.1.0	Bits.ssrextra.tuple.mapCons	300	1.625210	48	8	0.22	synth with cache (only 1: apply /@val_inj ; only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.mapNil	300	1.072519	17	6	9	synth with cache (only 1: by rewrite tuple0).
+coq-bits.1.1.0	Bits.ssrextra.tuple.theadCons	300	0.328513	1	2	0	synth with cache (only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.beheadCons	300	1.235753	25	7	0.14	synth with cache (only 1: apply /@val_inj ; only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.zipCons	300	2.143524	40	11	0.10	synth with cache (only 1: apply /@val_inj ; only 1: reflexivity).
+coq-bits.1.1.0	Bits.ssrextra.tuple.nseqCons	300	1.658772	40	9	0.14	synth with cache (only 1: apply /@val_inj ; only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.catCons	300	1.608918	46	8	0.15	synth with cache (only 1: apply /@val_inj ; only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.catNil	300	4.768315	270	25	0.112	synth with cache (only 1: apply /@val_inj ; only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.mapId	300	5.247805	180	31	1.6	synth with cache (only 1: apply eq_from_tnth; only 1: exact : tnth_map ).
+coq-bits.1.1.0	Bits.ssrextra.tuple.behead_nseq	300	12.113245	393	76	0.101	synth with cache (only 1: apply @val_inj; only 1: by [  ]).
+coq-bits.1.1.0	Bits.ssrextra.tuple.splitTuple	300	38.877579	560	299	0.11.0.1	synth with cache (only 1: intros; only 1: injection H as; only 1: apply @val_inj in H0; only 1: split => //).
+coq-bits.1.1.0	Bits.ssrextra.nat.odd_power2	300	5.124515	30	21	19	synth with cache (only 1: apply oddX).
+coq-bits.1.1.0	Bits.spec.spec.properties.toNatCons	300	0.625357	1	2	0	synth with cache (only 1: by [  ]).
+coq-bits.1.1.0	Bits.spec.spec.properties.toNatNil	300	4.568319	372	16	188	synth with cache (only 1: by rewrite tuple0).
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNatHalf	300	0.550652	1	2	0	synth with cache (only 1: by [  ]).
+coq-bits.1.1.0	Bits.spec.operations.properties.nat_cast_ord	300	3.746454	4	5	3	synth with cache (only 1: trivial).
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_tcast	300	6.623254	29	24	0.4.0	synth with cache (only 1: intros; only 1: destruct H; only 1: by [  ]).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_tcast	300	8.085300	42	28	0.2.1	synth with cache (only 1: intros; only 1: destruct H; only 1: by [  ]).
+coq-bits.1.1.0	Bits.extraction.axioms8.zero_repr	300	3.413804	56	14	12	synth with cache (only 1: apply zero_valid).
+coq-bits.1.1.0	Bits.extraction.axioms8.one_repr	300	1.530710	15	6	8	synth with cache (only 1: apply one_valid).
+coq-bits.1.1.0	Bits.extraction.axioms32.bitsFromInt32_bij	300	30.265468	1514	110	233	synth with cache (only 1: exact : Bijective (bitsFromInt32K) bitsToInt32K ).
+coq-bits.1.1.0	Bits.spec.spec.properties.splitTuple	300	27.583176	176	118	52	synth with cache (only 1: exact : @splitTuple ).
+coq-bits.1.1.0	Bits.extraction.axioms32.zero_repr	300	4.367965	64	17	12	synth with cache (only 1: apply zero_valid).
+coq-bits.1.1.0	Bits.spec.spec.properties.toZpAux_fromNat	300	4.392223	53	13	33	synth with cache (only 1: exact : toZp_fromNat ).
+coq-bits.1.1.0	Bits.extraction.axioms32.bitsFromInt32K	300	49.753966	1044	186	1.32.1	synth with cache (only 1: intros ?; only 1: apply bitsFromInt32_inj; only 1: apply bitsToInt32K).
+coq-bits.1.1.0	Bits.spec.spec.properties.trivialBits	300	58.273997	2287	215	6.46	synth with cache (only 1: apply eq_from_tnth; only 1: by case).
+coq-bits.1.1.0	Bits.spec.operations.properties.lift_left_zero	300
+coq-bits.1.1.0	Bits.spec.operations.properties.liftBinOpCons	300	53.926965	1882	202	2.167	synth with cache (only 1: apply allBitsEq; only 1: constructor).
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_liftUnOp	300
+coq-bits.1.1.0	Bits.extraction.axioms16.zero_repr	300	3.724244	57	15	12	synth with cache (only 1: apply zero_valid).
+coq-bits.1.1.0	Bits.extraction.axioms16.one_repr	300	1.521142	16	6	9	synth with cache (only 1: apply one_valid).
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_neq	300	9.622343	108	32	52	synth with cache (only 1: by rewrite toZp_eq).
+coq-bits.1.1.0	Bits.spec.spec.properties.fromZp_inj	300	10.728687	1465	29	32.69	synth with cache (only 1: apply : can_inj ; only 1: exact : (fromZpK) ).
+coq-bits.1.1.0	Bits.spec.operations.properties.invBCons	300	5.754957	98	22	0.36	synth with cache (only 1: apply : @val_inj  => /=; only 1: reflexivity).
+coq-bits.1.1.0	Bits.ssrextra.nat.leq_subn	300	113.640617	3208	422	7.0.0.37	synth with cache (only 1: case b; only 1: intros ?; only 1: auto; only 1: auto with arith).
+coq-bits.1.1.0	Bits.ssrextra.nat.half_sub	300
+coq-bits.1.1.0	Bits.spec.operations.properties.ones_decomp	300	19.420600	827	70	0.178	synth with cache (only 1: apply toZp_inj; only 1: by [  ]).
+coq-bits.1.1.0	Bits.extraction.axioms16.bitsFromInt16K	300	80.056961	1783	302	2.34.1	synth with cache (only 1: intros ?; only 1: apply bitsFromInt16_inj; only 1: apply bitsToInt16K).
+coq-bits.1.1.0	Bits.spec.operations.properties.zero_decomp	300	21.014282	890	73	0.40.3	synth with cache (only 1: compute; only 1: apply @val_inj; only 1: reflexivity).
+coq-bits.1.1.0	Bits.spec.operations.properties.lift_left_id	300
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_liftBinOp	300
+coq-bits.1.1.0	Bits.spec.operations.properties.fullAdderTT	300	0.922009	3	4	0.0.0	synth with cache (only 1: destruct c; only 1: reflexivity; only 1: reflexivity).
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_zero	300	35.293224	1604	124	0.1.0.0.63	synth with cache (only 1: compute; only 1: induction n; only 1: auto; only 1: rewrite -> IHn; only 1: auto).
+coq-bits.1.1.0	Bits.spec.operations.properties.lift_right_zero	300
+coq-bits.1.1.0	Bits.spec.operations.properties.and1B	300	119.067007	4281	446	91.73	synth with cache (only 1: rewrite /@andB; only 1: exact : lift_left_id ).
+coq-bits.1.1.0	Bits.spec.operations.properties.lift_associative	300
+coq-bits.1.1.0	Bits.spec.spec.properties.setBitThenGetDistinct	300
+coq-bits.1.1.0	Bits.ssrextra.nat.half_double_subn1	300	230.660887	6264	919	0.0.0.0.0.4.0.60	synth with cache (only 1: destruct a; only 1: by [  ]; only 1: simpl; only 1: induction a; only 1: reflexivity; only 1: simpl; only 1: rewrite -> IHa; only 1: easy).
+coq-bits.1.1.0	Bits.spec.spec.properties.count_ones	300	162.771163	3511	518	3.0.2.0.4	synth with cache (only 1: elim; only 1: by [  ]; only 1: cbn; only 1: intros ?; only 1: auto).
+coq-bits.1.1.0	Bits.spec.operations.properties.negB0	300	148.539005	3733	417	7.146	synth with cache (only 1: rewrite fromNat0; only 1: exact : negB_zero ).
+coq-bits.1.1.0	Bits.extraction.axioms16.bitsFromInt16P	300	300.203584	8960	1092
+coq-bits.1.1.0	Bits.ssrextra.nat.half_ltn_double	300	300.231918	7910	1060
+coq-bits.1.1.0	Bits.ssrextra.nat.uphalf_double_subn1	300	300.464267	4345	1269
+coq-bits.1.1.0	Bits.ssrextra.nat.odd_oddsubn1	300	300.137749	4283	1335
+coq-bits.1.1.0	Bits.ssrextra.nat.odd_power2subn1	300	300.224688	11212	1200
+coq-bits.1.1.0	Bits.ssrextra.nat.pow2_gt1	300	300.196923	12074	1068
+coq-bits.1.1.0	Bits.ssrextra.nat.nat_lt0_succ	300	300.200347	6400	1260
+coq-bits.1.1.0	Bits.ssrextra.nat.pow2_sub_ltn	300	300.265139	7251	1009
+coq-bits.1.1.0	Bits.ssrextra.nat.modn_sub	300	300.389741	3697	950
+coq-bits.1.1.0	Bits.spec.spec.properties.msb_ones	300	10.637918	181	50	0.0.0.21	synth with cache (only 1: compute; only 1: induction n; only 1: reflexivity; only 1: assumption).
+coq-bits.1.1.0	Bits.spec.spec.properties.toNatK	300	300.158059	15028	1033
+coq-bits.1.1.0	Bits.extraction.axioms8.bitsFromInt8P	300	300.265953	7859	972
+coq-bits.1.1.0	Bits.extraction.axioms32.land_repr	300
+coq-bits.1.1.0	Bits.extraction.axioms8.bitsToInt8K	300	300.104249	6652	1139
+coq-bits.1.1.0	Bits.extraction.axioms32.bitsFromInt32P	300	300.324762	7841	967
+coq-bits.1.1.0	Bits.spec.spec.properties.toNatBounded	300	300.104458	10016	991
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_fromNatBounded	300	300.180188	8849	1002
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNatBounded_eq	300	300.308378	4020	950
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_wrap	300	300.066143	12580	954
+coq-bits.1.1.0	Bits.extraction.axioms16.bitsToInt16K	300	300.125438	6554	1139
+coq-bits.1.1.0	Bits.extraction.axioms32.bitsToInt32K	300	300.256606	6418	1107
+coq-bits.1.1.0	Bits.extraction.axioms8.bitsFromInt8_inj	300	300.223973	6645	1261
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_wrapMany	300	300.318052	13284	911
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_mod	300	300.339900	22872	902
+coq-bits.1.1.0	Bits.extraction.axioms8.bitsFromInt8_bij	300	300.200980	12897	1107
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_joinmsb0	300	3.128570	175	11	121	synth with cache (only 1: exact : toNat_joinmsb ).
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_fromNat	300	300.150434	12126	924
+coq-bits.1.1.0	Bits.spec.operations.properties.lift_commutative	300	300.256040	3142	1104
+coq-bits.1.1.0	Bits.spec.operations.properties.lift_idempotent	300	300.292527	6915	1196
+coq-bits.1.1.0	Bits.spec.operations.properties.andBC	300	300.102109	7619	1048
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBC	300	300.247500	6536	1066
+coq-bits.1.1.0	Bits.spec.operations.properties.andBB	300	300.157088	12348	1113
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_succn	300	300.105119	5181	1089
+coq-bits.1.1.0	Bits.spec.operations.properties.orBC	300	300.086397	6619	1031
+coq-bits.1.1.0	Bits.spec.operations.properties.orBB	300	300.195351	11639	1094
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBA	300	300.257766	7128	1035
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat_addn	300	300.287176	3416	973
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_fromNat	300	300.087909	12284	857
+coq-bits.1.1.0	Bits.spec.operations.properties.andBA	300	300.198209	7927	1014
+coq-bits.1.1.0	Bits.spec.operations.properties.andB1	300	300.301676	12457	1138
+coq-bits.1.1.0	Bits.extraction.axioms16.bitsFromInt16_bij	300	300.178548	11839	1045
+coq-bits.1.1.0	Bits.extraction.axioms8.eq_repr	300	300.304171	6629	1086
+coq-bits.1.1.0	Bits.extraction.axioms32.eq_adj	300	300.190759	5767	1035
+coq-bits.1.1.0	Bits.extraction.axioms16.eq_adj	300	300.224222	6367	1102
+coq-bits.1.1.0	Bits.extraction.axioms32.eq_repr	300	300.087872	5736	1115
+coq-bits.1.1.0	Bits.extraction.axioms8.succ_repr	300	300.717690	6530	941
+coq-bits.1.1.0	Bits.spec.operations.properties.orBA	300	300.237021	7663	1014
+coq-bits.1.1.0	Bits.spec.operations.properties.or0B	300	300.120044	6940	881
+coq-bits.1.1.0	Bits.spec.operations.properties.and0B	300	300.057886	8184	977
+coq-bits.1.1.0	Bits.spec.operations.properties.andB0	300	300.057647	9178	952
+coq-bits.1.1.0	Bits.spec.operations.properties.orB0	300	300.321990	7393	930
+coq-bits.1.1.0	Bits.spec.operations.properties.xor0B	300	300.321882	6823	942
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBB	300	300.172444	6969	933
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBN	300	300.071539	9143	1111
+coq-bits.1.1.0	Bits.spec.operations.properties.invB0	300	300.085859	5601	908
+coq-bits.1.1.0	Bits.spec.operations.properties.xorBNaux	300	300.096749	8777	1049
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_andB	300	300.383644	17566	918
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_is_dropmsb_adcB_invB	300	0.521242	1	2	0	synth with cache (only 1: reflexivity).
+coq-bits.1.1.0	Bits.extraction.axioms32.succ_repr	300	300.851023	7599	1087
+coq-bits.1.1.0	Bits.extraction.axioms8.lor_repr	300
+coq-bits.1.1.0	Bits.spec.spec.properties.toNatCat	300	300.146007	20531	888
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_joinlsb	300	0.624583	1	2	0	synth with cache (only 1: by [  ]).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_bitsToInt8K	300	7.986411	275	30	29.1	synth with cache (only 1: intros ?; only 1: apply /bitsToInt8K_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.lnot_repr	300	300.096808	8176	1180
+coq-bits.1.1.0	Bits.spec.spec.properties.fromZpK	300	300.239354	7854	1028
+coq-bits.1.1.0	Bits.spec.spec.properties.toZpK	300	300.138192	12550	929
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_bitsFromInt8_inj	300	7.156318	257	29	43.1	synth with cache (only 1: intros ?; only 1: apply /bitsFromInt8_inj_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.eq_repr	300	300.244602	6858	1147
+coq-bits.1.1.0	Bits.spec.operations.properties.orB_invB	300	300.064604	10087	1103
+coq-bits.1.1.0	Bits.extraction.axioms8.lnot_repr	300	300.163969	8641	1117
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_zero	300	7.635620	329	29	17.1	synth with cache (only 1: intros ?; only 1: apply /zero_valid ).
+coq-bits.1.1.0	Bits.spec.spec.properties.setBitThenGetSame	300	300.263977	6229	1093
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_joinmsb	300	300.192761	4678	1126
+coq-bits.1.1.0	Bits.spec.operations.properties.andB_invB	300	300.070888	10228	1117
+coq-bits.1.1.0	Bits.extraction.axioms32.lor_repr	300	300.161154	5827	1179
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_bitsToInt32K	300	7.697730	306	30	33.1	synth with cache (only 1: intros ?; only 1: apply /bitsToInt32K_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_andB	300	300.184254	9231	1084
+coq-bits.1.1.0	Bits.extraction.axioms16.succ_repr	300	300.416579	7840	1053
+coq-bits.1.1.0	Bits.spec.spec.properties.fromNat0	300	300.053830	8379	892
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_dropmsb	300	300.225218	5762	1081
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_one	300	7.220171	326	29	20.1	synth with cache (only 1: intros ?; only 1: apply /one_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms8.land_repr	300	300.146860	5757	1094
+coq-bits.1.1.0	Bits.extraction.axioms32.lxor_repr	300	300.147003	5210	1102
+coq-bits.1.1.0	Bits.extraction.axioms16.lnot_repr	300	300.265364	8523	1154
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_ones	300	300.154468	7282	1109
+coq-bits.1.1.0	Bits.spec.operations.properties.andB_mask1	300	300.188576	5436	848
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_incB	300	300.305851	18693	972
+coq-bits.1.1.0	Bits.spec.operations.properties.toNatMod_incB	300	300.350409	22066	917
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_decB_succ	300	300.179084	15707	955
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_decB	300	300.368763	14599	944
+coq-bits.1.1.0	Bits.spec.operations.properties.toNatMod_decB	300	300.369216	9296	913
+coq-bits.1.1.0	Bits.extraction.axioms16.land_repr	300	300.104920	5481	1108
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lnot	300	9.544476	394	36	34.1	synth with cache (only 1: intros ?; only 1: apply /lnot_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_succ	300	10.551364	426	41	31.1	synth with cache (only 1: intros ?; only 1: apply /succ_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_bitsFromInt32_inj	300	7.625999	262	29	46.1	synth with cache (only 1: intros ?; only 1: apply /bitsFromInt32_inj_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_zero	300	7.630545	366	30	21.1	synth with cache (only 1: intros ?; only 1: apply /zero_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.fromNatDouble	300	300.226029	6224	1127
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_one	300	7.489137	334	30	23.1	synth with cache (only 1: intros ?; only 1: apply /one_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_incB	300	300.085691	12934	881
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_fromNat0	300	268.438658	3367	787	23.0.13.3	synth with cache (only 1: vm_compute; only 1: induction n; only 1: auto; only 1: by rewrite IHn).
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_decB	300	300.062762	9770	805
+coq-bits.1.1.0	Bits.spec.operations.properties.decBK	300	300.234373	6678	1151
+coq-bits.1.1.0	Bits.spec.operations.properties.incBK	300	300.108675	6559	1166
+coq-bits.1.1.0	Bits.spec.operations.properties.decB_zero	300	300.185622	11733	1201
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_bitsToInt16K	300	7.978596	287	30	31.1	synth with cache (only 1: intros ?; only 1: apply /bitsToInt16K_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.incB_ones	300	300.186564	11129	1186
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_land	300	9.818134	454	39	48.1	synth with cache (only 1: intros ?; only 1: apply /land_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_bitsFromInt16_inj	300	7.509641	259	29	45.1	synth with cache (only 1: intros ?; only 1: apply /bitsFromInt16_inj_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.incB_fromNat	300	300.111230	4336	943
+coq-bits.1.1.0	Bits.spec.operations.properties.decB_fromSuccNat	300	300.280345	4051	818
+coq-bits.1.1.0	Bits.extraction.axioms32.lsr_repr	300	300.153688	7266	958
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_succ	300	9.710149	419	37	35.1	synth with cache (only 1: intros ?; only 1: apply /succ_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.negB_fromNat	300	300.088022	10007	932
+coq-bits.1.1.0	Bits.spec.operations.properties.negB_or_invB_fromNat	300	300.467200	9840	952
+coq-bits.1.1.0	Bits.spec.operations.properties.invB_fromNat	300	300.304172	7783	967
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lor	300	10.537722	490	40	56.1	synth with cache (only 1: intros ?; only 1: apply /lor_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_zero	300	7.985743	366	30	21.1	synth with cache (only 1: intros ?; only 1: apply /zero_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lnot	300	9.478927	399	36	34.1	synth with cache (only 1: intros ?; only 1: apply /lnot_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lxor	300	10.391773	503	39	65.1	synth with cache (only 1: intros ?; only 1: apply /lxor_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_land	300	9.247457	434	37	49.1	synth with cache (only 1: intros ?; only 1: apply /land_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lor	300	9.739213	488	40	61.1	synth with cache (only 1: intros ?; only 1: apply /lor_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_one	300	7.935313	328	30	21.1	synth with cache (only 1: intros ?; only 1: apply /one_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_negB_or_invB	300	300.349927	13061	928
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lsr	300	8.527491	460	34	79.1	synth with cache (only 1: intros ?; only 1: apply /lsr_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_negB	300	300.285281	18736	868
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_invB	300	300.486428	16523	888
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_succ	300	9.990487	432	40	33.1	synth with cache (only 1: intros ?; only 1: apply /succ_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_invB	300	300.301271	8523	774
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_negB	300	300.309038	8815	733
+coq-bits.1.1.0	Bits.spec.operations.properties.negBK	300	300.294436	12068	994
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lxor	300	9.995251	504	38	72.1	synth with cache (only 1: intros ?; only 1: apply /lxor_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_lsl	300	8.982468	465	34	80.1	synth with cache (only 1: intros ?; only 1: apply /lsl_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.lor_repr	300	300.097177	5893	1121
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lnot	300	9.400407	396	36	34.1	synth with cache (only 1: intros ?; only 1: apply /lnot_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.negB_zero	300	300.221341	14937	1068
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_lsl	300	9.269580	444	33	81.1	synth with cache (only 1: intros ?; only 1: apply /lsl_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_neg	300	8.590610	466	34	56.1	synth with cache (only 1: intros ?; only 1: apply /neg_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_dec	300	8.758693	466	36	64.1	synth with cache (only 1: intros ?; only 1: apply /dec_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_neg	300	10.189279	479	38	50.1	synth with cache (only 1: intros ?; only 1: apply /neg_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_land	300	10.338435	446	39	49.1	synth with cache (only 1: intros ?; only 1: apply /land_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_dec	300	9.748088	478	39	57.1	synth with cache (only 1: intros ?; only 1: apply /dec_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_add	300	7.762665	351	30	79.1	synth with cache (only 1: intros ?; only 1: apply /add_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_add	300	7.850662	358	30	84.1	synth with cache (only 1: intros ?; only 1: apply /add_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_weaken	300	4.697821	68	17	0.0.3	synth with cache (only 1: intros; only 1: apply /@orP ; only 1: by left).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lor	300	10.005172	480	39	58.1	synth with cache (only 1: intros ?; only 1: apply /lor_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lsr	300	8.570514	460	34	82.1	synth with cache (only 1: intros ?; only 1: apply /lsr_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_refl	300	4.075520	28	15	3.1	synth with cache (only 1: apply /@orP ; only 1: by right).
+coq-bits.1.1.0	Bits.spec.operations.properties.adcBmain_nat	300	300.139717	4185	1100
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_joinmsb0	300	92.844528	3446	290	147.14	synth with cache (only 1: apply : @val_inj  => /=; only 1: by rewrite toNat_joinmsb0).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_lsl	300	8.868507	460	33	81.1	synth with cache (only 1: intros ?; only 1: apply /lsl_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_neg	300	8.932935	473	35	53.1	synth with cache (only 1: intros ?; only 1: apply /neg_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB_bounded	300	300.321420	4700	1037
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_dec	300	9.279052	483	37	63.1	synth with cache (only 1: intros ?; only 1: apply /dec_valid ).
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_add	300	7.796398	352	30	80.1	synth with cache (only 1: intros ?; only 1: apply /add_valid ).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_adcBmain	300	300.139034	8533	1003
+coq-bits.1.1.0	Bits.spec.spec.properties.split4eta'	300	26.251007	158	74	110	synth with cache (only 1: exact : split4eta ).
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_adcB	300	300.076323	7280	908
+coq-bits.1.1.0	Bits.spec.operations.properties.incBDistinct	300	83.621278	1276	346	101	synth with cache (only 1: by do 4!case).
+coq-bits.1.1.0	Bits.extraction.axioms8.lxor_repr	300	300.142416	5605	1160
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_addB	300	300.332564	4689	656
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_ones_succ	300	300.317455	17167	1070
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_addB	300	300.459185	6793	496
+coq-bits.1.1.0	Bits.spec.operations.properties.thead_negB	300	9.782990	53	39	1.0.0.1.0	synth with cache (only 1: intros ?; only 1: destruct b; only 1: intros ?; only 1: reflexivity; only 1: by [  ]).
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_ones	300	300.253172	10940	991
+coq-bits.1.1.0	Bits.spec.operations.properties.addBC	300	300.102532	5133	1048
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_trans	300
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_leB	300	64.864543	739	223	40.0.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: exact : ltBleB_adcB ).
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBincBDistinct	300	185.372739	2986	623	198	synth with cache (only 1: by do 4!case).
+coq-bits.1.1.0	Bits.extraction.axioms16.lxor_repr	300	300.052904	5721	1270
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_low	300
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_zero	300	300.206490	15516	965
+coq-bits.1.1.0	Bits.spec.operations.properties.addIsIterInc	300	266.197973	4452	1031	93.3	synth with cache (only 1: revert p; only 1: exact : adcIsIterInc ).
+coq-bits.1.1.0	Bits.spec.spec.properties.toZpAux_zero	300	300.326541	12793	966
+coq-bits.1.1.0	Bits.extraction.axioms8.lsr_repr	300	300.300257	8419	1037
+coq-bits.1.1.0	Bits.extraction.axioms32.lsl_repr	300	300.210548	7488	1023
+coq-bits.1.1.0	Bits.extraction.axioms8.lsl_repr	300	300.191732	8313	1056
+coq-bits.1.1.0	Bits.extraction.axioms32.neg_repr	300	300.422906	9675	1181
+coq-bits.1.1.0	Bits.spec.spec.properties.split3eta	300
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_ones	300	300.303833	10782	895
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_joinmsb	300	300.379564	5898	1003
+coq-bits.1.1.0	Bits.extraction.axioms16.lsl_repr	300	300.336770	8099	1051
+coq-bits.1.1.0	Bits.spec.spec.properties.splitmsb_fromNat	300	300.081558	3084	1045
+coq-bits.1.1.0	Bits.extraction.axioms32.dec_repr	300	300.626685	7707	1141
+coq-bits.1.1.0	Bits.extraction.axioms8.dec_repr	300	300.768238	7359	891
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_dropmsb	300	300.193467	20712	881
+coq-bits.1.1.0	Bits.spec.spec.properties.dropmsb_fromNat	300	300.329549	5959	976
+coq-bits.1.1.0	Bits.extraction.axioms8.add_repr	300	300.280347	6355	1135
+coq-bits.1.1.0	Bits.spec.spec.properties.toZp_dropmsb	300	300.161178	11982	937
+coq-bits.1.1.0	Bits.spec.spec.properties.splitmsbK	300	300.242642	5732	1051
+coq-bits.1.1.0	Bits.spec.spec.properties.dropmsb_joinmsb	300	300.247012	4896	1138
+coq-bits.1.1.0	Bits.spec.spec.properties.splitlsbK	300	300.378972	11117	1149
+coq-bits.1.1.0	Bits.spec.operations.properties.addBA	300	300.262075	4355	1084
+coq-bits.1.1.0	Bits.spec.operations.properties.adc0B	300	300.054975	5508	825
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_unop	300	300.387585	9700	1148
+coq-bits.1.1.0	Bits.extraction.axioms16.neg_repr	300	300.851528	9402	1080
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB0	300	300.089564	4742	756
+coq-bits.1.1.0	Bits.extraction.axioms32.add_repr	300	300.478691	5757	1130
+coq-bits.1.1.0	Bits.spec.operations.properties.add0B	300	300.097221	5688	996
+coq-bits.1.1.0	Bits.spec.operations.properties.addB0	300	300.354554	5402	981
+coq-bits.1.1.0	Bits.extraction.axioms16.dec_repr	300	300.629535	10087	1105
+coq-bits.1.1.0	Bits.spec.operations.properties.fromNat_addBn	300	300.192521	4136	1010
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_addn	300	300.242462	5626	958
+coq-bits.1.1.0	Bits.spec.operations.properties.addB1	300	300.081488	6212	1093
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_unop	300	300.603060	10197	1193
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_negBn	300	300.257215	5831	1148
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_decB_incB	300	300.120334	4790	1155
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB_ltB	300	128.041093	874	447	68.0.0.2	synth with cache (only 1: intros ?; only 1: intros ?; only 1: intros ?; only 1: exact : ltBleB_adcB ).
+coq-bits.1.1.0	Bits.spec.spec.properties.split3app	300	258.368121	3240	846	0.62.8	synth with cache (only 1: rewrite /split3; only 1: rewrite !split2app; only 1: easy).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_binop	300	300.139849	8211	1110
+coq-bits.1.1.0	Bits.spec.operations.properties.addBN	300	300.048227	6393	986
+coq-bits.1.1.0	Bits.spec.operations.properties.adcIsInc	300	300.229818	5444	984
+coq-bits.1.1.0	Bits.spec.operations.properties.addNB	300	300.356439	6643	959
+coq-bits.1.1.0	Bits.spec.operations.properties.adcIsIterInc	300	300.374865	2541	1143
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_equiv_addB_negB	300	300.319188	4211	984
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_subB	300	300.717090	4809	478
+coq-bits.1.1.0	Bits.spec.operations.properties.sbb0B_carry	300	300.234998	5654	893
+coq-bits.1.1.0	Bits.spec.operations.properties.subB0	300	300.277880	6047	980
+coq-bits.1.1.0	Bits.spec.operations.properties.sub0B	300	300.321526	5537	1000
+coq-bits.1.1.0	Bits.spec.operations.properties.subBB	300	300.117188	4772	935
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_binop	300	300.326193	8184	1098
+coq-bits.1.1.0	Bits.spec.spec.properties.joinlsbK	300	300.090800	6196	1180
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_unop	300	300.336246	9838	1168
+coq-bits.1.1.0	Bits.spec.spec.properties.splitmsb_rev	300	300.052627	2186	1159
+coq-bits.1.1.0	Bits.spec.spec.properties.high_catB	300	300.090553	3097	1061
+coq-bits.1.1.0	Bits.spec.spec.properties.low_catB	300	300.111007	3342	1033
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_binop	300	300.510085	8859	1206
+coq-bits.1.1.0	Bits.spec.spec.properties.iffBool	300	10.941020	460	47	0.0.0.0.0.0.1.16	synth with cache (only 1: rewrite /is_true; only 1: case b1; only 1: case b2; only 1: intuition; only 1: intuition; only 1: case b2; only 1: intuition; only 1: intuition).
+coq-bits.1.1.0	Bits.spec.spec.properties.low_fromNat	300	300.062098	4343	1085
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_addBn	300	300.158459	7532	873
+coq-bits.1.1.0	Bits.spec.spec.properties.split2eta	300	300.254396	3924	998
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_addBn_wrap	300	300.104495	7996	961
+coq-bits.1.1.0	Bits.spec.operations.properties.inZp_addBn	300	300.136624	7951	638
+coq-bits.1.1.0	Bits.spec.operations.properties.neqB_modn	300	300.232517	9185	1217
+coq-bits.1.1.0	Bits.spec.operations.properties.addBn_distinct	300	300.084724	7872	1180
+coq-bits.1.1.0	Bits.spec.spec.properties.split2app	300	300.055495	4619	976
+coq-bits.1.1.0	Bits.spec.spec.properties.split4app	300	299.640485	3022	1011	120.13	synth with cache (only 1: rewrite /split4; only 1: by rewrite !split2app).
+coq-bits.1.1.0	Bits.spec.operations.properties.addBn_ne	300	300.267850	4668	1018
+coq-bits.1.1.0	Bits.spec.spec.properties.getUpdateSlice	300	65.299544	1219	216	0.28.3	synth with cache (only 1: rewrite /slice; only 1: rewrite split3app; only 1: by [  ]).
+coq-bits.1.1.0	Bits.extraction.axioms8.implies_shift	300	300.295367	7962	1048
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBDistinct	300	300.165377	2404	583
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBneq	300	300.146829	2478	479
+coq-bits.1.1.0	Bits.spec.operations.properties.addBsubBn	300	300.218801	5488	1056
+coq-bits.1.1.0	Bits.spec.operations.properties.incBincBincBneq	300	300.763029	5190	779
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_def	300	300.252036	7044	832
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_def	300	300.079939	8188	745
+coq-bits.1.1.0	Bits.spec.operations.properties.addB0_inv	300	300.270138	5524	1077
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_eq	300	300.198666	6109	1119
+coq-bits.1.1.0	Bits.extraction.axioms32.implies_shift	300	300.150341	7148	976
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_eq0	300	300.054502	7269	981
+coq-bits.1.1.0	Bits.spec.operations.properties.subB1	300	300.093689	5270	1175
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_addn	300	300.184151	4771	915
+coq-bits.1.1.0	Bits.spec.operations.properties.subB_addB	300	300.243859	4983	1115
+coq-bits.1.1.0	Bits.spec.operations.properties.addB_subBK	300	300.222806	3796	1125
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_nat	300	300.068834	4524	1043
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_nat	300	300.061563	11459	1066
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_bound	300	300.306476	6648	984
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_leB	300	300.253402	3985	1103
+coq-bits.1.1.0	Bits.extraction.axioms16.implies_shift	300	300.096290	7665	1044
+coq-bits.1.1.0	Bits.spec.operations.properties.ltBNle	300	300.088547	4083	1110
+coq-bits.1.1.0	Bits.spec.operations.properties.leBNlt	300	300.102248	3869	1033
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_leB_trans	300	300.098328	8840	1102
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_trans	300	300.323911	7526	982
+coq-bits.1.1.0	Bits.spec.operations.properties.leB0	300	300.123211	4352	817
+coq-bits.1.1.0	Bits.spec.operations.properties.le0B	300	300.267259	12957	1165
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_joinmsb0	300	300.096434	3419	1196
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_bounded	300	300.248233	5288	1006
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_bounded_weaken	300	300.489099	7404	974
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_incR	300	300.228399	5184	1157
+coq-bits.1.1.0	Bits.spec.operations.properties.msbCons	300	61.161524	1908	257	0.52.10	synth with cache (only 1: cbn; only 1: rewrite -msbNonNil; only 1: easy).
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_incL	300	300.436251	3344	1096
+coq-bits.1.1.0	Bits.spec.operations.properties.ltBleB_joinmsb0_adcB	300	300.219995	1864	1111
+coq-bits.1.1.0	Bits.spec.spec.properties.allBitsEq	300	300.164947	5157	1219
+coq-bits.1.1.0	Bits.spec.operations.properties.leB_joinmsb0_adcB	300	300.214155	4903	1064
+coq-bits.1.1.0	Bits.spec.operations.properties.ltB_joinmsb0_adcB	300	300.118192	4017	1120
+coq-bits.1.1.0	Bits.spec.spec.properties.lowBitsEq	300	300.281243	5586	1082
+coq-bits.1.1.0	Bits.spec.operations.properties.ltBleB_adcB	300	300.062800	1789	1153
+coq-bits.1.1.0	Bits.spec.operations.properties.adcB_leB_op	300	300.295204	1681	1141
+coq-bits.1.1.0	Bits.spec.operations.properties.sbbB_ltB_leB	300	300.216727	3751	1092
+coq-bits.1.1.0	Bits.spec.spec.properties.msbNonNil	300	176.417648	4223	750	13.180	synth with cache (only 1: case p; only 1: by case).
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_subB	300	300.302267	8224	1056
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_shrB	300	300.057434	10459	1011
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_shlB	300	300.146125	19157	853
+coq-bits.1.1.0	Bits.spec.spec.properties.highBitsEq	300	300.295512	5236	1079
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_shlBn	300	300.300556	12021	984
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_rolB	300	300.088214	9132	882
+coq-bits.1.1.0	Bits.spec.operations.properties.rorBK	300	300.256040	8769	1179
+coq-bits.1.1.0	Bits.spec.operations.properties.rolBK	300	300.216813	8900	1171
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_shlBaux	300	300.156572	10331	902
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_low	300	300.222590	3487	1079
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_high	300	300.135810	3070	1086
+coq-bits.1.1.0	Bits.spec.spec.properties.getBit_catB	300	300.206807	5459	1014
+coq-bits.1.1.0	Bits.spec.spec.properties.sliceEq	300	300.103310	8610	1078
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_shlB	300	300.220833	12129	918
+coq-bits.1.1.0	Bits.spec.spec.properties.bitsToBytesK	300	300.388357	6815	968
+coq-bits.1.1.0	Bits.spec.spec.properties.bytesToBitsK	300	300.555285	6489	1005
+coq-bits.1.1.0	Bits.spec.spec.properties.signExtendK	300	300.232838	9515	1079
+coq-bits.1.1.0	Bits.spec.spec.properties.signTruncateK	300	300.165819	4854	1148
+coq-bits.1.1.0	Bits.spec.spec.properties.zeroExtendK	300	300.290306	12543	1097
+coq-bits.1.1.0	Bits.spec.spec.properties.zeroTruncateK	300	300.107336	4873	1050
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_zeroExtend	300	300.097344	14494	1056
+coq-bits.1.1.0	Bits.spec.spec.properties.toNat_zeroExtendAux	300	300.078647	9079	1044
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_shlBn	300	300.236289	9919	886
+coq-bits.1.1.0	Bits.spec.operations.properties.toZpCons	300	300.121898	6562	804
+coq-bits.1.1.0	Bits.spec.operations.properties.shlB_dropmsb	300	300.107789	9269	1063
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_droplsb	300	300.052468	7055	1038
+coq-bits.1.1.0	Bits.spec.operations.properties.dropmsb_iter_shlB	300	300.071574	5819	1094
+coq-bits.1.1.0	Bits.spec.operations.properties.droplsb_iter_shrB	300	300.252773	4898	1086
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_fromNat	300	300.136959	6248	1040
+coq-bits.1.1.0	Bits.spec.operations.properties.shlB_fromNat	300	300.093268	7925	847
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_shlB	300	300.222064	6037	1099
+coq-bits.1.1.0	Bits.spec.operations.properties.shrBn_Sn	300	300.075089	4597	1039
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_joinmsb0	300	300.154110	6956	1011
+coq-bits.1.1.0	Bits.spec.spec.properties.splitmsb_msb	300	300.219636	7632	1296
+coq-bits.1.1.0	Bits.spec.operations.properties.shrBn_joinmsb0	300	300.070156	8538	1033
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_shrBn	300	300.119397	11943	1009
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_shlB_0	300	300.150572	5841	1188
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_shlBn_true	300	300.164022	6513	1087
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_shlBn_false	300	300.296042	4774	1129
+coq-bits.1.1.0	Bits.spec.operations.properties.getBit_shlBn	300	300.159311	6527	921
+coq-bits.1.1.0	Bits.spec.operations.properties.shlBn_overflow	300	300.130526	6249	831
+coq-bits.1.1.0	Bits.spec.operations.properties.makeOnes	300	300.222558	6914	914
+coq-bits.1.1.0	Bits.spec.operations.properties.toNat_fullmulB	300	300.268716	7178	909
+coq-bits.1.1.0	Bits.spec.operations.properties.modZp_pow	300	300.309444	11803	982
+coq-bits.1.1.0	Bits.spec.spec.properties.signExtend_fromNat	300	300.622791	12491	1037
+coq-bits.1.1.0	Bits.spec.operations.properties.mul0B	300	284.991473	6658	610	129.97	synth with cache (only 1: rewrite mulBC; only 1: by rewrite mulB0).
+coq-bits.1.1.0	Bits.spec.spec.properties.bitsEq_nat	300	300.261981	12714	1205
+coq-bits.1.1.0	Bits.spec.operations.properties.toZp_mulB	300	300.121576	6947	381
+coq-bits.1.1.0	Bits.spec.operations.properties.mul1B	300	300.131404	5890	539
+coq-bits.1.1.0	Bits.spec.operations.properties.mulB1	300	300.158008	4262	345
+coq-bits.1.1.0	Bits.spec.operations.properties.mulB0	300	300.187195	5227	365
+coq-bits.1.1.0	Bits.spec.operations.properties.mulBA	300	300.249493	7556	1129
+coq-bits.1.1.0	Bits.spec.operations.properties.mulBDr	300	300.261994	1935	495
+coq-bits.1.1.0	Bits.spec.operations.properties.shlB_asMul	300	300.236838	5621	640
+coq-bits.1.1.0	Bits.spec.operations.properties.mulB_muln	300	300.259699	6442	980
+coq-bits.1.1.0	Bits.spec.operations.properties.mulB_addn	300	300.320272	2556	519
+coq-bits.1.1.0	Bits.spec.operations.properties.fromNat_mulBn	300	300.056409	4074	666
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_shlBaux	300	300.119753	5135	1087
+coq-bits.1.1.0	Bits.spec.operations.properties.msb0Bounded	300	300.269359	13466	1047
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_shlB	300	300.110603	9725	1151
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_mul2	300	300.232762	11530	1146
+coq-bits.1.1.0	Bits.spec.operations.properties.shrB_mul2exp	300	300.082189	15000	749
+coq-bits.1.1.0	Bits.spec.operations.properties.shlB_mul2exp	300	300.081661	11484	1049
+coq-bits.1.1.0	Bits.spec.operations.properties.andBDl	300	300.062478	7885	1090
