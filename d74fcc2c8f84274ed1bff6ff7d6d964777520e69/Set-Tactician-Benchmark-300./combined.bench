@@ -4209,3 +4209,59 @@ coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternD_1n_bezout	300	300.251451	2408	
 coq-gaia-stern.1.15	gaia.stern.stern.Stern.sternD_1n_coprime	300	300.402919	4232	834
 coq-mathcomp-odd-order.1.14.0	odd_order.PFsection13.Thirteen.Thirteen_17_to_19.FTtype1_Ind_irr	300	300.433280	10695	424
 coq-mathcomp-apery.1.0.1	mathcomp.apery.hanson.Hanson.t3	300	300.237359	12361	781
+coq-bbv.1.3	bbv.Word.wminusZ_helper	300	1.745482	10	11	0.1.0	synth with cache (only 1: intros; only 1: rewrite Z.mul_sub_distr_r; only 1: ring).
+coq-bbv.1.3	bbv.Word.Zeqb_true_ZToWord	300	10.514023	130	79	0.0.4.0	synth with cache (only 1: intros; only 1: f_equal; only 1: apply Z.eqb_eq; only 1: easy).
+coq-bbv.1.3	bbv.Word.wminus_Z	300	30.991158	797	207	168.0	synth with cache (only 1: intros; only 1: apply wminus_wminusZ).
+coq-bbv.1.3	bbv.Word.wneg_wordToZ'	300	34.590705	1332	238	0.0.191.0	synth with cache (only 1: intros; only 1: rewrite wneg_wordToZ; only 1: ring; only 1: easy).
+coq-bbv.1.3	bbv.Word.wordToZ_bound_weakened	300	2.388323	37	18	14.0	synth with cache (only 1: intros; only 1: lia).
+coq-bbv.1.3	bbv.Word.wordToNat_eq1	300	2.275258	18	17	0.0.1	synth with cache (only 1: intros; only 1: rewrite H; only 1: reflexivity).
+coq-bbv.1.3	bbv.Word.test_wlt_f_example	300	3.241973	23	22	3.2	synth with cache (only 1: unfold test_wlt_f; only 1: auto).
+coq-bbv.1.3	bbv.Word.wordToNat_neq2	300	2.249977	17	17	2.1	synth with cache (only 1: intros; only 1: congruence).
+coq-bbv.1.3	bbv.Word.wordToNat_ge1	300	9.297176	239	72	0.23.0	synth with cache (only 1: intros; only 1: apply wordToNat_le1; only 1: assumption).
+coq-bbv.1.3	bbv.Word.wordToNat_gt1	300	19.401010	366	143	0.40.0	synth with cache (only 1: intros; only 1: apply wordToNat_lt1; only 1: easy).
+coq-bbv.1.3	bbv.Word.wordToNat_le1	300	24.913781	462	185	0.40.1	synth with cache (only 1: intros; only 1: apply wle_le; only 1: assumption).
+coq-bbv.1.3	bbv.Word.wzero_wones	300	22.532692	344	173	0.1.0.1.0.0.0	synth with cache (only 1: intros ?; only 1: destruct sz; only 1: simpl; only 1: inversion 1; only 1: simpl; only 1: intros ?; only 1: discriminate).
+coq-bbv.1.3	bbv.Word.bool_prop1	300	0.256332	1	2	0	synth with cache (only 1: destr_bool).
+coq-bbv.1.3	bbv.Word.wzero_wplus	300	28.033951	518	189	71.0.0	synth with cache (only 1: intros ?; only 1: intros ?; only 1: apply wplus_wzero_2).
+coq-bbv.1.3	bbv.Word.wordToNat_lt2	300	35.452811	687	264	0.103.1	synth with cache (only 1: intros; only 1: apply lt_wlt; only 1: easy).
+coq-bbv.1.3	bbv.Word.wordToNat_ge2	300	35.537998	1144	254	2.14.0	synth with cache (only 1: intros; only 1: apply wordToNat_le2; only 1: lia).
+coq-bbv.1.3	bbv.Word.wordToNat_eq2	300	42.666992	515	327	0.19.1	synth with cache (only 1: intros; only 1: apply wordToNat_inj; only 1: easy).
+coq-bbv.1.3	bbv.Word.zext_zero	300	46.362369	969	365	207.0	synth with cache (only 1: intros; only 1: apply combine_WO).
+coq-bbv.1.3	bbv.Word.wordToNat_nonZero	300	101.913302	1541	752	0.169.0	synth with cache (only 1: intros ?; only 1: apply gt0_wneq0 in H; only 1: assumption).
+coq-bbv.1.3	bbv.Word.wordToNat_neq1	300	103.507720	1444	807	0.15.0.0.1	synth with cache (only 1: intros; only 1: intros ?; only 1: apply H; only 1: apply wordToNat_inj; only 1: auto).
+coq-bbv.1.3	bbv.Word.word_le_ge_eq	300	129.353396	2613	931	5.25.0	synth with cache (only 1: intros; only 1: apply wordNotNot; only 1: intuition).
+coq-bbv.1.3	bbv.Word.sext_wplus_wordToZ_distr_existT	300	300.073247	6960	1839
+coq-bbv.1.3	bbv.Word.split1_existT	300	300.135767	5297	2150
+coq-bbv.1.3	bbv.Word.word_combinable	300	300.136237	4868	2357
+coq-bbv.1.3	bbv.Word.extz_wneg	300	300.160554	6897	2093
+coq-bbv.1.3	bbv.Word.wminus_wneg	300	300.044004	8688	2016
+coq-bbv.1.3	bbv.Word.wminus_wordToZ	300	300.112983	14352	1604
+coq-bbv.1.3	bbv.Word.wminus_wminusZ	300	300.126555	8391	1943
+coq-bbv.1.3	bbv.Word.ZToWord_minus	300	300.173636	6765	1969
+coq-bbv.1.3	bbv.Word.ZToWord_opp_wneg	300	300.076068	12048	2125
+coq-bbv.1.3	bbv.Word.extz_zero	300	300.080656	7230	2147
+coq-bbv.1.3	bbv.Word.wmsb_sext	300	300.098058	5153	2249
+coq-bbv.1.3	bbv.Word.wordToZ_wordToNat_pos	300	300.046412	5013	2297
+coq-bbv.1.3	bbv.Word.wmsb_Zabs_pos	300	300.089939	6112	2420
+coq-bbv.1.3	bbv.Word.sext_size	300	300.055748	7155	2431
+coq-bbv.1.3	bbv.Word.wordToZ_combine_WO	300	300.073201	8432	2149
+coq-bbv.1.3	bbv.Word.wmsb_false_wordToNat_eq	300	300.134110	6801	2394
+coq-bbv.1.3	bbv.Word.zext_size	300	300.092756	6368	2284
+coq-bbv.1.3	bbv.Word.zext_size_1	300	300.132339	6019	2376
+coq-bbv.1.3	bbv.Word.sext_wplus_exist	300	300.198238	9811	2225
+coq-bbv.1.3	bbv.Word.wordToNat_wplus'	300	300.034655	4631	2044
+coq-bbv.1.3	bbv.Word.wordToNat_wmult'	300	300.149934	4269	2124
+coq-bbv.1.3	bbv.Word.wordNotNot	300	300.218732	5744	2338
+coq-bbv.1.3	bbv.Word.word_le_zero	300	300.072701	7858	2305
+coq-bbv.1.3	bbv.Word.split2_pow2	300	300.047518	5663	2311
+coq-bbv.1.3	bbv.Word.wordToNat_natToWord_eqn	300	300.073427	5196	2223
+coq-bbv.1.3	bbv.Word.wordToNat_plus	300	300.156328	4414	2236
+coq-bbv.1.3	bbv.Word.split1_combine_wplus	300	300.249292	3418	2056
+coq-bbv.1.3	bbv.Word.div_2	300	300.087419	7118	2209
+coq-bbv.1.3	bbv.Word.mod_sub	300	300.136444	7315	2541
+coq-bbv.1.3	bbv.Word.wzero_wor	300	300.113119	7582	2284
+coq-bbv.1.3	bbv.Word.wordToNat_wplus	300	300.133388	6679	2208
+coq-bbv.1.3	bbv.Word.wor_r_wzero_1	300	300.122234	5853	2138
+coq-bbv.1.3	bbv.Word.wor_r_wzero_2	300	300.160393	5550	2159
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_le_len	300	300.116173	5473	2259
+coq-bbv.1.3	bbv.Word.countLeadingZerosWord_le_len_nat	300	300.056527	4209	2320
