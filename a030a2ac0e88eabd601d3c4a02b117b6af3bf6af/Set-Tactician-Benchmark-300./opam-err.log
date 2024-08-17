@@ -1,0 +1,24 @@
+[ERROR] The compilation of coq-hammer-tactics.8.11.dev failed at "make -j15 tactics".
+
+#=== ERROR while compiling coq-hammer-tactics.8.11.dev ========================#
+# context              2.1.3 | linux/x86_64 |  | pinned(git+https://github.com/LasseBlaauwbroek/coqhammer.git#c41b8acd377d639928c145c967003394327cae5a#c41b8acd)
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer-tactics.8.11.dev
+# command              /usr/bin/make -j15 tactics
+# exit-code            2
+# env-file             /tmp/opam-lasse-233024/coq-hammer-tactics-233024-941ab8.env
+# output-file          /tmp/opam-lasse-233024/coq-hammer-tactics-233024-941ab8.out
+### output ###
+# [...]
+# File not found on loadpath : hammer_lib.cmxs
+# Loadpath: /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq-tactician/record-plugin:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer-tactics.8.11.dev/src/tactics:/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer-tactic[...]
+# 
+# File "./theories/Tactics/Hints.v", line 1, characters 27-34:
+# Error: Unable to locate library Tactics with prefix Hammer.
+# 
+# make[2]: *** [Makefile.coq.tactics:678: theories/Tactics/Tactics.vo] Error 1
+# make[2]: *** Waiting for unfinished jobs....
+# make[2]: *** [Makefile.coq.tactics:678: theories/Tactics/Hints.vo] Error 1
+# make[1]: *** [Makefile.coq.tactics:327: all] Error 2
+# make[1]: Leaving directory '/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer-tactics.8.11.dev'
+# make: *** [Makefile:7: tactics] Error 2
+
