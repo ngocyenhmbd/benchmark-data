@@ -2,5 +2,10 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: Termination request received: sigint
-Non-fatal benchmarking error: Coq process ended abruptly. Invocation: (cd /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev && /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq-tactician/coqc.real /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq-tactician/coqc.real -q -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v -q -coqlib . -I /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician -R /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/lib/coq/user-contrib/Tactician Tactician -rifrom Tactician Ltac1.Record -noinit -R theories Coq theories/Init/Logic.v -l /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/BenchParams.v)
+Fatal benchmarking error: (cee333e0-0fb5-3879-ead7-7f09adc2dbdf
+ (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 251, characters 17-26"
+   "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+   "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 180, characters 6-47")))
+Fatal benchmarking error: Initial build did not fully complete
+Fatal benchmarking error: Abnormal exit code for build worker on host lasse-work. Code: 254
