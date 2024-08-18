@@ -1,4 +1,32 @@
 [NOTE] coq-tactician-stdlib.8.11.dev is not installed.
 
 [NOTE] Package coq-hammer is already pinned to git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#a030a2ac0e88eabd601d3c4a02b117b6af3bf6af (version 8.11.dev).
-[NOTE] Package coq-tactician-stdlib is already installed (current version is 8.11.dev).
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.1.3 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2024-08-11 17:33
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/tactician exec -- make -j15
+# exit-code            2
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-394396-f205f9.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-394396-f205f9.out
+### output ###
+# [...]
+# Makefile:92: warning: pattern recipe did not update peer target 'plugins/syntax/string_notation_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'user-contrib/Ltac2/ltac2_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'user-contrib/Tactician/tactician_ltac1_tactics_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'user-contrib/Tactician/tactician_ssreflect_plugin.v'.
+# Makefile:92: warning: pattern recipe did not update peer target 'user-contrib/Tactician/tactician_ltac1_record_plugin.v'.
+# coqdep
+# patching
+# coqc theories/Init/Notations.v
+# File "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/share/coq-tactician/plugins/zzz-benchmark/Injections.v", line 1, characters 0-34:
+# Error: Cannot find library Coq.Init.Notations in loadpath
+# 
+# make: *** [Makefile:61: theories/Init/Notations.vo] Error 1
+
+2024-08-17 22:40:31.560482+02:00 Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 251, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 180, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host lasse-work. Code: 254
