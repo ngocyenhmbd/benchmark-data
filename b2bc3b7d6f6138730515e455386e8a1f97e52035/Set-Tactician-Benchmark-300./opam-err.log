@@ -1,7 +1,14 @@
-  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-ms8u7656
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-cenv_fch
   Running command git rev-parse -q --verify 'sha^85fb6b6a96647a5d6b515f357219a2fef9a43e71'
   Running command git fetch -q https://github.com/IBM/graph2tac.git 85fb6b6a96647a5d6b515f357219a2fef9a43e71
   Running command git checkout -q 85fb6b6a96647a5d6b515f357219a2fef9a43e71
+  Running command git clone --filter=blob:none --quiet 'https://****@github.com/coq-tactician/coq-tactician-api' /tmp/pip-install-n9o8nhol/pytactician_3c6ef8b02a7040399c295c6bdd8cf2d8
+  Running command git rev-parse -q --verify 'sha^8ae836d45bd96059c5742db1d3cdd0efd58d3197'
+  Running command git fetch -q 'https://****@github.com/coq-tactician/coq-tactician-api' 8ae836d45bd96059c5742db1d3cdd0efd58d3197
+  Running command git checkout -q 8ae836d45bd96059c5742db1d3cdd0efd58d3197
+  Running command git submodule update --init --recursive -q
+ERROR: Could not find a version that satisfies the requirement tensorflow<2.13,>=2.12.0 (from graph2tac) (from versions: 2.16.0rc0, 2.16.1, 2.16.2, 2.17.0rc0, 2.17.0rc1, 2.17.0)
+ERROR: No matching distribution found for tensorflow<2.13,>=2.12.0
 
-[notice] A new release of pip available: 22.2.2 -> 24.2
+[notice] A new release of pip is available: 24.0 -> 24.2
 [notice] To update, run: pip install --upgrade pip

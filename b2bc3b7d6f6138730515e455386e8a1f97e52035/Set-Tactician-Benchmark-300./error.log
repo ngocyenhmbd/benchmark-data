@@ -2,6 +2,13 @@
 
 ------------------ Benchmark terminated -----------------------
 
-Fatal benchmarking error: ((rpc_error (Connection_closed ("EOF or connection closed")))
- (connection_description ("Client connected via TCP" (cccxc450 42073)))
- (rpc_name rpc_parallel_piped_5) (rpc_version 0))
+Fatal benchmarking error: ((rpc_error
+  (Uncaught_exn
+   ((location "server-side rpc computation")
+    (exn
+     (monitor.ml.Error "Prerequisites file error"
+      ("Raised at Dune__exe__Main.Build_worker.T.Functions.prereq_impl.(fun) in file \"src/benchmark/main.ml\", line 469, characters 21-43"
+       "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
+       "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 180, characters 6-47"))))))
+ (connection_description ("Client connected via TCP" (lasse-work 37149)))
+ (rpc_name rpc_parallel_plain_4) (rpc_version 0))
