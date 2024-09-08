@@ -1,5 +1,5 @@
 Collecting git+https://github.com/IBM/graph2tac.git@85fb6b6a96647a5d6b515f357219a2fef9a43e71
-  Cloning https://github.com/IBM/graph2tac.git (to revision 85fb6b6a96647a5d6b515f357219a2fef9a43e71) to /tmp/pip-req-build-ctl2c7r4
+  Cloning https://github.com/IBM/graph2tac.git (to revision 85fb6b6a96647a5d6b515f357219a2fef9a43e71) to /tmp/pip-req-build-_agfjjj4
   Resolved https://github.com/IBM/graph2tac.git to commit 85fb6b6a96647a5d6b515f357219a2fef9a43e71
   Installing build dependencies: started
   Installing build dependencies: finished with status 'done'
@@ -241,7 +241,7 @@ Collecting oauthlib>=3.0.0
 Building wheels for collected packages: graph2tac
   Building wheel for graph2tac (pyproject.toml): started
   Building wheel for graph2tac (pyproject.toml): finished with status 'done'
-  Created wheel for graph2tac: filename=graph2tac-1.0.4-py3-none-any.whl size=86006 sha256=8c8acc8c73ad82b08212cde25f85093bee9853b1acfc235c7f002675eecb725f
+  Created wheel for graph2tac: filename=graph2tac-1.0.4-py3-none-any.whl size=86006 sha256=b6331a301da9843e5120e79af88ec72895af8e40efb9d9326ffb0e96f8d400b9
   Stored in directory: /home/lasse/.cache/pip/wheels/c5/92/23/c31068c91c45b1f6bc079bf17287430938a58a8a15383d7acd
 Successfully built graph2tac
 Installing collected packages: sanic-routing, pytz, pyjsparser, libclang, flatbuffers, docopt, crcmod, zstandard, wrapt, wheel, websockets, uvloop, urllib3, ujson, tzlocal, typing-extensions, tqdm, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, six, rpds-py, regex, redis, pyyaml, pyparsing, pycapnp, pyasn1, pyarrow-hotfix, psutil, protobuf, pluggy, packaging, orjson, objsize, oauthlib, numpy, networkx, multidict, MarkupSafe, markdown, keras, jsonpickle, iniconfig, inflection, immutables, idna, httptools, html5tagger, grpcio, graphviz, gast, fasteners, fastavro, dnspython, dill, cloudpickle, charset-normalizer, certifi, cachetools, attrs, aiofiles, absl-py, werkzeug, tracerite, scipy, sanic-ext, rsa, requests, referencing, python-dateutil, pytest, pymongo, pydot, pyasn1-modules, pyarrow, proto-plus, opt-einsum, ml-dtypes, js2py, Jinja2, httplib2, h5py, google-pasta, astunparse, sanic, requests-oauthlib, jsonschema-specifications, jaxlib, hdfs, google-auth, pytactician, jsonschema, jax, google-auth-oauthlib, tensorboard, apache-beam, tensorflow, tensorflow-gnn, graph2tac
@@ -280,182 +280,85 @@ coq-tactician is now pinned to git+https://github.com/coq-tactician/coq-tacticia
 [coq-tactician-api.8.11.dev] synchronised (no changes)
 coq-tactician-api is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-api.git#51ee26444bf347fddfd6b2408167e617b9b33e8b (version 8.11.dev)
 coq-graph2tac is now pinned to git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#6d77b0d35c46f8f606dc96c8211bcbff395c3f3f (version 1.0.anon)
-lwt is now pinned to version 5.1.1
-capnp-rpc-unix is now pinned to version 1.2.2
-
-<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
-[coq-tactician.8.11.dev] synchronised (no changes)
-[coq-graph2tac.1.0.anon] synchronised (no changes)
-
-The following actions will be performed:
-  ∗ install conf-findutils       1
-  ∗ install ocaml-base-compiler  4.11.2
-  ∗ install conf-pkg-config      3
-  ∗ install base-bigarray        base
-  ∗ install base-threads         base
-  ∗ install conf-capnproto       2
-  ∗ install conf-git             1.1
-  ∗ install conf-gmp             4
-  ∗ install base-unix            base
-  ∗ install conf-c++             1.0
-  ∗ install ocaml-config         1
-  ∗ install conf-xxhash          1
-  ∗ install conf-gmp-powm-sec    3
-  ∗ install ocaml                4.11.2
-  ∗ install seq                  base
-  ∗ install ocamlfind            1.9.6
-  ∗ install ocamlbuild           0.15.0
-  ∗ install num                  1.5-1
-  ∗ install mirage-no-xen        1
-  ∗ install mirage-no-solo5      1
-  ∗ install dune                 3.16.0
-  ∗ install cmdliner             1.3.0
-  ∗ install zarith               1.14
-  ∗ install base-bytes           base
-  ∗ install topkg                1.0.7
-  ∗ install ocamlmod             0.0.9
-  ∗ install ocamlify             0.0.1
-  ∗ install coq                  8.11.dev  [required by coq-tactician, coq-tactician-stdlib]
-  ∗ install swhid_core           0.1
-  ∗ install stringext            1.6.0
-  ∗ install stdlib-shims         0.3.0
-  ∗ install stdint               0.7.2
-  ∗ install spdx_licenses        1.2.0
-  ∗ install sexplib0             v0.15.1
-  ∗ install result               1.5
-  ∗ install res                  5.0.1
-  ∗ install re                   1.11.0
-  ∗ install ppx_derivers         1.2.1
-  ∗ install pp                   1.2.0
-  ∗ install ordering             3.16.0
-  ∗ install optint               0.3.0
-  ∗ install opam-file-format     2.1.6
-  ∗ install ocaml-syntax-shims   1.0.0
-  ∗ install ocaml-compiler-libs  v0.12.4
-  ∗ install mirage-clock         4.2.0
-  ∗ install macaddr              5.6.0
-  ∗ install gmap                 0.3.0
-  ∗ install duration             0.2.1
-  ∗ install domain-name          0.4.0
-  ∗ install csexp                1.5.2
-  ∗ install cppo                 1.7.0
-  ∗ install bigarray-compat      1.1.0
-  ∗ install base64               3.5.1
-  ∗ install 0install-solver      2.18
-  ∗ install uutf                 1.0.3
-  ∗ install rresult              0.7.0
-  ∗ install ptime                1.1.0
-  ∗ install mtime                2.0.0
-  ∗ install fmt                  0.9.0
-  ∗ install astring              0.8.5
-  ∗ install asetmap              0.8.1
-  ∗ install oasis                0.4.11
-  ∗ install sha                  1.15.4
-  ∗ install ocamlgraph           2.1.0
-  ∗ install integers             0.7.0
-  ∗ install dyn                  3.16.0
-  ∗ install ppxlib               0.33.0
-  ∗ install ipaddr               5.6.0
-  ∗ install dune-configurator    3.16.0
-  ∗ install ocplib-endian        1.2
-  ∗ install extlib               1.7.9
-  ∗ install mmap                 1.2.0
-  ∗ install jsonm                1.0.2
-  ∗ install cstruct              6.2.0
-  ∗ install fpath                0.7.3
-  ∗ install stdune               3.16.0
-  ∗ install ppx_deriving         6.0.2
-  ∗ install extunix              0.4.2
-  ∗ install ctypes               0.23.0
-  ∗ install bigstringaf          0.10.0
-  ∗ install base                 v0.15.1
-  ∗ install cudf                 0.10
-  ∗ install lwt                  5.1.1*
-  ∗ install opam-core            2.2.1
-  ∗ install eqaf                 0.9
-  ∗ install asn1-combinators     0.2.6
-  ∗ install dune-private-libs    3.16.0
-  ∗ install xxhash               0.1
-  ∗ install angstrom             0.16.0
-  ∗ install stdio                v0.15.0
-  ∗ install ppx_sexp_conv        v0.15.1
-  ∗ install parsexp              v0.15.0
-  ∗ install opam-0install-cudf   0.5.0
-  ∗ install mccs                 1.1+18
-  ∗ install dose3                7.0.0
-  ∗ install prometheus           1.2
-  ∗ install mirage-kv            6.1.1
-  ∗ install mirage-flow          3.0.0
-  ∗ install logs                 0.7.0
-  ∗ install cstruct-lwt          6.2.0
-  ∗ install opam-format          2.2.1
-  ∗ install mirage-crypto        0.10.7
-  ∗ install dune-site            3.16.0
-  ∗ install uri                  4.4.0
-  ∗ install capnp                3.6.0
-  ∗ install ipaddr-sexp          5.6.0
-  ∗ install sexplib              v0.15.1
-  ∗ install capnp-rpc            1.2.2
-  ∗ install bos                  0.2.1
-  ∗ install opam-solver          2.2.1
-  ∗ install opam-repository      2.2.1
-  ∗ install pbkdf                1.2.0
-  ∗ install mirage-crypto-rng    0.10.7
-  ∗ install hkdf                 1.0.4
-  ∗ install ppx_cstruct          6.2.0
-  ∗ install cstruct-sexp         6.2.0
-  ∗ install capnp-rpc-lwt        1.2.2
-  ∗ install opam-state           2.2.1
-  ∗ install mirage-crypto-pk     0.10.7
-  ∗ install mirage-crypto-ec     0.10.7
-  ∗ install opam-client          2.2.1
-  ∗ install x509                 0.16.5
-  ∗ install coq-tactician        8.11.dev*
-  ∗ install tls                  0.15.4
-  ∗ install coq-tactician-stdlib 8.11.dev                                                    *** WARNING ***
-                                                                                             This package will overwrite Coq's standard library files.
-                                                                                             A backup of the original files will be placed under Coq's
-                                                                                             library directory at user-contrib/tactician-stdlib-backup/
-                                                                                             and they will be restored when you remove this package.
-                                                                                             After installation of this package, all other Coq packages
-                                                                                             also need to be recompiled. Running the 'tactician recompile'
-                                                                                             command-line utility will help with this process.
-  ∗ install tls-mirage           0.15.4
-  ∗ install capnp-rpc-net        1.2.2
-  ∗ install capnp-rpc-unix       1.2.2*
-  ∗ install coq-tactician-api    8.11.dev* [required by coq-graph2tac]
-  ∗ install coq-graph2tac        1.0.anon*
-===== ∗ 130 =====
-
-<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
-⬇ retrieved asetmap.0.8.1  (https://opam.ocaml.org/cache)
-⬇ retrieved angstrom.0.16.0  (https://opam.ocaml.org/cache)
-⬇ retrieved asn1-combinators.0.2.6  (https://opam.ocaml.org/cache)
-⬇ retrieved 0install-solver.2.18  (https://opam.ocaml.org/cache)
-∗ installed base-bigarray.base
-∗ installed base-threads.base
-∗ installed base-unix.base
-⬇ retrieved base64.3.5.1  (https://opam.ocaml.org/cache)
-⬇ retrieved base.v0.15.1  (https://opam.ocaml.org/cache)
-⬇ retrieved bigarray-compat.1.1.0  (https://opam.ocaml.org/cache)
-⬇ retrieved bigstringaf.0.10.0  (https://opam.ocaml.org/cache)
-⬇ retrieved bos.0.2.1  (https://opam.ocaml.org/cache)
-⬇ retrieved capnp.3.6.0  (https://opam.ocaml.org/cache)
-⬇ retrieved capnp-rpc.1.2.2  (https://opam.ocaml.org/cache)
-⬇ retrieved capnp-rpc-net.1.2.2  (cached)
-⬇ retrieved capnp-rpc-unix.1.2.2  (cached)
-⬇ retrieved cmdliner.1.3.0  (https://opam.ocaml.org/cache)
-∗ installed conf-c++.1.0
-∗ installed conf-git.1.1
-∗ installed conf-findutils.1
-∗ installed conf-capnproto.2
-⬇ retrieved conf-gmp.4  (https://opam.ocaml.org/cache)
-∗ installed conf-gmp.4
-⬇ retrieved conf-gmp-powm-sec.3  (https://opam.ocaml.org/cache)
-∗ installed conf-pkg-config.3
-∗ installed conf-xxhash.1
-∗ installed conf-gmp-powm-sec.3
-⬇ retrieved astring.0.8.5  (https://opam.ocaml.org/cache)
-⬇ retrieved capnp-rpc-lwt.1.2.2  (https://opam.ocaml.org/cache)
-⬇ retrieved coq-tactician.8.11.dev  (no changes)
-⬇ retrieved coq-tactician-api.8.11.dev  (no changes)
+conf-findutils is now pinned to version 1
+ocaml-base-compiler is now pinned to version 4.11.2
+conf-pkg-config is now pinned to version 3
+base-bigarray is now pinned to version base
+base-threads is now pinned to version base
+conf-capnproto is now pinned to version 2
+conf-git is now pinned to version 1.1
+conf-gmp is now pinned to version 4
+base-unix is now pinned to version base
+conf-c++ is now pinned to version 1.0
+ocaml-config is now pinned to version 1
+conf-xxhash is now pinned to version 1
+conf-gmp-powm-sec is now pinned to version 3
+ocaml is now pinned to version 4.11.2
+seq is now pinned to version base
+ocamlfind is now pinned to version 1.9.6
+ocamlbuild is now pinned to version 0.15.0
+num is now pinned to version 1.5-1
+mirage-no-xen is now pinned to version 1
+mirage-no-solo5 is now pinned to version 1
+dune is now pinned to version 3.16.0
+cmdliner is now pinned to version 1.3.0
+zarith is now pinned to version 1.14
+base-bytes is now pinned to version base
+topkg is now pinned to version 1.0.7
+ocamlmod is now pinned to version 0.0.9
+ocamlify is now pinned to version 0.0.1
+coq is now pinned to version 8.11.dev
+swhid_core is now pinned to version 0.1
+stringext is now pinned to version 1.6.0
+stdlib-shims is now pinned to version 0.3.0
+stdint is now pinned to version 0.7.2
+spdx_licenses is now pinned to version 1.2.0
+sexplib0 is now pinned to version v0.15.1
+result is now pinned to version 1.5
+res is now pinned to version 5.0.1
+re is now pinned to version 1.11.0
+ppx_derivers is now pinned to version 1.2.1
+pp is now pinned to version 1.2.0
+ordering is now pinned to version 3.16.0
+optint is now pinned to version 0.3.0
+opam-file-format is now pinned to version 2.1.6
+ocaml-syntax-shims is now pinned to version 1.0.0
+ocaml-compiler-libs is now pinned to version v0.12.4
+mirage-clock is now pinned to version 4.2.0
+macaddr is now pinned to version 5.6.0
+gmap is now pinned to version 0.3.0
+duration is now pinned to version 0.2.1
+domain-name is now pinned to version 0.4.0
+csexp is now pinned to version 1.5.2
+cppo is now pinned to version 1.7.0
+bigarray-compat is now pinned to version 1.1.0
+base64 is now pinned to version 3.5.1
+0install-solver is now pinned to version 2.18
+uutf is now pinned to version 1.0.3
+rresult is now pinned to version 0.7.0
+ptime is now pinned to version 1.1.0
+mtime is now pinned to version 2.0.0
+fmt is now pinned to version 0.9.0
+astring is now pinned to version 0.8.5
+asetmap is now pinned to version 0.8.1
+oasis is now pinned to version 0.4.11
+sha is now pinned to version 1.15.4
+ocamlgraph is now pinned to version 2.1.0
+integers is now pinned to version 0.7.0
+dyn is now pinned to version 3.16.0
+ppxlib is now pinned to version 0.33.0
+ipaddr is now pinned to version 5.6.0
+dune-configurator is now pinned to version 3.16.0
+ocplib-endian is now pinned to version 1.2
+extlib is now pinned to version 1.7.9
+mmap is now pinned to version 1.2.0
+jsonm is now pinned to version 1.0.2
+cstruct is now pinned to version 6.2.0
+fpath is now pinned to version 0.7.3
+stdune is now pinned to version 3.16.0
+ppx_deriving is now pinned to version 6.0.2
+extunix is now pinned to version 0.4.2
+ctypes is now pinned to version 0.23.0
+bigstringaf is now pinned to version 0.10.0
+base is now pinned to version v0.15.1
+cudf is now pinned to version 0.10
