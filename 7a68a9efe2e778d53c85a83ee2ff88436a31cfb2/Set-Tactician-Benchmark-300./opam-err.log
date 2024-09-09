@@ -1,4 +1,4 @@
-  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-cor03qte
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-0v98qne6
   Running command git rev-parse -q --verify 'sha^85fb6b6a96647a5d6b515f357219a2fef9a43e71'
   Running command git fetch -q https://github.com/IBM/graph2tac.git 85fb6b6a96647a5d6b515f357219a2fef9a43e71
   Running command git checkout -q 85fb6b6a96647a5d6b515f357219a2fef9a43e71
@@ -13,3 +13,27 @@ WARNING: There was an error checking the latest version of pip.
            warning 68: Missing field 'license'
 [WARNING] Failed checks on coq-tactician-api package definition from source at git+ssh://git@github.com/coq-tactician/coq-tactician-api.git#51ee26444bf347fddfd6b2408167e617b9b33e8b:
            warning 68: Missing field 'license'
+[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+
+#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
+# context              2.2.1 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2024-09-06 14:42
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
+# command              /usr/bin/make -j15
+# exit-code            2
+# env-file             /tmp/opam-lasse-2047862/coq-tactician-stdlib-2047862-d3e0bd.env
+# output-file          /tmp/opam-lasse-2047862/coq-tactician-stdlib-2047862-d3e0bd.out
+### output ###
+# [...]
+# coqc plugins/extraction/ExtrOcamlBigIntConv.v
+# coqc plugins/extraction/ExtrHaskellZNum.v
+# coqc theories/QArith/QArith.v
+# coqc theories/Numbers/DecimalZ.v
+# coqc theories/MSets/MSetFacts.v
+# coqc theories/FSets/FSetFacts.v
+# coqc theories/FSets/FMapFacts.v
+# coqc plugins/extraction/ExtrHaskellZInteger.v
+# coqc plugins/extraction/ExtrHaskellZInt.v
+# make: *** [Makefile:64: theories/FSets/FSetPositive.vo] Segmentation fault (core dumped)
+# make: *** [theories/FSets/FSetPositive.vo] Deleting file 'theories/FSets/FSetPositive.glob'
+# make: *** Waiting for unfinished jobs....
+
