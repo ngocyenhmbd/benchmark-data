@@ -1,0 +1,194 @@
+Opam has already been initialized.
+Nothing to do.
+[coq-tactician-api.8.11.dev] synchronised (git+ssh://git@github.com/coq-tactician/coq-tactician-api#18e89c973d17239eae4f54a784edd231a7b30082)
+coq-tactician-api is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician-api#18e89c973d17239eae4f54a784edd231a7b30082 (version 8.11.dev)
+lwt is now pinned to version 5.1.1
+capnp-rpc-unix is now pinned to version 1.2.2
+
+<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+[coq-tactician.8.11.dev] synchronised (no changes)
+[coq-tactician-api.8.11.dev] synchronised (no changes)
+
+The following actions will be performed:
+  ∗ install mccs                 1.1+18
+  ∗ install ctypes               0.23.0
+  ∗ install oasis                0.4.11
+  ∗ install base                 v0.15.1
+  ∗ install ppxlib               0.33.0
+  ∗ install opam-core            2.2.1
+  ∗ install uri                  4.4.0
+  ∗ install lwt                  5.1.1*
+  ∗ install stdune               3.16.0
+  ∗ install coq                  8.11.dev  [required by coq-tactician-api, coq-tactician, coq-tactician-stdlib]
+  ∗ install xxhash               0.1
+  ∗ install stdio                v0.15.0
+  ∗ install parsexp              v0.15.0
+  ∗ install ppx_sexp_conv        v0.15.1
+  ∗ install ppx_deriving         6.0.2
+  ∗ install extunix              0.4.2
+  ∗ install opam-format          2.2.1
+  ∗ install prometheus           1.2
+  ∗ install mirage-kv            6.1.1
+  ∗ install mirage-flow          3.0.0
+  ∗ install logs                 0.7.0
+  ∗ install cstruct-lwt          6.2.0
+  ∗ install dune-private-libs    3.16.0
+  ∗ install capnp                3.6.0
+  ∗ install sexplib              v0.15.1
+  ∗ install ipaddr-sexp          5.6.0
+  ∗ install opam-solver          2.2.1
+  ∗ install opam-repository      2.2.1
+  ∗ install mirage-crypto-rng    0.10.7
+  ∗ install capnp-rpc            1.2.2
+  ∗ install bos                  0.2.1
+  ∗ install dune-site            3.16.0
+  ∗ install ppx_cstruct          6.2.0
+  ∗ install cstruct-sexp         6.2.0
+  ∗ install opam-state           2.2.1
+  ∗ install mirage-crypto-pk     0.10.7
+  ∗ install mirage-crypto-ec     0.10.7
+  ∗ install capnp-rpc-lwt        1.2.2
+  ∗ install opam-client          2.2.1
+  ∗ install x509                 0.16.5
+  ∗ install coq-tactician        8.11.dev*
+  ∗ install tls                  0.15.4
+  ∗ install coq-tactician-stdlib 8.11.dev                                                                       *** WARNING ***
+                                                                                                                This package will overwrite Coq's standard library files.
+                                                                                                                A backup of the original files will be placed under Coq's
+                                                                                                                library directory at user-contrib/tactician-stdlib-backup/
+                                                                                                                and they will be restored when you remove this package.
+                                                                                                                After installation of this package, all other Coq packages
+                                                                                                                also need to be recompiled. Running the 'tactician recompile'
+                                                                                                                command-line utility will help with this process.
+  ∗ install tls-mirage           0.15.4
+  ∗ install capnp-rpc-net        1.2.2
+  ∗ install capnp-rpc-unix       1.2.2*
+  ∗ install coq-tactician-api    8.11.dev*
+===== ∗ 47 =====
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved bos.0.2.1  (cached)
+⬇ retrieved base.v0.15.1  (cached)
+⬇ retrieved capnp.3.6.0  (cached)
+⬇ retrieved capnp-rpc.1.2.2  (cached)
+⬇ retrieved capnp-rpc-lwt.1.2.2  (cached)
+⬇ retrieved capnp-rpc-net.1.2.2  (cached)
+⬇ retrieved coq-tactician.8.11.dev  (no changes)
+⬇ retrieved coq.8.11.dev  (no changes)
+⬇ retrieved cstruct-lwt.6.2.0  (cached)
+⬇ retrieved coq-tactician-stdlib.8.11.dev  (no changes)
+⬇ retrieved cstruct-sexp.6.2.0  (cached)
+⬇ retrieved ctypes.0.23.0  (cached)
+⬇ retrieved coq-tactician-api.8.11.dev  (no changes)
+⬇ retrieved extunix.0.4.2  (cached)
+⬇ retrieved ipaddr-sexp.5.6.0  (cached)
+⬇ retrieved dune-private-libs.3.16.0  (cached)
+⬇ retrieved dune-site.3.16.0  (cached)
+⬇ retrieved logs.0.7.0  (cached)
+⬇ retrieved mccs.1.1+18  (cached)
+⬇ retrieved mirage-crypto-ec.0.10.7  (cached)
+⬇ retrieved mirage-crypto-pk.0.10.7  (cached)
+⬇ retrieved mirage-crypto-rng.0.10.7  (cached)
+⬇ retrieved mirage-flow.3.0.0  (cached)
+⬇ retrieved mirage-kv.6.1.1  (cached)
+⬇ retrieved oasis.0.4.11  (cached)
+⬇ retrieved opam-client.2.2.1  (cached)
+⬇ retrieved opam-core.2.2.1  (cached)
+⬇ retrieved opam-format.2.2.1  (cached)
+⬇ retrieved opam-repository.2.2.1  (cached)
+⬇ retrieved opam-solver.2.2.1  (cached)
+⬇ retrieved opam-state.2.2.1  (cached)
+⬇ retrieved parsexp.v0.15.0  (cached)
+⬇ retrieved ppx_cstruct.6.2.0  (cached)
+⬇ retrieved ppx_deriving.6.0.2  (cached)
+⬇ retrieved ppx_sexp_conv.v0.15.1  (cached)
+⬇ retrieved prometheus.1.2  (cached)
+⬇ retrieved sexplib.v0.15.1  (cached)
+⬇ retrieved ppxlib.0.33.0  (cached)
+⬇ retrieved stdio.v0.15.0  (cached)
+∗ installed base.v0.15.1
+⬇ retrieved tls.0.15.4  (cached)
+⬇ retrieved tls-mirage.0.15.4  (cached)
+⬇ retrieved x509.0.16.5  (cached)
+⬇ retrieved uri.4.4.0  (cached)
+⬇ retrieved xxhash.0.1  (cached)
+⬇ retrieved stdune.3.16.0  (cached)
+∗ installed mccs.1.1+18
+∗ installed parsexp.v0.15.0
+∗ installed stdio.v0.15.0
+∗ installed uri.4.4.0
+∗ installed ctypes.0.23.0
+∗ installed sexplib.v0.15.1
+∗ installed cstruct-sexp.6.2.0
+∗ installed opam-core.2.2.1
+∗ installed stdune.3.16.0
+∗ installed lwt.5.1.1
+∗ installed capnp.3.6.0
+∗ installed mirage-flow.3.0.0
+∗ installed mirage-kv.6.1.1
+∗ installed cstruct-lwt.6.2.0
+∗ installed prometheus.1.2
+∗ installed dune-private-libs.3.16.0
+∗ installed logs.0.7.0
+∗ installed mirage-crypto-rng.0.10.7
+∗ installed opam-format.2.2.1
+∗ installed dune-site.3.16.0
+∗ installed mirage-crypto-pk.0.10.7
+∗ installed capnp-rpc.1.2.2
+∗ installed bos.0.2.1
+∗ installed capnp-rpc-lwt.1.2.2
+∗ installed ppxlib.0.33.0
+∗ installed opam-repository.2.2.1
+∗ installed opam-solver.2.2.1
+∗ installed mirage-crypto-ec.0.10.7
+∗ installed x509.0.16.5
+∗ installed ppx_cstruct.6.2.0
+∗ installed ppx_sexp_conv.v0.15.1
+∗ installed ppx_deriving.6.0.2
+∗ installed ipaddr-sexp.5.6.0
+∗ installed opam-state.2.2.1
+∗ installed tls.0.15.4
+∗ installed extunix.0.4.2
+∗ installed tls-mirage.0.15.4
+∗ installed capnp-rpc-net.1.2.2
+∗ installed capnp-rpc-unix.1.2.2
+∗ installed opam-client.2.2.1
+∗ installed oasis.0.4.11
+∗ installed xxhash.0.1
+∗ installed coq.8.11.dev
+∗ installed coq-tactician.8.11.dev
+∗ installed coq-tactician-api.8.11.dev
+∗ installed coq-tactician-stdlib.8.11.dev
+Done.
+
+<><> lwt.5.1.1 installed successfully <><><><><><><><><><><><><><><><><><><><><>
+=> Lwt 5.0.0 has made some minor breaking changes. See
+     https://github.com/ocsigen/lwt/issues/584
+
+<><> coq-tactician-stdlib.8.11.dev installed successfully <><><><><><><><><><><>
+=> --- The standard library was successfully recompiled ---
+
+   In order to finish the process, you should run
+
+   tactician recompile
+
+<><> coq-tactician.8.11.dev installed successfully ><><><><><><><><><><><><><><>
+=> --- Tactician was successfully installed ---
+
+   In order to enable Tactician, you should run
+
+   tactician enable
+No modification in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
+No modification in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-install-commands in switch bench
+No modification in switch bench
+Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
+The following actions will be performed:
+  ∗ install coq-bignums      8.11.dev
+  ∗ install coq-math-classes 8.18.0
+===== ∗ 2 =====
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-math-classes.8.18.0  (https://github.com/coq-community/math-classes/archive/refs/tags/8.18.0.tar.gz)
+⬇ retrieved coq-bignums.8.11.dev  (git+https://github.com/coq/bignums.git#v8.11)
