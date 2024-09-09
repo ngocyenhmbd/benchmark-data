@@ -1,4 +1,4 @@
-  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-_sjmpf5y
+  Running command git clone --filter=blob:none --quiet https://github.com/IBM/graph2tac.git /tmp/pip-req-build-bc2cth36
   Running command git rev-parse -q --verify 'sha^85fb6b6a96647a5d6b515f357219a2fef9a43e71'
   Running command git fetch -q https://github.com/IBM/graph2tac.git 85fb6b6a96647a5d6b515f357219a2fef9a43e71
   Running command git checkout -q 85fb6b6a96647a5d6b515f357219a2fef9a43e71
@@ -7,33 +7,35 @@
   DEPRECATION: crcmod is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
   DEPRECATION: dill is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
   DEPRECATION: hdfs is being installed using the legacy 'setup.py install' method, because it does not have a 'pyproject.toml' and the 'wheel' package is not installed. pip 23.1 will enforce this behaviour change. A possible replacement is to enable the '--use-pep517' option. Discussion can be found at https://github.com/pypa/pip/issues/8559
-WARNING: There was an error checking the latest version of pip.
-[NOTE] coq-corn.8.16.0 is not installed.
 
-[NOTE] Package coq-graph2tac is already pinned to git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#7a68a9efe2e778d53c85a83ee2ff88436a31cfb2 (version 1.0.anon).
+[notice] A new release of pip available: 22.3.1 -> 24.2
+[notice] To update, run: pip install --upgrade pip
+[WARNING] /home/lasse/.opam exists and is not empty
 [WARNING] Failed checks on coq-graph2tac package definition from source at git+ssh://git@github.com/coq-tactician/coq-graph2tac-trained#7a68a9efe2e778d53c85a83ee2ff88436a31cfb2:
            warning 68: Missing field 'license'
-[ERROR] The compilation of coq-tactician-stdlib.8.11.dev failed at "make -j15".
+[WARNING] Failed checks on coq-tactician-api package definition from source at git+ssh://git@github.com/coq-tactician/coq-tactician-api.git#51ee26444bf347fddfd6b2408167e617b9b33e8b:
+           warning 68: Missing field 'license'
+[ERROR] The compilation of coq-corn.8.16.0 failed at "make -j15".
 
-#=== ERROR while compiling coq-tactician-stdlib.8.11.dev ======================#
-# context              2.2.1 | linux/x86_64 |  | https://coq.inria.fr/opam/extra-dev#2024-09-06 14:42
-# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-tactician-stdlib.8.11.dev
-# command              /usr/bin/make -j15
+#=== ERROR while compiling coq-corn.8.16.0 ====================================#
+# context              2.2.1 | linux/x86_64 |  | https://coq.inria.fr/opam/released#2024-09-06 14:42
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/bench/.opam-switch/build/coq-corn.8.16.0
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/bench/bin/tactician exec -- make -j15
 # exit-code            2
-# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-3541-24d0d6.env
-# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-tactician-stdlib-3541-24d0d6.out
+# env-file             /tmp/opam-lasse-10007/coq-corn-10007-fe1048.env
+# output-file          /tmp/opam-lasse-10007/coq-corn-10007-fe1048.out
 ### output ###
 # [...]
-# coqc plugins/micromega/ZifyBool.v
-# coqc plugins/extraction/ExtrOcamlZInt.v
-# coqc plugins/extraction/ExtrOcamlZBigInt.v
-# coqc plugins/extraction/ExtrOcamlIntConv.v
-# coqc plugins/extraction/ExtrOcamlBigIntConv.v
-# coqc plugins/extraction/ExtrHaskellZNum.v
-# coqc theories/MSets/MSetDecide.v
-# coqc theories/FSets/FSetDecide.v
-# coqc theories/FSets/FSetCompat.v
-# make: *** [Makefile:64: theories/FSets/FSetPositive.vo] Segmentation fault (core dumped)
-# make: *** [theories/FSets/FSetPositive.vo] Deleting file 'theories/FSets/FSetPositive.glob'
-# make: *** Waiting for unfinished jobs....
+# Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+# [notation-overridden,parsing]
+# File "./ftc/Derivative.v", line 37, characters 0-35:
+# Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+# [notation-overridden,parsing]
+# File "./ftc/FunctSequence.v", line 37, characters 0-35:
+# Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+# [notation-overridden,parsing]
+# File "./model/ordfields/CRordfield.v", line 26, characters 0-41:
+# Warning: Notation "{ _ : _ | _ }" was already used in scope type_scope.
+# [notation-overridden,parsing]
+# make: *** [Makefile:327: all] Error 2
 
