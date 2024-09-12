@@ -1,0 +1,33 @@
+[NOTE] Package coq-hammer is currently pinned to git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#daafa10b1a49fc9e35cae0233925c214ba3aa184 (version 8.11.dev).
+[NOTE] Pinning unchanged
+[NOTE] Pinning unchanged
+[NOTE] Pinning unchanged
+[NOTE] Pinning unchanged
+[NOTE] Package coq-tactician-stdlib is already installed (current version is 8.11.dev).
+[ERROR] The compilation of coq-hammer.8.11.dev failed at "make -j15 plugin".
+
+#=== ERROR while compiling coq-hammer.8.11.dev ================================#
+# context              2.2.1 | linux/x86_64 |  | pinned(git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#2fc21126eb564f7f80b9a5db024164502310cb8a#2fc21126eb564f7f80b9a5db024164502310cb8a)
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/bench/.opam-switch/build/coq-hammer.8.11.dev
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/bench/bin/tactician exec -- make -j15 plugin
+# exit-code            2
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/log/coq-hammer-135595-83d02a.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/log/coq-hammer-135595-83d02a.out
+### output ###
+# [...]
+# CAMLC -c src/plugin/coq_transl.mli
+# CAMLOPT -c -for-pack Hammer_plugin src/plugin/features.ml
+# [1mFile "src/plugin/features.ml", line 164, characters 6-24[0m:
+# 164 |       Filename.temp_file ~temp_dir"/tmp/" "predict" ""
+#             [1;31m^^^^^^^^^^^^^^^^^^[0m
+# [1;31mError[0m: This function has type ?temp_dir:string -> string -> string -> string
+#        It is applied to too many arguments; maybe you forgot a `;'.
+# make[2]: *** [Makefile.coq.plugin:626: src/plugin/features.cmx] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# make[1]: *** [Makefile.coq.plugin:327: all] Error 2
+# make[1]: Leaving directory '/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/bench/.opam-switch/build/coq-hammer.8.11.dev'
+# make: *** [Makefile:10: plugin] Error 2
+
+
+The former state can be restored with:
+    /home/lasse/Documents/Projects/Tactician/benchmark-system/benchmark-system/_build/default/src/benchmark/main.exe switch import "/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp/opam-root/bench/.opam-switch/backup/state-20240912121139.export"
