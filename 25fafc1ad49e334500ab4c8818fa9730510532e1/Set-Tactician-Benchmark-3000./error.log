@@ -1,0 +1,25 @@
+
+
+------------------ Benchmark terminated -----------------------
+
+Fatal benchmarking error: ((rpc_error
+  (Uncaught_exn
+   ((location "server-side rpc computation")
+    (exn
+     (monitor.ml.Error
+      ("Process.run failed"
+       ((prog git)
+        (args
+         (fetch --depth 1 origin 25fafc1ad49e334500ab4c8818fa9730510532e1))
+        (working_dir
+         /home/lasse/Documents/Projects/Tactician/benchmark-system/tmp/target-source)
+        (env (Override ((GIT_TERMINAL_PROMPT (0)))))
+        (exit_status (Exit_non_zero 128)) (stdout "")
+        (stderr
+         ("fatal: remote error: upload-pack: not our ref 25fafc1ad49e334500ab4c8818fa9730510532e1"
+          ""))))
+      ("Raised at Dune__exe__Main.Build_worker.T.Functions.prereq_impl.(fun) in file \"src/benchmark/main.ml\", line 472, characters 21-43"
+       "Called from Async_kernel__Deferred0.bind.(fun) in file \"src/deferred0.ml\", line 54, characters 64-69"
+       "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 180, characters 6-47"))))))
+ (connection_description ("Client connected via TCP" (lasse-work 36349)))
+ (rpc_name rpc_parallel_plain_4) (rpc_version 0))
