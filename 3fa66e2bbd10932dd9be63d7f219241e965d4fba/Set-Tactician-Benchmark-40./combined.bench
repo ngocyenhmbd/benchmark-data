@@ -1,0 +1,112 @@
+coq-wigderson.1.0	Wigderson.graph.lt_strict	40	0.030393	7	7	0.0.0.0.0.0.0	synth with cache (only 1: constructor; only 1: intros x H; only 1: apply PositiveSet.E.lt_not_eq in H; only 1: apply H; only 1: reflexivity; only 1: intro; only 1: apply PositiveSet.E.lt_trans).
+coq-wigderson.1.0	Wigderson.graph.lt_proper	40	0.031336	5	4	0.0.1.0	synth with cache (only 1: repeat red; only 1: intros; only 1: subst; only 1: intuition).
+coq-wigderson.1.0	Wigderson.graph.domain_example_map	40	0.006142	1	1	0	synth with cache (only 1: firstorder).
+coq-wigderson.1.0	Wigderson.graph.InA_example	40	10.640915	11556	605	11.37.21	synth with cache (only 1: right; only 1: constructor; only 1: now Nat.nzsimpl).
+coq-wigderson.1.0	Wigderson.graph.equivlistA_example	40	40.008289	30899	2762
+coq-wigderson.1.0	Wigderson.graph.Unnamed_thm	40	0.004028	2	1	1	synth with cache (only 1: auto with relations).
+coq-wigderson.1.0	Wigderson.graph.Unnamed_thm0	40	0.004453	1	1	0	synth with cache (only 1: intuition auto with relations).
+coq-wigderson.1.0	Wigderson.graph.eqlistA_Eeq_eq	40	15.233181	9287	1913	4.0.0.2.0.0.4.1.6	synth with cache (only 1: intros l; only 1: intro y; only 1: split; only 1: induction 1; only 1: auto; only 1: f_equal; only 1: firstorder; only 1: trivial; only 1: now intros ->).
+coq-wigderson.1.0	Wigderson.graph.SortE_equivlistE_eqlistE	40	40.011441	61717	8930
+coq-wigderson.1.0	Wigderson.graph.filter_sortE	40	40.018924	40616	10615
+coq-wigderson.1.0	Wigderson.graph.Proper_eq_eq	40	0.150456	41	11	1.4	synth with cache (only 1: intros; only 1: congruence).
+coq-wigderson.1.0	Wigderson.graph.Sremove_elements	40	40.011017	48199	4706
+coq-wigderson.1.0	Wigderson.graph.InA_map_fst_key	40	40.007030	15745	3221
+coq-wigderson.1.0	Wigderson.graph.Sorted_lt_key	40	40.033572	22423	3526
+coq-wigderson.1.0	Wigderson.graph.cardinal_map	40	40.007457	89770	7482
+coq-wigderson.1.0	Wigderson.graph.Sremove_cardinal_less	40	40.010646	59727	6390
+coq-wigderson.1.0	Wigderson.graph.specialize_SortA_equivlistA_eqlistA	40	0.286551	59	26	2.1.0.0.1	synth with cache (only 1: intros H H0 H1; only 1: apply SortA_equivlistA_eqlistA; only 1: auto with typeclass_instances; only 1: auto with typeclass_instances; only 1: intuition).
+coq-wigderson.1.0	Wigderson.graph.Proper_eq_key_elt	40	0.322719	120	46	0.0.0.0.0.0.2.0	synth with cache (only 1: unfold complement, M.eq_key, M.eq_key_elt; only 1: split; only 1: destruct H, H0; only 1: rewrite H, H0; only 1: auto; only 1: destruct H, H0; only 1: rewrite H, H0; only 1: auto).
+coq-wigderson.1.0	Wigderson.graph.Mremove_cardinal_less	40	40.014725	36066	5048
+coq-wigderson.1.0	Wigderson.graph.fold_right_rev_left	40	0.085926	25	17	1.0.2.0	synth with cache (only 1: intros A B f l; only 1: intros; only 1: symmetry; only 1: apply fold_left_rev_right).
+coq-wigderson.1.0	Wigderson.graph.Snot_in_empty	40	0.004669	1	1	0	synth with cache (only 1: auto with set).
+coq-wigderson.1.0	Wigderson.graph.Sin_domain	40	40.036271	11845	2330
+coq-wigderson.1.0	Wigderson.graph.Mcardinal_Scardinal	40	40.035380	8141	3141
+coq-wigderson.1.0	Wigderson.graph.Mcardinal_domain	40	40.013648	59244	8761
+coq-wigderson.1.0	Wigderson.graph.subset_nodes_sub	40	40.009517	39754	5060
+coq-wigderson.1.0	Wigderson.graph.select_terminates	40	40.018677	27714	3573
+coq-wigderson.1.0	Wigderson.graph.select_tcc	40	40.018774	36137	4530
+coq-wigderson.1.0	Wigderson.graph.adj_ext	40	0.164939	29	6	2.3	synth with cache (only 1: intros ? ? p; only 1: fcrush missing printer).
+coq-wigderson.1.0	Wigderson.graph.in_adj_exists	40	40.012004	51260	6313
+coq-wigderson.1.0	Wigderson.graph.find_in_adj	40	40.008455	42259	4699
+coq-wigderson.1.0	Wigderson.graph.in_adj_in_nodes	40	40.005623	24630	2120
+coq-wigderson.1.0	Wigderson.graph.adj_map	40	40.011538	60543	6612
+coq-wigderson.1.0	Wigderson.graph.in_colors_of_1	40	40.033451	41073	6622
+coq-wigderson.1.0	Wigderson.wigderson.selectW_terminates	40	40.014641	15193	1548
+coq-wigderson.1.0	Wigderson.wigderson.selectW_tcc	40	1.614562	409	245	0.0.0.0.0.0.0.0.0.0.0.0	synth with cache (only 1: intros K g n H; only 1: unfold remove_node; only 1: assert (~ M.In n (remove_node n g)); only 1: strivial missing printer; only 1: assert (M.In n g); only 1: assert (S.In n (subset_nodes (high_deg K) g)); only 1: hauto missing printer; only 1: pose proof (subset_nodes_sub (high_deg K) g n H1); only 1: unfold nodes, Mdomain in H2; only 1: now apply Sin_domain in H2; only 1: rewrite cardinal_map; only 1: now apply Mremove_cardinal_less).
+coq-wigderson.1.0	Wigderson.wigderson.subset_nodes_prop	40	40.005655	5469	703
+coq-wigderson.1.0	Wigderson.wigderson.cardinal_remove	40	40.007448	11569	1278
+coq-wigderson.1.0	Wigderson.wigderson.select_hi_deg	40	40.008331	6660	996
+coq-wigderson.1.0	Wigderson.wigderson.two_color_up_inj	40	40.009950	12629	1285
+coq-wigderson.1.0	Wigderson.wigderson.three_color_up_inj	40	40.007143	2629	1159
+coq-wigderson.1.0	Wigderson.coloring.map_o	40	11.643885	8573	1599	1.7.3.0.5.14	synth with cache (only 1: destruct m; only 1: intros m x; only 1: hfcrush missing printer; only 1: intros; only 1: rewrite WF.map_o; only 1: auto).
+coq-wigderson.1.0	Wigderson.coloring.complete_col_no_selfloop	40	40.298824	4238	723
+coq-wigderson.1.0	Wigderson.coloring.ex_coloring_good	40	40.009428	7270	896
+coq-wigderson.1.0	Wigderson.coloring.empty_graph_colorable	40	40.008556	6069	907
+coq-wigderson.1.0	Wigderson.coloring.set_elemeum	40	40.006715	18366	2757
+coq-wigderson.1.0	Wigderson.coloring.three_elem_set_enumerable	40	40.010761	12875	910
+coq-wigderson.1.0	Wigderson.coloring.subgraph_coloring_ok	40	40.017044	2774	561
+coq-wigderson.1.0	Wigderson.coloring.subgraph_coloring_complete	40	40.421488	6772	1163
+coq-wigderson.1.0	Wigderson.coloring.n_coloring_missed	40	40.009693	8743	546
+coq-wigderson.1.0	Wigderson.coloring.two_coloring_from_three	40	0.557493	36	14	0.0.0.2.0	synth with cache (only 1: intros [p3 Hf] Hc Hcm; only 1: split; only 1: sfirstorder missing printer; only 1: intros v c0 H; only 1: qauto missing printer).
+coq-wigderson.1.0	Wigderson.coloring.restrict_coloring_ok	40	40.007928	3894	614
+coq-wigderson.1.0	Wigderson.coloring.nbd_Sn_colorable_n	40	40.012851	4914	579
+coq-wigderson.1.0	Wigderson.coloring.nbd_2_colorable_3	40	40.008761	2502	810
+coq-wigderson.1.0	Wigderson.coloring.nbd_not_n_col_graph_not_Sn_col	40	23.250354	1887	301	1.17	synth with cache (only 1: intros a0 b H; only 1: hauto missing printer).
+coq-wigderson.1.0	Wigderson.coloring.nbd_not_2_col_graph_not_3_col	40	0.059382	3	3	0.0.0	synth with cache (only 1: intros m Hsame; only 1: intros ci H0; only 1: qauto missing printer).
+coq-wigderson.1.0	Wigderson.coloring.constant_color_colors	40	40.018999	10868	758
+coq-wigderson.1.0	Wigderson.coloring.constant_color_inv	40	40.026135	7661	632
+coq-wigderson.1.0	Wigderson.coloring.constant_color_inv2	40	40.028363	5341	1329
+coq-wigderson.1.0	Wigderson.coloring.two_color_step_colors_v_c1	40	38.671434	10420	1007	12.31	synth with cache (only 1: intros a b c Ha Hb; only 1: hauto missing printer).
+coq-wigderson.1.0	Wigderson.coloring.two_color_step_colors_adj_c2	40	40.015153	4400	787
+coq-wigderson.1.0	Wigderson.coloring.two_color_step_inv	40	40.008117	5015	1078
+coq-wigderson.1.0	Wigderson.coloring.undirected_adj_in	40	40.008102	5291	915
+coq-wigderson.1.0	Wigderson.coloring.in_two_set_inv	40	1.935596	383	88	7.1.2	synth with cache (only 1: intros Hnd; only 1: simpl in *; only 1: SP.Dec.fsetdec).
+coq-wigderson.1.0	Wigderson.coloring.two_color_step_correct	40	40.029410	2409	459
+coq-wigderson.1.0	Wigderson.coloring.two_color_step_complete	40	40.176130	1792	408
+coq-wigderson.1.0	Wigderson.coloring.max_deg_0_constant_col	40	40.012603	3770	589
+coq-wigderson.1.0	Wigderson.coloring.indep_set_ok	40	40.010783	4751	979
+coq-wigderson.1.0	Wigderson.coloring.constant_col_indep_set	40	40.020127	3151	588
+coq-wigderson.1.0	Wigderson.coloring.coloring_max_deg_complete	40	41.066457	2438	535
+coq-wigderson.1.0	Wigderson.coloring.coloring_union	40	40.053357	2936	490
+coq-wigderson.1.0	Wigderson.coloring.ok_coloring_set_eq	40	3.611160	251	77	6.0.0.2	synth with cache (only 1: intros; only 1: split; only 1: sfirstorder missing printer; only 1: qauto missing printer).
+coq-wigderson.1.0	Wigderson.coloring.ok_coloring_subset	40	0.811460	92	28	1.0.1.0.3	synth with cache (only 1: intros; only 1: split; only 1: sfirstorder missing printer; only 1: intros ci cj H3 H4 contra; only 1: sfirstorder missing printer).
+coq-wigderson.1.0	Wigderson.coloring.constant_col_union_indep_set	40	40.476015	4572	977
+coq-wigderson.1.0	Wigderson.coloring.phase2_tcc	40	40.220906	12398	1928
+coq-wigderson.1.0	Wigderson.coloring.phase2_0	40	40.148294	26743	1069
+coq-wigderson.1.0	Wigderson.coloring.no_selfloop_dec	40	40.003249	23781	967
+coq-wigderson.1.0	Wigderson.coloring.phase_2_example	40	40.007931	2958	287
+coq-wigderson.1.0	Wigderson.coloring.InA_iff	40	1.198657	329	200	0.1.0.1.4	synth with cache (only 1: intros; only 1: induction l; only 1: sauto missing printer; only 1: simpl; only 1: sauto missing printer).
+coq-wigderson.1.0	Wigderson.coloring.siota_spec	40	40.010165	13852	3298
+coq-wigderson.1.0	Wigderson.coloring.of_nat_surj	40	40.021180	102842	8463
+coq-wigderson.1.0	Wigderson.coloring.siota_subset	40	40.011582	39830	2438
+coq-wigderson.1.0	Wigderson.coloring.siota_miss	40	40.010071	12249	2001
+coq-wigderson.1.0	Wigderson.coloring.indep_set_union	40	40.285326	2101	402
+coq-wigderson.1.0	Wigderson.coloring.phase2_color_bound	40	40.764271	6064	1182
+coq-wigderson.1.0	Wigderson.coloring.difficult	40	40.474990	6015	1370
+coq-wigderson.1.0	Wigderson.coloring.asfadsf	40	41.330403	7986	1648
+coq-wigderson.1.0	Wigderson.coloring.max_deg_remove_node	40	40.010142	2301	1154
+coq-wigderson.1.0	Wigderson.coloring.barbar	40	42.683477	4033	482
+coq-wigderson.1.0	Wigderson.coloring.adfadsf	40	42.149406	3704	1081
+coq-wigderson.1.0	Wigderson.coloring.phase2_ok	40	42.703962	3204	503
+coq-wigderson.1.0	Wigderson.subgraph.subgraph_refl	40	0.925769	744	98	1.0.3.0.10.2	synth with cache (only 1: constructor; only 1: intro abs; only 1: intros H; only 1: sfirstorder missing printer; only 1: intros H; only 1: SP.Dec.fsetdec).
+coq-wigderson.1.0	Wigderson.subgraph.subgraph_trans	40	0.288679	134	20	10	synth with cache (only 1: sfirstorder missing printer).
+coq-wigderson.1.0	Wigderson.subgraph.subgraph_no_selfloop	40	9.479731	6160	827	3.17.7	synth with cache (only 1: intros; only 1: intro; only 1: sfirstorder missing printer).
+coq-wigderson.1.0	Wigderson.subgraph.subgraph_vert_m	40	40.004617	34480	3421
+coq-wigderson.1.0	Wigderson.subgraph.empty_subgraph_is_subgraph	40	40.010435	32874	7953
+coq-wigderson.1.0	Wigderson.subgraph.subgraph_vertices	40	40.006628	12589	1637
+coq-wigderson.1.0	Wigderson.subgraph.subgraph_edges	40	40.008472	18673	2904
+coq-wigderson.1.0	Wigderson.subgraph.subgraph_of_is_subgraph	40	40.010979	3974	759
+coq-wigderson.1.0	Wigderson.subgraph.remove_node_neq	40	40.007044	15707	2546
+coq-wigderson.1.0	Wigderson.subgraph.remove_node_neq2	40	40.005579	14160	1771
+coq-wigderson.1.0	Wigderson.subgraph.remove_node_subgraph	40	40.005798	17750	2309
+coq-wigderson.1.0	Wigderson.subgraph.remove_node_not_in	40	40.007190	19146	2420
+coq-wigderson.1.0	Wigderson.subgraph.remove_nodes_subgraph	40	40.004095	6452	1124
+coq-wigderson.1.0	Wigderson.subgraph.remove_nodes_sub	40	40.008077	9666	1534
+coq-wigderson.1.0	Wigderson.subgraph.remove_nodes_lt	40	40.011436	8445	1605
+coq-wigderson.1.0	Wigderson.subgraph.adj_remove_nodes_spec	40	40.008220	4635	922
+coq-wigderson.1.0	Wigderson.subgraph.remove_nodes_singleton	40	40.007432	5622	992
+coq-wigderson.1.0	Wigderson.subgraph.remove_node_nodes_adj	40	40.009707	9012	1482
+coq-wigderson.1.0	Wigderson.subgraph.adj_remove_node_spec	40	40.005852	6294	1031
+coq-wigderson.1.0	Wigderson.subgraph.remove_nodes_undirected	40	40.005207	7027	1458
+coq-wigderson.1.0	Wigderson.subgraph.remove_nodes_no_selfloop	40	40.011049	9813	1168
+coq-wigderson.1.0	Wigderson.subgraph.remove_node_undirected	40	40.007562	14736	1771
