@@ -1,0 +1,99 @@
+Opam has already been initialized.
+Nothing to do.
+[coq-tactician.dev] synchronised (no changes)
+coq-tactician is now pinned to git+ssh://git@github.com/coq-tactician/coq-tactician#3fa66e2bbd10932dd9be63d7f219241e965d4fba (version dev)
+
+<><> Synchronising pinned packages ><><><><><><><><><><><><><><><><><><><><><><>
+[coq-tactician.dev] synchronised (no changes)
+
+The following actions will be performed:
+=== install 17 packages
+  ∗ astring         0.8.5
+  ∗ bos             0.2.1
+  ∗ coq-tactician   dev (pinned)
+  ∗ fmt             0.9.0
+  ∗ fpath           0.7.3
+  ∗ jsonm           1.0.2
+  ∗ logs            0.7.0
+  ∗ ocamlbuild      0.15.0
+  ∗ opam-client     2.2.1
+  ∗ opam-core       2.2.1
+  ∗ opam-format     2.2.1
+  ∗ opam-repository 2.2.1
+  ∗ opam-solver     2.2.1
+  ∗ opam-state      2.2.1
+  ∗ rresult         0.7.0
+  ∗ topkg           1.0.7
+  ∗ uutf            1.0.3
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved astring.0.8.5  (cached)
+⬇ retrieved bos.0.2.1  (cached)
+⬇ retrieved fmt.0.9.0  (cached)
+⬇ retrieved fpath.0.7.3  (cached)
+⬇ retrieved jsonm.1.0.2  (cached)
+⬇ retrieved logs.0.7.0  (cached)
+⬇ retrieved ocamlbuild.0.15.0  (cached)
+⬇ retrieved opam-client.2.2.1, opam-core.2.2.1, opam-format.2.2.1, opam-repository.2.2.1, opam-solver.2.2.1, opam-state.2.2.1  (cached)
+⬇ retrieved rresult.0.7.0  (cached)
+⬇ retrieved uutf.1.0.3  (cached)
+⬇ retrieved topkg.1.0.7  (cached)
+⬇ retrieved coq-tactician.dev  (no changes)
+∗ installed ocamlbuild.0.15.0
+∗ installed topkg.1.0.7
+∗ installed rresult.0.7.0
+∗ installed uutf.1.0.3
+∗ installed fmt.0.9.0
+∗ installed astring.0.8.5
+∗ installed jsonm.1.0.2
+∗ installed fpath.0.7.3
+∗ installed logs.0.7.0
+∗ installed bos.0.2.1
+∗ installed opam-core.2.2.1
+∗ installed opam-format.2.2.1
+∗ installed opam-repository.2.2.1
+∗ installed opam-solver.2.2.1
+∗ installed opam-state.2.2.1
+∗ installed opam-client.2.2.1
+∗ installed coq-tactician.dev
+Done.
+
+<><> coq-tactician.dev installed successfully <><><><><><><><><><><><><><><><><>
+=> --- Tactician was successfully installed ---
+
+   In order to enable Tactician, you should run
+
+   tactician enable
+No modification in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-build-commands in switch bench
+No modification in switch bench
+Added '["tactician" "exec" "--"] {coq-tactician:installed}' to field wrap-install-commands in switch bench
+No modification in switch bench
+Added '["%{coq-tactician:lib}%/tactician-patch" name version] {coq-tactician:installed}' to field pre-build-commands in switch bench
+The following actions will be performed:
+=== install 5 packages
+  ∗ coq                8.17.dev   [required by coq-wigderson]
+  ∗ coq-hammer         1.3.2+8.17 [required by coq-wigderson]
+  ∗ coq-hammer-tactics 1.3.2+8.17 [required by coq-hammer]
+  ∗ coq-stdlib         8.17.dev   [required by coq]
+  ∗ coqide-server      8.17.dev   [required by coq]
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-hammer.1.3.2+8.17, coq-hammer-tactics.1.3.2+8.17  (https://github.com/lukaszcz/coqhammer/archive/refs/tags/v1.3.2+8.17.tar.gz)
+⬇ retrieved coq.8.17.dev  (git+https://github.com/LasseBlaauwbroek/coq.git#v8.17-tactician)
+⬇ retrieved coq-stdlib.8.17.dev  (git+https://github.com/LasseBlaauwbroek/coq.git#v8.17-tactician)
+⬇ retrieved coqide-server.8.17.dev  (git+https://github.com/coq/coq.git#v8.17)
+∗ installed coqide-server.8.17.dev
+∗ installed coq-stdlib.8.17.dev
+∗ installed coq.8.17.dev
+∗ installed coq-hammer-tactics.1.3.2+8.17
+∗ installed coq-hammer.1.3.2+8.17
+Done.
+The following actions will be performed:
+=== install 1 package
+  ∗ coq-wigderson 1.0
+
+<><> Processing actions <><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+⬇ retrieved coq-wigderson.1.0  (https://github.com/LasseBlaauwbroek/coq-wigderson/archive/refs/tags/1.0.tar.gz)
+∗ installed coq-wigderson.1.0
+Done.
