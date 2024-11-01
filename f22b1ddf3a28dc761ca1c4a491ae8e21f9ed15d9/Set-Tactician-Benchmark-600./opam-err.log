@@ -1,1 +1,22 @@
-[NOTE] Package coq-hammer is currently pinned to git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#521421d003544582425e366868f5e7581ed842bb (version 8.17.dev).
+[WARNING] /local/home/lasse/.opam exists and is not empty
+[ERROR] The compilation of ocamlbuild.0.15.0 failed at "make check-if-preinstalled all opam-install".
+
+#=== ERROR while compiling ocamlbuild.0.15.0 ==================================#
+# context              2.2.0 | linux/x86_64 |  | https://opam.ocaml.org#86cb2b7655a9e49f365e4037814df866fc115344
+# path                 /local/home/lasse/hammer/tmp/opam-root/bench/.opam-switch/build/ocamlbuild.0.15.0
+# command              /usr/bin/make check-if-preinstalled all opam-install
+# exit-code            2
+# env-file             /tmp/opam-lasse-3568100/ocamlbuild-3568100-3e56cd.env
+# output-file          /tmp/opam-lasse-3568100/ocamlbuild-3568100-3e56cd.out
+### output ###
+# if test -d /usr/lib/ocaml/ocamlbuild; then\
+#   >&2 echo "ERROR: Preinstalled ocamlbuild detected at"\
+#        "/usr/lib/ocaml/ocamlbuild";\
+#   >&2 echo "Installation aborted; if you want to bypass this"\
+#         "safety check, pass CHECK_IF_PREINSTALLED=false to make";\
+#   exit 2;\
+# fi
+# ERROR: Preinstalled ocamlbuild detected at /usr/lib/ocaml/ocamlbuild
+# Installation aborted; if you want to bypass this safety check, pass CHECK_IF_PREINSTALLED=false to make
+# make: *** [Makefile:404: check-if-preinstalled] Error 2
+
