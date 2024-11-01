@@ -1,0 +1,28 @@
+[NOTE] coq-wigderson.1.0 is not installed.
+
+[NOTE] Package coq-hammer is currently pinned to git+ssh://git@github.com/LasseBlaauwbroek/coqhammer#31b50afb8c686019dddea794e59bbfbf2f8953d8 (version 8.17.dev).
+[NOTE] Package coq-hammer-tactics is currently pinned to git+https://github.com/LasseBlaauwbroek/coqhammer.git#5690e84b9b3c7cc2f1993373d75b6652e84009d9 (version 8.17.dev).
+[ERROR] The compilation of coq-hammer-tactics.8.17.dev failed at "make -j15 tactics".
+
+#=== ERROR while compiling coq-hammer-tactics.8.17.dev ========================#
+# context              2.2.1 | linux/x86_64 |  | pinned(git+https://github.com/LasseBlaauwbroek/coqhammer.git#068597fa4e425245d5d208cc3410f0657cf24e24#068597fa4e425245d5d208cc3410f0657cf24e24)
+# path                 ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer-tactics.8.17.dev
+# command              ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/bin/tactician exec -- make -j15 tactics
+# exit-code            2
+# env-file             ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-hammer-tactics-184631-d9575a.env
+# output-file          ~/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/log/coq-hammer-tactics-184631-d9575a.out
+### output ###
+# [...]
+# CAMLOPT -shared -o src/lib/hammer_lib.cmxs
+# CAMLOPT -c -for-pack Hammer_tactics src/tactics/tacopts.ml
+# CAMLOPT -c -for-pack Hammer_tactics src/tactics/tacbest.ml
+# CAMLOPT -c -for-pack Hammer_tactics src/tactics/tactics_main.ml
+# CAMLOPT -c -for-pack Hammer_tactics src/tactics/g_hammer_tactics.ml
+# [1mFile "src/tactics/g_hammer_tactics.mlg", line 100, characters 81-88[0m:
+# [1;31mError[0m: Unbound value [1minteger[0m
+# make[2]: *** [Makefile.coq.tactics:743: src/tactics/g_hammer_tactics.cmx] Error 2
+# make[2]: *** Waiting for unfinished jobs....
+# make[1]: *** [Makefile.coq.tactics:409: all] Error 2
+# make[1]: Leaving directory '/home/lasse/Documents/Projects/Tactician/benchmark-system/tmp-scratch/opam-root/bench/.opam-switch/build/coq-hammer-tactics.8.17.dev'
+# make: *** [Makefile:12: tactics] Error 2
+
