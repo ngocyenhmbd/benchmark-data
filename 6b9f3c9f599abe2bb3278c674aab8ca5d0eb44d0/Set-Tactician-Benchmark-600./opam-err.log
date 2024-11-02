@@ -1,1 +1,30 @@
-[ERROR] Package coq-wigderson has no version v8.11.
+[WARNING] /local/home/lasse/.opam exists and is not empty
+[ERROR] The compilation of coq-wigderson.v8.11 failed at "make -j127".
+
+#=== ERROR while compiling coq-wigderson.v8.11 ================================#
+# context              2.2.0 | linux/x86_64 |  | git+ssh://git@github.com/LasseBlaauwbroek/custom-archive.git
+# path                 /local/home/lasse/hammer/tmp/opam-root/bench/.opam-switch/build/coq-wigderson.v8.11
+# command              /local/home/lasse/hammer/tmp/opam-root/bench/bin/tactician exec -- make -j127
+# exit-code            2
+# env-file             /tmp/opam-lasse-3643371/coq-wigderson-3643371-0a78bf.env
+# output-file          /tmp/opam-lasse-3643371/coq-wigderson-3643371-0a78bf.out
+### output ###
+# [...]
+# Warning:
+# Tactician is having problems with the following tactic. Please report. sauto_opts
+# File "./subgraph.v", line 502, characters 4-64:
+# Warning:
+# Tactician detected a printing/parsing problem for the following tactic. hauto missing printer Please report.
+# File "./subgraph.v", line 524, characters 34-42:
+# Error: The reference list_max was not found in the current environment.
+# 
+# make[2]: *** [Makefile.coq:678: subgraph.vo] Error 1
+# make[1]: *** [Makefile.coq:327: all] Error 2
+# make[1]: Leaving directory '/local/home/lasse/hammer/tmp/opam-root/bench/.opam-switch/build/coq-wigderson.v8.11'
+# make: *** [Makefile:2: all] Error 2
+
+2024-11-02 01:27:27.002342Z Error Rpc_parallel: (monitor.ml.Error ("OpamStd.OpamSys.Exit(31)")
+  ("Raised at Base__Result.ok_exn in file \"src/result.ml\", line 251, characters 17-26"
+    "Called from Async_kernel__Deferred1.M.map.(fun) in file \"src/deferred1.ml\", line 17, characters 40-45"
+    "Called from Async_kernel__Job_queue.run_jobs in file \"src/job_queue.ml\", line 180, characters 6-47")) ... Shutting down.
+Abnormal exit code for build worker on host dai-04. Code: 254
